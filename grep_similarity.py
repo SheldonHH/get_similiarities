@@ -62,6 +62,7 @@ for fuc in funcs:
             lines.append([])
         else:
             print("ftcftc",ftc)
+            fname = ftc[ftc.rindex("/"):len(ftc)]
             with open(ftc, 'r') as file:
                 # 逐行搜索
                 for num, line in enumerate(file, 1):
@@ -79,12 +80,12 @@ for fuc in funcs:
                 # print("typeof(index)",type(index))
                 # # fun_opt = str(ftc)
                 # print("index:",index)
-                if (ftc in files_to_dict.keys()) == False:
-                    files_to_dict[ftc]=[lines]
+                if (fname in files_to_dict.keys()) == False:
+                    files_to_dict[fname]=[lines]
                 else:
-                    oldvalue = files_to_dict[ftc]
+                    oldvalue = files_to_dict[fname]
                     oldvalue.append(lines)
-                    files_to_dict[ftc] = oldvalue
+                    files_to_dict[fname] = oldvalue
          
     # print("files_to_dict",files_to_dict)
 # print("files_to_dict",files_to_dict)
@@ -94,10 +95,9 @@ for key,err0123 in files_to_dict.items():
     zd = min(len(l) for l in err0123)
     # print(key,"zc",zuichang)
     # print(key,"zd",zd)
-    new_value = []
     for index, opt in enumerate(err0123):
         while len(opt) < zuichang:
-            opt.append([])
+            opt.append('')
         err0123[index] = opt
     files_to_dict.update({key:err0123})
     # print
@@ -105,10 +105,13 @@ for key,err0123 in files_to_dict.items():
 # print("files_to_dict",files_to_dict)
     # break
     
+print("字典长度",len(files_to_dict))
 # transpose
 for key,err0123 in files_to_dict.items():
-    print(err0123)
+    print(key,err0123)
+    print("\n")
     np.array(err0123).T
+    
 
 
 
