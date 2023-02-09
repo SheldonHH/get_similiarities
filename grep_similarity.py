@@ -4,7 +4,7 @@ import re
 import numpy as np
 ext = ('.txt')
 str = "allocate_time bishop_mobility calc_attackers CheckBadFlow check_piece_square check_legal comp_to_coord comp_to_san develop_node display_board eval extended_in_check f_in_check gen HandlePartner HandlePtell hash_extract_pv init_game is_attacked King losers_eval l_king_mobility l_rook_mobility post_thinking main nk_attacked post_thinking ProcessHoldings proofnumbercheck proofnumberscan qsearch Queen ResetHandValue reset_board reset_piece_square Rook rook_mobility search setup_attackers setup_epd_line search_root see std_eval stringize_pv suicide_mid_eval SwitchColor SwitchPromoted s_king_mobility s_knight_mobility s_rook_mobility think tree_debug"
-# str = "bishop_mobility" 
+# str = "bishop_mobility" s
 funcs = str.split(" ")
 print(funcs)
 
@@ -152,13 +152,19 @@ for key,err0123 in files_to_dict.items():
     # print("matrix_for_this_func",matrix_for_this_func,key)
     # matrix_for_this_func = [[0]*len(t_array) for i in range(4)]
     matrix_for_this_func = [[0]*4 for i in range(4)]
-
+    # two_for_fu = [[0 for i in range(8)] for j in range(len(t_array))]
+    two_for_fu = []
     for x in range(0,len(t_array)):
+        # one_for_fu = [0 for i in range(6)]
+        one_for_fu = []
+        counter = 0
         for i in range(0,4):
             for j in range(i+1, 4):
             # print("i",i,"j",j)
-
-    
+                counter+=1
+                one_for_fu.append(Jaccard_Similarity(t_array[x][i],t_array[x][j]))
+                
+                print("counter",counter)
                 # print("t_array[",x,"][",i,"]",t_array[x][i])
                 # print("t_array[",x,"][",j,"]",t_array[x][j])
                 # for matrix_for_this_func[i][j]
@@ -171,7 +177,10 @@ for key,err0123 in files_to_dict.items():
         # threed_matrix_for_this_func.append(matrix_for_this_func)
                 # print("\n")
                 # print("t_array["+str(x)+"]["+str(j)+"]",t_array[x][j])
-    print("matrix_for_this_func",matrix_for_this_func)
+        two_for_fu.append(one_for_fu)    
+    print("two_for_fu",two_for_fu)    
+    np.array(two_for_fu).T
+    # print("matrix_for_this_func",matrix_for_this_func)
     file_matrix_dict[key] = threed_matrix_for_this_func
     print(key,"keyyyy",threed_matrix_for_this_func)
 
