@@ -1,0 +1,248 @@
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:1561:10: error: conflicting types for 'search_root'
+move_s * search_root( move_s *retstr, int originalalpha, int originalbeta, int depth) 
+         ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/protos.h:61:8: note: previous declaration is here
+move_s search_root (int alpha, int beta, int depth);
+       ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:1678:17: error: expected expression
+v7 = *( _OWORD *)&dummy.from; 
+                ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:1678:9: error: use of undeclared identifier '_OWORD'
+v7 = *( _OWORD *)&dummy.from; 
+        ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:1842:12: error: expected expression
+*( _OWORD *)( ( char *)&path[0].from + 3 * v26) = *( _OWORD *)&v27->from; 
+           ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:1842:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)( ( char *)&path[0].from + 3 * v26) = *( _OWORD *)&v27->from; 
+   ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:1842:62: error: expected expression
+*( _OWORD *)( ( char *)&path[0].from + 3 * v26) = *( _OWORD *)&v27->from; 
+                                                             ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:1842:54: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)( ( char *)&path[0].from + 3 * v26) = *( _OWORD *)&v27->from; 
+                                                     ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:1853:14: error: passing 'char [20]' to parameter of incompatible type 'move_s'
+comp_to_san( searching_move, *v27); 
+             ^~~~~~~~~~~~~~
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/protos.h:119:26: note: passing argument to parameter 'move' here
+void comp_to_san (move_s move, char str[]);
+                         ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:1894:12: error: expected expression
+*( _OWORD *)&pv[0][v72 / 3 + v73 / 0x18].from = *( _OWORD *)&v27->from; 
+           ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:1894:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&pv[0][v72 / 3 + v73 / 0x18].from = *( _OWORD *)&v27->from; 
+   ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:1894:60: error: expected expression
+*( _OWORD *)&pv[0][v72 / 3 + v73 / 0x18].from = *( _OWORD *)&v27->from; 
+                                                           ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:1894:52: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&pv[0][v72 / 3 + v73 / 0x18].from = *( _OWORD *)&v27->from; 
+                                                   ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:1903:12: error: expected expression
+*( _OWORD *)&pv[v73 / 0x1C20][v76].from = *( _OWORD *)&pv[0][301 * v70].from; 
+           ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:1903:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&pv[v73 / 0x1C20][v76].from = *( _OWORD *)&pv[0][301 * v70].from; 
+   ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:1903:54: error: expected expression
+*( _OWORD *)&pv[v73 / 0x1C20][v76].from = *( _OWORD *)&pv[0][301 * v70].from; 
+                                                     ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:1903:46: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&pv[v73 / 0x1C20][v76].from = *( _OWORD *)&pv[0][301 * v70].from; 
+                                             ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:1913:12: error: expected expression
+*( _OWORD *)&v77[v73] = *( _OWORD *)&v77[7200 * v70]; 
+           ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:1913:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&v77[v73] = *( _OWORD *)&v77[7200 * v70]; 
+   ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:1913:36: error: expected expression
+*( _OWORD *)&v77[v73] = *( _OWORD *)&v77[7200 * v70]; 
+                                   ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:1913:28: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&v77[v73] = *( _OWORD *)&v77[7200 * v70]; 
+                           ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:1914:12: error: expected expression
+*( _OWORD *)&v77[v73 + 24] = *( _OWORD *)&v77[v78 + 24]; 
+           ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:1914:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&v77[v73 + 24] = *( _OWORD *)&v77[v78 + 24]; 
+   ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:1914:41: error: expected expression
+*( _OWORD *)&v77[v73 + 24] = *( _OWORD *)&v77[v78 + 24]; 
+                                        ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:1914:33: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&v77[v73 + 24] = *( _OWORD *)&v77[v78 + 24]; 
+                                ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:1980:12: error: expected expression
+*( _OWORD *)&pv[0][v37 / 3 + v38 / 0x18].from = *( _OWORD *)&v27->from; 
+           ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:1980:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&pv[0][v37 / 3 + v38 / 0x18].from = *( _OWORD *)&v27->from; 
+   ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:1980:60: error: expected expression
+*( _OWORD *)&pv[0][v37 / 3 + v38 / 0x18].from = *( _OWORD *)&v27->from; 
+                                                           ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:1980:52: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&pv[0][v37 / 3 + v38 / 0x18].from = *( _OWORD *)&v27->from; 
+                                                   ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:1990:12: error: expected expression
+*( _OWORD *)&pv[v38 / 0x1C20][v41].from = *( _OWORD *)&pv[0][301 * v35].from; 
+           ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:1990:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&pv[v38 / 0x1C20][v41].from = *( _OWORD *)&pv[0][301 * v35].from; 
+   ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:1990:54: error: expected expression
+*( _OWORD *)&pv[v38 / 0x1C20][v41].from = *( _OWORD *)&pv[0][301 * v35].from; 
+                                                     ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:1990:46: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&pv[v38 / 0x1C20][v41].from = *( _OWORD *)&pv[0][301 * v35].from; 
+                                             ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:2000:12: error: expected expression
+*( _OWORD *)&v42[v38] = *( _OWORD *)&v42[7200 * v35]; 
+           ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:2000:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&v42[v38] = *( _OWORD *)&v42[7200 * v35]; 
+   ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:2000:36: error: expected expression
+*( _OWORD *)&v42[v38] = *( _OWORD *)&v42[7200 * v35]; 
+                                   ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:2000:28: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&v42[v38] = *( _OWORD *)&v42[7200 * v35]; 
+                           ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:2001:12: error: expected expression
+*( _OWORD *)&v42[v38 + 24] = *( _OWORD *)&v42[v43 + 24]; 
+           ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:2001:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&v42[v38 + 24] = *( _OWORD *)&v42[v43 + 24]; 
+   ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:2001:41: error: expected expression
+*( _OWORD *)&v42[v38 + 24] = *( _OWORD *)&v42[v43 + 24]; 
+                                        ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:2001:33: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&v42[v38 + 24] = *( _OWORD *)&v42[v43 + 24]; 
+                                ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:2067:19: error: expected expression
+v100 = *( _OWORD *)&killer1[v50].from; 
+                  ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:2067:11: error: use of undeclared identifier '_OWORD'
+v100 = *( _OWORD *)&killer1[v50].from; 
+          ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:2069:12: error: expected expression
+*( _OWORD *)&killer1[v57].from = *( _OWORD *)&killer2[v50].from; 
+           ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:2069:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&killer1[v57].from = *( _OWORD *)&killer2[v50].from; 
+   ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:2069:45: error: expected expression
+*( _OWORD *)&killer1[v57].from = *( _OWORD *)&killer2[v50].from; 
+                                            ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:2069:37: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&killer1[v57].from = *( _OWORD *)&killer2[v50].from; 
+                                    ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:2070:12: error: expected expression
+*( _OWORD *)&killer2[v57].from = v100; 
+           ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:2070:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&killer2[v57].from = v100; 
+   ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:2095:19: error: expected expression
+v101 = *( _OWORD *)&killer2[v50].from; 
+                  ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:2095:11: error: use of undeclared identifier '_OWORD'
+v101 = *( _OWORD *)&killer2[v50].from; 
+          ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:2097:12: error: expected expression
+*( _OWORD *)&killer2[v81].from = *( _OWORD *)&killer3[v50].from; 
+           ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:2097:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&killer2[v81].from = *( _OWORD *)&killer3[v50].from; 
+   ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:2097:45: error: expected expression
+*( _OWORD *)&killer2[v81].from = *( _OWORD *)&killer3[v50].from; 
+                                            ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:2097:37: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&killer2[v81].from = *( _OWORD *)&killer3[v50].from; 
+                                    ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:2098:12: error: expected expression
+*( _OWORD *)&killer3[v81].from = v101; 
+           ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:2098:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&killer3[v81].from = v101; 
+   ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:2110:12: error: expected expression
+*( _OWORD *)&killer3[v61].from = *( _OWORD *)&failmove->from; 
+           ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:2110:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&killer3[v61].from = *( _OWORD *)&failmove->from; 
+   ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:2110:45: error: expected expression
+*( _OWORD *)&killer3[v61].from = *( _OWORD *)&failmove->from; 
+                                            ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:2110:37: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&killer3[v61].from = *( _OWORD *)&failmove->from; 
+                                    ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:2120:12: error: expected expression
+*( _OWORD *)&pv[0][v51 / 3 + v62 / 0x18].from = *( _OWORD *)&v53->from; 
+           ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:2120:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&pv[0][v51 / 3 + v62 / 0x18].from = *( _OWORD *)&v53->from; 
+   ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:2120:60: error: expected expression
+*( _OWORD *)&pv[0][v51 / 3 + v62 / 0x18].from = *( _OWORD *)&v53->from; 
+                                                           ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:2120:52: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&pv[0][v51 / 3 + v62 / 0x18].from = *( _OWORD *)&v53->from; 
+                                                   ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:2131:12: error: expected expression
+*( _OWORD *)&pv[v62 / 0x1C20][v66].from = *( _OWORD *)&pv[0][301 * v64].from; 
+           ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:2131:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&pv[v62 / 0x1C20][v66].from = *( _OWORD *)&pv[0][301 * v64].from; 
+   ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:2131:54: error: expected expression
+*( _OWORD *)&pv[v62 / 0x1C20][v66].from = *( _OWORD *)&pv[0][301 * v64].from; 
+                                                     ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:2131:46: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&pv[v62 / 0x1C20][v66].from = *( _OWORD *)&pv[0][301 * v64].from; 
+                                             ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:2141:12: error: expected expression
+*( _OWORD *)&v67[7200 * v50] = *( _OWORD *)&v67[7200 * v64]; 
+           ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:2141:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&v67[7200 * v50] = *( _OWORD *)&v67[7200 * v64]; 
+   ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:2141:43: error: expected expression
+*( _OWORD *)&v67[7200 * v50] = *( _OWORD *)&v67[7200 * v64]; 
+                                          ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:2141:35: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&v67[7200 * v50] = *( _OWORD *)&v67[7200 * v64]; 
+                                  ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:2142:12: error: expected expression
+*( _OWORD *)&v67[v62 + 24] = *( _OWORD *)&v67[v68 + 24]; 
+           ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:2142:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&v67[v62 + 24] = *( _OWORD *)&v67[v68 + 24]; 
+   ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:2142:41: error: expected expression
+*( _OWORD *)&v67[v62 + 24] = *( _OWORD *)&v67[v68 + 24]; 
+                                        ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:2142:33: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&v67[v62 + 24] = *( _OWORD *)&v67[v68 + 24]; 
+                                ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:2209:17: error: expected expression
+v7 = *( _OWORD *)&v97.from; 
+                ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:2209:9: error: use of undeclared identifier '_OWORD'
+v7 = *( _OWORD *)&v97.from; 
+        ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:2211:12: error: expected expression
+*( _OWORD *)&retstr->from = v7; 
+           ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/search.c:2211:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&retstr->from = v7; 
+   ^
+80 errors generated.
+make: *** [/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/search_root/src/obj/search.o] Error 1

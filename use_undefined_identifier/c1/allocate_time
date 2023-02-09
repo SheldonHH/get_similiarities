@@ -1,0 +1,29 @@
+/data/output_dir/patch/sjeng/ida/clang/O1/sjeng-clang-O1/allocate_time/src/utils.c:545:6: error: use of undeclared identifier 'qword_41A1B0'
+v4 = qword_41A1B0[v6]; 
+     ^
+/data/output_dir/patch/sjeng/ida/clang/O1/sjeng-clang-O1/allocate_time/src/utils.c:551:4: error: assigning to '__m128d' (vector of 2 'double' values) from incompatible type 'long long'
+v7 = 0LL; 
+   ^ ~~~
+/data/output_dir/patch/sjeng/ida/clang/O1/sjeng-clang-O1/allocate_time/src/utils.c:552:3: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+v7.m128d_f64[0] = ( double)time_left; 
+~~^~~~~~~~~~
+/data/output_dir/patch/sjeng/ida/clang/O1/sjeng-clang-O1/allocate_time/src/utils.c:553:3: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+v8.m128d_f64[0] = ( double)( time_left - opp_time); 
+~~^~~~~~~~~~
+/data/output_dir/patch/sjeng/ida/clang/O1/sjeng-clang-O1/allocate_time/src/utils.c:554:20: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+if ( !xb_mode || v8.m128d_f64[0] <= v7.m128d_f64[0] / 5.0 ) 
+                 ~~^~~~~~~~~~
+/data/output_dir/patch/sjeng/ida/clang/O1/sjeng-clang-O1/allocate_time/src/utils.c:554:39: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+if ( !xb_mode || v8.m128d_f64[0] <= v7.m128d_f64[0] / 5.0 ) 
+                                    ~~^~~~~~~~~~
+/data/output_dir/patch/sjeng/ida/clang/O1/sjeng-clang-O1/allocate_time/src/utils.c:558:3: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+v7.m128d_f64[0] = v7.m128d_f64[0] / 10.0; 
+~~^~~~~~~~~~
+/data/output_dir/patch/sjeng/ida/clang/O1/sjeng-clang-O1/allocate_time/src/utils.c:558:21: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+v7.m128d_f64[0] = v7.m128d_f64[0] / 10.0; 
+                  ~~^~~~~~~~~~
+/data/output_dir/patch/sjeng/ida/clang/O1/sjeng-clang-O1/allocate_time/src/utils.c:559:27: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+v9 = _mm_cmplt_sd( v7, v8).m128d_f64[0]; 
+     ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+9 errors generated.
+make: *** [/data/output_dir/patch/sjeng/ida/clang/O1/sjeng-clang-O1/allocate_time/src/obj/utils.o] Error 1

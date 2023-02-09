@@ -1,0 +1,11 @@
+/data/output_dir/patch/sjeng/ida/clang/O3/sjeng-clang-O3/comp_to_coord/src/utils.c:738:7: error: conflicting types for 'comp_to_coord'
+void  comp_to_coord( char *str, move_s move) 
+      ^
+/data/output_dir/patch/sjeng/ida/clang/O3/sjeng-clang-O3/comp_to_coord/src/protos.h:15:6: note: previous declaration is here
+void comp_to_coord (move_s move, char str[]);
+     ^
+/data/output_dir/patch/sjeng/ida/clang/O3/sjeng-clang-O3/comp_to_coord/src/utils.c:790:41: error: use of undeclared identifier 'dword_41F840'
+sprintf( str, "%c@%c%d", ( unsigned int)dword_41F840[move.promoted], ( unsigned int)v2, ( unsigned int)v3); 
+                                        ^
+2 errors generated.
+make: *** [/data/output_dir/patch/sjeng/ida/clang/O3/sjeng-clang-O3/comp_to_coord/src/obj/utils.o] Error 1

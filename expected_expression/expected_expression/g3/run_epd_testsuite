@@ -1,0 +1,26 @@
+/data/output_dir/patch/sjeng/ida/gcc/O3/sjeng-gcc-O3/run_epd_testsuite/src/epd.c:707:8: error: too many arguments to function call, expected 0, have 1
+think( &comp_move); 
+~~~~~  ^~~~~~~~~~
+/data/output_dir/patch/sjeng/ida/gcc/O3/sjeng-gcc-O3/run_epd_testsuite/src/protos.h:63:1: note: 'think' declared here
+move_s think (void);
+^
+/data/output_dir/patch/sjeng/ida/gcc/O3/sjeng-gcc-O3/run_epd_testsuite/src/epd.c:743:12: error: expected expression
+*( _OWORD *)&v7.from = *( _OWORD *)&move.from; 
+           ^
+/data/output_dir/patch/sjeng/ida/gcc/O3/sjeng-gcc-O3/run_epd_testsuite/src/epd.c:743:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&v7.from = *( _OWORD *)&move.from; 
+   ^
+/data/output_dir/patch/sjeng/ida/gcc/O3/sjeng-gcc-O3/run_epd_testsuite/src/epd.c:743:35: error: expected expression
+*( _OWORD *)&v7.from = *( _OWORD *)&move.from; 
+                                  ^
+/data/output_dir/patch/sjeng/ida/gcc/O3/sjeng-gcc-O3/run_epd_testsuite/src/epd.c:743:27: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&v7.from = *( _OWORD *)&move.from; 
+                          ^
+/data/output_dir/patch/sjeng/ida/gcc/O3/sjeng-gcc-O3/run_epd_testsuite/src/epd.c:744:14: error: passing 'char [256]' to parameter of incompatible type 'move_s'
+comp_to_san( str, v7); 
+             ^~~
+/data/output_dir/patch/sjeng/ida/gcc/O3/sjeng-gcc-O3/run_epd_testsuite/src/protos.h:119:26: note: passing argument to parameter 'move' here
+void comp_to_san (move_s move, char str[]);
+                         ^
+6 errors generated.
+make: *** [/data/output_dir/patch/sjeng/ida/gcc/O3/sjeng-gcc-O3/run_epd_testsuite/src/obj/epd.o] Error 1

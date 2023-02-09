@@ -1,0 +1,26 @@
+/data/output_dir/patch/sjeng/ida/clang/O1/sjeng-clang-O1/proofnumbercheck/src/proof.c:1949:10: error: conflicting types for 'proofnumbercheck'
+move_s * proofnumbercheck( move_s *retstr, move_s compmove) 
+         ^
+/data/output_dir/patch/sjeng/ida/clang/O1/sjeng-clang-O1/proofnumbercheck/src/protos.h:125:8: note: previous declaration is here
+move_s proofnumbercheck(move_s compmove);
+       ^
+/data/output_dir/patch/sjeng/ida/clang/O1/sjeng-clang-O1/proofnumbercheck/src/proof.c:1963:17: error: expected expression
+v2 = *( _OWORD *)&compmove.from; 
+                ^
+/data/output_dir/patch/sjeng/ida/clang/O1/sjeng-clang-O1/proofnumbercheck/src/proof.c:1963:9: error: use of undeclared identifier '_OWORD'
+v2 = *( _OWORD *)&compmove.from; 
+        ^
+/data/output_dir/patch/sjeng/ida/clang/O1/sjeng-clang-O1/proofnumbercheck/src/proof.c:2028:17: error: expected expression
+v2 = *( _OWORD *)&v10.from; 
+                ^
+/data/output_dir/patch/sjeng/ida/clang/O1/sjeng-clang-O1/proofnumbercheck/src/proof.c:2028:9: error: use of undeclared identifier '_OWORD'
+v2 = *( _OWORD *)&v10.from; 
+        ^
+/data/output_dir/patch/sjeng/ida/clang/O1/sjeng-clang-O1/proofnumbercheck/src/proof.c:2030:12: error: expected expression
+*( _OWORD *)&retstr->from = v2; 
+           ^
+/data/output_dir/patch/sjeng/ida/clang/O1/sjeng-clang-O1/proofnumbercheck/src/proof.c:2030:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&retstr->from = v2; 
+   ^
+7 errors generated.
+make: *** [/data/output_dir/patch/sjeng/ida/clang/O1/sjeng-clang-O1/proofnumbercheck/src/obj/proof.o] Error 1
