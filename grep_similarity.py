@@ -4,7 +4,7 @@ import re
 import numpy as np
 ext = ('.txt')
 str = "allocate_time bishop_mobility calc_attackers CheckBadFlow check_piece_square check_legal comp_to_coord comp_to_san develop_node display_board eval extended_in_check f_in_check gen HandlePartner HandlePtell hash_extract_pv init_game is_attacked King losers_eval l_king_mobility l_rook_mobility post_thinking main nk_attacked post_thinking ProcessHoldings proofnumbercheck proofnumberscan qsearch Queen ResetHandValue reset_board reset_piece_square Rook rook_mobility search setup_attackers setup_epd_line search_root see std_eval stringize_pv suicide_mid_eval SwitchColor SwitchPromoted s_king_mobility s_knight_mobility s_rook_mobility think tree_debug"
-# str = "bishop_mobility" s
+# str = "bishop_mobility"
 funcs = str.split(" ")
 print(funcs)
 
@@ -133,6 +133,7 @@ print("字典长度",len(files_to_dict))
 # transpose
 
 file_matrix_dict = {}
+biger_6 = []
 for key,err0123 in files_to_dict.items():
     # print(key,err0123)
     print("\n")
@@ -146,7 +147,7 @@ for key,err0123 in files_to_dict.items():
     '''
     
     threed_matrix_for_this_func = [[['']*4 for i in range(4)] for i in range(len(t_array))]
-    print("threed_matrix_for_this_func",threed_matrix_for_this_func)
+    # print("threed_matrix_for_this_func",threed_matrix_for_this_func)
     # print(key,t_array, len(t_array))
     print("num of col=", len(t_array[0]))
     # print("matrix_for_this_func",matrix_for_this_func,key)
@@ -154,8 +155,9 @@ for key,err0123 in files_to_dict.items():
     matrix_for_this_func = [[0]*4 for i in range(4)]
     # two_for_fu = [[0 for i in range(8)] for j in range(len(t_array))]
     two_for_fu = []
+    com_6 = [0 for i in range(9)]
     for x in range(0,len(t_array)):
-        # one_for_fu = [0 for i in range(6)]
+        # one_for_fu = [0 for i in range(9)]
         one_for_fu = []
         counter = 0
         for i in range(0,4):
@@ -164,26 +166,48 @@ for key,err0123 in files_to_dict.items():
                 counter+=1
                 one_for_fu.append(Jaccard_Similarity(t_array[x][i],t_array[x][j]))
                 
-                print("counter",counter)
+                # print("counter",counter)
                 # print("t_array[",x,"][",i,"]",t_array[x][i])
                 # print("t_array[",x,"][",j,"]",t_array[x][j])
                 # for matrix_for_this_func[i][j]
-                print("x,i,j",x,i,j)
+                # print("x,i,j",x,i,j)
                 threed_matrix_for_this_func[x][i][j] = Jaccard_Similarity(t_array[x][i],t_array[x][j])
                 # matrix_for_this_func[i][j] = Jaccard_Similarity(t_array[x][i],t_array[x][j])
-                if Jaccard_Similarity(t_array[x][i],t_array[x][j]) != 0:
-                    print("find",Jaccard_Similarity(t_array[x][i],t_array[x][j]))
+                # if Jaccard_Similarity(t_array[x][i],t_array[x][j]) != 0:
+                    # print("find",Jaccard_Similarity(t_array[x][i],t_array[x][j]))
                 # print(Jaccard_Similarity(t_array[x][i],t_array[x][j]))
         # threed_matrix_for_this_func.append(matrix_for_this_func)
                 # print("\n")
                 # print("t_array["+str(x)+"]["+str(j)+"]",t_array[x][j])
         two_for_fu.append(one_for_fu)    
-    print("two_for_fu",two_for_fu)    
-    np.array(two_for_fu).T
+    # print("two_for_fu",two_for_fu)    
+    ttfu = np.array(two_for_fu).T
+    print("after transpose",ttfu)
+    for index,arr in enumerate(ttfu):
+        # print(f"number of non-zero: {np.count_nonzero(arr)}" )
+        if np.count_nonzero(arr) > 0:
+            print(index,"np.sum/{np.count_nonzero(arr)}",np.sum(arr)/np.count_nonzero(arr))
+            com_6[index] = np.sum(arr)/np.count_nonzero(arr)
     # print("matrix_for_this_func",matrix_for_this_func)
     file_matrix_dict[key] = threed_matrix_for_this_func
-    print(key,"keyyyy",threed_matrix_for_this_func)
+    # print(key,"keyyyy",threed_matrix_for_this_func)
+    print("com_6",com_6)
+    biger_6.append(com_6)
 
+
+print("biger_6",biger_6)
+
+err_type_6 = [0 for i in range(9)]
+# avg within func
+b6t = np.array(biger_6).T
+for index,arr in enumerate(b6t):
+        # print(f"number of non-zero: {np.count_nonzero(arr)}" )
+    if np.count_nonzero(arr) > 0:
+        print(index,"np.sum/{np.count_nonzero(arr)}",np.sum(arr)/np.count_nonzero(arr))
+        err_type_6[index] = np.sum(arr)/np.count_nonzero(arr)
+
+
+print("err_type_6",err_type_6)
 
 
 
