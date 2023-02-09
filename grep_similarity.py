@@ -3,8 +3,8 @@ import csv
 import re
 import numpy as np
 ext = ('.txt')
-# str = "allocate_time bishop_mobility calc_attackers CheckBadFlow check_piece_square check_legal comp_to_coord comp_to_san develop_node display_board eval extended_in_check f_in_check gen HandlePartner HandlePtell hash_extract_pv init_game is_attacked King losers_eval l_king_mobility l_rook_mobility post_thinking main nk_attacked post_thinking ProcessHoldings proofnumbercheck proofnumberscan qsearch Queen ResetHandValue reset_board reset_piece_square Rook rook_mobility search setup_attackers setup_epd_line search_root see std_eval stringize_pv suicide_mid_eval SwitchColor SwitchPromoted s_king_mobility s_knight_mobility s_rook_mobility think tree_debug"
-str = "allocate_time bishop_mobility" 
+str = "allocate_time bishop_mobility calc_attackers CheckBadFlow check_piece_square check_legal comp_to_coord comp_to_san develop_node display_board eval extended_in_check f_in_check gen HandlePartner HandlePtell hash_extract_pv init_game is_attacked King losers_eval l_king_mobility l_rook_mobility post_thinking main nk_attacked post_thinking ProcessHoldings proofnumbercheck proofnumberscan qsearch Queen ResetHandValue reset_board reset_piece_square Rook rook_mobility search setup_attackers setup_epd_line search_root see std_eval stringize_pv suicide_mid_eval SwitchColor SwitchPromoted s_king_mobility s_knight_mobility s_rook_mobility think tree_debug"
+# str = "bishop_mobility" 
 funcs = str.split(" ")
 print(funcs)
 
@@ -27,10 +27,13 @@ def Jaccard_Similarity(doc1, doc2):
 
     # Find the union of words list of doc1 & doc2
     union = words_doc1.union(words_doc2)
+    if len(union) == 0:
+        return 0
         
     # Calculate Jaccard similarity score 
     # using length of intersection set divided by length of union set
-    return float(len(intersection)) / len(union)
+    else: 
+        return float(len(intersection)) / len(union)
 
 
 
@@ -45,7 +48,7 @@ for fuc in funcs:
         for fd in folders:
             #TODO: 需要替代 这个for loop只是为了找到match func
             oj = findf(fuc,"/Users/mac/similarities_test/use_undefined_identifier/"+fd)
-            print("oj",oj)
+            # print("oj",oj)
             # if(type(oj) == type(None)):
             #     print("yaliii")
             ftcs.append(oj)
@@ -68,11 +71,11 @@ for fuc in funcs:
                     files_to_dict[fuc]=[lines]
                     print("here")
                 else:
-                    print("elseeee",lines)
+                    # print("elseeee",lines)
                     oldvalue = files_to_dict[fuc]
-                    print("old",oldvalue)
+                    # print("old",oldvalue)
                     oldvalue.append(lines)
-                    print("new",oldvalue)
+                    # print("new",oldvalue)
                     files_to_dict.update({fuc:oldvalue})
 
             else:
@@ -95,16 +98,16 @@ for fuc in funcs:
                     # # fun_opt = str(ftc)
                     # print("index:",index)
 
-                ########################### 和else 部分完全一致 ########################
+                ########################### 和if 部分完全一致 ########################
                     if (fuc in files_to_dict.keys()) == False:
                         files_to_dict[fuc]=[lines]
                         print("here")
                     else:
-                        print("elseeee",lines)
+                        # print("elseeee",lines)
                         oldvalue = files_to_dict[fuc]
-                        print("old",oldvalue)
+                        # print("old",oldvalue)
                         oldvalue.append(lines)
-                        print("new",oldvalue)
+                        # print("new",oldvalue)
                         files_to_dict.update({fuc:oldvalue})
 
 print("files_to_dict",files_to_dict)
@@ -128,11 +131,49 @@ for key,err0123 in files_to_dict.items():
     
 print("字典长度",len(files_to_dict))
 # transpose
+
+file_matrix_dict = {}
 for key,err0123 in files_to_dict.items():
-    print(key,err0123)
+    # print(key,err0123)
     print("\n")
-    np.array(err0123).T
+    t_array = np.array(err0123).T
+    # matrix_for_this_func = [[0]*4 for i in range(len(t_array[0]))]
+    ''''
+    bishop_mobility [['for ( l = bishop_mobility_dir[diridx] + square; board[l] == 13; l += bishop_mobility_dir[diridx] ) \n'
+    'v3 = bishop_mobility_dir[v1]; \n' '' '']
+    ['for ( l = bishop_mobility_dir[diridx] + square; board[l] == 13; l += bishop_mobility_dir[diridx] ) \n'
+    '' '' '']] 2
+    '''
     
+    threed_matrix_for_this_func = [[['']*4 for i in range(4)] for i in range(len(t_array))]
+    print("threed_matrix_for_this_func",threed_matrix_for_this_func)
+    # print(key,t_array, len(t_array))
+    print("num of col=", len(t_array[0]))
+    # print("matrix_for_this_func",matrix_for_this_func,key)
+    # matrix_for_this_func = [[0]*len(t_array) for i in range(4)]
+    matrix_for_this_func = [[0]*4 for i in range(4)]
+
+    for x in range(0,len(t_array)):
+        for i in range(0,4):
+            for j in range(i+1, 4):
+            # print("i",i,"j",j)
+
+    
+                # print("t_array[",x,"][",i,"]",t_array[x][i])
+                # print("t_array[",x,"][",j,"]",t_array[x][j])
+                # for matrix_for_this_func[i][j]
+                print("x,i,j",x,i,j)
+                threed_matrix_for_this_func[x][i][j] = Jaccard_Similarity(t_array[x][i],t_array[x][j])
+                # matrix_for_this_func[i][j] = Jaccard_Similarity(t_array[x][i],t_array[x][j])
+                if Jaccard_Similarity(t_array[x][i],t_array[x][j]) != 0:
+                    print("find",Jaccard_Similarity(t_array[x][i],t_array[x][j]))
+                # print(Jaccard_Similarity(t_array[x][i],t_array[x][j]))
+        # threed_matrix_for_this_func.append(matrix_for_this_func)
+                # print("\n")
+                # print("t_array["+str(x)+"]["+str(j)+"]",t_array[x][j])
+    print("matrix_for_this_func",matrix_for_this_func)
+    file_matrix_dict[key] = threed_matrix_for_this_func
+    print(key,"keyyyy",threed_matrix_for_this_func)
 
 
 
