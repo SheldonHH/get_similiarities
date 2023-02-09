@@ -3,7 +3,8 @@ import csv
 import re
 import numpy as np
 ext = ('.txt')
-str = "allocate_time bishop_mobility calc_attackers CheckBadFlow check_piece_square check_legal comp_to_coord comp_to_san develop_node display_board eval extended_in_check f_in_check gen HandlePartner HandlePtell hash_extract_pv init_game is_attacked King losers_eval l_king_mobility l_rook_mobility post_thinking main nk_attacked post_thinking ProcessHoldings proofnumbercheck proofnumberscan qsearch Queen ResetHandValue reset_board reset_piece_square Rook rook_mobility search setup_attackers setup_epd_line search_root see std_eval stringize_pv suicide_mid_eval SwitchColor SwitchPromoted s_king_mobility s_knight_mobility s_rook_mobility think tree_debug"
+# str = "allocate_time bishop_mobility calc_attackers CheckBadFlow check_piece_square check_legal comp_to_coord comp_to_san develop_node display_board eval extended_in_check f_in_check gen HandlePartner HandlePtell hash_extract_pv init_game is_attacked King losers_eval l_king_mobility l_rook_mobility post_thinking main nk_attacked post_thinking ProcessHoldings proofnumbercheck proofnumberscan qsearch Queen ResetHandValue reset_board reset_piece_square Rook rook_mobility search setup_attackers setup_epd_line search_root see std_eval stringize_pv suicide_mid_eval SwitchColor SwitchPromoted s_king_mobility s_knight_mobility s_rook_mobility think tree_debug"
+str = "allocate_time bishop_mobility" 
 funcs = str.split(" ")
 print(funcs)
 
@@ -36,57 +37,77 @@ def Jaccard_Similarity(doc1, doc2):
 folders = ["c0","c1","c2","c3"]
 files_to_dict = {}
 for fuc in funcs:
-    ftcs = [] # 🌈最多4个同名文件数组
+    # if fuc == "bishop_mobility":
+    if True:
+        ftcs = [] # 🌈最多4个同名文件数组
 
-    # 对每一个folder遍历
-    for fd in folders:
-        #TODO: 需要替代 这个for loop只是为了找到match func
-        oj = findf(fuc,"/Users/mac/similarities_test/use_undefined_identifier/"+fd)
-        print("oj",oj)
-        # if(type(oj) == type(None)):
-        #     print("yaliii")
-        ftcs.append(oj)
-        # for fname in os.scandir("/Users/mac/similarities_test/use_undefined_identifier/"+fd):
-        #     # print("fnameeee:",fname)
-        #     if fuc == fname:
-        #         ftcs.append(fname) # 🌈最多4个同名文
-    # 对于同一个fuc
-    # 对于一个cn下面的func
-    # print("ftcs",ftcs)
-    for index,ftc in enumerate(ftcs):   #   ftcs = [] # 最多4个同名文件数组已找到
-        lines = []
-        # print("use of undeclared identifier",ftc)
-        line_marker = 0
-        # if os.path.exists(ftc) == False:
-        if type(ftc) == type(None):
-            lines.append([])
-        else:
-            print("ftcftc",ftc)
-            fname = ftc[ftc.rindex("/"):len(ftc)]
-            with open(ftc, 'r') as file:
-                # 逐行搜索
-                for num, line in enumerate(file, 1):
-                    if "error: use of undeclared identifier"  in line:
-                        # print('found at line:', num,file)
-                        line_marker = num
-                    # 读取下面2行
-                    if num == line_marker + 1:
-                        # print("num",num,"line",line)
-                        lines.append(line)
-                    # if num == line_marker + 2:
-                    #     print("num",num,"line",line)
-                # 一个folder，一组lines
-                # print("typeof",type(ftc))
-                # print("typeof(index)",type(index))
-                # # fun_opt = str(ftc)
-                # print("index:",index)
-                if (fname in files_to_dict.keys()) == False:
-                    files_to_dict[fname]=[lines]
+        # 对每一个folder遍历
+        for fd in folders:
+            #TODO: 需要替代 这个for loop只是为了找到match func
+            oj = findf(fuc,"/Users/mac/similarities_test/use_undefined_identifier/"+fd)
+            print("oj",oj)
+            # if(type(oj) == type(None)):
+            #     print("yaliii")
+            ftcs.append(oj)
+            # for fname in os.scandir("/Users/mac/similarities_test/use_undefined_identifier/"+fd):
+            #     # print("fnameeee:",fname)
+            #     if fuc == fname:
+            #         ftcs.append(fname) # 🌈最多4个同名文
+        # 对于同一个fuc
+        # 对于一个cn下面的func
+        # print("ftcs",ftcs)
+        for index,ftc in enumerate(ftcs):   #   ftcs = [] # 最多4个同名文件数组已找到
+            lines = []
+            # print("use of undeclared identifier",ftc)
+            line_marker = 0
+            # if os.path.exists(ftc) == False:
+            if type(ftc) == type(None):
+                # lines.append([])
+                ########################### 和else 部分完全一致 ########################
+                if (fuc in files_to_dict.keys()) == False:
+                    files_to_dict[fuc]=[lines]
+                    print("here")
                 else:
-                    oldvalue = files_to_dict[fname]
+                    print("elseeee",lines)
+                    oldvalue = files_to_dict[fuc]
+                    print("old",oldvalue)
                     oldvalue.append(lines)
-                    files_to_dict[fname] = oldvalue
-         
+                    print("new",oldvalue)
+                    files_to_dict.update({fuc:oldvalue})
+
+            else:
+                print("ftcftc",ftc)
+                with open(ftc, 'r') as file:
+                    # 逐行搜索
+                    for num, line in enumerate(file, 1):
+                        if "error: use of undeclared identifier"  in line:
+                            print('found at line:', num,file)
+                            line_marker = num
+                        # 读取下面2行
+                        if num == line_marker + 1:
+                            print("num",num,"line",line)
+                            lines.append(line)
+                        # if num == line_marker + 2:
+                        #     print("num",num,"line",line)
+                    # 一个folder，一组lines
+                    # print("typeof",type(ftc))
+                    # print("typeof(index)",type(index))
+                    # # fun_opt = str(ftc)
+                    # print("index:",index)
+
+                ########################### 和else 部分完全一致 ########################
+                    if (fuc in files_to_dict.keys()) == False:
+                        files_to_dict[fuc]=[lines]
+                        print("here")
+                    else:
+                        print("elseeee",lines)
+                        oldvalue = files_to_dict[fuc]
+                        print("old",oldvalue)
+                        oldvalue.append(lines)
+                        print("new",oldvalue)
+                        files_to_dict.update({fuc:oldvalue})
+
+print("files_to_dict",files_to_dict)
     # print("files_to_dict",files_to_dict)
 # print("files_to_dict",files_to_dict)
 for key,err0123 in files_to_dict.items():
