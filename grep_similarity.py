@@ -7,6 +7,24 @@ funcs = str.split(" ")
 print(funcs)
 
 
+def Jaccard_Similarity(doc1, doc2): 
+    
+    # List the unique words in a document
+    words_doc1 = set(doc1.lower().split()) 
+    words_doc2 = set(doc2.lower().split())
+    
+    # Find the intersection of words list of doc1 & doc2
+    intersection = words_doc1.intersection(words_doc2)
+
+    # Find the union of words list of doc1 & doc2
+    union = words_doc1.union(words_doc2)
+        
+    # Calculate Jaccard similarity score 
+    # using length of intersection set divided by length of union set
+    return float(len(intersection)) / len(union)
+
+
+
 folders = ["c0","c1","c2","c3"]
 for fuc in funcs:
     ftcs = [] # 🌈最多4个同名文件数组
@@ -36,8 +54,8 @@ for fuc in funcs:
                 if num == line_marker + 1:
                     print("num",num,"line",line)
                     lines.append(line)
-                if num == line_marker + 2:
-                    print("num",num,"line",line)
+                # if num == line_marker + 2:
+                #     print("num",num,"line",line)
             # 一个folder，一组lines
             print("typeof",type(ftc.name))
             print("typeof(index)",type(index))
