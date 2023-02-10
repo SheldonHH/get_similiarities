@@ -2,9 +2,11 @@ import os
 import csv
 import re
 import numpy as np
+import json
 ext = ('.txt')
 str = "allocate_time bishop_mobility calc_attackers CheckBadFlow check_piece_square check_legal comp_to_coord comp_to_san develop_node display_board eval extended_in_check f_in_check gen HandlePartner HandlePtell hash_extract_pv init_game is_attacked King losers_eval l_king_mobility l_rook_mobility post_thinking main nk_attacked post_thinking ProcessHoldings proofnumbercheck proofnumberscan qsearch Queen ResetHandValue reset_board reset_piece_square Rook rook_mobility search setup_attackers setup_epd_line search_root see std_eval stringize_pv suicide_mid_eval SwitchColor SwitchPromoted s_king_mobility s_knight_mobility s_rook_mobility think tree_debug"
 # str = "bishop_mobility"
+# str = "calc_attackers"
 funcs = str.split(" ")
 print(funcs)
 
@@ -39,6 +41,7 @@ def Jaccard_Similarity(doc1, doc2):
 
 folders = ["c0","c1","c2","c3"]
 files_to_dict = {}
+bigger_coms_dict = {}
 for fuc in funcs:
     # if fuc == "bishop_mobility":
     if True:
@@ -180,7 +183,7 @@ for key,err0123 in files_to_dict.items():
                 # print("\n")
                 # print("t_array["+str(x)+"]["+str(j)+"]",t_array[x][j])
         two_for_fu.append(one_for_fu)    
-    # print("two_for_fu",two_for_fu)    
+    print("two_for_fu",two_for_fu)    
     ttfu = np.array(two_for_fu).T
     print("after transpose",ttfu)
     for index,arr in enumerate(ttfu):
@@ -192,10 +195,16 @@ for key,err0123 in files_to_dict.items():
     file_matrix_dict[key] = threed_matrix_for_this_func
     # print(key,"keyyyy",threed_matrix_for_this_func)
     print("com_6",com_6)
+    bigger_coms_dict[key] = com_6
     biger_6.append(com_6)
 
 
 print("biger_6",biger_6)
+
+with open('bigger_coms_dict.json', 'w') as fp:
+    json.dump(bigger_coms_dict, fp)
+
+
 
 err_type_6 = [0 for i in range(9)]
 # avg within func
