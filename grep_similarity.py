@@ -4,9 +4,9 @@ import re
 import numpy as np
 import json
 ext = ('.txt')
-str = "allocate_time bishop_mobility calc_attackers CheckBadFlow check_piece_square check_legal comp_to_coord comp_to_san develop_node display_board eval extended_in_check f_in_check gen HandlePartner HandlePtell hash_extract_pv init_game is_attacked King losers_eval l_king_mobility l_rook_mobility post_thinking main nk_attacked post_thinking ProcessHoldings proofnumbercheck proofnumberscan qsearch Queen ResetHandValue reset_board reset_piece_square Rook rook_mobility search setup_attackers setup_epd_line search_root see std_eval stringize_pv suicide_mid_eval SwitchColor SwitchPromoted s_king_mobility s_knight_mobility s_rook_mobility think tree_debug"
-# str = "bishop_mobility"
-# str = "calc_attackers"
+str = "allocate_time bishop_mobility calc_attackers CheckBadFlow check_piece_square check_legal comp_to_coord comp_to_san develop_node display_board eval extended_in_check f_in_check gen HandlePartner HandlePtell hash_extract_pv init_game is_attacked King losers_eval l_king_mobility l_rook_mobility post_thinking main nk_attacked ProcessHoldings proofnumbercheck proofnumberscan qsearch Queen ResetHandValue reset_board reset_piece_square Rook rook_mobility search setup_attackers setup_epd_line search_root see std_eval stringize_pv suicide_mid_eval SwitchColor SwitchPromoted s_king_mobility s_knight_mobility s_rook_mobility think tree_debug"
+# str = "bishop_mobility calc_attackers"
+str = "calc_attackers"
 funcs = str.split(" ")
 print(funcs)
 
@@ -183,7 +183,10 @@ for key,err0123 in files_to_dict.items():
                 # print("\n")
                 # print("t_array["+str(x)+"]["+str(j)+"]",t_array[x][j])
         two_for_fu.append(one_for_fu)    
-    print("two_for_fu",two_for_fu)    
+    print("two_for_fu",two_for_fu)
+    with open("twofu.csv","w+") as my_csv:
+        csvWriter = csv.writer(my_csv,delimiter=',')
+        csvWriter.writerows(two_for_fu)    
     ttfu = np.array(two_for_fu).T
     print("after transpose",ttfu)
     for index,arr in enumerate(ttfu):
@@ -200,13 +203,17 @@ for key,err0123 in files_to_dict.items():
 
 
 print("biger_6",biger_6)
+with open("biger_6.csv","w+") as my_csv:
+    csvWriter = csv.writer(my_csv,delimiter=',')
+    csvWriter.writerows(biger_6)
+
 
 with open('bigger_coms_dict.json', 'w') as fp:
     json.dump(bigger_coms_dict, fp)
 
 
 
-err_type_6 = [0 for i in range(9)]
+err_type_6 = [0 for i in range(6)]
 # avg within func
 b6t = np.array(biger_6).T
 for index,arr in enumerate(b6t):
@@ -220,6 +227,20 @@ print("err_type_6",err_type_6)
 
 
 
+
+
+rm_max_err_type_6 = [0 for i in range(6)]
+# avg within func
+b6t = np.array(biger_6).T
+for index,arr in enumerate(b6t):
+        # print(f"number of non-zero: {np.count_nonzero(arr)}" )
+    if np.count_nonzero(arr) > 0:
+        print(index,"np.sum/{np.count_nonzero(arr)}",np.sum(arr)/np.count_nonzero(arr))
+        # rm_max_err_type_6[index] = (np.sum(arr)-np.max(arr)*np.count_nonzero(arr == np.max(arr)))/(np.count_nonzero(arr)-np.count_nonzero(arr == np.max(arr)))
+        rm_max_err_type_6[index] = (np.sum(arr)-np.max(arr))/(np.count_nonzero(arr)-1)
+
+
+print("rm_max_err_type_6",rm_max_err_type_6)
                     
                 
             # content = file.read()
@@ -228,3 +249,10 @@ print("err_type_6",err_type_6)
             #     print('string exist in a file')
 
             # print("fuc",fuc)
+
+
+
+
+for f in funcs:
+    print(f)
+    
