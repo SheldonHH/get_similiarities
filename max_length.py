@@ -78,7 +78,6 @@ for fd in folders:     # 对每一个folder遍历
         #TODO: 需要替代 这个for loop只是为了找到match func
         oj = findf(fuc,"/data/get_similiarities/use_undefined_identifier/"+fd)
         if (type(oj) != type(None)):
-
             print("oj",oj)
             ftcs.append(oj)
     # print("len(ftcs)",len(ftcs))
@@ -117,23 +116,42 @@ print("f_c1",fold_dict["c1"])
 # print("life_fucs",fold_dict["c1"])
 # print("c0长度",len(fold_dict["c0"]))
 
-# sub_counter = 0
-# for sub_life in life_fucs: 
-#     sub_counter += 1
-#     # strss = funs_str(sub_counter)
-#     filepath= "/data/get_similiarities/life_fucs_"+str(sub_counter)+".csv"
-#     with open(filepath, 'w') as fp:
-#         for item in sub_life:
-#             # write each item on a new line
-#             # fp.write("%s\n" % item)
+sub_counter = 0
+for sub_life in life_fucs: 
+    sub_counter += 1
+    # strss = funs_str(sub_counter)
+    filepath= "/data/get_similiarities/life_fucs_"+str(sub_counter)+".csv"
+    with open(filepath, 'w') as fp:
+        for item in sub_life:
+            # write each item on a new line
+            # fp.write("%s\n" % item)
 
-#             fp.write("%s\n" % item[item.rindex("/")+1:len(item)])
-#         print('Done')
+            fp.write("%s\n" % item[item.rindex("/")+1:len(item)])
+        print('Done')
 
 
-with open(r'/data/get_similiarities/result0.csv', 'w') as fp:
-    for item in fold_dict["c0"]:
+with open(r'/data/get_similiarities/result3.csv', 'w') as fp:
+    for item in fold_dict["c3"]:
         # write each item on a new line
         
         fp.write("%s" % item)
     print('Done')
+
+
+with open('/data/get_similiarities/result0.csv', 'r')  as file:
+    # 逐行搜索
+    line_marker = 0 # 打开该文件
+    max_num_block = 0
+    for num, line in enumerate(file, 1):
+        print("num",num,"line",line)
+        if len(line.split(" ")) > max_num_block:
+            max_num_block = len(line.split(" "))
+            # print("num of block",len(line.split(" ")))
+    print("max_num_block",max_num_block)
+
+
+# max_num_block 
+# r0: 16
+# r1: 23
+# r2: 23
+# r3: 23
