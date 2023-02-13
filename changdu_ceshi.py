@@ -9,17 +9,17 @@ import torch
 from sklearn.metrics.pairwise import cosine_similarity
 
 ext = ('.txt')
-str = "allocate_time bishop_mobility calc_attackers CheckBadFlow check_piece_square check_legal comp_to_coord comp_to_san develop_node display_board eval extended_in_check f_in_check gen HandlePartner HandlePtell hash_extract_pv init_game is_attacked King losers_eval l_king_mobility l_rook_mobility post_thinking main nk_attacked ProcessHoldings proofnumbercheck proofnumberscan qsearch Queen ResetHandValue reset_board reset_piece_square Rook rook_mobility search setup_attackers setup_epd_line search_root see std_eval stringize_pv suicide_mid_eval SwitchColor SwitchPromoted s_king_mobility s_knight_mobility s_rook_mobility think tree_debug"
-# str = "bishop_mobility calc_attackers"
-# str = "calc_attackers"
-funcs = str.split(" ")
+funs_str = "allocate_time bishop_mobility calc_attackers CheckBadFlow check_piece_square check_legal comp_to_coord comp_to_san develop_node display_board eval extended_in_check f_in_check gen HandlePartner HandlePtell hash_extract_pv init_game is_attacked King losers_eval l_king_mobility l_rook_mobility post_thinking main nk_attacked ProcessHoldings proofnumbercheck proofnumberscan qsearch Queen ResetHandValue reset_board reset_piece_square Rook rook_mobility search setup_attackers setup_epd_line search_root see std_eval stringize_pv suicide_mid_eval SwitchColor SwitchPromoted s_king_mobility s_knight_mobility s_rook_mobility think tree_debug"
+# funs_str = "bishop_mobility calc_attackers"
+# funs_str = "calc_attackers"
+funcs = funs_str.split(" ")
 print(funcs)
 
 
 tokenizer = AutoTokenizer.from_pretrained("microsoft/codebert-base")
 model = AutoModel.from_pretrained("microsoft/codebert-base")
-def generate_embedding(str):
-    code_tokens = tokenizer.tokenize(str, padding='max_length')
+def generate_embedding(funs_str):
+    code_tokens = tokenizer.tokenize(funs_str, padding='max_length')
     tokens_ids=tokenizer.convert_tokens_to_ids(code_tokens)
     context_embeddings=model(torch.tensor(tokens_ids)[None,:])[0]
 
@@ -63,21 +63,24 @@ def findf(name, path):
 
 
 folders = ["c0","c1","c2","c3"]
+# folders = []
 files_to_dict = {}
 bigger_coms_dict = {}
 fold_dict = {}
 outer_index = 0
+life_fucs = []
 for fd in folders:     # 对每一个folder遍历
     outer_index+=1
     fold_array = []
     ftcs = [] # 🌈最多4个同名文件数组
+    sub_life = []
     for fuc in funcs:
         #TODO: 需要替代 这个for loop只是为了找到match func
         oj = findf(fuc,"/data/get_similiarities/use_undefined_identifier/"+fd)
         if (type(oj) != type(None)):
+
             print("oj",oj)
             ftcs.append(oj)
-
     # print("len(ftcs)",len(ftcs))
     for index,ftc in enumerate(ftcs):   #   ftcs = [] # 最多4个同名文件数组已找到
         lines = []
@@ -92,8 +95,10 @@ for fd in folders:     # 对每一个folder遍历
                 # 读取下面2行
                 if num == line_marker + 1:
                     fold_array.append(line)
+                    sub_life.append(ftc)
         ########################### 和if 部分完全一致 ########################
-        
+     
+    life_fucs.append(sub_life)   
     fold_dict[fd] = fold_array
     print(outer_index,"size of fold_arry",len(fold_array))
 
@@ -108,36 +113,27 @@ b_arr = []
 real_count = 0
 
 print("c1长度",len(fold_dict["c1"]))
-print("c0长度",len(fold_dict["c0"]))
-for outer_line in fold_dict["c1"]: 
+print("f_c1",fold_dict["c1"])
+# print("life_fucs",fold_dict["c1"])
+# print("c0长度",len(fold_dict["c0"]))
 
-    max_csim_baseline = 0
-    # print("outer_line",outer_line)
-    i_cont = 0
-    for inner_line in fold_dict["c0"]:
-        real_count += 1
-        print("real_count",real_count)
-        i_cont += 1
-        # print("i_cont",i_cont)
-        # vectorizer = CountVectorizer()
-        # X = vectorizer.fit_transform(headlines)
-        js = cosine_similarity(generate_embedding(outer_line),generate_embedding(inner_line))
-        print("js",js)
-        # js = Jaccard_Similarity(outer_line,inner_line)
-        if js > max_csim_baseline:
-            max_csim_baseline = js
-            print("max_csim_baseline",max_csim_baseline)
-        # print(cosine_similarity(np.array(outer_line), np.array(inner_line)))
-            # print(cosine_similarity(df, df))
- 
-    b_dict[outer_line] = max_csim_baseline
-    b_arr.append(max_csim_baseline)
-    print(max_csim_baseline)        
+sub_counter = 0
+for sub_life in life_fucs: 
+    sub_counter += 1
+    # strss = funs_str(sub_counter)
+    filepath= "/data/get_similiarities/life_fucs_"+str(sub_counter)+".csv"
+    with open(filepath, 'w') as fp:
+        for item in sub_life:
+            # write each item on a new line
+            # fp.write("%s\n" % item)
 
-print("b_arr",b_arr)
+            fp.write("%s\n" % item[item.rindex("/")+1:len(item)])
+        print('Done')
 
-with open(r'/data/get_similiarities/01.txt', 'w') as fp:
-    for item in b_arr:
+
+with open(r'/data/get_similiarities/result3.csv', 'w') as fp:
+    for item in fold_dict["c3"]:
         # write each item on a new line
-        fp.write("%s\n" % item)
+        
+        fp.write("%s" % item)
     print('Done')

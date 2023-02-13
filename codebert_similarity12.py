@@ -23,15 +23,15 @@ def generate_embedding(str):
     tokens_ids=tokenizer.convert_tokens_to_ids(code_tokens)
     context_embeddings=model(torch.tensor(tokens_ids)[None,:])[0]
 
-    # print("context_embeddings",context_embeddings.cpu().detach().numpy())
+    print("context_embeddings",context_embeddings.cpu().detach().numpy())
 
 #  多维张量变成一维张量
 #  https://blog.csdn.net/zouh613/article/details/123866486
     context_embeddings = context_embeddings.reshape(-1)
 
-    # print("一维张量",context_embeddings.cpu().detach().numpy())
-    # print("len()",len(context_embeddings.cpu().detach().numpy()))
-    # print("type(context_embeddings)",type(context_embeddings))
+    print("一维张量",context_embeddings.cpu().detach().numpy())
+    print("len()",len(context_embeddings.cpu().detach().numpy()))
+    print("type(context_embeddings)",type(context_embeddings))
     return [context_embeddings.cpu().detach().numpy()]
 
     # Issue: ValueError: Found array with dim 3. check_pairwise_arrays expected <= 2.
@@ -78,7 +78,7 @@ for fd in folders:     # 对每一个folder遍历
             print("oj",oj)
             ftcs.append(oj)
 
-    # print("len(ftcs)",len(ftcs))
+    print("len(ftcs)",len(ftcs))
     for index,ftc in enumerate(ftcs):   #   ftcs = [] # 最多4个同名文件数组已找到
         lines = []
         print("ftcftc",ftc)
@@ -87,7 +87,7 @@ for fd in folders:     # 对每一个folder遍历
             line_marker = 0 # 打开该文件
             for num, line in enumerate(file, 1):
                 if "error: use of undeclared identifier" in line:
-                    # print('found at line:', num,file)
+                    print('found at line:', num,file)
                     line_marker = num
                 # 读取下面2行
                 if num == line_marker + 1:
@@ -105,28 +105,21 @@ for fd in folders:     # 对每一个folder遍历
 
 b_dict = {}
 b_arr = []
-real_count = 0
-
-print("c1长度",len(fold_dict["c1"]))
-print("c0长度",len(fold_dict["c0"]))
-for outer_line in fold_dict["c1"]: 
+for outer_line in fold_dict["c2"]: 
 
     max_csim_baseline = 0
     # print("outer_line",outer_line)
     i_cont = 0
-    for inner_line in fold_dict["c0"]:
-        real_count += 1
-        print("real_count",real_count)
+    for inner_line in fold_dict["c1"]:
         i_cont += 1
         # print("i_cont",i_cont)
         # vectorizer = CountVectorizer()
         # X = vectorizer.fit_transform(headlines)
         js = cosine_similarity(generate_embedding(outer_line),generate_embedding(inner_line))
-        print("js",js)
+
         # js = Jaccard_Similarity(outer_line,inner_line)
         if js > max_csim_baseline:
             max_csim_baseline = js
-            print("max_csim_baseline",max_csim_baseline)
         # print(cosine_similarity(np.array(outer_line), np.array(inner_line)))
             # print(cosine_similarity(df, df))
  
@@ -134,9 +127,8 @@ for outer_line in fold_dict["c1"]:
     b_arr.append(max_csim_baseline)
     print(max_csim_baseline)        
 
-print("b_arr",b_arr)
-
-with open(r'/data/get_similiarities/01.txt', 'w') as fp:
+# print("b_arr",b_arr)
+with open(r'/data/get_similiarities/12.txt', 'w') as fp:
     for item in b_arr:
         # write each item on a new line
         fp.write("%s\n" % item)
