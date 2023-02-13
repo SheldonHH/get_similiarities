@@ -19,7 +19,7 @@ print(funcs)
 tokenizer = AutoTokenizer.from_pretrained("microsoft/codebert-base")
 model = AutoModel.from_pretrained("microsoft/codebert-base")
 def generate_embedding(str):
-    code_tokens = tokenizer.tokenize(str, padding='max_length')
+    code_tokens = tokenizer.tokenize(str, truncation='longest_first', padding='max_length', max_length=42)
     tokens_ids=tokenizer.convert_tokens_to_ids(code_tokens)
     context_embeddings=model(torch.tensor(tokens_ids)[None,:])[0]
 
@@ -121,7 +121,7 @@ for outer_line in fold_dict["c1"]:
         # print("i_cont",i_cont)
         # vectorizer = CountVectorizer()
         # X = vectorizer.fit_transform(headlines)
-        js = cosine_similarity(generate_embedding(outer_line),generate_embedding(inner_line))
+        js = cosine_similarity(generate_embedding(outer_line), generate_embedding(inner_line))
         print("js",js)
         # js = Jaccard_Similarity(outer_line,inner_line)
         if js > max_csim_baseline:
