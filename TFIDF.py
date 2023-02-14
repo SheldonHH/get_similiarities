@@ -114,36 +114,53 @@ cs_cont = 0
 while cs_cont < 3:
     b_dict = {}
     cs_arr = []
+    index_list = []
+    fun_list = []
+    err_list = []
     real_count = 0
     for outer_line in fold_dict["c"+str(cs_cont+1)]: 
-
         max_csim_baseline = 0
         # print("outer_line",outer_line)
-        i_cont = 0
-        for inner_line in fold_dict["c"+str(cs_cont)]:
+        i_arr = []
+        f_sublist = []
+        e_sublist = []
+        for i_index, inner_line in enumerate(fold_dict["c"+str(cs_cont)]):
             real_count += 1
-            print("real_count",real_count)
-            i_cont += 1
+            print("cs_cont",cs_cont,"i_index",i_index,"real_count",real_count)
             js = cs_tfidf(outer_line,inner_line)[0][1]
             # print("js",js)
             # js = Jaccard_Similarity(outer_line,inner_line)
             if js > max_csim_baseline:
+                i_arr = []
+                i_arr.append(i_index)
+                e_sublist.append(inner_line)
                 max_csim_baseline = js
                 print("max_csim_baseline",max_csim_baseline)
+            elif max_csim_baseline > 0 and js == max_csim_baseline:
+                i_arr.append(i_index)
+                e_sublist.append(inner_line)
             # print(cosine_similarity(np.array(outer_line), np.array(inner_line)))
                 # print(cosine_similarity(df, df))
     
         b_dict[outer_line] = max_csim_baseline
         cs_arr.append(max_csim_baseline)
+        index_list.append(i_arr)
         print(max_csim_baseline)        
 
-    print("cs_arr",cs_arr)
 
-    with open(r'/data/get_similiarities/'+str(cs_cont)+'cs_cont.txt', 'w') as fp:
+    with open(r'/data/get_similiarities/cs_'+str(cs_cont)+'cs_cont.txt', 'w') as fp:
         for item in cs_arr:
             # write each item on a new line
             fp.write("%s\n" % item)
         print('Done')
+
+    with open(r'/data/get_similiarities/arr_'+str(cs_cont)+'i_arr.txt', 'w') as fp:
+        for item in index_list:
+            # write each item on a new line
+            fp.write("%s\n" % item)
+        print('Done')
+
+    cs_cont+=1
 
 
 
