@@ -1,8 +1,8 @@
 
 
 for index in [0,1,2]:
-    if index == 1:
-        break
+    # if index == 1:
+    #     break
     fun_list = []
     err_list = []
     with open("arr_"+str(index)+"i_arr.txt", 'r') as file:
