@@ -86,35 +86,20 @@ for fd in folders:     # 对每一个folder遍历
         print("ftcftc",ftc)
         with open(ftc, 'r') as file:
             # 逐行搜索
-            line_marker = 0 # 打开该文件
+            line_marker = -1 # 打开该文件
             for num, line in enumerate(file, 1):
                 if "error: use of undeclared identifier" in line:
                     # print('found at line:', num,file)
                     line_marker = num
                 # 读取下面2行
-                if num == line_marker + 1:
+                if line_marker > 0 and num == line_marker + 1:
                     fold_array.append(line)
                     sub_life.append(ftc)
         ########################### 和if 部分完全一致 ########################
      
     life_fucs.append(sub_life)   
     fold_dict[fd] = fold_array
-    print(outer_index,"size of fold_arry",len(fold_array))
 
-# print("files_to_dict",files_to_dict)
-# print("fold_dict",fold_dict)
-
-
-
-
-b_dict = {}
-b_arr = []
-real_count = 0
-
-print("c1长度",len(fold_dict["c1"]))
-print("f_c1",fold_dict["c1"])
-# print("life_fucs",fold_dict["c1"])
-# print("c0长度",len(fold_dict["c0"]))
 
 sub_counter = 0
 for sub_life in life_fucs: 
@@ -128,30 +113,3 @@ for sub_life in life_fucs:
 
             fp.write("%s\n" % item[item.rindex("/")+1:len(item)])
         print('Done')
-
-
-with open(r'/data/get_similiarities/result3.csv', 'w') as fp:
-    for item in fold_dict["c3"]:
-        # write each item on a new line
-        
-        fp.write("%s" % item)
-    print('Done')
-
-
-with open('/data/get_similiarities/result0.csv', 'r')  as file:
-    # 逐行搜索
-    line_marker = 0 # 打开该文件
-    max_num_block = 0
-    for num, line in enumerate(file, 1):
-        print("num",num,"line",line)
-        if len(line.split(" ")) > max_num_block:
-            max_num_block = len(line.split(" "))
-            # print("num of block",len(line.split(" ")))
-    print("max_num_block",max_num_block)
-
-
-# max_num_block 
-# r0: 16
-# r1: 23
-# r2: 23
-# r3: 23

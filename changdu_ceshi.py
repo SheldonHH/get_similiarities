@@ -87,7 +87,7 @@ for fd in folders:     # 对每一个folder遍历
         print("ftcftc",ftc)
         with open(ftc, 'r') as file:
             # 逐行搜索
-            line_marker = 0 # 打开该文件
+            line_marker = -1 # 打开该文件
             for num, line in enumerate(file, 1):
                 if "error: use of undeclared identifier" in line:
                     # print('found at line:', num,file)

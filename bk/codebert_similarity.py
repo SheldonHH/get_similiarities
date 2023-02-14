@@ -9,17 +9,17 @@ import torch
 from sklearn.metrics.pairwise import cosine_similarity
 
 ext = ('.txt')
-str = "allocate_time bishop_mobility calc_attackers CheckBadFlow check_piece_square check_legal comp_to_coord comp_to_san develop_node display_board eval extended_in_check f_in_check gen HandlePartner HandlePtell hash_extract_pv init_game is_attacked King losers_eval l_king_mobility l_rook_mobility post_thinking main nk_attacked ProcessHoldings proofnumbercheck proofnumberscan qsearch Queen ResetHandValue reset_board reset_piece_square Rook rook_mobility search setup_attackers setup_epd_line search_root see std_eval stringize_pv suicide_mid_eval SwitchColor SwitchPromoted s_king_mobility s_knight_mobility s_rook_mobility think tree_debug"
-# str = "bishop_mobility calc_attackers"
-# str = "calc_attackers"
-funcs = str.split(" ")
+funcs_str = "allocate_time bishop_mobility calc_attackers CheckBadFlow check_piece_square check_legal comp_to_coord comp_to_san develop_node display_board eval extended_in_check f_in_check gen HandlePartner HandlePtell hash_extract_pv init_game is_attacked King losers_eval l_king_mobility l_rook_mobility post_thinking main nk_attacked ProcessHoldings proofnumbercheck proofnumberscan qsearch Queen ResetHandValue reset_board reset_piece_square Rook rook_mobility search setup_attackers setup_epd_line search_root see std_eval stringize_pv suicide_mid_eval SwitchColor SwitchPromoted s_king_mobility s_knight_mobility s_rook_mobility think tree_debug"
+# funcs_str = "bishop_mobility calc_attackers"
+# funcs_str = "calc_attackers"
+funcs = funcs_str.split(" ")
 print(funcs)
 
 
 tokenizer = AutoTokenizer.from_pretrained("microsoft/codebert-base")
 model = AutoModel.from_pretrained("microsoft/codebert-base")
-def generate_embedding(str):
-    code_tokens = tokenizer.tokenize(str, truncation='longest_first', padding='max_length', max_length=42)
+def generate_embedding(strresult, len_embedd):
+    code_tokens = tokenizer.tokenize(strresult, truncation='longest_first', padding='max_length', max_length=len_embedd)
     tokens_ids=tokenizer.convert_tokens_to_ids(code_tokens)
     context_embeddings=model(torch.tensor(tokens_ids)[None,:])[0]
 
@@ -109,19 +109,25 @@ real_count = 0
 
 print("c1长度",len(fold_dict["c1"]))
 print("c0长度",len(fold_dict["c0"]))
-for outer_line in fold_dict["c1"]: 
+for outer_line in fold_dict["c2"]: 
 
     max_csim_baseline = 0
     # print("outer_line",outer_line)
     i_cont = 0
-    for inner_line in fold_dict["c0"]:
+    for inner_line in fold_dict["c1"]:
         real_count += 1
         print("real_count",real_count)
         i_cont += 1
         # print("i_cont",i_cont)
         # vectorizer = CountVectorizer()
         # X = vectorizer.fit_transform(headlines)
-        js = cosine_similarity(generate_embedding(outer_line), generate_embedding(inner_line))
+        len_of_embedd = 0
+        if len(outer_line.split(" ")) > len(inner_line.split(" ")):
+            len_of_embedd = len(outer_line.split(" "))
+        else:
+            len_of_embedd = len(inner_line.split(" "))
+        print("len_of_embedd",len_of_embedd)
+        js = cosine_similarity(generate_embedding(outer_line,len_of_embedd), generate_embedding(inner_line,len_of_embedd))
         print("js",js)
         # js = Jaccard_Similarity(outer_line,inner_line)
         if js > max_csim_baseline:
@@ -136,7 +142,7 @@ for outer_line in fold_dict["c1"]:
 
 print("b_arr",b_arr)
 
-with open(r'/data/get_similiarities/01.txt', 'w') as fp:
+with open(r'/data/get_similiarities/21.txt', 'w') as fp:
     for item in b_arr:
         # write each item on a new line
         fp.write("%s\n" % item)
