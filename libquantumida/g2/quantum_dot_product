@@ -1,0 +1,42 @@
+gates.c:365:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gates.c:543:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2 warnings generated.
+objcode.c:176:18: warning: passing an object that undergoes default argument promotion to 'va_start' has undefined behavior [-Wvarargs]
+  va_start(args, operation);
+                 ^
+objcode.c:165:35: note: parameter of type 'unsigned char' is declared here
+quantum_objcode_put(unsigned char operation, ...)
+                                  ^
+1 warning generated.
+qureg.c:866:1: error: unknown type name 'complex_float'
+complex_float  quantum_dot_product( quantum_reg *reg1, quantum_reg *reg2) 
+^
+qureg.c:893:1: error: use of undeclared identifier 'complex_float'
+complex_float amplitude; // 0:xmm0_8.8 
+^
+qureg.c:968:10: error: use of undeclared identifier 'complex_float'
+return ( complex_float)__PAIR64__( LODWORD( v16), LODWORD( v15)); 
+         ^
+qureg.c:973:1: error: use of undeclared identifier 'amplitude'
+amplitude = v18->amplitude; 
+^
+qureg.c:974:21: error: use of undeclared identifier 'amplitude'
+v26 = quantum_conj( amplitude).m128i_u64[0]; 
+                    ^
+qureg.c:976:22: error: member reference base type '_Complex float' is not a structure or union
+imag = v27->amplitude.imag; 
+       ~~~~~~~~~~~~~~^~~~~
+qureg.c:977:83: error: member reference base type '_Complex float' is not a structure or union
+v12 = v29 + ( float)( ( float)( *( float *)&v26 * imag) + ( float)( v27->amplitude.real * *( ( float *)&v26 + 1))); 
+                                                                    ~~~~~~~~~~~~~~^~~~~
+qureg.c:978:47: error: member reference base type '_Complex float' is not a structure or union
+v14 = v14 + ( float)( ( float)( v27->amplitude.real * *( float *)&v26) - ( float)( *( ( float *)&v26 + 1) * imag)); 
+                                ~~~~~~~~~~~~~~^~~~~
+qureg.c:987:10: error: use of undeclared identifier 'complex_float'
+return ( complex_float)__PAIR64__( LODWORD( v16), LODWORD( v15)); 
+         ^
+9 errors generated.

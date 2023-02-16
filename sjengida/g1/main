@@ -1,0 +1,44 @@
+/data/output_dir/patch/sjeng/ida/gcc/O1/sjeng-gcc-O1/main/src/sjeng.c:689:8: error: too many arguments to function call, expected 0, have 1
+think( &v59); 
+~~~~~  ^~~~
+/data/output_dir/patch/sjeng/ida/gcc/O1/sjeng-gcc-O1/main/src/protos.h:63:1: note: 'think' declared here
+move_s think (void);
+^
+/data/output_dir/patch/sjeng/ida/gcc/O1/sjeng-gcc-O1/main/src/sjeng.c:743:16: error: passing 'char [256]' to parameter of incompatible type 'move_s'
+comp_to_coord( output, comp_move); 
+               ^~~~~~
+/data/output_dir/patch/sjeng/ida/gcc/O1/sjeng-gcc-O1/main/src/protos.h:15:28: note: passing argument to parameter 'move' here
+void comp_to_coord (move_s move, char str[]);
+                           ^
+/data/output_dir/patch/sjeng/ida/gcc/O1/sjeng-gcc-O1/main/src/sjeng.c:751:22: error: used type 'move_x' where arithmetic or pointer type is required
+game_history_x[v7] = ( move_x)_mm_load_si128( ( const __m128i *)path_x); 
+                     ^        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/sjeng/ida/gcc/O1/sjeng-gcc-O1/main/src/sjeng.c:906:8: error: too many arguments to function call, expected 0, have 1
+think( &v59); 
+~~~~~  ^~~~
+/data/output_dir/patch/sjeng/ida/gcc/O1/sjeng-gcc-O1/main/src/protos.h:63:1: note: 'think' declared here
+move_s think (void);
+^
+/data/output_dir/patch/sjeng/ida/gcc/O1/sjeng-gcc-O1/main/src/sjeng.c:963:43: error: use of undeclared identifier 'off_41CD07'
+else if ( !strcmp( input, ( const char *)&off_41CD07) ) 
+                                          ^
+/data/output_dir/patch/sjeng/ida/gcc/O1/sjeng-gcc-O1/main/src/sjeng.c:1170:8: error: too many arguments to function call, expected 0, have 1
+think( &v59); 
+~~~~~  ^~~~
+/data/output_dir/patch/sjeng/ida/gcc/O1/sjeng-gcc-O1/main/src/protos.h:63:1: note: 'think' declared here
+move_s think (void);
+^
+/data/output_dir/patch/sjeng/ida/gcc/O1/sjeng-gcc-O1/main/src/sjeng.c:1181:13: error: used type 'move_x' where arithmetic or pointer type is required
+path_x[0] = ( move_x)_mm_loadu_si128( ( const __m128i *)&game_history_x[v47]); 
+            ^        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/sjeng/ida/gcc/O1/sjeng-gcc-O1/main/src/sjeng.c:1194:13: error: used type 'move_x' where arithmetic or pointer type is required
+path_x[0] = ( move_x)_mm_loadu_si128( ( const __m128i *)&game_history_x[v45]); 
+            ^        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/sjeng/ida/gcc/O1/sjeng-gcc-O1/main/src/sjeng.c:1197:13: error: used type 'move_x' where arithmetic or pointer type is required
+path_x[0] = ( move_x)_mm_loadu_si128( ( const __m128i *)&game_history_x[--move_number]); 
+            ^        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/sjeng/ida/gcc/O1/sjeng-gcc-O1/main/src/sjeng.c:1381:23: error: used type 'move_x' where arithmetic or pointer type is required
+game_history_x[v13] = ( move_x)_mm_load_si128( ( const __m128i *)path_x); 
+                      ^        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+10 errors generated.
+make: *** [/data/output_dir/patch/sjeng/ida/gcc/O1/sjeng-gcc-O1/main/src/obj/sjeng.o] Error 1

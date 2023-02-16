@@ -1,0 +1,162 @@
+gates.c:763:1: error: use of undeclared identifier 'complex_float'
+complex_float *t; // rbx 
+^
+gates.c:763:16: error: use of undeclared identifier 't'
+complex_float *t; // rbx 
+               ^
+gates.c:884:1: error: use of undeclared identifier 't'
+t = m.t; 
+^
+gates.c:967:7: error: use of undeclared identifier 't'
+v28 = t[2].imag != 0.0 || t[2].real != 0.0; 
+      ^
+gates.c:967:27: error: use of undeclared identifier 't'
+v28 = t[2].imag != 0.0 || t[2].real != 0.0; 
+                          ^
+gates.c:968:6: error: use of undeclared identifier 't'
+if ( t[1].imag == 0.0 && t[1].real == 0.0 ) 
+     ^
+gates.c:968:26: error: use of undeclared identifier 't'
+if ( t[1].imag == 0.0 && t[1].real == 0.0 ) 
+                         ^
+gates.c:1007:18: error: member reference base type '_Complex float' is not a structure or union
+v34[-1].amplitude.real = 0.0; 
+~~~~~~~~~~~~~~~~~^~~~~
+gates.c:1008:18: error: member reference base type '_Complex float' is not a structure or union
+v34[-1].amplitude.imag = 0.0; 
+~~~~~~~~~~~~~~~~~^~~~~
+gates.c:1025:28: warning: '&' within '|' [-Wbitwise-op-parentheses]
+v104 = ( 1LL << v4->width) & 1 | ( ( unsigned __int64)( 1LL << v4->width) >> 1); 
+       ~~~~~~~~~~~~~~~~~~~~^~~ ~
+gates.c:1025:28: note: place parentheses around the '&' expression to silence this warning
+v104 = ( 1LL << v4->width) & 1 | ( ( unsigned __int64)( 1LL << v4->width) >> 1); 
+                           ^
+       (                      )
+gates.c:1064:22: error: member reference base type '_Complex float' is not a structure or union
+real = v46->amplitude.real; 
+       ~~~~~~~~~~~~~~^~~~~
+gates.c:1065:22: error: member reference base type '_Complex float' is not a structure or union
+imag = v46->amplitude.imag; 
+       ~~~~~~~~~~~~~~^~~~~
+gates.c:1084:22: error: member reference base type '_Complex float' is not a structure or union
+real = v46->amplitude.real; 
+       ~~~~~~~~~~~~~~^~~~~
+gates.c:1085:22: error: member reference base type '_Complex float' is not a structure or union
+imag = v46->amplitude.imag; 
+       ~~~~~~~~~~~~~~^~~~~
+gates.c:1099:7: error: use of undeclared identifier 't'
+v57 = t[2].real; 
+      ^
+gates.c:1100:7: error: use of undeclared identifier 't'
+v58 = t[2].imag; 
+      ^
+gates.c:1103:7: error: use of undeclared identifier 't'
+v61 = t[3].real; 
+      ^
+gates.c:1104:7: error: use of undeclared identifier 't'
+v62 = t[3].imag; 
+      ^
+gates.c:1105:15: error: member reference base type '_Complex float' is not a structure or union
+v46->amplitude.real = ( float)( ( float)( real * v61) - ( float)( imag * v62)) + v59; 
+~~~~~~~~~~~~~~^~~~~
+gates.c:1106:15: error: member reference base type '_Complex float' is not a structure or union
+v46->amplitude.imag = ( float)( ( float)( imag * v61) + ( float)( real * v62)) + v60; 
+~~~~~~~~~~~~~~^~~~~
+gates.c:1109:7: error: use of undeclared identifier 't'
+v95 = t[1].real; 
+      ^
+gates.c:1111:7: error: use of undeclared identifier 't'
+v97 = t[1].imag; 
+      ^
+gates.c:1124:15: error: member reference base type '_Complex float' is not a structure or union
+v98->amplitude.real = v99; 
+~~~~~~~~~~~~~~^~~~~
+gates.c:1125:15: error: member reference base type '_Complex float' is not a structure or union
+v98->amplitude.imag = v100; 
+~~~~~~~~~~~~~~^~~~~
+gates.c:1132:7: error: use of undeclared identifier 't'
+v63 = t->imag; 
+      ^
+gates.c:1133:23: error: use of undeclared identifier 't'
+v64 = ( float)( v55 * t->real) - ( float)( v54 * v63); 
+                      ^
+gates.c:1134:23: error: use of undeclared identifier 't'
+v65 = ( float)( v54 * t->real) + ( float)( v55 * v63); 
+                      ^
+gates.c:1135:7: error: use of undeclared identifier 't'
+v66 = t[1].real; 
+      ^
+gates.c:1136:7: error: use of undeclared identifier 't'
+v67 = t[1].imag; 
+      ^
+gates.c:1152:7: error: use of undeclared identifier 't'
+v83 = t->imag; 
+      ^
+gates.c:1153:17: error: use of undeclared identifier 't'
+v84 = ( float)( t->real * real) - ( float)( imag * v83); 
+                ^
+gates.c:1154:17: error: use of undeclared identifier 't'
+v85 = ( float)( t->real * imag) + ( float)( real * v83); 
+                ^
+gates.c:1155:7: error: use of undeclared identifier 't'
+v86 = t[1].real; 
+      ^
+gates.c:1156:7: error: use of undeclared identifier 't'
+v87 = t[1].imag; 
+      ^
+gates.c:1157:15: error: member reference base type '_Complex float' is not a structure or union
+v46->amplitude.real = ( float)( ( float)( v55 * v86) - ( float)( v54 * v87)) + v84; 
+~~~~~~~~~~~~~~^~~~~
+gates.c:1158:15: error: member reference base type '_Complex float' is not a structure or union
+v46->amplitude.imag = ( float)( ( float)( v54 * v86) + ( float)( v55 * v87)) + v85; 
+~~~~~~~~~~~~~~^~~~~
+gates.c:1161:7: error: use of undeclared identifier 't'
+v88 = t[2].real; 
+      ^
+gates.c:1162:7: error: use of undeclared identifier 't'
+v89 = t[2].imag; 
+      ^
+gates.c:1165:7: error: use of undeclared identifier 't'
+v92 = t[3].real; 
+      ^
+gates.c:1166:7: error: use of undeclared identifier 't'
+v93 = t[3].imag; 
+      ^
+gates.c:1173:8: error: use of undeclared identifier 't'
+v101 = t[2].imag; 
+       ^
+gates.c:1175:6: error: use of undeclared identifier 't'
+if ( t[1].real == 0.0 && t[1].imag == 0.0 ) 
+     ^
+gates.c:1175:26: error: use of undeclared identifier 't'
+if ( t[1].real == 0.0 && t[1].imag == 0.0 ) 
+                         ^
+gates.c:1177:8: error: use of undeclared identifier 't'
+v103 = t[2].real; 
+       ^
+gates.c:1192:8: error: use of undeclared identifier 't'
+v103 = t[2].real; 
+       ^
+gates.c:1215:21: error: member reference base type '_Complex float' is not a structure or union
+v75 = v74->amplitude.imag; 
+      ~~~~~~~~~~~~~~^~~~~
+gates.c:1216:21: error: member reference base type '_Complex float' is not a structure or union
+v76 = v74->amplitude.real; 
+      ~~~~~~~~~~~~~~^~~~~
+gates.c:1239:15: error: member reference base type '_Complex float' is not a structure or union
+v79->amplitude.real = v76; 
+~~~~~~~~~~~~~~^~~~~
+gates.c:1240:15: error: member reference base type '_Complex float' is not a structure or union
+v79->amplitude.imag = v75; 
+~~~~~~~~~~~~~~^~~~~
+gates.c:1332:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2 warnings and 48 errors generated.
+objcode.c:176:18: warning: passing an object that undergoes default argument promotion to 'va_start' has undefined behavior [-Wvarargs]
+  va_start(args, operation);
+                 ^
+objcode.c:165:35: note: parameter of type 'unsigned char' is declared here
+quantum_objcode_put(unsigned char operation, ...)
+                                  ^
+1 warning generated.

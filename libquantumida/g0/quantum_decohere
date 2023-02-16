@@ -1,0 +1,36 @@
+decoherence.c:543:1: error: use of undeclared identifier 'complex_float'
+complex_float a; // [rsp+10h] [rbp-50h] 
+^
+decoherence.c:589:1: error: use of undeclared identifier 'a'
+a = quantum_cexp( angle); 
+^
+decoherence.c:591:17: warning: implicit declaration of function '_mulsc3' is invalid in C99 [-Wimplicit-function-declaration]
+v6->amplitude = _mulsc3( a.imag, v6->amplitude.real, v6->amplitude.imag, a.real); 
+                ^
+decoherence.c:591:47: error: member reference base type '_Complex float' is not a structure or union
+v6->amplitude = _mulsc3( a.imag, v6->amplitude.real, v6->amplitude.imag, a.real); 
+                                 ~~~~~~~~~~~~~^~~~~
+decoherence.c:591:67: error: member reference base type '_Complex float' is not a structure or union
+v6->amplitude = _mulsc3( a.imag, v6->amplitude.real, v6->amplitude.imag, a.real); 
+                                                     ~~~~~~~~~~~~~^~~~~
+decoherence.c:591:26: error: use of undeclared identifier 'a'
+v6->amplitude = _mulsc3( a.imag, v6->amplitude.real, v6->amplitude.imag, a.real); 
+                         ^
+decoherence.c:591:74: error: use of undeclared identifier 'a'
+v6->amplitude = _mulsc3( a.imag, v6->amplitude.real, v6->amplitude.imag, a.real); 
+                                                                         ^
+1 warning and 6 errors generated.
+gates.c:365:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gates.c:543:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2 warnings generated.
+objcode.c:176:18: warning: passing an object that undergoes default argument promotion to 'va_start' has undefined behavior [-Wvarargs]
+  va_start(args, operation);
+                 ^
+objcode.c:165:35: note: parameter of type 'unsigned char' is declared here
+quantum_objcode_put(unsigned char operation, ...)
+                                  ^
+1 warning generated.

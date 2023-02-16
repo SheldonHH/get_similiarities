@@ -1,0 +1,39 @@
+gates.c:365:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gates.c:543:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2 warnings generated.
+objcode.c:176:18: warning: passing an object that undergoes default argument promotion to 'va_start' has undefined behavior [-Wvarargs]
+  va_start(args, operation);
+                 ^
+objcode.c:165:35: note: parameter of type 'unsigned char' is declared here
+quantum_objcode_put(unsigned char operation, ...)
+                                  ^
+1 warning generated.
+qec.c:620:16: error: use of undeclared identifier 'counter_1'
+result = inc + counter_1; 
+               ^
+qec.c:621:1: error: use of undeclared identifier 'counter_1'
+counter_1 += inc; 
+^
+qec.c:624:10: error: use of undeclared identifier 'counter_1'
+result = counter_1; 
+         ^
+qec.c:632:1: error: use of undeclared identifier 'counter_1'
+counter_1 = 0; 
+^
+qec.c:637:1: error: use of undeclared identifier 'freq_0'
+freq_0 = frequency; 
+^
+qec.c:641:1: error: use of undeclared identifier 'counter_1'
+counter_1 = 0; 
+^
+qec.c:644:8: error: use of undeclared identifier 'counter_1'
+return counter_1; 
+       ^
+qec.c:647:16: error: use of undeclared identifier 'freq_0'
+if ( result >= freq_0 ) 
+               ^
+8 errors generated.

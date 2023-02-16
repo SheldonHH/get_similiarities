@@ -1,0 +1,40 @@
+gates.c:365:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gates.c:543:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2 warnings generated.
+objcode.c:176:18: warning: passing an object that undergoes default argument promotion to 'va_start' has undefined behavior [-Wvarargs]
+  va_start(args, operation);
+                 ^
+objcode.c:165:35: note: parameter of type 'unsigned char' is declared here
+quantum_objcode_put(unsigned char operation, ...)
+                                  ^
+1 warning generated.
+qec.c:738:8: error: use of undeclared identifier 'quantum_qec_counter_counter'
+if ( ++quantum_qec_counter_counter >= quantum_qec_counter_freq ) 
+       ^
+qec.c:738:39: error: use of undeclared identifier 'quantum_qec_counter_freq'; did you mean 'quantum_qec_counter'?
+if ( ++quantum_qec_counter_counter >= quantum_qec_counter_freq ) 
+                                      ^~~~~~~~~~~~~~~~~~~~~~~~
+                                      quantum_qec_counter
+qec.c:152:1: note: 'quantum_qec_counter' declared here
+quantum_qec_counter(int inc, int frequency, quantum_reg *reg)
+^
+qec.c:740:1: error: use of undeclared identifier 'quantum_qec_counter_counter'
+quantum_qec_counter_counter = 0; 
+^
+qec.c:741:44: error: too many arguments to function call, expected 3, have 5
+quantum_qec_decode( ( int)reg, width, reg, v4, v5); 
+~~~~~~~~~~~~~~~~~~                         ^~~~~~
+qec.c:105:1: note: 'quantum_qec_decode' declared here
+void
+^
+qec.c:742:44: error: too many arguments to function call, expected 3, have 5
+quantum_qec_encode( ( int)reg, width, reg, v4, v5); 
+~~~~~~~~~~~~~~~~~~                         ^~~~~~
+qec.c:67:1: note: 'quantum_qec_encode' declared here
+void
+^
+5 errors generated.

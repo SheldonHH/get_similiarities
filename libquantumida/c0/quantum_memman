@@ -1,0 +1,68 @@
+gates.c:365:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gates.c:543:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2 warnings generated.
+matrix.c:495:19: error: conflicting types for 'quantum_memman'
+unsigned __int64  quantum_memman( __int64 change) 
+                  ^
+./matrix.h:42:22: note: previous declaration is here
+extern unsigned long quantum_memman(long change);
+                     ^
+matrix.c:497:1: error: use of undeclared identifier 'quantum_memman_mem'; did you mean 'quantum_memman'?
+quantum_memman_mem += change; 
+^~~~~~~~~~~~~~~~~~
+quantum_memman
+./matrix.h:42:22: note: 'quantum_memman' declared here
+extern unsigned long quantum_memman(long change);
+                     ^
+matrix.c:497:20: error: invalid operands to binary expression ('unsigned long (long)' and 'long long')
+quantum_memman_mem += change; 
+~~~~~~~~~~~~~~~~~~ ^  ~~~~~~
+matrix.c:498:6: error: use of undeclared identifier 'quantum_memman_mem'; did you mean 'quantum_memman'?
+if ( quantum_memman_mem > quantum_memman_max ) 
+     ^~~~~~~~~~~~~~~~~~
+     quantum_memman
+./matrix.h:42:22: note: 'quantum_memman' declared here
+extern unsigned long quantum_memman(long change);
+                     ^
+matrix.c:498:27: error: use of undeclared identifier 'quantum_memman_max'; did you mean 'quantum_memman'?
+if ( quantum_memman_mem > quantum_memman_max ) 
+                          ^~~~~~~~~~~~~~~~~~
+                          quantum_memman
+./matrix.h:42:22: note: 'quantum_memman' declared here
+extern unsigned long quantum_memman(long change);
+                     ^
+matrix.c:498:25: warning: self-comparison always evaluates to false [-Wtautological-compare]
+if ( quantum_memman_mem > quantum_memman_max ) 
+                        ^
+matrix.c:498:25: warning: ordered comparison of function pointers ('unsigned long (*)(long)' and 'unsigned long (*)(long)') [-Wordered-compare-function-pointers]
+if ( quantum_memman_mem > quantum_memman_max ) 
+     ~~~~~~~~~~~~~~~~~~ ^ ~~~~~~~~~~~~~~~~~~
+matrix.c:499:1: error: use of undeclared identifier 'quantum_memman_max'
+quantum_memman_max = quantum_memman_mem; 
+^
+matrix.c:499:22: error: use of undeclared identifier 'quantum_memman_mem'; did you mean 'quantum_memman'?
+quantum_memman_max = quantum_memman_mem; 
+                     ^~~~~~~~~~~~~~~~~~
+                     quantum_memman
+./matrix.h:42:22: note: 'quantum_memman' declared here
+extern unsigned long quantum_memman(long change);
+                     ^
+matrix.c:500:8: error: use of undeclared identifier 'quantum_memman_mem'; did you mean 'quantum_memman'?
+return quantum_memman_mem; 
+       ^~~~~~~~~~~~~~~~~~
+       quantum_memman
+./matrix.h:42:22: note: 'quantum_memman' declared here
+extern unsigned long quantum_memman(long change);
+                     ^
+2 warnings and 8 errors generated.
+objcode.c:176:18: warning: passing an object that undergoes default argument promotion to 'va_start' has undefined behavior [-Wvarargs]
+  va_start(args, operation);
+                 ^
+objcode.c:165:35: note: parameter of type 'unsigned char' is declared here
+quantum_objcode_put(unsigned char operation, ...)
+                                  ^
+1 warning generated.

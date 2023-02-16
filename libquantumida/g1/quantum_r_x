@@ -1,0 +1,56 @@
+gates.c:365:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gates.c:543:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gates.c:1152:1: error: use of undeclared identifier 'complex_float'
+complex_float *t; // rax 
+^
+gates.c:1152:16: error: use of undeclared identifier 't'
+complex_float *t; // rax 
+               ^
+gates.c:1154:1: error: use of undeclared identifier 'complex_float'
+complex_float *v9; // rax 
+^
+gates.c:1154:16: error: use of undeclared identifier 'v9'
+complex_float *v9; // rax 
+               ^
+gates.c:1163:1: warning: implicit declaration of function 'sincos' is invalid in C99 [-Wimplicit-function-declaration]
+sincos( ( float)( a2 * 0.5), &sinx, &cosx); 
+^
+gates.c:1166:1: error: use of undeclared identifier 't'
+t = m.t; 
+^
+gates.c:1167:4: error: member reference base type '_Complex float' is not a structure or union
+m.t->real = v6; 
+~~~^ ~~~~
+gates.c:1168:1: error: use of undeclared identifier 't'
+t->imag = 0.0; 
+^
+gates.c:1172:1: error: use of undeclared identifier 'v9'
+v9 = m.t; 
+^
+gates.c:1173:7: error: member reference base type '_Complex float' is not a structure or union
+m.t[1].real = v8; 
+~~~~~~^~~~~
+gates.c:1174:1: error: use of undeclared identifier 'v9'
+v9[1].imag = *( float *)&v5; 
+^
+gates.c:1176:7: error: member reference base type '_Complex float' is not a structure or union
+m.t[2].real = v8; 
+~~~~~~^~~~~
+gates.c:1177:9: error: member reference base type '_Complex float' is not a structure or union
+v13.t[2].imag = *( float *)&v5; 
+~~~~~~~~^~~~~
+gates.c:1178:14: error: use of undeclared identifier 'complex_float'
+v13.t[3] = ( complex_float)LODWORD( v6); 
+             ^
+3 warnings and 13 errors generated.
+objcode.c:176:18: warning: passing an object that undergoes default argument promotion to 'va_start' has undefined behavior [-Wvarargs]
+  va_start(args, operation);
+                 ^
+objcode.c:165:35: note: parameter of type 'unsigned char' is declared here
+quantum_objcode_put(unsigned char operation, ...)
+                                  ^
+1 warning generated.

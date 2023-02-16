@@ -1,0 +1,55 @@
+implicit.c:821:10: error: conflicting types for 'suspend_impl'
+__int64  suspend_impl( network_t *net, cost_t threshold, __int64 all) 
+         ^
+./implicit.h:31:13: note: previous declaration is here
+extern long suspend_impl _PROTO_(( network_t *, cost_t, long ));
+            ^
+implicit.c:857:17: error: expected expression
+v7 = *( _OWORD *)&v5->cost; 
+                ^
+implicit.c:857:9: error: use of undeclared identifier '_OWORD'
+v7 = *( _OWORD *)&v5->cost; 
+        ^
+implicit.c:858:17: error: expected expression
+v8 = *( _OWORD *)&v5->head; 
+                ^
+implicit.c:858:9: error: use of undeclared identifier '_OWORD'
+v8 = *( _OWORD *)&v5->head; 
+        ^
+implicit.c:859:17: error: expected expression
+v9 = *( _OWORD *)&v5->nextout; 
+                ^
+implicit.c:859:9: error: use of undeclared identifier '_OWORD'
+v9 = *( _OWORD *)&v5->nextout; 
+        ^
+implicit.c:860:12: error: expected expression
+*( _OWORD *)&v6->flow = *( _OWORD *)&v5->flow; 
+           ^
+implicit.c:860:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&v6->flow = *( _OWORD *)&v5->flow; 
+   ^
+implicit.c:860:36: error: expected expression
+*( _OWORD *)&v6->flow = *( _OWORD *)&v5->flow; 
+                                   ^
+implicit.c:860:28: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&v6->flow = *( _OWORD *)&v5->flow; 
+                           ^
+implicit.c:861:12: error: expected expression
+*( _OWORD *)&v6->nextout = v9; 
+           ^
+implicit.c:861:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&v6->nextout = v9; 
+   ^
+implicit.c:862:12: error: expected expression
+*( _OWORD *)&v6->head = v8; 
+           ^
+implicit.c:862:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&v6->head = v8; 
+   ^
+implicit.c:863:12: error: expected expression
+*( _OWORD *)&v6->cost = v7; 
+           ^
+implicit.c:863:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&v6->cost = v7; 
+   ^
+17 errors generated.

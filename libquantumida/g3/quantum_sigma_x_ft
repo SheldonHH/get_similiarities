@@ -1,0 +1,36 @@
+gates.c:365:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gates.c:543:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2 warnings generated.
+objcode.c:176:18: warning: passing an object that undergoes default argument promotion to 'va_start' has undefined behavior [-Wvarargs]
+  va_start(args, operation);
+                 ^
+objcode.c:165:35: note: parameter of type 'unsigned char' is declared here
+quantum_objcode_put(unsigned char operation, ...)
+                                  ^
+1 warning generated.
+qec.c:649:31: error: too many arguments to function call, expected single argument 'lambda', have 2 arguments
+quantum_set_decoherence( 0.0, v2); 
+~~~~~~~~~~~~~~~~~~~~~~~       ^~
+./decoherence.h:30:1: note: 'quantum_set_decoherence' declared here
+extern void quantum_set_decoherence(float lambda);
+^
+qec.c:652:34: error: too many arguments to function call, expected single argument 'lambda', have 2 arguments
+quantum_set_decoherence( lambda, lambda); 
+~~~~~~~~~~~~~~~~~~~~~~~          ^~~~~~
+./decoherence.h:30:1: note: 'quantum_set_decoherence' declared here
+extern void quantum_set_decoherence(float lambda);
+^
+qec.c:654:8: error: use of undeclared identifier 'counter_1'
+if ( ++counter_1 >= freq_0 ) 
+       ^
+qec.c:654:21: error: use of undeclared identifier 'freq_0'
+if ( ++counter_1 >= freq_0 ) 
+                    ^
+qec.c:656:1: error: use of undeclared identifier 'counter_1'
+counter_1 = 0; 
+^
+5 errors generated.

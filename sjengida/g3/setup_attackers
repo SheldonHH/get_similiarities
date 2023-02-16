@@ -1,0 +1,23 @@
+/data/output_dir/patch/sjeng/ida/gcc/O3/sjeng-gcc-O3/setup_attackers/src/see.c:547:21: error: use of undeclared identifier 'rook_o_2'
+v3 = ( const char *)rook_o_2; 
+                    ^
+/data/output_dir/patch/sjeng/ida/gcc/O3/sjeng-gcc-O3/setup_attackers/src/see.c:572:103: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+see_attackers[1][v33] = ( see_data)_mm_unpacklo_epi32( _mm_cvtsi32_si128( v6), _mm_cvtsi32_si128( v5)).m128i_u64[0]; 
+                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+/data/output_dir/patch/sjeng/ida/gcc/O3/sjeng-gcc-O3/setup_attackers/src/see.c:625:103: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+see_attackers[0][v32] = ( see_data)_mm_unpacklo_epi32( _mm_cvtsi32_si128( v6), _mm_cvtsi32_si128( v5)).m128i_u64[0]; 
+                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+/data/output_dir/patch/sjeng/ida/gcc/O3/sjeng-gcc-O3/setup_attackers/src/see.c:646:6: error: use of undeclared identifier 'bishop_o_1'
+v9 = bishop_o_1[v8]; 
+     ^
+/data/output_dir/patch/sjeng/ida/gcc/O3/sjeng-gcc-O3/setup_attackers/src/see.c:689:105: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+see_attackers[0][v30] = ( see_data)_mm_unpacklo_epi32( _mm_cvtsi32_si128( v11), _mm_cvtsi32_si128( v10)).m128i_u64[0]; 
+                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+/data/output_dir/patch/sjeng/ida/gcc/O3/sjeng-gcc-O3/setup_attackers/src/see.c:743:105: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+see_attackers[1][v31] = ( see_data)_mm_unpacklo_epi32( _mm_cvtsi32_si128( v11), _mm_cvtsi32_si128( v10)).m128i_u64[0]; 
+                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+/data/output_dir/patch/sjeng/ida/gcc/O3/sjeng-gcc-O3/setup_attackers/src/see.c:873:100: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+*( _QWORD *)see_num_attackers = _mm_unpacklo_epi32( _mm_cvtsi32_si128( v1), _mm_cvtsi32_si128( v2)).m128i_u64[0]; 
+                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+7 errors generated.
+make: *** [/data/output_dir/patch/sjeng/ida/gcc/O3/sjeng-gcc-O3/setup_attackers/src/obj/see.o] Error 1

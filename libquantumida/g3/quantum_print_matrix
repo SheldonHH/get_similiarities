@@ -1,0 +1,36 @@
+gates.c:365:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gates.c:543:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2 warnings generated.
+matrix.c:556:1: error: use of undeclared identifier 'complex_float'
+complex_float *v3; // r14 
+^
+matrix.c:556:16: error: use of undeclared identifier 'v3'
+complex_float *v3; // r14 
+               ^
+matrix.c:568:1: error: use of undeclared identifier 'v3'
+v3 = &m.t[v1]; 
+^
+matrix.c:571:8: error: use of undeclared identifier 'v3'
+real = v3->real; 
+       ^
+matrix.c:572:8: error: use of undeclared identifier 'v3'
+imag = v3->imag; 
+       ^
+matrix.c:573:3: error: use of undeclared identifier 'v3'
+++v3; 
+  ^
+matrix.c:576:75: error: use of undeclared identifier 'v3'
+while ( &m.t[v1 + 1 + ( unsigned __int64)( unsigned int)( m.cols - 1)] != v3 ); 
+                                                                          ^
+7 errors generated.
+objcode.c:176:18: warning: passing an object that undergoes default argument promotion to 'va_start' has undefined behavior [-Wvarargs]
+  va_start(args, operation);
+                 ^
+objcode.c:165:35: note: parameter of type 'unsigned char' is declared here
+quantum_objcode_put(unsigned char operation, ...)
+                                  ^
+1 warning generated.

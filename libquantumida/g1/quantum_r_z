@@ -1,0 +1,72 @@
+gates.c:365:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gates.c:543:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gates.c:1192:1: error: use of undeclared identifier 'SFtype'
+SFtype real; // xmm4_4 
+^
+gates.c:1203:34: error: too many arguments to function call, expected single argument 'phi', have 2 arguments
+gammaa = quantum_cexp( a2 * 0.5, gamma).m128i_u64[0]; 
+         ~~~~~~~~~~~~            ^~~~~
+./lq_complex.h:33:1: note: 'quantum_cexp' declared here
+extern COMPLEX_FLOAT quantum_cexp(float phi);
+^
+gates.c:1212:1: error: use of undeclared identifier 'real'
+real = v8->amplitude.real; 
+^
+gates.c:1212:21: error: member reference base type '_Complex float' is not a structure or union
+real = v8->amplitude.real; 
+       ~~~~~~~~~~~~~^~~~~
+gates.c:1213:21: error: member reference base type '_Complex float' is not a structure or union
+imag = v8->amplitude.imag; 
+       ~~~~~~~~~~~~~^~~~~
+gates.c:1214:50: error: member reference base type '_Complex float' is not a structure or union
+v6 = ( float)( *( float *)&gammaa * v8->amplitude.real) - ( float)( *( ( float *)&gammaa + 1) * imag); 
+                                    ~~~~~~~~~~~~~^~~~~
+gates.c:1215:57: error: member reference base type '_Complex float' is not a structure or union
+v7 = ( float)( *( ( float *)&gammaa + 1) * v8->amplitude.real) + ( float)( *( float *)&gammaa * imag); 
+                                           ~~~~~~~~~~~~~^~~~~
+gates.c:1219:7: warning: implicit declaration of function '_divsc3' is invalid in C99 [-Wimplicit-function-declaration]
+v11 = _divsc3( v8->amplitude.real, v8->amplitude.imag, *( SFtype *)&gammaa, *( ( SFtype *)&gammaa + 1), real).m128i_u64[0]; 
+      ^
+gates.c:1219:29: error: member reference base type '_Complex float' is not a structure or union
+v11 = _divsc3( v8->amplitude.real, v8->amplitude.imag, *( SFtype *)&gammaa, *( ( SFtype *)&gammaa + 1), real).m128i_u64[0]; 
+               ~~~~~~~~~~~~~^~~~~
+gates.c:1219:49: error: member reference base type '_Complex float' is not a structure or union
+v11 = _divsc3( v8->amplitude.real, v8->amplitude.imag, *( SFtype *)&gammaa, *( ( SFtype *)&gammaa + 1), real).m128i_u64[0]; 
+                                   ~~~~~~~~~~~~~^~~~~
+gates.c:1219:67: error: expected expression
+v11 = _divsc3( v8->amplitude.real, v8->amplitude.imag, *( SFtype *)&gammaa, *( ( SFtype *)&gammaa + 1), real).m128i_u64[0]; 
+                                                                  ^
+gates.c:1219:59: error: use of undeclared identifier 'SFtype'
+v11 = _divsc3( v8->amplitude.real, v8->amplitude.imag, *( SFtype *)&gammaa, *( ( SFtype *)&gammaa + 1), real).m128i_u64[0]; 
+                                                          ^
+gates.c:1219:90: error: expected expression
+v11 = _divsc3( v8->amplitude.real, v8->amplitude.imag, *( SFtype *)&gammaa, *( ( SFtype *)&gammaa + 1), real).m128i_u64[0]; 
+                                                                                         ^
+gates.c:1219:82: error: use of undeclared identifier 'SFtype'
+v11 = _divsc3( v8->amplitude.real, v8->amplitude.imag, *( SFtype *)&gammaa, *( ( SFtype *)&gammaa + 1), real).m128i_u64[0]; 
+                                                                                 ^
+gates.c:1219:105: error: use of undeclared identifier 'real'; did you mean 'creal'?
+v11 = _divsc3( v8->amplitude.real, v8->amplitude.imag, *( SFtype *)&gammaa, *( ( SFtype *)&gammaa + 1), real).m128i_u64[0]; 
+                                                                                                        ^~~~
+                                                                                                        creal
+/usr/include/x86_64-linux-gnu/bits/cmathcalls.h:130:23: note: 'creal' declared here
+__MATHDECL (_Mdouble_,creal, (_Mdouble_complex_ __z));
+                      ^
+gates.c:1223:14: error: member reference base type '_Complex float' is not a structure or union
+v8->amplitude.real = v6; 
+~~~~~~~~~~~~~^~~~~
+gates.c:1224:14: error: member reference base type '_Complex float' is not a structure or union
+v8->amplitude.imag = v7; 
+~~~~~~~~~~~~~^~~~~
+3 warnings and 16 errors generated.
+objcode.c:176:18: warning: passing an object that undergoes default argument promotion to 'va_start' has undefined behavior [-Wvarargs]
+  va_start(args, operation);
+                 ^
+objcode.c:165:35: note: parameter of type 'unsigned char' is declared here
+quantum_objcode_put(unsigned char operation, ...)
+                                  ^
+1 warning generated.

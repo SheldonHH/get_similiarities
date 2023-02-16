@@ -1,0 +1,44 @@
+/data/output_dir/patch/sjeng/ida/gcc/O2/sjeng-gcc-O2/search_root/src/search.c:1561:10: error: conflicting types for 'search_root'
+move_s * search_root( move_s *retstr, int originalalpha, int originalbeta, int depth) 
+         ^
+/data/output_dir/patch/sjeng/ida/gcc/O2/sjeng-gcc-O2/search_root/src/protos.h:61:8: note: previous declaration is here
+move_s search_root (int alpha, int beta, int depth);
+       ^
+/data/output_dir/patch/sjeng/ida/gcc/O2/sjeng-gcc-O2/search_root/src/search.c:1779:12: error: expected expression
+*( _OWORD *)&v80.captured = *( _OWORD *)( v16 - 1535); 
+           ^
+/data/output_dir/patch/sjeng/ida/gcc/O2/sjeng-gcc-O2/search_root/src/search.c:1779:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&v80.captured = *( _OWORD *)( v16 - 1535); 
+   ^
+/data/output_dir/patch/sjeng/ida/gcc/O2/sjeng-gcc-O2/search_root/src/search.c:1779:40: error: expected expression
+*( _OWORD *)&v80.captured = *( _OWORD *)( v16 - 1535); 
+                                       ^
+/data/output_dir/patch/sjeng/ida/gcc/O2/sjeng-gcc-O2/search_root/src/search.c:1779:32: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&v80.captured = *( _OWORD *)( v16 - 1535); 
+                               ^
+/data/output_dir/patch/sjeng/ida/gcc/O2/sjeng-gcc-O2/search_root/src/search.c:1782:14: error: passing 'char [20]' to parameter of incompatible type 'move_s'
+comp_to_san( searching_move, v80); 
+             ^~~~~~~~~~~~~~
+/data/output_dir/patch/sjeng/ida/gcc/O2/sjeng-gcc-O2/search_root/src/protos.h:119:26: note: passing argument to parameter 'move' here
+void comp_to_san (move_s move, char str[]);
+                         ^
+/data/output_dir/patch/sjeng/ida/gcc/O2/sjeng-gcc-O2/search_root/src/search.c:1825:16: error: read-only variable is not assignable
+v79[450 * v72] = v78; 
+~~~~~~~~~~~~~~ ^
+/data/output_dir/patch/sjeng/ida/gcc/O2/sjeng-gcc-O2/search_root/src/search.c:1826:19: error: member reference base type 'const __m128i' (vector of 2 'long long' values) is not a structure or union
+v79[450 * v72 + 1].m128i_i64[0] = v77[-1].m128i_i64[1]; 
+~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+/data/output_dir/patch/sjeng/ida/gcc/O2/sjeng-gcc-O2/search_root/src/search.c:1826:42: error: member reference base type 'const __m128i' (vector of 2 'long long' values) is not a structure or union
+v79[450 * v72 + 1].m128i_i64[0] = v77[-1].m128i_i64[1]; 
+                                  ~~~~~~~^~~~~~~~~~
+/data/output_dir/patch/sjeng/ida/gcc/O2/sjeng-gcc-O2/search_root/src/search.c:2035:16: error: read-only variable is not assignable
+v63[450 * v57] = v62; 
+~~~~~~~~~~~~~~ ^
+/data/output_dir/patch/sjeng/ida/gcc/O2/sjeng-gcc-O2/search_root/src/search.c:2036:19: error: member reference base type 'const __m128i' (vector of 2 'long long' values) is not a structure or union
+v63[450 * v57 + 1].m128i_i64[0] = v61[-1].m128i_i64[1]; 
+~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+/data/output_dir/patch/sjeng/ida/gcc/O2/sjeng-gcc-O2/search_root/src/search.c:2036:42: error: member reference base type 'const __m128i' (vector of 2 'long long' values) is not a structure or union
+v63[450 * v57 + 1].m128i_i64[0] = v61[-1].m128i_i64[1]; 
+                                  ~~~~~~~^~~~~~~~~~
+12 errors generated.
+make: *** [/data/output_dir/patch/sjeng/ida/gcc/O2/sjeng-gcc-O2/search_root/src/obj/search.o] Error 1

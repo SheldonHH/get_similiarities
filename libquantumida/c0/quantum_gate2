@@ -1,0 +1,253 @@
+gates.c:365:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gates.c:991:1: warning: plain '_Complex' requires a type specifier; assuming '_Complex double'
+complex *m_8; // [rsp+258h] [rbp-8h] 
+^
+        double
+/usr/include/complex.h:43:18: note: expanded from macro 'complex'
+#define complex         _Complex
+                        ^
+gates.c:992:1: warning: plain '_Complex' requires a type specifier; assuming '_Complex double'
+complex amplitude; // 0:xmm0_8.8 
+^
+        double
+/usr/include/complex.h:43:18: note: expanded from macro 'complex'
+#define complex         _Complex
+                        ^
+gates.c:994:5: warning: incompatible pointer types assigning to '_Complex double *' from '_Complex float *' [-Wincompatible-pointer-types]
+m_8 = m.t; 
+    ^ ~~~
+gates.c:1012:14: error: member reference base type '_Complex double' is not a structure or union
+if ( ( m_8[1].imag != 0.0 || m_8[1].real != 0.0) && ( ( 1LL << target) & reg->node[ib].state) != 0 ) 
+       ~~~~~~^~~~~
+gates.c:1012:36: error: member reference base type '_Complex double' is not a structure or union
+if ( ( m_8[1].imag != 0.0 || m_8[1].real != 0.0) && ( ( 1LL << target) & reg->node[ib].state) != 0 ) 
+                             ~~~~~~^~~~~
+gates.c:1014:14: error: member reference base type '_Complex double' is not a structure or union
+if ( ( m_8[2].imag != 0.0 || m_8[2].real != 0.0) && ( ( 1LL << target) & reg->node[ib].state) == 0 ) 
+       ~~~~~~^~~~~
+gates.c:1014:36: error: member reference base type '_Complex double' is not a structure or union
+if ( ( m_8[2].imag != 0.0 || m_8[2].real != 0.0) && ( ( 1LL << target) & reg->node[ib].state) == 0 ) 
+                             ~~~~~~^~~~~
+gates.c:1029:14: error: member reference base type '_Complex float' is not a structure or union
+v4->amplitude.real = 0.0; 
+~~~~~~~~~~~~~^~~~~
+gates.c:1030:14: error: member reference base type '_Complex float' is not a structure or union
+v4->amplitude.imag = 0.0; 
+~~~~~~~~~~~~~^~~~~
+gates.c:1041:31: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'unsigned long long' of different size
+( __m128d)_mm_unpacklo_epi32( ( __m128i)( unsigned __int64)( 1LL << LOBYTE( reg->width)), ( __m128i)xmmword_40BA70), 
+                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gates.c:1041:101: error: use of undeclared identifier 'xmmword_40BA70'
+( __m128d)_mm_unpacklo_epi32( ( __m128i)( unsigned __int64)( 1LL << LOBYTE( reg->width)), ( __m128i)xmmword_40BA70), 
+                                                                                                    ^
+gates.c:1042:11: error: use of undeclared identifier 'xmmword_40BA80'
+( __m128d)xmmword_40BA80); 
+          ^
+gates.c:1043:38: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+v6 = 1.0 / ( _mm_unpackhi_pd( v5, v5).m128d_f64[0] + v5.m128d_f64[0]) / 1000000.0; 
+             ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+gates.c:1043:56: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+v6 = 1.0 / ( _mm_unpackhi_pd( v5, v5).m128d_f64[0] + v5.m128d_f64[0]) / 1000000.0; 
+                                                     ~~^~~~~~~~~~
+gates.c:1055:18: error: member reference base type '_Complex float' is not a structure or union
+t = v7->amplitude.real; 
+    ~~~~~~~~~~~~~^~~~~
+gates.c:1056:20: error: member reference base type '_Complex float' is not a structure or union
+t_4 = v7->amplitude.imag; 
+      ~~~~~~~~~~~~~^~~~~
+gates.c:1060:21: error: member reference base type '_Complex float' is not a structure or union
+tnot = v8->amplitude.real; 
+       ~~~~~~~~~~~~~^~~~~
+gates.c:1061:23: error: member reference base type '_Complex float' is not a structure or union
+tnot_4 = v8->amplitude.imag; 
+         ~~~~~~~~~~~~~^~~~~
+gates.c:1065:23: error: member reference base type '_Complex double' is not a structure or union
+v28 = ( float)( m_8[2].real * tnot_4) + ( float)( m_8[2].imag * tnot); 
+                ~~~~~~^~~~~
+gates.c:1065:57: error: member reference base type '_Complex double' is not a structure or union
+v28 = ( float)( m_8[2].real * tnot_4) + ( float)( m_8[2].imag * tnot); 
+                                                  ~~~~~~^~~~~
+gates.c:1066:22: error: member reference base type '_Complex double' is not a structure or union
+v9 = ( float)( m_8[3].real * t_4) + ( float)( m_8[3].imag * t); 
+               ~~~~~~^~~~~
+gates.c:1066:53: error: member reference base type '_Complex double' is not a structure or union
+v9 = ( float)( m_8[3].real * t_4) + ( float)( m_8[3].imag * t); 
+                                              ~~~~~~^~~~~
+gates.c:1068:15: error: member reference base type '_Complex float' is not a structure or union
+v10->amplitude.real = ( float)( ( float)( m_8[2].real * tnot) - ( float)( m_8[2].imag * tnot_4)) 
+~~~~~~~~~~~~~~^~~~~
+gates.c:1068:49: error: member reference base type '_Complex double' is not a structure or union
+v10->amplitude.real = ( float)( ( float)( m_8[2].real * tnot) - ( float)( m_8[2].imag * tnot_4)) 
+                                          ~~~~~~^~~~~
+gates.c:1068:81: error: member reference base type '_Complex double' is not a structure or union
+v10->amplitude.real = ( float)( ( float)( m_8[2].real * tnot) - ( float)( m_8[2].imag * tnot_4)) 
+                                                                          ~~~~~~^~~~~
+gates.c:1069:29: error: member reference base type '_Complex double' is not a structure or union
++ ( float)( ( float)( m_8[3].real * t) - ( float)( m_8[3].imag * t_4)); 
+                      ~~~~~~^~~~~
+gates.c:1069:58: error: member reference base type '_Complex double' is not a structure or union
++ ( float)( ( float)( m_8[3].real * t) - ( float)( m_8[3].imag * t_4)); 
+                                                   ~~~~~~^~~~~
+gates.c:1070:15: error: member reference base type '_Complex float' is not a structure or union
+v10->amplitude.imag = v28 + v9; 
+~~~~~~~~~~~~~~^~~~~
+gates.c:1074:20: error: member reference base type '_Complex double' is not a structure or union
+v27 = ( float)( m_8->real * t_4) + ( float)( m_8->imag * t); 
+                ~~~^ ~~~~
+gates.c:1074:49: error: member reference base type '_Complex double' is not a structure or union
+v27 = ( float)( m_8->real * t_4) + ( float)( m_8->imag * t); 
+                                             ~~~^ ~~~~
+gates.c:1075:23: error: member reference base type '_Complex double' is not a structure or union
+v11 = ( float)( m_8[1].real * tnot_4) + ( float)( m_8[1].imag * tnot); 
+                ~~~~~~^~~~~
+gates.c:1075:57: error: member reference base type '_Complex double' is not a structure or union
+v11 = ( float)( m_8[1].real * tnot_4) + ( float)( m_8[1].imag * tnot); 
+                                                  ~~~~~~^~~~~
+gates.c:1077:15: error: member reference base type '_Complex float' is not a structure or union
+v12->amplitude.real = ( float)( ( float)( m_8->real * t) - ( float)( m_8->imag * t_4)) 
+~~~~~~~~~~~~~~^~~~~
+gates.c:1077:46: error: member reference base type '_Complex double' is not a structure or union
+v12->amplitude.real = ( float)( ( float)( m_8->real * t) - ( float)( m_8->imag * t_4)) 
+                                          ~~~^ ~~~~
+gates.c:1077:73: error: member reference base type '_Complex double' is not a structure or union
+v12->amplitude.real = ( float)( ( float)( m_8->real * t) - ( float)( m_8->imag * t_4)) 
+                                                                     ~~~^ ~~~~
+gates.c:1078:29: error: member reference base type '_Complex double' is not a structure or union
++ ( float)( ( float)( m_8[1].real * tnot) - ( float)( m_8[1].imag * tnot_4)); 
+                      ~~~~~~^~~~~
+gates.c:1078:61: error: member reference base type '_Complex double' is not a structure or union
++ ( float)( ( float)( m_8[1].real * tnot) - ( float)( m_8[1].imag * tnot_4)); 
+                                                      ~~~~~~^~~~~
+gates.c:1079:15: error: member reference base type '_Complex float' is not a structure or union
+v12->amplitude.imag = v27 + v11; 
+~~~~~~~~~~~~~~^~~~~
+gates.c:1083:12: error: member reference base type '_Complex double' is not a structure or union
+if ( m_8[1].imag == 0.0 && m_8[1].real == 0.0 && iset || m_8[2].imag == 0.0 && m_8[2].real == 0.0 && !iset ) 
+     ~~~~~~^~~~~
+gates.c:1083:34: error: member reference base type '_Complex double' is not a structure or union
+if ( m_8[1].imag == 0.0 && m_8[1].real == 0.0 && iset || m_8[2].imag == 0.0 && m_8[2].real == 0.0 && !iset ) 
+                           ~~~~~~^~~~~
+gates.c:1083:64: error: member reference base type '_Complex double' is not a structure or union
+if ( m_8[1].imag == 0.0 && m_8[1].real == 0.0 && iset || m_8[2].imag == 0.0 && m_8[2].real == 0.0 && !iset ) 
+                                                         ~~~~~~^~~~~
+gates.c:1083:86: error: member reference base type '_Complex double' is not a structure or union
+if ( m_8[1].imag == 0.0 && m_8[1].real == 0.0 && iset || m_8[2].imag == 0.0 && m_8[2].real == 0.0 && !iset ) 
+                                                                               ~~~~~~^~~~~
+gates.c:1088:23: error: member reference base type '_Complex double' is not a structure or union
+v17 = ( float)( m_8[1].real * t_4) + ( float)( m_8[1].imag * t); 
+                ~~~~~~^~~~~
+gates.c:1088:54: error: member reference base type '_Complex double' is not a structure or union
+v17 = ( float)( m_8[1].real * t_4) + ( float)( m_8[1].imag * t); 
+                                               ~~~~~~^~~~~
+gates.c:1090:15: error: member reference base type '_Complex float' is not a structure or union
+v18->amplitude.real = ( float)( m_8[1].real * t) - ( float)( m_8[1].imag * t_4); 
+~~~~~~~~~~~~~~^~~~~
+gates.c:1090:39: error: member reference base type '_Complex double' is not a structure or union
+v18->amplitude.real = ( float)( m_8[1].real * t) - ( float)( m_8[1].imag * t_4); 
+                                ~~~~~~^~~~~
+gates.c:1090:68: error: member reference base type '_Complex double' is not a structure or union
+v18->amplitude.real = ( float)( m_8[1].real * t) - ( float)( m_8[1].imag * t_4); 
+                                                             ~~~~~~^~~~~
+gates.c:1094:23: error: member reference base type '_Complex double' is not a structure or union
+v17 = ( float)( m_8[2].real * t_4) + ( float)( m_8[2].imag * t); 
+                ~~~~~~^~~~~
+gates.c:1094:54: error: member reference base type '_Complex double' is not a structure or union
+v17 = ( float)( m_8[2].real * t_4) + ( float)( m_8[2].imag * t); 
+                                               ~~~~~~^~~~~
+gates.c:1096:15: error: member reference base type '_Complex float' is not a structure or union
+v18->amplitude.real = ( float)( m_8[2].real * t) - ( float)( m_8[2].imag * t_4); 
+~~~~~~~~~~~~~~^~~~~
+gates.c:1096:39: error: member reference base type '_Complex double' is not a structure or union
+v18->amplitude.real = ( float)( m_8[2].real * t) - ( float)( m_8[2].imag * t_4); 
+                                ~~~~~~^~~~~
+gates.c:1096:68: error: member reference base type '_Complex double' is not a structure or union
+v18->amplitude.real = ( float)( m_8[2].real * t) - ( float)( m_8[2].imag * t_4); 
+                                                             ~~~~~~^~~~~
+gates.c:1098:15: error: member reference base type '_Complex float' is not a structure or union
+v18->amplitude.imag = v17; 
+~~~~~~~~~~~~~~^~~~~
+gates.c:1103:20: error: member reference base type '_Complex double' is not a structure or union
+v26 = ( float)( m_8->real * tnot_4) + ( float)( m_8->imag * tnot); 
+                ~~~^ ~~~~
+gates.c:1103:52: error: member reference base type '_Complex double' is not a structure or union
+v26 = ( float)( m_8->real * tnot_4) + ( float)( m_8->imag * tnot); 
+                                                ~~~^ ~~~~
+gates.c:1104:23: error: member reference base type '_Complex double' is not a structure or union
+v13 = ( float)( m_8[1].real * t_4) + ( float)( m_8[1].imag * t); 
+                ~~~~~~^~~~~
+gates.c:1104:54: error: member reference base type '_Complex double' is not a structure or union
+v13 = ( float)( m_8[1].real * t_4) + ( float)( m_8[1].imag * t); 
+                                               ~~~~~~^~~~~
+gates.c:1106:15: error: member reference base type '_Complex float' is not a structure or union
+v14->amplitude.real = ( float)( ( float)( m_8->real * tnot) - ( float)( m_8->imag * tnot_4)) 
+~~~~~~~~~~~~~~^~~~~
+gates.c:1106:46: error: member reference base type '_Complex double' is not a structure or union
+v14->amplitude.real = ( float)( ( float)( m_8->real * tnot) - ( float)( m_8->imag * tnot_4)) 
+                                          ~~~^ ~~~~
+gates.c:1106:76: error: member reference base type '_Complex double' is not a structure or union
+v14->amplitude.real = ( float)( ( float)( m_8->real * tnot) - ( float)( m_8->imag * tnot_4)) 
+                                                                        ~~~^ ~~~~
+gates.c:1107:29: error: member reference base type '_Complex double' is not a structure or union
++ ( float)( ( float)( m_8[1].real * t) - ( float)( m_8[1].imag * t_4)); 
+                      ~~~~~~^~~~~
+gates.c:1107:58: error: member reference base type '_Complex double' is not a structure or union
++ ( float)( ( float)( m_8[1].real * t) - ( float)( m_8[1].imag * t_4)); 
+                                                   ~~~~~~^~~~~
+gates.c:1108:15: error: member reference base type '_Complex float' is not a structure or union
+v14->amplitude.imag = v26 + v13; 
+~~~~~~~~~~~~~~^~~~~
+gates.c:1112:23: error: member reference base type '_Complex double' is not a structure or union
+v25 = ( float)( m_8[2].real * t_4) + ( float)( m_8[2].imag * t); 
+                ~~~~~~^~~~~
+gates.c:1112:54: error: member reference base type '_Complex double' is not a structure or union
+v25 = ( float)( m_8[2].real * t_4) + ( float)( m_8[2].imag * t); 
+                                               ~~~~~~^~~~~
+gates.c:1113:23: error: member reference base type '_Complex double' is not a structure or union
+v15 = ( float)( m_8[3].real * tnot_4) + ( float)( m_8[3].imag * tnot); 
+                ~~~~~~^~~~~
+gates.c:1113:57: error: member reference base type '_Complex double' is not a structure or union
+v15 = ( float)( m_8[3].real * tnot_4) + ( float)( m_8[3].imag * tnot); 
+                                                  ~~~~~~^~~~~
+gates.c:1115:15: error: member reference base type '_Complex float' is not a structure or union
+v16->amplitude.real = ( float)( ( float)( m_8[2].real * t) - ( float)( m_8[2].imag * t_4)) 
+~~~~~~~~~~~~~~^~~~~
+gates.c:1115:49: error: member reference base type '_Complex double' is not a structure or union
+v16->amplitude.real = ( float)( ( float)( m_8[2].real * t) - ( float)( m_8[2].imag * t_4)) 
+                                          ~~~~~~^~~~~
+gates.c:1115:78: error: member reference base type '_Complex double' is not a structure or union
+v16->amplitude.real = ( float)( ( float)( m_8[2].real * t) - ( float)( m_8[2].imag * t_4)) 
+                                                                       ~~~~~~^~~~~
+gates.c:1116:29: error: member reference base type '_Complex double' is not a structure or union
++ ( float)( ( float)( m_8[3].real * tnot) - ( float)( m_8[3].imag * tnot_4)); 
+                      ~~~~~~^~~~~
+gates.c:1116:61: error: member reference base type '_Complex double' is not a structure or union
++ ( float)( ( float)( m_8[3].real * tnot) - ( float)( m_8[3].imag * tnot_4)); 
+                                                      ~~~~~~^~~~~
+gates.c:1117:15: error: member reference base type '_Complex float' is not a structure or union
+v16->amplitude.imag = v25 + v15; 
+~~~~~~~~~~~~~~^~~~~
+gates.c:1131:15: warning: implicit declaration of function 'quantum_prob_inline_0' is invalid in C99 [-Wimplicit-function-declaration]
+if ( limit <= quantum_prob_inline_0( amplitude) ) 
+              ^
+gates.c:1137:22: error: member reference base type '_Complex float' is not a structure or union
+real = v19->amplitude.real; 
+       ~~~~~~~~~~~~~~^~~~~
+gates.c:1138:22: error: member reference base type '_Complex float' is not a structure or union
+imag = v19->amplitude.imag; 
+       ~~~~~~~~~~~~~~^~~~~
+gates.c:1140:15: error: member reference base type '_Complex float' is not a structure or union
+v22->amplitude.real = real; 
+~~~~~~~~~~~~~~^~~~~
+gates.c:1141:15: error: member reference base type '_Complex float' is not a structure or union
+v22->amplitude.imag = imag; 
+~~~~~~~~~~~~~~^~~~~
+5 warnings and 74 errors generated.
+objcode.c:176:18: warning: passing an object that undergoes default argument promotion to 'va_start' has undefined behavior [-Wvarargs]
+  va_start(args, operation);
+                 ^
+objcode.c:165:35: note: parameter of type 'unsigned char' is declared here
+quantum_objcode_put(unsigned char operation, ...)
+                                  ^
+1 warning generated.

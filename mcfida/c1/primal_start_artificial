@@ -1,0 +1,13 @@
+pstart.c:491:10: error: conflicting types for 'primal_start_artificial'
+__int64  primal_start_artificial( network_t *net) 
+         ^
+./pstart.h:30:13: note: previous declaration is here
+extern long primal_start_artificial _PROTO_(( network_t * ));
+            ^
+pstart.c:507:12: error: expected expression
+*( _OWORD *)&nodes->sibling = 0LL; 
+           ^
+pstart.c:507:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&nodes->sibling = 0LL; 
+   ^
+3 errors generated.

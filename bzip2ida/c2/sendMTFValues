@@ -1,0 +1,26 @@
+/data/output_dir/patch/bzip2/ida/clang/O2/bzip2-clang-O2/sendMTFValues/src/compress.c:2286:6: error: assigning to '__m128i' (vector of 2 'long long' values) from incompatible type 'long long'
+v276 = 0LL; 
+     ^ ~~~
+/data/output_dir/patch/bzip2/ida/clang/O2/bzip2-clang-O2/sendMTFValues/src/compress.c:2288:44: error: use of undeclared identifier 'xmmword_417030'
+si128 = _mm_load_si128( ( const __m128i *)&xmmword_417030); 
+                                           ^
+/data/output_dir/patch/bzip2/ida/clang/O2/bzip2-clang-O2/sendMTFValues/src/compress.c:2290:6: error: assigning to '__m128i' (vector of 2 'long long' values) from incompatible type 'long long'
+v280 = 0LL; 
+     ^ ~~~
+/data/output_dir/patch/bzip2/ida/clang/O2/bzip2-clang-O2/sendMTFValues/src/compress.c:2291:43: error: use of undeclared identifier 'xmmword_4195D0'
+v281 = _mm_load_si128( ( const __m128i *)&xmmword_4195D0); 
+                                          ^
+/data/output_dir/patch/bzip2/ida/clang/O2/bzip2-clang-O2/sendMTFValues/src/compress.c:2295:69: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'long long' of different size
+_mm_unpacklo_epi8( _mm_cvtsi32_si128( *( _DWORD *)&v268[v277 - 4]), ( __m128i)0LL), 
+                                                                    ^~~~~~~~~~~~~
+/data/output_dir/patch/bzip2/ida/clang/O2/bzip2-clang-O2/sendMTFValues/src/compress.c:2296:1: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'long long' of different size
+( __m128i)0LL); 
+^~~~~~~~~~~~~
+/data/output_dir/patch/bzip2/ida/clang/O2/bzip2-clang-O2/sendMTFValues/src/compress.c:2298:65: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'long long' of different size
+_mm_unpacklo_epi8( _mm_cvtsi32_si128( *( _DWORD *)&v268[v277]), ( __m128i)0LL), 
+                                                                ^~~~~~~~~~~~~
+/data/output_dir/patch/bzip2/ida/clang/O2/bzip2-clang-O2/sendMTFValues/src/compress.c:2299:1: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'long long' of different size
+( __m128i)0LL); 
+^~~~~~~~~~~~~
+8 errors generated.
+make: *** [/data/output_dir/patch/bzip2/ida/clang/O2/bzip2-clang-O2/sendMTFValues/src/obj/compress.o] Error 1

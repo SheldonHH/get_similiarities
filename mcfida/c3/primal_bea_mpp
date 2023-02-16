@@ -1,0 +1,60 @@
+pbeampp.c:581:9: error: conflicting types for 'primal_bea_mpp'
+arc_t * primal_bea_mpp( __int64 m, arc_t *arcs, arc_t *stop_arcs, cost_t *red_cost_of_bea) 
+        ^
+./pbeampp.h:30:15: note: previous declaration is here
+extern arc_t *primal_bea_mpp _PROTO_(( long, arc_t*, arc_t*, cost_t* ));
+              ^
+pbeampp.c:612:16: error: subscripted value is not an array, pointer, or vector
+if ( initialize[0] ) 
+     ~~~~~~~~~~^~
+pbeampp.c:652:44: error: use of undeclared identifier 'xmmword_403180'
+si128 = _mm_load_si128( ( const __m128i *)&xmmword_403180); 
+                                           ^
+pbeampp.c:654:42: error: use of undeclared identifier 'xmmword_403190'
+v16 = _mm_load_si128( ( const __m128i *)&xmmword_403190); 
+                                         ^
+pbeampp.c:655:55: error: use of undeclared identifier 'basket_0'
+v17 = _mm_shuffle_epi32( ( __m128i)( unsigned __int64)basket_0, 68); 
+                                                      ^
+pbeampp.c:656:42: error: use of undeclared identifier 'xmmword_4031A0'
+v18 = _mm_load_si128( ( const __m128i *)&xmmword_4031A0); 
+                                         ^
+pbeampp.c:657:42: error: use of undeclared identifier 'xmmword_4031B0'
+v19 = _mm_load_si128( ( const __m128i *)&xmmword_4031B0); 
+                                         ^
+pbeampp.c:658:42: error: use of undeclared identifier 'xmmword_4031C0'
+v20 = _mm_load_si128( ( const __m128i *)&xmmword_4031C0); 
+                                         ^
+pbeampp.c:659:42: error: use of undeclared identifier 'xmmword_4031D0'
+v21 = _mm_load_si128( ( const __m128i *)&xmmword_4031D0); 
+                                         ^
+pbeampp.c:660:42: error: use of undeclared identifier 'xmmword_4031E0'
+v22 = _mm_load_si128( ( const __m128i *)&xmmword_4031E0); 
+                                         ^
+pbeampp.c:661:42: error: use of undeclared identifier 'xmmword_4031F0'
+v23 = _mm_load_si128( ( const __m128i *)&xmmword_4031F0); 
+                                         ^
+pbeampp.c:668:25: error: subscripted value is not an array, pointer, or vector
+*( __m128i *)&initialize[v15] = _mm_add_epi64( v24, v18); 
+              ~~~~~~~~~~^~~~
+pbeampp.c:677:13: error: use of undeclared identifier 'basket_0'; did you mean 'basket'?
+perm[349] = basket_0 + 8376; 
+            ^~~~~~~~
+            basket
+pbeampp.c:59:15: note: 'basket' declared here
+static BASKET basket[B+K+1];
+              ^
+pbeampp.c:678:13: error: use of undeclared identifier 'basket_0'; did you mean 'basket'?
+perm[350] = basket_0 + 8400; 
+            ^~~~~~~~
+            basket
+pbeampp.c:59:15: note: 'basket' declared here
+static BASKET basket[B+K+1];
+              ^
+pbeampp.c:683:11: error: subscripted value is not an array, pointer, or vector
+initialize[0] = 1; 
+~~~~~~~~~~^~
+pbeampp.c:738:11: error: subscripted value is not an array, pointer, or vector
+initialize[0] = 0; 
+~~~~~~~~~~^~
+16 errors generated.

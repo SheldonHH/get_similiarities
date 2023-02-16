@@ -1,0 +1,56 @@
+gates.c:365:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gates.c:543:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gates.c:1172:1: error: use of undeclared identifier 'complex_float'
+complex_float *t; // rax 
+^
+gates.c:1172:16: error: use of undeclared identifier 't'
+complex_float *t; // rax 
+               ^
+gates.c:1180:6: warning: implicit declaration of function 'COERCE_FLOAT' is invalid in C99 [-Wimplicit-function-declaration]
+v5 = COERCE_FLOAT( _mm_cvtsi128_si32( a2)); 
+     ^
+gates.c:1181:68: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+if ( !quantum_objcode_put( 8u, ( unsigned int)target, *( float *)a2.m128i_i32) ) 
+                                                                 ~~^~~~~~~~~~
+gates.c:1184:1: warning: implicit declaration of function 'sincos' is invalid in C99 [-Wimplicit-function-declaration]
+sincos( ( float)( v5 * 0.5), &sinx, &v9); 
+^
+gates.c:1185:1: error: use of undeclared identifier 't'
+t = m.t; 
+^
+gates.c:1189:4: error: member reference base type '_Complex float' is not a structure or union
+m.t->imag = 0.0; 
+~~~^ ~~~~
+gates.c:1192:1: error: use of undeclared identifier 't'
+t->real = v8; 
+^
+gates.c:1193:1: error: use of undeclared identifier 't'
+t[1].imag = 0.0; 
+^
+gates.c:1194:1: error: use of undeclared identifier 't'
+t[2].imag = 0.0; 
+^
+gates.c:1195:1: error: use of undeclared identifier 't'
+t[3].imag = 0.0; 
+^
+gates.c:1196:1: error: use of undeclared identifier 't'
+t[1].real = -*( float *)&v7; 
+^
+gates.c:1197:1: error: use of undeclared identifier 't'
+t[2].real = *( float *)&v7; 
+^
+gates.c:1198:1: error: use of undeclared identifier 't'
+t[3].real = v8; 
+^
+4 warnings and 12 errors generated.
+objcode.c:176:18: warning: passing an object that undergoes default argument promotion to 'va_start' has undefined behavior [-Wvarargs]
+  va_start(args, operation);
+                 ^
+objcode.c:165:35: note: parameter of type 'unsigned char' is declared here
+quantum_objcode_put(unsigned char operation, ...)
+                                  ^
+1 warning generated.

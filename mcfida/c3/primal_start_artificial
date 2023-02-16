@@ -1,0 +1,39 @@
+pstart.c:491:10: error: conflicting types for 'primal_start_artificial'
+__int64  primal_start_artificial( network_t *net) 
+         ^
+./pstart.h:30:13: note: previous declaration is here
+extern long primal_start_artificial _PROTO_(( network_t * ));
+            ^
+pstart.c:503:13: warning: incompatible pointer types assigning to 'uint64 *' (aka 'unsigned long long *') from 'cost_t *' (aka 'long *') [-Wincompatible-pointer-types]
+p_potential = &nodes[1].potential; 
+            ^ ~~~~~~~~~~~~~~~~~~~
+pstart.c:507:12: error: expected expression
+*( _OWORD *)&nodes->sibling = 0LL; 
+           ^
+pstart.c:507:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&nodes->sibling = 0LL; 
+   ^
+pstart.c:526:16: warning: incompatible pointer to integer conversion assigning to 'uint64' (aka 'unsigned long long') from 'arc_p' (aka 'struct arc *') [-Wint-conversion]
+p_potential[6] = dummy_arcs; 
+               ^ ~~~~~~~~~~
+pstart.c:527:16: warning: incompatible pointer to integer conversion assigning to 'uint64' (aka 'unsigned long long') from 'node_p' (aka 'struct node *') [-Wint-conversion]
+p_potential[3] = nodes; 
+               ^ ~~~~~
+pstart.c:530:7: warning: incompatible pointer to integer conversion assigning to 'uint64' (aka 'unsigned long long') from 'uint64 *' (aka 'unsigned long long *'); dereference with * [-Wint-conversion]
+v8[4] = p_potential; 
+      ^ ~~~~~~~~~~~
+        *
+pstart.c:531:7: warning: incompatible pointer to integer conversion assigning to 'uint64' (aka 'unsigned long long') from 'uint64 *' (aka 'unsigned long long *'); dereference with * [-Wint-conversion]
+v8[5] = v8 - 13; 
+      ^ ~~~~~~~
+        *(     )
+pstart.c:538:14: error: expected expression
+*( ( _OWORD *)v8 + 5) = xmmword_403200; 
+             ^
+pstart.c:538:6: error: use of undeclared identifier '_OWORD'
+*( ( _OWORD *)v8 + 5) = xmmword_403200; 
+     ^
+pstart.c:538:25: error: use of undeclared identifier 'xmmword_403200'
+*( ( _OWORD *)v8 + 5) = xmmword_403200; 
+                        ^
+5 warnings and 6 errors generated.

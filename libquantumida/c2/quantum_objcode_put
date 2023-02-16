@@ -1,0 +1,147 @@
+gates.c:365:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gates.c:543:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2 warnings generated.
+objcode.c:682:7: error: expected ';' after expression
+_OWORD v55[4]; // [rsp+21h] [rbp-117h] 
+      ^
+      ;
+objcode.c:682:1: error: use of undeclared identifier '_OWORD'
+_OWORD v55[4]; // [rsp+21h] [rbp-117h] 
+^
+objcode.c:682:8: error: use of undeclared identifier 'v55'
+_OWORD v55[4]; // [rsp+21h] [rbp-117h] 
+       ^
+objcode.c:688:15: warning: passing an object that undergoes default argument promotion to 'va_start' has undefined behavior [-Wvarargs]
+va_start( va, operation); 
+              ^
+objcode.c:627:42: note: parameter of type 'unsigned char' is declared here
+int quantum_objcode_put( unsigned __int8 operation, ...) 
+                                         ^
+objcode.c:714:9: error: use of undeclared identifier 'v55'
+LOBYTE( v55[0]) = HIBYTE( v5); 
+        ^
+objcode.c:719:8: error: use of undeclared identifier 'v55'
+BYTE1( v55[0]) = BYTE2( v7); 
+       ^
+objcode.c:724:8: error: use of undeclared identifier 'v55'
+BYTE2( v55[0]) = HIBYTE( v9); 
+       ^
+objcode.c:725:8: error: use of undeclared identifier 'v55'
+BYTE3( v55[0]) = v8; 
+       ^
+objcode.c:729:14: error: use of undeclared identifier 'v55'
+*( _QWORD *)&v55[0] = _byteswap_uint64( v56); 
+             ^
+objcode.c:729:23: warning: implicit declaration of function '_byteswap_uint64' is invalid in C99 [-Wimplicit-function-declaration]
+*( _QWORD *)&v55[0] = _byteswap_uint64( v56); 
+                      ^
+objcode.c:737:9: error: use of undeclared identifier 'v55'
+LOBYTE( v55[0]) = ( int)v56 / 0x1000000; 
+        ^
+objcode.c:743:8: error: use of undeclared identifier 'v55'
+BYTE1( v55[0]) = v17; 
+       ^
+objcode.c:744:8: error: use of undeclared identifier 'v55'
+BYTE2( v55[0]) = HIBYTE( v19); 
+       ^
+objcode.c:745:8: error: use of undeclared identifier 'v55'
+BYTE3( v55[0]) = v18; 
+       ^
+objcode.c:749:8: error: use of undeclared identifier 'v55'
+BYTE4( v55[0]) = HIBYTE( v20); 
+       ^
+objcode.c:754:8: error: use of undeclared identifier 'v55'
+BYTE5( v55[0]) = BYTE2( v22); 
+       ^
+objcode.c:759:8: error: use of undeclared identifier 'v55'
+BYTE6( v55[0]) = HIBYTE( v24); 
+       ^
+objcode.c:760:8: error: use of undeclared identifier 'v55'
+BYTE7( v55[0]) = v23; 
+       ^
+objcode.c:769:9: error: use of undeclared identifier 'v55'
+LOBYTE( v55[0]) = ( int)v56 / 0x1000000; 
+        ^
+objcode.c:775:8: error: use of undeclared identifier 'v55'
+BYTE1( v55[0]) = v27; 
+       ^
+objcode.c:776:8: error: use of undeclared identifier 'v55'
+BYTE2( v55[0]) = HIBYTE( v29); 
+       ^
+objcode.c:777:8: error: use of undeclared identifier 'v55'
+BYTE3( v55[0]) = v28; 
+       ^
+objcode.c:782:8: error: use of undeclared identifier 'v55'
+BYTE4( v55[0]) = ( int)v57 / 0x1000000; 
+       ^
+objcode.c:788:8: error: use of undeclared identifier 'v55'
+BYTE5( v55[0]) = v32; 
+       ^
+objcode.c:789:8: error: use of undeclared identifier 'v55'
+BYTE6( v55[0]) = HIBYTE( v34); 
+       ^
+objcode.c:790:8: error: use of undeclared identifier 'v55'
+BYTE7( v55[0]) = v33; 
+       ^
+objcode.c:794:8: error: use of undeclared identifier 'v55'
+BYTE8( v55[0]) = HIBYTE( v35); 
+       ^
+objcode.c:799:8: error: use of undeclared identifier 'v55'
+BYTE9( v55[0]) = BYTE2( v37); 
+       ^
+objcode.c:804:9: error: use of undeclared identifier 'v55'
+BYTE10( v55[0]) = HIBYTE( v39); 
+        ^
+objcode.c:805:9: error: use of undeclared identifier 'v55'
+BYTE11( v55[0]) = v38; 
+        ^
+objcode.c:816:9: error: use of undeclared identifier 'v55'
+LOBYTE( v55[0]) = HIBYTE( v10); 
+        ^
+objcode.c:821:8: error: use of undeclared identifier 'v55'
+BYTE1( v55[0]) = BYTE2( v12); 
+       ^
+objcode.c:826:8: error: use of undeclared identifier 'v55'
+BYTE2( v55[0]) = HIBYTE( v14); 
+       ^
+objcode.c:827:8: error: use of undeclared identifier 'v55'
+BYTE3( v55[0]) = v13; 
+       ^
+objcode.c:828:24: error: use of undeclared identifier 'v55'
+*( _QWORD *)( ( char *)v55 + 4) = v59; 
+                       ^
+objcode.c:836:9: error: use of undeclared identifier 'v55'
+LOBYTE( v55[0]) = ( int)v56 / 0x1000000; 
+        ^
+objcode.c:842:8: error: use of undeclared identifier 'v55'
+BYTE1( v55[0]) = v42; 
+       ^
+objcode.c:843:8: error: use of undeclared identifier 'v55'
+BYTE2( v55[0]) = HIBYTE( v44); 
+       ^
+objcode.c:844:8: error: use of undeclared identifier 'v55'
+BYTE3( v55[0]) = v43; 
+       ^
+objcode.c:848:8: error: use of undeclared identifier 'v55'
+BYTE4( v55[0]) = HIBYTE( v45); 
+       ^
+objcode.c:853:8: error: use of undeclared identifier 'v55'
+BYTE5( v55[0]) = BYTE2( v47); 
+       ^
+objcode.c:858:8: error: use of undeclared identifier 'v55'
+BYTE6( v55[0]) = HIBYTE( v49); 
+       ^
+objcode.c:859:8: error: use of undeclared identifier 'v55'
+BYTE7( v55[0]) = v48; 
+       ^
+objcode.c:860:16: error: use of undeclared identifier 'v55'
+*( ( _QWORD *)&v55[0] + 1) = v59; 
+               ^
+objcode.c:893:33: error: use of undeclared identifier 'v55'
+objcode[v53 + 1] = *( ( _BYTE *)v55 + v51); 
+                                ^
+2 warnings and 43 errors generated.

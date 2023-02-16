@@ -1,0 +1,35 @@
+/data/output_dir/patch/sjeng/ida/clang/O3/sjeng-clang-O3/proofnumberscan/src/proof.c:1510:13: error: expected identifier or '('
+struct node = v0; 
+            ^
+/data/output_dir/patch/sjeng/ida/clang/O3/sjeng-clang-O3/proofnumberscan/src/proof.c:1748:18: error: expected expression
+v39 = *( _OWORD *)&v42->move.from; 
+                 ^
+/data/output_dir/patch/sjeng/ida/clang/O3/sjeng-clang-O3/proofnumberscan/src/proof.c:1748:10: error: use of undeclared identifier '_OWORD'
+v39 = *( _OWORD *)&v42->move.from; 
+         ^
+/data/output_dir/patch/sjeng/ida/clang/O3/sjeng-clang-O3/proofnumberscan/src/proof.c:1750:12: error: expected expression
+*( _OWORD *)&pn_move.from = v39; 
+           ^
+/data/output_dir/patch/sjeng/ida/clang/O3/sjeng-clang-O3/proofnumberscan/src/proof.c:1750:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&pn_move.from = v39; 
+   ^
+/data/output_dir/patch/sjeng/ida/clang/O3/sjeng-clang-O3/proofnumberscan/src/proof.c:1812:18: error: expected expression
+v39 = *( _OWORD *)&dummy.from; 
+                 ^
+/data/output_dir/patch/sjeng/ida/clang/O3/sjeng-clang-O3/proofnumberscan/src/proof.c:1812:10: error: use of undeclared identifier '_OWORD'
+v39 = *( _OWORD *)&dummy.from; 
+         ^
+/data/output_dir/patch/sjeng/ida/clang/O3/sjeng-clang-O3/proofnumberscan/src/proof.c:1843:14: error: passing 'char [8]' to parameter of incompatible type 'move_s'
+comp_to_san( str, *v53); 
+             ^~~
+/data/output_dir/patch/sjeng/ida/clang/O3/sjeng-clang-O3/proofnumberscan/src/protos.h:119:26: note: passing argument to parameter 'move' here
+void comp_to_san (move_s move, char str[]);
+                         ^
+/data/output_dir/patch/sjeng/ida/clang/O3/sjeng-clang-O3/proofnumberscan/src/proof.c:1881:14: error: passing 'char [8]' to parameter of incompatible type 'move_s'
+comp_to_san( str, pn_move); 
+             ^~~
+/data/output_dir/patch/sjeng/ida/clang/O3/sjeng-clang-O3/proofnumberscan/src/protos.h:119:26: note: passing argument to parameter 'move' here
+void comp_to_san (move_s move, char str[]);
+                         ^
+9 errors generated.
+make: *** [/data/output_dir/patch/sjeng/ida/clang/O3/sjeng-clang-O3/proofnumberscan/src/obj/proof.o] Error 1

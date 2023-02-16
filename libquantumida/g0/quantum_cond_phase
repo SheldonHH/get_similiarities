@@ -1,0 +1,42 @@
+gates.c:365:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gates.c:543:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gates.c:1264:1: error: use of undeclared identifier 'SFtype'
+SFtype v7; // xmm4_4 
+^
+gates.c:1265:1: error: use of undeclared identifier 'complex_float'
+complex_float v8; // kr00_8 
+^
+gates.c:1274:72: warning: '&' within '|' [-Wbitwise-op-parentheses]
+v5 = ( 1LL << ( ( unsigned __int8)control - ( unsigned __int8)target)) & 1 | ( ( unsigned __int64)v3 >> 1); 
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~ ~
+gates.c:1274:72: note: place parentheses around the '&' expression to silence this warning
+v5 = ( 1LL << ( ( unsigned __int8)control - ( unsigned __int8)target)) & 1 | ( ( unsigned __int64)v3 >> 1); 
+                                                                       ^
+     (                                                                    )
+gates.c:1281:4: error: assigning to '__m128i' (vector of 2 'long long' values) from incompatible type 'long long'
+v6 = 0LL; 
+   ^ ~~~
+gates.c:1282:14: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+*( float *)v6.m128i_i32 = 3.141592654 / v4; 
+           ~~^~~~~~~~~~
+gates.c:1283:1: error: use of undeclared identifier 'v8'
+v8 = quantum_cexp( COERCE_FLOAT( _mm_cvtsi128_si32( v6))); 
+^
+gates.c:1283:20: warning: implicit declaration of function 'COERCE_FLOAT' is invalid in C99 [-Wimplicit-function-declaration]
+v8 = quantum_cexp( COERCE_FLOAT( _mm_cvtsi128_si32( v6))); 
+                   ^
+gates.c:1289:19: error: use of undeclared identifier 'complex_float'
+v9->amplitude = ( complex_float)_mulsc3( v8.real, v8.imag, v9->amplitude.real, v9->amplitude.imag, v7).m128i_u64[0]; 
+                  ^
+4 warnings and 6 errors generated.
+objcode.c:176:18: warning: passing an object that undergoes default argument promotion to 'va_start' has undefined behavior [-Wvarargs]
+  va_start(args, operation);
+                 ^
+objcode.c:165:35: note: parameter of type 'unsigned char' is declared here
+quantum_objcode_put(unsigned char operation, ...)
+                                  ^
+1 warning generated.

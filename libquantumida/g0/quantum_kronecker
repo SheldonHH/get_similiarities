@@ -1,0 +1,39 @@
+gates.c:365:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gates.c:543:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2 warnings generated.
+objcode.c:176:18: warning: passing an object that undergoes default argument promotion to 'va_start' has undefined behavior [-Wvarargs]
+  va_start(args, operation);
+                 ^
+objcode.c:165:35: note: parameter of type 'unsigned char' is declared here
+quantum_objcode_put(unsigned char operation, ...)
+                                  ^
+1 warning generated.
+qureg.c:747:15: error: conflicting types for 'quantum_kronecker'
+quantum_reg * quantum_kronecker( quantum_reg *retstr, quantum_reg *reg1, quantum_reg *reg2) 
+              ^
+./qureg.h:70:20: note: previous declaration is here
+extern quantum_reg quantum_kronecker(quantum_reg *reg1, quantum_reg *reg2);
+                   ^
+qureg.c:749:1: error: use of undeclared identifier 'SFtype'
+SFtype v3; // xmm4_4 
+^
+qureg.c:752:1: error: use of undeclared identifier 'SFtype'
+SFtype imag; // xmm0_4 
+^
+qureg.c:782:21: error: member reference base type '_Complex float' is not a structure or union
+real = v4->amplitude.real; 
+       ~~~~~~~~~~~~~^~~~~
+qureg.c:783:1: error: use of undeclared identifier 'imag'
+imag = v4->amplitude.imag; 
+^
+qureg.c:783:21: error: member reference base type '_Complex float' is not a structure or union
+imag = v4->amplitude.imag; 
+       ~~~~~~~~~~~~~^~~~~
+qureg.c:786:19: error: use of undeclared identifier 'complex_float'
+v8->amplitude = ( complex_float)_mulsc3( real, imag, v7->amplitude.real, v7->amplitude.imag, v3).m128i_u64[0]; 
+                  ^
+7 errors generated.

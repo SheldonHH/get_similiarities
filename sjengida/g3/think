@@ -1,0 +1,104 @@
+/data/output_dir/patch/sjeng/ida/gcc/O3/sjeng-gcc-O3/think/src/search.c:1906:10: error: conflicting types for 'think'
+move_s * think( move_s *retstr) 
+         ^
+/data/output_dir/patch/sjeng/ida/gcc/O3/sjeng-gcc-O3/think/src/protos.h:63:8: note: previous declaration is here
+move_s think (void);
+       ^
+/data/output_dir/patch/sjeng/ida/gcc/O3/sjeng-gcc-O3/think/src/search.c:2017:13: error: subscripted value is not an array, pointer, or vector
+true_i_depth[0] = 0; 
+~~~~~~~~~~~~^~
+/data/output_dir/patch/sjeng/ida/gcc/O3/sjeng-gcc-O3/think/src/search.c:2167:6: error: expected expression
+if ( ::result ) 
+     ^
+/data/output_dir/patch/sjeng/ida/gcc/O3/sjeng-gcc-O3/think/src/search.c:2259:40: error: too many arguments to function call, expected 3, have 4
+search_root( &v75, v3 - v31, v3 + v31, i_depth); 
+~~~~~~~~~~~                            ^~~~~~~
+/data/output_dir/patch/sjeng/ida/gcc/O3/sjeng-gcc-O3/think/src/search.c:1099:1: note: 'search_root' declared here
+move_s search_root (int originalalpha, int originalbeta, int depth) {
+^
+/data/output_dir/patch/sjeng/ida/gcc/O3/sjeng-gcc-O3/think/src/search.c:2263:6: error: expected expression
+if ( ::result ) 
+     ^
+/data/output_dir/patch/sjeng/ida/gcc/O3/sjeng-gcc-O3/think/src/search.c:2270:39: error: too many arguments to function call, expected 3, have 4
+search_root( &v75, -1000000, 1000000, i_depth); 
+~~~~~~~~~~~                           ^~~~~~~
+/data/output_dir/patch/sjeng/ida/gcc/O3/sjeng-gcc-O3/think/src/search.c:1099:1: note: 'search_root' declared here
+move_s search_root (int originalalpha, int originalbeta, int depth) {
+^
+/data/output_dir/patch/sjeng/ida/gcc/O3/sjeng-gcc-O3/think/src/search.c:2292:39: error: too many arguments to function call, expected 3, have 4
+search_root( &v75, -1000000, 1000000, i_depth); 
+~~~~~~~~~~~                           ^~~~~~~
+/data/output_dir/patch/sjeng/ida/gcc/O3/sjeng-gcc-O3/think/src/search.c:1099:1: note: 'search_root' declared here
+move_s search_root (int originalalpha, int originalbeta, int depth) {
+^
+/data/output_dir/patch/sjeng/ida/gcc/O3/sjeng-gcc-O3/think/src/search.c:2324:97: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+*( _QWORD *)&v75.from = _mm_unpacklo_epi32( _mm_cvtsi32_si128( v32), _mm_cvtsi32_si128( target)).m128i_u64[0]; 
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+/data/output_dir/patch/sjeng/ida/gcc/O3/sjeng-gcc-O3/think/src/search.c:2331:13: error: subscripted value is not an array, pointer, or vector
+true_i_depth[0] = i_depth; 
+~~~~~~~~~~~~^~
+/data/output_dir/patch/sjeng/ida/gcc/O3/sjeng-gcc-O3/think/src/search.c:2379:48: error: expected expression
+else if ( ( unsigned int)( Variant - 3) > 1 || ::result ) 
+                                               ^
+/data/output_dir/patch/sjeng/ida/gcc/O3/sjeng-gcc-O3/think/src/search.c:2408:12: error: expected expression
+*( _OWORD *)&v50.from = *( _OWORD *)&move.from; 
+           ^
+/data/output_dir/patch/sjeng/ida/gcc/O3/sjeng-gcc-O3/think/src/search.c:2408:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&v50.from = *( _OWORD *)&move.from; 
+   ^
+/data/output_dir/patch/sjeng/ida/gcc/O3/sjeng-gcc-O3/think/src/search.c:2408:36: error: expected expression
+*( _OWORD *)&v50.from = *( _OWORD *)&move.from; 
+                                   ^
+/data/output_dir/patch/sjeng/ida/gcc/O3/sjeng-gcc-O3/think/src/search.c:2408:28: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&v50.from = *( _OWORD *)&move.from; 
+                           ^
+/data/output_dir/patch/sjeng/ida/gcc/O3/sjeng-gcc-O3/think/src/search.c:2437:5: error: assigning to '__m128i' (vector of 2 'long long' values) from incompatible type 'long long'
+v38 = 0LL; 
+    ^ ~~~
+/data/output_dir/patch/sjeng/ida/gcc/O3/sjeng-gcc-O3/think/src/search.c:2443:67: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'long long' of different size
+v38 = _mm_sub_epi32( v38, _mm_andnot_si128( _mm_cmpeq_epi32( v40, ( __m128i)0LL), ( __m128i)xmmword_4273D0)); 
+                                                                  ^~~~~~~~~~~~~
+/data/output_dir/patch/sjeng/ida/gcc/O3/sjeng-gcc-O3/think/src/search.c:2443:93: error: use of undeclared identifier 'xmmword_4273D0'
+v38 = _mm_sub_epi32( v38, _mm_andnot_si128( _mm_cmpeq_epi32( v40, ( __m128i)0LL), ( __m128i)xmmword_4273D0)); 
+                                                                                            ^
+/data/output_dir/patch/sjeng/ida/gcc/O3/sjeng-gcc-O3/think/src/search.c:2484:12: error: expected expression
+*( _OWORD *)&v49.from = *( _OWORD *)&move.from; 
+           ^
+/data/output_dir/patch/sjeng/ida/gcc/O3/sjeng-gcc-O3/think/src/search.c:2484:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&v49.from = *( _OWORD *)&move.from; 
+   ^
+/data/output_dir/patch/sjeng/ida/gcc/O3/sjeng-gcc-O3/think/src/search.c:2484:36: error: expected expression
+*( _OWORD *)&v49.from = *( _OWORD *)&move.from; 
+                                   ^
+/data/output_dir/patch/sjeng/ida/gcc/O3/sjeng-gcc-O3/think/src/search.c:2484:28: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&v49.from = *( _OWORD *)&move.from; 
+                           ^
+/data/output_dir/patch/sjeng/ida/gcc/O3/sjeng-gcc-O3/think/src/search.c:2485:14: error: passing 'char [8]' to parameter of incompatible type 'move_s'
+comp_to_san( output, v49); 
+             ^~~~~~
+/data/output_dir/patch/sjeng/ida/gcc/O3/sjeng-gcc-O3/think/src/protos.h:119:26: note: passing argument to parameter 'move' here
+void comp_to_san (move_s move, char str[]);
+                         ^
+/data/output_dir/patch/sjeng/ida/gcc/O3/sjeng-gcc-O3/think/src/search.c:2487:1: error: expected expression
+::result = 0; 
+^
+/data/output_dir/patch/sjeng/ida/gcc/O3/sjeng-gcc-O3/think/src/search.c:2506:1: error: expected expression
+::result = 2; 
+^
+/data/output_dir/patch/sjeng/ida/gcc/O3/sjeng-gcc-O3/think/src/search.c:2519:1: error: expected expression
+::result = 3; 
+^
+/data/output_dir/patch/sjeng/ida/gcc/O3/sjeng-gcc-O3/think/src/search.c:2531:7: error: expected expression
+v17 = ::result - 1; 
+      ^
+/data/output_dir/patch/sjeng/ida/gcc/O3/sjeng-gcc-O3/think/src/search.c:2539:18: error: subscripted value is not an array, pointer, or vector
+if ( true_i_depth[0] > 2 && pn_move.target == dummy.target && is_pondering == FALSE ) 
+     ~~~~~~~~~~~~^~
+/data/output_dir/patch/sjeng/ida/gcc/O3/sjeng-gcc-O3/think/src/search.c:2545:1: error: use of undeclared identifier 'MEMORY'
+MEMORY[0] = 0; 
+^
+/data/output_dir/patch/sjeng/ida/gcc/O3/sjeng-gcc-O3/think/src/search.c:2559:7: error: expected expression
+v17 = ::result - 1; 
+      ^
+29 errors generated.
+make: *** [/data/output_dir/patch/sjeng/ida/gcc/O3/sjeng-gcc-O3/think/src/obj/search.o] Error 1

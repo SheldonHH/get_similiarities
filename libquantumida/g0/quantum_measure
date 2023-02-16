@@ -1,0 +1,27 @@
+gates.c:365:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gates.c:543:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2 warnings generated.
+measure.c:528:1: error: use of undeclared identifier 'complex_float'
+complex_float amplitude; // 0:xmm0_8.8 
+^
+measure.c:535:1: error: use of undeclared identifier 'amplitude'
+amplitude = reg.node[i].amplitude; 
+^
+measure.c:536:9: warning: implicit declaration of function 'quantum_prob_inline_1' is invalid in C99 [-Wimplicit-function-declaration]
+r = r - quantum_prob_inline_1( amplitude); 
+        ^
+measure.c:536:32: error: use of undeclared identifier 'amplitude'
+r = r - quantum_prob_inline_1( amplitude); 
+                               ^
+1 warning and 3 errors generated.
+objcode.c:176:18: warning: passing an object that undergoes default argument promotion to 'va_start' has undefined behavior [-Wvarargs]
+  va_start(args, operation);
+                 ^
+objcode.c:165:35: note: parameter of type 'unsigned char' is declared here
+quantum_objcode_put(unsigned char operation, ...)
+                                  ^
+1 warning generated.

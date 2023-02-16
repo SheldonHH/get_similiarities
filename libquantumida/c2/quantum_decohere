@@ -1,0 +1,97 @@
+decoherence.c:586:15: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+*( double *)v1.m128_u64 = quantum_frand( ); 
+            ~~^~~~~~~~~
+decoherence.c:588:15: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+*( double *)v1.m128_u64 = quantum_frand( ); 
+            ~~^~~~~~~~~
+decoherence.c:590:63: error: use of undeclared identifier 'xmmword_408620'
+v1 = _mm_cvtpd_ps( _mm_add_pd( _mm_add_pd( v9, v9), ( __m128d)xmmword_408620)); 
+                                                              ^
+decoherence.c:592:37: error: member reference base type '__attribute__((__vector_size__(4 * sizeof(float)))) float' (vector of 4 'float' values) is not a structure or union
+v11 = _mm_shuffle_ps( v10, v10, 229).m128_f32[0] + v10.m128_f32[0]; 
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+decoherence.c:592:55: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v11 = _mm_shuffle_ps( v10, v10, 229).m128_f32[0] + v10.m128_f32[0]; 
+                                                   ~~~^~~~~~~~~
+decoherence.c:595:9: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v28 = v1.m128_f32[0]; 
+      ~~^~~~~~~~~
+decoherence.c:608:4: error: assigning to '__m128' (vector of 4 'float' values) from incompatible type 'long long'
+v1 = 0LL; 
+   ^ ~~~
+decoherence.c:609:3: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v1.m128_f32[0] = v2; 
+~~^~~~~~~~~
+decoherence.c:610:14: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v5[v7++] = v1.m128_f32[0] * 0.5; 
+           ~~^~~~~~~~~
+decoherence.c:622:5: error: assigning to '__m128' (vector of 4 'float' values) from incompatible type 'long long'
+v19 = 0LL; 
+    ^ ~~~
+decoherence.c:630:5: error: assigning to '__m128' (vector of 4 'float' values) from incompatible type 'long long'
+v19 = 0LL; 
+    ^ ~~~
+decoherence.c:636:5: error: assigning to '__m128' (vector of 4 'float' values) from incompatible type 'long long'
+v19 = 0LL; 
+    ^ ~~~
+decoherence.c:642:7: warning: implicit declaration of function '_bittest64' is invalid in C99 [-Wimplicit-function-declaration]
+if ( !_bittest64( ( const __int64 *)&state, v20) ) 
+      ^
+decoherence.c:644:10: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v26 = v19.m128_f32[0] + v25; 
+      ~~~^~~~~~~~~
+decoherence.c:647:4: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v19.m128_f32[0] = v26 + *( float *)&v2; 
+~~~^~~~~~~~~
+decoherence.c:655:7: warning: implicit declaration of function '_bittest64' is invalid in C99 [-Wimplicit-function-declaration]
+if ( !_bittest64( ( const __int64 *)&state, v20) ) 
+      ^
+decoherence.c:659:4: warning: plain '_Complex' requires a type specifier; assuming '_Complex double'
+*( complex *)v19.m128_f32 = quantum_cexp( *( float *)&v2); 
+   ^
+           double
+/usr/include/complex.h:43:18: note: expanded from macro 'complex'
+#define complex         _Complex
+                        ^
+decoherence.c:659:17: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+*( complex *)v19.m128_f32 = quantum_cexp( *( float *)&v2); 
+             ~~~^~~~~~~~~
+decoherence.c:660:37: error: member reference base type '__attribute__((__vector_size__(4 * sizeof(float)))) float' (vector of 4 'float' values) is not a structure or union
+v21 = _mm_shuffle_ps( v19, v19, 229).m128_f32[0]; 
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+decoherence.c:662:32: error: member reference base type '_Complex float' is not a structure or union
+*( float *)&v2 = v22->amplitude.imag; 
+                 ~~~~~~~~~~~~~~^~~~~
+decoherence.c:663:20: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v23 = ( float)( v19.m128_f32[0] * *( float *)&v2) + ( float)( v21 * v22->amplitude.real); 
+                ~~~^~~~~~~~~
+decoherence.c:663:83: error: member reference base type '_Complex float' is not a structure or union
+v23 = ( float)( v19.m128_f32[0] * *( float *)&v2) + ( float)( v21 * v22->amplitude.real); 
+                                                                    ~~~~~~~~~~~~~~^~~~~
+decoherence.c:664:15: error: member reference base type '_Complex float' is not a structure or union
+v22->amplitude.real = ( float)( v19.m128_f32[0] * v22->amplitude.real) - ( float)( v21 * *( float *)&v2); 
+~~~~~~~~~~~~~~^~~~~
+decoherence.c:664:36: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v22->amplitude.real = ( float)( v19.m128_f32[0] * v22->amplitude.real) - ( float)( v21 * *( float *)&v2); 
+                                ~~~^~~~~~~~~
+decoherence.c:664:65: error: member reference base type '_Complex float' is not a structure or union
+v22->amplitude.real = ( float)( v19.m128_f32[0] * v22->amplitude.real) - ( float)( v21 * *( float *)&v2); 
+                                                  ~~~~~~~~~~~~~~^~~~~
+decoherence.c:665:15: error: member reference base type '_Complex float' is not a structure or union
+v22->amplitude.imag = v23; 
+~~~~~~~~~~~~~~^~~~~
+3 warnings and 23 errors generated.
+gates.c:365:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gates.c:543:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2 warnings generated.
+objcode.c:176:18: warning: passing an object that undergoes default argument promotion to 'va_start' has undefined behavior [-Wvarargs]
+  va_start(args, operation);
+                 ^
+objcode.c:165:35: note: parameter of type 'unsigned char' is declared here
+quantum_objcode_put(unsigned char operation, ...)
+                                  ^
+1 warning generated.

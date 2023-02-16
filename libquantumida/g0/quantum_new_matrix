@@ -1,0 +1,36 @@
+gates.c:365:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gates.c:543:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2 warnings generated.
+matrix.c:513:1: error: use of undeclared identifier 'complex_float'
+complex_float *m_8; // [rsp+18h] [rbp-8h] 
+^
+matrix.c:513:16: error: use of undeclared identifier 'm_8'
+complex_float *m_8; // [rsp+18h] [rbp-8h] 
+               ^
+matrix.c:515:1: error: use of undeclared identifier 'm_8'
+m_8 = ( complex_float *)calloc( rows * cols, 8uLL); 
+^
+matrix.c:515:24: error: expected expression
+m_8 = ( complex_float *)calloc( rows * cols, 8uLL); 
+                       ^
+matrix.c:515:9: error: use of undeclared identifier 'complex_float'
+m_8 = ( complex_float *)calloc( rows * cols, 8uLL); 
+        ^
+matrix.c:516:7: error: use of undeclared identifier 'm_8'
+if ( !m_8 ) 
+      ^
+matrix.c:523:8: error: use of undeclared identifier 'm_8'
+v2.t = m_8; 
+       ^
+7 errors generated.
+objcode.c:176:18: warning: passing an object that undergoes default argument promotion to 'va_start' has undefined behavior [-Wvarargs]
+  va_start(args, operation);
+                 ^
+objcode.c:165:35: note: parameter of type 'unsigned char' is declared here
+quantum_objcode_put(unsigned char operation, ...)
+                                  ^
+1 warning generated.

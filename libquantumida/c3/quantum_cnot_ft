@@ -1,0 +1,28 @@
+gates.c:365:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gates.c:543:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2 warnings generated.
+objcode.c:176:18: warning: passing an object that undergoes default argument promotion to 'va_start' has undefined behavior [-Wvarargs]
+  va_start(args, operation);
+                 ^
+objcode.c:165:35: note: parameter of type 'unsigned char' is declared here
+quantum_objcode_put(unsigned char operation, ...)
+                                  ^
+1 warning generated.
+qec.c:681:8: error: use of undeclared identifier 'quantum_qec_counter_counter'
+if ( ++quantum_qec_counter_counter >= quantum_qec_counter_freq ) 
+       ^
+qec.c:681:39: error: use of undeclared identifier 'quantum_qec_counter_freq'; did you mean 'quantum_qec_counter'?
+if ( ++quantum_qec_counter_counter >= quantum_qec_counter_freq ) 
+                                      ^~~~~~~~~~~~~~~~~~~~~~~~
+                                      quantum_qec_counter
+qec.c:152:1: note: 'quantum_qec_counter' declared here
+quantum_qec_counter(int inc, int frequency, quantum_reg *reg)
+^
+qec.c:683:1: error: use of undeclared identifier 'quantum_qec_counter_counter'
+quantum_qec_counter_counter = 0; 
+^
+3 errors generated.

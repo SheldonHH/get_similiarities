@@ -1,0 +1,34 @@
+gates.c:365:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gates.c:543:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gates.c:1334:1: error: use of undeclared identifier 'quantum_gate_counter_counter'
+quantum_gate_counter_counter = 0; 
+^
+gates.c:1338:1: error: use of undeclared identifier 'quantum_gate_counter_counter'; did you mean 'quantum_gate_counter'?
+quantum_gate_counter_counter += inc; 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+quantum_gate_counter
+gates.c:1329:6: note: 'quantum_gate_counter' declared here
+int  quantum_gate_counter( int inc) 
+     ^
+gates.c:1338:30: error: invalid operands to binary expression ('int (int)' and 'int')
+quantum_gate_counter_counter += inc; 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^  ~~~
+gates.c:1340:8: error: use of undeclared identifier 'quantum_gate_counter_counter'; did you mean 'quantum_gate_counter'?
+return quantum_gate_counter_counter; 
+       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+       quantum_gate_counter
+gates.c:1329:6: note: 'quantum_gate_counter' declared here
+int  quantum_gate_counter( int inc) 
+     ^
+2 warnings and 4 errors generated.
+objcode.c:176:18: warning: passing an object that undergoes default argument promotion to 'va_start' has undefined behavior [-Wvarargs]
+  va_start(args, operation);
+                 ^
+objcode.c:165:35: note: parameter of type 'unsigned char' is declared here
+quantum_objcode_put(unsigned char operation, ...)
+                                  ^
+1 warning generated.

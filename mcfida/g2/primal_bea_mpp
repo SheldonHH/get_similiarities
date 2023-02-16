@@ -1,0 +1,17 @@
+pbeampp.c:581:9: error: conflicting types for 'primal_bea_mpp'
+arc_t * primal_bea_mpp( __int64 m, arc_t *arcs, arc_t *stop_arcs, cost_t *red_cost_of_bea) 
+        ^
+./pbeampp.h:30:15: note: previous declaration is here
+extern arc_t *primal_bea_mpp _PROTO_(( long, arc_t*, arc_t*, cost_t* ));
+              ^
+pbeampp.c:625:13: warning: incompatible pointer types assigning to 'uint64 *' (aka 'unsigned long long *') from 'cost_t *' (aka 'long *') [-Wincompatible-pointer-types]
+p_potential = &a->head->potential; 
+            ^ ~~~~~~~~~~~~~~~~~~~
+pbeampp.c:650:7: error: use of undeclared identifier 'basket_0'; did you mean 'basket'?
+v27 = basket_0 + 24; 
+      ^~~~~~~~
+      basket
+pbeampp.c:59:15: note: 'basket' declared here
+static BASKET basket[B+K+1];
+              ^
+1 warning and 2 errors generated.

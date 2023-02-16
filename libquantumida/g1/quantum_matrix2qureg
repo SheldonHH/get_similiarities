@@ -1,0 +1,88 @@
+gates.c:365:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gates.c:543:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2 warnings generated.
+objcode.c:176:18: warning: passing an object that undergoes default argument promotion to 'va_start' has undefined behavior [-Wvarargs]
+  va_start(args, operation);
+                 ^
+objcode.c:165:35: note: parameter of type 'unsigned char' is declared here
+quantum_objcode_put(unsigned char operation, ...)
+                                  ^
+1 warning generated.
+qureg.c:507:15: error: conflicting types for 'quantum_matrix2qureg'
+quantum_reg * quantum_matrix2qureg( quantum_reg *retstr, quantum_matrix *m, int width) 
+              ^
+./qureg.h:56:20: note: previous declaration is here
+extern quantum_reg quantum_matrix2qureg(quantum_matrix *m, int width);
+                   ^
+qureg.c:511:1: error: use of undeclared identifier 'complex_float'
+complex_float *t; // rax 
+^
+qureg.c:511:16: error: use of undeclared identifier 't'
+complex_float *t; // rax 
+               ^
+qureg.c:516:1: error: use of undeclared identifier 'complex_float'
+complex_float *v11; // rcx 
+^
+qureg.c:516:16: error: use of undeclared identifier 'v11'
+complex_float *v11; // rcx 
+               ^
+qureg.c:526:65: warning: format specifies type 'int' but the argument has type 'long long' [-Wformat]
+printf( "Error! Cannot convert a multi-column-matrix ( %i)!\n", cols); 
+                                                       ~~       ^~~~
+                                                       %lli
+qureg.c:532:1: error: use of undeclared identifier 't'
+t = m->t; 
+^
+qureg.c:533:17: error: use of undeclared identifier 't'
+v7 = ( __int64)&t[( unsigned int)( m->rows - 1) + 1]; 
+                ^
+qureg.c:537:6: error: use of undeclared identifier 't'
+if ( t->imag != 0.0 || t->real != 0.0 ) 
+     ^
+qureg.c:537:24: error: use of undeclared identifier 't'
+if ( t->imag != 0.0 || t->real != 0.0 ) 
+                       ^
+qureg.c:539:3: error: use of undeclared identifier 't'
+++t; 
+  ^
+qureg.c:541:31: error: expected expression
+while ( t != ( complex_float *)v7 ); 
+                              ^
+qureg.c:541:16: error: use of undeclared identifier 'complex_float'
+while ( t != ( complex_float *)v7 ); 
+               ^
+qureg.c:541:9: error: use of undeclared identifier 't'
+while ( t != ( complex_float *)v7 ); 
+        ^
+qureg.c:541:32: error: expected ')'
+while ( t != ( complex_float *)v7 ); 
+                               ^
+qureg.c:541:7: note: to match this '('
+while ( t != ( complex_float *)v7 ); 
+      ^
+qureg.c:561:1: error: use of undeclared identifier 'v11'
+v11 = m->t; 
+^
+qureg.c:566:6: error: use of undeclared identifier 'v11'
+if ( v11[v12].imag != 0.0 || v11[v12].real != 0.0 ) 
+     ^
+qureg.c:566:30: error: use of undeclared identifier 'v11'
+if ( v11[v12].imag != 0.0 || v11[v12].real != 0.0 ) 
+                             ^
+qureg.c:570:8: error: use of undeclared identifier 'v11'
+imag = v11[v12].imag; 
+       ^
+qureg.c:571:15: error: member reference base type '_Complex float' is not a structure or union
+v14->amplitude.real = v11[v12].real; 
+~~~~~~~~~~~~~~^~~~~
+qureg.c:571:23: error: use of undeclared identifier 'v11'
+v14->amplitude.real = v11[v12].real; 
+                      ^
+qureg.c:572:15: error: member reference base type '_Complex float' is not a structure or union
+v14->amplitude.imag = imag; 
+~~~~~~~~~~~~~~^~~~~
+1 warning and 21 errors generated.

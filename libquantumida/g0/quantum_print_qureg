@@ -1,0 +1,57 @@
+gates.c:365:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gates.c:543:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2 warnings generated.
+objcode.c:176:18: warning: passing an object that undergoes default argument promotion to 'va_start' has undefined behavior [-Wvarargs]
+  va_start(args, operation);
+                 ^
+objcode.c:165:35: note: parameter of type 'unsigned char' is declared here
+quantum_objcode_put(unsigned char operation, ...)
+                                  ^
+1 warning generated.
+qureg.c:679:1: error: use of undeclared identifier 'complex_float'
+complex_float amplitude; // 0:xmm0_8.8 
+^
+qureg.c:680:1: error: use of undeclared identifier 'complex_float'
+complex_float v7; // 0:xmm0_8.8 
+^
+qureg.c:681:1: error: use of undeclared identifier 'complex_float'
+complex_float v8; // 0:xmm0_8.8 
+^
+qureg.c:685:1: error: use of undeclared identifier 'amplitude'
+amplitude = reg.node[i].amplitude; 
+^
+qureg.c:686:6: warning: implicit declaration of function 'quantum_prob_inline_2' is invalid in C99 [-Wimplicit-function-declaration]
+v3 = quantum_prob_inline_2( amplitude); 
+     ^
+qureg.c:686:29: error: use of undeclared identifier 'amplitude'
+v3 = quantum_prob_inline_2( amplitude); 
+                            ^
+qureg.c:688:1: error: use of undeclared identifier 'v7'
+v7 = reg.node[i].amplitude; 
+^
+qureg.c:689:6: warning: implicit declaration of function 'quantum_imag_3' is invalid in C99 [-Wimplicit-function-declaration]
+v2 = quantum_imag_3( v7); 
+     ^
+qureg.c:689:22: error: use of undeclared identifier 'v7'
+v2 = quantum_imag_3( v7); 
+                     ^
+qureg.c:690:1: error: use of undeclared identifier 'v8'
+v8 = reg.node[i].amplitude; 
+^
+qureg.c:691:1: error: use of undeclared identifier 'v8'
+v8.real = quantum_real_3( v8); 
+^
+qureg.c:691:11: warning: implicit declaration of function 'quantum_real_3' is invalid in C99 [-Wimplicit-function-declaration]
+v8.real = quantum_real_3( v8); 
+          ^
+qureg.c:691:27: error: use of undeclared identifier 'v8'
+v8.real = quantum_real_3( v8); 
+                          ^
+qureg.c:692:37: error: use of undeclared identifier 'v8'
+printf( "% f %+fi|%lli> ( %e) ( |", v8.real, v2, state, v3); 
+                                    ^
+3 warnings and 11 errors generated.

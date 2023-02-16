@@ -1,0 +1,29 @@
+/data/output_dir/patch/sjeng/ida/clang/O3/sjeng-clang-O3/comp_to_san/src/utils.c:578:7: error: conflicting types for 'comp_to_san'
+void  comp_to_san( char *str, move_s move) 
+      ^
+/data/output_dir/patch/sjeng/ida/clang/O3/sjeng-clang-O3/comp_to_san/src/protos.h:119:6: note: previous declaration is here
+void comp_to_san (move_s move, char str[]);
+     ^
+/data/output_dir/patch/sjeng/ida/clang/O3/sjeng-clang-O3/comp_to_san/src/utils.c:615:21: error: use of undeclared identifier 'dword_41F800'
+v6 = ( unsigned int)dword_41F800[move.promoted]; 
+                    ^
+/data/output_dir/patch/sjeng/ida/clang/O3/sjeng-clang-O3/comp_to_san/src/utils.c:658:21: error: use of undeclared identifier 'dword_41F800'
+v6 = ( unsigned int)dword_41F800[board[move.from]]; 
+                    ^
+/data/output_dir/patch/sjeng/ida/clang/O3/sjeng-clang-O3/comp_to_san/src/utils.c:667:22: error: use of undeclared identifier 'unk_41FD89'
+v9 = ( const char *)&unk_41FD89; 
+                     ^
+/data/output_dir/patch/sjeng/ida/clang/O3/sjeng-clang-O3/comp_to_san/src/utils.c:679:22: error: use of undeclared identifier 'unk_41FD9B'
+v9 = ( const char *)&unk_41FD9B; 
+                     ^
+/data/output_dir/patch/sjeng/ida/clang/O3/sjeng-clang-O3/comp_to_san/src/utils.c:691:21: error: use of undeclared identifier 'dword_41F800'
+v6 = ( unsigned int)dword_41F800[board[move.from]]; 
+                    ^
+/data/output_dir/patch/sjeng/ida/clang/O3/sjeng-clang-O3/comp_to_san/src/utils.c:714:21: error: use of undeclared identifier 'dword_41F800'
+v8 = ( unsigned int)dword_41F800[move.promoted]; 
+                    ^
+/data/output_dir/patch/sjeng/ida/clang/O3/sjeng-clang-O3/comp_to_san/src/utils.c:724:50: error: use of undeclared identifier 'dword_41F800'
+sprintf( str, "%c%d=%c", v24, v5, ( unsigned int)dword_41F800[move.promoted]); 
+                                                 ^
+8 errors generated.
+make: *** [/data/output_dir/patch/sjeng/ida/clang/O3/sjeng-clang-O3/comp_to_san/src/obj/utils.o] Error 1

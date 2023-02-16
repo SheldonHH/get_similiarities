@@ -1,0 +1,110 @@
+gates.c:365:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gates.c:543:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2 warnings generated.
+objcode.c:176:18: warning: passing an object that undergoes default argument promotion to 'va_start' has undefined behavior [-Wvarargs]
+  va_start(args, operation);
+                 ^
+objcode.c:165:35: note: parameter of type 'unsigned char' is declared here
+quantum_objcode_put(unsigned char operation, ...)
+                                  ^
+1 warning generated.
+qureg.c:507:15: error: conflicting types for 'quantum_matrix2qureg'
+quantum_reg * quantum_matrix2qureg( quantum_reg *retstr, quantum_matrix *m, int width) 
+              ^
+./qureg.h:56:20: note: previous declaration is here
+extern quantum_reg quantum_matrix2qureg(quantum_matrix *m, int width);
+                   ^
+qureg.c:513:1: error: use of undeclared identifier 'complex_float'
+complex_float *t; // rsi 
+^
+qureg.c:513:16: error: use of undeclared identifier 't'
+complex_float *t; // rsi 
+               ^
+qureg.c:515:1: error: use of undeclared identifier 'complex_float'
+complex_float *v12; // rax 
+^
+qureg.c:515:16: error: use of undeclared identifier 'v12'; did you mean 'v11'?
+complex_float *v12; // rax 
+               ^~~
+               v11
+qureg.c:514:9: note: 'v11' declared here
+__m128i v11; // xmm2 
+        ^
+qureg.c:530:1: error: use of undeclared identifier 'complex_float'
+complex_float *v27; // rcx 
+^
+qureg.c:530:16: error: use of undeclared identifier 'v27'
+complex_float *v27; // rcx 
+               ^
+qureg.c:545:65: warning: format specifies type 'int' but the argument has type 'long long' [-Wformat]
+printf( "Error! Cannot convert a multi-column-matrix ( %i)!\n", cols); 
+                                                       ~~       ^~~~
+                                                       %lli
+qureg.c:553:1: error: use of undeclared identifier 't'
+t = m->t; 
+^
+qureg.c:561:5: error: assigning to '__m128i' (vector of 2 'long long' values) from incompatible type 'long long'
+v11 = 0LL; 
+    ^ ~~~
+qureg.c:562:1: error: use of undeclared identifier 'v12'
+v12 = m->t; 
+^
+qureg.c:565:20: error: use of undeclared identifier 'v12'
+v13 = *( __m128 *)&v12->real; 
+                   ^
+qureg.c:566:20: error: use of undeclared identifier 'v12'
+v14 = *( __m128 *)&v12[2].real; 
+                   ^
+qureg.c:567:1: error: use of undeclared identifier 'v12'
+v12 += 4; 
+^
+qureg.c:571:58: error: invalid conversion between vector type '__m128' (vector of 4 'float' values) and integer type 'long long' of different size
+( __m128i)_mm_cmpneq_ps( _mm_shuffle_ps( v13, v14, 136), ( __m128)0LL), 
+                                                         ^~~~~~~~~~~~
+qureg.c:572:58: error: invalid conversion between vector type '__m128' (vector of 4 'float' values) and integer type 'long long' of different size
+( __m128i)_mm_cmpneq_ps( _mm_shuffle_ps( v13, v14, 221), ( __m128)0LL))); 
+                                                         ^~~~~~~~~~~~
+qureg.c:574:9: error: use of undeclared identifier 'v12'
+while ( v12 != &t[4 * ( ( unsigned int)rows >> 2)] ); 
+        ^
+qureg.c:574:17: error: use of undeclared identifier 't'
+while ( v12 != &t[4 * ( ( unsigned int)rows >> 2)] ); 
+                ^
+qureg.c:586:18: error: use of undeclared identifier 't'
+v18 = ( float *)&t[v15]; 
+                 ^
+qureg.c:597:18: error: use of undeclared identifier 't'
+v20 = ( float *)&t[v15 + 1]; 
+                 ^
+qureg.c:609:18: error: use of undeclared identifier 't'
+v23 = ( float *)&t[v21]; 
+                 ^
+qureg.c:641:1: error: use of undeclared identifier 'v27'
+v27 = m->t; 
+^
+qureg.c:646:6: error: use of undeclared identifier 'v27'
+if ( v27[v28].real != 0.0 || v27[v28].imag != 0.0 ) 
+     ^
+qureg.c:646:30: error: use of undeclared identifier 'v27'
+if ( v27[v28].real != 0.0 || v27[v28].imag != 0.0 ) 
+                             ^
+qureg.c:649:8: error: use of undeclared identifier 'v27'
+real = v27[v28].real; 
+       ^
+qureg.c:650:8: error: use of undeclared identifier 'v27'
+imag = v27[v28].imag; 
+       ^
+qureg.c:661:100: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+*( _QWORD *)&retstr->width = _mm_unpacklo_epi32( _mm_cvtsi32_si128( width), _mm_cvtsi32_si128( v9)).m128i_u64[0]; 
+                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+qureg.c:662:7: warning: implicit declaration of function '_mm_loadh_ps' is invalid in C99 [-Wimplicit-function-declaration]
+v34 = _mm_loadh_ps( ( const double *)&v37); 
+      ^
+qureg.c:662:5: error: assigning to '__m128' (vector of 4 'float' values) from incompatible type 'int'
+v34 = _mm_loadh_ps( ( const double *)&v37); 
+    ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2 warnings and 27 errors generated.

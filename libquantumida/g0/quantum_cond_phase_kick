@@ -1,0 +1,26 @@
+gates.c:365:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gates.c:543:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gates.c:1305:1: error: use of undeclared identifier 'SFtype'
+SFtype v4; // xmm4_4 
+^
+gates.c:1306:1: error: use of undeclared identifier 'complex_float'
+complex_float v5; // kr00_8 
+^
+gates.c:1312:1: error: use of undeclared identifier 'v5'
+v5 = quantum_cexp( gamma); 
+^
+gates.c:1318:19: error: use of undeclared identifier 'complex_float'
+v6->amplitude = ( complex_float)_mulsc3( v5.real, v5.imag, v6->amplitude.real, v6->amplitude.imag, v4).m128i_u64[0]; 
+                  ^
+2 warnings and 4 errors generated.
+objcode.c:176:18: warning: passing an object that undergoes default argument promotion to 'va_start' has undefined behavior [-Wvarargs]
+  va_start(args, operation);
+                 ^
+objcode.c:165:35: note: parameter of type 'unsigned char' is declared here
+quantum_objcode_put(unsigned char operation, ...)
+                                  ^
+1 warning generated.

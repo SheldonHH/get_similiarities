@@ -1,0 +1,16 @@
+implicit.c:620:39: warning: incompatible pointer to integer conversion assigning to 'uint64' (aka 'unsigned long long') from 'node_p' (aka 'struct node *') [-Wint-conversion]
+*( _QWORD *)( ( char *)a2 + v12 - 48) = *( node_p *)( ( char *)&a2->head + v9); 
+                                      ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+implicit.c:621:12: error: expected expression
+*( _OWORD *)( ( char *)&a2[-1].cost + v12) = *( _OWORD *)( ( char *)&a2->cost + v9); 
+           ^
+implicit.c:621:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)( ( char *)&a2[-1].cost + v12) = *( _OWORD *)( ( char *)&a2->cost + v9); 
+   ^
+implicit.c:621:57: error: expected expression
+*( _OWORD *)( ( char *)&a2[-1].cost + v12) = *( _OWORD *)( ( char *)&a2->cost + v9); 
+                                                        ^
+implicit.c:621:49: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)( ( char *)&a2[-1].cost + v12) = *( _OWORD *)( ( char *)&a2->cost + v9); 
+                                                ^
+1 warning and 4 errors generated.

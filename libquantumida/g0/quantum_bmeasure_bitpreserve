@@ -1,0 +1,74 @@
+gates.c:365:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gates.c:543:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2 warnings generated.
+measure.c:622:1: error: use of undeclared identifier 'complex_float'
+complex_float amplitude; // 0:xmm0_8.8 
+^
+measure.c:623:1: error: use of undeclared identifier 'complex_float'
+complex_float v22; // 0:xmm0_8.8 
+^
+measure.c:636:1: error: use of undeclared identifier 'amplitude'; did you mean 'p_amplitude'?
+amplitude = reg->node[i].amplitude; 
+^~~~~~~~~
+p_amplitude
+measure.c:609:8: note: 'p_amplitude' declared here
+float *p_amplitude; // rax 
+       ^
+measure.c:636:11: error: assigning to 'float *' from incompatible type '_Complex float'
+amplitude = reg->node[i].amplitude; 
+          ^ ~~~~~~~~~~~~~~~~~~~~~~
+measure.c:637:6: warning: implicit declaration of function 'quantum_prob_inline_1' is invalid in C99 [-Wimplicit-function-declaration]
+pa = quantum_prob_inline_1( amplitude) + pa; 
+     ^
+measure.c:637:29: error: use of undeclared identifier 'amplitude'; did you mean 'p_amplitude'?
+pa = quantum_prob_inline_1( amplitude) + pa; 
+                            ^~~~~~~~~
+                            p_amplitude
+measure.c:609:8: note: 'p_amplitude' declared here
+float *p_amplitude; // rax 
+       ^
+measure.c:649:14: error: member reference base type '_Complex float' is not a structure or union
+v3->amplitude.real = 0.0; 
+~~~~~~~~~~~~~^~~~~
+measure.c:650:14: error: member reference base type '_Complex float' is not a structure or union
+v3->amplitude.imag = 0.0; 
+~~~~~~~~~~~~~^~~~~
+measure.c:657:14: error: member reference base type '_Complex float' is not a structure or union
+v4->amplitude.real = 0.0; 
+~~~~~~~~~~~~~^~~~~
+measure.c:658:14: error: member reference base type '_Complex float' is not a structure or union
+v4->amplitude.imag = 0.0; 
+~~~~~~~~~~~~~^~~~~
+measure.c:661:1: error: use of undeclared identifier 'v22'
+v22 = reg->node[ia].amplitude; 
+^
+measure.c:662:5: warning: implicit declaration of function 'quantum_prob_inline_1' is invalid in C99 [-Wimplicit-function-declaration]
+d = quantum_prob_inline_1( v22) + d; 
+    ^
+measure.c:662:28: error: use of undeclared identifier 'v22'
+d = quantum_prob_inline_1( v22) + d; 
+                           ^
+measure.c:681:19: error: member reference base type '_Complex float' is not a structure or union
+if ( v5->amplitude.real != 0.0 || v5->amplitude.imag != 0.0 ) 
+     ~~~~~~~~~~~~~^~~~~
+measure.c:681:48: error: member reference base type '_Complex float' is not a structure or union
+if ( v5->amplitude.real != 0.0 || v5->amplitude.imag != 0.0 ) 
+                                  ~~~~~~~~~~~~~^~~~~
+measure.c:685:21: error: member reference base type '_Complex float' is not a structure or union
+imag = v6->amplitude.imag; 
+       ~~~~~~~~~~~~~^~~~~
+measure.c:686:21: error: member reference base type '_Complex float' is not a structure or union
+real = v6->amplitude.real; 
+       ~~~~~~~~~~~~~^~~~~
+2 warnings and 15 errors generated.
+objcode.c:176:18: warning: passing an object that undergoes default argument promotion to 'va_start' has undefined behavior [-Wvarargs]
+  va_start(args, operation);
+                 ^
+objcode.c:165:35: note: parameter of type 'unsigned char' is declared here
+quantum_objcode_put(unsigned char operation, ...)
+                                  ^
+1 warning generated.

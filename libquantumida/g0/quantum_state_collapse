@@ -1,0 +1,78 @@
+gates.c:365:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gates.c:543:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2 warnings generated.
+objcode.c:176:18: warning: passing an object that undergoes default argument promotion to 'va_start' has undefined behavior [-Wvarargs]
+  va_start(args, operation);
+                 ^
+objcode.c:165:35: note: parameter of type 'unsigned char' is declared here
+quantum_objcode_put(unsigned char operation, ...)
+                                  ^
+1 warning generated.
+qureg.c:797:15: error: conflicting types for 'quantum_state_collapse'
+quantum_reg * quantum_state_collapse( quantum_reg *retstr, int pos, int value, quantum_reg reg) 
+              ^
+./qureg.h:72:20: note: previous declaration is here
+extern quantum_reg quantum_state_collapse(int bit, int value, 
+                   ^
+qureg.c:818:1: error: use of undeclared identifier 'complex_float'
+complex_float amplitude; // 0:xmm0_8.8 
+^
+qureg.c:825:39: warning: '&&' within '||' [-Wlogical-op-parentheses]
+if ( ( pos2 & reg.node[i].state) != 0 && value || ( pos2 & reg.node[i].state) == 0 && !value ) 
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~ ~~
+qureg.c:825:39: note: place parentheses around the '&&' expression to silence this warning
+if ( ( pos2 & reg.node[i].state) != 0 && value || ( pos2 & reg.node[i].state) == 0 && !value ) 
+                                      ^
+     (                                        )
+qureg.c:825:84: warning: '&&' within '||' [-Wlogical-op-parentheses]
+if ( ( pos2 & reg.node[i].state) != 0 && value || ( pos2 & reg.node[i].state) == 0 && !value ) 
+                                               ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+qureg.c:825:84: note: place parentheses around the '&&' expression to silence this warning
+if ( ( pos2 & reg.node[i].state) != 0 && value || ( pos2 & reg.node[i].state) == 0 && !value ) 
+                                                                                   ^
+                                                  (                                         )
+qureg.c:827:1: error: use of undeclared identifier 'amplitude'; did you mean 'p_amplitude'?
+amplitude = reg.node[i].amplitude; 
+^~~~~~~~~
+p_amplitude
+qureg.c:801:8: note: 'p_amplitude' declared here
+float *p_amplitude; // rax 
+       ^
+qureg.c:827:11: error: assigning to 'float *' from incompatible type '_Complex float'
+amplitude = reg.node[i].amplitude; 
+          ^ ~~~~~~~~~~~~~~~~~~~~~
+qureg.c:828:5: warning: implicit declaration of function 'quantum_prob_inline_2' is invalid in C99 [-Wimplicit-function-declaration]
+d = quantum_prob_inline_2( amplitude) + d; 
+    ^
+qureg.c:828:28: error: use of undeclared identifier 'amplitude'; did you mean 'p_amplitude'?
+d = quantum_prob_inline_2( amplitude) + d; 
+                           ^~~~~~~~~
+                           p_amplitude
+qureg.c:801:8: note: 'p_amplitude' declared here
+float *p_amplitude; // rax 
+       ^
+qureg.c:846:40: warning: '&&' within '||' [-Wlogical-op-parentheses]
+if ( ( pos2 & reg.node[ia].state) != 0 && value || ( pos2 & reg.node[ia].state) == 0 && !value ) 
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~ ~~
+qureg.c:846:40: note: place parentheses around the '&&' expression to silence this warning
+if ( ( pos2 & reg.node[ia].state) != 0 && value || ( pos2 & reg.node[ia].state) == 0 && !value ) 
+                                       ^
+     (                                         )
+qureg.c:846:86: warning: '&&' within '||' [-Wlogical-op-parentheses]
+if ( ( pos2 & reg.node[ia].state) != 0 && value || ( pos2 & reg.node[ia].state) == 0 && !value ) 
+                                                ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+qureg.c:846:86: note: place parentheses around the '&&' expression to silence this warning
+if ( ( pos2 & reg.node[ia].state) != 0 && value || ( pos2 & reg.node[ia].state) == 0 && !value ) 
+                                                                                     ^
+                                                   (                                          )
+qureg.c:859:21: error: member reference base type '_Complex float' is not a structure or union
+imag = v4->amplitude.imag; 
+       ~~~~~~~~~~~~~^~~~~
+qureg.c:860:21: error: member reference base type '_Complex float' is not a structure or union
+real = v4->amplitude.real; 
+       ~~~~~~~~~~~~~^~~~~
+5 warnings and 7 errors generated.

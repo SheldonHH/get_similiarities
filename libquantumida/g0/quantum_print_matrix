@@ -1,0 +1,39 @@
+gates.c:365:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gates.c:543:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2 warnings generated.
+matrix.c:560:1: error: use of undeclared identifier 'complex_float'
+complex_float v7; // 0:xmm0_8.8 
+^
+matrix.c:561:1: error: use of undeclared identifier 'complex_float'
+complex_float v8; // 0:xmm0_8.8 
+^
+matrix.c:571:1: error: use of undeclared identifier 'v7'
+v7 = m.t[i * m.cols + j]; 
+^
+matrix.c:572:6: warning: implicit declaration of function 'quantum_imag_1' is invalid in C99 [-Wimplicit-function-declaration]
+v3 = quantum_imag_1( v7); 
+     ^
+matrix.c:572:22: error: use of undeclared identifier 'v7'
+v3 = quantum_imag_1( v7); 
+                     ^
+matrix.c:573:1: error: use of undeclared identifier 'v8'
+v8 = m.t[i * m.cols + j]; 
+^
+matrix.c:574:6: warning: implicit declaration of function 'quantum_real_1' is invalid in C99 [-Wimplicit-function-declaration]
+v2 = quantum_real_1( v8); 
+     ^
+matrix.c:574:22: error: use of undeclared identifier 'v8'
+v2 = quantum_real_1( v8); 
+                     ^
+2 warnings and 6 errors generated.
+objcode.c:176:18: warning: passing an object that undergoes default argument promotion to 'va_start' has undefined behavior [-Wvarargs]
+  va_start(args, operation);
+                 ^
+objcode.c:165:35: note: parameter of type 'unsigned char' is declared here
+quantum_objcode_put(unsigned char operation, ...)
+                                  ^
+1 warning generated.

@@ -1,0 +1,26 @@
+gates.c:365:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gates.c:543:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gates.c:1337:1: error: use of undeclared identifier 'counter_0'
+counter_0 = 0; 
+^
+gates.c:1342:8: error: use of undeclared identifier 'counter_0'
+return counter_0; 
+       ^
+gates.c:1347:10: error: use of undeclared identifier 'counter_0'
+result = counter_0 + inc; 
+         ^
+gates.c:1348:1: error: use of undeclared identifier 'counter_0'
+counter_0 += inc; 
+^
+2 warnings and 4 errors generated.
+objcode.c:176:18: warning: passing an object that undergoes default argument promotion to 'va_start' has undefined behavior [-Wvarargs]
+  va_start(args, operation);
+                 ^
+objcode.c:165:35: note: parameter of type 'unsigned char' is declared here
+quantum_objcode_put(unsigned char operation, ...)
+                                  ^
+1 warning generated.

@@ -1,0 +1,31 @@
+pbeampp.c:581:9: error: conflicting types for 'primal_bea_mpp'
+arc_t * primal_bea_mpp( __int64 m, arc_t *arcs, arc_t *stop_arcs, cost_t *red_cost_of_bea) 
+        ^
+./pbeampp.h:30:15: note: previous declaration is here
+extern arc_t *primal_bea_mpp _PROTO_(( long, arc_t*, arc_t*, cost_t* ));
+              ^
+pbeampp.c:598:12: error: use of undeclared identifier 'basket_0'; did you mean 'basket'?
+perm[i] = &basket_0[i]; 
+           ^~~~~~~~
+           basket
+pbeampp.c:59:15: note: 'basket' declared here
+static BASKET basket[B+K+1];
+              ^
+pbeampp.c:615:12: error: expected identifier or '('
+struct arc = perm[ia]->a; 
+           ^
+pbeampp.c:617:19: warning: '&&' within '||' [-Wlogical-op-parentheses]
+if ( red_cost < 0 && arc->ident == 1 || red_cost > 0 && arc->ident == 2 ) 
+     ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~ ~~
+pbeampp.c:617:19: note: place parentheses around the '&&' expression to silence this warning
+if ( red_cost < 0 && arc->ident == 1 || red_cost > 0 && arc->ident == 2 ) 
+                  ^
+     (                              )
+pbeampp.c:617:54: warning: '&&' within '||' [-Wlogical-op-parentheses]
+if ( red_cost < 0 && arc->ident == 1 || red_cost > 0 && arc->ident == 2 ) 
+                                     ~~ ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+pbeampp.c:617:54: note: place parentheses around the '&&' expression to silence this warning
+if ( red_cost < 0 && arc->ident == 1 || red_cost > 0 && arc->ident == 2 ) 
+                                                     ^
+                                        (                              )
+2 warnings and 3 errors generated.

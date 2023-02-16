@@ -1,0 +1,23 @@
+/data/output_dir/patch/sjeng/ida/gcc/O3/sjeng-gcc-O3/verify_coord/src/utils.c:1492:8: error: member reference base type 'const __m128i' (vector of 2 'long long' values) is not a structure or union
+v7 = v3->m128i_i32[1]; 
+     ~~^ ~~~~~~~~~
+/data/output_dir/patch/sjeng/ida/gcc/O3/sjeng-gcc-O3/verify_coord/src/utils.c:1493:8: error: member reference base type 'const __m128i' (vector of 2 'long long' values) is not a structure or union
+v8 = v3->m128i_i32[0]; 
+     ~~^ ~~~~~~~~~
+/data/output_dir/patch/sjeng/ida/gcc/O3/sjeng-gcc-O3/verify_coord/src/utils.c:1496:9: error: member reference base type 'const __m128i' (vector of 2 'long long' values) is not a structure or union
+v10 = v3->m128i_i32[3]; 
+      ~~^ ~~~~~~~~~
+/data/output_dir/patch/sjeng/ida/gcc/O3/sjeng-gcc-O3/verify_coord/src/utils.c:1498:56: error: use of undeclared identifier 'xmmword_428B30'
+v20[0] = ( __int128)_mm_load_si128( ( const __m128i *)&xmmword_428B30); 
+                                                       ^
+/data/output_dir/patch/sjeng/ida/gcc/O3/sjeng-gcc-O3/verify_coord/src/utils.c:1499:56: error: use of undeclared identifier 'xmmword_428B40'
+v20[1] = ( __int128)_mm_load_si128( ( const __m128i *)&xmmword_428B40); 
+                                                       ^
+/data/output_dir/patch/sjeng/ida/gcc/O3/sjeng-gcc-O3/verify_coord/src/utils.c:1500:56: error: use of undeclared identifier 'xmmword_428B50'
+v20[2] = ( __int128)_mm_load_si128( ( const __m128i *)&xmmword_428B50); 
+                                                       ^
+/data/output_dir/patch/sjeng/ida/gcc/O3/sjeng-gcc-O3/verify_coord/src/utils.c:1550:35: error: member reference base type 'const __m128i' (vector of 2 'long long' values) is not a structure or union
+*( _QWORD *)&move->castled = v3[1].m128i_i64[0]; 
+                             ~~~~~^~~~~~~~~~
+7 errors generated.
+make: *** [/data/output_dir/patch/sjeng/ida/gcc/O3/sjeng-gcc-O3/verify_coord/src/obj/utils.o] Error 1

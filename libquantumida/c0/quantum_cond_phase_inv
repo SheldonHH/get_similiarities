@@ -1,0 +1,72 @@
+gates.c:365:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gates.c:543:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gates.c:1287:1: warning: plain '_Complex' requires a type specifier; assuming '_Complex double'
+complex z; // [rsp+40h] [rbp-20h] 
+^
+        double
+/usr/include/complex.h:43:18: note: expanded from macro 'complex'
+#define complex         _Complex
+                        ^
+gates.c:1292:1: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'unsigned long long' of different size
+( __m128i)( unsigned __int64)( 1LL << ( ( unsigned __int8)control - ( unsigned __int8)target)), 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gates.c:1293:11: error: use of undeclared identifier 'xmmword_40BA70'
+( __m128i)xmmword_40BA70), 
+          ^
+gates.c:1294:11: error: use of undeclared identifier 'xmmword_40BA80'
+( __m128d)xmmword_40BA80); 
+          ^
+gates.c:1295:14: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+*( float *)v3.m128d_f64 = -3.141592654 / ( _mm_unpackhi_pd( v3, v3).m128d_f64[0] + v3.m128d_f64[0]); 
+           ~~^~~~~~~~~~
+gates.c:1295:68: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+*( float *)v3.m128d_f64 = -3.141592654 / ( _mm_unpackhi_pd( v3, v3).m128d_f64[0] + v3.m128d_f64[0]); 
+                                           ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+gates.c:1295:86: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+*( float *)v3.m128d_f64 = -3.141592654 / ( _mm_unpackhi_pd( v3, v3).m128d_f64[0] + v3.m128d_f64[0]); 
+                                                                                   ~~^~~~~~~~~~
+gates.c:1296:32: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+z = quantum_cexp( *( float *)v3.m128d_f64); 
+                             ~~^~~~~~~~~~
+gates.c:1302:29: error: member reference base type '_Complex float' is not a structure or union
+v5 = ( float)( v4->amplitude.real * z.imag) + ( float)( v4->amplitude.imag * z.real); 
+               ~~~~~~~~~~~~~^~~~~
+gates.c:1302:38: error: member reference base type '_Complex double' is not a structure or union
+v5 = ( float)( v4->amplitude.real * z.imag) + ( float)( v4->amplitude.imag * z.real); 
+                                    ~^~~~~
+gates.c:1302:70: error: member reference base type '_Complex float' is not a structure or union
+v5 = ( float)( v4->amplitude.real * z.imag) + ( float)( v4->amplitude.imag * z.real); 
+                                                        ~~~~~~~~~~~~~^~~~~
+gates.c:1302:79: error: member reference base type '_Complex double' is not a structure or union
+v5 = ( float)( v4->amplitude.real * z.imag) + ( float)( v4->amplitude.imag * z.real); 
+                                                                             ~^~~~~
+gates.c:1303:14: error: member reference base type '_Complex float' is not a structure or union
+v4->amplitude.real = ( float)( v4->amplitude.real * z.real) - ( float)( v4->amplitude.imag * z.imag); 
+~~~~~~~~~~~~~^~~~~
+gates.c:1303:45: error: member reference base type '_Complex float' is not a structure or union
+v4->amplitude.real = ( float)( v4->amplitude.real * z.real) - ( float)( v4->amplitude.imag * z.imag); 
+                               ~~~~~~~~~~~~~^~~~~
+gates.c:1303:54: error: member reference base type '_Complex double' is not a structure or union
+v4->amplitude.real = ( float)( v4->amplitude.real * z.real) - ( float)( v4->amplitude.imag * z.imag); 
+                                                    ~^~~~~
+gates.c:1303:86: error: member reference base type '_Complex float' is not a structure or union
+v4->amplitude.real = ( float)( v4->amplitude.real * z.real) - ( float)( v4->amplitude.imag * z.imag); 
+                                                                        ~~~~~~~~~~~~~^~~~~
+gates.c:1303:95: error: member reference base type '_Complex double' is not a structure or union
+v4->amplitude.real = ( float)( v4->amplitude.real * z.real) - ( float)( v4->amplitude.imag * z.imag); 
+                                                                                             ~^~~~~
+gates.c:1304:14: error: member reference base type '_Complex float' is not a structure or union
+v4->amplitude.imag = v5; 
+~~~~~~~~~~~~~^~~~~
+3 warnings and 17 errors generated.
+objcode.c:176:18: warning: passing an object that undergoes default argument promotion to 'va_start' has undefined behavior [-Wvarargs]
+  va_start(args, operation);
+                 ^
+objcode.c:165:35: note: parameter of type 'unsigned char' is declared here
+quantum_objcode_put(unsigned char operation, ...)
+                                  ^
+1 warning generated.

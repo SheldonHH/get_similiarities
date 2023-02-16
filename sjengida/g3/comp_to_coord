@@ -1,0 +1,17 @@
+/data/output_dir/patch/sjeng/ida/gcc/O3/sjeng-gcc-O3/comp_to_coord/src/utils.c:738:7: error: conflicting types for 'comp_to_coord'
+void  comp_to_coord( char *str, move_s move) 
+      ^
+/data/output_dir/patch/sjeng/ida/gcc/O3/sjeng-gcc-O3/comp_to_coord/src/protos.h:15:6: note: previous declaration is here
+void comp_to_coord (move_s move, char str[]);
+     ^
+/data/output_dir/patch/sjeng/ida/gcc/O3/sjeng-gcc-O3/comp_to_coord/src/utils.c:748:64: error: use of undeclared identifier 'xmmword_428B30'
+*( __m128i *)type_to_char = _mm_load_si128( ( const __m128i *)&xmmword_428B30); 
+                                                               ^
+/data/output_dir/patch/sjeng/ida/gcc/O3/sjeng-gcc-O3/comp_to_coord/src/utils.c:751:68: error: use of undeclared identifier 'xmmword_428B40'
+*( __m128i *)&type_to_char[4] = _mm_load_si128( ( const __m128i *)&xmmword_428B40); 
+                                                                   ^
+/data/output_dir/patch/sjeng/ida/gcc/O3/sjeng-gcc-O3/comp_to_coord/src/utils.c:752:68: error: use of undeclared identifier 'xmmword_428B50'
+*( __m128i *)&type_to_char[8] = _mm_load_si128( ( const __m128i *)&xmmword_428B50); 
+                                                                   ^
+4 errors generated.
+make: *** [/data/output_dir/patch/sjeng/ida/gcc/O3/sjeng-gcc-O3/comp_to_coord/src/obj/utils.o] Error 1

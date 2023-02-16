@@ -1,0 +1,44 @@
+/data/output_dir/patch/sjeng/ida/gcc/O0/sjeng-gcc-O0/think/src/search.c:1906:10: error: conflicting types for 'think'
+move_s * think( move_s *retstr) 
+         ^
+/data/output_dir/patch/sjeng/ida/gcc/O0/sjeng-gcc-O0/think/src/protos.h:63:8: note: previous declaration is here
+move_s think (void);
+       ^
+/data/output_dir/patch/sjeng/ida/gcc/O0/sjeng-gcc-O0/think/src/search.c:1994:13: error: subscripted value is not an array, pointer, or vector
+true_i_depth[0] = 0; 
+~~~~~~~~~~~~^~
+/data/output_dir/patch/sjeng/ida/gcc/O0/sjeng-gcc-O0/think/src/search.c:2165:51: error: too many arguments to function call, expected 3, have 4
+search_root( &temp_move, alpha, v19 + temp_score, i_depth); 
+~~~~~~~~~~~                                       ^~~~~~~
+/data/output_dir/patch/sjeng/ida/gcc/O0/sjeng-gcc-O0/think/src/search.c:1099:1: note: 'search_root' declared here
+move_s search_root (int originalalpha, int originalbeta, int depth) {
+^
+/data/output_dir/patch/sjeng/ida/gcc/O0/sjeng-gcc-O0/think/src/search.c:2176:39: error: too many arguments to function call, expected 3, have 4
+search_root( &v29, -1000000, 1000000, i_depth); 
+~~~~~~~~~~~                           ^~~~~~~
+/data/output_dir/patch/sjeng/ida/gcc/O0/sjeng-gcc-O0/think/src/search.c:1099:1: note: 'search_root' declared here
+move_s search_root (int originalalpha, int originalbeta, int depth) {
+^
+/data/output_dir/patch/sjeng/ida/gcc/O0/sjeng-gcc-O0/think/src/search.c:2185:39: error: too many arguments to function call, expected 3, have 4
+search_root( &v29, -1000000, 1000000, i_depth); 
+~~~~~~~~~~~                           ^~~~~~~
+/data/output_dir/patch/sjeng/ida/gcc/O0/sjeng-gcc-O0/think/src/search.c:1099:1: note: 'search_root' declared here
+move_s search_root (int originalalpha, int originalbeta, int depth) {
+^
+/data/output_dir/patch/sjeng/ida/gcc/O0/sjeng-gcc-O0/think/src/search.c:2219:13: error: subscripted value is not an array, pointer, or vector
+true_i_depth[0] = i_depth; 
+~~~~~~~~~~~~^~
+/data/output_dir/patch/sjeng/ida/gcc/O0/sjeng-gcc-O0/think/src/search.c:2251:31: error: too many arguments to function call, expected single argument 'compmove', have 2 arguments
+proofnumbercheck( &comp_move, comp_move); 
+~~~~~~~~~~~~~~~~              ^~~~~~~~~
+/data/output_dir/patch/sjeng/ida/gcc/O0/sjeng-gcc-O0/think/src/protos.h:125:1: note: 'proofnumbercheck' declared here
+move_s proofnumbercheck(move_s compmove);
+^
+/data/output_dir/patch/sjeng/ida/gcc/O0/sjeng-gcc-O0/think/src/search.c:2326:16: error: subscripted value is not an array, pointer, or vector
+&& true_i_depth[0] > 2 
+   ~~~~~~~~~~~~^~
+/data/output_dir/patch/sjeng/ida/gcc/O0/sjeng-gcc-O0/think/src/search.c:2332:1: error: use of undeclared identifier 'MEMORY'
+MEMORY[0] = 0; 
+^
+9 errors generated.
+make: *** [/data/output_dir/patch/sjeng/ida/gcc/O0/sjeng-gcc-O0/think/src/obj/search.o] Error 1

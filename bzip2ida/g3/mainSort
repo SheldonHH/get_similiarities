@@ -1,0 +1,47 @@
+/data/output_dir/patch/bzip2/ida/gcc/O3/bzip2-gcc-O3/mainSort/src/blocksort.c:1755:73: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+&& ( v22 >= ( __m128i *)&quadrant[v21 + 34] || &quadrant[v21] >= &v22[2].m128i_u16[1]) 
+                                                                  ~~~~~~^~~~~~~~~~
+/data/output_dir/patch/bzip2/ida/gcc/O3/bzip2-gcc-O3/mainSort/src/blocksort.c:1759:12: error: expected expression
+*( _OWORD *)v23 = 0LL; 
+           ^
+/data/output_dir/patch/bzip2/ida/gcc/O3/bzip2-gcc-O3/mainSort/src/blocksort.c:1759:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)v23 = 0LL; 
+   ^
+/data/output_dir/patch/bzip2/ida/gcc/O3/bzip2-gcc-O3/mainSort/src/blocksort.c:1760:14: error: expected expression
+*( ( _OWORD *)v23 + 1) = 0LL; 
+             ^
+/data/output_dir/patch/bzip2/ida/gcc/O3/bzip2-gcc-O3/mainSort/src/blocksort.c:1760:6: error: use of undeclared identifier '_OWORD'
+*( ( _OWORD *)v23 + 1) = 0LL; 
+     ^
+/data/output_dir/patch/bzip2/ida/gcc/O3/bzip2-gcc-O3/mainSort/src/blocksort.c:1762:14: error: expected expression
+*( ( _OWORD *)v23 + 2) = 0LL; 
+             ^
+/data/output_dir/patch/bzip2/ida/gcc/O3/bzip2-gcc-O3/mainSort/src/blocksort.c:1762:6: error: use of undeclared identifier '_OWORD'
+*( ( _OWORD *)v23 + 2) = 0LL; 
+     ^
+/data/output_dir/patch/bzip2/ida/gcc/O3/bzip2-gcc-O3/mainSort/src/blocksort.c:1763:14: error: expected expression
+*( ( _OWORD *)v23 + 3) = 0LL; 
+             ^
+/data/output_dir/patch/bzip2/ida/gcc/O3/bzip2-gcc-O3/mainSort/src/blocksort.c:1763:6: error: use of undeclared identifier '_OWORD'
+*( ( _OWORD *)v23 + 3) = 0LL; 
+     ^
+/data/output_dir/patch/bzip2/ida/gcc/O3/bzip2-gcc-O3/mainSort/src/blocksort.c:1774:4: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+v22->m128i_i8[k] = block[k]; 
+~~~^ ~~~~~~~~
+/data/output_dir/patch/bzip2/ida/gcc/O3/bzip2-gcc-O3/mainSort/src/blocksort.c:1850:44: error: use of undeclared identifier 'xmmword_417E20'
+si128 = _mm_load_si128( ( const __m128i *)&xmmword_417E20); 
+                                           ^
+/data/output_dir/patch/bzip2/ida/gcc/O3/bzip2-gcc-O3/mainSort/src/blocksort.c:1851:42: error: use of undeclared identifier 'xmmword_417E30'
+v49 = _mm_load_si128( ( const __m128i *)&xmmword_417E30); 
+                                         ^
+/data/output_dir/patch/bzip2/ida/gcc/O3/bzip2-gcc-O3/mainSort/src/blocksort.c:2362:98: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+*( _QWORD *)&v435[v422] = _mm_unpacklo_epi32( _mm_cvtsi32_si128( v363), _mm_cvtsi32_si128( v360)).m128i_u64[0]; 
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+/data/output_dir/patch/bzip2/ida/gcc/O3/bzip2-gcc-O3/mainSort/src/blocksort.c:2363:98: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+*( _QWORD *)&v436[v422] = _mm_unpacklo_epi32( _mm_cvtsi32_si128( v358), _mm_cvtsi32_si128( v361)).m128i_u64[0]; 
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+/data/output_dir/patch/bzip2/ida/gcc/O3/bzip2-gcc-O3/mainSort/src/blocksort.c:2366:78: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+*( _QWORD *)&v437[v422] = _mm_unpacklo_epi32( v373, _mm_cvtsi32_si128( v359)).m128i_u64[0]; 
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+15 errors generated.
+make: *** [/data/output_dir/patch/bzip2/ida/gcc/O3/bzip2-gcc-O3/mainSort/src/obj/blocksort.o] Error 1

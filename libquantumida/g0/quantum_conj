@@ -1,0 +1,54 @@
+complex.c:497:1: error: unknown type name 'complex_float'
+complex_float  quantum_conj( complex_float a) 
+^
+complex.c:497:30: error: unknown type name 'complex_float'
+complex_float  quantum_conj( complex_float a) 
+                             ^
+complex.c:501:1: error: use of undeclared identifier 'complex_float'
+complex_float v4; // [rsp+0h] [rbp-28h] 
+^
+complex.c:506:14: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+*( float *)v1.m128i_i32 = quantum_real( *( complex_float *)v1.m128i_i8); 
+           ~~^~~~~~~~~~
+complex.c:506:59: error: expected expression
+*( float *)v1.m128i_i32 = quantum_real( *( complex_float *)v1.m128i_i8); 
+                                                          ^
+complex.c:506:44: error: use of undeclared identifier 'complex_float'
+*( float *)v1.m128i_i32 = quantum_real( *( complex_float *)v1.m128i_i8); 
+                                           ^
+complex.c:507:5: warning: implicit declaration of function 'COERCE_FLOAT' is invalid in C99 [-Wimplicit-function-declaration]
+r = COERCE_FLOAT( _mm_cvtsi128_si32( v1)); 
+    ^
+complex.c:509:14: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+*( float *)v2.m128i_i32 = quantum_imag( *( complex_float *)v2.m128i_i8); 
+           ~~^~~~~~~~~~
+complex.c:509:59: error: expected expression
+*( float *)v2.m128i_i32 = quantum_imag( *( complex_float *)v2.m128i_i8); 
+                                                          ^
+complex.c:509:44: error: use of undeclared identifier 'complex_float'
+*( float *)v2.m128i_i32 = quantum_imag( *( complex_float *)v2.m128i_i8); 
+                                           ^
+complex.c:511:1: error: use of undeclared identifier 'v4'
+v4.real = r - ( float)( 0.0 * i); 
+^
+complex.c:512:1: error: use of undeclared identifier 'v4'
+v4.imag = -i; 
+^
+complex.c:513:8: error: use of undeclared identifier 'v4'
+return v4; 
+       ^
+1 warning and 12 errors generated.
+gates.c:365:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gates.c:543:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2 warnings generated.
+objcode.c:176:18: warning: passing an object that undergoes default argument promotion to 'va_start' has undefined behavior [-Wvarargs]
+  va_start(args, operation);
+                 ^
+objcode.c:165:35: note: parameter of type 'unsigned char' is declared here
+quantum_objcode_put(unsigned char operation, ...)
+                                  ^
+1 warning generated.

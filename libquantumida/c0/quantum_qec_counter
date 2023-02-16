@@ -1,0 +1,61 @@
+gates.c:365:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gates.c:543:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2 warnings generated.
+objcode.c:176:18: warning: passing an object that undergoes default argument promotion to 'va_start' has undefined behavior [-Wvarargs]
+  va_start(args, operation);
+                 ^
+objcode.c:165:35: note: parameter of type 'unsigned char' is declared here
+quantum_objcode_put(unsigned char operation, ...)
+                                  ^
+1 warning generated.
+qec.c:619:1: error: use of undeclared identifier 'quantum_qec_counter_counter'
+quantum_qec_counter_counter = 0; 
+^
+qec.c:623:1: error: use of undeclared identifier 'quantum_qec_counter_counter'; did you mean 'quantum_qec_counter'?
+quantum_qec_counter_counter += inc; 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~
+quantum_qec_counter
+qec.c:614:6: note: 'quantum_qec_counter' declared here
+int  quantum_qec_counter( int inc, int frequency, quantum_reg *reg) 
+     ^
+qec.c:623:29: error: invalid operands to binary expression ('int (int, int, quantum_reg *)' (aka 'int (int, int, struct quantum_reg_struct *)') and 'int')
+quantum_qec_counter_counter += inc; 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^  ~~~
+qec.c:626:1: error: use of undeclared identifier 'quantum_qec_counter_freq'
+quantum_qec_counter_freq = frequency; 
+^
+qec.c:627:6: error: use of undeclared identifier 'quantum_qec_counter_counter'; did you mean 'quantum_qec_counter'?
+if ( quantum_qec_counter_counter >= quantum_qec_counter_freq ) 
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+     quantum_qec_counter
+qec.c:614:6: note: 'quantum_qec_counter' declared here
+int  quantum_qec_counter( int inc, int frequency, quantum_reg *reg) 
+     ^
+qec.c:627:37: error: use of undeclared identifier 'quantum_qec_counter_freq'; did you mean 'quantum_qec_counter'?
+if ( quantum_qec_counter_counter >= quantum_qec_counter_freq ) 
+                                    ^~~~~~~~~~~~~~~~~~~~~~~~
+                                    quantum_qec_counter
+qec.c:614:6: note: 'quantum_qec_counter' declared here
+int  quantum_qec_counter( int inc, int frequency, quantum_reg *reg) 
+     ^
+qec.c:627:34: warning: self-comparison always evaluates to true [-Wtautological-compare]
+if ( quantum_qec_counter_counter >= quantum_qec_counter_freq ) 
+                                 ^
+qec.c:627:34: warning: ordered comparison of function pointers ('int (*)(int, int, quantum_reg *)' (aka 'int (*)(int, int, struct quantum_reg_struct *)') and 'int (*)(int, int, quantum_reg *)') [-Wordered-compare-function-pointers]
+if ( quantum_qec_counter_counter >= quantum_qec_counter_freq ) 
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^  ~~~~~~~~~~~~~~~~~~~~~~~~
+qec.c:629:1: error: use of undeclared identifier 'quantum_qec_counter_counter'
+quantum_qec_counter_counter = 0; 
+^
+qec.c:633:8: error: use of undeclared identifier 'quantum_qec_counter_counter'; did you mean 'quantum_qec_counter'?
+return quantum_qec_counter_counter; 
+       ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+       quantum_qec_counter
+qec.c:614:6: note: 'quantum_qec_counter' declared here
+int  quantum_qec_counter( int inc, int frequency, quantum_reg *reg) 
+     ^
+2 warnings and 8 errors generated.

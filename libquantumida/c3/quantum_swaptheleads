@@ -1,0 +1,73 @@
+gates.c:766:4: warning: plain '_Complex' requires a type specifier; assuming '_Complex double'
+*( complex *)( ( char *)&reg->node->amplitude + v54) = ( complex)( *( _QWORD *)( ( char *)&reg->node->amplitude + v54) 
+   ^
+           double
+/usr/include/complex.h:43:18: note: expanded from macro 'complex'
+#define complex         _Complex
+                        ^
+gates.c:766:58: warning: plain '_Complex' requires a type specifier; assuming '_Complex double'
+*( complex *)( ( char *)&reg->node->amplitude + v54) = ( complex)( *( _QWORD *)( ( char *)&reg->node->amplitude + v54) 
+                                                         ^
+                                                                 double
+/usr/include/complex.h:43:18: note: expanded from macro 'complex'
+#define complex         _Complex
+                        ^
+gates.c:788:36: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'unsigned long long' of different size
+v40 = ( __m128d)_mm_shuffle_epi32( ( __m128i)state, 68); 
+                                   ^~~~~~~~~~~~~~~
+/usr/lib/llvm-7/lib/clang/7.0.0/include/emmintrin.h:4347:52: note: expanded from macro '_mm_shuffle_epi32'
+  (__m128i)__builtin_ia32_pshufd((__v4si)(__m128i)(a), (int)(imm))
+                                                   ^
+gates.c:789:5: error: assigning to '__m128i' (vector of 2 'long long' values) from incompatible type 'long long'
+v41 = 0LL; 
+    ^ ~~~
+gates.c:791:5: error: assigning to '__m128i' (vector of 2 'long long' values) from incompatible type 'long long'
+v43 = 0LL; 
+    ^ ~~~
+gates.c:792:44: error: use of undeclared identifier 'xmmword_4092C0'
+si128 = _mm_load_si128( ( const __m128i *)&xmmword_4092C0); 
+                                           ^
+gates.c:795:42: error: use of undeclared identifier 'xmmword_4092D0'
+v47 = _mm_load_si128( ( const __m128i *)&xmmword_4092D0); 
+                                         ^
+gates.c:796:42: error: use of undeclared identifier 'xmmword_4092E0'
+v48 = _mm_load_si128( ( const __m128i *)&xmmword_4092E0); 
+                                         ^
+gates.c:799:55: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'long long' of different size
+v49 = _mm_unpacklo_epi32( _mm_add_epi32( si128, v45), ( __m128i)0LL); 
+                                                      ^~~~~~~~~~~~~
+gates.c:801:55: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'long long' of different size
+v51 = _mm_unpacklo_epi32( _mm_add_epi32( v46, si128), ( __m128i)0LL); 
+                                                      ^~~~~~~~~~~~~
+gates.c:802:17: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+*( _QWORD *)&v50.m128d_f64[0] = v47.m128i_i64[0] << v49.m128i_i8[0]; 
+             ~~~^~~~~~~~~~
+gates.c:802:36: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+*( _QWORD *)&v50.m128d_f64[0] = v47.m128i_i64[0] << v49.m128i_i8[0]; 
+                                ~~~^~~~~~~~~~
+gates.c:802:56: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+*( _QWORD *)&v50.m128d_f64[0] = v47.m128i_i64[0] << v49.m128i_i8[0]; 
+                                                    ~~~^~~~~~~~~
+gates.c:804:17: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+*( _QWORD *)&v52.m128d_f64[0] = v47.m128i_i64[0] << v51.m128i_i8[0]; 
+             ~~~^~~~~~~~~~
+gates.c:804:36: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+*( _QWORD *)&v52.m128d_f64[0] = v47.m128i_i64[0] << v51.m128i_i8[0]; 
+                                ~~~^~~~~~~~~~
+gates.c:804:56: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+*( _QWORD *)&v52.m128d_f64[0] = v47.m128i_i64[0] << v51.m128i_i8[0]; 
+                                                    ~~~^~~~~~~~~
+gates.c:1071:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gates.c:1249:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+4 warnings and 14 errors generated.
+objcode.c:176:18: warning: passing an object that undergoes default argument promotion to 'va_start' has undefined behavior [-Wvarargs]
+  va_start(args, operation);
+                 ^
+objcode.c:165:35: note: parameter of type 'unsigned char' is declared here
+quantum_objcode_put(unsigned char operation, ...)
+                                  ^
+1 warning generated.

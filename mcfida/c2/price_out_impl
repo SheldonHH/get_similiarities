@@ -1,0 +1,34 @@
+implicit.c:656:10: error: conflicting types for 'price_out_impl'
+__int64  price_out_impl( network_t *net) 
+         ^
+./implicit.h:30:13: note: previous declaration is here
+extern long price_out_impl _PROTO_(( network_t * ));
+            ^
+implicit.c:804:46: warning: incompatible pointer to integer conversion assigning to 'uint64' (aka 'unsigned long long') from 'node_p' (aka 'struct node *') [-Wint-conversion]
+*( _QWORD *)( ( char *)stop_arcs + v31 - 48) = *( node_p *)( ( char *)&stop_arcs->head + v28); 
+                                             ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+implicit.c:805:12: error: expected expression
+*( _OWORD *)( ( char *)&stop_arcs[-1].cost + v31) = *( _OWORD *)( ( char *)&stop_arcs->cost + v28); 
+           ^
+implicit.c:805:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)( ( char *)&stop_arcs[-1].cost + v31) = *( _OWORD *)( ( char *)&stop_arcs->cost + v28); 
+   ^
+implicit.c:805:64: error: expected expression
+*( _OWORD *)( ( char *)&stop_arcs[-1].cost + v31) = *( _OWORD *)( ( char *)&stop_arcs->cost + v28); 
+                                                               ^
+implicit.c:805:56: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)( ( char *)&stop_arcs[-1].cost + v31) = *( _OWORD *)( ( char *)&stop_arcs->cost + v28); 
+                                                       ^
+implicit.c:849:12: error: expected expression
+*( _OWORD *)( ( char *)&stop_arcs->cost + v25) = *( _OWORD *)( ( char *)&stop_arcs->cost + v23); 
+           ^
+implicit.c:849:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)( ( char *)&stop_arcs->cost + v25) = *( _OWORD *)( ( char *)&stop_arcs->cost + v23); 
+   ^
+implicit.c:849:61: error: expected expression
+*( _OWORD *)( ( char *)&stop_arcs->cost + v25) = *( _OWORD *)( ( char *)&stop_arcs->cost + v23); 
+                                                            ^
+implicit.c:849:53: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)( ( char *)&stop_arcs->cost + v25) = *( _OWORD *)( ( char *)&stop_arcs->cost + v23); 
+                                                    ^
+1 warning and 9 errors generated.

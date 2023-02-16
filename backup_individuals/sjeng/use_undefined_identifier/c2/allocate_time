@@ -1,0 +1,29 @@
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/allocate_time/src/utils.c:546:6: error: use of undeclared identifier 'qword_41E660'
+v5 = qword_41E660[v7]; 
+     ^
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/allocate_time/src/utils.c:552:3: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+v8.m128d_f64[0] = ( double)( time_left - opp_time); 
+~~^~~~~~~~~~
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/allocate_time/src/utils.c:553:20: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+if ( !xb_mode || v8.m128d_f64[0] <= *( double *)&v0 / 5.0 ) 
+                 ~~^~~~~~~~~~
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/allocate_time/src/utils.c:557:3: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+v9.m128d_f64[1] = *( ( double *)&v0 + 1); 
+~~^~~~~~~~~~
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/allocate_time/src/utils.c:558:3: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+v9.m128d_f64[0] = *( double *)&v0 / 10.0; 
+~~^~~~~~~~~~
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/allocate_time/src/utils.c:559:3: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+v9.m128d_f64[0] = _mm_cmplt_sd( v9, v8).m128d_f64[0]; 
+~~^~~~~~~~~~
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/allocate_time/src/utils.c:559:40: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+v9.m128d_f64[0] = _mm_cmplt_sd( v9, v8).m128d_f64[0]; 
+                  ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/allocate_time/src/utils.c:560:35: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+*( _QWORD *)&v5 = ~*( _QWORD *)&v9.m128d_f64[0] & *( _QWORD *)&v5 | COERCE_UNSIGNED_INT64( v5 + -5.0) & *( _QWORD *)&v9.m128d_f64[0]; 
+                                ~~^~~~~~~~~~
+/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/allocate_time/src/utils.c:560:120: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+*( _QWORD *)&v5 = ~*( _QWORD *)&v9.m128d_f64[0] & *( _QWORD *)&v5 | COERCE_UNSIGNED_INT64( v5 + -5.0) & *( _QWORD *)&v9.m128d_f64[0]; 
+                                                                                                                     ~~^~~~~~~~~~
+9 errors generated.
+make: *** [/data/output_dir/patch/sjeng/ida/clang/O2/sjeng-clang-O2/allocate_time/src/obj/utils.o] Error 1

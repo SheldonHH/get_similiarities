@@ -1,0 +1,74 @@
+gates.c:365:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gates.c:543:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gates.c:1172:1: error: use of undeclared identifier 'complex_float'
+complex_float *t; // rax 
+^
+gates.c:1172:16: error: use of undeclared identifier 't'
+complex_float *t; // rax 
+               ^
+gates.c:1174:1: error: use of undeclared identifier 'complex_float'
+complex_float *v6; // rax 
+^
+gates.c:1174:16: error: use of undeclared identifier 'v6'
+complex_float *v6; // rax 
+               ^
+gates.c:1176:1: error: use of undeclared identifier 'complex_float'
+complex_float *v8; // rax 
+^
+gates.c:1176:16: error: use of undeclared identifier 'v8'
+complex_float *v8; // rax 
+               ^
+gates.c:1178:1: error: use of undeclared identifier 'complex_float'
+complex_float *v10; // rax 
+^
+gates.c:1178:16: error: use of undeclared identifier 'v10'
+complex_float *v10; // rax 
+               ^
+gates.c:1185:1: error: use of undeclared identifier 't'
+t = m.t; 
+^
+gates.c:1186:4: error: member reference base type '_Complex float' is not a structure or union
+m.t->real = v3; 
+~~~^ ~~~~
+gates.c:1187:1: error: use of undeclared identifier 't'
+t->imag = 0.0; 
+^
+gates.c:1189:1: error: use of undeclared identifier 'v6'
+v6 = m.t + 1; 
+^
+gates.c:1190:7: error: member reference base type '_Complex float' is not a structure or union
+m.t[1].real = -v5; 
+~~~~~~^~~~~
+gates.c:1191:1: error: use of undeclared identifier 'v6'
+v6->imag = 0.0; 
+^
+gates.c:1193:1: error: use of undeclared identifier 'v8'
+v8 = m.t + 2; 
+^
+gates.c:1194:7: error: member reference base type '_Complex float' is not a structure or union
+m.t[2].real = v7; 
+~~~~~~^~~~~
+gates.c:1195:1: error: use of undeclared identifier 'v8'
+v8->imag = 0.0; 
+^
+gates.c:1197:1: error: use of undeclared identifier 'v10'
+v10 = m.t + 3; 
+^
+gates.c:1198:7: error: member reference base type '_Complex float' is not a structure or union
+m.t[3].real = v9; 
+~~~~~~^~~~~
+gates.c:1199:1: error: use of undeclared identifier 'v10'
+v10->imag = 0.0; 
+^
+2 warnings and 20 errors generated.
+objcode.c:176:18: warning: passing an object that undergoes default argument promotion to 'va_start' has undefined behavior [-Wvarargs]
+  va_start(args, operation);
+                 ^
+objcode.c:165:35: note: parameter of type 'unsigned char' is declared here
+quantum_objcode_put(unsigned char operation, ...)
+                                  ^
+1 warning generated.

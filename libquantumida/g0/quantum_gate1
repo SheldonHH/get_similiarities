@@ -1,0 +1,275 @@
+gates.c:765:1: error: use of undeclared identifier 'SFtype'
+SFtype v7; // xmm4_4 
+^
+gates.c:768:1: error: use of undeclared identifier 'SFtype'
+SFtype v10; // xmm4_4 
+^
+gates.c:769:1: error: use of undeclared identifier 'SFtype'
+SFtype v11; // xmm4_4 
+^
+gates.c:771:1: error: use of undeclared identifier 'SFtype'
+SFtype v13; // xmm4_4 
+^
+gates.c:773:1: error: use of undeclared identifier 'SFtype'
+SFtype v15; // xmm4_4 
+^
+gates.c:775:1: error: use of undeclared identifier 'SFtype'
+SFtype v17; // xmm4_4 
+^
+gates.c:791:1: error: use of undeclared identifier 'complex_float'
+complex_float *m_8; // [rsp+68h] [rbp-78h] 
+^
+gates.c:791:16: error: use of undeclared identifier 'm_8'
+complex_float *m_8; // [rsp+68h] [rbp-78h] 
+               ^
+gates.c:792:1: error: use of undeclared identifier 'SFtype'
+SFtype a; // [rsp+88h] [rbp-58h] 
+^
+gates.c:794:1: error: use of undeclared identifier 'SFtype'
+SFtype imag; // [rsp+90h] [rbp-50h] 
+^
+gates.c:810:1: error: use of undeclared identifier 'complex_float'
+complex_float amplitude; // 0:xmm0_8.8 
+^
+gates.c:812:1: error: use of undeclared identifier 'm_8'
+m_8 = m.t; 
+^
+gates.c:829:8: error: use of undeclared identifier 'm_8'
+if ( ( m_8[1].real != 0.0 || m_8[1].imag != 0.0) && ( ( reg->node[ib].state >> target) & 1) != 0 ) 
+       ^
+gates.c:829:30: error: use of undeclared identifier 'm_8'
+if ( ( m_8[1].real != 0.0 || m_8[1].imag != 0.0) && ( ( reg->node[ib].state >> target) & 1) != 0 ) 
+                             ^
+gates.c:831:8: error: use of undeclared identifier 'm_8'
+if ( ( m_8[2].real != 0.0 || m_8[2].imag != 0.0) && ( ( reg->node[ib].state >> target) & 1) == 0 ) 
+       ^
+gates.c:831:30: error: use of undeclared identifier 'm_8'
+if ( ( m_8[2].real != 0.0 || m_8[2].imag != 0.0) && ( ( reg->node[ib].state >> target) & 1) == 0 ) 
+                             ^
+gates.c:846:14: error: member reference base type '_Complex float' is not a structure or union
+v3->amplitude.real = 0.0; 
+~~~~~~~~~~~~~^~~~~
+gates.c:847:14: error: member reference base type '_Complex float' is not a structure or union
+v3->amplitude.imag = 0.0; 
+~~~~~~~~~~~~~^~~~~
+gates.c:859:42: warning: '&' within '|' [-Wbitwise-op-parentheses]
+v5 = ( double)( int)( ( 1 << reg->width) & 1 | ( ( unsigned __int64)v4 >> 1)) 
+                      ~~~~~~~~~~~~~~~~~~~^~~ ~
+gates.c:859:42: note: place parentheses around the '&' expression to silence this warning
+v5 = ( double)( int)( ( 1 << reg->width) & 1 | ( ( unsigned __int64)v4 >> 1)) 
+                                         ^
+                      (                     )
+gates.c:860:39: warning: '&' within '|' [-Wbitwise-op-parentheses]
++ ( double)( int)( ( 1 << reg->width) & 1 | ( ( unsigned __int64)v4 >> 1)); 
+                   ~~~~~~~~~~~~~~~~~~~^~~ ~
+gates.c:860:39: note: place parentheses around the '&' expression to silence this warning
++ ( double)( int)( ( 1 << reg->width) & 1 | ( ( unsigned __int64)v4 >> 1)); 
+                                      ^
+                   (                     )
+gates.c:873:21: error: member reference base type '_Complex float' is not a structure or union
+real = v8->amplitude.real; 
+       ~~~~~~~~~~~~~^~~~~
+gates.c:874:1: error: use of undeclared identifier 'imag'
+imag = v8->amplitude.imag; 
+^
+gates.c:874:21: error: member reference base type '_Complex float' is not a structure or union
+imag = v8->amplitude.imag; 
+       ~~~~~~~~~~~~~^~~~~
+gates.c:877:1: error: use of undeclared identifier 'a'
+a = 0.0; 
+^
+gates.c:883:20: error: member reference base type '_Complex float' is not a structure or union
+v36 = v9->amplitude.real; 
+      ~~~~~~~~~~~~~^~~~~
+gates.c:884:1: error: use of undeclared identifier 'a'
+a = v9->amplitude.imag; 
+^
+gates.c:884:18: error: member reference base type '_Complex float' is not a structure or union
+a = v9->amplitude.imag; 
+    ~~~~~~~~~~~~~^~~~~
+gates.c:888:7: warning: implicit declaration of function '_mulsc3' is invalid in C99 [-Wimplicit-function-declaration]
+v32 = _mulsc3( v36, a, m_8[2].real, m_8[2].imag, v7).m128i_u64[0]; 
+      ^
+gates.c:888:21: error: use of undeclared identifier 'a'
+v32 = _mulsc3( v36, a, m_8[2].real, m_8[2].imag, v7).m128i_u64[0]; 
+                    ^
+gates.c:888:24: error: use of undeclared identifier 'm_8'
+v32 = _mulsc3( v36, a, m_8[2].real, m_8[2].imag, v7).m128i_u64[0]; 
+                       ^
+gates.c:888:37: error: use of undeclared identifier 'm_8'
+v32 = _mulsc3( v36, a, m_8[2].real, m_8[2].imag, v7).m128i_u64[0]; 
+                                    ^
+gates.c:888:50: error: use of undeclared identifier 'v7'
+v32 = _mulsc3( v36, a, m_8[2].real, m_8[2].imag, v7).m128i_u64[0]; 
+                                                 ^
+gates.c:889:22: error: use of undeclared identifier 'imag'
+v31 = _mulsc3( real, imag, m_8[3].real, m_8[3].imag, v10).m128i_u64[0]; 
+                     ^
+gates.c:889:28: error: use of undeclared identifier 'm_8'
+v31 = _mulsc3( real, imag, m_8[3].real, m_8[3].imag, v10).m128i_u64[0]; 
+                           ^
+gates.c:889:41: error: use of undeclared identifier 'm_8'
+v31 = _mulsc3( real, imag, m_8[3].real, m_8[3].imag, v10).m128i_u64[0]; 
+                                        ^
+gates.c:889:54: error: use of undeclared identifier 'v10'
+v31 = _mulsc3( real, imag, m_8[3].real, m_8[3].imag, v10).m128i_u64[0]; 
+                                                     ^
+gates.c:891:15: error: member reference base type '_Complex float' is not a structure or union
+v12->amplitude.real = *( float *)&v31 + *( float *)&v32; 
+~~~~~~~~~~~~~~^~~~~
+gates.c:892:15: error: member reference base type '_Complex float' is not a structure or union
+v12->amplitude.imag = *( ( float *)&v31 + 1) + *( ( float *)&v32 + 1); 
+~~~~~~~~~~~~~~^~~~~
+gates.c:896:7: warning: implicit declaration of function '_mulsc3' is invalid in C99 [-Wimplicit-function-declaration]
+v30 = _mulsc3( real, imag, m_8->real, m_8->imag, v7).m128i_u64[0]; 
+      ^
+gates.c:896:22: error: use of undeclared identifier 'imag'
+v30 = _mulsc3( real, imag, m_8->real, m_8->imag, v7).m128i_u64[0]; 
+                     ^
+gates.c:896:28: error: use of undeclared identifier 'm_8'
+v30 = _mulsc3( real, imag, m_8->real, m_8->imag, v7).m128i_u64[0]; 
+                           ^
+gates.c:896:39: error: use of undeclared identifier 'm_8'
+v30 = _mulsc3( real, imag, m_8->real, m_8->imag, v7).m128i_u64[0]; 
+                                      ^
+gates.c:896:50: error: use of undeclared identifier 'v7'
+v30 = _mulsc3( real, imag, m_8->real, m_8->imag, v7).m128i_u64[0]; 
+                                                 ^
+gates.c:897:21: error: use of undeclared identifier 'a'
+v29 = _mulsc3( v36, a, m_8[1].real, m_8[1].imag, v13).m128i_u64[0]; 
+                    ^
+gates.c:897:24: error: use of undeclared identifier 'm_8'
+v29 = _mulsc3( v36, a, m_8[1].real, m_8[1].imag, v13).m128i_u64[0]; 
+                       ^
+gates.c:897:37: error: use of undeclared identifier 'm_8'
+v29 = _mulsc3( v36, a, m_8[1].real, m_8[1].imag, v13).m128i_u64[0]; 
+                                    ^
+gates.c:897:50: error: use of undeclared identifier 'v13'
+v29 = _mulsc3( v36, a, m_8[1].real, m_8[1].imag, v13).m128i_u64[0]; 
+                                                 ^
+gates.c:899:15: error: member reference base type '_Complex float' is not a structure or union
+v14->amplitude.real = *( float *)&v29 + *( float *)&v30; 
+~~~~~~~~~~~~~~^~~~~
+gates.c:900:15: error: member reference base type '_Complex float' is not a structure or union
+v14->amplitude.imag = *( ( float *)&v29 + 1) + *( ( float *)&v30 + 1); 
+~~~~~~~~~~~~~~^~~~~
+gates.c:904:6: error: use of undeclared identifier 'm_8'
+if ( m_8[1].real == 0.0 && m_8[1].imag == 0.0 && iset || m_8[2].real == 0.0 && m_8[2].imag == 0.0 && !iset ) 
+     ^
+gates.c:904:28: error: use of undeclared identifier 'm_8'
+if ( m_8[1].real == 0.0 && m_8[1].imag == 0.0 && iset || m_8[2].real == 0.0 && m_8[2].imag == 0.0 && !iset ) 
+                           ^
+gates.c:904:58: error: use of undeclared identifier 'm_8'
+if ( m_8[1].real == 0.0 && m_8[1].imag == 0.0 && iset || m_8[2].real == 0.0 && m_8[2].imag == 0.0 && !iset ) 
+                                                         ^
+gates.c:904:80: error: use of undeclared identifier 'm_8'
+if ( m_8[1].real == 0.0 && m_8[1].imag == 0.0 && iset || m_8[2].real == 0.0 && m_8[2].imag == 0.0 && !iset ) 
+                                                                               ^
+gates.c:909:20: error: use of undeclared identifier 'complex_float'
+v19->amplitude = ( complex_float)_mulsc3( real, imag, m_8[1].real, m_8[1].imag, v11).m128i_u64[0]; 
+                   ^
+gates.c:911:20: error: use of undeclared identifier 'complex_float'
+v19->amplitude = ( complex_float)_mulsc3( real, imag, m_8[2].real, m_8[2].imag, v11).m128i_u64[0]; 
+                   ^
+gates.c:916:7: warning: implicit declaration of function '_mulsc3' is invalid in C99 [-Wimplicit-function-declaration]
+v28 = _mulsc3( v36, a, m_8->real, m_8->imag, v11).m128i_u64[0]; 
+      ^
+gates.c:916:21: error: use of undeclared identifier 'a'
+v28 = _mulsc3( v36, a, m_8->real, m_8->imag, v11).m128i_u64[0]; 
+                    ^
+gates.c:916:24: error: use of undeclared identifier 'm_8'
+v28 = _mulsc3( v36, a, m_8->real, m_8->imag, v11).m128i_u64[0]; 
+                       ^
+gates.c:916:35: error: use of undeclared identifier 'm_8'
+v28 = _mulsc3( v36, a, m_8->real, m_8->imag, v11).m128i_u64[0]; 
+                                  ^
+gates.c:916:46: error: use of undeclared identifier 'v11'
+v28 = _mulsc3( v36, a, m_8->real, m_8->imag, v11).m128i_u64[0]; 
+                                             ^
+gates.c:917:22: error: use of undeclared identifier 'imag'
+v27 = _mulsc3( real, imag, m_8[1].real, m_8[1].imag, v15).m128i_u64[0]; 
+                     ^
+gates.c:917:28: error: use of undeclared identifier 'm_8'
+v27 = _mulsc3( real, imag, m_8[1].real, m_8[1].imag, v15).m128i_u64[0]; 
+                           ^
+gates.c:917:41: error: use of undeclared identifier 'm_8'
+v27 = _mulsc3( real, imag, m_8[1].real, m_8[1].imag, v15).m128i_u64[0]; 
+                                        ^
+gates.c:917:54: error: use of undeclared identifier 'v15'
+v27 = _mulsc3( real, imag, m_8[1].real, m_8[1].imag, v15).m128i_u64[0]; 
+                                                     ^
+gates.c:919:15: error: member reference base type '_Complex float' is not a structure or union
+v16->amplitude.real = *( float *)&v27 + *( float *)&v28; 
+~~~~~~~~~~~~~~^~~~~
+gates.c:920:15: error: member reference base type '_Complex float' is not a structure or union
+v16->amplitude.imag = *( ( float *)&v27 + 1) + *( ( float *)&v28 + 1); 
+~~~~~~~~~~~~~~^~~~~
+gates.c:924:7: warning: implicit declaration of function '_mulsc3' is invalid in C99 [-Wimplicit-function-declaration]
+v26 = _mulsc3( real, imag, m_8[2].real, m_8[2].imag, v11).m128i_u64[0]; 
+      ^
+gates.c:924:28: error: use of undeclared identifier 'm_8'
+v26 = _mulsc3( real, imag, m_8[2].real, m_8[2].imag, v11).m128i_u64[0]; 
+                           ^
+gates.c:924:41: error: use of undeclared identifier 'm_8'
+v26 = _mulsc3( real, imag, m_8[2].real, m_8[2].imag, v11).m128i_u64[0]; 
+                                        ^
+gates.c:924:54: error: use of undeclared identifier 'v11'
+v26 = _mulsc3( real, imag, m_8[2].real, m_8[2].imag, v11).m128i_u64[0]; 
+                                                     ^
+gates.c:924:22: error: use of undeclared identifier 'imag'; did you mean 'cimag'?
+v26 = _mulsc3( real, imag, m_8[2].real, m_8[2].imag, v11).m128i_u64[0]; 
+                     ^~~~
+                     cimag
+/usr/include/x86_64-linux-gnu/bits/cmathcalls.h:127:23: note: 'cimag' declared here
+__MATHDECL (_Mdouble_,cimag, (_Mdouble_complex_ __z));
+                      ^
+gates.c:925:21: error: use of undeclared identifier 'a'
+v25 = _mulsc3( v36, a, m_8[3].real, m_8[3].imag, v17).m128i_u64[0]; 
+                    ^
+gates.c:925:24: error: use of undeclared identifier 'm_8'
+v25 = _mulsc3( v36, a, m_8[3].real, m_8[3].imag, v17).m128i_u64[0]; 
+                       ^
+gates.c:925:37: error: use of undeclared identifier 'm_8'
+v25 = _mulsc3( v36, a, m_8[3].real, m_8[3].imag, v17).m128i_u64[0]; 
+                                    ^
+gates.c:925:50: error: use of undeclared identifier 'v17'
+v25 = _mulsc3( v36, a, m_8[3].real, m_8[3].imag, v17).m128i_u64[0]; 
+                                                 ^
+gates.c:927:15: error: member reference base type '_Complex float' is not a structure or union
+v18->amplitude.real = *( float *)&v25 + *( float *)&v26; 
+~~~~~~~~~~~~~~^~~~~
+gates.c:928:15: error: member reference base type '_Complex float' is not a structure or union
+v18->amplitude.imag = *( ( float *)&v25 + 1) + *( ( float *)&v26 + 1); 
+~~~~~~~~~~~~~~^~~~~
+gates.c:941:1: error: use of undeclared identifier 'amplitude'
+amplitude = reg->node[ie].amplitude; 
+^
+gates.c:942:15: warning: implicit declaration of function 'quantum_prob_inline_0' is invalid in C99 [-Wimplicit-function-declaration]
+if ( limit <= quantum_prob_inline_0( amplitude) ) 
+              ^
+gates.c:942:38: error: use of undeclared identifier 'amplitude'
+if ( limit <= quantum_prob_inline_0( amplitude) ) 
+                                     ^
+gates.c:949:21: error: member reference base type '_Complex float' is not a structure or union
+v22 = v20->amplitude.imag; 
+      ~~~~~~~~~~~~~~^~~~~
+gates.c:950:15: error: member reference base type '_Complex float' is not a structure or union
+v21->amplitude.real = v20->amplitude.real; 
+~~~~~~~~~~~~~~^~~~~
+gates.c:950:37: error: member reference base type '_Complex float' is not a structure or union
+v21->amplitude.real = v20->amplitude.real; 
+                      ~~~~~~~~~~~~~~^~~~~
+gates.c:951:15: error: member reference base type '_Complex float' is not a structure or union
+v21->amplitude.imag = v22; 
+~~~~~~~~~~~~~~^~~~~
+gates.c:1044:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+8 warnings and 77 errors generated.
+objcode.c:176:18: warning: passing an object that undergoes default argument promotion to 'va_start' has undefined behavior [-Wvarargs]
+  va_start(args, operation);
+                 ^
+objcode.c:165:35: note: parameter of type 'unsigned char' is declared here
+quantum_objcode_put(unsigned char operation, ...)
+                                  ^
+1 warning generated.

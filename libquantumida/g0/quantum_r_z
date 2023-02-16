@@ -1,0 +1,41 @@
+gates.c:365:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gates.c:543:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gates.c:1194:1: error: use of undeclared identifier 'SFtype'
+SFtype v4; // xmm4_4 
+^
+gates.c:1195:1: error: use of undeclared identifier 'complex_float'
+complex_float v5; // kr00_8 
+^
+gates.c:1201:12: error: expected expression
+*( _OWORD *)&gamma = LODWORD( gamma); 
+           ^
+gates.c:1201:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&gamma = LODWORD( gamma); 
+   ^
+gates.c:1202:14: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+*( float *)v3.m128i_i32 = gamma / 2.0; 
+           ~~^~~~~~~~~~
+gates.c:1203:1: error: use of undeclared identifier 'v5'
+v5 = quantum_cexp( COERCE_FLOAT( _mm_cvtsi128_si32( v3))); 
+^
+gates.c:1203:20: warning: implicit declaration of function 'COERCE_FLOAT' is invalid in C99 [-Wimplicit-function-declaration]
+v5 = quantum_cexp( COERCE_FLOAT( _mm_cvtsi128_si32( v3))); 
+                   ^
+gates.c:1208:19: error: use of undeclared identifier 'complex_float'
+v6->amplitude = ( complex_float)_mulsc3( v5.real, v5.imag, v6->amplitude.real, v6->amplitude.imag, v4).m128i_u64[0]; 
+                  ^
+gates.c:1210:19: error: use of undeclared identifier 'complex_float'
+v6->amplitude = ( complex_float)_divsc3( v6->amplitude.real, v6->amplitude.imag, v5.real, v5.imag, v4).m128i_u64[0]; 
+                  ^
+3 warnings and 8 errors generated.
+objcode.c:176:18: warning: passing an object that undergoes default argument promotion to 'va_start' has undefined behavior [-Wvarargs]
+  va_start(args, operation);
+                 ^
+objcode.c:165:35: note: parameter of type 'unsigned char' is declared here
+quantum_objcode_put(unsigned char operation, ...)
+                                  ^
+1 warning generated.

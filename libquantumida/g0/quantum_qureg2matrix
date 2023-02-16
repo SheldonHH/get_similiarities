@@ -1,0 +1,36 @@
+gates.c:365:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gates.c:543:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2 warnings generated.
+objcode.c:176:18: warning: passing an object that undergoes default argument promotion to 'va_start' has undefined behavior [-Wvarargs]
+  va_start(args, operation);
+                 ^
+objcode.c:165:35: note: parameter of type 'unsigned char' is declared here
+quantum_objcode_put(unsigned char operation, ...)
+                                  ^
+1 warning generated.
+qureg.c:628:1: error: use of undeclared identifier 'complex_float'
+complex_float *v2; // rax 
+^
+qureg.c:628:16: error: use of undeclared identifier 'v2'
+complex_float *v2; // rax 
+               ^
+qureg.c:637:1: error: use of undeclared identifier 'v2'
+v2 = &m.t[v1->state]; 
+^
+qureg.c:638:21: error: member reference base type '_Complex float' is not a structure or union
+imag = v1->amplitude.imag; 
+       ~~~~~~~~~~~~~^~~~~
+qureg.c:639:1: error: use of undeclared identifier 'v2'
+v2->real = v1->amplitude.real; 
+^
+qureg.c:639:25: error: member reference base type '_Complex float' is not a structure or union
+v2->real = v1->amplitude.real; 
+           ~~~~~~~~~~~~~^~~~~
+qureg.c:640:1: error: use of undeclared identifier 'v2'
+v2->imag = imag; 
+^
+7 errors generated.

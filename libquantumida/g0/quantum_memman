@@ -1,0 +1,39 @@
+gates.c:365:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gates.c:543:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2 warnings generated.
+matrix.c:495:19: error: conflicting types for 'quantum_memman'
+unsigned __int64  quantum_memman( __int64 change) 
+                  ^
+./matrix.h:42:22: note: previous declaration is here
+extern unsigned long quantum_memman(long change);
+                     ^
+matrix.c:497:1: error: use of undeclared identifier 'mem_1'
+mem_1 += change; 
+^
+matrix.c:498:6: error: use of undeclared identifier 'mem_1'
+if ( mem_1 > max_0 ) 
+     ^
+matrix.c:498:14: error: use of undeclared identifier 'max_0'
+if ( mem_1 > max_0 ) 
+             ^
+matrix.c:499:1: error: use of undeclared identifier 'max_0'
+max_0 = mem_1; 
+^
+matrix.c:499:9: error: use of undeclared identifier 'mem_1'
+max_0 = mem_1; 
+        ^
+matrix.c:500:8: error: use of undeclared identifier 'mem_1'
+return mem_1; 
+       ^
+7 errors generated.
+objcode.c:176:18: warning: passing an object that undergoes default argument promotion to 'va_start' has undefined behavior [-Wvarargs]
+  va_start(args, operation);
+                 ^
+objcode.c:165:35: note: parameter of type 'unsigned char' is declared here
+quantum_objcode_put(unsigned char operation, ...)
+                                  ^
+1 warning generated.

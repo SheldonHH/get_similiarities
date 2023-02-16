@@ -1,0 +1,60 @@
+gates.c:365:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gates.c:543:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2 warnings generated.
+objcode.c:176:18: warning: passing an object that undergoes default argument promotion to 'va_start' has undefined behavior [-Wvarargs]
+  va_start(args, operation);
+                 ^
+objcode.c:165:35: note: parameter of type 'unsigned char' is declared here
+quantum_objcode_put(unsigned char operation, ...)
+                                  ^
+1 warning generated.
+qureg.c:866:1: error: unknown type name 'complex_float'
+complex_float  quantum_dot_product( quantum_reg *reg1, quantum_reg *reg2) 
+^
+qureg.c:870:1: error: use of undeclared identifier 'complex_float'
+complex_float d; // [rsp+10h] [rbp-40h] 
+^
+qureg.c:877:1: error: use of undeclared identifier 'complex_float'
+complex_float amplitude; // 0:xmm0_8.8 
+^
+qureg.c:882:1: warning: implicit declaration of function 'quantum_add_hash_0' is invalid in C99 [-Wimplicit-function-declaration]
+quantum_add_hash_0( reg2->node[ia].state, ia, reg2); 
+^
+qureg.c:888:5: warning: implicit declaration of function 'quantum_get_state_0' is invalid in C99 [-Wimplicit-function-declaration]
+j = quantum_get_state_0( reg1->node[ib].state, *reg2); 
+    ^
+qureg.c:891:1: error: use of undeclared identifier 'amplitude'
+amplitude = reg1->node[ib].amplitude; 
+^
+qureg.c:892:1: error: use of undeclared identifier 'd'
+d = quantum_conj( amplitude); 
+^
+qureg.c:892:19: error: use of undeclared identifier 'amplitude'
+d = quantum_conj( amplitude); 
+                  ^
+qureg.c:894:6: warning: implicit declaration of function '_mulsc3' is invalid in C99 [-Wimplicit-function-declaration]
+v4 = _mulsc3( d.real, d.imag, v2->amplitude.real, v2->amplitude.imag, d.real).m128i_u64[0]; 
+     ^
+qureg.c:894:44: error: member reference base type '_Complex float' is not a structure or union
+v4 = _mulsc3( d.real, d.imag, v2->amplitude.real, v2->amplitude.imag, d.real).m128i_u64[0]; 
+                              ~~~~~~~~~~~~~^~~~~
+qureg.c:894:64: error: member reference base type '_Complex float' is not a structure or union
+v4 = _mulsc3( d.real, d.imag, v2->amplitude.real, v2->amplitude.imag, d.real).m128i_u64[0]; 
+                                                  ~~~~~~~~~~~~~^~~~~
+qureg.c:894:15: error: use of undeclared identifier 'd'
+v4 = _mulsc3( d.real, d.imag, v2->amplitude.real, v2->amplitude.imag, d.real).m128i_u64[0]; 
+              ^
+qureg.c:894:23: error: use of undeclared identifier 'd'
+v4 = _mulsc3( d.real, d.imag, v2->amplitude.real, v2->amplitude.imag, d.real).m128i_u64[0]; 
+                      ^
+qureg.c:894:71: error: use of undeclared identifier 'd'
+v4 = _mulsc3( d.real, d.imag, v2->amplitude.real, v2->amplitude.imag, d.real).m128i_u64[0]; 
+                                                                      ^
+qureg.c:900:10: error: use of undeclared identifier 'complex_float'
+return ( complex_float)__PAIR64__( LODWORD( v6), LODWORD( v7)); 
+         ^
+3 warnings and 12 errors generated.

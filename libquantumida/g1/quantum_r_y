@@ -1,0 +1,41 @@
+gates.c:365:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gates.c:543:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gates.c:1173:1: error: use of undeclared identifier 'complex_float'
+complex_float *t; // rax 
+^
+gates.c:1173:16: error: use of undeclared identifier 't'
+complex_float *t; // rax 
+               ^
+gates.c:1182:1: warning: implicit declaration of function 'sincos' is invalid in C99 [-Wimplicit-function-declaration]
+sincos( ( float)( a2 * 0.5), &sinx, &cosx); 
+^
+gates.c:1185:1: error: use of undeclared identifier 't'
+t = m.t; 
+^
+gates.c:1186:4: error: member reference base type '_Complex float' is not a structure or union
+m.t->real = v6; 
+~~~^ ~~~~
+gates.c:1187:1: error: use of undeclared identifier 't'
+t->imag = 0.0; 
+^
+gates.c:1189:12: error: use of undeclared identifier 'complex_float'
+m.t[1] = ( complex_float)COERCE_UNSIGNED_INT( -*( float *)&v5); 
+           ^
+gates.c:1191:12: error: use of undeclared identifier 'complex_float'
+m.t[2] = ( complex_float)LODWORD( v5); 
+           ^
+gates.c:1192:14: error: use of undeclared identifier 'complex_float'
+v11.t[3] = ( complex_float)LODWORD( v6); 
+             ^
+3 warnings and 8 errors generated.
+objcode.c:176:18: warning: passing an object that undergoes default argument promotion to 'va_start' has undefined behavior [-Wvarargs]
+  va_start(args, operation);
+                 ^
+objcode.c:165:35: note: parameter of type 'unsigned char' is declared here
+quantum_objcode_put(unsigned char operation, ...)
+                                  ^
+1 warning generated.

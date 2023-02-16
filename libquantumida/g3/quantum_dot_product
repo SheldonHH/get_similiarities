@@ -1,0 +1,40 @@
+gates.c:365:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gates.c:543:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2 warnings generated.
+objcode.c:176:18: warning: passing an object that undergoes default argument promotion to 'va_start' has undefined behavior [-Wvarargs]
+  va_start(args, operation);
+                 ^
+objcode.c:165:35: note: parameter of type 'unsigned char' is declared here
+quantum_objcode_put(unsigned char operation, ...)
+                                  ^
+1 warning generated.
+qureg.c:866:1: error: unknown type name 'complex_float'
+complex_float  quantum_dot_product( quantum_reg *reg1, quantum_reg *reg2) 
+^
+qureg.c:896:1: error: use of undeclared identifier 'complex_float'
+complex_float amplitude; // 0:xmm0_8.8 
+^
+qureg.c:980:10: error: use of undeclared identifier 'complex_float'
+return ( complex_float)__PAIR64__( LODWORD( v19), LODWORD( v18)); 
+         ^
+qureg.c:985:1: error: use of undeclared identifier 'amplitude'; did you mean 'p_amplitude'?
+amplitude = v21->amplitude; 
+^~~~~~~~~
+p_amplitude
+qureg.c:893:8: note: 'p_amplitude' declared here
+float *p_amplitude; // rax 
+       ^
+qureg.c:985:11: error: assigning to 'float *' from incompatible type '_Complex float'
+amplitude = v21->amplitude; 
+          ^ ~~~~~~~~~~~~~~
+qureg.c:986:21: error: use of undeclared identifier 'amplitude'
+v29 = quantum_conj( amplitude).m128i_u64[0]; 
+                    ^
+qureg.c:1000:10: error: use of undeclared identifier 'complex_float'
+return ( complex_float)__PAIR64__( LODWORD( v19), LODWORD( v18)); 
+         ^
+7 errors generated.

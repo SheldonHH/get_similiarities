@@ -1,0 +1,42 @@
+gates.c:365:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gates.c:543:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2 warnings generated.
+objcode.c:176:18: warning: passing an object that undergoes default argument promotion to 'va_start' has undefined behavior [-Wvarargs]
+  va_start(args, operation);
+                 ^
+objcode.c:165:35: note: parameter of type 'unsigned char' is declared here
+quantum_objcode_put(unsigned char operation, ...)
+                                  ^
+1 warning generated.
+qureg.c:625:10: error: conflicting types for 'quantum_qureg2matrix'
+__int64  quantum_qureg2matrix( quantum_reg reg) 
+         ^
+./qureg.h:58:23: note: previous declaration is here
+extern quantum_matrix quantum_qureg2matrix(quantum_reg reg);
+                      ^
+qureg.c:629:1: error: use of undeclared identifier 'complex_float'
+complex_float *t; // rcx 
+^
+qureg.c:629:16: error: use of undeclared identifier 't'
+complex_float *t; // rcx 
+               ^
+qureg.c:636:1: error: use of undeclared identifier 't'
+t = v1.t; 
+^
+qureg.c:642:23: error: member reference base type '_Complex float' is not a structure or union
+imag = node->amplitude.imag; 
+       ~~~~~~~~~~~~~~~^~~~~
+qureg.c:644:1: error: use of undeclared identifier 't'
+t[state].real = node->amplitude.real; 
+^
+qureg.c:644:32: error: member reference base type '_Complex float' is not a structure or union
+t[state].real = node->amplitude.real; 
+                ~~~~~~~~~~~~~~~^~~~~
+qureg.c:645:1: error: use of undeclared identifier 't'
+t[state].imag = imag; 
+^
+8 errors generated.

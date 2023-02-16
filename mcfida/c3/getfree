@@ -1,0 +1,25 @@
+mcfutil.c:831:10: error: conflicting types for 'getfree'
+__int64  getfree( network_t *net) 
+         ^
+./mcfutil.h:36:13: note: previous declaration is here
+extern long getfree _PROTO_(( network_t * ));
+            ^
+mcfutil.c:848:14: error: expected expression
+*( ( _OWORD *)p_nodes + 2) = 0LL; 
+             ^
+mcfutil.c:848:6: error: use of undeclared identifier '_OWORD'
+*( ( _OWORD *)p_nodes + 2) = 0LL; 
+     ^
+mcfutil.c:849:14: error: expected expression
+*( ( _OWORD *)p_nodes + 1) = 0LL; 
+             ^
+mcfutil.c:849:6: error: use of undeclared identifier '_OWORD'
+*( ( _OWORD *)p_nodes + 1) = 0LL; 
+     ^
+mcfutil.c:850:12: error: expected expression
+*( _OWORD *)p_nodes = 0LL; 
+           ^
+mcfutil.c:850:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)p_nodes = 0LL; 
+   ^
+7 errors generated.

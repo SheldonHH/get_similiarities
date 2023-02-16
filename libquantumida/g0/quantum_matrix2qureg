@@ -1,0 +1,72 @@
+gates.c:365:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gates.c:543:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2 warnings generated.
+objcode.c:176:18: warning: passing an object that undergoes default argument promotion to 'va_start' has undefined behavior [-Wvarargs]
+  va_start(args, operation);
+                 ^
+objcode.c:165:35: note: parameter of type 'unsigned char' is declared here
+quantum_objcode_put(unsigned char operation, ...)
+                                  ^
+1 warning generated.
+qureg.c:507:15: error: conflicting types for 'quantum_matrix2qureg'
+quantum_reg * quantum_matrix2qureg( quantum_reg *retstr, quantum_matrix *m, int width) 
+              ^
+./qureg.h:56:20: note: previous declaration is here
+extern quantum_reg quantum_matrix2qureg(quantum_matrix *m, int width);
+                   ^
+qureg.c:509:1: error: use of undeclared identifier 'complex_float'
+complex_float *v3; // rax 
+^
+qureg.c:509:16: error: use of undeclared identifier 'v3'
+complex_float *v3; // rax 
+               ^
+qureg.c:510:1: error: use of undeclared identifier 'complex_float'
+complex_float *v4; // rax 
+^
+qureg.c:510:16: error: use of undeclared identifier 'v4'
+complex_float *v4; // rax 
+               ^
+qureg.c:511:1: error: use of undeclared identifier 'complex_float'
+complex_float *v5; // rdx 
+^
+qureg.c:511:16: error: use of undeclared identifier 'v5'
+complex_float *v5; // rdx 
+               ^
+qureg.c:529:1: error: use of undeclared identifier 'v3'
+v3 = &m->t[i]; 
+^
+qureg.c:530:6: error: use of undeclared identifier 'v3'
+if ( v3->real != 0.0 || v3->imag != 0.0 ) 
+     ^
+qureg.c:530:25: error: use of undeclared identifier 'v3'
+if ( v3->real != 0.0 || v3->imag != 0.0 ) 
+                        ^
+qureg.c:553:1: error: use of undeclared identifier 'v4'
+v4 = &m->t[ia]; 
+^
+qureg.c:554:6: error: use of undeclared identifier 'v4'
+if ( v4->real != 0.0 || v4->imag != 0.0 ) 
+     ^
+qureg.c:554:25: error: use of undeclared identifier 'v4'
+if ( v4->real != 0.0 || v4->imag != 0.0 ) 
+                        ^
+qureg.c:557:1: error: use of undeclared identifier 'v5'
+v5 = &m->t[ia]; 
+^
+qureg.c:559:8: error: use of undeclared identifier 'v5'
+imag = v5->imag; 
+       ^
+qureg.c:560:14: error: member reference base type '_Complex float' is not a structure or union
+v6->amplitude.real = v5->real; 
+~~~~~~~~~~~~~^~~~~
+qureg.c:560:22: error: use of undeclared identifier 'v5'
+v6->amplitude.real = v5->real; 
+                     ^
+qureg.c:561:14: error: member reference base type '_Complex float' is not a structure or union
+v6->amplitude.imag = imag; 
+~~~~~~~~~~~~~^~~~~
+18 errors generated.

@@ -1,0 +1,20 @@
+/data/output_dir/patch/bzip2/ida/clang/O1/bzip2-clang-O1/mainSort/src/blocksort.c:1408:24: error: use of undeclared identifier 'invalid_operation'
+v29 = ( v28 - 1 < 0) ^ __OFADD__( -1LL, v28) | ( v28 == 1); 
+                       ^
+/data/output_dir/patch/bzip2/ida/clang/O1/bzip2-clang-O1/mainSort/src/blocksort.c:1068:25: note: expanded from macro '__OFADD__'
+#define __OFADD__(x, y) invalid_operation // Generate overflow flag for (x+y)
+                        ^
+/data/output_dir/patch/bzip2/ida/clang/O1/bzip2-clang-O1/mainSort/src/blocksort.c:1480:24: error: use of undeclared identifier 'invalid_operation'
+v29 = ( v43 - 1 < 0) ^ __OFADD__( -1LL, v43) | ( v43 == 1); 
+                       ^
+/data/output_dir/patch/bzip2/ida/clang/O1/bzip2-clang-O1/mainSort/src/blocksort.c:1068:25: note: expanded from macro '__OFADD__'
+#define __OFADD__(x, y) invalid_operation // Generate overflow flag for (x+y)
+                        ^
+/data/output_dir/patch/bzip2/ida/clang/O1/bzip2-clang-O1/mainSort/src/blocksort.c:1568:50: error: too few arguments to function call, expected 8, have 7
+mainQSort3( v57, v60, v100, v59, v65, v66, budget); 
+~~~~~~~~~~                                       ^
+/data/output_dir/patch/bzip2/ida/clang/O1/bzip2-clang-O1/mainSort/src/blocksort.c:667:1: note: 'mainQSort3' declared here
+static
+^
+3 errors generated.
+make: *** [/data/output_dir/patch/bzip2/ida/clang/O1/bzip2-clang-O1/mainSort/src/obj/blocksort.o] Error 1

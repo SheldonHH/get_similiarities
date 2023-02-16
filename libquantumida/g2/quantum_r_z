@@ -1,0 +1,47 @@
+gates.c:365:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gates.c:543:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gates.c:1203:1: error: use of undeclared identifier 'SCtype'
+SCtype v15; // [rsp+8h] [rbp-40h] 
+^
+gates.c:1207:30: error: too many arguments to function call, expected single argument 'phi', have 2 arguments
+v4 = quantum_cexp( a2 * 0.5, a2 * 0.5).m128i_u64[0]; 
+     ~~~~~~~~~~~~            ^~~~~~~~
+./lq_complex.h:33:1: note: 'quantum_cexp' declared here
+extern COMPLEX_FLOAT quantum_cexp(float phi);
+^
+gates.c:1218:23: error: member reference base type '_Complex float' is not a structure or union
+imag = node->amplitude.imag; 
+       ~~~~~~~~~~~~~~~^~~~~
+gates.c:1219:23: error: member reference base type '_Complex float' is not a structure or union
+real = node->amplitude.real; 
+       ~~~~~~~~~~~~~~~^~~~~
+gates.c:1227:7: warning: implicit declaration of function '_divsc3' is invalid in C99 [-Wimplicit-function-declaration]
+v15 = _divsc3( imag, v7, v8, v5); 
+      ^
+gates.c:1227:1: error: use of undeclared identifier 'v15'
+v15 = _divsc3( imag, v7, v8, v5); 
+^
+gates.c:1228:6: error: use of undeclared identifier 'v15'
+v5 = v15.real; 
+     ^
+gates.c:1229:7: error: use of undeclared identifier 'v15'
+v12 = v15.imag; 
+      ^
+gates.c:1231:16: error: member reference base type '_Complex float' is not a structure or union
+node->amplitude.real = v5; 
+~~~~~~~~~~~~~~~^~~~~
+gates.c:1232:16: error: member reference base type '_Complex float' is not a structure or union
+node->amplitude.imag = v12; 
+~~~~~~~~~~~~~~~^~~~~
+3 warnings and 9 errors generated.
+objcode.c:176:18: warning: passing an object that undergoes default argument promotion to 'va_start' has undefined behavior [-Wvarargs]
+  va_start(args, operation);
+                 ^
+objcode.c:165:35: note: parameter of type 'unsigned char' is declared here
+quantum_objcode_put(unsigned char operation, ...)
+                                  ^
+1 warning generated.

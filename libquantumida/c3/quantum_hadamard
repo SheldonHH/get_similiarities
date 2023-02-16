@@ -1,0 +1,40 @@
+gates.c:365:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gates.c:543:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gates.c:1124:11: warning: plain '_Complex' requires a type specifier; assuming '_Complex double'
+*v3.t = ( complex)1060439283LL; 
+          ^
+                  double
+/usr/include/complex.h:43:18: note: expanded from macro 'complex'
+#define complex         _Complex
+                        ^
+gates.c:1125:13: warning: plain '_Complex' requires a type specifier; assuming '_Complex double'
+v3.t[1] = ( complex)1060439283LL; 
+            ^
+                    double
+/usr/include/complex.h:43:18: note: expanded from macro 'complex'
+#define complex         _Complex
+                        ^
+gates.c:1127:12: error: expected expression
+*( _OWORD *)&v3.t[2].real = xmmword_409310; 
+           ^
+gates.c:1127:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&v3.t[2].real = xmmword_409310; 
+   ^
+gates.c:1127:21: error: member reference base type '_Complex float' is not a structure or union
+*( _OWORD *)&v3.t[2].real = xmmword_409310; 
+             ~~~~~~~^~~~~
+gates.c:1127:29: error: use of undeclared identifier 'xmmword_409310'
+*( _OWORD *)&v3.t[2].real = xmmword_409310; 
+                            ^
+4 warnings and 4 errors generated.
+objcode.c:176:18: warning: passing an object that undergoes default argument promotion to 'va_start' has undefined behavior [-Wvarargs]
+  va_start(args, operation);
+                 ^
+objcode.c:165:35: note: parameter of type 'unsigned char' is declared here
+quantum_objcode_put(unsigned char operation, ...)
+                                  ^
+1 warning generated.

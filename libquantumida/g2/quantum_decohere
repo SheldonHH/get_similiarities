@@ -1,0 +1,57 @@
+decoherence.c:556:1: error: use of undeclared identifier 'complex_float'
+complex_float v21; // xmm0_8 
+^
+decoherence.c:602:51: error: member reference base type '_Complex float' is not a structure or union
+for ( i = 0LL; reg->size > ( int)i; v22->amplitude.imag = v21.real ) 
+                                    ~~~~~~~~~~~~~~^~~~~
+decoherence.c:602:59: error: use of undeclared identifier 'v21'
+for ( i = 0LL; reg->size > ( int)i; v22->amplitude.imag = v21.real ) 
+                                                          ^
+decoherence.c:615:7: warning: implicit declaration of function '_bittest64' is invalid in C99 [-Wimplicit-function-declaration]
+if ( !_bittest64( ( const __int64 *)&state, j) ) 
+      ^
+decoherence.c:626:1: error: use of undeclared identifier 'v21'
+v21 = quantum_cexp( imag); 
+^
+decoherence.c:628:22: error: member reference base type '_Complex float' is not a structure or union
+imag = v22->amplitude.imag; 
+       ~~~~~~~~~~~~~~^~~~~
+decoherence.c:629:42: error: member reference base type '_Complex float' is not a structure or union
+v23 = ( float)( v21.real * v22->amplitude.real) - ( float)( imag * v21.imag); 
+                           ~~~~~~~~~~~~~~^~~~~
+decoherence.c:629:17: error: use of undeclared identifier 'v21'
+v23 = ( float)( v21.real * v22->amplitude.real) - ( float)( imag * v21.imag); 
+                ^
+decoherence.c:629:68: error: use of undeclared identifier 'v21'
+v23 = ( float)( v21.real * v22->amplitude.real) - ( float)( imag * v21.imag); 
+                                                                   ^
+decoherence.c:630:36: error: member reference base type '_Complex float' is not a structure or union
+v21.real = ( float)( v22->amplitude.real * v21.imag) + ( float)( v21.real * imag); 
+                     ~~~~~~~~~~~~~~^~~~~
+decoherence.c:630:44: error: use of undeclared identifier 'v21'
+v21.real = ( float)( v22->amplitude.real * v21.imag) + ( float)( v21.real * imag); 
+                                           ^
+decoherence.c:630:1: error: use of undeclared identifier 'v21'
+v21.real = ( float)( v22->amplitude.real * v21.imag) + ( float)( v21.real * imag); 
+^
+decoherence.c:630:66: error: use of undeclared identifier 'v21'
+v21.real = ( float)( v22->amplitude.real * v21.imag) + ( float)( v21.real * imag); 
+                                                                 ^
+decoherence.c:631:15: error: member reference base type '_Complex float' is not a structure or union
+v22->amplitude.real = v23; 
+~~~~~~~~~~~~~~^~~~~
+1 warning and 13 errors generated.
+gates.c:365:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gates.c:543:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2 warnings generated.
+objcode.c:176:18: warning: passing an object that undergoes default argument promotion to 'va_start' has undefined behavior [-Wvarargs]
+  va_start(args, operation);
+                 ^
+objcode.c:165:35: note: parameter of type 'unsigned char' is declared here
+quantum_objcode_put(unsigned char operation, ...)
+                                  ^
+1 warning generated.
