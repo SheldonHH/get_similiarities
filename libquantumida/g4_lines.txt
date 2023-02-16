@@ -1,0 +1,174 @@
+if ( ++counter_1 >= freq_0 ) 
+if ( ++counter_1 >= freq_0 ) 
+counter_1 = 0; 
+complex_float v20; // xmm0_8 
+v20 = quantum_cexp( *( float *)&v1); 
+v22 = ( float)( v20.real * v21->amplitude.real) - ( float)( *( float *)&v1 * v20.imag); 
+v22 = ( float)( v20.real * v21->amplitude.real) - ( float)( *( float *)&v1 * v20.imag); 
+v20.real = ( float)( v21->amplitude.real * v20.imag) + ( float)( v20.real * *( float *)&v1); 
+v20.real = ( float)( v21->amplitude.real * v20.imag) + ( float)( v20.real * *( float *)&v1); 
+v20.real = ( float)( v21->amplitude.real * v20.imag) + ( float)( v20.real * *( float *)&v1); 
+v21->amplitude.imag = v20.real; 
+mem_1 -= 8 * m->rows * ( __int64)m->cols; 
+if ( mem_1 > max_0 ) 
+if ( mem_1 > max_0 ) 
+max_0 = mem_1; 
+max_0 = mem_1; 
+complex_float amplitude; // 0:xmm0_8.8 
+return ( complex_float)__PAIR64__( LODWORD( v19), LODWORD( v18)); 
+amplitude = v21->amplitude; 
+v29 = quantum_conj( amplitude).m128i_u64[0]; 
+return ( complex_float)__PAIR64__( LODWORD( v19), LODWORD( v18)); 
+complex_float *t; // rbx 
+complex_float *t; // rbx 
+t = m.t; 
+v31 = t[2].imag != 0.0 || t[2].real != 0.0; 
+v31 = t[2].imag != 0.0 || t[2].real != 0.0; 
+if ( t[1].imag == 0.0 && t[1].real == 0.0 ) 
+if ( t[1].imag == 0.0 && t[1].real == 0.0 ) 
+v60 = t[2].real; 
+v61 = t[2].imag; 
+v64 = t[3].real; 
+v65 = t[3].imag; 
+v98 = t[1].real; 
+v100 = t[1].imag; 
+v66 = t->imag; 
+v67 = ( float)( v58 * t->real) - ( float)( v57 * v66); 
+v68 = ( float)( v57 * t->real) + ( float)( v58 * v66); 
+v69 = t[1].real; 
+v70 = t[1].imag; 
+v86 = t->imag; 
+v87 = ( float)( t->real * real) - ( float)( imag * v86); 
+v88 = ( float)( real * v86) + ( float)( t->real * imag); 
+v89 = t[1].imag; 
+v90 = ( float)( t[1].real * v57) + ( float)( v58 * v89); 
+v49->amplitude.real = ( float)( ( float)( t[1].real * v58) - ( float)( v57 * v89)) + v87; 
+v91 = t[2].real; 
+v92 = t[2].imag; 
+v95 = t[3].real; 
+v96 = t[3].imag; 
+v104 = t[2].imag; 
+if ( t[1].real == 0.0 && t[1].imag == 0.0 ) 
+if ( t[1].real == 0.0 && t[1].imag == 0.0 ) 
+v106 = t[2].real; 
+v106 = t[2].real; 
+complex_float *t; // rbx 
+complex_float *t; // rbx 
+t = m.t; 
+v31 = t[2].imag != 0.0 || t[2].real != 0.0; 
+v31 = t[2].imag != 0.0 || t[2].real != 0.0; 
+if ( t[1].imag == 0.0 && t[1].real == 0.0 ) 
+if ( t[1].imag == 0.0 && t[1].real == 0.0 ) 
+v60 = t[2].real; 
+v61 = t[2].imag; 
+v64 = t[3].real; 
+v65 = t[3].imag; 
+v98 = t[1].real; 
+v100 = t[1].imag; 
+v66 = t->imag; 
+v67 = ( float)( v58 * t->real) - ( float)( v57 * v66); 
+v68 = ( float)( v57 * t->real) + ( float)( v58 * v66); 
+v69 = t[1].real; 
+v70 = t[1].imag; 
+v86 = t->imag; 
+v87 = ( float)( t->real * real) - ( float)( imag * v86); 
+v88 = ( float)( real * v86) + ( float)( t->real * imag); 
+v89 = t[1].imag; 
+v90 = ( float)( t[1].real * v57) + ( float)( v58 * v89); 
+v49->amplitude.real = ( float)( ( float)( t[1].real * v58) - ( float)( v57 * v89)) + v87; 
+v91 = t[2].real; 
+v92 = t[2].imag; 
+v95 = t[3].real; 
+v96 = t[3].imag; 
+v104 = t[2].imag; 
+if ( t[1].real == 0.0 && t[1].imag == 0.0 ) 
+if ( t[1].real == 0.0 && t[1].imag == 0.0 ) 
+v106 = t[2].real; 
+v106 = t[2].real; 
+counter_0 = 0; 
+return counter_0; 
+result = counter_0 + inc; 
+counter_0 += inc; 
+complex_float *t; // rsi 
+complex_float *t; // rsi 
+complex_float *v12; // rax 
+complex_float *v12; // rax 
+complex_float *v27; // rcx 
+complex_float *v27; // rcx 
+t = m->t; 
+v12 = m->t; 
+v13 = *( __m128 *)&v12->real; 
+v14 = *( __m128 *)&v12[2].real; 
+v12 += 4; 
+while ( v12 != &t[4 * ( ( unsigned int)rows >> 2)] ); 
+while ( v12 != &t[4 * ( ( unsigned int)rows >> 2)] ); 
+v18 = ( float *)&t[v15]; 
+v20 = ( float *)&t[v15 + 1]; 
+v23 = ( float *)&t[v21]; 
+v27 = m->t; 
+if ( v27[v28].real != 0.0 || v27[v28].imag != 0.0 ) 
+if ( v27[v28].real != 0.0 || v27[v28].imag != 0.0 ) 
+real = v27[v28].real; 
+imag = v27[v28].imag; 
+result = change + mem_1; 
+mem_1 += change; 
+if ( mem_1 > max_0 ) 
+if ( mem_1 > max_0 ) 
+max_0 = result; 
+complex_float *v2; // rax 
+complex_float *v2; // rax 
+v2 = ( complex_float *)calloc( cols * rows, 8uLL); 
+v2 = ( complex_float *)calloc( cols * rows, 8uLL); 
+if ( !v2 ) 
+v3.t = v2; 
+mem_1 += 8 * rows * ( __int64)cols; 
+if ( mem_1 > max_0 ) 
+if ( mem_1 > max_0 ) 
+max_0 = mem_1; 
+max_0 = mem_1; 
+complex_float *v3; // r14 
+complex_float *v3; // r14 
+v3 = &m.t[v1]; 
+real = v3->real; 
+imag = v3->imag; 
+++v3; 
+while ( &m.t[v1 + 1 + ( unsigned __int64)( unsigned int)( m.cols - 1)] != v3 ); 
+result = inc + counter_1; 
+counter_1 += inc; 
+result = counter_1; 
+counter_1 = 0; 
+freq_0 = frequency; 
+counter_1 = 0; 
+return counter_1; 
+if ( result >= freq_0 ) 
+complex_float *t; // r8 
+complex_float *t; // r8 
+t = v1.t; 
+t[state].real = real; 
+t[state].imag = imag; 
+complex_float *t; // rax 
+complex_float *t; // rax 
+t = m.t; 
+t[3].imag = 0.0; 
+t->real = v8; 
+t[1].imag = *( float *)&v7; 
+t[2].imag = *( float *)&v7; 
+t[3].real = v8; 
+t[1].real = *( float *)&v9; 
+t[2].real = *( float *)&v9; 
+complex_float *t; // rax 
+complex_float *t; // rax 
+t = m.t; 
+t->real = v8; 
+t[1].imag = 0.0; 
+t[2].imag = 0.0; 
+t[3].imag = 0.0; 
+t[1].real = -*( float *)&v7; 
+t[2].real = *( float *)&v7; 
+t[3].real = v8; 
+if ( ++counter_1 >= freq_0 ) 
+if ( ++counter_1 >= freq_0 ) 
+counter_1 = 0; 
+if ( ++counter_1 >= freq_0 ) 
+if ( ++counter_1 >= freq_0 ) 
+counter_1 = 0; 

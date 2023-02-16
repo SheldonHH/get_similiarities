@@ -1,0 +1,289 @@
+complex_float amplitude; // 0:xmm0_8.8 
+amplitude = reg->node[i].amplitude; 
+pa = quantum_prob_inline_1( amplitude) + pa; 
+complex_float amplitude; // 0:xmm0_8.8 
+complex_float v22; // 0:xmm0_8.8 
+amplitude = reg->node[i].amplitude; 
+pa = quantum_prob_inline_1( amplitude) + pa; 
+v22 = reg->node[ia].amplitude; 
+d = quantum_prob_inline_1( v22) + d; 
+return ( complex_float)__PAIR64__( v2, v1); 
+SFtype v7; // xmm4_4 
+complex_float v8; // kr00_8 
+v8 = quantum_cexp( COERCE_FLOAT( _mm_cvtsi128_si32( v6))); 
+v9->amplitude = ( complex_float)_mulsc3( v8.real, v8.imag, v9->amplitude.real, v9->amplitude.imag, v7).m128i_u64[0]; 
+SFtype v7; // xmm4_4 
+complex_float v8; // kr00_8 
+v8 = quantum_cexp( COERCE_FLOAT( _mm_cvtsi128_si32( v6))); 
+v9->amplitude = ( complex_float)_mulsc3( v8.real, v8.imag, v9->amplitude.real, v9->amplitude.imag, v7).m128i_u64[0]; 
+SFtype v4; // xmm4_4 
+complex_float v5; // kr00_8 
+v5 = quantum_cexp( gamma); 
+v6->amplitude = ( complex_float)_mulsc3( v5.real, v5.imag, v6->amplitude.real, v6->amplitude.imag, v4).m128i_u64[0]; 
+complex_float v4; // [rsp+0h] [rbp-28h] 
+*( float *)v1.m128i_i32 = quantum_real( *( complex_float *)v1.m128i_i8); 
+*( float *)v2.m128i_i32 = quantum_imag( *( complex_float *)v2.m128i_i8); 
+v4.real = r - ( float)( 0.0 * i); 
+v4.imag = -i; 
+return v4; 
+complex_float a; // [rsp+10h] [rbp-50h] 
+a = quantum_cexp( angle); 
+v6->amplitude = _mulsc3( a.imag, v6->amplitude.real, v6->amplitude.imag, a.real); 
+v6->amplitude = _mulsc3( a.imag, v6->amplitude.real, v6->amplitude.imag, a.real); 
+complex_float d; // [rsp+10h] [rbp-40h] 
+complex_float amplitude; // 0:xmm0_8.8 
+amplitude = reg1->node[ib].amplitude; 
+d = quantum_conj( amplitude); 
+d = quantum_conj( amplitude); 
+v4 = _mulsc3( d.real, d.imag, v2->amplitude.real, v2->amplitude.imag, d.real).m128i_u64[0]; 
+v4 = _mulsc3( d.real, d.imag, v2->amplitude.real, v2->amplitude.imag, d.real).m128i_u64[0]; 
+v4 = _mulsc3( d.real, d.imag, v2->amplitude.real, v2->amplitude.imag, d.real).m128i_u64[0]; 
+return ( complex_float)__PAIR64__( LODWORD( v6), LODWORD( v7)); 
+SFtype v7; // xmm4_4 
+SFtype v10; // xmm4_4 
+SFtype v11; // xmm4_4 
+SFtype v13; // xmm4_4 
+SFtype v15; // xmm4_4 
+SFtype v17; // xmm4_4 
+complex_float *m_8; // [rsp+68h] [rbp-78h] 
+complex_float *m_8; // [rsp+68h] [rbp-78h] 
+SFtype a; // [rsp+88h] [rbp-58h] 
+SFtype imag; // [rsp+90h] [rbp-50h] 
+complex_float amplitude; // 0:xmm0_8.8 
+m_8 = m.t; 
+if ( ( m_8[1].real != 0.0 || m_8[1].imag != 0.0) && ( ( reg->node[ib].state >> target) & 1) != 0 ) 
+if ( ( m_8[1].real != 0.0 || m_8[1].imag != 0.0) && ( ( reg->node[ib].state >> target) & 1) != 0 ) 
+if ( ( m_8[2].real != 0.0 || m_8[2].imag != 0.0) && ( ( reg->node[ib].state >> target) & 1) == 0 ) 
+if ( ( m_8[2].real != 0.0 || m_8[2].imag != 0.0) && ( ( reg->node[ib].state >> target) & 1) == 0 ) 
+imag = v8->amplitude.imag; 
+a = 0.0; 
+a = v9->amplitude.imag; 
+v32 = _mulsc3( v36, a, m_8[2].real, m_8[2].imag, v7).m128i_u64[0]; 
+v32 = _mulsc3( v36, a, m_8[2].real, m_8[2].imag, v7).m128i_u64[0]; 
+v32 = _mulsc3( v36, a, m_8[2].real, m_8[2].imag, v7).m128i_u64[0]; 
+v32 = _mulsc3( v36, a, m_8[2].real, m_8[2].imag, v7).m128i_u64[0]; 
+v31 = _mulsc3( real, imag, m_8[3].real, m_8[3].imag, v10).m128i_u64[0]; 
+v31 = _mulsc3( real, imag, m_8[3].real, m_8[3].imag, v10).m128i_u64[0]; 
+v31 = _mulsc3( real, imag, m_8[3].real, m_8[3].imag, v10).m128i_u64[0]; 
+v31 = _mulsc3( real, imag, m_8[3].real, m_8[3].imag, v10).m128i_u64[0]; 
+v30 = _mulsc3( real, imag, m_8->real, m_8->imag, v7).m128i_u64[0]; 
+v30 = _mulsc3( real, imag, m_8->real, m_8->imag, v7).m128i_u64[0]; 
+v30 = _mulsc3( real, imag, m_8->real, m_8->imag, v7).m128i_u64[0]; 
+v30 = _mulsc3( real, imag, m_8->real, m_8->imag, v7).m128i_u64[0]; 
+v29 = _mulsc3( v36, a, m_8[1].real, m_8[1].imag, v13).m128i_u64[0]; 
+v29 = _mulsc3( v36, a, m_8[1].real, m_8[1].imag, v13).m128i_u64[0]; 
+v29 = _mulsc3( v36, a, m_8[1].real, m_8[1].imag, v13).m128i_u64[0]; 
+v29 = _mulsc3( v36, a, m_8[1].real, m_8[1].imag, v13).m128i_u64[0]; 
+if ( m_8[1].real == 0.0 && m_8[1].imag == 0.0 && iset || m_8[2].real == 0.0 && m_8[2].imag == 0.0 && !iset ) 
+if ( m_8[1].real == 0.0 && m_8[1].imag == 0.0 && iset || m_8[2].real == 0.0 && m_8[2].imag == 0.0 && !iset ) 
+if ( m_8[1].real == 0.0 && m_8[1].imag == 0.0 && iset || m_8[2].real == 0.0 && m_8[2].imag == 0.0 && !iset ) 
+if ( m_8[1].real == 0.0 && m_8[1].imag == 0.0 && iset || m_8[2].real == 0.0 && m_8[2].imag == 0.0 && !iset ) 
+v19->amplitude = ( complex_float)_mulsc3( real, imag, m_8[1].real, m_8[1].imag, v11).m128i_u64[0]; 
+v19->amplitude = ( complex_float)_mulsc3( real, imag, m_8[2].real, m_8[2].imag, v11).m128i_u64[0]; 
+v28 = _mulsc3( v36, a, m_8->real, m_8->imag, v11).m128i_u64[0]; 
+v28 = _mulsc3( v36, a, m_8->real, m_8->imag, v11).m128i_u64[0]; 
+v28 = _mulsc3( v36, a, m_8->real, m_8->imag, v11).m128i_u64[0]; 
+v28 = _mulsc3( v36, a, m_8->real, m_8->imag, v11).m128i_u64[0]; 
+v27 = _mulsc3( real, imag, m_8[1].real, m_8[1].imag, v15).m128i_u64[0]; 
+v27 = _mulsc3( real, imag, m_8[1].real, m_8[1].imag, v15).m128i_u64[0]; 
+v27 = _mulsc3( real, imag, m_8[1].real, m_8[1].imag, v15).m128i_u64[0]; 
+v27 = _mulsc3( real, imag, m_8[1].real, m_8[1].imag, v15).m128i_u64[0]; 
+v26 = _mulsc3( real, imag, m_8[2].real, m_8[2].imag, v11).m128i_u64[0]; 
+v26 = _mulsc3( real, imag, m_8[2].real, m_8[2].imag, v11).m128i_u64[0]; 
+v26 = _mulsc3( real, imag, m_8[2].real, m_8[2].imag, v11).m128i_u64[0]; 
+v26 = _mulsc3( real, imag, m_8[2].real, m_8[2].imag, v11).m128i_u64[0]; 
+v25 = _mulsc3( v36, a, m_8[3].real, m_8[3].imag, v17).m128i_u64[0]; 
+v25 = _mulsc3( v36, a, m_8[3].real, m_8[3].imag, v17).m128i_u64[0]; 
+v25 = _mulsc3( v36, a, m_8[3].real, m_8[3].imag, v17).m128i_u64[0]; 
+v25 = _mulsc3( v36, a, m_8[3].real, m_8[3].imag, v17).m128i_u64[0]; 
+amplitude = reg->node[ie].amplitude; 
+if ( limit <= quantum_prob_inline_0( amplitude) ) 
+SFtype v8; // xmm4_4 
+SFtype v11; // xmm4_4 
+SFtype v12; // xmm4_4 
+SFtype v14; // xmm4_4 
+SFtype v16; // xmm4_4 
+SFtype v18; // xmm4_4 
+complex_float *m_8; // [rsp+68h] [rbp-78h] 
+complex_float *m_8; // [rsp+68h] [rbp-78h] 
+SFtype a; // [rsp+88h] [rbp-58h] 
+SFtype imag; // [rsp+90h] [rbp-50h] 
+complex_float amplitude; // 0:xmm0_8.8 
+m_8 = m.t; 
+if ( ( m_8[1].real != 0.0 || m_8[1].imag != 0.0) && ( ( reg->node[ib].state >> target) & 1) != 0 ) 
+if ( ( m_8[1].real != 0.0 || m_8[1].imag != 0.0) && ( ( reg->node[ib].state >> target) & 1) != 0 ) 
+if ( ( m_8[2].real != 0.0 || m_8[2].imag != 0.0) && ( ( reg->node[ib].state >> target) & 1) == 0 ) 
+if ( ( m_8[2].real != 0.0 || m_8[2].imag != 0.0) && ( ( reg->node[ib].state >> target) & 1) == 0 ) 
+imag = v9->amplitude.imag; 
+a = 0.0; 
+a = v10->amplitude.imag; 
+v33 = _mulsc3( v37, a, m_8[2].real, m_8[2].imag, v8).m128i_u64[0]; 
+v33 = _mulsc3( v37, a, m_8[2].real, m_8[2].imag, v8).m128i_u64[0]; 
+v33 = _mulsc3( v37, a, m_8[2].real, m_8[2].imag, v8).m128i_u64[0]; 
+v33 = _mulsc3( v37, a, m_8[2].real, m_8[2].imag, v8).m128i_u64[0]; 
+v32 = _mulsc3( real, imag, m_8[3].real, m_8[3].imag, v11).m128i_u64[0]; 
+v32 = _mulsc3( real, imag, m_8[3].real, m_8[3].imag, v11).m128i_u64[0]; 
+v32 = _mulsc3( real, imag, m_8[3].real, m_8[3].imag, v11).m128i_u64[0]; 
+v32 = _mulsc3( real, imag, m_8[3].real, m_8[3].imag, v11).m128i_u64[0]; 
+v31 = _mulsc3( real, imag, m_8->real, m_8->imag, v8).m128i_u64[0]; 
+v31 = _mulsc3( real, imag, m_8->real, m_8->imag, v8).m128i_u64[0]; 
+v31 = _mulsc3( real, imag, m_8->real, m_8->imag, v8).m128i_u64[0]; 
+v31 = _mulsc3( real, imag, m_8->real, m_8->imag, v8).m128i_u64[0]; 
+v30 = _mulsc3( v37, a, m_8[1].real, m_8[1].imag, v14).m128i_u64[0]; 
+v30 = _mulsc3( v37, a, m_8[1].real, m_8[1].imag, v14).m128i_u64[0]; 
+v30 = _mulsc3( v37, a, m_8[1].real, m_8[1].imag, v14).m128i_u64[0]; 
+v30 = _mulsc3( v37, a, m_8[1].real, m_8[1].imag, v14).m128i_u64[0]; 
+if ( m_8[1].real == 0.0 && m_8[1].imag == 0.0 && iset || m_8[2].real == 0.0 && m_8[2].imag == 0.0 && !iset ) 
+if ( m_8[1].real == 0.0 && m_8[1].imag == 0.0 && iset || m_8[2].real == 0.0 && m_8[2].imag == 0.0 && !iset ) 
+if ( m_8[1].real == 0.0 && m_8[1].imag == 0.0 && iset || m_8[2].real == 0.0 && m_8[2].imag == 0.0 && !iset ) 
+if ( m_8[1].real == 0.0 && m_8[1].imag == 0.0 && iset || m_8[2].real == 0.0 && m_8[2].imag == 0.0 && !iset ) 
+v20->amplitude = ( complex_float)_mulsc3( real, imag, m_8[1].real, m_8[1].imag, v12).m128i_u64[0]; 
+v20->amplitude = ( complex_float)_mulsc3( real, imag, m_8[2].real, m_8[2].imag, v12).m128i_u64[0]; 
+v29 = _mulsc3( v37, a, m_8->real, m_8->imag, v12).m128i_u64[0]; 
+v29 = _mulsc3( v37, a, m_8->real, m_8->imag, v12).m128i_u64[0]; 
+v29 = _mulsc3( v37, a, m_8->real, m_8->imag, v12).m128i_u64[0]; 
+v29 = _mulsc3( v37, a, m_8->real, m_8->imag, v12).m128i_u64[0]; 
+v28 = _mulsc3( real, imag, m_8[1].real, m_8[1].imag, v16).m128i_u64[0]; 
+v28 = _mulsc3( real, imag, m_8[1].real, m_8[1].imag, v16).m128i_u64[0]; 
+v28 = _mulsc3( real, imag, m_8[1].real, m_8[1].imag, v16).m128i_u64[0]; 
+v28 = _mulsc3( real, imag, m_8[1].real, m_8[1].imag, v16).m128i_u64[0]; 
+v27 = _mulsc3( real, imag, m_8[2].real, m_8[2].imag, v12).m128i_u64[0]; 
+v27 = _mulsc3( real, imag, m_8[2].real, m_8[2].imag, v12).m128i_u64[0]; 
+v27 = _mulsc3( real, imag, m_8[2].real, m_8[2].imag, v12).m128i_u64[0]; 
+v27 = _mulsc3( real, imag, m_8[2].real, m_8[2].imag, v12).m128i_u64[0]; 
+v26 = _mulsc3( v37, a, m_8[3].real, m_8[3].imag, v18).m128i_u64[0]; 
+v26 = _mulsc3( v37, a, m_8[3].real, m_8[3].imag, v18).m128i_u64[0]; 
+v26 = _mulsc3( v37, a, m_8[3].real, m_8[3].imag, v18).m128i_u64[0]; 
+v26 = _mulsc3( v37, a, m_8[3].real, m_8[3].imag, v18).m128i_u64[0]; 
+amplitude = reg->node[ie].amplitude; 
+if ( limit <= quantum_prob_inline_0( amplitude) ) 
+counter_0 = 0; 
+counter_0 += inc; 
+return counter_0; 
+SFtype v3; // xmm4_4 
+SFtype imag; // xmm0_4 
+imag = v4->amplitude.imag; 
+v8->amplitude = ( complex_float)_mulsc3( real, imag, v7->amplitude.real, v7->amplitude.imag, v3).m128i_u64[0]; 
+complex_float *v3; // rax 
+complex_float *v3; // rax 
+complex_float *v4; // rax 
+complex_float *v4; // rax 
+complex_float *v5; // rdx 
+complex_float *v5; // rdx 
+v3 = &m->t[i]; 
+if ( v3->real != 0.0 || v3->imag != 0.0 ) 
+if ( v3->real != 0.0 || v3->imag != 0.0 ) 
+v4 = &m->t[ia]; 
+if ( v4->real != 0.0 || v4->imag != 0.0 ) 
+if ( v4->real != 0.0 || v4->imag != 0.0 ) 
+v5 = &m->t[ia]; 
+imag = v5->imag; 
+v6->amplitude.real = v5->real; 
+complex_float amplitude; // 0:xmm0_8.8 
+amplitude = reg.node[i].amplitude; 
+r = r - quantum_prob_inline_1( amplitude); 
+mem_1 += change; 
+if ( mem_1 > max_0 ) 
+if ( mem_1 > max_0 ) 
+max_0 = mem_1; 
+max_0 = mem_1; 
+return mem_1; 
+complex_float *m_8; // [rsp+18h] [rbp-8h] 
+complex_float *m_8; // [rsp+18h] [rbp-8h] 
+m_8 = ( complex_float *)calloc( rows * cols, 8uLL); 
+m_8 = ( complex_float *)calloc( rows * cols, 8uLL); 
+if ( !m_8 ) 
+v2.t = m_8; 
+SFtype v3; // xmm4_4 
+complex_float v4; // kr00_8 
+v4 = quantum_cexp( gamma); 
+v5->amplitude = ( complex_float)_mulsc3( v4.real, v4.imag, v5->amplitude.real, v5->amplitude.imag, v3).m128i_u64[0]; 
+SFtype v3; // xmm4_4 
+complex_float v4; // kr00_8 
+v4 = quantum_cexp( gamma); 
+v5->amplitude = ( complex_float)_mulsc3( v4.real, v4.imag, v5->amplitude.real, v5->amplitude.imag, v3).m128i_u64[0]; 
+complex_float v7; // 0:xmm0_8.8 
+complex_float v8; // 0:xmm0_8.8 
+v7 = m.t[i * m.cols + j]; 
+v3 = quantum_imag_1( v7); 
+v8 = m.t[i * m.cols + j]; 
+v2 = quantum_real_1( v8); 
+complex_float amplitude; // 0:xmm0_8.8 
+complex_float v7; // 0:xmm0_8.8 
+complex_float v8; // 0:xmm0_8.8 
+amplitude = reg.node[i].amplitude; 
+v3 = quantum_prob_inline_2( amplitude); 
+v7 = reg.node[i].amplitude; 
+v2 = quantum_imag_3( v7); 
+v8 = reg.node[i].amplitude; 
+v8.real = quantum_real_3( v8); 
+v8.real = quantum_real_3( v8); 
+printf( "% f %+fi|%lli> ( %e) ( |", v8.real, v2, state, v3); 
+*( float *)v1.m128i_i32 = quantum_real( *( complex_float *)v1.m128i_i8); 
+*( float *)v2.m128i_i32 = quantum_imag( *( complex_float *)v2.m128i_i8); 
+*( float *)v1.m128i_i32 = quantum_real( *( complex_float *)v1.m128i_i8); 
+*( float *)v2.m128i_i32 = quantum_imag( *( complex_float *)v2.m128i_i8); 
+*( float *)v1.m128i_i32 = quantum_real( *( complex_float *)v1.m128i_i8); 
+*( float *)v2.m128i_i32 = quantum_imag( *( complex_float *)v2.m128i_i8); 
+*( float *)v1.m128i_i32 = quantum_real( *( complex_float *)v1.m128i_i8); 
+*( float *)v2.m128i_i32 = quantum_imag( *( complex_float *)v2.m128i_i8); 
+*( float *)v1.m128i_i32 = quantum_real( *( complex_float *)v1.m128i_i8); 
+*( float *)v2.m128i_i32 = quantum_imag( *( complex_float *)v2.m128i_i8); 
+*( float *)v1.m128i_i32 = quantum_real( *( complex_float *)v1.m128i_i8); 
+*( float *)v2.m128i_i32 = quantum_imag( *( complex_float *)v2.m128i_i8); 
+counter_1 = 0; 
+counter_1 += inc; 
+freq_0 = frequency; 
+if ( counter_1 >= freq_0 ) 
+if ( counter_1 >= freq_0 ) 
+counter_1 = 0; 
+return counter_1; 
+complex_float *v2; // rax 
+complex_float *v2; // rax 
+v2 = &m.t[v1->state]; 
+v2->real = v1->amplitude.real; 
+v2->imag = imag; 
+complex_float *t; // rax 
+complex_float *t; // rax 
+complex_float *v7; // rax 
+complex_float *v7; // rax 
+complex_float *v10; // rax 
+complex_float *v10; // rax 
+complex_float *v12; // rax 
+complex_float *v12; // rax 
+t = m.t; 
+t->imag = 0.0; 
+v7 = m.t + 1; 
+v7->imag = -*( float *)&v5; 
+v10 = m.t + 2; 
+v10->imag = -*( float *)&v8; 
+v12 = m.t + 3; 
+v12->imag = 0.0; 
+complex_float *t; // rax 
+complex_float *t; // rax 
+complex_float *v6; // rax 
+complex_float *v6; // rax 
+complex_float *v8; // rax 
+complex_float *v8; // rax 
+complex_float *v10; // rax 
+complex_float *v10; // rax 
+t = m.t; 
+t->imag = 0.0; 
+v6 = m.t + 1; 
+v6->imag = 0.0; 
+v8 = m.t + 2; 
+v8->imag = 0.0; 
+v10 = m.t + 3; 
+v10->imag = 0.0; 
+SFtype v4; // xmm4_4 
+complex_float v5; // kr00_8 
+*( _OWORD *)&gamma = LODWORD( gamma); 
+v5 = quantum_cexp( COERCE_FLOAT( _mm_cvtsi128_si32( v3))); 
+v6->amplitude = ( complex_float)_mulsc3( v5.real, v5.imag, v6->amplitude.real, v6->amplitude.imag, v4).m128i_u64[0]; 
+v6->amplitude = ( complex_float)_divsc3( v6->amplitude.real, v6->amplitude.imag, v5.real, v5.imag, v4).m128i_u64[0]; 
+SFtype v2; // xmm4_4 
+v3->amplitude = ( complex_float)_mulsc3( v3->amplitude.real, v3->amplitude.imag, 0.0, 1.0, v2).m128i_u64[0]; 
+v3->amplitude = ( complex_float)_mulsc3( v3->amplitude.real, v3->amplitude.imag, -0.0, -1.0, v2).m128i_u64[0]; 
+complex_float amplitude; // 0:xmm0_8.8 
+amplitude = reg.node[i].amplitude; 
+d = quantum_prob_inline_2( amplitude) + d; 

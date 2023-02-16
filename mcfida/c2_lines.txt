@@ -1,0 +1,15 @@
+*( ( _OWORD *)p_nodes + 2) = 0LL; 
+*( ( _OWORD *)p_nodes + 1) = 0LL; 
+*( _OWORD *)p_nodes = 0LL; 
+*( _OWORD *)&nodes->sibling = 0LL; 
+*( _OWORD *)&nodes->firstout = 0LL; 
+v12 = ( BASKET *)*( &net.checksum + v10--); 
+*( &net.checksum + v11) = ( __int64)v13; 
+v7 = *( _OWORD *)&v5->cost; 
+v8 = *( _OWORD *)&v5->head; 
+v9 = *( _OWORD *)&v5->nextout; 
+*( _OWORD *)&v6->flow = *( _OWORD *)&v5->flow; 
+*( _OWORD *)&v6->flow = *( _OWORD *)&v5->flow; 
+*( _OWORD *)&v6->nextout = v9; 
+*( _OWORD *)&v6->head = v8; 
+*( _OWORD *)&v6->cost = v7; 

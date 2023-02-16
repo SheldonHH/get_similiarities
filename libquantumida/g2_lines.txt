@@ -1,0 +1,153 @@
+complex_float c; // [rsp+18h] [rbp-30h] 
+c = quantum_cexp( *( float *)&v1); 
+v19 = ( float)( v18->amplitude.real * c.imag) + ( float)( *( float *)&v1 * c.real); 
+v19 = ( float)( v18->amplitude.real * c.imag) + ( float)( *( float *)&v1 * c.real); 
+v18->amplitude.real = ( float)( v18->amplitude.real * c.real) - ( float)( *( float *)&v1 * c.imag); 
+v18->amplitude.real = ( float)( v18->amplitude.real * c.real) - ( float)( *( float *)&v1 * c.imag); 
+complex_float amplitude; // 0:xmm0_8.8 
+amplitude = v16->amplitude; 
+v26 = quantum_conj( amplitude).m128i_u64[0]; 
+return ( complex_float)__PAIR64__( LODWORD( v11), LODWORD( v12)); 
+complex_float *t; // r13 
+complex_float *t; // r13 
+t = m.t; 
+if ( t[1].imag == 0.0 && t[1].real == 0.0 ) 
+if ( t[1].imag == 0.0 && t[1].real == 0.0 ) 
+if ( t[2].real == 0.0 && t[2].imag == 0.0 ) 
+if ( t[2].real == 0.0 && t[2].imag == 0.0 ) 
+if ( t[2].imag == 0.0 && t[2].real == 0.0 || ( state & v73) != 0 ) 
+if ( t[2].imag == 0.0 && t[2].real == 0.0 || ( state & v73) != 0 ) 
+v25 = t[2].real; 
+imag = t[2].imag; 
+v27 = t[3].real; 
+v28 = t[3].imag; 
+v29 = t->imag; 
+v83 = ( float)( c * t->real) + ( float)( b * v29); 
+v30 = t[1].real; 
+v31 = t[1].imag; 
++ ( float)( ( float)( b * t->real) - ( float)( c * v29)); 
+if ( t[1].imag == 0.0 && t[1].real == 0.0 ) 
+if ( t[1].imag == 0.0 && t[1].real == 0.0 ) 
+v41 = t->imag; 
+v85 = ( float)( real * v41) + ( float)( *( float *)&targetb * t->real); 
+v42 = t[1].real; 
+v43 = t[1].imag; 
++ ( float)( ( float)( real * t->real) - ( float)( *( float *)&targetb * v41)); 
+v44 = t[2].real; 
+v45 = t[2].imag; 
+v46 = t[3].real; 
+v47 = t[3].imag; 
+if ( t[2].imag == 0.0 && t[2].real == 0.0 && !iset ) 
+if ( t[2].imag == 0.0 && t[2].real == 0.0 && !iset ) 
+v54 = t[1].real; 
+v55 = t[1].imag; 
+v54 = t[2].real; 
+v55 = t[2].imag; 
+complex_float *t; // r13 
+complex_float *t; // r13 
+t = m.t; 
+if ( t[1].imag == 0.0 && t[1].real == 0.0 ) 
+if ( t[1].imag == 0.0 && t[1].real == 0.0 ) 
+if ( t[2].real == 0.0 && t[2].imag == 0.0 ) 
+if ( t[2].real == 0.0 && t[2].imag == 0.0 ) 
+if ( t[2].imag == 0.0 && t[2].real == 0.0 || ( state & v73) != 0 ) 
+if ( t[2].imag == 0.0 && t[2].real == 0.0 || ( state & v73) != 0 ) 
+v25 = t[2].real; 
+imag = t[2].imag; 
+v27 = t[3].real; 
+v28 = t[3].imag; 
+v29 = t->imag; 
+v81 = ( float)( c * t->real) + ( float)( b * v29); 
+v30 = t[1].real; 
+v31 = t[1].imag; 
++ ( float)( ( float)( b * t->real) - ( float)( c * v29)); 
+if ( t[1].imag == 0.0 && t[1].real == 0.0 ) 
+if ( t[1].imag == 0.0 && t[1].real == 0.0 ) 
+v41 = t->imag; 
+v83 = ( float)( real * v41) + ( float)( *( float *)&targeta * t->real); 
+v42 = t[1].real; 
+v43 = t[1].imag; 
++ ( float)( ( float)( real * t->real) - ( float)( *( float *)&targeta * v41)); 
+v44 = t[2].real; 
+v45 = t[2].imag; 
+v46 = t[3].real; 
+v47 = t[3].imag; 
+if ( t[2].imag == 0.0 && t[2].real == 0.0 && !iset ) 
+if ( t[2].imag == 0.0 && t[2].real == 0.0 && !iset ) 
+v54 = t[1].real; 
+v55 = t[1].imag; 
+v54 = t[2].real; 
+v55 = t[2].imag; 
+counter_0 = 0; 
+counter_0 += inc; 
+return counter_0; 
+complex_float *t; // rax 
+complex_float *t; // rax 
+complex_float *v11; // rcx 
+complex_float *v11; // rcx 
+t = m->t; 
+v7 = ( __int64)&t[( unsigned int)( m->rows - 1) + 1]; 
+if ( t->imag != 0.0 || t->real != 0.0 ) 
+if ( t->imag != 0.0 || t->real != 0.0 ) 
+++t; 
+while ( t != ( complex_float *)v7 ); 
+while ( t != ( complex_float *)v7 ); 
+v11 = m->t; 
+if ( v11[v12].imag != 0.0 || v11[v12].real != 0.0 ) 
+if ( v11[v12].imag != 0.0 || v11[v12].real != 0.0 ) 
+imag = v11[v12].imag; 
+v14->amplitude.real = v11[v12].real; 
+result = mem_1 + change; 
+mem_1 = result; 
+if ( ( __int64)result > max_0 ) 
+max_0 = result; 
+complex_float *v2; // rax 
+complex_float *v2; // rax 
+complex_float *v3; // r12 
+complex_float *v3; // r12 
+v2 = ( complex_float *)calloc( cols * rows, 8uLL); 
+v2 = ( complex_float *)calloc( cols * rows, 8uLL); 
+if ( !v2 ) 
+v3 = v2; 
+v3 = v2; 
+v4.t = v3; 
+complex_float *v5; // rbx 
+complex_float *v5; // rbx 
+v5 = &m.t[v3]; 
+printf( "% f %+fi\t", v5->real, v5->imag); 
+printf( "% f %+fi\t", v5->real, v5->imag); 
+++v5; 
+while ( v5 != &m.t[v3 + 1 + ( unsigned __int64)( unsigned int)( m.cols - 1)] ); 
+counter_1 = 0; 
+counter_1 += inc; 
+freq_0 = frequency; 
+if ( counter_1 >= freq_0 ) 
+if ( counter_1 >= freq_0 ) 
+counter_1 = 0; 
+return counter_1; 
+complex_float *t; // rcx 
+complex_float *t; // rcx 
+t = v1.t; 
+t[state].real = node->amplitude.real; 
+t[state].imag = imag; 
+complex_float *t; // rax 
+complex_float *t; // rax 
+complex_float *v9; // rax 
+complex_float *v9; // rax 
+t = m.t; 
+t->imag = 0.0; 
+v9 = m.t; 
+v9[1].imag = *( float *)&v5; 
+v13.t[3] = ( complex_float)LODWORD( v6); 
+complex_float *t; // rax 
+complex_float *t; // rax 
+t = m.t; 
+t->imag = 0.0; 
+m.t[1] = ( complex_float)COERCE_UNSIGNED_INT( -*( float *)&v5); 
+m.t[2] = ( complex_float)LODWORD( v5); 
+v11.t[3] = ( complex_float)LODWORD( v6); 
+SFtype real; // xmm4_4 
+real = v8->amplitude.real; 
+v11 = _divsc3( v8->amplitude.real, v8->amplitude.imag, *( SFtype *)&gammaa, *( ( SFtype *)&gammaa + 1), real).m128i_u64[0]; 
+v11 = _divsc3( v8->amplitude.real, v8->amplitude.imag, *( SFtype *)&gammaa, *( ( SFtype *)&gammaa + 1), real).m128i_u64[0]; 
+v11 = _divsc3( v8->amplitude.real, v8->amplitude.imag, *( SFtype *)&gammaa, *( ( SFtype *)&gammaa + 1), real).m128i_u64[0]; 

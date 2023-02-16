@@ -44,13 +44,13 @@ else:
       print(arg)
 proj = sys.argv[1]
 
-type_of_coms = ["g"]
+type_of_coms = ["g","c"]
 # type_of_coms = ["g","c"]
 for com in type_of_coms:
     sjeng_set = set()
     folders = [com+"0",com+"1",com+"2",com+"3"]
     for fd in folders:
-        directory = os.fsencode("/data/get_similiarities/sjengida/"+fd)
+        directory = os.fsencode("/data/get_similiarities/"+proj+"ida/"+fd)
         for file in os.listdir(directory):
             sjeng_set.add(str(file.decode()))
             
@@ -67,7 +67,7 @@ for com in type_of_coms:
         ftcs = [] # 🌈最多4个同名文件数组
         for fuc in funcs:
             #TODO: 需要替代 这个for loop只是为了找到match func
-            oj = findf(fuc,"/data/get_similiarities/sjengida/"+fd)
+            oj = findf(fuc,"/data/get_similiarities/"+proj+"ida/"+fd)
             if (type(oj) != type(None)):
                 print("oj",oj)
                 ftcs.append(oj)
@@ -88,7 +88,7 @@ for com in type_of_coms:
             ########################### 和if 部分完全一致 ########################
             
         fold_dict[fd] = fold_array
-        with open(r'/data/get_similiarities/sjengida/'+com+str(outer_index)+'_lines'+'.txt', 'w') as fp:
+        with open(r'/data/get_similiarities/'+proj+'ida/'+com+str(outer_index)+'_lines'+'.txt', 'w') as fp:
             for item in fold_array:
                 # write each item on a new line
                 fp.write("%s" % item)
@@ -96,8 +96,8 @@ for com in type_of_coms:
 
 
 
-
     cs_cont = 0
+    minus1 = 0
     while cs_cont < 3:
         b_dict = {}
         cs_arr = []
@@ -114,8 +114,31 @@ for com in type_of_coms:
             for i_index, inner_line in enumerate(fold_dict[com+str(cs_cont)]):
                 real_count += 1
                 print("cs_cont",cs_cont,"i_index",i_index,"real_count",real_count)
-                js = cs_tfidf(outer_line,inner_line)[0][1]
-                # print("js",js)
+                # if inner_line == "a = 0.0; ":
+                if  "t = m.t;" in outer_line or "a = 0.0;" in outer_line or "t = m->t;" in outer_line or "a = 0.0;" in inner_line or "t = m.t;" in inner_line or "t = m->t;" in inner_line:
+                    print("0.00000000")
+                    print("outer_line",outer_line)
+                    print("inner_line",inner_line)
+                    minus1+=1
+                    js = -1
+                else:
+                    print("outer_line",outer_line)
+                    print("inner_line",inner_line)
+                    js = cs_tfidf(outer_line,inner_line)[0][1]
+                # if real_count == 3585:
+                #     print("outer_line",outer_line)
+                #     print("inner_line",inner_line)
+                # if real_count == 3527 and cs_cont == 0:
+                #     print("3527")
+                #     print("outer_line",outer_line)
+                #     print("inner_line",inner_line)
+                #     js = cs_tfidf(outer_line,inner_line)[0][1]
+                    # js = 0
+                # else:
+                # print("outer_line",outer_line)
+                # print("inner_line",inner_line)
+                # js = cs_tfidf(outer_line,inner_line)[0][1]
+                print("js",js)
                 # js = Jaccard_Similarity(outer_line,inner_line)
                 if js > max_csim_baseline:
                     i_arr = []
@@ -135,19 +158,19 @@ for com in type_of_coms:
             print(max_csim_baseline)        
 
 
-        with open(r'/data/get_similiarities/sjengida/score_'+com+'_'+str(cs_cont)+'cs_cont.txt', 'w') as fp:
+        with open(r'/data/get_similiarities/'+proj+'ida/score_'+com+'_'+str(cs_cont)+'cs_cont.txt', 'w') as fp:
             for item in cs_arr:
                 # write each item on a new line
                 fp.write("%s\n" % item)
             print('Done')
 
-        with open(r'/data/get_similiarities/sjengida/indexs_'+com+str(cs_cont)+'i_arr.txt', 'w') as fp:
+        with open(r'/data/get_similiarities/'+proj+'ida/indexs_'+com+str(cs_cont)+'i_arr.txt', 'w') as fp:
             for item in index_list:
                 # write each item on a new line
                 fp.write("%s\n" % item)
             print('Done')
 
         cs_cont+=1
-
+    print("minus1",minus1)
 
 
