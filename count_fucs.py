@@ -60,7 +60,7 @@ for fd in folders:     # 对每一个folder遍历
 
 
 sub_counter = 0
-for sub_life in life_fucs: 
+for sub_life in sorted(life_fucs, key=lambda x: x[0]): 
     sub_counter += 1
     # strss = funs_str(sub_counter)
     filepath= "/data/get_similiarities/gobmkida/life_fucs_"+str(sub_counter)+".csv"
