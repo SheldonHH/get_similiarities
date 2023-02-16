@@ -1,0 +1,83 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/make_compound_operation/src/combine.c:6799:38: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx  make_compound_operation( rtx x, rtx_code in_code) 
+                                     ^
+                                     enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/make_compound_operation/src/combine.c:6804:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v6; // r13d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/make_compound_operation/src/combine.c:6807:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v9; // edx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/make_compound_operation/src/combine.c:6836:6: error: use of undeclared identifier 'fld'
+rtx *fld; // rbp 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/make_compound_operation/src/combine.c:6847:4: error: expected ';' after expression
+rtx compound_operation; // r14 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/make_compound_operation/src/combine.c:6847:5: error: use of undeclared identifier 'compound_operation'; did you mean 'make_compound_operation'?
+rtx compound_operation; // r14 
+    ^~~~~~~~~~~~~~~~~~
+    make_compound_operation
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/make_compound_operation/src/combine.c:6799:6: note: 'make_compound_operation' declared here
+rtx  make_compound_operation( rtx x, rtx_code in_code) 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/make_compound_operation/src/combine.c:6852:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code next_code; // [rsp+4h] [rbp-44h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/make_compound_operation/src/combine.c:6871:58: error: expected ')'
+if ( rtx_class[v4] != 60 || ( next_code = COMPARE, ( rtx)x[1] != const_int_rtx[64]) ) 
+                                                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/make_compound_operation/src/combine.c:6871:29: note: to match this '('
+if ( rtx_class[v4] != 60 || ( next_code = COMPARE, ( rtx)x[1] != const_int_rtx[64]) ) 
+                            ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/make_compound_operation/src/combine.c:6880:12: error: expected ')'
+if ( ( rtx)x[1] == const_int_rtx[64] ) 
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/make_compound_operation/src/combine.c:6880:4: note: to match this '('
+if ( ( rtx)x[1] == const_int_rtx[64] ) 
+   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/make_compound_operation/src/combine.c:6893:1: error: use of undeclared identifier 'compound_operation'
+compound_operation = make_compound_operation( x->fld[0].rtx, in_code); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/make_compound_operation/src/combine.c:6894:17: error: use of undeclared identifier 'compound_operation'
+if ( *( _WORD *)compound_operation == *( _WORD *)x->fld[0].rtwint 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/make_compound_operation/src/combine.c:6895:54: error: use of undeclared identifier 'compound_operation'
+|| mode_size[v6] >= mode_size[*( ( unsigned __int8 *)compound_operation + 2)] 
+                                                     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/make_compound_operation/src/combine.c:6899:38: error: use of undeclared identifier 'compound_operation'
+if ( ( unsigned __int16)( *( _WORD *)compound_operation - 120) > 1u || !subreg_lowpart_p( x) ) 
+                                     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/make_compound_operation/src/combine.c:6902:46: error: use of undeclared identifier 'compound_operation'
+if ( v51 <= mode_size[*( ( unsigned __int8 *)compound_operation + 2)] 
+                                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/make_compound_operation/src/combine.c:6903:29: error: use of undeclared identifier 'compound_operation'
+&& ( v52.rtwint = ( __int64)compound_operation->fld[0], v51 <= mode_size[*( unsigned __int8 *)( v52.rtwint + 2)]) ) 
+                            ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/make_compound_operation/src/combine.c:6909:25: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+return gen_rtx_fmt_e( ( rtx_code)*( _WORD *)compound_operation, v6, compound_operation->fld[0].rtx); 
+                        ^~~~~~~~
+                        rtx_cost
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/make_compound_operation/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/make_compound_operation/src/combine.c:6909:45: error: use of undeclared identifier 'compound_operation'
+return gen_rtx_fmt_e( ( rtx_code)*( _WORD *)compound_operation, v6, compound_operation->fld[0].rtx); 
+                                            ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/make_compound_operation/src/combine.c:6909:69: error: use of undeclared identifier 'compound_operation'
+return gen_rtx_fmt_e( ( rtx_code)*( _WORD *)compound_operation, v6, compound_operation->fld[0].rtx); 
+                                                                    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/make_compound_operation/src/combine.c:6914:22: error: use of undeclared identifier 'compound_operation'; did you mean 'make_compound_operation'?
+v53 = force_to_mode( compound_operation, v6, 0xFFFFFFFFFFFFFFFFLL, 0LL, 0); 
+                     ^~~~~~~~~~~~~~~~~~
+                     make_compound_operation
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/make_compound_operation/src/combine.c:6799:6: note: 'make_compound_operation' declared here
+rtx  make_compound_operation( rtx x, rtx_code in_code) 
+     ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/make_compound_operation/src/obj/combine.o] Error 1

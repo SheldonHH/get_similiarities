@@ -1,0 +1,31 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/reorder_blocks_1/src/function.c:6446:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v22; // rdx 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/reorder_blocks_1/src/function.c:6447:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *name; // rcx 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/reorder_blocks_1/src/function.c:6459:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v15 = ( __int64)rtx[2]; 
+                ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/reorder_blocks_1/src/function.c:6463:22: error: expected expression
+v22 = *( tree_node **)( v15 + 64); 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/reorder_blocks_1/src/function.c:6463:10: error: use of undeclared identifier 'tree_node'
+v22 = *( tree_node **)( v15 + 64); 
+         ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/reorder_blocks_1/src/function.c:6465:20: error: expected expression
+v22 = ( tree_node *)v15; 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/reorder_blocks_1/src/function.c:6465:9: error: use of undeclared identifier 'tree_node'
+v22 = ( tree_node *)v15; 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/reorder_blocks_1/src/function.c:6519:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v12 = ( __int64)rtx[2]; 
+                ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/reorder_blocks_1/src/function.c:6522:27: error: expected expression
+reorder_blocks_1( *( rtx *)( v12 + 8), current_block, p_block_stack); 
+                          ^
+9 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/reorder_blocks_1/src/obj/function.o] Error 1

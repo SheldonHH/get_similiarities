@@ -1,0 +1,18 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/resolve_operand_name_1/src/stmt.c:2620:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v9.rtwint = ( __int64)chain->int_cst.rtl[1].fld[0]; 
+                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/resolve_operand_name_1/src/stmt.c:2635:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v11.rtwint = ( __int64)inputs->int_cst.rtl[1].fld[0]; 
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/resolve_operand_name_1/src/stmt.c:2659:14: error: use of undeclared identifier 'off_698152'
+sprintf( p, &off_698152[1], v6); 
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/resolve_operand_name_1/src/stmt.c:2662:30: error: use of undeclared identifier 'label'; did you mean 'labs'?
+fancy_abort( ( const char *)&label, 2184, "resolve_operand_name_1"); 
+                             ^~~~~
+                             labs
+/usr/include/stdlib.h:838:17: note: 'labs' declared here
+extern long int labs (long int __x) __THROW __attribute__ ((__const__)) __wur;
+                ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/resolve_operand_name_1/src/obj/stmt.o] Error 1

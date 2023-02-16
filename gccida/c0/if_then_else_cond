@@ -1,0 +1,69 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/if_then_else_cond/src/combine.c:7661:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v17; // [rsp+8h] [rbp-A8h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/if_then_else_cond/src/combine.c:7664:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v20; // [rsp+1Ch] [rbp-94h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/if_then_else_cond/src/combine.c:7665:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v21; // [rsp+20h] [rbp-90h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/if_then_else_cond/src/combine.c:7678:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code; // [rsp+88h] [rbp-28h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/if_then_else_cond/src/combine.c:7679:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // [rsp+8Ch] [rbp-24h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/if_then_else_cond/src/combine.c:7710:47: error: use of undeclared identifier 'machine_mode'
+v3 = simplify_gen_unary( code, mode, true0, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)xa->fld[0].rtwint)); 
+                                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/if_then_else_cond/src/combine.c:7710:62: error: expected expression
+v3 = simplify_gen_unary( code, mode, true0, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)xa->fld[0].rtwint)); 
+                                                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/if_then_else_cond/src/combine.c:7712:48: error: use of undeclared identifier 'machine_mode'
+v4 = simplify_gen_unary( code, mode, false0, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)xa->fld[0].rtwint)); 
+                                               ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/if_then_else_cond/src/combine.c:7712:63: error: expected expression
+v4 = simplify_gen_unary( code, mode, false0, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)xa->fld[0].rtwint)); 
+                                                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/if_then_else_cond/src/combine.c:7724:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+*ptruea = ( rtx)xa[1]; 
+                ^~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/if_then_else_cond/src/combine.c:7726:59: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+if ( ( unsigned __int16)*( _DWORD *)cond0 == 102 && ( rtx)cond0[1] == const_int_rtx[64] ) 
+                                                          ^~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/if_then_else_cond/src/combine.c:7728:59: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+if ( ( unsigned __int16)*( _DWORD *)cond0 != 103 || ( rtx)cond0[1] != const_int_rtx[64] ) 
+                                                          ^~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/if_then_else_cond/src/combine.c:7731:18: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+*pfalsea = ( rtx)xa[1]; 
+                 ^~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/if_then_else_cond/src/combine.c:7742:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)xa->fld[0].rtwint), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/if_then_else_cond/src/combine.c:7742:18: error: expected expression
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)xa->fld[0].rtwint), 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/if_then_else_cond/src/combine.c:7748:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)xa->fld[0].rtwint), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/if_then_else_cond/src/combine.c:7748:18: error: expected expression
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)xa->fld[0].rtwint), 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/if_then_else_cond/src/combine.c:7828:30: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+|| ( v21 = swap_condition( ( rtx_code)( unsigned __int16)*( _DWORD *)cond0), 
+                             ^~~~~~~~
+                             rtx_cost
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/if_then_else_cond/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/if_then_else_cond/src/combine.c:7828:41: error: expected expression
+|| ( v21 = swap_condition( ( rtx_code)( unsigned __int16)*( _DWORD *)cond0), 
+                                        ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/if_then_else_cond/src/obj/combine.o] Error 1

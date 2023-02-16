@@ -1,0 +1,41 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/sge_plus_constant/src/loop.c:7291:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v5; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/sge_plus_constant/src/loop.c:7294:4: error: expected ';' after expression
+rtx v9; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/sge_plus_constant/src/loop.c:7294:5: error: use of undeclared identifier 'v9'
+rtx v9; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/sge_plus_constant/src/loop.c:7295:4: error: expected ';' after expression
+rtx v10; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/sge_plus_constant/src/loop.c:7295:5: error: use of undeclared identifier 'v10'
+rtx v10; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/sge_plus_constant/src/loop.c:7300:32: error: use of undeclared identifier 'machine_mode'
+return gen_rtx_fmt_ee( PLUS, ( machine_mode)*( ( unsigned __int8 *)x + 2), x, c); 
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/sge_plus_constant/src/loop.c:7301:26: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v2 = (  struct rtx_def *)x[1]; 
+                         ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/sge_plus_constant/src/loop.c:7304:1: error: use of undeclared identifier 'v10'
+v10 = gen_rtx_CONST_INT( VOIDmode, v2->fld[0].rtwint + c->fld[0].rtwint); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/sge_plus_constant/src/loop.c:7307:6: error: use of undeclared identifier 'v10'
+v6 = v10; 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/sge_plus_constant/src/loop.c:7314:1: error: use of undeclared identifier 'v9'
+v9 = sge_plus_constant( *( rtx *)&x[1], c); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/sge_plus_constant/src/loop.c:7314:33: error: expected expression
+v9 = sge_plus_constant( *( rtx *)&x[1], c); 
+                                ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/sge_plus_constant/src/loop.c:7317:7: error: use of undeclared identifier 'v9'
+rtx = v9; 
+      ^
+12 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/sge_plus_constant/src/obj/loop.o] Error 1

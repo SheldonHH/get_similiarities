@@ -1,0 +1,19 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_builtin_va_arg/src/builtins.c:3522:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *valista; // [rsp+48h] [rbp-8h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_builtin_va_arg/src/builtins.c:3575:7: error: use of undeclared identifier 'expand_builtin_va_arg_gave_help'; did you mean 'expand_builtin_va_arg'?
+if ( !expand_builtin_va_arg_gave_help ) 
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      expand_builtin_va_arg
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_builtin_va_arg/src/builtins.c:3512:6: note: 'expand_builtin_va_arg' declared here
+rtx  expand_builtin_va_arg( tree valist, tree type) 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_builtin_va_arg/src/builtins.c:3577:1: error: use of undeclared identifier 'expand_builtin_va_arg_gave_help'
+expand_builtin_va_arg_gave_help = 1; 
+^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_builtin_va_arg/src/builtins.c:3583:22: error: use of undeclared identifier 'machine_mode'
+mem = gen_rtx_MEM( ( machine_mode)( ( unsigned __int8)HIBYTE( WORD2( type->block.abstract_origin)) >> 1), addr); 
+                     ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_builtin_va_arg/src/obj/builtins.o] Error 1

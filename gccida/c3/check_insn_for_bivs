@@ -1,0 +1,32 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/check_insn_for_bivs/src/loop.c:5717:1: error: use of undeclared identifier 'induction_1'
+induction_1 *v; // [rsp+30h] [rbp-50h] 
+^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/check_insn_for_bivs/src/loop.c:5717:14: error: use of undeclared identifier 'v'
+induction_1 *v; // [rsp+30h] [rbp-50h] 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/check_insn_for_bivs/src/loop.c:5739:12: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v6 = ( rtx)pa[2]; 
+           ^~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/check_insn_for_bivs/src/loop.c:5748:13: error: expected identifier or '('
+ struct set = v5; 
+            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/check_insn_for_bivs/src/loop.c:5761:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( unsigned __int8)BYTE2( **( _DWORD **)&set[1]), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/check_insn_for_bivs/src/loop.c:5761:18: error: expected expression
+( machine_mode)( unsigned __int8)BYTE2( **( _DWORD **)&set[1]), 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/check_insn_for_bivs/src/loop.c:5768:1: error: use of undeclared identifier 'v'
+v = ( induction_1 *)xmalloc( 0xA8uLL); 
+^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/check_insn_for_bivs/src/loop.c:5768:20: error: expected expression
+v = ( induction_1 *)xmalloc( 0xA8uLL); 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/check_insn_for_bivs/src/loop.c:5768:7: error: use of undeclared identifier 'induction_1'
+v = ( induction_1 *)xmalloc( 0xA8uLL); 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/check_insn_for_bivs/src/loop.c:5769:20: error: use of undeclared identifier 'v'
+record_biv( loopa, v, pa, dest_reg, inc_val, mult_val, location, not_every_iterationa, maybe_multiplea); 
+                   ^
+10 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/check_insn_for_bivs/src/obj/loop.o] Error 1

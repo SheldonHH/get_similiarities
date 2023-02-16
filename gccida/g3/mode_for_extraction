@@ -1,0 +1,20 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/mode_for_extraction/src/expmed.c:688:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode  mode_for_extraction( extraction_pattern pattern, int opno) 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/mode_for_extraction/src/expmed.c:688:36: error: must use 'enum' tag to refer to type 'extraction_pattern'
+machine_mode  mode_for_extraction( extraction_pattern pattern, int opno) 
+                                   ^
+                                   enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/mode_for_extraction/src/expmed.c:690:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode result; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/mode_for_extraction/src/expmed.c:697:52: error: use of undeclared identifier 'CSWTCH_517'
+result = *( unsigned __int16 *)( *( ( _QWORD *)*( &CSWTCH_517 + ( unsigned int)pattern) + 3) + 24LL * opno + 16); 
+                                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/mode_for_extraction/src/expmed.c:699:19: error: invalid suffix 'xmode' on integer constant
+return *(short *)0xmode; 
+                  ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/mode_for_extraction/src/obj/expmed.o] Error 1

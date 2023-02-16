@@ -1,0 +1,116 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/block_alloc/src/local-alloc.c:1733:74: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( insn = *( rtx *)( basic_block_info->data.l[b] + 8); ; insn = ( rtx)insn[1] ) 
+                                                                         ^~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/block_alloc/src/local-alloc.c:1753:1: error: use of undeclared identifier 'this_insn_0'; did you mean 'this_insn'?
+this_insn_0 = insna; 
+^~~~~~~~~~~
+this_insn
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/block_alloc/src/local-alloc.c:243:12: note: 'this_insn' declared here
+static rtx this_insn;
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/block_alloc/src/local-alloc.c:1757:4: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+&& recog_data_0.n_operands > 1 
+   ^~~~~~~~~~~~
+   recog_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/block_alloc/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/block_alloc/src/local-alloc.c:1758:5: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+&& *recog_data_0.constraints[0] == 61 
+    ^~~~~~~~~~~~
+    recog_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/block_alloc/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/block_alloc/src/local-alloc.c:1759:17: error: use of undeclared identifier 'recog_data_0'
+&& *( ( _BYTE *)recog_data_0.constraints[0] + 1) != 38 ) 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/block_alloc/src/local-alloc.c:1763:22: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+for ( i_0 = 1; i_0 < recog_data_0.n_operands; ++i_0 ) 
+                     ^~~~~~~~~~~~
+                     recog_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/block_alloc/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/block_alloc/src/local-alloc.c:1765:22: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+v1 = requires_inout( recog_data_0.constraints[i_0]); 
+                     ^~~~~~~~~~~~
+                     recog_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/block_alloc/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/block_alloc/src/local-alloc.c:1767:12: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( v1 == recog_data_0.n_alternatives ) 
+           ^~~~~~~~~~~~
+           recog_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/block_alloc/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/block_alloc/src/local-alloc.c:1770:6: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+r0 = recog_data_0.operand[0]; 
+     ^~~~~~~~~~~~
+     recog_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/block_alloc/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/block_alloc/src/local-alloc.c:1771:24: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+for ( i_0a = 1; i_0a < recog_data_0.n_operands; ++i_0a ) 
+                       ^~~~~~~~~~~~
+                       recog_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/block_alloc/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/block_alloc/src/local-alloc.c:1775:43: error: use of undeclared identifier 'recog_data_0'
+|| i_0a == must_match_0 + 1 && *( _BYTE *)recog_data_0.operand_loc[i_0a + 29] == 37 
+                                          ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/block_alloc/src/local-alloc.c:1776:33: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+|| i_0a == must_match_0 - 1 && *recog_data_0.constraints[i_0a] == 37) 
+                                ^~~~~~~~~~~~
+                                recog_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/block_alloc/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/block_alloc/src/local-alloc.c:1777:25: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+&& ( n_matching_alts != recog_data_0.n_alternatives || requires_inout( recog_data_0.constraints[i_0a])) ) 
+                        ^~~~~~~~~~~~
+                        recog_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/block_alloc/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/block_alloc/src/local-alloc.c:1777:72: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+&& ( n_matching_alts != recog_data_0.n_alternatives || requires_inout( recog_data_0.constraints[i_0a])) ) 
+                                                                       ^~~~~~~~~~~~
+                                                                       recog_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/block_alloc/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/block_alloc/src/local-alloc.c:1779:6: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+r1 = recog_data_0.operand[i_0a]; 
+     ^~~~~~~~~~~~
+     recog_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/block_alloc/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/block_alloc/src/local-alloc.c:1780:7: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( *recog_data_0.constraints[i_0a] == 112 ) 
+      ^~~~~~~~~~~~
+      recog_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/block_alloc/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/block_alloc/src/local-alloc.c:1793:12: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+v2 = r1 == recog_data_0.operand[i_0a] && must_match_0 >= 0; 
+           ^~~~~~~~~~~~
+           recog_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/block_alloc/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/block_alloc/src/local-alloc.c:1823:58: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+if ( r0a == v3->fld[0].rtx && r0a == (  struct rtx_def *)v3[1] ) 
+                                                         ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/block_alloc/src/local-alloc.c:1864:57: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( linka = insna[3].fld[0].rtx; linka; linka = ( rtx)linka[1] ) 
+                                                        ^~~~~~~~
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/block_alloc/src/obj/local-alloc.o] Error 1

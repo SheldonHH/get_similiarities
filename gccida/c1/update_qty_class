@@ -1,0 +1,25 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/update_qty_class/src/local-alloc.c:2492:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class v2; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/update_qty_class/src/local-alloc.c:2494:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class v4; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/update_qty_class/src/local-alloc.c:2498:30: error: use of undeclared identifier 'qty_0'
+if ( reg_class_subset_p( v2, qty_0[v3].min_class) ) 
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/update_qty_class/src/local-alloc.c:2499:1: error: use of undeclared identifier 'qty_0'
+qty_0[v3].min_class = v2; 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/update_qty_class/src/local-alloc.c:2501:30: error: use of undeclared identifier 'qty_0'
+if ( reg_class_subset_p( v4, qty_0[v3].alternate_class) ) 
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/update_qty_class/src/local-alloc.c:2502:1: error: use of undeclared identifier 'qty_0'
+qty_0[v3].alternate_class = v4; 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/update_qty_class/src/local-alloc.c:2504:1: error: use of undeclared identifier 'qty_0'
+qty_0[v3].changes_mode = 1; 
+^
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/update_qty_class/src/obj/local-alloc.o] Error 1

@@ -1,0 +1,49 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_abs/src/optabs.c:2810:18: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  expand_abs( machine_mode mode, rtx op0, rtx target, int result_unsignedp, int safe) 
+                 ^
+                 enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_abs/src/optabs.c:2814:1: error: unknown type name 'optab_0'; did you mean 'optab'?
+optab_0 *v8; // rcx 
+^~~~~~~
+optab
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_abs/src/optabs.h:48:5: note: 'optab' declared here
+} * optab;
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_abs/src/optabs.c:2819:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v13; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_abs/src/optabs.c:2822:1: error: unknown type name 'optab_0'; did you mean 'optab'?
+optab_0 *v16; // rdx 
+^~~~~~~
+optab
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_abs/src/optabs.h:48:5: note: 'optab' declared here
+} * optab;
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_abs/src/optabs.c:2825:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v19; // edx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_abs/src/optabs.c:2827:1: error: unknown type name 'optab_0'; did you mean 'optab'?
+optab_0 *v21; // rcx 
+^~~~~~~
+optab
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_abs/src/optabs.h:48:5: note: 'optab' declared here
+} * optab;
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_abs/src/optabs.c:2829:1: error: must use 'enum' tag to refer to type 'mode_class'
+mode_class v23; // [rsp+24h] [rbp-34h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_abs/src/machmode.h:52:30: note: enum 'mode_class' is hidden by a non-type declaration of 'mode_class' here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_abs/src/optabs.c:2853:7: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v23 = mode_class_0[v10]; 
+      ^~~~~~~~~~~~
+      mode_class
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_abs/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_abs/src/obj/optabs.o] Error 1

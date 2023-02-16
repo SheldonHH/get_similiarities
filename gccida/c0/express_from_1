@@ -1,0 +1,30 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/express_from_1/src/loop.c:7470:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v4; // [rsp+4h] [rbp-6Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/express_from_1/src/loop.c:7496:12: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+oa = ( rtx)aa[1]; 
+           ^~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/express_from_1/src/loop.c:7499:12: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+ra = ( rtx)aa[1]; 
+           ^~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/express_from_1/src/loop.c:7503:26: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+ob = (  struct rtx_def *)ba[1]; 
+                         ^~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/express_from_1/src/loop.c:7506:12: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+rb = ( rtx)ba[1]; 
+           ^~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/express_from_1/src/loop.c:7520:32: error: use of undeclared identifier 'machine_mode'
+return gen_rtx_fmt_ee( PLUS, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)ba), rb, oba); 
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/express_from_1/src/loop.c:7520:47: error: expected expression
+return gen_rtx_fmt_ee( PLUS, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)ba), rb, oba); 
+                                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/express_from_1/src/loop.c:7536:14: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+oa_0 = ( rtx)aa[1]; 
+             ^~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/express_from_1/src/loop.c:7573:14: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+return ( rtx)ba[1]; 
+             ^~~~~
+9 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/express_from_1/src/obj/loop.o] Error 1

@@ -1,0 +1,24 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/rtx_renumbered_equal_p/src/jump.c:2690:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code; // [rsp+24h] [rbp-2Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/rtx_renumbered_equal_p/src/jump.c:2713:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+byte_x = ( int)x[1]; 
+               ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/rtx_renumbered_equal_p/src/jump.c:2718:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( unsigned __int8 *)( x->fld[0].rtwint + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/rtx_renumbered_equal_p/src/jump.c:2720:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)x + 2)); 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/rtx_renumbered_equal_p/src/jump.c:2733:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+byte_y = ( int)y[1]; 
+               ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/rtx_renumbered_equal_p/src/jump.c:2738:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( unsigned __int8 *)( y->fld[0].rtwint + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/rtx_renumbered_equal_p/src/jump.c:2740:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)y + 2)); 
+  ^
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/rtx_renumbered_equal_p/src/obj/jump.o] Error 1

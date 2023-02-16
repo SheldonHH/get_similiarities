@@ -1,0 +1,70 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/thread_prologue_and_epilogue_insns/src/function.c:8075:4: error: expected ';' after expression
+rtx active_insn; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/thread_prologue_and_epilogue_insns/src/function.c:8075:5: error: use of undeclared identifier 'active_insn'; did you mean 'active_insn_p'?
+rtx active_insn; // rax 
+    ^~~~~~~~~~~
+    active_insn_p
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/thread_prologue_and_epilogue_insns/src/rtl.h:1354:12: note: 'active_insn_p' declared here
+extern int active_insn_p                PARAMS ((rtx));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/thread_prologue_and_epilogue_insns/src/function.c:8081:4: error: expected ';' after expression
+rtx end; // rbx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/thread_prologue_and_epilogue_insns/src/function.c:8081:5: error: use of undeclared identifier 'end'
+rtx end; // rbx 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/thread_prologue_and_epilogue_insns/src/function.c:8085:6: error: use of undeclared identifier 'loca'
+rtx *loca; // [rsp+10h] [rbp-78h] 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/thread_prologue_and_epilogue_insns/src/function.c:8086:6: error: use of undeclared identifier 'loc'
+rtx *loc; // [rsp+10h] [rbp-78h] 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/thread_prologue_and_epilogue_insns/src/function.c:8126:1: error: use of undeclared identifier 'end'
+end = src->end; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/thread_prologue_and_epilogue_insns/src/function.c:8127:6: error: use of undeclared identifier 'end'
+if ( end ) 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/thread_prologue_and_epilogue_insns/src/function.c:8131:17: error: use of undeclared identifier 'end'
+if ( *( _WORD *)end == 36 ) 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/thread_prologue_and_epilogue_insns/src/function.c:8133:19: error: use of undeclared identifier 'end'
+if ( src->head == end ) 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/thread_prologue_and_epilogue_insns/src/function.c:8137:21: error: use of undeclared identifier 'end'
+if ( active_insn_p( end) ) 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/thread_prologue_and_epilogue_insns/src/function.c:8139:1: error: use of undeclared identifier 'end'
+end = ( rtx)end[1]; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/thread_prologue_and_epilogue_insns/src/function.c:8141:9: error: use of undeclared identifier 'end'
+while ( end ); 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/thread_prologue_and_epilogue_insns/src/function.c:8142:19: error: use of undeclared identifier 'end'
+if ( src->head != end ) 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/thread_prologue_and_epilogue_insns/src/function.c:8145:17: error: use of undeclared identifier 'end'
+if ( *( _WORD *)end == 36 ) 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/thread_prologue_and_epilogue_insns/src/function.c:8158:19: error: expected ';' after expression
+last_insn = ( rtx)last_insn[1]; 
+                  ^
+                  ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/thread_prologue_and_epilogue_insns/src/function.c:8189:36: error: expected ')'
+if ( *( _WORD *)v15 == 33 && ( rtx)v15[4] == end ) 
+                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/thread_prologue_and_epilogue_insns/src/function.c:8189:4: note: to match this '('
+if ( *( _WORD *)v15 == 33 && ( rtx)v15[4] == end ) 
+   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/thread_prologue_and_epilogue_insns/src/function.c:8201:14: error: expected expression
+v10 = ( rtx *)( v8 + 16); 
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/thread_prologue_and_epilogue_insns/src/function.c:8202:14: error: expected expression
+v11 = ( rtx *)( v8 + 24); 
+             ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/thread_prologue_and_epilogue_insns/src/obj/function.o] Error 1

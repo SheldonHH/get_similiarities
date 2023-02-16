@@ -1,0 +1,12 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/make_tree_vec/src/tree.c:1248:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v2; // rbx 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/make_tree_vec/src/tree.c:1251:19: error: expected expression
+v2 = ( tree_node *)ggc_alloc( v1); 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/make_tree_vec/src/tree.c:1251:8: error: use of undeclared identifier 'tree_node'
+v2 = ( tree_node *)ggc_alloc( v1); 
+       ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/make_tree_vec/src/obj/tree.o] Error 1

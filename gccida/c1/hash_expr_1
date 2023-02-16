@@ -1,0 +1,21 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/hash_expr_1/src/gcse.c:2063:35: error: must use 'enum' tag to refer to type 'machine_mode'
+unsigned int  hash_expr_1( rtx x, machine_mode mode, int *do_not_record_p) 
+                                  ^
+                                  enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/hash_expr_1/src/gcse.c:2125:15: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v23 = ( int *)x[2]; 
+              ^~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/hash_expr_1/src/gcse.c:2137:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( unsigned __int8 *)( *( _QWORD *)&v23[2 * v24 + 2] + 2LL), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/hash_expr_1/src/gcse.c:2143:15: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v23 = ( int *)x[2]; 
+              ^~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/hash_expr_1/src/gcse.c:2194:33: error: use of undeclared identifier 'machine_mode'
+v32 = hash_expr_1( ( rtx)v31, ( machine_mode)*( unsigned __int8 *)( v31 + 2), do_not_record_p); 
+                                ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/hash_expr_1/src/gcse.c:2211:18: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v8 = ( __int64 *)x[1]; 
+                 ^~~~
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/hash_expr_1/src/obj/gcse.o] Error 1

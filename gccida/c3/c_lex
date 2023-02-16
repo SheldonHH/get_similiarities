@@ -1,0 +1,56 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/c_lex/src/c-lex.c:1232:7: error: unknown type name 'cpp_token_0'; did you mean 'cpp_token'?
+const cpp_token_0 *token; // rax 
+      ^~~~~~~~~~~
+      cpp_token
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/c_lex/src/cpplib.h:40:26: note: 'cpp_token' declared here
+typedef struct cpp_token cpp_token;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/c_lex/src/c-lex.c:1233:7: error: unknown type name 'cpp_token_0'; did you mean 'cpp_token'?
+const cpp_token_0 *v3; // rbx 
+      ^~~~~~~~~~~
+      cpp_token
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/c_lex/src/cpplib.h:40:26: note: 'cpp_token' declared here
+typedef struct cpp_token cpp_token;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/c_lex/src/c-lex.c:1237:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v7; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/c_lex/src/c-lex.c:1240:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node **v10; // rcx 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/c_lex/src/c-lex.c:1241:1: error: unknown type name 'cpp_hashnode_0'; did you mean 'cpp_hashnode'?
+cpp_hashnode_0 *node; // rax 
+^~~~~~~~~~~~~~
+cpp_hashnode
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/c_lex/src/cpplib.h:42:29: note: 'cpp_hashnode' declared here
+typedef struct cpp_hashnode cpp_hashnode;
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/c_lex/src/c-lex.c:1243:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v13; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/c_lex/src/c-lex.c:1250:15: error: use of undeclared identifier 'TV_CPP_0'; did you mean 'TV_CPP'?
+timevar_push( TV_CPP_0); 
+              ^~~~~~~~
+              TV_CPP
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/c_lex/src/timevar.def:50:13: note: 'TV_CPP' declared here
+DEFTIMEVAR (TV_CPP                   , "preprocessing")
+            ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/c_lex/src/c-lex.c:1255:14: error: use of undeclared identifier 'TV_CPP_0'; did you mean 'TV_CPP'?
+timevar_pop( TV_CPP_0); 
+             ^~~~~~~~
+             TV_CPP
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/c_lex/src/timevar.def:50:13: note: 'TV_CPP' declared here
+DEFTIMEVAR (TV_CPP                   , "preprocessing")
+            ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/c_lex/src/c-lex.c:1304:8: error: use of undeclared identifier 'sch_istable'; did you mean '_sch_istable'?
+if ( ( sch_istable[v3->val.c] & 0xAC) == 0 ) 
+       ^~~~~~~~~~~
+       _sch_istable
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/c_lex/src/safe-ctype.h:72:29: note: '_sch_istable' declared here
+extern const unsigned short _sch_istable[256];
+                            ^
+9 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/c_lex/src/obj/c-lex.o] Error 1

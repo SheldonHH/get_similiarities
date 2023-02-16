@@ -1,0 +1,65 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/simplify_plus_minus/src/simplify-rtx.c:2260:27: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx  simplify_plus_minus( rtx_code code, machine_mode mode, rtx op0, rtx op1, int force) 
+                          ^
+                          enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/simplify_plus_minus/src/simplify-rtx.c:2260:42: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  simplify_plus_minus( rtx_code code, machine_mode mode, rtx op0, rtx op1, int force) 
+                                         ^
+                                         enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/simplify_plus_minus/src/simplify-rtx.c:2297:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v40; // r15d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/simplify_plus_minus/src/simplify-rtx.c:2309:4: error: expected ';' after expression
+rtx v52; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/simplify_plus_minus/src/simplify-rtx.c:2309:5: error: use of undeclared identifier 'v52'
+rtx v52; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/simplify_plus_minus/src/simplify-rtx.c:2321:6: error: use of undeclared identifier 'v64'
+rtx *v64; // rbp 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/simplify_plus_minus/src/simplify-rtx.c:2343:4: error: expected ';' after expression
+rtx v89; // [rsp+60h] [rbp-C8h] BYREF 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/simplify_plus_minus/src/simplify-rtx.c:2343:5: error: use of undeclared identifier 'v89'
+rtx v89; // [rsp+60h] [rbp-C8h] BYREF 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/simplify_plus_minus/src/simplify-rtx.c:2350:6: error: use of undeclared identifier 'v96'
+rtx *v96; // [rsp+F0h] [rbp-38h] 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/simplify_plus_minus/src/simplify-rtx.c:2357:1: error: use of undeclared identifier 'v89'
+v89 = op1; 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/simplify_plus_minus/src/simplify-rtx.c:2434:9: error: expected expression
+*( rtx *)&base[v11] = const_int_rtx[63]; 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/simplify_plus_minus/src/simplify-rtx.c:2468:8: error: use of undeclared identifier 'v89'
+v25 = &v89; 
+       ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/simplify_plus_minus/src/simplify-rtx.c:2492:8: error: use of undeclared identifier 'v89'
+v29 = &v89; 
+       ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/simplify_plus_minus/src/simplify-rtx.c:2497:1: error: use of undeclared identifier 'v96'
+v96 = v29; 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/simplify_plus_minus/src/simplify-rtx.c:2502:7: error: use of undeclared identifier 'v96'
+v29 = v96 + 2; 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/simplify_plus_minus/src/simplify-rtx.c:2619:8: error: use of undeclared identifier 'v89'
+v27 = &v89; 
+       ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/simplify_plus_minus/src/simplify-rtx.c:2625:37: error: ISO C requires a named parameter before '...'
+specqsort( base, 0, 16, ( int ( *)( ...))simplify_plus_minus_op_data_cmp); 
+                                    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/simplify_plus_minus/src/simplify-rtx.c:2645:12: error: expected expression
+*( _OWORD *)&base[16 * v61] = *( ( _OWORD *)v27 - 1); 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/simplify_plus_minus/src/simplify-rtx.c:2645:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&base[16 * v61] = *( ( _OWORD *)v27 - 1); 
+   ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/simplify_plus_minus/src/obj/simplify-rtx.o] Error 1

@@ -1,0 +1,67 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/plus_constant_wide/src/explow.c:544:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v6; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/plus_constant_wide/src/explow.c:552:4: error: expected ';' after expression
+rtx v15; // r8 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/plus_constant_wide/src/explow.c:552:5: error: use of undeclared identifier 'v15'
+rtx v15; // r8 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/plus_constant_wide/src/explow.c:556:6: error: use of undeclared identifier 'constant_term_loc'; did you mean 'find_constant_term_loc'?
+rtx *constant_term_loc; // r12 
+     ^~~~~~~~~~~~~~~~~
+     find_constant_term_loc
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/plus_constant_wide/src/rtl.h:1380:13: note: 'find_constant_term_loc' declared here
+extern rtx *find_constant_term_loc      PARAMS ((rtx *));
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/plus_constant_wide/src/explow.c:556:5: error: invalid operands to binary expression ('rtx' (aka 'struct rtx_def *') and 'rtx *(rtx *)' (aka 'struct rtx_def **(struct rtx_def **)'))
+rtx *constant_term_loc; // r12 
+~~~ ^~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/plus_constant_wide/src/explow.c:557:4: error: expected ';' after expression
+rtx p; // [rsp+8h] [rbp-40h] BYREF 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/plus_constant_wide/src/explow.c:557:5: error: use of undeclared identifier 'p'
+rtx p; // [rsp+8h] [rbp-40h] BYREF 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/plus_constant_wide/src/explow.c:573:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v7.rtwint = ( __int64)rtx->fld[0]; 
+                      ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/plus_constant_wide/src/explow.c:574:1: error: use of undeclared identifier 'p'
+p = rtx; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/plus_constant_wide/src/explow.c:578:26: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v11 = ( unsigned __int64)rtx[1]; 
+                         ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/plus_constant_wide/src/explow.c:579:1: error: use of undeclared identifier 'p'
+p = rtx; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/plus_constant_wide/src/explow.c:588:1: error: use of undeclared identifier 'p'
+p = rtx; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/plus_constant_wide/src/explow.c:591:23: error: expected identifier or '('
+ struct pool_constant = get_pool_constant( v12); 
+                      ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/plus_constant_wide/src/explow.c:595:25: error: use of undeclared identifier 'machine_mode'
+v2 = force_const_mem( ( machine_mode)*( ( unsigned __int8 *)rtx + 2), v14); 
+                        ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/plus_constant_wide/src/explow.c:596:27: error: use of undeclared identifier 'machine_mode'
+if ( !memory_address_p( ( machine_mode)*( ( unsigned __int8 *)v2 + 2), v2->fld[0].rtx) ) 
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/plus_constant_wide/src/explow.c:600:25: error: use of undeclared identifier 'machine_mode'
+v2 = force_const_mem( ( machine_mode)*( ( unsigned __int8 *)rtx + 2), pool_constant); 
+                        ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/plus_constant_wide/src/explow.c:601:26: error: use of undeclared identifier 'machine_mode'
+if ( memory_address_p( ( machine_mode)*( ( unsigned __int8 *)v2 + 2), v2->fld[0].rtx) ) 
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/plus_constant_wide/src/explow.c:607:1: error: use of undeclared identifier 'p'
+p = rtx; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/plus_constant_wide/src/explow.c:614:1: error: use of undeclared identifier 'v15'
+v15 = ( rtx)rtx[1]; 
+^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/plus_constant_wide/src/obj/explow.o] Error 1

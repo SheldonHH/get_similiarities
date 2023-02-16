@@ -1,0 +1,21 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/fixup_memory_subreg/src/function.c:3019:44: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  fixup_memory_subreg( rtx x, rtx insn, machine_mode promoted_mode, int uncritical) 
+                                           ^
+                                           enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/fixup_memory_subreg/src/function.c:3028:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v4.rtwint = ( __int64)x->fld[0]; 
+                      ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/fixup_memory_subreg/src/function.c:3032:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v6 = ( __int64)x[1]; 
+               ^~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/fixup_memory_subreg/src/function.c:3036:26: error: use of undeclared identifier 'machine_mode'
+if ( memory_address_p( ( machine_mode)v5, v10) ) 
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/fixup_memory_subreg/src/function.c:3037:36: error: use of undeclared identifier 'machine_mode'
+return adjust_address_1( v4.rtx, ( machine_mode)v5, v6, 1, 1); 
+                                   ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/fixup_memory_subreg/src/function.c:3040:34: error: use of undeclared identifier 'machine_mode'
+v7 = adjust_address_1( v4.rtx, ( machine_mode)v5, v6, 1, 1); 
+                                 ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/fixup_memory_subreg/src/obj/function.o] Error 1

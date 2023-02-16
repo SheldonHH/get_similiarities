@@ -1,0 +1,16 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/assign_stack_temp_for_type/src/function.c:1123:34: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  assign_stack_temp_for_type( machine_mode mode, __int64 size, int keep, tree type) 
+                                 ^
+                                 enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/assign_stack_temp_for_type/src/function.c:1149:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v30; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/assign_stack_temp_for_type/src/function.c:1217:20: error: expected expression
+v30 = ( tree_node *)*( ( _QWORD *)v9 + 5); 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/assign_stack_temp_for_type/src/function.c:1217:9: error: use of undeclared identifier 'tree_node'
+v30 = ( tree_node *)*( ( _QWORD *)v9 + 5); 
+        ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/assign_stack_temp_for_type/src/obj/function.o] Error 1

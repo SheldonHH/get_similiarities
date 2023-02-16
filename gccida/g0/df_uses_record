@@ -1,0 +1,29 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/df_uses_record/src/df.c:1475:51: error: must use 'enum' tag to refer to type 'df_ref_type'
+void  df_uses_record(  struct df *df_0, rtx *loc, df_ref_type ref_type, basic_block bb, rtx insn, df_ref_flags flags) 
+                                                  ^
+                                                  enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/df_uses_record/src/df.c:1475:99: error: must use 'enum' tag to refer to type 'df_ref_flags'
+void  df_uses_record(  struct df *df_0, rtx *loc, df_ref_type ref_type, basic_block bb, rtx insn, df_ref_flags flags) 
+                                                                                                  ^
+                                                                                                  enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/df_uses_record/src/df.c:1480:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code; // [rsp+44h] [rbp-1Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/df_uses_record/src/df.c:1501:95: error: use of undeclared identifier 'df_ref_flags'
+df_uses_record( df_0, ( rtx *)( *( _QWORD *)&x[2] + 8LL * j + 8), DF_REF_REG_USE, bb, insn, ( df_ref_flags)0); 
+                                                                                              ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/df_uses_record/src/df.c:1515:66: error: use of undeclared identifier 'df_ref_flags'
+df_uses_record( df_0, ( rtx *)&x[1], DF_REF_REG_USE, bb, insn, ( df_ref_flags)0); 
+                                                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/df_uses_record/src/df.c:1538:75: error: use of undeclared identifier 'df_ref_flags'
+df_uses_record( df_0, ( rtx *)dst->fld, DF_REF_REG_MEM_STORE, bb, insn, ( df_ref_flags)0); 
+                                                                          ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/df_uses_record/src/df.c:1550:68: error: use of undeclared identifier 'df_ref_flags'
+df_uses_record( df_0, ( rtx *)&dst[1], DF_REF_REG_USE, bb, insn, ( df_ref_flags)0); 
+                                                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/df_uses_record/src/df.c:1551:71: error: use of undeclared identifier 'df_ref_flags'
+df_uses_record( df_0, ( rtx *)dst[1].fld, DF_REF_REG_USE, bb, insn, ( df_ref_flags)0); 
+                                                                      ^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/df_uses_record/src/obj/df.o] Error 1

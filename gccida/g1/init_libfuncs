@@ -1,0 +1,51 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_libfuncs/src/optabs.c:5107:22: error: unknown type name 'optab_0'; did you mean 'optab'?
+void  init_libfuncs( optab_0 optable, int first_mode, int last_mode, const char *opname, int suffix) 
+                     ^~~~~~~
+                     optab
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_libfuncs/src/optabs.h:48:5: note: 'optab' declared here
+} * optab;
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_libfuncs/src/optabs.c:5123:8: error: expected ';' after expression
+optab_0 optablea; // [rsp+8h] [rbp-38h] 
+       ^
+       ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_libfuncs/src/optabs.c:5123:1: error: use of undeclared identifier 'optab_0'; did you mean 'optable'?
+optab_0 optablea; // [rsp+8h] [rbp-38h] 
+^~~~~~~
+optable
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_libfuncs/src/optabs.c:5107:30: note: 'optable' declared here
+void  init_libfuncs( optab_0 optable, int first_mode, int last_mode, const char *opname, int suffix) 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_libfuncs/src/optabs.c:5123:9: error: use of undeclared identifier 'optablea'; did you mean 'optable'?
+optab_0 optablea; // [rsp+8h] [rbp-38h] 
+        ^~~~~~~~
+        optable
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_libfuncs/src/optabs.c:5107:30: note: 'optable' declared here
+void  init_libfuncs( optab_0 optable, int first_mode, int last_mode, const char *opname, int suffix) 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_libfuncs/src/optabs.c:5125:1: error: use of undeclared identifier 'optablea'; did you mean 'optable'?
+optablea = optable; 
+^~~~~~~~
+optable
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_libfuncs/src/optabs.c:5107:30: note: 'optable' declared here
+void  init_libfuncs( optab_0 optable, int first_mode, int last_mode, const char *opname, int suffix) 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_libfuncs/src/optabs.c:5153:10: error: use of undeclared identifier 'sch_tolower'; did you mean '_sch_tolower'?
+*v13++ = sch_tolower[i]; 
+         ^~~~~~~~~~~
+         _sch_tolower
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_libfuncs/src/safe-ctype.h:98:29: note: '_sch_tolower' declared here
+extern const unsigned char  _sch_tolower[256];
+                            ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_libfuncs/src/optabs.c:5159:36: error: use of undeclared identifier 'machine_mode'
+v18 = gen_rtx_fmt_s( SYMBOL_REF, ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), v17); 
+                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_libfuncs/src/optabs.c:5160:1: error: use of undeclared identifier 'optablea'; did you mean 'optable'?
+optablea->handlers[v9++].libfunc = v18; 
+^~~~~~~~
+optable
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_libfuncs/src/optabs.c:5107:30: note: 'optable' declared here
+void  init_libfuncs( optab_0 optable, int first_mode, int last_mode, const char *opname, int suffix) 
+                             ^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_libfuncs/src/obj/optabs.o] Error 1

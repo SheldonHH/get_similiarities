@@ -1,0 +1,32 @@
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/stones_on_board/src/engine/board.c:3132:6: error: use of undeclared identifier 'stones_on_board_stone_count_for_position'
+if ( stones_on_board_stone_count_for_position != position_number ) 
+     ^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/stones_on_board/src/engine/board.c:3134:1: error: use of undeclared identifier 'stones_on_board_white_stones'
+stones_on_board_white_stones = 0; 
+^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/stones_on_board/src/engine/board.c:3135:1: error: use of undeclared identifier 'stones_on_board_black_stones'
+stones_on_board_black_stones = 0; 
+^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/stones_on_board/src/engine/board.c:3142:7: error: use of undeclared identifier 'stones_on_board_white_stones'
+v3 = &stones_on_board_white_stones; 
+      ^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/stones_on_board/src/engine/board.c:3148:7: error: use of undeclared identifier 'stones_on_board_black_stones'
+v3 = &stones_on_board_black_stones; 
+      ^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/stones_on_board/src/engine/board.c:3154:1: error: use of undeclared identifier 'stones_on_board_stone_count_for_position'
+stones_on_board_stone_count_for_position = v1; 
+^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/stones_on_board/src/engine/board.c:3155:10: error: use of undeclared identifier 'stones_on_board_black_stones'
+return ( stones_on_board_black_stones & ( color << 30 >> 31)) + ( stones_on_board_white_stones & -( color & 1)); 
+         ^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/stones_on_board/src/engine/board.c:3155:67: error: use of undeclared identifier 'stones_on_board_white_stones'
+return ( stones_on_board_black_stones & ( color << 30 >> 31)) + ( stones_on_board_white_stones & -( color & 1)); 
+                                                                  ^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/stones_on_board/src/engine/board.c:3159:10: error: use of undeclared identifier 'stones_on_board_black_stones'
+return ( stones_on_board_black_stones & ( color << 30 >> 31)) + ( stones_on_board_white_stones & -( color & 1)); 
+         ^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/stones_on_board/src/engine/board.c:3159:67: error: use of undeclared identifier 'stones_on_board_white_stones'
+return ( stones_on_board_black_stones & ( color << 30 >> 31)) + ( stones_on_board_white_stones & -( color & 1)); 
+                                                                  ^
+10 errors generated.
+make: *** [/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/stones_on_board/src/obj/1/board.o] Error 1

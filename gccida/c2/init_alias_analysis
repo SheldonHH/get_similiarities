@@ -1,0 +1,63 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/init_alias_analysis/src/alias.c:2949:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v28; // r12d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/init_alias_analysis/src/alias.c:2954:6: error: use of undeclared identifier 'v33'
+rtx *v33; // rax 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/init_alias_analysis/src/alias.c:2958:4: error: expected ';' after expression
+rtx v37; // rsi 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/init_alias_analysis/src/alias.c:2958:5: error: use of undeclared identifier 'v37'
+rtx v37; // rsi 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/init_alias_analysis/src/alias.c:2967:26: error: expected expression
+reg_known_value = ( rtx *)( ( char *)xcalloc( v1, 8uLL) - 424); 
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/init_alias_analysis/src/alias.c:2970:25: error: expected expression
+reg_base_value = ( rtx *)xcalloc( ( unsigned int)( 2 * v0), 8uLL); 
+                        ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/init_alias_analysis/src/alias.c:2972:29: error: expected expression
+new_reg_base_value = ( rtx *)xmalloc( 8LL * ( unsigned int)reg_base_value_size); 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/init_alias_analysis/src/alias.c:2981:26: error: expected expression
+alias_invariant = ( rtx *)xrealloc( alias_invariant, 8LL * ( unsigned int)reg_base_value_size); 
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/init_alias_analysis/src/alias.c:2997:21: error: use of undeclared identifier 'machine_mode'
+v6 = gen_rtx_REG( ( machine_mode)( ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32), i); 
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/init_alias_analysis/src/alias.c:3003:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/init_alias_analysis/src/alias.c:3007:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/init_alias_analysis/src/alias.c:3011:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/init_alias_analysis/src/alias.c:3015:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/init_alias_analysis/src/alias.c:3028:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v13 = (  struct rtx_def *)j[2]; 
+                          ^~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/init_alias_analysis/src/alias.c:3031:80: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+&& ( reg_note = find_reg_note( j, REG_NOALIAS, 0LL), v13 = (  struct rtx_def *)j[2], reg_note) ) 
+                                                                               ^~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/init_alias_analysis/src/alias.c:3033:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v15.rtwint = ( __int64)v13->fld[0]; 
+                       ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/init_alias_analysis/src/alias.c:3059:13: error: expected ';' after expression
+v17 = ( rtx)j[2]; 
+            ^
+            ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/init_alias_analysis/src/alias.c:3061:32: error: expected expression
+v17 = single_set_2( j, *( rtx *)&j[2]); 
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/init_alias_analysis/src/alias.c:3064:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v18.rtwint = ( __int64)v17->fld[0]; 
+                       ^~~~~~~~~~~
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/init_alias_analysis/src/obj/alias.o] Error 1

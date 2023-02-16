@@ -1,0 +1,75 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cse_insn/src/cse.c:5220:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v9; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cse_insn/src/cse.c:5258:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v47; // edx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cse_insn/src/cse.c:5266:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v55; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cse_insn/src/cse.c:5294:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code; // [rsp+2Ch] [rbp-294h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cse_insn/src/cse.c:5311:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // [rsp+B4h] [rbp-20Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cse_insn/src/cse.c:5313:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode_0; // [rsp+C4h] [rbp-1FCh] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cse_insn/src/cse.c:5320:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode new_mode; // [rsp+F4h] [rbp-1CCh] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cse_insn/src/cse.c:5345:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode eqvmode_0; // [rsp+1BCh] [rbp-104h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cse_insn/src/cse.c:5349:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode tmode; // [rsp+1DCh] [rbp-E4h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cse_insn/src/cse.c:5351:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode wider_mode; // [rsp+1ECh] [rbp-D4h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cse_insn/src/cse.c:5352:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode eqvmode; // [rsp+1F0h] [rbp-D0h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cse_insn/src/cse.c:5386:11: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+x = ( rtx)insn[2]; 
+          ^~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cse_insn/src/cse.c:5397:19: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( tem = ( rtx)insna[4]; tem; tem = ( rtx)tem[1] ) 
+                  ^~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cse_insn/src/cse.c:5397:46: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( tem = ( rtx)insna[4]; tem; tem = ( rtx)tem[1] ) 
+                                             ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cse_insn/src/cse.c:5441:38: error: use of undeclared identifier 'machine_mode'
+invalidate( clobbered->fld[0].rtx, ( machine_mode)*( ( unsigned __int8 *)clobbered + 2)); 
+                                     ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cse_insn/src/cse.c:5522:13: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+src = ( rtx)sets[i].rtl[1]; 
+            ^~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cse_insn/src/cse.c:5527:36: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+( insn_code = rtint, rtint < 0) || insn_data_0[insn_code].n_dups > 0) ) 
+                                   ^~~~~~~~~~~
+                                   insn_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cse_insn/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cse_insn/src/cse.c:5566:15: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+src_0 = ( rtx)sets[i].rtl[1]; 
+              ^~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cse_insn/src/cse.c:5583:2: error: expected expression
+ struct cse_reg_info = cached_cse_reg_info; 
+ ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cse_insn/src/obj/cse.o] Error 1

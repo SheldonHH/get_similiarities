@@ -1,0 +1,91 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_lowpart_common/src/emit-rtl.c:1287:26: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  gen_lowpart_common( machine_mode mode, rtx x) 
+                         ^
+                         enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_lowpart_common/src/emit-rtl.c:1300:1: error: must use 'enum' tag to refer to type 'mode_class'
+mode_class v15; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_lowpart_common/src/machmode.h:52:30: note: enum 'mode_class' is hidden by a non-type declaration of 'mode_class' here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_lowpart_common/src/emit-rtl.c:1310:1: error: must use 'union' tag to refer to type 'real_extract'
+real_extract u; // [rsp+20h] [rbp-48h] BYREF 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_lowpart_common/src/emit-rtl.c:1334:7: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v15 = mode_class_0[mode]; 
+      ^~~~~~~~~~~~
+      mode_class
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_lowpart_common/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_lowpart_common/src/emit-rtl.c:1341:7: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v15 = mode_class_0[mode]; 
+      ^~~~~~~~~~~~
+      mode_class
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_lowpart_common/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_lowpart_common/src/emit-rtl.c:1359:25: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+return gen_rtx_fmt_e( ( rtx_code)v17, mode, x->fld[0].rtx); 
+                        ^~~~~~~~
+                        rtx_cost
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_lowpart_common/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_lowpart_common/src/emit-rtl.c:1359:34: error: expected ')'
+return gen_rtx_fmt_e( ( rtx_code)v17, mode, x->fld[0].rtx); 
+                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_lowpart_common/src/emit-rtl.c:1359:21: note: to match this '('
+return gen_rtx_fmt_e( ( rtx_code)v17, mode, x->fld[0].rtx); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_lowpart_common/src/emit-rtl.c:1374:40: error: use of undeclared identifier 'machine_mode'
+return simplify_gen_subreg( mode, x, ( machine_mode)v3, 0); 
+                                       ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_lowpart_common/src/emit-rtl.c:1397:20: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+rtwint = ( __int64)x[1]; 
+                   ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_lowpart_common/src/emit-rtl.c:1414:25: error: too many arguments to function call, expected 1, have 2
+ereal_from_float( &u.d, x->fld[0].rtwint); 
+~~~~~~~~~~~~~~~~        ^~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_lowpart_common/src/real.h:171:1: note: 'ereal_from_float' declared here
+extern REAL_VALUE_TYPE ereal_from_float PARAMS ((HOST_WIDE_INT));
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_lowpart_common/src/emit-rtl.c:1425:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v14.rtwint = ( __int64)x->fld[0]; 
+                       ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_lowpart_common/src/emit-rtl.c:1427:24: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v14.rtwint = ( __int64)x[1]; 
+                       ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_lowpart_common/src/emit-rtl.c:1429:26: error: too many arguments to function call, expected 1, have 2
+ereal_from_double( &u.d, r_0.r); 
+~~~~~~~~~~~~~~~~~        ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_lowpart_common/src/real.h:172:1: note: 'ereal_from_double' declared here
+extern REAL_VALUE_TYPE ereal_from_double PARAMS ((HOST_WIDE_INT *));
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_lowpart_common/src/emit-rtl.c:1444:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[v3] == MODE_FLOAT ) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_lowpart_common/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_lowpart_common/src/emit-rtl.c:1446:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v22.rtwint = ( __int64)x[1].fld[0]; 
+                       ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_lowpart_common/src/emit-rtl.c:1447:22: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+u.d.r[0] = ( __int64)x[1]; 
+                     ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_lowpart_common/src/emit-rtl.c:1449:22: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+u.d.r[2] = ( __int64)x[2]; 
+                     ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_lowpart_common/src/emit-rtl.c:1451:12: error: expected expression
+*( _OWORD *)&r_0.r[1] = __PAIR128__( u.d.r[2], v22.rtwint); 
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_lowpart_common/src/emit-rtl.c:1451:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&r_0.r[1] = __PAIR128__( u.d.r[2], v22.rtwint); 
+   ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_lowpart_common/src/obj/emit-rtl.o] Error 1

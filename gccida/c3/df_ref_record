@@ -1,0 +1,49 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/df_ref_record/src/df.c:1326:69: error: must use 'enum' tag to refer to type 'df_ref_type'
+void  df_ref_record(  struct df *df_0, rtx reg, rtx *loc, rtx insn, df_ref_type ref_type, df_ref_flags ref_flags) 
+                                                                    ^
+                                                                    enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/df_ref_record/src/df.c:1326:91: error: must use 'enum' tag to refer to type 'df_ref_flags'
+void  df_ref_record(  struct df *df_0, rtx reg, rtx *loc, rtx insn, df_ref_type ref_type, df_ref_flags ref_flags) 
+                                                                                          ^
+                                                                                          enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/df_ref_record/src/df.c:1335:6: error: use of undeclared identifier 'v15'
+rtx *v15; // r15 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/df_ref_record/src/df.c:1346:33: error: invalid suffix 'xmode' on integer constant
+if ( v7 >= mode_size[*(short *)0xmode] ) 
+                                ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/df_ref_record/src/df.c:1350:13: error: expected ';' after expression
+reg = ( rtx)fld->rtwint; 
+            ^
+            ;
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/df_ref_record/src/df.c:1354:13: error: expected ';' after expression
+reg = ( rtx)fld->rtwint; 
+            ^
+            ;
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/df_ref_record/src/df.c:1357:14: error: expected expression
+loc = ( rtx *)fld; 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/df_ref_record/src/df.c:1377:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v14 = ( ( unsigned int)( mode_class_0[( unsigned __int8)v13] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/df_ref_record/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/df_ref_record/src/df.c:1378:1: error: use of undeclared identifier 'v15'
+v15 = loc; 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/df_ref_record/src/df.c:1383:1: error: use of undeclared identifier 'v15'
+v15 = loc; 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/df_ref_record/src/df.c:1388:1: error: use of undeclared identifier 'v15'
+v15 = loc; 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/df_ref_record/src/df.c:1394:1: error: use of undeclared identifier 'v15'
+v15 = loc; 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/df_ref_record/src/df.c:1402:29: error: use of undeclared identifier 'v15'
+df_ref_record_1( df_0, v17, v15, insn, ref_type, ref_flags); 
+                            ^
+13 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/df_ref_record/src/obj/df.o] Error 1

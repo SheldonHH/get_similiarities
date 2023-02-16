@@ -1,0 +1,60 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cselib_record_sets/src/cselib.c:1705:1: error: use of undeclared identifier 'set_0'
+set_0 *v7; // rbp 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cselib_record_sets/src/cselib.c:1705:8: error: use of undeclared identifier 'v7'
+set_0 *v7; // rbp 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cselib_record_sets/src/cselib.c:1725:1: error: use of undeclared identifier 'set_0'
+set_0 sets[106]; // [rsp+10h] [rbp-D78h] BYREF 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cselib_record_sets/src/cselib.c:1727:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v1 = ( __int64)insn[2]; 
+               ^~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cselib_record_sets/src/cselib.c:1736:1: error: use of undeclared identifier 'sets'
+sets[0].src = *( rtx *)( v1 + 16); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cselib_record_sets/src/cselib.c:1737:1: error: use of undeclared identifier 'sets'
+sets[0].dest = *( rtx *)( v1 + 8); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cselib_record_sets/src/cselib.c:1756:1: error: use of undeclared identifier 'sets'
+sets[v6].src = *( rtx *)( v5 + 16); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cselib_record_sets/src/cselib.c:1757:1: error: use of undeclared identifier 'sets'
+sets[v6].dest = *( rtx *)( v5 + 8); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cselib_record_sets/src/cselib.c:1770:1: error: use of undeclared identifier 'v7'
+v7 = sets; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cselib_record_sets/src/cselib.c:1770:6: error: use of undeclared identifier 'sets'
+v7 = sets; 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cselib_record_sets/src/cselib.c:1773:8: error: use of undeclared identifier 'v7'
+dest = v7->dest; 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cselib_record_sets/src/cselib.c:1777:1: error: use of undeclared identifier 'v7'
+v7->dest = dest; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cselib_record_sets/src/cselib.c:1781:7: error: use of undeclared identifier 'v7'
+src = v7->src; 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cselib_record_sets/src/cselib.c:1783:40: error: use of undeclared identifier 'machine_mode'
+src = gen_rtx_fmt_eee( IF_THEN_ELSE, ( machine_mode)*( ( unsigned __int8 *)src + 2), cond, v7->src, dest); 
+                                       ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cselib_record_sets/src/cselib.c:1783:92: error: use of undeclared identifier 'v7'
+src = gen_rtx_fmt_eee( IF_THEN_ELSE, ( machine_mode)*( ( unsigned __int8 *)src + 2), cond, v7->src, dest); 
+                                                                                           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cselib_record_sets/src/cselib.c:1784:1: error: use of undeclared identifier 'v7'
+v7->src_elt = cselib_lookup( src, ( machine_mode)*( ( unsigned __int8 *)dest + 2), 1); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cselib_record_sets/src/cselib.c:1784:37: error: use of undeclared identifier 'machine_mode'
+v7->src_elt = cselib_lookup( src, ( machine_mode)*( ( unsigned __int8 *)dest + 2), 1); 
+                                    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cselib_record_sets/src/cselib.c:1786:1: error: use of undeclared identifier 'v7'
+v7->dest_addr_elt = cselib_lookup( dest->fld[0].rtx, ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), 1); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cselib_record_sets/src/cselib.c:1786:56: error: use of undeclared identifier 'machine_mode'
+v7->dest_addr_elt = cselib_lookup( dest->fld[0].rtx, ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), 1); 
+                                                       ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cselib_record_sets/src/obj/cselib.o] Error 1

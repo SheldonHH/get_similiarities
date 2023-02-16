@@ -1,0 +1,38 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/reversed_comparison_code_parts/src/jump.c:1104:42: error: must use 'enum' tag to refer to type 'rtx_code'
+__int64  reversed_comparison_code_parts( rtx_code code, rtx arg0, rtx arg1, rtx insn) 
+                                         ^
+                                         enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/reversed_comparison_code_parts/src/jump.c:1104:10: error: conflicting types for 'reversed_comparison_code_parts'
+__int64  reversed_comparison_code_parts( rtx_code code, rtx arg0, rtx arg1, rtx insn) 
+         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/reversed_comparison_code_parts/src/rtl.h:1818:22: note: previous declaration is here
+extern enum rtx_code reversed_comparison_code_parts PARAMS ((enum rtx_code,
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/reversed_comparison_code_parts/src/jump.c:1122:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v6 = mode_class_0[*( ( unsigned __int8 *)arg1 + 2)]; 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/reversed_comparison_code_parts/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/reversed_comparison_code_parts/src/jump.c:1127:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v6 = mode_class_0[v5]; 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/reversed_comparison_code_parts/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/reversed_comparison_code_parts/src/jump.c:1136:39: error: subscripted value is not an array, pointer, or vector
+return ( unsigned int)*(int *)0x716948[v9]; 
+                              ~~~~~~~~^~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/reversed_comparison_code_parts/src/jump.c:1144:39: error: subscripted value is not an array, pointer, or vector
+return ( unsigned int)*(int *)0x716990[v9]; 
+                              ~~~~~~~~^~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/reversed_comparison_code_parts/src/jump.c:1153:39: error: subscripted value is not an array, pointer, or vector
+return ( unsigned int)*(int *)0x7169A8[v7]; 
+                              ~~~~~~~~^~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/reversed_comparison_code_parts/src/jump.c:1159:39: error: subscripted value is not an array, pointer, or vector
+return ( unsigned int)*(int *)0x7169F0[v7]; 
+                              ~~~~~~~~^~~
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/reversed_comparison_code_parts/src/obj/jump.o] Error 1

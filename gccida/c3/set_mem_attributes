@@ -1,0 +1,71 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/set_mem_attributes/src/emit-rtl.c:2169:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v7; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/set_mem_attributes/src/emit-rtl.c:2188:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *imag; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/set_mem_attributes/src/emit-rtl.c:2194:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *size_unit; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/set_mem_attributes/src/emit-rtl.c:2204:1: error: use of undeclared identifier '_OWORD'
+_OWORD *v42; // rax 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/set_mem_attributes/src/emit-rtl.c:2204:9: error: use of undeclared identifier 'v42'
+_OWORD *v42; // rax 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/set_mem_attributes/src/emit-rtl.c:2209:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v47; // r12 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/set_mem_attributes/src/emit-rtl.c:2210:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v48; // rbp 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/set_mem_attributes/src/emit-rtl.c:2211:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v49; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/set_mem_attributes/src/emit-rtl.c:2213:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v51; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/set_mem_attributes/src/emit-rtl.c:2227:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v6 = ( __int64)ref[1]; 
+               ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/set_mem_attributes/src/emit-rtl.c:2230:21: error: expected expression
+v7 = *( tree_node **)( v6 + 8); 
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/set_mem_attributes/src/emit-rtl.c:2230:9: error: use of undeclared identifier 'tree_node'
+v7 = *( tree_node **)( v6 + 8); 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/set_mem_attributes/src/emit-rtl.c:2265:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v6 = ( __int64)ref[1]; 
+               ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/set_mem_attributes/src/emit-rtl.c:2281:36: error: expected expression
+if ( v15 == 100 && t->decl.rtl ==  struct ref ) 
+                                   ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/set_mem_attributes/src/emit-rtl.c:2293:6: error: use of undeclared identifier 'lang_hooks_0'; did you mean 'lang_hooks'?
+if ( lang_hooks_0.honor_readonly ) 
+     ^~~~~~~~~~~~
+     lang_hooks
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/set_mem_attributes/src/langhooks.h:168:32: note: 'lang_hooks' declared here
+extern const struct lang_hooks lang_hooks;
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/set_mem_attributes/src/emit-rtl.c:2451:20: error: expected expression
+v47 = ( tree_node *)*( &global_trees + 15); 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/set_mem_attributes/src/emit-rtl.c:2451:9: error: use of undeclared identifier 'tree_node'
+v47 = ( tree_node *)*( &global_trees + 15); 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/set_mem_attributes/src/emit-rtl.c:2540:1: error: use of undeclared identifier 'v42'
+v42 = ggc_alloc( 0x28uLL); 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/set_mem_attributes/src/emit-rtl.c:2541:9: error: use of undeclared identifier 'v42'
+*slot = v42; 
+        ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/set_mem_attributes/src/obj/emit-rtl.o] Error 1

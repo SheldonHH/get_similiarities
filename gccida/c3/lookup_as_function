@@ -1,0 +1,21 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/lookup_as_function/src/cse.c:1958:33: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx  lookup_as_function( rtx x, rtx_code code) 
+                                ^
+                                enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/lookup_as_function/src/cse.c:1967:29: error: use of undeclared identifier 'machine_mode'
+p = lookup( x, v2 & 0x1F, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)x)); 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/lookup_as_function/src/cse.c:1967:44: error: expected expression
+p = lookup( x, v2 & 0x1F, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)x)); 
+                                           ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/lookup_as_function/src/cse.c:1968:113: error: invalid suffix 'xmode' on integer constant
+if ( !p && code == CONST_INT && mode_size[( unsigned __int8)BYTE2( *( _DWORD *)x)] < ( int)mode_size[*(short *)0xmode] ) 
+                                                                                                                ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/lookup_as_function/src/cse.c:1971:49: error: invalid suffix 'xmode' on integer constant
+*( _DWORD *)xa = ( ( unsigned __int8)*(short *)0xmode << 16) | *( _DWORD *)xa & 0xFF00FFFF; 
+                                                ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/lookup_as_function/src/cse.c:1973:39: error: invalid suffix 'xmode' on integer constant
+p = lookup( xa, v3 & 0x1F, *(short *)0xmode); 
+                                      ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/lookup_as_function/src/obj/cse.o] Error 1

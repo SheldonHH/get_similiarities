@@ -1,0 +1,70 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_split_point/src/combine.c:3393:6: error: use of undeclared identifier 'v29'
+rtx *v29; // r12 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_split_point/src/combine.c:3394:6: error: use of undeclared identifier 'v30'; did you mean 'v20'?
+rtx *v30; // rax 
+     ^~~
+     v20
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_split_point/src/combine.c:3384:19: note: 'v20' declared here
+unsigned __int16 *v20; // rdx 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_split_point/src/combine.c:3394:5: error: invalid operands to binary expression ('struct rtx_def *' and 'unsigned short *')
+rtx *v30; // rax 
+~~~ ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_split_point/src/combine.c:3395:6: error: use of undeclared identifier 'v31'
+rtx *v31; // rax 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_split_point/src/combine.c:3425:6: error: use of undeclared identifier 'v61'
+rtx *v61; // rax 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_split_point/src/combine.c:3429:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v65; // r15d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_split_point/src/combine.c:3435:6: error: use of undeclared identifier 'v71'
+rtx *v71; // rax 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_split_point/src/combine.c:3440:6: error: use of undeclared identifier 'v76'
+rtx *v76; // rax 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_split_point/src/combine.c:3448:6: error: use of undeclared identifier 'single_use'; did you mean 'single_set_2'?
+rtx *single_use; // rax 
+     ^~~~~~~~~~
+     single_set_2
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_split_point/src/rtl.h:1470:12: note: 'single_set_2' declared here
+extern rtx single_set_2                 PARAMS ((rtx, rtx));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_split_point/src/combine.c:3448:5: error: invalid operands to binary expression ('struct rtx_def *' and 'rtx (rtx, rtx)' (aka 'struct rtx_def *(struct rtx_def *, struct rtx_def *)'))
+rtx *single_use; // rax 
+~~~ ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_split_point/src/combine.c:3449:4: error: expected ';' after expression
+rtx v85; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_split_point/src/combine.c:3449:5: error: use of undeclared identifier 'v85'
+rtx v85; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_split_point/src/combine.c:3465:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v11.rtwint = ( __int64)v4->fld[0]; 
+                       ^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_split_point/src/combine.c:3480:40: error: expected expression
+split_point = find_split_point( ( rtx *)v4[1].fld, insn); 
+                                       ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_split_point/src/combine.c:3485:40: error: expected expression
+split_point = find_split_point( ( rtx *)&v4[1], insn); 
+                                       ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_split_point/src/combine.c:3490:27: error: use of undeclared identifier 'machine_mode'
+if ( !memory_address_p( ( machine_mode)*( ( unsigned __int8 *)v4 + 2), v11.rtx) ) 
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_split_point/src/combine.c:3499:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v18.rtwint = ( __int64)v16->fld[0]; 
+                       ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_split_point/src/combine.c:3506:104: error: expected expression
+if ( *( _WORD *)v22 == 47 && *(  struct rtx_def **)( v22 + 8) == v13 && !reg_mentioned_p( v13, *( rtx *)( v22 + 16)) ) 
+                                                                                                       ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_split_point/src/combine.c:3514:24: error: use of undeclared identifier 'machine_mode'
+&& memory_address_p( ( machine_mode)*( ( unsigned __int8 *)v4 + 2), *( rtx *)( v24 + 16)) ) 
+                       ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_split_point/src/obj/combine.o] Error 1

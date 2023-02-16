@@ -1,0 +1,65 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/safe_from_p/src/expr.c:6015:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *imag; // rsi 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/safe_from_p/src/expr.c:6018:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *elements; // rsi 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/safe_from_p/src/expr.c:6019:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v17; // rsi 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/safe_from_p/src/expr.c:6025:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v23; // rsi 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/safe_from_p/src/expr.c:6075:1: error: use of undeclared identifier 'safe_from_p_save_expr_list'
+safe_from_p_save_expr_list = 0LL; 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/safe_from_p/src/expr.c:6077:11: error: use of undeclared identifier 'safe_from_p_save_expr_list'
+for ( i = safe_from_p_save_expr_list; i; i = i->common.chain ) 
+          ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/safe_from_p/src/expr.c:6115:18: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v14 = ( _QWORD *)rtx[1]; 
+                 ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/safe_from_p/src/expr.c:6154:1: error: use of undeclared identifier 'safe_from_p_save_expr_list'
+safe_from_p_save_expr_list = tree_cons( exp, 0LL, safe_from_p_save_expr_list); 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/safe_from_p/src/expr.c:6154:51: error: use of undeclared identifier 'safe_from_p_save_expr_list'
+safe_from_p_save_expr_list = tree_cons( exp, 0LL, safe_from_p_save_expr_list); 
+                                                  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/safe_from_p/src/expr.c:6189:26: error: use of undeclared identifier 'tree_code'; did you mean 'tree_cons'?
+rtl_op = first_rtl_op( ( tree_code)*( unsigned __int8 *)( v3 + 16)); 
+                         ^~~~~~~~~
+                         tree_cons
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/safe_from_p/src/tree.h:2477:13: note: 'tree_cons' declared here
+extern tree tree_cons                   PARAMS ((tree, tree, tree));
+            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/safe_from_p/src/expr.c:6189:36: error: invalid operands to binary expression ('tree (tree, tree, tree)' (aka 'union tree_node *(union tree_node *, union tree_node *, union tree_node *)') and 'unsigned char *')
+rtl_op = first_rtl_op( ( tree_code)*( unsigned __int8 *)( v3 + 16)); 
+                       ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/safe_from_p/src/expr.c:6195:22: error: expected expression
+v23 = *( tree_node **)( v3 + 8 * j + 32); 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/safe_from_p/src/expr.c:6195:10: error: use of undeclared identifier 'tree_node'
+v23 = *( tree_node **)( v3 + 8 * j + 32); 
+         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/safe_from_p/src/expr.c:6205:49: error: use of undeclared identifier 'lang_hooks_0'; did you mean 'lang_hooks'?
+if ( *( unsigned __int8 *)( v3 + 16) < 0x93u || lang_hooks_0.safe_from_p( rtx, ( tree)v3) ) 
+                                                ^~~~~~~~~~~~
+                                                lang_hooks
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/safe_from_p/src/langhooks.h:168:32: note: 'lang_hooks' declared here
+extern const struct lang_hooks lang_hooks;
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/safe_from_p/src/expr.c:6205:73: error: called object type '<dependent type>' is not a function or function pointer
+if ( *( unsigned __int8 *)( v3 + 16) < 0x93u || lang_hooks_0.safe_from_p( rtx, ( tree)v3) ) 
+                                                                        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/safe_from_p/src/expr.c:6223:23: error: expected expression
+imag = *( tree_node **)v3; 
+                      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/safe_from_p/src/expr.c:6223:11: error: use of undeclared identifier 'tree_node'
+imag = *( tree_node **)v3; 
+          ^
+17 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/safe_from_p/src/obj/expr.o] Error 1

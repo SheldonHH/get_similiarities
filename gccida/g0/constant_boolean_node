@@ -1,0 +1,18 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/constant_boolean_node/src/fold-const.c:5260:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v3; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/constant_boolean_node/src/fold-const.c:5272:19: error: expected expression
+v3 = ( tree_node *)*( &global_trees + 12); 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/constant_boolean_node/src/fold-const.c:5272:8: error: use of undeclared identifier 'tree_node'
+v3 = ( tree_node *)*( &global_trees + 12); 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/constant_boolean_node/src/fold-const.c:5274:19: error: expected expression
+v3 = ( tree_node *)*( &global_trees + 11); 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/constant_boolean_node/src/fold-const.c:5274:8: error: use of undeclared identifier 'tree_node'
+v3 = ( tree_node *)*( &global_trees + 11); 
+       ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/constant_boolean_node/src/obj/fold-const.o] Error 1

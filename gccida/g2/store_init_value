@@ -1,0 +1,16 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/store_init_value/src/c-typeck.c:4853:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *elements; // rbp 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/store_init_value/src/c-typeck.c:4857:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v8; // rbp 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/store_init_value/src/c-typeck.c:4888:21: error: expected expression
+v8 = *( tree_node **)( v7->int_cst.int_cst.low + 32); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/store_init_value/src/c-typeck.c:4888:9: error: use of undeclared identifier 'tree_node'
+v8 = *( tree_node **)( v7->int_cst.int_cst.low + 32); 
+        ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/store_init_value/src/obj/c-typeck.o] Error 1

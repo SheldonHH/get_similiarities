@@ -1,0 +1,12 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_sse_movdfcc/src/insn-emit.c:3063:17: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+v8 = gen_rtx( ( rtx_code)*( _WORD *)operand1, VOIDmode, operand4, operand5); 
+                ^~~~~~~~
+                rtx_cost
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_sse_movdfcc/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_sse_movdfcc/src/insn-emit.c:3063:26: error: invalid operands to binary expression ('int (rtx, enum rtx_code)' (aka 'int (struct rtx_def *, enum rtx_code)') and 'uint16 *' (aka 'unsigned short *'))
+v8 = gen_rtx( ( rtx_code)*( _WORD *)operand1, VOIDmode, operand4, operand5); 
+              ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+2 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_sse_movdfcc/src/obj/insn-emit.o] Error 1

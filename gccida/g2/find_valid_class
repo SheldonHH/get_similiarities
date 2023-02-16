@@ -1,0 +1,44 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/find_valid_class/src/reload.c:1131:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class  find_valid_class( machine_mode m1, int n, unsigned int dest_regno) 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/find_valid_class/src/reload.c:1131:30: error: must use 'enum' tag to refer to type 'machine_mode'
+reg_class  find_valid_class( machine_mode m1, int n, unsigned int dest_regno) 
+                             ^
+                             enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/find_valid_class/src/reload.c:1134:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class v5; // r14d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/find_valid_class/src/reload.c:1142:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class best_class; // [rsp+Ch] [rbp-3Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/find_valid_class/src/reload.c:1172:38: error: use of undeclared identifier 'reg_class'; did you mean 'regclass'?
+v10 = ix86_register_move_cost( m1, ( reg_class)v3, v5); 
+                                     ^~~~~~~~~
+                                     regclass
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/find_valid_class/src/rtl.h:1970:13: note: 'regclass' declared here
+extern void regclass                    PARAMS ((rtx, int, FILE *));
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/find_valid_class/src/reload.c:1172:48: error: expected ')'
+v10 = ix86_register_move_cost( m1, ( reg_class)v3, v5); 
+                                               ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/find_valid_class/src/reload.c:1172:30: note: to match this '('
+v10 = ix86_register_move_cost( m1, ( reg_class)v3, v5); 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/find_valid_class/src/reload.c:1180:44: error: use of undeclared identifier 'reg_class'; did you mean 'regclass'?
+best_cost = ix86_register_move_cost( m1, ( reg_class)v3, v5); 
+                                           ^~~~~~~~~
+                                           regclass
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/find_valid_class/src/rtl.h:1970:13: note: 'regclass' declared here
+extern void regclass                    PARAMS ((rtx, int, FILE *));
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/find_valid_class/src/reload.c:1180:54: error: expected ')'
+best_cost = ix86_register_move_cost( m1, ( reg_class)v3, v5); 
+                                                     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/find_valid_class/src/reload.c:1180:36: note: to match this '('
+best_cost = ix86_register_move_cost( m1, ( reg_class)v3, v5); 
+                                   ^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/find_valid_class/src/obj/reload.o] Error 1

@@ -1,0 +1,73 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/eliminate_regs/src/reload1.c:2748:29: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  eliminate_regs( rtx x, machine_mode mem_mode, rtx insn) 
+                            ^
+                            enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/eliminate_regs/src/reload1.c:2752:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v7; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/eliminate_regs/src/reload1.c:2787:4: error: expected ';' after expression
+rtx v42; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/eliminate_regs/src/reload1.c:2787:5: error: use of undeclared identifier 'v42'
+rtx v42; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/eliminate_regs/src/reload1.c:2795:4: error: expected ';' after expression
+rtx v50; // r12 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/eliminate_regs/src/reload1.c:2795:5: error: use of undeclared identifier 'v50'
+rtx v50; // r12 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/eliminate_regs/src/reload1.c:2800:4: error: expected ';' after expression
+rtx v55; // rdx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/eliminate_regs/src/reload1.c:2800:5: error: use of undeclared identifier 'v55'
+rtx v55; // rdx 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/eliminate_regs/src/reload1.c:2801:4: error: expected ';' after expression
+rtx v56; // r13 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/eliminate_regs/src/reload1.c:2801:5: error: use of undeclared identifier 'v56'
+rtx v56; // r13 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/eliminate_regs/src/reload1.c:2804:4: error: expected ';' after expression
+rtx v59; // rdx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/eliminate_regs/src/reload1.c:2804:5: error: use of undeclared identifier 'v59'
+rtx v59; // rdx 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/eliminate_regs/src/reload1.c:2809:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v64; // [rsp+20h] [rbp-48h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/eliminate_regs/src/reload1.c:2830:12: error: expected ';' after expression
+v3 = ( rtx)v3[1]; 
+           ^
+           ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/eliminate_regs/src/reload1.c:2836:35: error: use of undeclared identifier 'machine_mode'
+v3 = gen_rtx_fmt_ee( EXPR_LIST, ( machine_mode)v37, v36, *( rtx *)&v3[1]); 
+                                  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/eliminate_regs/src/reload1.c:2836:66: error: expected expression
+v3 = gen_rtx_fmt_ee( EXPR_LIST, ( machine_mode)v37, v36, *( rtx *)&v3[1]); 
+                                                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/eliminate_regs/src/reload1.c:2838:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v38 = (  struct rtx_def *)v3[1]; 
+                          ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/eliminate_regs/src/reload1.c:2842:26: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+if ( (  struct rtx_def *)v3[1] != v39 ) 
+                         ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/eliminate_regs/src/reload1.c:2844:3: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+( rtx_code)*( _WORD *)v3, 
+  ^~~~~~~~
+  rtx_cost
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/eliminate_regs/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/eliminate_regs/src/obj/reload1.o] Error 1

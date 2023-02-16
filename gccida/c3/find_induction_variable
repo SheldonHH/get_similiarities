@@ -1,0 +1,34 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_induction_variable/src/dependence.c:898:79: error: unknown type name 'loop_1'; did you mean 'loop'?
+int  find_induction_variable( tree init_node, tree cond_node, tree incr_node, loop_1 *loop_def) 
+                                                                              ^~~~~~
+                                                                              loop
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_induction_variable/src/dependence.c:123:3: note: 'loop' declared here
+} loop;
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_induction_variable/src/dependence.c:908:1: error: must use 'enum' tag to refer to type 'tree_code'
+tree_code incr_code; // [rsp+1Ch] [rbp-34h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_induction_variable/src/dependence.c:909:1: error: must use 'enum' tag to refer to type 'tree_code'
+tree_code incr_codea; // [rsp+1Ch] [rbp-34h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_induction_variable/src/dependence.c:910:1: error: must use 'enum' tag to refer to type 'tree_code'
+tree_code incr_codeb; // [rsp+1Ch] [rbp-34h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_induction_variable/src/dependence.c:911:1: error: unknown type name 'induction_0'; did you mean 'induction'?
+induction_0 *ind_ptr; // [rsp+20h] [rbp-30h] 
+^~~~~~~~~~~
+induction
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_induction_variable/src/dependence.c:139:3: note: 'induction' declared here
+} induction;
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_induction_variable/src/dependence.c:978:26: error: expected expression
+ind_ptr = ( induction_0 *)*( ( _QWORD *)&induction_chain->name + induction_chain->elements_used); 
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_induction_variable/src/dependence.c:978:13: error: use of undeclared identifier 'induction_0'
+ind_ptr = ( induction_0 *)*( ( _QWORD *)&induction_chain->name + induction_chain->elements_used); 
+            ^
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_induction_variable/src/obj/dependence.o] Error 1

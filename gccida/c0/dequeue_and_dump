@@ -1,0 +1,30 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/dequeue_and_dump/src/tree-dump.c:718:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v4; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/dequeue_and_dump/src/tree-dump.c:725:1: error: must use 'enum' tag to refer to type 'tree_code'
+tree_code code; // [rsp+80h] [rbp-30h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/dequeue_and_dump/src/tree-dump.c:821:9: error: use of undeclared identifier 'lang_hooks_0'; did you mean 'lang_hooks'?
+quals = lang_hooks_0.tree_dump.type_quals( t); 
+        ^~~~~~~~~~~~
+        lang_hooks
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/dequeue_and_dump/src/langhooks.h:168:32: note: 'lang_hooks' declared here
+extern const struct lang_hooks lang_hooks;
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/dequeue_and_dump/src/tree-dump.c:821:42: error: called object type '<dependent type>' is not a function or function pointer
+quals = lang_hooks_0.tree_dump.type_quals( t); 
+                                         ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/dequeue_and_dump/src/tree-dump.c:846:7: error: use of undeclared identifier 'lang_hooks_0'; did you mean 'lang_hooks'?
+if ( !lang_hooks_0.tree_dump.dump_tree( di_0a, t) ) 
+      ^~~~~~~~~~~~
+      lang_hooks
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/dequeue_and_dump/src/langhooks.h:168:32: note: 'lang_hooks' declared here
+extern const struct lang_hooks lang_hooks;
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/dequeue_and_dump/src/tree-dump.c:846:39: error: called object type '<dependent type>' is not a function or function pointer
+if ( !lang_hooks_0.tree_dump.dump_tree( di_0a, t) ) 
+                                      ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/dequeue_and_dump/src/obj/tree-dump.o] Error 1

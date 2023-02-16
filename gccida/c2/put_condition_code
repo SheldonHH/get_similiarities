@@ -1,0 +1,32 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/put_condition_code/src/i386.c:6003:27: error: must use 'enum' tag to refer to type 'rtx_code'
+void  put_condition_code( rtx_code code, machine_mode mode, int reverse, int fp, FILE *file) 
+                          ^
+                          enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/put_condition_code/src/i386.c:6003:42: error: must use 'enum' tag to refer to type 'machine_mode'
+void  put_condition_code( rtx_code code, machine_mode mode, int reverse, int fp, FILE *file) 
+                                         ^
+                                         enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/put_condition_code/src/i386.c:6005:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v7; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/put_condition_code/src/i386.c:6073:8: error: expected expression
+code = ::code[v10]; 
+       ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/put_condition_code/src/i386.c:6128:20: error: use of undeclared identifier 'off_67B8E8'
+v11 = ( _BYTE *)( &off_67B8E8 + 4); 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/put_condition_code/src/i386.c:6130:20: error: use of undeclared identifier 'off_67B8E8'
+v11 = ( _BYTE *)( &off_67B8E8 + 7); 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/put_condition_code/src/i386.c:6135:23: error: use of undeclared identifier 'off_67B8E8'
+v11 = ( const char *)&off_67B8E8; 
+                      ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/put_condition_code/src/i386.c:6150:7: error: use of undeclared identifier 'off_66C47B'
+v11 = off_66C47B + 2; 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/put_condition_code/src/i386.c:6155:23: error: use of undeclared identifier 'unk_67B8F2'
+v11 = ( const char *)&unk_67B8F2; 
+                      ^
+9 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/put_condition_code/src/obj/i386.o] Error 1

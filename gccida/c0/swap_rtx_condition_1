@@ -1,0 +1,12 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/swap_rtx_condition_1/src/reg-stack.c:1680:56: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+*( _DWORD *)pat = ( unsigned __int16)swap_condition( ( rtx_code)( unsigned __int16)*( _DWORD *)pat) | *( _DWORD *)pat & 0xFFFF0000; 
+                                                       ^~~~~~~~
+                                                       rtx_cost
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/swap_rtx_condition_1/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/swap_rtx_condition_1/src/reg-stack.c:1680:67: error: expected expression
+*( _DWORD *)pat = ( unsigned __int16)swap_condition( ( rtx_code)( unsigned __int16)*( _DWORD *)pat) | *( _DWORD *)pat & 0xFFFF0000; 
+                                                                  ^
+2 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/swap_rtx_condition_1/src/obj/reg-stack.o] Error 1

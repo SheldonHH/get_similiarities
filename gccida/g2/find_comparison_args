@@ -1,0 +1,68 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/find_comparison_args/src/cse.c:3587:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code  find_comparison_args( 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/find_comparison_args/src/cse.c:3588:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/find_comparison_args/src/cse.c:3591:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode *pmode1, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/find_comparison_args/src/cse.c:3592:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode *pmode2) 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/find_comparison_args/src/cse.c:3595:4: error: expected ';' after expression
+rtx v7; // r13 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/find_comparison_args/src/cse.c:3595:5: error: use of undeclared identifier 'v7'
+rtx v7; // r13 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/find_comparison_args/src/cse.c:3597:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v9; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/find_comparison_args/src/cse.c:3606:4: error: expected ';' after expression
+rtx exp; // r14 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/find_comparison_args/src/cse.c:3609:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v22; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/find_comparison_args/src/cse.c:3613:1: error: use of undeclared identifier 'v7'
+v7 = *parg2; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/find_comparison_args/src/cse.c:3621:52: error: use of undeclared identifier 'v7'
+if ( ( _WORD)v9 == COMPARE && const_int_rtx[64] == v7 ) 
+                                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/find_comparison_args/src/cse.c:3623:5: error: non-object type 'double (double)' is not assignable
+exp = rtx; 
+~~~ ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/find_comparison_args/src/cse.c:3630:5: error: non-object type 'double (double)' is not assignable
+exp = rtx; 
+~~~ ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/find_comparison_args/src/cse.c:3634:10: error: member reference base type 'double (double)' is not a structure or union
+rtx = exp->fld[0].rtx; 
+      ~~~^ ~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/find_comparison_args/src/cse.c:3635:1: error: use of undeclared identifier 'v7'
+v7 = ( rtx)exp[1]; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/find_comparison_args/src/cse.c:3637:31: error: use of undeclared identifier 'v7'
+if ( const_tiny_rtx[0][v8] != v7 ) 
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/find_comparison_args/src/cse.c:3642:5: error: non-object type 'double (double)' is not assignable
+exp = rtx; 
+~~~ ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/find_comparison_args/src/cse.c:3655:26: error: use of undeclared identifier 'machine_mode'
+v13 = canon_hash( rtx, ( machine_mode)v8); 
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/find_comparison_args/src/cse.c:3658:34: error: use of undeclared identifier 'machine_mode'
+v14 = lookup( rtx, v13 & 0x1F, ( machine_mode)v8); 
+                                 ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/find_comparison_args/src/obj/cse.o] Error 1

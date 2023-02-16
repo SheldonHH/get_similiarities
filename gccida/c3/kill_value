@@ -1,0 +1,22 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/kill_value/src/regrename.c:1599:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)BYTE2( v3), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/kill_value/src/regrename.c:1601:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( unsigned __int8 *)( x->fld[0].rtwint + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/kill_value/src/regrename.c:1612:25: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v7 = ( ( unsigned int)( mode_class_0[( unsigned __int8)v5] - 5) < 2) + 1; 
+                        ^~~~~~~~~~~~
+                        mode_class
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/kill_value/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/kill_value/src/regrename.c:1643:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v20 = ( ( unsigned int)( mode_class_0[mode] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/kill_value/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/kill_value/src/obj/regrename.o] Error 1

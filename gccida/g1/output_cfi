@@ -1,0 +1,24 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/output_cfi/src/dwarf2out.c:2123:1: error: must use 'enum' tag to refer to type 'dwarf_call_frame_info'
+dwarf_call_frame_info dw_cfi_opc; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/output_cfi/src/dwarf2out.c:2423:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/output_cfi/src/dwarf2out.c:2481:30: error: use of undeclared identifier 'a'
+fancy_abort( ( const char *)&a, 1772, "output_cfi"); 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/output_cfi/src/dwarf2out.c:2996:22: error: static declaration of 'size_of_locs' follows non-static declaration
+static unsigned long size_of_locs       PARAMS ((dw_loc_descr_ref));
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/output_cfi/src/dwarf2out.c:2464:7: note: previous implicit declaration is here
+v10 = size_of_locs( dw_cfi_loc); 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/output_cfi/src/dwarf2out.c:2998:13: error: static declaration of 'output_loc_sequence' follows non-static declaration
+static void output_loc_sequence         PARAMS ((dw_loc_descr_ref));
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/output_cfi/src/dwarf2out.c:2466:1: note: previous implicit declaration is here
+output_loc_sequence( dw_cfi_loc); 
+^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/output_cfi/src/obj/dwarf2out.o] Error 1

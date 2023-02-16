@@ -1,0 +1,17 @@
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/tryko/src/engine/board.c:1052:6: error: conflicting types for 'tryko'
+int  tryko( int a1, int a2, const char *a3, unsigned int a4, int a5) 
+     ^
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/tryko/src/engine/gnugo.h:459:5: note: previous declaration is here
+int tryko(int pos, int color, const char *message, 
+    ^
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/tryko/src/engine/board.c:1070:52: error: use of undeclared identifier 'off_4B4C10'
+v10[0] = ( __int128)_mm_loadh_ps( ( const double *)off_4B4C10); 
+                                                   ^
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/tryko/src/engine/board.c:1071:52: error: use of undeclared identifier 'off_4B4C18'
+v10[1] = ( __int128)_mm_loadh_ps( ( const double *)off_4B4C18); 
+                                                   ^
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/tryko/src/engine/board.c:1072:53: error: use of undeclared identifier 'off_4B4C20'
+v10[2] = ( __int128)_mm_loadh_ps( ( const double *)&off_4B4C20); 
+                                                    ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/tryko/src/obj/1/board.o] Error 1

@@ -1,0 +1,69 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/sched_analyze_2/src/sched-deps.c:1169:24: error: unknown type name 'deps_0'
+void  sched_analyze_2( deps_0 *deps, rtx x, rtx insn) 
+                       ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/sched_analyze_2/src/sched-deps.c:1212:15: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v25 = ( int *)x[2]; 
+              ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/sched_analyze_2/src/sched-deps.c:1218:32: error: expected expression
+sched_analyze_2( deps, *( rtx *)&v25[2 * v26++ + 2], insn); 
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/sched_analyze_2/src/sched-deps.c:1219:15: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v25 = ( int *)x[2]; 
+              ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/sched_analyze_2/src/sched-deps.c:1240:25: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v8 = ( ( unsigned int)( mode_class_0[*( ( unsigned __int8 *)x + 2)] - 5) < 2) + 1; 
+                        ^~~~~~~~~~~~
+                        mode_class
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/sched_analyze_2/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/sched_analyze_2/src/sched-deps.c:1297:35: error: use of undeclared identifier 'machine_mode'
+cselib_lookup( v13->fld[0].rtx, ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), 1); 
+                                  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/sched_analyze_2/src/sched-deps.c:1301:66: error: expected ')'
+for ( i = deps->pending_read_mems; pending_read_insns; i = ( rtx)i[1] ) 
+                                                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/sched_analyze_2/src/sched-deps.c:1301:5: note: to match this '('
+for ( i = deps->pending_read_mems; pending_read_insns; i = ( rtx)i[1] ) 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/sched_analyze_2/src/sched-deps.c:1305:28: error: expected ';' after expression
+pending_read_insns = ( rtx)pending_read_insns[1]; 
+                           ^
+                           ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/sched_analyze_2/src/sched-deps.c:1308:68: error: expected ')'
+for ( j = deps->pending_write_mems; pending_write_insns; j = ( rtx)j[1] ) 
+                                                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/sched_analyze_2/src/sched-deps.c:1308:5: note: to match this '('
+for ( j = deps->pending_write_mems; pending_write_insns; j = ( rtx)j[1] ) 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/sched_analyze_2/src/sched-deps.c:1311:58: error: use of undeclared identifier 'reg_note'; did you mean 'reg_names'?
+add_dependence( insn, pending_write_insns->fld[0].rtx, ( reg_note)0); 
+                                                         ^~~~~~~~
+                                                         reg_names
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/sched_analyze_2/src/regs.h:166:21: note: 'reg_names' declared here
+extern const char * reg_names[FIRST_PSEUDO_REGISTER];
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/sched_analyze_2/src/sched-deps.c:1311:67: error: expected ')'
+add_dependence( insn, pending_write_insns->fld[0].rtx, ( reg_note)0); 
+                                                                  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/sched_analyze_2/src/sched-deps.c:1311:15: note: to match this '('
+add_dependence( insn, pending_write_insns->fld[0].rtx, ( reg_note)0); 
+              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/sched_analyze_2/src/sched-deps.c:1312:29: error: expected ';' after expression
+pending_write_insns = ( rtx)pending_write_insns[1]; 
+                            ^
+                            ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/sched_analyze_2/src/sched-deps.c:1314:57: error: expected ')'
+for ( k = deps->last_pending_memory_flush; k; k = ( rtx)k[1] ) 
+                                                        ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/sched_analyze_2/src/sched-deps.c:1314:5: note: to match this '('
+for ( k = deps->last_pending_memory_flush; k; k = ( rtx)k[1] ) 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/sched_analyze_2/src/sched-deps.c:1347:32: error: expected expression
+sched_analyze_2( deps, *( rtx *)&x[1], insn); 
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/sched_analyze_2/src/sched-deps.c:1373:32: error: expected expression
+sched_analyze_2( deps, *( rtx *)&rtwint[2 * v29++ + 2], insn); 
+                               ^
+15 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/sched_analyze_2/src/obj/sched-deps.o] Error 1

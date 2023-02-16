@@ -1,0 +1,72 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/move_deaths/src/combine.c:12344:4: error: expected ';' after expression
+rtx v33; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/move_deaths/src/combine.c:12344:5: error: use of undeclared identifier 'v33'
+rtx v33; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/move_deaths/src/combine.c:12345:4: error: expected ';' after expression
+rtx v34; // r15 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/move_deaths/src/combine.c:12345:5: error: use of undeclared identifier 'v34'
+rtx v34; // r15 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/move_deaths/src/combine.c:12370:6: error: use of undeclared identifier 'v59'
+rtx *v59; // rbx 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/move_deaths/src/combine.c:12374:4: error: expected ';' after expression
+rtx v68; // [rsp+40h] [rbp-38h] BYREF 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/move_deaths/src/combine.c:12374:5: error: use of undeclared identifier 'v68'
+rtx v68; // [rsp+40h] [rbp-38h] BYREF 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/move_deaths/src/combine.c:12381:22: error: expected expression
+move_deaths( *( rtx *)&x[1], maybe_kill_insn, from_cuid, to_insn, pnotes); 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/move_deaths/src/combine.c:12422:12: error: expected ';' after expression
+v9 = ( rtx)v9[1]; 
+           ^
+           ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/move_deaths/src/combine.c:12487:1: error: use of undeclared identifier 'v33'
+v33 = remove_death( rtuint, v7); 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/move_deaths/src/combine.c:12488:1: error: use of undeclared identifier 'v34'
+v34 = v33; 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/move_deaths/src/combine.c:12488:7: error: use of undeclared identifier 'v33'
+v34 = v33; 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/move_deaths/src/combine.c:12491:6: error: use of undeclared identifier 'v33'
+if ( v33 ) 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/move_deaths/src/combine.c:12493:27: error: use of undeclared identifier 'v33'
+rtwint = ( unsigned int *)v33->fld[0].rtwint; 
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/move_deaths/src/combine.c:12504:35: error: must use 'enum' tag to refer to type 'mode_class'
+v42 = ( ( unsigned int)( *( const mode_class *)( ( char *)mode_class_0 
+                                  ^
+                                  enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/move_deaths/src/machmode.h:52:30: note: enum 'mode_class' is hidden by a non-type declaration of 'mode_class' here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/move_deaths/src/combine.c:12504:59: error: use of undeclared identifier 'mode_class_0'
+v42 = ( ( unsigned int)( *( const mode_class *)( ( char *)mode_class_0 
+                                                          ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/move_deaths/src/combine.c:12505:19: error: use of undeclared identifier 'v34'
++ ( ( *( _DWORD *)v34->fld[0].rtwint >> 14) & 0x3FC)) 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/move_deaths/src/combine.c:12528:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v44 = ( ( unsigned int)( mode_class_0[v38] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/move_deaths/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/move_deaths/src/combine.c:12562:6: error: use of undeclared identifier 'v34'
+if ( v34 ) 
+     ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/move_deaths/src/obj/combine.o] Error 1

@@ -1,0 +1,76 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cleanup_cfg/src/cfgcleanup.c:2308:4: error: expected ';' after expression
+rtx head; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cleanup_cfg/src/cfgcleanup.c:2308:5: error: use of undeclared identifier 'head'; did you mean 'read'?
+rtx head; // rax 
+    ^~~~
+    read
+/usr/include/unistd.h:363:16: note: 'read' declared here
+extern ssize_t read (int __fd, void *__buf, size_t __nbytes) __wur;
+               ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cleanup_cfg/src/cfgcleanup.c:2338:4: error: expected ';' after expression
+rtx nonnote_insn; // rdi 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cleanup_cfg/src/cfgcleanup.c:2338:5: error: use of undeclared identifier 'nonnote_insn'
+rtx nonnote_insn; // rdi 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cleanup_cfg/src/cfgcleanup.c:2351:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v121; // [rsp+30h] [rbp-88h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cleanup_cfg/src/cfgcleanup.c:2353:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code1; // [rsp+38h] [rbp-80h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cleanup_cfg/src/cfgcleanup.c:2354:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code2; // [rsp+3Ch] [rbp-7Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cleanup_cfg/src/cfgcleanup.c:2356:4: error: expected ';' after expression
+rtx v126; // [rsp+48h] [rbp-70h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cleanup_cfg/src/cfgcleanup.c:2356:5: error: use of undeclared identifier 'v126'
+rtx v126; // [rsp+48h] [rbp-70h] 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cleanup_cfg/src/cfgcleanup.c:2368:15: error: use of undeclared identifier 'TV_CLEANUP_CFG_0'; did you mean 'TV_CLEANUP_CFG'?
+timevar_push( TV_CLEANUP_CFG_0); 
+              ^~~~~~~~~~~~~~~~
+              TV_CLEANUP_CFG
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cleanup_cfg/src/timevar.def:45:13: note: 'TV_CLEANUP_CFG' declared here
+DEFTIMEVAR (TV_CLEANUP_CFG           , "cfg cleanup")
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cleanup_cfg/src/cfgcleanup.c:2432:13: error: expected ';' after expression
+v10 = ( rtx)v10[1]; 
+            ^
+            ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cleanup_cfg/src/cfgcleanup.c:2446:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v11 = (  struct rtx_def *)end[4]; 
+                          ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cleanup_cfg/src/cfgcleanup.c:2450:29: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+|| ( v12.rtwint = ( __int64)v11[1].fld[0]) == 0 
+                            ^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cleanup_cfg/src/cfgcleanup.c:2524:13: error: expected ';' after expression
+v26 = ( rtx)v26[1]; 
+            ^
+            ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cleanup_cfg/src/cfgcleanup.c:2588:1: error: use of undeclared identifier 'nonnote_insn'
+nonnote_insn = next_nonnote_insn( *( rtx *)( v5 + 8)); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cleanup_cfg/src/cfgcleanup.c:2588:43: error: expected expression
+nonnote_insn = next_nonnote_insn( *( rtx *)( v5 + 8)); 
+                                          ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cleanup_cfg/src/cfgcleanup.c:2589:17: error: use of undeclared identifier 'nonnote_insn'
+if ( *( _WORD *)nonnote_insn != 35 ) 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cleanup_cfg/src/cfgcleanup.c:2591:14: error: use of undeclared identifier 'nonnote_insn'
+delete_insn( nonnote_insn); 
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cleanup_cfg/src/cfgcleanup.c:2592:28: error: expected expression
+if ( squeeze_notes( ( rtx *)v5, ( rtx *)( v5 + 8)) ) 
+                           ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cleanup_cfg/src/obj/cfgcleanup.o] Error 1

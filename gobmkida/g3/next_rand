@@ -1,0 +1,23 @@
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/next_rand/src/utils/random.c:599:44: error: use of undeclared identifier 'xmmword_4B0890'
+si128 = _mm_load_si128( ( const __m128i *)&xmmword_4B0890); 
+                                           ^
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/next_rand/src/utils/random.c:601:41: error: use of undeclared identifier 'xmmword_55F390'
+v4 = _mm_load_si128( ( const __m128i *)&xmmword_55F390); 
+                                        ^
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/next_rand/src/utils/random.c:606:27: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'long long' of different size
+v9 = _mm_cmpeq_epi32( v6, ( __m128i)0LL); 
+                          ^~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/next_rand/src/utils/random.c:615:29: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'long long' of different size
+v15 = _mm_cmpeq_epi32( v13, ( __m128i)0LL); 
+                            ^~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/next_rand/src/utils/random.c:625:29: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'long long' of different size
+v21 = _mm_cmpeq_epi32( v20, ( __m128i)0LL); 
+                            ^~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/next_rand/src/utils/random.c:639:52: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'long long' of different size
+v30 = _mm_cmpeq_epi32( _mm_and_si128( v28, si128), ( __m128i)0LL); 
+                                                   ^~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/next_rand/src/utils/random.c:642:91: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'long long' of different size
+v32 = _mm_cmpeq_epi32( _mm_and_si128( si128, _mm_loadu_si128( ( const __m128i *)&x[18])), ( __m128i)0LL); 
+                                                                                          ^~~~~~~~~~~~~
+7 errors generated.
+make: *** [/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/next_rand/src/obj/5/random.o] Error 1

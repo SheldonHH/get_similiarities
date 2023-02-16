@@ -1,0 +1,25 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_rtx_fmt_ssiEEsi/src/genrtl.c:928:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_rtx_fmt_ssiEEsi/src/genrtl.c:929:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_rtx_fmt_ssiEEsi/src/genrtl.c:945:27: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'unsigned long long' of different size
+v14 = _mm_unpacklo_epi64( ( __m128i)( unsigned __int64)arg0, ( __m128i)( unsigned __int64)arg1); 
+                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_rtx_fmt_ssiEEsi/src/genrtl.c:945:62: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'unsigned long long' of different size
+v14 = _mm_unpacklo_epi64( ( __m128i)( unsigned __int64)arg0, ( __m128i)( unsigned __int64)arg1); 
+                                                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_rtx_fmt_ssiEEsi/src/genrtl.c:946:10: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'int' of different size
+v15[0] = ( __m128i)_mm_loadh_ps( ( const double *)&arg4); 
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_rtx_fmt_ssiEEsi/src/genrtl.c:959:49: error: use of undeclared identifier 'rtx_def'
+*(  struct rtx_def *)&result->fld[0].rtwint = ( rtx_def)v12; 
+                                                ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_rtx_fmt_ssiEEsi/src/genrtl.c:960:15: error: use of undeclared identifier 'rtx_def'
+result[2] = ( rtx_def)si128; 
+              ^
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_rtx_fmt_ssiEEsi/src/obj/genrtl.o] Error 1

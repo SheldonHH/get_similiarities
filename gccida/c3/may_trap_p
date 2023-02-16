@@ -1,0 +1,42 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/may_trap_p/src/rtlanal.c:2759:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[BYTE2( v2)] == MODE_FLOAT 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/may_trap_p/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/may_trap_p/src/rtlanal.c:2760:13: error: must use 'enum' tag to refer to type 'mode_class'
+|| *( const mode_class *)( ( char *)mode_class_0 + ( ( *( _DWORD *)x->fld[0].rtwint >> 14) & 0x3FC)) == MODE_FLOAT ) 
+            ^
+            enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/may_trap_p/src/machmode.h:52:30: note: enum 'mode_class' is hidden by a non-type declaration of 'mode_class' here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/may_trap_p/src/rtlanal.c:2760:37: error: use of undeclared identifier 'mode_class_0'
+|| *( const mode_class *)( ( char *)mode_class_0 + ( ( *( _DWORD *)x->fld[0].rtwint >> 14) & 0x3FC)) == MODE_FLOAT ) 
+                                    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/may_trap_p/src/rtlanal.c:2766:15: error: must use 'enum' tag to refer to type 'mode_class'
+if ( *( const mode_class *)( ( char *)mode_class_0 + v3) == MODE_FLOAT ) 
+              ^
+              enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/may_trap_p/src/machmode.h:52:30: note: enum 'mode_class' is hidden by a non-type declaration of 'mode_class' here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/may_trap_p/src/rtlanal.c:2766:39: error: use of undeclared identifier 'mode_class_0'
+if ( *( const mode_class *)( ( char *)mode_class_0 + v3) == MODE_FLOAT ) 
+                                      ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/may_trap_p/src/rtlanal.c:2783:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v4 = ( __int64)x[1]; 
+               ^~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/may_trap_p/src/rtlanal.c:2791:15: error: must use 'enum' tag to refer to type 'mode_class'
+if ( *( const mode_class *)( ( char *)mode_class_0 + ( ( v2 >> 14) & 0x3FC)) == MODE_FLOAT 
+              ^
+              enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/may_trap_p/src/machmode.h:52:30: note: enum 'mode_class' is hidden by a non-type declaration of 'mode_class' here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/may_trap_p/src/rtlanal.c:2791:39: error: use of undeclared identifier 'mode_class_0'
+if ( *( const mode_class *)( ( char *)mode_class_0 + ( ( v2 >> 14) & 0x3FC)) == MODE_FLOAT 
+                                      ^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/may_trap_p/src/obj/rtlanal.o] Error 1

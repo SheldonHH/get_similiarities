@@ -1,0 +1,24 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/invalidate_for_call/src/cse.c:2583:22: error: expected identifier or '('
+ struct cse_reg_info = cached_cse_reg_info; 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/invalidate_for_call/src/cse.c:2593:60: error: expected ')'
+if ( cached_regno != ( _DWORD)v0 || (  struct cse_reg_info = cached_cse_reg_info) == 0LL ) 
+                                                           ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/invalidate_for_call/src/cse.c:2593:37: note: to match this '('
+if ( cached_regno != ( _DWORD)v0 || (  struct cse_reg_info = cached_cse_reg_info) == 0LL ) 
+                                    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/invalidate_for_call/src/cse.c:2593:83: error: expected expression
+if ( cached_regno != ( _DWORD)v0 || (  struct cse_reg_info = cached_cse_reg_info) == 0LL ) 
+                                                                                  ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/invalidate_for_call/src/cse.c:2594:2: error: expected expression
+ struct cse_reg_info = get_cse_reg_info( v0); 
+ ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/invalidate_for_call/src/cse.c:2628:41: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v15 = ( ( unsigned int)( *( ( _DWORD *)&mode_class_0 + v12) - 5) < 2) + 1; 
+                                        ^~~~~~~~~~~~
+                                        mode_class
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/invalidate_for_call/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/invalidate_for_call/src/obj/cse.o] Error 1

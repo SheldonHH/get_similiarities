@@ -1,0 +1,19 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/yylex/src/c-parse.c:5463:15: error: use of undeclared identifier 'TV_LEX_0'; did you mean 'TV_LEX'?
+timevar_push( TV_LEX_0); 
+              ^~~~~~~~
+              TV_LEX
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/yylex/src/timevar.def:51:13: note: 'TV_LEX' declared here
+DEFTIMEVAR (TV_LEX                   , "lexical analysis")
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/yylex/src/c-parse.c:5534:23: error: use of undeclared identifier 'cpp_ttype'
+v7 = cpp_type2name( ( cpp_ttype)v0); 
+                      ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/yylex/src/c-parse.c:5687:14: error: use of undeclared identifier 'TV_LEX_0'; did you mean 'TV_LEX'?
+timevar_pop( TV_LEX_0); 
+             ^~~~~~~~
+             TV_LEX
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/yylex/src/timevar.def:51:13: note: 'TV_LEX' declared here
+DEFTIMEVAR (TV_LEX                   , "lexical analysis")
+            ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/yylex/src/obj/c-parse.o] Error 1

@@ -1,0 +1,9 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ix86_free_from_memory/src/i386.c:12715:30: error: must use 'enum' tag to refer to type 'machine_mode'
+void  ix86_free_from_memory( machine_mode mode) 
+                             ^
+                             enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ix86_free_from_memory/src/i386.c:12732:30: error: use of undeclared identifier 'machine_mode'
+v3 = gen_rtx_fmt_ee( PLUS, ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), global_rtl[2], v2); 
+                             ^
+2 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ix86_free_from_memory/src/obj/i386.o] Error 1

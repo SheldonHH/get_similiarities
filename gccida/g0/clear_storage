@@ -1,0 +1,82 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/clear_storage/src/expr.c:3040:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v7; // edx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/clear_storage/src/expr.c:3041:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v8; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/clear_storage/src/expr.c:3042:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v9; // rdx 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/clear_storage/src/expr.c:3043:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *tree; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/clear_storage/src/expr.c:3044:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v11; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/clear_storage/src/expr.c:3045:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v12; // rdx 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/clear_storage/src/expr.c:3047:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v14; // rbx 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/clear_storage/src/expr.c:3048:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v15; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/clear_storage/src/expr.c:3049:5: error: expected ';' after expression
+tree v16; // rax 
+    ^
+    ;
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/clear_storage/src/expr.c:3049:6: error: use of undeclared identifier 'v16'
+tree v16; // rax 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/clear_storage/src/expr.c:3060:1: error: must use 'enum' tag to refer to type 'insn_code'
+insn_code code; // [rsp+2Ch] [rbp-54h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/clear_storage/src/expr.c:3061:5: error: expected ';' after expression
+tree call_expr; // [rsp+30h] [rbp-50h] 
+    ^
+    ;
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/clear_storage/src/expr.c:3061:6: error: use of undeclared identifier 'call_expr'; did you mean 'save_expr'?
+tree call_expr; // [rsp+30h] [rbp-50h] 
+     ^~~~~~~~~
+     save_expr
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/clear_storage/src/tree.h:2528:13: note: 'save_expr' declared here
+extern tree save_expr                   PARAMS ((tree));
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/clear_storage/src/expr.c:3062:5: error: expected ';' after expression
+tree v29; // [rsp+38h] [rbp-48h] 
+    ^
+    ;
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/clear_storage/src/expr.c:3062:6: error: use of undeclared identifier 'v29'; did you mean 'v9'?
+tree v29; // [rsp+38h] [rbp-48h] 
+     ^~~
+     v9
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/clear_storage/src/expr.c:3042:12: note: 'v9' declared here
+tree_node *v9; // rdx 
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/clear_storage/src/expr.c:3063:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *fntype; // [rsp+40h] [rbp-40h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/clear_storage/src/expr.c:3067:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // [rsp+64h] [rbp-1Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/clear_storage/src/expr.c:3073:1: error: statement requires expression of scalar type ('struct rtx_def' invalid)
+if ( object[1] ) 
+^    ~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/clear_storage/src/expr.c:3080:40: error: use of undeclared identifier 'machine_mode'
+mode_alignment = get_mode_alignment( ( machine_mode)*( ( unsigned __int8 *)object + 2)); 
+                                       ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/clear_storage/src/obj/expr.o] Error 1

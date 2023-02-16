@@ -1,0 +1,15 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/strtoul_for_line/src/cpplib.c:1182:6: error: conflicting types for 'strtoul_for_line'
+int  strtoul_for_line( const U_CHAR *str, unsigned int len, unsigned __int64 *nump) 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/strtoul_for_line/src/cpplib.c:108:13: note: previous declaration is here
+static int  strtoul_for_line    PARAMS ((const U_CHAR *, unsigned int,
+            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/strtoul_for_line/src/cpplib.c:1190:8: error: use of undeclared identifier 'sch_istable'; did you mean '_sch_istable'?
+if ( ( sch_istable[*v4] & 4) == 0 ) 
+       ^~~~~~~~~~~
+       _sch_istable
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/strtoul_for_line/src/safe-ctype.h:72:29: note: '_sch_istable' declared here
+extern const unsigned short _sch_istable[256];
+                            ^
+2 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/strtoul_for_line/src/obj/cpplib.o] Error 1

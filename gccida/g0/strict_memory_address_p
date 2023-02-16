@@ -1,0 +1,9 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/strict_memory_address_p/src/reload.c:2504:31: error: must use 'enum' tag to refer to type 'machine_mode'
+int  strict_memory_address_p( machine_mode mode, rtx addr) 
+                              ^
+                              enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/strict_memory_address_p/src/reload.c:2508:32: error: use of undeclared identifier 'machine_mode'
+return legitimate_address_p( ( machine_mode)addr, addr, v3) != 0; 
+                               ^
+2 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/strict_memory_address_p/src/obj/reload.o] Error 1

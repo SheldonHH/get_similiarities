@@ -1,0 +1,23 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/check_function_format/src/c-format.c:1421:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *elements; // rcx 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/check_function_format/src/c-format.c:1424:1: error: must use 'enum' tag to refer to type 'format_type'
+format_type v12; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/check_function_format/src/c-format.c:1429:1: error: unknown type name 'function_format_info_0'; did you mean 'function_format_info'?
+function_format_info_0 info; // [rsp+0h] [rbp-68h] BYREF 
+^~~~~~~~~~~~~~~~~~~~~~
+function_format_info
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/check_function_format/src/c-format.c:85:3: note: 'function_format_info' declared here
+} function_format_info;
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/check_function_format/src/c-format.c:1444:29: error: expected expression
+*( function_format_info_0 **)( chain->int_cst.int_cst.low + 32), 
+                            ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/check_function_format/src/c-format.c:1444:4: error: use of undeclared identifier 'function_format_info_0'
+*( function_format_info_0 **)( chain->int_cst.int_cst.low + 32), 
+   ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/check_function_format/src/obj/c-format.o] Error 1

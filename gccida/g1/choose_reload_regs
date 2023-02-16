@@ -1,0 +1,92 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/choose_reload_regs/src/reload1.c:5776:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class v4; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/choose_reload_regs/src/reload1.c:5790:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v18; // r13d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/choose_reload_regs/src/reload1.c:5794:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v22; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/choose_reload_regs/src/reload1.c:5835:1: error: must use 'enum' tag to refer to type 'reload_type'
+reload_type v63; // r12d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/choose_reload_regs/src/reload1.c:5860:1: error: must use 'enum' tag to refer to type 'reload_type'
+reload_type v88; // r14d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/choose_reload_regs/src/reload1.c:5900:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode nrf; // [rsp+8h] [rbp-630h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/choose_reload_regs/src/reload1.c:5919:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class c2; // [rsp+5Ch] [rbp-5DCh] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/choose_reload_regs/src/reload1.c:5954:54: error: ISO C requires a named parameter before '...'
+specqsort( ( char *)reload_order, v1, 2, ( int ( *)( ...))reload_reg_class_lower); 
+                                                     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/choose_reload_regs/src/reload1.c:6047:37: error: use of undeclared identifier 'machine_mode'
+v21 = subreg_regno_offset( rtint, ( machine_mode)*( ( unsigned __int8 *)v19 + 2), nr, v18) + rtint; 
+                                    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/choose_reload_regs/src/reload1.c:6051:52: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v22 = smallest_mode_for_size( nr + mode_size[v18], mode_class_0[v18]); 
+                                                   ^~~~~~~~~~~~
+                                                   mode_class
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/choose_reload_regs/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/choose_reload_regs/src/reload1.c:6059:56: error: expected expression
+if ( !ix86_hard_regno_mode_ok( v21, *( ( machine_mode *)&rld + 26 * v12 + 7)) ) 
+                                                       ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/choose_reload_regs/src/reload1.c:6059:42: error: use of undeclared identifier 'machine_mode'
+if ( !ix86_hard_regno_mode_ok( v21, *( ( machine_mode *)&rld + 26 * v12 + 7)) ) 
+                                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/choose_reload_regs/src/reload1.c:6064:39: error: use of undeclared identifier 'reg_class'; did you mean 'regclass'?
+nre = ix86_register_move_cost( v18, ( reg_class)j, ( reg_class)bad_for_class); 
+                                      ^~~~~~~~~
+                                      regclass
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/choose_reload_regs/src/rtl.h:1970:13: note: 'regclass' declared here
+extern void regclass                    PARAMS ((rtx, int, FILE *));
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/choose_reload_regs/src/reload1.c:6064:49: error: expected ')'
+nre = ix86_register_move_cost( v18, ( reg_class)j, ( reg_class)bad_for_class); 
+                                                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/choose_reload_regs/src/reload1.c:6064:30: note: to match this '('
+nre = ix86_register_move_cost( v18, ( reg_class)j, ( reg_class)bad_for_class); 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/choose_reload_regs/src/reload1.c:6065:43: error: use of undeclared identifier 'reg_class'; did you mean 'regclass'?
+if ( nre >= ix86_memory_move_cost( v18, ( reg_class)bad_for_class, 1) 
+                                          ^~~~~~~~~
+                                          regclass
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/choose_reload_regs/src/rtl.h:1970:13: note: 'regclass' declared here
+extern void regclass                    PARAMS ((rtx, int, FILE *));
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/choose_reload_regs/src/reload1.c:6065:53: error: expected ')'
+if ( nre >= ix86_memory_move_cost( v18, ( reg_class)bad_for_class, 1) 
+                                                    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/choose_reload_regs/src/reload1.c:6065:34: note: to match this '('
+if ( nre >= ix86_memory_move_cost( v18, ( reg_class)bad_for_class, 1) 
+                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/choose_reload_regs/src/reload1.c:6066:36: error: use of undeclared identifier 'reg_class'; did you mean 'regclass'?
+|| ix86_secondary_memory_needed( ( reg_class)j, ( reg_class)bad_for_class, v18, 1) ) 
+                                   ^~~~~~~~~
+                                   regclass
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/choose_reload_regs/src/rtl.h:1970:13: note: 'regclass' declared here
+extern void regclass                    PARAMS ((rtx, int, FILE *));
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/choose_reload_regs/src/reload1.c:6066:46: error: expected ')'
+|| ix86_secondary_memory_needed( ( reg_class)j, ( reg_class)bad_for_class, v18, 1) ) 
+                                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/choose_reload_regs/src/reload1.c:6066:32: note: to match this '('
+|| ix86_secondary_memory_needed( ( reg_class)j, ( reg_class)bad_for_class, v18, 1) ) 
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/choose_reload_regs/src/reload1.c:6079:20: error: expected expression
+*( ( machine_mode *)&rld + 26 * v12 + 7), 
+                   ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/choose_reload_regs/src/obj/reload1.o] Error 1

@@ -1,0 +1,17 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/make_field_assignment/src/combine.c:8075:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v2.rtwint = ( __int64)x->fld[0]; 
+                      ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/make_field_assignment/src/combine.c:8076:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v3 = ( __int64)x[1]; 
+               ^~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/make_field_assignment/src/combine.c:8169:35: error: use of undeclared identifier 'machine_mode'
+if ( ( v17 & nonzero_bits( v15, ( machine_mode)v20)) == 0 ) 
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/make_field_assignment/src/combine.c:8179:46: error: use of undeclared identifier 'machine_mode'
+v26 = simplify_shift_const( 0LL, LSHIFTRT, ( machine_mode)*( unsigned __int8 *)( v3 + 2), v15, v19); 
+                                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/make_field_assignment/src/combine.c:8183:29: error: use of undeclared identifier 'machine_mode'
+v28 = force_to_mode( v26, ( machine_mode)v25, v27, v2.rtx, 0); 
+                            ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/make_field_assignment/src/obj/combine.o] Error 1

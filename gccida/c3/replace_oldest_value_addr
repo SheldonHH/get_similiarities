@@ -1,0 +1,77 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/replace_oldest_value_addr/src/regrename.c:1840:47: error: must use 'enum' tag to refer to type 'reg_class'
+__int64  replace_oldest_value_addr( rtx *loc, reg_class a2, __int64 mode, rtx insn,  struct value_data *vd) 
+                                              ^
+                                              enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/replace_oldest_value_addr/src/regrename.c:1840:10: error: conflicting types for 'replace_oldest_value_addr'
+__int64  replace_oldest_value_addr( rtx *loc, reg_class a2, __int64 mode, rtx insn,  struct value_data *vd) 
+         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/replace_oldest_value_addr/src/regrename.c:1056:13: note: previous declaration is here
+static bool replace_oldest_value_addr PARAMS ((rtx *, enum reg_class,
+            ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/replace_oldest_value_addr/src/regrename.c:1851:6: error: use of undeclared identifier 'v16'
+rtx *v16; // r9 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/replace_oldest_value_addr/src/regrename.c:1852:4: error: expected ';' after expression
+rtx oldest_value_reg; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/replace_oldest_value_addr/src/regrename.c:1852:5: error: use of undeclared identifier 'oldest_value_reg'; did you mean 'find_oldest_value_reg'?
+rtx oldest_value_reg; // rax 
+    ^~~~~~~~~~~~~~~~
+    find_oldest_value_reg
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/replace_oldest_value_addr/src/regrename.c:1314:1: note: 'find_oldest_value_reg' declared here
+find_oldest_value_reg (class, reg, vd)
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/replace_oldest_value_addr/src/regrename.c:1860:6: error: use of undeclared identifier 'v26'
+rtx *v26; // rdi 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/replace_oldest_value_addr/src/regrename.c:1861:6: error: use of undeclared identifier 'v27'
+rtx *v27; // rbx 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/replace_oldest_value_addr/src/regrename.c:1896:14: error: expected expression
+fld = ( rtx *)rtx->fld; 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/replace_oldest_value_addr/src/regrename.c:1907:1: error: use of undeclared identifier 'oldest_value_reg'
+oldest_value_reg = find_oldest_value_reg( a2, rtx, (  struct value_data *)insn); 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/replace_oldest_value_addr/src/regrename.c:1908:7: error: use of undeclared identifier 'oldest_value_reg'; did you mean 'find_oldest_value_reg'?
+if ( !oldest_value_reg ) 
+      ^~~~~~~~~~~~~~~~
+      find_oldest_value_reg
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/replace_oldest_value_addr/src/regrename.c:1314:1: note: 'find_oldest_value_reg' declared here
+find_oldest_value_reg (class, reg, vd)
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/replace_oldest_value_addr/src/regrename.c:1910:6: error: use of undeclared identifier 'oldest_value_reg'; did you mean 'find_oldest_value_reg'?
+v9 = oldest_value_reg; 
+     ^~~~~~~~~~~~~~~~
+     find_oldest_value_reg
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/replace_oldest_value_addr/src/regrename.c:1314:1: note: 'find_oldest_value_reg' declared here
+find_oldest_value_reg (class, reg, vd)
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/replace_oldest_value_addr/src/regrename.c:1917:1: error: use of undeclared identifier 'oldest_value_reg'
+oldest_value_reg->fld[0].rtuint); 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/replace_oldest_value_addr/src/regrename.c:1927:28: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v12 = ( unsigned __int16 *)rtx[1]; 
+                           ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/replace_oldest_value_addr/src/regrename.c:1935:14: error: expected expression
+v16 = ( rtx *)&rtx[1]; 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/replace_oldest_value_addr/src/regrename.c:1935:1: error: use of undeclared identifier 'v16'
+v16 = ( rtx *)&rtx[1]; 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/replace_oldest_value_addr/src/regrename.c:1942:14: error: expected expression
+v16 = ( rtx *)&rtx[1]; 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/replace_oldest_value_addr/src/regrename.c:1942:1: error: use of undeclared identifier 'v16'
+v16 = ( rtx *)&rtx[1]; 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/replace_oldest_value_addr/src/regrename.c:1951:14: error: expected expression
+v26 = ( rtx *)v15; 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/replace_oldest_value_addr/src/regrename.c:1951:1: error: use of undeclared identifier 'v26'
+v26 = ( rtx *)v15; 
+^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/replace_oldest_value_addr/src/obj/regrename.o] Error 1

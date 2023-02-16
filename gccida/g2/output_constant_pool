@@ -1,0 +1,29 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/output_constant_pool/src/varasm.c:4475:29: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+epilogue_delay_list = ( rtx)epilogue_delay_list[1]; 
+                            ^~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/output_constant_pool/src/varasm.c:4480:29: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+epilogue_delay_list = ( rtx)epilogue_delay_list[1]; 
+                            ^~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/output_constant_pool/src/varasm.c:4498:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v22.rtwint = ( __int64)constant->fld[0]; 
+                       ^~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/output_constant_pool/src/varasm.c:4505:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v9.rtwint = ( __int64)constant->fld[0]; 
+                      ^~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/output_constant_pool/src/varasm.c:4520:52: error: use of undeclared identifier 'a'
+fprintf( asm_out_file, ".%s%u:\n", ( const char *)&a.dw_attr_val, ( unsigned int)v7->labelno); 
+                                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/output_constant_pool/src/varasm.c:4547:22: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v27.r[2] = ( __int64)constant[2]; 
+                     ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/output_constant_pool/src/varasm.c:4549:18: error: use of undeclared identifier 'machine_mode'
+assemble_real( ( machine_mode)mode, v7->align, v27); 
+                 ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/output_constant_pool/src/varasm.c:4600:18: error: member reference base type 'const __m128i' (vector of 2 'long long' values) is not a structure or union
+v26.r[2] = v17[2].m128i_i64[0]; 
+           ~~~~~~^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/output_constant_pool/src/varasm.c:4602:16: error: passing 'const enum machine_mode' to parameter of incompatible type 'realvaluetype'
+assemble_real( inner_mode_array[v12], v7->align, v26); 
+               ^~~~~~~~~~~~~~~~~~~~~
+9 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/output_constant_pool/src/obj/varasm.o] Error 1

@@ -1,0 +1,69 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/shorten_branches/src/final.c:1411:4: error: expected ';' after expression
+rtx v61; // rbx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/shorten_branches/src/final.c:1411:5: error: use of undeclared identifier 'v61'
+rtx v61; // rbx 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/shorten_branches/src/final.c:1423:4: error: expected ';' after expression
+rtx align_tab[16]; // [rsp+20h] [rbp-B8h] BYREF 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/shorten_branches/src/final.c:1423:5: error: use of undeclared identifier 'align_tab'
+rtx align_tab[16]; // [rsp+20h] [rbp-B8h] BYREF 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/shorten_branches/src/final.c:1471:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v11.rtwint = ( __int64)insns[1].fld[0]; 
+                       ^~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/shorten_branches/src/final.c:1521:20: error: expected expression
+uid_align = ( rtx *)xcalloc( something_changed, 8uLL); 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/shorten_branches/src/final.c:1522:8: error: use of undeclared identifier 'align_tab'
+v20 = &align_tab[15]; 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/shorten_branches/src/final.c:1528:16: error: use of undeclared identifier 'align_tab'
+while ( v21 != align_tab ); 
+               ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/shorten_branches/src/final.c:1542:8: error: use of undeclared identifier 'align_tab'
+*v27 = align_tab[0]; 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/shorten_branches/src/final.c:1545:8: error: use of undeclared identifier 'align_tab'
+*v27 = align_tab[v26]; 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/shorten_branches/src/final.c:1551:1: error: use of undeclared identifier 'align_tab'
+align_tab[v28--] = last_insn; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/shorten_branches/src/final.c:1558:14: error: use of undeclared identifier 'align_tab'
+v23[rtint] = align_tab[0]; 
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/shorten_branches/src/final.c:1560:19: error: expected ';' after expression
+last_insn = ( rtx)last_insn[1]; 
+                  ^
+                  ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/shorten_branches/src/final.c:1584:19: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v37 = ( __int16 *)rtx[2]; 
+                  ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/shorten_branches/src/final.c:1591:47: error: expected expression
+else if ( v38 == 40 || asm_noperands( *( rtx *)&rtx[2]) >= 0 ) 
+                                              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/shorten_branches/src/final.c:1593:29: error: expected ')'
+v32 = asm_insn_count( ( rtx)v37); 
+                            ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/shorten_branches/src/final.c:1593:21: note: to match this '('
+v32 = asm_insn_count( ( rtx)v37); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/shorten_branches/src/final.c:1606:43: error: expected expression
+if ( *v37 == 40 || asm_noperands( *( rtx *)( v43 + 32)) >= 0 ) 
+                                          ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/shorten_branches/src/final.c:1608:31: error: expected expression
+v73 = asm_insn_count( *( rtx *)( v43 + 32)); 
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/shorten_branches/src/final.c:1609:40: error: expected ')'
+v41 = v73 * insn_default_length( ( rtx)v43); 
+                                       ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/shorten_branches/src/final.c:1609:32: note: to match this '('
+v41 = v73 * insn_default_length( ( rtx)v43); 
+                               ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/shorten_branches/src/obj/final.o] Error 1

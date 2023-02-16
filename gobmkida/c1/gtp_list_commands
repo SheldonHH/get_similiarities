@@ -1,0 +1,23 @@
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/gtp_list_commands/src/interface/play_gtp.c:3802:8: error: use of undeclared identifier 'commands_0'; did you mean 'commands'?
+name = commands_0[0].name; 
+       ^~~~~~~~~~
+       commands
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/gtp_list_commands/src/interface/play_gtp.c:164:27: note: 'commands' declared here
+static struct gtp_command commands[] = {
+                          ^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/gtp_list_commands/src/interface/play_gtp.c:3803:6: error: use of undeclared identifier 'commands_0'; did you mean 'commands'?
+if ( commands_0[0].name ) 
+     ^~~~~~~~~~
+     commands
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/gtp_list_commands/src/interface/play_gtp.c:164:27: note: 'commands' declared here
+static struct gtp_command commands[] = {
+                          ^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/gtp_list_commands/src/interface/play_gtp.c:3805:24: error: use of undeclared identifier 'commands_0'; did you mean 'commands'?
+v2 = ( const char **)( commands_0 + 16); 
+                       ^~~~~~~~~~
+                       commands
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/gtp_list_commands/src/interface/play_gtp.c:164:27: note: 'commands' declared here
+static struct gtp_command commands[] = {
+                          ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/gtp_list_commands/src/obj/2/play_gtp.o] Error 1

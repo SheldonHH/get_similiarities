@@ -1,0 +1,14 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ereal_ldexp/src/real.c:1496:10: error: conflicting types for 'ereal_ldexp'
+__int64  ereal_ldexp( __int64 a1, int a2, __int64 a3, __int64 a4, __int64 a5, __int64 a6, __int64 e, int e_8) 
+         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ereal_ldexp/src/real.h:160:24: note: previous declaration is here
+extern REAL_VALUE_TYPE ereal_ldexp PARAMS ((REAL_VALUE_TYPE, int));
+                       ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ereal_ldexp/src/real.c:1518:12: error: expected expression
+*( _OWORD *)a1 = *( _OWORD *)p_e; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ereal_ldexp/src/real.c:1518:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)a1 = *( _OWORD *)p_e; 
+   ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ereal_ldexp/src/obj/real.o] Error 1

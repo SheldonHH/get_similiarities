@@ -1,0 +1,24 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/scan_rtx_address/src/regrename.c:987:45: error: must use 'enum' tag to refer to type 'reg_class'
+void  scan_rtx_address( rtx insn, rtx *loc, reg_class a3, scan_actions action, machine_mode mode) 
+                                            ^
+                                            enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/scan_rtx_address/src/regrename.c:987:59: error: must use 'enum' tag to refer to type 'scan_actions'
+void  scan_rtx_address( rtx insn, rtx *loc, reg_class a3, scan_actions action, machine_mode mode) 
+                                                          ^
+                                                          enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/scan_rtx_address/src/regrename.c:987:80: error: must use 'enum' tag to refer to type 'machine_mode'
+void  scan_rtx_address( rtx insn, rtx *loc, reg_class a3, scan_actions action, machine_mode mode) 
+                                                                               ^
+                                                                               enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/scan_rtx_address/src/regrename.c:989:1: error: must use 'enum' tag to refer to type 'scan_actions'
+scan_actions v6; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/scan_rtx_address/src/regrename.c:1026:28: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v15 = ( unsigned __int16 *)v7[1]; 
+                           ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/scan_rtx_address/src/regrename.c:1176:66: error: use of undeclared identifier 'machine_mode'
+scan_rtx_address( insn, ( rtx *)v7->fld, GENERAL_REGS, action, ( machine_mode)*( ( unsigned __int8 *)v7 + 2)); 
+                                                                 ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/scan_rtx_address/src/obj/regrename.o] Error 1

@@ -1,0 +1,14 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/loc_descriptor/src/dwarf2out.c:8433:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v3.rtwint = ( __int64)rtl->fld[0]; 
+                      ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/loc_descriptor/src/dwarf2out.c:8434:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v4 = ( __int64)rtl[1]; 
+               ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/loc_descriptor/src/dwarf2out.c:8495:30: error: use of undeclared identifier 'a'
+fancy_abort( ( const char *)&a, 7976, "loc_descriptor"); 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/loc_descriptor/src/dwarf2out.c:8499:47: error: use of undeclared identifier 'machine_mode'
+return mem_loc_descriptor( rtl->fld[0].rtx, ( machine_mode)*( ( unsigned __int8 *)rtl + 2)); 
+                                              ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/loc_descriptor/src/obj/dwarf2out.o] Error 1

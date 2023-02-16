@@ -1,0 +1,47 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_comparison_args/src/cse.c:3587:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code  find_comparison_args( 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_comparison_args/src/cse.c:3588:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_comparison_args/src/cse.c:3591:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode *pmode1, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_comparison_args/src/cse.c:3592:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode *pmode2) 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_comparison_args/src/cse.c:3594:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v5; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_comparison_args/src/cse.c:3596:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code reversed; // [rsp+30h] [rbp-40h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_comparison_args/src/cse.c:3597:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode inner_mode; // [rsp+34h] [rbp-3Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_comparison_args/src/cse.c:3605:96: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( arg2 = *parg2; arg2 == const_tiny_rtx[0][*( ( unsigned __int8 *)arg1 + 2)]; arg2 = ( rtx)x[1] ) 
+                                                                                               ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_comparison_args/src/cse.c:3644:34: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| ( code == NE || code == LT && mode_class_0[inner_mode] == MODE_INT && mode_bitsize[inner_mode] == 1) 
+                                 ^~~~~~~~~~~~
+                                 mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_comparison_args/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_comparison_args/src/cse.c:3650:36: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( ( code == EQ || code == GE && mode_class_0[inner_mode] == MODE_INT && mode_bitsize[inner_mode] == 1) 
+                                   ^~~~~~~~~~~~
+                                   mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_comparison_args/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+10 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_comparison_args/src/obj/cse.o] Error 1

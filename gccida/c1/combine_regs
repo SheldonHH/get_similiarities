@@ -1,0 +1,52 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/combine_regs/src/local-alloc.c:2346:22: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v14 = ( unsigned int)v10[1]; 
+                     ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/combine_regs/src/local-alloc.c:2350:38: error: use of undeclared identifier 'machine_mode'
+v9 += subreg_regno_offset( rtuint, ( machine_mode)BYTE2( v12), v14, ( machine_mode)BYTE2( v11)); 
+                                     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/combine_regs/src/local-alloc.c:2350:71: error: use of undeclared identifier 'machine_mode'
+v9 += subreg_regno_offset( rtuint, ( machine_mode)BYTE2( v12), v14, ( machine_mode)BYTE2( v11)); 
+                                                                      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/combine_regs/src/local-alloc.c:2368:41: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v18 = ( unsigned int)( ( unsigned int)( mode_class_0[( unsigned __int8)v17] - 5) < 2) + 1; 
+                                        ^~~~~~~~~~~~
+                                        mode_class
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/combine_regs/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/combine_regs/src/local-alloc.c:2398:22: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v24 = ( unsigned int)v20[1]; 
+                     ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/combine_regs/src/local-alloc.c:2410:35: error: use of undeclared identifier 'machine_mode'
+v29 = subreg_regno_offset( v23, ( machine_mode)BYTE2( v22), v24, ( machine_mode)BYTE2( v21)); 
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/combine_regs/src/local-alloc.c:2410:68: error: use of undeclared identifier 'machine_mode'
+v29 = subreg_regno_offset( v23, ( machine_mode)BYTE2( v22), v24, ( machine_mode)BYTE2( v21)); 
+                                                                   ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/combine_regs/src/local-alloc.c:2455:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v32 = ( ( unsigned int)( mode_class_0[( unsigned __int8)v31] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/combine_regs/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/combine_regs/src/local-alloc.c:2463:59: error: use of undeclared identifier 'qty_0'
+&& ( ( int)rtint < 53 || v32 <= ( int)v18 || ( int)v18 >= qty_0[*( ( int *)reg_qty + rtint)].size) 
+                                                          ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/combine_regs/src/local-alloc.c:2526:30: error: use of undeclared identifier 'qty_0'
+if ( reg_meets_class_p( v30, qty_0[*( ( int *)reg_qty + rtint)].min_class) ) 
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/combine_regs/src/local-alloc.c:2531:7: error: use of undeclared identifier 'qty_0'
+v59 = qty_0; 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/combine_regs/src/local-alloc.c:2533:40: error: use of undeclared identifier 'qty_0'
+*( ( _DWORD *)reg_next_in_qty + v57) = qty_0[v60].first_reg; 
+                                       ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/combine_regs/src/local-alloc.c:2537:7: error: use of undeclared identifier 'qty_0'
+v62 = qty_0; 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/combine_regs/src/local-alloc.c:2538:1: error: use of undeclared identifier 'qty_0'
+qty_0[v60].n_calls_crossed += *( _DWORD *)( reg_n_info->data.l[v57] + 32); 
+^
+14 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/combine_regs/src/obj/local-alloc.o] Error 1

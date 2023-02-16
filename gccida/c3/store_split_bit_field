@@ -1,0 +1,72 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/store_split_bit_field/src/expmed.c:1340:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v14; // r14d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/store_split_bit_field/src/expmed.c:1341:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v15; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/store_split_bit_field/src/expmed.c:1345:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v19; // edx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/store_split_bit_field/src/expmed.c:1353:4: error: expected ';' after expression
+rtx fixed_bit_field; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/store_split_bit_field/src/expmed.c:1353:5: error: use of undeclared identifier 'fixed_bit_field'; did you mean 'store_bit_field'?
+rtx fixed_bit_field; // rax 
+    ^~~~~~~~~~~~~~~
+    store_bit_field
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/store_split_bit_field/src/expmed.c:289:1: note: 'store_bit_field' declared here
+store_bit_field (str_rtx, bitsize, bitnum, fieldmode, value, total_size)
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/store_split_bit_field/src/expmed.c:1357:4: error: expected ';' after expression
+rtx v32; // [rsp+20h] [rbp-48h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/store_split_bit_field/src/expmed.c:1357:5: error: use of undeclared identifier 'v32'
+rtx v32; // [rsp+20h] [rbp-48h] 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/store_split_bit_field/src/expmed.c:1366:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v7 = ( __int64)op0[1]; 
+               ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/store_split_bit_field/src/expmed.c:1403:38: error: invalid suffix 'xmode' on integer constant
+v12 = gen_lowpart_common( *(short *)0xmode, value); 
+                                     ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/store_split_bit_field/src/expmed.c:1406:18: error: invalid suffix 'xmode' on integer constant
+v14 = *(short *)0xmode; 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/store_split_bit_field/src/expmed.c:1409:18: error: invalid suffix 'xmode' on integer constant
+v15 = *(short *)0xmode; 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/store_split_bit_field/src/expmed.c:1421:1: error: use of undeclared identifier 'v32'
+v32 = v13; 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/store_split_bit_field/src/expmed.c:1443:1: error: use of undeclared identifier 'fixed_bit_field'
+fixed_bit_field = gen_rtx_CONST_INT( VOIDmode, ( ( unsigned __int64)v13->fld[0].rtwint >> v18) & ~( -1LL << v26)); 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/store_split_bit_field/src/expmed.c:1445:1: error: use of undeclared identifier 'fixed_bit_field'
+fixed_bit_field = extract_fixed_bit_field( *(short *)0xmode, v13, 0LL, v26, v18, 0LL, 1); 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/store_split_bit_field/src/expmed.c:1445:55: error: invalid suffix 'xmode' on integer constant
+fixed_bit_field = extract_fixed_bit_field( *(short *)0xmode, v13, 0LL, v26, v18, 0LL, 1); 
+                                                      ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/store_split_bit_field/src/expmed.c:1446:7: error: use of undeclared identifier 'fixed_bit_field'; did you mean 'store_bit_field'?
+v28 = fixed_bit_field; 
+      ^~~~~~~~~~~~~~~
+      store_bit_field
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/store_split_bit_field/src/expmed.c:289:1: note: 'store_bit_field' declared here
+store_bit_field (str_rtx, bitsize, bitnum, fieldmode, value, total_size)
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/store_split_bit_field/src/expmed.c:1461:31: error: invalid suffix 'orce' on integer constant
+rtx = operand_sub*(short *)0xforce( rtx, v21, v19); 
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/store_split_bit_field/src/expmed.c:1461:7: error: use of undeclared identifier 'operand_sub'
+rtx = operand_sub*(short *)0xforce( rtx, v21, v19); 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/store_split_bit_field/src/expmed.c:1467:7: error: use of undeclared identifier 'v32'
+v13 = v32; 
+      ^
+19 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/store_split_bit_field/src/obj/expmed.o] Error 1

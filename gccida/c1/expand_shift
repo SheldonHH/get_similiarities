@@ -1,0 +1,81 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_shift/src/expmed.c:2369:20: error: must use 'enum' tag to refer to type 'tree_code'
+rtx  expand_shift( tree_code code, machine_mode mode, rtx shifted, tree amount, rtx target, int unsignedp) 
+                   ^
+                   enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_shift/src/expmed.c:2369:36: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  expand_shift( tree_code code, machine_mode mode, rtx shifted, tree amount, rtx target, int unsignedp) 
+                                   ^
+                                   enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_shift/src/expmed.c:2378:1: error: must use 'enum' tag to refer to type 'optab_methods'
+optab_methods v15; // r14d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_shift/src/expmed.c:2381:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *type; // r14 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_shift/src/expmed.c:2382:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v19; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_shift/src/expmed.c:2384:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v21; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_shift/src/expmed.c:2385:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v22; // r14 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_shift/src/expmed.c:2388:1: error: unknown type name 'optab_0'; did you mean 'optab'?
+optab_0 *v25; // rax 
+^~~~~~~
+optab
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_shift/src/optabs.h:48:5: note: 'optab' declared here
+} * optab;
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_shift/src/expmed.c:2390:1: error: unknown type name 'optab_0'; did you mean 'optab'?
+optab_0 *v27; // rax 
+^~~~~~~
+optab
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_shift/src/optabs.h:48:5: note: 'optab' declared here
+} * optab;
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_shift/src/expmed.c:2392:1: error: unknown type name 'optab_0'; did you mean 'optab'?
+optab_0 *v29; // rax 
+^~~~~~~
+optab
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_shift/src/optabs.h:48:5: note: 'optab' declared here
+} * optab;
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_shift/src/expmed.c:2401:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *expa; // [rsp+38h] [rbp-50h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_shift/src/expmed.c:2451:23: error: use of undeclared identifier 'tree_code'; did you mean 'tree_cons'?
+v11 = expand_shift( ( tree_code)v42, mode, v23, expa, v17, 1); 
+                      ^~~~~~~~~
+                      tree_cons
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_shift/src/tree.h:2477:13: note: 'tree_cons' declared here
+extern tree tree_cons                   PARAMS ((tree, tree, tree));
+            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_shift/src/expmed.c:2451:33: error: expected ')'
+v11 = expand_shift( ( tree_code)v42, mode, v23, expa, v17, 1); 
+                                ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_shift/src/expmed.c:2451:19: note: to match this '('
+v11 = expand_shift( ( tree_code)v42, mode, v23, expa, v17, 1); 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_shift/src/expmed.c:2453:23: error: use of undeclared identifier 'tree_code'; did you mean 'tree_cons'?
+v24 = expand_shift( ( tree_code)v43, mode, v23, v22, 0LL, 1); 
+                      ^~~~~~~~~
+                      tree_cons
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_shift/src/tree.h:2477:13: note: 'tree_cons' declared here
+extern tree tree_cons                   PARAMS ((tree, tree, tree));
+            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_shift/src/expmed.c:2453:33: error: expected ')'
+v24 = expand_shift( ( tree_code)v43, mode, v23, v22, 0LL, 1); 
+                                ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_shift/src/expmed.c:2453:19: note: to match this '('
+v24 = expand_shift( ( tree_code)v43, mode, v23, v22, 0LL, 1); 
+                  ^
+15 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_shift/src/obj/expmed.o] Error 1

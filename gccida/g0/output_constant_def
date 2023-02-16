@@ -1,0 +1,17 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/output_constant_def/src/varasm.c:3678:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v5; // ecx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/output_constant_def/src/varasm.c:3683:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v10; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/output_constant_def/src/varasm.c:3684:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v11; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/output_constant_def/src/varasm.c:3730:21: error: use of undeclared identifier 'machine_mode'
+v7 = gen_rtx_MEM( ( machine_mode)( BYTE5( exp->common.type->block.abstract_origin) >> 1), v6); 
+                    ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/output_constant_def/src/obj/varasm.o] Error 1

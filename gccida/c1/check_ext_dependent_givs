@@ -1,0 +1,50 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/check_ext_dependent_givs/src/loop.c:7719:1: error: use of undeclared identifier 'induction_1'
+induction_1 *giv; // rbp 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/check_ext_dependent_givs/src/loop.c:7719:14: error: use of undeclared identifier 'giv'; did you mean 'div'?
+induction_1 *giv; // rbp 
+             ^~~
+             div
+/usr/include/stdlib.h:849:14: note: 'div' declared here
+extern div_t div (int __numer, int __denom)
+             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/check_ext_dependent_givs/src/loop.c:7756:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v9.rtwint = ( __int64)bl_0->initial_value->fld[0]; 
+                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/check_ext_dependent_givs/src/loop.c:7823:1: error: use of undeclared identifier 'giv'
+giv = bl_0->giv; 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/check_ext_dependent_givs/src/loop.c:7824:6: error: use of undeclared identifier 'giv'; did you mean 'div'?
+if ( giv ) 
+     ^~~
+     div
+/usr/include/stdlib.h:849:14: note: 'div' declared here
+extern div_t div (int __numer, int __denom)
+             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/check_ext_dependent_givs/src/loop.c:7829:34: error: use of undeclared identifier 'giv'
+ext_dependent = ( unsigned int *)giv->ext_dependent; 
+                                 ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/check_ext_dependent_givs/src/loop.c:7858:1: error: use of undeclared identifier 'giv'
+giv->insn->fld[0].rtuint, 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/check_ext_dependent_givs/src/loop.c:7874:68: error: use of undeclared identifier 'giv'
+fprintf( loop_dump_stream, "Failed ext dependent giv at %d, %s\n", giv->insn->fld[0].rtuint, v17); 
+                                                                   ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/check_ext_dependent_givs/src/loop.c:7876:14: error: use of undeclared identifier 'giv'
+*( ( _BYTE *)giv + 100) |= 4u; 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/check_ext_dependent_givs/src/loop.c:7880:1: error: use of undeclared identifier 'giv'
+giv = giv->next_iv; 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/check_ext_dependent_givs/src/loop.c:7880:7: error: use of undeclared identifier 'giv'
+giv = giv->next_iv; 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/check_ext_dependent_givs/src/loop.c:7882:9: error: use of undeclared identifier 'giv'; did you mean 'div'?
+while ( giv ); 
+        ^~~
+        div
+/usr/include/stdlib.h:849:14: note: 'div' declared here
+extern div_t div (int __numer, int __denom)
+             ^
+12 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/check_ext_dependent_givs/src/obj/loop.o] Error 1

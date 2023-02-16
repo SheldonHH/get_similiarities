@@ -1,0 +1,35 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/elimination_effects/src/reload1.c:3132:35: error: must use 'enum' tag to refer to type 'machine_mode'
+void  elimination_effects( rtx x, machine_mode mem_mode) 
+                                  ^
+                                  enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/elimination_effects/src/reload1.c:3136:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v6; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/elimination_effects/src/reload1.c:3191:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v26 = ( __int64)x[1]; 
+                ^~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/elimination_effects/src/reload1.c:3206:12: error: expected ';' after expression
+v5 = ( rtx)x[1]; 
+           ^
+           ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/elimination_effects/src/reload1.c:3257:17: error: expected expression
+while ( *( rtx *)( ( char *)&reg_eliminate->from + v33) != x || !*( _DWORD *)( ( char *)reg_eliminate + v33 - 20) ) 
+                ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/elimination_effects/src/reload1.c:3296:15: error: use of undeclared identifier 'off_6CC868'
+fancy_abort( &off_6CC868[4], 2839, "elimination_effects"); 
+              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/elimination_effects/src/reload1.c:3300:15: error: use of undeclared identifier 'off_6CC868'
+fancy_abort( &off_6CC868[4], 2698, "elimination_effects"); 
+              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/elimination_effects/src/reload1.c:3316:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v13.rtwint = ( __int64)x->fld[0]; 
+                       ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/elimination_effects/src/reload1.c:3337:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v16 = ( __int64)x[1]; 
+                ^~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/elimination_effects/src/reload1.c:3378:30: error: expected expression
+elimination_effects( *( rtx *)&rtwint[2 * v22++ + 2], mem_mode); 
+                             ^
+10 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/elimination_effects/src/obj/reload1.o] Error 1

@@ -1,0 +1,70 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/decode_g_option/src/toplev.c:4481:1: error: must use 'enum' tag to refer to type 'debug_info_type'
+debug_info_type v2; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/decode_g_option/src/toplev.c:4484:1: error: must use 'enum' tag to refer to type 'debug_info_type'
+debug_info_type type; // [rsp+1Ch] [rbp-4h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/decode_g_option/src/toplev.c:4493:15: error: use of undeclared identifier 'sch_istable'; did you mean '_sch_istable'?
+if ( !*p || ( sch_istable[*( unsigned __int8 *)p] & 4) != 0 ) 
+              ^~~~~~~~~~~
+              _sch_istable
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/decode_g_option/src/safe-ctype.h:72:29: note: '_sch_istable' declared here
+extern const unsigned short _sch_istable[256];
+                            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/decode_g_option/src/toplev.c:4497:1: error: use of undeclared identifier 'level_3'
+level_3 = read_integral_parameter( p, 0LL, max_debug_level_4 + 1); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/decode_g_option/src/toplev.c:4497:44: error: use of undeclared identifier 'max_debug_level_4'
+level_3 = read_integral_parameter( p, 0LL, max_debug_level_4 + 1); 
+                                           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/decode_g_option/src/toplev.c:4501:6: error: use of undeclared identifier 'level_3'
+if ( level_3 ) 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/decode_g_option/src/toplev.c:4502:6: error: use of undeclared identifier 'level_3'
+v1 = level_3; 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/decode_g_option/src/toplev.c:4505:1: error: use of undeclared identifier 'level_3'
+level_3 = v1; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/decode_g_option/src/toplev.c:4513:51: error: use of undeclared identifier 'level_3'
+error( "use -gdwarf -g%d for DWARF v1, level %d", level_3, level_3); 
+                                                  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/decode_g_option/src/toplev.c:4513:60: error: use of undeclared identifier 'level_3'
+error( "use -gdwarf -g%d for DWARF v1, level %d", level_3, level_3); 
+                                                           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/decode_g_option/src/toplev.c:4514:6: error: use of undeclared identifier 'level_3'
+if ( level_3 == 2 ) 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/decode_g_option/src/toplev.c:4519:6: error: use of undeclared identifier 'level_3'
+if ( level_3 > max_debug_level_4 ) 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/decode_g_option/src/toplev.c:4519:16: error: use of undeclared identifier 'max_debug_level_4'
+if ( level_3 > max_debug_level_4 ) 
+               ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/decode_g_option/src/toplev.c:4521:76: error: expected expression
+warning( "ignoring option `%s' due to invalid debug level specification",  struct arg - 2); 
+                                                                           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/decode_g_option/src/toplev.c:4522:1: error: use of undeclared identifier 'level_3'
+level_3 = debug_info_level_0; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/decode_g_option/src/toplev.c:4522:11: error: use of undeclared identifier 'debug_info_level_0'; did you mean 'debug_info_level'?
+level_3 = debug_info_level_0; 
+          ^~~~~~~~~~~~~~~~~~
+          debug_info_level
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/decode_g_option/src/toplev.c:319:23: note: 'debug_info_level' declared here
+enum debug_info_level debug_info_level = DINFO_LEVEL_NONE;
+                      ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/decode_g_option/src/toplev.c:4530:6: error: use of undeclared identifier 'type_explicitly_set_p_2'
+if ( type_explicitly_set_p_2 && da->debug_type && type != selected_debug_type_1 ) 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/decode_g_option/src/toplev.c:4530:59: error: use of undeclared identifier 'selected_debug_type_1'
+if ( type_explicitly_set_p_2 && da->debug_type && type != selected_debug_type_1 ) 
+                                                          ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/decode_g_option/src/toplev.c:4532:50: error: expected expression
+warning( "`%s' ignored, conflicts with `-g%s'",  struct arg - 2, debug_type_names_0[selected_debug_type_1]); 
+                                                 ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/decode_g_option/src/obj/toplev.o] Error 1

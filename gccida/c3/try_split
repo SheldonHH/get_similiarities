@@ -1,0 +1,66 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/try_split/src/emit-rtl.c:3602:6: error: use of undeclared identifier 'p_x_last_insn'
+rtx *p_x_last_insn; // r14 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/try_split/src/emit-rtl.c:3612:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v4 = ( __int64)trial[1]; 
+               ^~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/try_split/src/emit-rtl.c:3657:27: error: expected expression
+if ( rtx_equal_p( *( rtx *)( v13 + 32), pat) ) 
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/try_split/src/emit-rtl.c:3674:26: error: expected expression
+mark_jump_label( *( rtx *)( v22 + 32), ( rtx)v22, 0); 
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/try_split/src/emit-rtl.c:3703:26: error: expected expression
+mark_jump_label( *( rtx *)( v17 + 32), ( rtx)v17, 0); 
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/try_split/src/emit-rtl.c:3705:29: error: expected ')'
+if ( !any_condjump_p( ( rtx)v17) || find_reg_note( ( rtx)v17, REG_BR_PROB, 0LL) ) 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/try_split/src/emit-rtl.c:3705:21: note: to match this '('
+if ( !any_condjump_p( ( rtx)v17) || find_reg_note( ( rtx)v17, REG_BR_PROB, 0LL) ) 
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/try_split/src/emit-rtl.c:3705:58: error: expected ')'
+if ( !any_condjump_p( ( rtx)v17) || find_reg_note( ( rtx)v17, REG_BR_PROB, 0LL) ) 
+                                                         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/try_split/src/emit-rtl.c:3705:50: note: to match this '('
+if ( !any_condjump_p( ( rtx)v17) || find_reg_note( ( rtx)v17, REG_BR_PROB, 0LL) ) 
+                                                 ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/try_split/src/emit-rtl.c:3725:75: error: expected expression
+*( _QWORD *)( v17 + 56) = gen_rtx_fmt_ee( EXPR_LIST, DFmode, v19, *( rtx *)( v17 + 56)); 
+                                                                          ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/try_split/src/emit-rtl.c:3745:25: error: assigning to 'uint64' (aka 'unsigned long long') from incompatible type 'struct rtx_def'
+*( _QWORD *)( v25 + 64) = v3[4]; 
+                        ^ ~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/try_split/src/emit-rtl.c:3753:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v26.rtwint = ( __int64)v3[3].fld[0]; 
+                       ^~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/try_split/src/emit-rtl.c:3786:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( unsigned __int8 *)( v26.rtwint + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/try_split/src/emit-rtl.c:3787:9: error: expected expression
+*( rtx *)( v26.rtwint + 8), 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/try_split/src/emit-rtl.c:3788:9: error: expected expression
+*( rtx *)( v31 + 56)); 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/try_split/src/emit-rtl.c:3807:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( unsigned __int8 *)( v26.rtwint + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/try_split/src/emit-rtl.c:3808:9: error: expected expression
+*( rtx *)( v26.rtwint + 8), 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/try_split/src/emit-rtl.c:3809:9: error: expected expression
+*( rtx *)( v34 + 56)); 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/try_split/src/emit-rtl.c:3816:70: error: expected expression
+*( _QWORD *)( v37 + 56) = gen_rtx_fmt_ee( EXPR_LIST, XCmode, *( rtx *)( v26.rtwint + 8), *( rtx *)( v37 + 56)); 
+                                                                     ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/try_split/src/emit-rtl.c:3816:98: error: expected expression
+*( _QWORD *)( v37 + 56) = gen_rtx_fmt_ee( EXPR_LIST, XCmode, *( rtx *)( v26.rtwint + 8), *( rtx *)( v37 + 56)); 
+                                                                                                 ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/try_split/src/emit-rtl.c:3824:54: error: expected expression
+if ( flag_non_call_exceptions && may_trap_p( *( rtx *)( v37 + 32)) ) 
+                                                     ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/try_split/src/obj/emit-rtl.o] Error 1

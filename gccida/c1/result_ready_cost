@@ -1,0 +1,117 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/result_ready_cost/src/insn-attrtab.c:868:1: error: must use 'enum' tag to refer to type 'processor_type'
+processor_type v10; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/result_ready_cost/src/insn-attrtab.c:871:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v13; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/result_ready_cost/src/insn-attrtab.c:886:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v17 = (  struct rtx_def *)insn[2]; 
+                          ^~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/result_ready_cost/src/insn-attrtab.c:891:29: error: too many arguments provided to function-like macro invocation
+fatal_insn_not_found( insn, "insn-attrtab.c", 1990, "result_ready_cost"); 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/result_ready_cost/src/toplev.h:52:9: note: macro 'fatal_insn_not_found' defined here
+#define fatal_insn_not_found(insn) \
+        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/result_ready_cost/src/insn-attrtab.c:891:1: error: use of undeclared identifier 'fatal_insn_not_found'; did you mean '_fatal_insn_not_found'?
+fatal_insn_not_found( insn, "insn-attrtab.c", 1990, "result_ready_cost"); 
+^~~~~~~~~~~~~~~~~~~~
+_fatal_insn_not_found
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/result_ready_cost/src/toplev.h:40:13: note: '_fatal_insn_not_found' declared here
+extern void _fatal_insn_not_found       PARAMS ((struct rtx_def *,
+            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/result_ready_cost/src/insn-attrtab.c:1097:23: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( !memory_operand( recog_data_0.operand[1], VOIDmode) ) 
+                      ^~~~~~~~~~~~
+                      recog_data
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/result_ready_cost/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/result_ready_cost/src/insn-attrtab.c:1131:69: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( ix86_cpu != PROCESSOR_PENTIUMPRO || ( v3 = 3, !memory_operand( recog_data_0.operand[1], VOIDmode)) ) 
+                                                                    ^~~~~~~~~~~~
+                                                                    recog_data
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/result_ready_cost/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/result_ready_cost/src/insn-attrtab.c:1133:66: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( ix86_cpu != PROCESSOR_PENTIUM || ( v3 = 3, !memory_operand( recog_data_0.operand[1], VOIDmode)) ) 
+                                                                 ^~~~~~~~~~~~
+                                                                 recog_data
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/result_ready_cost/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/result_ready_cost/src/insn-attrtab.c:1162:25: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( !symbolic_operand( recog_data_0.operand[1], SImode) ) 
+                        ^~~~~~~~~~~~
+                        recog_data
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/result_ready_cost/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/result_ready_cost/src/insn-attrtab.c:1172:23: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( !memory_operand( recog_data_0.operand[1], VOIDmode) ) 
+                      ^~~~~~~~~~~~
+                      recog_data
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/result_ready_cost/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/result_ready_cost/src/insn-attrtab.c:1196:25: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( !symbolic_operand( recog_data_0.operand[1], DImode) ) 
+                        ^~~~~~~~~~~~
+                        recog_data
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/result_ready_cost/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/result_ready_cost/src/insn-attrtab.c:1207:23: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( !memory_operand( recog_data_0.operand[1], VOIDmode) ) 
+                      ^~~~~~~~~~~~
+                      recog_data
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/result_ready_cost/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/result_ready_cost/src/insn-attrtab.c:1351:24: error: subscripted value is not an array, pointer, or vector
+return *(int *)0x691CAC[ix86_cpu - 2]; 
+               ~~~~~~~~^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/result_ready_cost/src/insn-attrtab.c:1409:24: error: subscripted value is not an array, pointer, or vector
+return *(int *)0x691CAC[ix86_cpu - 2]; 
+               ~~~~~~~~^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/result_ready_cost/src/insn-attrtab.c:1645:28: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( pic_symbolic_operand( recog_data_0.operand[2], DImode) ) 
+                           ^~~~~~~~~~~~
+                           recog_data
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/result_ready_cost/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/result_ready_cost/src/insn-attrtab.c:1679:56: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( ix86_cpu == PROCESSOR_PENTIUM && !incdec_operand( recog_data_0.operand[2], DImode) ) 
+                                                       ^~~~~~~~~~~~
+                                                       recog_data
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/result_ready_cost/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/result_ready_cost/src/insn-attrtab.c:1694:55: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( ix86_cpu != PROCESSOR_PENTIUM || incdec_operand( recog_data_0.operand[2], DImode) ) 
+                                                      ^~~~~~~~~~~~
+                                                      recog_data
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/result_ready_cost/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/result_ready_cost/src/insn-attrtab.c:1742:28: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( pic_symbolic_operand( recog_data_0.operand[2], SImode) ) 
+                           ^~~~~~~~~~~~
+                           recog_data
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/result_ready_cost/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/result_ready_cost/src/insn-attrtab.c:1793:28: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( pic_symbolic_operand( recog_data_0.operand[2], SImode) ) 
+                           ^~~~~~~~~~~~
+                           recog_data
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/result_ready_cost/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/result_ready_cost/src/obj/insn-attrtab.o] Error 1

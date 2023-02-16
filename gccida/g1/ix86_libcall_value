@@ -1,0 +1,20 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ix86_libcall_value/src/i386.c:2789:26: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  ix86_libcall_value( machine_mode mode) 
+                         ^
+                         enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ix86_libcall_value/src/i386.c:2792:1: error: must use 'enum' tag to refer to type 'mode_class'
+mode_class v3; // edx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ix86_libcall_value/src/machmode.h:52:30: note: enum 'mode_class' is hidden by a non-type declaration of 'mode_class' here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ix86_libcall_value/src/i386.c:2817:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v3 = mode_class_0[mode]; 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ix86_libcall_value/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ix86_libcall_value/src/obj/i386.o] Error 1

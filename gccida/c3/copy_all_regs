@@ -1,0 +1,19 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/copy_all_regs/src/explow.c:903:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v1; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/copy_all_regs/src/explow.c:922:57: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+if ( op0 != x->fld[0].rtx || op1 != (  struct rtx_def *)x[1] ) 
+                                                        ^~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/copy_all_regs/src/explow.c:927:26: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+return gen_rtx_fmt_ee( ( rtx_code)( unsigned __int16)*( _DWORD *)x, v1, op0, op1); 
+                         ^~~~~~~~
+                         rtx_cost
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/copy_all_regs/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/copy_all_regs/src/explow.c:927:37: error: expected expression
+return gen_rtx_fmt_ee( ( rtx_code)( unsigned __int16)*( _DWORD *)x, v1, op0, op1); 
+                                    ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/copy_all_regs/src/obj/explow.o] Error 1

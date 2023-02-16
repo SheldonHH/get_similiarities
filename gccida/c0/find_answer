@@ -1,0 +1,39 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_answer/src/cpplib.c:2044:32: error: unknown type name 'cpp_hashnode_0'; did you mean 'cpp_hashnode'?
+ struct answer ** find_answer( cpp_hashnode_0 *node, const  struct answer *candidate) 
+                               ^~~~~~~~~~~~~~
+                               cpp_hashnode
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_answer/src/cpplib.h:42:29: note: 'cpp_hashnode' declared here
+typedef struct cpp_hashnode cpp_hashnode;
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_answer/src/cpplib.c:2047:14: error: expected expression
+cpp_hashnode::$14912F6ECDCFBB6AA3A39A6FF3987F98 *result; // [rsp+10h] [rbp-20h] 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_answer/src/cpplib.c:2050:7: error: use of undeclared identifier 'result'
+for ( result = &node->value; result->macro; result = ( cpp_hashnode::$14912F6ECDCFBB6AA3A39A6FF3987F98 *)result->macro ) 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_answer/src/cpplib.c:2050:30: error: use of undeclared identifier 'result'
+for ( result = &node->value; result->macro; result = ( cpp_hashnode::$14912F6ECDCFBB6AA3A39A6FF3987F98 *)result->macro ) 
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_answer/src/cpplib.c:2050:68: error: expected ')'
+for ( result = &node->value; result->macro; result = ( cpp_hashnode::$14912F6ECDCFBB6AA3A39A6FF3987F98 *)result->macro ) 
+                                                                   ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_answer/src/cpplib.c:2050:54: note: to match this '('
+for ( result = &node->value; result->macro; result = ( cpp_hashnode::$14912F6ECDCFBB6AA3A39A6FF3987F98 *)result->macro ) 
+                                                     ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_answer/src/cpplib.c:2050:106: error: use of undeclared identifier 'result'
+for ( result = &node->value; result->macro; result = ( cpp_hashnode::$14912F6ECDCFBB6AA3A39A6FF3987F98 *)result->macro ) 
+                                                                                                         ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_answer/src/cpplib.c:2050:45: error: use of undeclared identifier 'result'
+for ( result = &node->value; result->macro; result = ( cpp_hashnode::$14912F6ECDCFBB6AA3A39A6FF3987F98 *)result->macro ) 
+                                            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_answer/src/cpplib.c:2052:16: error: expected identifier or '('
+ struct answer = (  struct answer *)result->macro; 
+               ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_answer/src/cpplib.c:2053:15: error: use of undeclared identifier 'result'
+if ( LODWORD( result->macro->expansion) == candidate->count ) 
+              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_answer/src/cpplib.c:2061:28: error: use of undeclared identifier 'result'
+return (  struct answer **)result; 
+                           ^
+10 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_answer/src/obj/cpplib.o] Error 1

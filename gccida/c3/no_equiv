@@ -1,0 +1,32 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/no_equiv/src/local-alloc.c:1663:4: error: expected ';' after expression
+rtx list; // [rsp+18h] [rbp-28h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/no_equiv/src/local-alloc.c:1663:5: error: use of undeclared identifier 'list'
+rtx list; // [rsp+18h] [rbp-28h] 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/no_equiv/src/local-alloc.c:1669:1: error: use of undeclared identifier 'list'
+list = reg_equiv[regno].init_insns; 
+^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/no_equiv/src/local-alloc.c:1670:6: error: use of undeclared identifier 'list'; did you mean 'link'?
+if ( list != const_int_rtx[64] ) 
+     ^~~~
+     link
+/usr/include/unistd.h:792:12: note: 'link' declared here
+extern int link (const char *__from, const char *__to)
+           ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/no_equiv/src/local-alloc.c:1672:9: error: use of undeclared identifier 'list'; did you mean 'link'?
+while ( list ) 
+        ^~~~
+        link
+/usr/include/unistd.h:792:12: note: 'link' declared here
+extern int link (const char *__from, const char *__to)
+           ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/no_equiv/src/local-alloc.c:1674:7: error: use of undeclared identifier 'list'
+rtx = list->fld[0].rtx; 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/no_equiv/src/local-alloc.c:1677:1: error: use of undeclared identifier 'list'
+list = ( rtx)list[1]; 
+^
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/no_equiv/src/obj/local-alloc.o] Error 1

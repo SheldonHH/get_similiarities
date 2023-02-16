@@ -1,0 +1,74 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/mark_set_1/src/flow.c:2962:54: error: must use 'enum' tag to refer to type 'rtx_code'
+void  mark_set_1(  struct propagate_block_info *pbi, rtx_code code, rtx reg, rtx cond, rtx insn, int flags) 
+                                                     ^
+                                                     enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/mark_set_1/src/flow.c:3004:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v47; // r13d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/mark_set_1/src/flow.c:3024:4: error: expected ';' after expression
+rtx y; // [rsp+30h] [rbp-48h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/mark_set_1/src/flow.c:3024:5: error: use of undeclared identifier 'y'
+rtx y; // [rsp+30h] [rbp-48h] 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/mark_set_1/src/flow.c:3033:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v15.rtwint = ( __int64)reg->fld[0]; 
+                       ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/mark_set_1/src/flow.c:3046:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( unsigned __int8)v29, 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/mark_set_1/src/flow.c:3046:18: error: expected expression
+( machine_mode)( unsigned __int8)v29, 
+                 ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/mark_set_1/src/flow.c:3048:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( unsigned __int8)v28); 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/mark_set_1/src/flow.c:3048:18: error: expected expression
+( machine_mode)( unsigned __int8)v28); 
+                 ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/mark_set_1/src/flow.c:3052:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v51 = ( ( unsigned int)( mode_class_0[v47] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/mark_set_1/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/mark_set_1/src/flow.c:3084:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v15.rtwint = ( __int64)rtwint->fld[0]; 
+                       ^~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/mark_set_1/src/flow.c:3089:16: error: expected ';' after expression
+rtwint = ( rtx)v15.rtwint; 
+               ^
+               ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/mark_set_1/src/flow.c:3096:16: error: expected ';' after expression
+rtwint = ( rtx)v15.rtwint; 
+               ^
+               ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/mark_set_1/src/flow.c:3102:16: error: expected ';' after expression
+rtwint = ( rtx)v15.rtwint; 
+               ^
+               ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/mark_set_1/src/flow.c:3171:24: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v14 = ( unsigned int)( mode_class_0[v11] - 5) <= 1; 
+                       ^~~~~~~~~~~~
+                       mode_class
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/mark_set_1/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/mark_set_1/src/flow.c:3211:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v16.rtwint = ( __int64)insn[3].fld[0]; 
+                       ^~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/mark_set_1/src/flow.c:3217:39: error: expected expression
+invalidate_mems_from_set( v6, *( rtx *)( v16.rtwint + 8)); 
+                                      ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/mark_set_1/src/flow.c:3299:1: error: use of undeclared identifier 'y'
+y = *v46; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/mark_set_1/src/flow.c:3354:4: error: use of undeclared identifier 'y'
+&& y 
+   ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/mark_set_1/src/obj/flow.o] Error 1

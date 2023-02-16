@@ -1,0 +1,77 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cse_basic_block/src/cse.c:7671:4: error: expected ';' after expression
+rtx v21; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cse_basic_block/src/cse.c:7671:5: error: use of undeclared identifier 'v21'; did you mean 'v11'?
+rtx v21; // rax 
+    ^~~
+    v11
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cse_basic_block/src/cse.c:7661:20: note: 'v11' declared here
+ struct table_elt *v11; // rcx 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cse_basic_block/src/cse.c:7672:4: error: expected ';' after expression
+rtx reg_note; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cse_basic_block/src/cse.c:7672:5: error: must use 'enum' tag to refer to type 'reg_note'
+rtx reg_note; // rax 
+    ^
+    enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cse_basic_block/src/cse.c:7673:1: error: must use 'enum' tag to refer to type 'taken'
+taken status; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cse_basic_block/src/cse.c:7684:4: error: expected ';' after expression
+rtx v34; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cse_basic_block/src/cse.c:7684:5: error: use of undeclared identifier 'v34'
+rtx v34; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cse_basic_block/src/cse.c:7685:4: error: expected ';' after expression
+rtx nonnote_insn; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cse_basic_block/src/cse.c:7685:5: error: use of undeclared identifier 'nonnote_insn'
+rtx nonnote_insn; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cse_basic_block/src/cse.c:7691:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v41; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cse_basic_block/src/cse.c:7781:16: error: use of undeclared identifier 'NOT_TAKEN_0'; did you mean 'NOT_TAKEN'?
+if ( status != NOT_TAKEN_0 ) 
+               ^~~~~~~~~~~
+               NOT_TAKEN
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cse_basic_block/src/cse.c:580:26: note: 'NOT_TAKEN' declared here
+      enum taken {TAKEN, NOT_TAKEN, AROUND} status;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cse_basic_block/src/cse.c:7786:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v24.rtwint = ( __int64)v6[1].fld[0]; 
+                       ^~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cse_basic_block/src/cse.c:7824:35: error: expected expression
+invalidate_from_clobbers( *( rtx *)( v24.rtwint + 32)); 
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cse_basic_block/src/cse.c:7825:22: error: expected expression
+note_stores( *( rtx *)( v24.rtwint + 32), invalidate_skipped_set, 0LL); 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cse_basic_block/src/cse.c:7837:12: error: expected ';' after expression
+v6 = ( rtx)v6[4]; 
+           ^
+           ;
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cse_basic_block/src/cse.c:7849:1: error: use of undeclared identifier 'v21'
+v21 = cse_process_notes( rtx, 0LL); 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cse_basic_block/src/cse.c:7850:33: error: use of undeclared identifier 'v21'
+v6[3].fld[0].rtwint = ( __int64)v21; 
+                                ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cse_basic_block/src/cse.c:7851:6: error: use of undeclared identifier 'v21'
+if ( v21 ) 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cse_basic_block/src/cse.c:7853:1: error: must use 'enum' tag to refer to type 'reg_note'
+reg_note = find_reg_note( v6, REG_LIBCALL, 0LL); 
+^
+enum 
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cse_basic_block/src/obj/cse.o] Error 1

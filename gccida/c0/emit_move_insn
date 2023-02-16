@@ -1,0 +1,24 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_move_insn/src/expr.c:3222:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // [rsp+1Ch] [rbp-14h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_move_insn/src/expr.c:3232:27: error: use of undeclared identifier 'machine_mode'
+&& ( !memory_address_p( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)xa), xa->fld[0].rtx) 
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_move_insn/src/expr.c:3232:42: error: expected expression
+&& ( !memory_address_p( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)xa), xa->fld[0].rtx) 
+                                         ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_move_insn/src/expr.c:3233:25: error: use of undeclared identifier 'machine_mode'
+&& !push_operand( xa, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)xa)) 
+                        ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_move_insn/src/expr.c:3233:40: error: expected expression
+&& !push_operand( xa, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)xa)) 
+                                       ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_move_insn/src/expr.c:3244:27: error: use of undeclared identifier 'machine_mode'
+&& ( !memory_address_p( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)ya), ya->fld[0].rtx) 
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_move_insn/src/expr.c:3244:42: error: expected expression
+&& ( !memory_address_p( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)ya), ya->fld[0].rtx) 
+                                         ^
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_move_insn/src/obj/expr.o] Error 1

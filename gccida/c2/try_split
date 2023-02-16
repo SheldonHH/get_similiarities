@@ -1,0 +1,66 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/try_split/src/emit-rtl.c:3599:6: error: use of undeclared identifier 'p_x_last_insn'
+rtx *p_x_last_insn; // r12 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/try_split/src/emit-rtl.c:3609:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v4 = ( __int64)trial[1]; 
+               ^~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/try_split/src/emit-rtl.c:3643:27: error: expected expression
+if ( rtx_equal_p( *( rtx *)( v12 + 32), pat) ) 
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/try_split/src/emit-rtl.c:3661:26: error: expected expression
+mark_jump_label( *( rtx *)( v16 + 32), *( rtx *)&v9[2 * v14], 0); 
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/try_split/src/emit-rtl.c:3661:48: error: expected expression
+mark_jump_label( *( rtx *)( v16 + 32), *( rtx *)&v9[2 * v14], 0); 
+                                               ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/try_split/src/emit-rtl.c:3663:43: error: expected ')'
+if ( hash == -1 || !any_condjump_p( ( rtx)v16) || find_reg_note( ( rtx)v16, REG_BR_PROB, 0LL) ) 
+                                          ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/try_split/src/emit-rtl.c:3663:35: note: to match this '('
+if ( hash == -1 || !any_condjump_p( ( rtx)v16) || find_reg_note( ( rtx)v16, REG_BR_PROB, 0LL) ) 
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/try_split/src/emit-rtl.c:3663:72: error: expected ')'
+if ( hash == -1 || !any_condjump_p( ( rtx)v16) || find_reg_note( ( rtx)v16, REG_BR_PROB, 0LL) ) 
+                                                                       ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/try_split/src/emit-rtl.c:3663:64: note: to match this '('
+if ( hash == -1 || !any_condjump_p( ( rtx)v16) || find_reg_note( ( rtx)v16, REG_BR_PROB, 0LL) ) 
+                                                               ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/try_split/src/emit-rtl.c:3683:75: error: expected expression
+*( _QWORD *)( v16 + 56) = gen_rtx_fmt_ee( EXPR_LIST, DFmode, v18, *( rtx *)( v16 + 56)); 
+                                                                          ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/try_split/src/emit-rtl.c:3709:25: error: assigning to 'uint64' (aka 'unsigned long long') from incompatible type 'struct rtx_def'
+*( _QWORD *)( v23 + 64) = trial[4]; 
+                        ^ ~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/try_split/src/emit-rtl.c:3717:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v24.rtwint = ( __int64)trial[3].fld[0]; 
+                       ^~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/try_split/src/emit-rtl.c:3730:78: error: expected expression
+if ( *( _WORD *)v36 == 34 || flag_non_call_exceptions && may_trap_p( *( rtx *)( v36 + 32)) ) 
+                                                                             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/try_split/src/emit-rtl.c:3734:9: error: expected expression
+*( rtx *)( v24.rtwint + 8), 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/try_split/src/emit-rtl.c:3735:9: error: expected expression
+*( rtx *)( v36 + 56)); 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/try_split/src/emit-rtl.c:3756:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( unsigned __int8 *)( v24.rtwint + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/try_split/src/emit-rtl.c:3757:9: error: expected expression
+*( rtx *)( v24.rtwint + 8), 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/try_split/src/emit-rtl.c:3758:9: error: expected expression
+*( rtx *)( v30 + 56)); 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/try_split/src/emit-rtl.c:3777:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( unsigned __int8 *)( v24.rtwint + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/try_split/src/emit-rtl.c:3778:9: error: expected expression
+*( rtx *)( v24.rtwint + 8), 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/try_split/src/emit-rtl.c:3779:9: error: expected expression
+*( rtx *)( v33 + 56)); 
+        ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/try_split/src/obj/emit-rtl.o] Error 1

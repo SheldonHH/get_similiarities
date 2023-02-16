@@ -1,0 +1,56 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/finish_struct/src/c-decl.c:6109:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *rttree; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/finish_struct/src/c-decl.c:6131:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v44; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/finish_struct/src/c-decl.c:6135:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v48; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/finish_struct/src/c-decl.c:6214:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v17.rtwint = ( __int64)v14->fld[0]; 
+                       ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/finish_struct/src/c-decl.c:6239:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v19.rtwint = ( __int64)v14[6].fld[0]; 
+                       ^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/finish_struct/src/c-decl.c:6246:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v19.rtwint = ( __int64)v14[6].fld[0]; 
+                       ^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/finish_struct/src/c-decl.c:6271:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v30.rtwint = ( __int64)v14->fld[0]; 
+                       ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/finish_struct/src/c-decl.c:6274:26: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v31 = ( unsigned __int64)v14[3]; 
+                         ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/finish_struct/src/c-decl.c:6305:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v25.rtwint = ( __int64)v14->fld[0]; 
+                       ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/finish_struct/src/c-decl.c:6319:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v27.rtwint = ( __int64)v14->fld[0]; 
+                       ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/finish_struct/src/c-decl.c:6345:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v37.rtwint = ( __int64)v14->fld[0]; 
+                       ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/finish_struct/src/c-decl.c:6362:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v42.rtwint = ( __int64)v14->fld[0]; 
+                       ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/finish_struct/src/c-decl.c:6363:26: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v43 = ( unsigned __int64)v14[3]; 
+                         ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/finish_struct/src/c-decl.c:6377:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v34.rtwint = ( __int64)v14->fld[0]; 
+                       ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/finish_struct/src/c-decl.c:6409:22: error: expected expression
+v44 = *( tree_node **)v3; 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/finish_struct/src/c-decl.c:6409:10: error: use of undeclared identifier 'tree_node'
+v44 = *( tree_node **)v3; 
+         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/finish_struct/src/c-decl.c:6484:93: error: invalid operands to binary expression ('int' and 'struct rtx_def')
+if ( ( abstract_origin_high & 0x80000) != 0 && ( unsigned __int16)abstract_origin_high >> 9 != v50->int_cst.rtl[3] ) 
+                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^  ~~~~~~~~~~~~~~~~~~~
+17 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/finish_struct/src/obj/c-decl.o] Error 1

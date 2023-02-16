@@ -1,0 +1,45 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/distribute_bit_expr/src/fold-const.c:3410:28: error: must use 'enum' tag to refer to type 'tree_code'
+tree  distribute_bit_expr( tree_code code, tree type, tree arg0, tree arg1) 
+                           ^
+                           enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/distribute_bit_expr/src/fold-const.c:3413:14: error: expected expression
+tree_int_cst::$A887AD9C3C6C8CC7716950D571F57C9D *p_int_cst; // r13 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/distribute_bit_expr/src/fold-const.c:3418:1: error: must use 'enum' tag to refer to type 'tree_code'
+tree_code v11; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/distribute_bit_expr/src/fold-const.c:3419:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v12; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/distribute_bit_expr/src/fold-const.c:3421:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v14; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/distribute_bit_expr/src/fold-const.c:3426:1: error: use of undeclared identifier 'p_int_cst'
+p_int_cst = &arg0->int_cst.int_cst; 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/distribute_bit_expr/src/fold-const.c:3432:1: error: use of undeclared identifier 'p_int_cst'
+p_int_cst = ( tree_int_cst::$A887AD9C3C6C8CC7716950D571F57C9D *)&arg0->block.subblocks; 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/distribute_bit_expr/src/fold-const.c:3432:15: error: use of undeclared identifier 'tree_int_cst'
+p_int_cst = ( tree_int_cst::$A887AD9C3C6C8CC7716950D571F57C9D *)&arg0->block.subblocks; 
+              ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/distribute_bit_expr/src/fold-const.c:3436:26: error: use of undeclared identifier 'p_int_cst'
+v12 = build( code, type, p_int_cst->low, *p_elements); 
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/distribute_bit_expr/src/fold-const.c:3443:7: error: use of undeclared identifier 'p_int_cst'
+low = p_int_cst->low; 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/distribute_bit_expr/src/fold-const.c:3444:1: error: use of undeclared identifier 'p_int_cst'
+p_int_cst = ( tree_int_cst::$A887AD9C3C6C8CC7716950D571F57C9D *)&arg0->block.subblocks; 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/distribute_bit_expr/src/fold-const.c:3444:15: error: use of undeclared identifier 'tree_int_cst'
+p_int_cst = ( tree_int_cst::$A887AD9C3C6C8CC7716950D571F57C9D *)&arg0->block.subblocks; 
+              ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/distribute_bit_expr/src/fold-const.c:3454:30: error: use of undeclared identifier 'p_int_cst'
+if ( operand_equal_p( ( tree)p_int_cst->high, p_elements[1], 0) ) 
+                             ^
+13 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/distribute_bit_expr/src/obj/fold-const.o] Error 1

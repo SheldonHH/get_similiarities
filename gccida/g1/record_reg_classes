@@ -1,0 +1,86 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_reg_classes/src/regclass.c:1896:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode *modes, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_reg_classes/src/regclass.c:1908:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class v14; // r13d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_reg_classes/src/regclass.c:1910:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class v16; // edx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_reg_classes/src/regclass.c:1911:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class v17; // edx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_reg_classes/src/regclass.c:1912:1: error: must use 'enum' tag to refer to type 'op_type'
+op_type v18; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_reg_classes/src/regclass.c:1934:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class v40; // ecx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_reg_classes/src/regclass.c:1939:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class v45; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_reg_classes/src/regclass.c:1940:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class v46; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_reg_classes/src/regclass.c:1941:1: error: must use 'enum' tag to refer to type 'op_type'
+op_type v47; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_reg_classes/src/regclass.c:1967:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v73; // r12d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_reg_classes/src/regclass.c:1968:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class prefclass; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_reg_classes/src/regclass.c:1982:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class *v88; // [rsp+0h] [rbp-DD8h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_reg_classes/src/regclass.c:1986:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // [rsp+18h] [rbp-DC0h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_reg_classes/src/regclass.c:1996:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class classes[30]; // [rsp+70h] [rbp-D68h] BYREF 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_reg_classes/src/regclass.c:2210:30: error: use of undeclared identifier 'machine_mode'
+v9 = address_operand( v55, ( machine_mode)*( ( unsigned __int8 *)v55 + 2)); 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_reg_classes/src/regclass.c:2417:6: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( recog_data_0.operand_type[v54] == OP_OUT 
+     ^~~~~~~~~~~~
+     recog_data
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_reg_classes/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_reg_classes/src/regclass.c:2418:51: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+|| ( alt_cost += copy_cost_0( v55, mode, v45, 1), recog_data_0.operand_type[v54]) ) 
+                                                  ^~~~~~~~~~~~
+                                                  recog_data
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_reg_classes/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_reg_classes/src/regclass.c:2445:46: error: use of undeclared identifier 'machine_mode'
+if ( v9 || reg_fits_class_p( v55, *v88, 0, ( machine_mode)*( ( unsigned __int8 *)v55 + 2)) ) 
+                                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_reg_classes/src/regclass.c:2455:7: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+v47 = recog_data_0.operand_type[v54]; 
+      ^~~~~~~~~~~~
+      recog_data
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_reg_classes/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_reg_classes/src/obj/regclass.o] Error 1

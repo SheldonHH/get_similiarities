@@ -1,0 +1,15 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/invert_exp_1/src/jump.c:2565:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code reversed_code; // [rsp+24h] [rbp-1Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/invert_exp_1/src/jump.c:2573:12: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+xa = ( rtx)x[1]; 
+           ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/invert_exp_1/src/jump.c:2580:39: error: use of undeclared identifier 'machine_mode'
+v1 = gen_rtx_fmt_ee( reversed_code, ( machine_mode)*( ( unsigned __int8 *)comp + 2), comp->fld[0].rtx, *( rtx *)&comp[1]); 
+                                      ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/invert_exp_1/src/jump.c:2585:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+tem = (  struct rtx_def *)xa[1]; 
+                          ^~~~~
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/invert_exp_1/src/obj/jump.o] Error 1

@@ -1,0 +1,38 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cpp_push_buffer/src/cpplib.c:2298:1: error: unknown type name 'cpp_buffer_0'; did you mean 'cpp_buffer'?
+cpp_buffer_0 * cpp_push_buffer( 
+^~~~~~~~~~~~
+cpp_buffer
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cpp_push_buffer/src/cpplib.h:38:27: note: 'cpp_buffer' declared here
+typedef struct cpp_buffer cpp_buffer;
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cpp_push_buffer/src/cpplib.c:2299:1: error: unknown type name 'cpp_reader_0'; did you mean 'cpp_reader'?
+cpp_reader_0 *pfile, 
+^~~~~~~~~~~~
+cpp_reader
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cpp_push_buffer/src/cpplib.h:36:27: note: 'cpp_reader' declared here
+typedef struct cpp_reader cpp_reader;
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cpp_push_buffer/src/cpplib.c:2306:1: error: unknown type name 'cpp_buffer_0'; did you mean 'cpp_buffer'?
+cpp_buffer_0 *value; // [rsp+28h] [rbp-28h] 
+^~~~~~~~~~~~
+cpp_buffer
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cpp_push_buffer/src/cpplib.h:38:27: note: 'cpp_buffer' declared here
+typedef struct cpp_buffer cpp_buffer;
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cpp_push_buffer/src/cpplib.c:2312:25: error: expected expression
+value = ( cpp_buffer_0 *)pfile->buffer_ob.object_base; 
+                        ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cpp_push_buffer/src/cpplib.c:2312:11: error: use of undeclared identifier 'cpp_buffer_0'
+value = ( cpp_buffer_0 *)pfile->buffer_ob.object_base; 
+          ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cpp_push_buffer/src/cpplib.c:2313:31: error: expected expression
+if ( value == ( cpp_buffer_0 *)pfile->buffer_ob.next_free ) 
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cpp_push_buffer/src/cpplib.c:2313:17: error: use of undeclared identifier 'cpp_buffer_0'
+if ( value == ( cpp_buffer_0 *)pfile->buffer_ob.next_free ) 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cpp_push_buffer/src/cpplib.c:2319:27: error: use of undeclared identifier 'cpp_buffer_0'
+memset( value, 0, sizeof( cpp_buffer_0)); 
+                          ^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cpp_push_buffer/src/obj/cpplib.o] Error 1

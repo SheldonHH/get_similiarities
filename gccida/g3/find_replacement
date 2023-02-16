@@ -1,0 +1,40 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/find_replacement/src/reload.c:6479:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/find_replacement/src/reload.c:6495:21: error: expected identifier or '('
+ struct replacement = find_replacement( ( rtx *)v3->fld); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/find_replacement/src/reload.c:6498:30: error: expected expression
+if ( ( *loc)->fld[0].rtx ==  struct replacement && (  struct rtx_def *)v3[1] == v10 ) 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/find_replacement/src/reload.c:6501:26: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+return gen_rtx_fmt_ee( ( rtx_code)*( _WORD *)v3, ( machine_mode)*( ( unsigned __int8 *)v3 + 2), replacement, v10); 
+                         ^~~~~~~~
+                         rtx_cost
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/find_replacement/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/find_replacement/src/reload.c:6501:35: error: invalid operands to binary expression ('int (rtx, enum rtx_code)' (aka 'int (struct rtx_def *, enum rtx_code)') and 'uint16 *' (aka 'unsigned short *'))
+return gen_rtx_fmt_ee( ( rtx_code)*( _WORD *)v3, ( machine_mode)*( ( unsigned __int8 *)v3 + 2), replacement, v10); 
+                       ~~~~~~~~~~~^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/find_replacement/src/reload.c:6501:52: error: use of undeclared identifier 'machine_mode'
+return gen_rtx_fmt_ee( ( rtx_code)*( _WORD *)v3, ( machine_mode)*( ( unsigned __int8 *)v3 + 2), replacement, v10); 
+                                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/find_replacement/src/reload.c:6530:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( unsigned __int8 *)( v7->fld[0].rtwint + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/find_replacement/src/reload.c:6532:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)v7 + 2)); 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/find_replacement/src/reload.c:6533:23: error: use of undeclared identifier 'machine_mode'
+return gen_rtx_REG( ( machine_mode)*( ( unsigned __int8 *)*loc + 2), rtint + v12); 
+                      ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/find_replacement/src/reload.c:6541:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( unsigned __int8)v8, 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/find_replacement/src/reload.c:6541:18: error: expected expression
+( machine_mode)( unsigned __int8)v8, 
+                 ^
+11 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/find_replacement/src/obj/reload.o] Error 1

@@ -1,0 +1,22 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/dbxout_symbol_location/src/dbxout.c:2610:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v23; // rbp 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/dbxout_symbol_location/src/dbxout.c:2654:27: error: use of undeclared identifier 'lang_hooks_0'; did you mean 'lang_hooks'?
+if ( !initial || !strcmp( lang_hooks_0.name, "GNU C++") && initial == ( tree)global_trees ) 
+                          ^~~~~~~~~~~~
+                          lang_hooks
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/dbxout_symbol_location/src/langhooks.h:168:32: note: 'lang_hooks' declared here
+extern const struct lang_hooks lang_hooks;
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/dbxout_symbol_location/src/dbxout.c:2666:23: error: expected identifier or '('
+ struct pool_constant = get_pool_constant( current_sym_addr); 
+                      ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/dbxout_symbol_location/src/dbxout.c:2766:7: error: expected expression
+if (  struct suffix ) 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/dbxout_symbol_location/src/dbxout.c:2779:20: error: use of undeclared identifier 'off_6474F4'
+fprintf( asmfile, &off_6474F4[1], ( unsigned int)current_sym_value); 
+                   ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/dbxout_symbol_location/src/obj/dbxout.o] Error 1

@@ -1,0 +1,11 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/iv_add_mult_cost/src/loop.c:8241:43: error: use of undeclared identifier 'machine_mode'
+result = expand_mult_add( b, reg, m, a, ( machine_mode)*( ( unsigned __int8 *)reg + 2), 1); 
+                                          ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/iv_add_mult_cost/src/loop.c:8244:51: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( last = get_last_insn( ); last; last = ( rtx)last[1] ) 
+                                                  ^~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/iv_add_mult_cost/src/loop.c:8249:12: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v4 = ( rtx)last[2]; 
+           ^~~~~~~
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/iv_add_mult_cost/src/obj/loop.o] Error 1

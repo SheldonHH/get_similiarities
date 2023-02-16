@@ -1,0 +1,38 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/record_one_set/src/gcse.c:1696:1: error: use of undeclared identifier 'reg_set_0'; did you mean 'reg_set_p'?
+reg_set_0 **v6; // rcx 
+^~~~~~~~~
+reg_set_p
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/record_one_set/src/rtl.h:1469:12: note: 'reg_set_p' declared here
+extern int reg_set_p                    PARAMS ((rtx, rtx));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/record_one_set/src/gcse.c:1696:13: error: use of undeclared identifier 'v6'
+reg_set_0 **v6; // rcx 
+            ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/record_one_set/src/gcse.c:1700:31: error: expected expression
+reg_set_table = ( reg_set_0 **)xrealloc( reg_set_table, ( unsigned int)( 8 * ( regno + 100))); 
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/record_one_set/src/gcse.c:1700:19: error: use of undeclared identifier 'reg_set_0'; did you mean 'reg_set_p'?
+reg_set_table = ( reg_set_0 **)xrealloc( reg_set_table, ( unsigned int)( 8 * ( regno + 100))); 
+                  ^~~~~~~~~
+                  reg_set_p
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/record_one_set/src/rtl.h:1469:12: note: 'reg_set_p' declared here
+extern int reg_set_p                    PARAMS ((rtx, rtx));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/record_one_set/src/gcse.c:1722:1: error: use of undeclared identifier 'v6'
+v6 = reg_set_table; 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/record_one_set/src/gcse.c:1724:1: error: use of undeclared identifier 'v6'
+v6[regno] = ( reg_set_0 *)object_base; 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/record_one_set/src/gcse.c:1724:26: error: expected expression
+v6[regno] = ( reg_set_0 *)object_base; 
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/record_one_set/src/gcse.c:1724:15: error: use of undeclared identifier 'reg_set_0'; did you mean 'reg_set_p'?
+v6[regno] = ( reg_set_0 *)object_base; 
+              ^~~~~~~~~
+              reg_set_p
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/record_one_set/src/rtl.h:1469:12: note: 'reg_set_p' declared here
+extern int reg_set_p                    PARAMS ((rtx, rtx));
+           ^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/record_one_set/src/obj/gcse.o] Error 1

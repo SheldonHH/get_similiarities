@@ -1,0 +1,19 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/lookup_expr/src/gcse.c:3127:26: error: use of undeclared identifier 'machine_mode'
+hash = hash_expr( pat, ( machine_mode)*( ( unsigned __int8 *)pat + 2), &do_not_record_p, expr_hash_table_size); 
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/lookup_expr/src/gcse.c:3130:20: error: expected identifier or '('
+for (  struct expr = expr_hash_table[hash];  struct expr && !expr_equiv_p( expr->expr, pat);  struct expr = expr->next_same_hash ) 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/lookup_expr/src/gcse.c:3130:46: error: expected ';' in 'for' statement specifier
+for (  struct expr = expr_hash_table[hash];  struct expr && !expr_equiv_p( expr->expr, pat);  struct expr = expr->next_same_hash ) 
+                                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/lookup_expr/src/gcse.c:3130:46: error: expected expression
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/lookup_expr/src/gcse.c:3130:95: error: expected expression
+for (  struct expr = expr_hash_table[hash];  struct expr && !expr_equiv_p( expr->expr, pat);  struct expr = expr->next_same_hash ) 
+                                                                                              ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/lookup_expr/src/gcse.c:3130:95: error: expected ')'
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/lookup_expr/src/gcse.c:3130:5: note: to match this '('
+for (  struct expr = expr_hash_table[hash];  struct expr && !expr_equiv_p( expr->expr, pat);  struct expr = expr->next_same_hash ) 
+    ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/lookup_expr/src/obj/gcse.o] Error 1

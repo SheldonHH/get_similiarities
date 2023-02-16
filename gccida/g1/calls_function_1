@@ -1,0 +1,33 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/calls_function_1/src/calls.c:728:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *elements; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/calls_function_1/src/calls.c:730:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *imag; // rbx 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/calls_function_1/src/calls.c:739:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v19; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/calls_function_1/src/calls.c:744:26: error: use of undeclared identifier 'tree_code'; did you mean 'tree_cons'?
+rtl_op = first_rtl_op( ( tree_code)v3); 
+                         ^~~~~~~~~
+                         tree_cons
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/calls_function_1/src/tree.h:2477:13: note: 'tree_cons' declared here
+extern tree tree_cons                   PARAMS ((tree, tree, tree));
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/calls_function_1/src/calls.c:744:36: error: expected ')'
+rtl_op = first_rtl_op( ( tree_code)v3); 
+                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/calls_function_1/src/calls.c:744:22: note: to match this '('
+rtl_op = first_rtl_op( ( tree_code)v3); 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/calls_function_1/src/calls.c:862:20: error: expected expression
+v19 = ( tree_node *)v9[13]; 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/calls_function_1/src/calls.c:862:9: error: use of undeclared identifier 'tree_node'
+v19 = ( tree_node *)v9[13]; 
+        ^
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/calls_function_1/src/obj/calls.o] Error 1

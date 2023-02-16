@@ -1,0 +1,39 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/count_one_set/src/loop.c:3961:6: error: use of undeclared identifier 'v20'; did you mean 'v10'?
+rtx *v20; // [rsp+10h] [rbp-38h] 
+     ^~~
+     v10
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/count_one_set/src/loop.c:3951:9: note: 'v10' declared here
+__int64 v10; // rbx 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/count_one_set/src/loop.c:3961:5: error: invalid operands to binary expression ('rtx' (aka 'struct rtx_def *') and 'long long')
+rtx *v20; // [rsp+10h] [rbp-38h] 
+~~~ ^~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/count_one_set/src/loop.c:3966:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v7.rtwint = ( __int64)x->fld[0]; 
+                      ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/count_one_set/src/loop.c:3989:1: error: use of undeclared identifier 'v20'; did you mean 'v10'?
+v20 = &last_set[rtint]; 
+^~~
+v10
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/count_one_set/src/loop.c:3951:9: note: 'v10' declared here
+__int64 v10; // rbx 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/count_one_set/src/loop.c:4001:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v12 = ( ( unsigned int)( mode_class_0[v13] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/count_one_set/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/count_one_set/src/loop.c:4036:1: error: use of undeclared identifier 'v20'; did you mean 'v10'?
+v20[v11++] = insn; 
+^~~
+v10
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/count_one_set/src/loop.c:3951:9: note: 'v10' declared here
+__int64 v10; // rbx 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/count_one_set/src/loop.c:4036:4: error: subscripted value is not an array, pointer, or vector
+v20[v11++] = insn; 
+~~~^~~~~~
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/count_one_set/src/obj/loop.o] Error 1

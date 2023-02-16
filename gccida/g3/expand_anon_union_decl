@@ -1,0 +1,23 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_anon_union_decl/src/stmt.c:4669:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *values; // r13 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_anon_union_decl/src/stmt.c:4672:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v12; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_anon_union_decl/src/stmt.c:4716:53: error: use of undeclared identifier 'machine_mode'
+*( _QWORD *)( low + 144) = adjust_address_1( rtl, ( machine_mode)v10, 0LL, 0, 1); 
+                                                    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_anon_union_decl/src/stmt.c:4730:30: error: use of undeclared identifier 'label'; did you mean 'labs'?
+fancy_abort( ( const char *)&label, 4259, "expand_anon_union_decl"); 
+                             ^~~~~
+                             labs
+/usr/include/stdlib.h:838:17: note: 'labs' declared here
+extern long int labs (long int __x) __THROW __attribute__ ((__const__)) __wur;
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_anon_union_decl/src/stmt.c:4733:50: error: use of undeclared identifier 'machine_mode'
+*( _QWORD *)( low + 144) = gen_lowpart_SUBREG( ( machine_mode)v10, rtl); 
+                                                 ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_anon_union_decl/src/obj/stmt.o] Error 1

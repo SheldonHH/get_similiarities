@@ -1,0 +1,31 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/invalidate/src/cse.c:2303:26: error: must use 'enum' tag to refer to type 'machine_mode'
+void  invalidate( rtx x, machine_mode full_mode) 
+                         ^
+                         enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/invalidate/src/cse.c:2309:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v6; // r15d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/invalidate/src/cse.c:2404:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode data; // [rsp+8h] [rbp-40h] BYREF 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/invalidate/src/cse.c:2499:33: error: use of undeclared identifier 'machine_mode'
+LOBYTE( v27) = canon_hash( x, ( machine_mode)BYTE2( v3)); 
+                                ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/invalidate/src/cse.c:2753:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v57 = ( ( unsigned int)( mode_class_0[v56] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/invalidate/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/invalidate/src/cse.c:2960:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v89 = ( ( unsigned int)( mode_class_0[( unsigned __int8)v88] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/invalidate/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/invalidate/src/obj/cse.o] Error 1

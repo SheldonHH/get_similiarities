@@ -1,0 +1,19 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_address_regs/src/regclass.c:2429:35: error: must use 'enum' tag to refer to type 'reg_class'
+void  record_address_regs( rtx x, reg_class a2, int scale) 
+                                  ^
+                                  enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_address_regs/src/regclass.c:2457:8: error: use of undeclared identifier 'costs_0'; did you mean 'costs'?
+v14 = &costs_0[x->fld[0].rtuint]; 
+       ^~~~~~~
+       costs
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_address_regs/src/regclass.c:861:22: note: 'costs' declared here
+static struct costs *costs;
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_address_regs/src/regclass.c:2458:51: error: use of undeclared identifier 'machine_mode'
+v14->mem_cost += scale * ix86_memory_move_cost( ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), a2, 1) / 2; 
+                                                  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_address_regs/src/regclass.c:2464:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v6 = ( unsigned __int16 *)x[1]; 
+                          ^~~~
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_address_regs/src/obj/regclass.o] Error 1

@@ -1,0 +1,12 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ggc_print_common_statistics/src/ggc-common.c:1143:50: error: unknown type name 'ggc_statistics_0'; did you mean 'ggc_statistics'?
+void  ggc_print_common_statistics( FILE *stream, ggc_statistics_0 *stats) 
+                                                 ^~~~~~~~~~~~~~~~
+                                                 ggc_statistics
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ggc_print_common_statistics/src/ggc.h:225:3: note: 'ggc_statistics' declared here
+} ggc_statistics;
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ggc_print_common_statistics/src/ggc-common.c:1252:61: error: use of undeclared identifier 'off_660CF0'
+fprintf( stream, "\n%-17s%10s %16s %10s\n", ( const char *)&off_660CF0, "Number", "Bytes", "% Total"); 
+                                                            ^
+2 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ggc_print_common_statistics/src/obj/ggc-common.o] Error 1

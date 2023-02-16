@@ -1,0 +1,27 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/for_each_successor_phi/src/ssa.c:2702:6: error: use of undeclared identifier 'v11'; did you mean 'v10'?
+rtx *v11; // rax 
+     ^~~
+     v10
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/for_each_successor_phi/src/ssa.c:2701:9: note: 'v10' declared here
+__int64 v10; // rbx 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/for_each_successor_phi/src/ssa.c:2702:5: error: invalid operands to binary expression ('rtx' (aka 'struct rtx_def *') and 'long long')
+rtx *v11; // rax 
+~~~ ^~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/for_each_successor_phi/src/ssa.c:2726:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v10 = ( __int64)rtx[2]; 
+                ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/for_each_successor_phi/src/ssa.c:2729:32: error: expected expression
+v11 = phi_alternative( *( rtx *)&rtx[2], bb->index); 
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/for_each_successor_phi/src/ssa.c:2729:1: error: use of undeclared identifier 'v11'
+v11 = phi_alternative( *( rtx *)&rtx[2], bb->index); 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/for_each_successor_phi/src/ssa.c:2730:6: error: use of undeclared identifier 'v11'
+if ( v11 ) 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/for_each_successor_phi/src/ssa.c:2732:64: error: use of undeclared identifier 'v11'
+v12 = fn( rtx, *( _DWORD *)( *( _QWORD *)( v10 + 8) + 8LL), ( *v11)->fld[0].rtint, data); 
+                                                               ^
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/for_each_successor_phi/src/obj/ssa.o] Error 1

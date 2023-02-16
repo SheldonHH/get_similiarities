@@ -1,0 +1,18 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/use_crosses_set_p/src/combine.c:12036:10: error: conflicting types for 'use_crosses_set_p'
+__int64  use_crosses_set_p( unsigned __int16 *a1, int a2) 
+         ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/use_crosses_set_p/src/combine.c:398:12: note: previous declaration is here
+static int use_crosses_set_p    PARAMS ((rtx, int));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/use_crosses_set_p/src/combine.c:12069:41: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v22 = ( ( unsigned int)( *( ( _DWORD *)&mode_class_0 + v19) - 5) < 2) + 1; 
+                                        ^~~~~~~~~~~~
+                                        mode_class
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/use_crosses_set_p/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/use_crosses_set_p/src/combine.c:12110:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v17 = ( _WORD *)rtx[2]; 
+                ^~~~~~
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/use_crosses_set_p/src/obj/combine.o] Error 1

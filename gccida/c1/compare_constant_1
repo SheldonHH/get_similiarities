@@ -1,0 +1,56 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compare_constant_1/src/varasm.c:3101:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *imag; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compare_constant_1/src/varasm.c:3109:14: error: expected expression
+tree_int_cst::$A887AD9C3C6C8CC7716950D571F57C9D *p_int_cst; // r14 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compare_constant_1/src/varasm.c:3111:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v16; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compare_constant_1/src/varasm.c:3115:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v21; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compare_constant_1/src/varasm.c:3120:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v26; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compare_constant_1/src/varasm.c:3128:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // [rsp+20h] [rbp-30h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compare_constant_1/src/varasm.c:3141:1: error: use of undeclared identifier 'p_int_cst'
+p_int_cst = &exp->int_cst.int_cst; 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compare_constant_1/src/varasm.c:3148:1: error: use of undeclared identifier 'p_int_cst'
+p_int_cst = &exp->int_cst.int_cst; 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compare_constant_1/src/varasm.c:3151:28: error: use of undeclared identifier 'p_int_cst'
+high = ( unsigned __int8 *)p_int_cst; 
+                           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compare_constant_1/src/varasm.c:3212:28: error: expected expression
+if ( v21 != *( tree_node **)( p + 5) ) 
+                           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compare_constant_1/src/varasm.c:3212:16: error: use of undeclared identifier 'tree_node'
+if ( v21 != *( tree_node **)( p + 5) ) 
+               ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compare_constant_1/src/varasm.c:3239:20: error: expected expression
+v26 = ( tree_node *)v25[4]; 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compare_constant_1/src/varasm.c:3239:9: error: use of undeclared identifier 'tree_node'
+v26 = ( tree_node *)v25[4]; 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compare_constant_1/src/varasm.c:3300:7: error: use of undeclared identifier 'lang_hooks_0'; did you mean 'lang_hooks'?
+v16 = lang_hooks_0.expand_constant( exp); 
+      ^~~~~~~~~~~~
+      lang_hooks
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compare_constant_1/src/langhooks.h:168:32: note: 'lang_hooks' declared here
+extern const struct lang_hooks lang_hooks;
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compare_constant_1/src/varasm.c:3300:35: error: called object type '<dependent type>' is not a function or function pointer
+v16 = lang_hooks_0.expand_constant( exp); 
+                                  ^
+15 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compare_constant_1/src/obj/varasm.o] Error 1

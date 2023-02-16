@@ -1,0 +1,20 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/build_insn_chain/src/global.c:2314:18: error: expected expression
+if ( **( ( rtx **)&v3->num_elements + v6) == rtx ) 
+                 ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/build_insn_chain/src/global.c:2387:30: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+for ( v14.rtwint = ( __int64)rtx[3].fld[0]; v14.rtwint; v14.rtwint = *( __int64 *)( v14.rtwint + 16) ) 
+                             ^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/build_insn_chain/src/global.c:2401:37: error: use of undeclared identifier 'machine_mode'
+reg_dies( *( _DWORD *)( v15 + 8), ( machine_mode)*( unsigned __int8 *)( v15 + 2), v7); 
+                                    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/build_insn_chain/src/global.c:2405:22: error: expected expression
+note_stores( *( rtx *)&rtx[2], reg_becomes_live, &v7->dead_or_set); 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/build_insn_chain/src/global.c:2414:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v10.rtwint = ( __int64)rtx[3].fld[0]; 
+                       ^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/build_insn_chain/src/global.c:2432:37: error: use of undeclared identifier 'machine_mode'
+reg_dies( *( _DWORD *)( v11 + 8), ( machine_mode)*( unsigned __int8 *)( v11 + 2), v7); 
+                                    ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/build_insn_chain/src/obj/global.o] Error 1

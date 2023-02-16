@@ -1,0 +1,68 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_used_regs/src/flow.c:4142:4: error: expected ';' after expression
+rtx v18; // rbp 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_used_regs/src/flow.c:4142:5: error: use of undeclared identifier 'v18'
+rtx v18; // rbp 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_used_regs/src/flow.c:4143:4: error: expected ';' after expression
+rtx v19; // rbx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_used_regs/src/flow.c:4143:5: error: use of undeclared identifier 'v19'
+rtx v19; // rbx 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_used_regs/src/flow.c:4144:6: error: use of undeclared identifier 'v20'; did you mean 'v10'?
+rtx *v20; // rax 
+     ^~~
+     v10
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_used_regs/src/flow.c:4134:18: note: 'v10' declared here
+ struct rtx_def *v10; // rcx 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_used_regs/src/flow.c:4144:5: error: invalid operands to binary expression ('struct rtx_def *' and 'struct rtx_def *')
+rtx *v20; // rax 
+~~~ ^~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_used_regs/src/flow.c:4155:4: error: expected ';' after expression
+rtx v31; // [rsp+8h] [rbp-70h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_used_regs/src/flow.c:4155:5: error: use of undeclared identifier 'v31'
+rtx v31; // [rsp+8h] [rbp-70h] 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_used_regs/src/flow.c:4157:6: error: use of undeclared identifier 'listp'
+rtx *listp; // [rsp+28h] [rbp-50h] 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_used_regs/src/flow.c:4169:1: error: use of undeclared identifier 'listp'
+listp = &pbi->mem_set_list; 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_used_regs/src/flow.c:4176:1: error: use of undeclared identifier 'v31'
+v31 = v6; 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_used_regs/src/flow.c:4185:12: error: expected ';' after expression
+v6 = ( rtx)v6[1]; 
+           ^
+           ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_used_regs/src/flow.c:4195:22: error: use of undeclared identifier 'listp'
+free_EXPR_LIST_list( listp); 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_used_regs/src/flow.c:4200:15: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v11 = ( int *)v6[2]; 
+              ^~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_used_regs/src/flow.c:4206:29: error: expected expression
+mark_used_regs( v7, *( rtx *)&v11[2 * v12++ + 2], cond, v4); 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_used_regs/src/flow.c:4207:15: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v11 = ( int *)v6[2]; 
+              ^~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_used_regs/src/flow.c:4232:30: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+for ( v16.rtwint = ( __int64)v6->fld[0]; ; v16.rtwint = *( __int64 *)( v16.rtwint + 8) ) 
+                             ^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_used_regs/src/flow.c:4265:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v29 = (  struct rtx_def *)v6[1]; 
+                          ^~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_used_regs/src/flow.c:4298:29: error: use of undeclared identifier 'v31'
+v27 = ( int *)*( ( _QWORD *)v31 + v24); 
+                            ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_used_regs/src/obj/flow.o] Error 1

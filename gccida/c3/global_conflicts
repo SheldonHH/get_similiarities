@@ -1,0 +1,63 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/global_conflicts/src/global.c:1122:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code; // [rsp+3Ch] [rbp-64h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/global_conflicts/src/global.c:1126:20: error: expected identifier or '('
+unsigned __int64 *(short *)0x; // [rsp+58h] [rbp-48h] 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/global_conflicts/src/global.c:1126:20: error: expected ')'
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/global_conflicts/src/global.c:1126:19: note: to match this '('
+unsigned __int64 *(short *)0x; // [rsp+58h] [rbp-48h] 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/global_conflicts/src/global.c:1127:16: error: expected identifier or '('
+unsigned int *(short *)0xnum_; // [rsp+64h] [rbp-3Ch] 
+               ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/global_conflicts/src/global.c:1127:16: error: expected ')'
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/global_conflicts/src/global.c:1127:15: note: to match this '('
+unsigned int *(short *)0xnum_; // [rsp+64h] [rbp-3Ch] 
+              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/global_conflicts/src/global.c:1149:12: error: invalid suffix 'xnum_' on integer constant
+*(short *)0xnum_ = 0; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/global_conflicts/src/global.c:1153:12: error: invalid suffix 'xnum_' on integer constant
+*(short *)0xnum_ = 0; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/global_conflicts/src/global.c:1157:20: error: invalid suffix 'xnum_' on integer constant
+while ( *(short *)0xnum_ < 2 ) 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/global_conflicts/src/global.c:1159:12: error: invalid suffix 'x' on integer constant
+*(short *)0x = ptr_->bits[*(short *)0xnum_]; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/global_conflicts/src/global.c:1159:38: error: invalid suffix 'xnum_' on integer constant
+*(short *)0x = ptr_->bits[*(short *)0xnum_]; 
+                                     ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/global_conflicts/src/global.c:1160:17: error: invalid suffix 'x' on integer constant
+if ( *(short *)0x ) 
+                ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/global_conflicts/src/global.c:1164:40: error: invalid suffix 'x' on integer constant
+if ( ( ( 1LL << bit_num_) & *(short *)0x) != 0 ) 
+                                       ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/global_conflicts/src/global.c:1166:12: error: invalid suffix 'x' on integer constant
+*(short *)0x &= ~( 1LL << bit_num_); 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/global_conflicts/src/global.c:1167:29: error: invalid suffix 'xnum_' on integer constant
+i = bit_num_ + ( *(short *)0xnum_ << 6) + ( ptr_->indx << 7); 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/global_conflicts/src/global.c:1173:25: error: use of undeclared identifier 'machine_mode'
+mark_reg_live_nc( aa, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)cfun->emit->x_regno_reg_rtx[i])); 
+                        ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/global_conflicts/src/global.c:1173:40: error: expected expression
+mark_reg_live_nc( aa, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)cfun->emit->x_regno_reg_rtx[i])); 
+                                       ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/global_conflicts/src/global.c:1181:18: error: invalid suffix 'x' on integer constant
+if ( !*(short *)0x ) 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/global_conflicts/src/global.c:1188:14: error: invalid suffix 'xnum_' on integer constant
+++*(short *)0xnum_; 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/global_conflicts/src/global.c:1190:12: error: invalid suffix 'xnum_' on integer constant
+*(short *)0xnum_ = 0; 
+           ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/global_conflicts/src/obj/global.o] Error 1

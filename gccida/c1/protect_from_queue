@@ -1,0 +1,74 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/protect_from_queue/src/expr.c:821:4: error: expected ';' after expression
+rtx v8; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/protect_from_queue/src/expr.c:821:5: error: use of undeclared identifier 'v8'
+rtx v8; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/protect_from_queue/src/expr.c:824:4: error: expected ';' after expression
+rtx v11; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/protect_from_queue/src/expr.c:824:5: error: use of undeclared identifier 'v11'; did you mean 'v10'?
+rtx v11; // rax 
+    ^~~
+    v10
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/protect_from_queue/src/expr.c:823:18: note: 'v10' declared here
+ struct rtx_def *v10; // rax 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/protect_from_queue/src/expr.c:825:4: error: expected ';' after expression
+rtx v12; // r15 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/protect_from_queue/src/expr.c:825:5: error: use of undeclared identifier 'v12'
+rtx v12; // r15 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/protect_from_queue/src/expr.c:826:4: error: expected ';' after expression
+rtx v13; // r15 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/protect_from_queue/src/expr.c:826:5: error: use of undeclared identifier 'v13'
+rtx v13; // r15 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/protect_from_queue/src/expr.c:827:4: error: expected ';' after expression
+rtx v14; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/protect_from_queue/src/expr.c:827:5: error: use of undeclared identifier 'v14'; did you mean 'v10'?
+rtx v14; // rax 
+    ^~~
+    v10
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/protect_from_queue/src/expr.c:823:18: note: 'v10' declared here
+ struct rtx_def *v10; // rax 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/protect_from_queue/src/expr.c:828:4: error: expected ';' after expression
+rtx v15; // r12 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/protect_from_queue/src/expr.c:828:5: error: use of undeclared identifier 'v15'
+rtx v15; // r12 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/protect_from_queue/src/expr.c:835:1: error: statement requires expression of scalar type ('struct rtx_def' invalid)
+if ( x[1] ) 
+^    ~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/protect_from_queue/src/expr.c:840:21: error: use of undeclared identifier 'machine_mode'
+v5 = gen_reg_rtx( ( machine_mode)*( unsigned __int8 *)( x->fld[0].rtwint + 2)); 
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/protect_from_queue/src/expr.c:843:31: error: expected expression
+emit_insn_before( v6, *( rtx *)&x[1]); 
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/protect_from_queue/src/expr.c:854:83: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+if ( ( v2 & 0xFF0000) == 3342336 || v3 != 66 || modify || ( v7.rtwint = ( __int64)x->fld[0], *( _WORD *)v7.rtwint != 71) ) 
+                                                                                  ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/protect_from_queue/src/expr.c:858:1: error: use of undeclared identifier 'v11'
+v11 = protect_from_queue( x->fld[0].rtx, 0); 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/protect_from_queue/src/expr.c:859:6: error: use of undeclared identifier 'v11'
+if ( v11 != x->fld[0].rtx ) 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/protect_from_queue/src/expr.c:861:1: error: use of undeclared identifier 'v12'
+v12 = v11; 
+^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/protect_from_queue/src/obj/expr.o] Error 1

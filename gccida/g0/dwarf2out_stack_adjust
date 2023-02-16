@@ -1,0 +1,46 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/dwarf2out_stack_adjust/src/dwarf2out.c:1467:22: error: use of undeclared identifier 'args_size_0'; did you mean 'args_size'?
+*( _QWORD *)&i[4] = -args_size_0; 
+                     ^~~~~~~~~~~
+                     args_size
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/dwarf2out_stack_adjust/src/dwarf2out.c:645:13: note: 'args_size' declared here
+static long args_size;
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/dwarf2out_stack_adjust/src/dwarf2out.c:1490:1: error: use of undeclared identifier 'args_size_0'; did you mean 'args_size'?
+args_size_0 += *( _QWORD *)&i[4]; 
+^~~~~~~~~~~
+args_size
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/dwarf2out_stack_adjust/src/dwarf2out.c:645:13: note: 'args_size' declared here
+static long args_size;
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/dwarf2out_stack_adjust/src/dwarf2out.c:1491:6: error: use of undeclared identifier 'args_size_0'; did you mean 'args_size'?
+if ( args_size_0 < 0 ) 
+     ^~~~~~~~~~~
+     args_size
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/dwarf2out_stack_adjust/src/dwarf2out.c:645:13: note: 'args_size' declared here
+static long args_size;
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/dwarf2out_stack_adjust/src/dwarf2out.c:1492:1: error: use of undeclared identifier 'args_size_0'; did you mean 'args_size'?
+args_size_0 = 0LL; 
+^~~~~~~~~~~
+args_size
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/dwarf2out_stack_adjust/src/dwarf2out.c:645:13: note: 'args_size' declared here
+static long args_size;
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/dwarf2out_stack_adjust/src/dwarf2out.c:1495:29: error: use of undeclared identifier 'args_size_0'; did you mean 'args_size'?
+dwarf2out_args_size( label, args_size_0); 
+                            ^~~~~~~~~~~
+                            args_size
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/dwarf2out_stack_adjust/src/dwarf2out.c:645:13: note: 'args_size' declared here
+static long args_size;
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/dwarf2out_stack_adjust/src/dwarf2out.c:1501:15: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+insna = ( rtx)insn[2]; 
+              ^~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/dwarf2out_stack_adjust/src/dwarf2out.c:1505:15: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+insna = ( rtx)insna[1]; 
+              ^~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/dwarf2out_stack_adjust/src/dwarf2out.c:1508:22: error: expected expression
+dwarf2out_args_size( ::label, *( _QWORD *)( *( _QWORD *)&insna[1] + 8LL)); 
+                     ^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/dwarf2out_stack_adjust/src/obj/dwarf2out.o] Error 1

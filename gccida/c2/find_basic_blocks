@@ -1,0 +1,66 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_basic_blocks/src/cfgbuild.c:1092:4: error: expected ';' after expression
+rtx v24; // r15 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_basic_blocks/src/cfgbuild.c:1092:5: error: use of undeclared identifier 'v24'
+rtx v24; // r15 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_basic_blocks/src/cfgbuild.c:1104:4: error: expected ';' after expression
+rtx nonnote_insn; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_basic_blocks/src/cfgbuild.c:1104:5: error: use of undeclared identifier 'nonnote_insn'
+rtx nonnote_insn; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_basic_blocks/src/cfgbuild.c:1118:15: error: use of undeclared identifier 'TV_CFG_0'; did you mean 'TV_CFG'?
+timevar_push( TV_CFG_0); 
+              ^~~~~~~~
+              TV_CFG
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_basic_blocks/src/timevar.def:43:13: note: 'TV_CFG' declared here
+DEFTIMEVAR (TV_CFG                   , "cfg construction")
+            ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_basic_blocks/src/cfgbuild.c:1190:18: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v18 = ( _DWORD *)rtx[2]; 
+                 ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_basic_blocks/src/cfgbuild.c:1196:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v19.rtwint = ( __int64)rtx[1].fld[0]; 
+                       ^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_basic_blocks/src/cfgbuild.c:1247:1: error: use of undeclared identifier 'v24'
+v24 = f; 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_basic_blocks/src/cfgbuild.c:1275:18: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v31 = ( _DWORD *)f[2]; 
+                 ^~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_basic_blocks/src/cfgbuild.c:1281:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v30.rtwint = ( __int64)f[1].fld[0]; 
+                       ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_basic_blocks/src/cfgbuild.c:1309:27: error: use of undeclared identifier 'v24'
+if ( control_flow_insn_p( v24) ) 
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_basic_blocks/src/cfgbuild.c:1333:17: error: use of undeclared identifier 'v24'
+v38 = ( __int64)v24[2]; 
+                ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_basic_blocks/src/cfgbuild.c:1336:39: error: expected expression
+label_refs = find_label_refs( *( rtx *)( v38 + 8), v28); 
+                                      ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_basic_blocks/src/cfgbuild.c:1337:32: error: expected expression
+v40 = find_label_refs( *( rtx *)( *( _QWORD *)&v24[2] + 16LL), label_refs); 
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_basic_blocks/src/cfgbuild.c:1337:48: error: use of undeclared identifier 'v24'
+v40 = find_label_refs( *( rtx *)( *( _QWORD *)&v24[2] + 16LL), label_refs); 
+                                               ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_basic_blocks/src/cfgbuild.c:1338:32: error: expected expression
+v23 = find_label_refs( *( rtx *)( *( _QWORD *)&v24[2] + 24LL), v40); 
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_basic_blocks/src/cfgbuild.c:1338:48: error: use of undeclared identifier 'v24'
+v23 = find_label_refs( *( rtx *)( *( _QWORD *)&v24[2] + 24LL), v40); 
+                                               ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_basic_blocks/src/cfgbuild.c:1339:44: error: use of undeclared identifier 'v24'
+v41 = *(  struct rtx_def **)( *( _QWORD *)&v24[2] + 32LL); 
+                                           ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_basic_blocks/src/cfgbuild.c:1349:6: error: use of undeclared identifier 'v24'
+if ( v24[2].fld[0].rtint == -80 ) 
+     ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_basic_blocks/src/obj/cfgbuild.o] Error 1

@@ -1,0 +1,21 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/make_field_assignment/src/combine.c:8043:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v4; // [rsp+34h] [rbp-6Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/make_field_assignment/src/combine.c:8058:13: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+src = ( rtx)x[1]; 
+            ^~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/make_field_assignment/src/combine.c:8125:31: error: use of undeclared identifier 'machine_mode'
+if ( ( nonzero_bits( other, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)dest)) & v5) != 0 ) 
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/make_field_assignment/src/combine.c:8125:46: error: expected expression
+if ( ( nonzero_bits( other, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)dest)) & v5) != 0 ) 
+                                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/make_field_assignment/src/combine.c:8138:45: error: use of undeclared identifier 'machine_mode'
+v3 = simplify_shift_const( 0LL, LSHIFTRT, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)src), other, pos); 
+                                            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/make_field_assignment/src/combine.c:8138:60: error: expected expression
+v3 = simplify_shift_const( 0LL, LSHIFTRT, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)src), other, pos); 
+                                                           ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/make_field_assignment/src/obj/combine.o] Error 1

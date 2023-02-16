@@ -1,0 +1,16 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/timevar_print/src/timevar.c:900:6: error: use of undeclared identifier 'stack_0'; did you mean 'stack'?
+if ( stack_0 ) 
+     ^~~~~~~
+     stack
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/timevar_print/src/timevar.c:160:34: note: 'stack' declared here
+static struct timevar_stack_def *stack;
+                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/timevar_print/src/timevar.c:902:11: error: use of undeclared identifier 'stack_0'; did you mean 'stack'?
+timevar = stack_0->timevar; 
+          ^~~~~~~
+          stack
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/timevar_print/src/timevar.c:160:34: note: 'stack' declared here
+static struct timevar_stack_def *stack;
+                                 ^
+2 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/timevar_print/src/obj/timevar.o] Error 1

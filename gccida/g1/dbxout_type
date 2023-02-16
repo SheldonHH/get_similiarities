@@ -1,0 +1,75 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dbxout_type/src/dbxout.c:1512:1: error: must use 'enum' tag to refer to type 'typestatus'
+typestatus status; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dbxout_type/src/dbxout.c:1514:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *elements; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dbxout_type/src/dbxout.c:1515:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v13; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dbxout_type/src/dbxout.c:1516:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v14; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dbxout_type/src/dbxout.c:1528:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v26; // rbp 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dbxout_type/src/dbxout.c:1533:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v31; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dbxout_type/src/dbxout.c:1546:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v44; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dbxout_type/src/dbxout.c:1547:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v45; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dbxout_type/src/dbxout.c:1550:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *rttree; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dbxout_type/src/dbxout.c:1562:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v60; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dbxout_type/src/dbxout.c:1577:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *vindex; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dbxout_type/src/dbxout.c:1608:6: error: expected expression
+v6 = ::next_type_number++; 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dbxout_type/src/dbxout.c:1609:6: error: expected expression
+v7 = ::next_type_number; 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dbxout_type/src/dbxout.c:1797:20: error: expected expression
+v60 = ( tree_node *)i[4]; 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dbxout_type/src/dbxout.c:1797:9: error: use of undeclared identifier 'tree_node'
+v60 = ( tree_node *)i[4]; 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dbxout_type/src/dbxout.c:1948:10: error: use of undeclared identifier 'unk_64F820'
+fwrite( &unk_64F820, 1uLL, 2uLL, asmfile); 
+         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dbxout_type/src/dbxout.c:2007:22: error: use of undeclared identifier 'anonymous_type_number_2'
+v34 = ( unsigned int)anonymous_type_number_2++; 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dbxout_type/src/dbxout.c:2037:53: error: use of undeclared identifier 'lang_hooks_0'; did you mean 'lang_hooks'?
+if ( ( *( _BYTE *)( v38 + 18) & 4) != 0 && !strcmp( lang_hooks_0.name, "GNU C++") ) 
+                                                    ^~~~~~~~~~~~
+                                                    lang_hooks
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dbxout_type/src/langhooks.h:168:32: note: 'lang_hooks' declared here
+extern const struct lang_hooks lang_hooks;
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dbxout_type/src/dbxout.c:2074:14: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v51 = ( char)m[1]; 
+             ^~~~
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dbxout_type/src/obj/dbxout.o] Error 1

@@ -1,0 +1,26 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/try_split/src/emit-rtl.c:3590:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+before = ( rtx)trial[1]; 
+               ^~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/try_split/src/emit-rtl.c:3591:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v4.rtwint = ( __int64)trial[1].fld[0]; 
+                      ^~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/try_split/src/emit-rtl.c:3630:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v15.rtwint = ( __int64)v7->fld[0]; 
+                       ^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/try_split/src/emit-rtl.c:3658:25: error: assigning to 'uint64' (aka 'unsigned long long') from incompatible type 'struct rtx_def'
+*( _QWORD *)( v21 + 64) = trial[4]; 
+                        ^ ~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/try_split/src/emit-rtl.c:3663:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v17.rtwint = ( __int64)trial[3].fld[0]; 
+                       ^~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/try_split/src/emit-rtl.c:3684:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v17.rtwint = ( __int64)trial[3].fld[0]; 
+                       ^~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/try_split/src/emit-rtl.c:3719:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( unsigned __int8 *)( v17.rtwint + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/try_split/src/emit-rtl.c:3763:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( unsigned __int8 *)( v17.rtwint + 2), 
+  ^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/try_split/src/obj/emit-rtl.o] Error 1

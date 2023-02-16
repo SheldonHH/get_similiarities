@@ -1,0 +1,69 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_no_conflict_block/src/optabs.c:3188:4: error: expected ';' after expression
+rtx v10; // r15 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_no_conflict_block/src/optabs.c:3188:5: error: use of undeclared identifier 'v10'
+rtx v10; // r15 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_no_conflict_block/src/optabs.c:3189:4: error: expected ';' after expression
+rtx rtwint; // r14 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_no_conflict_block/src/optabs.c:3189:5: error: use of undeclared identifier 'rtwint'; did you mean 'rewind'?
+rtx rtwint; // r14 
+    ^~~~~~
+    rewind
+/usr/include/stdio.h:694:13: note: 'rewind' declared here
+extern void rewind (FILE *__stream);
+            ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_no_conflict_block/src/optabs.c:3198:4: error: expected ';' after expression
+rtx last_insn; // r15 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_no_conflict_block/src/optabs.c:3198:5: error: use of undeclared identifier 'last_insn'
+rtx last_insn; // r15 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_no_conflict_block/src/optabs.c:3201:4: error: expected ';' after expression
+rtx v24; // rbx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_no_conflict_block/src/optabs.c:3201:5: error: use of undeclared identifier 'v24'
+rtx v24; // rbx 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_no_conflict_block/src/optabs.c:3204:4: error: expected ';' after expression
+rtx v27; // rbp 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_no_conflict_block/src/optabs.c:3204:5: error: use of undeclared identifier 'v27'
+rtx v27; // rbp 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_no_conflict_block/src/optabs.c:3221:1: error: use of undeclared identifier 'v10'
+v10 = insns; 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_no_conflict_block/src/optabs.c:3224:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v12.rtwint = ( __int64)v5[1].fld[0]; 
+                       ^~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_no_conflict_block/src/optabs.c:3231:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v15 = ( __int64)v5[2]; 
+                ^~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_no_conflict_block/src/optabs.c:3249:42: error: expected expression
+if ( reg_overlap_mentioned_p( x, *( rtx *)( v15 + 8)) ) 
+                                         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_no_conflict_block/src/optabs.c:3251:1: error: use of undeclared identifier 'rtwint'
+rtwint = v10; 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_no_conflict_block/src/optabs.c:3251:10: error: use of undeclared identifier 'v10'
+rtwint = v10; 
+         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_no_conflict_block/src/optabs.c:3255:19: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v16 = ( rtunion *)v5[1]; 
+                  ^~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_no_conflict_block/src/optabs.c:3256:1: error: use of undeclared identifier 'rtwint'
+rtwint = ( rtx)v12.rtwint; 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_no_conflict_block/src/optabs.c:3260:1: error: use of undeclared identifier 'rtwint'
+rtwint = v10; 
+^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_no_conflict_block/src/obj/optabs.o] Error 1

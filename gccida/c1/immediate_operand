@@ -1,0 +1,13 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/immediate_operand/src/recog.c:1589:33: error: must use 'enum' tag to refer to type 'machine_mode'
+int  immediate_operand( rtx op, machine_mode mode) 
+                                ^
+                                enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/immediate_operand/src/recog.c:1597:41: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode && ( v2 & 0xFF0000) == 0 && ( mode_class_0[mode] | 2) != 3 ) 
+                                        ^~~~~~~~~~~~
+                                        mode_class
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/immediate_operand/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+2 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/immediate_operand/src/obj/recog.o] Error 1

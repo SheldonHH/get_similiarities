@@ -1,0 +1,80 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_increment/src/expr.c:9454:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v22; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_increment/src/expr.c:9550:3: error: use of undeclared identifier 'tree_code'; did you mean 'tree_cons'?
+( tree_code)( ( ( *( ( _DWORD *)&exp->common + 4) & 0xFD) == 129) + 59), 
+  ^~~~~~~~~
+  tree_cons
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_increment/src/tree.h:2477:13: note: 'tree_cons' declared here
+extern tree tree_cons                   PARAMS ((tree, tree, tree));
+            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_increment/src/expr.c:9550:71: error: too few arguments to function call, expected 3, have 1
+( tree_code)( ( ( *( ( _DWORD *)&exp->common + 4) & 0xFD) == 129) + 59), 
+~~~~~~~~~~~~                                                          ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_increment/src/tree.h:2477:1: note: 'tree_cons' declared here
+extern tree tree_cons                   PARAMS ((tree, tree, tree));
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_increment/src/expr.c:9571:11: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+operand = insn_data_0[insn_code].operand; 
+          ^~~~~~~~~~~
+          insn_data
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_increment/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_increment/src/expr.c:9572:38: error: use of undeclared identifier 'machine_mode'
+if ( operand->predicate( operand1, ( machine_mode)v19) && operand[1].predicate( operand1, ( machine_mode)v19) ) 
+                                     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_increment/src/expr.c:9572:93: error: use of undeclared identifier 'machine_mode'
+if ( operand->predicate( operand1, ( machine_mode)v19) && operand[1].predicate( operand1, ( machine_mode)v19) ) 
+                                                                                            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_increment/src/expr.c:9574:36: error: use of undeclared identifier 'machine_mode'
+v21 = operand[2].predicate( v16, ( machine_mode)v19) != 0; 
+                                   ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_increment/src/expr.c:9596:7: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+v28 = insn_data_0[v26].operand; 
+      ^~~~~~~~~~~
+      insn_data
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_increment/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_increment/src/expr.c:9597:34: error: use of undeclared identifier 'machine_mode'
+if ( v28->predicate( operand1, ( machine_mode)v19) && v28[1].predicate( operand1, ( machine_mode)v19) ) 
+                                 ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_increment/src/expr.c:9597:85: error: use of undeclared identifier 'machine_mode'
+if ( v28->predicate( operand1, ( machine_mode)v19) && v28[1].predicate( operand1, ( machine_mode)v19) ) 
+                                                                                    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_increment/src/expr.c:9599:30: error: use of undeclared identifier 'machine_mode'
+if ( !v28[2].predicate( x, ( machine_mode)v19) ) 
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_increment/src/expr.c:9600:14: error: use of undeclared identifier 'machine_mode'
+force_reg( ( machine_mode)v19, x); 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_increment/src/expr.c:9601:7: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+v29 = insn_data_0[v27].genfun( operand1, operand1); 
+      ^~~~~~~~~~~
+      insn_data
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_increment/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_increment/src/expr.c:9601:30: error: called object type '<dependent type>' is not a function or function pointer
+v29 = insn_data_0[v27].genfun( operand1, operand1); 
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_increment/src/expr.c:9607:47: error: use of undeclared identifier 'machine_mode'
+if ( general_operand( operand1->fld[0].rtx, ( machine_mode)v19) ) 
+                                              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_increment/src/expr.c:9608:20: error: use of undeclared identifier 'machine_mode'
+v34 = force_reg( ( machine_mode)( ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32), operand1->fld[0].rtx); 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_increment/src/expr.c:9612:20: error: use of undeclared identifier 'machine_mode'
+v37 = force_reg( ( machine_mode)*( ( unsigned __int8 *)v36 + 2), v36); 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_increment/src/expr.c:9613:30: error: use of undeclared identifier 'machine_mode'
+if ( !v28[2].predicate( x, ( machine_mode)v19) ) 
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_increment/src/expr.c:9614:14: error: use of undeclared identifier 'machine_mode'
+force_reg( ( machine_mode)v19, x); 
+             ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_increment/src/obj/expr.o] Error 1

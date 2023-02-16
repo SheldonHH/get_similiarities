@@ -1,0 +1,20 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/build1/src/tree.c:2943:15: error: must use 'enum' tag to refer to type 'tree_code'
+tree  build1( tree_code code, tree type, tree node) 
+              ^
+              enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/build1/src/tree.c:2945:1: error: must use 'enum' tag to refer to type 'tree_code'
+tree_code v4; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/build1/src/tree.c:2948:1: error: must use 'enum' tag to refer to type 'tree_code'
+tree_code v7; // edx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/build1/src/tree.c:2954:12: error: expected expression
+*( _OWORD *)&result->common.chain = 0LL; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/build1/src/tree.c:2954:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&result->common.chain = 0LL; 
+   ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/build1/src/obj/tree.o] Error 1

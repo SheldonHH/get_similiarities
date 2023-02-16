@@ -1,0 +1,20 @@
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/finish_and_score_game/src/interface/play_gtp.c:2930:6: error: use of undeclared identifier 'finish_and_score_game_current_seed'
+if ( finish_and_score_game_current_seed != seed ) 
+     ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/finish_and_score_game/src/interface/play_gtp.c:2932:1: error: use of undeclared identifier 'finish_and_score_game_current_seed'
+finish_and_score_game_current_seed = seed; 
+^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/finish_and_score_game/src/interface/play_gtp.c:2951:6: error: use of undeclared identifier 'finish_and_score_game_current_board'
+if ( finish_and_score_game_current_board[v6][v7] != v8 ) 
+     ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/finish_and_score_game/src/interface/play_gtp.c:2953:1: error: use of undeclared identifier 'finish_and_score_game_current_board'
+finish_and_score_game_current_board[v6][v7] = v8; 
+^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/finish_and_score_game/src/interface/play_gtp.c:3016:55: error: too many arguments to function call, expected 3, have 4
+final_score = aftermath_compute_score( v11, komi, v1, 0LL); 
+              ~~~~~~~~~~~~~~~~~~~~~~~                 ^~~
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/finish_and_score_game/src/include/gnugo.h:479:1: note: 'aftermath_compute_score' declared here
+float aftermath_compute_score(int color, float komi, SGFTree *tree);
+^
+5 errors generated.
+make: *** [/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/finish_and_score_game/src/obj/2/play_gtp.o] Error 1

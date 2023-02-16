@@ -1,0 +1,107 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_expand_binop_builtin/src/i386.c:11936:33: error: must use 'enum' tag to refer to type 'insn_code'
+rtx  ix86_expand_binop_builtin( insn_code icode, tree arglist, rtx target) 
+                                ^
+                                enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_expand_binop_builtin/src/i386.c:11939:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode tmode; // [rsp+14h] [rbp-4Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_expand_binop_builtin/src/i386.c:11942:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *arg1; // [rsp+28h] [rbp-38h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_expand_binop_builtin/src/i386.c:11948:33: error: use of undeclared identifier 'insn_data_0'
+tmode = *( ( unsigned __int16 *)insn_data_0[icode].operand + 8); 
+                                ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_expand_binop_builtin/src/i386.c:11949:44: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+HIDWORD( mode1) = *( ( unsigned __int16 *)&insn_data_0[icode].operand[1] + 8); 
+                                           ^~~~~~~~~~~
+                                           insn_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_expand_binop_builtin/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_expand_binop_builtin/src/i386.c:11950:44: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+LODWORD( mode1) = *( ( unsigned __int16 *)&insn_data_0[icode].operand[2] + 8); 
+                                           ^~~~~~~~~~~
+                                           insn_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_expand_binop_builtin/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_expand_binop_builtin/src/i386.c:11951:44: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+if ( mode_class_0[*( ( unsigned __int16 *)&insn_data_0[icode].operand[1] + 8)] == MODE_VECTOR_INT 
+                                           ^~~~~~~~~~~
+                                           insn_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_expand_binop_builtin/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_expand_binop_builtin/src/i386.c:11951:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[*( ( unsigned __int16 *)&insn_data_0[icode].operand[1] + 8)] == MODE_VECTOR_INT 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_expand_binop_builtin/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_expand_binop_builtin/src/i386.c:11952:42: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+|| mode_class_0[*( ( unsigned __int16 *)&insn_data_0[icode].operand[1] + 8)] == MODE_VECTOR_FLOAT ) 
+                                         ^~~~~~~~~~~
+                                         insn_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_expand_binop_builtin/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_expand_binop_builtin/src/i386.c:11952:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| mode_class_0[*( ( unsigned __int16 *)&insn_data_0[icode].operand[1] + 8)] == MODE_VECTOR_FLOAT ) 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_expand_binop_builtin/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_expand_binop_builtin/src/i386.c:11956:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[( int)mode1] == MODE_VECTOR_INT || mode_class_0[( int)mode1] == MODE_VECTOR_FLOAT ) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_expand_binop_builtin/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_expand_binop_builtin/src/i386.c:11956:54: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[( int)mode1] == MODE_VECTOR_INT || mode_class_0[( int)mode1] == MODE_VECTOR_FLOAT ) 
+                                                     ^~~~~~~~~~~~
+                                                     mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_expand_binop_builtin/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_expand_binop_builtin/src/i386.c:11957:35: error: use of undeclared identifier 'machine_mode'
+op1 = safe_vector_operand( op1, ( machine_mode)mode1); 
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_expand_binop_builtin/src/i386.c:11960:5: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+|| !insn_data_0[icode].operand->predicate( target, tmode) ) 
+    ^~~~~~~~~~~
+    insn_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_expand_binop_builtin/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_expand_binop_builtin/src/i386.c:11960:42: error: called object type '<dependent type>' is not a function or function pointer
+|| !insn_data_0[icode].operand->predicate( target, tmode) ) 
+                                         ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_expand_binop_builtin/src/i386.c:11966:55: error: use of undeclared identifier 'machine_mode'
+if ( !insn_data_0[icode].operand[1].predicate( op0, ( machine_mode)HIDWORD( mode1)) ) 
+                                                      ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_expand_binop_builtin/src/i386.c:11966:7: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+if ( !insn_data_0[icode].operand[1].predicate( op0, ( machine_mode)HIDWORD( mode1)) ) 
+      ^~~~~~~~~~~
+      insn_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_expand_binop_builtin/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_expand_binop_builtin/src/i386.c:11968:55: error: use of undeclared identifier 'machine_mode'
+if ( !insn_data_0[icode].operand[2].predicate( op1, ( machine_mode)mode1) ) 
+                                                      ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_expand_binop_builtin/src/i386.c:11968:7: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+if ( !insn_data_0[icode].operand[2].predicate( op1, ( machine_mode)mode1) ) 
+      ^~~~~~~~~~~
+      insn_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_expand_binop_builtin/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_expand_binop_builtin/src/obj/i386.o] Error 1

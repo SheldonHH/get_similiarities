@@ -1,0 +1,20 @@
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/aftermath_compute_score/src/engine/aftermath.c:1479:8: error: conflicting types for 'aftermath_compute_score'
+float  aftermath_compute_score( int color, float a2, float komi, SGFTree *tree) 
+       ^
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/aftermath_compute_score/src/engine/gnugo.h:472:7: note: previous declaration is here
+float aftermath_compute_score(int color, float komi, SGFTree *tree);
+      ^
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/aftermath_compute_score/src/engine/aftermath.c:1495:15: error: use of undeclared identifier 'current_color_1'
+if ( color != current_color_1 ) 
+              ^
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/aftermath_compute_score/src/engine/aftermath.c:1497:1: error: use of undeclared identifier 'current_color_1'
+current_color_1 = color; 
+^
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/aftermath_compute_score/src/engine/aftermath.c:1503:31: error: use of undeclared identifier 'current_board_0'
+if ( ( _BYTE)v6 != 3 && v6 != current_board_0[i] ) 
+                              ^
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/aftermath_compute_score/src/engine/aftermath.c:1505:1: error: use of undeclared identifier 'current_board_0'
+current_board_0[i] = v6; 
+^
+5 errors generated.
+make: *** [/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/aftermath_compute_score/src/obj/1/aftermath.o] Error 1

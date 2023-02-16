@@ -1,0 +1,27 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/protect_from_queue/src/expr.c:824:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code; // [rsp+38h] [rbp-18h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/protect_from_queue/src/expr.c:831:1: error: statement requires expression of scalar type ('struct rtx_def' invalid)
+if ( x[1] ) 
+^    ~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/protect_from_queue/src/expr.c:835:47: error: use of undeclared identifier 'machine_mode'
+x[1].fld[0].rtwint = ( __int64)gen_reg_rtx( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)x->fld[0].rtwint)); 
+                                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/protect_from_queue/src/expr.c:835:62: error: expected expression
+x[1].fld[0].rtwint = ( __int64)gen_reg_rtx( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)x->fld[0].rtwint)); 
+                                                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/protect_from_queue/src/expr.c:864:45: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+if ( new0 != x->fld[0].rtx || new1 != ( rtx)x[1] ) 
+                                            ^~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/protect_from_queue/src/expr.c:877:1: error: statement requires expression of scalar type ('struct rtx_def' invalid)
+if ( y[1] ) 
+^    ~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/protect_from_queue/src/expr.c:879:23: error: use of undeclared identifier 'machine_mode'
+temp = gen_reg_rtx( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)x)); 
+                      ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/protect_from_queue/src/expr.c:879:38: error: expected expression
+temp = gen_reg_rtx( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)x)); 
+                                     ^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/protect_from_queue/src/obj/expr.o] Error 1

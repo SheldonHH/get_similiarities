@@ -1,0 +1,79 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/constant_subword/src/emit-rtl.c:1775:44: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  constant_subword( rtx op, int offset, machine_mode mode) 
+                                           ^
+                                           enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/constant_subword/src/emit-rtl.c:1779:1: error: must use 'enum' tag to refer to type 'mode_class'
+mode_class v6; // edx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/constant_subword/src/machmode.h:52:30: note: enum 'mode_class' is hidden by a non-type declaration of 'mode_class' here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/constant_subword/src/emit-rtl.c:1789:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v16[2]; // [rsp+20h] [rbp-48h] BYREF 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/constant_subword/src/emit-rtl.c:1795:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v6 = mode_class_0[mode]; 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/constant_subword/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/constant_subword/src/emit-rtl.c:1803:20: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+r.r[2] = ( __int64)op[2]; 
+                   ^~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/constant_subword/src/emit-rtl.c:1805:12: error: expected identifier or '('
+ struct op = ( rtx)v16; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/constant_subword/src/emit-rtl.c:1806:13: error: passing 'long long *' to parameter of incompatible type 'realvaluetype'
+etardouble( ( __int64 *)v16, r); 
+            ^~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/constant_subword/src/real.h:164:49: note: passing argument to parameter here
+extern void etardouble          PARAMS ((REAL_VALUE_TYPE, long *));
+                                                        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/constant_subword/src/emit-rtl.c:1812:29: error: use of undeclared identifier 'machine_mode'
+return gen_rtx_CONST_INT( ( machine_mode)op, v9); 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/constant_subword/src/emit-rtl.c:1818:22: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v18.r[2] = ( __int64)op[2]; 
+                     ^~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/constant_subword/src/emit-rtl.c:1820:12: error: expected identifier or '('
+ struct op = ( rtx)v16; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/constant_subword/src/emit-rtl.c:1822:14: error: passing 'long long *' to parameter of incompatible type 'realvaluetype'
+etartdouble( ( __int64 *)v16, v18); 
+             ^~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/constant_subword/src/real.h:162:50: note: passing argument to parameter here
+extern void etartdouble         PARAMS ((REAL_VALUE_TYPE, long *));
+                                                        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/constant_subword/src/emit-rtl.c:1824:14: error: passing 'long long *' to parameter of incompatible type 'realvaluetype'
+etarldouble( ( __int64 *)v16, v18); 
+             ^~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/constant_subword/src/real.h:163:50: note: passing argument to parameter here
+extern void etarldouble         PARAMS ((REAL_VALUE_TYPE, long *));
+                                                        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/constant_subword/src/emit-rtl.c:1830:29: error: use of undeclared identifier 'machine_mode'
+return gen_rtx_CONST_INT( ( machine_mode)op, v9); 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/constant_subword/src/emit-rtl.c:1834:29: error: use of undeclared identifier 'machine_mode'
+return gen_rtx_CONST_INT( ( machine_mode)op, v9); 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/constant_subword/src/emit-rtl.c:1838:21: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+ra.r[2] = ( __int64)op[2]; 
+                    ^~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/constant_subword/src/emit-rtl.c:1841:29: error: use of undeclared identifier 'machine_mode'
+return gen_rtx_CONST_INT( ( machine_mode)op, v9); 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/constant_subword/src/emit-rtl.c:1845:28: error: expected expression
+if ( const_int_rtx[64] ==  struct op ) 
+                           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/constant_subword/src/emit-rtl.c:1847:28: error: expected expression
+if ( const_int_rtx[64] !=  struct op && v6 == MODE_INT ) 
+                           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/constant_subword/src/emit-rtl.c:1867:20: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+rtwint = ( __int64)op[1]; 
+                   ^~~~~
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/constant_subword/src/obj/emit-rtl.o] Error 1

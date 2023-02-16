@@ -1,0 +1,101 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ssa_const_prop/src/ssa-ccp.c:1546:1: error: use of undeclared identifier 'edge_info_0'; did you mean 'edge_info'?
+edge_info_0 = ( edge *)xmalloc( 8LL * edges->num_edges); 
+^~~~~~~~~~~
+edge_info
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ssa_const_prop/src/ssa-ccp.c:106:14: note: 'edge_info' declared here
+static edge *edge_info;
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ssa_const_prop/src/ssa-ccp.c:1548:53: error: use of undeclared identifier 'edge_info_0'; did you mean 'edge_info'?
+for ( flow_edges = entry_exit_blocks[0].succ; succ; edge_info_0[edge_index] = succ ) 
+                                                    ^~~~~~~~~~~
+                                                    edge_info
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ssa_const_prop/src/ssa-ccp.c:106:14: note: 'edge_info' declared here
+static edge *edge_info;
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ssa_const_prop/src/ssa-ccp.c:1559:7: error: use of undeclared identifier 'edge_info_0'; did you mean 'edge_info'?
+v11 = edge_info_0; 
+      ^~~~~~~~~~~
+      edge_info
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ssa_const_prop/src/ssa-ccp.c:106:14: note: 'edge_info' declared here
+static edge *edge_info;
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ssa_const_prop/src/ssa-ccp.c:1567:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v13 = ( __int64)i[2]; 
+                ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ssa_const_prop/src/ssa-ccp.c:1605:7: error: use of undeclared identifier 'edge_info_0'; did you mean 'edge_info'?
+v23 = edge_info_0; 
+      ^~~~~~~~~~~
+      edge_info
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ssa_const_prop/src/ssa-ccp.c:106:14: note: 'edge_info' declared here
+static edge *edge_info;
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ssa_const_prop/src/ssa-ccp.c:1622:22: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+&& ( v28 = ( __int64)insn[2], *( _WORD *)v28 == 47) 
+                     ^~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ssa_const_prop/src/ssa-ccp.c:1654:13: error: invalid operands to binary expression ('struct rtx_def *' and 'uint64 *' (aka 'unsigned long long *'))
+v35 = ( rtx)*( ( _QWORD *)v37 + 4); 
+      ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ssa_const_prop/src/ssa-ccp.c:1655:58: error: expected ')'
+if ( *( _WORD *)v35 == 47 || ( v35 = single_set_2( ( rtx)v37, *( ( rtx *)v37 + 4))) != 0LL ) 
+                                                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ssa_const_prop/src/ssa-ccp.c:1655:50: note: to match this '('
+if ( *( _WORD *)v35 == 47 || ( v35 = single_set_2( ( rtx)v37, *( ( rtx *)v37 + 4))) != 0LL ) 
+                                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ssa_const_prop/src/ssa-ccp.c:1668:88: error: expected ')'
+df_insn_modify( df_analyzer, basic_block_for_insn->data.bb[*( ( int *)v37 + 2)], ( rtx)v37); 
+                                                                                       ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ssa_const_prop/src/ssa-ccp.c:1668:15: note: to match this '('
+df_insn_modify( df_analyzer, basic_block_for_insn->data.bb[*( ( int *)v37 + 2)], ( rtx)v37); 
+              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ssa_const_prop/src/ssa-ccp.c:1718:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v46 = ( __int64)k[2]; 
+                ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ssa_const_prop/src/ssa-ccp.c:1721:31: error: expected ')'
+remove_phi_alternative( ( rtx)v46, v48->src); 
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ssa_const_prop/src/ssa-ccp.c:1721:23: note: to match this '('
+remove_phi_alternative( ( rtx)v46, v48->src); 
+                      ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ssa_const_prop/src/ssa-ccp.c:1755:26: error: expected expression
+if ( condjump_p( *( rtx *)( v51 + 8)) ) 
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ssa_const_prop/src/ssa-ccp.c:1757:27: error: expected ')'
+if ( !simplejump_p( ( rtx)v52) ) 
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ssa_const_prop/src/ssa-ccp.c:1757:19: note: to match this '('
+if ( !simplejump_p( ( rtx)v52) ) 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ssa_const_prop/src/ssa-ccp.c:1774:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ssa_const_prop/src/ssa-ccp.c:1775:9: error: expected expression
+*( rtx *)( v52 + 64)); 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ssa_const_prop/src/ssa-ccp.c:1776:27: error: expected ')'
+emit_barrier_after( ( rtx)v52); 
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ssa_const_prop/src/ssa-ccp.c:1776:19: note: to match this '('
+emit_barrier_after( ( rtx)v52); 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ssa_const_prop/src/ssa-ccp.c:1779:88: error: expected ')'
+df_insn_modify( df_analyzer, basic_block_for_insn->data.bb[*( int *)( v52 + 8)], ( rtx)v52); 
+                                                                                       ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ssa_const_prop/src/ssa-ccp.c:1779:15: note: to match this '('
+df_insn_modify( df_analyzer, basic_block_for_insn->data.bb[*( int *)( v52 + 8)], ( rtx)v52); 
+              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ssa_const_prop/src/ssa-ccp.c:1830:7: error: use of undeclared identifier 'edge_info_0'; did you mean 'edge_info'?
+free( edge_info_0); 
+      ^~~~~~~~~~~
+      edge_info
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ssa_const_prop/src/ssa-ccp.c:106:14: note: 'edge_info' declared here
+static edge *edge_info;
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ssa_const_prop/src/ssa-ccp.c:1831:1: error: use of undeclared identifier 'edge_info_0'; did you mean 'edge_info'?
+edge_info_0 = 0LL; 
+^~~~~~~~~~~
+edge_info
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ssa_const_prop/src/ssa-ccp.c:106:14: note: 'edge_info' declared here
+static edge *edge_info;
+             ^
+19 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ssa_const_prop/src/obj/ssa-ccp.o] Error 1

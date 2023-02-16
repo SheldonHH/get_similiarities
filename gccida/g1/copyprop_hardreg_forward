@@ -1,0 +1,112 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copyprop_hardreg_forward/src/regrename.c:2197:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class *v10; // rax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copyprop_hardreg_forward/src/regrename.c:2207:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class *v20; // r12 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copyprop_hardreg_forward/src/regrename.c:2230:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v43; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copyprop_hardreg_forward/src/regrename.c:2241:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copyprop_hardreg_forward/src/regrename.c:2332:14: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+n_operands = recog_data_0.n_operands; 
+             ^~~~~~~~~~~~
+             recog_data
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copyprop_hardreg_forward/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copyprop_hardreg_forward/src/regrename.c:2347:13: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+reg = ( rtx)v63[1]; 
+            ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copyprop_hardreg_forward/src/regrename.c:2361:20: error: expected expression
+v20 = ( reg_class *)( 32LL * v66 + 9844808); 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copyprop_hardreg_forward/src/regrename.c:2361:9: error: use of undeclared identifier 'reg_class'; did you mean 'regclass'?
+v20 = ( reg_class *)( 32LL * v66 + 9844808); 
+        ^~~~~~~~~
+        regclass
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copyprop_hardreg_forward/src/rtl.h:1970:13: note: 'regclass' declared here
+extern void regclass                    PARAMS ((rtx, int, FILE *));
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copyprop_hardreg_forward/src/regrename.c:2365:7: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( *recog_data_0.constraints[v21] ) 
+      ^~~~~~~~~~~~
+      recog_data
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copyprop_hardreg_forward/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copyprop_hardreg_forward/src/regrename.c:2367:26: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( v67 >= 0 && ( v27 = recog_data_0.operand[v21], *( _WORD *)v27 == 61) ) 
+                         ^~~~~~~~~~~~
+                         recog_data
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copyprop_hardreg_forward/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copyprop_hardreg_forward/src/regrename.c:2369:24: error: invalid operands to binary expression ('int' and 'struct rtx_def')
+if ( v27->fld[0].rtint != v27[1] && recog_data_0.operand_type[v21] == OP_IN ) 
+     ~~~~~~~~~~~~~~~~~ ^  ~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copyprop_hardreg_forward/src/regrename.c:2369:37: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( v27->fld[0].rtint != v27[1] && recog_data_0.operand_type[v21] == OP_IN ) 
+                                    ^~~~~~~~~~~~
+                                    recog_data
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copyprop_hardreg_forward/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copyprop_hardreg_forward/src/regrename.c:2373:34: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+v22 = replace_oldest_value_addr( recog_data_0.operand_loc[v21], *v20, VOIDmode, ( rtx)head, v59); 
+                                 ^~~~~~~~~~~~
+                                 recog_data
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copyprop_hardreg_forward/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copyprop_hardreg_forward/src/regrename.c:2376:33: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+v22 = replace_oldest_value_reg( recog_data_0.operand_loc[v21], *v20, ( rtx)head, v59); 
+                                ^~~~~~~~~~~~
+                                recog_data
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copyprop_hardreg_forward/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copyprop_hardreg_forward/src/regrename.c:2380:7: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+v23 = recog_data_0.operand_loc[v21]; 
+      ^~~~~~~~~~~~
+      recog_data
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copyprop_hardreg_forward/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copyprop_hardreg_forward/src/regrename.c:2382:1: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+recog_data_0.operand[v21] = *v23; 
+^~~~~~~~~~~~
+recog_data
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copyprop_hardreg_forward/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copyprop_hardreg_forward/src/regrename.c:2383:6: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( recog_data_0.n_dups <= 0 ) 
+     ^~~~~~~~~~~~
+     recog_data
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copyprop_hardreg_forward/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copyprop_hardreg_forward/src/regrename.c:2393:2: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+*recog_data_0.dup_loc[v25] = v24; 
+ ^~~~~~~~~~~~
+ recog_data
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copyprop_hardreg_forward/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copyprop_hardreg_forward/src/regrename.c:2396:9: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+while ( recog_data_0.n_dups > ( int)v25 ); 
+        ^~~~~~~~~~~~
+        recog_data
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copyprop_hardreg_forward/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copyprop_hardreg_forward/src/obj/regrename.o] Error 1

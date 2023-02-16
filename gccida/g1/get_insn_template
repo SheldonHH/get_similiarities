@@ -1,0 +1,19 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/get_insn_template/src/final.c:2256:35: error: use of undeclared identifier 'insn_data_0'
+output = ( __int64 (  *)( _QWORD))insn_data_0[code].output; 
+                                  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/get_insn_template/src/final.c:2257:17: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+output_format = insn_data_0[code].output_format; 
+                ^~~~~~~~~~~
+                insn_data
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/get_insn_template/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/get_insn_template/src/final.c:2264:32: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+return ( const char *)output( &recog_data_0); 
+                               ^~~~~~~~~~~~
+                               recog_data
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/get_insn_template/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/get_insn_template/src/obj/final.o] Error 1

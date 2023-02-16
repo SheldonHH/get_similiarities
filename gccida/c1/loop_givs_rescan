@@ -1,0 +1,60 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/loop_givs_rescan/src/loop.c:5181:1: error: use of undeclared identifier 'induction_1'
+induction_1 *i; // rbx 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/loop_givs_rescan/src/loop.c:5181:14: error: use of undeclared identifier 'i'
+induction_1 *i; // rbx 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/loop_givs_rescan/src/loop.c:5182:1: error: use of undeclared identifier 'induction_1'
+induction_1 *same; // rax 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/loop_givs_rescan/src/loop.c:5182:14: error: use of undeclared identifier 'same'
+induction_1 *same; // rax 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/loop_givs_rescan/src/loop.c:5202:7: error: use of undeclared identifier 'i'
+for ( i = bl_0->giv; i; i = i->next_iv ) 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/loop_givs_rescan/src/loop.c:5202:22: error: use of undeclared identifier 'i'
+for ( i = bl_0->giv; i; i = i->next_iv ) 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/loop_givs_rescan/src/loop.c:5202:25: error: use of undeclared identifier 'i'
+for ( i = bl_0->giv; i; i = i->next_iv ) 
+                        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/loop_givs_rescan/src/loop.c:5202:29: error: use of undeclared identifier 'i'
+for ( i = bl_0->giv; i; i = i->next_iv ) 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/loop_givs_rescan/src/loop.c:5204:1: error: use of undeclared identifier 'same'
+same = i->same; 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/loop_givs_rescan/src/loop.c:5204:8: error: use of undeclared identifier 'i'
+same = i->same; 
+       ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/loop_givs_rescan/src/loop.c:5205:29: error: use of undeclared identifier 'same'
+if ( same && ( *( ( _BYTE *)same + 100) & 4) != 0 ) 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/loop_givs_rescan/src/loop.c:5205:6: error: use of undeclared identifier 'same'
+if ( same && ( *( ( _BYTE *)same + 100) & 4) != 0 ) 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/loop_givs_rescan/src/loop.c:5206:14: error: use of undeclared identifier 'i'
+*( ( _BYTE *)i + 100) |= 4u; 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/loop_givs_rescan/src/loop.c:5207:21: error: use of undeclared identifier 'i'
+if ( ( *( ( _BYTE *)i + 100) & 4) != 0 ) 
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/loop_givs_rescan/src/loop.c:5209:6: error: use of undeclared identifier 'same'
+if ( same ) 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/loop_givs_rescan/src/loop.c:5210:1: error: use of undeclared identifier 'i'
+i->new_reg = replace_rtx( i->new_reg, same->dest_reg, same->new_reg); 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/loop_givs_rescan/src/loop.c:5210:27: error: use of undeclared identifier 'i'
+i->new_reg = replace_rtx( i->new_reg, same->dest_reg, same->new_reg); 
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/loop_givs_rescan/src/loop.c:5210:39: error: use of undeclared identifier 'same'
+i->new_reg = replace_rtx( i->new_reg, same->dest_reg, same->new_reg); 
+                                      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/loop_givs_rescan/src/loop.c:5210:55: error: use of undeclared identifier 'same'
+i->new_reg = replace_rtx( i->new_reg, same->dest_reg, same->new_reg); 
+                                                      ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/loop_givs_rescan/src/obj/loop.o] Error 1

@@ -1,0 +1,80 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/decompose/src/reload.c:2683:25: error: conflicting types for 'decompose'
+ struct decomposition * decompose(  struct decomposition *retstr, rtx x) 
+                        ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/decompose/src/reload.c:254:29: note: previous declaration is here
+static struct decomposition decompose PARAMS ((rtx));
+                            ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/decompose/src/reload.c:2690:4: error: expected ';' after expression
+rtx v9; // r13 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/decompose/src/reload.c:2690:5: error: use of undeclared identifier 'v9'
+rtx v9; // r13 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/decompose/src/reload.c:2707:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v27; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/decompose/src/reload.c:2708:4: error: expected ';' after expression
+rtx v28; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/decompose/src/reload.c:2708:5: error: use of undeclared identifier 'v28'
+rtx v28; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/decompose/src/reload.c:2717:1: error: must use 'enum' tag to refer to type 'mode_class'
+mode_class v37; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/decompose/src/machmode.h:52:30: note: enum 'mode_class' is hidden by a non-type declaration of 'mode_class' here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/decompose/src/reload.c:2719:4: error: expected ';' after expression
+rtx v39; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/decompose/src/reload.c:2719:5: error: use of undeclared identifier 'v39'
+rtx v39; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/decompose/src/reload.c:2723:4: error: expected ';' after expression
+rtx v43; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/decompose/src/reload.c:2723:5: error: use of undeclared identifier 'v43'
+rtx v43; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/decompose/src/reload.c:2748:7: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v37 = mode_class_0[*( ( unsigned __int8 *)x + 2)]; 
+      ^~~~~~~~~~~~
+      mode_class
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/decompose/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/decompose/src/reload.c:2793:7: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v37 = mode_class_0[v44]; 
+      ^~~~~~~~~~~~
+      mode_class
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/decompose/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/decompose/src/reload.c:2837:26: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v26 = ( unsigned __int64)rtx[1]; 
+                         ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/decompose/src/reload.c:2867:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v7.rtwint = ( __int64)rtx->fld[0]; 
+                      ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/decompose/src/reload.c:2873:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v7.rtwint = ( __int64)x->fld[0]; 
+                      ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/decompose/src/reload.c:2878:1: error: use of undeclared identifier 'v9'
+v9 = *( rtx *)( v7.rtwint + 8); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/decompose/src/reload.c:2878:14: error: expected expression
+v9 = *( rtx *)( v7.rtwint + 8); 
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/decompose/src/reload.c:2880:18: error: use of undeclared identifier 'v9'
+v11 = *( _WORD *)v9; 
+                 ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/decompose/src/obj/reload.o] Error 1

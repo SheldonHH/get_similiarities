@@ -1,0 +1,60 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/release_pages/src/ggc-page.c:1231:1: error: unknown type name 'page_entry_0'; did you mean 'page_entry'?
+page_entry_0 *free_pages; // rdi 
+^~~~~~~~~~~~
+page_entry
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/release_pages/src/ggc-page.c:249:3: note: 'page_entry' declared here
+} page_entry;
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/release_pages/src/ggc-page.c:1232:1: error: unknown type name 'page_entry_0'; did you mean 'page_entry'?
+page_entry_0 *v1; // rbx 
+^~~~~~~~~~~~
+page_entry
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/release_pages/src/ggc-page.c:249:3: note: 'page_entry' declared here
+} page_entry;
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/release_pages/src/ggc-page.c:1233:1: error: unknown type name 'page_group_0'; did you mean 'page_group'?
+page_group_0 *page_groups; // rax 
+^~~~~~~~~~~~
+page_group
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/release_pages/src/ggc-page.c:267:3: note: 'page_group' declared here
+} page_group;
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/release_pages/src/ggc-page.c:1234:1: error: use of undeclared identifier 'page_group_0'; did you mean 'page_groups'?
+page_group_0 *v3; // rbx 
+^~~~~~~~~~~~
+page_groups
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/release_pages/src/ggc-page.c:1233:15: note: 'page_groups' declared here
+page_group_0 *page_groups; // rax 
+              ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/release_pages/src/ggc-page.c:1234:15: error: use of undeclared identifier 'v3'
+page_group_0 *v3; // rbx 
+              ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/release_pages/src/ggc-page.c:1238:22: error: expected expression
+v1 = ( page_entry_0 *)( &G + 2640); 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/release_pages/src/ggc-page.c:1238:8: error: use of undeclared identifier 'page_entry_0'
+v1 = ( page_entry_0 *)( &G + 2640); 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/release_pages/src/ggc-page.c:1258:1: error: use of undeclared identifier 'v3'
+v3 = ( page_group_0 *)( &G + 2648); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/release_pages/src/ggc-page.c:1258:22: error: expected expression
+v3 = ( page_group_0 *)( &G + 2648); 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/release_pages/src/ggc-page.c:1258:8: error: use of undeclared identifier 'page_group_0'
+v3 = ( page_group_0 *)( &G + 2648); 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/release_pages/src/ggc-page.c:1265:1: error: use of undeclared identifier 'v3'
+v3 = page_groups; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/release_pages/src/ggc-page.c:1271:1: error: use of undeclared identifier 'v3'
+v3->next = page_groups->next; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/release_pages/src/ggc-page.c:1274:15: error: use of undeclared identifier 'v3'
+page_groups = v3->next; 
+              ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/release_pages/src/ggc-page.c:1276:9: error: use of undeclared identifier 'v3'
+while ( v3->next ); 
+        ^
+14 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/release_pages/src/obj/ggc-page.o] Error 1

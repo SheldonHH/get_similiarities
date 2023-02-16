@@ -1,0 +1,15 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/conditions_mutex_p/src/sched-deps.c:634:33: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+if ( v2 == reverse_condition( ( rtx_code)*( _WORD *)cond2) 
+                                ^~~~~~~~
+                                rtx_cost
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/conditions_mutex_p/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/conditions_mutex_p/src/sched-deps.c:634:42: error: invalid operands to binary expression ('int (rtx, enum rtx_code)' (aka 'int (struct rtx_def *, enum rtx_code)') and 'uint16 *' (aka 'unsigned short *'))
+if ( v2 == reverse_condition( ( rtx_code)*( _WORD *)cond2) 
+                              ~~~~~~~~~~~^~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/conditions_mutex_p/src/sched-deps.c:636:13: error: invalid operands to binary expression ('struct rtx_def' and 'struct rtx_def')
+&& cond1[1] == cond2[1] ) 
+   ~~~~~~~~ ^  ~~~~~~~~
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/conditions_mutex_p/src/obj/sched-deps.o] Error 1

@@ -1,0 +1,35 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/really_start_incremental_init/src/c-typeck.c:5651:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v10; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/really_start_incremental_init/src/c-typeck.c:5652:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *rttree; // rsi 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/really_start_incremental_init/src/c-typeck.c:5673:12: error: expected expression
+*( _OWORD *)( v2 + 88) = 0LL; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/really_start_incremental_init/src/c-typeck.c:5673:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)( v2 + 88) = 0LL; 
+   ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/really_start_incremental_init/src/c-typeck.c:5677:1: error: use of undeclared identifier 'constructor_stack_0'; did you mean 'constructor_stack'?
+constructor_stack_0 = (  struct constructor_stack *)v2; 
+^~~~~~~~~~~~~~~~~~~
+constructor_stack
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/really_start_incremental_init/src/c-typeck.c:5021:27: note: 'constructor_stack' declared here
+struct constructor_stack *constructor_stack;
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/really_start_incremental_init/src/c-typeck.c:5680:51: error: use of undeclared identifier 'spelling_0'
+constructor_depth = ( unsigned __int64)( ( char *)spelling_0 - ( char *)spelling_base) >> 4; 
+                                                  ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/really_start_incremental_init/src/c-typeck.c:5715:23: error: expected expression
+rttree = ( tree_node *)*( &global_trees + 11); 
+                      ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/really_start_incremental_init/src/c-typeck.c:5715:12: error: use of undeclared identifier 'tree_node'
+rttree = ( tree_node *)*( &global_trees + 11); 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/really_start_incremental_init/src/c-typeck.c:5732:13: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v5 = ( tree)v4[7]; 
+            ^~~~~
+9 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/really_start_incremental_init/src/obj/c-typeck.o] Error 1

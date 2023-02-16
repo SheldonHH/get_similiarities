@@ -1,0 +1,60 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/loop_givs_rescan/src/loop.c:5191:1: error: use of undeclared identifier 'induction_1'
+induction_1 *v; // [rsp+40h] [rbp-20h] 
+^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/loop_givs_rescan/src/loop.c:5191:14: error: use of undeclared identifier 'v'
+induction_1 *v; // [rsp+40h] [rbp-20h] 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/loop_givs_rescan/src/loop.c:5193:7: error: use of undeclared identifier 'v'
+for ( v = bl_0->giv; v; v = v->next_iv ) 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/loop_givs_rescan/src/loop.c:5193:22: error: use of undeclared identifier 'v'
+for ( v = bl_0->giv; v; v = v->next_iv ) 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/loop_givs_rescan/src/loop.c:5193:25: error: use of undeclared identifier 'v'
+for ( v = bl_0->giv; v; v = v->next_iv ) 
+                        ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/loop_givs_rescan/src/loop.c:5193:29: error: use of undeclared identifier 'v'
+for ( v = bl_0->giv; v; v = v->next_iv ) 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/loop_givs_rescan/src/loop.c:5195:34: error: use of undeclared identifier 'v'
+if ( v->same && ( ( *( ( _WORD *)v->same + 50) >> 2) & 1) != 0 ) 
+                                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/loop_givs_rescan/src/loop.c:5195:6: error: use of undeclared identifier 'v'
+if ( v->same && ( ( *( ( _WORD *)v->same + 50) >> 2) & 1) != 0 ) 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/loop_givs_rescan/src/loop.c:5196:14: error: use of undeclared identifier 'v'
+*( ( _WORD *)v + 50) = *( ( _WORD *)v + 50) & 0xFFFB | 4; 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/loop_givs_rescan/src/loop.c:5196:37: error: use of undeclared identifier 'v'
+*( ( _WORD *)v + 50) = *( ( _WORD *)v + 50) & 0xFFFB | 4; 
+                                    ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/loop_givs_rescan/src/loop.c:5197:23: error: use of undeclared identifier 'v'
+if ( ( ( *( ( _WORD *)v + 50) >> 2) & 1) == 0 ) 
+                      ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/loop_givs_rescan/src/loop.c:5199:6: error: use of undeclared identifier 'v'
+if ( v->same ) 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/loop_givs_rescan/src/loop.c:5200:1: error: use of undeclared identifier 'v'
+v->new_reg = replace_rtx( v->new_reg, v->same->dest_reg, v->same->new_reg); 
+^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/loop_givs_rescan/src/loop.c:5200:27: error: use of undeclared identifier 'v'
+v->new_reg = replace_rtx( v->new_reg, v->same->dest_reg, v->same->new_reg); 
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/loop_givs_rescan/src/loop.c:5200:39: error: use of undeclared identifier 'v'
+v->new_reg = replace_rtx( v->new_reg, v->same->dest_reg, v->same->new_reg); 
+                                      ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/loop_givs_rescan/src/loop.c:5200:58: error: use of undeclared identifier 'v'
+v->new_reg = replace_rtx( v->new_reg, v->same->dest_reg, v->same->new_reg); 
+                                                         ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/loop_givs_rescan/src/loop.c:5201:37: error: use of undeclared identifier 'v'
+if ( ( unsigned __int16)*( _DWORD *)v->new_reg == 61 && v->giv_type == DEST_REG && *( _DWORD *)v->dest_reg < 0 ) 
+                                    ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/loop_givs_rescan/src/loop.c:5201:57: error: use of undeclared identifier 'v'
+if ( ( unsigned __int16)*( _DWORD *)v->new_reg == 61 && v->giv_type == DEST_REG && *( _DWORD *)v->dest_reg < 0 ) 
+                                                        ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/loop_givs_rescan/src/loop.c:5201:96: error: use of undeclared identifier 'v'
+if ( ( unsigned __int16)*( _DWORD *)v->new_reg == 61 && v->giv_type == DEST_REG && *( _DWORD *)v->dest_reg < 0 ) 
+                                                                                               ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/loop_givs_rescan/src/obj/loop.o] Error 1

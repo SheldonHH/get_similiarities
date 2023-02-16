@@ -1,0 +1,92 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/consec_sets_giv/src/loop.c:7377:4: error: expected ';' after expression
+rtx v26; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/consec_sets_giv/src/loop.c:7377:5: error: use of undeclared identifier 'v26'
+rtx v26; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/consec_sets_giv/src/loop.c:7380:4: error: expected ';' after expression
+rtx v29; // [rsp+32h] [rbp-D0h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/consec_sets_giv/src/loop.c:7380:5: error: use of undeclared identifier 'v29'
+rtx v29; // [rsp+32h] [rbp-D0h] 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/consec_sets_giv/src/loop.c:7381:4: error: expected ';' after expression
+rtx v30; // [rsp+3Ah] [rbp-C8h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/consec_sets_giv/src/loop.c:7381:5: error: use of undeclared identifier 'v30'; did you mean 'v20'?
+rtx v30; // [rsp+3Ah] [rbp-C8h] 
+    ^~~
+    v20
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/consec_sets_giv/src/loop.c:7371:5: note: 'v20' declared here
+rtx v20; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/consec_sets_giv/src/loop.c:7388:6: error: use of undeclared identifier 'add_vala'; did you mean 'add_val'?
+rtx *add_vala; // [rsp+B2h] [rbp-50h] 
+     ^~~~~~~~
+     add_val
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/consec_sets_giv/src/loop.c:7358:6: note: 'add_val' declared here
+rtx *add_val, 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/consec_sets_giv/src/loop.c:7388:5: error: invalid operands to binary expression ('struct rtx_def *' and 'rtx *' (aka 'struct rtx_def **'))
+rtx *add_vala; // [rsp+B2h] [rbp-50h] 
+~~~ ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/consec_sets_giv/src/loop.c:7389:4: error: expected ';' after expression
+rtx src_rega[2]; // [rsp+BAh] [rbp-48h] BYREF 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/consec_sets_giv/src/loop.c:7389:5: error: use of undeclared identifier 'src_rega'; did you mean 'src_reg'?
+rtx src_rega[2]; // [rsp+BAh] [rbp-48h] BYREF 
+    ^~~~~~~~
+    src_reg
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/consec_sets_giv/src/loop.c:7356:5: note: 'src_reg' declared here
+rtx src_reg, 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/consec_sets_giv/src/loop.c:7393:1: error: use of undeclared identifier 'src_rega'; did you mean 'src_reg'?
+src_rega[0] = src_reg; 
+^~~~~~~~
+src_reg
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/consec_sets_giv/src/loop.c:7356:5: note: 'src_reg' declared here
+rtx src_reg, 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/consec_sets_giv/src/loop.c:7393:13: error: assigning to 'struct rtx_def' from incompatible type 'rtx' (aka 'struct rtx_def *'); dereference with *
+src_rega[0] = src_reg; 
+            ^ ~~~~~~~
+              *
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/consec_sets_giv/src/loop.c:7394:1: error: use of undeclared identifier 'add_vala'; did you mean 'add_val'?
+add_vala = add_val; 
+^~~~~~~~
+add_val
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/consec_sets_giv/src/loop.c:7358:6: note: 'add_val' declared here
+rtx *add_val, 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/consec_sets_giv/src/loop.c:7401:7: error: use of undeclared identifier 'src_rega'; did you mean 'src_reg'?
+v28 = src_rega[0]; 
+      ^~~~~~~~
+      src_reg
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/consec_sets_giv/src/loop.c:7356:5: note: 'src_reg' declared here
+rtx src_reg, 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/consec_sets_giv/src/loop.c:7401:5: error: assigning to 'struct rtx_def *' from incompatible type 'struct rtx_def'; take the address with &
+v28 = src_rega[0]; 
+    ^ ~~~~~~~~~~~
+      &
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/consec_sets_giv/src/loop.c:7402:1: error: use of undeclared identifier 'v29'
+v29 = *mult_val; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/consec_sets_giv/src/loop.c:7403:1: error: use of undeclared identifier 'v30'
+v30 = *add_val; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/consec_sets_giv/src/loop.c:7437:13: error: expected ';' after expression
+v17 = ( rtx)p[2]; 
+            ^
+            ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/consec_sets_giv/src/loop.c:7452:13: error: expected ';' after expression
+v21 = ( rtx)p[2]; 
+            ^
+            ;
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/consec_sets_giv/src/obj/loop.o] Error 1

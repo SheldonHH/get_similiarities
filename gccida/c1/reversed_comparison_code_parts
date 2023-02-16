@@ -1,0 +1,28 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/reversed_comparison_code_parts/src/jump.c:1104:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code  reversed_comparison_code_parts( rtx_code code, rtx arg0, rtx arg1, rtx insn) 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/reversed_comparison_code_parts/src/jump.c:1104:43: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code  reversed_comparison_code_parts( rtx_code code, rtx arg0, rtx arg1, rtx insn) 
+                                          ^
+                                          enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/reversed_comparison_code_parts/src/jump.c:1106:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code result; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/reversed_comparison_code_parts/src/jump.c:1109:1: error: must use 'enum' tag to refer to type 'mode_class'
+mode_class v7; // edx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/reversed_comparison_code_parts/src/machmode.h:52:30: note: enum 'mode_class' is hidden by a non-type declaration of 'mode_class' here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/reversed_comparison_code_parts/src/jump.c:1124:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v7 = mode_class_0[v6]; 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/reversed_comparison_code_parts/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/reversed_comparison_code_parts/src/obj/jump.o] Error 1

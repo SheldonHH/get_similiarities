@@ -1,0 +1,21 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/move_by_pieces/src/expr.c:1859:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode i; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/move_by_pieces/src/expr.c:1860:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v11; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/move_by_pieces/src/expr.c:1865:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v16; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/move_by_pieces/src/expr.c:1948:19: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+move_by_pieces_1( insn_data_0[insn_code].genfun, i, &v18); 
+                  ^~~~~~~~~~~
+                  insn_data
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/move_by_pieces/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/move_by_pieces/src/obj/expr.o] Error 1

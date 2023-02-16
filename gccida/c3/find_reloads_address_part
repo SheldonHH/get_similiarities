@@ -1,0 +1,76 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_reloads_address_part/src/reload.c:6157:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class a3, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_reloads_address_part/src/reload.c:6158:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_reloads_address_part/src/reload.c:6160:1: error: must use 'enum' tag to refer to type 'reload_type'
+reload_type type, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_reloads_address_part/src/reload.c:6173:6: error: use of undeclared identifier 'fld'; did you mean 'rld'?
+rtx *fld; // rcx 
+     ^~~
+     rld
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_reloads_address_part/src/reload.c:121:15: note: 'rld' declared here
+struct reload rld[MAX_RELOADS];
+              ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_reloads_address_part/src/reload.c:6173:5: error: invalid operands to binary expression ('struct rtx_def *' and 'struct reload [180]')
+rtx *fld; // rcx 
+~~~ ^~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_reloads_address_part/src/reload.c:6174:4: error: expected ';' after expression
+rtx memrefloc[8]; // [rsp+8h] [rbp-40h] BYREF 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_reloads_address_part/src/reload.c:6174:5: error: use of undeclared identifier 'memrefloc'
+rtx memrefloc[8]; // [rsp+8h] [rbp-40h] BYREF 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_reloads_address_part/src/reload.c:6186:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v15 = (  struct rtx_def *)x[1]; 
+                          ^~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_reloads_address_part/src/reload.c:6194:26: error: use of undeclared identifier 'machine_mode'
+v18 = force_const_mem( ( machine_mode)*( ( unsigned __int8 *)v12 + 2), *( rtx *)&v12[1]); 
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_reloads_address_part/src/reload.c:6194:80: error: expected expression
+v18 = force_const_mem( ( machine_mode)*( ( unsigned __int8 *)v12 + 2), *( rtx *)&v12[1]); 
+                                                                               ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_reloads_address_part/src/reload.c:6195:1: error: use of undeclared identifier 'memrefloc'
+memrefloc[1] = ( rtx)loc; 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_reloads_address_part/src/reload.c:6197:1: error: use of undeclared identifier 'memrefloc'
+memrefloc[0] = v18; 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_reloads_address_part/src/reload.c:6198:31: error: use of undeclared identifier 'machine_mode'
+v12 = gen_rtx_fmt_ee( PLUS, ( machine_mode)*( ( unsigned __int8 *)v12 + 2), v12->fld[0].rtx, v18); 
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_reloads_address_part/src/reload.c:6200:1: error: use of undeclared identifier 'fld'; did you mean 'rld'?
+fld = ( rtx *)v19->fld; 
+^~~
+rld
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_reloads_address_part/src/reload.c:121:15: note: 'rld' declared here
+struct reload rld[MAX_RELOADS];
+              ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_reloads_address_part/src/reload.c:6200:14: error: expected expression
+fld = ( rtx *)v19->fld; 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_reloads_address_part/src/reload.c:6203:57: error: expected expression
+find_reloads_address( mode, memrefloc, rtx, fld, ( rtx *)( unsigned int)opnum, type, ind_levels, 0LL); 
+                                                        ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_reloads_address_part/src/reload.c:6203:60: error: expected expression
+find_reloads_address( mode, memrefloc, rtx, fld, ( rtx *)( unsigned int)opnum, type, ind_levels, 0LL); 
+                                                           ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_reloads_address_part/src/reload.c:6203:29: error: use of undeclared identifier 'memrefloc'
+find_reloads_address( mode, memrefloc, rtx, fld, ( rtx *)( unsigned int)opnum, type, ind_levels, 0LL); 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_reloads_address_part/src/reload.c:6203:45: error: use of undeclared identifier 'fld'; did you mean 'rld'?
+find_reloads_address( mode, memrefloc, rtx, fld, ( rtx *)( unsigned int)opnum, type, ind_levels, 0LL); 
+                                            ^~~
+                                            rld
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_reloads_address_part/src/reload.c:121:15: note: 'rld' declared here
+struct reload rld[MAX_RELOADS];
+              ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_reloads_address_part/src/obj/reload.o] Error 1

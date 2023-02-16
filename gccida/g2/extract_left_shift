@@ -1,0 +1,19 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/extract_left_shift/src/combine.c:6738:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v2; // r12d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/extract_left_shift/src/combine.c:6739:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v3; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/extract_left_shift/src/combine.c:6756:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v6 = ( __int64)x[1]; 
+               ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/extract_left_shift/src/combine.c:6775:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v4 = ( __int64)x[1]; 
+               ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/extract_left_shift/src/combine.c:6784:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)x + 2), 
+  ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/extract_left_shift/src/obj/combine.o] Error 1

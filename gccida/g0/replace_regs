@@ -1,0 +1,14 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/replace_regs/src/rtlanal.c:2982:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v5.rtwint = ( __int64)x->fld[0]; 
+                      ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/replace_regs/src/rtlanal.c:3025:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)x + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/replace_regs/src/rtlanal.c:3027:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( unsigned __int8 *)( x->fld[0].rtwint + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/replace_regs/src/rtlanal.c:3043:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v6.rtwint = ( __int64)x->fld[i]; 
+                      ^~~~~~~~~
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/replace_regs/src/obj/rtlanal.o] Error 1

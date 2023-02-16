@@ -1,0 +1,83 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/store_by_pieces/src/expr.c:2864:4: error: expected ';' after expression
+rtx v12; // r14 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/store_by_pieces/src/expr.c:2864:5: error: use of undeclared identifier 'v12'; did you mean 'v11'?
+rtx v12; // r14 
+    ^~~
+    v11
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/store_by_pieces/src/expr.c:2863:5: note: 'v11' declared here
+int v11; // eax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/store_by_pieces/src/expr.c:2865:4: error: expected ';' after expression
+rtx v13; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/store_by_pieces/src/expr.c:2865:5: error: use of undeclared identifier 'v13'; did you mean 'v11'?
+rtx v13; // rax 
+    ^~~
+    v11
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/store_by_pieces/src/expr.c:2863:5: note: 'v11' declared here
+int v11; // eax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/store_by_pieces/src/expr.c:2866:4: error: expected ';' after expression
+rtx v14; // r14 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/store_by_pieces/src/expr.c:2866:5: error: use of undeclared identifier 'v14'; did you mean 'v11'?
+rtx v14; // r14 
+    ^~~
+    v11
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/store_by_pieces/src/expr.c:2863:5: note: 'v11' declared here
+int v11; // eax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/store_by_pieces/src/expr.c:2867:4: error: expected ';' after expression
+rtx v15; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/store_by_pieces/src/expr.c:2867:5: error: use of undeclared identifier 'v15'; did you mean 'v11'?
+rtx v15; // rax 
+    ^~~
+    v11
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/store_by_pieces/src/expr.c:2863:5: note: 'v11' declared here
+int v11; // eax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/store_by_pieces/src/expr.c:2887:1: error: statement requires expression of scalar type ('struct rtx_def' invalid)
+if ( to[1] ) 
+^    ~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/store_by_pieces/src/expr.c:2891:22: error: use of undeclared identifier 'machine_mode'
+v16 = gen_reg_rtx( ( machine_mode)*( unsigned __int8 *)( to->fld[0].rtwint + 2)); 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/store_by_pieces/src/expr.c:2893:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v17 = (  struct rtx_def *)to[1]; 
+                          ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/store_by_pieces/src/expr.c:2895:33: error: expected ')'
+v18 = gen_move_insn( v16, ( rtx)len); 
+                                ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/store_by_pieces/src/expr.c:2895:20: note: to match this '('
+v18 = gen_move_insn( v16, ( rtx)len); 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/store_by_pieces/src/expr.c:2908:1: error: use of undeclared identifier 'v12'
+v12 = protect_from_queue( to->fld[0].rtx, 0); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/store_by_pieces/src/expr.c:2909:6: error: use of undeclared identifier 'v12'
+if ( v12 != to->fld[0].rtx ) 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/store_by_pieces/src/expr.c:2911:1: error: use of undeclared identifier 'v13'
+v13 = copy_rtx( to); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/store_by_pieces/src/expr.c:2912:32: error: use of undeclared identifier 'v12'
+v13->fld[0].rtwint = ( __int64)v12; 
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/store_by_pieces/src/expr.c:2912:1: error: use of undeclared identifier 'v13'
+v13->fld[0].rtwint = ( __int64)v12; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/store_by_pieces/src/expr.c:2913:7: error: use of undeclared identifier 'v13'
+rtx = v13; 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/store_by_pieces/src/expr.c:2919:1: error: use of undeclared identifier 'v14'
+v14 = protect_from_queue( to->fld[0].rtx, 0); 
+^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/store_by_pieces/src/obj/expr.o] Error 1

@@ -1,0 +1,29 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/_cpp_unaligned_alloc/src/cpplex.c:2537:40: error: unknown type name 'cpp_reader_0'; did you mean 'cpp_reader'?
+unsigned __int8 * cpp_unaligned_alloc( cpp_reader_0 *pfile, size_t len) 
+                                       ^~~~~~~~~~~~
+                                       cpp_reader
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/_cpp_unaligned_alloc/src/cpplib.h:36:27: note: 'cpp_reader' declared here
+typedef struct cpp_reader cpp_reader;
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/_cpp_unaligned_alloc/src/cpplex.c:2539:1: error: unknown type name '_cpp_buff_0'; did you mean '_cpp_buff'?
+_cpp_buff_0 *u_buff; // rcx 
+^~~~~~~~~~~
+_cpp_buff
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/_cpp_unaligned_alloc/src/cpphash.h:47:26: note: '_cpp_buff' declared here
+typedef struct _cpp_buff _cpp_buff;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/_cpp_unaligned_alloc/src/cpplex.c:2543:1: error: unknown type name '_cpp_buff_0'; did you mean '_cpp_buff'?
+_cpp_buff_0 **p_free_buffs; // rdx 
+^~~~~~~~~~~
+_cpp_buff
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/_cpp_unaligned_alloc/src/cpphash.h:47:26: note: '_cpp_buff' declared here
+typedef struct _cpp_buff _cpp_buff;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/_cpp_unaligned_alloc/src/cpplex.c:2583:25: error: expected expression
+u_buff = ( _cpp_buff_0 *)&result[v10]; 
+                        ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/_cpp_unaligned_alloc/src/cpplex.c:2583:12: error: use of undeclared identifier '_cpp_buff_0'
+u_buff = ( _cpp_buff_0 *)&result[v10]; 
+           ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/_cpp_unaligned_alloc/src/obj/cpplex.o] Error 1

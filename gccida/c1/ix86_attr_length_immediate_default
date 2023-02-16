@@ -1,0 +1,38 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/ix86_attr_length_immediate_default/src/i386.c:10395:6: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( recog_data_0.n_operands <= 0 ) 
+     ^~~~~~~~~~~~
+     recog_data
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/ix86_attr_length_immediate_default/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/ix86_attr_length_immediate_default/src/i386.c:10397:6: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+v2 = recog_data_0.n_operands + 1LL; 
+     ^~~~~~~~~~~~
+     recog_data
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/ix86_attr_length_immediate_default/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/ix86_attr_length_immediate_default/src/i386.c:10402:23: error: use of undeclared identifier 'changes_allocated'
+v5 = **( ( _DWORD **)&changes_allocated + v2); 
+                      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/ix86_attr_length_immediate_default/src/i386.c:10410:26: error: use of undeclared identifier 'changes_allocated'
+|| ( v6 = *( ( _QWORD *)&changes_allocated + v2), *( _WORD *)v6 != 54) 
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/ix86_attr_length_immediate_default/src/i386.c:10415:40: error: too many arguments provided to function-like macro invocation
+fatal_insn( "unknown insn mode", insn, "i386.c", 9956, "ix86_attr_length_immediate_default"); 
+                                       ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/ix86_attr_length_immediate_default/src/toplev.h:50:9: note: macro 'fatal_insn' defined here
+#define fatal_insn(msgid, insn) \
+        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/ix86_attr_length_immediate_default/src/i386.c:10415:1: error: use of undeclared identifier 'fatal_insn'; did you mean '_fatal_insn'?
+fatal_insn( "unknown insn mode", insn, "i386.c", 9956, "ix86_attr_length_immediate_default"); 
+^~~~~~~~~~
+_fatal_insn
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/ix86_attr_length_immediate_default/src/toplev.h:44:13: note: '_fatal_insn' declared here
+extern void _fatal_insn                 PARAMS ((const char *,
+            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/ix86_attr_length_immediate_default/src/i386.c:10416:26: error: subscripted value is not an array, pointer, or vector
+result = *(int *)0x639820[v8]; 
+                 ~~~~~~~~^~~
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/ix86_attr_length_immediate_default/src/obj/i386.o] Error 1

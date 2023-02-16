@@ -1,0 +1,39 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/build_stmt/src/c-semantics.c:647:18: error: must use 'enum' tag to refer to type 'tree_code'
+tree build_stmt( tree_code code, ...) 
+                 ^
+                 enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/build_stmt/src/c-semantics.c:651:1: error: use of undeclared identifier '$A887AD9C3C6C8CC7716950D571F57C9D'
+$A887AD9C3C6C8CC7716950D571F57C9D *p_int_cst; // rax 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/build_stmt/src/c-semantics.c:651:36: error: use of undeclared identifier 'p_int_cst'
+$A887AD9C3C6C8CC7716950D571F57C9D *p_int_cst; // rax 
+                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/build_stmt/src/c-semantics.c:670:1: error: use of undeclared identifier 'p_int_cst'
+p_int_cst = &node->int_cst.int_cst; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/build_stmt/src/c-semantics.c:683:1: error: use of undeclared identifier 'p_int_cst'
+p_int_cst->low = *v5; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/build_stmt/src/c-semantics.c:684:1: error: use of undeclared identifier 'p_int_cst'
+p_int_cst = ( $A887AD9C3C6C8CC7716950D571F57C9D *)( ( char *)p_int_cst + 8); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/build_stmt/src/c-semantics.c:684:50: error: expected expression
+p_int_cst = ( $A887AD9C3C6C8CC7716950D571F57C9D *)( ( char *)p_int_cst + 8); 
+                                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/build_stmt/src/c-semantics.c:684:15: error: use of undeclared identifier '$A887AD9C3C6C8CC7716950D571F57C9D'
+p_int_cst = ( $A887AD9C3C6C8CC7716950D571F57C9D *)( ( char *)p_int_cst + 8); 
+              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/build_stmt/src/c-semantics.c:684:62: error: use of undeclared identifier 'p_int_cst'
+p_int_cst = ( $A887AD9C3C6C8CC7716950D571F57C9D *)( ( char *)p_int_cst + 8); 
+                                                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/build_stmt/src/c-semantics.c:686:59: error: expected expression
+while ( p_int_cst != ( $A887AD9C3C6C8CC7716950D571F57C9D *)( &node->block.subblocks + ( unsigned int)( v3 - 1)) ); 
+                                                          ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/build_stmt/src/c-semantics.c:686:24: error: use of undeclared identifier '$A887AD9C3C6C8CC7716950D571F57C9D'
+while ( p_int_cst != ( $A887AD9C3C6C8CC7716950D571F57C9D *)( &node->block.subblocks + ( unsigned int)( v3 - 1)) ); 
+                       ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/build_stmt/src/c-semantics.c:686:9: error: use of undeclared identifier 'p_int_cst'
+while ( p_int_cst != ( $A887AD9C3C6C8CC7716950D571F57C9D *)( &node->block.subblocks + ( unsigned int)( v3 - 1)) ); 
+        ^
+12 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/build_stmt/src/obj/c-semantics.o] Error 1

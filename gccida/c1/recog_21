@@ -1,0 +1,112 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/recog_21/src/insn-recog.c:26250:10: error: conflicting types for 'recog_21'
+__int64  recog_21( rtx x0, rtx insn, int *pnum_clobbers) 
+         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/recog_21/src/insn-recog.c:25786:12: note: previous declaration is here
+static int recog_21 PARAMS ((rtx, rtx, int *));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/recog_21/src/insn-recog.c:26395:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v3.rtwint = ( __int64)x0->fld[0]; 
+                      ^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/recog_21/src/insn-recog.c:26402:33: error: expected expression
+if ( !register_operand( *( rtx *)( *( _QWORD *)( v3.rtwint + 8) + 16LL), DImode) ) 
+                                ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/recog_21/src/insn-recog.c:26404:1: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+recog_data_0.operand[1] = ( rtx)v4; 
+^~~~~~~~~~~~
+recog_data
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/recog_21/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/recog_21/src/insn-recog.c:26404:33: error: expected ';' after expression
+recog_data_0.operand[1] = ( rtx)v4; 
+                                ^
+                                ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/recog_21/src/insn-recog.c:26407:26: error: expected expression
+|| !rtx_equal_p( *( rtx *)( v6 + 8), ( rtx)v4) 
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/recog_21/src/insn-recog.c:26408:26: error: expected expression
+|| !rtx_equal_p( *( rtx *)( v6 + 16), recog_data_0.operand[0]) ) 
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/recog_21/src/insn-recog.c:26408:39: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+|| !rtx_equal_p( *( rtx *)( v6 + 16), recog_data_0.operand[0]) ) 
+                                      ^~~~~~~~~~~~
+                                      recog_data
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/recog_21/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/recog_21/src/insn-recog.c:26463:1: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+recog_data_0.operand[1] = rtx; 
+^~~~~~~~~~~~
+recog_data
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/recog_21/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/recog_21/src/insn-recog.c:26470:1: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+recog_data_0.operand[2] = v65; 
+^~~~~~~~~~~~
+recog_data
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/recog_21/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/recog_21/src/insn-recog.c:26477:7: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+v68 = recog_data_0.operand[1]; 
+      ^~~~~~~~~~~~
+      recog_data
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/recog_21/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/recog_21/src/insn-recog.c:26484:1: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+recog_data_0.operand[1] = v79; 
+^~~~~~~~~~~~
+recog_data
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/recog_21/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/recog_21/src/insn-recog.c:26491:1: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+recog_data_0.operand[2] = v65; 
+^~~~~~~~~~~~
+recog_data
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/recog_21/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/recog_21/src/insn-recog.c:26498:7: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+v68 = recog_data_0.operand[1]; 
+      ^~~~~~~~~~~~
+      recog_data
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/recog_21/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/recog_21/src/insn-recog.c:26503:37: error: expected expression
+if ( !nonimmediate_operand( *( rtx *)( v4 + 8), DImode) ) 
+                                    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/recog_21/src/insn-recog.c:26505:1: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+recog_data_0.operand[1] = v15; 
+^~~~~~~~~~~~
+recog_data
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/recog_21/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/recog_21/src/insn-recog.c:26509:1: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+recog_data_0.operand[2] = v65; 
+^~~~~~~~~~~~
+recog_data
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/recog_21/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/recog_21/src/insn-recog.c:26516:7: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+v68 = recog_data_0.operand[1]; 
+      ^~~~~~~~~~~~
+      recog_data
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/recog_21/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/recog_21/src/insn-recog.c:26529:1: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+recog_data_0.operand[2] = v17; 
+^~~~~~~~~~~~
+recog_data
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/recog_21/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/recog_21/src/obj/insn-recog.o] Error 1

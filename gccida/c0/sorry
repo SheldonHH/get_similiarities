@@ -1,0 +1,68 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/sorry/src/diagnostic.c:1513:1: error: unknown type name 'output_buffer_0'; did you mean 'output_buffer'?
+output_buffer_0 *v5; // rcx 
+^~~~~~~~~~~~~~~
+output_buffer
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/sorry/src/diagnostic.h:28:30: note: 'output_buffer' declared here
+typedef struct output_buffer output_buffer;
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/sorry/src/diagnostic.c:1517:1: error: unknown type name 'output_buffer_0'; did you mean 'output_buffer'?
+output_buffer_0 *buffer; // [rsp+8h] [rbp-1E8h] 
+^~~~~~~~~~~~~~~
+output_buffer
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/sorry/src/diagnostic.h:28:30: note: 'output_buffer' declared here
+typedef struct output_buffer output_buffer;
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/sorry/src/diagnostic.c:1525:12: error: expected expression
+*( _OWORD *)&os.diagnostic_count[4] = *( _OWORD *)&diagnostic_buffer->state.diagnostic_count[4]; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/sorry/src/diagnostic.c:1525:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&os.diagnostic_count[4] = *( _OWORD *)&diagnostic_buffer->state.diagnostic_count[4]; 
+   ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/sorry/src/diagnostic.c:1525:50: error: expected expression
+*( _OWORD *)&os.diagnostic_count[4] = *( _OWORD *)&diagnostic_buffer->state.diagnostic_count[4]; 
+                                                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/sorry/src/diagnostic.c:1525:42: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&os.diagnostic_count[4] = *( _OWORD *)&diagnostic_buffer->state.diagnostic_count[4]; 
+                                         ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/sorry/src/diagnostic.c:1526:17: error: expected expression
+v1 = *( _OWORD *)&diagnostic_buffer->state.prefix; 
+                ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/sorry/src/diagnostic.c:1526:9: error: use of undeclared identifier '_OWORD'
+v1 = *( _OWORD *)&diagnostic_buffer->state.prefix; 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/sorry/src/diagnostic.c:1527:17: error: expected expression
+v2 = *( _OWORD *)&diagnostic_buffer->state.indent_skip; 
+                ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/sorry/src/diagnostic.c:1527:9: error: use of undeclared identifier '_OWORD'
+v2 = *( _OWORD *)&diagnostic_buffer->state.indent_skip; 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/sorry/src/diagnostic.c:1528:17: error: expected expression
+v3 = *( _OWORD *)&diagnostic_buffer->state.cursor; 
+                ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/sorry/src/diagnostic.c:1528:9: error: use of undeclared identifier '_OWORD'
+v3 = *( _OWORD *)&diagnostic_buffer->state.cursor; 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/sorry/src/diagnostic.c:1529:12: error: expected expression
+*( _OWORD *)os.diagnostic_count = *( _OWORD *)diagnostic_buffer->state.diagnostic_count; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/sorry/src/diagnostic.c:1529:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)os.diagnostic_count = *( _OWORD *)diagnostic_buffer->state.diagnostic_count; 
+   ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/sorry/src/diagnostic.c:1530:12: error: expected expression
+*( _OWORD *)&os.cursor = v3; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/sorry/src/diagnostic.c:1530:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&os.cursor = v3; 
+   ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/sorry/src/diagnostic.c:1531:12: error: expected expression
+*( _OWORD *)&os.indent_skip = v2; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/sorry/src/diagnostic.c:1531:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&os.indent_skip = v2; 
+   ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/sorry/src/diagnostic.c:1532:12: error: expected expression
+*( _OWORD *)&os.prefix = v1; 
+           ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/sorry/src/obj/diagnostic.o] Error 1

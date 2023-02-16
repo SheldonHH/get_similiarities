@@ -1,0 +1,38 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/offset_address/src/emit-rtl.c:2523:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v3; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/offset_address/src/emit-rtl.c:2524:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v4; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/offset_address/src/emit-rtl.c:2527:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v7; // rsi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/offset_address/src/emit-rtl.c:2540:27: error: use of undeclared identifier 'machine_mode'
+if ( !memory_address_p( ( machine_mode)*( ( unsigned __int8 *)memref + 2), newa) 
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/offset_address/src/emit-rtl.c:2544:22: error: use of undeclared identifier 'machine_mode'
+addra = force_reg( ( machine_mode)*( ( unsigned __int8 *)addr + 2), addr); 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/offset_address/src/emit-rtl.c:2553:1: error: statement requires expression of scalar type ('struct rtx_def' invalid)
+if ( memref[1] ) 
+^    ~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/offset_address/src/emit-rtl.c:2560:1: error: statement requires expression of scalar type ('struct rtx_def' invalid)
+if ( memref[1] ) 
+^    ~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/offset_address/src/emit-rtl.c:2561:21: error: expected expression
+v7 = *( tree_node **)( *( _QWORD *)&memref[1] + 8LL); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/offset_address/src/emit-rtl.c:2561:9: error: use of undeclared identifier 'tree_node'
+v7 = *( tree_node **)( *( _QWORD *)&memref[1] + 8LL); 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/offset_address/src/emit-rtl.c:2564:1: error: statement requires expression of scalar type ('struct rtx_def' invalid)
+if ( memref[1] ) 
+^    ~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/offset_address/src/emit-rtl.c:2568:63: error: use of undeclared identifier 'machine_mode'
+*( _QWORD *)&newb[1] = get_mem_attrs( v8, v7, 0LL, 0LL, v6, ( machine_mode)*( ( unsigned __int8 *)newb + 2)); 
+                                                              ^
+11 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/offset_address/src/obj/emit-rtl.o] Error 1

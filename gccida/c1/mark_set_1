@@ -1,0 +1,74 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_set_1/src/flow.c:2962:54: error: must use 'enum' tag to refer to type 'rtx_code'
+void  mark_set_1(  struct propagate_block_info *pbi, rtx_code code, rtx reg, rtx cond, rtx insn, int flags) 
+                                                     ^
+                                                     enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_set_1/src/flow.c:2979:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v24; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_set_1/src/flow.c:2982:4: error: expected ';' after expression
+rtx v27; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_set_1/src/flow.c:2982:5: error: use of undeclared identifier 'v27'
+rtx v27; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_set_1/src/flow.c:2995:4: error: expected ';' after expression
+rtx v40; // r12 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_set_1/src/flow.c:2995:5: error: use of undeclared identifier 'v40'
+rtx v40; // r12 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_set_1/src/flow.c:3014:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode *v59; // rbx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_set_1/src/flow.c:3023:4: error: expected ';' after expression
+rtx val; // [rsp+30h] [rbp-58h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_set_1/src/flow.c:3023:5: error: use of undeclared identifier 'val'
+rtx val; // [rsp+30h] [rbp-58h] 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_set_1/src/flow.c:3101:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)BYTE2( v21), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_set_1/src/flow.c:3103:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( unsigned __int8)v22); 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_set_1/src/flow.c:3103:18: error: expected expression
+( machine_mode)( unsigned __int8)v22); 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_set_1/src/flow.c:3108:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v25 = ( ( unsigned int)( mode_class_0[( unsigned __int8)v22] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_set_1/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_set_1/src/flow.c:3125:1: error: use of undeclared identifier 'v27'
+v27 = gen_rtx_REG( v24, rtint); 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_set_1/src/flow.c:3127:7: error: use of undeclared identifier 'v27'
+rtx = v27; 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_set_1/src/flow.c:3177:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v19 = ( ( unsigned int)( mode_class_0[v18] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_set_1/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_set_1/src/flow.c:3249:1: error: use of undeclared identifier 'val'
+val = insn; 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_set_1/src/flow.c:3285:1: error: use of undeclared identifier 'v40'
+v40 = mode->reg_next_use[bit]; 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_set_1/src/flow.c:3300:1: error: use of undeclared identifier 'v40'
+v40 = 0LL; 
+^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_set_1/src/obj/flow.o] Error 1

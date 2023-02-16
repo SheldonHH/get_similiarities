@@ -1,0 +1,41 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/offsettable_address_p/src/recog.c:2394:42: error: must use 'enum' tag to refer to type 'machine_mode'
+int  offsettable_address_p( int strictp, machine_mode mode, rtx y) 
+                                         ^
+                                         enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/offsettable_address_p/src/recog.c:2398:28: error: unexpected type name 'rtx': expected identifier
+int (  *v7)( machine_mode, rtx); // r13 
+                           ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/offsettable_address_p/src/recog.c:2398:14: error: a parameter list without types is only allowed in a function definition
+int (  *v7)( machine_mode, rtx); // r13 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/offsettable_address_p/src/recog.c:2407:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v17; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/offsettable_address_p/src/recog.c:2410:4: error: expected ';' after expression
+rtx v20; // [rsp+0h] [rbp-38h] BYREF 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/offsettable_address_p/src/recog.c:2410:5: error: use of undeclared identifier 'v20'
+rtx v20; // [rsp+0h] [rbp-38h] BYREF 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/offsettable_address_p/src/recog.c:2412:1: error: use of undeclared identifier 'v20'
+v20 = v3; 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/offsettable_address_p/src/recog.c:2414:1: error: use of undeclared identifier 'v20'
+v20 = y; 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/offsettable_address_p/src/recog.c:2428:84: error: use of undeclared identifier 'v20'
+if ( ( unsigned __int16)v6 == 75 && ( constant_term_loc = find_constant_term_loc( &v20)) != 0LL ) 
+                                                                                   ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/offsettable_address_p/src/recog.c:2431:1: error: use of undeclared identifier 'v20'
+v20 = *constant_term_loc; 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/offsettable_address_p/src/recog.c:2434:8: error: use of undeclared identifier 'v20'
+*v15 = v20; 
+       ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/offsettable_address_p/src/recog.c:2442:35: error: expected expression
+v19 = plus_constant_wide( *( rtx *)&y[1], v13 - 1); 
+                                  ^
+12 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/offsettable_address_p/src/obj/recog.o] Error 1

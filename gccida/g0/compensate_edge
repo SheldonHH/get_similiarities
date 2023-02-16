@@ -1,0 +1,28 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/compensate_edge/src/reg-stack.c:2952:1: error: unknown type name 'block_info_0'; did you mean 'block_info'?
+block_info_0 bi; // [rsp+70h] [rbp-20h] 
+^~~~~~~~~~~~
+block_info
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/compensate_edge/src/reg-stack.c:202:4: note: 'block_info' declared here
+} *block_info;
+   ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/compensate_edge/src/reg-stack.c:2959:8: error: use of undeclared identifier 'block_info_0'
+bi = ( block_info_0)block->aux; 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/compensate_edge/src/reg-stack.c:2962:17: error: expected identifier or '('
+ struct reg_set = bi->stack_out.reg_set; 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/compensate_edge/src/reg-stack.c:3021:54: error: use of undeclared identifier 'emit_where'; did you mean 'emit_note'?
+change_stack( block->end, &tmpstack, target_stack, ( emit_where)( *( _WORD *)block->end == 33)); 
+                                                     ^~~~~~~~~~
+                                                     emit_note
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/compensate_edge/src/rtl.h:1343:12: note: 'emit_note' declared here
+extern rtx emit_note                    PARAMS ((const char *, int));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/compensate_edge/src/reg-stack.c:3021:94: error: too few arguments to function call, expected 2, have 1
+change_stack( block->end, &tmpstack, target_stack, ( emit_where)( *( _WORD *)block->end == 33)); 
+                                                   ~~~~~~~~~~~~~                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/compensate_edge/src/rtl.h:1343:1: note: 'emit_note' declared here
+extern rtx emit_note                    PARAMS ((const char *, int));
+^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/compensate_edge/src/obj/reg-stack.o] Error 1

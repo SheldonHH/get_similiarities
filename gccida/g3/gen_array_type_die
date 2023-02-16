@@ -1,0 +1,28 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_array_type_die/src/dwarf2out.c:10232:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *rttree; // r14 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_array_type_die/src/dwarf2out.c:10233:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v16; // r15 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_array_type_die/src/dwarf2out.c:10270:5: error: assigning to '__m128' (vector of 4 'float' values) from incompatible type 'int'
+v31 = _mm_loadh_ps( ( const double *)&typea); 
+    ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_array_type_die/src/dwarf2out.c:10337:30: error: use of undeclared identifier 'a'
+fancy_abort( ( const char *)&a, 5026, "add_child_die"); 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_array_type_die/src/dwarf2out.c:10344:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v14.rtwint = ( __int64)rtl->fld[0]; 
+                       ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_array_type_die/src/dwarf2out.c:10346:20: error: expected expression
+v16 = ( tree_node *)rtl[7]; 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_array_type_die/src/dwarf2out.c:10346:9: error: use of undeclared identifier 'tree_node'
+v16 = ( tree_node *)rtl[7]; 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_array_type_die/src/dwarf2out.c:10348:13: error: invalid operands to binary expression ('struct rtx_def' and 'int')
+&& ( rtl[1] != 6 || *( _QWORD *)&rtl[6] || *( _BYTE *)( v14.rtwint + 16) != 6 || *( _QWORD *)( v14.rtwint + 96)) ) 
+     ~~~~~~ ^  ~
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_array_type_die/src/obj/dwarf2out.o] Error 1

@@ -1,0 +1,25 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/setup_save_areas/src/caller-save.c:751:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode *v17; // rbp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/setup_save_areas/src/caller-save.c:753:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v19; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/setup_save_areas/src/caller-save.c:768:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v34; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/setup_save_areas/src/caller-save.c:774:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode *v40; // [rsp+20h] [rbp-58h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/setup_save_areas/src/caller-save.c:801:25: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v9 = ( ( unsigned int)( mode_class_0[v8] - 5) < 2) + 1; 
+                        ^~~~~~~~~~~~
+                        mode_class
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/setup_save_areas/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/setup_save_areas/src/obj/caller-save.o] Error 1

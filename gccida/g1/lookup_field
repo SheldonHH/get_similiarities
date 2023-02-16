@@ -1,0 +1,42 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/lookup_field/src/c-typeck.c:1521:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *values; // rbp 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/lookup_field/src/c-typeck.c:1522:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *name; // rbx 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/lookup_field/src/c-typeck.c:1524:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v12; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/lookup_field/src/c-typeck.c:1525:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v13; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/lookup_field/src/c-typeck.c:1553:26: error: incomplete definition of type 'struct function'
+field_array = ( tree *)&f->stmt; 
+                        ~^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/lookup_field/src/rtl.h:25:8: note: forward declaration of 'struct function'
+struct function;
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/lookup_field/src/c-typeck.c:1554:13: error: incomplete definition of type 'struct function'
+eh = ( int)f->eh; 
+           ~^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/lookup_field/src/rtl.h:25:8: note: forward declaration of 'struct function'
+struct function;
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/lookup_field/src/c-typeck.c:1609:20: error: expected expression
+v12 = ( tree_node *)*( ( _QWORD *)&v15->stmt + v11++); 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/lookup_field/src/c-typeck.c:1609:9: error: use of undeclared identifier 'tree_node'
+v12 = ( tree_node *)*( ( _QWORD *)&v15->stmt + v11++); 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/lookup_field/src/c-typeck.c:1609:39: error: incomplete definition of type 'struct function'
+v12 = ( tree_node *)*( ( _QWORD *)&v15->stmt + v11++); 
+                                   ~~~^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/lookup_field/src/rtl.h:25:8: note: forward declaration of 'struct function'
+struct function;
+       ^
+9 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/lookup_field/src/obj/c-typeck.o] Error 1

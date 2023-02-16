@@ -1,0 +1,63 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/sched_init/src/haifa-sched.c:2376:4: error: expected ';' after expression
+rtx j; // rbx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/sched_init/src/haifa-sched.c:2376:5: error: use of undeclared identifier 'j'
+rtx j; // rbx 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/sched_init/src/haifa-sched.c:2379:4: error: expected ';' after expression
+rtx v25; // [rsp+0h] [rbp-38h] BYREF 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/sched_init/src/haifa-sched.c:2379:5: error: use of undeclared identifier 'v25'
+rtx v25; // [rsp+0h] [rbp-38h] BYREF 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/sched_init/src/haifa-sched.c:2380:4: error: expected ';' after expression
+rtx tailp; // [rsp+8h] [rbp-30h] BYREF 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/sched_init/src/haifa-sched.c:2380:5: error: use of undeclared identifier 'tailp'
+rtx tailp; // [rsp+8h] [rbp-30h] BYREF 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/sched_init/src/haifa-sched.c:2428:14: error: expected expression
+v10 = ( rtx *)xcalloc( ( int)n_basic_blocks, 8uLL); 
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/sched_init/src/haifa-sched.c:2444:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v14 = (  struct rtx_def *)v14[1]; 
+                          ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/sched_init/src/haifa-sched.c:2484:27: error: use of undeclared identifier 'v25'
+get_block_head_tail( v9, &v25, &tailp); 
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/sched_init/src/haifa-sched.c:2484:33: error: use of undeclared identifier 'tailp'
+get_block_head_tail( v9, &v25, &tailp); 
+                                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/sched_init/src/haifa-sched.c:2485:24: error: use of undeclared identifier 'tailp'
+v24.rtwint = ( __int64)tailp[1].fld[0]; 
+                       ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/sched_init/src/haifa-sched.c:2486:7: error: use of undeclared identifier 'j'
+for ( j = v25; v24.rtx != j; j = j[1].fld[0].rtx ) 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/sched_init/src/haifa-sched.c:2486:11: error: use of undeclared identifier 'v25'
+for ( j = v25; v24.rtx != j; j = j[1].fld[0].rtx ) 
+          ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/sched_init/src/haifa-sched.c:2486:27: error: use of undeclared identifier 'j'
+for ( j = v25; v24.rtx != j; j = j[1].fld[0].rtx ) 
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/sched_init/src/haifa-sched.c:2486:30: error: use of undeclared identifier 'j'
+for ( j = v25; v24.rtx != j; j = j[1].fld[0].rtx ) 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/sched_init/src/haifa-sched.c:2486:34: error: use of undeclared identifier 'j'
+for ( j = v25; v24.rtx != j; j = j[1].fld[0].rtx ) 
+                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/sched_init/src/haifa-sched.c:2488:27: error: use of undeclared identifier 'j'
+if ( rtx_class[*( _WORD *)j] == 105 ) 
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/sched_init/src/haifa-sched.c:2490:17: error: use of undeclared identifier 'j'
+v23 = ( __int64)j[2]; 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/sched_init/src/haifa-sched.c:2491:96: error: expected expression
+if ( ( ( *( _WORD *)v23 - 47) & 0xFFFD) != 0 || ( LOWORD( v17) = 1, !register_operand( *( rtx *)( v23 + 8), VOIDmode)) ) 
+                                                                                               ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/sched_init/src/obj/haifa-sched.o] Error 1

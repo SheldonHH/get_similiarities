@@ -1,0 +1,62 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/convert_from_ssa/src/ssa.c:2632:4: error: expected ';' after expression
+rtx j; // rdi 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/convert_from_ssa/src/ssa.c:2632:5: error: use of undeclared identifier 'j'
+rtx j; // rdi 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/convert_from_ssa/src/ssa.c:2639:4: error: expected ';' after expression
+rtx x[2]; // [rsp+30h] [rbp-58h] BYREF 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/convert_from_ssa/src/ssa.c:2639:5: error: use of undeclared identifier 'x'
+rtx x[2]; // [rsp+30h] [rbp-58h] BYREF 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/convert_from_ssa/src/ssa.c:2672:1: error: use of undeclared identifier 'x'
+x[0] = *( rtx *)( v9 + 16); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/convert_from_ssa/src/ssa.c:2672:16: error: expected expression
+x[0] = *( rtx *)( v9 + 16); 
+               ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/convert_from_ssa/src/ssa.c:2673:17: error: use of undeclared identifier 'x'
+if ( *( _WORD *)x[0] == 61 ) 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/convert_from_ssa/src/ssa.c:2676:24: error: use of undeclared identifier 'x'
+bitmap_set_bit( &head, x[0]->fld[0].rtint); 
+                       ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/convert_from_ssa/src/ssa.c:2678:22: error: use of undeclared identifier 'x'
+else if ( *( _WORD *)x[0] == 152 ) 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/convert_from_ssa/src/ssa.c:2681:15: error: use of undeclared identifier 'x'
+for_each_rtx( x, mark_reg_in_phi, &head); 
+              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/convert_from_ssa/src/ssa.c:2711:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v11 = ( __int64)rtx[2]; 
+                ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/convert_from_ssa/src/ssa.c:2727:1: error: use of undeclared identifier 'x'
+x[0] = ( rtx)v1; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/convert_from_ssa/src/ssa.c:2728:1: error: use of undeclared identifier 'x'
+x[1] = ( rtx)v5; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/convert_from_ssa/src/ssa.c:2730:51: error: use of undeclared identifier 'x'
+for_each_successor_phi( v14, coalesce_reg_in_phi, x); 
+                                                  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/convert_from_ssa/src/ssa.c:2756:22: error: expected expression
+for_each_rtx( ( rtx *)v17 + 4, rename_equivalent_regs_in_insn, v1); 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/convert_from_ssa/src/ssa.c:2757:22: error: expected expression
+for_each_rtx( ( rtx *)v17 + 7, rename_equivalent_regs_in_insn, v1); 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/convert_from_ssa/src/ssa.c:2768:27: error: expected expression
+emit_insn_before( *( rtx *)( *( _QWORD *)( v18 + 8) + 8LL * v21++ + 8), ( rtx)v17); 
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/convert_from_ssa/src/ssa.c:2800:19: error: expected expression
+for ( j = *( rtx *)basic_block_info->data.l[v16]; ; j = j[1].fld[0].rtx ) 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/convert_from_ssa/src/ssa.c:2800:7: error: use of undeclared identifier 'j'
+for ( j = *( rtx *)basic_block_info->data.l[v16]; ; j = j[1].fld[0].rtx ) 
+      ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/convert_from_ssa/src/obj/ssa.o] Error 1

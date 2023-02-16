@@ -1,0 +1,82 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/insert/src/cse.c:2016:82: error: must use 'enum' tag to refer to type 'machine_mode'
+ struct table_elt * insert( rtx x,  struct table_elt *classp, unsigned int hash, machine_mode mode) 
+                                                                                 ^
+                                                                                 enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/insert/src/cse.c:2042:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v33; // r15d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/insert/src/cse.c:2093:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v84; // [rsp+8h] [rbp-40h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/insert/src/cse.c:2094:4: error: expected ';' after expression
+rtx v85; // [rsp+8h] [rbp-40h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/insert/src/cse.c:2094:5: error: use of undeclared identifier 'v85'
+rtx v85; // [rsp+8h] [rbp-40h] 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/insert/src/cse.c:2110:41: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v43 = ( ( unsigned int)( *( ( _DWORD *)&mode_class_0 + v40) - 5) < 2) + 1; 
+                                        ^~~~~~~~~~~~
+                                        mode_class
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/insert/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/insert/src/cse.c:2145:22: error: expected identifier or '('
+ struct cse_reg_info = get_cse_reg_info( rtuint); 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/insert/src/cse.c:2168:29: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+&& ( v29.rtwint = ( __int64)x->fld[0], *( _WORD *)v29.rtwint == 61) 
+                            ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/insert/src/cse.c:2169:58: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& ( v63 = *( ( unsigned __int8 *)x + 2), *( ( _DWORD *)&mode_class_0 + v63) == 1) 
+                                                         ^~~~~~~~~~~~
+                                                         mode_class
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/insert/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/insert/src/cse.c:2170:67: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& ( v64 = *( unsigned __int8 *)( v29.rtwint + 2), *( ( _DWORD *)&mode_class_0 + v64) == 1) 
+                                                                  ^~~~~~~~~~~~
+                                                                  mode_class
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/insert/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/insert/src/cse.c:2423:7: error: use of undeclared identifier 'this_insn_0'; did you mean 'this_insn'?
+v73 = this_insn_0; 
+      ^~~~~~~~~~~
+      this_insn
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/insert/src/cse.c:276:12: note: 'this_insn' declared here
+static rtx this_insn;
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/insert/src/cse.c:2466:32: error: use of undeclared identifier 'this_insn_0'; did you mean 'this_insn'?
+v45[v46->reg_qty].const_insn = this_insn_0; 
+                               ^~~~~~~~~~~
+                               this_insn
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/insert/src/cse.c:276:12: note: 'this_insn' declared here
+static rtx this_insn;
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/insert/src/cse.c:2479:1: error: use of undeclared identifier 'v85'
+v85 = adjust_address_1( x, v33, 0LL, 0, 1); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/insert/src/cse.c:2480:30: error: use of undeclared identifier 'v85'; did you mean 'v35'?
+v74 = memory_address_p( v33, v85->fld[0].rtx); 
+                             ^~~
+                             v35
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/insert/src/cse.c:2044:18: note: 'v35' declared here
+ struct rtx_def *v35; // r14 
+                 ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/insert/src/cse.c:2483:7: error: use of undeclared identifier 'v85'
+v35 = v85; 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/insert/src/cse.c:2485:7: error: use of undeclared identifier 'this_insn_0'; did you mean 'this_insn'?
+v36 = this_insn_0; 
+      ^~~~~~~~~~~
+      this_insn
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/insert/src/cse.c:276:12: note: 'this_insn' declared here
+static rtx this_insn;
+           ^
+16 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/insert/src/obj/cse.o] Error 1

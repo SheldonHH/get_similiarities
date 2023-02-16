@@ -1,0 +1,39 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/rtx_cost/src/cse.c:1287:23: error: must use 'enum' tag to refer to type 'rtx_code'
+int  rtx_cost( rtx x, rtx_code outer_code) 
+                      ^
+                      enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/rtx_cost/src/cse.c:1291:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v4; // r13d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/rtx_cost/src/cse.c:1347:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v61; // [rsp+8h] [rbp-40h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/rtx_cost/src/cse.c:1360:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v14 = ( __int64)v2[1]; 
+                ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/rtx_cost/src/cse.c:1361:90: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+if ( *( _WORD *)v14 == 54 && ( exact_log2_wide( *( _QWORD *)( v14 + 8)), v38 = ( __int64)v2[1], *( _WORD *)v38 == 54) ) 
+                                                                                         ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/rtx_cost/src/cse.c:1505:77: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( _bittest( &v27, ix86_cpu) || ( v28 = *( ( unsigned __int8 *)v2 + 2), ( mode_class_0[v28] & 0xFFFFFFF9) != 1) ) 
+                                                                            ^~~~~~~~~~~~
+                                                                            mode_class
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/rtx_cost/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/rtx_cost/src/cse.c:1514:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v29.rtwint = ( __int64)v2->fld[0]; 
+                       ^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/rtx_cost/src/cse.c:1551:12: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v2 = ( rtx)v2[1]; 
+           ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/rtx_cost/src/cse.c:1651:19: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v19 = ( __int16 *)v2[1]; 
+                  ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/rtx_cost/src/cse.c:1709:19: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v19 = ( __int16 *)v2[1]; 
+                  ^~~~~
+10 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/rtx_cost/src/obj/cse.o] Error 1

@@ -1,0 +1,28 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/new_buff/src/cpplex.c:2422:1: error: unknown type name '_cpp_buff_0'; did you mean '_cpp_buff'?
+_cpp_buff_0 * new_buff( size_t len) 
+^~~~~~~~~~~
+_cpp_buff
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/new_buff/src/cpphash.h:47:26: note: '_cpp_buff' declared here
+typedef struct _cpp_buff _cpp_buff;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/new_buff/src/cpplex.c:2427:1: error: unknown type name '_cpp_buff_0'; did you mean '_cpp_buff'?
+_cpp_buff_0 *result; // [rsp+10h] [rbp-10h] 
+^~~~~~~~~~~
+_cpp_buff
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/new_buff/src/cpphash.h:47:26: note: '_cpp_buff' declared here
+typedef struct _cpp_buff _cpp_buff;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/new_buff/src/cpplex.c:2434:25: error: expected expression
+result = ( _cpp_buff_0 *)&v1[lenb]; 
+                        ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/new_buff/src/cpplex.c:2434:12: error: use of undeclared identifier '_cpp_buff_0'
+result = ( _cpp_buff_0 *)&v1[lenb]; 
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/new_buff/src/cpplex.c:2439:23: error: expected expression
+return ( _cpp_buff_0 *)&v1[lenb]; 
+                      ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/new_buff/src/cpplex.c:2439:10: error: use of undeclared identifier '_cpp_buff_0'
+return ( _cpp_buff_0 *)&v1[lenb]; 
+         ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/new_buff/src/obj/cpplex.o] Error 1

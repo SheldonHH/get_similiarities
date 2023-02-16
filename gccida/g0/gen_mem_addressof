@@ -1,0 +1,18 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_mem_addressof/src/function.c:3387:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v4; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_mem_addressof/src/function.c:3398:21: error: use of undeclared identifier 'machine_mode'
+v3 = gen_reg_rtx( ( machine_mode)*( ( unsigned __int8 *)reg + 2)); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_mem_addressof/src/function.c:3408:13: error: expected identifier or '('
+ struct set = alias_set; 
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_mem_addressof/src/function.c:3447:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)reg + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_mem_addressof/src/function.c:3455:24: error: use of undeclared identifier 'machine_mode'
+fixup_var_refs( reg, ( machine_mode)*( ( unsigned __int8 *)reg + 2), 0, reg, 0LL); 
+                       ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_mem_addressof/src/obj/function.o] Error 1

@@ -1,0 +1,19 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/refers_to_regno_p/src/rtlanal.c:1826:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v15.rtwint = ( __int64)v5->fld[0]; 
+                       ^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/refers_to_regno_p/src/rtlanal.c:1837:29: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+result = ( ( unsigned int)( mode_class_0[v31] - 5) < 2) + 1; 
+                            ^~~~~~~~~~~~
+                            mode_class
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/refers_to_regno_p/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/refers_to_regno_p/src/rtlanal.c:1878:29: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+result = ( ( unsigned int)( mode_class_0[( unsigned __int8)v28] - 5) < 2) + 1; 
+                            ^~~~~~~~~~~~
+                            mode_class
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/refers_to_regno_p/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/refers_to_regno_p/src/obj/rtlanal.o] Error 1

@@ -1,0 +1,33 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_compound_operation/src/combine.c:6030:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v6; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_compound_operation/src/combine.c:6060:28: error: use of undeclared identifier 'machine_mode'
+v4 = gen_rtx_fmt_e( USE, ( machine_mode)*( ( unsigned __int8 *)x + 2), x->fld[0].rtx); 
+                           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_compound_operation/src/combine.c:6085:37: error: use of undeclared identifier 'machine_mode'
+&& ( nonzero_bits( x->fld[0].rtx, ( machine_mode)*( unsigned __int8 *)( x->fld[0].rtwint + 2)) & ~( mode_mask_array[*( unsigned __int8 *)( x->fld[0].rtwint + 2)] >> 1)) == 0 ) 
+                                    ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_compound_operation/src/combine.c:6087:38: error: use of undeclared identifier 'machine_mode'
+temp = gen_rtx_fmt_e( ZERO_EXTEND, ( machine_mode)*( ( unsigned __int8 *)x + 2), x->fld[0].rtx); 
+                                     ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_compound_operation/src/combine.c:6095:56: error: use of undeclared identifier 'machine_mode'
+&& ( nonzero_bits( *( rtx *)( x->fld[0].rtwint + 8), ( machine_mode)*( ( unsigned __int8 *)x + 2)) & ~mode_mask_array[*( unsigned __int8 *)( x->fld[0].rtwint + 2)]) == 0 ) 
+                                                       ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_compound_operation/src/combine.c:6103:56: error: use of undeclared identifier 'machine_mode'
+&& ( nonzero_bits( *( rtx *)( x->fld[0].rtwint + 8), ( machine_mode)*( ( unsigned __int8 *)x + 2)) & ~mode_mask_array[*( unsigned __int8 *)( x->fld[0].rtwint + 2)]) == 0 ) 
+                                                       ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_compound_operation/src/combine.c:6130:45: error: use of undeclared identifier 'machine_mode'
+v7 = simplify_shift_const( 0LL, LSHIFTRT, ( machine_mode)*( ( unsigned __int8 *)x + 2), x->fld[0].rtx, pos); 
+                                            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_compound_operation/src/combine.c:6131:38: error: use of undeclared identifier 'machine_mode'
+tem = simplify_and_const_int( 0LL, ( machine_mode)*( ( unsigned __int8 *)x + 2), v7, ( 1LL << len) - 1); 
+                                     ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_compound_operation/src/combine.c:6138:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)x + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_compound_operation/src/combine.c:6145:40: error: use of undeclared identifier 'machine_mode'
+tem = simplify_shift_const( 0LL, v6, ( machine_mode)*( ( unsigned __int8 *)x + 2), v5, modewidth - ( unsigned int)len); 
+                                       ^
+10 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_compound_operation/src/obj/combine.o] Error 1

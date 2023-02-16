@@ -1,0 +1,27 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_placeholder/src/expr.c:6408:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *section_name; // rsi 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_placeholder/src/expr.c:6449:21: error: expected expression
+if ( *( tree_node **)( v9->fld[0].rtwint + 128) == section_name ) 
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_placeholder/src/expr.c:6449:9: error: use of undeclared identifier 'tree_node'
+if ( *( tree_node **)( v9->fld[0].rtwint + 128) == section_name ) 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_placeholder/src/expr.c:6457:13: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v11 = ( int)v9[1]; 
+            ^~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_placeholder/src/expr.c:6475:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v14.rtwint = ( __int64)rtl->fld[0]; 
+                       ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_placeholder/src/expr.c:6476:67: error: expected expression
+if ( ( *( _BYTE *)( v14.rtwint + 16) | 2) == 15 && *( tree_node **)( *( _QWORD *)( v14.rtwint + 8) + 128LL) == section_name ) 
+                                                                  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_placeholder/src/expr.c:6476:55: error: use of undeclared identifier 'tree_node'
+if ( ( *( _BYTE *)( v14.rtwint + 16) | 2) == 15 && *( tree_node **)( *( _QWORD *)( v14.rtwint + 8) + 128LL) == section_name ) 
+                                                      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_placeholder/src/expr.c:6478:13: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v15 = ( int)rtl[1]; 
+            ^~~~~~
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_placeholder/src/obj/expr.o] Error 1

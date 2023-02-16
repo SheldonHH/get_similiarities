@@ -1,0 +1,24 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/const_hash/src/varasm.c:2977:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *k; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/const_hash/src/varasm.c:3045:24: error: expected expression
+for ( k = ( tree_node *)j[4]; k; k = ( tree_node *)j[4] ) 
+                       ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/const_hash/src/varasm.c:3045:13: error: use of undeclared identifier 'tree_node'
+for ( k = ( tree_node *)j[4]; k; k = ( tree_node *)j[4] ) 
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/const_hash/src/varasm.c:3045:51: error: expected expression
+for ( k = ( tree_node *)j[4]; k; k = ( tree_node *)j[4] ) 
+                                                  ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/const_hash/src/varasm.c:3045:40: error: use of undeclared identifier 'tree_node'
+for ( k = ( tree_node *)j[4]; k; k = ( tree_node *)j[4] ) 
+                                       ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/const_hash/src/varasm.c:3045:52: error: expected ')'
+for ( k = ( tree_node *)j[4]; k; k = ( tree_node *)j[4] ) 
+                                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/const_hash/src/varasm.c:3045:5: note: to match this '('
+for ( k = ( tree_node *)j[4]; k; k = ( tree_node *)j[4] ) 
+    ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/const_hash/src/obj/varasm.o] Error 1

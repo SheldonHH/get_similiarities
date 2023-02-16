@@ -1,0 +1,23 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/named_section_flags/src/varasm.c:869:1: error: must use 'enum' tag to refer to type 'in_section'
+in_section v2; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/named_section_flags/src/varasm.c:205:3: note: enum 'in_section' is hidden by a non-type declaration of 'in_section' here
+} in_section = no_section;
+  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/named_section_flags/src/varasm.c:871:6: error: use of undeclared identifier 'in_section_0'; did you mean 'in_section'?
+if ( in_section_0 != in_named || strcmp( name, in_named_name) ) 
+     ^~~~~~~~~~~~
+     in_section
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/named_section_flags/src/varasm.c:205:3: note: 'in_section' declared here
+} in_section = no_section;
+  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/named_section_flags/src/varasm.c:882:1: error: use of undeclared identifier 'in_section_0'; did you mean 'in_section'?
+in_section_0 = v2; 
+^~~~~~~~~~~~
+in_section
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/named_section_flags/src/varasm.c:205:3: note: 'in_section' declared here
+} in_section = no_section;
+  ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/named_section_flags/src/obj/varasm.o] Error 1

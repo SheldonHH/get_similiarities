@@ -1,0 +1,214 @@
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/place_free_handicap/src/engine/handicap.c:741:1: error: use of undeclared identifier 'number_of_matches'
+number_of_matches = 0; 
+^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/place_free_handicap/src/engine/handicap.c:743:6: error: use of undeclared identifier 'number_of_matches'; did you mean 'number_of_dragons'?
+v3 = number_of_matches; 
+     ^~~~~~~~~~~~~~~~~
+     number_of_dragons
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/place_free_handicap/src/engine/liberty.h:928:12: note: 'number_of_dragons' declared here
+extern int number_of_dragons;
+           ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/place_free_handicap/src/engine/handicap.c:744:7: error: use of undeclared identifier 'number_of_matches'; did you mean 'number_of_dragons'?
+if ( !number_of_matches ) 
+      ^~~~~~~~~~~~~~~~~
+      number_of_dragons
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/place_free_handicap/src/engine/liberty.h:928:12: note: 'number_of_dragons' declared here
+extern int number_of_dragons;
+           ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/place_free_handicap/src/engine/handicap.c:748:6: error: use of undeclared identifier 'number_of_matches'; did you mean 'number_of_dragons'?
+if ( number_of_matches > 0 ) 
+     ^~~~~~~~~~~~~~~~~
+     number_of_dragons
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/place_free_handicap/src/engine/liberty.h:928:12: note: 'number_of_dragons' declared here
+extern int number_of_dragons;
+           ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/place_free_handicap/src/engine/handicap.c:750:6: error: use of undeclared identifier 'number_of_matches'; did you mean 'number_of_dragons'?
+v6 = number_of_matches & 3; 
+     ^~~~~~~~~~~~~~~~~
+     number_of_dragons
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/place_free_handicap/src/engine/liberty.h:928:12: note: 'number_of_dragons' declared here
+extern int number_of_dragons;
+           ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/place_free_handicap/src/engine/handicap.c:751:40: error: use of undeclared identifier 'number_of_matches'
+if ( ( unsigned __int64)( unsigned int)number_of_matches - 1 >= 3 ) 
+                                       ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/place_free_handicap/src/engine/handicap.c:754:7: error: use of undeclared identifier 'handicap_matches'
+v13 = handicap_matches; 
+      ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/place_free_handicap/src/engine/handicap.c:758:12: error: subscript of pointer to incomplete type 'struct handicap_match'
+value = v13[1].value; 
+        ~~~^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/place_free_handicap/src/engine/handicap.c:690:8: note: forward declaration of 'struct handicap_match'
+struct handicap_match *v9; // rcx 
+       ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/place_free_handicap/src/engine/handicap.c:759:14: error: incomplete definition of type 'struct handicap_match'
+if ( v7 < v13->value ) 
+          ~~~^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/place_free_handicap/src/engine/handicap.c:690:8: note: forward declaration of 'struct handicap_match'
+struct handicap_match *v9; // rcx 
+       ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/place_free_handicap/src/engine/handicap.c:760:9: error: incomplete definition of type 'struct handicap_match'
+v7 = v13->value; 
+     ~~~^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/place_free_handicap/src/engine/handicap.c:690:8: note: forward declaration of 'struct handicap_match'
+struct handicap_match *v9; // rcx 
+       ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/place_free_handicap/src/engine/handicap.c:763:10: error: subscript of pointer to incomplete type 'struct handicap_match'
+v15 = v13[2].value; 
+      ~~~^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/place_free_handicap/src/engine/handicap.c:690:8: note: forward declaration of 'struct handicap_match'
+struct handicap_match *v9; // rcx 
+       ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/place_free_handicap/src/engine/handicap.c:766:9: error: subscript of pointer to incomplete type 'struct handicap_match'
+v7 = v13[3].value; 
+     ~~~^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/place_free_handicap/src/engine/handicap.c:690:8: note: forward declaration of 'struct handicap_match'
+struct handicap_match *v9; // rcx 
+       ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/place_free_handicap/src/engine/handicap.c:770:5: error: arithmetic on a pointer to an incomplete type 'struct handicap_match'
+v13 += 4; 
+~~~ ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/place_free_handicap/src/engine/handicap.c:690:8: note: forward declaration of 'struct handicap_match'
+struct handicap_match *v9; // rcx 
+       ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/place_free_handicap/src/engine/handicap.c:772:11: error: use of undeclared identifier 'number_of_matches'; did you mean 'number_of_dragons'?
+while ( ( number_of_matches & 0xFFFFFFFC) != v8 ); 
+          ^~~~~~~~~~~~~~~~~
+          number_of_dragons
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/place_free_handicap/src/engine/liberty.h:928:12: note: 'number_of_dragons' declared here
+extern int number_of_dragons;
+           ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/place_free_handicap/src/engine/handicap.c:779:8: error: use of undeclared identifier 'number_of_matches'; did you mean 'number_of_dragons'?
+if ( ( number_of_matches & 3) != 0 ) 
+       ^~~~~~~~~~~~~~~~~
+       number_of_dragons
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/place_free_handicap/src/engine/liberty.h:928:12: note: 'number_of_dragons' declared here
+extern int number_of_dragons;
+           ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/place_free_handicap/src/engine/handicap.c:781:7: error: use of undeclared identifier 'handicap_matches'
+v9 = &handicap_matches[v8]; 
+      ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/place_free_handicap/src/engine/handicap.c:784:13: error: incomplete definition of type 'struct handicap_match'
+if ( v7 < v9->value ) 
+          ~~^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/place_free_handicap/src/engine/handicap.c:690:8: note: forward declaration of 'struct handicap_match'
+struct handicap_match *v9; // rcx 
+       ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/place_free_handicap/src/engine/handicap.c:785:8: error: incomplete definition of type 'struct handicap_match'
+v7 = v9->value; 
+     ~~^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/place_free_handicap/src/engine/handicap.c:690:8: note: forward declaration of 'struct handicap_match'
+struct handicap_match *v9; // rcx 
+       ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/place_free_handicap/src/engine/handicap.c:786:1: error: arithmetic on a pointer to an incomplete type 'struct handicap_match'
+++v9; 
+^ ~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/place_free_handicap/src/engine/handicap.c:690:8: note: forward declaration of 'struct handicap_match'
+struct handicap_match *v9; // rcx 
+       ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/place_free_handicap/src/engine/handicap.c:793:6: error: use of undeclared identifier 'number_of_matches'; did you mean 'number_of_dragons'?
+if ( number_of_matches == 1 ) 
+     ^~~~~~~~~~~~~~~~~
+     number_of_dragons
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/place_free_handicap/src/engine/liberty.h:928:12: note: 'number_of_dragons' declared here
+extern int number_of_dragons;
+           ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/place_free_handicap/src/engine/handicap.c:800:7: error: use of undeclared identifier 'number_of_matches'; did you mean 'number_of_dragons'?
+v16 = number_of_matches & 0xFFFFFFFE; 
+      ^~~~~~~~~~~~~~~~~
+      number_of_dragons
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/place_free_handicap/src/engine/liberty.h:928:12: note: 'number_of_dragons' declared here
+extern int number_of_dragons;
+           ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/place_free_handicap/src/engine/handicap.c:802:7: error: use of undeclared identifier 'handicap_matches'
+v17 = handicap_matches; 
+      ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/place_free_handicap/src/engine/handicap.c:806:23: error: incomplete definition of type 'struct handicap_match'
+v18 = 1 << ( v10 + v17->value); 
+                   ~~~^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/place_free_handicap/src/engine/handicap.c:690:8: note: forward declaration of 'struct handicap_match'
+struct handicap_match *v9; // rcx 
+       ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/place_free_handicap/src/engine/handicap.c:807:9: error: incomplete definition of type 'struct handicap_match'
+if ( v17->value < v11 ) 
+     ~~~^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/place_free_handicap/src/engine/handicap.c:690:8: note: forward declaration of 'struct handicap_match'
+struct handicap_match *v9; // rcx 
+       ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/place_free_handicap/src/engine/handicap.c:809:10: error: subscript of pointer to incomplete type 'struct handicap_match'
+v19 = v17[1].value; 
+      ~~~^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/place_free_handicap/src/engine/handicap.c:690:8: note: forward declaration of 'struct handicap_match'
+struct handicap_match *v9; // rcx 
+       ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/place_free_handicap/src/engine/handicap.c:810:4: error: incomplete definition of type 'struct handicap_match'
+v17->value = v18; 
+~~~^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/place_free_handicap/src/engine/handicap.c:690:8: note: forward declaration of 'struct handicap_match'
+struct handicap_match *v9; // rcx 
+       ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/place_free_handicap/src/engine/handicap.c:815:4: error: subscript of pointer to incomplete type 'struct handicap_match'
+v17[1].value = v21; 
+~~~^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/place_free_handicap/src/engine/handicap.c:690:8: note: forward declaration of 'struct handicap_match'
+struct handicap_match *v9; // rcx 
+       ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/place_free_handicap/src/engine/handicap.c:818:5: error: arithmetic on a pointer to an incomplete type 'struct handicap_match'
+v17 += 2; 
+~~~ ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/place_free_handicap/src/engine/handicap.c:690:8: note: forward declaration of 'struct handicap_match'
+struct handicap_match *v9; // rcx 
+       ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/place_free_handicap/src/engine/handicap.c:825:7: error: use of undeclared identifier 'handicap_matches'
+v23 = handicap_matches[v12].value; 
+      ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/place_free_handicap/src/engine/handicap.c:829:1: error: use of undeclared identifier 'handicap_matches'
+handicap_matches[v22].value = v24; 
+^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/place_free_handicap/src/engine/handicap.c:834:6: error: use of undeclared identifier 'number_of_matches'; did you mean 'number_of_dragons'?
+if ( number_of_matches > 0 ) 
+     ^~~~~~~~~~~~~~~~~
+     number_of_dragons
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/place_free_handicap/src/engine/liberty.h:928:12: note: 'number_of_dragons' declared here
+extern int number_of_dragons;
+           ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/place_free_handicap/src/engine/handicap.c:837:7: error: use of undeclared identifier 'handicap_matches'
+v27 = handicap_matches; 
+      ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/place_free_handicap/src/engine/handicap.c:841:11: error: incomplete definition of type 'struct handicap_match'
+v26 -= v27->value; 
+       ~~~^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/place_free_handicap/src/engine/handicap.c:690:8: note: forward declaration of 'struct handicap_match'
+struct handicap_match *v9; // rcx 
+       ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/place_free_handicap/src/engine/handicap.c:845:1: error: arithmetic on a pointer to an incomplete type 'struct handicap_match'
+++v27; 
+^ ~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/place_free_handicap/src/engine/handicap.c:690:8: note: forward declaration of 'struct handicap_match'
+struct handicap_match *v9; // rcx 
+       ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/place_free_handicap/src/engine/handicap.c:846:6: error: use of undeclared identifier 'number_of_matches'; did you mean 'number_of_dragons'?
+if ( number_of_matches == v4 ) 
+     ^~~~~~~~~~~~~~~~~
+     number_of_dragons
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/place_free_handicap/src/engine/liberty.h:928:12: note: 'number_of_dragons' declared here
+extern int number_of_dragons;
+           ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/place_free_handicap/src/engine/handicap.c:848:16: error: use of undeclared identifier 'number_of_matches'; did you mean 'number_of_dragons'?
+LODWORD( v4) = number_of_matches; 
+               ^~~~~~~~~~~~~~~~~
+               number_of_dragons
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/place_free_handicap/src/engine/liberty.h:928:12: note: 'number_of_dragons' declared here
+extern int number_of_dragons;
+           ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/place_free_handicap/src/engine/handicap.c:854:10: error: use of undeclared identifier 'handicap_matches'
+anchor = handicap_matches[( unsigned int)v4].anchor; 
+         ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/place_free_handicap/src/engine/handicap.c:855:16: error: expected identifier or '('
+struct pattern = handicap_matches[v28].pattern; 
+               ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/place_free_handicap/src/engine/handicap.c:856:6: error: use of undeclared identifier 'handicap_matches'
+ll = handicap_matches[v28].ll; 
+     ^
+39 errors generated.
+make: *** [/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/place_free_handicap/src/obj/1/handicap.o] Error 1

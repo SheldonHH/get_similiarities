@@ -1,0 +1,22 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/simple_type_promotes_to/src/c-common.c:3476:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *section_name; // rdx 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/simple_type_promotes_to/src/c-common.c:3477:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v2; // r8 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/simple_type_promotes_to/src/c-common.c:3481:19: error: expected expression
+v2 = ( tree_node *)*( &global_trees + 25); 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/simple_type_promotes_to/src/c-common.c:3481:8: error: use of undeclared identifier 'tree_node'
+v2 = ( tree_node *)*( &global_trees + 25); 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/simple_type_promotes_to/src/c-common.c:3482:35: error: expected expression
+if ( section_name == ( tree_node *)*( &global_trees + 24) ) 
+                                  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/simple_type_promotes_to/src/c-common.c:3482:24: error: use of undeclared identifier 'tree_node'
+if ( section_name == ( tree_node *)*( &global_trees + 24) ) 
+                       ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/simple_type_promotes_to/src/obj/c-common.o] Error 1

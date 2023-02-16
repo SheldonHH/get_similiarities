@@ -1,0 +1,47 @@
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/compute_eyes_pessimistic/src/engine/optics.c:1426:12: error: use of undeclared identifier 'eyevalue'
+*value = ( eyevalue)16843009; 
+           ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/compute_eyes_pessimistic/src/engine/optics.c:1446:12: error: use of undeclared identifier 'eyevalue'
+*value = ( eyevalue)33686018; 
+           ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/compute_eyes_pessimistic/src/engine/optics.c:1462:12: error: use of undeclared identifier 'eyevalue'
+*value = ( eyevalue)( 16843009 * ( unsigned __int8)v40); 
+           ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/compute_eyes_pessimistic/src/engine/optics.c:1475:14: error: use of undeclared identifier 'eyevalue_to_string_result'; did you mean 'eyevalue_to_string'?
+gg_snprintf( eyevalue_to_string_result, 0x1DuLL, v41, v27, ( unsigned int)v27); 
+             ^~~~~~~~~~~~~~~~~~~~~~~~~
+             eyevalue_to_string
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/compute_eyes_pessimistic/src/engine/liberty.h:1017:7: note: 'eyevalue_to_string' declared here
+char *eyevalue_to_string(struct eyevalue *e);
+      ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/compute_eyes_pessimistic/src/engine/optics.c:1503:14: error: use of undeclared identifier 'eyevalue_to_string_result'; did you mean 'eyevalue_to_string'?
+gg_snprintf( eyevalue_to_string_result, 0x1DuLL, v37, a, v34, v35, add_moves); 
+             ^~~~~~~~~~~~~~~~~~~~~~~~~
+             eyevalue_to_string
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/compute_eyes_pessimistic/src/engine/liberty.h:1017:7: note: 'eyevalue_to_string' declared here
+char *eyevalue_to_string(struct eyevalue *e);
+      ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/compute_eyes_pessimistic/src/engine/optics.c:1507:15: error: use of undeclared identifier 'eyevalue_to_string_result'
+v25 = ( int *)eyevalue_to_string_result; 
+              ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/compute_eyes_pessimistic/src/engine/optics.c:1508:15: error: use of undeclared identifier 'eyevalue_to_string_result'; did you mean 'eyevalue_to_string'?
+gprintf( v39, eyevalue_to_string_result, v38); 
+              ^~~~~~~~~~~~~~~~~~~~~~~~~
+              eyevalue_to_string
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/compute_eyes_pessimistic/src/engine/liberty.h:1017:7: note: 'eyevalue_to_string' declared here
+char *eyevalue_to_string(struct eyevalue *e);
+      ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/compute_eyes_pessimistic/src/engine/optics.c:1569:50: error: too many arguments to function call, expected 2, have 3
+v55 = gg_normalize_float2int( v52, 0.0099999998, v7); 
+      ~~~~~~~~~~~~~~~~~~~~~~                     ^~
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/compute_eyes_pessimistic/src/include/gg_utils.h:52:1: note: 'gg_normalize_float2int' declared here
+int gg_normalize_float2int(float x, float a);
+^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/compute_eyes_pessimistic/src/engine/optics.c:1570:50: error: too many arguments to function call, expected 2, have 3
+v56 = gg_normalize_float2int( v61, 0.0099999998, v7); 
+      ~~~~~~~~~~~~~~~~~~~~~~                     ^~
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/compute_eyes_pessimistic/src/include/gg_utils.h:52:1: note: 'gg_normalize_float2int' declared here
+int gg_normalize_float2int(float x, float a);
+^
+9 errors generated.
+make: *** [/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/compute_eyes_pessimistic/src/obj/1/optics.o] Error 1

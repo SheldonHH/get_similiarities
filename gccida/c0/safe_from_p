@@ -1,0 +1,37 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/safe_from_p/src/expr.c:6048:1: error: use of undeclared identifier 'safe_from_p_save_expr_list'
+safe_from_p_save_expr_list = 0LL; 
+^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/safe_from_p/src/expr.c:6050:11: error: use of undeclared identifier 'safe_from_p_save_expr_list'
+for ( t = safe_from_p_save_expr_list; t; t = t->common.chain ) 
+          ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/safe_from_p/src/expr.c:6082:12: error: used type 'struct rtx_def' where arithmetic or pointer type is required
+v7 = xa[1] ? **( _QWORD **)&xa[1] : 0LL; 
+     ~~~~~ ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/safe_from_p/src/expr.c:6113:1: error: use of undeclared identifier 'safe_from_p_save_expr_list'
+safe_from_p_save_expr_list = tree_cons( exp, 0LL, safe_from_p_save_expr_list); 
+^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/safe_from_p/src/expr.c:6113:51: error: use of undeclared identifier 'safe_from_p_save_expr_list'
+safe_from_p_save_expr_list = tree_cons( exp, 0LL, safe_from_p_save_expr_list); 
+                                                  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/safe_from_p/src/expr.c:6144:24: error: use of undeclared identifier 'tree_code'; did you mean 'tree_cons'?
+nops = first_rtl_op( ( tree_code)( unsigned __int8)*( ( _DWORD *)&expa->common + 4)); 
+                       ^~~~~~~~~
+                       tree_cons
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/safe_from_p/src/tree.h:2477:13: note: 'tree_cons' declared here
+extern tree tree_cons                   PARAMS ((tree, tree, tree));
+            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/safe_from_p/src/expr.c:6144:36: error: expected expression
+nops = first_rtl_op( ( tree_code)( unsigned __int8)*( ( _DWORD *)&expa->common + 4)); 
+                                   ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/safe_from_p/src/expr.c:6171:68: error: use of undeclared identifier 'lang_hooks_0'; did you mean 'lang_hooks'?
+if ( ( unsigned __int8)*( ( _DWORD *)&expa->common + 4) < 0x93u || lang_hooks_0.safe_from_p( xa, expa) ) 
+                                                                   ^~~~~~~~~~~~
+                                                                   lang_hooks
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/safe_from_p/src/langhooks.h:168:32: note: 'lang_hooks' declared here
+extern const struct lang_hooks lang_hooks;
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/safe_from_p/src/expr.c:6171:92: error: called object type '<dependent type>' is not a function or function pointer
+if ( ( unsigned __int8)*( ( _DWORD *)&expa->common + 4) < 0x93u || lang_hooks_0.safe_from_p( xa, expa) ) 
+                                                                                           ^
+9 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/safe_from_p/src/obj/expr.o] Error 1

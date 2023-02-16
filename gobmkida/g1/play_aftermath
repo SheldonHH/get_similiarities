@@ -1,0 +1,53 @@
+/data/output_dir/patch/gobmk/ida/gcc/O1/gobmk-gcc-O1/play_aftermath/src/engine/aftermath.c:1435:6: error: use of undeclared identifier 'current_color_1'
+if ( current_color_1 != color ) 
+     ^
+/data/output_dir/patch/gobmk/ida/gcc/O1/gobmk-gcc-O1/play_aftermath/src/engine/aftermath.c:1437:1: error: use of undeclared identifier 'current_color_1'
+current_color_1 = color; 
+^
+/data/output_dir/patch/gobmk/ida/gcc/O1/gobmk-gcc-O1/play_aftermath/src/engine/aftermath.c:1443:23: error: use of undeclared identifier 'current_board_0'
+if ( v5 != 3 && v5 != current_board_0[i] ) 
+                      ^
+/data/output_dir/patch/gobmk/ida/gcc/O1/gobmk-gcc-O1/play_aftermath/src/engine/aftermath.c:1445:1: error: use of undeclared identifier 'current_board_0'
+current_board_0[i] = v5; 
+^
+/data/output_dir/patch/gobmk/ida/gcc/O1/gobmk-gcc-O1/play_aftermath/src/engine/aftermath.c:1481:20: error: invalid conversion between vector type '__m128' (vector of 4 'float' values) and integer type 'uint32' (aka 'unsigned int') of different size
+v8 = _mm_cmplt_ss( ( __m128)LODWORD( lower_bound), ( __m128)0LL); 
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/gcc/O1/gobmk-gcc-O1/play_aftermath/src/engine/aftermath.c:1481:52: error: invalid conversion between vector type '__m128' (vector of 4 'float' values) and integer type 'long long' of different size
+v8 = _mm_cmplt_ss( ( __m128)LODWORD( lower_bound), ( __m128)0LL); 
+                                                   ^~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/gcc/O1/gobmk-gcc-O1/play_aftermath/src/engine/aftermath.c:1482:45: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v9 = COERCE_UNSIGNED_INT( -lower_bound) & v8.m128_i32[0]; 
+                                          ~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/gcc/O1/gobmk-gcc-O1/play_aftermath/src/engine/aftermath.c:1483:38: error: invalid conversion between vector type '__m128' (vector of 4 'float' values) and integer type 'uint32' (aka 'unsigned int') of different size
+*( _QWORD *)&v1 = _mm_andnot_ps( v8, ( __m128)LODWORD( lower_bound)).m128_u64[0]; 
+                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/gcc/O1/gobmk-gcc-O1/play_aftermath/src/engine/aftermath.c:1492:4: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v12.m128_i32[0] = 0; 
+~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/gcc/O1/gobmk-gcc-O1/play_aftermath/src/engine/aftermath.c:1493:21: error: invalid conversion between vector type '__m128' (vector of 4 'float' values) and integer type 'uint32' (aka 'unsigned int') of different size
+v13 = _mm_cmplt_ss( ( __m128)LODWORD( upper_bound), ( __m128)0LL); 
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/gcc/O1/gobmk-gcc-O1/play_aftermath/src/engine/aftermath.c:1493:53: error: invalid conversion between vector type '__m128' (vector of 4 'float' values) and integer type 'long long' of different size
+v13 = _mm_cmplt_ss( ( __m128)LODWORD( upper_bound), ( __m128)0LL); 
+                                                    ^~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/gcc/O1/gobmk-gcc-O1/play_aftermath/src/engine/aftermath.c:1494:61: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v14 = COERCE_FLOAT( COERCE_UNSIGNED_INT( -upper_bound) & v13.m128_i32[0] | _mm_andnot_ps( 
+                                                         ~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/gcc/O1/gobmk-gcc-O1/play_aftermath/src/engine/aftermath.c:1496:1: error: invalid conversion between vector type '__m128' (vector of 4 'float' values) and integer type 'uint32' (aka 'unsigned int') of different size
+( __m128)LODWORD( upper_bound)).m128_u32[0]); 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/gcc/O1/gobmk-gcc-O1/play_aftermath/src/engine/aftermath.c:1500:21: error: invalid conversion between vector type '__m128' (vector of 4 'float' values) and integer type 'uint32' (aka 'unsigned int') of different size
+v16 = _mm_cmplt_ss( ( __m128)LODWORD( lower_bound), v12); 
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/gcc/O1/gobmk-gcc-O1/play_aftermath/src/engine/aftermath.c:1501:60: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v1 = COERCE_FLOAT( COERCE_UNSIGNED_INT( -lower_bound) & v16.m128_i32[0] | _mm_andnot_ps( 
+                                                        ~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/gcc/O1/gobmk-gcc-O1/play_aftermath/src/engine/aftermath.c:1503:1: error: invalid conversion between vector type '__m128' (vector of 4 'float' values) and integer type 'uint32' (aka 'unsigned int') of different size
+( __m128)LODWORD( lower_bound)).m128_u32[0]); 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/gcc/O1/gobmk-gcc-O1/play_aftermath/src/engine/aftermath.c:1541:59: error: invalid conversion between vector type '__m128' (vector of 4 'float' values) and integer type 'uint32' (aka 'unsigned int') of different size
+if ( review_move_reasons( &aftermath_move, &val, v2, 0.0, ( __m128)LODWORD( lower_bound), 0LL, v1) && verbose ) 
+                                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+17 errors generated.
+make: *** [/data/output_dir/patch/gobmk/ida/gcc/O1/gobmk-gcc-O1/play_aftermath/src/obj/1/aftermath.o] Error 1

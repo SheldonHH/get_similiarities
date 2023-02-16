@@ -1,0 +1,83 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/apply_distributive_law/src/combine.c:8160:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // [rsp+Ch] [rbp-54h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/apply_distributive_law/src/combine.c:8161:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code inner_code; // [rsp+24h] [rbp-3Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/apply_distributive_law/src/combine.c:8171:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code; // [rsp+4Ch] [rbp-14h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/apply_distributive_law/src/combine.c:8175:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[( unsigned __int8)BYTE2( *( _DWORD *)x)] == MODE_FLOAT 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/apply_distributive_law/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/apply_distributive_law/src/combine.c:8176:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| mode_class_0[( unsigned __int8)BYTE2( *( _DWORD *)x)] == MODE_COMPLEX_FLOAT 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/apply_distributive_law/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/apply_distributive_law/src/combine.c:8177:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| mode_class_0[( unsigned __int8)BYTE2( *( _DWORD *)x)] == MODE_VECTOR_FLOAT ) 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/apply_distributive_law/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/apply_distributive_law/src/combine.c:8184:13: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+rhs = ( rtx)x[1]; 
+            ^~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/apply_distributive_law/src/combine.c:8196:12: error: invalid operands to binary expression ('struct rtx_def' and 'struct rtx_def')
+|| lhsa[1] != rhsa[1] 
+   ~~~~~~~ ^  ~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/apply_distributive_law/src/combine.c:8198:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| mode_class_0[( unsigned __int8)BYTE2( *( _DWORD *)lhsa)] != mode_class_0[( unsigned __int8)BYTE2( *( _DWORD *)lhsa->fld[0].rtwint)] 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/apply_distributive_law/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/apply_distributive_law/src/combine.c:8198:64: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| mode_class_0[( unsigned __int8)BYTE2( *( _DWORD *)lhsa)] != mode_class_0[( unsigned __int8)BYTE2( *( _DWORD *)lhsa->fld[0].rtwint)] 
+                                                               ^~~~~~~~~~~~
+                                                               mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/apply_distributive_law/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/apply_distributive_law/src/combine.c:8210:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)lhsa->fld[0].rtwint), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/apply_distributive_law/src/combine.c:8210:18: error: expected expression
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)lhsa->fld[0].rtwint), 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/apply_distributive_law/src/combine.c:8213:34: error: use of undeclared identifier 'machine_mode'
+v16 = gen_lowpart_for_combine( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)x), tema); 
+                                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/apply_distributive_law/src/combine.c:8213:49: error: expected expression
+v16 = gen_lowpart_for_combine( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)x), tema); 
+                                                ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/apply_distributive_law/src/combine.c:8239:28: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+lhsb = (  struct rtx_def *)lhsa[1]; 
+                           ^~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/apply_distributive_law/src/combine.c:8240:28: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+rhsb = (  struct rtx_def *)rhsa[1]; 
+                           ^~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/apply_distributive_law/src/combine.c:8245:28: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+lhsb = (  struct rtx_def *)lhsa[1]; 
+                           ^~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/apply_distributive_law/src/combine.c:8250:29: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+other = (  struct rtx_def *)lhsa[1]; 
+                            ^~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/apply_distributive_law/src/combine.c:8252:28: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+rhsb = (  struct rtx_def *)rhsa[1]; 
+                           ^~~~~~~
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/apply_distributive_law/src/obj/combine.o] Error 1

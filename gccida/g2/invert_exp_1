@@ -1,0 +1,28 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/invert_exp_1/src/jump.c:2574:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v1 = ( __int64)insn[2]; 
+               ^~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/invert_exp_1/src/jump.c:2595:44: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+( v8 = reversed_comparison_code_parts_0( ( rtx_code)*v4, ( rtx)*( _WORD *)v6, ( rtx)*( ( unsigned __int8 *)v6 + 2), v7)) != 0) ) 
+                                           ^~~~~~~~
+                                           rtx_cost
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/invert_exp_1/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/invert_exp_1/src/jump.c:2595:53: error: invalid operands to binary expression ('int (rtx, enum rtx_code)' (aka 'int (struct rtx_def *, enum rtx_code)') and 'unsigned short *')
+( v8 = reversed_comparison_code_parts_0( ( rtx_code)*v4, ( rtx)*( _WORD *)v6, ( rtx)*( ( unsigned __int8 *)v6 + 2), v7)) != 0) ) 
+                                         ~~~~~~~~~~~^~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/invert_exp_1/src/jump.c:2597:24: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+v9 = gen_rtx_fmt_ee( ( rtx_code)v8, ( machine_mode)*( ( unsigned __int8 *)v4 + 2), v6, v7); 
+                       ^~~~~~~~
+                       rtx_cost
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/invert_exp_1/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/invert_exp_1/src/jump.c:2597:33: error: expected ')'
+v9 = gen_rtx_fmt_ee( ( rtx_code)v8, ( machine_mode)*( ( unsigned __int8 *)v4 + 2), v6, v7); 
+                                ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/invert_exp_1/src/jump.c:2597:20: note: to match this '('
+v9 = gen_rtx_fmt_ee( ( rtx_code)v8, ( machine_mode)*( ( unsigned __int8 *)v4 + 2), v6, v7); 
+                   ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/invert_exp_1/src/obj/jump.o] Error 1

@@ -1,0 +1,43 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/fixup_reorder_chain/src/cfglayout.c:803:4: error: expected ';' after expression
+rtx v8; // rcx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/fixup_reorder_chain/src/cfglayout.c:803:5: error: use of undeclared identifier 'v8'
+rtx v8; // rcx 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/fixup_reorder_chain/src/cfglayout.c:814:4: error: expected ';' after expression
+rtx reg_note; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/fixup_reorder_chain/src/cfglayout.c:814:5: error: must use 'enum' tag to refer to type 'reg_note'
+rtx reg_note; // rax 
+    ^
+    enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/fixup_reorder_chain/src/cfglayout.c:851:1: error: use of undeclared identifier 'v8'
+v8 = function_tail_eff_head; 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/fixup_reorder_chain/src/cfglayout.c:853:6: error: use of undeclared identifier 'v8'
+if ( v8 ) 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/fixup_reorder_chain/src/cfglayout.c:854:14: error: use of undeclared identifier 'v8'
+*( _QWORD *)&v8[1] = rtx; 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/fixup_reorder_chain/src/cfglayout.c:895:1: error: must use 'enum' tag to refer to type 'reg_note'
+reg_note = find_reg_note( end, REG_BR_PROB, 0LL); 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/fixup_reorder_chain/src/cfglayout.c:895:10: error: expected identifier or '('
+reg_note = find_reg_note( end, REG_BR_PROB, 0LL); 
+         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/fixup_reorder_chain/src/cfglayout.c:896:6: error: use of undeclared identifier 'reg_note'; did you mean 'reg_names'?
+if ( reg_note ) 
+     ^~~~~~~~
+     reg_names
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/fixup_reorder_chain/src/hard-reg-set.h:485:21: note: 'reg_names' declared here
+extern const char * reg_names[FIRST_PSEUDO_REGISTER];
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/fixup_reorder_chain/src/cfglayout.c:898:21: error: use of undeclared identifier 'reg_note'
+if ( *( __int64 *)( reg_note->fld[0].rtwint + 8) <= 4999 ) 
+                    ^
+11 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/fixup_reorder_chain/src/obj/cfglayout.o] Error 1

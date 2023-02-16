@@ -1,0 +1,14 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/def_reaches_here_p/src/gcse.c:3839:26: error: use of undeclared identifier 'uid_cuid_1'
+v6 = *( ( unsigned int *)uid_cuid_1 + v5); 
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/def_reaches_here_p/src/gcse.c:3840:83: error: use of undeclared identifier 'uid_cuid_1'
+v7 = *( unsigned __int64 *)( ( char *)reaching_defs[v4]->elms + ( ( *( ( _DWORD *)uid_cuid_1 + v5) >> 3) & 0x1FFFFFF8)); 
+                                                                                  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/def_reaches_here_p/src/gcse.c:3845:102: error: use of undeclared identifier 'uid_cuid_1'
+if ( ( _DWORD)v4 == *( _DWORD *)( basic_block_for_insn->data.l[v5] + 88) && ( int)v6 < *( ( _DWORD *)uid_cuid_1 + rtint) ) 
+                                                                                                     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/def_reaches_here_p/src/gcse.c:3847:14: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v9 = ( rtx *)def_insn[2]; 
+             ^~~~~~~~~~~
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/def_reaches_here_p/src/obj/gcse.o] Error 1

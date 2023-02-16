@@ -1,0 +1,35 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/make_new_qty/src/cse.c:1504:39: error: must use 'enum' tag to refer to type 'machine_mode'
+void  make_new_qty( unsigned int reg, machine_mode mode) 
+                                      ^
+                                      enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/make_new_qty/src/cse.c:1515:52: error: expected ')'
+if ( cached_regno != reg || (  struct cse_reg_info = cached_cse_reg_info) == 0LL ) 
+                                                   ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/make_new_qty/src/cse.c:1515:29: note: to match this '('
+if ( cached_regno != reg || (  struct cse_reg_info = cached_cse_reg_info) == 0LL ) 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/make_new_qty/src/cse.c:1515:75: error: expected expression
+if ( cached_regno != reg || (  struct cse_reg_info = cached_cse_reg_info) == 0LL ) 
+                                                                          ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/make_new_qty/src/cse.c:1516:2: error: expected expression
+ struct cse_reg_info = get_cse_reg_info( reg); 
+ ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/make_new_qty/src/cse.c:1524:12: error: expected expression
+*( _OWORD *)&v4[v5].const_rtx = 0LL; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/make_new_qty/src/cse.c:1524:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&v4[v5].const_rtx = 0LL; 
+   ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/make_new_qty/src/cse.c:1525:24: error: use of undeclared identifier 'reg_eqv_elem'; did you mean 'reg_eqv_table'?
+reg_eqv_table[reg] = ( reg_eqv_elem)-1LL; 
+                       ^~~~~~~~~~~~
+                       reg_eqv_table
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/make_new_qty/src/cse.c:293:29: note: 'reg_eqv_table' declared here
+static struct reg_eqv_elem *reg_eqv_table;
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/make_new_qty/src/cse.c:1525:20: error: assigning to 'struct reg_eqv_elem' from incompatible type 'struct reg_eqv_elem *'; dereference with *
+reg_eqv_table[reg] = ( reg_eqv_elem)-1LL; 
+                   ^ ~~~~~~~~~~~~~~~~~~~
+                     *(                 )
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/make_new_qty/src/obj/cse.o] Error 1

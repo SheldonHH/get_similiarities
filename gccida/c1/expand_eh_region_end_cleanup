@@ -1,0 +1,12 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_eh_region_end_cleanup/src/except.c:1220:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v3; // r12 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_eh_region_end_cleanup/src/except.c:1246:21: error: use of undeclared identifier 'machine_mode'
+v4 = gen_reg_rtx( ( machine_mode)( ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32)); 
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_eh_region_end_cleanup/src/except.c:1249:30: error: invalid suffix 'xmode' on integer constant
+v6 = gen_reg_rtx( *(short *)0xmode); 
+                             ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_eh_region_end_cleanup/src/obj/except.o] Error 1

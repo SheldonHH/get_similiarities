@@ -1,0 +1,15 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/insn_variable_length_p/src/insn-attrtab.c:509:29: error: too many arguments provided to function-like macro invocation
+fatal_insn_not_found( insn, "insn-attrtab.c", 46, "insn_variable_length_p"); 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/insn_variable_length_p/src/toplev.h:52:9: note: macro 'fatal_insn_not_found' defined here
+#define fatal_insn_not_found(insn) \
+        ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/insn_variable_length_p/src/insn-attrtab.c:509:1: error: use of undeclared identifier 'fatal_insn_not_found'; did you mean '_fatal_insn_not_found'?
+fatal_insn_not_found( insn, "insn-attrtab.c", 46, "insn_variable_length_p"); 
+^~~~~~~~~~~~~~~~~~~~
+_fatal_insn_not_found
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/insn_variable_length_p/src/toplev.h:40:13: note: '_fatal_insn_not_found' declared here
+extern void _fatal_insn_not_found       PARAMS ((struct rtx_def *,
+            ^
+2 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/insn_variable_length_p/src/obj/insn-attrtab.o] Error 1

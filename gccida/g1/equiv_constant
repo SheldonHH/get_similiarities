@@ -1,0 +1,12 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/equiv_constant/src/cse.c:4821:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v12; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/equiv_constant/src/cse.c:4843:22: error: expected identifier or '('
+ struct cse_reg_info = get_cse_reg_info( rtint); 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/equiv_constant/src/cse.c:4859:34: error: use of undeclared identifier 'machine_mode'
+exp = gen_lowpart_if_possible( ( machine_mode)*( ( unsigned __int8 *)exp + 2), const_rtx); 
+                                 ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/equiv_constant/src/obj/cse.o] Error 1

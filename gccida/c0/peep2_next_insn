@@ -1,0 +1,16 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/peep2_next_insn/src/recog.c:3325:6: error: use of undeclared identifier 'peep2_insn_data_0'; did you mean 'peep2_insn_data'?
+if ( peep2_insn_data_0[na].insn == global_rtl[0] ) 
+     ^~~~~~~~~~~~~~~~~
+     peep2_insn_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/peep2_next_insn/src/recog.c:2841:31: note: 'peep2_insn_data' declared here
+static struct peep2_insn_data peep2_insn_data[MAX_INSNS_PER_PEEP2 + 1];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/peep2_next_insn/src/recog.c:3328:8: error: use of undeclared identifier 'peep2_insn_data_0'; did you mean 'peep2_insn_data'?
+return peep2_insn_data_0[na].insn; 
+       ^~~~~~~~~~~~~~~~~
+       peep2_insn_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/peep2_next_insn/src/recog.c:2841:31: note: 'peep2_insn_data' declared here
+static struct peep2_insn_data peep2_insn_data[MAX_INSNS_PER_PEEP2 + 1];
+                              ^
+2 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/peep2_next_insn/src/obj/recog.o] Error 1

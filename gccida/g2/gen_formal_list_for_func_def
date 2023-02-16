@@ -1,0 +1,21 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_formal_list_for_func_def/src/c-aux-info.c:709:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *arguments; // r13 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_formal_list_for_func_def/src/c-aux-info.c:763:12: error: subscript of pointer to incomplete type 'struct rtx_def'
+while ( rtl[2] != *( &global_trees + 27) ) 
+        ~~~^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_formal_list_for_func_def/src/config.h:7:8: note: forward declaration of 'struct rtx_def'
+struct rtx_def;
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_formal_list_for_func_def/src/c-aux-info.c:769:37: error: use of undeclared identifier 'stru_6F109F'
+return concat( " ( ", v5, ( char *)&stru_6F109F._IO_write_ptr + 7, 0LL); 
+                                    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_formal_list_for_func_def/src/c-aux-info.c:773:37: error: use of undeclared identifier 'stru_6F109F'
+return concat( " ( ", v5, ( char *)&stru_6F109F._IO_write_ptr + 7, 0LL); 
+                                    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_formal_list_for_func_def/src/c-aux-info.c:781:37: error: use of undeclared identifier 'stru_6F109F'
+return concat( " ( ", v5, ( char *)&stru_6F109F._IO_write_ptr + 7, 0LL); 
+                                    ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_formal_list_for_func_def/src/obj/c-aux-info.o] Error 1

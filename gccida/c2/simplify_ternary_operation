@@ -1,0 +1,70 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/simplify_ternary_operation/src/simplify-rtx.c:2822:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/simplify_ternary_operation/src/simplify-rtx.c:2823:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/simplify_ternary_operation/src/simplify-rtx.c:2824:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode op0_mode, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/simplify_ternary_operation/src/simplify-rtx.c:2842:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v22; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/simplify_ternary_operation/src/simplify-rtx.c:2848:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v28; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/simplify_ternary_operation/src/simplify-rtx.c:2863:7: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v17 = mode_class_0[mode]; 
+      ^~~~~~~~~~~~
+      mode_class
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/simplify_ternary_operation/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/simplify_ternary_operation/src/simplify-rtx.c:2879:7: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v19 = mode_class_0[mode]; 
+      ^~~~~~~~~~~~
+      mode_class
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/simplify_ternary_operation/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/simplify_ternary_operation/src/simplify-rtx.c:2888:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v21.rtwint = ( __int64)v8->fld[0]; 
+                       ^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/simplify_ternary_operation/src/simplify-rtx.c:2890:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v23 = ( __int64)v8[1]; 
+                ^~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/simplify_ternary_operation/src/simplify-rtx.c:2895:40: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+v24 = simplify_relational_operation( ( rtx_code)*( _WORD *)v8, op0_mode, v21.rtx, ( rtx)v23); 
+                                       ^~~~~~~~
+                                       rtx_cost
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/simplify_ternary_operation/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/simplify_ternary_operation/src/simplify-rtx.c:2895:49: error: invalid operands to binary expression ('int (rtx, enum rtx_code)' (aka 'int (struct rtx_def *, enum rtx_code)') and 'uint16 *' (aka 'unsigned short *'))
+v24 = simplify_relational_operation( ( rtx_code)*( _WORD *)v8, op0_mode, v21.rtx, ( rtx)v23); 
+                                     ~~~~~~~~~~~^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/simplify_ternary_operation/src/simplify-rtx.c:2904:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v26.rtwint = ( __int64)v7->fld[0]; 
+                       ^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/simplify_ternary_operation/src/simplify-rtx.c:2905:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v27.rtwint = ( __int64)op2->fld[0]; 
+                       ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/simplify_ternary_operation/src/simplify-rtx.c:2914:57: error: too many arguments to function call, expected 2, have 4
+v28 = ( unsigned int)reversed_comparison_code( v8, 0LL, v25, 0LL); 
+                     ~~~~~~~~~~~~~~~~~~~~~~~~           ^~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/simplify_ternary_operation/src/rtl.h:1817:1: note: 'reversed_comparison_code' declared here
+extern enum rtx_code reversed_comparison_code PARAMS ((rtx, rtx));
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/simplify_ternary_operation/src/simplify-rtx.c:2933:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v11.rtwint = ( __int64)op1->fld[0]; 
+                       ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/simplify_ternary_operation/src/simplify-rtx.c:2934:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v12.rtwint = ( __int64)op2->fld[0]; 
+                       ^~~~~~~~~~~
+16 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/simplify_ternary_operation/src/obj/simplify-rtx.o] Error 1

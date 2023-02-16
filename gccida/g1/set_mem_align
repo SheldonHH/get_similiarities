@@ -1,0 +1,22 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/set_mem_align/src/emit-rtl.c:2340:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v5; // r13d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/set_mem_align/src/emit-rtl.c:2344:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v9; // rsi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/set_mem_align/src/emit-rtl.c:2349:18: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v6 = ( __int64 *)mem[1]; 
+                 ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/set_mem_align/src/emit-rtl.c:2364:18: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v6 = ( __int64 *)mem[1]; 
+                 ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/set_mem_align/src/emit-rtl.c:2367:19: error: expected expression
+v9 = ( tree_node *)v6[1]; 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/set_mem_align/src/emit-rtl.c:2367:8: error: use of undeclared identifier 'tree_node'
+v9 = ( tree_node *)v6[1]; 
+       ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/set_mem_align/src/obj/emit-rtl.o] Error 1

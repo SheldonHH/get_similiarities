@@ -1,0 +1,97 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_unop/src/optabs.c:2534:19: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  expand_unop( machine_mode mode, optab_0 unoptab, rtx op0, rtx target, int unsignedp) 
+                  ^
+                  enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_unop/src/optabs.c:2534:38: error: unknown type name 'optab_0'; did you mean 'optab'?
+rtx  expand_unop( machine_mode mode, optab_0 unoptab, rtx op0, rtx target, int unsignedp) 
+                                     ^~~~~~~
+                                     optab
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_unop/src/optabs.h:48:5: note: 'optab' declared here
+} * optab;
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_unop/src/optabs.c:2542:1: error: must use 'enum' tag to refer to type 'mode_class'
+mode_class v12; // ecx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_unop/src/machmode.h:52:30: note: enum 'mode_class' is hidden by a non-type declaration of 'mode_class' here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_unop/src/optabs.c:2561:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode submode; // [rsp+5Ch] [rbp-64h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_unop/src/optabs.c:2567:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode0; // [rsp+8Ch] [rbp-34h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_unop/src/optabs.c:2569:1: error: must use 'enum' tag to refer to type 'mode_class'
+mode_class classa; // [rsp+94h] [rbp-2Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_unop/src/machmode.h:52:30: note: enum 'mode_class' is hidden by a non-type declaration of 'mode_class' here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_unop/src/optabs.c:2575:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode wider_mode; // [rsp+BCh] [rbp-4h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_unop/src/optabs.c:2576:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode wider_modea; // [rsp+BCh] [rbp-4h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_unop/src/optabs.c:2579:10: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+classa = mode_class_0[mode]; 
+         ^~~~~~~~~~~~
+         mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_unop/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_unop/src/optabs.c:2588:34: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+mode0 = *( ( unsigned __int16 *)&insn_data_0[icode].operand[1] + 8); 
+                                 ^~~~~~~~~~~
+                                 insn_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_unop/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_unop/src/optabs.c:2596:7: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+if ( !insn_data_0[icode].operand[1].predicate( xop0, mode0) ) 
+      ^~~~~~~~~~~
+      insn_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_unop/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_unop/src/optabs.c:2596:46: error: called object type '<dependent type>' is not a function or function pointer
+if ( !insn_data_0[icode].operand[1].predicate( xop0, mode0) ) 
+                                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_unop/src/optabs.c:2598:7: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+if ( !insn_data_0[icode].operand->predicate( temp, mode) ) 
+      ^~~~~~~~~~~
+      insn_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_unop/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_unop/src/optabs.c:2598:44: error: called object type '<dependent type>' is not a function or function pointer
+if ( !insn_data_0[icode].operand->predicate( temp, mode) ) 
+                                           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_unop/src/optabs.c:2600:7: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+pat = insn_data_0[icode].genfun( temp, xop0); 
+      ^~~~~~~~~~~
+      insn_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_unop/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_unop/src/optabs.c:2600:32: error: called object type '<dependent type>' is not a function or function pointer
+pat = insn_data_0[icode].genfun( temp, xop0); 
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_unop/src/optabs.c:2642:54: error: invalid suffix 'xmode' on integer constant
+v7 < mode_size[mode] && unoptab->handlers[*(short *)0xmode].insn_code != CODE_FOR_nothing) ) 
+                                                     ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_unop/src/optabs.c:2653:30: error: invalid suffix 'orce' on integer constant
+v8 = operand_sub*(short *)0xforce( op0a, i, mode); 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_unop/src/optabs.c:2653:6: error: use of undeclared identifier 'operand_sub'
+v8 = operand_sub*(short *)0xforce( op0a, i, mode); 
+     ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_unop/src/obj/optabs.o] Error 1

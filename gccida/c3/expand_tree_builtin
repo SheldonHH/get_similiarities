@@ -1,0 +1,26 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_tree_builtin/src/c-common.c:3545:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *arg0; // [rsp+10h] [rbp-30h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_tree_builtin/src/c-common.c:3546:1: error: must use 'enum' tag to refer to type 'tree_code'
+tree_code code; // [rsp+1Ch] [rbp-24h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_tree_builtin/src/c-common.c:3547:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v6; // [rsp+38h] [rbp-8h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_tree_builtin/src/c-common.c:3608:19: error: expected expression
+v6 = ( tree_node *)global_trees; 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_tree_builtin/src/c-common.c:3608:8: error: use of undeclared identifier 'tree_node'
+v6 = ( tree_node *)global_trees; 
+       ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_tree_builtin/src/c-common.c:3621:19: error: expected expression
+v6 = ( tree_node *)global_trees; 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_tree_builtin/src/c-common.c:3621:8: error: use of undeclared identifier 'tree_node'
+v6 = ( tree_node *)global_trees; 
+       ^
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_tree_builtin/src/obj/c-common.o] Error 1

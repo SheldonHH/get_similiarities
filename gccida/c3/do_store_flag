@@ -1,0 +1,79 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/do_store_flag/src/expr.c:10623:43: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  do_store_flag( tree exp, rtx target, machine_mode mode, int only_cheap) 
+                                          ^
+                                          enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/do_store_flag/src/expr.c:10628:1: error: use of undeclared identifier 'splay_tree_value'
+splay_tree_value v9; // rax 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/do_store_flag/src/expr.c:10639:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v20; // r12 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/do_store_flag/src/expr.c:10666:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v47; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/do_store_flag/src/expr.c:10668:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v49; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/do_store_flag/src/expr.c:10670:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v52; // [rsp+1Ch] [rbp-5Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/do_store_flag/src/expr.c:10682:1: error: use of undeclared identifier 'v9'
+v9 = global_trees; 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/do_store_flag/src/expr.c:10691:1: error: use of undeclared identifier 'v9'
+v9 = global_trees; 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/do_store_flag/src/expr.c:10696:14: error: use of undeclared identifier 'v9'
+if ( high == v9 ) 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/do_store_flag/src/expr.c:10712:13: error: use of undeclared identifier 'v9'
+if ( low == v9 ) 
+            ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/do_store_flag/src/expr.c:10722:14: error: use of undeclared identifier 'v9'
+if ( high == v9 ) 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/do_store_flag/src/expr.c:10808:20: error: expected expression
+v20 = ( tree_node *)v14; 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/do_store_flag/src/expr.c:10808:9: error: use of undeclared identifier 'tree_node'
+v20 = ( tree_node *)v14; 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/do_store_flag/src/expr.c:10813:25: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+v15 = swap_condition( ( rtx_code)v15); 
+                        ^~~~~~~~
+                        rtx_cost
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/do_store_flag/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/do_store_flag/src/expr.c:10813:34: error: expected ')'
+v15 = swap_condition( ( rtx_code)v15); 
+                                 ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/do_store_flag/src/expr.c:10813:21: note: to match this '('
+v15 = swap_condition( ( rtx_code)v15); 
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/do_store_flag/src/expr.c:10814:20: error: expected expression
+v20 = ( tree_node *)v13; 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/do_store_flag/src/expr.c:10814:9: error: use of undeclared identifier 'tree_node'
+v20 = ( tree_node *)v13; 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/do_store_flag/src/expr.c:10822:23: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+if ( can_compare_p( ( rtx_code)v15, ( machine_mode)v12, ccp_store_flag) ) 
+                      ^~~~~~~~
+                      rtx_cost
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/do_store_flag/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/do_store_flag/src/expr.c:10822:32: error: expected ')'
+if ( can_compare_p( ( rtx_code)v15, ( machine_mode)v12, ccp_store_flag) ) 
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/do_store_flag/src/expr.c:10822:19: note: to match this '('
+if ( can_compare_p( ( rtx_code)v15, ( machine_mode)v12, ccp_store_flag) ) 
+                  ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/do_store_flag/src/obj/expr.o] Error 1

@@ -1,0 +1,54 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/do_SUBST/src/combine.c:891:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[v4] == MODE_INT && *( _WORD *)newval == 54 ) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/do_SUBST/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/do_SUBST/src/combine.c:894:46: error: use of undeclared identifier 'machine_mode'
+if ( rtwint != trunc_int_for_mode( rtwint, ( machine_mode)v4) ) 
+                                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/do_SUBST/src/combine.c:908:9: error: use of undeclared identifier 'undobuf_0'; did you mean 'undobuf'?
+frees = undobuf_0.frees; 
+        ^~~~~~~~~
+        undobuf
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/do_SUBST/src/combine.c:334:23: note: 'undobuf' declared here
+static struct undobuf undobuf;
+                      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/do_SUBST/src/combine.c:909:6: error: use of undeclared identifier 'undobuf_0'; did you mean 'undobuf'?
+if ( undobuf_0.frees ) 
+     ^~~~~~~~~
+     undobuf
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/do_SUBST/src/combine.c:334:23: note: 'undobuf' declared here
+static struct undobuf undobuf;
+                      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/do_SUBST/src/combine.c:910:1: error: use of undeclared identifier 'undobuf_0'; did you mean 'undobuf'?
+undobuf_0.frees = undobuf_0.frees->next; 
+^~~~~~~~~
+undobuf
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/do_SUBST/src/combine.c:334:23: note: 'undobuf' declared here
+static struct undobuf undobuf;
+                      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/do_SUBST/src/combine.c:910:19: error: use of undeclared identifier 'undobuf_0'; did you mean 'undobuf'?
+undobuf_0.frees = undobuf_0.frees->next; 
+                  ^~~~~~~~~
+                  undobuf
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/do_SUBST/src/combine.c:334:23: note: 'undobuf' declared here
+static struct undobuf undobuf;
+                      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/do_SUBST/src/combine.c:917:15: error: use of undeclared identifier 'undobuf_0'; did you mean 'undobuf'?
+frees->next = undobuf_0.undos; 
+              ^~~~~~~~~
+              undobuf
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/do_SUBST/src/combine.c:334:23: note: 'undobuf' declared here
+static struct undobuf undobuf;
+                      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/do_SUBST/src/combine.c:918:1: error: use of undeclared identifier 'undobuf_0'; did you mean 'undobuf'?
+undobuf_0.undos = frees; 
+^~~~~~~~~
+undobuf
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/do_SUBST/src/combine.c:334:23: note: 'undobuf' declared here
+static struct undobuf undobuf;
+                      ^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/do_SUBST/src/obj/combine.o] Error 1

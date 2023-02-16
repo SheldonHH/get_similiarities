@@ -1,0 +1,21 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/alloc_gcse_mem/src/gcse.c:1466:1: error: use of undeclared identifier 'uid_cuid_1'; did you mean 'uid_cuid'?
+uid_cuid_1 = v3; 
+^~~~~~~~~~
+uid_cuid
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/alloc_gcse_mem/src/gcse.c:383:13: note: 'uid_cuid' declared here
+static int *uid_cuid;
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/alloc_gcse_mem/src/gcse.c:1484:20: error: expected expression
+cuid_insn = ( rtx *)v8; 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/alloc_gcse_mem/src/gcse.c:1498:20: error: expected expression
+cuid_insn = ( rtx *)gmalloc( 8u); 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/alloc_gcse_mem/src/gcse.c:1504:26: error: expected expression
+modify_mem_list = ( rtx *)gmalloc( 8 * n_basic_blocks); 
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/alloc_gcse_mem/src/gcse.c:1506:32: error: expected expression
+canon_modify_mem_list = ( rtx *)v10; 
+                               ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/alloc_gcse_mem/src/obj/gcse.o] Error 1

@@ -1,0 +1,44 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/merge_attributes/src/tree.c:3323:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v2; // r14 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/merge_attributes/src/tree.c:3331:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v11; // rbx 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/merge_attributes/src/tree.c:3335:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v15; // rbx 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/merge_attributes/src/tree.c:3373:37: error: subscript of pointer to incomplete type 'struct rtx_def'
+v10 = ( const char *)v8->int_cst.rtl[2]; 
+                     ~~~~~~~~~~~~~~~^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/merge_attributes/src/config.h:7:8: note: forward declaration of 'struct rtx_def'
+struct rtx_def;
+       ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/merge_attributes/src/tree.c:3378:9: error: subscript of pointer to incomplete type 'struct rtx_def'
+if ( rtl[1] != 1 ) 
+     ~~~^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/merge_attributes/src/config.h:7:8: note: forward declaration of 'struct rtx_def'
+struct rtx_def;
+       ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/merge_attributes/src/tree.c:3392:37: error: subscript of pointer to incomplete type 'struct rtx_def'
+v18 = ( const char *)v8->int_cst.rtl[2]; 
+                     ~~~~~~~~~~~~~~~^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/merge_attributes/src/config.h:7:8: note: forward declaration of 'struct rtx_def'
+struct rtx_def;
+       ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/merge_attributes/src/tree.c:3396:9: error: subscript of pointer to incomplete type 'struct rtx_def'
+if ( v19[1] != 1 ) 
+     ~~~^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/merge_attributes/src/config.h:7:8: note: forward declaration of 'struct rtx_def'
+struct rtx_def;
+       ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/merge_attributes/src/tree.c:3411:20: error: expected expression
+v15 = ( tree_node *)ggc_alloc( v14); 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/merge_attributes/src/tree.c:3411:9: error: use of undeclared identifier 'tree_node'
+v15 = ( tree_node *)ggc_alloc( v14); 
+        ^
+9 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/merge_attributes/src/obj/tree.o] Error 1

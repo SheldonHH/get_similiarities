@@ -1,0 +1,15 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/offsettable_address_p/src/recog.c:2394:42: error: must use 'enum' tag to refer to type 'machine_mode'
+int  offsettable_address_p( int strictp, machine_mode mode, rtx y) 
+                                         ^
+                                         enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/offsettable_address_p/src/recog.c:2397:28: error: unexpected type name 'rtx': expected identifier
+int (  *v5)( machine_mode, rtx); // rbx 
+                           ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/offsettable_address_p/src/recog.c:2397:14: error: a parameter list without types is only allowed in a function definition
+int (  *v5)( machine_mode, rtx); // rbx 
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/offsettable_address_p/src/recog.c:2433:32: error: use of undeclared identifier 'machine_mode'
+v7 = gen_rtx_fmt_ee( LO_SUM, ( machine_mode)*( ( unsigned __int8 *)y + 2), y->fld[0].rtx, v13); 
+                               ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/offsettable_address_p/src/obj/recog.o] Error 1

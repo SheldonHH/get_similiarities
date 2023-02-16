@@ -1,0 +1,72 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/subst_constants/src/integrate.c:2950:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code; // [rsp+70h] [rbp-50h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/subst_constants/src/integrate.c:2953:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode op_mode; // [rsp+80h] [rbp-40h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/subst_constants/src/integrate.c:2954:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode compare_mode; // [rsp+84h] [rbp-3Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/subst_constants/src/integrate.c:2958:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode op0_mode; // [rsp+A4h] [rbp-1Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/subst_constants/src/integrate.c:2986:13: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+src = ( rtx)x[1]; 
+            ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/subst_constants/src/integrate.c:2987:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[*( ( unsigned __int8 *)src + 2)] == MODE_CC ) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/subst_constants/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/subst_constants/src/integrate.c:2995:13: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+src = ( rtx)x[1]; 
+            ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/subst_constants/src/integrate.c:3016:34: error: use of undeclared identifier 'machine_mode'
+tem = gen_lowpart_if_possible( ( machine_mode)*( unsigned __int8 *)( dest->fld[0].rtwint + 2), src); 
+                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/subst_constants/src/integrate.c:3056:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& mode_class_0[*( ( unsigned __int8 *)src + 2)] == MODE_CC 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/subst_constants/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/subst_constants/src/integrate.c:3092:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)x + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/subst_constants/src/integrate.c:3094:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( unsigned __int8 *)( x->fld[0].rtwint + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/subst_constants/src/integrate.c:3106:25: error: use of undeclared identifier 'machine_mode'
+&& !memory_address_p( ( machine_mode)*( ( unsigned __int8 *)x + 2), x->fld[0].rtx) ) 
+                        ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/subst_constants/src/integrate.c:3200:3: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+( rtx_code)*( _WORD *)op0, 
+  ^~~~~~~~
+  rtx_cost
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/subst_constants/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/subst_constants/src/integrate.c:3200:12: error: invalid operands to binary expression ('int (rtx, enum rtx_code)' (aka 'int (struct rtx_def *, enum rtx_code)') and 'uint16 *' (aka 'unsigned short *'))
+( rtx_code)*( _WORD *)op0, 
+~~~~~~~~~~~^~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/subst_constants/src/integrate.c:3210:14: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+newa = ( rtx)x[1]; 
+             ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/subst_constants/src/integrate.c:3217:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)x + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/subst_constants/src/integrate.c:3229:42: error: use of undeclared identifier 'machine_mode'
+newa = simplify_unary_operation( code, ( machine_mode)*( ( unsigned __int8 *)x + 2), x->fld[0].rtx, op0_mode); 
+                                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/subst_constants/src/integrate.c:3236:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)x + 2), 
+  ^
+18 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/subst_constants/src/obj/integrate.o] Error 1

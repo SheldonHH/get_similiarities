@@ -1,0 +1,35 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/scan_rtx/src/regrename.c:1124:37: error: must use 'enum' tag to refer to type 'reg_class'
+void  scan_rtx( rtx insn, rtx *loc, reg_class a3, scan_actions action, op_type type, int earlyclobber) 
+                                    ^
+                                    enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/scan_rtx/src/regrename.c:1124:51: error: must use 'enum' tag to refer to type 'scan_actions'
+void  scan_rtx( rtx insn, rtx *loc, reg_class a3, scan_actions action, op_type type, int earlyclobber) 
+                                                  ^
+                                                  enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/scan_rtx/src/regrename.c:1124:72: error: must use 'enum' tag to refer to type 'op_type'
+void  scan_rtx( rtx insn, rtx *loc, reg_class a3, scan_actions action, op_type type, int earlyclobber) 
+                                                                       ^
+                                                                       enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/scan_rtx/src/regrename.c:1126:1: error: must use 'enum' tag to refer to type 'op_type'
+op_type v7; // r14d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/scan_rtx/src/regrename.c:1135:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class classa; // [rsp+0h] [rbp-48h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/scan_rtx/src/regrename.c:1136:1: error: must use 'enum' tag to refer to type 'scan_actions'
+scan_actions actiona; // [rsp+4h] [rbp-44h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/scan_rtx/src/regrename.c:1158:12: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v9 = ( rtx)v9[1]; 
+           ^~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/scan_rtx/src/regrename.c:1193:66: error: use of undeclared identifier 'machine_mode'
+scan_rtx_address( insn, ( rtx *)v9->fld, GENERAL_REGS, action, ( machine_mode)type); 
+                                                                 ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/scan_rtx/src/regrename.c:1205:49: error: use of undeclared identifier 'op_type'
+scan_rtx( insna, ( rtx *)v9->fld, a3, action, ( op_type)( 2 * ( v7 != OP_IN)), earlyclobber); 
+                                                ^
+9 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/scan_rtx/src/obj/regrename.o] Error 1

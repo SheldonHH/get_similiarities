@@ -1,0 +1,16 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/dw2_force_const_mem/src/dwarf2asm.c:1192:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *value; // rbx 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/dw2_force_const_mem/src/dwarf2asm.c:1195:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *identifier; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/dw2_force_const_mem/src/dwarf2asm.c:1211:22: error: expected expression
+value = ( tree_node *)v2->value; 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/dw2_force_const_mem/src/dwarf2asm.c:1211:11: error: use of undeclared identifier 'tree_node'
+value = ( tree_node *)v2->value; 
+          ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/dw2_force_const_mem/src/obj/dwarf2asm.o] Error 1

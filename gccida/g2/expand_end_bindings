@@ -1,0 +1,54 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_end_bindings/src/stmt.c:4199:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *x_last_expr_type; // rbx 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_end_bindings/src/stmt.c:4203:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *cleanups; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_end_bindings/src/stmt.c:4236:61: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( i = cfun->x_nonlocal_goto_handler_slots; i; i = ( rtx)i[1] ) 
+                                                            ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_end_bindings/src/stmt.c:4238:21: error: use of undeclared identifier 'machine_mode'
+v7 = gen_reg_rtx( ( machine_mode)( ( ( BYTE3( target_flags) & 2) != 0) + 4)); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_end_bindings/src/stmt.c:4262:39: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+x_nonlocal_goto_handler_slots = ( rtx)x_nonlocal_goto_handler_slots[1]; 
+                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_end_bindings/src/stmt.c:4273:39: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+x_nonlocal_goto_handler_slots = ( rtx)x_nonlocal_goto_handler_slots[1]; 
+                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_end_bindings/src/stmt.c:4288:13: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v16 = ( rtx)v16[1]; 
+            ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_end_bindings/src/stmt.c:4295:13: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v16 = ( rtx)v16[1]; 
+            ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_end_bindings/src/stmt.c:4324:21: error: expected identifier or '('
+ struct label_chain = x_block_stack->data.block.label_chain; 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_end_bindings/src/stmt.c:4331:21: error: expected identifier or '('
+ struct label_chain = x_block_stack->data.block.label_chain; 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_end_bindings/src/stmt.c:4341:21: error: expected identifier or '('
+ struct label_chain = label_chain->next; 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_end_bindings/src/stmt.c:4343:10: error: expected expression
+while (  struct label_chain ); 
+         ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_end_bindings/src/stmt.c:4343:10: error: expected ')'
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_end_bindings/src/stmt.c:4343:7: note: to match this '('
+while (  struct label_chain ); 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_end_bindings/src/stmt.c:4373:23: error: use of undeclared identifier 'save_level'; did you mean 'save_expr'?
+emit_stack_restore( ( save_level)( x_block_stack->next == 0LL), next_label, 0LL); 
+                      ^~~~~~~~~~
+                      save_expr
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_end_bindings/src/tree.h:2528:13: note: 'save_expr' declared here
+extern tree save_expr                   PARAMS ((tree));
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_end_bindings/src/stmt.c:4403:38: error: assigning to 'uint64' (aka 'unsigned long long') from incompatible type 'struct rtx_def'
+*( _QWORD *)&emit_note( 0LL, -97)[2] = x_block_stack->data.loop.alt_end_label[2]; 
+                                     ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+15 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_end_bindings/src/obj/stmt.o] Error 1

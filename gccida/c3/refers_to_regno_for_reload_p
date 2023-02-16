@@ -1,0 +1,56 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/refers_to_regno_for_reload_p/src/reload.c:6544:19: error: conflicting types for 'refers_to_regno_for_reload_p'
+unsigned __int64  refers_to_regno_for_reload_p( unsigned int regno, unsigned int endregno, rtx x, rtx *loc) 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/refers_to_regno_for_reload_p/src/reload.h:314:12: note: previous declaration is here
+extern int refers_to_regno_for_reload_p PARAMS ((unsigned int, unsigned int,
+           ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/refers_to_regno_for_reload_p/src/reload.c:6562:6: error: use of undeclared identifier 'v22'
+rtx *v22; // rbx 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/refers_to_regno_for_reload_p/src/reload.c:6583:20: error: expected expression
+if ( loc != ( rtx *)x->fld ) 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/refers_to_regno_for_reload_p/src/reload.c:6587:33: error: expected expression
+if ( v11 == 63 && loc != ( rtx *)rtwint->fld ) 
+                                ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/refers_to_regno_for_reload_p/src/reload.c:6619:14: error: expected expression
+v22 = ( rtx *)&x[1]; 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/refers_to_regno_for_reload_p/src/reload.c:6619:1: error: use of undeclared identifier 'v22'
+v22 = ( rtx *)&x[1]; 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/refers_to_regno_for_reload_p/src/reload.c:6620:13: error: use of undeclared identifier 'v22'
+if ( loc == v22 ) 
+            ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/refers_to_regno_for_reload_p/src/reload.c:6622:6: error: use of undeclared identifier 'v22'; did you mean 'v29'?
+x = *v22; 
+     ^~~
+     v29
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/refers_to_regno_for_reload_p/src/reload.c:6568:13: note: 'v29' declared here
+const char *v29; // [rsp+20h] [rbp-38h] 
+            ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/refers_to_regno_for_reload_p/src/reload.c:6626:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v14.rtwint = ( __int64)x->fld[0]; 
+                       ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/refers_to_regno_for_reload_p/src/reload.c:6636:39: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+LODWORD( result) = ( ( unsigned int)( mode_class_0[v26] - 5) < 2) + 1; 
+                                      ^~~~~~~~~~~~
+                                      mode_class
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/refers_to_regno_for_reload_p/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/refers_to_regno_for_reload_p/src/reload.c:6674:61: error: expected expression
+if ( refers_to_regno_for_reload_p( regno, endregno, *( rtx *)&v19[2 * v20], loc) ) 
+                                                            ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/refers_to_regno_for_reload_p/src/reload.c:6690:20: error: expected expression
+if ( loc != ( rtx *)v18 ) 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/refers_to_regno_for_reload_p/src/reload.c:6732:39: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+LODWORD( result) = ( ( unsigned int)( mode_class_0[( unsigned __int8)result] - 5) < 2) + 1; 
+                                      ^~~~~~~~~~~~
+                                      mode_class
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/refers_to_regno_for_reload_p/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+13 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/refers_to_regno_for_reload_p/src/obj/reload.o] Error 1

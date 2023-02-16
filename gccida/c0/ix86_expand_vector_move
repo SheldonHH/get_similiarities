@@ -1,0 +1,16 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_expand_vector_move/src/i386.c:7300:32: error: must use 'enum' tag to refer to type 'machine_mode'
+void  ix86_expand_vector_move( machine_mode mode, rtx *operands) 
+                               ^
+                               enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_expand_vector_move/src/i386.c:7302:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v2; // ecx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_expand_vector_move/src/i386.c:7337:21: error: use of undeclared identifier 'machine_mode'
+temp = force_reg( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)operands[1]), operands[1]); 
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_expand_vector_move/src/i386.c:7337:36: error: expected expression
+temp = force_reg( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)operands[1]), operands[1]); 
+                                   ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_expand_vector_move/src/obj/i386.o] Error 1

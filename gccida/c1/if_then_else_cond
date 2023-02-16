@@ -1,0 +1,71 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/if_then_else_cond/src/combine.c:7661:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v17; // r14d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/if_then_else_cond/src/combine.c:7668:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v24; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/if_then_else_cond/src/combine.c:7674:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v30; // r15d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/if_then_else_cond/src/combine.c:7706:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v7 = ( __int64)x[1]; 
+               ^~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/if_then_else_cond/src/combine.c:7729:3: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+( rtx_code)( unsigned __int16)v4, 
+  ^~~~~~~~
+  rtx_cost
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/if_then_else_cond/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/if_then_else_cond/src/combine.c:7729:14: error: expected expression
+( rtx_code)( unsigned __int16)v4, 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/if_then_else_cond/src/combine.c:7730:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)BYTE2( v4), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/if_then_else_cond/src/combine.c:7732:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( unsigned __int8 *)( x->fld[0].rtwint + 2)); 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/if_then_else_cond/src/combine.c:7734:3: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+( rtx_code)( unsigned __int16)v4, 
+  ^~~~~~~~
+  rtx_cost
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/if_then_else_cond/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/if_then_else_cond/src/combine.c:7734:14: error: expected expression
+( rtx_code)( unsigned __int16)v4, 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/if_then_else_cond/src/combine.c:7735:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)BYTE2( v4), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/if_then_else_cond/src/combine.c:7737:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( unsigned __int8 *)( x->fld[0].rtwint + 2)); 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/if_then_else_cond/src/combine.c:7760:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)BYTE2( v4), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/if_then_else_cond/src/combine.c:7762:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( unsigned __int8 *)( x->fld[0].rtwint + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/if_then_else_cond/src/combine.c:7765:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)BYTE2( v4), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/if_then_else_cond/src/combine.c:7767:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( unsigned __int8 *)( x->fld[0].rtwint + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/if_then_else_cond/src/combine.c:7774:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v35.rtwint = ( __int64)x->fld[0]; 
+                       ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/if_then_else_cond/src/combine.c:7775:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+*ptrue = ( rtx)x[1]; 
+               ^~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/if_then_else_cond/src/combine.c:7782:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+*pfalse = ( rtx)x[1]; 
+                ^~~~
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/if_then_else_cond/src/obj/combine.o] Error 1

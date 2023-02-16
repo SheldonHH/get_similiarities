@@ -1,0 +1,20 @@
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/owl_determine_life/src/engine/owl.c:2814:7: error: conflicting types for 'owl_determine_life'
+void  owl_determine_life( 
+      ^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/owl_determine_life/src/engine/owl.c:159:13: note: previous declaration is here
+static void owl_determine_life(struct local_owl_data *owl,
+            ^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/owl_determine_life/src/engine/owl.c:2951:6: error: assigning to 'struct eyevalue' from incompatible type 'int'
+*v13 = 0; 
+     ^ ~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/owl_determine_life/src/engine/owl.c:2986:28: error: use of undeclared identifier 'stones_on_board_stone_count_for_position'
+v27 = *( int *)( ( char *)&stones_on_board_stone_count_for_position + v26); 
+                           ^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/owl_determine_life/src/engine/owl.c:3067:77: error: too many arguments to function call, expected 7, have 10
+compute_eyes_pessimistic( v42, &v96, &v95, &move, &vital_point, my_eye, a7, a8, a9, heye); 
+~~~~~~~~~~~~~~~~~~~~~~~~                                                    ^~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/owl_determine_life/src/engine/liberty.h:989:1: note: 'compute_eyes_pessimistic' declared here
+void compute_eyes_pessimistic(int pos, struct eyevalue *value,
+^
+4 errors generated.
+make: *** [/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/owl_determine_life/src/obj/1/owl.o] Error 1

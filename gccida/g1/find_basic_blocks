@@ -1,0 +1,66 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_basic_blocks/src/cfgbuild.c:1081:4: error: expected ';' after expression
+rtx v13; // r12 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_basic_blocks/src/cfgbuild.c:1081:5: error: use of undeclared identifier 'v13'
+rtx v13; // r12 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_basic_blocks/src/cfgbuild.c:1092:4: error: expected ';' after expression
+rtx nonnote_insn; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_basic_blocks/src/cfgbuild.c:1092:5: error: use of undeclared identifier 'nonnote_insn'
+rtx nonnote_insn; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_basic_blocks/src/cfgbuild.c:1100:15: error: use of undeclared identifier 'TV_CFG_0'; did you mean 'TV_CFG'?
+timevar_push( TV_CFG_0); 
+              ^~~~~~~~
+              TV_CFG
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_basic_blocks/src/timevar.def:43:13: note: 'TV_CFG' declared here
+DEFTIMEVAR (TV_CFG                   , "cfg construction")
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_basic_blocks/src/cfgbuild.c:1177:1: error: use of undeclared identifier 'v13'
+v13 = f[1].fld[0].rtx; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_basic_blocks/src/cfgbuild.c:1212:1: error: use of undeclared identifier 'v13'
+v13 = delete_insn( f); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_basic_blocks/src/cfgbuild.c:1226:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v17 = ( __int64)f[2]; 
+                ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_basic_blocks/src/cfgbuild.c:1229:39: error: expected expression
+label_refs = find_label_refs( *( rtx *)( v17 + 8), lvl); 
+                                      ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_basic_blocks/src/cfgbuild.c:1230:32: error: expected expression
+v20 = find_label_refs( *( rtx *)( *( _QWORD *)&f[2] + 16LL), label_refs); 
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_basic_blocks/src/cfgbuild.c:1231:32: error: expected expression
+lvl = find_label_refs( *( rtx *)( *( _QWORD *)&f[2] + 24LL), v20); 
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_basic_blocks/src/cfgbuild.c:1240:30: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+for ( v22.rtwint = ( __int64)f[3].fld[0]; v22.rtwint; v22.rtwint = *( __int64 *)( v22.rtwint + 16) ) 
+                             ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_basic_blocks/src/cfgbuild.c:1245:1: error: use of undeclared identifier 'nonnote_insn'
+nonnote_insn = next_nonnote_insn( v23); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_basic_blocks/src/cfgbuild.c:1247:15: error: use of undeclared identifier 'nonnote_insn'
+|| *( _WORD *)nonnote_insn != 33 
+              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_basic_blocks/src/cfgbuild.c:1246:9: error: use of undeclared identifier 'nonnote_insn'
+if ( ( !nonnote_insn 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_basic_blocks/src/cfgbuild.c:1248:39: error: use of undeclared identifier 'nonnote_insn'
+|| ( unsigned __int16)( **( _WORD **)&nonnote_insn[2] - 44) > 1u) 
+                                      ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_basic_blocks/src/cfgbuild.c:1253:35: error: expected expression
+lvl = alloc_EXPR_LIST( 0, *( rtx *)( v22.rtwint + 8), lvl); 
+                                  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_basic_blocks/src/cfgbuild.c:1258:6: error: use of undeclared identifier 'v13'
+if ( v13 ) 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_basic_blocks/src/cfgbuild.c:1260:18: error: use of undeclared identifier 'v13'
+v12 = *( _WORD *)v13; 
+                 ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_basic_blocks/src/obj/cfgbuild.o] Error 1

@@ -1,0 +1,25 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/output_format/src/diagnostic.c:1088:22: error: unknown type name 'output_buffer_0'; did you mean 'output_buffer'?
+void  output_format( output_buffer_0 *buffer) 
+                     ^~~~~~~~~~~~~~~
+                     output_buffer
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/output_format/src/diagnostic.h:28:30: note: 'output_buffer' declared here
+typedef struct output_buffer output_buffer;
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/output_format/src/diagnostic.c:1101:1: error: unknown type name 'output_buffer_0'; did you mean 'output_buffer'?
+output_buffer_0 *v13; // rdi 
+^~~~~~~~~~~~~~~
+output_buffer
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/output_format/src/diagnostic.h:28:30: note: 'output_buffer' declared here
+typedef struct output_buffer output_buffer;
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/output_format/src/diagnostic.c:1202:24: error: use of undeclared identifier 'off_663A61'
+sprintf( digit_buffer, off_663A61, *v39); 
+                       ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/output_format/src/diagnostic.c:1217:24: error: use of undeclared identifier 'off_663A65'
+sprintf( digit_buffer, off_663A65, *v48); 
+                       ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/output_format/src/diagnostic.c:1310:25: error: use of undeclared identifier 'off_646752'
+sprintf( digit_buffer, &off_646752[1], *v11); 
+                        ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/output_format/src/obj/diagnostic.o] Error 1

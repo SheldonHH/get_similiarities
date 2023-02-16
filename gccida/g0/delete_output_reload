@@ -1,0 +1,34 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/delete_output_reload/src/reload1.c:8146:11: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+else if ( mode_class_0[*( ( unsigned __int8 *)reg + 2)] == MODE_COMPLEX_INT 
+          ^~~~~~~~~~~~
+          mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/delete_output_reload/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/delete_output_reload/src/reload1.c:8147:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| mode_class_0[*( ( unsigned __int8 *)reg + 2)] == MODE_COMPLEX_FLOAT ) 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/delete_output_reload/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/delete_output_reload/src/reload1.c:8168:18: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( i2 = ( rtx)insn[1]; i2; i2 = ( rtx)i2[1] ) 
+                 ^~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/delete_output_reload/src/reload1.c:8168:42: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( i2 = ( rtx)insn[1]; i2; i2 = ( rtx)i2[1] ) 
+                                         ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/delete_output_reload/src/reload1.c:8173:12: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v9 = ( rtx)i2[2]; 
+           ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/delete_output_reload/src/reload1.c:8189:19: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( i2a = ( rtx)insn[1]; i2a; i2a = ( rtx)i2a[1] ) 
+                  ^~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/delete_output_reload/src/reload1.c:8189:45: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( i2a = ( rtx)insn[1]; i2a; i2a = ( rtx)i2a[1] ) 
+                                            ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/delete_output_reload/src/reload1.c:8192:42: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v10 = **( _WORD **)&i2a[2] == 47 ? ( rtx)i2a[2] : single_set_2( i2a, *( rtx *)&i2a[2]); 
+                                         ^~~~~~
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/delete_output_reload/src/obj/reload1.o] Error 1

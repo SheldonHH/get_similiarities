@@ -1,0 +1,38 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/validate_arglist/src/builtins.c:4569:1: error: must use 'enum' tag to refer to type 'tree_code'
+tree_code *v1; // rcx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/validate_arglist/src/builtins.c:4570:1: error: must use 'enum' tag to refer to type 'tree_code'
+tree_code *overflow_arg_area; // rdx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/validate_arglist/src/builtins.c:4571:1: error: must use 'enum' tag to refer to type 'tree_code'
+tree_code *v4; // [rsp+4h] [rbp-1A8h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/validate_arglist/src/builtins.c:4574:1: error: must use 'enum' tag to refer to type 'tree_code'
+tree_code code; // [rsp+1A0h] [rbp-Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/validate_arglist/src/builtins.c:4584:34: error: expected expression
+overflow_arg_area = ( tree_code *)ap[0].overflow_arg_area; 
+                                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/validate_arglist/src/builtins.c:4584:23: error: use of undeclared identifier 'tree_code'; did you mean 'tree_cons'?
+overflow_arg_area = ( tree_code *)ap[0].overflow_arg_area; 
+                      ^~~~~~~~~
+                      tree_cons
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/validate_arglist/src/tree.h:2477:13: note: 'tree_cons' declared here
+extern tree tree_cons                   PARAMS ((tree, tree, tree));
+            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/validate_arglist/src/builtins.c:4590:19: error: expected expression
+v1 = ( tree_code *)( ( char *)ap[0].reg_save_area + ( int)ap[0].gp_offset); 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/validate_arglist/src/builtins.c:4590:8: error: use of undeclared identifier 'tree_code'; did you mean 'tree_cons'?
+v1 = ( tree_code *)( ( char *)ap[0].reg_save_area + ( int)ap[0].gp_offset); 
+       ^~~~~~~~~
+       tree_cons
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/validate_arglist/src/tree.h:2477:13: note: 'tree_cons' declared here
+extern tree tree_cons                   PARAMS ((tree, tree, tree));
+            ^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/validate_arglist/src/obj/builtins.o] Error 1

@@ -1,0 +1,35 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/add_dependence/src/sched-deps.c:642:43: error: must use 'enum' tag to refer to type 'reg_note'
+void  add_dependence( rtx insn, rtx elem, reg_note dep_type) 
+                                          ^
+                                          enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/add_dependence/src/sched-deps.c:659:1: error: must use 'enum' tag to refer to type 'reg_note'
+reg_note v20; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/add_dependence/src/sched-deps.c:699:41: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+&& ( _DWORD)v10 == reverse_condition( ( rtx_code)v11) 
+                                        ^~~~~~~~
+                                        rtx_cost
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/add_dependence/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/add_dependence/src/sched-deps.c:699:50: error: expected ')'
+&& ( _DWORD)v10 == reverse_condition( ( rtx_code)v11) 
+                                                 ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/add_dependence/src/sched-deps.c:699:37: note: to match this '('
+&& ( _DWORD)v10 == reverse_condition( ( rtx_code)v11) 
+                                    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/add_dependence/src/sched-deps.c:701:17: error: invalid operands to binary expression ('struct rtx_def' and 'struct rtx_def')
+&& condition[1] == v9[1] 
+   ~~~~~~~~~~~~ ^  ~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/add_dependence/src/sched-deps.c:760:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v22 = (  struct rtx_def *)insn[3]; 
+                          ^~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/add_dependence/src/sched-deps.c:764:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v22 = (  struct rtx_def *)insn[3]; 
+                          ^~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/add_dependence/src/sched-deps.c:797:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v23 = ( __int64)insn[3]; 
+                ^~~~~~~
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/add_dependence/src/obj/sched-deps.o] Error 1

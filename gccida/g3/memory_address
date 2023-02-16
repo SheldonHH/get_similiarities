@@ -1,0 +1,63 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/memory_address/src/explow.c:931:22: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  memory_address( machine_mode mode, rtx x) 
+                     ^
+                     enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/memory_address/src/explow.c:939:4: error: expected ';' after expression
+rtx v10; // r14 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/memory_address/src/explow.c:939:5: error: use of undeclared identifier 'v10'
+rtx v10; // r14 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/memory_address/src/explow.c:945:4: error: expected ';' after expression
+rtx constant_term; // [rsp+8h] [rbp-40h] BYREF 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/memory_address/src/explow.c:945:5: error: use of undeclared identifier 'constant_term'
+rtx constant_term; // [rsp+8h] [rbp-40h] BYREF 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/memory_address/src/explow.c:961:21: error: use of undeclared identifier 'machine_mode'
+v4 = force_reg_0( ( machine_mode)( ( ( BYTE3( target_flags) & 2) != 0) + 4), x); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/memory_address/src/explow.c:1009:1: error: use of undeclared identifier 'constant_term'
+constant_term = const_int_rtx[64]; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/memory_address/src/explow.c:1010:39: error: use of undeclared identifier 'constant_term'
+v10 = eliminate_constant_term_0( v4, &constant_term); 
+                                      ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/memory_address/src/explow.c:1010:1: error: use of undeclared identifier 'v10'
+v10 = eliminate_constant_term_0( v4, &constant_term); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/memory_address/src/explow.c:1011:27: error: use of undeclared identifier 'constant_term'
+if ( const_int_rtx[64] != constant_term && memory_address_p( mode, v10) ) 
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/memory_address/src/explow.c:1011:68: error: use of undeclared identifier 'v10'
+if ( const_int_rtx[64] != constant_term && memory_address_p( mode, v10) ) 
+                                                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/memory_address/src/explow.c:1013:7: error: use of undeclared identifier 'constant_term'
+v11 = constant_term; 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/memory_address/src/explow.c:1014:22: error: use of undeclared identifier 'machine_mode'
+v12 = gen_reg_rtx( ( machine_mode)*( ( unsigned __int8 *)v10 + 2)); 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/memory_address/src/explow.c:1014:58: error: use of undeclared identifier 'v10'
+v12 = gen_reg_rtx( ( machine_mode)*( ( unsigned __int8 *)v10 + 2)); 
+                                                         ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/memory_address/src/explow.c:1015:24: error: use of undeclared identifier 'v10'
+if ( !general_operand( v10, VOIDmode) ) 
+                       ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/memory_address/src/explow.c:1016:22: error: use of undeclared identifier 'v10'
+v10 = force_operand( v10, v12); 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/memory_address/src/explow.c:1016:1: error: use of undeclared identifier 'v10'
+v10 = force_operand( v10, v12); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/memory_address/src/explow.c:1017:13: error: use of undeclared identifier 'v10'
+if ( v12 != v10 ) 
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/memory_address/src/explow.c:1018:22: error: use of undeclared identifier 'v10'
+emit_move_insn( v12, v10); 
+                     ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/memory_address/src/obj/explow.o] Error 1

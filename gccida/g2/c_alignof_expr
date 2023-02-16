@@ -1,0 +1,32 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/c_alignof_expr/src/c-common.c:2904:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v4; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/c_alignof_expr/src/c-common.c:2910:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v11; // rdx 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/c_alignof_expr/src/c-common.c:2911:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v12; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/c_alignof_expr/src/c-common.c:2925:20: error: expected expression
+v11 = ( tree_node *)*( &global_trees + 16); 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/c_alignof_expr/src/c-common.c:2925:9: error: use of undeclared identifier 'tree_node'
+v11 = ( tree_node *)*( &global_trees + 16); 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/c_alignof_expr/src/c-common.c:2941:21: error: expected expression
+v4 = *( tree_node **)( *( _QWORD *)( low + 8) + 8LL); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/c_alignof_expr/src/c-common.c:2941:9: error: use of undeclared identifier 'tree_node'
+v4 = *( tree_node **)( *( _QWORD *)( low + 8) + 8LL); 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/c_alignof_expr/src/c-common.c:2959:21: error: expected expression
+v4 = *( tree_node **)( *( _QWORD *)( v3 + 8) + 8LL); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/c_alignof_expr/src/c-common.c:2959:9: error: use of undeclared identifier 'tree_node'
+v4 = *( tree_node **)( *( _QWORD *)( v3 + 8) + 8LL); 
+        ^
+9 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/c_alignof_expr/src/obj/c-common.o] Error 1

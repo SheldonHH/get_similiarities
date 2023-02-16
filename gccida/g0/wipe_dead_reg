@@ -1,0 +1,42 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/wipe_dead_reg/src/local-alloc.c:2587:20: error: use of undeclared identifier 'this_insn_0'; did you mean 'this_insn'?
+if ( **( _WORD **)&this_insn_0[2] == 39 && multiple_sets( this_insn_0) ) 
+                   ^~~~~~~~~~~
+                   this_insn
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/wipe_dead_reg/src/local-alloc.c:243:12: note: 'this_insn' declared here
+static rtx this_insn;
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/wipe_dead_reg/src/local-alloc.c:2587:59: error: use of undeclared identifier 'this_insn_0'; did you mean 'this_insn'?
+if ( **( _WORD **)&this_insn_0[2] == 39 && multiple_sets( this_insn_0) ) 
+                                                          ^~~~~~~~~~~
+                                                          this_insn
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/wipe_dead_reg/src/local-alloc.c:243:12: note: 'this_insn' declared here
+static rtx this_insn;
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/wipe_dead_reg/src/local-alloc.c:2589:40: error: use of undeclared identifier 'this_insn_0'; did you mean 'this_insn'?
+for ( i = **( _DWORD **)( *( _QWORD *)&this_insn_0[2] + 8LL) - 1; i >= 0; --i ) 
+                                       ^~~~~~~~~~~
+                                       this_insn
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/wipe_dead_reg/src/local-alloc.c:243:12: note: 'this_insn' declared here
+static rtx this_insn;
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/wipe_dead_reg/src/local-alloc.c:2591:13: error: expected identifier or '('
+ struct set = *( rtx *)( *( _QWORD *)( *( _QWORD *)&this_insn_0[2] + 8LL) + 8LL * i + 8); 
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/wipe_dead_reg/src/local-alloc.c:2602:29: error: use of undeclared identifier 'this_insn_0'; did you mean 'this_insn'?
+output_p = find_regno_note( this_insn_0, REG_INC, regno) != 0LL; 
+                            ^~~~~~~~~~~
+                            this_insn
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/wipe_dead_reg/src/local-alloc.c:243:12: note: 'this_insn' declared here
+static rtx this_insn;
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/wipe_dead_reg/src/local-alloc.c:2606:1: error: use of undeclared identifier 'qty_0'
+qty_0[*( ( int *)reg_qty + regno)].death = 2 * this_insn_number + output_p; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/wipe_dead_reg/src/local-alloc.c:2610:21: error: use of undeclared identifier 'machine_mode'
+mark_life( regno, ( machine_mode)*( ( unsigned __int8 *)reg + 2), 0); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/wipe_dead_reg/src/local-alloc.c:2614:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)reg + 2), 
+  ^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/wipe_dead_reg/src/obj/local-alloc.o] Error 1

@@ -1,0 +1,59 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/compute_forward_dependences/src/sched-deps.c:1841:4: error: expected ';' after expression
+rtx v5; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/compute_forward_dependences/src/sched-deps.c:1841:5: error: use of undeclared identifier 'v5'
+rtx v5; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/compute_forward_dependences/src/sched-deps.c:1842:4: error: expected ';' after expression
+rtx v6; // r12 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/compute_forward_dependences/src/sched-deps.c:1842:5: error: use of undeclared identifier 'v6'
+rtx v6; // r12 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/compute_forward_dependences/src/sched-deps.c:1843:4: error: expected ';' after expression
+rtx v7; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/compute_forward_dependences/src/sched-deps.c:1843:5: error: use of undeclared identifier 'v7'
+rtx v7; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/compute_forward_dependences/src/sched-deps.c:1855:21: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( i = ( __int64)v2[3]; i; i = *( _QWORD *)( i + 16) ) 
+                    ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/compute_forward_dependences/src/sched-deps.c:1857:1: error: use of undeclared identifier 'v5'
+v5 = group_leader( *( rtx *)( i + 8)); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/compute_forward_dependences/src/sched-deps.c:1857:28: error: expected expression
+v5 = group_leader( *( rtx *)( i + 8)); 
+                           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/compute_forward_dependences/src/sched-deps.c:1858:1: error: use of undeclared identifier 'v6'
+v6 = v5; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/compute_forward_dependences/src/sched-deps.c:1858:6: error: use of undeclared identifier 'v5'
+v6 = v5; 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/compute_forward_dependences/src/sched-deps.c:1859:14: error: expected expression
+if ( *( rtx *)( i + 8) == v5 ) 
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/compute_forward_dependences/src/sched-deps.c:1859:27: error: use of undeclared identifier 'v5'
+if ( *( rtx *)( i + 8) == v5 ) 
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/compute_forward_dependences/src/sched-deps.c:1861:1: error: use of undeclared identifier 'v7'
+v7 = alloc_INSN_LIST( v2, h_i_d[v5->fld[0].rtint].depend); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/compute_forward_dependences/src/sched-deps.c:1861:33: error: use of undeclared identifier 'v5'
+v7 = alloc_INSN_LIST( v2, h_i_d[v5->fld[0].rtint].depend); 
+                                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/compute_forward_dependences/src/sched-deps.c:1862:14: error: use of undeclared identifier 'v7'
+*( ( _BYTE *)v7 + 2) = *( _BYTE *)( i + 2); 
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/compute_forward_dependences/src/sched-deps.c:1863:7: error: use of undeclared identifier 'v6'
+h_i_d[v6->fld[0].rtint].depend = v7; 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/compute_forward_dependences/src/sched-deps.c:1863:34: error: use of undeclared identifier 'v7'
+h_i_d[v6->fld[0].rtint].depend = v7; 
+                                 ^
+18 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/compute_forward_dependences/src/obj/sched-deps.o] Error 1

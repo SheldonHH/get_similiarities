@@ -1,0 +1,68 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/reversed_comparison_code_parts/src/jump.c:1104:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code  reversed_comparison_code_parts( rtx_code code, rtx arg0, rtx arg1, rtx insn) 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/reversed_comparison_code_parts/src/jump.c:1104:43: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code  reversed_comparison_code_parts( rtx_code code, rtx arg0, rtx arg1, rtx insn) 
+                                          ^
+                                          enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/reversed_comparison_code_parts/src/jump.c:1110:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // [rsp+4Ch] [rbp-4h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/reversed_comparison_code_parts/src/jump.c:1118:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[mode] == MODE_CC ) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/reversed_comparison_code_parts/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/reversed_comparison_code_parts/src/jump.c:1146:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[mode] != MODE_CC ) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/reversed_comparison_code_parts/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/reversed_comparison_code_parts/src/jump.c:1155:13: error: expected identifier or '('
+ struct set = set_of( arg0a, prev); 
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/reversed_comparison_code_parts/src/jump.c:1158:13: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+src = ( rtx)set[1]; 
+            ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/reversed_comparison_code_parts/src/jump.c:1169:15: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+arg0a = ( rtx)set[1]; 
+              ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/reversed_comparison_code_parts/src/jump.c:1174:7: error: expected expression
+if (  struct set ) 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/reversed_comparison_code_parts/src/jump.c:1182:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& mode_class_0[mode] != MODE_CC 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/reversed_comparison_code_parts/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/reversed_comparison_code_parts/src/jump.c:1183:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& mode_class_0[mode] != MODE_FLOAT 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/reversed_comparison_code_parts/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/reversed_comparison_code_parts/src/jump.c:1184:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& mode_class_0[mode] != MODE_COMPLEX_FLOAT 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/reversed_comparison_code_parts/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/reversed_comparison_code_parts/src/jump.c:1185:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& mode_class_0[mode] != MODE_VECTOR_FLOAT ) 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/reversed_comparison_code_parts/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+13 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/reversed_comparison_code_parts/src/obj/jump.o] Error 1

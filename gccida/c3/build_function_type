@@ -1,0 +1,12 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/build_function_type/src/tree.c:4437:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v8; // rbx 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/build_function_type/src/tree.c:4468:33: error: expected expression
+if ( !v7 || ( v8 = ( tree_node *)*( ( _QWORD *)v7 + 1)) == 0LL ) 
+                                ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/build_function_type/src/tree.c:4468:22: error: use of undeclared identifier 'tree_node'
+if ( !v7 || ( v8 = ( tree_node *)*( ( _QWORD *)v7 + 1)) == 0LL ) 
+                     ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/build_function_type/src/obj/tree.o] Error 1

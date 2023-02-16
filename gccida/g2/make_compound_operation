@@ -1,0 +1,71 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/make_compound_operation/src/combine.c:6799:38: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx  make_compound_operation( rtx x, rtx_code in_code) 
+                                     ^
+                                     enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/make_compound_operation/src/combine.c:6806:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v8; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/make_compound_operation/src/combine.c:6808:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v10; // r13d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/make_compound_operation/src/combine.c:6907:12: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+if ( ( rtx)v3[1] == const_int_rtx[64] ) 
+           ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/make_compound_operation/src/combine.c:6926:12: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+if ( ( rtx)v3[1] == const_int_rtx[64] ) 
+           ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/make_compound_operation/src/combine.c:6975:25: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+return gen_rtx_fmt_e( ( rtx_code)*v32, v8, ( rtx)v64); 
+                        ^~~~~~~~
+                        rtx_cost
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/make_compound_operation/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/make_compound_operation/src/combine.c:6975:34: error: invalid operands to binary expression ('int (rtx, enum rtx_code)' (aka 'int (struct rtx_def *, enum rtx_code)') and 'unsigned short *')
+return gen_rtx_fmt_e( ( rtx_code)*v32, v8, ( rtx)v64); 
+                      ~~~~~~~~~~~^~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/make_compound_operation/src/combine.c:6999:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v35 = ( __int64)v3[1]; 
+                ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/make_compound_operation/src/combine.c:7003:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v36.rtwint = ( __int64)v3->fld[0]; 
+                       ^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/make_compound_operation/src/combine.c:7024:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v36.rtwint = ( __int64)v3->fld[0]; 
+                       ^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/make_compound_operation/src/combine.c:7034:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v36.rtwint = ( __int64)v3->fld[0]; 
+                       ^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/make_compound_operation/src/combine.c:7046:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( unsigned __int8 *)( *( _QWORD *)( v3->fld[0].rtwint + 8) + 2LL), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/make_compound_operation/src/combine.c:7056:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v36.rtwint = ( __int64)v3->fld[0]; 
+                       ^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/make_compound_operation/src/combine.c:7074:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v36.rtwint = ( __int64)v3->fld[0]; 
+                       ^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/make_compound_operation/src/combine.c:7113:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v56.rtwint = ( __int64)v3->fld[0]; 
+                       ^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/make_compound_operation/src/combine.c:7132:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v57.rtwint = ( __int64)v3->fld[0]; 
+                       ^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/make_compound_operation/src/combine.c:7156:25: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+v70 = gen_rtx_fmt_ee( ( rtx_code)*( unsigned __int16 *)v3->fld[0].rtwint, v8, v69, v68); 
+                        ^~~~~~~~
+                        rtx_cost
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/make_compound_operation/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/make_compound_operation/src/combine.c:7156:34: error: invalid operands to binary expression ('int (rtx, enum rtx_code)' (aka 'int (struct rtx_def *, enum rtx_code)') and 'unsigned short *')
+v70 = gen_rtx_fmt_ee( ( rtx_code)*( unsigned __int16 *)v3->fld[0].rtwint, v8, v69, v68); 
+                      ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/make_compound_operation/src/combine.c:7170:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v18 = ( __int64)v3[1]; 
+                ^~~~~
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/make_compound_operation/src/obj/combine.o] Error 1

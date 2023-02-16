@@ -1,0 +1,42 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/stabilize_reference/src/tree.c:2675:1: error: must use 'enum' tag to refer to type 'tree_code'
+tree_code v3; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/stabilize_reference/src/tree.c:2677:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v5; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/stabilize_reference/src/tree.c:2685:1: error: must use 'enum' tag to refer to type 'tree_code'
+tree_code v13; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/stabilize_reference/src/tree.c:2688:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v17; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/stabilize_reference/src/tree.c:2753:20: error: expected expression
+v17 = ( tree_node *)ggc_alloc( 0x28uLL); 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/stabilize_reference/src/tree.c:2753:9: error: use of undeclared identifier 'tree_node'
+v17 = ( tree_node *)ggc_alloc( 0x28uLL); 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/stabilize_reference/src/tree.c:2754:12: error: expected expression
+*( _OWORD *)&v17->common.chain = 0LL; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/stabilize_reference/src/tree.c:2754:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&v17->common.chain = 0LL; 
+   ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/stabilize_reference/src/tree.c:2780:19: error: expected expression
+v5 = ( tree_node *)ggc_alloc( 0x28uLL); 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/stabilize_reference/src/tree.c:2780:8: error: use of undeclared identifier 'tree_node'
+v5 = ( tree_node *)ggc_alloc( 0x28uLL); 
+       ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/stabilize_reference/src/tree.c:2781:12: error: expected expression
+*( _OWORD *)&v5->common.chain = 0LL; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/stabilize_reference/src/tree.c:2781:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&v5->common.chain = 0LL; 
+   ^
+12 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/stabilize_reference/src/obj/tree.o] Error 1

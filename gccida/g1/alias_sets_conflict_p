@@ -1,0 +1,41 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/alias_sets_conflict_p/src/alias.c:714:1: error: unknown type name 'alias_set_entry_0'; did you mean 'alias_set_entry'?
+alias_set_entry_0 alias_set_entry; // rdx 
+^~~~~~~~~~~~~~~~~
+alias_set_entry
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/alias_sets_conflict_p/src/alias.c:87:4: note: 'alias_set_entry' declared here
+} *alias_set_entry;
+   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/alias_sets_conflict_p/src/alias.c:716:1: error: use of undeclared identifier 'alias_set_entry_0'; did you mean 'alias_set_entry'?
+alias_set_entry_0 v5; // rdx 
+^~~~~~~~~~~~~~~~~
+alias_set_entry
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/alias_sets_conflict_p/src/alias.c:714:19: note: 'alias_set_entry' declared here
+alias_set_entry_0 alias_set_entry; // rdx 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/alias_sets_conflict_p/src/alias.c:716:1: error: must use 'struct' tag to refer to type 'alias_set_entry'
+alias_set_entry_0 v5; // rdx 
+^
+struct 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/alias_sets_conflict_p/src/alias.c:714:19: note: struct 'alias_set_entry' is hidden by a non-type declaration of 'alias_set_entry' here
+alias_set_entry_0 alias_set_entry; // rdx 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/alias_sets_conflict_p/src/alias.c:723:25: error: expected identifier or '('
+ struct alias_set_entry = get_alias_set_entry( set1); 
+                        ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/alias_sets_conflict_p/src/alias.c:728:4: error: assigning to 'struct alias_set_entry' from incompatible type 'alias_set_entry' (aka 'struct alias_set_entry *'); dereference with *
+v5 = get_alias_set_entry( set2); 
+   ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~
+     *
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/alias_sets_conflict_p/src/alias.c:730:1: error: statement requires expression of scalar type ('struct alias_set_entry' invalid)
+if ( v5 ) 
+^    ~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/alias_sets_conflict_p/src/alias.c:733:9: error: member reference type 'struct alias_set_entry' is not a pointer; did you mean to use '.'?
+if ( !v5->has_zero_child ) 
+      ~~^~
+        .
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/alias_sets_conflict_p/src/alias.c:734:29: error: member reference type 'struct alias_set_entry' is not a pointer; did you mean to use '.'?
+return splay_tree_lookup( v5->children, set1) != 0LL; 
+                          ~~^~
+                            .
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/alias_sets_conflict_p/src/obj/alias.o] Error 1

@@ -1,0 +1,52 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/pointer_diff/src/c-typeck.c:3109:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v4; // r15 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/pointer_diff/src/c-typeck.c:3111:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node **v6; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/pointer_diff/src/c-typeck.c:3113:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node **p_imag; // rcx 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/pointer_diff/src/c-typeck.c:3114:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v9; // rbx 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/pointer_diff/src/c-typeck.c:3116:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v11; // rbp 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/pointer_diff/src/c-typeck.c:3118:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v13; // rbx 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/pointer_diff/src/c-typeck.c:3119:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v14; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/pointer_diff/src/c-typeck.c:3124:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v19; // rbp 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/pointer_diff/src/c-typeck.c:3129:19: error: expected expression
+v4 = ( tree_node *)*( &global_trees + 30); 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/pointer_diff/src/c-typeck.c:3129:8: error: use of undeclared identifier 'tree_node'
+v4 = ( tree_node *)*( &global_trees + 30); 
+       ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/pointer_diff/src/c-typeck.c:3142:20: error: expected expression
+v6 = ( tree_node **)( &global_trees + 88); 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/pointer_diff/src/c-typeck.c:3142:8: error: use of undeclared identifier 'tree_node'
+v6 = ( tree_node **)( &global_trees + 88); 
+       ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/pointer_diff/src/c-typeck.c:3151:24: error: expected expression
+p_imag = ( tree_node **)( &global_trees + 88); 
+                       ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/pointer_diff/src/c-typeck.c:3151:12: error: use of undeclared identifier 'tree_node'
+p_imag = ( tree_node **)( &global_trees + 88); 
+           ^
+14 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/pointer_diff/src/obj/c-typeck.o] Error 1

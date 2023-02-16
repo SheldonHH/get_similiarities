@@ -1,0 +1,33 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_subroutine_type_die/src/dwarf2out.c:11456:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v3; // r13 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_subroutine_type_die/src/dwarf2out.c:11460:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v7; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_subroutine_type_die/src/dwarf2out.c:11461:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v8; // rbp 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_subroutine_type_die/src/dwarf2out.c:11464:1: error: must use 'enum' tag to refer to type 'dwarf_attribute'
+dwarf_attribute dw_attr; // edx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_subroutine_type_die/src/dwarf2out.c:11474:19: error: expected expression
+v7 = ( tree_node *)xcalloc( 1uLL, 0x48uLL); 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_subroutine_type_die/src/dwarf2out.c:11474:8: error: use of undeclared identifier 'tree_node'
+v7 = ( tree_node *)xcalloc( 1uLL, 0x48uLL); 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_subroutine_type_die/src/dwarf2out.c:11492:46: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'unsigned long long' of different size
+*( __m128i *)&v14->die = _mm_unpacklo_epi64( ( __m128i)( unsigned __int64)v8, ( __m128i)( unsigned __int64)type); 
+                                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_subroutine_type_die/src/dwarf2out.c:11492:79: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'unsigned long long' of different size
+*( __m128i *)&v14->die = _mm_unpacklo_epi64( ( __m128i)( unsigned __int64)v8, ( __m128i)( unsigned __int64)type); 
+                                                                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_subroutine_type_die/src/dwarf2out.c:11511:30: error: use of undeclared identifier 'a'
+fancy_abort( ( const char *)&a, 4588, "AT_ref"); 
+                             ^
+9 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_subroutine_type_die/src/obj/dwarf2out.o] Error 1

@@ -1,0 +1,45 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_return/src/stmt.c:3510:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v15; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_return/src/stmt.c:3518:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v23; // r15d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_return/src/stmt.c:3522:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v27; // r12d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_return/src/stmt.c:3526:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v31; // r15d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_return/src/stmt.c:3633:31: error: invalid suffix 'xmode' on integer constant
+v25 = gen_reg_rtx( *(short *)0xmode); 
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_return/src/stmt.c:3640:31: error: invalid suffix 'orce' on integer constant
+src = operand_sub*(short *)0xforce( result_val, v20 >> ( 6 - ( ( target_flags & 0x2000000) == 0)), BLKmode); 
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_return/src/stmt.c:3640:7: error: use of undeclared identifier 'operand_sub'
+src = operand_sub*(short *)0xforce( result_val, v20 >> ( 6 - ( ( target_flags & 0x2000000) == 0)), BLKmode); 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_return/src/stmt.c:3643:18: error: invalid suffix 'xmode' on integer constant
+v23 = *(short *)0xmode; 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_return/src/stmt.c:3644:66: error: invalid suffix 'xmode' on integer constant
+bit_field = extract_bit_field( src, v12, v22, 1, 0LL, *(short *)0xmode, *(short *)0xmode, v21 + 32); 
+                                                                 ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_return/src/stmt.c:3644:84: error: invalid suffix 'xmode' on integer constant
+bit_field = extract_bit_field( src, v12, v22, 1, 0LL, *(short *)0xmode, *(short *)0xmode, v21 + 32); 
+                                                                                   ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_return/src/stmt.c:3667:51: error: invalid suffix 'xmode' on integer constant
+if ( ( unsigned __int8)v30 < mode_size[*(short *)0xmode] ) 
+                                                  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_return/src/stmt.c:3668:18: error: invalid suffix 'xmode' on integer constant
+v31 = *(short *)0xmode; 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_return/src/stmt.c:3701:40: error: use of undeclared identifier 'machine_mode'
+v17 = expand_expr( ( tree)high, v16, ( machine_mode)*( ( unsigned __int8 *)v16 + 2), EXPAND_NORMAL); 
+                                       ^
+13 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_return/src/obj/stmt.o] Error 1

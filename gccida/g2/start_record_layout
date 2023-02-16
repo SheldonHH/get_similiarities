@@ -1,0 +1,22 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/start_record_layout/src/stor-layout.c:950:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v3; // rdx 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/start_record_layout/src/stor-layout.c:951:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v4; // rdx 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/start_record_layout/src/stor-layout.c:965:19: error: expected expression
+v3 = ( tree_node *)*( &global_trees + 15); 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/start_record_layout/src/stor-layout.c:965:8: error: use of undeclared identifier 'tree_node'
+v3 = ( tree_node *)*( &global_trees + 15); 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/start_record_layout/src/stor-layout.c:968:19: error: expected expression
+v4 = ( tree_node *)*( &global_trees + 17); 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/start_record_layout/src/stor-layout.c:968:8: error: use of undeclared identifier 'tree_node'
+v4 = ( tree_node *)*( &global_trees + 17); 
+       ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/start_record_layout/src/obj/stor-layout.o] Error 1

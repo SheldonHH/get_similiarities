@@ -1,0 +1,20 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/noce_try_abs/src/ifcvt.c:1893:25: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+c = (  struct rtx_def *)cond[1]; 
+                        ^~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/noce_try_abs/src/ifcvt.c:1904:70: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( insn = earliest; insn != if_infoa->test_bb->head; insn = ( rtx)insn[1] ) 
+                                                                     ^~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/noce_try_abs/src/ifcvt.c:1950:32: error: use of undeclared identifier 'machine_mode'
+target = expand_simple_unop( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)if_infoa->x), ABS, b, if_infoa->x, 0); 
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/noce_try_abs/src/ifcvt.c:1950:47: error: expected expression
+target = expand_simple_unop( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)if_infoa->x), ABS, b, if_infoa->x, 0); 
+                                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/noce_try_abs/src/ifcvt.c:1952:32: error: use of undeclared identifier 'machine_mode'
+target = expand_simple_unop( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)target), NEG, target, if_infoa->x, 0); 
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/noce_try_abs/src/ifcvt.c:1952:47: error: expected expression
+target = expand_simple_unop( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)target), NEG, target, if_infoa->x, 0); 
+                                              ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/noce_try_abs/src/obj/ifcvt.o] Error 1

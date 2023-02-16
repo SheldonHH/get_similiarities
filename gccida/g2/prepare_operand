@@ -1,0 +1,23 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/prepare_operand/src/optabs.c:3709:52: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  prepare_operand( int icode, rtx x, int opnum, machine_mode mode, machine_mode wider_mode, int unsignedp) 
+                                                   ^
+                                                   enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/prepare_operand/src/optabs.c:3709:71: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  prepare_operand( int icode, rtx x, int opnum, machine_mode mode, machine_mode wider_mode, int unsignedp) 
+                                                                      ^
+                                                                      enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/prepare_operand/src/optabs.c:3719:8: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+v12 = &insn_data_0[icode].operand[opnum]; 
+       ^~~~~~~~~~~
+       insn_data
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/prepare_operand/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/prepare_operand/src/optabs.c:3720:29: error: use of undeclared identifier 'machine_mode'
+if ( v12->predicate( v11, ( machine_mode)*( ( unsigned __int16 *)v12 + 8)) ) 
+                            ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/prepare_operand/src/optabs.c:3723:28: error: use of undeclared identifier 'machine_mode'
+return copy_to_mode_reg( ( machine_mode)*( ( unsigned __int16 *)v12 + 8), v11); 
+                           ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/prepare_operand/src/obj/optabs.o] Error 1

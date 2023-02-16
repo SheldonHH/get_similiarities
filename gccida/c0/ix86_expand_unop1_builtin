@@ -1,0 +1,78 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_expand_unop1_builtin/src/i386.c:12092:33: error: must use 'enum' tag to refer to type 'insn_code'
+rtx  ix86_expand_unop1_builtin( insn_code icode, tree arglist, rtx target) 
+                                ^
+                                enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_expand_unop1_builtin/src/i386.c:12094:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode0; // [rsp+8h] [rbp-48h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_expand_unop1_builtin/src/i386.c:12095:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode tmode; // [rsp+Ch] [rbp-44h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_expand_unop1_builtin/src/i386.c:12101:33: error: use of undeclared identifier 'insn_data_0'
+tmode = *( ( unsigned __int16 *)insn_data_0[icode].operand + 8); 
+                                ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_expand_unop1_builtin/src/i386.c:12102:34: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+mode0 = *( ( unsigned __int16 *)&insn_data_0[icode].operand[1] + 8); 
+                                 ^~~~~~~~~~~
+                                 insn_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_expand_unop1_builtin/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_expand_unop1_builtin/src/i386.c:12105:76: error: use of undeclared identifier 'insn_data_0'
+|| !insn_data_0[icode].operand->predicate( target, *( ( unsigned __int16 *)insn_data_0[icode].operand + 8)) ) 
+                                                                           ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_expand_unop1_builtin/src/i386.c:12105:5: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+|| !insn_data_0[icode].operand->predicate( target, *( ( unsigned __int16 *)insn_data_0[icode].operand + 8)) ) 
+    ^~~~~~~~~~~
+    insn_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_expand_unop1_builtin/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_expand_unop1_builtin/src/i386.c:12109:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[mode0] == MODE_VECTOR_INT || mode_class_0[mode0] == MODE_VECTOR_FLOAT ) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_expand_unop1_builtin/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_expand_unop1_builtin/src/i386.c:12109:48: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[mode0] == MODE_VECTOR_INT || mode_class_0[mode0] == MODE_VECTOR_FLOAT ) 
+                                               ^~~~~~~~~~~~
+                                               mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_expand_unop1_builtin/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_expand_unop1_builtin/src/i386.c:12111:7: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+if ( !insn_data_0[icode].operand[1].predicate( op0, mode0) ) 
+      ^~~~~~~~~~~
+      insn_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_expand_unop1_builtin/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_expand_unop1_builtin/src/i386.c:12111:46: error: called object type '<dependent type>' is not a function or function pointer
+if ( !insn_data_0[icode].operand[1].predicate( op0, mode0) ) 
+                                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_expand_unop1_builtin/src/i386.c:12114:7: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+if ( !insn_data_0[icode].operand[2].predicate( op0, mode0) ) 
+      ^~~~~~~~~~~
+      insn_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_expand_unop1_builtin/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_expand_unop1_builtin/src/i386.c:12114:46: error: called object type '<dependent type>' is not a function or function pointer
+if ( !insn_data_0[icode].operand[2].predicate( op0, mode0) ) 
+                                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_expand_unop1_builtin/src/i386.c:12116:7: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+pat = insn_data_0[icode].genfun( target, op0, op1); 
+      ^~~~~~~~~~~
+      insn_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_expand_unop1_builtin/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_expand_unop1_builtin/src/i386.c:12116:32: error: called object type '<dependent type>' is not a function or function pointer
+pat = insn_data_0[icode].genfun( target, op0, op1); 
+                               ^
+15 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_expand_unop1_builtin/src/obj/i386.o] Error 1

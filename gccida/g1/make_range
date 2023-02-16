@@ -1,0 +1,83 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/make_range/src/fold-const.c:3889:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v5; // r13 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/make_range/src/fold-const.c:3892:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *elements; // r15 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/make_range/src/fold-const.c:3896:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v12; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/make_range/src/fold-const.c:3897:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v13; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/make_range/src/fold-const.c:3898:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v14; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/make_range/src/fold-const.c:3905:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *abstract_origin; // r12 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/make_range/src/fold-const.c:3907:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v23; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/make_range/src/fold-const.c:3908:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v24; // r12 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/make_range/src/fold-const.c:3909:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v25; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/make_range/src/fold-const.c:3910:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v26; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/make_range/src/fold-const.c:3911:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v27; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/make_range/src/fold-const.c:3913:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v29; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/make_range/src/fold-const.c:3914:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *high; // [rsp+8h] [rbp-90h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/make_range/src/fold-const.c:3966:24: error: use of undeclared identifier 'tree_code'; did you mean 'tree_cons'?
+n_low = range_binop( ( tree_code)v17, type, v5, 0, low, 0); 
+                       ^~~~~~~~~
+                       tree_cons
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/make_range/src/tree.h:2477:13: note: 'tree_cons' declared here
+extern tree tree_cons                   PARAMS ((tree, tree, tree));
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/make_range/src/fold-const.c:3966:34: error: expected ')'
+n_low = range_binop( ( tree_code)v17, type, v5, 0, low, 0); 
+                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/make_range/src/fold-const.c:3966:20: note: to match this '('
+n_low = range_binop( ( tree_code)v17, type, v5, 0, low, 0); 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/make_range/src/fold-const.c:3967:22: error: use of undeclared identifier 'tree_code'; did you mean 'tree_cons'?
+v18 = range_binop( ( tree_code)v17, type, high, 1, low, 0); 
+                     ^~~~~~~~~
+                     tree_cons
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/make_range/src/tree.h:2477:13: note: 'tree_cons' declared here
+extern tree tree_cons                   PARAMS ((tree, tree, tree));
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/make_range/src/fold-const.c:3967:32: error: expected ')'
+v18 = range_binop( ( tree_code)v17, type, high, 1, low, 0); 
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/make_range/src/fold-const.c:3967:18: note: to match this '('
+v18 = range_binop( ( tree_code)v17, type, high, 1, low, 0); 
+                 ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/make_range/src/fold-const.c:4074:36: error: use of undeclared identifier 'machine_mode'
+abstract_origin = type_for_mode( ( machine_mode)( BYTE5( type->block.abstract_origin) >> 1), 1)->decl.abstract_origin; 
+                                   ^
+18 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/make_range/src/obj/fold-const.o] Error 1

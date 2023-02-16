@@ -1,0 +1,34 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compute_insns_for_mem/src/function.c:3856:56: error: unknown type name 'hash_table_0'; did you mean 'hash_table'?
+void  compute_insns_for_mem( rtx insns, rtx last_insn, hash_table_0 *ht) 
+                                                       ^~~~~~~~~~~~
+                                                       hash_table
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compute_insns_for_mem/src/hashtable.h:40:19: note: 'hash_table' declared here
+typedef struct ht hash_table;
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compute_insns_for_mem/src/function.c:3856:7: error: conflicting types for 'compute_insns_for_mem'
+void  compute_insns_for_mem( rtx insns, rtx last_insn, hash_table_0 *ht) 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compute_insns_for_mem/src/function.c:306:13: note: previous declaration is here
+static void compute_insns_for_mem PARAMS ((rtx, rtx, struct hash_table *));
+            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compute_insns_for_mem/src/function.c:3860:4: error: expected ';' after expression
+rtx x; // [rsp+8h] [rbp-40h] BYREF 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compute_insns_for_mem/src/function.c:3860:5: error: use of undeclared identifier 'x'
+rtx x; // [rsp+8h] [rbp-40h] BYREF 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compute_insns_for_mem/src/function.c:3868:1: error: use of undeclared identifier 'x'
+x = insns; 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compute_insns_for_mem/src/function.c:3877:16: error: use of undeclared identifier 'x'
+for_each_rtx( &x, insns_for_mem_walk, data); 
+               ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compute_insns_for_mem/src/function.c:3879:7: error: use of undeclared identifier 'x'
+rtx = x[1].fld[0].rtx; 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compute_insns_for_mem/src/function.c:3880:1: error: use of undeclared identifier 'x'
+x = rtx; 
+^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compute_insns_for_mem/src/obj/function.o] Error 1

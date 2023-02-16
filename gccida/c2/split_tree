@@ -1,0 +1,30 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/split_tree/src/fold-const.c:1867:28: error: must use 'enum' tag to refer to type 'tree_code'
+tree  split_tree( tree in, tree_code code, tree *conp, tree *litp, tree *minus_litp, int negate_p) 
+                           ^
+                           enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/split_tree/src/fold-const.c:1882:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v20; // rdx 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/split_tree/src/fold-const.c:1884:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v22; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/split_tree/src/fold-const.c:1885:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v23; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/split_tree/src/fold-const.c:1984:20: error: expected expression
+v20 = ( tree_node *)high; 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/split_tree/src/fold-const.c:1984:9: error: use of undeclared identifier 'tree_node'
+v20 = ( tree_node *)high; 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/split_tree/src/fold-const.c:1986:20: error: expected expression
+v20 = ( tree_node *)low; 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/split_tree/src/fold-const.c:1986:9: error: use of undeclared identifier 'tree_node'
+v20 = ( tree_node *)low; 
+        ^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/split_tree/src/obj/fold-const.o] Error 1

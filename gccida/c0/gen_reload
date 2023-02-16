@@ -1,0 +1,68 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_reload/src/reload1.c:7813:46: error: must use 'enum' tag to refer to type 'reload_type'
+rtx  gen_reload( rtx out, rtx in, int opnum, reload_type type) 
+                                             ^
+                                             enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_reload/src/reload1.c:7842:34: error: use of undeclared identifier 'machine_mode'
+&& ( tem = gen_lowpart_common( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)in->fld[0].rtwint), out)) != 0LL ) 
+                                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_reload/src/reload1.c:7842:49: error: expected expression
+&& ( tem = gen_lowpart_common( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)in->fld[0].rtwint), out)) != 0LL ) 
+                                                ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_reload/src/reload1.c:7850:30: error: use of undeclared identifier 'machine_mode'
+tema = gen_lowpart_common( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)out->fld[0].rtwint), in); 
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_reload/src/reload1.c:7850:45: error: expected expression
+tema = gen_lowpart_common( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)out->fld[0].rtwint), in); 
+                                            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_reload/src/reload1.c:7881:45: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+if ( op0 != ina->fld[0].rtx || op1 != ( rtx)ina[1] ) 
+                                            ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_reload/src/reload1.c:7882:31: error: use of undeclared identifier 'machine_mode'
+ina = gen_rtx_fmt_ee( PLUS, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)ina), op0, op1); 
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_reload/src/reload1.c:7882:46: error: expected expression
+ina = gen_rtx_fmt_ee( PLUS, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)ina), op0, op1); 
+                                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_reload/src/reload1.c:7911:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int16 *)&insn_data_0[code].operand[2] + 8)) ) 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_reload/src/reload1.c:7911:41: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+( machine_mode)*( ( unsigned __int16 *)&insn_data_0[code].operand[2] + 8)) ) 
+                                        ^~~~~~~~~~~
+                                        insn_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_reload/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_reload/src/reload1.c:7909:5: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+&& !insn_data_0[code].operand[2].predicate( 
+    ^~~~~~~~~~~
+    insn_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_reload/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_reload/src/reload1.c:7948:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)outa), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_reload/src/reload1.c:7948:18: error: expected expression
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)outa), 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_reload/src/reload1.c:7951:33: error: use of undeclared identifier 'machine_mode'
+loc = get_secondary_mem( ina, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)outa), opnum, type); 
+                                ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_reload/src/reload1.c:7951:48: error: expected expression
+loc = get_secondary_mem( ina, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)outa), opnum, type); 
+                                               ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_reload/src/reload1.c:7953:23: error: use of undeclared identifier 'machine_mode'
+outa = gen_rtx_REG( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)loc), outa->fld[0].rtint); 
+                      ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_reload/src/reload1.c:7953:38: error: expected expression
+outa = gen_rtx_REG( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)loc), outa->fld[0].rtint); 
+                                     ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_reload/src/reload1.c:7955:22: error: use of undeclared identifier 'machine_mode'
+ina = gen_rtx_REG( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)loc), ina->fld[0].rtint); 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_reload/src/reload1.c:7955:37: error: expected expression
+ina = gen_rtx_REG( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)loc), ina->fld[0].rtint); 
+                                    ^
+19 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_reload/src/obj/reload1.o] Error 1

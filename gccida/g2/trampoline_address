@@ -1,0 +1,47 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/trampoline_address/src/function.c:6172:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v8; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/trampoline_address/src/function.c:6174:4: error: expected ';' after expression
+rtx v10; // r12 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/trampoline_address/src/function.c:6174:5: error: use of undeclared identifier 'v10'
+rtx v10; // r12 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/trampoline_address/src/function.c:6176:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v12; // rdx 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/trampoline_address/src/function.c:6183:44: error: expected expression
+while ( x_trampoline_list->type.values !=  struct function ) 
+                                           ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/trampoline_address/src/function.c:6189:39: error: expected expression
+return round_trampoline_addr( *( rtx *)( *( _QWORD *)( x_trampoline_list->int_cst.int_cst.low + 40) + 8LL)); 
+                                      ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/trampoline_address/src/function.c:6207:32: error: expected expression
+while ( chain->type.values !=  struct function ) 
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/trampoline_address/src/function.c:6222:1: error: use of undeclared identifier 'v10'
+v10 = assign_stack_local_1( BLKmode, 24LL, 0, cfun); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/trampoline_address/src/function.c:6224:1: error: use of undeclared identifier 'v10'
+v10 = assign_stack_local_1( BLKmode, 11LL, 0, cfun); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/trampoline_address/src/function.c:6227:40: error: use of undeclared identifier 'v10'
+node->int_cst.int_cst.high = ( __int64)v10; 
+                                       ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/trampoline_address/src/function.c:6243:1: error: use of undeclared identifier 'v10'
+v10 = assign_stack_local_1( BLKmode, 24LL, 0, v9); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/trampoline_address/src/function.c:6245:1: error: use of undeclared identifier 'v10'
+v10 = assign_stack_local_1( BLKmode, 11LL, 0, v9); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/trampoline_address/src/function.c:6248:39: error: use of undeclared identifier 'v10'
+v11->int_cst.int_cst.high = ( __int64)v10; 
+                                      ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/trampoline_address/src/function.c:6251:7: error: use of undeclared identifier 'v10'
+rtx = v10->fld[0].rtx; 
+      ^
+14 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/trampoline_address/src/obj/function.o] Error 1

@@ -1,0 +1,15 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/exact_real_inverse/src/real.c:1633:26: error: must use 'enum' tag to refer to type 'machine_mode'
+int  exact_real_inverse( machine_mode mode, realvaluetype *r) 
+                         ^
+                         enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/exact_real_inverse/src/real.c:1663:38: error: passing 'enum machine_mode' to parameter of incompatible type 'realvaluetype'
+real_value_truncate( ( __int64)&v13, mode, v4, v5, v6, v7, *( __int128 *)v12, 0LL); 
+                                     ^~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/exact_real_inverse/src/real.c:1665:12: error: expected expression
+*( _OWORD *)v12 = v13; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/exact_real_inverse/src/real.c:1665:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)v12 = v13; 
+   ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/exact_real_inverse/src/obj/real.o] Error 1

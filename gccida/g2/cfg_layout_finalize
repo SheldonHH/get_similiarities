@@ -1,0 +1,30 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/cfg_layout_finalize/src/cfglayout.c:1081:4: error: expected ';' after expression
+rtx reg_note; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/cfg_layout_finalize/src/cfglayout.c:1081:5: error: must use 'enum' tag to refer to type 'reg_note'
+rtx reg_note; // rax 
+    ^
+    enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/cfg_layout_finalize/src/cfglayout.c:1237:1: error: must use 'enum' tag to refer to type 'reg_note'
+reg_note = find_reg_note( end, REG_BR_PROB, 0LL); 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/cfg_layout_finalize/src/cfglayout.c:1237:10: error: expected identifier or '('
+reg_note = find_reg_note( end, REG_BR_PROB, 0LL); 
+         ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/cfg_layout_finalize/src/cfglayout.c:1238:6: error: use of undeclared identifier 'reg_note'; did you mean 'reg_names'?
+if ( reg_note ) 
+     ^~~~~~~~
+     reg_names
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/cfg_layout_finalize/src/hard-reg-set.h:485:21: note: 'reg_names' declared here
+extern const char * reg_names[FIRST_PSEUDO_REGISTER];
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/cfg_layout_finalize/src/cfglayout.c:1240:21: error: use of undeclared identifier 'reg_note'
+if ( *( __int64 *)( reg_note->fld[0].rtwint + 8) <= 4999 ) 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/cfg_layout_finalize/src/cfglayout.c:1276:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v28.rtwint = ( __int64)v26->end[1].fld[0]; 
+                       ^~~~~~~~~~~~~~~~~~
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/cfg_layout_finalize/src/obj/cfglayout.o] Error 1

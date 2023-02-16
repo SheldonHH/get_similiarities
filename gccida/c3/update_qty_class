@@ -1,0 +1,25 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/update_qty_class/src/local-alloc.c:2492:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class rclass; // [rsp+4h] [rbp-Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/update_qty_class/src/local-alloc.c:2493:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class rclassa; // [rsp+4h] [rbp-Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/update_qty_class/src/local-alloc.c:2496:34: error: use of undeclared identifier 'qty_0'
+if ( reg_class_subset_p( rclass, qty_0[qtyno].min_class) ) 
+                                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/update_qty_class/src/local-alloc.c:2497:1: error: use of undeclared identifier 'qty_0'
+qty_0[qtyno].min_class = rclass; 
+^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/update_qty_class/src/local-alloc.c:2499:35: error: use of undeclared identifier 'qty_0'
+if ( reg_class_subset_p( rclassa, qty_0[qtyno].alternate_class) ) 
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/update_qty_class/src/local-alloc.c:2500:1: error: use of undeclared identifier 'qty_0'
+qty_0[qtyno].alternate_class = rclassa; 
+^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/update_qty_class/src/local-alloc.c:2502:1: error: use of undeclared identifier 'qty_0'
+qty_0[qtyno].changes_mode = 1; 
+^
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/update_qty_class/src/obj/local-alloc.o] Error 1

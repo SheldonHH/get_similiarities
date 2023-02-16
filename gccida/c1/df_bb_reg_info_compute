@@ -1,0 +1,36 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/df_bb_reg_info_compute/src/df.c:2309:4: error: expected ';' after expression
+rtx v24; // [rsp+10h] [rbp-38h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/df_bb_reg_info_compute/src/df.c:2309:5: error: use of undeclared identifier 'v24'; did you mean 'v21'?
+rtx v24; // [rsp+10h] [rbp-38h] 
+    ^~~
+    v21
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/df_bb_reg_info_compute/src/df.c:2307:9: note: 'v21' declared here
+__int64 v21; // r13 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/df_bb_reg_info_compute/src/df.c:2314:36: error: expected ';' in 'for' statement specifier
+for ( i = bb->end; i && i != ( rtx)k->head[1]; i = ( rtx)v24[1] ) 
+                                   ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/df_bb_reg_info_compute/src/df.c:2314:46: error: expected ')'
+for ( i = bb->end; i && i != ( rtx)k->head[1]; i = ( rtx)v24[1] ) 
+                                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/df_bb_reg_info_compute/src/df.c:2314:5: note: to match this '('
+for ( i = bb->end; i && i != ( rtx)k->head[1]; i = ( rtx)v24[1] ) 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/df_bb_reg_info_compute/src/df.c:2314:58: error: expected ';' after expression
+for ( i = bb->end; i && i != ( rtx)k->head[1]; i = ( rtx)v24[1] ) 
+                                                         ^
+                                                         ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/df_bb_reg_info_compute/src/df.c:2314:58: error: use of undeclared identifier 'v24'; did you mean 'v21'?
+for ( i = bb->end; i && i != ( rtx)k->head[1]; i = ( rtx)v24[1] ) 
+                                                         ^~~
+                                                         v21
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/df_bb_reg_info_compute/src/df.c:2307:9: note: 'v21' declared here
+__int64 v21; // r13 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/df_bb_reg_info_compute/src/df.c:2314:61: error: subscripted value is not an array, pointer, or vector
+for ( i = bb->end; i && i != ( rtx)k->head[1]; i = ( rtx)v24[1] ) 
+                                                         ~~~^~
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/df_bb_reg_info_compute/src/obj/df.o] Error 1

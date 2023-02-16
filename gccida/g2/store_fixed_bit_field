@@ -1,0 +1,40 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/store_fixed_bit_field/src/expmed.c:1175:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v10; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/store_fixed_bit_field/src/expmed.c:1188:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v23; // ecx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/store_fixed_bit_field/src/expmed.c:1192:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode best_mode; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/store_fixed_bit_field/src/expmed.c:1193:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v28; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/store_fixed_bit_field/src/expmed.c:1197:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v32; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/store_fixed_bit_field/src/expmed.c:1233:18: error: invalid suffix 'xmode' on integer constant
+v23 = *(short *)0xmode; 
+                 ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/store_fixed_bit_field/src/expmed.c:1235:44: error: invalid suffix 'xmode' on integer constant
+if ( v24 && v24 <= mode_bitsize[*(short *)0xmode] ) 
+                                           ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/store_fixed_bit_field/src/expmed.c:1237:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v25 = ( __int64)op0[1]; 
+                ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/store_fixed_bit_field/src/expmed.c:1348:21: error: use of undeclared identifier 'machine_mode'
+v7 = gen_lowpart( ( machine_mode)*( ( unsigned __int8 *)v8 + 2), v7); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/store_fixed_bit_field/src/expmed.c:1350:25: error: use of undeclared identifier 'machine_mode'
+v7 = convert_to_mode( ( machine_mode)*( ( unsigned __int8 *)v8 + 2), v7, 1); 
+                        ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/store_fixed_bit_field/src/expmed.c:1395:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v33.rtwint = ( __int64)v7->fld[0]; 
+                       ^~~~~~~~~~
+11 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/store_fixed_bit_field/src/obj/expmed.o] Error 1

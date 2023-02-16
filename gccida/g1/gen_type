@@ -1,0 +1,53 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_type/src/c-aux-info.c:790:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v11; // r13 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_type/src/c-aux-info.c:792:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v13; // r13 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_type/src/c-aux-info.c:796:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *type; // r13 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_type/src/c-aux-info.c:803:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *j; // r12 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_type/src/c-aux-info.c:805:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *k; // r12 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_type/src/c-aux-info.c:811:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v32; // [rsp+8h] [rbp-50h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_type/src/c-aux-info.c:866:47: error: subscript of pointer to incomplete type 'struct rtx_def'
+for ( i = concat( data_type, *( _QWORD *)( rtl[1].fld[0].rtwint + 32), 0LL); 
+                                           ~~~^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_type/src/config.h:7:8: note: forward declaration of 'struct rtx_def'
+struct rtx_def;
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_type/src/c-aux-info.c:868:41: error: subscript of pointer to incomplete type 'struct rtx_def'
+i = concat( data_type, *( _QWORD *)( rtl[1].fld[0].rtwint + 32), 0LL) ) 
+                                     ~~~^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_type/src/config.h:7:8: note: forward declaration of 'struct rtx_def'
+struct rtx_def;
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_type/src/c-aux-info.c:908:25: error: use of undeclared identifier 'off_631D1E'
+v14 = concat( ret_val, &off_631D1E, 0LL); 
+                        ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_type/src/c-aux-info.c:978:12: error: subscript of pointer to incomplete type 'struct rtx_def'
+while ( v20[2] != *( &global_trees + 27) ) 
+        ~~~^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_type/src/config.h:7:8: note: forward declaration of 'struct rtx_def'
+struct rtx_def;
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_type/src/c-aux-info.c:982:35: error: subscript of pointer to incomplete type 'struct rtx_def'
+v22 = gen_type( "", *( tree *)&v20[2], ansi); 
+                               ~~~^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_type/src/config.h:7:8: note: forward declaration of 'struct rtx_def'
+struct rtx_def;
+       ^
+11 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_type/src/obj/c-aux-info.o] Error 1

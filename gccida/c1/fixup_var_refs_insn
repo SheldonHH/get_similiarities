@@ -1,0 +1,75 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/fixup_var_refs_insn/src/function.c:2207:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode promoted_mode, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/fixup_var_refs_insn/src/function.c:2212:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v7; // r10d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/fixup_var_refs_insn/src/function.c:2223:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v20; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/fixup_var_refs_insn/src/function.c:2224:4: error: expected ';' after expression
+rtx v21; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/fixup_var_refs_insn/src/function.c:2224:5: error: use of undeclared identifier 'v21'
+rtx v21; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/fixup_var_refs_insn/src/function.c:2232:4: error: expected ';' after expression
+rtx nonnote_insn; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/fixup_var_refs_insn/src/function.c:2232:5: error: use of undeclared identifier 'nonnote_insn'
+rtx nonnote_insn; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/fixup_var_refs_insn/src/function.c:2233:4: error: expected ';' after expression
+rtx v30; // rdi 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/fixup_var_refs_insn/src/function.c:2233:5: error: use of undeclared identifier 'v30'
+rtx v30; // rdi 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/fixup_var_refs_insn/src/function.c:2234:4: error: expected ';' after expression
+rtx v31; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/fixup_var_refs_insn/src/function.c:2234:5: error: use of undeclared identifier 'v31'; did you mean 'v11'?
+rtx v31; // rax 
+    ^~~
+    v11
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/fixup_var_refs_insn/src/function.c:2215:5: note: 'v11' declared here
+int v11; // eax 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/fixup_var_refs_insn/src/function.c:2237:4: error: expected ';' after expression
+rtx v34; // [rsp+10h] [rbp-38h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/fixup_var_refs_insn/src/function.c:2237:5: error: use of undeclared identifier 'v34'
+rtx v34; // [rsp+10h] [rbp-38h] 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/fixup_var_refs_insn/src/function.c:2240:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v9 = ( unsigned __int16 *)insn[2]; 
+                          ^~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/fixup_var_refs_insn/src/function.c:2241:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v10.rtwint = ( __int64)insn[3].fld[0]; 
+                       ^~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/fixup_var_refs_insn/src/function.c:2246:12: error: expected ')'
+if ( ( rtx)v12 == var || *( _WORD *)v12 == 65 && ( *( rtx *)( v12 + 8) == var || *( rtx *)( v12 + 16) == var) ) 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/fixup_var_refs_insn/src/function.c:2246:4: note: to match this '('
+if ( ( rtx)v12 == var || *( _WORD *)v12 == 65 && ( *( rtx *)( v12 + 8) == var || *( rtx *)( v12 + 16) == var) ) 
+   ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/fixup_var_refs_insn/src/function.c:2264:35: error: expected expression
+v15 = single_set_2( insn, *( rtx *)&insn[2]); 
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/fixup_var_refs_insn/src/function.c:2271:16: error: expected expression
+if ( *( ( rtx *)v9 + 1) == var ) 
+               ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/fixup_var_refs_insn/src/function.c:2273:1: error: use of undeclared identifier 'v34'
+v34 = no_share; 
+^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/fixup_var_refs_insn/src/obj/function.o] Error 1

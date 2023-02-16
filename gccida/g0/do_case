@@ -1,0 +1,12 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/do_case/src/c-typeck.c:7660:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *label; // [rsp+18h] [rbp-8h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/do_case/src/c-typeck.c:7666:28: error: expected expression
+if ( label == ( tree_node *)global_trees ) 
+                           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/do_case/src/c-typeck.c:7666:17: error: use of undeclared identifier 'tree_node'
+if ( label == ( tree_node *)global_trees ) 
+                ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/do_case/src/obj/c-typeck.o] Error 1

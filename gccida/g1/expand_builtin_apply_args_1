@@ -1,0 +1,12 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_builtin_apply_args_1/src/builtins.c:1543:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v6; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_builtin_apply_args_1/src/builtins.c:1571:30: error: use of undeclared identifier 'machine_mode'
+v9 = adjust_address_1( v1, ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), 0LL, 1, 1); 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_builtin_apply_args_1/src/builtins.c:1577:31: error: use of undeclared identifier 'machine_mode'
+v12 = adjust_address_1( v1, ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), v10, 1, 1); 
+                              ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_builtin_apply_args_1/src/obj/builtins.o] Error 1

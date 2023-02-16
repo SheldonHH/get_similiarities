@@ -1,0 +1,18 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/type_lists_compatible_p/src/c-typeck.c:1113:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *elements; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/type_lists_compatible_p/src/c-typeck.c:1126:17: error: expected expression
+if ( *( _OWORD *)&args1 != 0LL ) 
+                ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/type_lists_compatible_p/src/c-typeck.c:1126:9: error: use of undeclared identifier '_OWORD'
+if ( *( _OWORD *)&args1 != 0LL ) 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/type_lists_compatible_p/src/c-typeck.c:1194:27: error: expected expression
+elements = *( tree_node **)( v3 + 32); 
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/type_lists_compatible_p/src/c-typeck.c:1194:15: error: use of undeclared identifier 'tree_node'
+elements = *( tree_node **)( v3 + 32); 
+              ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/type_lists_compatible_p/src/obj/c-typeck.o] Error 1

@@ -1,0 +1,31 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/alter_reg/src/reload1.c:2411:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v2; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/alter_reg/src/reload1.c:2421:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // [rsp+50h] [rbp-20h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/alter_reg/src/reload1.c:2455:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)cfun->emit->x_regno_reg_rtx[i]), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/alter_reg/src/reload1.c:2455:18: error: expected expression
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)cfun->emit->x_regno_reg_rtx[i]), 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/alter_reg/src/reload1.c:2466:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)cfun->emit->x_regno_reg_rtx[i]), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/alter_reg/src/reload1.c:2466:18: error: expected expression
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)cfun->emit->x_regno_reg_rtx[i]), 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/alter_reg/src/reload1.c:2487:1: error: statement requires expression of scalar type ('struct rtx_def' invalid)
+if ( spill_stack_slot[from_reg][1] ) 
+^    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/alter_reg/src/reload1.c:2502:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)cfun->emit->x_regno_reg_rtx[i]), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/alter_reg/src/reload1.c:2502:18: error: expected expression
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)cfun->emit->x_regno_reg_rtx[i]), 
+                 ^
+9 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/alter_reg/src/obj/reload1.o] Error 1

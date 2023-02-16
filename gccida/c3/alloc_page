@@ -1,0 +1,35 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/alloc_page/src/ggc-page.c:1038:1: error: unknown type name 'page_group_0'; did you mean 'page_group'?
+page_group_0 *group; // [rsp+50h] [rbp-50h] 
+^~~~~~~~~~~~
+page_group
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/alloc_page/src/ggc-page.c:267:3: note: 'page_group' declared here
+} page_group;
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/alloc_page/src/ggc-page.c:1043:1: error: unknown type name 'page_entry_0'; did you mean 'page_entry'?
+page_entry_0 **pp; // [rsp+80h] [rbp-20h] 
+^~~~~~~~~~~~
+page_entry
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/alloc_page/src/ggc-page.c:249:3: note: 'page_entry' declared here
+} page_entry;
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/alloc_page/src/ggc-page.c:1044:1: error: unknown type name 'page_entry_0'; did you mean 'page_entry'?
+page_entry_0 *p; // [rsp+88h] [rbp-18h] 
+^~~~~~~~~~~~
+page_entry
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/alloc_page/src/ggc-page.c:249:3: note: 'page_entry' declared here
+} page_entry;
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/alloc_page/src/ggc-page.c:1100:25: error: expected expression
+group = ( page_group_0 *)enda; 
+                        ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/alloc_page/src/ggc-page.c:1100:11: error: use of undeclared identifier 'page_group_0'
+group = ( page_group_0 *)enda; 
+          ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/alloc_page/src/ggc-page.c:1104:25: error: expected expression
+group = ( page_group_0 *)( page - 32); 
+                        ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/alloc_page/src/ggc-page.c:1104:11: error: use of undeclared identifier 'page_group_0'
+group = ( page_group_0 *)( page - 32); 
+          ^
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/alloc_page/src/obj/ggc-page.o] Error 1

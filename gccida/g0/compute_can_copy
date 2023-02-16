@@ -1,0 +1,12 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/compute_can_copy/src/gcse.c:1393:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[i] == MODE_CC ) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/compute_can_copy/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/compute_can_copy/src/gcse.c:1395:22: error: use of undeclared identifier 'machine_mode'
+reg = gen_rtx_REG( ( machine_mode)i, 58); 
+                     ^
+2 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/compute_can_copy/src/obj/gcse.o] Error 1

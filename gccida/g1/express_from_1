@@ -1,0 +1,31 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/express_from_1/src/loop.c:7475:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v8; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/express_from_1/src/loop.c:7497:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v10 = (  struct rtx_def *)v4[1]; 
+                          ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/express_from_1/src/loop.c:7500:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+rtx = (  struct rtx_def *)v4[1]; 
+                          ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/express_from_1/src/loop.c:7504:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v12 = (  struct rtx_def *)v3[1]; 
+                          ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/express_from_1/src/loop.c:7507:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v11 = (  struct rtx_def *)v3[1]; 
+                          ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/express_from_1/src/loop.c:7521:32: error: use of undeclared identifier 'machine_mode'
+return gen_rtx_fmt_ee( PLUS, ( machine_mode)*( ( unsigned __int8 *)v3 + 2), v11, result); 
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/express_from_1/src/loop.c:7537:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v14 = (  struct rtx_def *)v4[1]; 
+                          ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/express_from_1/src/loop.c:7562:14: error: expected ';' after return statement
+return ( rtx)v3[1]; 
+             ^
+             ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/express_from_1/src/loop.c:7566:32: error: expected expression
+v16 = rtx_equal_p( v4, *( rtx *)&v3[1]); 
+                               ^
+9 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/express_from_1/src/obj/loop.o] Error 1

@@ -1,0 +1,34 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/disable_builtin_function/src/c-common.c:3350:1: error: use of undeclared identifier 'disabled_builtin_0'; did you mean 'disabled_builtins'?
+disabled_builtin_0 *v1; // rax 
+^~~~~~~~~~~~~~~~~~
+disabled_builtins
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/disable_builtin_function/src/c-common.c:2878:26: note: 'disabled_builtins' declared here
+static disabled_builtin *disabled_builtins = NULL;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/disable_builtin_function/src/c-common.c:3350:21: error: use of undeclared identifier 'v1'
+disabled_builtin_0 *v1; // rax 
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/disable_builtin_function/src/c-common.c:3358:1: error: use of undeclared identifier 'v1'
+v1 = ( disabled_builtin_0 *)xmalloc( 0x10uLL); 
+^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/disable_builtin_function/src/c-common.c:3358:28: error: expected expression
+v1 = ( disabled_builtin_0 *)xmalloc( 0x10uLL); 
+                           ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/disable_builtin_function/src/c-common.c:3358:8: error: use of undeclared identifier 'disabled_builtin_0'; did you mean 'disabled_builtins'?
+v1 = ( disabled_builtin_0 *)xmalloc( 0x10uLL); 
+       ^~~~~~~~~~~~~~~~~~
+       disabled_builtins
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/disable_builtin_function/src/c-common.c:2878:26: note: 'disabled_builtins' declared here
+static disabled_builtin *disabled_builtins = NULL;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/disable_builtin_function/src/c-common.c:3359:1: error: use of undeclared identifier 'v1'
+v1->name = name; 
+^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/disable_builtin_function/src/c-common.c:3360:1: error: use of undeclared identifier 'v1'
+v1->next = disabled_builtins; 
+^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/disable_builtin_function/src/c-common.c:3361:21: error: use of undeclared identifier 'v1'
+disabled_builtins = v1; 
+                    ^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/disable_builtin_function/src/obj/c-common.o] Error 1

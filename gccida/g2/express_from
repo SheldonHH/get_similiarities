@@ -1,0 +1,53 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/express_from/src/loop.c:7567:20: error: unknown type name 'induction_1'
+rtx  express_from( induction_1 *g1, induction_1 *g2) 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/express_from/src/loop.c:7567:37: error: unknown type name 'induction_1'
+rtx  express_from( induction_1 *g1, induction_1 *g2) 
+                                    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/express_from/src/loop.c:7582:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/express_from/src/loop.c:7587:4: error: expected ';' after expression
+rtx g1_add_val; // [rsp+8h] [rbp-30h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/express_from/src/loop.c:7587:5: error: use of undeclared identifier 'g1_add_val'; did you mean 'add_val'?
+rtx g1_add_val; // [rsp+8h] [rbp-30h] 
+    ^~~~~~~~~~
+    add_val
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/express_from/src/loop.c:7573:18: note: 'add_val' declared here
+ struct rtx_def *add_val; // r8 
+                 ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/express_from/src/loop.c:7631:48: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+if ( *( _WORD *)v12 == 78 && ( v13 = ( __int64)v12[1], *( _WORD *)v13 == 54) ) 
+                                               ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/express_from/src/loop.c:7633:1: error: use of undeclared identifier 'g1_add_val'; did you mean 'add_val'?
+g1_add_val = g1->add_val; 
+^~~~~~~~~~
+add_val
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/express_from/src/loop.c:7573:18: note: 'add_val' declared here
+ struct rtx_def *add_val; // r8 
+                 ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/express_from/src/loop.c:7635:31: error: use of undeclared identifier 'machine_mode'
+v14 = gen_rtx_fmt_ee( MULT, ( machine_mode)*( ( unsigned __int8 *)g1_add_val + 2), g1_add_val->fld[0].rtx, v22); 
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/express_from/src/loop.c:7635:67: error: use of undeclared identifier 'g1_add_val'
+v14 = gen_rtx_fmt_ee( MULT, ( machine_mode)*( ( unsigned __int8 *)g1_add_val + 2), g1_add_val->fld[0].rtx, v22); 
+                                                                  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/express_from/src/loop.c:7635:84: error: use of undeclared identifier 'g1_add_val'; did you mean 'add_val'?
+v14 = gen_rtx_fmt_ee( MULT, ( machine_mode)*( ( unsigned __int8 *)g1_add_val + 2), g1_add_val->fld[0].rtx, v22); 
+                                                                                   ^~~~~~~~~~
+                                                                                   add_val
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/express_from/src/loop.c:7573:18: note: 'add_val' declared here
+ struct rtx_def *add_val; // r8 
+                 ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/express_from/src/loop.c:7639:31: error: use of undeclared identifier 'machine_mode'
+v14 = gen_rtx_fmt_ee( MULT, ( machine_mode)*( ( unsigned __int8 *)v12 + 2), v12, v6); 
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/express_from/src/loop.c:7668:13: error: expected ';' after expression
+v15 = ( rtx)v15[1]; 
+            ^
+            ;
+12 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/express_from/src/obj/loop.o] Error 1

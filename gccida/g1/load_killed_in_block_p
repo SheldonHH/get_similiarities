@@ -1,0 +1,17 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/load_killed_in_block_p/src/gcse.c:1970:20: error: use of undeclared identifier 'uid_cuid_1'
+if ( *( ( _DWORD *)uid_cuid_1 + *( int *)( v6->fld[0].rtwint + 8)) < uid_limit ) 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/load_killed_in_block_p/src/gcse.c:1973:12: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v6 = ( rtx)v6[1]; 
+           ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/load_killed_in_block_p/src/gcse.c:1977:25: error: use of undeclared identifier 'uid_cuid_1'
+else if ( *( ( _DWORD *)uid_cuid_1 + *( int *)( v6->fld[0].rtwint + 8)) > uid_limit ) 
+                        ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/load_killed_in_block_p/src/gcse.c:1981:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v8.rtwint = ( __int64)v6->fld[0]; 
+                      ^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/load_killed_in_block_p/src/gcse.c:1989:12: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v6 = ( rtx)v6[1]; 
+           ^~~~~
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/load_killed_in_block_p/src/obj/gcse.o] Error 1

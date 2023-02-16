@@ -1,0 +1,65 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/legitimize_address/src/i386.c:5623:43: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  legitimize_address( rtx x, rtx oldx, machine_mode mode) 
+                                          ^
+                                          enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/legitimize_address/src/i386.c:5639:4: error: expected ';' after expression
+rtx v19; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/legitimize_address/src/i386.c:5639:5: error: use of undeclared identifier 'v19'
+rtx v19; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/legitimize_address/src/i386.c:5646:4: error: expected ';' after expression
+rtx v26; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/legitimize_address/src/i386.c:5646:5: error: use of undeclared identifier 'v26'
+rtx v26; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/legitimize_address/src/i386.c:5664:4: error: expected ';' after expression
+rtx v44; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/legitimize_address/src/i386.c:5664:5: error: use of undeclared identifier 'v44'
+rtx v44; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/legitimize_address/src/i386.c:5679:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v14 = ( __int64)x[1]; 
+                ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/legitimize_address/src/i386.c:5688:20: error: use of undeclared identifier 'machine_mode'
+v30 = force_reg( ( machine_mode)( ( ( BYTE3( target_flags) & 2) != 0) + 4), x->fld[0].rtx); 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/legitimize_address/src/i386.c:5689:30: error: use of undeclared identifier 'machine_mode'
+v4 = gen_rtx_fmt_ee( MULT, ( machine_mode)( ( ( BYTE3( target_flags) & 2) != 0) + 4), v30, v29); 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/legitimize_address/src/i386.c:5696:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v8.rtwint = ( __int64)v4->fld[0]; 
+                      ^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/legitimize_address/src/i386.c:5707:20: error: use of undeclared identifier 'machine_mode'
+v25 = force_reg( ( machine_mode)( ( ( BYTE3( target_flags) & 2) != 0) + 4), *( rtx *)( v4->fld[0].rtwint + 8)); 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/legitimize_address/src/i386.c:5707:85: error: expected expression
+v25 = force_reg( ( machine_mode)( ( ( BYTE3( target_flags) & 2) != 0) + 4), *( rtx *)( v4->fld[0].rtwint + 8)); 
+                                                                                    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/legitimize_address/src/i386.c:5710:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( ( ( BYTE3( target_flags) & 2) != 0) + 4), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/legitimize_address/src/i386.c:5716:13: error: expected ';' after expression
+rtx = ( rtx)v4[1]; 
+            ^
+            ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/legitimize_address/src/i386.c:5720:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v20 = ( __int64)rtx[1]; 
+                ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/legitimize_address/src/i386.c:5728:20: error: use of undeclared identifier 'machine_mode'
+v43 = force_reg( ( machine_mode)( ( ( BYTE3( target_flags) & 2) != 0) + 4), *( rtx *)( *( _QWORD *)&v4[1] + 8LL)); 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/legitimize_address/src/i386.c:5728:85: error: expected expression
+v43 = force_reg( ( machine_mode)( ( ( BYTE3( target_flags) & 2) != 0) + 4), *( rtx *)( *( _QWORD *)&v4[1] + 8LL)); 
+                                                                                    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/legitimize_address/src/i386.c:5729:31: error: use of undeclared identifier 'machine_mode'
+v44 = gen_rtx_fmt_ee( MULT, ( machine_mode)( ( ( BYTE3( target_flags) & 2) != 0) + 4), v43, v42); 
+                              ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/legitimize_address/src/obj/i386.o] Error 1

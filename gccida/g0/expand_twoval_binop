@@ -1,0 +1,103 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_twoval_binop/src/optabs.c:2388:27: error: unknown type name 'optab_0'; did you mean 'optab'?
+int  expand_twoval_binop( optab_0 binoptab, rtx op0, rtx op1, rtx targ0, rtx targ1, int unsignedp) 
+                          ^~~~~~~
+                          optab
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_twoval_binop/src/optabs.h:48:5: note: 'optab' declared here
+} * optab;
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_twoval_binop/src/optabs.c:2400:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode1; // [rsp+5Ch] [rbp-44h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_twoval_binop/src/optabs.c:2401:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode0; // [rsp+60h] [rbp-40h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_twoval_binop/src/optabs.c:2404:1: error: must use 'enum' tag to refer to type 'mode_class'
+mode_class classa; // [rsp+74h] [rbp-2Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_twoval_binop/src/machmode.h:52:30: note: enum 'mode_class' is hidden by a non-type declaration of 'mode_class' here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_twoval_binop/src/optabs.c:2406:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // [rsp+84h] [rbp-1Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_twoval_binop/src/optabs.c:2409:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode wider_mode; // [rsp+9Ch] [rbp-4h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_twoval_binop/src/optabs.c:2417:10: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+classa = mode_class_0[mode]; 
+         ^~~~~~~~~~~~
+         mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_twoval_binop/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_twoval_binop/src/optabs.c:2463:34: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+mode0 = *( ( unsigned __int16 *)&insn_data_0[icode].operand[1] + 8); 
+                                 ^~~~~~~~~~~
+                                 insn_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_twoval_binop/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_twoval_binop/src/optabs.c:2464:34: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+mode1 = *( ( unsigned __int16 *)&insn_data_0[icode].operand[2] + 8); 
+                                 ^~~~~~~~~~~
+                                 insn_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_twoval_binop/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_twoval_binop/src/optabs.c:2471:7: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+if ( !insn_data_0[icode].operand[1].predicate( xop0, mode0) ) 
+      ^~~~~~~~~~~
+      insn_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_twoval_binop/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_twoval_binop/src/optabs.c:2471:46: error: called object type '<dependent type>' is not a function or function pointer
+if ( !insn_data_0[icode].operand[1].predicate( xop0, mode0) ) 
+                                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_twoval_binop/src/optabs.c:2473:7: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+if ( !insn_data_0[icode].operand[2].predicate( xop1, mode1) ) 
+      ^~~~~~~~~~~
+      insn_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_twoval_binop/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_twoval_binop/src/optabs.c:2473:46: error: called object type '<dependent type>' is not a function or function pointer
+if ( !insn_data_0[icode].operand[2].predicate( xop1, mode1) ) 
+                                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_twoval_binop/src/optabs.c:2475:7: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+if ( !insn_data_0[icode].operand->predicate( targ0b, mode) || !insn_data_0[icode].operand[3].predicate( targ1b, mode) ) 
+      ^~~~~~~~~~~
+      insn_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_twoval_binop/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_twoval_binop/src/optabs.c:2475:44: error: called object type '<dependent type>' is not a function or function pointer
+if ( !insn_data_0[icode].operand->predicate( targ0b, mode) || !insn_data_0[icode].operand[3].predicate( targ1b, mode) ) 
+                                           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_twoval_binop/src/optabs.c:2475:64: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+if ( !insn_data_0[icode].operand->predicate( targ0b, mode) || !insn_data_0[icode].operand[3].predicate( targ1b, mode) ) 
+                                                               ^~~~~~~~~~~
+                                                               insn_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_twoval_binop/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_twoval_binop/src/optabs.c:2475:103: error: called object type '<dependent type>' is not a function or function pointer
+if ( !insn_data_0[icode].operand->predicate( targ0b, mode) || !insn_data_0[icode].operand[3].predicate( targ1b, mode) ) 
+                                                                                                      ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_twoval_binop/src/optabs.c:2477:7: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+pat = insn_data_0[icode].genfun( targ0b, xop0, xop1, targ1b); 
+      ^~~~~~~~~~~
+      insn_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_twoval_binop/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_twoval_binop/src/optabs.c:2477:32: error: called object type '<dependent type>' is not a function or function pointer
+pat = insn_data_0[icode].genfun( targ0b, xop0, xop1, targ1b); 
+                               ^
+19 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_twoval_binop/src/obj/optabs.o] Error 1

@@ -1,0 +1,55 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_call_inline/src/tree-inline.c:1233:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v15; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_call_inline/src/tree-inline.c:1236:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v18; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_call_inline/src/tree-inline.c:1239:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v21; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_call_inline/src/tree-inline.c:1240:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *elements; // [rsp+8h] [rbp-98h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_call_inline/src/tree-inline.c:1241:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *op1; // [rsp+10h] [rbp-90h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_call_inline/src/tree-inline.c:1255:1: error: unknown type name 'inline_data_0'; did you mean 'inline_data'?
+inline_data_0 *id; // [rsp+78h] [rbp-28h] 
+^~~~~~~~~~~~~
+inline_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_call_inline/src/tree-inline.c:101:3: note: 'inline_data' declared here
+} inline_data;
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_call_inline/src/tree-inline.c:1263:23: error: expected expression
+id = ( inline_data_0 *)data; 
+                      ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_call_inline/src/tree-inline.c:1263:8: error: use of undeclared identifier 'inline_data_0'
+id = ( inline_data_0 *)data; 
+       ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_call_inline/src/tree-inline.c:1300:6: error: use of undeclared identifier 'lang_hooks_0'; did you mean 'lang_hooks'?
+if ( lang_hooks_0.tree_inlining.start_inlining( fn) ) 
+     ^~~~~~~~~~~~
+     lang_hooks
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_call_inline/src/langhooks.h:168:32: note: 'lang_hooks' declared here
+extern const struct lang_hooks lang_hooks;
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_call_inline/src/tree-inline.c:1300:47: error: called object type '<dependent type>' is not a function or function pointer
+if ( lang_hooks_0.tree_inlining.start_inlining( fn) ) 
+                                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_call_inline/src/tree-inline.c:1303:14: error: expected identifier or '('
+ struct expr = build1( LABEL_EXPR|CONST_DECL, fn->common.type->common.type, 0LL); 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_call_inline/src/tree-inline.c:1396:1: error: use of undeclared identifier 'lang_hooks_0'; did you mean 'lang_hooks'?
+lang_hooks_0.tree_inlining.end_inlining( fn); 
+^~~~~~~~~~~~
+lang_hooks
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_call_inline/src/langhooks.h:168:32: note: 'lang_hooks' declared here
+extern const struct lang_hooks lang_hooks;
+                               ^
+12 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_call_inline/src/obj/tree-inline.o] Error 1

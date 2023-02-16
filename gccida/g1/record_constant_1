@@ -1,0 +1,26 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_constant_1/src/varasm.c:3383:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v28; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_constant_1/src/varasm.c:3385:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v30; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_constant_1/src/varasm.c:3511:20: error: expected expression
+v28 = ( tree_node *)i[4]; 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_constant_1/src/varasm.c:3511:9: error: use of undeclared identifier 'tree_node'
+v28 = ( tree_node *)i[4]; 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_constant_1/src/varasm.c:3574:7: error: use of undeclared identifier 'lang_hooks_0'; did you mean 'lang_hooks'?
+v30 = lang_hooks_0.expand_constant( exp); 
+      ^~~~~~~~~~~~
+      lang_hooks
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_constant_1/src/langhooks.h:168:32: note: 'lang_hooks' declared here
+extern const struct lang_hooks lang_hooks;
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_constant_1/src/varasm.c:3574:35: error: called object type '<dependent type>' is not a function or function pointer
+v30 = lang_hooks_0.expand_constant( exp); 
+                                  ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_constant_1/src/obj/varasm.o] Error 1

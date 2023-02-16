@@ -1,0 +1,52 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/offset_address/src/emit-rtl.c:2527:4: error: expected ';' after expression
+rtx v8; // r15 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/offset_address/src/emit-rtl.c:2527:5: error: use of undeclared identifier 'v8'
+rtx v8; // r15 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/offset_address/src/emit-rtl.c:2529:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v10; // rsi 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/offset_address/src/emit-rtl.c:2535:35: error: use of undeclared identifier 'machine_mode'
+v5 = simplify_gen_binary( PLUS, ( machine_mode)( ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32), rtx, offset); 
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/offset_address/src/emit-rtl.c:2536:27: error: use of undeclared identifier 'machine_mode'
+if ( !memory_address_p( ( machine_mode)*( ( unsigned __int8 *)memref + 2), v5) 
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/offset_address/src/emit-rtl.c:2540:19: error: use of undeclared identifier 'machine_mode'
+v6 = force_reg( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)rtx), rtx); 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/offset_address/src/emit-rtl.c:2540:34: error: expected expression
+v6 = force_reg( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)rtx), rtx); 
+                                 ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/offset_address/src/emit-rtl.c:2541:35: error: use of undeclared identifier 'machine_mode'
+v5 = simplify_gen_binary( PLUS, ( machine_mode)( ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32), v6, offset); 
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/offset_address/src/emit-rtl.c:2545:1: error: use of undeclared identifier 'v8'
+v8 = change_address_1( memref, VOIDmode, v5, 1); 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/offset_address/src/emit-rtl.c:2546:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v9 = ( __int64)memref[1]; 
+               ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/offset_address/src/emit-rtl.c:2550:22: error: expected expression
+v10 = *( tree_node **)( v9 + 8); 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/offset_address/src/emit-rtl.c:2550:10: error: use of undeclared identifier 'tree_node'
+v10 = *( tree_node **)( v9 + 8); 
+         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/offset_address/src/emit-rtl.c:2562:14: error: use of undeclared identifier 'v8'
+*( _QWORD *)&v8[1] = get_mem_attrs( v7, v10, 0LL, 0LL, v11, ( machine_mode)*( ( unsigned __int8 *)v8 + 2)); 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/offset_address/src/emit-rtl.c:2562:63: error: use of undeclared identifier 'machine_mode'
+*( _QWORD *)&v8[1] = get_mem_attrs( v7, v10, 0LL, 0LL, v11, ( machine_mode)*( ( unsigned __int8 *)v8 + 2)); 
+                                                              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/offset_address/src/emit-rtl.c:2562:99: error: use of undeclared identifier 'v8'
+*( _QWORD *)&v8[1] = get_mem_attrs( v7, v10, 0LL, 0LL, v11, ( machine_mode)*( ( unsigned __int8 *)v8 + 2)); 
+                                                                                                  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/offset_address/src/emit-rtl.c:2563:8: error: use of undeclared identifier 'v8'
+return v8; 
+       ^
+16 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/offset_address/src/obj/emit-rtl.o] Error 1

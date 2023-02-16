@@ -1,0 +1,23 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/gen_split_1232/src/insn-emit.c:17261:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v10; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/gen_split_1232/src/insn-emit.c:17262:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v11; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/gen_split_1232/src/insn-emit.c:17278:44: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+*( _WORD *)operands[1] = swap_condition( ( rtx_code)*( _WORD *)operands[1]); 
+                                           ^~~~~~~~
+                                           rtx_cost
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/gen_split_1232/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/gen_split_1232/src/insn-emit.c:17278:53: error: invalid operands to binary expression ('int (rtx, enum rtx_code)' (aka 'int (struct rtx_def *, enum rtx_code)') and 'uint16 *' (aka 'unsigned short *'))
+*( _WORD *)operands[1] = swap_condition( ( rtx_code)*( _WORD *)operands[1]); 
+                                         ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/gen_split_1232/src/insn-emit.c:17280:37: error: use of undeclared identifier 'machine_mode'
+if ( const0_operand( operands[2], ( machine_mode)*( ( unsigned __int8 *)*operands + 2)) ) 
+                                    ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/gen_split_1232/src/obj/insn-emit.o] Error 1

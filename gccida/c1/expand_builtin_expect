@@ -1,0 +1,15 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_builtin_expect/src/builtins.c:3877:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *elements; // r15 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_builtin_expect/src/builtins.c:3895:19: error: use of undeclared identifier 'machine_mode'
+v4 = force_reg( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)v4), v4); 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_builtin_expect/src/builtins.c:3895:34: error: expected expression
+v4 = force_reg( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)v4), v4); 
+                                 ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_builtin_expect/src/builtins.c:3896:38: error: use of undeclared identifier 'machine_mode'
+v5 = expand_expr( ( tree)low, 0LL, ( machine_mode)*( ( unsigned __int8 *)v4 + 2), EXPAND_NORMAL); 
+                                     ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_builtin_expect/src/obj/builtins.o] Error 1

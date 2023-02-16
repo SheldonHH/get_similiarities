@@ -1,0 +1,23 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_start_case/src/stmt.c:4935:12: error: member reference base type 'const __m128i' (vector of 2 'long long' values) is not a structure or union
+v11 = v9[3].m128i_i32[0] + 1; 
+      ~~~~~^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_start_case/src/stmt.c:4937:6: error: member reference base type 'const __m128i' (vector of 2 'long long' values) is not a structure or union
+v9[3].m128i_i32[0] = v11; 
+~~~~~^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_start_case/src/stmt.c:4943:5: error: assigning to '__m128' (vector of 4 'float' values) from incompatible type 'int'
+v13 = _mm_loadh_ps( ( const double *)typea); 
+    ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_start_case/src/stmt.c:4946:12: error: expected expression
+*( _OWORD *)( object_base + 40) = 0LL; 
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_start_case/src/stmt.c:4946:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)( object_base + 40) = 0LL; 
+   ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_start_case/src/stmt.c:4949:1: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'unsigned long long' of different size
+( __m128i)( unsigned __int64)object_base, 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_start_case/src/stmt.c:4950:1: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'unsigned long long' of different size
+( __m128i)( unsigned __int64)object_base); 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_start_case/src/obj/stmt.o] Error 1

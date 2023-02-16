@@ -1,0 +1,34 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/offset_address/src/emit-rtl.c:2527:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v8; // r9d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/offset_address/src/emit-rtl.c:2530:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v11; // rsi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/offset_address/src/emit-rtl.c:2534:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v3.rtwint = ( __int64)memref->fld[0]; 
+                      ^~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/offset_address/src/emit-rtl.c:2535:35: error: use of undeclared identifier 'machine_mode'
+v5 = simplify_gen_binary( PLUS, ( machine_mode)( ( ( BYTE3( target_flags) & 2) != 0) + 4), v3.rtx, offset); 
+                                  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/offset_address/src/emit-rtl.c:2536:27: error: use of undeclared identifier 'machine_mode'
+if ( !memory_address_p( ( machine_mode)*( ( unsigned __int8 *)memref + 2), v5) 
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/offset_address/src/emit-rtl.c:2540:20: error: use of undeclared identifier 'machine_mode'
+v14 = force_reg( ( machine_mode)*( unsigned __int8 *)( v3.rtwint + 2), v3.rtx); 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/offset_address/src/emit-rtl.c:2541:35: error: use of undeclared identifier 'machine_mode'
+v5 = simplify_gen_binary( PLUS, ( machine_mode)( ( ( BYTE3( target_flags) & 2) != 0) + 4), v14, offset); 
+                                  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/offset_address/src/emit-rtl.c:2548:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v10 = ( __int64)memref[1]; 
+                ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/offset_address/src/emit-rtl.c:2551:22: error: expected expression
+v11 = *( tree_node **)( v10 + 8); 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/offset_address/src/emit-rtl.c:2551:10: error: use of undeclared identifier 'tree_node'
+v11 = *( tree_node **)( v10 + 8); 
+         ^
+10 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/offset_address/src/obj/emit-rtl.o] Error 1

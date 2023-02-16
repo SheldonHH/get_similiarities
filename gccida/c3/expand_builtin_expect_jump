@@ -1,0 +1,45 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_builtin_expect_jump/src/builtins.c:3924:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v4; // rbp 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_builtin_expect_jump/src/builtins.c:3925:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v6; // rbx 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_builtin_expect_jump/src/builtins.c:3942:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *expr; // [rsp+10h] [rbp-38h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_builtin_expect_jump/src/builtins.c:3945:21: error: expected expression
+v4 = *( tree_node **)( *high + 32LL); 
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_builtin_expect_jump/src/builtins.c:3945:9: error: use of undeclared identifier 'tree_node'
+v4 = *( tree_node **)( *high + 32LL); 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_builtin_expect_jump/src/builtins.c:3948:19: error: expected expression
+v6 = ( tree_node *)high[4]; 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_builtin_expect_jump/src/builtins.c:3948:8: error: use of undeclared identifier 'tree_node'
+v6 = ( tree_node *)high[4]; 
+       ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_builtin_expect_jump/src/builtins.c:3954:14: error: expected identifier or '('
+ struct expr = v4; 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_builtin_expect_jump/src/builtins.c:3977:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v15 = ( __int64)v14[1]; 
+                ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_builtin_expect_jump/src/builtins.c:4016:47: error: use of undeclared identifier 'prediction'; did you mean 'predict_insn'?
+predict_insn_def( v13, PRED_BUILTIN_EXPECT, ( prediction)v12); 
+                                              ^~~~~~~~~~
+                                              predict_insn
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_builtin_expect_jump/src/predict.h:39:13: note: 'predict_insn' declared here
+extern void predict_insn        PARAMS ((rtx, enum br_predictor, int));
+            ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_builtin_expect_jump/src/builtins.c:4016:58: error: expected ')'
+predict_insn_def( v13, PRED_BUILTIN_EXPECT, ( prediction)v12); 
+                                                         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_builtin_expect_jump/src/builtins.c:4016:17: note: to match this '('
+predict_insn_def( v13, PRED_BUILTIN_EXPECT, ( prediction)v12); 
+                ^
+11 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_builtin_expect_jump/src/obj/builtins.o] Error 1

@@ -1,0 +1,61 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_insns_before/src/emit-rtl.c:4577:4: error: expected ';' after expression
+rtx v3; // r12 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_insns_before/src/emit-rtl.c:4577:5: error: use of undeclared identifier 'v3'
+rtx v3; // r12 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_insns_before/src/emit-rtl.c:4581:6: error: use of undeclared identifier 'v7'
+rtx *v7; // r13 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_insns_before/src/emit-rtl.c:4594:1: error: use of undeclared identifier 'v3'
+v3 = rtx; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_insns_before/src/emit-rtl.c:4595:25: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v4 = ( unsigned __int64)before[1]; 
+                        ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_insns_before/src/emit-rtl.c:4599:1: error: use of undeclared identifier 'v3'
+v3[1] = ( rtx_def)_mm_unpacklo_epi64( ( __m128i)v4, ( __m128i)( unsigned __int64)before); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_insns_before/src/emit-rtl.c:4599:11: error: use of undeclared identifier 'rtx_def'
+v3[1] = ( rtx_def)_mm_unpacklo_epi64( ( __m128i)v4, ( __m128i)( unsigned __int64)before); 
+          ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_insns_before/src/emit-rtl.c:4603:26: error: use of undeclared identifier 'v3'
+*( _QWORD *)( v4 + 24) = v3; 
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_insns_before/src/emit-rtl.c:4608:107: error: use of undeclared identifier 'v3'
+*( _QWORD *)( *( _QWORD *)( *( _QWORD *)( v12 + 8) + 8LL * ( **( _DWORD **)( v12 + 8) - 1) + 8) + 24LL) = v3; 
+                                                                                                          ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_insns_before/src/emit-rtl.c:4614:24: error: expected expression
+if ( before == *( rtx *)( v10 + 8) ) 
+                       ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_insns_before/src/emit-rtl.c:4616:26: error: use of undeclared identifier 'v3'
+*( _QWORD *)( v10 + 8) = v3; 
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_insns_before/src/emit-rtl.c:4624:27: error: expected expression
+while ( before != *( rtx *)v11 ) 
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_insns_before/src/emit-rtl.c:4630:19: error: use of undeclared identifier 'v3'
+*( _QWORD *)v11 = v3; 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_insns_before/src/emit-rtl.c:4638:1: error: use of undeclared identifier 'v7'
+v7 = ( rtx *)basic_block_for_insn->data.l[( int)rtuint]; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_insns_before/src/emit-rtl.c:4638:13: error: expected expression
+v7 = ( rtx *)basic_block_for_insn->data.l[( int)rtuint]; 
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_insns_before/src/emit-rtl.c:4639:6: error: use of undeclared identifier 'v7'
+if ( v7 ) 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_insns_before/src/emit-rtl.c:4641:21: error: use of undeclared identifier 'v3'
+set_block_for_insn( v3, basic_block_for_insn->data.bb[( int)rtuint]); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_insns_before/src/emit-rtl.c:4642:7: error: use of undeclared identifier 'v7'
+if ( *v7 == v3 && *( _WORD *)v3 != 35 && ( *( _WORD *)v3 != 37 || v3[2].fld[0].rtint != -80) ) 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_insns_before/src/emit-rtl.c:4642:13: error: use of undeclared identifier 'v3'
+if ( *v7 == v3 && *( _WORD *)v3 != 35 && ( *( _WORD *)v3 != 37 || v3[2].fld[0].rtint != -80) ) 
+            ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_insns_before/src/obj/emit-rtl.o] Error 1

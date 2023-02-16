@@ -1,0 +1,40 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/get_attr_athlon_decode/src/insn-attrtab.c:12444:1: error: must use 'enum' tag to refer to type 'attr_athlon_decode'
+attr_athlon_decode  get_attr_athlon_decode( rtx insn) 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/get_attr_athlon_decode/src/insn-attrtab.c:12457:29: error: too many arguments provided to function-like macro invocation
+fatal_insn_not_found( insn, "insn-attrtab.c", 12189, "get_attr_athlon_decode"); 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/get_attr_athlon_decode/src/toplev.h:52:9: note: macro 'fatal_insn_not_found' defined here
+#define fatal_insn_not_found(insn) \
+        ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/get_attr_athlon_decode/src/insn-attrtab.c:12457:1: error: use of undeclared identifier 'fatal_insn_not_found'; did you mean '_fatal_insn_not_found'?
+fatal_insn_not_found( insn, "insn-attrtab.c", 12189, "get_attr_athlon_decode"); 
+^~~~~~~~~~~~~~~~~~~~
+_fatal_insn_not_found
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/get_attr_athlon_decode/src/toplev.h:40:13: note: '_fatal_insn_not_found' declared here
+extern void _fatal_insn_not_found       PARAMS ((struct rtx_def *,
+            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/get_attr_athlon_decode/src/insn-attrtab.c:12664:22: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+v3 = memory_operand( recog_data_0.operand[1], VOIDmode) != 0; 
+                     ^~~~~~~~~~~~
+                     recog_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/get_attr_athlon_decode/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/get_attr_athlon_decode/src/insn-attrtab.c:12668:43: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+v3 = which_alternative || memory_operand( recog_data_0.operand[1], VOIDmode); 
+                                          ^~~~~~~~~~~~
+                                          recog_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/get_attr_athlon_decode/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/get_attr_athlon_decode/src/insn-attrtab.c:12684:48: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+v3 = which_alternative != 1 || memory_operand( recog_data_0.operand[1], VOIDmode); 
+                                               ^~~~~~~~~~~~
+                                               recog_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/get_attr_athlon_decode/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/get_attr_athlon_decode/src/obj/insn-attrtab.o] Error 1

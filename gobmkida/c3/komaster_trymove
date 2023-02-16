@@ -1,0 +1,32 @@
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/komaster_trymove/src/engine/board.c:1678:4: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+v18.m128i_i32[3] = str; 
+~~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/komaster_trymove/src/engine/board.c:1680:4: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+v18.m128i_i32[2] = board_ko_pos; 
+~~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/komaster_trymove/src/engine/board.c:1707:29: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+v13 = is_ko( pos, color, v18.m128i_i32); 
+                         ~~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/komaster_trymove/src/engine/board.c:1718:11: error: use of undeclared identifier 'xmmword_4A5BD0'
+( __m128i)xmmword_4A5BD0))) 
+          ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/komaster_trymove/src/engine/board.c:1725:11: error: use of undeclared identifier 'xmmword_4A5BD0'
+( __m128i)xmmword_4A5BD0))) ) 
+          ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/komaster_trymove/src/engine/board.c:1735:36: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+if ( !trymove( pos, color, v19, v18.m128i_i32[3], v11, v10) ) 
+                                ~~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/komaster_trymove/src/engine/board.c:1748:19: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+*new_kom_pos = v18.m128i_i32[0]; 
+               ~~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/komaster_trymove/src/engine/board.c:1764:19: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+*new_kom_pos = v18.m128i_i32[0]; 
+               ~~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/komaster_trymove/src/engine/board.c:1768:10: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+v16 = v18.m128i_i32[2]; 
+      ~~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/komaster_trymove/src/engine/board.c:1769:9: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+if ( v18.m128i_i32[2] ) 
+     ~~~^~~~~~~~~~
+10 errors generated.
+make: *** [/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/komaster_trymove/src/obj/1/board.o] Error 1

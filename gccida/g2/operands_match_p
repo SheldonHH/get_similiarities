@@ -1,0 +1,26 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/operands_match_p/src/reload.c:2599:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v23.rtwint = ( __int64)rtx->fld[0]; 
+                       ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/operands_match_p/src/reload.c:2609:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( unsigned __int8 *)( v23.rtwint + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/operands_match_p/src/reload.c:2611:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)rtx + 2)) 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/operands_match_p/src/reload.c:2620:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v8.rtwint = ( __int64)y->fld[0]; 
+                      ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/operands_match_p/src/reload.c:2626:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( unsigned __int8 *)( v8.rtwint + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/operands_match_p/src/reload.c:2628:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)y + 2)) 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/operands_match_p/src/reload.c:2694:33: error: expected expression
+v19 = operands_match_p( *( rtx *)&rtwint[2 * v18 + 2], *( rtx *)&v16[2 * v18 + 2]); 
+                                ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/operands_match_p/src/reload.c:2694:64: error: expected expression
+v19 = operands_match_p( *( rtx *)&rtwint[2 * v18 + 2], *( rtx *)&v16[2 * v18 + 2]); 
+                                                               ^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/operands_match_p/src/obj/reload.o] Error 1

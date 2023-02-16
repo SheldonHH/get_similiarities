@@ -1,0 +1,45 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/dequeue_and_dump/src/tree-dump.c:719:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v5; // rdx 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/dequeue_and_dump/src/tree-dump.c:723:1: error: must use 'enum' tag to refer to type 'tree_code'
+tree_code code; // [rsp+40h] [rbp-50h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/dequeue_and_dump/src/tree-dump.c:825:9: error: use of undeclared identifier 'lang_hooks_0'; did you mean 'lang_hooks'?
+quals = lang_hooks_0.tree_dump.type_quals( t); 
+        ^~~~~~~~~~~~
+        lang_hooks
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/dequeue_and_dump/src/langhooks.h:168:32: note: 'lang_hooks' declared here
+extern const struct lang_hooks lang_hooks;
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/dequeue_and_dump/src/tree-dump.c:825:42: error: called object type '<dependent type>' is not a function or function pointer
+quals = lang_hooks_0.tree_dump.type_quals( t); 
+                                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/dequeue_and_dump/src/tree-dump.c:853:7: error: use of undeclared identifier 'lang_hooks_0'; did you mean 'lang_hooks'?
+if ( !lang_hooks_0.tree_dump.dump_tree( di_0, t) ) 
+      ^~~~~~~~~~~~
+      lang_hooks
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/dequeue_and_dump/src/langhooks.h:168:32: note: 'lang_hooks' declared here
+extern const struct lang_hooks lang_hooks;
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/dequeue_and_dump/src/tree-dump.c:853:39: error: called object type '<dependent type>' is not a function or function pointer
+if ( !lang_hooks_0.tree_dump.dump_tree( di_0, t) ) 
+                                      ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/dequeue_and_dump/src/tree-dump.c:880:29: error: use of undeclared identifier 'off_816A46'
+queue_and_dump_index( di_0, off_816A46, t->decl.abstract_origin, 0); 
+                            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/dequeue_and_dump/src/tree-dump.c:918:17: error: use of undeclared identifier 'off_816AF1'
+dump_int( di_0, off_816AF1, t->int_cst.int_cst.low); 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/dequeue_and_dump/src/tree-dump.c:1082:29: error: use of undeclared identifier 'off_816AE8'
+queue_and_dump_index( di_0, off_816AE8, t->block.abstract_origin, 0); 
+                            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/dequeue_and_dump/src/tree-dump.c:1083:30: error: use of undeclared identifier 'off_816AE8'
+queue_and_dump_index( di_0, &off_816AE8[4], t->decl.size_unit, 0); 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/dequeue_and_dump/src/tree-dump.c:1099:29: error: use of undeclared identifier 'off_816AF1'
+queue_and_dump_index( di_0, off_816AF1, t->vector.elements, 0); 
+                            ^
+11 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/dequeue_and_dump/src/obj/tree-dump.o] Error 1

@@ -1,0 +1,37 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/copy_blkmode_from_reg/src/expr.c:2642:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v9; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/copy_blkmode_from_reg/src/expr.c:2650:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v17; // r14d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/copy_blkmode_from_reg/src/expr.c:2662:12: error: expected identifier or '('
+ struct op = tgtblk; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/copy_blkmode_from_reg/src/expr.c:2677:12: error: expected identifier or '('
+ struct op = assign_temp( v9, 0, 1, 1); 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/copy_blkmode_from_reg/src/expr.c:2692:33: error: invalid suffix 'xmode' on integer constant
+v20 = convert_modes( *(short *)0xmode, VOIDmode, srcreg, ( *( ( _DWORD *)&type->common + 4) >> 13) & 1); 
+                                ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/copy_blkmode_from_reg/src/expr.c:2705:35: error: invalid suffix 'orce' on integer constant
+str_rtx = operand_sub*(short *)0xforce( v20, v10 >> ( 6 - ( v13 == 0)), ( machine_mode)*( ( unsigned __int8 *)v20 + 2)); 
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/copy_blkmode_from_reg/src/expr.c:2705:75: error: use of undeclared identifier 'machine_mode'
+str_rtx = operand_sub*(short *)0xforce( v20, v10 >> ( 6 - ( v13 == 0)), ( machine_mode)*( ( unsigned __int8 *)v20 + 2)); 
+                                                                          ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/copy_blkmode_from_reg/src/expr.c:2705:11: error: use of undeclared identifier 'operand_sub'
+str_rtx = operand_sub*(short *)0xforce( v20, v10 >> ( 6 - ( v13 == 0)), ( machine_mode)*( ( unsigned __int8 *)v20 + 2)); 
+          ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/copy_blkmode_from_reg/src/expr.c:2720:18: error: invalid suffix 'xmode' on integer constant
+v17 = *(short *)0xmode; 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/copy_blkmode_from_reg/src/expr.c:2721:69: error: invalid suffix 'xmode' on integer constant
+bit_field = extract_bit_field( str_rtx, v6, v16, 1, 0LL, *(short *)0xmode, *(short *)0xmode, v15 + 32); 
+                                                                    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/copy_blkmode_from_reg/src/expr.c:2721:87: error: invalid suffix 'xmode' on integer constant
+bit_field = extract_bit_field( str_rtx, v6, v16, 1, 0LL, *(short *)0xmode, *(short *)0xmode, v15 + 32); 
+                                                                                      ^
+11 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/copy_blkmode_from_reg/src/obj/expr.o] Error 1

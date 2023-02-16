@@ -1,0 +1,25 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/std_expand_builtin_va_start/src/builtins.c:3397:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *type; // rbx 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/std_expand_builtin_va_start/src/builtins.c:3399:5: error: expected ';' after expression
+tree v8; // rax 
+    ^
+    ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/std_expand_builtin_va_start/src/builtins.c:3399:6: error: use of undeclared identifier 'v8'
+tree v8; // rax 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/std_expand_builtin_va_start/src/builtins.c:3410:26: error: invalid operands to binary expression ('tree' (aka 'union tree_node *') and 'tree (*)[51]')
+tree = make_tree( ( tree)*( &global_trees + 28), nextarg); 
+                  ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/std_expand_builtin_va_start/src/builtins.c:3411:1: error: use of undeclared identifier 'v8'
+v8 = build( MODIFY_EXPR, type, valist, tree); 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/std_expand_builtin_va_start/src/builtins.c:3412:15: error: use of undeclared identifier 'v8'
+*( ( _BYTE *)&v8->block.common + 17) |= 1u; 
+              ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/std_expand_builtin_va_start/src/builtins.c:3413:14: error: use of undeclared identifier 'v8'
+expand_expr( v8, const_int_rtx[64], VOIDmode, EXPAND_NORMAL); 
+             ^
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/std_expand_builtin_va_start/src/obj/builtins.o] Error 1

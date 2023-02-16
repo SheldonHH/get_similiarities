@@ -1,0 +1,43 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/modified_type_die/src/dwarf2out.c:7942:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v15; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/modified_type_die/src/dwarf2out.c:7952:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v25; // rdx 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/modified_type_die/src/dwarf2out.c:8065:46: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'unsigned long long' of different size
+*( __m128i *)&v52->die = _mm_unpacklo_epi64( ( __m128i)( unsigned __int64)arguments, ( __m128i)( unsigned __int64)type); 
+                                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/modified_type_die/src/dwarf2out.c:8065:86: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'unsigned long long' of different size
+*( __m128i *)&v52->die = _mm_unpacklo_epi64( ( __m128i)( unsigned __int64)arguments, ( __m128i)( unsigned __int64)type); 
+                                                                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/modified_type_die/src/dwarf2out.c:8090:46: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'unsigned long long' of different size
+*( __m128i *)&v54->die = _mm_unpacklo_epi64( ( __m128i)( unsigned __int64)arguments, ( __m128i)( unsigned __int64)type); 
+                                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/modified_type_die/src/dwarf2out.c:8090:86: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'unsigned long long' of different size
+*( __m128i *)&v54->die = _mm_unpacklo_epi64( ( __m128i)( unsigned __int64)arguments, ( __m128i)( unsigned __int64)type); 
+                                                                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/modified_type_die/src/dwarf2out.c:8151:30: error: use of undeclared identifier 'a'
+fancy_abort( ( const char *)&a, 7381, "base_type_die"); 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/modified_type_die/src/dwarf2out.c:8165:1: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'unsigned long long' of different size
+( __m128i)( unsigned __int64)arguments, 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/modified_type_die/src/dwarf2out.c:8166:1: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'unsigned long long' of different size
+( __m128i)( unsigned __int64)type); 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/modified_type_die/src/dwarf2out.c:8245:30: error: use of undeclared identifier 'a'
+fancy_abort( ( const char *)&a, 7573, "modified_type_die"); 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/modified_type_die/src/dwarf2out.c:8248:30: error: use of undeclared identifier 'a'
+fancy_abort( ( const char *)&a, 7461, "is_base_type"); 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/modified_type_die/src/dwarf2out.c:8262:46: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'unsigned long long' of different size
+*( __m128i *)&v51->die = _mm_unpacklo_epi64( ( __m128i)( unsigned __int64)arguments, ( __m128i)( unsigned __int64)type); 
+                                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/modified_type_die/src/dwarf2out.c:8262:86: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'unsigned long long' of different size
+*( __m128i *)&v51->die = _mm_unpacklo_epi64( ( __m128i)( unsigned __int64)arguments, ( __m128i)( unsigned __int64)type); 
+                                                                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+13 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/modified_type_die/src/obj/dwarf2out.o] Error 1

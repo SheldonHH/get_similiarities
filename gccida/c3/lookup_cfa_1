@@ -1,0 +1,17 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/lookup_cfa_1/src/dwarf2out.c:1070:40: error: operand of type 'dw_cfi_oprnd' (aka 'union dw_cfi_oprnd_struct') where arithmetic or pointer type is required
+v2.dw_cfi_reg_num = ( unsigned __int64)cfi->dw_cfi_oprnd1; 
+                                       ^~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/lookup_cfa_1/src/dwarf2out.c:1071:12: error: expected expression
+*( _OWORD *)&loc->offset = 0LL; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/lookup_cfa_1/src/dwarf2out.c:1071:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&loc->offset = 0LL; 
+   ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/lookup_cfa_1/src/dwarf2out.c:2838:20: error: static declaration of 'dwarf_stack_op_name' follows non-static declaration
+static const char *dwarf_stack_op_name  PARAMS ((unsigned));
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/lookup_cfa_1/src/dwarf2out.c:1161:6: note: previous implicit declaration is here
+v4 = dwarf_stack_op_name( v3); 
+     ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/lookup_cfa_1/src/obj/dwarf2out.o] Error 1

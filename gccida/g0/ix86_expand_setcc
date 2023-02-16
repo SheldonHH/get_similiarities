@@ -1,0 +1,16 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/ix86_expand_setcc/src/i386.c:8431:25: error: must use 'enum' tag to refer to type 'rtx_code'
+int  ix86_expand_setcc( rtx_code code, rtx dest) 
+                        ^
+                        enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/ix86_expand_setcc/src/i386.c:8465:56: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+*( _WORD *)test = reverse_condition_maybe_unordered( ( rtx_code)*( unsigned __int16 *)bypass_test); 
+                                                       ^~~~~~~~
+                                                       rtx_cost
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/ix86_expand_setcc/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/ix86_expand_setcc/src/i386.c:8465:65: error: invalid operands to binary expression ('int (rtx, enum rtx_code)' (aka 'int (struct rtx_def *, enum rtx_code)') and 'unsigned short *')
+*( _WORD *)test = reverse_condition_maybe_unordered( ( rtx_code)*( unsigned __int16 *)bypass_test); 
+                                                     ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/ix86_expand_setcc/src/obj/i386.o] Error 1

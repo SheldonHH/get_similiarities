@@ -1,0 +1,70 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/canon_hash/src/cse.c:2699:34: error: must use 'enum' tag to refer to type 'machine_mode'
+unsigned int  canon_hash( rtx x, machine_mode mode) 
+                                 ^
+                                 enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/canon_hash/src/cse.c:2782:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v35 = ( unsigned __int8 *)v2[1]; 
+                          ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/canon_hash/src/cse.c:2797:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v39 = ( __int64)v2[2]; 
+                ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/canon_hash/src/cse.c:2802:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v43.rtwint = ( __int64)v2[2].fld[0]; 
+                       ^~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/canon_hash/src/cse.c:2810:25: error: expected ')'
+v42 = canon_hash( ( rtx)v41, ( machine_mode)*( unsigned __int8 *)( v41 + 2)); 
+                        ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/canon_hash/src/cse.c:2810:17: note: to match this '('
+v42 = canon_hash( ( rtx)v41, ( machine_mode)*( unsigned __int8 *)( v41 + 2)); 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/canon_hash/src/cse.c:2811:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v43.rtwint = ( __int64)v2[2].fld[0]; 
+                       ^~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/canon_hash/src/cse.c:2830:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v39 = ( __int64)v2[2]; 
+                ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/canon_hash/src/cse.c:2853:14: error: expected expression
+v2 = *( rtx *)( v39 + 8); 
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/canon_hash/src/cse.c:2870:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v51.rtwint = ( __int64)v2->fld[0]; 
+                       ^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/canon_hash/src/cse.c:2873:14: error: expected expression
+v2 = *( rtx *)( v51.rtwint + 8); 
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/canon_hash/src/cse.c:2923:5: error: assigning to '__m128i' (vector of 2 'long long' values) from incompatible type 'long long'
+v20 = 0LL; 
+    ^ ~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/canon_hash/src/cse.c:2962:9: error: expected expression
+*( rtx *)&v27[2 * v30 + 2], 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/canon_hash/src/cse.c:2963:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( unsigned __int8 *)( *( _QWORD *)&v27[2 * v30 + 2] + 2LL)); 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/canon_hash/src/cse.c:2979:42: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| !fixed_regs[rtuint] && *( ( _DWORD *)&mode_class_0 + *( ( unsigned __int8 *)v2 + 2)) != 4) ) 
+                                         ^~~~~~~~~~~~
+                                         mode_class
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/canon_hash/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/canon_hash/src/cse.c:2983:55: error: expected ')'
+if ( cached_regno != rtuint || (  struct cse_reg_info = cached_cse_reg_info) == 0LL ) 
+                                                      ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/canon_hash/src/cse.c:2983:32: note: to match this '('
+if ( cached_regno != rtuint || (  struct cse_reg_info = cached_cse_reg_info) == 0LL ) 
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/canon_hash/src/cse.c:2983:78: error: expected expression
+if ( cached_regno != rtuint || (  struct cse_reg_info = cached_cse_reg_info) == 0LL ) 
+                                                                             ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/canon_hash/src/cse.c:2984:2: error: expected expression
+ struct cse_reg_info = get_cse_reg_info( rtuint); 
+ ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/canon_hash/src/cse.c:2988:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v6.rtwint = ( __int64)v2->fld[0]; 
+                      ^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/canon_hash/src/cse.c:3069:27: error: expected expression
+v4 += canon_hash( *( rtx *)&v53[2 * v55 + 2], VOIDmode); 
+                          ^
+19 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/canon_hash/src/obj/cse.o] Error 1

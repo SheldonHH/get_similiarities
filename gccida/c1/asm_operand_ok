@@ -1,0 +1,12 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/asm_operand_ok/src/recog.c:2162:11: error: use of undeclared identifier 'sch_istable'; did you mean '_sch_istable'?
+while ( ( sch_istable[v7] & 4) != 0 ); 
+          ^~~~~~~~~~~
+          _sch_istable
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/asm_operand_ok/src/safe-ctype.h:72:29: note: '_sch_istable' declared here
+extern const unsigned short _sch_istable[256];
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/asm_operand_ok/src/recog.c:2199:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v12.rtwint = ( __int64)op->fld[0]; 
+                       ^~~~~~~~~~
+2 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/asm_operand_ok/src/obj/recog.o] Error 1

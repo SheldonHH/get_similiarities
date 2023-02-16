@@ -1,0 +1,12 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/genrtl_scope_stmt/src/c-semantics.c:1053:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *i; // rbx 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/genrtl_scope_stmt/src/c-semantics.c:1074:26: error: expected expression
+for ( i = *( tree_node **)( low + 32); i; i = i->common.chain ) 
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/genrtl_scope_stmt/src/c-semantics.c:1074:14: error: use of undeclared identifier 'tree_node'
+for ( i = *( tree_node **)( low + 32); i; i = i->common.chain ) 
+             ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/genrtl_scope_stmt/src/obj/c-semantics.o] Error 1

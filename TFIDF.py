@@ -16,10 +16,32 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 
 ext = ('.txt')
-funcs_str = "allocate_time bishop_mobility calc_attackers CheckBadFlow check_piece_square check_legal comp_to_coord comp_to_san develop_node display_board eval extended_in_check f_in_check gen HandlePartner HandlePtell hash_extract_pv init_game is_attacked King losers_eval l_king_mobility l_rook_mobility post_thinking main nk_attacked ProcessHoldings proofnumbercheck proofnumberscan qsearch Queen ResetHandValue reset_board reset_piece_square Rook rook_mobility search setup_attackers setup_epd_line search_root see std_eval stringize_pv suicide_mid_eval SwitchColor SwitchPromoted s_king_mobility s_knight_mobility s_rook_mobility think tree_debug"
+# funcs_str = "allocate_time bishop_mobility calc_attackers CheckBadFlow check_piece_square check_legal comp_to_coord comp_to_san develop_node display_board eval extended_in_check f_in_check gen HandlePartner HandlePtell hash_extract_pv init_game is_attacked King losers_eval l_king_mobility l_rook_mobility post_thinking main nk_attacked ProcessHoldings proofnumbercheck proofnumberscan qsearch Queen ResetHandValue reset_board reset_piece_square Rook rook_mobility search setup_attackers setup_epd_line search_root see std_eval stringize_pv suicide_mid_eval SwitchColor SwitchPromoted s_king_mobility s_knight_mobility s_rook_mobility think tree_debug"
 # funcs_str = "bishop_mobility calc_attackers"
 # funcs_str = "calc_attackers"
-funcs = funcs_str.split(" ")
+
+# funcs_str = ""
+# funcs = funcs_str.split(" ")
+
+gcc_set = set()
+folders = ["c0","c1","c2","c3"]
+for fd in folders:
+    directory = os.fsencode("/data/get_similiarities/gccida/"+fd)
+    for file in os.listdir(directory):
+        gcc_set.add(str(file.decode()))
+        
+funcs = gcc_set
+
+# print("gcc_set",sorted(gcc_set))
+# set_to_str = ""
+# for gitem in sorted(gcc_set):
+#     set_to_str += gitem + ","
+
+# print("set_to_str:",set_to_str)
+
+
+
+
 print(funcs)
 
 
@@ -80,7 +102,7 @@ for fd in folders:     # 对每一个folder遍历
     ftcs = [] # 🌈最多4个同名文件数组
     for fuc in funcs:
         #TODO: 需要替代 这个for loop只是为了找到match func
-        oj = findf(fuc,"/data/get_similiarities/use_undefined_identifier/"+fd)
+        oj = findf(fuc,"/data/get_similiarities/gccida/"+fd)
         if (type(oj) != type(None)):
             print("oj",oj)
             ftcs.append(oj)
@@ -101,7 +123,7 @@ for fd in folders:     # 对每一个folder遍历
         ########################### 和if 部分完全一致 ########################
         
     fold_dict[fd] = fold_array
-    with open(r'/data/get_similiarities/fold_dict'+str(outer_index)+'.txt', 'w') as fp:
+    with open(r'/data/get_similiarities/gccida/fold_dict'+str(outer_index)+'.txt', 'w') as fp:
         for item in fold_array:
             # write each item on a new line
             fp.write("%s" % item)
@@ -148,13 +170,13 @@ while cs_cont < 3:
         print(max_csim_baseline)        
 
 
-    with open(r'/data/get_similiarities/cs_'+str(cs_cont)+'cs_cont.txt', 'w') as fp:
+    with open(r'/data/get_similiarities/gccida/cs_'+str(cs_cont)+'cs_cont.txt', 'w') as fp:
         for item in cs_arr:
             # write each item on a new line
             fp.write("%s\n" % item)
         print('Done')
 
-    with open(r'/data/get_similiarities/arr_'+str(cs_cont)+'i_arr.txt', 'w') as fp:
+    with open(r'/data/get_similiarities/gccida/arr_'+str(cs_cont)+'i_arr.txt', 'w') as fp:
         for item in index_list:
             # write each item on a new line
             fp.write("%s\n" % item)

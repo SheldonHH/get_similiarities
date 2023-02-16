@@ -1,0 +1,19 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/decls_for_scope/src/dwarf2out.c:11813:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *imag; // rbx 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/decls_for_scope/src/dwarf2out.c:11820:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v12; // r14 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/decls_for_scope/src/dwarf2out.c:11850:22: error: expected expression
+v12 = *( tree_node **)v10; 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/decls_for_scope/src/dwarf2out.c:11850:10: error: use of undeclared identifier 'tree_node'
+v12 = *( tree_node **)v10; 
+         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/decls_for_scope/src/dwarf2out.c:11862:30: error: use of undeclared identifier 'a'
+fancy_abort( ( const char *)&a, 5026, "add_child_die"); 
+                             ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/decls_for_scope/src/obj/dwarf2out.o] Error 1

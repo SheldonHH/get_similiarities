@@ -1,0 +1,11 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/combinable_i3pat/src/combine.c:1776:13: error: expected identifier or '('
+ struct set = expand_field_assignment( x); 
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/combinable_i3pat/src/combine.c:1778:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+src = (  struct rtx_def *)set[1]; 
+                          ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/combinable_i3pat/src/combine.c:1787:58: error: use of undeclared identifier 'machine_mode'
+&& !ix86_hard_regno_mode_ok( inner_dest->fld[0].rtint, ( machine_mode)*( ( unsigned __int8 *)inner_dest + 2)) 
+                                                         ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/combinable_i3pat/src/obj/combine.o] Error 1

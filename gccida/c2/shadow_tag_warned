@@ -1,0 +1,26 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/shadow_tag_warned/src/c-decl.c:3751:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v5; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/shadow_tag_warned/src/c-decl.c:3755:1: error: must use 'enum' tag to refer to type 'tree_code'
+tree_code v9; // r12d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/shadow_tag_warned/src/c-decl.c:3759:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v13; // rbx 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/shadow_tag_warned/src/c-decl.c:3818:20: error: expected expression
+v13 = ( tree_node *)p_chain[3]; 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/shadow_tag_warned/src/c-decl.c:3818:9: error: use of undeclared identifier 'tree_node'
+v13 = ( tree_node *)p_chain[3]; 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/shadow_tag_warned/src/c-decl.c:3836:22: error: expected expression
+while ( ( tree_node *)v14[3] != v13 ) 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/shadow_tag_warned/src/c-decl.c:3836:11: error: use of undeclared identifier 'tree_node'
+while ( ( tree_node *)v14[3] != v13 ) 
+          ^
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/shadow_tag_warned/src/obj/c-decl.o] Error 1

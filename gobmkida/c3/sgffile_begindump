@@ -1,0 +1,11 @@
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/sgffile_begindump/src/engine/sgffile.c:589:7: error: use of undeclared identifier 'sgffile_begindump_local_tree'
+v3 = &sgffile_begindump_local_tree; 
+      ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/sgffile_begindump/src/engine/sgffile.c:594:57: error: too many arguments to function call, expected 3, have 4
+sgftreeCreateHeaderNode( sgf_dumptree, board_size, 0.0, v1); 
+~~~~~~~~~~~~~~~~~~~~~~~                                 ^~
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/sgffile_begindump/src/include/sgftree.h:155:1: note: 'sgftreeCreateHeaderNode' declared here
+void sgftreeCreateHeaderNode(SGFTree *tree, int boardsize, float komi);
+^
+2 errors generated.
+make: *** [/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/sgffile_begindump/src/obj/1/sgffile.o] Error 1

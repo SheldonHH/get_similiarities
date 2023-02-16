@@ -1,0 +1,23 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/field_byte_offset/src/dwarf2out.c:8878:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v1; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/field_byte_offset/src/dwarf2out.c:8882:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *field_size_tree; // [rsp+28h] [rbp-38h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/field_byte_offset/src/dwarf2out.c:8883:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *type; // [rsp+30h] [rbp-30h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/field_byte_offset/src/dwarf2out.c:8896:32: error: expected expression
+field_size_tree = ( tree_node *)*( &global_trees + 17); 
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/field_byte_offset/src/dwarf2out.c:8896:21: error: use of undeclared identifier 'tree_node'
+field_size_tree = ( tree_node *)*( &global_trees + 17); 
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/field_byte_offset/src/dwarf2out.c:8900:14: error: use of undeclared identifier 'QCameraExposure'
+bitpos_int = QCameraExposure::setAutoIsoSensitivity( decl); 
+             ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/field_byte_offset/src/obj/dwarf2out.o] Error 1

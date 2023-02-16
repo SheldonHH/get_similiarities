@@ -1,0 +1,91 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_unop/src/optabs.c:2534:19: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  expand_unop( machine_mode mode, optab_0 unoptab, rtx op0, rtx target, int unsignedp) 
+                  ^
+                  enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_unop/src/optabs.c:2534:38: error: unknown type name 'optab_0'; did you mean 'optab'?
+rtx  expand_unop( machine_mode mode, optab_0 unoptab, rtx op0, rtx target, int unsignedp) 
+                                     ^~~~~~~
+                                     optab
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_unop/src/optabs.h:48:5: note: 'optab' declared here
+} * optab;
+    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_unop/src/optabs.c:2543:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v14; // r12d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_unop/src/optabs.c:2559:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v30; // r15d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_unop/src/optabs.c:2562:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v33; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_unop/src/optabs.c:2563:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v34; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_unop/src/optabs.c:2571:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_unop/src/optabs.c:2585:1: error: unknown type name 'optab_0'; did you mean 'optab'?
+optab_0 *v56; // rcx 
+^~~~~~~
+optab
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_unop/src/optabs.h:48:5: note: 'optab' declared here
+} * optab;
+    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_unop/src/optabs.c:2587:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v58; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_unop/src/optabs.c:2609:12: error: expected identifier or '('
+ struct op = v10; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_unop/src/optabs.c:2612:7: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v20 = mode_class_0[mode]; 
+      ^~~~~~~~~~~~
+      mode_class
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_unop/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_unop/src/optabs.c:2619:11: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+operand = insn_data_0[insn_code].operand; 
+          ^~~~~~~~~~~
+          insn_data
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_unop/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_unop/src/optabs.c:2636:7: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+v18 = insn_data_0[v12].genfun( v15, v16); 
+      ^~~~~~~~~~~
+      insn_data
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_unop/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_unop/src/optabs.c:2636:30: error: called object type '<dependent type>' is not a function or function pointer
+v18 = insn_data_0[v12].genfun( v15, v16); 
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_unop/src/optabs.c:2649:7: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v20 = mode_class_0[mode]; 
+      ^~~~~~~~~~~~
+      mode_class
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_unop/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_unop/src/optabs.c:2664:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)i, 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_unop/src/optabs.c:2668:22: error: use of undeclared identifier 'machine_mode'
+v25 = expand_unop( ( machine_mode)v23, v7, v24, 0LL, unsignedp); 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_unop/src/optabs.c:2690:61: error: called object type 'const enum mode_class [59]' is not a function or function pointer
+v33 = mode_for_size( 8 * mode_unit_size[mode], ( mode_class)( 2 - ( v20 == 5)), 0); 
+                                               ~~~~~~~~~~~~~^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_unop/src/optabs.c:2742:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)v51, 
+  ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_unop/src/obj/optabs.o] Error 1

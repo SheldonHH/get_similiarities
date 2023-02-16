@@ -1,0 +1,67 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/force_nonfallthru_and_redirect/src/cfgrtl.c:1412:4: error: expected ';' after expression
+rtx v35; // rbx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/force_nonfallthru_and_redirect/src/cfgrtl.c:1412:5: error: use of undeclared identifier 'v35'
+rtx v35; // rbx 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/force_nonfallthru_and_redirect/src/cfgrtl.c:1427:5: error: expected ';' after expression
+edge succ; // rdx 
+    ^
+    ;
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/force_nonfallthru_and_redirect/src/cfgrtl.c:1427:6: error: use of undeclared identifier 'succ'
+edge succ; // rdx 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/force_nonfallthru_and_redirect/src/cfgrtl.c:1428:5: error: expected ';' after expression
+edge v51; // rcx 
+    ^
+    ;
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/force_nonfallthru_and_redirect/src/cfgrtl.c:1428:6: error: use of undeclared identifier 'v51'
+edge v51; // rcx 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/force_nonfallthru_and_redirect/src/cfgrtl.c:1471:1: error: use of undeclared identifier 'succ'
+succ = entry_exit_blocks[0].succ; 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/force_nonfallthru_and_redirect/src/cfgrtl.c:1484:1: error: use of undeclared identifier 'v51'
+v51 = succ; 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/force_nonfallthru_and_redirect/src/cfgrtl.c:1484:7: error: use of undeclared identifier 'succ'
+v51 = succ; 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/force_nonfallthru_and_redirect/src/cfgrtl.c:1485:1: error: use of undeclared identifier 'succ'
+succ = succ->succ_next; 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/force_nonfallthru_and_redirect/src/cfgrtl.c:1485:8: error: use of undeclared identifier 'succ'
+succ = succ->succ_next; 
+       ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/force_nonfallthru_and_redirect/src/cfgrtl.c:1486:7: error: use of undeclared identifier 'succ'
+if ( !succ ) 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/force_nonfallthru_and_redirect/src/cfgrtl.c:1488:6: error: use of undeclared identifier 'succ'
+if ( succ == e ) 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/force_nonfallthru_and_redirect/src/cfgrtl.c:1490:16: error: use of undeclared identifier 'v51'
+p_succ_next = &v51->succ_next; 
+               ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/force_nonfallthru_and_redirect/src/cfgrtl.c:1527:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v10.rtwint = ( __int64)v9[1].fld[0]; 
+                       ^~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/force_nonfallthru_and_redirect/src/cfgrtl.c:1649:1: error: use of undeclared identifier 'v35'
+v35 = target->head; 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/force_nonfallthru_and_redirect/src/cfgrtl.c:1653:1: error: use of undeclared identifier 'v35'
+v35 = emit_label_before( v36, target->head); 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/force_nonfallthru_and_redirect/src/cfgrtl.c:1654:16: error: use of undeclared identifier 'v35'
+target->head = v35; 
+               ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/force_nonfallthru_and_redirect/src/cfgrtl.c:1658:7: error: use of undeclared identifier 'v35'; did you mean 'v36'?
+v38 = v35->fld[0].rtint; 
+      ^~~
+      v36
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/force_nonfallthru_and_redirect/src/cfgrtl.c:1413:18: note: 'v36' declared here
+ struct rtx_def *v36; // rax 
+                 ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/force_nonfallthru_and_redirect/src/obj/cfgrtl.o] Error 1

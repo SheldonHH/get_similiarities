@@ -1,0 +1,21 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/deallocate_reload_reg/src/reload1.c:6465:23: error: array type 'struct reload [180]' is not assignable
+*( &rld + 13 * r + 8) = 0LL; 
+~~~~~~~~~~~~~~~~~~~~~ ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/deallocate_reload_reg/src/reload1.c:6470:19: error: expected expression
+*( ( reload_type *)&rld + 26 * r + 23), 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/deallocate_reload_reg/src/reload1.c:6470:6: error: use of undeclared identifier 'reload_type'; did you mean 'reload_order'?
+*( ( reload_type *)&rld + 26 * r + 23), 
+     ^~~~~~~~~~~
+     reload_order
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/deallocate_reload_reg/src/reload1.c:1652:14: note: 'reload_order' declared here
+static short reload_order[MAX_RELOADS];
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/deallocate_reload_reg/src/reload1.c:6471:20: error: expected expression
+*( ( machine_mode *)&rld + 26 * r + 7)); 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/deallocate_reload_reg/src/reload1.c:6471:6: error: use of undeclared identifier 'machine_mode'
+*( ( machine_mode *)&rld + 26 * r + 7)); 
+     ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/deallocate_reload_reg/src/obj/reload1.o] Error 1

@@ -1,0 +1,31 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/start_function/src/c-decl.c:6678:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v5; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/start_function/src/c-decl.c:6681:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *name; // r12 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/start_function/src/c-decl.c:6785:27: error: expected expression
+if ( name == ( tree_node *)*( &global_trees + 50) ) 
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/start_function/src/c-decl.c:6785:16: error: use of undeclared identifier 'tree_node'
+if ( name == ( tree_node *)*( &global_trees + 50) ) 
+               ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/start_function/src/c-decl.c:6814:27: error: expected expression
+if ( name != ( tree_node *)*( &global_trees + 50) ) 
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/start_function/src/c-decl.c:6814:16: error: use of undeclared identifier 'tree_node'
+if ( name != ( tree_node *)*( &global_trees + 50) ) 
+               ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/start_function/src/c-decl.c:6834:27: error: expected expression
+if ( name != ( tree_node *)*( &global_trees + 50) ) 
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/start_function/src/c-decl.c:6834:16: error: use of undeclared identifier 'tree_node'
+if ( name != ( tree_node *)*( &global_trees + 50) ) 
+               ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/start_function/src/c-decl.c:6858:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v22 = ( __int64)rtl[2]; 
+                ^~~~~~
+9 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/start_function/src/obj/c-decl.o] Error 1

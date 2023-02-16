@@ -1,0 +1,33 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/hoist_code/src/gcse.c:6162:20: error: expected identifier or '('
+for (  struct expr = expr_hash_table[i]; expr;  struct expr = expr->next_same_hash ) 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/hoist_code/src/gcse.c:6162:42: error: expected ';' in 'for' statement specifier
+for (  struct expr = expr_hash_table[i]; expr;  struct expr = expr->next_same_hash ) 
+                                         ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/hoist_code/src/gcse.c:6162:49: error: expected expression
+for (  struct expr = expr_hash_table[i]; expr;  struct expr = expr->next_same_hash ) 
+                                                ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/hoist_code/src/gcse.c:6162:49: error: expected ')'
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/hoist_code/src/gcse.c:6162:5: note: to match this '('
+for (  struct expr = expr_hash_table[i]; expr;  struct expr = expr->next_same_hash ) 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/hoist_code/src/gcse.c:6210:20: error: expected identifier or '('
+for (  struct occr = expr_0->antic_occr; ;  struct occr = occr->next ) 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/hoist_code/src/gcse.c:6210:45: error: expected expression
+for (  struct occr = expr_0->antic_occr; ;  struct occr = occr->next ) 
+                                            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/hoist_code/src/gcse.c:6214:7: error: expected expression
+v2 =  struct occr != 0LL; 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/hoist_code/src/gcse.c:6224:12: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v1 = ( rtx)insn[2]; 
+           ^~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/hoist_code/src/gcse.c:6236:39: error: use of undeclared identifier 'machine_mode'
+expr_0->reaching_reg = gen_reg_rtx( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)v0->fld[0].rtwint)); 
+                                      ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/hoist_code/src/gcse.c:6236:54: error: expected expression
+expr_0->reaching_reg = gen_reg_rtx( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)v0->fld[0].rtwint)); 
+                                                     ^
+10 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/hoist_code/src/obj/gcse.o] Error 1

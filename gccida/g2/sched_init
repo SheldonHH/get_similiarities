@@ -1,0 +1,49 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/sched_init/src/haifa-sched.c:2381:4: error: expected ';' after expression
+rtx v27; // [rsp+0h] [rbp-38h] BYREF 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/sched_init/src/haifa-sched.c:2381:5: error: use of undeclared identifier 'v27'
+rtx v27; // [rsp+0h] [rbp-38h] BYREF 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/sched_init/src/haifa-sched.c:2382:4: error: expected ';' after expression
+rtx tailp; // [rsp+8h] [rbp-30h] BYREF 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/sched_init/src/haifa-sched.c:2382:5: error: use of undeclared identifier 'tailp'
+rtx tailp; // [rsp+8h] [rbp-30h] BYREF 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/sched_init/src/haifa-sched.c:2436:25: error: expected expression
+line_note_head = ( rtx *)xcalloc( ( int)n_basic_blocks, 8uLL); 
+                        ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/sched_init/src/haifa-sched.c:2450:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v25 = (  struct rtx_def *)v25[1]; 
+                          ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/sched_init/src/haifa-sched.c:2493:27: error: use of undeclared identifier 'v27'
+get_block_head_tail( v7, &v27, &tailp); 
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/sched_init/src/haifa-sched.c:2493:33: error: use of undeclared identifier 'tailp'
+get_block_head_tail( v7, &v27, &tailp); 
+                                ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/sched_init/src/haifa-sched.c:2494:7: error: use of undeclared identifier 'v27'
+v11 = v27; 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/sched_init/src/haifa-sched.c:2495:7: error: use of undeclared identifier 'tailp'
+v12 = tailp[1].fld[0].rtx; 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/sched_init/src/haifa-sched.c:2496:13: error: use of undeclared identifier 'v27'
+if ( v12 != v27 ) 
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/sched_init/src/haifa-sched.c:2511:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v13 = ( __int64)v11[2]; 
+                ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/sched_init/src/haifa-sched.c:2521:33: error: expected expression
+if ( !register_operand( *( rtx *)( v13 + 8), VOIDmode) ) 
+                                ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/sched_init/src/haifa-sched.c:2534:36: error: expected expression
+v14 -= ( register_operand( *( rtx *)( v20 + 8), VOIDmode) == 0) - 1; 
+                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/sched_init/src/haifa-sched.c:2542:30: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+for ( v15.rtwint = ( __int64)v11[3].fld[0]; v15.rtwint; LOWORD( v14) = v14 - 1 ) 
+                             ^~~~~~~~~~~~~
+15 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/sched_init/src/obj/haifa-sched.o] Error 1

@@ -1,0 +1,18 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_group_load/src/expr.c:2427:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // [rsp+6Ch] [rbp-34h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_group_load/src/expr.c:2469:22: error: use of undeclared identifier 'machine_mode'
+src = gen_reg_rtx( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)orig_srca)); 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_group_load/src/expr.c:2469:37: error: expected expression
+src = gen_reg_rtx( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)orig_srca)); 
+                                    ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_group_load/src/expr.c:2514:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)src), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_group_load/src/expr.c:2514:18: error: expected expression
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)src), 
+                 ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_group_load/src/obj/expr.o] Error 1

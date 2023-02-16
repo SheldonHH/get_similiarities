@@ -1,0 +1,13 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/true_dependence/src/alias.c:2483:32: error: must use 'enum' tag to refer to type 'machine_mode'
+int  true_dependence( rtx mem, machine_mode mem_mode, rtx x, int ( *varies)( rtx, int)) 
+                               ^
+                               enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/true_dependence/src/alias.c:2485:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v4; // r13d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/true_dependence/src/alias.c:2514:42: error: use of undeclared identifier 'machine_mode'
+v6 = base_alias_check( addr, mem_addr, ( machine_mode)*( ( unsigned __int8 *)x + 2), v4); 
+                                         ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/true_dependence/src/obj/alias.o] Error 1

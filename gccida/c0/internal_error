@@ -1,0 +1,21 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/internal_error/src/diagnostic.c:1682:1: error: unknown type name 'diagnostic_context_0'; did you mean 'diagnostic_context'?
+diagnostic_context_0 dc; // [rsp+190h] [rbp-180h] BYREF 
+^~~~~~~~~~~~~~~~~~~~
+diagnostic_context
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/internal_error/src/diagnostic.h:29:35: note: 'diagnostic_context' declared here
+typedef struct diagnostic_context diagnostic_context;
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/internal_error/src/diagnostic.c:1695:47: error: expected expression
+internal_error_function( msgida, ( va_list_0 *)ap); 
+                                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/internal_error/src/diagnostic.c:1695:36: error: use of undeclared identifier 'va_list_0'
+internal_error_function( msgida, ( va_list_0 *)ap); 
+                                   ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/internal_error/src/diagnostic.c:1696:51: error: expected expression
+set_diagnostic_context( &dc, msgida, ( va_list_0 *)ap, input_filename, lineno, 0); 
+                                                  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/internal_error/src/diagnostic.c:1696:40: error: use of undeclared identifier 'va_list_0'
+set_diagnostic_context( &dc, msgida, ( va_list_0 *)ap, input_filename, lineno, 0); 
+                                       ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/internal_error/src/obj/diagnostic.o] Error 1

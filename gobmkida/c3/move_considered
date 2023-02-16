@@ -1,0 +1,14 @@
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/move_considered/src/engine/genmove.c:1038:7: error: conflicting types for 'move_considered'
+void  move_considered( int move, float a2, float val) 
+      ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/move_considered/src/engine/liberty.h:675:6: note: previous declaration is here
+void move_considered(int move, float value);
+     ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/move_considered/src/engine/genmove.c:1043:23: error: use of undeclared identifier 'dword_9C7D6C'
+if ( a2 > *( float *)&dword_9C7D6C[19 * ( move / 20) - 19 + v3] ) 
+                      ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/move_considered/src/engine/genmove.c:1044:13: error: use of undeclared identifier 'dword_9C7D6C'
+*( float *)&dword_9C7D6C[19 * ( move / 20) - 19 + v3] = a2; 
+            ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/move_considered/src/obj/1/genmove.o] Error 1

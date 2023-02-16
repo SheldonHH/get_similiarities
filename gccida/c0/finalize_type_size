@@ -1,0 +1,13 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/finalize_type_size/src/stor-layout.c:1759:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v1; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/finalize_type_size/src/stor-layout.c:1760:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v2; // [rsp+8h] [rbp-38h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/finalize_type_size/src/stor-layout.c:1775:42: error: use of undeclared identifier 'machine_mode'
+type->type.align = get_mode_alignment( ( machine_mode)( ( unsigned __int8)HIBYTE( WORD2( type->block.abstract_origin)) >> 1)); 
+                                         ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/finalize_type_size/src/obj/stor-layout.o] Error 1

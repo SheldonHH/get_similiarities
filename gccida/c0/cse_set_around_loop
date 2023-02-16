@@ -1,0 +1,32 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cse_set_around_loop/src/cse.c:7207:13: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v10 = ( rtx)xa[1]; 
+            ^~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cse_set_around_loop/src/cse.c:7217:46: error: use of undeclared identifier 'machine_mode'
+LOBYTE( v8) = canon_hash( *( rtx *)&xa[1], ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)xa->fld[0].rtwint)); 
+                                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cse_set_around_loop/src/cse.c:7217:61: error: expected expression
+LOBYTE( v8) = canon_hash( *( rtx *)&xa[1], ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)xa->fld[0].rtwint)); 
+                                                            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cse_set_around_loop/src/cse.c:7219:37: error: use of undeclared identifier 'machine_mode'
+src_elt = lookup( v10, v8 & 0x1F, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)xa->fld[0].rtwint)); 
+                                    ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cse_set_around_loop/src/cse.c:7219:52: error: expected expression
+src_elt = lookup( v10, v8 & 0x1F, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)xa->fld[0].rtwint)); 
+                                                   ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cse_set_around_loop/src/cse.c:7244:12: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v4 = ( rtx)p[2]; 
+           ^~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cse_set_around_loop/src/cse.c:7253:13: error: expected identifier or '('
+ struct set = v3; 
+            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cse_set_around_loop/src/cse.c:7259:36: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+cse_check_loop_start_value = ( rtx)xa[1]; 
+                                   ^~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cse_set_around_loop/src/cse.c:7299:50: error: use of undeclared identifier 'machine_mode'
+invalidate( *( rtx *)( xa->fld[0].rtwint + 8), ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)xa->fld[0].rtwint)); 
+                                                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cse_set_around_loop/src/cse.c:7299:65: error: expected expression
+invalidate( *( rtx *)( xa->fld[0].rtwint + 8), ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)xa->fld[0].rtwint)); 
+                                                                ^
+10 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cse_set_around_loop/src/obj/cse.o] Error 1

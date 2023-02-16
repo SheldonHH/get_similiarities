@@ -1,0 +1,72 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/dbxout_type/src/dbxout.c:1517:1: error: must use 'enum' tag to refer to type 'typestatus'
+typestatus status; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/dbxout_type/src/dbxout.c:1518:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *elements; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/dbxout_type/src/dbxout.c:1546:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v43; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/dbxout_type/src/dbxout.c:1575:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v72; // rbp 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/dbxout_type/src/dbxout.c:1580:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v77; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/dbxout_type/src/dbxout.c:1581:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v78; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/dbxout_type/src/dbxout.c:1586:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *rttree; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/dbxout_type/src/dbxout.c:1604:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v101; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/dbxout_type/src/dbxout.c:1660:6: error: expected expression
+v9 = ::next_type_number; 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/dbxout_type/src/dbxout.c:1661:7: error: expected expression
+v10 = ++::next_type_number; 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/dbxout_type/src/dbxout.c:1937:21: error: expected expression
+v101 = ( tree_node *)rtl[4]; 
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/dbxout_type/src/dbxout.c:1937:10: error: use of undeclared identifier 'tree_node'
+v101 = ( tree_node *)rtl[4]; 
+         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/dbxout_type/src/dbxout.c:2178:10: error: use of undeclared identifier 'unk_677C4B'
+fwrite( &unk_677C4B, 2uLL, 1uLL, asmfile); 
+         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/dbxout_type/src/dbxout.c:2267:22: error: use of undeclared identifier 'dbxout_type_anonymous_type_number'
+v69 = ( unsigned int)dbxout_type_anonymous_type_number++; 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/dbxout_type/src/dbxout.c:2326:53: error: use of undeclared identifier 'lang_hooks_0'; did you mean 'lang_hooks'?
+if ( ( *( _BYTE *)( v54 + 18) & 4) != 0 && !strcmp( lang_hooks_0.name, "GNU C++") ) 
+                                                    ^~~~~~~~~~~~
+                                                    lang_hooks
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/dbxout_type/src/langhooks.h:168:32: note: 'lang_hooks' declared here
+extern const struct lang_hooks lang_hooks;
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/dbxout_type/src/dbxout.c:2433:14: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v76 = ( char)k[1]; 
+             ^~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/dbxout_type/src/dbxout.c:2441:53: error: invalid operands to binary expression ('struct rtx_def' and 'int')
+if ( ( *( ( _BYTE *)&k[3] + 1) & 0x40) == 0 && k[1] != 32 ) 
+                                               ~~~~ ^  ~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/dbxout_type/src/dbxout.c:2443:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v79.rtwint = ( __int64)k[4].fld[0]; 
+                       ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/dbxout_type/src/dbxout.c:2467:11: error: invalid operands to binary expression ('struct rtx_def' and 'int')
+if ( k[1] != 37 || ( rttree = ( tree_node *)k[6]) == 0LL ) 
+     ~~~~ ^  ~~
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/dbxout_type/src/obj/dbxout.o] Error 1

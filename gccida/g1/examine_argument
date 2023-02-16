@@ -1,0 +1,17 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/examine_argument/src/i386.c:2381:24: error: must use 'enum' tag to refer to type 'machine_mode'
+int  examine_argument( machine_mode mode, tree type, int in_return, int *int_nregs, int *sse_nregs) 
+                       ^
+                       enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/examine_argument/src/i386.c:2386:1: error: must use 'enum' tag to refer to type 'x86_64_reg_class'
+x86_64_reg_class v11; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/examine_argument/src/i386.c:2387:1: error: must use 'enum' tag to refer to type 'x86_64_reg_class'
+x86_64_reg_class classa[4]; // [rsp+0h] [rbp-28h] BYREF 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/examine_argument/src/i386.c:2410:30: error: use of undeclared identifier 'stru_665A39'
+fancy_abort( ( const char *)&stru_665A39, 1953, "examine_argument"); 
+                             ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/examine_argument/src/obj/i386.o] Error 1

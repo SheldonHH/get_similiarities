@@ -1,0 +1,23 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/schedule_ebb/src/sched-ebb.c:669:1: error: use of undeclared identifier 'deps_0'
+deps_0 tmp_deps; // [rsp+10h] [rbp-80h] BYREF 
+^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/schedule_ebb/src/sched-ebb.c:679:13: error: use of undeclared identifier 'tmp_deps'
+init_deps( &tmp_deps); 
+            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/schedule_ebb/src/sched-ebb.c:680:17: error: use of undeclared identifier 'tmp_deps'
+sched_analyze( &tmp_deps, heada, taila); 
+                ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/schedule_ebb/src/sched-ebb.c:681:13: error: use of undeclared identifier 'tmp_deps'
+free_deps( &tmp_deps); 
+            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/schedule_ebb/src/sched-ebb.c:684:39: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+current_sched_info->prev_head = ( rtx)heada[1]; 
+                                      ^~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/schedule_ebb/src/sched-ebb.c:693:54: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( note = heada[3].fld[0].rtx; note; note = ( rtx)note[1] ) 
+                                                     ^~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/schedule_ebb/src/sched-ebb.c:698:14: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+note = ( rtx)note[1]; 
+             ^~~~~~~
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/schedule_ebb/src/obj/sched-ebb.o] Error 1

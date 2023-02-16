@@ -1,0 +1,26 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_oldest_value_reg/src/regrename.c:1776:29: error: must use 'enum' tag to refer to type 'reg_class'
+rtx  find_oldest_value_reg( reg_class a1, rtx reg,  struct value_data *vd) 
+                            ^
+                            enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_oldest_value_reg/src/regrename.c:1801:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v10 = ( ( unsigned int)( mode_class_0[( unsigned int)v7] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_oldest_value_reg/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_oldest_value_reg/src/regrename.c:1802:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v11 = ( ( unsigned int)( mode_class_0[mode] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_oldest_value_reg/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_oldest_value_reg/src/regrename.c:1847:33: error: use of undeclared identifier 'machine_mode'
+result = gen_rtx_fmt_i0( REG, ( machine_mode)v7, v15); 
+                                ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_oldest_value_reg/src/regrename.c:1848:24: error: assigning to 'uint32' (aka 'unsigned int') from incompatible type 'struct rtx_def'
+*( _DWORD *)&result[1] = reg[1]; 
+                       ^ ~~~~~~
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_oldest_value_reg/src/obj/regrename.o] Error 1

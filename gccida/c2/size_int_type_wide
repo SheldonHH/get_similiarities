@@ -1,0 +1,60 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/size_int_type_wide/src/fold-const.c:2430:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v7; // rbx 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/size_int_type_wide/src/fold-const.c:2432:7: error: use of undeclared identifier 'size_int_type_wide_size_htab'
+if ( !size_int_type_wide_size_htab ) 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/size_int_type_wide/src/fold-const.c:2434:1: error: use of undeclared identifier 'size_int_type_wide_size_htab'
+size_int_type_wide_size_htab = htab_create( 0x400uLL, size_htab_hash, size_htab_eq, 0LL); 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/size_int_type_wide/src/fold-const.c:2435:25: error: use of undeclared identifier 'size_int_type_wide_size_htab'
+ggc_add_deletable_htab( size_int_type_wide_size_htab, 0LL, 0LL); 
+                        ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/size_int_type_wide/src/fold-const.c:2436:1: error: use of undeclared identifier 'size_int_type_wide_new_const'
+size_int_type_wide_new_const = make_node( INTEGER_CST); 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/size_int_type_wide/src/fold-const.c:2437:21: error: use of undeclared identifier 'size_int_type_wide_new_const'
+ggc_add_tree_root( &size_int_type_wide_new_const, 1); 
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/size_int_type_wide/src/fold-const.c:2439:6: error: use of undeclared identifier 'size_int_type_wide_new_const'
+v3 = size_int_type_wide_new_const; 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/size_int_type_wide/src/fold-const.c:2440:12: error: expected expression
+*( _OWORD *)&size_int_type_wide_new_const->block.vars = number; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/size_int_type_wide/src/fold-const.c:2440:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&size_int_type_wide_new_const->block.vars = number; 
+   ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/size_int_type_wide/src/fold-const.c:2440:14: error: use of undeclared identifier 'size_int_type_wide_new_const'
+*( _OWORD *)&size_int_type_wide_new_const->block.vars = number; 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/size_int_type_wide/src/fold-const.c:2443:6: error: use of undeclared identifier 'size_int_type_wide_new_const'
+v5 = size_int_type_wide_new_const; 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/size_int_type_wide/src/fold-const.c:2444:16: error: use of undeclared identifier 'size_int_type_wide_new_const'
+*( ( _DWORD *)&size_int_type_wide_new_const->common + 4) = *( ( _DWORD *)&size_int_type_wide_new_const->common + 4) & 0xFFF3FFFF | ( ( v4 & 1) << 18) | ( ( v4 & 1) << 19); 
+               ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/size_int_type_wide/src/fold-const.c:2444:75: error: use of undeclared identifier 'size_int_type_wide_new_const'
+*( ( _DWORD *)&size_int_type_wide_new_const->common + 4) = *( ( _DWORD *)&size_int_type_wide_new_const->common + 4) & 0xFFF3FFFF | ( ( v4 & 1) << 18) | ( ( v4 & 1) << 19); 
+                                                                          ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/size_int_type_wide/src/fold-const.c:2445:24: error: use of undeclared identifier 'size_int_type_wide_size_htab'
+slot = htab_find_slot( size_int_type_wide_size_htab, v5, INSERT); 
+                       ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/size_int_type_wide/src/fold-const.c:2446:19: error: expected expression
+v7 = ( tree_node *)*slot; 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/size_int_type_wide/src/fold-const.c:2446:8: error: use of undeclared identifier 'tree_node'
+v7 = ( tree_node *)*slot; 
+       ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/size_int_type_wide/src/fold-const.c:2449:6: error: use of undeclared identifier 'size_int_type_wide_new_const'
+v7 = size_int_type_wide_new_const; 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/size_int_type_wide/src/fold-const.c:2450:9: error: use of undeclared identifier 'size_int_type_wide_new_const'
+*slot = size_int_type_wide_new_const; 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/size_int_type_wide/src/fold-const.c:2451:1: error: use of undeclared identifier 'size_int_type_wide_new_const'
+size_int_type_wide_new_const = make_node( INTEGER_CST); 
+^
+19 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/size_int_type_wide/src/obj/fold-const.o] Error 1

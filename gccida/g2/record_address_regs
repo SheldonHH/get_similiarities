@@ -1,0 +1,75 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/record_address_regs/src/regclass.c:2429:35: error: must use 'enum' tag to refer to type 'reg_class'
+void  record_address_regs( rtx x, reg_class a2, int scale) 
+                                  ^
+                                  enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/record_address_regs/src/regclass.c:2465:13: error: expected ';' after expression
+rtx = ( rtx)rtx[1]; 
+            ^
+            ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/record_address_regs/src/regclass.c:2481:13: error: expected ';' after expression
+rtx = ( rtx)rtwint; 
+            ^
+            ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/record_address_regs/src/regclass.c:2498:13: error: expected ';' after expression
+rtx = ( rtx)rtwint; 
+            ^
+            ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/record_address_regs/src/regclass.c:2508:28: error: expected ')'
+record_address_regs( ( rtx)rtwint, INDEX_REGS, scale); 
+                           ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/record_address_regs/src/regclass.c:2508:20: note: to match this '('
+record_address_regs( ( rtx)rtwint, INDEX_REGS, scale); 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/record_address_regs/src/regclass.c:2524:28: error: expected ')'
+record_address_regs( ( rtx)rtwint, GENERAL_REGS, scale); 
+                           ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/record_address_regs/src/regclass.c:2524:20: note: to match this '('
+record_address_regs( ( rtx)rtwint, GENERAL_REGS, scale); 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/record_address_regs/src/regclass.c:2525:28: error: expected ')'
+record_address_regs( ( rtx)rtwint, INDEX_REGS, scale); 
+                           ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/record_address_regs/src/regclass.c:2525:20: note: to match this '('
+record_address_regs( ( rtx)rtwint, INDEX_REGS, scale); 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/record_address_regs/src/regclass.c:2535:28: error: expected ')'
+record_address_regs( ( rtx)rtwint, GENERAL_REGS, scale); 
+                           ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/record_address_regs/src/regclass.c:2535:20: note: to match this '('
+record_address_regs( ( rtx)rtwint, GENERAL_REGS, scale); 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/record_address_regs/src/regclass.c:2551:15: error: expected expression
+rtx = *( rtx *)( *( _QWORD *)&rtx[1] + 16LL); 
+              ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/record_address_regs/src/regclass.c:2555:7: error: use of undeclared identifier 'costs_0'; did you mean 'costs'?
+v7 = &costs_0[rtx->fld[0].rtuint]; 
+      ^~~~~~~
+      costs
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/record_address_regs/src/regclass.c:861:22: note: 'costs' declared here
+static struct costs *costs;
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/record_address_regs/src/regclass.c:2556:31: error: use of undeclared identifier 'machine_mode'
+v8 = ix86_memory_move_cost( ( machine_mode)( ( ( BYTE3( target_flags) & 2) != 0) + 4), ( reg_class)v3, 1); 
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/record_address_regs/src/regclass.c:2556:90: error: use of undeclared identifier 'reg_class'; did you mean 'regclass'?
+v8 = ix86_memory_move_cost( ( machine_mode)( ( ( BYTE3( target_flags) & 2) != 0) + 4), ( reg_class)v3, 1); 
+                                                                                         ^~~~~~~~~
+                                                                                         regclass
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/record_address_regs/src/regclass.c:1182:1: note: 'regclass' declared here
+regclass (f, nregs, dump)
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/record_address_regs/src/regclass.c:2579:43: error: use of undeclared identifier 'reg_class'; did you mean 'regclass'?
+record_address_regs( rtx->fld[v12].rtx, ( reg_class)v3, scale); 
+                                          ^~~~~~~~~
+                                          regclass
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/record_address_regs/src/regclass.c:1182:1: note: 'regclass' declared here
+regclass (f, nregs, dump)
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/record_address_regs/src/regclass.c:2579:53: error: expected ')'
+record_address_regs( rtx->fld[v12].rtx, ( reg_class)v3, scale); 
+                                                    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/record_address_regs/src/regclass.c:2579:20: note: to match this '('
+record_address_regs( rtx->fld[v12].rtx, ( reg_class)v3, scale); 
+                   ^
+14 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/record_address_regs/src/obj/regclass.o] Error 1

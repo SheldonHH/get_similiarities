@@ -1,0 +1,67 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/mark_reg_death/src/global.c:2074:25: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v6 = ( ( unsigned int)( mode_class_0[v5] - 5) < 2) + 1; 
+                        ^~~~~~~~~~~~
+                        mode_class
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/mark_reg_death/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/mark_reg_death/src/global.c:2098:84: error: use of undeclared identifier 'xmm'
+v10 = _mm_add_epi32( _mm_shuffle_epi32( _mm_cvtsi32_si128( rtuint), 80), ( __m128i)xmm*(short *)0x641460); 
+                                                                                   ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/mark_reg_death/src/global.c:2100:23: error: invalid conversion between vector type '__m128d' (vector of 2 'double' values) and integer type 'HARD_REG_ELT_TYPE' (aka 'unsigned long long') of different size
+v12 = _mm_shuffle_pd( ( __m128d)hard_regs_live, ( __m128d)xmm*(short *)0x675E90, 2); 
+                      ^~~~~~~~~~~~~~~~~~~~~~~~
+/usr/lib/llvm-7/lib/clang/7.0.0/include/emmintrin.h:4761:52: note: expanded from macro '_mm_shuffle_pd'
+  (__m128d)__builtin_ia32_shufpd((__v2df)(__m128d)(a), (__v2df)(__m128d)(b), \
+                                                   ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/mark_reg_death/src/global.c:2100:59: error: use of undeclared identifier 'xmm'
+v12 = _mm_shuffle_pd( ( __m128d)hard_regs_live, ( __m128d)xmm*(short *)0x675E90, 2); 
+                                                          ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/mark_reg_death/src/global.c:2104:7: error: invalid conversion between vector type '__m128d' (vector of 2 'double' values) and integer type 'long long' of different size
+v15 = ( __m128d)-1LL; 
+      ^~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/mark_reg_death/src/global.c:2111:7: error: invalid conversion between vector type '__m128d' (vector of 2 'double' values) and integer type 'long long' of different size
+v15 = ( __m128d)-1LL; 
+      ^~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/mark_reg_death/src/global.c:2112:44: error: use of undeclared identifier 'xmm'
+si128 = _mm_load_si128( ( const __m128i *)&xmm*(short *)0x641470); 
+                                           ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/mark_reg_death/src/global.c:2113:42: error: use of undeclared identifier 'xmm'
+v17 = _mm_load_si128( ( const __m128i *)&xmm*(short *)0x641420); 
+                                         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/mark_reg_death/src/global.c:2114:42: error: use of undeclared identifier 'xmm'
+v18 = _mm_load_si128( ( const __m128i *)&xmm*(short *)0x641480); 
+                                         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/mark_reg_death/src/global.c:2115:42: error: use of undeclared identifier 'xmm'
+v19 = _mm_load_si128( ( const __m128i *)&xmm*(short *)0x641490); 
+                                         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/mark_reg_death/src/global.c:2116:42: error: use of undeclared identifier 'xmm'
+v20 = _mm_load_si128( ( const __m128i *)&xmm*(short *)0x6414A0); 
+                                         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/mark_reg_death/src/global.c:2119:32: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'long long' of different size
+v21 = _mm_unpacklo_epi32( v10, ( __m128i)0LL); 
+                               ^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/mark_reg_death/src/global.c:2120:55: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'long long' of different size
+v22 = _mm_unpacklo_epi32( _mm_add_epi32( v10, si128), ( __m128i)0LL); 
+                                                      ^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/mark_reg_death/src/global.c:2121:23: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+*( _QWORD *)&v23 = v17.m128i_i64[0] << v21.m128i_i8[0]; 
+                   ~~~^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/mark_reg_death/src/global.c:2121:43: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+*( _QWORD *)&v23 = v17.m128i_i64[0] << v21.m128i_i8[0]; 
+                                       ~~~^~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/mark_reg_death/src/global.c:2123:4: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+v24.m128d_f64[0] = v23; 
+~~~^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/mark_reg_death/src/global.c:2124:5: error: assigning to '__m128d' (vector of 2 'double' values) from incompatible type 'int'
+v25 = _mm_andn_pd( v24, v12); 
+    ^ ~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/mark_reg_death/src/global.c:2126:17: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+*( _QWORD *)&v26.m128d_f64[0] = v17.m128i_i64[0] << v22.m128i_i8[0]; 
+             ~~~^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/mark_reg_death/src/global.c:2126:36: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+*( _QWORD *)&v26.m128d_f64[0] = v17.m128i_i64[0] << v22.m128i_i8[0]; 
+                                ~~~^~~~~~~~~~
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/mark_reg_death/src/obj/global.o] Error 1

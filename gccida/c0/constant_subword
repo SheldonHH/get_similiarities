@@ -1,0 +1,73 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/constant_subword/src/emit-rtl.c:1775:44: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  constant_subword( rtx op, int offset, machine_mode mode) 
+                                           ^
+                                           enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/constant_subword/src/emit-rtl.c:1795:1: error: must use 'union' tag to refer to type 'real_extract'
+real_extract u; // [rsp+D0h] [rbp-70h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/constant_subword/src/emit-rtl.c:1800:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode modea; // [rsp+128h] [rbp-18h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/constant_subword/src/emit-rtl.c:1811:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[modea] != MODE_INT ) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/constant_subword/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/constant_subword/src/emit-rtl.c:1819:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[modea] == MODE_FLOAT && mode_bitsize[modea] == 64 && ( unsigned __int16)*( _DWORD *)opa == 55 ) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/constant_subword/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/constant_subword/src/emit-rtl.c:1822:22: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+u.d.r[2] = ( __int64)opa[2]; 
+                     ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/constant_subword/src/emit-rtl.c:1846:11: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+else if ( mode_class_0[modea] == MODE_FLOAT && mode_bitsize[modea] > 0x40u && ( unsigned __int16)*( _DWORD *)opa == 55 ) 
+          ^~~~~~~~~~~~
+          mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/constant_subword/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/constant_subword/src/emit-rtl.c:1854:20: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+r.r[2] = ( __int64)opa[2]; 
+                   ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/constant_subword/src/emit-rtl.c:1865:21: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+ra.r[2] = ( __int64)opa[2]; 
+                    ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/constant_subword/src/emit-rtl.c:1890:11: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+else if ( mode_class_0[modea] == MODE_FLOAT && mode_bitsize[modea] == 32 && ( unsigned __int16)*( _DWORD *)opa == 55 ) 
+          ^~~~~~~~~~~~
+          mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/constant_subword/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/constant_subword/src/emit-rtl.c:1893:22: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+u_1.r[2] = ( __int64)opa[2]; 
+                     ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/constant_subword/src/emit-rtl.c:1901:11: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+else if ( mode_class_0[modea] == MODE_INT 
+          ^~~~~~~~~~~~
+          mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/constant_subword/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/constant_subword/src/emit-rtl.c:1915:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v17.rtwint = ( __int64)opa[1].fld[0]; 
+                       ^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/constant_subword/src/emit-rtl.c:1922:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v19.rtwint = ( __int64)opa->fld[0]; 
+                       ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/constant_subword/src/emit-rtl.c:1924:24: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v19.rtwint = ( __int64)opa[1]; 
+                       ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/constant_subword/src/emit-rtl.c:1938:43: error: invalid suffix 'xmode' on integer constant
+val = trunc_int_for_mode( val, *(short *)0xmode); 
+                                          ^
+16 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/constant_subword/src/obj/emit-rtl.o] Error 1

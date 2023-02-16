@@ -1,0 +1,25 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/have_dependence_p/src/dependence.c:1887:52: error: must use 'enum' tag to refer to type 'direction_type'
+int  have_dependence_p( rtx dest_rtx, rtx src_rtx, direction_type *direction, int *distance) 
+                                                   ^
+                                                   enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/have_dependence_p/src/dependence.c:1889:1: error: unknown type name 'dependence_0'; did you mean 'dependence'?
+dependence_0 *dep_ptr; // [rsp+0h] [rbp-48h] 
+^~~~~~~~~~~~
+dependence
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/have_dependence_p/src/dependence.c:151:3: note: 'dependence' declared here
+} dependence;
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/have_dependence_p/src/dependence.c:1901:33: error: expected expression
+for ( dep_ptr = ( dependence_0 *)dep_chain->data.l[-dest_idx]; dep_ptr; dep_ptr = dep_ptr->next ) 
+                                ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/have_dependence_p/src/dependence.c:1901:19: error: use of undeclared identifier 'dependence_0'
+for ( dep_ptr = ( dependence_0 *)dep_chain->data.l[-dest_idx]; dep_ptr; dep_ptr = dep_ptr->next ) 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/have_dependence_p/src/dependence.c:1903:33: error: expected expression
+if ( dep_ptr == ( dependence_0 *)dep_chain->data.l[-src_idx] ) 
+                                ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/have_dependence_p/src/dependence.c:1903:19: error: use of undeclared identifier 'dependence_0'
+if ( dep_ptr == ( dependence_0 *)dep_chain->data.l[-src_idx] ) 
+                  ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/have_dependence_p/src/obj/dependence.o] Error 1

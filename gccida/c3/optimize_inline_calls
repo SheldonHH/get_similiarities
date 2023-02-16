@@ -1,0 +1,28 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/optimize_inline_calls/src/tree-inline.c:1480:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v6; // rsi 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/optimize_inline_calls/src/tree-inline.c:1488:12: error: expected expression
+*( _OWORD *)htab = 0LL; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/optimize_inline_calls/src/tree-inline.c:1488:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)htab = 0LL; 
+   ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/optimize_inline_calls/src/tree-inline.c:1489:12: error: expected expression
+*( _OWORD *)ptr = 0LL; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/optimize_inline_calls/src/tree-inline.c:1489:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)ptr = 0LL; 
+   ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/optimize_inline_calls/src/tree-inline.c:1523:1: error: use of undeclared identifier 'lang_hooks_0'; did you mean 'lang_hooks'?
+lang_hooks_0.tree_inlining.add_pending_fn_decls( &va, v6); 
+^~~~~~~~~~~~
+lang_hooks
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/optimize_inline_calls/src/langhooks.h:168:32: note: 'lang_hooks' declared here
+extern const struct lang_hooks lang_hooks;
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/optimize_inline_calls/src/tree-inline.c:1542:18: error: expected identifier or '('
+ struct tree_vec = make_tree_vec( *( ( _DWORD *)ptr[1] + 2)); 
+                 ^
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/optimize_inline_calls/src/obj/tree-inline.o] Error 1

@@ -1,0 +1,27 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/write_dependence_p/src/alias.c:2654:4: error: expected ';' after expression
+rtx base_term; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/write_dependence_p/src/alias.c:2654:5: error: use of undeclared identifier 'base_term'
+rtx base_term; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/write_dependence_p/src/alias.c:2664:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v7 = ( _QWORD *)x[1]; 
+                ^~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/write_dependence_p/src/alias.c:2666:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v9 = ( _QWORD *)mem[1]; 
+                ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/write_dependence_p/src/alias.c:2755:6: error: use of undeclared identifier 'base_term'
+|| ( base_term = find_base_term( v19)) == 0LL 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/write_dependence_p/src/alias.c:2756:24: error: use of undeclared identifier 'base_term'
+|| ( v29 = *( _DWORD *)base_term, ( _WORD)v29 != 67) && ( ( _WORD)v29 != 68 || ( v29 & 0x4000000) == 0) ) 
+                       ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/write_dependence_p/src/alias.c:2761:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)x + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/write_dependence_p/src/alias.c:2762:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)mem + 2)) ) 
+  ^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/write_dependence_p/src/obj/alias.o] Error 1

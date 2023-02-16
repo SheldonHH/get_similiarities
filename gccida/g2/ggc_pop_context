@@ -1,0 +1,22 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/ggc_pop_context/src/ggc-page.c:1665:1: error: unknown type name 'page_entry_0'; did you mean 'page_entry'?
+page_entry_0 **v0; // r12 
+^~~~~~~~~~~~
+page_entry
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/ggc_pop_context/src/ggc-page.c:249:3: note: 'page_entry' declared here
+} page_entry;
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/ggc_pop_context/src/ggc-page.c:1667:1: error: unknown type name 'page_entry_0'; did you mean 'page_entry'?
+page_entry_0 *i; // rbx 
+^~~~~~~~~~~~
+page_entry
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/ggc_pop_context/src/ggc-page.c:249:3: note: 'page_entry' declared here
+} page_entry;
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/ggc_pop_context/src/ggc-page.c:1669:23: error: expected expression
+v0 = ( page_entry_0 **)( &G + 16); 
+                      ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/ggc_pop_context/src/ggc-page.c:1669:8: error: use of undeclared identifier 'page_entry_0'
+v0 = ( page_entry_0 **)( &G + 16); 
+       ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/ggc_pop_context/src/obj/ggc-page.o] Error 1

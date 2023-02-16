@@ -1,0 +1,36 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/invert_truthvalue/src/fold-const.c:3293:1: error: must use 'enum' tag to refer to type 'tree_code'
+tree_code v3; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/invert_truthvalue/src/fold-const.c:3294:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *type; // rbp 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/invert_truthvalue/src/fold-const.c:3298:1: error: must use 'enum' tag to refer to type 'tree_code'
+tree_code v8; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/invert_truthvalue/src/fold-const.c:3301:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v11; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/invert_truthvalue/src/fold-const.c:3317:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v27; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/invert_truthvalue/src/fold-const.c:3319:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v29; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/invert_truthvalue/src/fold-const.c:3369:18: error: use of undeclared identifier 'tree_code'; did you mean 'tree_cons'?
+return build1( ( tree_code)*( ( unsigned __int8 *)&arg->block.common + 16), type, v27); 
+                 ^~~~~~~~~
+                 tree_cons
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/invert_truthvalue/src/tree.h:2477:13: note: 'tree_cons' declared here
+extern tree tree_cons                   PARAMS ((tree, tree, tree));
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/invert_truthvalue/src/fold-const.c:3369:28: error: invalid operands to binary expression ('tree (tree, tree, tree)' (aka 'union tree_node *(union tree_node *, union tree_node *, union tree_node *)') and 'unsigned char *')
+return build1( ( tree_code)*( ( unsigned __int8 *)&arg->block.common + 16), type, v27); 
+               ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/invert_truthvalue/src/obj/fold-const.o] Error 1

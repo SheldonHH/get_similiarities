@@ -1,0 +1,131 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/insn_extract/src/insn-extract.c:479:15: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+pat = ( rtx *)insn[2]; 
+              ^~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/insn_extract/src/insn-extract.c:480:10: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+memset( &recog_data_0, 0, 0xF0uLL); 
+         ^~~~~~~~~~~~
+         recog_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/insn_extract/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/insn_extract/src/insn-extract.c:481:46: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+memset( recog_data_0.operand_loc, 0, sizeof( recog_data_0.operand_loc)); 
+                                             ^~~~~~~~~~~~
+                                             recog_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/insn_extract/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/insn_extract/src/insn-extract.c:481:9: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+memset( recog_data_0.operand_loc, 0, sizeof( recog_data_0.operand_loc)); 
+        ^~~~~~~~~~~~
+        recog_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/insn_extract/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/insn_extract/src/insn-extract.c:485:29: error: too many arguments provided to function-like macro invocation
+fatal_insn_not_found( insn, "insn-extract.c", 26, "insn_extract"); 
+                            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/insn_extract/src/toplev.h:52:9: note: macro 'fatal_insn_not_found' defined here
+#define fatal_insn_not_found(insn) \
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/insn_extract/src/insn-extract.c:485:1: error: use of undeclared identifier 'fatal_insn_not_found'; did you mean '_fatal_insn_not_found'?
+fatal_insn_not_found( insn, "insn-extract.c", 26, "insn_extract"); 
+^~~~~~~~~~~~~~~~~~~~
+_fatal_insn_not_found
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/insn_extract/src/toplev.h:40:13: note: '_fatal_insn_not_found' declared here
+extern void _fatal_insn_not_found       PARAMS ((struct rtx_def *,
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/insn_extract/src/insn-extract.c:506:1: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+recog_data_0.operand_loc[0] = ( rtx *)pat[2]->fld; 
+^~~~~~~~~~~~
+recog_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/insn_extract/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/insn_extract/src/insn-extract.c:507:1: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+recog_data_0.operand[0] = *recog_data_0.operand_loc[0]; 
+^~~~~~~~~~~~
+recog_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/insn_extract/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/insn_extract/src/insn-extract.c:507:28: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+recog_data_0.operand[0] = *recog_data_0.operand_loc[0]; 
+                           ^~~~~~~~~~~~
+                           recog_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/insn_extract/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/insn_extract/src/insn-extract.c:508:1: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+recog_data_0.operand_loc[1] = ( rtx *)&pat[2][1]; 
+^~~~~~~~~~~~
+recog_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/insn_extract/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/insn_extract/src/insn-extract.c:509:1: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+recog_data_0.operand[1] = *recog_data_0.operand_loc[1]; 
+^~~~~~~~~~~~
+recog_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/insn_extract/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/insn_extract/src/insn-extract.c:509:28: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+recog_data_0.operand[1] = *recog_data_0.operand_loc[1]; 
+                           ^~~~~~~~~~~~
+                           recog_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/insn_extract/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/insn_extract/src/insn-extract.c:519:1: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+recog_data_0.operand_loc[0] = ( rtx *)( pat[2]->fld[0].rtwint + 8); 
+^~~~~~~~~~~~
+recog_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/insn_extract/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/insn_extract/src/insn-extract.c:520:1: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+recog_data_0.operand[0] = *recog_data_0.operand_loc[0]; 
+^~~~~~~~~~~~
+recog_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/insn_extract/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/insn_extract/src/insn-extract.c:520:28: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+recog_data_0.operand[0] = *recog_data_0.operand_loc[0]; 
+                           ^~~~~~~~~~~~
+                           recog_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/insn_extract/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/insn_extract/src/insn-extract.c:521:1: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+recog_data_0.operand_loc[1] = ( rtx *)( pat[2]->fld[0].rtwint + 16); 
+^~~~~~~~~~~~
+recog_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/insn_extract/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/insn_extract/src/insn-extract.c:522:1: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+recog_data_0.operand[1] = *recog_data_0.operand_loc[1]; 
+^~~~~~~~~~~~
+recog_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/insn_extract/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/insn_extract/src/insn-extract.c:522:28: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+recog_data_0.operand[1] = *recog_data_0.operand_loc[1]; 
+                           ^~~~~~~~~~~~
+                           recog_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/insn_extract/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/insn_extract/src/insn-extract.c:526:1: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+recog_data_0.operand_loc[0] = ( rtx *)pat[2]->fld; 
+^~~~~~~~~~~~
+recog_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/insn_extract/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/insn_extract/src/obj/insn-extract.o] Error 1

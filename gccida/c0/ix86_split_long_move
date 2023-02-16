@@ -1,0 +1,62 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_split_long_move/src/i386.c:9181:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v3; // r8d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_split_long_move/src/i386.c:9189:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // [rsp+30h] [rbp-50h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_split_long_move/src/i386.c:9233:56: error: use of undeclared identifier 'machine_mode'
+nparts = ix86_split_to_parts( operandsa[1], part[1], ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)*operandsa)); 
+                                                       ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_split_long_move/src/i386.c:9233:71: error: expected expression
+nparts = ix86_split_to_parts( operandsa[1], part[1], ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)*operandsa)); 
+                                                                      ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_split_long_move/src/i386.c:9234:45: error: use of undeclared identifier 'machine_mode'
+ix86_split_to_parts( *operandsa, part[0], ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)*operandsa)); 
+                                            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_split_long_move/src/i386.c:9234:60: error: expected expression
+ix86_split_to_parts( *operandsa, part[0], ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)*operandsa)); 
+                                                           ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_split_long_move/src/i386.c:9240:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)part[1][1]), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_split_long_move/src/i386.c:9240:18: error: expected expression
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)part[1][1]), 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_split_long_move/src/i386.c:9244:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)part[1][0]), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_split_long_move/src/i386.c:9244:18: error: expected expression
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)part[1][0]), 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_split_long_move/src/i386.c:9343:14: error: expected expression
+*( ( _OWORD *)operandsa + 1) = *( _OWORD *)&part[0][0]; 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_split_long_move/src/i386.c:9343:6: error: use of undeclared identifier '_OWORD'
+*( ( _OWORD *)operandsa + 1) = *( _OWORD *)&part[0][0]; 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_split_long_move/src/i386.c:9343:43: error: expected expression
+*( ( _OWORD *)operandsa + 1) = *( _OWORD *)&part[0][0]; 
+                                          ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_split_long_move/src/i386.c:9343:35: error: use of undeclared identifier '_OWORD'
+*( ( _OWORD *)operandsa + 1) = *( _OWORD *)&part[0][0]; 
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_split_long_move/src/i386.c:9347:12: error: expected expression
+*( _OWORD *)( operandsa + 5) = *( _OWORD *)&part[1][0]; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_split_long_move/src/i386.c:9347:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)( operandsa + 5) = *( _OWORD *)&part[1][0]; 
+   ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_split_long_move/src/i386.c:9347:43: error: expected expression
+*( _OWORD *)( operandsa + 5) = *( _OWORD *)&part[1][0]; 
+                                          ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_split_long_move/src/i386.c:9347:35: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)( operandsa + 5) = *( _OWORD *)&part[1][0]; 
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_split_long_move/src/i386.c:9352:12: error: expected expression
+*( _OWORD *)( operandsa + 5) = *( _OWORD *)&part[1][0]; 
+           ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_split_long_move/src/obj/i386.o] Error 1

@@ -1,0 +1,19 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/dwarf2out_frame_debug/src/dwarf2out.c:2091:35: error: use of undeclared identifier 'dwarf2out_cfi_label_label'; did you mean 'dwarf2out_cfi_label'?
+dwarf2out_frame_debug_expr( *fld, dwarf2out_cfi_label_label); 
+                                  ^~~~~~~~~~~~~~~~~~~~~~~~~
+                                  dwarf2out_cfi_label
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/dwarf2out_frame_debug/src/dwarf2out.c:540:1: note: 'dwarf2out_cfi_label' declared here
+dwarf2out_cfi_label ()
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/dwarf2out_frame_debug/src/dwarf2out.c:2109:1: error: use of undeclared identifier 'cfa_temp_0'; did you mean 'cfa_temp'?
+cfa_temp_0 = -1LL; 
+^~~~~~~~~~
+cfa_temp
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/dwarf2out_frame_debug/src/dwarf2out.c:1127:24: note: 'cfa_temp' declared here
+static dw_cfa_location cfa_temp;
+                       ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/dwarf2out_frame_debug/src/dwarf2out.c:2109:12: error: assigning to 'dw_cfa_location' (aka 'struct cfa_loc') from incompatible type 'long long'
+cfa_temp_0 = -1LL; 
+           ^ ~~~~
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/dwarf2out_frame_debug/src/obj/dwarf2out.o] Error 1

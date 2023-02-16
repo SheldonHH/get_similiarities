@@ -1,0 +1,28 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/regclass_compatible_p/src/regmove.c:555:29: error: use of undeclared identifier 'reg_class'; did you mean 'regclass'?
+if ( !reg_class_subset_p( ( reg_class)class0, ( reg_class)class1) || ( result = 1, ( unsigned int)( class0 - 1) <= 6) ) 
+                            ^~~~~~~~~
+                            regclass
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/regclass_compatible_p/src/rtl.h:1970:13: note: 'regclass' declared here
+extern void regclass                    PARAMS ((rtx, int, FILE *));
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/regclass_compatible_p/src/regmove.c:555:39: error: expected ')'
+if ( !reg_class_subset_p( ( reg_class)class0, ( reg_class)class1) || ( result = 1, ( unsigned int)( class0 - 1) <= 6) ) 
+                                      ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/regclass_compatible_p/src/regmove.c:555:25: note: to match this '('
+if ( !reg_class_subset_p( ( reg_class)class0, ( reg_class)class1) || ( result = 1, ( unsigned int)( class0 - 1) <= 6) ) 
+                        ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/regclass_compatible_p/src/regmove.c:557:32: error: use of undeclared identifier 'reg_class'; did you mean 'regclass'?
+result = reg_class_subset_p( ( reg_class)class1, ( reg_class)class0); 
+                               ^~~~~~~~~
+                               regclass
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/regclass_compatible_p/src/rtl.h:1970:13: note: 'regclass' declared here
+extern void regclass                    PARAMS ((rtx, int, FILE *));
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/regclass_compatible_p/src/regmove.c:557:42: error: expected ')'
+result = reg_class_subset_p( ( reg_class)class1, ( reg_class)class0); 
+                                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/regclass_compatible_p/src/regmove.c:557:28: note: to match this '('
+result = reg_class_subset_p( ( reg_class)class1, ( reg_class)class0); 
+                           ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/regclass_compatible_p/src/obj/regmove.o] Error 1

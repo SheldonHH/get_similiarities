@@ -1,0 +1,18 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/do_case/src/c-typeck.c:7660:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v2; // rbx 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/do_case/src/c-typeck.c:7662:19: error: expected expression
+v2 = ( tree_node *)switch_stack; 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/do_case/src/c-typeck.c:7662:8: error: use of undeclared identifier 'tree_node'
+v2 = ( tree_node *)switch_stack; 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/do_case/src/c-typeck.c:7666:19: error: expected expression
+if ( ( tree_node *)global_trees == v2 ) 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/do_case/src/c-typeck.c:7666:8: error: use of undeclared identifier 'tree_node'
+if ( ( tree_node *)global_trees == v2 ) 
+       ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/do_case/src/obj/c-typeck.o] Error 1

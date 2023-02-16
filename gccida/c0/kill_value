@@ -1,0 +1,42 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/kill_value/src/regrename.c:1595:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)x), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/kill_value/src/regrename.c:1595:18: error: expected expression
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)x), 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/kill_value/src/regrename.c:1597:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)x->fld[0].rtwint), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/kill_value/src/regrename.c:1597:18: error: expected expression
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)x->fld[0].rtwint), 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/kill_value/src/regrename.c:1640:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[( unsigned __int8)BYTE2( *( _DWORD *)xa)] != MODE_COMPLEX_INT ) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/kill_value/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/kill_value/src/regrename.c:1641:7: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v19 = mode_class_0[( unsigned __int8)BYTE2( *( _DWORD *)xa)] == MODE_COMPLEX_FLOAT; 
+      ^~~~~~~~~~~~
+      mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/kill_value/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/kill_value/src/regrename.c:1692:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[vd->e[j].mode] != MODE_COMPLEX_INT ) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/kill_value/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/kill_value/src/regrename.c:1693:7: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v15 = mode_class_0[vd->e[j].mode] == MODE_COMPLEX_FLOAT; 
+      ^~~~~~~~~~~~
+      mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/kill_value/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/kill_value/src/obj/regrename.o] Error 1

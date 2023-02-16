@@ -1,0 +1,12 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/has_cleanups/src/tree.c:2467:24: error: use of undeclared identifier 'tree_code'; did you mean 'tree_cons'?
+nops = first_rtl_op( ( tree_code)*( ( unsigned __int8 *)&exp->block.common + 16)); 
+                       ^~~~~~~~~
+                       tree_cons
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/has_cleanups/src/tree.c:1314:1: note: 'tree_cons' declared here
+tree_cons (purpose, value, chain)
+^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/has_cleanups/src/tree.c:2467:34: error: invalid operands to binary expression ('tree ()' (aka 'union tree_node *()') and 'unsigned char *')
+nops = first_rtl_op( ( tree_code)*( ( unsigned __int8 *)&exp->block.common + 16)); 
+                     ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/has_cleanups/src/obj/tree.o] Error 1

@@ -1,0 +1,36 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_register_move_cost/src/i386.c:12815:31: error: must use 'enum' tag to refer to type 'machine_mode'
+int  ix86_register_move_cost( machine_mode mode, reg_class class1, reg_class class2) 
+                              ^
+                              enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_register_move_cost/src/i386.c:12815:50: error: must use 'enum' tag to refer to type 'reg_class'
+int  ix86_register_move_cost( machine_mode mode, reg_class class1, reg_class class2) 
+                                                 ^
+                                                 enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_register_move_cost/src/i386.c:12815:68: error: must use 'enum' tag to refer to type 'reg_class'
+int  ix86_register_move_cost( machine_mode mode, reg_class class1, reg_class class2) 
+                                                                   ^
+                                                                   enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_register_move_cost/src/i386.c:12817:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v4; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_register_move_cost/src/i386.c:12821:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v9; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_register_move_cost/src/i386.c:12838:25: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v5 = ( ( unsigned int)( mode_class_0[mode] - 5) < 2) + 1; 
+                        ^~~~~~~~~~~~
+                        mode_class
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_register_move_cost/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_register_move_cost/src/i386.c:12850:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v10 = ( ( unsigned int)( mode_class_0[mode] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_register_move_cost/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_register_move_cost/src/obj/i386.o] Error 1

@@ -1,0 +1,23 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/diagnostic_for_decl/src/diagnostic.c:1361:1: error: unknown type name 'output_buffer_0'; did you mean 'output_buffer'?
+output_buffer_0 *v10; // r13 
+^~~~~~~~~~~~~~~
+output_buffer
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/diagnostic_for_decl/src/diagnostic.h:28:30: note: 'output_buffer' declared here
+typedef struct output_buffer output_buffer;
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/diagnostic_for_decl/src/diagnostic.c:1364:1: error: unknown type name 'output_buffer_0'; did you mean 'output_buffer'?
+output_buffer_0 *v13; // rax 
+^~~~~~~~~~~~~~~
+output_buffer
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/diagnostic_for_decl/src/diagnostic.h:28:30: note: 'output_buffer' declared here
+typedef struct output_buffer output_buffer;
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/diagnostic_for_decl/src/diagnostic.c:1450:8: error: use of undeclared identifier 'sch_istable'; did you mean '_sch_istable'?
+if ( ( sch_istable[v17] & 0x88) != 0 ) 
+       ^~~~~~~~~~~
+       _sch_istable
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/diagnostic_for_decl/src/safe-ctype.h:72:29: note: '_sch_istable' declared here
+extern const unsigned short _sch_istable[256];
+                            ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/diagnostic_for_decl/src/obj/diagnostic.o] Error 1

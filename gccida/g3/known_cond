@@ -1,0 +1,94 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/known_cond/src/combine.c:7846:25: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx  known_cond( rtx x, rtx_code cond, rtx reg, rtx val) 
+                        ^
+                        enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/known_cond/src/combine.c:7848:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v7; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/known_cond/src/combine.c:7871:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v30; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/known_cond/src/combine.c:7887:10: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& ( *( &mode_class_0 + *( ( unsigned __int8 *)x + 2)) & 0xFFFFFFFB) != 2 
+         ^~~~~~~~~~~~
+         mode_class
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/known_cond/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/known_cond/src/combine.c:7887:56: error: invalid operands to binary expression ('const enum mode_class [59]' and 'unsigned int')
+&& ( *( &mode_class_0 + *( ( unsigned __int8 *)x + 2)) & 0xFFFFFFFB) != 2 
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^ ~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/known_cond/src/combine.c:7888:19: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& *( ( _DWORD *)&mode_class_0 + *( ( unsigned __int8 *)x + 2)) != 8 
+                  ^~~~~~~~~~~~
+                  mode_class
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/known_cond/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/known_cond/src/combine.c:7889:10: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& ( *( &mode_class_0 + *( ( unsigned __int8 *)val + 2)) & 0xFFFFFFFB) != 2 
+         ^~~~~~~~~~~~
+         mode_class
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/known_cond/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/known_cond/src/combine.c:7889:58: error: invalid operands to binary expression ('const enum mode_class [59]' and 'unsigned int')
+&& ( *( &mode_class_0 + *( ( unsigned __int8 *)val + 2)) & 0xFFFFFFFB) != 2 
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^ ~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/known_cond/src/combine.c:7890:19: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& *( ( _DWORD *)&mode_class_0 + *( ( unsigned __int8 *)val + 2)) != 8 ) 
+                  ^~~~~~~~~~~~
+                  mode_class
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/known_cond/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/known_cond/src/combine.c:7908:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( unsigned __int8 *)( x->fld[0].rtwint + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/known_cond/src/combine.c:7910:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( unsigned __int8 *)( x->fld[0].rtwint + 2)); 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/known_cond/src/combine.c:7935:36: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+if ( comparison_dominates_p( v7, ( rtx_code)v8) ) 
+                                   ^~~~~~~~
+                                   rtx_cost
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/known_cond/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/known_cond/src/combine.c:7935:45: error: expected ')'
+if ( comparison_dominates_p( v7, ( rtx_code)v8) ) 
+                                            ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/known_cond/src/combine.c:7935:28: note: to match this '('
+if ( comparison_dominates_p( v7, ( rtx_code)v8) ) 
+                           ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/known_cond/src/combine.c:7939:29: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+|| ( v31.rtwint = ( __int64)x->fld[0], *( ( _DWORD *)&mode_class_0 + *( unsigned __int8 *)( v31.rtwint + 2)) == 4) 
+                            ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/known_cond/src/combine.c:7939:55: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| ( v31.rtwint = ( __int64)x->fld[0], *( ( _DWORD *)&mode_class_0 + *( unsigned __int8 *)( v31.rtwint + 2)) == 4) 
+                                                      ^~~~~~~~~~~~
+                                                      mode_class
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/known_cond/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/known_cond/src/combine.c:7943:3: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+( rtx_code)*( _WORD *)x, 
+  ^~~~~~~~
+  rtx_cost
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/known_cond/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/known_cond/src/combine.c:7943:12: error: invalid operands to binary expression ('int (rtx, enum rtx_code)' (aka 'int (struct rtx_def *, enum rtx_code)') and 'uint16 *' (aka 'unsigned short *'))
+( rtx_code)*( _WORD *)x, 
+~~~~~~~~~~~^~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/known_cond/src/combine.c:7968:14: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+return ( rtx)x[1]; 
+             ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/known_cond/src/combine.c:8028:14: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+return ( rtx)x[1]; 
+             ^~~~
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/known_cond/src/obj/combine.o] Error 1

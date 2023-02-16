@@ -1,0 +1,54 @@
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/compute_followup_influence/src/engine/influence.c:1935:26: error: use of undeclared identifier 'influence_data'; did you mean 'influencepat_db'?
+memcpy( q, base, sizeof( influence_data)); 
+                         ^~~~~~~~~~~~~~
+                         influencepat_db
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/compute_followup_influence/src/include/patterns.h:325:26: note: 'influencepat_db' declared here
+extern struct pattern_db influencepat_db;
+                         ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/compute_followup_influence/src/engine/influence.c:1938:6: error: use of undeclared identifier 'byte_9B389F'
+if ( byte_9B389F[i] != 3 ) 
+     ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/compute_followup_influence/src/engine/influence.c:1986:7: error: invalid conversion between vector type '__m128' (vector of 4 'float' values) and integer type 'unsigned int' of different size
+v13 = ( __m128)*( unsigned int *)v12; 
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/compute_followup_influence/src/engine/influence.c:1987:4: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v13.m128_f32[0] = v13.m128_f32[0] * 4096.0; 
+~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/compute_followup_influence/src/engine/influence.c:1987:22: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v13.m128_f32[0] = v13.m128_f32[0] * 4096.0; 
+                  ~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/compute_followup_influence/src/engine/influence.c:1988:73: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+permeability_array[k] = ( int)( _mm_cvtepi32_pd( _mm_cvttps_epi32( v13)).m128d_f64[0] + 0.5); 
+                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/compute_followup_influence/src/engine/influence.c:1999:7: error: invalid conversion between vector type '__m128' (vector of 4 'float' values) and integer type 'unsigned int' of different size
+v18 = ( __m128)*( unsigned int *)&q->safe[4 * v14]; 
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/compute_followup_influence/src/engine/influence.c:2000:9: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+if ( v18.m128_f32[0] > *( float *)&base->safe[4 * v14] ) 
+     ~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/compute_followup_influence/src/engine/influence.c:2002:4: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v18.m128_f32[0] = v18.m128_f32[0] * 4096.0; 
+~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/compute_followup_influence/src/engine/influence.c:2002:22: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v18.m128_f32[0] = v18.m128_f32[0] * 4096.0; 
+                  ~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/compute_followup_influence/src/engine/influence.c:2003:55: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+v16 = ( int)( _mm_cvtepi32_pd( _mm_cvttps_epi32( v18)).m128d_f64[0] + 0.5); 
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/compute_followup_influence/src/engine/influence.c:2011:7: error: invalid conversion between vector type '__m128' (vector of 4 'float' values) and integer type 'uint32' (aka 'unsigned int') of different size
+v15 = ( __m128)LODWORD( q->white_influence[v14 + 300]); 
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/compute_followup_influence/src/engine/influence.c:2012:9: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+if ( v15.m128_f32[0] > base->white_influence[v14 + 300] ) 
+     ~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/compute_followup_influence/src/engine/influence.c:2014:4: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v15.m128_f32[0] = v15.m128_f32[0] * 4096.0; 
+~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/compute_followup_influence/src/engine/influence.c:2014:22: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v15.m128_f32[0] = v15.m128_f32[0] * 4096.0; 
+                  ~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/compute_followup_influence/src/engine/influence.c:2015:55: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+v16 = ( int)( _mm_cvtepi32_pd( _mm_cvttps_epi32( v15)).m128d_f64[0] + 0.5); 
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+16 errors generated.
+make: *** [/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/compute_followup_influence/src/obj/1/influence.o] Error 1

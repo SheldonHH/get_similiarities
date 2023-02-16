@@ -1,0 +1,60 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/refers_to_regno_for_reload_p/src/reload.c:6561:4: error: expected ';' after expression
+rtx v21; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/refers_to_regno_for_reload_p/src/reload.c:6561:5: error: use of undeclared identifier 'v21'
+rtx v21; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/refers_to_regno_for_reload_p/src/reload.c:6596:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v31 = ( ( unsigned int)( mode_class_0[v28] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/refers_to_regno_for_reload_p/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/refers_to_regno_for_reload_p/src/reload.c:6633:20: error: expected expression
+if ( loc == ( rtx *)v5->fld ) 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/refers_to_regno_for_reload_p/src/reload.c:6639:20: error: expected expression
+if ( loc != ( rtx *)rtx->fld ) 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/refers_to_regno_for_reload_p/src/reload.c:6641:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v26.rtwint = ( __int64)rtx->fld[0]; 
+                       ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/refers_to_regno_for_reload_p/src/reload.c:6665:40: error: expected expression
+if ( ( _WORD)v6 == 49 || loc == ( rtx *)&v5[1] ) 
+                                       ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/refers_to_regno_for_reload_p/src/reload.c:6667:12: error: expected ';' after expression
+v5 = ( rtx)v5[1]; 
+           ^
+           ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/refers_to_regno_for_reload_p/src/reload.c:6671:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v13.rtwint = ( __int64)v5->fld[0]; 
+                       ^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/refers_to_regno_for_reload_p/src/reload.c:6681:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v15 = ( ( unsigned int)( mode_class_0[v16] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/refers_to_regno_for_reload_p/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/refers_to_regno_for_reload_p/src/reload.c:6711:13: error: expected expression
+v9 = ( rtx *)v5 + v7; 
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/refers_to_regno_for_reload_p/src/reload.c:6732:21: error: use of undeclared identifier 'v21'
+if ( v10 != 69 || ( v21 = *v9, LODWORD( v22) = *( _DWORD *)*v9 - 1, ( int)v22 < 0) ) 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/refers_to_regno_for_reload_p/src/reload.c:6746:20: error: expected expression
+if ( loc != ( rtx *)&v21->fld[v22] ) 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/refers_to_regno_for_reload_p/src/reload.c:6746:22: error: use of undeclared identifier 'v21'
+if ( loc != ( rtx *)&v21->fld[v22] ) 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/refers_to_regno_for_reload_p/src/reload.c:6749:54: error: use of undeclared identifier 'v21'
+v23 = refers_to_regno_for_reload_p( regno, endregno, v21->fld[( int)v22].rtx, loc); 
+                                                     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/refers_to_regno_for_reload_p/src/reload.c:6756:1: error: use of undeclared identifier 'v21'
+v21 = *v9; 
+^
+16 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/refers_to_regno_for_reload_p/src/obj/reload.o] Error 1

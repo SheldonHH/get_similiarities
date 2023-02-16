@@ -1,0 +1,29 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/do_assert/src/cpplib.c:2091:18: error: unknown type name 'cpp_reader_0'; did you mean 'cpp_reader'?
+void  do_assert( cpp_reader_0 *pfile) 
+                 ^~~~~~~~~~~~
+                 cpp_reader
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/do_assert/src/cpplib.h:36:27: note: 'cpp_reader' declared here
+typedef struct cpp_reader cpp_reader;
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/do_assert/src/cpplib.c:2093:1: error: unknown type name 'cpp_hashnode_0'; did you mean 'cpp_hashnode'?
+cpp_hashnode_0 *node; // [rsp+8h] [rbp-18h] 
+^~~~~~~~~~~~~~
+cpp_hashnode
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/do_assert/src/cpplib.h:42:29: note: 'cpp_hashnode' declared here
+typedef struct cpp_hashnode cpp_hashnode;
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/do_assert/src/cpplib.c:2095:1: error: unknown type name 'cpp_reader_0'; did you mean 'cpp_reader'?
+cpp_reader_0 *pfilea; // [rsp+18h] [rbp-8h] 
+^~~~~~~~~~~~
+cpp_reader
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/do_assert/src/cpplib.h:36:27: note: 'cpp_reader' declared here
+typedef struct cpp_reader cpp_reader;
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/do_assert/src/cpplib.c:2112:36: error: expected expression
+node->value.macro = ( cpp_macro_0 *)new_answer; 
+                                   ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/do_assert/src/cpplib.c:2112:23: error: use of undeclared identifier 'cpp_macro_0'
+node->value.macro = ( cpp_macro_0 *)new_answer; 
+                      ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/do_assert/src/obj/cpplib.o] Error 1

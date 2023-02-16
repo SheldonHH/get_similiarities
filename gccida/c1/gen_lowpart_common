@@ -1,0 +1,84 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/gen_lowpart_common/src/emit-rtl.c:1287:26: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  gen_lowpart_common( machine_mode mode, rtx x) 
+                         ^
+                         enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/gen_lowpart_common/src/emit-rtl.c:1294:1: error: must use 'enum' tag to refer to type 'mode_class'
+mode_class v8; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/gen_lowpart_common/src/machmode.h:52:30: note: enum 'mode_class' is hidden by a non-type declaration of 'mode_class' here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/gen_lowpart_common/src/emit-rtl.c:1297:4: error: expected ';' after expression
+rtx result; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/gen_lowpart_common/src/emit-rtl.c:1297:5: error: use of undeclared identifier 'result'
+rtx result; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/gen_lowpart_common/src/emit-rtl.c:1303:1: error: use of undeclared identifier '__m256'
+__m256 v18; // [rsp+40h] [rbp-58h] BYREF 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/gen_lowpart_common/src/emit-rtl.c:1325:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v8 = mode_class_0[mode]; 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/gen_lowpart_common/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/gen_lowpart_common/src/emit-rtl.c:1337:25: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+return gen_rtx_fmt_e( ( rtx_code)( unsigned __int16)v3, mode, rtx); 
+                        ^~~~~~~~
+                        rtx_cost
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/gen_lowpart_common/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/gen_lowpart_common/src/emit-rtl.c:1337:36: error: expected expression
+return gen_rtx_fmt_e( ( rtx_code)( unsigned __int16)v3, mode, rtx); 
+                                   ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/gen_lowpart_common/src/emit-rtl.c:1344:42: error: use of undeclared identifier 'machine_mode'
+return simplify_gen_subreg( mode, rtx, ( machine_mode)v4, 0); 
+                                         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/gen_lowpart_common/src/emit-rtl.c:1353:23: error: too many arguments to function call, expected 1, have 2
+ereal_from_float( &d, rtx->fld[0].rtwint); 
+~~~~~~~~~~~~~~~~      ^~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/gen_lowpart_common/src/real.h:171:1: note: 'ereal_from_float' declared here
+extern REAL_VALUE_TYPE ereal_from_float PARAMS ((HOST_WIDE_INT));
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/gen_lowpart_common/src/emit-rtl.c:1355:14: error: use of undeclared identifier 'v18'
+*( _QWORD *)&v18.m256_f32[4] = d.r[2]; 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/gen_lowpart_common/src/emit-rtl.c:1356:12: error: expected expression
+*( _OWORD *)v18.m256_f32 = *( _OWORD *)d.r; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/gen_lowpart_common/src/emit-rtl.c:1356:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)v18.m256_f32 = *( _OWORD *)d.r; 
+   ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/gen_lowpart_common/src/emit-rtl.c:1362:24: error: too many arguments to function call, expected 1, have 2
+ereal_from_double( &d, v19); 
+~~~~~~~~~~~~~~~~~      ^~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/gen_lowpart_common/src/real.h:172:1: note: 'ereal_from_double' declared here
+extern REAL_VALUE_TYPE ereal_from_double PARAMS ((HOST_WIDE_INT *));
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/gen_lowpart_common/src/emit-rtl.c:1366:55: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( ( v8 | 2) == 3 && ( unsigned __int16)v3 == 55 && mode_class_0[v4] == MODE_FLOAT ) 
+                                                      ^~~~~~~~~~~~
+                                                      mode_class
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/gen_lowpart_common/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/gen_lowpart_common/src/emit-rtl.c:1372:13: error: use of undeclared identifier 'v18'
+*( _QWORD *)v18.m256_f32 = etarsingle( d); 
+            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/gen_lowpart_common/src/emit-rtl.c:1373:12: error: expected expression
+*( _OWORD *)&v18.m256_f32[2] = 0LL; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/gen_lowpart_common/src/emit-rtl.c:1373:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&v18.m256_f32[2] = 0LL; 
+   ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/gen_lowpart_common/src/emit-rtl.c:1373:14: error: use of undeclared identifier 'v18'
+*( _OWORD *)&v18.m256_f32[2] = 0LL; 
+             ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/gen_lowpart_common/src/obj/emit-rtl.o] Error 1

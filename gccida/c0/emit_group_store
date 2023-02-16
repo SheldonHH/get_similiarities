@@ -1,0 +1,27 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_group_store/src/expr.c:2526:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // [rsp+24h] [rbp-4Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_group_store/src/expr.c:2548:26: error: use of undeclared identifier 'machine_mode'
+tmps[i] = gen_reg_rtx( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)reg)); 
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_group_store/src/expr.c:2548:41: error: expected expression
+tmps[i] = gen_reg_rtx( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)reg)); 
+                                        ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_group_store/src/expr.c:2557:29: error: use of undeclared identifier 'machine_mode'
+temp = assign_stack_temp( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)dst), ssizea, 0); 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_group_store/src/expr.c:2557:44: error: expected expression
+temp = assign_stack_temp( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)dst), ssizea, 0); 
+                                           ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_group_store/src/expr.c:2566:22: error: use of undeclared identifier 'machine_mode'
+dst = gen_reg_rtx( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)orig_dsta)); 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_group_store/src/expr.c:2566:37: error: expected expression
+dst = gen_reg_rtx( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)orig_dsta)); 
+                                    ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_group_store/src/expr.c:2584:14: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+dest = ( rtx)dst[1]; 
+             ^~~~~~
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_group_store/src/obj/expr.o] Error 1

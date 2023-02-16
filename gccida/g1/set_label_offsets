@@ -1,0 +1,36 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/set_label_offsets/src/reload1.c:2599:4: error: expected ';' after expression
+rtx nonnote_insn; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/set_label_offsets/src/reload1.c:2599:5: error: use of undeclared identifier 'nonnote_insn'
+rtx nonnote_insn; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/set_label_offsets/src/reload1.c:2616:28: error: expected expression
+set_label_offsets( *( rtx *)&insn[2], insn, initial_p); 
+                           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/set_label_offsets/src/reload1.c:2618:30: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+for ( v21.rtwint = ( __int64)x[3].fld[0]; v21.rtwint; v21.rtwint = *( __int64 *)( v21.rtwint + 16) ) 
+                             ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/set_label_offsets/src/reload1.c:2621:28: error: expected expression
+set_label_offsets( *( rtx *)( v21.rtwint + 8), insn, 1); 
+                           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/set_label_offsets/src/reload1.c:2632:28: error: expected expression
+set_label_offsets( *( rtx *)&rtwint[2 * v7++ + 2], insn, initial_p); 
+                           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/set_label_offsets/src/reload1.c:2637:19: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v22 = ( __int16 *)x[1]; 
+                  ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/set_label_offsets/src/reload1.c:2648:28: error: expected expression
+set_label_offsets( *( rtx *)( v26 + 8), insn, initial_p); 
+                           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/set_label_offsets/src/reload1.c:2658:30: error: expected expression
+set_label_offsets( *( ( rtx *)v22 + 1), insn, initial_p); 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/set_label_offsets/src/reload1.c:2687:23: error: use of undeclared identifier 'nonnote_insn'
+if ( rtx == insn && ( nonnote_insn = prev_nonnote_insn( insn)) != 0LL && *( _WORD *)nonnote_insn == 35 ) 
+                      ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/set_label_offsets/src/reload1.c:2687:85: error: use of undeclared identifier 'nonnote_insn'
+if ( rtx == insn && ( nonnote_insn = prev_nonnote_insn( insn)) != 0LL && *( _WORD *)nonnote_insn == 35 ) 
+                                                                                    ^
+11 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/set_label_offsets/src/obj/reload1.o] Error 1

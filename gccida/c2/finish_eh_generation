@@ -1,0 +1,38 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/finish_eh_generation/src/except.c:3014:1: error: must use 'enum' tag to refer to type 'eh_region_type'
+eh_region_type type; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/finish_eh_generation/src/except.c:3017:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v12; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/finish_eh_generation/src/except.c:3036:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v31; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/finish_eh_generation/src/except.c:3094:34: error: use of undeclared identifier 'machine_mode'
+v3->eh->exc_ptr = gen_reg_rtx( ( machine_mode)( ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32)); 
+                                 ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/finish_eh_generation/src/except.c:3099:42: error: invalid suffix 'xmode' on integer constant
+v3->eh->filter = gen_reg_rtx( *(short *)0xmode); 
+                                         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/finish_eh_generation/src/except.c:3268:59: error: invalid suffix 'xmode' on integer constant
+emit_cmp_and_jump_insns( filter, v39, EQ, 0LL, *(short *)0xmode, 0, v37->label); 
+                                                          ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/finish_eh_generation/src/except.c:3299:56: error: invalid suffix 'xmode' on integer constant
+emit_cmp_and_jump_insns( v46, v48, EQ, 0LL, *(short *)0xmode, 0, v43->label); 
+                                                       ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/finish_eh_generation/src/except.c:3394:22: error: use of undeclared identifier 'machine_mode'
+v62 = gen_rtx_REG( ( machine_mode)( ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32), 1); 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/finish_eh_generation/src/except.c:3402:22: error: use of undeclared identifier 'machine_mode'
+v60 = gen_rtx_REG( ( machine_mode)( ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32), 0); 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/finish_eh_generation/src/except.c:3412:22: error: use of undeclared identifier 'machine_mode'
+v66 = gen_rtx_REG( ( machine_mode)( ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32), 0); 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/finish_eh_generation/src/except.c:3415:31: error: invalid suffix 'xmode' on integer constant
+v68 = gen_rtx_REG( *(short *)0xmode, 1); 
+                              ^
+11 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/finish_eh_generation/src/obj/except.o] Error 1

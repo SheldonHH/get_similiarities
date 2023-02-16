@@ -1,0 +1,63 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ereal_to_decimal/src/real.c:1790:7: error: conflicting types for 'ereal_to_decimal'
+void  ereal_to_decimal( char *s, realvaluetype x) 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ereal_to_decimal/src/real.h:166:13: note: previous declaration is here
+extern void ereal_to_decimal    PARAMS ((REAL_VALUE_TYPE, char *));
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ereal_to_decimal/src/real.c:1844:6: error: use of undeclared identifier 'rndprc'
+v2 = rndprc; 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ereal_to_decimal/src/real.c:1846:1: error: use of undeclared identifier 'wstring'
+wstring[0] = 0; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ereal_to_decimal/src/real.c:1849:9: error: use of undeclared identifier 'wstring'
+strcpy( wstring, " NaN "); 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ereal_to_decimal/src/real.c:1853:1: error: use of undeclared identifier 'rndprc'
+rndprc = 80; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ereal_to_decimal/src/real.c:1867:9: error: use of undeclared identifier 'wstring'
+strcpy( wstring, " -Infinity "); 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ereal_to_decimal/src/real.c:1869:9: error: use of undeclared identifier 'wstring'
+strcpy( wstring, " Infinity "); 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ereal_to_decimal/src/real.c:1875:13: error: use of undeclared identifier 'wstring'
+*( _DWORD *)wstring = ( _DWORD)&loc_4E614E; 
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ereal_to_decimal/src/real.c:1875:33: error: use of undeclared identifier 'loc_4E614E'
+*( _DWORD *)wstring = ( _DWORD)&loc_4E614E; 
+                                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ereal_to_decimal/src/real.c:1924:7: error: use of undeclared identifier 'etens'
+emul( etens[12], &b, &b); 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ereal_to_decimal/src/real.c:1929:7: error: use of undeclared identifier 'etens'
+v30 = etens[0]; 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ereal_to_decimal/src/real.c:1930:11: error: use of undeclared identifier 'emtens'
+for ( i = emtens[0]; ecmp( eone, c) > 0; i += 6 ) 
+          ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ereal_to_decimal/src/real.c:1949:7: error: use of undeclared identifier 'etens'
+v19 = etens[8]; 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ereal_to_decimal/src/real.c:1977:9: error: use of undeclared identifier 'bmask'
+*v22 &= bmask[v21]; 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ereal_to_decimal/src/real.c:2003:44: error: use of undeclared identifier 'unk_6E35BC'
+while ( v19 != ( const unsigned __int16 *)&unk_6E35BC ); 
+                                           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ereal_to_decimal/src/real.c:2008:11: error: use of undeclared identifier 'etens'
+for ( j = etens[0]; ecmp( etens[12], &y) <= 0; j += 6 ) 
+          ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ereal_to_decimal/src/real.c:2008:27: error: use of undeclared identifier 'etens'
+for ( j = etens[0]; ecmp( etens[12], &y) <= 0; j += 6 ) 
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ereal_to_decimal/src/real.c:2026:6: error: use of undeclared identifier 'equot'
+v5 = equot[8]; 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ereal_to_decimal/src/real.c:2027:6: error: use of undeclared identifier 'equot'
+v6 = equot[8]; 
+     ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ereal_to_decimal/src/obj/real.o] Error 1

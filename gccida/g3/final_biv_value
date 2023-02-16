@@ -1,0 +1,43 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/final_biv_value/src/unroll.c:3669:1: error: use of undeclared identifier 'induction_1'
+induction_1 *biv; // rax 
+^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/final_biv_value/src/unroll.c:3669:14: error: use of undeclared identifier 'biv'; did you mean 'div'?
+induction_1 *biv; // rax 
+             ^~~
+             div
+/usr/include/stdlib.h:849:14: note: 'div' declared here
+extern div_t div (int __numer, int __denom)
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/final_biv_value/src/unroll.c:3682:1: error: use of undeclared identifier 'biv'
+biv = bl_0->biv; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/final_biv_value/src/unroll.c:3683:21: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( *( ( _DWORD *)&mode_class_0 + ( int)biv->mode) != 1 ) 
+                    ^~~~~~~~~~~~
+                    mode_class
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/final_biv_value/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/final_biv_value/src/unroll.c:3683:42: error: use of undeclared identifier 'biv'
+if ( *( ( _DWORD *)&mode_class_0 + ( int)biv->mode) != 1 ) 
+                                         ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/final_biv_value/src/unroll.c:3697:11: error: use of undeclared identifier 'biv'
+src_reg = biv->src_reg; 
+          ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/final_biv_value/src/unroll.c:3705:1: error: use of undeclared identifier 'biv'
+biv = bl_0->biv; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/final_biv_value/src/unroll.c:3709:1: error: use of undeclared identifier 'biv'
+biv = bl_0->biv; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/final_biv_value/src/unroll.c:3713:11: error: use of undeclared identifier 'biv'
+src_reg = biv->src_reg; 
+          ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/final_biv_value/src/unroll.c:3725:21: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+exit_labels = ( rtx)exit_labels[1]; 
+                    ^~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/final_biv_value/src/unroll.c:3738:19: error: use of undeclared identifier 'biv'
+v9 = gen_reg_rtx( biv->mode); 
+                  ^
+11 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/final_biv_value/src/obj/unroll.o] Error 1

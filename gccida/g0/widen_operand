@@ -1,0 +1,16 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/widen_operand/src/optabs.c:643:29: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  widen_operand( rtx op, machine_mode mode, machine_mode oldmode, int unsignedp, int no_extend) 
+                            ^
+                            enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/widen_operand/src/optabs.c:643:48: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  widen_operand( rtx op, machine_mode mode, machine_mode oldmode, int unsignedp, int no_extend) 
+                                               ^
+                                               enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/widen_operand/src/optabs.c:667:21: error: use of undeclared identifier 'machine_mode'
+v9 = gen_lowpart( ( machine_mode)*( ( unsigned __int8 *)op + 2), result); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/widen_operand/src/optabs.c:673:19: error: use of undeclared identifier 'machine_mode'
+v7 = force_reg( ( machine_mode)*( ( unsigned __int8 *)op + 2), op); 
+                  ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/widen_operand/src/obj/optabs.o] Error 1

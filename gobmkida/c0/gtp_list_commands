@@ -1,0 +1,16 @@
+/data/output_dir/patch/gobmk/ida/clang/O0/gobmk-clang-O0/gtp_list_commands/src/interface/play_gtp.c:3801:14: error: use of undeclared identifier 'commands_0'; did you mean 'commands'?
+for ( k = 0; commands_0[k].name; ++k ) 
+             ^~~~~~~~~~
+             commands
+/data/output_dir/patch/gobmk/ida/clang/O0/gobmk-clang-O0/gtp_list_commands/src/interface/play_gtp.c:164:27: note: 'commands' declared here
+static struct gtp_command commands[] = {
+                          ^
+/data/output_dir/patch/gobmk/ida/clang/O0/gobmk-clang-O0/gtp_list_commands/src/interface/play_gtp.c:3802:21: error: use of undeclared identifier 'commands_0'; did you mean 'commands'?
+gtp_printf( "%s\n", commands_0[k].name); 
+                    ^~~~~~~~~~
+                    commands
+/data/output_dir/patch/gobmk/ida/clang/O0/gobmk-clang-O0/gtp_list_commands/src/interface/play_gtp.c:164:27: note: 'commands' declared here
+static struct gtp_command commands[] = {
+                          ^
+2 errors generated.
+make: *** [/data/output_dir/patch/gobmk/ida/clang/O0/gobmk-clang-O0/gtp_list_commands/src/obj/2/play_gtp.o] Error 1

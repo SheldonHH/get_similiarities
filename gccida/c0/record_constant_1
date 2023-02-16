@@ -1,0 +1,24 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/record_constant_1/src/varasm.c:3365:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *newa; // [rsp+20h] [rbp-160h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/record_constant_1/src/varasm.c:3389:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // [rsp+108h] [rbp-78h] BYREF 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/record_constant_1/src/varasm.c:3403:1: error: must use 'enum' tag to refer to type 'tree_code'
+tree_code code; // [rsp+168h] [rbp-18h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/record_constant_1/src/varasm.c:3612:8: error: use of undeclared identifier 'lang_hooks_0'; did you mean 'lang_hooks'?
+newa = lang_hooks_0.expand_constant( expa); 
+       ^~~~~~~~~~~~
+       lang_hooks
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/record_constant_1/src/langhooks.h:168:32: note: 'lang_hooks' declared here
+extern const struct lang_hooks lang_hooks;
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/record_constant_1/src/varasm.c:3612:36: error: called object type '<dependent type>' is not a function or function pointer
+newa = lang_hooks_0.expand_constant( expa); 
+                                   ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/record_constant_1/src/obj/varasm.o] Error 1

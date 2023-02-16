@@ -1,0 +1,15 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/store_constructor_field/src/expr.c:4803:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/store_constructor_field/src/expr.c:4835:38: error: use of undeclared identifier 'machine_mode'
+v13 = bitpos % get_mode_alignment( ( machine_mode)v12) != 0 ? 0x33 : 0; 
+                                     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/store_constructor_field/src/expr.c:4836:30: error: use of undeclared identifier 'machine_mode'
+v8 = adjust_address_1( v8, ( machine_mode)v13, v11, 1, 1); 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/store_constructor_field/src/expr.c:4840:18: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v14 = ( _QWORD *)v8[1]; 
+                 ^~~~~
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/store_constructor_field/src/obj/expr.o] Error 1

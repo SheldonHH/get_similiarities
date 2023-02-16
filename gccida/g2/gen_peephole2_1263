@@ -1,0 +1,15 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_peephole2_1263/src/insn-emit.c:18335:18: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+v11 = gen_rtx( ( rtx_code)*( _WORD *)v6, ( machine_mode)*( ( unsigned __int8 *)v6 + 2), v5, v10); 
+                 ^~~~~~~~
+                 rtx_cost
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_peephole2_1263/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_peephole2_1263/src/insn-emit.c:18335:27: error: invalid operands to binary expression ('int (rtx, enum rtx_code)' (aka 'int (struct rtx_def *, enum rtx_code)') and 'uint16 *' (aka 'unsigned short *'))
+v11 = gen_rtx( ( rtx_code)*( _WORD *)v6, ( machine_mode)*( ( unsigned __int8 *)v6 + 2), v5, v10); 
+               ~~~~~~~~~~~^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_peephole2_1263/src/insn-emit.c:18335:44: error: use of undeclared identifier 'machine_mode'
+v11 = gen_rtx( ( rtx_code)*( _WORD *)v6, ( machine_mode)*( ( unsigned __int8 *)v6 + 2), v5, v10); 
+                                           ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_peephole2_1263/src/obj/insn-emit.o] Error 1

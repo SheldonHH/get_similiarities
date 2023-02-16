@@ -1,0 +1,38 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_replacement/src/reload.c:6479:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v6; // r14d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_replacement/src/reload.c:6483:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_replacement/src/reload.c:6515:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( unsigned __int8 *)( ( *loc)->fld[0].rtwint + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_replacement/src/reload.c:6528:24: error: use of undeclared identifier 'machine_mode'
+v9 = gen_rtx_SUBREG( ( machine_mode)v11, reg_rtx->fld[0].rtx, v12 - v12 % mode_size[v11]); 
+                       ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_replacement/src/reload.c:6545:21: error: expected identifier or '('
+ struct replacement = find_replacement( ( rtx *)( *loc)->fld); 
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_replacement/src/reload.c:6547:7: error: expected expression
+if (  struct replacement == ( *loc)->fld[0].rtx && v14 == (  struct rtx_def *)( *loc)[1] ) 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_replacement/src/reload.c:6551:3: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+( rtx_code)( unsigned __int16)*( _DWORD *)*loc, 
+  ^~~~~~~~
+  rtx_cost
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_replacement/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_replacement/src/reload.c:6551:14: error: expected expression
+( rtx_code)( unsigned __int16)*( _DWORD *)*loc, 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_replacement/src/reload.c:6552:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)*loc), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_replacement/src/reload.c:6552:18: error: expected expression
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)*loc), 
+                 ^
+10 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_replacement/src/obj/reload.o] Error 1

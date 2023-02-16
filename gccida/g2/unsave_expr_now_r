@@ -1,0 +1,15 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/unsave_expr_now_r/src/tree.c:2192:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v4; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/unsave_expr_now_r/src/tree.c:2194:7: error: expected expression
+if (  struct expr ) 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/unsave_expr_now_r/src/tree.c:2237:19: error: expected expression
+v4 = ( tree_node *)*( ( _QWORD *)&chain->vector.elements + v3--); 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/unsave_expr_now_r/src/tree.c:2237:8: error: use of undeclared identifier 'tree_node'
+v4 = ( tree_node *)*( ( _QWORD *)&chain->vector.elements + v3--); 
+       ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/unsave_expr_now_r/src/obj/tree.o] Error 1

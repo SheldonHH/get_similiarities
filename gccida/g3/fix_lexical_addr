@@ -1,0 +1,33 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/fix_lexical_addr/src/function.c:6085:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v3; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/fix_lexical_addr/src/function.c:6092:5: error: called object type 'rtx' (aka 'struct rtx_def *') is not a function or function pointer
+rtx arg_pointer_save_area; // rax 
+~~~ ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/fix_lexical_addr/src/function.h:533:31: note: expanded from macro 'arg_pointer_save_area'
+#define arg_pointer_save_area (cfun->x_arg_pointer_save_area)
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/fix_lexical_addr/src/function.c:6116:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v16.rtwint = ( __int64)rtx->fld[0]; 
+                       ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/fix_lexical_addr/src/function.c:6119:15: error: expected expression
+rtx = *( rtx *)( v16.rtwint + 8); 
+              ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/fix_lexical_addr/src/function.c:6126:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v6 = ( __int64)rtx[1]; 
+               ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/fix_lexical_addr/src/function.c:6146:22: error: expected expression
+while ( ( tree_node *)v8[3] != v3 ) 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/fix_lexical_addr/src/function.c:6146:11: error: use of undeclared identifier 'tree_node'
+while ( ( tree_node *)v8[3] != v3 ) 
+          ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/fix_lexical_addr/src/function.c:6158:25: error: use of undeclared identifier 'machine_mode'
+v13 = memory_address( ( machine_mode)( ( ( BYTE3( target_flags) & 2) != 0) + 4), fixed); 
+                        ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/fix_lexical_addr/src/function.c:6159:22: error: use of undeclared identifier 'machine_mode'
+v14 = gen_rtx_MEM( ( machine_mode)( ( ( BYTE3( target_flags) & 2) != 0) + 4), v13); 
+                     ^
+9 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/fix_lexical_addr/src/obj/function.o] Error 1

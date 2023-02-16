@@ -1,0 +1,44 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_logical/src/combine.c:5756:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // [rsp+28h] [rbp-28h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_logical/src/combine.c:5764:13: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+op1 = ( rtx)x[1]; 
+            ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_logical/src/combine.c:5871:13: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+op1 = ( rtx)xa[1]; 
+            ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_logical/src/combine.c:5886:21: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+v11 = gen_binary( ( rtx_code)*( _WORD *)op0, mode, v10, v9); 
+                    ^~~~~~~~
+                    rtx_cost
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_logical/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_logical/src/combine.c:5886:30: error: invalid operands to binary expression ('int (rtx, enum rtx_code)' (aka 'int (struct rtx_def *, enum rtx_code)') and 'uint16 *' (aka 'unsigned short *'))
+v11 = gen_binary( ( rtx_code)*( _WORD *)op0, mode, v10, v9); 
+                  ~~~~~~~~~~~^~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_logical/src/combine.c:5896:21: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+v15 = gen_binary( ( rtx_code)*( _WORD *)op1, mode, v14, v13); 
+                    ^~~~~~~~
+                    rtx_cost
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_logical/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_logical/src/combine.c:5896:30: error: invalid operands to binary expression ('int (rtx, enum rtx_code)' (aka 'int (struct rtx_def *, enum rtx_code)') and 'uint16 *' (aka 'unsigned short *'))
+v15 = gen_binary( ( rtx_code)*( _WORD *)op1, mode, v14, v13); 
+                  ~~~~~~~~~~~^~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_logical/src/combine.c:5901:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v16 = (  struct rtx_def *)op1[1]; 
+                          ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_logical/src/combine.c:5910:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v21 = (  struct rtx_def *)op0[1]; 
+                          ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_logical/src/combine.c:5980:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v34 = (  struct rtx_def *)op0[1]; 
+                          ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_logical/src/combine.c:5982:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v34 = (  struct rtx_def *)op1[1]; 
+                          ^~~~~~
+11 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_logical/src/obj/combine.o] Error 1

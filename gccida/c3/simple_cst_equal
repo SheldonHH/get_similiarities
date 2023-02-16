@@ -1,0 +1,23 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/simple_cst_equal/src/tree.c:4023:14: error: expected expression
+tree_int_cst::$A887AD9C3C6C8CC7716950D571F57C9D *p_int_cst; // r13 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/simple_cst_equal/src/tree.c:4053:1: error: use of undeclared identifier 'p_int_cst'
+p_int_cst = &low->int_cst.int_cst; 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/simple_cst_equal/src/tree.c:4055:14: error: use of undeclared identifier 'p_int_cst'
+low = ( tree)p_int_cst->low; 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/simple_cst_equal/src/tree.c:4088:8: error: attempt to use a poisoned identifier
+return bcmp( elements->string.pointer, low->string.pointer, length) == 0; 
+       ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/simple_cst_equal/src/tree.c:4098:1: error: use of undeclared identifier 'p_int_cst'
+p_int_cst = &low->int_cst.int_cst; 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/simple_cst_equal/src/tree.c:4119:1: error: use of undeclared identifier 'p_int_cst'
+p_int_cst = ( tree_int_cst::$A887AD9C3C6C8CC7716950D571F57C9D *)&low->block.subblocks; 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/simple_cst_equal/src/tree.c:4119:15: error: use of undeclared identifier 'tree_int_cst'
+p_int_cst = ( tree_int_cst::$A887AD9C3C6C8CC7716950D571F57C9D *)&low->block.subblocks; 
+              ^
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/simple_cst_equal/src/obj/tree.o] Error 1

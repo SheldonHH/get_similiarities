@@ -1,0 +1,34 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/get_alias_set/src/alias.c:949:10: error: use of undeclared identifier 'lang_hooks_0'; did you mean 'lang_hooks'?
+result = lang_hooks_0.get_alias_set( i); 
+         ^~~~~~~~~~~~
+         lang_hooks
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/get_alias_set/src/langhooks.h:168:32: note: 'lang_hooks' declared here
+extern const struct lang_hooks lang_hooks;
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/get_alias_set/src/alias.c:949:36: error: called object type '<dependent type>' is not a function or function pointer
+result = lang_hooks_0.get_alias_set( i); 
+                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/get_alias_set/src/alias.c:975:9: error: use of undeclared identifier 'last_alias_set_5'
+v18 = ++last_alias_set_5; 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/get_alias_set/src/alias.c:1002:19: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v14 = ( __int64 *)rtl[1]; 
+                  ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/get_alias_set/src/alias.c:1015:10: error: use of undeclared identifier 'lang_hooks_0'; did you mean 'lang_hooks'?
+result = lang_hooks_0.get_alias_set( section_name); 
+         ^~~~~~~~~~~~
+         lang_hooks
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/get_alias_set/src/langhooks.h:168:32: note: 'lang_hooks' declared here
+extern const struct lang_hooks lang_hooks;
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/get_alias_set/src/alias.c:1015:36: error: called object type '<dependent type>' is not a function or function pointer
+result = lang_hooks_0.get_alias_set( section_name); 
+                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/get_alias_set/src/alias.c:1033:12: error: use of undeclared identifier 'last_alias_set_5'
+result = ++last_alias_set_5; 
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/get_alias_set/src/alias.c:1038:13: error: expected identifier or '('
+ struct set = result; 
+            ^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/get_alias_set/src/obj/alias.o] Error 1

@@ -1,0 +1,18 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_add3_insn/src/optabs.c:4302:7: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+v4 = &insn_data_0[insn_code]; 
+      ^~~~~~~~~~~
+      insn_data
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_add3_insn/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_add3_insn/src/optabs.c:4304:32: error: use of undeclared identifier 'machine_mode'
+if ( operand->predicate( r0, ( machine_mode)*( ( unsigned __int16 *)operand + 8)) 
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_add3_insn/src/optabs.c:4305:32: error: use of undeclared identifier 'machine_mode'
+&& operand[1].predicate( r1, ( machine_mode)*( ( unsigned __int16 *)&operand[1] + 8)) 
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_add3_insn/src/optabs.c:4306:31: error: use of undeclared identifier 'machine_mode'
+&& operand[2].predicate( c, ( machine_mode)*( ( unsigned __int16 *)&operand[2] + 8)) ) 
+                              ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_add3_insn/src/obj/optabs.o] Error 1

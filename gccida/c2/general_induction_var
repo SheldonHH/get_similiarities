@@ -1,0 +1,31 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/general_induction_var/src/loop.c:6753:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode addr_mode) 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/general_induction_var/src/loop.c:6761:6: error: use of undeclared identifier 'v17'
+rtx *v17; // rcx 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/general_induction_var/src/loop.c:6779:20: error: expected expression
+*src_reg = *( rtx *)( *( _QWORD *)( aux[28] + 8LL) + 32LL); 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/general_induction_var/src/loop.c:6793:14: error: expected expression
+v17 = ( rtx *)( v13->fld[0].rtwint + 16); 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/general_induction_var/src/loop.c:6793:1: error: use of undeclared identifier 'v17'
+v17 = ( rtx *)( v13->fld[0].rtwint + 16); 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/general_induction_var/src/loop.c:6798:1: error: use of undeclared identifier 'v17'
+v17 = const_int_rtx + 520; 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/general_induction_var/src/loop.c:6800:14: error: use of undeclared identifier 'v17'
+*mult_val = *v17; 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/general_induction_var/src/loop.c:6801:13: error: expected ';' after expression
+v13 = ( rtx)v13[1]; 
+            ^
+            ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/general_induction_var/src/loop.c:6805:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v15 = (  struct rtx_def *)v13[1]; 
+                          ^~~~~~
+9 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/general_induction_var/src/obj/loop.o] Error 1

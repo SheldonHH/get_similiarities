@@ -1,0 +1,67 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/loop_iterations/src/unroll.c:3986:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // r12d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/loop_iterations/src/unroll.c:3989:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v5; // r12d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/loop_iterations/src/unroll.c:4000:1: error: use of undeclared identifier 'induction_1'
+induction_1 *v; // [rsp+48h] [rbp-C8h] 
+^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/loop_iterations/src/unroll.c:4000:14: error: use of undeclared identifier 'v'
+induction_1 *v; // [rsp+48h] [rbp-C8h] 
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/loop_iterations/src/unroll.c:4003:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code comparison_code; // [rsp+64h] [rbp-ACh] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/loop_iterations/src/unroll.c:4012:1: error: use of undeclared identifier 'induction_1'
+induction_1 *biv_inc; // [rsp+A0h] [rbp-70h] 
+^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/loop_iterations/src/unroll.c:4012:14: error: use of undeclared identifier 'biv_inc'
+induction_1 *biv_inc; // [rsp+A0h] [rbp-70h] 
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/loop_iterations/src/unroll.c:4028:19: error: expected identifier or '('
+ struct loop_info = (  struct loop_info *)loop->aux; 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/loop_iterations/src/unroll.c:4040:24: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+last_loop_insn = ( rtx)loop->end[1]; 
+                       ^~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/loop_iterations/src/unroll.c:4055:14: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+temp = ( rtx)last_loop_insn[1]; 
+             ^~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/loop_iterations/src/unroll.c:4083:14: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+temp = ( rtx)temp[1]; 
+             ^~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/loop_iterations/src/unroll.c:4103:40: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+comparison_value = (  struct rtx_def *)comparison[1]; 
+                                       ^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/loop_iterations/src/unroll.c:4124:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[*( ( unsigned __int8 *)iteration_var + 2)] != MODE_INT ) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/loop_iterations/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/loop_iterations/src/unroll.c:4157:1: error: use of undeclared identifier 'v'
+v = ivs->regs[iteration_var->fld[0].rtuint].iv.info; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/loop_iterations/src/unroll.c:4158:6: error: use of undeclared identifier 'v'
+if ( v->src_reg->fld[0].rtint >= loop_info->ivs.n_regs ) 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/loop_iterations/src/unroll.c:4160:21: error: use of undeclared identifier 'v'
+if ( ( *( ( _BYTE *)v + 100) & 0x10) == 0 || ( *( ( _BYTE *)v + 100) & 0x20) != 0 ) 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/loop_iterations/src/unroll.c:4160:61: error: use of undeclared identifier 'v'
+if ( ( *( ( _BYTE *)v + 100) & 0x10) == 0 || ( *( ( _BYTE *)v + 100) & 0x20) != 0 ) 
+                                                            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/loop_iterations/src/unroll.c:4170:18: error: use of undeclared identifier 'v'
+bl_0 = ivs->regs[v->src_reg->fld[0].rtuint].iv.class; 
+                 ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/loop_iterations/src/unroll.c:4174:8: error: use of undeclared identifier 'v'
+mode = v->mode; 
+       ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/loop_iterations/src/obj/unroll.o] Error 1

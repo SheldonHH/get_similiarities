@@ -1,0 +1,12 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/set_decl_origin_self/src/integrate.c:3370:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *initial; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/set_decl_origin_self/src/integrate.c:3383:30: error: expected expression
+if ( initial != ( tree_node *)global_trees ) 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/set_decl_origin_self/src/integrate.c:3383:19: error: use of undeclared identifier 'tree_node'
+if ( initial != ( tree_node *)global_trees ) 
+                  ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/set_decl_origin_self/src/obj/integrate.o] Error 1

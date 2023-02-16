@@ -1,0 +1,32 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_free_reg/src/local-alloc.c:2648:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class a1, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_free_reg/src/local-alloc.c:2649:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_free_reg/src/local-alloc.c:2679:61: error: use of undeclared identifier 'qty_0'
+if ( ( *( ( _BYTE *)cfun + 425) & 1) == 0 || ( result = -1, qty_0[qtyno].n_calls_crossed <= 0) ) 
+                                                            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_free_reg/src/local-alloc.c:2689:7: error: use of undeclared identifier 'qty_0'
+if ( !qty_0[qtyno].n_calls_crossed ) 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_free_reg/src/local-alloc.c:2713:15: error: use of undeclared identifier 'aGlobalC'
+v13 |= 1LL << aGlobalC[v14]; 
+              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_free_reg/src/local-alloc.c:2738:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v22 = ( ( unsigned int)( mode_class_0[mode] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_free_reg/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_free_reg/src/local-alloc.c:2796:19: error: use of undeclared identifier 'qty_0'
+n_calls_crossed = qty_0[qtyno].n_calls_crossed; 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_free_reg/src/local-alloc.c:2799:28: error: use of undeclared identifier 'qty_0'
+if ( 4 * n_calls_crossed < qty_0[qtyno].n_refs ) 
+                           ^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_free_reg/src/obj/local-alloc.o] Error 1

@@ -1,0 +1,72 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_mult_add/src/expmed.c:4638:61: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  expand_mult_add( rtx x, rtx target, rtx mult, rtx add, machine_mode mode, int unsignedp) 
+                                                            ^
+                                                            enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_mult_add/src/expmed.c:4640:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v10; // rbx 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_mult_add/src/expmed.c:4642:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v12; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_mult_add/src/expmed.c:4644:5: error: expected ';' after expression
+tree v14; // r12 
+    ^
+    ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_mult_add/src/expmed.c:4644:6: error: use of undeclared identifier 'v14'
+tree v14; // r12 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_mult_add/src/expmed.c:4645:5: error: expected ';' after expression
+tree v15; // rax 
+    ^
+    ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_mult_add/src/expmed.c:4645:6: error: use of undeclared identifier 'v15'
+tree v15; // rax 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_mult_add/src/expmed.c:4646:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v16; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_mult_add/src/expmed.c:4647:5: error: expected ';' after expression
+tree v17; // rax 
+    ^
+    ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_mult_add/src/expmed.c:4647:6: error: use of undeclared identifier 'v17'
+tree v17; // rax 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_mult_add/src/expmed.c:4648:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v18; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_mult_add/src/expmed.c:4649:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v19; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_mult_add/src/expmed.c:4655:24: error: use of undeclared identifier 'machine_mode'
+v12 = type_for_mode( ( machine_mode)v11, unsignedp); 
+                       ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_mult_add/src/expmed.c:4657:1: error: use of undeclared identifier 'v14'
+v14 = make_tree( v10, mult); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_mult_add/src/expmed.c:4658:1: error: use of undeclared identifier 'v15'
+v15 = make_tree( v10, x); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_mult_add/src/expmed.c:4659:30: error: use of undeclared identifier 'v15'; did you mean 'v19'?
+v16 = build( MULT_EXPR, v10, v15, v14); 
+                             ^~~
+                             v19
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_mult_add/src/expmed.c:4649:12: note: 'v19' declared here
+tree_node *v19; // rax 
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_mult_add/src/expmed.c:4659:35: error: use of undeclared identifier 'v14'
+v16 = build( MULT_EXPR, v10, v15, v14); 
+                                  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_mult_add/src/expmed.c:4660:1: error: use of undeclared identifier 'v17'
+v17 = fold( v16); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_mult_add/src/expmed.c:4661:30: error: use of undeclared identifier 'v17'
+v18 = build( PLUS_EXPR, v10, v17, tree); 
+                             ^
+19 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_mult_add/src/obj/expmed.o] Error 1

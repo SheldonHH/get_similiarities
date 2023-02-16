@@ -1,0 +1,36 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/undo_commit/src/combine.c:3350:20: error: expected identifier or '('
+for (  struct undo = undobuf_0.undos; undo;  struct undo = next ) 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/undo_commit/src/combine.c:3350:39: error: expected ';' in 'for' statement specifier
+for (  struct undo = undobuf_0.undos; undo;  struct undo = next ) 
+                                      ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/undo_commit/src/combine.c:3350:46: error: expected expression
+for (  struct undo = undobuf_0.undos; undo;  struct undo = next ) 
+                                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/undo_commit/src/combine.c:3350:46: error: expected ')'
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/undo_commit/src/combine.c:3350:5: note: to match this '('
+for (  struct undo = undobuf_0.undos; undo;  struct undo = next ) 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/undo_commit/src/combine.c:3353:14: error: use of undeclared identifier 'undobuf_0'; did you mean 'undobuf'?
+undo->next = undobuf_0.frees; 
+             ^~~~~~~~~
+             undobuf
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/undo_commit/src/combine.c:334:23: note: 'undobuf' declared here
+static struct undobuf undobuf;
+                      ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/undo_commit/src/combine.c:3354:1: error: use of undeclared identifier 'undobuf_0'; did you mean 'undobuf'?
+undobuf_0.frees = undo; 
+^~~~~~~~~
+undobuf
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/undo_commit/src/combine.c:334:23: note: 'undobuf' declared here
+static struct undobuf undobuf;
+                      ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/undo_commit/src/combine.c:3356:1: error: use of undeclared identifier 'undobuf_0'; did you mean 'undobuf'?
+undobuf_0.undos = 0LL; 
+^~~~~~~~~
+undobuf
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/undo_commit/src/combine.c:334:23: note: 'undobuf' declared here
+static struct undobuf undobuf;
+                      ^
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/undo_commit/src/obj/combine.o] Error 1

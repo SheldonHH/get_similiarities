@@ -1,0 +1,67 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/setup_save_areas/src/caller-save.c:796:44: error: use of undeclared identifier 'xmm'
+si128 = _mm_load_si128( ( const __m128i *)&xmm*(short *)0x641400); 
+                                           ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/setup_save_areas/src/caller-save.c:797:41: error: use of undeclared identifier 'xmm'
+v5 = _mm_load_si128( ( const __m128i *)&xmm*(short *)0x641410); 
+                                        ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/setup_save_areas/src/caller-save.c:798:41: error: use of undeclared identifier 'xmm'
+v6 = _mm_load_si128( ( const __m128i *)&xmm*(short *)0x641420); 
+                                        ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/setup_save_areas/src/caller-save.c:799:41: error: use of undeclared identifier 'xmm'
+v7 = _mm_load_si128( ( const __m128i *)&xmm*(short *)0x641430); 
+                                        ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/setup_save_areas/src/caller-save.c:809:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v11 = ( ( unsigned int)( mode_class_0[v10] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/setup_save_areas/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/setup_save_areas/src/caller-save.c:831:41: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'unsigned long long' of different size
+v16 = _mm_add_epi64( _mm_shuffle_epi32( ( __m128i)v13, 68), si128); 
+                                        ^~~~~~~~~~~~~
+/usr/lib/llvm-7/lib/clang/7.0.0/include/emmintrin.h:4347:52: note: expanded from macro '_mm_shuffle_epi32'
+  (__m128i)__builtin_ia32_pshufd((__v4si)(__m128i)(a), (int)(imm))
+                                                   ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/setup_save_areas/src/caller-save.c:832:7: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'unsigned long long' of different size
+v17 = ( __m128i)v3; 
+      ^~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/setup_save_areas/src/caller-save.c:833:5: error: assigning to '__m128i' (vector of 2 'long long' values) from incompatible type 'long long'
+v18 = 0LL; 
+    ^ ~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/setup_save_areas/src/caller-save.c:838:93: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'long long' of different size
+v21 = _mm_cmpeq_epi8( _mm_cvtsi32_si128( *( unsigned __int16 *)&call_used_regs[v13 + v19]), ( __m128i)0LL); 
+                                                                                            ^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/setup_save_areas/src/caller-save.c:841:24: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'long long' of different size
+v24 = _mm_cmpgt_epi32( ( __m128i)0LL, v23); 
+                       ^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/setup_save_areas/src/caller-save.c:845:84: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'long long' of different size
+_mm_cmpeq_epi8( _mm_cvtsi32_si128( *( unsigned __int16 *)( v13 + v19 + 10017138)), ( __m128i)0LL)); 
+                                                                                   ^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/setup_save_areas/src/caller-save.c:848:4: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+v28.m128i_i64[0] = v6.m128i_i64[0] << v16.m128i_i8[0]; 
+~~~^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/setup_save_areas/src/caller-save.c:848:22: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+v28.m128i_i64[0] = v6.m128i_i64[0] << v16.m128i_i8[0]; 
+                   ~~^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/setup_save_areas/src/caller-save.c:848:42: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+v28.m128i_i64[0] = v6.m128i_i64[0] << v16.m128i_i8[0]; 
+                                      ~~~^~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/setup_save_areas/src/caller-save.c:851:4: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+v29.m128i_i64[0] = v6.m128i_i64[0] << v20.m128i_i8[0]; 
+~~~^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/setup_save_areas/src/caller-save.c:851:22: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+v29.m128i_i64[0] = v6.m128i_i64[0] << v20.m128i_i8[0]; 
+                   ~~^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/setup_save_areas/src/caller-save.c:851:42: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+v29.m128i_i64[0] = v6.m128i_i64[0] << v20.m128i_i8[0]; 
+                                      ~~~^~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/setup_save_areas/src/caller-save.c:855:67: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'long long' of different size
+_mm_unpacklo_epi32( _mm_srai_epi32( v27, 0x18u), _mm_cmpgt_epi32( ( __m128i)0LL, v27)), 
+                                                                  ^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/setup_save_areas/src/caller-save.c:862:53: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+v3 = _mm_or_si128( _mm_shuffle_epi32( v30, 78), v30).m128i_u64[0]; 
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/setup_save_areas/src/obj/caller-save.o] Error 1

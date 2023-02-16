@@ -1,0 +1,39 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/store_field/src/expr.c:5497:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/store_field/src/expr.c:5499:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode value_mode, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/store_field/src/expr.c:5505:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v11; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/store_field/src/expr.c:5514:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *count; // [rsp+30h] [rbp-40h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/store_field/src/expr.c:5519:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode tmode; // [rsp+5Ch] [rbp-14h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/store_field/src/expr.c:5555:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| mode_class_0[mode] == MODE_COMPLEX_INT 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/store_field/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/store_field/src/expr.c:5556:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| mode_class_0[mode] == MODE_COMPLEX_FLOAT) 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/store_field/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/store_field/src/expr.c:5591:31: error: use of undeclared identifier 'machine_mode'
+temp = convert_modes( mode, ( machine_mode)( BYTE5( exp->common.type->block.abstract_origin) >> 1), temp, 1); 
+                              ^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/store_field/src/obj/expr.o] Error 1

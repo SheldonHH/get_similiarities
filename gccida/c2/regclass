@@ -1,0 +1,105 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/regclass/src/regclass.c:1668:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class v26; // r15d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/regclass/src/regclass.c:1684:1: error: use of undeclared identifier 'costs_0'; did you mean 'costs'?
+costs_0 = v4; 
+^~~~~~~
+costs
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/regclass/src/regclass.c:861:22: note: 'costs' declared here
+static struct costs *costs;
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/regclass/src/regclass.c:1693:9: error: use of undeclared identifier 'costs_0'; did you mean 'costs'?
+memset( costs_0, 0, n); 
+        ^~~~~~~
+        costs
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/regclass/src/regclass.c:861:22: note: 'costs' declared here
+static struct costs *costs;
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/regclass/src/regclass.c:1714:21: error: expected expression
+if ( v13 == *( rtx *)( v9 + 8) ) 
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/regclass/src/regclass.c:1734:1: error: use of undeclared identifier 'reg_pref_0'; did you mean 'reg_pref'?
+reg_pref_0 = reg_pref_buffer; 
+^~~~~~~~~~
+reg_pref
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/regclass/src/regclass.c:870:25: note: 'reg_pref' declared here
+static struct reg_pref *reg_pref;
+                        ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/regclass/src/regclass.c:1752:75: error: use of undeclared identifier 'costs_0'
+fprintf( dump, " %s:%i", dump_regclass_reg_class_names[j], ( unsigned int)costs_0[v18].cost[j]); 
+                                                                          ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/regclass/src/regclass.c:1752:26: error: use of undeclared identifier 'dump_regclass_reg_class_names'
+fprintf( dump, " %s:%i", dump_regclass_reg_class_names[j], ( unsigned int)costs_0[v18].cost[j]); 
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/regclass/src/regclass.c:1755:44: error: use of undeclared identifier 'costs_0'
+fprintf( dump, " MEM:%i\n", ( unsigned int)costs_0[v17].mem_cost); 
+                                           ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/regclass/src/regclass.c:1783:7: error: use of undeclared identifier 'costs_0'; did you mean 'costs'?
+v28 = costs_0[v21].cost[v27 + 23]; 
+      ^~~~~~~
+      costs
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/regclass/src/regclass.c:861:22: note: 'costs' declared here
+static struct costs *costs;
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/regclass/src/regclass.c:1803:12: error: use of undeclared identifier 'costs_0'; did you mean 'costs'?
+mem_cost = costs_0[v23].mem_cost; 
+           ^~~~~~~
+           costs
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/regclass/src/regclass.c:861:22: note: 'costs' declared here
+static struct costs *costs;
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/regclass/src/regclass.c:1808:6: error: use of undeclared identifier 'costs_0'; did you mean 'costs'?
+if ( costs_0[v23].cost[v33] < mem_cost ) 
+     ^~~~~~~
+     costs
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/regclass/src/regclass.c:861:22: note: 'costs' declared here
+static struct costs *costs;
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/regclass/src/regclass.c:1817:6: error: use of undeclared identifier 'costs_0'; did you mean 'costs'?
+if ( costs_0[v23].cost[v33 + 1] < mem_cost ) 
+     ^~~~~~~
+     costs
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/regclass/src/regclass.c:861:22: note: 'costs' declared here
+static struct costs *costs;
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/regclass/src/regclass.c:1829:23: error: use of undeclared identifier 'reg_pref_0'; did you mean 'reg_pref'?
+if ( dump && ( v26 != reg_pref_0[v21].prefclass || v29 != reg_pref_0[v21].altclass) ) 
+                      ^~~~~~~~~~
+                      reg_pref
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/regclass/src/regclass.c:870:25: note: 'reg_pref' declared here
+static struct reg_pref *reg_pref;
+                        ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/regclass/src/regclass.c:1829:59: error: use of undeclared identifier 'reg_pref_0'; did you mean 'reg_pref'?
+if ( dump && ( v26 != reg_pref_0[v21].prefclass || v29 != reg_pref_0[v21].altclass) ) 
+                                                          ^~~~~~~~~~
+                                                          reg_pref
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/regclass/src/regclass.c:870:25: note: 'reg_pref' declared here
+static struct reg_pref *reg_pref;
+                        ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/regclass/src/regclass.c:1835:30: error: use of undeclared identifier 'dump_regclass_reg_class_names'
+fprintf( dump, " pref %s\n", dump_regclass_reg_class_names[v26]); 
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/regclass/src/regclass.c:1839:7: error: use of undeclared identifier 'dump_regclass_reg_class_names'
+v31 = dump_regclass_reg_class_names[v26]; 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/regclass/src/regclass.c:1841:44: error: use of undeclared identifier 'dump_regclass_reg_class_names'
+fprintf( dump, " pref %s, else %s\n", v31, dump_regclass_reg_class_names[v29]); 
+                                           ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/regclass/src/regclass.c:1848:7: error: use of undeclared identifier 'reg_pref_0'; did you mean 'reg_pref'?
+v22 = reg_pref_0; 
+      ^~~~~~~~~~
+      reg_pref
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/regclass/src/regclass.c:870:25: note: 'reg_pref' declared here
+static struct reg_pref *reg_pref;
+                        ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/regclass/src/regclass.c:1849:1: error: use of undeclared identifier 'reg_pref_0'; did you mean 'reg_pref'?
+reg_pref_0[v21].prefclass = v26; 
+^~~~~~~~~~
+reg_pref
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/regclass/src/regclass.c:870:25: note: 'reg_pref' declared here
+static struct reg_pref *reg_pref;
+                        ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/regclass/src/obj/regclass.o] Error 1

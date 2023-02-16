@@ -1,0 +1,83 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/convert_to_integer/src/convert.c:584:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v5; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/convert_to_integer/src/convert.c:588:1: error: must use 'enum' tag to refer to type 'tree_code'
+tree_code v10; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/convert_to_integer/src/convert.c:589:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v11; // rsi 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/convert_to_integer/src/convert.c:590:1: error: must use 'enum' tag to refer to type 'tree_code'
+tree_code v12; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/convert_to_integer/src/convert.c:591:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v13; // rdx 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/convert_to_integer/src/convert.c:592:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v14; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/convert_to_integer/src/convert.c:593:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v15; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/convert_to_integer/src/convert.c:601:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v23; // r13 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/convert_to_integer/src/convert.c:602:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v24; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/convert_to_integer/src/convert.c:603:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v25; // rdx 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/convert_to_integer/src/convert.c:610:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v32; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/convert_to_integer/src/convert.c:613:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v35; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/convert_to_integer/src/convert.c:615:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v37; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/convert_to_integer/src/convert.c:616:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v38; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/convert_to_integer/src/convert.c:617:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v39; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/convert_to_integer/src/convert.c:618:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v40; // rbx 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/convert_to_integer/src/convert.c:666:24: error: use of undeclared identifier 'machine_mode'
+v24 = type_for_mode( ( machine_mode)v19, ( v18 >> 13) & 1); 
+                       ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/convert_to_integer/src/convert.c:761:16: error: use of undeclared identifier 'tree_code'; did you mean 'tree_cons'?
+v14 = build( ( tree_code)v9, v40, v41, v42, 0LL); 
+               ^~~~~~~~~
+               tree_cons
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/convert_to_integer/src/tree.h:2477:13: note: 'tree_cons' declared here
+extern tree tree_cons                   PARAMS ((tree, tree, tree));
+            ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/convert_to_integer/src/convert.c:761:26: error: expected ')'
+v14 = build( ( tree_code)v9, v40, v41, v42, 0LL); 
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/convert_to_integer/src/convert.c:761:12: note: to match this '('
+v14 = build( ( tree_code)v9, v40, v41, v42, 0LL); 
+           ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/convert_to_integer/src/obj/convert.o] Error 1

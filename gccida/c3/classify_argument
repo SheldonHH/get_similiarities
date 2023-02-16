@@ -1,0 +1,70 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/classify_argument/src/i386.c:2106:25: error: must use 'enum' tag to refer to type 'machine_mode'
+int  classify_argument( machine_mode mode, tree type, x86_64_reg_class *classes, int bit_offset) 
+                        ^
+                        enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/classify_argument/src/i386.c:2106:55: error: must use 'enum' tag to refer to type 'x86_64_reg_class'
+int  classify_argument( machine_mode mode, tree type, x86_64_reg_class *classes, int bit_offset) 
+                                                      ^
+                                                      enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/classify_argument/src/i386.c:2125:1: error: must use 'enum' tag to refer to type 'x86_64_reg_class'
+x86_64_reg_class *v24; // rdx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/classify_argument/src/i386.c:2129:1: error: must use 'enum' tag to refer to type 'x86_64_reg_class'
+x86_64_reg_class v28; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/classify_argument/src/i386.c:2137:1: error: must use 'enum' tag to refer to type 'x86_64_reg_class'
+x86_64_reg_class v36; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/classify_argument/src/i386.c:2145:1: error: must use 'enum' tag to refer to type 'x86_64_reg_class'
+x86_64_reg_class *v44; // rdx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/classify_argument/src/i386.c:2149:1: error: must use 'enum' tag to refer to type 'x86_64_reg_class'
+x86_64_reg_class v48; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/classify_argument/src/i386.c:2167:1: error: must use 'enum' tag to refer to type 'x86_64_reg_class'
+x86_64_reg_class v66; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/classify_argument/src/i386.c:2187:1: error: must use 'enum' tag to refer to type 'x86_64_reg_class'
+x86_64_reg_class v86; // edx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/classify_argument/src/i386.c:2194:1: error: must use 'enum' tag to refer to type 'x86_64_reg_class'
+x86_64_reg_class s[18]; // [rsp+10h] [rbp-48h] BYREF 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/classify_argument/src/i386.c:2228:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( ( unsigned __int8)HIBYTE( WORD2( type->common.type->block.abstract_origin)) >> 1), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/classify_argument/src/i386.c:2300:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( ( unsigned __int8)HIBYTE( *( _WORD *)( v41 + 60)) >> 1), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/classify_argument/src/i386.c:2365:13: error: invalid operands to binary expression ('struct rtx_def' and 'int')
+if ( rtl[1] == 37 ) 
+     ~~~~~~ ^  ~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/classify_argument/src/i386.c:2395:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v53.rtwint = ( __int64)rtl->fld[0]; 
+                       ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/classify_argument/src/i386.c:2401:28: error: use of undeclared identifier 'machine_mode'
+v57 = classify_argument( ( machine_mode)v54, v53.rttree, s, v55 - ( v56 & 0xFFFFFF00)); 
+                           ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/classify_argument/src/i386.c:2483:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( ( unsigned __int8)HIBYTE( *( _WORD *)( v21 + 60)) >> 1), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/classify_argument/src/i386.c:2578:13: error: invalid operands to binary expression ('struct rtx_def' and 'int')
+if ( v30[1] == 37 ) 
+     ~~~~~~ ^  ~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/classify_argument/src/i386.c:2581:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( ( unsigned __int8)HIBYTE( *( _WORD *)( v30->fld[0].rtwint + 60)) >> 1), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/classify_argument/src/i386.c:2698:7: error: use of undeclared identifier 'xmm'
+v87 = xmm*(short *)0x694440; 
+      ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/classify_argument/src/obj/i386.o] Error 1

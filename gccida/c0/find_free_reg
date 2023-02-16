@@ -1,0 +1,42 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_free_reg/src/local-alloc.c:2648:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class a1, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_free_reg/src/local-alloc.c:2649:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_free_reg/src/local-alloc.c:2679:55: error: use of undeclared identifier 'qty_0'
+if ( ( ( *( ( _DWORD *)cfun + 106) >> 8) & 1) != 0 && qty_0[qtyno].n_calls_crossed > 0 ) 
+                                                      ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_free_reg/src/local-alloc.c:2685:11: error: use of undeclared identifier 'qty_0'
+else if ( qty_0[qtyno].n_calls_crossed ) 
+          ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_free_reg/src/local-alloc.c:2699:17: error: use of undeclared identifier 'find_free_reg_eliminables'
+useda |= 1LL << find_free_reg_eliminables[i].from; 
+                ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_free_reg/src/local-alloc.c:2754:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[mode] != MODE_COMPLEX_INT ) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_free_reg/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_free_reg/src/local-alloc.c:2755:7: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v17 = mode_class_0[mode] == MODE_COMPLEX_FLOAT; 
+      ^~~~~~~~~~~~
+      mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_free_reg/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_free_reg/src/local-alloc.c:2785:5: error: use of undeclared identifier 'qty_0'
+|| !qty_0[qtyno].n_calls_crossed 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_free_reg/src/local-alloc.c:2786:8: error: use of undeclared identifier 'qty_0'
+|| 4 * qty_0[qtyno].n_calls_crossed >= qty_0[qtyno].n_refs ) 
+       ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_free_reg/src/local-alloc.c:2786:40: error: use of undeclared identifier 'qty_0'
+|| 4 * qty_0[qtyno].n_calls_crossed >= qty_0[qtyno].n_refs ) 
+                                       ^
+10 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_free_reg/src/obj/local-alloc.o] Error 1

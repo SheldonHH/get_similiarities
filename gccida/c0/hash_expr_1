@@ -1,0 +1,25 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/hash_expr_1/src/gcse.c:2063:35: error: must use 'enum' tag to refer to type 'machine_mode'
+unsigned int  hash_expr_1( rtx x, machine_mode mode, int *do_not_record_p) 
+                                  ^
+                                  enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/hash_expr_1/src/gcse.c:2075:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code; // [rsp+50h] [rbp-30h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/hash_expr_1/src/gcse.c:2115:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( unsigned __int8)BYTE2( **( _DWORD **)( *( _QWORD *)&xa[2] + 8LL * ib + 8)), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/hash_expr_1/src/gcse.c:2115:18: error: expected expression
+( machine_mode)( unsigned __int8)BYTE2( **( _DWORD **)( *( _QWORD *)&xa[2] + 8LL * ib + 8)), 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/hash_expr_1/src/gcse.c:2159:29: error: use of undeclared identifier 'machine_mode'
+hash += hash_expr_1( elt, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)elt), do_not_record_p); 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/hash_expr_1/src/gcse.c:2159:44: error: expected expression
+hash += hash_expr_1( elt, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)elt), do_not_record_p); 
+                                           ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/hash_expr_1/src/gcse.c:2170:1: error: statement requires expression of scalar type ('struct rtx_def' invalid)
+if ( xa[1] ) 
+^    ~~~~~
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/hash_expr_1/src/obj/gcse.o] Error 1

@@ -1,0 +1,37 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/finish_struct/src/c-decl.c:6107:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v20; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/finish_struct/src/c-decl.c:6114:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *section_name; // rcx 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/finish_struct/src/c-decl.c:6131:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v44; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/finish_struct/src/c-decl.c:6138:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v51; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/finish_struct/src/c-decl.c:6139:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v52; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/finish_struct/src/c-decl.c:6397:20: error: expected expression
+v44 = ( tree_node *)*j; 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/finish_struct/src/c-decl.c:6397:9: error: use of undeclared identifier 'tree_node'
+v44 = ( tree_node *)*j; 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/finish_struct/src/c-decl.c:6418:20: error: expected expression
+v44 = ( tree_node *)j; 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/finish_struct/src/c-decl.c:6418:9: error: use of undeclared identifier 'tree_node'
+v44 = ( tree_node *)j; 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/finish_struct/src/c-decl.c:6447:44: error: invalid operands to binary expression ('int' and 'struct rtx_def')
+&& BYTE5( v53->block.abstract_origin) >> 1 != v53->int_cst.rtl[3] ) 
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^  ~~~~~~~~~~~~~~~~~~~
+10 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/finish_struct/src/obj/c-decl.o] Error 1

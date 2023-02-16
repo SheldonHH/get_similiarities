@@ -1,0 +1,27 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/fix_lexical_addr/src/function.c:6085:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v3; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/fix_lexical_addr/src/function.c:6093:5: error: called object type 'rtx' (aka 'struct rtx_def *') is not a function or function pointer
+rtx arg_pointer_save_area; // rax 
+~~~ ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/fix_lexical_addr/src/function.h:533:31: note: expanded from macro 'arg_pointer_save_area'
+#define arg_pointer_save_area (cfun->x_arg_pointer_save_area)
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/fix_lexical_addr/src/function.c:6116:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v7.rtwint = ( __int64)rtx->fld[0]; 
+                      ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/fix_lexical_addr/src/function.c:6119:15: error: expected expression
+rtx = *( rtx *)( v7.rtwint + 8); 
+              ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/fix_lexical_addr/src/function.c:6149:43: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+if ( ( _WORD)v6 != 75 || ( v8 = ( __int64)rtx[1], *( _WORD *)v8 != 54) ) 
+                                          ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/fix_lexical_addr/src/function.c:6158:25: error: use of undeclared identifier 'machine_mode'
+v14 = memory_address( ( machine_mode)( ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32), fixed); 
+                        ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/fix_lexical_addr/src/function.c:6159:22: error: use of undeclared identifier 'machine_mode'
+v15 = gen_rtx_MEM( ( machine_mode)( ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32), v14); 
+                     ^
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/fix_lexical_addr/src/obj/function.o] Error 1

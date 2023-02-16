@@ -1,0 +1,61 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/noce_try_cmove_arith/src/ifcvt.c:1453:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v8; // r15d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/noce_try_cmove_arith/src/ifcvt.c:1458:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v13; // r13d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/noce_try_cmove_arith/src/ifcvt.c:1501:20: error: use of undeclared identifier 'machine_mode'
+x = gen_reg_rtx( ( machine_mode)( ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32)); 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/noce_try_cmove_arith/src/ifcvt.c:1512:68: error: use of undeclared identifier 'machine_mode'
+&& ( ( orig = insn_a, rtx_equal_p( b, x)) || general_operand( b, ( machine_mode)*( ( unsigned __int8 *)b + 2))) ) 
+                                                                   ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/noce_try_cmove_arith/src/ifcvt.c:1526:28: error: use of undeclared identifier 'machine_mode'
+if ( general_operand( b, ( machine_mode)*( ( unsigned __int8 *)b + 2)) ) 
+                           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/noce_try_cmove_arith/src/ifcvt.c:1540:22: error: use of undeclared identifier 'machine_mode'
+v12 = gen_reg_rtx( ( machine_mode)*( ( unsigned __int8 *)b + 2)); 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/noce_try_cmove_arith/src/ifcvt.c:1542:13: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v27 = ( rtx)v26[2]; 
+            ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/noce_try_cmove_arith/src/ifcvt.c:1546:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v28 = (  struct rtx_def *)v26[2]; 
+                          ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/noce_try_cmove_arith/src/ifcvt.c:1550:22: error: use of undeclared identifier 'machine_mode'
+v29 = gen_reg_rtx( ( machine_mode)*( ( unsigned __int8 *)b + 2)); 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/noce_try_cmove_arith/src/ifcvt.c:1563:32: error: use of undeclared identifier 'machine_mode'
+if ( general_operand( vtrue, ( machine_mode)*( ( unsigned __int8 *)vtrue + 2)) ) 
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/noce_try_cmove_arith/src/ifcvt.c:1572:24: error: use of undeclared identifier 'machine_mode'
+vtrue = gen_reg_rtx( ( machine_mode)*( ( unsigned __int8 *)vtrue + 2)); 
+                       ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/noce_try_cmove_arith/src/ifcvt.c:1574:13: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v21 = ( rtx)v20[2]; 
+            ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/noce_try_cmove_arith/src/ifcvt.c:1578:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v22 = (  struct rtx_def *)v20[2]; 
+                          ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/noce_try_cmove_arith/src/ifcvt.c:1583:22: error: use of undeclared identifier 'machine_mode'
+v35 = gen_reg_rtx( ( machine_mode)*( ( unsigned __int8 *)vtrue + 2)); 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/noce_try_cmove_arith/src/ifcvt.c:1614:22: error: use of undeclared identifier 'machine_mode'
+v23 = gen_rtx_MEM( ( machine_mode)*( ( unsigned __int8 *)v15->x + 2), v16); 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/noce_try_cmove_arith/src/ifcvt.c:1621:19: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v24 = ( __int64 *)v15->a[1]; 
+                  ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/noce_try_cmove_arith/src/ifcvt.c:1626:19: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v32 = ( __int64 *)v15->b[1]; 
+                  ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/noce_try_cmove_arith/src/ifcvt.c:1639:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v38 = ( __int64)v15->a[1]; 
+                ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/noce_try_cmove_arith/src/ifcvt.c:1644:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v41 = ( __int64)v15->b[1]; 
+                ^~~~~~~~~
+19 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/noce_try_cmove_arith/src/obj/ifcvt.o] Error 1

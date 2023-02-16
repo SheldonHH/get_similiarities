@@ -1,0 +1,49 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/can_throw_external/src/except.c:3600:4: error: expected ';' after expression
+rtx reg_note; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/can_throw_external/src/except.c:3600:5: error: must use 'enum' tag to refer to type 'reg_note'
+rtx reg_note; // rax 
+    ^
+    enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/can_throw_external/src/except.c:3603:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *type_list; // r14 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/can_throw_external/src/except.c:3611:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v3 = ( __int64)insn[2]; 
+               ^~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/can_throw_external/src/except.c:3614:14: error: expected expression
+v2 = *( rtx *)( *( _QWORD *)( v3 + 8) + 8LL); 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/can_throw_external/src/except.c:3618:43: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+if ( ( _WORD)v1 != 34 || ( v4 = ( __int64)v2[2], *( _WORD *)v4 != 141) ) 
+                                          ^~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/can_throw_external/src/except.c:3620:1: error: must use 'enum' tag to refer to type 'reg_note'
+reg_note = find_reg_note( v2, REG_EH_REGION, 0LL); 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/can_throw_external/src/except.c:3620:10: error: expected identifier or '('
+reg_note = find_reg_note( v2, REG_EH_REGION, 0LL); 
+         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/can_throw_external/src/except.c:3621:6: error: use of undeclared identifier 'reg_note'; did you mean 'reg_names'?
+if ( reg_note ) 
+     ^~~~~~~~
+     reg_names
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/can_throw_external/src/hard-reg-set.h:485:21: note: 'reg_names' declared here
+extern const char * reg_names[FIRST_PSEUDO_REGISTER];
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/can_throw_external/src/except.c:3623:21: error: use of undeclared identifier 'reg_note'
+v10 = *( _QWORD *)( reg_note->fld[0].rtwint + 8); 
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/can_throw_external/src/except.c:3655:28: error: expected expression
+return may_trap_p( *( rtx *)&v2[2]) != 0; 
+                           ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/can_throw_external/src/except.c:3667:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v4 = ( __int64)v2[2]; 
+               ^~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/can_throw_external/src/except.c:3682:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v4 = ( __int64)v2[2]; 
+               ^~~~~
+13 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/can_throw_external/src/obj/except.o] Error 1

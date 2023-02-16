@@ -1,0 +1,36 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/convert_to_real/src/convert.c:544:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v6; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/convert_to_real/src/convert.c:545:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v7; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/convert_to_real/src/convert.c:555:18: error: use of undeclared identifier 'tree_code'; did you mean 'tree_cons'?
+return build1( ( tree_code)v4, type, expr); 
+                 ^~~~~~~~~
+                 tree_cons
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/convert_to_real/src/tree.h:2477:13: note: 'tree_cons' declared here
+extern tree tree_cons                   PARAMS ((tree, tree, tree));
+            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/convert_to_real/src/convert.c:555:28: error: expected ')'
+return build1( ( tree_code)v4, type, expr); 
+                           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/convert_to_real/src/convert.c:555:14: note: to match this '('
+return build1( ( tree_code)v4, type, expr); 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/convert_to_real/src/convert.c:558:18: error: use of undeclared identifier 'tree_code'; did you mean 'tree_cons'?
+return build1( ( tree_code)v4, type, expr); 
+                 ^~~~~~~~~
+                 tree_cons
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/convert_to_real/src/tree.h:2477:13: note: 'tree_cons' declared here
+extern tree tree_cons                   PARAMS ((tree, tree, tree));
+            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/convert_to_real/src/convert.c:558:28: error: expected ')'
+return build1( ( tree_code)v4, type, expr); 
+                           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/convert_to_real/src/convert.c:558:14: note: to match this '('
+return build1( ( tree_code)v4, type, expr); 
+             ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/convert_to_real/src/obj/convert.o] Error 1

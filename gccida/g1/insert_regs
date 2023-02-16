@@ -1,0 +1,30 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/insert_regs/src/cse.c:1773:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v34; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/insert_regs/src/cse.c:1786:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v4.rtwint = ( __int64)x->fld[0]; 
+                      ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/insert_regs/src/cse.c:1790:51: error: expected ')'
+if ( v5 != cached_regno || (  struct cse_reg_info = cached_cse_reg_info) == 0LL ) 
+                                                  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/insert_regs/src/cse.c:1790:28: note: to match this '('
+if ( v5 != cached_regno || (  struct cse_reg_info = cached_cse_reg_info) == 0LL ) 
+                           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/insert_regs/src/cse.c:1790:74: error: expected expression
+if ( v5 != cached_regno || (  struct cse_reg_info = cached_cse_reg_info) == 0LL ) 
+                                                                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/insert_regs/src/cse.c:1791:2: error: expected expression
+ struct cse_reg_info = get_cse_reg_info( v5); 
+ ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/insert_regs/src/cse.c:1922:21: error: use of undeclared identifier 'uid_cuid_0'
+v27 = *( ( _DWORD *)uid_cuid_0 + v26[1]); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/insert_regs/src/cse.c:1923:50: error: use of undeclared identifier 'uid_cuid_0'
+if ( v27 <= cse_basic_block_end && *( ( _DWORD *)uid_cuid_0 + *v26) >= cse_basic_block_start 
+                                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/insert_regs/src/cse.c:1924:25: error: use of undeclared identifier 'uid_cuid_0'
+|| v27 <= *( ( _DWORD *)uid_cuid_0 + *( int *)( reg_n_info->data.l[first_reg] + 4)) ) 
+                        ^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/insert_regs/src/obj/cse.o] Error 1

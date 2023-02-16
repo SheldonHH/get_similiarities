@@ -1,0 +1,48 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/refers_to_regno_p/src/rtlanal.c:1754:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v16; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/refers_to_regno_p/src/rtlanal.c:1807:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v27 = ( ( unsigned int)( mode_class_0[v29] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/refers_to_regno_p/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/refers_to_regno_p/src/rtlanal.c:1838:20: error: expected expression
+if ( loc != ( rtx *)v5->fld ) 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/refers_to_regno_p/src/rtlanal.c:1843:20: error: expected expression
+if ( loc != ( rtx *)rtx->fld ) 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/refers_to_regno_p/src/rtlanal.c:1867:40: error: expected expression
+if ( ( _WORD)v7 != 49 && loc != ( rtx *)&v5[1] ) 
+                                       ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/refers_to_regno_p/src/rtlanal.c:1869:12: error: expected ';' after expression
+v5 = ( rtx)v5[1]; 
+           ^
+           ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/refers_to_regno_p/src/rtlanal.c:1878:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v14.rtwint = ( __int64)v5->fld[0]; 
+                       ^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/refers_to_regno_p/src/rtlanal.c:1887:35: error: use of undeclared identifier 'machine_mode'
+v18 = subreg_regno_offset( v15, ( machine_mode)*( unsigned __int8 *)( v14.rtwint + 2), *( _DWORD *)&v5[1], v16) + v15; 
+                                  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/refers_to_regno_p/src/rtlanal.c:1893:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v19 = ( ( unsigned int)( mode_class_0[v16] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/refers_to_regno_p/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/refers_to_regno_p/src/rtlanal.c:1924:18: error: expected expression
+for ( i = ( rtx *)v5 + v8; ; --i ) 
+                 ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/refers_to_regno_p/src/rtlanal.c:1953:14: error: expected expression
+v24 = ( rtx *)*i + v23; 
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/refers_to_regno_p/src/rtlanal.c:1967:13: error: expected expression
+if ( ( rtx *)v38 == --v24 ) 
+            ^
+12 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/refers_to_regno_p/src/obj/rtlanal.o] Error 1

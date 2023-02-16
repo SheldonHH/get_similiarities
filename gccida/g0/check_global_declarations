@@ -1,0 +1,16 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/check_global_declarations/src/toplev.c:2515:15: error: use of undeclared identifier 'TV_SYMOUT_0'; did you mean 'TV_SYMOUT'?
+timevar_push( TV_SYMOUT_0); 
+              ^~~~~~~~~~~
+              TV_SYMOUT
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/check_global_declarations/src/timevar.def:86:13: note: 'TV_SYMOUT' declared here
+DEFTIMEVAR (TV_SYMOUT                , "symout")
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/check_global_declarations/src/toplev.c:2517:14: error: use of undeclared identifier 'TV_SYMOUT_0'; did you mean 'TV_SYMOUT'?
+timevar_pop( TV_SYMOUT_0); 
+             ^~~~~~~~~~~
+             TV_SYMOUT
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/check_global_declarations/src/timevar.def:86:13: note: 'TV_SYMOUT' declared here
+DEFTIMEVAR (TV_SYMOUT                , "symout")
+            ^
+2 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/check_global_declarations/src/obj/toplev.o] Error 1

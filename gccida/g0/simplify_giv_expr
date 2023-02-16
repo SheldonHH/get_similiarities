@@ -1,0 +1,70 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_giv_expr/src/loop.c:6881:1: error: must use 'enum' tag to refer to type 'iv_mode'
+iv_mode type; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_giv_expr/src/loop.c:6887:1: error: use of undeclared identifier 'induction_1'
+induction_1 *v; // [rsp+38h] [rbp-58h] 
+^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_giv_expr/src/loop.c:6887:14: error: use of undeclared identifier 'v'
+induction_1 *v; // [rsp+38h] [rbp-58h] 
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_giv_expr/src/loop.c:6888:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // [rsp+44h] [rbp-4Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_giv_expr/src/loop.c:6913:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& ( mode_class_0[*( ( unsigned __int8 *)x + 2)] != MODE_INT || mode_bitsize[*( ( unsigned __int8 *)x + 2)] > 0x40u) ) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_giv_expr/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_giv_expr/src/loop.c:6934:1: error: use of undeclared identifier 'v'
+v = ivs->regs[x->fld[0].rtuint].iv.info; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_giv_expr/src/loop.c:6937:13: error: use of undeclared identifier 'v'
+*benefit += v->benefit; 
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_giv_expr/src/loop.c:6938:21: error: use of undeclared identifier 'v'
+if ( ( *( ( _BYTE *)v + 100) & 0x40) != 0 ) 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_giv_expr/src/loop.c:6944:11: error: use of undeclared identifier 'v'
+add_val = v->add_val; 
+          ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_giv_expr/src/loop.c:6945:35: error: use of undeclared identifier 'v'
+v28 = gen_rtx_fmt_ee( MULT, mode, v->src_reg, v->mult_val); 
+                                  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_giv_expr/src/loop.c:6945:47: error: use of undeclared identifier 'v'
+v28 = gen_rtx_fmt_ee( MULT, mode, v->src_reg, v->mult_val); 
+                                              ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_giv_expr/src/loop.c:6947:6: error: use of undeclared identifier 'v'
+if ( v->derive_adjustment ) 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_giv_expr/src/loop.c:6948:43: error: use of undeclared identifier 'v'
+tema = gen_rtx_fmt_ee( MINUS, mode, tema, v->derive_adjustment); 
+                                          ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_giv_expr/src/loop.c:6952:6: error: use of undeclared identifier 'v'
+if ( v->ext_dependent ) 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_giv_expr/src/loop.c:6959:12: error: use of undeclared identifier 'v'
+*ext_val = v->ext_dependent; 
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_giv_expr/src/loop.c:7039:26: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v7 = (  struct rtx_def *)arg1[1]; 
+                         ^~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_giv_expr/src/loop.c:7217:13: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v29 = ( rtx)m->insn[2]; 
+            ^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_giv_expr/src/loop.c:7227:14: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+temc = ( rtx)v29[1]; 
+             ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_giv_expr/src/loop.c:7261:29: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+*ext_val = gen_rtx_fmt_e( ( rtx_code)*( _WORD *)x, mode, arg0b); 
+                            ^~~~~~~~
+                            rtx_cost
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_giv_expr/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_giv_expr/src/obj/loop.o] Error 1

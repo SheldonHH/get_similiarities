@@ -1,0 +1,17 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/int_vasprintf/src/vasprintf.c:526:6: error: conflicting types for 'int_vasprintf'
+int  int_vasprintf( char **result, const char *format,  struct __va_list_tag *args) 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/int_vasprintf/src/vasprintf.c:61:12: note: previous declaration is here
+static int int_vasprintf PARAMS ((char **, const char *, va_list ));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/int_vasprintf/src/vasprintf.c:538:23: error: variable has incomplete type 'struct __va_list_tag'
+ struct __va_list_tag ap; // [rsp+B0h] [rbp-50h] 
+                      ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/int_vasprintf/src/vasprintf.c:526:64: note: forward declaration of 'struct __va_list_tag'
+int  int_vasprintf( char **result, const char *format,  struct __va_list_tag *args) 
+                                                               ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/int_vasprintf/src/vasprintf.c:604:17: error: use of undeclared identifier 'off_8A2756'
+while ( strchr( off_8A2756, *p) ) 
+                ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/int_vasprintf/src/obj/vasprintf.o] Error 1

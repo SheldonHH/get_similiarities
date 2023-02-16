@@ -1,0 +1,23 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_reloads_address_part/src/reload.c:6157:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class a3, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_reloads_address_part/src/reload.c:6158:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_reloads_address_part/src/reload.c:6160:1: error: must use 'enum' tag to refer to type 'reload_type'
+reload_type type, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_reloads_address_part/src/reload.c:6192:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v14 = (  struct rtx_def *)x[1]; 
+                          ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_reloads_address_part/src/reload.c:6198:29: error: use of undeclared identifier 'machine_mode'
+tem[0] = force_const_mem( ( machine_mode)*( ( unsigned __int8 *)v7 + 2), *( rtx *)&v7[1]); 
+                            ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_reloads_address_part/src/reload.c:6199:30: error: use of undeclared identifier 'machine_mode'
+v7 = gen_rtx_fmt_ee( PLUS, ( machine_mode)*( ( unsigned __int8 *)v7 + 2), v7->fld[0].rtx, tem[0]); 
+                             ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_reloads_address_part/src/obj/reload.o] Error 1

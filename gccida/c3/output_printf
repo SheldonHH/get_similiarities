@@ -1,0 +1,15 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/output_printf/src/diagnostic.c:1289:1: error: unknown type name 'va_list_0'; did you mean 'va_list'?
+va_list_0 *old_args; // [rsp+178h] [rbp-18h] 
+^~~~~~~~~
+va_list
+/usr/include/stdio.h:46:20: note: 'va_list' declared here
+typedef _G_va_list va_list;
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/output_printf/src/diagnostic.c:1297:42: error: expected expression
+buffer->state.format_args = ( va_list_0 *)ap; 
+                                         ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/output_printf/src/diagnostic.c:1297:31: error: use of undeclared identifier 'va_list_0'
+buffer->state.format_args = ( va_list_0 *)ap; 
+                              ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/output_printf/src/obj/diagnostic.o] Error 1

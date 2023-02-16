@@ -1,0 +1,26 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/dwarf2out_cfi_label/src/dwarf2out.c:1006:6: error: use of undeclared identifier 'dwarf2out_cfi_label_label_num'
+v0 = dwarf2out_cfi_label_label_num++; 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/dwarf2out_cfi_label/src/dwarf2out.c:1007:10: error: use of undeclared identifier 'dwarf2out_cfi_label_label'; did you mean 'dwarf2out_cfi_label'?
+sprintf( dwarf2out_cfi_label_label, "*.%s%u", "LCFI", v0); 
+         ^~~~~~~~~~~~~~~~~~~~~~~~~
+         dwarf2out_cfi_label
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/dwarf2out_cfi_label/src/dwarf2out.c:1002:8: note: 'dwarf2out_cfi_label' declared here
+char * dwarf2out_cfi_label( ) 
+       ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/dwarf2out_cfi_label/src/dwarf2out.c:1008:30: error: use of undeclared identifier 'dwarf2out_cfi_label_label'; did you mean 'dwarf2out_cfi_label'?
+assemble_name( asm_out_file, dwarf2out_cfi_label_label); 
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~
+                             dwarf2out_cfi_label
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/dwarf2out_cfi_label/src/dwarf2out.c:1002:8: note: 'dwarf2out_cfi_label' declared here
+char * dwarf2out_cfi_label( ) 
+       ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/dwarf2out_cfi_label/src/dwarf2out.c:1010:8: error: use of undeclared identifier 'dwarf2out_cfi_label_label'; did you mean 'dwarf2out_cfi_label'?
+return dwarf2out_cfi_label_label; 
+       ^~~~~~~~~~~~~~~~~~~~~~~~~
+       dwarf2out_cfi_label
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/dwarf2out_cfi_label/src/dwarf2out.c:1002:8: note: 'dwarf2out_cfi_label' declared here
+char * dwarf2out_cfi_label( ) 
+       ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/dwarf2out_cfi_label/src/obj/dwarf2out.o] Error 1

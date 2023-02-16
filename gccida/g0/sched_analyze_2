@@ -1,0 +1,55 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/sched_analyze_2/src/sched-deps.c:1169:24: error: unknown type name 'deps_0'
+void  sched_analyze_2( deps_0 *deps, rtx x, rtx insn) 
+                       ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/sched_analyze_2/src/sched-deps.c:1175:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v7; // ecx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/sched_analyze_2/src/sched-deps.c:1178:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code; // [rsp+2Ch] [rbp-34h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/sched_analyze_2/src/sched-deps.c:1264:11: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+else if ( mode_class_0[*( ( unsigned __int8 *)x + 2)] == MODE_COMPLEX_INT 
+          ^~~~~~~~~~~~
+          mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/sched_analyze_2/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/sched_analyze_2/src/sched-deps.c:1265:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| mode_class_0[*( ( unsigned __int8 *)x + 2)] == MODE_COMPLEX_FLOAT ) 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/sched_analyze_2/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/sched_analyze_2/src/sched-deps.c:1295:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+pending = ( rtx)pending[1]; 
+                ^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/sched_analyze_2/src/sched-deps.c:1296:21: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+pending_mem = ( rtx)pending_mem[1]; 
+                    ^~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/sched_analyze_2/src/sched-deps.c:1303:47: error: use of undeclared identifier 'reg_note'; did you mean 'reg_names'?
+add_dependence( insn, pendinga->fld[0].rtx, ( reg_note)0); 
+                                              ^~~~~~~~
+                                              reg_names
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/sched_analyze_2/src/regs.h:166:21: note: 'reg_names' declared here
+extern const char * reg_names[FIRST_PSEUDO_REGISTER];
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/sched_analyze_2/src/sched-deps.c:1303:56: error: expected ')'
+add_dependence( insn, pendinga->fld[0].rtx, ( reg_note)0); 
+                                                       ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/sched_analyze_2/src/sched-deps.c:1303:15: note: to match this '('
+add_dependence( insn, pendinga->fld[0].rtx, ( reg_note)0); 
+              ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/sched_analyze_2/src/sched-deps.c:1304:18: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+pendinga = ( rtx)pendinga[1]; 
+                 ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/sched_analyze_2/src/sched-deps.c:1305:22: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+pending_mema = ( rtx)pending_mema[1]; 
+                     ^~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/sched_analyze_2/src/sched-deps.c:1307:57: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( u = deps->last_pending_memory_flush; u; u = ( rtx)u[1] ) 
+                                                        ^~~~
+12 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/sched_analyze_2/src/obj/sched-deps.o] Error 1

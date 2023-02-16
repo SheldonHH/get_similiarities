@@ -1,0 +1,69 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emit_conditional_move/src/optabs.c:4133:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emit_conditional_move/src/optabs.c:4136:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode cmode, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emit_conditional_move/src/optabs.c:4139:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emit_conditional_move/src/optabs.c:4144:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v13; // r12d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emit_conditional_move/src/optabs.c:4151:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v20; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emit_conditional_move/src/optabs.c:4152:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v21; // r13d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emit_conditional_move/src/optabs.c:4153:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v22; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emit_conditional_move/src/optabs.c:4166:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v36; // [rsp+1Ch] [rbp-4Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emit_conditional_move/src/optabs.c:4268:11: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+operand = insn_data_0[v37].operand; 
+          ^~~~~~~~~~~
+          insn_data
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emit_conditional_move/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emit_conditional_move/src/optabs.c:4270:34: error: use of undeclared identifier 'machine_mode'
+if ( !operand->predicate( v27, ( machine_mode)*( ( unsigned __int16 *)operand + 8)) ) 
+                                 ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emit_conditional_move/src/optabs.c:4271:20: error: use of undeclared identifier 'machine_mode'
+x = gen_reg_rtx( ( machine_mode)*( ( unsigned __int16 *)operand + 8)); 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emit_conditional_move/src/optabs.c:4272:36: error: use of undeclared identifier 'machine_mode'
+if ( !operand[2].predicate( v28, ( machine_mode)*( ( unsigned __int16 *)&operand[2] + 8)) ) 
+                                   ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emit_conditional_move/src/optabs.c:4273:21: error: use of undeclared identifier 'machine_mode'
+copy_to_mode_reg( ( machine_mode)*( ( unsigned __int16 *)&operand[2] + 8), v28); 
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emit_conditional_move/src/optabs.c:4274:36: error: use of undeclared identifier 'machine_mode'
+if ( !operand[3].predicate( v29, ( machine_mode)*( ( unsigned __int16 *)&operand[3] + 8)) ) 
+                                   ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emit_conditional_move/src/optabs.c:4275:21: error: use of undeclared identifier 'machine_mode'
+copy_to_mode_reg( ( machine_mode)*( ( unsigned __int16 *)&operand[3] + 8), v29); 
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emit_conditional_move/src/optabs.c:4281:7: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+v32 = insn_data_0[( int)v37].genfun( x, v31); 
+      ^~~~~~~~~~~
+      insn_data
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emit_conditional_move/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emit_conditional_move/src/optabs.c:4281:36: error: called object type '<dependent type>' is not a function or function pointer
+v32 = insn_data_0[( int)v37].genfun( x, v31); 
+                                   ^
+17 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emit_conditional_move/src/obj/optabs.o] Error 1

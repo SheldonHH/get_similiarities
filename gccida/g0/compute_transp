@@ -1,0 +1,61 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/compute_transp/src/gcse.c:4216:1: error: use of undeclared identifier 'reg_set_0'; did you mean 'reg_set_p'?
+reg_set_0 *r; // [rsp+48h] [rbp-18h] 
+^~~~~~~~~
+reg_set_p
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/compute_transp/src/rtl.h:1469:12: note: 'reg_set_p' declared here
+extern int reg_set_p                    PARAMS ((rtx, rtx));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/compute_transp/src/gcse.c:4216:12: error: use of undeclared identifier 'r'
+reg_set_0 *r; // [rsp+48h] [rbp-18h] 
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/compute_transp/src/gcse.c:4217:1: error: use of undeclared identifier 'reg_set_0'; did you mean 'reg_set_p'?
+reg_set_0 *ra; // [rsp+48h] [rbp-18h] 
+^~~~~~~~~
+reg_set_p
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/compute_transp/src/rtl.h:1469:12: note: 'reg_set_p' declared here
+extern int reg_set_p                    PARAMS ((rtx, rtx));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/compute_transp/src/gcse.c:4217:12: error: use of undeclared identifier 'ra'
+reg_set_0 *ra; // [rsp+48h] [rbp-18h] 
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/compute_transp/src/gcse.c:4245:7: error: use of undeclared identifier 'r'
+for ( r = reg_set_table[x->fld[0].rtuint]; r; r = r->next ) 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/compute_transp/src/gcse.c:4245:44: error: use of undeclared identifier 'r'
+for ( r = reg_set_table[x->fld[0].rtuint]; r; r = r->next ) 
+                                           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/compute_transp/src/gcse.c:4245:47: error: use of undeclared identifier 'r'
+for ( r = reg_set_table[x->fld[0].rtuint]; r; r = r->next ) 
+                                              ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/compute_transp/src/gcse.c:4245:51: error: use of undeclared identifier 'r'
+for ( r = reg_set_table[x->fld[0].rtuint]; r; r = r->next ) 
+                                                  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/compute_transp/src/gcse.c:4246:46: error: use of undeclared identifier 'r'
+bmap[*( int *)( basic_block_for_insn->data.l[r->insn->fld[0].rtint] + 88)]->elms[( unsigned int)indx >> 6] |= 1LL << ( indx & 0x3F); 
+                                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/compute_transp/src/gcse.c:4259:7: error: use of undeclared identifier 'ra'
+for ( ra = reg_set_table[x->fld[0].rtuint]; ra; ra = ra->next ) 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/compute_transp/src/gcse.c:4259:45: error: use of undeclared identifier 'ra'
+for ( ra = reg_set_table[x->fld[0].rtuint]; ra; ra = ra->next ) 
+                                            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/compute_transp/src/gcse.c:4259:49: error: use of undeclared identifier 'ra'
+for ( ra = reg_set_table[x->fld[0].rtuint]; ra; ra = ra->next ) 
+                                                ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/compute_transp/src/gcse.c:4259:54: error: use of undeclared identifier 'ra'
+for ( ra = reg_set_table[x->fld[0].rtuint]; ra; ra = ra->next ) 
+                                                     ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/compute_transp/src/gcse.c:4260:46: error: use of undeclared identifier 'ra'
+bmap[*( int *)( basic_block_for_insn->data.l[ra->insn->fld[0].rtint] + 88)]->elms[( unsigned int)indx >> 6] &= ~( 1LL << ( indx & 0x3F)); 
+                                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/compute_transp/src/gcse.c:4279:69: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( list_entry = canon_modify_mem_list[bbb]; ; list_entry = ( rtx)list_entrya[1] ) 
+                                                                    ^~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/compute_transp/src/gcse.c:4294:21: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+list_entrya = ( rtx)list_entry[1]; 
+                    ^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/compute_transp/src/gcse.c:4297:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)dest + 2), 
+  ^
+17 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/compute_transp/src/obj/gcse.o] Error 1

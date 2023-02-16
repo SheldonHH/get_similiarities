@@ -1,0 +1,36 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expr_killed_p/src/gcse.c:3581:4: error: expected ';' after expression
+rtx v6; // rbx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expr_killed_p/src/gcse.c:3581:5: error: use of undeclared identifier 'v6'
+rtx v6; // rbx 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expr_killed_p/src/gcse.c:3603:1: error: use of undeclared identifier 'v6'
+v6 = modify_mem_list[bb->index]; 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expr_killed_p/src/gcse.c:3604:6: error: use of undeclared identifier 'v6'
+if ( v6 ) 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expr_killed_p/src/gcse.c:3609:23: error: use of undeclared identifier 'v6'
+v8.rtwint = ( __int64)v6->fld[0]; 
+                      ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expr_killed_p/src/gcse.c:3610:20: error: use of undeclared identifier 'uid_cuid_1'
+if ( *( ( _DWORD *)uid_cuid_1 + *( int *)( v8.rtwint + 8)) <= v7 ) 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expr_killed_p/src/gcse.c:3616:22: error: expected expression
+note_stores( *( rtx *)( v8.rtwint + 32), mems_conflict_for_gcse_p, 0LL); 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expr_killed_p/src/gcse.c:3620:1: error: use of undeclared identifier 'v6'
+v6 = ( rtx)v6[1]; 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expr_killed_p/src/gcse.c:3622:9: error: use of undeclared identifier 'v6'
+while ( v6 ); 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expr_killed_p/src/gcse.c:3649:41: error: expected expression
+LODWORD( v3) = expr_killed_p( *( ( rtx *)rtx + v13), bb); 
+                                        ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expr_killed_p/src/gcse.c:3665:33: error: expected expression
+while ( !expr_killed_p( *( rtx *)&v15[2 * v16 + 2], bb) ) 
+                                ^
+11 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expr_killed_p/src/obj/gcse.o] Error 1

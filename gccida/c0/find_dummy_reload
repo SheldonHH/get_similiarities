@@ -1,0 +1,84 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_dummy_reload/src/reload.c:2296:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode inmode, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_dummy_reload/src/reload.c:2297:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode outmode, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_dummy_reload/src/reload.c:2298:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class classa, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_dummy_reload/src/reload.c:2333:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class classb; // [rsp+B0h] [rbp+10h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_dummy_reload/src/reload.c:2358:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)out->fld[0].rtwint), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_dummy_reload/src/reload.c:2358:18: error: expected expression
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)out->fld[0].rtwint), 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_dummy_reload/src/reload.c:2360:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)out)); 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_dummy_reload/src/reload.c:2360:18: error: expected expression
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)out)); 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_dummy_reload/src/reload.c:2368:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)in->fld[0].rtwint), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_dummy_reload/src/reload.c:2368:18: error: expected expression
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)in->fld[0].rtwint), 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_dummy_reload/src/reload.c:2370:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)in)); 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_dummy_reload/src/reload.c:2370:18: error: expected expression
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)in)); 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_dummy_reload/src/reload.c:2415:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[outmode] != MODE_COMPLEX_INT ) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_dummy_reload/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_dummy_reload/src/reload.c:2416:7: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v31 = mode_class_0[outmode] == MODE_COMPLEX_FLOAT; 
+      ^~~~~~~~~~~~
+      mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_dummy_reload/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_dummy_reload/src/reload.c:2426:65: error: use of undeclared identifier 'this_insn_1'; did you mean 'this_insn'?
+&& !refers_to_regno_for_reload_p( regno, v30 + regno, *( rtx *)&this_insn_1[2], outloc) ) 
+                                                                ^~~~~~~~~~~
+                                                                this_insn
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_dummy_reload/src/reload.c:181:12: note: 'this_insn' declared here
+static rtx this_insn;
+           ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_dummy_reload/src/reload.c:2447:31: error: use of undeclared identifier 'this_insn_1'; did you mean 'this_insn'?
+&& ( !value || find_reg_note( this_insn_1, REG_UNUSED, real_out)) 
+                              ^~~~~~~~~~~
+                              this_insn
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_dummy_reload/src/reload.c:181:12: note: 'this_insn' declared here
+static rtx this_insn;
+           ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_dummy_reload/src/reload.c:2448:19: error: use of undeclared identifier 'this_insn_1'; did you mean 'this_insn'?
+&& find_reg_note( this_insn_1, REG_DEAD, real_in) 
+                  ^~~~~~~~~~~
+                  this_insn
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_dummy_reload/src/reload.c:181:12: note: 'this_insn' declared here
+static rtx this_insn;
+           ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_dummy_reload/src/reload.c:2453:37: error: use of undeclared identifier 'machine_mode'
+? ix86_hard_regno_mode_ok( rtint, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)out)) 
+                                    ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_dummy_reload/src/reload.c:2453:52: error: expected expression
+? ix86_hard_regno_mode_ok( rtint, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)out)) 
+                                                   ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_dummy_reload/src/obj/reload.o] Error 1

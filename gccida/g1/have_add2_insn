@@ -1,0 +1,19 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/have_add2_insn/src/optabs.c:4314:1: error: must use 'enum' tag to refer to type 'insn_code'
+insn_code insn_code; // edx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/have_add2_insn/src/optabs.c:4325:11: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+operand = insn_data_0[insn_code].operand; 
+          ^~~~~~~~~~~
+          insn_data
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/have_add2_insn/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/have_add2_insn/src/optabs.c:4326:35: error: use of undeclared identifier 'machine_mode'
+result = operand->predicate( x, ( machine_mode)*( ( unsigned __int16 *)operand + 8)); 
+                                  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/have_add2_insn/src/optabs.c:4329:37: error: use of undeclared identifier 'machine_mode'
+result = operand[1].predicate( x, ( machine_mode)*( ( unsigned __int16 *)&operand[1] + 8)); 
+                                    ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/have_add2_insn/src/obj/optabs.o] Error 1

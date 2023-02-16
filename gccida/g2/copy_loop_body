@@ -1,0 +1,77 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/copy_loop_body/src/unroll.c:2246:1: error: must use 'enum' tag to refer to type 'unroll_types'
+unroll_types unroll_type, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/copy_loop_body/src/unroll.c:2254:4: error: expected ';' after expression
+rtx last_insn; // r12 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/copy_loop_body/src/unroll.c:2254:5: error: use of undeclared identifier 'last_insn'
+rtx last_insn; // r12 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/copy_loop_body/src/unroll.c:2256:4: error: expected ';' after expression
+rtx v16; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/copy_loop_body/src/unroll.c:2256:5: error: use of undeclared identifier 'v16'
+rtx v16; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/copy_loop_body/src/unroll.c:2257:6: error: use of undeclared identifier 'insn_map'; did you mean 'insn_data'?
+rtx *insn_map; // rdx 
+     ^~~~~~~~
+     insn_data
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/copy_loop_body/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/copy_loop_body/src/unroll.c:2257:5: error: invalid operands to binary expression ('rtx' (aka 'struct rtx_def *') and 'const struct insn_data []')
+rtx *insn_map; // rdx 
+~~~ ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/copy_loop_body/src/unroll.c:2258:4: error: expected ';' after expression
+rtx v18; // r12 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/copy_loop_body/src/unroll.c:2258:5: error: use of undeclared identifier 'v18'
+rtx v18; // r12 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/copy_loop_body/src/unroll.c:2259:4: error: expected ';' after expression
+rtx v19; // r15 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/copy_loop_body/src/unroll.c:2259:5: error: use of undeclared identifier 'v19'
+rtx v19; // r15 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/copy_loop_body/src/unroll.c:2260:4: error: expected ';' after expression
+rtx v20; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/copy_loop_body/src/unroll.c:2260:5: error: use of undeclared identifier 'v20'
+rtx v20; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/copy_loop_body/src/unroll.c:2264:4: error: expected ';' after expression
+rtx v24; // rcx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/copy_loop_body/src/unroll.c:2264:5: error: use of undeclared identifier 'v24'
+rtx v24; // rcx 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/copy_loop_body/src/unroll.c:2266:4: error: expected ';' after expression
+rtx v26; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/copy_loop_body/src/unroll.c:2266:5: error: use of undeclared identifier 'v26'
+rtx v26; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/copy_loop_body/src/unroll.c:2273:4: error: expected ';' after expression
+rtx label_from_map; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/copy_loop_body/src/unroll.c:2273:5: error: use of undeclared identifier 'label_from_map'; did you mean 'get_label_from_map'?
+rtx label_from_map; // rax 
+    ^~~~~~~~~~~~~~
+    get_label_from_map
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/copy_loop_body/src/integrate.h:166:12: note: 'get_label_from_map' declared here
+extern rtx get_label_from_map PARAMS ((struct inline_remap *, int));
+           ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/copy_loop_body/src/obj/unroll.o] Error 1

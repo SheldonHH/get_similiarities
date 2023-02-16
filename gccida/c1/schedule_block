@@ -1,0 +1,32 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/schedule_block/src/haifa-sched.c:2131:4: error: expected ';' after expression
+rtx v22; // rcx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/schedule_block/src/haifa-sched.c:2131:5: error: use of undeclared identifier 'v22'
+rtx v22; // rcx 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/schedule_block/src/haifa-sched.c:2137:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v4 = ( __int64)current_sched_info->next_tail[1]; 
+               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/schedule_block/src/haifa-sched.c:2161:21: error: expected expression
+ptr[0].vec = ( rtx *)xmalloc( 8LL * ptr[0].veclen); 
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/schedule_block/src/haifa-sched.c:2257:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v18.rtwint = ( __int64)prev_head[1].fld[0]; 
+                       ^~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/schedule_block/src/haifa-sched.c:2270:13: error: expected ';' after expression
+v20 = ( rtx)v20[1]; 
+            ^
+            ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/schedule_block/src/haifa-sched.c:2275:1: error: use of undeclared identifier 'v22'
+v22 = note_list; 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/schedule_block/src/haifa-sched.c:2277:1: error: use of undeclared identifier 'v22'; did you mean 'v20'?
+v22[1].fld[0] = v18; 
+^~~
+v20
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/schedule_block/src/haifa-sched.c:2129:5: note: 'v20' declared here
+rtx v20; // rcx 
+    ^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/schedule_block/src/obj/haifa-sched.o] Error 1

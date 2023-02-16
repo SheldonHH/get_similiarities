@@ -1,0 +1,47 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/allocate_dynamic_stack_space/src/explow.c:1645:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v10; // r12d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/allocate_dynamic_stack_space/src/explow.c:1670:25: error: use of undeclared identifier 'machine_mode'
+v4 = convert_to_mode( ( machine_mode)v7, v4, 1); 
+                        ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/allocate_dynamic_stack_space/src/explow.c:1710:21: error: use of undeclared identifier 'machine_mode'
+v3 = gen_reg_rtx( ( machine_mode)v9); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/allocate_dynamic_stack_space/src/explow.c:1715:18: error: invalid suffix 'xmode' on integer constant
+v10 = *(short *)0xmode; 
+                 ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/allocate_dynamic_stack_space/src/explow.c:1716:17: error: invalid suffix 'xmode' on integer constant
+if ( *(short *)0xmode == VOIDmode ) 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/allocate_dynamic_stack_space/src/explow.c:1717:32: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+v10 = *( ( unsigned __int16 *)&insn_data_0[1234].operand[1] + 8); 
+                               ^~~~~~~~~~~
+                               insn_data
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/allocate_dynamic_stack_space/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/allocate_dynamic_stack_space/src/explow.c:1718:13: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+predicate = insn_data_0[1234].operand[1].predicate; 
+            ^~~~~~~~~~~
+            insn_data
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/allocate_dynamic_stack_space/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/allocate_dynamic_stack_space/src/explow.c:1730:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/allocate_dynamic_stack_space/src/explow.c:1737:47: error: use of undeclared identifier 'machine_mode'
+emit_cmp_and_jump_insns( v17, v4, GEU, 0LL, ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), 1, label); 
+                                              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/allocate_dynamic_stack_space/src/explow.c:1750:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/allocate_dynamic_stack_space/src/explow.c:1758:43: error: use of undeclared identifier 'machine_mode'
+v22 = expand_divmod( 0, TRUNC_DIV_EXPR, ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), v20, v21, 0LL, 1); 
+                                          ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/allocate_dynamic_stack_space/src/explow.c:1760:21: error: use of undeclared identifier 'machine_mode'
+v3 = expand_mult( ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), v22, v23, 0LL, 1); 
+                    ^
+12 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/allocate_dynamic_stack_space/src/obj/explow.o] Error 1

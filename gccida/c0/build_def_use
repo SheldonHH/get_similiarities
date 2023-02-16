@@ -1,0 +1,74 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/build_def_use/src/dependence.c:723:32: error: must use 'enum' tag to refer to type 'def_use_type'
+void  build_def_use( tree exp, def_use_type du_type) 
+                               ^
+                               enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/build_def_use/src/dependence.c:730:1: error: unknown type name 'def_use_0'; did you mean 'def_use'?
+def_use_0 *tmp_duc; // [rsp+8h] [rbp-38h] 
+^~~~~~~~~
+def_use
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/build_def_use/src/dependence.c:102:3: note: 'def_use' declared here
+} def_use;
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/build_def_use/src/dependence.c:733:1: error: unknown type name 'def_use_0'; did you mean 'def_use'?
+def_use_0 *du_ptr; // [rsp+18h] [rbp-28h] 
+^~~~~~~~~
+def_use
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/build_def_use/src/dependence.c:102:3: note: 'def_use' declared here
+} def_use;
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/build_def_use/src/dependence.c:736:1: error: must use 'enum' tag to refer to type 'def_use_type'
+def_use_type du_typea; // [rsp+34h] [rbp-Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/build_def_use/src/dependence.c:744:1: error: use of undeclared identifier 'build_def_use_outer_loop'
+build_def_use_outer_loop = 0LL; 
+^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/build_def_use/src/dependence.c:745:1: error: use of undeclared identifier 'build_def_use_nloop'
+build_def_use_nloop = 0; 
+^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/build_def_use/src/dependence.c:746:1: error: use of undeclared identifier 'build_def_use_du_idx'
+build_def_use_du_idx = 0; 
+^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/build_def_use/src/dependence.c:762:7: error: use of undeclared identifier 'build_def_use_nloop'; did you mean 'build_def_use'?
+if ( !build_def_use_nloop ) 
+      ^~~~~~~~~~~~~~~~~~~
+      build_def_use
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/build_def_use/src/dependence.c:723:7: note: 'build_def_use' declared here
+void  build_def_use( tree exp, def_use_type du_type) 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/build_def_use/src/dependence.c:772:16: error: use of undeclared identifier 'build_def_use_du_idx'
+LODWORD( v3) = build_def_use_du_idx++; 
+               ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/build_def_use/src/dependence.c:773:23: error: expected expression
+du_ptr = ( def_use_0 *)def_use_chain->data.l[( int)v3]; 
+                      ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/build_def_use/src/dependence.c:773:12: error: use of undeclared identifier 'def_use_0'
+du_ptr = ( def_use_0 *)def_use_chain->data.l[( int)v3]; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/build_def_use/src/dependence.c:776:22: error: use of undeclared identifier 'build_def_use_outer_loop'
+du_ptr->outer_loop = build_def_use_outer_loop; 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/build_def_use/src/dependence.c:777:27: error: use of undeclared identifier 'build_def_use_current_loop'
+du_ptr->containing_loop = build_def_use_current_loop; 
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/build_def_use/src/dependence.c:795:10: error: use of undeclared identifier 'build_def_use_du_idx'
+if ( i < build_def_use_du_idx ) 
+         ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/build_def_use/src/dependence.c:802:11: error: use of undeclared identifier 'build_def_use_du_idx'
+if ( i == build_def_use_du_idx ) 
+          ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/build_def_use/src/dependence.c:808:30: error: expected expression
+for ( tmp_duc = ( def_use_0 *)def_use_chain->data.l[i]; tmp_duc->next; tmp_duc = tmp_duc->next ) 
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/build_def_use/src/dependence.c:808:19: error: use of undeclared identifier 'def_use_0'
+for ( tmp_duc = ( def_use_0 *)def_use_chain->data.l[i]; tmp_duc->next; tmp_duc = tmp_duc->next ) 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/build_def_use/src/dependence.c:829:6: error: use of undeclared identifier 'build_def_use_loop_def'
+if ( build_def_use_loop_def 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/build_def_use/src/dependence.c:832:1: error: use of undeclared identifier 'build_def_use_loop_def'
+build_def_use_loop_def->outer_loop, 
+^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/build_def_use/src/obj/dependence.o] Error 1

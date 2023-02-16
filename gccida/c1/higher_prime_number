@@ -1,0 +1,11 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/higher_prime_number/src/hashtab.c:538:19: error: conflicting types for 'higher_prime_number'
+unsigned __int64  higher_prime_number( unsigned __int64 n) 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/higher_prime_number/src/hashtab.c:60:22: note: previous declaration is here
+static unsigned long higher_prime_number PARAMS ((unsigned long));
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/higher_prime_number/src/hashtab.c:546:27: error: use of undeclared identifier 'higher_prime_number_primes'
+v2 = ( unsigned __int64 *)higher_prime_number_primes; 
+                          ^
+2 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/higher_prime_number/src/obj/hashtab.o] Error 1

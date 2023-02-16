@@ -1,0 +1,22 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/widen_operand/src/optabs.c:643:29: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  widen_operand( rtx op, machine_mode mode, machine_mode oldmode, int unsignedp, int no_extend) 
+                            ^
+                            enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/widen_operand/src/optabs.c:643:48: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  widen_operand( rtx op, machine_mode mode, machine_mode oldmode, int unsignedp, int no_extend) 
+                                               ^
+                                               enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/widen_operand/src/optabs.c:668:21: error: use of undeclared identifier 'machine_mode'
+v8 = gen_lowpart( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)op), result); 
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/widen_operand/src/optabs.c:668:36: error: expected expression
+v8 = gen_lowpart( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)op), result); 
+                                   ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/widen_operand/src/optabs.c:674:19: error: use of undeclared identifier 'machine_mode'
+v6 = force_reg( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)op), op); 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/widen_operand/src/optabs.c:674:34: error: expected expression
+v6 = force_reg( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)op), op); 
+                                 ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/widen_operand/src/obj/optabs.o] Error 1

@@ -1,0 +1,28 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/make_decl_rtl/src/varasm.c:1298:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *identifier; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/make_decl_rtl/src/varasm.c:1321:43: error: use of undeclared identifier 'machine_mode'
+decl->decl.rtl = adjust_address_1( rtl, ( machine_mode)supercontext, 0LL, 0, 1); 
+                                          ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/make_decl_rtl/src/varasm.c:1398:36: error: use of undeclared identifier 'machine_mode'
+v22 = gen_rtx_fmt_s( SYMBOL_REF, ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), low); 
+                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/make_decl_rtl/src/varasm.c:1399:22: error: use of undeclared identifier 'machine_mode'
+v23 = gen_rtx_MEM( ( machine_mode)LOBYTE( decl->block.supercontext), v22); 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/make_decl_rtl/src/varasm.c:1449:39: error: use of undeclared identifier 'machine_mode'
+if ( !ix86_hard_regno_mode_ok( v10, ( machine_mode)( BYTE5( type->block.abstract_origin) >> 1)) ) 
+                                      ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/make_decl_rtl/src/varasm.c:1461:30: error: use of undeclared identifier 'machine_mode'
+v13 = gen_rtx_fmt_i0( REG, ( machine_mode)LOBYTE( decl->block.supercontext), v10); 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/make_decl_rtl/src/varasm.c:1480:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v16 = ( ( unsigned int)( mode_class_0[LOBYTE( decl->block.supercontext)] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/make_decl_rtl/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/make_decl_rtl/src/obj/varasm.o] Error 1

@@ -1,0 +1,82 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_group_load/src/expr.c:2422:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v17; // ecx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_group_load/src/expr.c:2423:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v18; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_group_load/src/expr.c:2442:4: error: expected ';' after expression
+rtx x_pending_chain; // rbx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_group_load/src/expr.c:2442:5: error: use of undeclared identifier 'x_pending_chain'
+rtx x_pending_chain; // rbx 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_group_load/src/expr.c:2445:4: error: expected ';' after expression
+rtx dsta; // [rsp+0h] [rbp-80h] BYREF 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_group_load/src/expr.c:2445:5: error: use of undeclared identifier 'dsta'; did you mean 'dst'?
+rtx dsta; // [rsp+0h] [rbp-80h] BYREF 
+    ^~~~
+    dst
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_group_load/src/expr.c:2407:28: note: 'dst' declared here
+void  emit_group_load( rtx dst, rtx orig_src, int ssize) 
+                           ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_group_load/src/expr.c:2450:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode tmode[2]; // [rsp+28h] [rbp-58h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_group_load/src/expr.c:2451:6: error: use of undeclared identifier 'tmps'
+rtx *tmps; // [rsp+30h] [rbp-50h] 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_group_load/src/expr.c:2452:4: error: expected ';' after expression
+rtx src; // [rsp+38h] [rbp-48h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_group_load/src/expr.c:2452:5: error: use of undeclared identifier 'src'
+rtx src; // [rsp+38h] [rbp-48h] 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_group_load/src/expr.c:2464:13: error: expected expression
+v8 = ( rtx *)( ( char *)&dsta - ( ( 8 * v7 + 15) & 0xFFFFFFFFFFFFFFF0LL)); 
+            ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_group_load/src/expr.c:2464:26: error: use of undeclared identifier 'dsta'; did you mean 'dst'?
+v8 = ( rtx *)( ( char *)&dsta - ( ( 8 * v7 + 15) & 0xFFFFFFFFFFFFFFF0LL)); 
+                         ^~~~
+                         dst
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_group_load/src/expr.c:2407:28: note: 'dst' declared here
+void  emit_group_load( rtx dst, rtx orig_src, int ssize) 
+                           ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_group_load/src/expr.c:2472:1: error: use of undeclared identifier 'src'
+src = orig_src; 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_group_load/src/expr.c:2473:1: error: use of undeclared identifier 'dsta'; did you mean 'dst'?
+dsta = dst; 
+^~~~
+dst
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_group_load/src/expr.c:2407:28: note: 'dst' declared here
+void  emit_group_load( rtx dst, rtx orig_src, int ssize) 
+                           ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_group_load/src/expr.c:2474:1: error: use of undeclared identifier 'tmps'
+tmps = ( rtx *)( ( char *)&dsta - ( ( 8 * v7 + 15) & 0xFFFFFFFFFFFFFFF0LL)); 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_group_load/src/expr.c:2474:15: error: expected expression
+tmps = ( rtx *)( ( char *)&dsta - ( ( 8 * v7 + 15) & 0xFFFFFFFFFFFFFFF0LL)); 
+              ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_group_load/src/expr.c:2474:28: error: use of undeclared identifier 'dsta'; did you mean 'dst'?
+tmps = ( rtx *)( ( char *)&dsta - ( ( 8 * v7 + 15) & 0xFFFFFFFFFFFFFFF0LL)); 
+                           ^~~~
+                           dst
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_group_load/src/expr.c:2407:28: note: 'dst' declared here
+void  emit_group_load( rtx dst, rtx orig_src, int ssize) 
+                           ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_group_load/src/expr.c:2528:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v20 = ( __int64)v16[1]; 
+                ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_group_load/src/expr.c:2531:40: error: use of undeclared identifier 'machine_mode'
+mode_alignment = get_mode_alignment( ( machine_mode)v11); 
+                                       ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_group_load/src/obj/expr.o] Error 1

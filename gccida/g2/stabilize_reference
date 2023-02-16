@@ -1,0 +1,31 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/stabilize_reference/src/tree.c:2674:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v2; // r12 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/stabilize_reference/src/tree.c:2681:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *name; // rbp 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/stabilize_reference/src/tree.c:2682:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v11; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/stabilize_reference/src/tree.c:2683:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v12; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/stabilize_reference/src/tree.c:2737:18: error: use of undeclared identifier 'tree_code'; did you mean 'tree_cons'?
+v4 = build_nt( ( tree_code)v1, v3); 
+                 ^~~~~~~~~
+                 tree_cons
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/stabilize_reference/src/tree.c:1314:1: note: 'tree_cons' declared here
+tree_cons (purpose, value, chain)
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/stabilize_reference/src/tree.c:2737:28: error: expected ')'
+v4 = build_nt( ( tree_code)v1, v3); 
+                           ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/stabilize_reference/src/tree.c:2737:14: note: to match this '('
+v4 = build_nt( ( tree_code)v1, v3); 
+             ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/stabilize_reference/src/obj/tree.o] Error 1

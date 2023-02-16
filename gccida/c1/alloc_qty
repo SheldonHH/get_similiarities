@@ -1,0 +1,32 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/alloc_qty/src/local-alloc.c:773:29: error: must use 'enum' tag to refer to type 'machine_mode'
+void  alloc_qty( int regno, machine_mode mode, int size, int birth) 
+                            ^
+                            enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/alloc_qty/src/local-alloc.c:779:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class v8; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/alloc_qty/src/local-alloc.c:783:6: error: use of undeclared identifier 'next_qty_0'; did you mean 'next_qty'?
+v4 = next_qty_0++; 
+     ^~~~~~~~~~
+     next_qty
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/alloc_qty/src/local-alloc.c:81:12: note: 'next_qty' declared here
+static int next_qty;
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/alloc_qty/src/local-alloc.c:788:6: error: use of undeclared identifier 'qty_0'
+v6 = qty_0; 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/alloc_qty/src/local-alloc.c:790:1: error: use of undeclared identifier 'qty_0'
+qty_0[v7].first_reg = v5; 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/alloc_qty/src/local-alloc.c:795:1: error: use of undeclared identifier 'qty_0'
+qty_0[v7].min_class = reg_preferred_class( v5); 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/alloc_qty/src/local-alloc.c:797:6: error: use of undeclared identifier 'qty_0'
+v9 = qty_0; 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/alloc_qty/src/local-alloc.c:798:1: error: use of undeclared identifier 'qty_0'
+qty_0[v7].alternate_class = v8; 
+^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/alloc_qty/src/obj/local-alloc.o] Error 1

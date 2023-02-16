@@ -1,0 +1,27 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/combine_reversed_comparison_code/src/combine.c:11542:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code  combine_reversed_comparison_code( rtx exp) 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/combine_reversed_comparison_code/src/combine.c:11545:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code1; // [rsp+1Ch] [rbp-4h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/combine_reversed_comparison_code/src/combine.c:11548:15: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( code1 || mode_class_0[*( unsigned __int8 *)( exp->fld[0].rtwint + 2)] != MODE_CC ) 
+              ^~~~~~~~~~~~
+              mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/combine_reversed_comparison_code/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/combine_reversed_comparison_code/src/combine.c:11552:42: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+return reversed_comparison_code_parts( ( rtx_code)*( _WORD *)exp, x->fld[0].rtx, *( rtx *)&x[1], 0LL); 
+                                         ^~~~~~~~
+                                         rtx_cost
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/combine_reversed_comparison_code/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/combine_reversed_comparison_code/src/combine.c:11552:51: error: invalid operands to binary expression ('int (rtx, enum rtx_code)' (aka 'int (struct rtx_def *, enum rtx_code)') and 'uint16 *' (aka 'unsigned short *'))
+return reversed_comparison_code_parts( ( rtx_code)*( _WORD *)exp, x->fld[0].rtx, *( rtx *)&x[1], 0LL); 
+                                       ~~~~~~~~~~~^~~~~~~~~~~~~~
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/combine_reversed_comparison_code/src/obj/combine.o] Error 1

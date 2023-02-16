@@ -1,0 +1,85 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_increment/src/expr.c:9441:1: error: must use 'enum' tag to refer to type 'insn_code'
+insn_code insn_code; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_increment/src/expr.c:9446:1: error: must use 'enum' tag to refer to type 'insn_code'
+insn_code v14; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_increment/src/expr.c:9441:11: note: enum 'insn_code' is hidden by a non-type declaration of 'insn_code' here
+insn_code insn_code; // eax 
+          ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_increment/src/expr.c:9454:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *i; // rsi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_increment/src/expr.c:9550:11: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+operand = insn_data_0[insn_code].operand; 
+          ^~~~~~~~~~~
+          insn_data
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_increment/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_increment/src/expr.c:9551:32: error: use of undeclared identifier 'machine_mode'
+if ( operand->predicate( v8, ( machine_mode)v6) ) 
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_increment/src/expr.c:9553:34: error: use of undeclared identifier 'machine_mode'
+if ( operand[1].predicate( v8, ( machine_mode)v6) ) 
+                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_increment/src/expr.c:9562:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)v6, 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_increment/src/expr.c:9582:3: error: use of undeclared identifier 'tree_code'; did you mean 'tree_cons'?
+( tree_code)( ( ( *( ( _BYTE *)&exp->block.common + 16) & 0xFD) == 0x81) + 59), 
+  ^~~~~~~~~
+  tree_cons
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_increment/src/tree.h:2477:13: note: 'tree_cons' declared here
+extern tree tree_cons                   PARAMS ((tree, tree, tree));
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_increment/src/expr.c:9582:78: error: too few arguments to function call, expected 3, have 1
+( tree_code)( ( ( *( ( _BYTE *)&exp->block.common + 16) & 0xFD) == 0x81) + 59), 
+~~~~~~~~~~~~                                                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_increment/src/tree.h:2477:1: note: 'tree_cons' declared here
+extern tree tree_cons                   PARAMS ((tree, tree, tree));
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_increment/src/expr.c:9600:7: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+v15 = insn_data_0[v14].operand; 
+      ^~~~~~~~~~~
+      insn_data
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_increment/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_increment/src/expr.c:9601:28: error: use of undeclared identifier 'machine_mode'
+if ( v15->predicate( v8, ( machine_mode)v6) && v15[1].predicate( v8, ( machine_mode)v6) ) 
+                           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_increment/src/expr.c:9601:72: error: use of undeclared identifier 'machine_mode'
+if ( v15->predicate( v8, ( machine_mode)v6) && v15[1].predicate( v8, ( machine_mode)v6) ) 
+                                                                       ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_increment/src/expr.c:9603:34: error: use of undeclared identifier 'machine_mode'
+if ( !v15[2].predicate( tempa, ( machine_mode)v6) ) 
+                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_increment/src/expr.c:9604:14: error: use of undeclared identifier 'machine_mode'
+force_reg( ( machine_mode)v6, tempa); 
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_increment/src/expr.c:9605:7: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+v16 = insn_data_0[v14].genfun( v8, v8); 
+      ^~~~~~~~~~~
+      insn_data
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_increment/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_increment/src/expr.c:9605:30: error: called object type '<dependent type>' is not a function or function pointer
+v16 = insn_data_0[v14].genfun( v8, v8); 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_increment/src/expr.c:9612:41: error: use of undeclared identifier 'machine_mode'
+if ( general_operand( v8->fld[0].rtx, ( machine_mode)v6) ) 
+                                        ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_increment/src/expr.c:9613:20: error: use of undeclared identifier 'machine_mode'
+v17 = force_reg( ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), v8->fld[0].rtx); 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_increment/src/expr.c:9617:20: error: use of undeclared identifier 'machine_mode'
+v19 = force_reg( ( machine_mode)*( ( unsigned __int8 *)v18 + 2), v18); 
+                   ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_increment/src/obj/expr.o] Error 1

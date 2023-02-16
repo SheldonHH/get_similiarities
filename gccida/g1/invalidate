@@ -1,0 +1,39 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/invalidate/src/cse.c:2303:26: error: must use 'enum' tag to refer to type 'machine_mode'
+void  invalidate( rtx x, machine_mode full_mode) 
+                         ^
+                         enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/invalidate/src/cse.c:2306:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v3; // r13d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/invalidate/src/cse.c:2344:64: error: expected ')'
+if ( cached_regno != ( _DWORD)rtuint || (  struct cse_reg_info = cached_cse_reg_info) == 0LL ) 
+                                                               ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/invalidate/src/cse.c:2344:41: note: to match this '('
+if ( cached_regno != ( _DWORD)rtuint || (  struct cse_reg_info = cached_cse_reg_info) == 0LL ) 
+                                        ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/invalidate/src/cse.c:2344:87: error: expected expression
+if ( cached_regno != ( _DWORD)rtuint || (  struct cse_reg_info = cached_cse_reg_info) == 0LL ) 
+                                                                                      ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/invalidate/src/cse.c:2345:2: error: expected expression
+ struct cse_reg_info = get_cse_reg_info( rtuint); 
+ ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/invalidate/src/cse.c:2350:23: error: use of undeclared identifier 'machine_mode'
+v9 = canon_hash( x, ( machine_mode)*( ( unsigned __int8 *)x + 2)) & 0x1F; 
+                      ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/invalidate/src/cse.c:2392:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v18 = ( ( unsigned int)( mode_class_0[*( ( unsigned __int8 *)x + 2)] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/invalidate/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/invalidate/src/cse.c:2447:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v24 = ( ( unsigned int)( mode_class_0[*( ( unsigned __int8 *)exp + 2)] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/invalidate/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/invalidate/src/obj/cse.o] Error 1

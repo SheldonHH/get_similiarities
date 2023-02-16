@@ -1,0 +1,94 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_value_for_reg/src/combine.c:11622:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode *v13; // r8 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_value_for_reg/src/combine.c:11640:4: error: expected ';' after expression
+rtx v31; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_value_for_reg/src/combine.c:11640:5: error: use of undeclared identifier 'v31'
+rtx v31; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_value_for_reg/src/combine.c:11642:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v33; // r15d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_value_for_reg/src/combine.c:11646:4: error: expected ';' after expression
+rtx valuea[8]; // [rsp+8h] [rbp-40h] BYREF 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_value_for_reg/src/combine.c:11646:5: error: use of undeclared identifier 'valuea'; did you mean 'value'?
+rtx valuea[8]; // [rsp+8h] [rbp-40h] BYREF 
+    ^~~~~~
+    value
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_value_for_reg/src/combine.c:11612:52: note: 'value' declared here
+void  record_value_for_reg( rtx reg, rtx insn, rtx value) 
+                                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_value_for_reg/src/combine.c:11648:1: error: use of undeclared identifier 'valuea'; did you mean 'value'?
+valuea[0] = value; 
+^~~~~~
+value
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_value_for_reg/src/combine.c:11612:52: note: 'value' declared here
+void  record_value_for_reg( rtx reg, rtx insn, rtx value) 
+                                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_value_for_reg/src/combine.c:11648:11: error: assigning to 'struct rtx_def' from incompatible type 'rtx' (aka 'struct rtx_def *'); dereference with *
+valuea[0] = value; 
+          ^ ~~~~~
+            *
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_value_for_reg/src/combine.c:11656:25: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v6 = ( ( unsigned int)( mode_class_0[*( ( unsigned __int8 *)reg + 2)] - 5) < 2) + 1; 
+                        ^~~~~~~~~~~~
+                        mode_class
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_value_for_reg/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_value_for_reg/src/combine.c:11677:6: error: use of undeclared identifier 'valuea'; did you mean 'value'?
+if ( valuea[0] && insn && reg_overlap_mentioned_p( reg, valuea[0]) ) 
+     ^~~~~~
+     value
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_value_for_reg/src/combine.c:11612:52: note: 'value' declared here
+void  record_value_for_reg( rtx reg, rtx insn, rtx value) 
+                                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_value_for_reg/src/combine.c:11677:16: error: invalid operands to binary expression ('struct rtx_def' and 'rtx' (aka 'struct rtx_def *'))
+if ( valuea[0] && insn && reg_overlap_mentioned_p( reg, valuea[0]) ) 
+     ~~~~~~~~~ ^  ~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_value_for_reg/src/combine.c:11677:57: error: use of undeclared identifier 'valuea'
+if ( valuea[0] && insn && reg_overlap_mentioned_p( reg, valuea[0]) ) 
+                                                        ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_value_for_reg/src/combine.c:11689:17: error: use of undeclared identifier 'valuea'
+v23 = copy_rtx( valuea[0]); 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_value_for_reg/src/combine.c:11690:1: error: use of undeclared identifier 'valuea'; did you mean 'value'?
+valuea[0] = replace_rtx( v23, reg, rtx); 
+^~~~~~
+value
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_value_for_reg/src/combine.c:11612:52: note: 'value' declared here
+void  record_value_for_reg( rtx reg, rtx insn, rtx value) 
+                                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_value_for_reg/src/combine.c:11690:11: error: assigning to 'struct rtx_def' from incompatible type 'rtx' (aka 'struct rtx_def *'); dereference with *
+valuea[0] = replace_rtx( v23, reg, rtx); 
+          ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            *
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_value_for_reg/src/combine.c:11716:6: error: use of undeclared identifier 'valuea'; did you mean 'value'?
+if ( valuea[0] ) 
+     ^~~~~~
+     value
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_value_for_reg/src/combine.c:11612:52: note: 'value' declared here
+void  record_value_for_reg( rtx reg, rtx insn, rtx value) 
+                                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_value_for_reg/src/combine.c:11716:1: error: statement requires expression of scalar type ('struct rtx_def' invalid)
+if ( valuea[0] ) 
+^    ~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_value_for_reg/src/combine.c:11718:20: error: use of undeclared identifier 'valuea'
+update_table_tick( valuea[0]); 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_value_for_reg/src/combine.c:11734:12: error: use of undeclared identifier 'valuea'; did you mean 'value'?
+v27[v28] = valuea[0] && v25 == v26[v28]; 
+           ^~~~~~
+           value
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_value_for_reg/src/combine.c:11612:52: note: 'value' declared here
+void  record_value_for_reg( rtx reg, rtx insn, rtx value) 
+                                                   ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_value_for_reg/src/obj/combine.o] Error 1

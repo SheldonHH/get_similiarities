@@ -1,0 +1,40 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/diagnostic_initialize/src/diagnostic.c:624:30: error: unknown type name 'diagnostic_context_0'; did you mean 'diagnostic_context'?
+void  diagnostic_initialize( diagnostic_context_0 *context) 
+                             ^~~~~~~~~~~~~~~~~~~~
+                             diagnostic_context
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/diagnostic_initialize/src/diagnostic.h:29:35: note: 'diagnostic_context' declared here
+typedef struct diagnostic_context diagnostic_context;
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/diagnostic_initialize/src/diagnostic.c:626:29: error: use of undeclared identifier 'diagnostic_context_0'
+memset( context, 0, sizeof( diagnostic_context_0)); 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/diagnostic_initialize/src/diagnostic.c:630:42: error: unknown type name 'output_buffer_0'; did you mean 'output_buffer'?
+context->begin_diagnostic = ( void ( *)( output_buffer_0 *, diagnostic_context_0 *))default_diagnostic_starter; 
+                                         ^~~~~~~~~~~~~~~
+                                         output_buffer
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/diagnostic_initialize/src/diagnostic.h:28:30: note: 'output_buffer' declared here
+typedef struct output_buffer output_buffer;
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/diagnostic_initialize/src/diagnostic.c:630:61: error: unknown type name 'diagnostic_context_0'; did you mean 'diagnostic_context'?
+context->begin_diagnostic = ( void ( *)( output_buffer_0 *, diagnostic_context_0 *))default_diagnostic_starter; 
+                                                            ^~~~~~~~~~~~~~~~~~~~
+                                                            diagnostic_context
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/diagnostic_initialize/src/diagnostic.h:29:35: note: 'diagnostic_context' declared here
+typedef struct diagnostic_context diagnostic_context;
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/diagnostic_initialize/src/diagnostic.c:631:40: error: unknown type name 'output_buffer_0'; did you mean 'output_buffer'?
+context->end_diagnostic = ( void ( *)( output_buffer_0 *, diagnostic_context_0 *))default_diagnostic_finalizer; 
+                                       ^~~~~~~~~~~~~~~
+                                       output_buffer
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/diagnostic_initialize/src/diagnostic.h:28:30: note: 'output_buffer' declared here
+typedef struct output_buffer output_buffer;
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/diagnostic_initialize/src/diagnostic.c:631:59: error: unknown type name 'diagnostic_context_0'; did you mean 'diagnostic_context'?
+context->end_diagnostic = ( void ( *)( output_buffer_0 *, diagnostic_context_0 *))default_diagnostic_finalizer; 
+                                                          ^~~~~~~~~~~~~~~~~~~~
+                                                          diagnostic_context
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/diagnostic_initialize/src/diagnostic.h:29:35: note: 'diagnostic_context' declared here
+typedef struct diagnostic_context diagnostic_context;
+                                  ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/diagnostic_initialize/src/obj/diagnostic.o] Error 1

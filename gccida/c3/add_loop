@@ -1,0 +1,22 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/add_loop/src/dependence.c:876:1: error: unknown type name 'loop_1'; did you mean 'loop'?
+loop_1 * add_loop( tree loop_node, tree outer_loop, int nloop) 
+^~~~~~
+loop
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/add_loop/src/dependence.c:123:3: note: 'loop' declared here
+} loop;
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/add_loop/src/dependence.c:881:1: error: unknown type name 'loop_1'; did you mean 'loop'?
+loop_1 *loop_ptr; // [rsp+0h] [rbp-20h] 
+^~~~~~
+loop
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/add_loop/src/dependence.c:123:3: note: 'loop' declared here
+} loop;
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/add_loop/src/dependence.c:890:22: error: expected expression
+loop_ptr = ( loop_1 *)*( ( _QWORD *)&loop_chain->name + loop_chain->elements_used); 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/add_loop/src/dependence.c:890:14: error: use of undeclared identifier 'loop_1'
+loop_ptr = ( loop_1 *)*( ( _QWORD *)&loop_chain->name + loop_chain->elements_used); 
+             ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/add_loop/src/obj/dependence.o] Error 1

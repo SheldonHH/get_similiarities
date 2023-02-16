@@ -1,0 +1,27 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_move_insn/src/optabs.c:4405:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode tmode; // [rsp+24h] [rbp-2Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_move_insn/src/optabs.c:4407:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // [rsp+34h] [rbp-1Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_move_insn/src/optabs.c:4414:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[mode] == MODE_CC && optab_table[30]->handlers[mode].insn_code == CODE_FOR_nothing ) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_move_insn/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_move_insn/src/optabs.c:4447:8: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+return insn_data_0[optab_table[30]->handlers[tmode].insn_code].genfun( xa, ya); 
+       ^~~~~~~~~~~
+       insn_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_move_insn/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_move_insn/src/optabs.c:4447:70: error: called object type '<dependent type>' is not a function or function pointer
+return insn_data_0[optab_table[30]->handlers[tmode].insn_code].genfun( xa, ya); 
+                                                                     ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_move_insn/src/obj/optabs.o] Error 1

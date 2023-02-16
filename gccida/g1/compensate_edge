@@ -1,0 +1,21 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/compensate_edge/src/reg-stack.c:2977:11: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+v11 = &v16.m128i_i8[v6]; 
+       ~~~^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/compensate_edge/src/reg-stack.c:2980:17: error: expected identifier or '('
+ struct reg_set = v5->reg_set; 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/compensate_edge/src/reg-stack.c:3065:42: error: use of undeclared identifier 'emit_where'; did you mean 'emit_note'?
+change_stack( src->end, &tmpstack, v5, ( emit_where)( *( _WORD *)src->end == 33)); 
+                                         ^~~~~~~~~~
+                                         emit_note
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/compensate_edge/src/rtl.h:1343:12: note: 'emit_note' declared here
+extern rtx emit_note                    PARAMS ((const char *, int));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/compensate_edge/src/reg-stack.c:3065:80: error: too few arguments to function call, expected 2, have 1
+change_stack( src->end, &tmpstack, v5, ( emit_where)( *( _WORD *)src->end == 33)); 
+                                       ~~~~~~~~~~~~~                           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/compensate_edge/src/rtl.h:1343:1: note: 'emit_note' declared here
+extern rtx emit_note                    PARAMS ((const char *, int));
+^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/compensate_edge/src/obj/reg-stack.o] Error 1

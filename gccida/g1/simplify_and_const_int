@@ -1,0 +1,50 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_and_const_int/src/combine.c:8283:37: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  simplify_and_const_int( rtx x, machine_mode mode, rtx varop, unsigned __int64 constop) 
+                                    ^
+                                    enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_and_const_int/src/combine.c:8322:38: error: use of undeclared identifier 'machine_mode'
+v15 = simplify_and_const_int( 0LL, ( machine_mode)*( ( unsigned __int8 *)rtx + 2), *( rtx *)&rtx[1], v8); 
+                                     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_and_const_int/src/combine.c:8322:92: error: expected expression
+v15 = simplify_and_const_int( 0LL, ( machine_mode)*( ( unsigned __int8 *)rtx + 2), *( rtx *)&rtx[1], v8); 
+                                                                                           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_and_const_int/src/combine.c:8323:38: error: use of undeclared identifier 'machine_mode'
+v16 = simplify_and_const_int( 0LL, ( machine_mode)*( ( unsigned __int8 *)rtx + 2), rtx->fld[0].rtx, v8); 
+                                     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_and_const_int/src/combine.c:8324:21: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+v17 = gen_binary( ( rtx_code)*( _WORD *)rtx, ( machine_mode)*( ( unsigned __int8 *)rtx + 2), v16, v15); 
+                    ^~~~~~~~
+                    rtx_cost
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_and_const_int/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_and_const_int/src/combine.c:8324:30: error: invalid operands to binary expression ('int (rtx, enum rtx_code)' (aka 'int (struct rtx_def *, enum rtx_code)') and 'uint16 *' (aka 'unsigned short *'))
+v17 = gen_binary( ( rtx_code)*( _WORD *)rtx, ( machine_mode)*( ( unsigned __int8 *)rtx + 2), v16, v15); 
+                  ~~~~~~~~~~~^~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_and_const_int/src/combine.c:8324:48: error: use of undeclared identifier 'machine_mode'
+v17 = gen_binary( ( rtx_code)*( _WORD *)rtx, ( machine_mode)*( ( unsigned __int8 *)rtx + 2), v16, v15); 
+                                               ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_and_const_int/src/combine.c:8331:50: error: expected expression
+v20 = simplify_and_const_int( 0LL, mode, *( rtx *)&rtx[1], v8); 
+                                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_and_const_int/src/combine.c:8339:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v9.rtwint = ( __int64)x->fld[0]; 
+                      ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_and_const_int/src/combine.c:8340:93: error: expected expression
+if ( *( _WORD *)v9.rtwint == 63 && *( unsigned __int8 *)( v9.rtwint + 2) == mode && *( rtx *)( v9.rtwint + 8) == rtx ) 
+                                                                                            ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_and_const_int/src/combine.c:8346:13: error: expected ';' after expression
+rtx = ( rtx)v9.rtwint; 
+            ^
+            ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_and_const_int/src/combine.c:8371:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v21 = ( __int64)x[1]; 
+                ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_and_const_int/src/combine.c:8375:18: error: expected expression
+do_SUBST( ( rtx *)&x[1], v22); 
+                 ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_and_const_int/src/combine.c:8377:18: error: expected expression
+do_SUBST( ( rtx *)x->fld, rtx); 
+                 ^
+14 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_and_const_int/src/obj/combine.o] Error 1

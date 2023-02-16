@@ -1,0 +1,12 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/yyerror/src/c-parse.c:5297:22: error: use of undeclared identifier 'unk_761657'
+v1 = ( const char *)&unk_761657; 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/yyerror/src/c-parse.c:5300:23: error: use of undeclared identifier 'sch_istable'; did you mean '_sch_istable'?
+if ( val <= 0xFF && ( sch_istable[( unsigned __int8)val] & 0xAC) != 0 ) 
+                      ^~~~~~~~~~~
+                      _sch_istable
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/yyerror/src/safe-ctype.h:72:29: note: '_sch_istable' declared here
+extern const unsigned short _sch_istable[256];
+                            ^
+2 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/yyerror/src/obj/c-parse.o] Error 1

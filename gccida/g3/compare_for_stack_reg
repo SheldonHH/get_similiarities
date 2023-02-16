@@ -1,0 +1,75 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/compare_for_stack_reg/src/reg-stack.c:1794:6: error: use of undeclared identifier 'true_reg'
+rtx *true_reg; // rbx 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/compare_for_stack_reg/src/reg-stack.c:1796:4: error: expected ';' after expression
+rtx v10; // r13 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/compare_for_stack_reg/src/reg-stack.c:1796:5: error: use of undeclared identifier 'v10'
+rtx v10; // r13 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/compare_for_stack_reg/src/reg-stack.c:1797:4: error: expected ';' after expression
+rtx regno_note; // r14 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/compare_for_stack_reg/src/reg-stack.c:1797:5: error: use of undeclared identifier 'regno_note'
+rtx regno_note; // r14 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/compare_for_stack_reg/src/reg-stack.c:1799:4: error: expected ';' after expression
+rtx v13; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/compare_for_stack_reg/src/reg-stack.c:1799:5: error: use of undeclared identifier 'v13'; did you mean 'v12'?
+rtx v13; // rax 
+    ^~~
+    v12
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/compare_for_stack_reg/src/reg-stack.c:1798:18: note: 'v12' declared here
+unsigned __int64 v12; // rsi 
+                 ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/compare_for_stack_reg/src/reg-stack.c:1802:6: error: use of undeclared identifier 'rtwint'; did you mean 'rtuint'?
+rtx *rtwint; // r9 
+     ^~~~~~
+     rtuint
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/compare_for_stack_reg/src/reg-stack.c:1795:14: note: 'rtuint' declared here
+unsigned int rtuint; // edx 
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/compare_for_stack_reg/src/reg-stack.c:1802:5: error: invalid operands to binary expression ('rtx' (aka 'struct rtx_def *') and 'unsigned int')
+rtx *rtwint; // r9 
+~~~ ^~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/compare_for_stack_reg/src/reg-stack.c:1823:6: error: use of undeclared identifier 'v37'
+rtx *v37; // rax 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/compare_for_stack_reg/src/reg-stack.c:1833:6: error: use of undeclared identifier 'src2'
+rtx *src2; // [rsp+0h] [rbp-48h] 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/compare_for_stack_reg/src/reg-stack.c:1835:6: error: use of undeclared identifier 'pata'; did you mean 'pat'?
+rtx *pata; // [rsp+8h] [rbp-40h] 
+     ^~~~
+     pat
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/compare_for_stack_reg/src/reg-stack.c:1834:10: note: 'pat' declared here
+rtunion *pat; // [rsp+8h] [rbp-40h] 
+         ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/compare_for_stack_reg/src/reg-stack.c:1835:5: error: invalid operands to binary expression ('rtx' (aka 'struct rtx_def *') and 'rtunion *' (aka 'union rtunion_def *'))
+rtx *pata; // [rsp+8h] [rbp-40h] 
+~~~ ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/compare_for_stack_reg/src/reg-stack.c:1837:13: error: expected expression
+v4 = ( rtx *)&pat_src[1]; 
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/compare_for_stack_reg/src/reg-stack.c:1840:1: error: use of undeclared identifier 'true_reg'
+true_reg = get_true_reg( ( rtx *)pat_src->fld); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/compare_for_stack_reg/src/reg-stack.c:1840:33: error: expected expression
+true_reg = get_true_reg( ( rtx *)pat_src->fld); 
+                                ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/compare_for_stack_reg/src/reg-stack.c:1841:1: error: use of undeclared identifier 'src2'
+src2 = get_true_reg( v4); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/compare_for_stack_reg/src/reg-stack.c:1847:47: error: expected expression
+if ( reg_mentioned_p( ix86_flags_rtx, *( rtx *)&rtx[2]) || *( _WORD *)rtx == 34 ) 
+                                              ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/compare_for_stack_reg/src/reg-stack.c:1855:18: error: use of undeclared identifier 'true_reg'
+if ( *( _WORD *)*true_reg == 61 ) 
+                 ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/compare_for_stack_reg/src/obj/reg-stack.o] Error 1

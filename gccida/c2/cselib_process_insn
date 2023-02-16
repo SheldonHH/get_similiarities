@@ -1,0 +1,75 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cselib_process_insn/src/cselib.c:1800:4: error: expected ';' after expression
+rtx v20; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cselib_process_insn/src/cselib.c:1800:5: error: use of undeclared identifier 'v20'; did you mean 'v10'?
+rtx v20; // rax 
+    ^~~
+    v10
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cselib_process_insn/src/cselib.c:1790:5: note: 'v10' declared here
+int v10; // ecx 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cselib_process_insn/src/cselib.c:1804:4: error: expected ';' after expression
+rtx v24; // r15 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cselib_process_insn/src/cselib.c:1804:5: error: use of undeclared identifier 'v24'
+rtx v24; // r15 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cselib_process_insn/src/cselib.c:1839:4: error: expected ';' after expression
+rtx memref[2]; // [rsp+10h] [rbp-D78h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cselib_process_insn/src/cselib.c:1839:5: error: use of undeclared identifier 'memref'
+rtx memref[2]; // [rsp+10h] [rbp-D78h] 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cselib_process_insn/src/cselib.c:1878:13: error: use of undeclared identifier 'hash_table_0'; did you mean 'hash_table'?
+htab_empty( hash_table_0); 
+            ^~~~~~~~~~~~
+            hash_table
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cselib_process_insn/src/cselib.c:82:15: note: 'hash_table' declared here
+static htab_t hash_table;
+              ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cselib_process_insn/src/cselib.c:1909:16: error: use of undeclared identifier 'hash_table_0'; did you mean 'hash_table'?
+htab_traverse( hash_table_0, cselib_invalidate_mem_1, callmem); 
+               ^~~~~~~~~~~~
+               hash_table
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cselib_process_insn/src/cselib.c:82:15: note: 'hash_table' declared here
+static htab_t hash_table;
+              ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cselib_process_insn/src/cselib.c:1912:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v7 = ( unsigned __int16 *)insn[2]; 
+                          ^~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cselib_process_insn/src/cselib.c:1930:14: error: use of undeclared identifier 'memref'
+*( __m128i *)memref = _mm_shuffle_epi32( _mm_loadu_si128( ( const __m128i *)( v7 + 4)), 78); 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cselib_process_insn/src/cselib.c:1948:13: error: invalid operands to binary expression ('struct rtx_def *' and 'cselib_val **' (aka 'struct cselib_val_struct **'))
+v20 = ( rtx)*( v16 - 3); 
+      ~~~~~~^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cselib_process_insn/src/cselib.c:1948:1: error: use of undeclared identifier 'v20'
+v20 = ( rtx)*( v16 - 3); 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cselib_process_insn/src/cselib.c:1951:40: error: use of undeclared identifier 'machine_mode'
+v20 = gen_rtx_fmt_eee( IF_THEN_ELSE, ( machine_mode)*( ( unsigned __int8 *)v20 + 2), v9, ( rtx)*( v16 - 3), rtx); 
+                                       ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cselib_process_insn/src/cselib.c:1951:76: error: use of undeclared identifier 'v20'
+v20 = gen_rtx_fmt_eee( IF_THEN_ELSE, ( machine_mode)*( ( unsigned __int8 *)v20 + 2), v9, ( rtx)*( v16 - 3), rtx); 
+                                                                           ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cselib_process_insn/src/cselib.c:1951:96: error: invalid operands to binary expression ('struct rtx_def *' and 'cselib_val **' (aka 'struct cselib_val_struct **'))
+v20 = gen_rtx_fmt_eee( IF_THEN_ELSE, ( machine_mode)*( ( unsigned __int8 *)v20 + 2), v9, ( rtx)*( v16 - 3), rtx); 
+                                                                                         ~~~~~~^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cselib_process_insn/src/cselib.c:1951:1: error: use of undeclared identifier 'v20'
+v20 = gen_rtx_fmt_eee( IF_THEN_ELSE, ( machine_mode)*( ( unsigned __int8 *)v20 + 2), v9, ( rtx)*( v16 - 3), rtx); 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cselib_process_insn/src/cselib.c:1954:37: error: use of undeclared identifier 'machine_mode'
+*( v16 - 1) = cselib_lookup( v20, ( machine_mode)BYTE2( v19), 1); 
+                                    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cselib_process_insn/src/cselib.c:1954:30: error: use of undeclared identifier 'v20'
+*( v16 - 1) = cselib_lookup( v20, ( machine_mode)BYTE2( v19), 1); 
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cselib_process_insn/src/cselib.c:1958:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32), 
+  ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cselib_process_insn/src/obj/cselib.o] Error 1

@@ -1,0 +1,71 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/override_options/src/i386.c:1300:1: error: must use 'enum' tag to refer to type 'cmodel'
+cmodel v1; // edx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/override_options/src/i386.c:1308:1: error: must use 'enum' tag to refer to type 'processor_type'
+processor_type processor; // edx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/override_options/src/i386.c:1310:23: error: expected ';' at end of declaration
+const override_options::ptt *v11; // rdx 
+                      ^
+                      ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/override_options/src/i386.c:1310:24: error: expected expression
+const override_options::ptt *v11; // rdx 
+                       ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/override_options/src/i386.c:1315:18: error: expected expression
+override_options::pta_flags flags; // eax 
+                 ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/override_options/src/i386.c:1318:7: error: redefinition of 'override_options'
+const override_options::ptt *v19; // rdx 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/override_options/src/i386.c:1310:7: note: previous definition is here
+const override_options::ptt *v11; // rdx 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/override_options/src/i386.c:1318:23: error: expected ';' at end of declaration
+const override_options::ptt *v19; // rdx 
+                      ^
+                      ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/override_options/src/i386.c:1318:24: error: expected expression
+const override_options::ptt *v19; // rdx 
+                       ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/override_options/src/i386.c:1320:7: error: redefinition of 'override_options'
+const override_options::ptt *v21; // rdx 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/override_options/src/i386.c:1310:7: note: previous definition is here
+const override_options::ptt *v11; // rdx 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/override_options/src/i386.c:1320:23: error: expected ';' at end of declaration
+const override_options::ptt *v21; // rdx 
+                      ^
+                      ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/override_options/src/i386.c:1320:24: error: expected expression
+const override_options::ptt *v21; // rdx 
+                       ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/override_options/src/i386.c:1421:40: error: use of undeclared identifier 'off_672010'
+else if ( !strcmp( v0, ( const char *)&off_672010) ) 
+                                       ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/override_options/src/i386.c:1444:39: error: use of undeclared identifier 'processor_alias_table_49'
+for ( i = "i386"; strcmp( v3, i); i = processor_alias_table_49[v4].name ) 
+                                      ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/override_options/src/i386.c:1452:1: error: use of undeclared identifier 'flags'
+flags = processor_alias_table_49[( int)v4].flags; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/override_options/src/i386.c:1452:9: error: use of undeclared identifier 'processor_alias_table_49'
+flags = processor_alias_table_49[( int)v4].flags; 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/override_options/src/i386.c:1453:13: error: use of undeclared identifier 'processor_alias_table_49'
+ix86_arch = processor_alias_table_49[( int)v4].processor; 
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/override_options/src/i386.c:1455:8: error: use of undeclared identifier 'flags'
+if ( ( flags & 4) != 0 ) 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/override_options/src/i386.c:1464:8: error: use of undeclared identifier 'flags'
+if ( ( flags & 0x10) != 0 && ( ( unsigned int)target_flags & 0x200000) == 0 ) 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/override_options/src/i386.c:1466:8: error: use of undeclared identifier 'flags'
+if ( ( flags & 0x40) != 0 && ( ( unsigned int)target_flags & 0x800000) == 0 ) 
+       ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/override_options/src/obj/i386.o] Error 1

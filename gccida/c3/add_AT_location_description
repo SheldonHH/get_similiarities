@@ -1,0 +1,12 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/add_AT_location_description/src/dwarf2out.c:8996:52: error: must use 'enum' tag to refer to type 'dwarf_attribute'
+void  add_AT_location_description( dw_die_ref die, dwarf_attribute attr_kind, rtx rtl) 
+                                                   ^
+                                                   enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/add_AT_location_description/src/dwarf2out.c:9045:45: error: use of undeclared identifier 'machine_mode'
+v7 = mem_loc_descriptor( rtl->fld[0].rtx, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)rtl)); 
+                                            ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/add_AT_location_description/src/dwarf2out.c:9045:60: error: expected expression
+v7 = mem_loc_descriptor( rtl->fld[0].rtx, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)rtl)); 
+                                                           ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/add_AT_location_description/src/obj/dwarf2out.o] Error 1

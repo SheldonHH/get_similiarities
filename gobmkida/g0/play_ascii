@@ -1,0 +1,41 @@
+/data/output_dir/patch/gobmk/ida/gcc/O0/gobmk-gcc-O0/play_ascii/src/interface/play_ascii.c:1039:14: error: expected identifier or '('
+struct state = 1; 
+             ^
+/data/output_dir/patch/gobmk/ida/gcc/O0/gobmk-gcc-O0/play_ascii/src/interface/play_ascii.c:1066:6: error: expected expression
+if ( struct state == 1 ) 
+     ^
+/data/output_dir/patch/gobmk/ida/gcc/O0/gobmk-gcc-O0/play_ascii/src/interface/play_ascii.c:1223:6: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'int' of different size
+v4 = ( __m128i)COERCE_UNSIGNED_INT64( fnum); 
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/gcc/O0/gobmk-gcc-O0/play_ascii/src/interface/play_ascii.c:1224:47: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+printf( "\nSet Komi to %.1f\n", *( double *)v4.m128i_i64); 
+                                            ~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/gcc/O0/gobmk-gcc-O0/play_ascii/src/interface/play_ascii.c:1423:14: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+*( float *)v4.m128i_i32 = estimate_score( 0LL, 0LL); 
+           ~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/gcc/O0/gobmk-gcc-O0/play_ascii/src/interface/play_ascii.c:1425:14: error: expected identifier or '('
+struct state = 0; 
+             ^
+/data/output_dir/patch/gobmk/ida/gcc/O0/gobmk-gcc-O0/play_ascii/src/interface/play_ascii.c:1432:6: error: expected expression
+if ( struct state 
+     ^
+/data/output_dir/patch/gobmk/ida/gcc/O0/gobmk-gcc-O0/play_ascii/src/interface/play_ascii.c:1445:10: error: expected expression
+tcmalloc::TList<tcmalloc::Span>::Elem::Elem( &sgftree); 
+         ^
+/data/output_dir/patch/gobmk/ida/gcc/O0/gobmk-gcc-O0/play_ascii/src/interface/play_ascii.c:1449:52: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+gameinfo_clear( gameinfo, board_size, *( float *)v4.m128i_i32); 
+                                                 ~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/gcc/O0/gobmk-gcc-O0/play_ascii/src/interface/play_ascii.c:1452:30: error: use of undeclared identifier 'byte_4E235E'
+command = strtok( line_ptr, &byte_4E235E); 
+                             ^
+/data/output_dir/patch/gobmk/ida/gcc/O0/gobmk-gcc-O0/play_ascii/src/interface/play_ascii.c:1461:1: error: expected expression
+struct state = 0; 
+^
+/data/output_dir/patch/gobmk/ida/gcc/O0/gobmk-gcc-O0/play_ascii/src/interface/play_ascii.c:1466:1: error: expected expression
+struct state = 1; 
+^
+/data/output_dir/patch/gobmk/ida/gcc/O0/gobmk-gcc-O0/play_ascii/src/interface/play_ascii.c:1469:1: error: expected expression
+struct state = 2; 
+^
+13 errors generated.
+make: *** [/data/output_dir/patch/gobmk/ida/gcc/O0/gobmk-gcc-O0/play_ascii/src/obj/2/play_ascii.o] Error 1

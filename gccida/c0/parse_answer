@@ -1,0 +1,39 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/parse_answer/src/cpplib.c:1930:20: error: unknown type name 'cpp_reader_0'; did you mean 'cpp_reader'?
+int  parse_answer( cpp_reader_0 *pfile,  struct answer **answerp, int type) 
+                   ^~~~~~~~~~~~
+                   cpp_reader
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/parse_answer/src/cpplib.h:36:27: note: 'cpp_reader' declared here
+typedef struct cpp_reader cpp_reader;
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/parse_answer/src/cpplib.c:1932:1: error: unknown type name 'cpp_token_0'; did you mean 'cpp_token'?
+cpp_token_0 *dest; // [rsp+0h] [rbp-50h] 
+^~~~~~~~~~~
+cpp_token
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/parse_answer/src/cpplib.h:40:26: note: 'cpp_token' declared here
+typedef struct cpp_token cpp_token;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/parse_answer/src/cpplib.c:1933:7: error: unknown type name 'cpp_token_0'; did you mean 'cpp_token'?
+const cpp_token_0 *token; // [rsp+8h] [rbp-48h] 
+      ^~~~~~~~~~~
+      cpp_token
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/parse_answer/src/cpplib.h:40:26: note: 'cpp_token' declared here
+typedef struct cpp_token cpp_token;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/parse_answer/src/cpplib.c:1936:7: error: unknown type name 'cpp_token_0'; did you mean 'cpp_token'?
+const cpp_token_0 *paren; // [rsp+28h] [rbp-28h] 
+      ^~~~~~~~~~~
+      cpp_token
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/parse_answer/src/cpplib.h:40:26: note: 'cpp_token' declared here
+typedef struct cpp_token cpp_token;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/parse_answer/src/cpplib.c:1953:23: error: expected expression
+dest = ( cpp_token_0 *)&pfile->a_buff->cur[24 * acount + 16]; 
+                      ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/parse_answer/src/cpplib.c:1953:10: error: use of undeclared identifier 'cpp_token_0'
+dest = ( cpp_token_0 *)&pfile->a_buff->cur[24 * acount + 16]; 
+         ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/parse_answer/src/cpplib.c:1962:16: error: expected identifier or '('
+ struct answer = (  struct answer *)pfile->a_buff->cur; 
+               ^
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/parse_answer/src/obj/cpplib.o] Error 1

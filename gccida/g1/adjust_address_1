@@ -1,0 +1,71 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/adjust_address_1/src/emit-rtl.c:2439:36: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  adjust_address_1( rtx memref, machine_mode mode, __int64 offset, int validate, int adjust) 
+                                   ^
+                                   enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/adjust_address_1/src/emit-rtl.c:2443:4: error: expected ';' after expression
+rtx v10; // r13 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/adjust_address_1/src/emit-rtl.c:2443:5: error: use of undeclared identifier 'v10'
+rtx v10; // r13 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/adjust_address_1/src/emit-rtl.c:2444:4: error: expected ';' after expression
+rtx v11; // r12 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/adjust_address_1/src/emit-rtl.c:2444:5: error: use of undeclared identifier 'v11'
+rtx v11; // r12 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/adjust_address_1/src/emit-rtl.c:2446:4: error: expected ';' after expression
+rtx v13; // r12 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/adjust_address_1/src/emit-rtl.c:2446:5: error: use of undeclared identifier 'v13'; did you mean 'v12'?
+rtx v13; // r12 
+    ^~~
+    v12
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/adjust_address_1/src/emit-rtl.c:2445:17: note: 'v12' declared here
+unsigned __int8 v12; // di 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/adjust_address_1/src/emit-rtl.c:2448:4: error: expected ';' after expression
+rtx v15; // rdi 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/adjust_address_1/src/emit-rtl.c:2448:5: error: use of undeclared identifier 'v15'
+rtx v15; // rdi 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/adjust_address_1/src/emit-rtl.c:2450:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v17; // r9d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/adjust_address_1/src/emit-rtl.c:2453:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v20; // rsi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/adjust_address_1/src/emit-rtl.c:2461:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v9 = ( __int64)memref[1]; 
+               ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/adjust_address_1/src/emit-rtl.c:2464:15: error: expected expression
+v10 = *( rtx *)( v9 + 16); 
+              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/adjust_address_1/src/emit-rtl.c:2464:1: error: use of undeclared identifier 'v10'
+v10 = *( rtx *)( v9 + 16); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/adjust_address_1/src/emit-rtl.c:2466:1: error: use of undeclared identifier 'v11'
+v11 = copy_rtx( rtx); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/adjust_address_1/src/emit-rtl.c:2473:1: error: use of undeclared identifier 'v11'
+v11 = v26; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/adjust_address_1/src/emit-rtl.c:2476:1: error: use of undeclared identifier 'v13'
+v13 = change_address_1( memref, mode, v26, validate); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/adjust_address_1/src/emit-rtl.c:2477:1: error: use of undeclared identifier 'v10'
+v10 = 0LL; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/adjust_address_1/src/emit-rtl.c:2481:1: error: use of undeclared identifier 'v10'
+v10 = 0LL; 
+^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/adjust_address_1/src/obj/emit-rtl.o] Error 1

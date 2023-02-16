@@ -1,0 +1,48 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/express_from_1/src/loop.c:7484:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v18; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/express_from_1/src/loop.c:7488:4: error: expected ';' after expression
+rtx v23; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/express_from_1/src/loop.c:7488:5: error: use of undeclared identifier 'v23'
+rtx v23; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/express_from_1/src/loop.c:7505:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v22 = (  struct rtx_def *)v4[1]; 
+                          ^~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/express_from_1/src/loop.c:7509:1: error: use of undeclared identifier 'v23'
+v23 = mult; 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/express_from_1/src/loop.c:7513:1: error: use of undeclared identifier 'v23'
+v23 = mult; 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/express_from_1/src/loop.c:7518:40: error: use of undeclared identifier 'v23'; did you mean 'v3'?
+return gen_rtx_CONST_INT( VOIDmode, -( v23->fld[0].rtwint * v22->fld[0].rtwint)); 
+                                       ^~~
+                                       v3
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/express_from_1/src/loop.c:7470:5: note: 'v3' declared here
+rtx v3; // r15 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/express_from_1/src/loop.c:7523:26: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v7 = (  struct rtx_def *)v4[1]; 
+                         ^~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/express_from_1/src/loop.c:7527:26: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v6 = (  struct rtx_def *)v4[1]; 
+                         ^~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/express_from_1/src/loop.c:7529:26: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v9 = (  struct rtx_def *)v3[1]; 
+                         ^~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/express_from_1/src/loop.c:7532:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v10 = (  struct rtx_def *)v3[1]; 
+                          ^~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/express_from_1/src/loop.c:7550:29: error: use of undeclared identifier 'machine_mode'
+b = gen_rtx_fmt_ee( PLUS, ( machine_mode)*( ( unsigned __int8 *)v3 + 2), v10, v15); 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/express_from_1/src/loop.c:7592:11: error: expected ';' after expression
+b = ( rtx)v3[1]; 
+          ^
+          ;
+13 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/express_from_1/src/obj/loop.o] Error 1

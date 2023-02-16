@@ -1,0 +1,83 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/delete_output_reload/src/reload1.c:8062:4: error: expected ';' after expression
+rtx v29; // rsi 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/delete_output_reload/src/reload1.c:8062:5: error: use of undeclared identifier 'v29'
+rtx v29; // rsi 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/delete_output_reload/src/reload1.c:8066:4: error: expected ';' after expression
+rtx v33; // rsi 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/delete_output_reload/src/reload1.c:8066:5: error: use of undeclared identifier 'v33'
+rtx v33; // rsi 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/delete_output_reload/src/reload1.c:8067:4: error: expected ';' after expression
+rtx output_reload_insn; // [rsp+0h] [rbp-58h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/delete_output_reload/src/reload1.c:8067:5: error: use of undeclared identifier 'output_reload_insn'; did you mean 'output_reload_insns'?
+rtx output_reload_insn; // [rsp+0h] [rbp-58h] 
+    ^~~~~~~~~~~~~~~~~~
+    output_reload_insns
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/delete_output_reload/src/reload1.c:6125:12: note: 'output_reload_insns' declared here
+static rtx output_reload_insns[MAX_RECOG_OPERANDS];
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/delete_output_reload/src/reload1.c:8073:7: error: use of undeclared identifier 'output_reload_insn'; did you mean 'output_reload_insns'?
+for ( output_reload_insn = spill_reg_store[last_reload_reg]; *( _WORD *)rtx == 63; rtx = rtx->fld[0].rtx ) 
+      ^~~~~~~~~~~~~~~~~~
+      output_reload_insns
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/delete_output_reload/src/reload1.c:6125:12: note: 'output_reload_insns' declared here
+static rtx output_reload_insns[MAX_RECOG_OPERANDS];
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/delete_output_reload/src/reload1.c:8073:26: error: array type 'rtx [30]' is not assignable
+for ( output_reload_insn = spill_reg_store[last_reload_reg]; *( _WORD *)rtx == 63; rtx = rtx->fld[0].rtx ) 
+      ~~~~~~~~~~~~~~~~~~ ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/delete_output_reload/src/reload1.c:8128:34: error: expected expression
+v12 = count_occurrences( *( rtx *)&insn[2], rtx, 0); 
+                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/delete_output_reload/src/reload1.c:8132:35: error: expected expression
+v12 += count_occurrences( *( rtx *)&insn[2], v13, 0); 
+                                  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/delete_output_reload/src/reload1.c:8136:24: error: use of undeclared identifier 'output_reload_insn'
+v14.rtwint = ( __int64)output_reload_insn[1].fld[0]; 
+                       ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/delete_output_reload/src/reload1.c:8152:36: error: expected expression
+if ( reg_mentioned_p( rtx, *( rtx *)( v14.rtwint + 32)) ) 
+                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/delete_output_reload/src/reload1.c:8163:33: error: expected expression
+v20 = rtx_equal_p( rtx, *( rtx *)( v19 + 8)); 
+                                ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/delete_output_reload/src/reload1.c:8175:23: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( ( unsigned int)( mode_class_0[v16] - 5) > 1 ) 
+                      ^~~~~~~~~~~~
+                      mode_class
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/delete_output_reload/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/delete_output_reload/src/reload1.c:8206:23: error: subscripted value is not an array, pointer, or vector
+*(long long *)0x9F8938[v25 + v26] = 0LL; 
+              ~~~~~~~~^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/delete_output_reload/src/reload1.c:8215:23: error: subscripted value is not an array, pointer, or vector
+*(long long *)0x9F8778[v25 + v26] = 0LL; 
+              ~~~~~~~~^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/delete_output_reload/src/reload1.c:8231:25: error: use of undeclared identifier 'output_reload_insn'; did you mean 'output_reload_insns'?
+delete_address_reloads( output_reload_insn, insn); 
+                        ^~~~~~~~~~~~~~~~~~
+                        output_reload_insns
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/delete_output_reload/src/reload1.c:6125:12: note: 'output_reload_insns' declared here
+static rtx output_reload_insns[MAX_RECOG_OPERANDS];
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/delete_output_reload/src/reload1.c:8232:14: error: use of undeclared identifier 'output_reload_insn'; did you mean 'output_reload_insns'?
+delete_insn( output_reload_insn); 
+             ^~~~~~~~~~~~~~~~~~
+             output_reload_insns
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/delete_output_reload/src/reload1.c:6125:12: note: 'output_reload_insns' declared here
+static rtx output_reload_insns[MAX_RECOG_OPERANDS];
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/delete_output_reload/src/reload1.c:8235:28: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v27 = ( unsigned __int16 *)insn[1]; 
+                           ^~~~~~~
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/delete_output_reload/src/obj/reload1.o] Error 1

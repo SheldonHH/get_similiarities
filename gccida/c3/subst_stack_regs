@@ -1,0 +1,84 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/subst_stack_regs/src/reg-stack.c:2694:26: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v5 = (  struct rtx_def *)insn[1]; 
+                         ^~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/subst_stack_regs/src/reg-stack.c:2713:57: error: use of undeclared identifier 'xmm'
+v10 = _mm_add_epi32( _mm_load_si128( ( const __m128i *)&xmm*(short *)0x7203E0), v9); 
+                                                        ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/subst_stack_regs/src/reg-stack.c:2714:57: error: use of undeclared identifier 'xmm'
+v11 = _mm_add_epi32( _mm_load_si128( ( const __m128i *)&xmm*(short *)0x7203F0), v9); 
+                                                        ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/subst_stack_regs/src/reg-stack.c:2715:57: error: use of undeclared identifier 'xmm'
+v12 = _mm_add_epi32( _mm_load_si128( ( const __m128i *)&xmm*(short *)0x720400), v9); 
+                                                        ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/subst_stack_regs/src/reg-stack.c:2716:36: error: use of undeclared identifier 'xmm'
+v13 = _mm_add_epi32( v9, ( __m128i)xmm*(short *)0x720410); 
+                                   ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/subst_stack_regs/src/reg-stack.c:2719:44: error: use of undeclared identifier 'xmm'
+si128 = _mm_load_si128( ( const __m128i *)&xmm*(short *)0x720420); 
+                                           ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/subst_stack_regs/src/reg-stack.c:2720:42: error: use of undeclared identifier 'xmm'
+v17 = _mm_load_si128( ( const __m128i *)&xmm*(short *)0x720430); 
+                                         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/subst_stack_regs/src/reg-stack.c:2733:44: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'long long' of different size
+_mm_shuffle_epi32( _mm_unpackhi_epi8( v18, ( __m128i)0LL), 78), 
+                                           ^~~~~~~~~~~~~
+/usr/lib/llvm-7/lib/clang/7.0.0/include/emmintrin.h:4347:52: note: expanded from macro '_mm_shuffle_epi32'
+  (__m128i)__builtin_ia32_pshufd((__v4si)(__m128i)(a), (int)(imm))
+                                                   ^
+/usr/lib/llvm-7/lib/clang/7.0.0/include/emmintrin.h:4377:53: note: expanded from macro '_mm_shufflelo_epi16'
+  (__m128i)__builtin_ia32_pshuflw((__v8hi)(__m128i)(a), (int)(imm))
+                                                    ^
+/usr/lib/llvm-7/lib/clang/7.0.0/include/emmintrin.h:4407:53: note: expanded from macro '_mm_shufflehi_epi16'
+  (__m128i)__builtin_ia32_pshufhw((__v8hi)(__m128i)(a), (int)(imm))
+                                                    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/subst_stack_regs/src/reg-stack.c:2738:44: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'long long' of different size
+_mm_shuffle_epi32( _mm_unpacklo_epi8( v18, ( __m128i)0LL), 78), 
+                                           ^~~~~~~~~~~~~
+/usr/lib/llvm-7/lib/clang/7.0.0/include/emmintrin.h:4347:52: note: expanded from macro '_mm_shuffle_epi32'
+  (__m128i)__builtin_ia32_pshufd((__v4si)(__m128i)(a), (int)(imm))
+                                                   ^
+/usr/lib/llvm-7/lib/clang/7.0.0/include/emmintrin.h:4377:53: note: expanded from macro '_mm_shufflelo_epi16'
+  (__m128i)__builtin_ia32_pshuflw((__v8hi)(__m128i)(a), (int)(imm))
+                                                    ^
+/usr/lib/llvm-7/lib/clang/7.0.0/include/emmintrin.h:4407:53: note: expanded from macro '_mm_shufflehi_epi16'
+  (__m128i)__builtin_ia32_pshufhw((__v8hi)(__m128i)(a), (int)(imm))
+                                                    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/subst_stack_regs/src/reg-stack.c:2756:2: error: expected expression
+ struct reg_set = regstack->reg_set; 
+ ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/subst_stack_regs/src/reg-stack.c:2761:41: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'unsigned int' of different size
+v24 = _mm_add_epi64( _mm_shuffle_epi32( ( __m128i)v7, 68), ( __m128i)xmm*(short *)0x68FC00); 
+                                        ^~~~~~~~~~~~
+/usr/lib/llvm-7/lib/clang/7.0.0/include/emmintrin.h:4347:52: note: expanded from macro '_mm_shuffle_epi32'
+  (__m128i)__builtin_ia32_pshufd((__v4si)(__m128i)(a), (int)(imm))
+                                                   ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/subst_stack_regs/src/reg-stack.c:2761:70: error: use of undeclared identifier 'xmm'
+v24 = _mm_add_epi64( _mm_shuffle_epi32( ( __m128i)v7, 68), ( __m128i)xmm*(short *)0x68FC00); 
+                                                                     ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/subst_stack_regs/src/reg-stack.c:2763:23: error: invalid conversion between vector type '__m128d' (vector of 2 'double' values) and integer type 'unsigned long long' of different size
+v26 = _mm_shuffle_pd( ( __m128d)reg_set, ( __m128d)xmm*(short *)0x68FC00, 2); 
+                      ^~~~~~~~~~~~~~~~~
+/usr/lib/llvm-7/lib/clang/7.0.0/include/emmintrin.h:4761:52: note: expanded from macro '_mm_shuffle_pd'
+  (__m128d)__builtin_ia32_shufpd((__v2df)(__m128d)(a), (__v2df)(__m128d)(b), \
+                                                   ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/subst_stack_regs/src/reg-stack.c:2763:52: error: use of undeclared identifier 'xmm'
+v26 = _mm_shuffle_pd( ( __m128d)reg_set, ( __m128d)xmm*(short *)0x68FC00, 2); 
+                                                   ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/subst_stack_regs/src/reg-stack.c:2767:7: error: invalid conversion between vector type '__m128d' (vector of 2 'double' values) and integer type 'long long' of different size
+v29 = ( __m128d)-1LL; 
+      ^~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/subst_stack_regs/src/reg-stack.c:2774:7: error: invalid conversion between vector type '__m128d' (vector of 2 'double' values) and integer type 'long long' of different size
+v29 = ( __m128d)-1LL; 
+      ^~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/subst_stack_regs/src/reg-stack.c:2775:42: error: use of undeclared identifier 'xmm'
+v30 = _mm_load_si128( ( const __m128i *)&xmm*(short *)0x6682A0); 
+                                         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/subst_stack_regs/src/reg-stack.c:2776:42: error: use of undeclared identifier 'xmm'
+v31 = _mm_load_si128( ( const __m128i *)&xmm*(short *)0x668290); 
+                                         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/subst_stack_regs/src/reg-stack.c:2777:42: error: use of undeclared identifier 'xmm'
+v32 = _mm_load_si128( ( const __m128i *)&xmm*(short *)0x65AE10); 
+                                         ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/subst_stack_regs/src/obj/reg-stack.o] Error 1

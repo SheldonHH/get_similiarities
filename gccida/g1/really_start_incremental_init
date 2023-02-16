@@ -1,0 +1,19 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/really_start_incremental_init/src/c-typeck.c:5676:1: error: use of undeclared identifier 'constructor_stack_0'; did you mean 'constructor_stack'?
+constructor_stack_0 = v2; 
+^~~~~~~~~~~~~~~~~~~
+constructor_stack
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/really_start_incremental_init/src/c-typeck.c:5021:27: note: 'constructor_stack' declared here
+struct constructor_stack *constructor_stack;
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/really_start_incremental_init/src/c-typeck.c:5679:21: error: use of undeclared identifier 'spelling_0'; did you mean 'spelling'?
+constructor_depth = spelling_0 - spelling_base; 
+                    ^~~~~~~~~~
+                    spelling
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/really_start_incremental_init/src/c-typeck.c:4491:25: note: 'spelling' declared here
+static struct spelling *spelling;       /* Next stack element (unused).  */
+                        ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/really_start_incremental_init/src/c-typeck.c:5723:13: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v7 = ( tree)v6[7]; 
+            ^~~~~
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/really_start_incremental_init/src/obj/c-typeck.o] Error 1

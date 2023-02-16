@@ -1,0 +1,40 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/flush_pending_lists/src/sched-deps.c:987:28: error: unknown type name 'deps_0'
+void  flush_pending_lists( deps_0 *deps, rtx insn, int for_read, int for_write) 
+                           ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/flush_pending_lists/src/sched-deps.c:1005:28: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+pending_read_insns = ( rtx)pending_read_insns[1]; 
+                           ^~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/flush_pending_lists/src/sched-deps.c:1017:29: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+pending_write_insns = ( rtx)pending_write_insns[1]; 
+                            ^~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/flush_pending_lists/src/sched-deps.c:1018:41: error: use of undeclared identifier 'reg_note'; did you mean 'reg_names'?
+add_dependence( insn, v7->fld[0].rtx, ( reg_note)v6); 
+                                        ^~~~~~~~
+                                        reg_names
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/flush_pending_lists/src/regs.h:166:21: note: 'reg_names' declared here
+extern const char * reg_names[FIRST_PSEUDO_REGISTER];
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/flush_pending_lists/src/sched-deps.c:1018:50: error: expected ')'
+add_dependence( insn, v7->fld[0].rtx, ( reg_note)v6); 
+                                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/flush_pending_lists/src/sched-deps.c:1018:15: note: to match this '('
+add_dependence( insn, v7->fld[0].rtx, ( reg_note)v6); 
+              ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/flush_pending_lists/src/sched-deps.c:1028:35: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+last_pending_memory_flush = ( rtx)last_pending_memory_flush[1]; 
+                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/flush_pending_lists/src/sched-deps.c:1029:41: error: use of undeclared identifier 'reg_note'; did you mean 'reg_names'?
+add_dependence( insn, v9->fld[0].rtx, ( reg_note)v6); 
+                                        ^~~~~~~~
+                                        reg_names
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/flush_pending_lists/src/regs.h:166:21: note: 'reg_names' declared here
+extern const char * reg_names[FIRST_PSEUDO_REGISTER];
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/flush_pending_lists/src/sched-deps.c:1029:50: error: expected ')'
+add_dependence( insn, v9->fld[0].rtx, ( reg_note)v6); 
+                                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/flush_pending_lists/src/sched-deps.c:1029:15: note: to match this '('
+add_dependence( insn, v9->fld[0].rtx, ( reg_note)v6); 
+              ^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/flush_pending_lists/src/obj/sched-deps.o] Error 1

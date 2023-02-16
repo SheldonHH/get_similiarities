@@ -1,0 +1,11 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/output_constant_def/src/varasm.c:3710:43: error: use of undeclared identifier 'a'
+sprintf( label, "*.%s%u", ( const char *)&a.dw_attr_val, v6); 
+                                          ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/output_constant_def/src/varasm.c:3740:36: error: use of undeclared identifier 'machine_mode'
+v10 = gen_rtx_fmt_s( SYMBOL_REF, ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), object_base->label); 
+                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/output_constant_def/src/varasm.c:3741:22: error: use of undeclared identifier 'machine_mode'
+rtl = gen_rtx_MEM( ( machine_mode)( BYTE5( exp->common.type->block.abstract_origin) >> 1), v10); 
+                     ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/output_constant_def/src/obj/varasm.o] Error 1

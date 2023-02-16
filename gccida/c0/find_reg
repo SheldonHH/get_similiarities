@@ -1,0 +1,78 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_reg/src/reload1.c:2145:7: error: conflicting types for 'find_reg'
+void  find_reg( int num, HARD_REG_ELT_TYPE losers, int alt_regs_p, int accept_call_clobbered, int retrying) 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_reg/src/reload1.c:376:12: note: previous declaration is here
+static int find_reg                     PARAMS ((struct insn_chain *, int));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_reg/src/reload1.c:2199:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class v57; // [rsp+9Ch] [rbp-C4h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_reg/src/reload1.c:2200:20: error: expected identifier or '('
+unsigned __int64 *(short *)0x; // [rsp+A0h] [rbp-C0h] 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_reg/src/reload1.c:2200:20: error: expected ')'
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_reg/src/reload1.c:2200:19: note: to match this '('
+unsigned __int64 *(short *)0x; // [rsp+A0h] [rbp-C0h] 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_reg/src/reload1.c:2219:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // [rsp+118h] [rbp-48h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_reg/src/reload1.c:2233:28: error: use of undeclared identifier 'allocno_0'
+v57 = reg_alternate_class( allocno_0[( __int64)num].reg); 
+                           ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_reg/src/reload1.c:2235:28: error: use of undeclared identifier 'allocno_0'
+v57 = reg_preferred_class( allocno_0[( __int64)num].reg); 
+                           ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_reg/src/reload1.c:2236:73: error: use of undeclared identifier 'allocno_0'
+mode = ( unsigned __int8)BYTE2( *( _DWORD *)cfun->emit->x_regno_reg_rtx[allocno_0[( __int64)num].reg]); 
+                                                                        ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_reg/src/reload1.c:2241:11: error: use of undeclared identifier 'allocno_0'
+else if ( allocno_0[( __int64)num].calls_crossed ) 
+          ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_reg/src/reload1.c:2249:18: error: use of undeclared identifier 'no_global_alloc_regs'
+used1a = used1 | no_global_alloc_regs; 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_reg/src/reload1.c:2253:18: error: use of undeclared identifier 'allocno_0'
+used1b = used2 | allocno_0[( __int64)num].hard_reg_conflicts; 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_reg/src/reload1.c:2254:18: error: use of undeclared identifier 'regs_used_so_far'
+used = used1b | ~regs_used_so_far | allocno_0[( __int64)num].regs_someone_prefers; 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_reg/src/reload1.c:2254:37: error: use of undeclared identifier 'allocno_0'
+used = used1b | ~regs_used_so_far | allocno_0[( __int64)num].regs_someone_prefers; 
+                                    ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_reg/src/reload1.c:2309:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[mode] != MODE_COMPLEX_INT ) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_reg/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_reg/src/reload1.c:2310:7: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v55 = mode_class_0[mode] == MODE_COMPLEX_FLOAT; 
+      ^~~~~~~~~~~~
+      mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_reg/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_reg/src/reload1.c:2333:1: error: use of undeclared identifier 'allocno_0'; did you mean 'allocno_'?
+allocno_0[( __int64)num].hard_reg_copy_preferences &= ~used; 
+^~~~~~~~~
+allocno_
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_reg/src/reload1.c:2202:5: note: 'allocno_' declared here
+int allocno_; // [rsp+B0h] [rbp-B0h] 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_reg/src/reload1.c:2333:10: error: subscripted value is not an array, pointer, or vector
+allocno_0[( __int64)num].hard_reg_copy_preferences &= ~used; 
+~~~~~~~~~^~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_reg/src/reload1.c:2334:33: error: use of undeclared identifier 'allocno_0'
+if ( ( ~reg_class_contents[0] & allocno_0[( __int64)num].hard_reg_copy_preferences) != 0 && best_reg >= 0 ) 
+                                ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_reg/src/reload1.c:2338:23: error: use of undeclared identifier 'allocno_0'
+if ( ( ( 1LL << ia) & allocno_0[( __int64)num].hard_reg_copy_preferences) != 0 
+                      ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_reg/src/obj/reload1.o] Error 1

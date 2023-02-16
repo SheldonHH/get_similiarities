@@ -1,0 +1,43 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/final_giv_value/src/unroll.c:3741:49: error: unknown type name 'induction_1'
+rtx  final_giv_value( const  struct loop *loop, induction_1 *v) 
+                                                ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/final_giv_value/src/unroll.c:3746:1: error: use of undeclared identifier 'induction_1'
+induction_1 *biv; // [rsp+20h] [rbp-60h] 
+^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/final_giv_value/src/unroll.c:3746:14: error: use of undeclared identifier 'biv'; did you mean 'div'?
+induction_1 *biv; // [rsp+20h] [rbp-60h] 
+             ^~~
+             div
+/usr/include/stdlib.h:849:14: note: 'div' declared here
+extern div_t div (int __numer, int __denom)
+             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/final_giv_value/src/unroll.c:3779:7: error: use of undeclared identifier 'biv'
+for ( biv = bl_0->biv; biv; biv = biv->next_iv ) 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/final_giv_value/src/unroll.c:3779:24: error: use of undeclared identifier 'biv'; did you mean 'div'?
+for ( biv = bl_0->biv; biv; biv = biv->next_iv ) 
+                       ^~~
+                       div
+/usr/include/stdlib.h:849:14: note: 'div' declared here
+extern div_t div (int __numer, int __denom)
+             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/final_giv_value/src/unroll.c:3779:29: error: use of undeclared identifier 'biv'
+for ( biv = bl_0->biv; biv; biv = biv->next_iv ) 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/final_giv_value/src/unroll.c:3779:35: error: use of undeclared identifier 'biv'
+for ( biv = bl_0->biv; biv; biv = biv->next_iv ) 
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/final_giv_value/src/unroll.c:3781:6: error: use of undeclared identifier 'biv'
+if ( biv->insn == insn ) 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/final_giv_value/src/unroll.c:3785:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)tem), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/final_giv_value/src/unroll.c:3785:18: error: expected expression
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)tem), 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/final_giv_value/src/unroll.c:3788:1: error: use of undeclared identifier 'biv'
+biv->add_val, 
+^
+11 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/final_giv_value/src/obj/unroll.o] Error 1

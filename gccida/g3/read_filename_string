@@ -1,0 +1,16 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/read_filename_string/src/cppfiles.c:1345:8: error: use of undeclared identifier 'sch_istable'; did you mean '_sch_istable'?
+if ( ( sch_istable[( unsigned __int8)ch_0] & 0xC00) == 0 ) 
+       ^~~~~~~~~~~
+       _sch_istable
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/read_filename_string/src/safe-ctype.h:72:29: note: '_sch_istable' declared here
+extern const unsigned short _sch_istable[256];
+                            ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/read_filename_string/src/cppfiles.c:1354:20: error: use of undeclared identifier 'sch_istable'; did you mean '_sch_istable'?
+if ( v6 == -1 || ( sch_istable[( unsigned __int8)v6] & 0xC00) != 0 ) 
+                   ^~~~~~~~~~~
+                   _sch_istable
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/read_filename_string/src/safe-ctype.h:72:29: note: '_sch_istable' declared here
+extern const unsigned short _sch_istable[256];
+                            ^
+2 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/read_filename_string/src/obj/cppfiles.o] Error 1

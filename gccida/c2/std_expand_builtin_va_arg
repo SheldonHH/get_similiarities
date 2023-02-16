@@ -1,0 +1,35 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/std_expand_builtin_va_arg/src/builtins.c:3458:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v5; // rbx 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/std_expand_builtin_va_arg/src/builtins.c:3459:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v6; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/std_expand_builtin_va_arg/src/builtins.c:3461:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v8; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/std_expand_builtin_va_arg/src/builtins.c:3463:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v10; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/std_expand_builtin_va_arg/src/builtins.c:3464:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v11; // rbx 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/std_expand_builtin_va_arg/src/builtins.c:3467:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v14; // r12 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/std_expand_builtin_va_arg/src/builtins.c:3477:20: error: expected expression
+v11 = ( tree_node *)*( &global_trees + 15); 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/std_expand_builtin_va_arg/src/builtins.c:3477:9: error: use of undeclared identifier 'tree_node'
+v11 = ( tree_node *)*( &global_trees + 15); 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/std_expand_builtin_va_arg/src/builtins.c:3489:35: error: use of undeclared identifier 'machine_mode'
+v12 = expand_expr( valist, 0LL, ( machine_mode)( ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32), EXPAND_NORMAL); 
+                                  ^
+9 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/std_expand_builtin_va_arg/src/obj/builtins.o] Error 1

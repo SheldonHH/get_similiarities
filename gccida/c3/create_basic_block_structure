@@ -1,0 +1,31 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/create_basic_block_structure/src/cfgrtl.c:687:4: error: expected ';' after expression
+rtx v15; // rdx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/create_basic_block_structure/src/cfgrtl.c:687:5: error: use of undeclared identifier 'v15'
+rtx v15; // rdx 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/create_basic_block_structure/src/cfgrtl.c:692:39: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+|| ( v7 = (  struct basic_block_def *)bb_note[2]) == 0LL 
+                                      ^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/create_basic_block_structure/src/cfgrtl.c:725:1: error: use of undeclared identifier 'v15'
+v15 = head; 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/create_basic_block_structure/src/cfgrtl.c:729:1: error: use of undeclared identifier 'v15'
+v15 = ( rtx)head[1]; 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/create_basic_block_structure/src/cfgrtl.c:732:6: error: use of undeclared identifier 'v15'
+if ( v15 != bb_note && v15[1].fld[0].rtx != bb_note ) 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/create_basic_block_structure/src/cfgrtl.c:732:24: error: use of undeclared identifier 'v15'; did you mean 'v10'?
+if ( v15 != bb_note && v15[1].fld[0].rtx != bb_note ) 
+                       ^~~
+                       v10
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/create_basic_block_structure/src/cfgrtl.c:683:18: note: 'v10' declared here
+ struct rtx_def *v10; // rax 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/create_basic_block_structure/src/cfgrtl.c:733:34: error: use of undeclared identifier 'v15'
+reorder_insns( bb_note, bb_note, v15); 
+                                 ^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/create_basic_block_structure/src/obj/cfgrtl.o] Error 1

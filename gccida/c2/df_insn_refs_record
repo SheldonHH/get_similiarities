@@ -1,0 +1,29 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/df_insn_refs_record/src/df.c:1662:105: error: must use 'enum' tag to refer to type 'df_ref_flags'
+void  df_insn_refs_record(  struct df *df_0, basic_block bb, rtx insn,  struct rtx_def *a4, __int64 a5, df_ref_flags a6) 
+                                                                                                        ^
+                                                                                                        enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/df_insn_refs_record/src/df.c:1662:7: error: conflicting types for 'df_insn_refs_record'
+void  df_insn_refs_record(  struct df *df_0, basic_block bb, rtx insn,  struct rtx_def *a4, __int64 a5, df_ref_flags a6) 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/df_insn_refs_record/src/df.c:242:13: note: previous declaration is here
+static void df_insn_refs_record PARAMS((struct df *, basic_block, rtx));
+            ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/df_insn_refs_record/src/df.c:1671:1: error: must use 'enum' tag to refer to type 'df_ref_flags'
+df_ref_flags v14; // r9d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/df_insn_refs_record/src/df.c:1680:1: error: must use 'enum' tag to refer to type 'df_ref_flags'
+df_ref_flags v23; // r9d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/df_insn_refs_record/src/df.c:1733:29: error: use of undeclared identifier 'machine_mode'
+v13 = gen_rtx_fmt_e( USE, ( machine_mode)*( ( unsigned __int8 *)v12 + 2), v12); 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/df_insn_refs_record/src/df.c:1742:29: error: use of undeclared identifier 'machine_mode'
+v22 = gen_rtx_fmt_e( USE, ( machine_mode)*( ( unsigned __int8 *)v21 + 2), v21); 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/df_insn_refs_record/src/df.c:1759:33: error: use of undeclared identifier 'machine_mode'
+v27 = gen_rtx_fmt_e( CLOBBER, ( machine_mode)*( ( unsigned __int8 *)v26 + 2), v26); 
+                                ^
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/df_insn_refs_record/src/obj/df.o] Error 1

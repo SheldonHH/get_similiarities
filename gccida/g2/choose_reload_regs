@@ -1,0 +1,88 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/choose_reload_regs/src/reload1.c:5831:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v59; // r14d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/choose_reload_regs/src/reload1.c:5837:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class v65; // r8d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/choose_reload_regs/src/reload1.c:5838:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v66; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/choose_reload_regs/src/reload1.c:5977:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class regnog; // [rsp+18h] [rbp-630h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/choose_reload_regs/src/reload1.c:5993:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class class1a; // [rsp+38h] [rbp-610h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/choose_reload_regs/src/reload1.c:6004:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class group_class; // [rsp+6Ch] [rbp-5DCh] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/choose_reload_regs/src/reload1.c:6039:54: error: ISO C requires a named parameter before '...'
+specqsort( ( char *)reload_order, v1, 2, ( int ( *)( ...))reload_reg_class_lower); 
+                                                     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/choose_reload_regs/src/reload1.c:6113:55: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+if ( *( _WORD *)v21 != 63 || ( v83.rtwint = ( __int64)v21->fld[0], *( _WORD *)v83.rtwint != 61) ) 
+                                                      ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/choose_reload_regs/src/reload1.c:6119:22: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v60 = ( unsigned int)v21[1]; 
+                     ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/choose_reload_regs/src/reload1.c:6122:26: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+byte_0f = ( unsigned int)v21[1]; 
+                         ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/choose_reload_regs/src/reload1.c:6141:39: error: use of undeclared identifier 'machine_mode'
+v62 = subreg_regno_offset( byte_0d, ( machine_mode)*( ( unsigned __int8 *)v61 + 2), v60, v59); 
+                                      ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/choose_reload_regs/src/reload1.c:6152:44: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v66 = smallest_mode_for_size( v63 + passa, mode_class_0[v59]); 
+                                           ^~~~~~~~~~~~
+                                           mode_class
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/choose_reload_regs/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/choose_reload_regs/src/reload1.c:6166:59: error: expected expression
+v92 = ix86_hard_regno_mode_ok( byte_0, *( ( machine_mode *)&rld + 26 * v15 + 7)); 
+                                                          ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/choose_reload_regs/src/reload1.c:6166:45: error: use of undeclared identifier 'machine_mode'
+v92 = ix86_hard_regno_mode_ok( byte_0, *( ( machine_mode *)&rld + 26 * v15 + 7)); 
+                                            ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/choose_reload_regs/src/reload1.c:6171:51: error: use of undeclared identifier 'reg_class'; did you mean 'regclass'?
+regnoi = ix86_register_move_cost( v59, class1a, ( reg_class)ra), 
+                                                  ^~~~~~~~~
+                                                  regclass
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/choose_reload_regs/src/rtl.h:1970:13: note: 'regclass' declared here
+extern void regclass                    PARAMS ((rtx, int, FILE *));
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/choose_reload_regs/src/reload1.c:6171:61: error: expected ')'
+regnoi = ix86_register_move_cost( v59, class1a, ( reg_class)ra), 
+                                                            ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/choose_reload_regs/src/reload1.c:6171:33: note: to match this '('
+regnoi = ix86_register_move_cost( v59, class1a, ( reg_class)ra), 
+                                ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/choose_reload_regs/src/reload1.c:6172:41: error: use of undeclared identifier 'reg_class'; did you mean 'regclass'?
+regnoi >= ix86_memory_move_cost( v59, ( reg_class)ra, 1)) 
+                                        ^~~~~~~~~
+                                        regclass
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/choose_reload_regs/src/rtl.h:1970:13: note: 'regclass' declared here
+extern void regclass                    PARAMS ((rtx, int, FILE *));
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/choose_reload_regs/src/reload1.c:6172:51: error: expected ')'
+regnoi >= ix86_memory_move_cost( v59, ( reg_class)ra, 1)) 
+                                                  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/choose_reload_regs/src/reload1.c:6172:32: note: to match this '('
+regnoi >= ix86_memory_move_cost( v59, ( reg_class)ra, 1)) 
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/choose_reload_regs/src/reload1.c:6173:54: error: use of undeclared identifier 'reg_class'; did you mean 'regclass'?
+|| ( v149 = ix86_secondary_memory_needed( class1a, ( reg_class)ra, v59, 1), v93 = v227, v149)) ) 
+                                                     ^~~~~~~~~
+                                                     regclass
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/choose_reload_regs/src/rtl.h:1970:13: note: 'regclass' declared here
+extern void regclass                    PARAMS ((rtx, int, FILE *));
+            ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/choose_reload_regs/src/obj/reload1.o] Error 1

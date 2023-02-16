@@ -1,0 +1,30 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/operand_equal_p/src/fold-const.c:2858:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *attributes; // rsi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/operand_equal_p/src/fold-const.c:2859:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *imag; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/operand_equal_p/src/fold-const.c:2862:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v20; // r12 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/operand_equal_p/src/fold-const.c:2863:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *chain; // rbp 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/operand_equal_p/src/fold-const.c:2932:15: error: expected expression
+&& *( _OWORD *)&v5->block.vars == *( _OWORD *)&elements->block.vars 
+              ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/operand_equal_p/src/fold-const.c:2932:7: error: use of undeclared identifier '_OWORD'
+&& *( _OWORD *)&v5->block.vars == *( _OWORD *)&elements->block.vars 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/operand_equal_p/src/fold-const.c:2932:46: error: expected expression
+&& *( _OWORD *)&v5->block.vars == *( _OWORD *)&elements->block.vars 
+                                             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/operand_equal_p/src/fold-const.c:2932:38: error: use of undeclared identifier '_OWORD'
+&& *( _OWORD *)&v5->block.vars == *( _OWORD *)&elements->block.vars 
+                                     ^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/operand_equal_p/src/obj/fold-const.o] Error 1

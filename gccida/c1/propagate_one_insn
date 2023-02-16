@@ -1,0 +1,33 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/propagate_one_insn/src/flow.c:2082:26: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v2 = (  struct rtx_def *)insn[1]; 
+                         ^~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/propagate_one_insn/src/flow.c:2112:64: error: too many arguments provided to function-like macro invocation
+fatal_insn( "Attempt to delete prologue/epilogue insn:", insn, "flow.c", 1615, "propagate_one_insn"); 
+                                                               ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/propagate_one_insn/src/toplev.h:50:9: note: macro 'fatal_insn' defined here
+#define fatal_insn(msgid, insn) \
+        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/propagate_one_insn/src/flow.c:2112:1: error: use of undeclared identifier 'fatal_insn'; did you mean '_fatal_insn'?
+fatal_insn( "Attempt to delete prologue/epilogue insn:", insn, "flow.c", 1615, "propagate_one_insn"); 
+^~~~~~~~~~
+_fatal_insn
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/propagate_one_insn/src/toplev.h:44:13: note: '_fatal_insn' declared here
+extern void _fatal_insn                 PARAMS ((const char *,
+            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/propagate_one_insn/src/flow.c:2126:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v12 = ( __int64)insn[2]; 
+                ^~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/propagate_one_insn/src/flow.c:2179:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v22 = ( __int64)insn[2]; 
+                ^~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/propagate_one_insn/src/flow.c:2189:21: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( j = ( __int64)insn[4]; j; j = *( _QWORD *)( j + 16) ) 
+                    ^~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/propagate_one_insn/src/flow.c:2216:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v30 = ( __int64)insn[2]; 
+                ^~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/propagate_one_insn/src/flow.c:2221:21: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( m = ( __int64)insn[4]; m; m = *( _QWORD *)( m + 16) ) 
+                    ^~~~~~~
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/propagate_one_insn/src/obj/flow.o] Error 1

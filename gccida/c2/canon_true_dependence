@@ -1,0 +1,15 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/canon_true_dependence/src/alias.c:2567:38: error: must use 'enum' tag to refer to type 'machine_mode'
+int  canon_true_dependence( rtx mem, machine_mode mem_mode, rtx mem_addr, rtx x, int ( *varies)( rtx, int)) 
+                                     ^
+                                     enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/canon_true_dependence/src/alias.c:2590:18: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v10 = ( _QWORD *)x[1]; 
+                 ^~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/canon_true_dependence/src/alias.c:2592:18: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v12 = ( _QWORD *)mem[1]; 
+                 ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/canon_true_dependence/src/alias.c:2639:41: error: use of undeclared identifier 'machine_mode'
+if ( base_alias_check( rtx, mem_addr, ( machine_mode)*( ( unsigned __int8 *)v5 + 2), mem_mode) ) 
+                                        ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/canon_true_dependence/src/obj/alias.o] Error 1

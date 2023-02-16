@@ -1,0 +1,79 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_giv_expr/src/loop.c:6861:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v9; // r15d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_giv_expr/src/loop.c:6913:4: error: expected ';' after expression
+rtx reg_note; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_giv_expr/src/loop.c:6913:5: error: must use 'enum' tag to refer to type 'reg_note'
+rtx reg_note; // rax 
+    ^
+    enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_giv_expr/src/loop.c:6918:4: error: expected ';' after expression
+rtx v66; // rsi 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_giv_expr/src/loop.c:6918:5: error: use of undeclared identifier 'v66'
+rtx v66; // rsi 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_giv_expr/src/loop.c:6921:4: error: expected ';' after expression
+rtx result; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_giv_expr/src/loop.c:6921:5: error: use of undeclared identifier 'result'
+rtx result; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_giv_expr/src/loop.c:6924:4: error: expected ';' after expression
+rtx arg1; // [rsp+0h] [rbp-48h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_giv_expr/src/loop.c:6924:5: error: use of undeclared identifier 'arg1'; did you mean 'arg1a'?
+rtx arg1; // [rsp+0h] [rbp-48h] 
+    ^~~~
+    arg1a
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_giv_expr/src/loop.c:6923:18: note: 'arg1a' declared here
+ struct rtx_def *arg1a; // [rsp+0h] [rbp-48h] 
+                 ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_giv_expr/src/loop.c:6932:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[v8] != MODE_INT ) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_giv_expr/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_giv_expr/src/loop.c:6960:41: error: expected expression
+v54 = gen_rtx_fmt_ee( MULT, v9, *( rtx *)( v51 + 16), *( rtx *)( v51 + 64)); 
+                                        ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_giv_expr/src/loop.c:6960:63: error: expected expression
+v54 = gen_rtx_fmt_ee( MULT, v9, *( rtx *)( v51 + 16), *( rtx *)( v51 + 64)); 
+                                                              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_giv_expr/src/loop.c:6973:20: error: expected expression
+*ext_val = *( rtx *)( v51 + 120); 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_giv_expr/src/loop.c:6984:37: error: expected expression
+while ( !rtx_equal_p( v5, *( ( rtx *)v57 + 2)) ) 
+                                    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_giv_expr/src/loop.c:6992:43: error: expected expression
+return simplify_giv_expr( loop, *( ( rtx *)v58 + 2), ext_val, benefit); 
+                                          ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_giv_expr/src/loop.c:7003:1: error: must use 'enum' tag to refer to type 'reg_note'
+reg_note = find_reg_note( rtx, REG_EQUAL, 0LL); 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_giv_expr/src/loop.c:7003:10: error: expected identifier or '('
+reg_note = find_reg_note( rtx, REG_EQUAL, 0LL); 
+         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_giv_expr/src/loop.c:7004:7: error: use of undeclared identifier 'reg_note'; did you mean 'reg_names'?
+if ( !reg_note ) 
+      ^~~~~~~~
+      reg_names
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_giv_expr/src/regs.h:166:21: note: 'reg_names' declared here
+extern const char * reg_names[FIRST_PSEUDO_REGISTER];
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_giv_expr/src/loop.c:7006:7: error: use of undeclared identifier 'reg_note'
+v62 = reg_note->fld[0].rtx; 
+      ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_giv_expr/src/obj/loop.o] Error 1

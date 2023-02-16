@@ -1,0 +1,29 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/print_rtl_graph_with_bb/src/graph.c:709:25: error: expected expression
+print_rtl_graph_with_bb::bb_state *in_bb_p; // [rsp+38h] [rbp-78h] 
+                        ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/print_rtl_graph_with_bb/src/graph.c:746:1: error: use of undeclared identifier 'in_bb_p'
+in_bb_p = ( print_rtl_graph_with_bb::bb_state *)xmalloc( 4LL * max_uid); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/print_rtl_graph_with_bb/src/graph.c:746:36: error: expected ')'
+in_bb_p = ( print_rtl_graph_with_bb::bb_state *)xmalloc( 4LL * max_uid); 
+                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/print_rtl_graph_with_bb/src/graph.c:746:11: note: to match this '('
+in_bb_p = ( print_rtl_graph_with_bb::bb_state *)xmalloc( 4LL * max_uid); 
+          ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/print_rtl_graph_with_bb/src/graph.c:752:1: error: use of undeclared identifier 'in_bb_p'
+in_bb_p[i] = NOT_IN_BB_0; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/print_rtl_graph_with_bb/src/graph.c:752:14: error: use of undeclared identifier 'NOT_IN_BB_0'
+in_bb_p[i] = NOT_IN_BB_0; 
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/print_rtl_graph_with_bb/src/graph.c:761:6: error: use of undeclared identifier 'in_bb_p'
+v5 = in_bb_p[x->fld[0].rtint] ? 2 : 1; 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/print_rtl_graph_with_bb/src/graph.c:762:1: error: use of undeclared identifier 'in_bb_p'
+in_bb_p[x->fld[0].rtint] = v5; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/print_rtl_graph_with_bb/src/graph.c:835:7: error: use of undeclared identifier 'in_bb_p'
+free( in_bb_p); 
+      ^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/print_rtl_graph_with_bb/src/obj/graph.o] Error 1

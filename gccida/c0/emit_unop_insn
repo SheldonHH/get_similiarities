@@ -1,0 +1,53 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_unop_insn/src/optabs.c:3115:55: error: must use 'enum' tag to refer to type 'rtx_code'
+void  emit_unop_insn( int icode, rtx target, rtx op0, rtx_code code) 
+                                                      ^
+                                                      enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_unop_insn/src/optabs.c:3118:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode0; // [rsp+14h] [rbp-2Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_unop_insn/src/optabs.c:3123:34: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+mode0 = *( ( unsigned __int16 *)&insn_data_0[icode].operand[1] + 8); 
+                                 ^~~~~~~~~~~
+                                 insn_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_unop_insn/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_unop_insn/src/optabs.c:3129:7: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+if ( !insn_data_0[icode].operand[1].predicate( op0a, mode0) ) 
+      ^~~~~~~~~~~
+      insn_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_unop_insn/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_unop_insn/src/optabs.c:3129:46: error: called object type '<dependent type>' is not a function or function pointer
+if ( !insn_data_0[icode].operand[1].predicate( op0a, mode0) ) 
+                                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_unop_insn/src/optabs.c:3131:7: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+if ( !insn_data_0[icode].operand->predicate( targeta, ( unsigned __int8)BYTE2( *( _DWORD *)targeta)) 
+      ^~~~~~~~~~~
+      insn_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_unop_insn/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_unop_insn/src/optabs.c:3131:44: error: called object type '<dependent type>' is not a function or function pointer
+if ( !insn_data_0[icode].operand->predicate( targeta, ( unsigned __int8)BYTE2( *( _DWORD *)targeta)) 
+                                           ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_unop_insn/src/optabs.c:3134:23: error: use of undeclared identifier 'machine_mode'
+temp = gen_reg_rtx( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)targeta)); 
+                      ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_unop_insn/src/optabs.c:3134:38: error: expected expression
+temp = gen_reg_rtx( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)targeta)); 
+                                     ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_unop_insn/src/optabs.c:3136:7: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+pat = insn_data_0[icode].genfun( temp, op0a); 
+      ^~~~~~~~~~~
+      insn_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_unop_insn/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_unop_insn/src/optabs.c:3136:32: error: called object type '<dependent type>' is not a function or function pointer
+pat = insn_data_0[icode].genfun( temp, op0a); 
+                               ^
+11 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_unop_insn/src/obj/optabs.o] Error 1

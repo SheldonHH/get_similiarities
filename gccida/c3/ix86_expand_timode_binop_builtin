@@ -1,0 +1,40 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_expand_timode_binop_builtin/src/i386.c:11988:40: error: must use 'enum' tag to refer to type 'insn_code'
+rtx  ix86_expand_timode_binop_builtin( insn_code icode, tree arglist, rtx target) 
+                                       ^
+                                       enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_expand_timode_binop_builtin/src/i386.c:11994:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *arg1; // [rsp+28h] [rbp-38h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_expand_timode_binop_builtin/src/i386.c:12004:7: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+if ( !insn_data_0[icode].operand[1].predicate( op0, TImode) ) 
+      ^~~~~~~~~~~
+      insn_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_expand_timode_binop_builtin/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_expand_timode_binop_builtin/src/i386.c:12004:46: error: called object type '<dependent type>' is not a function or function pointer
+if ( !insn_data_0[icode].operand[1].predicate( op0, TImode) ) 
+                                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_expand_timode_binop_builtin/src/i386.c:12006:7: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+if ( !insn_data_0[icode].operand[2].predicate( op1, TImode) ) 
+      ^~~~~~~~~~~
+      insn_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_expand_timode_binop_builtin/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_expand_timode_binop_builtin/src/i386.c:12006:46: error: called object type '<dependent type>' is not a function or function pointer
+if ( !insn_data_0[icode].operand[2].predicate( op1, TImode) ) 
+                                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_expand_timode_binop_builtin/src/i386.c:12010:7: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+pat = insn_data_0[icode].genfun( targeta, op0, op1); 
+      ^~~~~~~~~~~
+      insn_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_expand_timode_binop_builtin/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_expand_timode_binop_builtin/src/i386.c:12010:32: error: called object type '<dependent type>' is not a function or function pointer
+pat = insn_data_0[icode].genfun( targeta, op0, op1); 
+                               ^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_expand_timode_binop_builtin/src/obj/i386.o] Error 1

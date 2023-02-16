@@ -1,0 +1,24 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_builtin_mathfn/src/builtins.c:1930:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *imag; // rbx 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_builtin_mathfn/src/builtins.c:1954:21: error: use of undeclared identifier 'machine_mode'
+v8 = gen_reg_rtx( ( machine_mode)( ( unsigned __int8)HIBYTE( WORD2( v3->common.type->block.abstract_origin)) >> 1)); 
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_builtin_mathfn/src/builtins.c:1961:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( ( unsigned __int8)HIBYTE( *( _WORD *)( *( _QWORD *)( imag->int_cst.int_cst.low + 8) + 60LL)) >> 1), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_builtin_mathfn/src/builtins.c:1962:13: error: expected expression
+*( optab_0 *)*( &off_600D88 + v9), 
+            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_builtin_mathfn/src/builtins.c:1962:4: error: use of undeclared identifier 'optab_0'
+*( optab_0 *)*( &off_600D88 + v9), 
+   ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_builtin_mathfn/src/builtins.c:1962:18: error: use of undeclared identifier 'off_600D88'
+*( optab_0 *)*( &off_600D88 + v9), 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_builtin_mathfn/src/builtins.c:1972:45: error: use of undeclared identifier 'machine_mode'
+emit_cmp_and_jump_insns( v6, v6, EQ, 0LL, ( machine_mode)*( ( unsigned __int8 *)v6 + 2), 0, label); 
+                                            ^
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_builtin_mathfn/src/obj/builtins.o] Error 1

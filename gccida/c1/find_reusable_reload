@@ -1,0 +1,35 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_reusable_reload/src/reload.c:1182:48: error: must use 'enum' tag to refer to type 'reg_class'
+int  find_reusable_reload( rtx *p_in, rtx out, reg_class a3, reload_type type, int opnum, int dont_share) 
+                                               ^
+                                               enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_reusable_reload/src/reload.c:1182:62: error: must use 'enum' tag to refer to type 'reload_type'
+int  find_reusable_reload( rtx *p_in, rtx out, reg_class a3, reload_type type, int opnum, int dont_share) 
+                                                             ^
+                                                             enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_reusable_reload/src/reload.c:1196:1: error: must use 'enum' tag to refer to type 'reload_type'
+reload_type when_needed; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_reusable_reload/src/reload.c:1207:1: error: must use 'enum' tag to refer to type 'reload_type'
+reload_type v33; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_reusable_reload/src/reload.c:1208:1: error: must use 'enum' tag to refer to type 'reload_type'
+reload_type v35; // [rsp+4h] [rbp-54h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_reusable_reload/src/reload.c:1209:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class c1; // [rsp+10h] [rbp-48h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_reusable_reload/src/reload.c:1210:6: error: use of undeclared identifier 'v39'
+rtx *v39; // [rsp+18h] [rbp-40h] 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_reusable_reload/src/reload.c:1337:1: error: use of undeclared identifier 'v39'
+v39 = p_in; 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_reusable_reload/src/reload.c:1430:2: error: use of undeclared identifier 'v39'
+*v39 = v23->in; 
+ ^
+9 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_reusable_reload/src/obj/reload.o] Error 1

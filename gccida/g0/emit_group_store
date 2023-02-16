@@ -1,0 +1,18 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/emit_group_store/src/expr.c:2531:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // [rsp+3Ch] [rbp-44h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/emit_group_store/src/expr.c:2552:22: error: use of undeclared identifier 'machine_mode'
+*v4 = gen_reg_rtx( ( machine_mode)*( ( unsigned __int8 *)reg + 2)); 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/emit_group_store/src/expr.c:2561:29: error: use of undeclared identifier 'machine_mode'
+temp = assign_stack_temp( ( machine_mode)*( ( unsigned __int8 *)dst + 2), ssizea, 0); 
+                            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/emit_group_store/src/expr.c:2570:22: error: use of undeclared identifier 'machine_mode'
+dst = gen_reg_rtx( ( machine_mode)*( ( unsigned __int8 *)orig_dsta + 2)); 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/emit_group_store/src/expr.c:2588:14: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+dest = ( rtx)dst[1]; 
+             ^~~~~~
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/emit_group_store/src/obj/expr.o] Error 1

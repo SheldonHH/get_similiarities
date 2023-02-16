@@ -1,0 +1,25 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/invert_exp_1/src/jump.c:2569:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v8; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/invert_exp_1/src/jump.c:2577:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v2 = ( unsigned __int16 *)insn[2]; 
+                          ^~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/invert_exp_1/src/jump.c:2593:60: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+&& ( v8 = ( unsigned int)reversed_comparison_code_parts( ( rtx_code)v7, v6[1], v6[2], v4)) != UNKNOWN ) 
+                                                           ^~~~~~~~
+                                                           rtx_cost
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/invert_exp_1/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/invert_exp_1/src/jump.c:2593:69: error: expected ')'
+&& ( v8 = ( unsigned int)reversed_comparison_code_parts( ( rtx_code)v7, v6[1], v6[2], v4)) != UNKNOWN ) 
+                                                                    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/invert_exp_1/src/jump.c:2593:56: note: to match this '('
+&& ( v8 = ( unsigned int)reversed_comparison_code_parts( ( rtx_code)v7, v6[1], v6[2], v4)) != UNKNOWN ) 
+                                                       ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/invert_exp_1/src/jump.c:2597:29: error: use of undeclared identifier 'machine_mode'
+v11 = gen_rtx_fmt_ee( v8, ( machine_mode)*( ( unsigned __int8 *)v6 + 2), v6[1], v6[2]); 
+                            ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/invert_exp_1/src/obj/jump.o] Error 1

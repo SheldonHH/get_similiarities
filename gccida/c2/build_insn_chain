@@ -1,0 +1,29 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/build_insn_chain/src/global.c:2308:21: error: expected expression
+if ( rtx == *( rtx *)v3->data.l[v4] ) 
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/build_insn_chain/src/global.c:2391:29: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+for ( v6.rtwint = ( __int64)rtx[3].fld[0]; v6.rtwint; v6.rtwint = *( __int64 *)( v6.rtwint + 16) ) 
+                            ^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/build_insn_chain/src/global.c:2397:20: error: use of undeclared identifier 'machine_mode'
+reg_dies( v7[2], ( machine_mode)( unsigned __int8)BYTE2( *v7), v5); 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/build_insn_chain/src/global.c:2397:35: error: expected expression
+reg_dies( v7[2], ( machine_mode)( unsigned __int8)BYTE2( *v7), v5); 
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/build_insn_chain/src/global.c:2401:22: error: expected expression
+note_stores( *( rtx *)&rtx[2], reg_becomes_live, &v5->dead_or_set); 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/build_insn_chain/src/global.c:2409:30: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+for ( v17.rtwint = ( __int64)rtx[3].fld[0]; v17.rtwint; v17.rtwint = *( __int64 *)( v17.rtwint + 16) ) 
+                             ^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/build_insn_chain/src/global.c:2415:21: error: use of undeclared identifier 'machine_mode'
+reg_dies( v18[2], ( machine_mode)( unsigned __int8)BYTE2( *v18), v5); 
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/build_insn_chain/src/global.c:2415:36: error: expected expression
+reg_dies( v18[2], ( machine_mode)( unsigned __int8)BYTE2( *v18), v5); 
+                                   ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/build_insn_chain/src/global.c:2423:22: error: expected expression
+v4 += rtx == *( rtx *)( basic_block_info->data.l[v4] + 8); 
+                     ^
+9 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/build_insn_chain/src/obj/global.o] Error 1

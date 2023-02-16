@@ -1,0 +1,22 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/init_caller_save/src/caller-save.c:580:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v5; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/init_caller_save/src/caller-save.c:589:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v14; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/init_caller_save/src/caller-save.c:664:21: error: use of undeclared identifier 'machine_mode'
+v9 = gen_rtx_REG( ( machine_mode)( ( ( BYTE3( target_flags) & 2) != 0) + 4), v6); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/init_caller_save/src/caller-save.c:669:35: error: use of undeclared identifier 'machine_mode'
+address = gen_rtx_fmt_ee( PLUS, ( machine_mode)( ( ( BYTE3( target_flags) & 2) != 0) + 4), v9, v11); 
+                                  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/init_caller_save/src/caller-save.c:670:45: error: use of undeclared identifier 'machine_mode'
+while ( !*v10 || strict_memory_address_p( ( machine_mode)*v10, address) ) 
+                                            ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/init_caller_save/src/caller-save.c:673:14: error: use of undeclared identifier 'stack_arg_under_construction'
+if ( v10 == &stack_arg_under_construction ) 
+             ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/init_caller_save/src/obj/caller-save.o] Error 1

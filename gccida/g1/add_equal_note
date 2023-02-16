@@ -1,0 +1,15 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/add_equal_note/src/optabs.c:595:43: error: must use 'enum' tag to refer to type 'rtx_code'
+int  add_equal_note( rtx seq, rtx target, rtx_code code, rtx op0, rtx op1) 
+                                          ^
+                                          enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/add_equal_note/src/optabs.c:631:29: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+|| ( v13.rtwint = ( __int64)v12->fld[0], result = 1, *( _WORD *)v13.rtwint == 64) 
+                            ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/add_equal_note/src/optabs.c:650:30: error: use of undeclared identifier 'machine_mode'
+v18 = gen_rtx_fmt_e( code, ( machine_mode)*( ( unsigned __int8 *)target + 2), v19); 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/add_equal_note/src/optabs.c:656:31: error: use of undeclared identifier 'machine_mode'
+v18 = gen_rtx_fmt_ee( code, ( machine_mode)*( ( unsigned __int8 *)target + 2), v17, v16); 
+                              ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/add_equal_note/src/obj/optabs.o] Error 1

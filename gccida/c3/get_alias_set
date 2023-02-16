@@ -1,0 +1,35 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_alias_set/src/alias.c:905:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v1; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_alias_set/src/alias.c:971:13: error: use of undeclared identifier 'lang_hooks_0'; did you mean 'lang_hooks'?
+alias_set = lang_hooks_0.get_alias_set( elements); 
+            ^~~~~~~~~~~~
+            lang_hooks
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_alias_set/src/langhooks.h:168:32: note: 'lang_hooks' declared here
+extern const struct lang_hooks lang_hooks;
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_alias_set/src/alias.c:971:39: error: called object type '<dependent type>' is not a function or function pointer
+alias_set = lang_hooks_0.get_alias_set( elements); 
+                                      ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_alias_set/src/alias.c:1026:9: error: use of undeclared identifier 'new_alias_set_last_alias_set'
+v20 = ++new_alias_set_last_alias_set; 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_alias_set/src/alias.c:1088:19: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v28 = ( __int64 *)rtl[1]; 
+                  ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_alias_set/src/alias.c:1100:13: error: use of undeclared identifier 'lang_hooks_0'; did you mean 'lang_hooks'?
+alias_set = lang_hooks_0.get_alias_set( section_name); 
+            ^~~~~~~~~~~~
+            lang_hooks
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_alias_set/src/langhooks.h:168:32: note: 'lang_hooks' declared here
+extern const struct lang_hooks lang_hooks;
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_alias_set/src/alias.c:1100:39: error: called object type '<dependent type>' is not a function or function pointer
+alias_set = lang_hooks_0.get_alias_set( section_name); 
+                                      ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_alias_set/src/alias.c:1117:15: error: use of undeclared identifier 'new_alias_set_last_alias_set'
+alias_set = ++new_alias_set_last_alias_set; 
+              ^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_alias_set/src/obj/alias.o] Error 1

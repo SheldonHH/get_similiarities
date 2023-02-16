@@ -1,0 +1,55 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/life_analysis/src/flow.c:881:4: error: expected ';' after expression
+rtx insns; // rbx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/life_analysis/src/flow.c:881:5: error: use of undeclared identifier 'insns'
+rtx insns; // rbx 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/life_analysis/src/flow.c:915:22: error: expected expression
+note_stores( *( rtx *)&rtx[2], notice_stack_pointer_modification_1, 0LL); 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/life_analysis/src/flow.c:964:22: error: use of undeclared identifier 'machine_mode'
+v11 = gen_rtx_REG( ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), 2); 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/life_analysis/src/flow.c:972:22: error: use of undeclared identifier 'mark_reg_0'; did you mean 'mark_reg'?
+diddle_return_value( mark_reg_0, global_live_at_start); 
+                     ^~~~~~~~~~
+                     mark_reg
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/life_analysis/src/flow.c:292:13: note: 'mark_reg' declared here
+static void mark_reg                    PARAMS ((rtx, void *));
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/life_analysis/src/flow.c:989:1: error: use of undeclared identifier 'insns'
+insns = get_insns( ); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/life_analysis/src/flow.c:990:6: error: use of undeclared identifier 'insns'
+if ( insns ) 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/life_analysis/src/flow.c:994:24: error: use of undeclared identifier 'insns'
+v12.rtwint = ( __int64)insns[1].fld[0]; 
+                       ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/life_analysis/src/flow.c:995:17: error: use of undeclared identifier 'insns'
+if ( *( _WORD *)insns == 36 && insns[2] == ( ( *( ( _BYTE *)insns + 3) & 0x10) != 0) ) 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/life_analysis/src/flow.c:995:61: error: use of undeclared identifier 'insns'
+if ( *( _WORD *)insns == 36 && insns[2] == ( ( *( ( _BYTE *)insns + 3) & 0x10) != 0) ) 
+                                                            ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/life_analysis/src/flow.c:995:32: error: use of undeclared identifier 'insns'
+if ( *( _WORD *)insns == 36 && insns[2] == ( ( *( ( _BYTE *)insns + 3) & 0x10) != 0) ) 
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/life_analysis/src/flow.c:1000:41: error: use of undeclared identifier 'to'
+fprintf( rtl_dump_file, ( const char *)&to.indx + 4, insns->fld[0].rtuint); 
+                                        ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/life_analysis/src/flow.c:1000:54: error: use of undeclared identifier 'insns'
+fprintf( rtl_dump_file, ( const char *)&to.indx + 4, insns->fld[0].rtuint); 
+                                                     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/life_analysis/src/flow.c:1001:14: error: use of undeclared identifier 'insns'
+delete_insn( insns[1].fld[0].rtx); 
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/life_analysis/src/flow.c:1002:14: error: use of undeclared identifier 'insns'
+delete_insn( insns); 
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/life_analysis/src/flow.c:1008:1: error: use of undeclared identifier 'insns'
+insns = ( rtx)v12.rtwint; 
+^
+16 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/life_analysis/src/obj/flow.o] Error 1

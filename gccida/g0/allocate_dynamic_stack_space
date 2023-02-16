@@ -1,0 +1,54 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/allocate_dynamic_stack_space/src/explow.c:1640:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v5; // ecx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/allocate_dynamic_stack_space/src/explow.c:1645:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v10; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/allocate_dynamic_stack_space/src/explow.c:1647:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v12; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/allocate_dynamic_stack_space/src/explow.c:1648:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v13; // edx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/allocate_dynamic_stack_space/src/explow.c:1651:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v16; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/allocate_dynamic_stack_space/src/explow.c:1653:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v18; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/allocate_dynamic_stack_space/src/explow.c:1655:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v20; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/allocate_dynamic_stack_space/src/explow.c:1663:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // [rsp+3Ch] [rbp-4h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/allocate_dynamic_stack_space/src/explow.c:1719:19: error: invalid suffix 'xmode' on integer constant
+mode = *(short *)0xmode; 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/allocate_dynamic_stack_space/src/explow.c:1720:17: error: invalid suffix 'xmode' on integer constant
+if ( *(short *)0xmode == VOIDmode ) 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/allocate_dynamic_stack_space/src/explow.c:1721:33: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+mode = *( ( unsigned __int16 *)&insn_data_0[1234].operand[1] + 8); 
+                                ^~~~~~~~~~~
+                                insn_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/allocate_dynamic_stack_space/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/allocate_dynamic_stack_space/src/explow.c:1722:8: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+pred = insn_data_0[1234].operand[1].predicate; 
+       ^~~~~~~~~~~
+       insn_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/allocate_dynamic_stack_space/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+12 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/allocate_dynamic_stack_space/src/obj/explow.o] Error 1

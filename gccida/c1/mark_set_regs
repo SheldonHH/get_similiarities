@@ -1,0 +1,53 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_set_regs/src/caller-save.c:959:29: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+for ( v5.rtwint = ( __int64)insn[3].fld[0]; v5.rtwint; v5.rtwint = *( __int64 *)( v5.rtwint + 16) ) 
+                            ^~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_set_regs/src/caller-save.c:967:31: error: expected expression
+mark_set_1( pbi, SET, *( rtx *)( v5.rtwint + 8), rtx, insn, pbi->flags); 
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_set_regs/src/caller-save.c:967:64: error: incomplete definition of type 'struct propagate_block_info'
+mark_set_1( pbi, SET, *( rtx *)( v5.rtwint + 8), rtx, insn, pbi->flags); 
+                                                            ~~~^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_set_regs/src/basic-block.h:595:8: note: forward declaration of 'struct propagate_block_info'
+struct propagate_block_info;
+       ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_set_regs/src/caller-save.c:978:12: error: expected ';' after expression
+v4 = ( rtx)v4[1]; 
+           ^
+           ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_set_regs/src/caller-save.c:1000:20: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+mark_set_1( pbi, ( rtx_code)( unsigned __int16)v12, *( ( rtx *)v11 + 1), v7, insn, pbi->flags); 
+                   ^~~~~~~~
+                   rtx_cost
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_set_regs/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_set_regs/src/caller-save.c:1000:31: error: expected expression
+mark_set_1( pbi, ( rtx_code)( unsigned __int16)v12, *( ( rtx *)v11 + 1), v7, insn, pbi->flags); 
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_set_regs/src/caller-save.c:1000:63: error: expected expression
+mark_set_1( pbi, ( rtx_code)( unsigned __int16)v12, *( ( rtx *)v11 + 1), v7, insn, pbi->flags); 
+                                                              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_set_regs/src/caller-save.c:1000:87: error: incomplete definition of type 'struct propagate_block_info'
+mark_set_1( pbi, ( rtx_code)( unsigned __int16)v12, *( ( rtx *)v11 + 1), v7, insn, pbi->flags); 
+                                                                                   ~~~^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_set_regs/src/basic-block.h:595:8: note: forward declaration of 'struct propagate_block_info'
+struct propagate_block_info;
+       ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_set_regs/src/caller-save.c:1009:20: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+mark_set_1( pbi, ( rtx_code)( unsigned __int16)v8, v4->fld[0].rtx, v7, insn, pbi->flags); 
+                   ^~~~~~~~
+                   rtx_cost
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_set_regs/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_set_regs/src/caller-save.c:1009:31: error: expected expression
+mark_set_1( pbi, ( rtx_code)( unsigned __int16)v8, v4->fld[0].rtx, v7, insn, pbi->flags); 
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_set_regs/src/caller-save.c:1009:81: error: incomplete definition of type 'struct propagate_block_info'
+mark_set_1( pbi, ( rtx_code)( unsigned __int16)v8, v4->fld[0].rtx, v7, insn, pbi->flags); 
+                                                                             ~~~^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_set_regs/src/basic-block.h:595:8: note: forward declaration of 'struct propagate_block_info'
+struct propagate_block_info;
+       ^
+11 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_set_regs/src/obj/caller-save.o] Error 1

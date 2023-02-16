@@ -1,0 +1,11 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/do_replace/src/regrename.c:847:24: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+regno = ( unsigned int)( *chain->loc)[1]; 
+                       ^~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/do_replace/src/regrename.c:848:30: error: use of undeclared identifier 'machine_mode'
+*chain->loc = gen_raw_REG( ( machine_mode)( unsigned __int8)BYTE2( **( _DWORD **)chain->loc), reg); 
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/do_replace/src/regrename.c:848:45: error: expected expression
+*chain->loc = gen_raw_REG( ( machine_mode)( unsigned __int8)BYTE2( **( _DWORD **)chain->loc), reg); 
+                                            ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/do_replace/src/obj/regrename.o] Error 1

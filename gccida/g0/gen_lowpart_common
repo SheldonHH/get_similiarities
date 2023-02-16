@@ -1,0 +1,109 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_lowpart_common/src/emit-rtl.c:1287:26: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  gen_lowpart_common( machine_mode mode, rtx x) 
+                         ^
+                         enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_lowpart_common/src/emit-rtl.c:1298:1: error: must use 'union' tag to refer to type 'real_extract'
+real_extract u; // [rsp+30h] [rbp-D0h] BYREF 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_lowpart_common/src/emit-rtl.c:1327:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[mode] == MODE_FLOAT && *( ( _BYTE *)x + 2) && msize > xsize ) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_lowpart_common/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_lowpart_common/src/emit-rtl.c:1329:41: error: use of undeclared identifier 'machine_mode'
+offset = subreg_lowpart_offset( mode, ( machine_mode)*( ( unsigned __int8 *)x + 2)); 
+                                        ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_lowpart_common/src/emit-rtl.c:1331:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& ( mode_class_0[mode] == MODE_INT || mode_class_0[mode] == MODE_PARTIAL_INT) ) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_lowpart_common/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_lowpart_common/src/emit-rtl.c:1331:40: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& ( mode_class_0[mode] == MODE_INT || mode_class_0[mode] == MODE_PARTIAL_INT) ) 
+                                       ^~~~~~~~~~~~
+                                       mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_lowpart_common/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_lowpart_common/src/emit-rtl.c:1338:25: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+return gen_rtx_fmt_e( ( rtx_code)*( _WORD *)x, mode, x->fld[0].rtx); 
+                        ^~~~~~~~
+                        rtx_cost
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_lowpart_common/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_lowpart_common/src/emit-rtl.c:1338:34: error: invalid operands to binary expression ('int (rtx, enum rtx_code)' (aka 'int (struct rtx_def *, enum rtx_code)') and 'uint16 *' (aka 'unsigned short *'))
+return gen_rtx_fmt_e( ( rtx_code)*( _WORD *)x, mode, x->fld[0].rtx); 
+                      ~~~~~~~~~~~^~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_lowpart_common/src/emit-rtl.c:1342:40: error: use of undeclared identifier 'machine_mode'
+return simplify_gen_subreg( mode, x, ( machine_mode)*( ( unsigned __int8 *)x + 2), offset); 
+                                       ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_lowpart_common/src/emit-rtl.c:1343:8: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( ( mode_class_0[mode] == MODE_INT || mode_class_0[mode] == MODE_PARTIAL_INT) 
+       ^~~~~~~~~~~~
+       mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_lowpart_common/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_lowpart_common/src/emit-rtl.c:1343:42: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( ( mode_class_0[mode] == MODE_INT || mode_class_0[mode] == MODE_PARTIAL_INT) 
+                                         ^~~~~~~~~~~~
+                                         mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_lowpart_common/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_lowpart_common/src/emit-rtl.c:1363:20: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+rtwint = ( __int64)x[1]; 
+                   ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_lowpart_common/src/emit-rtl.c:1371:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[mode] == MODE_FLOAT && mode_bitsize[mode] == 32 && *( _WORD *)x == 54 ) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_lowpart_common/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_lowpart_common/src/emit-rtl.c:1374:23: error: too many arguments to function call, expected 1, have 2
+ereal_from_float( &r, i); 
+~~~~~~~~~~~~~~~~      ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_lowpart_common/src/real.h:171:1: note: 'ereal_from_float' declared here
+extern REAL_VALUE_TYPE ereal_from_float PARAMS ((HOST_WIDE_INT));
+^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_lowpart_common/src/emit-rtl.c:1377:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[mode] != MODE_FLOAT 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_lowpart_common/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_lowpart_common/src/emit-rtl.c:1382:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[mode] != MODE_INT && mode_class_0[mode] != MODE_PARTIAL_INT 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_lowpart_common/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_lowpart_common/src/emit-rtl.c:1382:40: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[mode] != MODE_INT && mode_class_0[mode] != MODE_PARTIAL_INT 
+                                       ^~~~~~~~~~~~
+                                       mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_lowpart_common/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_lowpart_common/src/emit-rtl.c:1384:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| mode_class_0[*( ( unsigned __int8 *)x + 2)] != MODE_FLOAT ) 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_lowpart_common/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_lowpart_common/src/emit-rtl.c:1458:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+low = ( __int64)x[1]; 
+                ^~~~
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_lowpart_common/src/obj/emit-rtl.o] Error 1

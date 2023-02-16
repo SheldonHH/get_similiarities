@@ -1,0 +1,43 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/pre_delete/src/gcse.c:5420:20: error: expected identifier or '('
+for (  struct expr = expr_hash_table[i]; expr;  struct expr = expr->next_same_hash ) 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/pre_delete/src/gcse.c:5420:42: error: expected ';' in 'for' statement specifier
+for (  struct expr = expr_hash_table[i]; expr;  struct expr = expr->next_same_hash ) 
+                                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/pre_delete/src/gcse.c:5420:49: error: expected expression
+for (  struct expr = expr_hash_table[i]; expr;  struct expr = expr->next_same_hash ) 
+                                                ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/pre_delete/src/gcse.c:5420:49: error: expected ')'
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/pre_delete/src/gcse.c:5420:5: note: to match this '('
+for (  struct expr = expr_hash_table[i]; expr;  struct expr = expr->next_same_hash ) 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/pre_delete/src/gcse.c:5423:20: error: expected identifier or '('
+for (  struct occr = expr->antic_occr; occr;  struct occr = occr->next ) 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/pre_delete/src/gcse.c:5423:40: error: expected ';' in 'for' statement specifier
+for (  struct occr = expr->antic_occr; occr;  struct occr = occr->next ) 
+                                       ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/pre_delete/src/gcse.c:5423:47: error: expected expression
+for (  struct occr = expr->antic_occr; occr;  struct occr = occr->next ) 
+                                              ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/pre_delete/src/gcse.c:5423:47: error: expected ')'
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/pre_delete/src/gcse.c:5423:5: note: to match this '('
+for (  struct occr = expr->antic_occr; occr;  struct occr = occr->next ) 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/pre_delete/src/gcse.c:5432:12: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v0 = ( rtx)insn[2]; 
+           ^~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/pre_delete/src/gcse.c:5440:13: error: expected identifier or '('
+ struct set = v0; 
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/pre_delete/src/gcse.c:5444:37: error: use of undeclared identifier 'machine_mode'
+expr->reaching_reg = gen_reg_rtx( ( machine_mode)*( unsigned __int8 *)( v0->fld[0].rtwint + 2)); 
+                                    ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/pre_delete/src/gcse.c:5448:41: error: use of undeclared identifier 'uid_cuid_1'
+pre_redundant_insns->elms[*( ( _DWORD *)uid_cuid_1 + insn->fld[0].rtint) >> 6] |= 1LL << ( *( ( _DWORD *)uid_cuid_1 + insn->fld[0].rtint) & 0x3F); 
+                                        ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/pre_delete/src/gcse.c:5448:106: error: use of undeclared identifier 'uid_cuid_1'
+pre_redundant_insns->elms[*( ( _DWORD *)uid_cuid_1 + insn->fld[0].rtint) >> 6] |= 1LL << ( *( ( _DWORD *)uid_cuid_1 + insn->fld[0].rtint) & 0x3F); 
+                                                                                                         ^
+13 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/pre_delete/src/obj/gcse.o] Error 1

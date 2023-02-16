@@ -1,0 +1,58 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/save_call_clobbered_regs/src/caller-save.c:819:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode *v2; // rdx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/save_call_clobbered_regs/src/caller-save.c:823:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v6; // ecx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/save_call_clobbered_regs/src/caller-save.c:830:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v13; // edx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/save_call_clobbered_regs/src/caller-save.c:848:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v31; // r9d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/save_call_clobbered_regs/src/caller-save.c:866:16: error: expected identifier or '('
+unsigned int *(short *)0xnum_; // [rsp+14h] [rbp-144h] 
+               ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/save_call_clobbered_regs/src/caller-save.c:866:16: error: expected ')'
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/save_call_clobbered_regs/src/caller-save.c:866:15: note: to match this '('
+unsigned int *(short *)0xnum_; // [rsp+14h] [rbp-144h] 
+              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/save_call_clobbered_regs/src/caller-save.c:871:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode save_mode[53]; // [rsp+40h] [rbp-118h] BYREF 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/save_call_clobbered_regs/src/caller-save.c:916:22: error: expected expression
+v2 = ( machine_mode *)( regno_save_mode + 4); 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/save_call_clobbered_regs/src/caller-save.c:916:8: error: use of undeclared identifier 'machine_mode'
+v2 = ( machine_mode *)( regno_save_mode + 4); 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/save_call_clobbered_regs/src/caller-save.c:934:12: error: invalid suffix 'xnum_' on integer constant
+*(short *)0xnum_ = j; 
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/save_call_clobbered_regs/src/caller-save.c:944:35: error: invalid suffix 'xnum_' on integer constant
+v20 = ( int)( v8 + ( ( *(short *)0xnum_ + 2 * v9->indx) << 6)); 
+                                  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/save_call_clobbered_regs/src/caller-save.c:952:23: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( ( unsigned int)( mode_class_0[v10] - 5) > 1 ) 
+                      ^~~~~~~~~~~~
+                      mode_class
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/save_call_clobbered_regs/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/save_call_clobbered_regs/src/caller-save.c:1106:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v33 = ( ( unsigned int)( mode_class_0[v31] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/save_call_clobbered_regs/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/save_call_clobbered_regs/src/caller-save.c:1119:22: error: use of undeclared identifier 'machine_mode'
+v34 = gen_rtx_REG( ( machine_mode)*( ( unsigned __int8 *)v30 + 2), v25); 
+                     ^
+14 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/save_call_clobbered_regs/src/obj/caller-save.o] Error 1

@@ -1,0 +1,31 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_lowpart_for_combine/src/combine.c:10227:31: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  gen_lowpart_for_combine( machine_mode mode, rtx x) 
+                              ^
+                              enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_lowpart_for_combine/src/combine.c:10246:34: error: use of undeclared identifier 'machine_mode'
+return gen_rtx_fmt_e( CLOBBER, ( machine_mode)*( ( unsigned __int8 *)xa + 2), const_int_rtx[64]); 
+                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_lowpart_for_combine/src/combine.c:10260:26: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+return gen_rtx_fmt_ee( ( rtx_code)*( _WORD *)xa, mode, xa->fld[0].rtx, *( rtx *)&xa[1]); 
+                         ^~~~~~~~
+                         rtx_cost
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_lowpart_for_combine/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_lowpart_for_combine/src/combine.c:10260:35: error: invalid operands to binary expression ('int (rtx, enum rtx_code)' (aka 'int (struct rtx_def *, enum rtx_code)') and 'uint16 *' (aka 'unsigned short *'))
+return gen_rtx_fmt_ee( ( rtx_code)*( _WORD *)xa, mode, xa->fld[0].rtx, *( rtx *)&xa[1]); 
+                       ~~~~~~~~~~~^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_lowpart_for_combine/src/combine.c:10263:43: error: use of undeclared identifier 'machine_mode'
+offset_0 = subreg_lowpart_offset( mode, ( machine_mode)*( ( unsigned __int8 *)xa + 2)); 
+                                          ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_lowpart_for_combine/src/combine.c:10264:40: error: use of undeclared identifier 'machine_mode'
+res = simplify_gen_subreg( mode, xa, ( machine_mode)*( ( unsigned __int8 *)xa + 2), offset_0); 
+                                       ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_lowpart_for_combine/src/combine.c:10268:34: error: use of undeclared identifier 'machine_mode'
+return gen_rtx_fmt_e( CLOBBER, ( machine_mode)*( ( unsigned __int8 *)xa + 2), const_int_rtx[64]); 
+                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_lowpart_for_combine/src/combine.c:10271:34: error: use of undeclared identifier 'machine_mode'
+return gen_rtx_fmt_e( CLOBBER, ( machine_mode)*( ( unsigned __int8 *)xa + 2), const_int_rtx[64]); 
+                                 ^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_lowpart_for_combine/src/obj/combine.o] Error 1

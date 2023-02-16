@@ -1,0 +1,17 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/output_cfi/src/dwarf2out.c:2245:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/output_cfi/src/dwarf2out.c:2824:22: error: static declaration of 'size_of_locs' follows non-static declaration
+static unsigned long size_of_locs       PARAMS ((dw_loc_descr_ref));
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/output_cfi/src/dwarf2out.c:2285:7: note: previous implicit declaration is here
+v11 = size_of_locs( dw_cfi_loc); 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/output_cfi/src/dwarf2out.c:2826:13: error: static declaration of 'output_loc_sequence' follows non-static declaration
+static void output_loc_sequence         PARAMS ((dw_loc_descr_ref));
+            ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/output_cfi/src/dwarf2out.c:2287:1: note: previous implicit declaration is here
+output_loc_sequence( dw_cfi_loc); 
+^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/output_cfi/src/obj/dwarf2out.o] Error 1

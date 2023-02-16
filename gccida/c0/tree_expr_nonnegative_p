@@ -1,0 +1,12 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/tree_expr_nonnegative_p/src/fold-const.c:8115:23: error: use of undeclared identifier 'tree_code'; did you mean 'tree_cons'?
+v6 = truth_value_p( ( tree_code)( unsigned __int8)*( ( _DWORD *)&t->common + 4)) != 0; 
+                      ^~~~~~~~~
+                      tree_cons
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/tree_expr_nonnegative_p/src/tree.h:2477:13: note: 'tree_cons' declared here
+extern tree tree_cons                   PARAMS ((tree, tree, tree));
+            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/tree_expr_nonnegative_p/src/fold-const.c:8115:35: error: expected expression
+v6 = truth_value_p( ( tree_code)( unsigned __int8)*( ( _DWORD *)&t->common + 4)) != 0; 
+                                  ^
+2 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/tree_expr_nonnegative_p/src/obj/fold-const.o] Error 1

@@ -1,0 +1,56 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/move_movables/src/loop.c:2237:1: error: must use 'enum' tag to refer to type 'reg_note'
+reg_note v6; // ecx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/move_movables/src/loop.c:2240:1: error: must use 'enum' tag to refer to type 'reg_note'
+reg_note v9; // ecx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/move_movables/src/loop.c:2441:14: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+body = ( rtx)temp_0b[2]; 
+             ^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/move_movables/src/loop.c:2453:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+fn_reg = ( rtx)body[1]; 
+               ^~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/move_movables/src/loop.c:2468:1: error: statement requires expression of scalar type ('struct rtx_def' invalid)
+if ( temp_0b[4] ) 
+^    ~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/move_movables/src/loop.c:2494:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)reg + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/move_movables/src/loop.c:2512:1: error: statement requires expression of scalar type ('struct rtx_def' invalid)
+if ( p_0[4] ) 
+^    ~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/move_movables/src/loop.c:2598:7: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v10 = mode_class_0[*( ( unsigned __int8 *)m->set_dest + 2)] == MODE_COMPLEX_INT 
+      ^~~~~~~~~~~~
+      mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/move_movables/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/move_movables/src/loop.c:2599:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| mode_class_0[*( ( unsigned __int8 *)m->set_dest + 2)] == MODE_COMPLEX_FLOAT 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/move_movables/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/move_movables/src/loop.c:2631:30: error: use of undeclared identifier 'machine_mode'
+*v14 = gen_lowpart_common( ( machine_mode)*( ( unsigned __int8 *)m1a->set_dest + 2), m->set_dest); 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/move_movables/src/loop.c:2671:7: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v15 = mode_class_0[*( ( unsigned __int8 *)m1a->set_dest + 2)] == MODE_COMPLEX_INT 
+      ^~~~~~~~~~~~
+      mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/move_movables/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/move_movables/src/loop.c:2672:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| mode_class_0[*( ( unsigned __int8 *)m1a->set_dest + 2)] == MODE_COMPLEX_FLOAT 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/move_movables/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+12 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/move_movables/src/obj/loop.o] Error 1

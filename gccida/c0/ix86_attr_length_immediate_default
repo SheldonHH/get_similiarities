@@ -1,0 +1,63 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_attr_length_immediate_default/src/i386.c:10392:11: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+for ( i = recog_data_0.n_operands - 1; i >= 0; --i ) 
+          ^~~~~~~~~~~~
+          recog_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_attr_length_immediate_default/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_attr_length_immediate_default/src/i386.c:10394:37: error: use of undeclared identifier 'recog_data_0'
+if ( ( unsigned __int16)*( _DWORD *)recog_data_0.operand[i] == 67 
+                                    ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_attr_length_immediate_default/src/i386.c:10395:35: error: use of undeclared identifier 'recog_data_0'
+|| ( unsigned __int16)*( _DWORD *)recog_data_0.operand[i] == 68 
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_attr_length_immediate_default/src/i386.c:10396:35: error: use of undeclared identifier 'recog_data_0'
+|| ( unsigned __int16)*( _DWORD *)recog_data_0.operand[i] == 54 
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_attr_length_immediate_default/src/i386.c:10397:35: error: use of undeclared identifier 'recog_data_0'
+|| ( unsigned __int16)*( _DWORD *)recog_data_0.operand[i] == 55 
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_attr_length_immediate_default/src/i386.c:10398:35: error: use of undeclared identifier 'recog_data_0'
+|| ( unsigned __int16)*( _DWORD *)recog_data_0.operand[i] == 58 
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_attr_length_immediate_default/src/i386.c:10399:35: error: use of undeclared identifier 'recog_data_0'
+|| ( unsigned __int16)*( _DWORD *)recog_data_0.operand[i] == 134 
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_attr_length_immediate_default/src/i386.c:10400:35: error: use of undeclared identifier 'recog_data_0'
+|| ( unsigned __int16)*( _DWORD *)recog_data_0.operand[i] == 56 
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_attr_length_immediate_default/src/i386.c:10401:35: error: use of undeclared identifier 'recog_data_0'
+|| ( unsigned __int16)*( _DWORD *)recog_data_0.operand[i] == 140 ) 
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_attr_length_immediate_default/src/i386.c:10406:35: error: use of undeclared identifier 'recog_data_0'
+&& ( unsigned __int16)*( _DWORD *)recog_data_0.operand[i] == 54 
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_attr_length_immediate_default/src/i386.c:10407:4: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+&& recog_data_0.operand[i]->fld[0].rtwint >= -128 
+   ^~~~~~~~~~~~
+   recog_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_attr_length_immediate_default/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_attr_length_immediate_default/src/i386.c:10408:4: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+&& recog_data_0.operand[i]->fld[0].rtwint <= 127 ) 
+   ^~~~~~~~~~~~
+   recog_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_attr_length_immediate_default/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_attr_length_immediate_default/src/i386.c:10429:40: error: too many arguments provided to function-like macro invocation
+fatal_insn( "unknown insn mode", insn, "i386.c", 9956, "ix86_attr_length_immediate_default"); 
+                                       ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_attr_length_immediate_default/src/toplev.h:50:9: note: macro 'fatal_insn' defined here
+#define fatal_insn(msgid, insn) \
+        ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_attr_length_immediate_default/src/i386.c:10429:1: error: use of undeclared identifier 'fatal_insn'; did you mean '_fatal_insn'?
+fatal_insn( "unknown insn mode", insn, "i386.c", 9956, "ix86_attr_length_immediate_default"); 
+^~~~~~~~~~
+_fatal_insn
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_attr_length_immediate_default/src/toplev.h:44:13: note: '_fatal_insn' declared here
+extern void _fatal_insn                 PARAMS ((const char *,
+            ^
+14 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_attr_length_immediate_default/src/obj/i386.o] Error 1

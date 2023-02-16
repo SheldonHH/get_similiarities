@@ -1,0 +1,53 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/true_dependence/src/alias.c:2483:32: error: must use 'enum' tag to refer to type 'machine_mode'
+int  true_dependence( rtx mem, machine_mode mem_mode, rtx x, int ( *varies)( rtx, int)) 
+                               ^
+                               enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/true_dependence/src/alias.c:2491:4: error: expected ';' after expression
+rtx base_term; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/true_dependence/src/alias.c:2491:5: error: use of undeclared identifier 'base_term'
+rtx base_term; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/true_dependence/src/alias.c:2494:4: error: expected ';' after expression
+rtx addr_0; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/true_dependence/src/alias.c:2494:5: error: use of undeclared identifier 'addr_0'
+rtx addr_0; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/true_dependence/src/alias.c:2503:18: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v8 = ( __int64 *)mem[1]; 
+                 ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/true_dependence/src/alias.c:2506:18: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v9 = ( __int64 *)x[1]; 
+                 ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/true_dependence/src/alias.c:2531:1: error: use of undeclared identifier 'addr_0'
+addr_0 = get_addr_0( x->fld[0].rtx); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/true_dependence/src/alias.c:2533:7: error: use of undeclared identifier 'addr_0'
+rtx = addr_0; 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/true_dependence/src/alias.c:2537:1: error: use of undeclared identifier 'base_term'
+base_term = find_base_term( rtx); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/true_dependence/src/alias.c:2538:7: error: use of undeclared identifier 'base_term'
+if ( !base_term ) 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/true_dependence/src/alias.c:2550:1: error: use of undeclared identifier 'base_term'
+base_term = find_base_term( rtx); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/true_dependence/src/alias.c:2551:7: error: use of undeclared identifier 'base_term'
+if ( !base_term ) 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/true_dependence/src/alias.c:2554:17: error: use of undeclared identifier 'base_term'
+if ( *( _WORD *)base_term == 67 || ( *( _DWORD *)base_term & 0x400FFFF) == 67108932 ) 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/true_dependence/src/alias.c:2554:50: error: use of undeclared identifier 'base_term'
+if ( *( _WORD *)base_term == 67 || ( *( _DWORD *)base_term & 0x400FFFF) == 67108932 ) 
+                                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/true_dependence/src/alias.c:2557:37: error: use of undeclared identifier 'machine_mode'
+if ( !base_alias_check( rtx, v13, ( machine_mode)*( ( unsigned __int8 *)x + 2), mem_mode) ) 
+                                    ^
+16 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/true_dependence/src/obj/alias.o] Error 1

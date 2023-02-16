@@ -1,0 +1,77 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_single_use_1/src/recog.c:1219:6: error: use of undeclared identifier 'v21'; did you mean 'v11'?
+rtx *v21; // rax 
+     ^~~
+     v11
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_single_use_1/src/recog.c:1209:9: note: 'v11' declared here
+rtunion v11; // rax 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_single_use_1/src/recog.c:1219:5: error: invalid operands to binary expression ('struct rtx_def *' and 'rtunion' (aka 'union rtunion_def'))
+rtx *v21; // rax 
+~~~ ^~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_single_use_1/src/recog.c:1222:6: error: use of undeclared identifier 'v24'
+rtx *v24; // rbx 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_single_use_1/src/recog.c:1224:4: error: expected ';' after expression
+rtx v26; // rcx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_single_use_1/src/recog.c:1224:5: error: use of undeclared identifier 'v26'
+rtx v26; // rcx 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_single_use_1/src/recog.c:1225:6: error: use of undeclared identifier 'single_use_1'; did you mean 'single_set_2'?
+rtx *single_use_1; // rax 
+     ^~~~~~~~~~~~
+     single_set_2
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_single_use_1/src/rtl.h:1470:12: note: 'single_set_2' declared here
+extern rtx single_set_2                 PARAMS ((rtx, rtx));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_single_use_1/src/recog.c:1225:5: error: invalid operands to binary expression ('struct rtx_def *' and 'rtx (rtx, rtx)' (aka 'struct rtx_def *(struct rtx_def *, struct rtx_def *)'))
+rtx *single_use_1; // rax 
+~~~ ^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_single_use_1/src/recog.c:1244:14: error: expected expression
+loc = ( rtx *)v8->fld; 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_single_use_1/src/recog.c:1255:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v11.rtwint = ( __int64)v8->fld[0]; 
+                       ^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_single_use_1/src/recog.c:1269:14: error: expected expression
+loc = ( rtx *)&v8[1]; 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_single_use_1/src/recog.c:1289:14: error: expected expression
+v24 = ( rtx *)&v22[2 * v23]; 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_single_use_1/src/recog.c:1289:1: error: use of undeclared identifier 'v24'
+v24 = ( rtx *)&v22[2 * v23]; 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_single_use_1/src/recog.c:1292:1: error: use of undeclared identifier 'v26'
+v26 = *v24; 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_single_use_1/src/recog.c:1292:8: error: use of undeclared identifier 'v24'; did you mean 'v29'?
+v26 = *v24; 
+       ^~~
+       v29
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_single_use_1/src/recog.c:1226:13: note: 'v29' declared here
+const char *v29; // [rsp+0h] [rbp-48h] 
+            ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_single_use_1/src/recog.c:1293:1: error: use of undeclared identifier 'single_use_1'
+single_use_1 = loc; 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_single_use_1/src/recog.c:1294:7: error: use of undeclared identifier 'v24'; did you mean 'v29'?
+if ( *v24 != dest ) 
+      ^~~
+      v29
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_single_use_1/src/recog.c:1226:13: note: 'v29' declared here
+const char *v29; // [rsp+0h] [rbp-48h] 
+            ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_single_use_1/src/recog.c:1297:15: error: use of undeclared identifier 'v26'
+|| *( _WORD *)v26 != 61 
+              ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_single_use_1/src/recog.c:1298:6: error: use of undeclared identifier 'single_use_1'
+|| ( single_use_1 = loc, v26->fld[0].rtint != dest->fld[0].rtint) ) 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_single_use_1/src/recog.c:1298:26: error: use of undeclared identifier 'v26'
+|| ( single_use_1 = loc, v26->fld[0].rtint != dest->fld[0].rtint) ) 
+                         ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_single_use_1/src/obj/recog.o] Error 1

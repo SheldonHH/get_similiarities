@@ -1,0 +1,20 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/tree_expr_nonnegative_p/src/fold-const.c:8058:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *imag; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/tree_expr_nonnegative_p/src/fold-const.c:8059:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *attributes; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/tree_expr_nonnegative_p/src/fold-const.c:8114:23: error: use of undeclared identifier 'tree_code'; did you mean 'tree_cons'?
+v5 = truth_value_p( ( tree_code)( unsigned __int8)v1); 
+                      ^~~~~~~~~
+                      tree_cons
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/tree_expr_nonnegative_p/src/tree.h:2477:13: note: 'tree_cons' declared here
+extern tree tree_cons                   PARAMS ((tree, tree, tree));
+            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/tree_expr_nonnegative_p/src/fold-const.c:8114:35: error: expected expression
+v5 = truth_value_p( ( tree_code)( unsigned __int8)v1); 
+                                  ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/tree_expr_nonnegative_p/src/obj/fold-const.o] Error 1

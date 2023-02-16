@@ -1,0 +1,37 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/doloop_modify_runtime/src/doloop.c:1011:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/doloop_modify_runtime/src/doloop.c:1017:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v9; // r10d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/doloop_modify_runtime/src/doloop.c:1021:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v14; // [rsp+44h] [rbp-12Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/doloop_modify_runtime/src/doloop.c:1022:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v15; // [rsp+74h] [rbp-FCh] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/doloop_modify_runtime/src/doloop.c:1036:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code comparison_code; // [rsp+F0h] [rbp-80h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/doloop_modify_runtime/src/doloop.c:1048:19: error: expected identifier or '('
+ struct loop_info = ( const  struct loop_info *)loop->aux; 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/doloop_modify_runtime/src/doloop.c:1130:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)iterations), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/doloop_modify_runtime/src/doloop.c:1130:18: error: expected expression
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)iterations), 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/doloop_modify_runtime/src/doloop.c:1143:48: error: use of undeclared identifier 'machine_mode'
+emit_cmp_and_jump_insns( extra, v8, v9, 0LL, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)extra), 0, label); 
+                                               ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/doloop_modify_runtime/src/doloop.c:1143:63: error: expected expression
+emit_cmp_and_jump_insns( extra, v8, v9, 0LL, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)extra), 0, label); 
+                                                              ^
+10 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/doloop_modify_runtime/src/obj/doloop.o] Error 1

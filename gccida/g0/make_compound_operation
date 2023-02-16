@@ -1,0 +1,54 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/make_compound_operation/src/combine.c:6799:38: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx  make_compound_operation( rtx x, rtx_code in_code) 
+                                     ^
+                                     enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/make_compound_operation/src/combine.c:6801:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v2; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/make_compound_operation/src/combine.c:6823:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code next_code; // [rsp+34h] [rbp-4Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/make_compound_operation/src/combine.c:6825:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // [rsp+3Ch] [rbp-44h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/make_compound_operation/src/combine.c:6837:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code; // [rsp+5Ch] [rbp-24h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/make_compound_operation/src/combine.c:6848:72: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+else if ( ( code == COMPARE || rtx_class[*( _WORD *)x] == 60) && ( rtx)x[1] == const_int_rtx[64] ) 
+                                                                       ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/make_compound_operation/src/combine.c:6878:25: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+return gen_rtx_fmt_e( ( rtx_code)*( _WORD *)tem, mode, tem->fld[0].rtx); 
+                        ^~~~~~~~
+                        rtx_cost
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/make_compound_operation/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/make_compound_operation/src/combine.c:6878:34: error: invalid operands to binary expression ('int (rtx, enum rtx_code)' (aka 'int (struct rtx_def *, enum rtx_code)') and 'uint16 *' (aka 'unsigned short *'))
+return gen_rtx_fmt_e( ( rtx_code)*( _WORD *)tem, mode, tem->fld[0].rtx); 
+                      ~~~~~~~~~~~^~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/make_compound_operation/src/combine.c:6912:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( unsigned __int8 *)( *( _QWORD *)( x->fld[0].rtwint + 8) + 2LL), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/make_compound_operation/src/combine.c:6928:24: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+v8 = gen_rtx_fmt_ee( ( rtx_code)*( unsigned __int16 *)x->fld[0].rtwint, mode, v7, v6); 
+                       ^~~~~~~~
+                       rtx_cost
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/make_compound_operation/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/make_compound_operation/src/combine.c:6928:33: error: invalid operands to binary expression ('int (rtx, enum rtx_code)' (aka 'int (struct rtx_def *, enum rtx_code)') and 'unsigned short *')
+v8 = gen_rtx_fmt_ee( ( rtx_code)*( unsigned __int16 *)x->fld[0].rtwint, mode, v7, v6); 
+                     ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/make_compound_operation/src/combine.c:7004:13: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+rhs = ( rtx)x[1]; 
+            ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/make_compound_operation/src/combine.c:7037:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v15 = (  struct rtx_def *)x[1]; 
+                          ^~~~
+13 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/make_compound_operation/src/obj/combine.o] Error 1

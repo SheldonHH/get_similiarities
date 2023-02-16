@@ -1,0 +1,15 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/set_page_table_entry/src/ggc-page.c:907:38: error: unknown type name 'page_entry_0'; did you mean 'page_entry'?
+void  set_page_table_entry( void *p, page_entry_0 *entry) 
+                                     ^~~~~~~~~~~~
+                                     page_entry
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/set_page_table_entry/src/ggc-page.c:249:3: note: 'page_entry' declared here
+} page_entry;
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/set_page_table_entry/src/ggc-page.c:913:40: error: expected expression
+G.lookup[BYTE3( p)] = ( page_entry_0 **)xcalloc( 1LL << ( 24 - LOBYTE( G.lg_pagesize)), 8uLL); 
+                                       ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/set_page_table_entry/src/ggc-page.c:913:25: error: use of undeclared identifier 'page_entry_0'
+G.lookup[BYTE3( p)] = ( page_entry_0 **)xcalloc( 1LL << ( 24 - LOBYTE( G.lg_pagesize)), 8uLL); 
+                        ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/set_page_table_entry/src/obj/ggc-page.o] Error 1

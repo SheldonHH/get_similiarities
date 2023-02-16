@@ -1,0 +1,76 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_group_store/src/expr.c:2535:4: error: expected ';' after expression
+rtx v19; // r15 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_group_store/src/expr.c:2535:5: error: use of undeclared identifier 'v19'
+rtx v19; // r15 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_group_store/src/expr.c:2536:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v20; // r14d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_group_store/src/expr.c:2542:4: error: expected ';' after expression
+rtx dst; // [rsp+8h] [rbp-68h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_group_store/src/expr.c:2542:5: error: use of undeclared identifier 'dst'
+rtx dst; // [rsp+8h] [rbp-68h] 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_group_store/src/expr.c:2545:4: error: expected ';' after expression
+rtx dest; // [rsp+18h] [rbp-58h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_group_store/src/expr.c:2545:5: error: use of undeclared identifier 'dest'
+rtx dest; // [rsp+18h] [rbp-58h] 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_group_store/src/expr.c:2547:6: error: use of undeclared identifier 'tmps'
+rtx *tmps; // [rsp+28h] [rbp-48h] 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_group_store/src/expr.c:2548:4: error: expected ';' after expression
+rtx srca; // [rsp+30h] [rbp-40h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_group_store/src/expr.c:2548:5: error: use of undeclared identifier 'srca'; did you mean 'src'?
+rtx srca; // [rsp+30h] [rbp-40h] 
+    ^~~~
+    src
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_group_store/src/expr.c:2517:43: note: 'src' declared here
+void  emit_group_store( rtx orig_dst, rtx src, int ssize) 
+                                          ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_group_store/src/expr.c:2552:1: error: use of undeclared identifier 'dst'
+dst = orig_dst; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_group_store/src/expr.c:2553:1: error: use of undeclared identifier 'srca'; did you mean 'src'?
+srca = src; 
+^~~~
+src
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_group_store/src/expr.c:2517:43: note: 'src' declared here
+void  emit_group_store( rtx orig_dst, rtx src, int ssize) 
+                                          ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_group_store/src/expr.c:2557:18: error: use of undeclared identifier 'srca'
+rtwint = ( int *)srca->fld[0].rtwint; 
+                 ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_group_store/src/expr.c:2561:1: error: use of undeclared identifier 'tmps'
+tmps = ( rtx *)&v25; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_group_store/src/expr.c:2561:15: error: expected expression
+tmps = ( rtx *)&v25; 
+              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_group_store/src/expr.c:2568:21: error: use of undeclared identifier 'machine_mode'
+v9 = gen_reg_rtx( ( machine_mode)*( unsigned __int8 *)( v8 + 2)); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_group_store/src/expr.c:2569:1: error: use of undeclared identifier 'tmps'
+tmps[v7] = v9; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_group_store/src/expr.c:2570:27: error: expected ')'
+emit_move_insn( v9, ( rtx)v8); 
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_group_store/src/expr.c:2570:15: note: to match this '('
+emit_move_insn( v9, ( rtx)v8); 
+              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_group_store/src/expr.c:2571:18: error: use of undeclared identifier 'srca'
+rtwint = ( int *)srca->fld[0].rtwint; 
+                 ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_group_store/src/obj/expr.o] Error 1

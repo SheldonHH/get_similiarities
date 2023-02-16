@@ -1,0 +1,74 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/safe_from_p/src/expr.c:6010:1: error: must use 'enum' tag to refer to type 'tree_code'
+tree_code v9; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/safe_from_p/src/expr.c:6015:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v14; // rsi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/safe_from_p/src/expr.c:6016:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *imag; // rsi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/safe_from_p/src/expr.c:6017:4: error: expected ';' after expression
+rtx v16; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/safe_from_p/src/expr.c:6017:5: error: use of undeclared identifier 'v16'
+rtx v16; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/safe_from_p/src/expr.c:6023:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v22; // rsi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/safe_from_p/src/expr.c:6069:1: error: use of undeclared identifier 'save_expr_list_5'
+save_expr_list_5 = 0LL; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/safe_from_p/src/expr.c:6071:11: error: use of undeclared identifier 'save_expr_list_5'; did you mean 'in_expr_list_p'?
+for ( i = save_expr_list_5; i; i = i->common.chain ) 
+          ^~~~~~~~~~~~~~~~
+          in_expr_list_p
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/safe_from_p/src/rtl.h:1510:12: note: 'in_expr_list_p' declared here
+extern int in_expr_list_p               PARAMS ((rtx, rtx));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/safe_from_p/src/expr.c:6146:1: error: use of undeclared identifier 'v16'
+v16 = elements->decl.rtl; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/safe_from_p/src/expr.c:6147:25: error: use of undeclared identifier 'v16'
+if ( !v16 || *( _WORD *)v16 != 66 ) 
+                        ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/safe_from_p/src/expr.c:6147:7: error: use of undeclared identifier 'v16'
+if ( !v16 || *( _WORD *)v16 != 66 ) 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/safe_from_p/src/expr.c:6149:7: error: use of undeclared identifier 'v16'; did you mean 'v12'?
+rtl = v16->fld[0].rtx; 
+      ^~~
+      v12
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/safe_from_p/src/expr.c:6013:18: note: 'v12' declared here
+ struct rtx_def *v12; // rax 
+                 ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/safe_from_p/src/expr.c:6166:1: error: use of undeclared identifier 'save_expr_list_5'
+save_expr_list_5 = tree_cons( elements, 0LL, save_expr_list_5); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/safe_from_p/src/expr.c:6166:46: error: use of undeclared identifier 'save_expr_list_5'; did you mean 'in_expr_list_p'?
+save_expr_list_5 = tree_cons( elements, 0LL, save_expr_list_5); 
+                                             ^~~~~~~~~~~~~~~~
+                                             in_expr_list_p
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/safe_from_p/src/rtl.h:1510:12: note: 'in_expr_list_p' declared here
+extern int in_expr_list_p               PARAMS ((rtx, rtx));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/safe_from_p/src/expr.c:6202:19: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v26 = ( __int64 *)rtx[1]; 
+                  ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/safe_from_p/src/expr.c:6256:8: error: use of undeclared identifier 'lang_hooks_0'; did you mean 'lang_hooks'?
+return lang_hooks_0.safe_from_p( rtx, elements) != 0; 
+       ^~~~~~~~~~~~
+       lang_hooks
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/safe_from_p/src/langhooks.h:168:32: note: 'lang_hooks' declared here
+extern const struct lang_hooks lang_hooks;
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/safe_from_p/src/expr.c:6256:32: error: called object type '<dependent type>' is not a function or function pointer
+return lang_hooks_0.safe_from_p( rtx, elements) != 0; 
+                               ^
+17 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/safe_from_p/src/obj/expr.o] Error 1

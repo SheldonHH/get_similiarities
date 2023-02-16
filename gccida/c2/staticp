@@ -1,0 +1,21 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/staticp/src/tree.c:1995:8: error: use of undeclared identifier 'lang_hooks_0'; did you mean 'lang_hooks'?
+return lang_hooks_0.staticp( arg); 
+       ^~~~~~~~~~~~
+       lang_hooks
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/staticp/src/langhooks.h:168:32: note: 'lang_hooks' declared here
+extern const struct lang_hooks lang_hooks;
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/staticp/src/tree.c:1995:28: error: called object type '<dependent type>' is not a function or function pointer
+return lang_hooks_0.staticp( arg); 
+                           ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/staticp/src/tree.c:1998:13: error: expected identifier or '('
+ struct arg = arg->vector.elements; 
+            ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/staticp/src/tree.c:2007:80: error: subscript of pointer to incomplete type 'struct rtx_def'
+p_context = ( tree *)( *( _QWORD *)( *( _QWORD *)&arg->common.type->int_cst.rtl[2] + 8LL) + 128LL); 
+                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/staticp/src/config.h:7:8: note: forward declaration of 'struct rtx_def'
+struct rtx_def;
+       ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/staticp/src/obj/tree.o] Error 1

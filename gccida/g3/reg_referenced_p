@@ -1,0 +1,38 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/reg_referenced_p/src/rtlanal.c:1209:14: error: expected ';' after expression
+body = ( rtx)body[1]; 
+             ^
+             ;
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/reg_referenced_p/src/rtlanal.c:1218:35: error: expected expression
+if ( reg_referenced_p( x, *( rtx *)&rtwint[2 * v21 + 2]) ) 
+                                  ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/reg_referenced_p/src/rtlanal.c:1230:18: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v22 = ( _DWORD *)body[2]; 
+                 ^~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/reg_referenced_p/src/rtlanal.c:1302:41: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v40 = ( ( unsigned int)( *( ( _DWORD *)&mode_class_0 + v41) - 5) < 2) + 1; 
+                                        ^~~~~~~~~~~~
+                                        mode_class
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/reg_referenced_p/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/reg_referenced_p/src/rtlanal.c:1359:18: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v22 = ( _DWORD *)body[2]; 
+                 ^~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/reg_referenced_p/src/rtlanal.c:1446:41: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v53 = ( ( unsigned int)( *( ( _DWORD *)&mode_class_0 + v54) - 5) < 2) + 1; 
+                                        ^~~~~~~~~~~~
+                                        mode_class
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/reg_referenced_p/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/reg_referenced_p/src/rtlanal.c:1492:42: error: expected expression
+if ( reg_overlap_mentioned_p( x, *( rtx *)&body[1]) ) 
+                                         ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/reg_referenced_p/src/rtlanal.c:1494:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v17.rtwint = ( __int64)body->fld[0]; 
+                       ^~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/reg_referenced_p/src/rtlanal.c:1527:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v4.rtwint = ( __int64)body->fld[0]; 
+                      ^~~~~~~~~~~~
+9 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/reg_referenced_p/src/obj/rtlanal.o] Error 1

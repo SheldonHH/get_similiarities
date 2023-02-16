@@ -1,0 +1,17 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_and_const_int/src/combine.c:8283:37: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  simplify_and_const_int( rtx x, machine_mode mode, rtx varop, unsigned __int64 constop) 
+                                    ^
+                                    enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_and_const_int/src/combine.c:8292:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code; // [rsp+30h] [rbp-50h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_and_const_int/src/combine.c:8293:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v14; // [rsp+34h] [rbp-4Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_and_const_int/src/combine.c:8330:37: error: use of undeclared identifier 'machine_mode'
+v5 = simplify_and_const_int( 0LL, ( machine_mode)BYTE2( *( _DWORD *)varopa), *( rtx *)&varopa[1], constopb); 
+                                    ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_and_const_int/src/obj/combine.o] Error 1

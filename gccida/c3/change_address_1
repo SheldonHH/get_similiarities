@@ -1,0 +1,47 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/change_address_1/src/emit-rtl.c:2376:36: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  change_address_1( rtx memref, machine_mode mode, rtx addr, int validate) 
+                                   ^
+                                   enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/change_address_1/src/emit-rtl.c:2380:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v6; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/change_address_1/src/emit-rtl.c:2381:4: error: expected ';' after expression
+rtx v7; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/change_address_1/src/emit-rtl.c:2381:5: error: use of undeclared identifier 'v7'
+rtx v7; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/change_address_1/src/emit-rtl.c:2417:1: error: use of undeclared identifier 'v7'
+v7 = gen_rtx_fmt_e0( MEM, v6, rtx); 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/change_address_1/src/emit-rtl.c:2418:14: error: use of undeclared identifier 'v7'
+*( _QWORD *)&v7[1] = 0LL; 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/change_address_1/src/emit-rtl.c:2419:51: error: use of undeclared identifier 'v7'
+v8 = *( _DWORD *)memref & 0x8000000 | *( _DWORD *)v7 & 0xF7FFFFFF; 
+                                                  ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/change_address_1/src/emit-rtl.c:2420:13: error: use of undeclared identifier 'v7'
+*( _DWORD *)v7 = v8; 
+            ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/change_address_1/src/emit-rtl.c:2422:13: error: use of undeclared identifier 'v7'
+*( _DWORD *)v7 = v9; 
+            ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/change_address_1/src/emit-rtl.c:2424:13: error: use of undeclared identifier 'v7'
+*( _DWORD *)v7 = v10; 
+            ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/change_address_1/src/emit-rtl.c:2426:13: error: use of undeclared identifier 'v7'
+*( _DWORD *)v7 = v11; 
+            ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/change_address_1/src/emit-rtl.c:2427:13: error: use of undeclared identifier 'v7'
+*( _DWORD *)v7 = *( _DWORD *)memref & 0x1000000 | v11 & 0xFEFFFFFF; 
+            ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/change_address_1/src/emit-rtl.c:2428:14: error: use of undeclared identifier 'v7'
+*( _QWORD *)&v7[1] = memref[1]; 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/change_address_1/src/emit-rtl.c:2429:8: error: use of undeclared identifier 'v7'
+return v7; 
+       ^
+14 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/change_address_1/src/obj/emit-rtl.o] Error 1

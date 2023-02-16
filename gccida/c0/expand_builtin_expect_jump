@@ -1,0 +1,22 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_builtin_expect_jump/src/builtins.c:3933:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *arg0; // [rsp+40h] [rbp-30h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_builtin_expect_jump/src/builtins.c:3969:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+ifelse = ( rtx)pattern[1]; 
+               ^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_builtin_expect_jump/src/builtins.c:4008:48: error: use of undeclared identifier 'prediction'; did you mean 'predict_insn'?
+predict_insn_def( insn, PRED_BUILTIN_EXPECT, ( prediction)taken); 
+                                               ^~~~~~~~~~
+                                               predict_insn
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_builtin_expect_jump/src/predict.h:39:13: note: 'predict_insn' declared here
+extern void predict_insn        PARAMS ((rtx, enum br_predictor, int));
+            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_builtin_expect_jump/src/builtins.c:4008:59: error: expected ')'
+predict_insn_def( insn, PRED_BUILTIN_EXPECT, ( prediction)taken); 
+                                                          ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_builtin_expect_jump/src/builtins.c:4008:17: note: to match this '('
+predict_insn_def( insn, PRED_BUILTIN_EXPECT, ( prediction)taken); 
+                ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_builtin_expect_jump/src/obj/builtins.o] Error 1

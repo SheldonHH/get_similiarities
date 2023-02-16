@@ -1,0 +1,47 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_reload/src/reload1.c:7813:46: error: must use 'enum' tag to refer to type 'reload_type'
+rtx  gen_reload( rtx out, rtx in, int opnum, reload_type type) 
+                                             ^
+                                             enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_reload/src/reload1.c:7842:34: error: use of undeclared identifier 'machine_mode'
+&& ( tem = gen_lowpart_common( ( machine_mode)*( unsigned __int8 *)( in->fld[0].rtwint + 2), out)) != 0LL ) 
+                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_reload/src/reload1.c:7850:30: error: use of undeclared identifier 'machine_mode'
+tema = gen_lowpart_common( ( machine_mode)*( unsigned __int8 *)( out->fld[0].rtwint + 2), in); 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_reload/src/reload1.c:7879:45: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+if ( op0 != ina->fld[0].rtx || op1 != ( rtx)ina[1] ) 
+                                            ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_reload/src/reload1.c:7880:31: error: use of undeclared identifier 'machine_mode'
+ina = gen_rtx_fmt_ee( PLUS, ( machine_mode)*( ( unsigned __int8 *)ina + 2), op0, op1); 
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_reload/src/reload1.c:7909:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int16 *)&insn_data_0[code].operand[2] + 8)) ) 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_reload/src/reload1.c:7909:41: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+( machine_mode)*( ( unsigned __int16 *)&insn_data_0[code].operand[2] + 8)) ) 
+                                        ^~~~~~~~~~~
+                                        insn_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_reload/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_reload/src/reload1.c:7907:5: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+&& !insn_data_0[code].operand[2].predicate( 
+    ^~~~~~~~~~~
+    insn_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_reload/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_reload/src/reload1.c:7946:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)outa + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_reload/src/reload1.c:7949:33: error: use of undeclared identifier 'machine_mode'
+loc = get_secondary_mem( ina, ( machine_mode)*( ( unsigned __int8 *)outa + 2), opnum, type); 
+                                ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_reload/src/reload1.c:7951:23: error: use of undeclared identifier 'machine_mode'
+outa = gen_rtx_REG( ( machine_mode)*( ( unsigned __int8 *)loc + 2), outa->fld[0].rtint); 
+                      ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_reload/src/reload1.c:7953:22: error: use of undeclared identifier 'machine_mode'
+ina = gen_rtx_REG( ( machine_mode)*( ( unsigned __int8 *)loc + 2), ina->fld[0].rtint); 
+                     ^
+12 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_reload/src/obj/reload1.o] Error 1

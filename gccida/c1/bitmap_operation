@@ -1,0 +1,12 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/bitmap_operation/src/bitmap.c:975:63: error: must use 'enum' tag to refer to type 'bitmap_bits'
+int  bitmap_operation( bitmap to, bitmap from1, bitmap from2, bitmap_bits operation) 
+                                                              ^
+                                                              enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/bitmap_operation/src/bitmap.c:1008:12: error: expected expression
+*( _OWORD *)&to->first = 0LL; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/bitmap_operation/src/bitmap.c:1008:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&to->first = 0LL; 
+   ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/bitmap_operation/src/obj/bitmap.o] Error 1

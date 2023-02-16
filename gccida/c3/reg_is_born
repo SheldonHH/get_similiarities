@@ -1,0 +1,70 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/reg_is_born/src/local-alloc.c:2543:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v6; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/reg_is_born/src/local-alloc.c:2548:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class v11; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/reg_is_born/src/local-alloc.c:2623:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v16 = ( ( unsigned int)( mode_class_0[v14] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/reg_is_born/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/reg_is_born/src/local-alloc.c:2648:81: error: use of undeclared identifier 'xmm'
+v22 = _mm_add_epi32( _mm_shuffle_epi32( _mm_cvtsi32_si128( v20), 80), ( __m128i)xmm*(short *)0x65AE30); 
+                                                                                ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/reg_is_born/src/local-alloc.c:2650:7: error: invalid conversion between vector type '__m128d' (vector of 2 'double' values) and integer type 'HARD_REG_ELT_TYPE' (aka 'unsigned long long') of different size
+v24 = ( __m128d)regs_live; 
+      ^~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/reg_is_born/src/local-alloc.c:2652:44: error: use of undeclared identifier 'xmm'
+si128 = _mm_load_si128( ( const __m128i *)&xmm*(short *)0x65AE10); 
+                                           ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/reg_is_born/src/local-alloc.c:2653:42: error: use of undeclared identifier 'xmm'
+v27 = _mm_load_si128( ( const __m128i *)&xmm*(short *)0x65AE40); 
+                                         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/reg_is_born/src/local-alloc.c:2655:5: error: assigning to '__m128d' (vector of 2 'double' values) from incompatible type 'long long'
+v29 = 0LL; 
+    ^ ~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/reg_is_born/src/local-alloc.c:2658:53: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'long long' of different size
+v30 = _mm_unpacklo_epi32( _mm_add_epi32( v23, v22), ( __m128i)0LL); 
+                                                    ^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/reg_is_born/src/local-alloc.c:2660:53: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'long long' of different size
+v32 = _mm_unpacklo_epi32( _mm_add_epi32( v25, v22), ( __m128i)0LL); 
+                                                    ^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/reg_is_born/src/local-alloc.c:2661:4: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+v31.m128i_i64[0] = si128.m128i_i64[0] << v30.m128i_i8[0]; 
+~~~^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/reg_is_born/src/local-alloc.c:2661:25: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+v31.m128i_i64[0] = si128.m128i_i64[0] << v30.m128i_i8[0]; 
+                   ~~~~~^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/reg_is_born/src/local-alloc.c:2661:45: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+v31.m128i_i64[0] = si128.m128i_i64[0] << v30.m128i_i8[0]; 
+                                         ~~~^~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/reg_is_born/src/local-alloc.c:2664:17: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+*( _QWORD *)&v33.m128d_f64[0] = si128.m128i_i64[0] << v32.m128i_i8[0]; 
+             ~~~^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/reg_is_born/src/local-alloc.c:2664:38: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+*( _QWORD *)&v33.m128d_f64[0] = si128.m128i_i64[0] << v32.m128i_i8[0]; 
+                                ~~~~~^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/reg_is_born/src/local-alloc.c:2664:58: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+*( _QWORD *)&v33.m128d_f64[0] = si128.m128i_i64[0] << v32.m128i_i8[0]; 
+                                                      ~~~^~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/reg_is_born/src/local-alloc.c:2671:54: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+v17 = _mm_or_si128( _mm_shuffle_epi32( v34, 78), v34).m128i_u64[0]; 
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/reg_is_born/src/local-alloc.c:2687:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v39 = ( ( unsigned int)( mode_class_0[v37] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/reg_is_born/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/reg_is_born/src/local-alloc.c:2715:81: error: use of undeclared identifier 'xmm'
+v44 = _mm_add_epi32( _mm_shuffle_epi32( _mm_cvtsi32_si128( v39), 80), ( __m128i)xmm*(short *)0x65AE30); 
+                                                                                ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/reg_is_born/src/obj/local-alloc.o] Error 1

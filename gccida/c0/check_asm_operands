@@ -1,0 +1,13 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/check_asm_operands/src/recog.c:593:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode *modes; // [rsp+8h] [rbp-48h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/check_asm_operands/src/recog.c:627:8: error: use of undeclared identifier 'sch_istable'; did you mean '_sch_istable'?
+if ( ( sch_istable[*( unsigned __int8 *)c] & 4) != 0 && !c[1] ) 
+       ^~~~~~~~~~~
+       _sch_istable
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/check_asm_operands/src/safe-ctype.h:72:29: note: '_sch_istable' declared here
+extern const unsigned short _sch_istable[256];
+                            ^
+2 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/check_asm_operands/src/obj/recog.o] Error 1

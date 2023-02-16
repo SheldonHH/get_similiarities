@@ -1,0 +1,26 @@
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/do_atari_atari/src/engine/combination.c:1050:10: error: conflicting types for 'do_atari_atari'
+__int64  do_atari_atari( 
+         ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/do_atari_atari/src/engine/combination.c:209:12: note: previous declaration is here
+static int do_atari_atari(int color, int *attack_point, int *defense_point,
+           ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/do_atari_atari/src/engine/combination.c:1141:1: error: use of undeclared identifier 'current_minsize'
+current_minsize = minsize; 
+^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/do_atari_atari/src/engine/combination.c:1142:1: error: use of undeclared identifier 'current_attacks'
+current_attacks = ( struct aa_move *)base; 
+^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/do_atari_atari/src/engine/combination.c:1144:46: error: use of undeclared identifier 'conditional_attack_point'
+memset( conditional_attack_point, 0, sizeof( conditional_attack_point)); 
+                                             ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/do_atari_atari/src/engine/combination.c:1144:9: error: use of undeclared identifier 'conditional_attack_point'
+memset( conditional_attack_point, 0, sizeof( conditional_attack_point)); 
+        ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/do_atari_atari/src/engine/combination.c:1167:31: error: use of undeclared identifier 'target_comp_func'
+gg_sort( v18 - 12, v19, 4uLL, target_comp_func); 
+                              ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/do_atari_atari/src/engine/combination.c:1176:45: error: use of undeclared identifier 'move_comp_func'
+gg_sort( base, ( unsigned int)v17, 0x14uLL, move_comp_func); 
+                                            ^
+7 errors generated.
+make: *** [/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/do_atari_atari/src/obj/1/combination.o] Error 1

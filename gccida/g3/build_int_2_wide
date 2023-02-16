@@ -1,0 +1,64 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/build_int_2_wide/src/tree.c:1020:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v4; // r12 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/build_int_2_wide/src/tree.c:1023:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v7; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/build_int_2_wide/src/tree.c:1024:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v8; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/build_int_2_wide/src/tree.c:1029:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v13; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/build_int_2_wide/src/tree.c:1043:19: error: expected expression
+v4 = ( tree_node *)ggc_alloc( v3); 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/build_int_2_wide/src/tree.c:1043:8: error: use of undeclared identifier 'tree_node'
+v4 = ( tree_node *)ggc_alloc( v3); 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/build_int_2_wide/src/tree.c:1078:19: error: expected expression
+v7 = ( tree_node *)ggc_alloc( 0x30uLL); 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/build_int_2_wide/src/tree.c:1078:8: error: use of undeclared identifier 'tree_node'
+v7 = ( tree_node *)ggc_alloc( 0x30uLL); 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/build_int_2_wide/src/tree.c:1079:14: error: expected expression
+*( ( _OWORD *)&v7->block.common + 1) = 0LL; 
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/build_int_2_wide/src/tree.c:1079:6: error: use of undeclared identifier '_OWORD'
+*( ( _OWORD *)&v7->block.common + 1) = 0LL; 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/build_int_2_wide/src/tree.c:1079:33: error: invalid operands to binary expression ('struct tree_common' and 'int')
+*( ( _OWORD *)&v7->block.common + 1) = 0LL; 
+               ~~~~~~~~~~~~~~~~ ^ ~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/build_int_2_wide/src/tree.c:1082:12: error: expected expression
+*( _OWORD *)&v7->common.chain = 0LL; 
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/build_int_2_wide/src/tree.c:1082:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&v7->common.chain = 0LL; 
+   ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/build_int_2_wide/src/tree.c:1083:12: error: expected expression
+*( _OWORD *)&v7->block.vars = 0LL; 
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/build_int_2_wide/src/tree.c:1083:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&v7->block.vars = 0LL; 
+   ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/build_int_2_wide/src/tree.c:1086:19: error: expected expression
+v8 = ( tree_node *)ggc_alloc( 0xD0uLL); 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/build_int_2_wide/src/tree.c:1086:8: error: use of undeclared identifier 'tree_node'
+v8 = ( tree_node *)ggc_alloc( 0xD0uLL); 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/build_int_2_wide/src/tree.c:1097:20: error: expected expression
+v13 = ( tree_node *)ggc_alloc( 0xA8uLL); 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/build_int_2_wide/src/tree.c:1097:9: error: use of undeclared identifier 'tree_node'
+v13 = ( tree_node *)ggc_alloc( 0xA8uLL); 
+        ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/build_int_2_wide/src/obj/tree.o] Error 1

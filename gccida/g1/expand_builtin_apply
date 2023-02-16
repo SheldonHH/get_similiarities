@@ -1,0 +1,25 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_builtin_apply/src/builtins.c:1641:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v16; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_builtin_apply/src/builtins.c:1644:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v19; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_builtin_apply/src/builtins.c:1662:21: error: use of undeclared identifier 'machine_mode'
+v6 = gen_reg_rtx( ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4)); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_builtin_apply/src/builtins.c:1663:21: error: use of undeclared identifier 'machine_mode'
+v7 = gen_rtx_MEM( ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), arguments); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_builtin_apply/src/builtins.c:1711:32: error: use of undeclared identifier 'machine_mode'
+v24 = adjust_address_1( v11, ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), v18, 1, 1); 
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_builtin_apply/src/builtins.c:1731:19: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+last_insn = ( rtx)last_insn[1]; 
+                  ^~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_builtin_apply/src/builtins.c:1735:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v20 = ( __int64)last_insn[4]; 
+                ^~~~~~~~~~~~
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_builtin_apply/src/obj/builtins.o] Error 1

@@ -1,0 +1,37 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/refers_to_regno_for_reload_p/src/reload.c:6570:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code; // [rsp+64h] [rbp-2Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/refers_to_regno_for_reload_p/src/reload.c:6602:12: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+xa = ( rtx)xa[1]; 
+           ^~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/refers_to_regno_for_reload_p/src/reload.c:6650:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[( unsigned __int8)BYTE2( *( _DWORD *)xa)] != MODE_COMPLEX_INT ) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/refers_to_regno_for_reload_p/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/refers_to_regno_for_reload_p/src/reload.c:6651:7: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v24 = mode_class_0[( unsigned __int8)BYTE2( *( _DWORD *)xa)] == MODE_COMPLEX_FLOAT; 
+      ^~~~~~~~~~~~
+      mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/refers_to_regno_for_reload_p/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/refers_to_regno_for_reload_p/src/reload.c:6720:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[( unsigned __int8)BYTE2( *( _DWORD *)xa)] != MODE_COMPLEX_INT ) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/refers_to_regno_for_reload_p/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/refers_to_regno_for_reload_p/src/reload.c:6721:7: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v20 = mode_class_0[( unsigned __int8)BYTE2( *( _DWORD *)xa)] == MODE_COMPLEX_FLOAT; 
+      ^~~~~~~~~~~~
+      mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/refers_to_regno_for_reload_p/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/refers_to_regno_for_reload_p/src/obj/reload.o] Error 1

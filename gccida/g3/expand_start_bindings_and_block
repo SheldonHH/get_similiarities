@@ -1,0 +1,35 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_start_bindings_and_block/src/stmt.c:3859:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v14; // rsi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_start_bindings_and_block/src/stmt.c:3860:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v15; // rdx 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_start_bindings_and_block/src/stmt.c:3900:30: error: use of undeclared identifier 'label'; did you mean 'labs'?
+fancy_abort( ( const char *)&label, 3395, "expand_start_bindings_and_block"); 
+                             ^~~~~
+                             labs
+/usr/include/stdlib.h:838:17: note: 'labs' declared here
+extern long int labs (long int __x) __THROW __attribute__ ((__const__)) __wur;
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_start_bindings_and_block/src/stmt.c:3911:12: error: member reference base type 'const __m128i' (vector of 2 'long long' values) is not a structure or union
+v10 = v9[3].m128i_i32[0] + 1; 
+      ~~~~~^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_start_bindings_and_block/src/stmt.c:3913:6: error: member reference base type 'const __m128i' (vector of 2 'long long' values) is not a structure or union
+v9[3].m128i_i32[0] = v10; 
+~~~~~^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_start_bindings_and_block/src/stmt.c:3925:37: error: expected expression
+if ( *v12 && ( ( v14 = ( tree_node *)*( ( _QWORD *)v13 + 8), v15 = ( tree_node *)*( ( _QWORD *)v13 + 9), v14) || v15) ) 
+                                    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_start_bindings_and_block/src/stmt.c:3925:26: error: use of undeclared identifier 'tree_node'
+if ( *v12 && ( ( v14 = ( tree_node *)*( ( _QWORD *)v13 + 8), v15 = ( tree_node *)*( ( _QWORD *)v13 + 9), v14) || v15) ) 
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_start_bindings_and_block/src/stmt.c:3925:81: error: expected expression
+if ( *v12 && ( ( v14 = ( tree_node *)*( ( _QWORD *)v13 + 8), v15 = ( tree_node *)*( ( _QWORD *)v13 + 9), v14) || v15) ) 
+                                                                                ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_start_bindings_and_block/src/stmt.c:3925:70: error: use of undeclared identifier 'tree_node'
+if ( *v12 && ( ( v14 = ( tree_node *)*( ( _QWORD *)v13 + 8), v15 = ( tree_node *)*( ( _QWORD *)v13 + 9), v14) || v15) ) 
+                                                                     ^
+9 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_start_bindings_and_block/src/obj/stmt.o] Error 1

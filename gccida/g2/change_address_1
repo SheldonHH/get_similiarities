@@ -1,0 +1,64 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/change_address_1/src/emit-rtl.c:2376:36: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  change_address_1( rtx memref, machine_mode mode, rtx addr, int validate) 
+                                   ^
+                                   enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/change_address_1/src/emit-rtl.c:2378:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v4; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/change_address_1/src/emit-rtl.c:2380:4: error: expected ';' after expression
+rtx v6; // r8 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/change_address_1/src/emit-rtl.c:2380:5: error: use of undeclared identifier 'v6'
+rtx v6; // r8 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/change_address_1/src/emit-rtl.c:2381:4: error: expected ';' after expression
+rtx v7; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/change_address_1/src/emit-rtl.c:2381:5: error: use of undeclared identifier 'v7'
+rtx v7; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/change_address_1/src/emit-rtl.c:2412:50: error: use of undeclared identifier 'v6'
+if ( !rtx_equal_p( rtx, memref->fld[0].rtx) || ( v6 = memref, *( ( unsigned __int8 *)memref + 2) != v4) ) 
+                                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/change_address_1/src/emit-rtl.c:2414:1: error: use of undeclared identifier 'v7'
+v7 = gen_rtx_fmt_e0( MEM, v4, rtx); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/change_address_1/src/emit-rtl.c:2415:14: error: use of undeclared identifier 'v7'
+*( _QWORD *)&v7[1] = 0LL; 
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/change_address_1/src/emit-rtl.c:2416:1: error: use of undeclared identifier 'v6'
+v6 = v7; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/change_address_1/src/emit-rtl.c:2416:6: error: use of undeclared identifier 'v7'
+v6 = v7; 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/change_address_1/src/emit-rtl.c:2417:9: error: use of undeclared identifier 'v7'
+LOBYTE( v7) = *( ( _BYTE *)memref + 3) & 8 | *( ( _BYTE *)v7 + 3) & 0xF7; 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/change_address_1/src/emit-rtl.c:2417:59: error: use of undeclared identifier 'v7'
+LOBYTE( v7) = *( ( _BYTE *)memref + 3) & 8 | *( ( _BYTE *)v7 + 3) & 0xF7; 
+                                                          ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/change_address_1/src/emit-rtl.c:2418:14: error: use of undeclared identifier 'v6'
+*( ( _BYTE *)v6 + 3) = ( _BYTE)v7; 
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/change_address_1/src/emit-rtl.c:2418:32: error: use of undeclared identifier 'v7'
+*( ( _BYTE *)v6 + 3) = ( _BYTE)v7; 
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/change_address_1/src/emit-rtl.c:2419:9: error: use of undeclared identifier 'v7'
+LOBYTE( v7) = *( ( _BYTE *)memref + 3) & 0x10 | ( unsigned __int8)v7 & 0xEF; 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/change_address_1/src/emit-rtl.c:2419:67: error: use of undeclared identifier 'v7'
+LOBYTE( v7) = *( ( _BYTE *)memref + 3) & 0x10 | ( unsigned __int8)v7 & 0xEF; 
+                                                                  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/change_address_1/src/emit-rtl.c:2420:14: error: use of undeclared identifier 'v6'
+*( ( _BYTE *)v6 + 3) = ( _BYTE)v7; 
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/change_address_1/src/emit-rtl.c:2420:32: error: use of undeclared identifier 'v7'
+*( ( _BYTE *)v6 + 3) = ( _BYTE)v7; 
+                               ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/change_address_1/src/obj/emit-rtl.o] Error 1

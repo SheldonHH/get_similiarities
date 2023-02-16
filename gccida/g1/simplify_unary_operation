@@ -1,0 +1,81 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_unary_operation/src/simplify-rtx.c:874:32: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx  simplify_unary_operation( rtx_code code, machine_mode mode, rtx op, machine_mode op_mode) 
+                               ^
+                               enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_unary_operation/src/simplify-rtx.c:874:47: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  simplify_unary_operation( rtx_code code, machine_mode mode, rtx op, machine_mode op_mode) 
+                                              ^
+                                              enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_unary_operation/src/simplify-rtx.c:874:74: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  simplify_unary_operation( rtx_code code, machine_mode mode, rtx op, machine_mode op_mode) 
+                                                                         ^
+                                                                         enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_unary_operation/src/simplify-rtx.c:893:1: error: must use 'enum' tag to refer to type 'mode_class'
+mode_class v25; // edx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_unary_operation/src/machmode.h:52:30: note: enum 'mode_class' is hidden by a non-type declaration of 'mode_class' here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_unary_operation/src/simplify-rtx.c:895:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v27; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_unary_operation/src/simplify-rtx.c:917:20: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+rtwint = ( __int64)v9[1]; 
+                   ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_unary_operation/src/simplify-rtx.c:921:47: error: too few arguments to function call, expected 2, have 1
+real_value_truncate( *( realvaluetype *)&i0[8]); 
+~~~~~~~~~~~~~~~~~~~                           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_unary_operation/src/real.h:406:1: note: 'real_value_truncate' declared here
+extern REAL_VALUE_TYPE real_value_truncate PARAMS ((enum machine_mode,
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_unary_operation/src/simplify-rtx.c:925:12: error: expected expression
+*( _OWORD *)v28.r = *( _OWORD *)&i0[8]; 
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_unary_operation/src/simplify-rtx.c:925:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)v28.r = *( _OWORD *)&i0[8]; 
+   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_unary_operation/src/simplify-rtx.c:1014:9: error: use of undeclared identifier 'rtx_def'
+v12 = ( rtx_def)v9->fld[0].rtwint; 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_unary_operation/src/simplify-rtx.c:1032:24: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v16 = ( signed __int64)v9[1]; 
+                       ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_unary_operation/src/simplify-rtx.c:1050:47: error: too few arguments to function call, expected 2, have 1
+real_value_truncate( *( realvaluetype *)&i0[8]); 
+~~~~~~~~~~~~~~~~~~~                           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_unary_operation/src/real.h:406:1: note: 'real_value_truncate' declared here
+extern REAL_VALUE_TYPE real_value_truncate PARAMS ((enum machine_mode,
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_unary_operation/src/simplify-rtx.c:1054:12: error: expected expression
+*( _OWORD *)v29.r = *( _OWORD *)&i0[8]; 
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_unary_operation/src/simplify-rtx.c:1054:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)v29.r = *( _OWORD *)&i0[8]; 
+   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_unary_operation/src/simplify-rtx.c:1071:12: error: expected expression
+*( _OWORD *)i0 = ~*( _OWORD *)&v12; 
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_unary_operation/src/simplify-rtx.c:1071:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)i0 = ~*( _OWORD *)&v12; 
+   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_unary_operation/src/simplify-rtx.c:1108:1: error: statement requires expression of scalar type ('struct rtx_def' invalid)
+if ( v12 ) 
+^    ~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_unary_operation/src/simplify-rtx.c:1121:7: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v25 = mode_class_0[mode]; 
+      ^~~~~~~~~~~~
+      mode_class
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_unary_operation/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_unary_operation/src/simplify-rtx.c:1135:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[v11] != MODE_FLOAT || v25 != MODE_INT || ( unsigned int)v8 - 1 > 0x3F ) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_unary_operation/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+19 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_unary_operation/src/obj/simplify-rtx.o] Error 1

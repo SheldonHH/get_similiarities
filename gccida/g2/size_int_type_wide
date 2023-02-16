@@ -1,0 +1,61 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/size_int_type_wide/src/fold-const.c:2432:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v9; // r12 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/size_int_type_wide/src/fold-const.c:2434:6: error: use of undeclared identifier 'size_htab_11'; did you mean 'size_htab_eq'?
+v2 = size_htab_11; 
+     ^~~~~~~~~~~~
+     size_htab_eq
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/size_int_type_wide/src/fold-const.c:1935:1: note: 'size_htab_eq' declared here
+size_htab_eq (x, y)
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/size_int_type_wide/src/fold-const.c:2435:7: error: use of undeclared identifier 'size_htab_11'; did you mean 'size_htab_eq'?
+if ( !size_htab_11 ) 
+      ^~~~~~~~~~~~
+      size_htab_eq
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/size_int_type_wide/src/fold-const.c:1935:1: note: 'size_htab_eq' declared here
+size_htab_eq (x, y)
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/size_int_type_wide/src/fold-const.c:2437:1: error: use of undeclared identifier 'size_htab_11'
+size_htab_11 = htab_create( 0x400uLL, size_htab_hash, size_htab_eq, 0LL); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/size_int_type_wide/src/fold-const.c:2438:25: error: use of undeclared identifier 'size_htab_11'; did you mean 'size_htab_eq'?
+ggc_add_deletable_htab( size_htab_11, 0LL, 0LL); 
+                        ^~~~~~~~~~~~
+                        size_htab_eq
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/size_int_type_wide/src/fold-const.c:1935:1: note: 'size_htab_eq' declared here
+size_htab_eq (x, y)
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/size_int_type_wide/src/fold-const.c:2439:1: error: use of undeclared identifier 'new_const_10'
+new_const_10 = make_node( INTEGER_CST); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/size_int_type_wide/src/fold-const.c:2440:21: error: use of undeclared identifier 'new_const_10'
+ggc_add_tree_root( &new_const_10, 1); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/size_int_type_wide/src/fold-const.c:2441:6: error: use of undeclared identifier 'size_htab_11'; did you mean 'size_htab_eq'?
+v2 = size_htab_11; 
+     ^~~~~~~~~~~~
+     size_htab_eq
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/size_int_type_wide/src/fold-const.c:1935:1: note: 'size_htab_eq' declared here
+size_htab_eq (x, y)
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/size_int_type_wide/src/fold-const.c:2443:6: error: use of undeclared identifier 'new_const_10'
+v3 = new_const_10; 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/size_int_type_wide/src/fold-const.c:2445:1: error: use of undeclared identifier 'new_const_10'
+new_const_10->int_cst.int_cst.low = number; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/size_int_type_wide/src/fold-const.c:2452:6: error: use of undeclared identifier 'new_const_10'
+v3 = new_const_10; 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/size_int_type_wide/src/fold-const.c:2459:6: error: use of undeclared identifier 'new_const_10'
+v9 = new_const_10; 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/size_int_type_wide/src/fold-const.c:2460:9: error: use of undeclared identifier 'new_const_10'
+*slot = new_const_10; 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/size_int_type_wide/src/fold-const.c:2461:1: error: use of undeclared identifier 'new_const_10'
+new_const_10 = make_node( INTEGER_CST); 
+^
+14 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/size_int_type_wide/src/obj/fold-const.o] Error 1

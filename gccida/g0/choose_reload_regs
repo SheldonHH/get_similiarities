@@ -1,0 +1,91 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/choose_reload_regs/src/reload1.c:5787:1: error: must use 'enum' tag to refer to type 'reload_type'
+reload_type when_needed; // r14d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/choose_reload_regs/src/reload1.c:5789:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v17; // r12d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/choose_reload_regs/src/reload1.c:5807:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class last_class; // [rsp+5D4h] [rbp-BCh] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/choose_reload_regs/src/reload1.c:5809:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class classa; // [rsp+5E4h] [rbp-ACh] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/choose_reload_regs/src/reload1.c:5822:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode need_mode; // [rsp+628h] [rbp-68h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/choose_reload_regs/src/reload1.c:5823:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // [rsp+62Ch] [rbp-64h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/choose_reload_regs/src/reload1.c:5830:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class group_class; // [rsp+650h] [rbp-40h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/choose_reload_regs/src/reload1.c:5853:61: error: ISO C requires a named parameter before '...'
+specqsort( ( char *)reload_order, n_reloads, 2, ( int ( *)( ...))reload_reg_class_lower); 
+                                                            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/choose_reload_regs/src/reload1.c:5887:14: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+byte = ( int)rld[r].in_reg[1]; 
+             ^~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/choose_reload_regs/src/reload1.c:5899:32: error: use of undeclared identifier 'machine_mode'
+i += subreg_regno_offset( i, ( machine_mode)*( ( unsigned __int8 *)last_reg + 2), byte, mode); 
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/choose_reload_regs/src/reload1.c:5901:68: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+need_mode = byte ? smallest_mode_for_size( mode_size[mode] + byte, mode_class_0[mode]) : mode; 
+                                                                   ^~~~~~~~~~~~
+                                                                   mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/choose_reload_regs/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/choose_reload_regs/src/reload1.c:5946:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v3 = mode_class_0[rld[r].mode] == MODE_COMPLEX_INT 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/choose_reload_regs/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/choose_reload_regs/src/reload1.c:5947:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| mode_class_0[rld[r].mode] == MODE_COMPLEX_FLOAT 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/choose_reload_regs/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/choose_reload_regs/src/reload1.c:6038:56: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v8 = **( _WORD **)&insn[2] == 47 ? (  struct rtx_def *)insn[2] : single_set_2( insn, *( rtx *)&insn[2]); 
+                                                       ^~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/choose_reload_regs/src/reload1.c:6041:13: error: expected identifier or '('
+ struct set = v8; 
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/choose_reload_regs/src/reload1.c:6054:22: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+search_equiv = ( rtx)set[1]; 
+                     ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/choose_reload_regs/src/reload1.c:6178:11: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+else if ( mode_class_0[rld[r].mode] == MODE_COMPLEX_INT || mode_class_0[rld[r].mode] == MODE_COMPLEX_FLOAT ) 
+          ^~~~~~~~~~~~
+          mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/choose_reload_regs/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/choose_reload_regs/src/reload1.c:6178:60: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+else if ( mode_class_0[rld[r].mode] == MODE_COMPLEX_INT || mode_class_0[rld[r].mode] == MODE_COMPLEX_FLOAT ) 
+                                                           ^~~~~~~~~~~~
+                                                           mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/choose_reload_regs/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/choose_reload_regs/src/reload1.c:6347:11: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+else if ( mode_class_0[rld[r_2].mode] == MODE_COMPLEX_INT || mode_class_0[rld[r_2].mode] == MODE_COMPLEX_FLOAT ) 
+          ^~~~~~~~~~~~
+          mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/choose_reload_regs/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/choose_reload_regs/src/obj/reload1.o] Error 1

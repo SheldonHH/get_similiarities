@@ -1,0 +1,9 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/ggc_alloc_string/src/stringpool.c:553:23: error: use of undeclared identifier 'sch_istable'; did you mean '_sch_istable'?
+if ( length == 1 && ( sch_istable[*( unsigned __int8 *)contents] & 4) != 0 ) 
+                      ^~~~~~~~~~~
+                      _sch_istable
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/ggc_alloc_string/src/safe-ctype.h:72:29: note: '_sch_istable' declared here
+extern const unsigned short _sch_istable[256];
+                            ^
+1 error generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/ggc_alloc_string/src/obj/stringpool.o] Error 1

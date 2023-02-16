@@ -1,0 +1,14 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/alloc_EXPR_LIST/src/lists.c:562:37: error: use of undeclared identifier 'machine_mode'
+return gen_rtx_fmt_ee( EXPR_LIST, ( machine_mode)kind, val, next); 
+                                    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/alloc_EXPR_LIST/src/lists.c:563:4: error: assigning to '__m128' (vector of 4 'float' values) from incompatible type 'int'
+v4 = _mm_loadh_ps( ( const double *)nexta); 
+   ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/alloc_EXPR_LIST/src/lists.c:564:26: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+unused_expr_list = ( rtx)unused_expr_list[1]; 
+                         ^~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/alloc_EXPR_LIST/src/lists.c:565:49: error: use of undeclared identifier 'rtx_def'
+*(  struct rtx_def *)&result->fld[0].rtwint = ( rtx_def)v4; 
+                                                ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/alloc_EXPR_LIST/src/obj/lists.o] Error 1

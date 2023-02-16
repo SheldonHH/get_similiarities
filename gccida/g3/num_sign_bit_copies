@@ -1,0 +1,87 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/num_sign_bit_copies/src/combine.c:8858:10: error: conflicting types for 'num_sign_bit_copies'
+__int64  num_sign_bit_copies( unsigned __int16 *a1, int a2) 
+         ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/num_sign_bit_copies/src/combine.c:380:21: note: previous declaration is here
+static unsigned int num_sign_bit_copies  PARAMS ((rtx, enum machine_mode));
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/num_sign_bit_copies/src/combine.c:8903:4: error: expected ';' after expression
+rtx last_value; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/num_sign_bit_copies/src/combine.c:8903:5: error: use of undeclared identifier 'last_value'
+rtx last_value; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/num_sign_bit_copies/src/combine.c:8925:12: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( ( *( &mode_class_0 + ( int)v4) & 0xFFFFFFFB) == 2 
+           ^~~~~~~~~~~~
+           mode_class
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/num_sign_bit_copies/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/num_sign_bit_copies/src/combine.c:8925:37: error: invalid operands to binary expression ('const enum mode_class [59]' and 'unsigned int')
+if ( ( *( &mode_class_0 + ( int)v4) & 0xFFFFFFFB) == 2 
+       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^ ~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/num_sign_bit_copies/src/combine.c:8926:19: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| *( ( _DWORD *)&mode_class_0 + ( int)v4) == 8 
+                  ^~~~~~~~~~~~
+                  mode_class
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/num_sign_bit_copies/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/num_sign_bit_copies/src/combine.c:8927:39: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| ( v8 = *( ( _BYTE *)a1 + 2), ( *( &mode_class_0 + v8) & 0xFFFFFFFB) == 2) 
+                                      ^~~~~~~~~~~~
+                                      mode_class
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/num_sign_bit_copies/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/num_sign_bit_copies/src/combine.c:8927:58: error: invalid operands to binary expression ('const enum mode_class [59]' and 'unsigned int')
+|| ( v8 = *( ( _BYTE *)a1 + 2), ( *( &mode_class_0 + v8) & 0xFFFFFFFB) == 2) 
+                                  ~~~~~~~~~~~~~~~~~~~~~~ ^ ~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/num_sign_bit_copies/src/combine.c:8928:19: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| *( ( _DWORD *)&mode_class_0 + v8) == 8 ) 
+                  ^~~~~~~~~~~~
+                  mode_class
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/num_sign_bit_copies/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/num_sign_bit_copies/src/combine.c:8988:1: error: use of undeclared identifier 'last_value'
+last_value = get_last_value( (  struct bitmap_head_def *)a1); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/num_sign_bit_copies/src/combine.c:8989:7: error: use of undeclared identifier 'last_value'; did you mean '_hex_value'?
+if ( !last_value ) 
+      ^~~~~~~~~~
+      _hex_value
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/num_sign_bit_copies/src/libiberty.h:251:19: note: '_hex_value' declared here
+extern const char _hex_value[_hex_array_size];
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/num_sign_bit_copies/src/combine.c:9000:27: error: expected ')'
+v17 = nonzero_bits( ( rtx)a1, ( machine_mode)v4); 
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/num_sign_bit_copies/src/combine.c:9000:19: note: to match this '('
+v17 = nonzero_bits( ( rtx)a1, ( machine_mode)v4); 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/num_sign_bit_copies/src/combine.c:9011:27: error: use of undeclared identifier 'last_value'
+a1 = ( unsigned __int16 *)last_value; 
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/num_sign_bit_copies/src/combine.c:9044:14: error: expected expression
+|| *( ( rtx *)a1 + 2) != const_int_rtx[63] 
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/num_sign_bit_copies/src/combine.c:9047:31: error: expected expression
+v20 = nonzero_bits( *( ( rtx *)a1 + 1), ( machine_mode)v4), 
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/num_sign_bit_copies/src/combine.c:9047:43: error: use of undeclared identifier 'machine_mode'
+v20 = nonzero_bits( *( ( rtx *)a1 + 1), ( machine_mode)v4), 
+                                          ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/num_sign_bit_copies/src/combine.c:9068:31: error: expected expression
+v48 = nonzero_bits( *( ( rtx *)a1 + 1), ( machine_mode)v4); 
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/num_sign_bit_copies/src/combine.c:9068:43: error: use of undeclared identifier 'machine_mode'
+v48 = nonzero_bits( *( ( rtx *)a1 + 1), ( machine_mode)v4); 
+                                          ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/num_sign_bit_copies/src/combine.c:9091:81: error: expected expression
+|| ( v52 = 1LL << ( ( unsigned __int8)v12 - 1), ( v52 & nonzero_bits( *( ( rtx *)a1 + 1), ( machine_mode)v4)) != 0) 
+                                                                                ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/num_sign_bit_copies/src/obj/combine.o] Error 1

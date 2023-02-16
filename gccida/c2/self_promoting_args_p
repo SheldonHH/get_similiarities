@@ -1,0 +1,18 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/self_promoting_args_p/src/c-common.c:3504:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v5; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/self_promoting_args_p/src/c-common.c:3519:21: error: expected expression
+v5 = *( tree_node **)( low + 128); 
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/self_promoting_args_p/src/c-common.c:3519:9: error: use of undeclared identifier 'tree_node'
+v5 = *( tree_node **)( low + 128); 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/self_promoting_args_p/src/c-common.c:3520:25: error: expected expression
+if ( v5 == ( tree_node *)*( &global_trees + 24) ) 
+                        ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/self_promoting_args_p/src/c-common.c:3520:14: error: use of undeclared identifier 'tree_node'
+if ( v5 == ( tree_node *)*( &global_trees + 24) ) 
+             ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/self_promoting_args_p/src/obj/c-common.o] Error 1

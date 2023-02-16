@@ -1,0 +1,52 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/internal_error/src/diagnostic.c:1681:1: error: unknown type name 'diagnostic_context_0'; did you mean 'diagnostic_context'?
+diagnostic_context_0 *v1; // rbx 
+^~~~~~~~~~~~~~~~~~~~
+diagnostic_context
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/internal_error/src/diagnostic.h:29:35: note: 'diagnostic_context' declared here
+typedef struct diagnostic_context diagnostic_context;
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/internal_error/src/diagnostic.c:1685:1: error: unknown type name 'diagnostic_context_0'; did you mean 'diagnostic_context'?
+diagnostic_context_0 s; // [rsp+D8h] [rbp-1A0h] BYREF 
+^~~~~~~~~~~~~~~~~~~~
+diagnostic_context
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/internal_error/src/diagnostic.h:29:35: note: 'diagnostic_context' declared here
+typedef struct diagnostic_context diagnostic_context;
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/internal_error/src/diagnostic.c:1693:7: error: expected expression
+swift::warning( 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/internal_error/src/diagnostic.c:1702:46: error: expected expression
+internal_error_function( msgid, ( va_list_0 *)va); 
+                                             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/internal_error/src/diagnostic.c:1702:35: error: use of undeclared identifier 'va_list_0'
+internal_error_function( msgid, ( va_list_0 *)va); 
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/internal_error/src/diagnostic.c:1709:27: error: expected expression
+s.args_ptr = ( va_list_0 *)va; 
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/internal_error/src/diagnostic.c:1709:16: error: use of undeclared identifier 'va_list_0'
+s.args_ptr = ( va_list_0 *)va; 
+               ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/internal_error/src/diagnostic.c:1713:12: error: expected expression
+*( _OWORD *)&s.begin_diagnostic = *( _OWORD *)&v1->begin_diagnostic; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/internal_error/src/diagnostic.c:1713:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&s.begin_diagnostic = *( _OWORD *)&v1->begin_diagnostic; 
+   ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/internal_error/src/diagnostic.c:1713:46: error: expected expression
+*( _OWORD *)&s.begin_diagnostic = *( _OWORD *)&v1->begin_diagnostic; 
+                                             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/internal_error/src/diagnostic.c:1713:38: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&s.begin_diagnostic = *( _OWORD *)&v1->begin_diagnostic; 
+                                     ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/internal_error/src/diagnostic.c:1715:7: error: expected expression
+swift::warning( 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/internal_error/src/diagnostic.c:1715:1: error: redefinition of label 'swift'
+swift::warning( 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/internal_error/src/diagnostic.c:1693:1: note: previous definition is here
+swift::warning( 
+^
+13 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/internal_error/src/obj/diagnostic.o] Error 1

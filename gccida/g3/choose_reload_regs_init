@@ -1,0 +1,18 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/choose_reload_regs_init/src/reload1.c:5725:1: error: must use 'enum' tag to refer to type 'reload_type'
+reload_type v16; // edx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/choose_reload_regs_init/src/reload1.c:5748:29: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+*( _QWORD *)( v6 - 208) = v8.m128_u64[0]; 
+                          ~~^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/choose_reload_regs_init/src/reload1.c:5753:46: error: array type 'struct reload [180]' is not assignable
+*( &rld + 13 * ( int)( v3 & 0xFFFFFFFE) + 8) = save_reload_reg_rtx[v3 & 0xFFFFFFFE]; 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/choose_reload_regs_init/src/reload1.c:5814:76: error: expected expression
+mark_reload_reg_in_use( *( _DWORD *)( v15 + 8), v17, v16, *( machine_mode *)( v13 - 104)); 
+                                                                           ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/choose_reload_regs_init/src/reload1.c:5814:62: error: use of undeclared identifier 'machine_mode'
+mark_reload_reg_in_use( *( _DWORD *)( v15 + 8), v17, v16, *( machine_mode *)( v13 - 104)); 
+                                                             ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/choose_reload_regs_init/src/obj/reload1.o] Error 1

@@ -1,0 +1,66 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/apply_result_size/src/builtins.c:1433:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v3; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/apply_result_size/src/builtins.c:1440:10: error: use of undeclared identifier 'size_5'; did you mean 'sizeof'?
+result = size_5; 
+         ^~~~~~
+         sizeof
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/apply_result_size/src/builtins.c:1440:16: error: expected expression
+result = size_5; 
+               ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/apply_result_size/src/builtins.c:1441:6: error: use of undeclared identifier 'size_5'; did you mean 'sizeof'?
+if ( size_5 < 0 ) 
+     ^~~~~~
+     sizeof
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/apply_result_size/src/builtins.c:1441:13: error: expected expression
+if ( size_5 < 0 ) 
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/apply_result_size/src/builtins.c:1443:1: error: use of undeclared identifier 'size_5'
+size_5 = 0; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/apply_result_size/src/builtins.c:1458:36: error: use of undeclared identifier 'machine_mode'
+if ( ix86_hard_regno_mode_ok( i, ( machine_mode)v2) ) 
+                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/apply_result_size/src/builtins.c:1472:40: error: use of undeclared identifier 'machine_mode'
+while ( !ix86_hard_regno_mode_ok( i, ( machine_mode)v6) ) 
+                                       ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/apply_result_size/src/builtins.c:1478:28: error: use of undeclared identifier 'machine_mode'
+if ( have_insn_for( SET, ( machine_mode)v6) ) 
+                           ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/apply_result_size/src/builtins.c:1493:40: error: use of undeclared identifier 'machine_mode'
+while ( !ix86_hard_regno_mode_ok( i, ( machine_mode)v7) ) 
+                                       ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/apply_result_size/src/builtins.c:1499:28: error: use of undeclared identifier 'machine_mode'
+if ( have_insn_for( SET, ( machine_mode)v7) ) 
+                           ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/apply_result_size/src/builtins.c:1514:40: error: use of undeclared identifier 'machine_mode'
+while ( !ix86_hard_regno_mode_ok( i, ( machine_mode)v8) ) 
+                                       ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/apply_result_size/src/builtins.c:1520:28: error: use of undeclared identifier 'machine_mode'
+if ( have_insn_for( SET, ( machine_mode)v8) ) 
+                           ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/apply_result_size/src/builtins.c:1533:6: error: use of undeclared identifier 'size_5'; did you mean 'sizeof'?
+v5 = size_5; 
+     ^~~~~~
+     sizeof
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/apply_result_size/src/builtins.c:1533:12: error: expected expression
+v5 = size_5; 
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/apply_result_size/src/builtins.c:1534:6: error: use of undeclared identifier 'size_5'; did you mean 'sizeof'?
+if ( size_5 % ( int)( mode_alignment >> 3) ) 
+     ^~~~~~
+     sizeof
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/apply_result_size/src/builtins.c:1534:13: error: expected expression
+if ( size_5 % ( int)( mode_alignment >> 3) ) 
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/apply_result_size/src/builtins.c:1535:41: error: use of undeclared identifier 'size_5'; did you mean 'sizeof'?
+v5 = ( mode_alignment >> 3) * ( ( int)( size_5 + ( mode_alignment >> 3) - 1) / ( int)( mode_alignment >> 3)); 
+                                        ^~~~~~
+                                        sizeof
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/apply_result_size/src/builtins.c:1537:1: error: use of undeclared identifier 'size_5'
+size_5 = mode_size[v3] + v5; 
+^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/apply_result_size/src/obj/builtins.o] Error 1

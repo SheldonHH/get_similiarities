@@ -1,0 +1,43 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mention_regs/src/cse.c:1700:4: error: expected ';' after expression
+rtx exp; // rdx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mention_regs/src/cse.c:1721:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v8.rtwint = ( __int64)x->fld[0]; 
+                      ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mention_regs/src/cse.c:1738:31: error: expected expression
+v1 |= mention_regs( *( ( rtx *)x + v23)); 
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mention_regs/src/cse.c:1748:29: error: expected expression
+v1 |= mention_regs( *( rtx *)&v27[2 * v28++ + 2]); 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mention_regs/src/cse.c:1817:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v18 = (  struct rtx_def *)x[1]; 
+                          ^~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mention_regs/src/cse.c:1860:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v18 = (  struct rtx_def *)x[1]; 
+                          ^~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mention_regs/src/cse.c:1865:27: error: expected expression
+rehash_using_reg( *( rtx *)&x[1]); 
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mention_regs/src/cse.c:2176:22: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v76 = ( unsigned int)x[1]; 
+                     ^~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mention_regs/src/cse.c:2184:5: error: non-object type 'double (double)' is not assignable
+exp = v64->exp; 
+~~~ ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mention_regs/src/cse.c:2190:32: error: member reference base type 'double (double)' is not a structure or union
+|| ( v68.rtwint = ( __int64)exp->fld[0], *( _WORD *)v68.rtwint != 61) 
+                            ~~~^ ~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mention_regs/src/cse.c:2192:27: error: subscript of pointer to function type 'double (double)'
+|| ( v69 = ( unsigned int)exp[1], v69 <= v75) && v69 + mode_size[BYTE2( v67)] - 1 >= v76 ) 
+                          ^~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mention_regs/src/cse.c:2228:25: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v6 = ( ( unsigned int)( mode_class_0[( unsigned __int8)v7] - 5) < 2) + 1; 
+                        ^~~~~~~~~~~~
+                        mode_class
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mention_regs/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+12 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mention_regs/src/obj/cse.o] Error 1

@@ -1,0 +1,30 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/copy_tree_r/src/tree-inline.c:1809:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *chain; // [rsp+8h] [rbp-28h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/copy_tree_r/src/tree-inline.c:1810:1: error: must use 'enum' tag to refer to type 'tree_code'
+tree_code code; // [rsp+14h] [rbp-1Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/copy_tree_r/src/tree-inline.c:1822:4: error: use of undeclared identifier 'lang_hooks_0'; did you mean 'lang_hooks'?
+|| lang_hooks_0.tree_inlining.tree_chain_matters_p( *tp) ) 
+   ^~~~~~~~~~~~
+   lang_hooks
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/copy_tree_r/src/langhooks.h:168:32: note: 'lang_hooks' declared here
+extern const struct lang_hooks lang_hooks;
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/copy_tree_r/src/tree-inline.c:1822:51: error: called object type '<dependent type>' is not a function or function pointer
+|| lang_hooks_0.tree_inlining.tree_chain_matters_p( *tp) ) 
+                                                  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/copy_tree_r/src/tree-inline.c:1828:4: error: use of undeclared identifier 'lang_hooks_0'; did you mean 'lang_hooks'?
+|| lang_hooks_0.tree_inlining.tree_chain_matters_p( *tp) 
+   ^~~~~~~~~~~~
+   lang_hooks
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/copy_tree_r/src/langhooks.h:168:32: note: 'lang_hooks' declared here
+extern const struct lang_hooks lang_hooks;
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/copy_tree_r/src/tree-inline.c:1828:51: error: called object type '<dependent type>' is not a function or function pointer
+|| lang_hooks_0.tree_inlining.tree_chain_matters_p( *tp) 
+                                                  ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/copy_tree_r/src/obj/tree-inline.o] Error 1

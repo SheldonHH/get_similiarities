@@ -1,0 +1,12 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/output_addressed_constants/src/varasm.c:4712:8: error: use of undeclared identifier 'lang_hooks_0'; did you mean 'lang_hooks'?
+expa = lang_hooks_0.expand_constant( exp); 
+       ^~~~~~~~~~~~
+       lang_hooks
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/output_addressed_constants/src/langhooks.h:168:32: note: 'lang_hooks' declared here
+extern const struct lang_hooks lang_hooks;
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/output_addressed_constants/src/varasm.c:4712:36: error: called object type '<dependent type>' is not a function or function pointer
+expa = lang_hooks_0.expand_constant( exp); 
+                                   ^
+2 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/output_addressed_constants/src/obj/varasm.o] Error 1

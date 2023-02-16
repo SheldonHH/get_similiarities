@@ -1,0 +1,97 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/toplev_main/src/toplev.c:5732:1: error: unknown type name 'diagnostic_context_0'; did you mean 'diagnostic_context'?
+diagnostic_context_0 *v30; // rax 
+^~~~~~~~~~~~~~~~~~~~
+diagnostic_context
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/toplev_main/src/diagnostic.h:29:35: note: 'diagnostic_context' declared here
+typedef struct diagnostic_context diagnostic_context;
+                                  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/toplev_main/src/toplev.c:5773:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *chain; // rbp 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/toplev_main/src/toplev.c:5798:7: error: unknown type name '$3377C5ED3DDB78AC88FD034015BE03B0'
+const $3377C5ED3DDB78AC88FD034015BE03B0 *v97; // rbx 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/toplev_main/src/toplev.c:5810:7: error: unknown type name '$3377C5ED3DDB78AC88FD034015BE03B0'
+const $3377C5ED3DDB78AC88FD034015BE03B0 *v109; // rcx 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/toplev_main/src/toplev.c:5811:1: error: must use 'enum' tag to refer to type 'debug_info_type'
+debug_info_type v110; // edx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/toplev_main/src/toplev.c:5885:1: error: use of undeclared identifier 'lang_hooks_0'; did you mean 'lang_hooks'?
+lang_hooks_0.init_options( ); 
+^~~~~~~~~~~~
+lang_hooks
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/toplev_main/src/langhooks.h:168:32: note: 'lang_hooks' declared here
+extern const struct lang_hooks lang_hooks;
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/toplev_main/src/toplev.c:5980:7: error: use of undeclared identifier 'lang_hooks_0'; did you mean 'lang_hooks'?
+v10 = lang_hooks_0.decode_option( HIDWORD( v154) - v9, ( char **)v12); 
+      ^~~~~~~~~~~~
+      lang_hooks
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/toplev_main/src/langhooks.h:168:32: note: 'lang_hooks' declared here
+extern const struct lang_hooks lang_hooks;
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/toplev_main/src/toplev.c:5980:33: error: called object type '<dependent type>' is not a function or function pointer
+v10 = lang_hooks_0.decode_option( HIDWORD( v154) - v9, ( char **)v12); 
+                                ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/toplev_main/src/toplev.c:6091:10: error: use of undeclared identifier 'unk_7058B8'
+while ( &unk_7058B8 != ( _UNKNOWN *)v48 ) 
+         ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/toplev_main/src/toplev.c:6100:7: error: use of undeclared identifier 'unk_7058B8'
+if ( &unk_7058B8 == ( _UNKNOWN *)v48 ) 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/toplev_main/src/toplev.c:6115:28: error: use of undeclared identifier 'unk_6FF6E3'
+variable = ( const char *)&unk_6FF6E3; 
+                           ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/toplev_main/src/toplev.c:6164:7: error: use of undeclared identifier 'displayed_4'
+if ( !displayed_4 ) 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/toplev_main/src/toplev.c:6170:7: error: use of undeclared identifier 'displayed_4'
+if ( !displayed_4 ) 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/toplev_main/src/toplev.c:6184:1: error: use of undeclared identifier 'lang_hooks_0'; did you mean 'lang_hooks'?
+lang_hooks_0.name, 
+^~~~~~~~~~~~
+lang_hooks
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/toplev_main/src/langhooks.h:168:32: note: 'lang_hooks' declared here
+extern const struct lang_hooks lang_hooks;
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/toplev_main/src/toplev.c:6189:7: error: use of undeclared identifier 'invalid_operation'; did you mean 'bitmap_operation'?
+v16 = __CFADD__( &v153, 32LL); 
+      ^~~~~~~~~~~~~~~~~~~~~~~
+      bitmap_operation
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/toplev_main/src/toplev.c:5508:25: note: expanded from macro '__CFADD__'
+#define __CFADD__(x, y) invalid_operation // Generate carry flag for (x+y)
+                        ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/toplev_main/src/bitmap.h:81:12: note: 'bitmap_operation' declared here
+extern int bitmap_operation PARAMS ((bitmap, bitmap, bitmap, enum bitmap_bits));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/toplev_main/src/toplev.c:6222:11: error: use of undeclared identifier 'sch_istable'; did you mean '_sch_istable'?
+while ( ( sch_istable[v36] & 4) != 0 ) 
+          ^~~~~~~~~~~
+          _sch_istable
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/toplev_main/src/safe-ctype.h:72:29: note: '_sch_istable' declared here
+extern const unsigned short _sch_istable[256];
+                            ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/toplev_main/src/toplev.c:6265:8: error: use of undeclared identifier 'sch_istable'; did you mean '_sch_istable'?
+if ( ( sch_istable[v90] & 4) == 0 ) 
+       ^~~~~~~~~~~
+       _sch_istable
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/toplev_main/src/safe-ctype.h:72:29: note: '_sch_istable' declared here
+extern const unsigned short _sch_istable[256];
+                            ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/toplev_main/src/toplev.c:6282:11: error: use of undeclared identifier 'sch_istable'; did you mean '_sch_istable'?
+while ( ( sch_istable[v92] & 4) != 0 ) 
+          ^~~~~~~~~~~
+          _sch_istable
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/toplev_main/src/safe-ctype.h:72:29: note: '_sch_istable' declared here
+extern const unsigned short _sch_istable[256];
+                            ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/toplev_main/src/toplev.c:6456:10: error: use of undeclared identifier 'unk_952F0A'
+while ( &unk_952F0A != ( _UNKNOWN *)v139 ); 
+         ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/toplev_main/src/obj/toplev.o] Error 1

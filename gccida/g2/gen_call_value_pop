@@ -1,0 +1,38 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_call_value_pop/src/insn-emit.c:14755:4: error: expected ';' after expression
+rtx v12; // r13 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_call_value_pop/src/insn-emit.c:14755:5: error: use of undeclared identifier 'v12'
+rtx v12; // r13 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_call_value_pop/src/insn-emit.c:14757:4: error: expected ';' after expression
+rtx v14; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_call_value_pop/src/insn-emit.c:14757:5: error: use of undeclared identifier 'v14'
+rtx v14; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_call_value_pop/src/insn-emit.c:14776:33: error: use of undeclared identifier 'machine_mode'
+if ( !call_insn_operand( rtx, ( machine_mode)( ( ( BYTE3( target_flags) & 2) != 0) + 4)) ) 
+                                ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_call_value_pop/src/insn-emit.c:14778:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( ( ( BYTE3( target_flags) & 2) != 0) + 4), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_call_value_pop/src/insn-emit.c:14783:1: error: use of undeclared identifier 'v12'
+v12 = gen_rtx_fmt_ee( SET, VOIDmode, v11, v10); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_call_value_pop/src/insn-emit.c:14785:1: error: use of undeclared identifier 'v14'
+v14 = gen_rtx_fmt_ee( SET, VOIDmode, operand0, v13); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_call_value_pop/src/insn-emit.c:14786:21: error: use of undeclared identifier 'v14'; did you mean 'v19'?
+v15 = gen_rtvec( 2, v14, v12); 
+                    ^~~
+                    v19
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_call_value_pop/src/insn-emit.c:14761:18: note: 'v19' declared here
+ struct rtx_def *v19; // rax 
+                 ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_call_value_pop/src/insn-emit.c:14786:26: error: use of undeclared identifier 'v12'
+v15 = gen_rtvec( 2, v14, v12); 
+                         ^
+10 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_call_value_pop/src/obj/insn-emit.o] Error 1

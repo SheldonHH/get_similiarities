@@ -1,0 +1,53 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expected_value_to_br_prob/src/predict.c:1015:4: error: expected ';' after expression
+rtx v5; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expected_value_to_br_prob/src/predict.c:1015:5: error: use of undeclared identifier 'v5'
+rtx v5; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expected_value_to_br_prob/src/predict.c:1016:4: error: expected ';' after expression
+rtx v6; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expected_value_to_br_prob/src/predict.c:1016:5: error: use of undeclared identifier 'v6'
+rtx v6; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expected_value_to_br_prob/src/predict.c:1037:1: error: use of undeclared identifier 'v5'
+v5 = pc_set( rtx); 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expected_value_to_br_prob/src/predict.c:1038:1: error: use of undeclared identifier 'v6'
+v6 = canonicalize_condition( rtx, *( rtx *)( *( _QWORD *)&v5[1] + 8LL), 0, 0LL, v2); 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expected_value_to_br_prob/src/predict.c:1038:43: error: expected expression
+v6 = canonicalize_condition( rtx, *( rtx *)( *( _QWORD *)&v5[1] + 8LL), 0, 0LL, v2); 
+                                          ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expected_value_to_br_prob/src/predict.c:1038:59: error: use of undeclared identifier 'v5'
+v6 = canonicalize_condition( rtx, *( rtx *)( *( _QWORD *)&v5[1] + 8LL), 0, 0LL, v2); 
+                                                          ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expected_value_to_br_prob/src/predict.c:1039:6: error: use of undeclared identifier 'v6'
+if ( v6 ) 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expected_value_to_br_prob/src/predict.c:1041:6: error: use of undeclared identifier 'v6'
+if ( v6->fld[0].rtx == v2 ) 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expected_value_to_br_prob/src/predict.c:1043:26: error: use of undeclared identifier 'v6'
+v7 = (  struct rtx_def *)v6[1]; 
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expected_value_to_br_prob/src/predict.c:1046:24: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+v8 = gen_rtx_fmt_ee( ( rtx_code)*( _WORD *)v6, VOIDmode, *( rtx *)( v3 + 16), v7); 
+                       ^~~~~~~~
+                       rtx_cost
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expected_value_to_br_prob/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expected_value_to_br_prob/src/predict.c:1046:44: error: use of undeclared identifier 'v6'
+v8 = gen_rtx_fmt_ee( ( rtx_code)*( _WORD *)v6, VOIDmode, *( rtx *)( v3 + 16), v7); 
+                                           ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expected_value_to_br_prob/src/predict.c:1046:66: error: expected expression
+v8 = gen_rtx_fmt_ee( ( rtx_code)*( _WORD *)v6, VOIDmode, *( rtx *)( v3 + 16), v7); 
+                                                                 ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expected_value_to_br_prob/src/predict.c:1067:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v3 = ( __int64)rtx[2]; 
+               ^~~~~~
+15 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expected_value_to_br_prob/src/obj/predict.o] Error 1

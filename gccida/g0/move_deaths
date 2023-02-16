@@ -1,0 +1,71 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/move_deaths/src/combine.c:12354:4: error: expected ';' after expression
+rtx oldnotes; // [rsp+38h] [rbp-88h] BYREF 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/move_deaths/src/combine.c:12354:5: error: use of undeclared identifier 'oldnotes'
+rtx oldnotes; // [rsp+38h] [rbp-88h] BYREF 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/move_deaths/src/combine.c:12359:4: error: expected ';' after expression
+rtx note; // [rsp+50h] [rbp-70h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/move_deaths/src/combine.c:12359:5: error: use of undeclared identifier 'note'; did you mean 'none'?
+rtx note; // [rsp+50h] [rbp-70h] 
+    ^~~~
+    none
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/move_deaths/src/expr.h:119:17: note: 'none' declared here
+enum direction {none, upward, downward};  /* Value has this type.  */
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/move_deaths/src/combine.c:12360:4: error: expected ';' after expression
+rtx where_dead; // [rsp+58h] [rbp-68h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/move_deaths/src/combine.c:12360:5: error: use of undeclared identifier 'where_dead'
+rtx where_dead; // [rsp+58h] [rbp-68h] 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/move_deaths/src/combine.c:12364:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code; // [rsp+78h] [rbp-48h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/move_deaths/src/combine.c:12366:4: error: expected ';' after expression
+rtx dest; // [rsp+80h] [rbp-40h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/move_deaths/src/combine.c:12366:5: error: use of undeclared identifier 'dest'
+rtx dest; // [rsp+80h] [rbp-40h] 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/move_deaths/src/combine.c:12370:4: error: expected ';' after expression
+rtx after_dead; // [rsp+98h] [rbp-28h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/move_deaths/src/combine.c:12370:5: error: use of undeclared identifier 'after_dead'
+rtx after_dead; // [rsp+98h] [rbp-28h] 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/move_deaths/src/combine.c:12371:4: error: expected ';' after expression
+rtx before_dead; // [rsp+A0h] [rbp-20h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/move_deaths/src/combine.c:12371:5: error: use of undeclared identifier 'before_dead'
+rtx before_dead; // [rsp+A0h] [rbp-20h] 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/move_deaths/src/combine.c:12378:1: error: use of undeclared identifier 'where_dead'
+where_dead = reg_last_death[regno]; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/move_deaths/src/combine.c:12381:7: error: use of undeclared identifier 'before_dead'
+for ( before_dead = where_dead; 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/move_deaths/src/combine.c:12381:21: error: use of undeclared identifier 'where_dead'
+for ( before_dead = where_dead; 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/move_deaths/src/combine.c:12382:16: error: use of undeclared identifier 'before_dead'
+before_dead && before_dead->fld[0].rtint > max_uid_cuid; 
+               ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/move_deaths/src/combine.c:12382:1: error: use of undeclared identifier 'before_dead'
+before_dead && before_dead->fld[0].rtint > max_uid_cuid; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/move_deaths/src/combine.c:12383:1: error: use of undeclared identifier 'before_dead'
+before_dead = ( rtx)before_dead[1] ) 
+^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/move_deaths/src/obj/combine.o] Error 1

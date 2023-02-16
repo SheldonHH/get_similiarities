@@ -1,0 +1,26 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/c_sizeof/src/c-typeck.c:1185:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v2; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/c_sizeof/src/c-typeck.c:1186:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v3; // rdx 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/c_sizeof/src/c-typeck.c:1187:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v4; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/c_sizeof/src/c-typeck.c:1205:19: error: expected expression
+v3 = ( tree_node *)*( &global_trees + 16); 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/c_sizeof/src/c-typeck.c:1205:8: error: use of undeclared identifier 'tree_node'
+v3 = ( tree_node *)*( &global_trees + 16); 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/c_sizeof/src/c-typeck.c:1216:19: error: expected expression
+v3 = ( tree_node *)*( &global_trees + 15); 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/c_sizeof/src/c-typeck.c:1216:8: error: use of undeclared identifier 'tree_node'
+v3 = ( tree_node *)*( &global_trees + 15); 
+       ^
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/c_sizeof/src/obj/c-typeck.o] Error 1

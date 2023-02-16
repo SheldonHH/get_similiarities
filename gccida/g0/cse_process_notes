@@ -1,0 +1,18 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cse_process_notes/src/cse.c:6922:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code; // [rsp+38h] [rbp-8h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cse_process_notes/src/cse.c:6958:2: error: expected expression
+ struct cse_reg_info = cached_cse_reg_info; 
+ ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cse_process_notes/src/cse.c:6960:2: error: expected expression
+ struct cse_reg_info = get_cse_reg_info( x->fld[0].rtuint); 
+ ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cse_process_notes/src/cse.c:6977:41: error: use of undeclared identifier 'machine_mode'
+&& ( new_0 = gen_lowpart_if_possible( ( machine_mode)*( ( unsigned __int8 *)x + 2), ent->const_rtx)) != 0LL ) 
+                                        ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cse_process_notes/src/cse.c:7009:1: error: statement requires expression of scalar type ('struct rtx_def' invalid)
+if ( x[1] ) 
+^    ~~~~
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cse_process_notes/src/obj/cse.o] Error 1

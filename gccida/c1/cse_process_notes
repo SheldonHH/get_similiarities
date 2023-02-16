@@ -1,0 +1,20 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/cse_process_notes/src/cse.c:6941:26: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v8 = (  struct rtx_def *)x[1]; 
+                         ^~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/cse_process_notes/src/cse.c:6959:54: error: expected ')'
+if ( rtint != cached_regno || (  struct cse_reg_info = cached_cse_reg_info) == 0LL ) 
+                                                     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/cse_process_notes/src/cse.c:6959:31: note: to match this '('
+if ( rtint != cached_regno || (  struct cse_reg_info = cached_cse_reg_info) == 0LL ) 
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/cse_process_notes/src/cse.c:6959:77: error: expected expression
+if ( rtint != cached_regno || (  struct cse_reg_info = cached_cse_reg_info) == 0LL ) 
+                                                                            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/cse_process_notes/src/cse.c:6960:2: error: expected expression
+ struct cse_reg_info = get_cse_reg_info( rtint); 
+ ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/cse_process_notes/src/cse.c:6982:37: error: use of undeclared identifier 'machine_mode'
+result = gen_lowpart_if_possible( ( machine_mode)*( ( unsigned __int8 *)v3 + 2), const_rtx); 
+                                    ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/cse_process_notes/src/obj/cse.o] Error 1

@@ -1,0 +1,33 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/reload_cse_simplify_set/src/reload1.c:8670:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class dclass; // [rsp+34h] [rbp-2Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/reload_cse_simplify_set/src/reload1.c:8679:13: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+src = ( rtx)set[1]; 
+            ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/reload_cse_simplify_set/src/reload1.c:8685:37: error: use of undeclared identifier 'machine_mode'
+old_cost = ix86_memory_move_cost( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)src), dclass, 1); 
+                                    ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/reload_cse_simplify_set/src/reload1.c:8685:52: error: expected expression
+old_cost = ix86_memory_move_cost( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)src), dclass, 1); 
+                                                   ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/reload_cse_simplify_set/src/reload1.c:8690:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)src), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/reload_cse_simplify_set/src/reload1.c:8690:18: error: expected expression
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)src), 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/reload_cse_simplify_set/src/reload1.c:8698:29: error: use of undeclared identifier 'machine_mode'
+val = cselib_lookup( src, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)set->fld[0].rtwint), 0); 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/reload_cse_simplify_set/src/reload1.c:8698:44: error: expected expression
+val = cselib_lookup( src, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)set->fld[0].rtwint), 0); 
+                                           ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/reload_cse_simplify_set/src/reload1.c:8723:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)this_rtx), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/reload_cse_simplify_set/src/reload1.c:8723:18: error: expected expression
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)this_rtx), 
+                 ^
+10 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/reload_cse_simplify_set/src/obj/reload1.o] Error 1

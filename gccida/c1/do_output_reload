@@ -1,0 +1,23 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/do_output_reload/src/reload1.c:7376:4: error: expected ';' after expression
+rtx reg_note; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/do_output_reload/src/reload1.c:7376:5: error: must use 'enum' tag to refer to type 'reg_note'
+rtx reg_note; // rax 
+    ^
+    enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/do_output_reload/src/reload1.c:7421:6: error: use of undeclared identifier 'reg_note'
+&& ( reg_note = find_reg_note( insn, REG_UNUSED, rtx)) != 0LL ) 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/do_output_reload/src/reload1.c:7423:1: error: must use 'enum' tag to refer to type 'reg_note'
+reg_note->fld[0].rtwint = ( __int64)gen_lowpart_common( ( machine_mode)*( ( unsigned __int8 *)v9 + 2), rl->reg_rtx); 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/do_output_reload/src/reload1.c:7423:9: error: expected identifier or '('
+reg_note->fld[0].rtwint = ( __int64)gen_lowpart_common( ( machine_mode)*( ( unsigned __int8 *)v9 + 2), rl->reg_rtx); 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/do_output_reload/src/reload1.c:7428:15: error: use of undeclared identifier 'off_6CC868'
+fancy_abort( &off_6CC868[4], 6967, "do_output_reload"); 
+              ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/do_output_reload/src/obj/reload1.o] Error 1

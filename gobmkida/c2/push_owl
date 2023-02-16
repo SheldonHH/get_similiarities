@@ -1,0 +1,16 @@
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/push_owl/src/engine/owl.c:5598:30: error: use of undeclared identifier 'local_owl_data'; did you mean 'other_owl_data'?
+memcpy( &v5[v9], v8, sizeof( local_owl_data)); 
+                             ^~~~~~~~~~~~~~
+                             other_owl_data
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/push_owl/src/engine/owl.c:102:31: note: 'other_owl_data' declared here
+static struct local_owl_data *other_owl_data;
+                              ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/push_owl/src/engine/owl.c:5614:32: error: use of undeclared identifier 'local_owl_data'; did you mean 'other_owl_data'?
+memcpy( &v5[v12], v11, sizeof( local_owl_data)); 
+                               ^~~~~~~~~~~~~~
+                               other_owl_data
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/push_owl/src/engine/owl.c:102:31: note: 'other_owl_data' declared here
+static struct local_owl_data *other_owl_data;
+                              ^
+2 errors generated.
+make: *** [/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/push_owl/src/obj/1/owl.o] Error 1

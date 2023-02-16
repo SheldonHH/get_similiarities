@@ -1,0 +1,22 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/c_alignof/src/c-common.c:2869:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v3; // rdx 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/c_alignof/src/c-common.c:2870:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v4; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/c_alignof/src/c-common.c:2880:19: error: expected expression
+v3 = ( tree_node *)*( &global_trees + 16); 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/c_alignof/src/c-common.c:2880:8: error: use of undeclared identifier 'tree_node'
+v3 = ( tree_node *)*( &global_trees + 16); 
+       ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/c_alignof/src/c-common.c:2893:19: error: expected expression
+v3 = ( tree_node *)*( &global_trees + 15); 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/c_alignof/src/c-common.c:2893:8: error: use of undeclared identifier 'tree_node'
+v3 = ( tree_node *)*( &global_trees + 15); 
+       ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/c_alignof/src/obj/c-common.o] Error 1

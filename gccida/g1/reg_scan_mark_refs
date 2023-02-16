@@ -1,0 +1,46 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/reg_scan_mark_refs/src/regclass.c:2891:4: error: expected ';' after expression
+rtx reg_note; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/reg_scan_mark_refs/src/regclass.c:2891:5: error: must use 'enum' tag to refer to type 'reg_note'
+rtx reg_note; // rax 
+    ^
+    enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/reg_scan_mark_refs/src/regclass.c:2909:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v12 = (  struct rtx_def *)x[1]; 
+                          ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/reg_scan_mark_refs/src/regclass.c:2914:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v13 = (  struct rtx_def *)x[1]; 
+                          ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/reg_scan_mark_refs/src/regclass.c:2930:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v14.rtwint = ( __int64)x->fld[0]; 
+                       ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/reg_scan_mark_refs/src/regclass.c:2965:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v22.rtwint = ( __int64)x->fld[0]; 
+                       ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/reg_scan_mark_refs/src/regclass.c:2976:19: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v26 = ( __int16 *)x[1]; 
+                  ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/reg_scan_mark_refs/src/regclass.c:2994:1: error: must use 'enum' tag to refer to type 'reg_note'
+reg_note = find_reg_note( insn, REG_EQUAL, 0LL); 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/reg_scan_mark_refs/src/regclass.c:2994:1: error: expected expression
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/reg_scan_mark_refs/src/regclass.c:2995:7: error: use of undeclared identifier 'reg_note'; did you mean 'reg_names'?
+if ( !reg_note ) 
+      ^~~~~~~~
+      reg_names
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/reg_scan_mark_refs/src/regs.h:166:21: note: 'reg_names' declared here
+extern const char * reg_names[FIRST_PSEUDO_REGISTER];
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/reg_scan_mark_refs/src/regclass.c:2997:18: error: use of undeclared identifier 'reg_note'
+v30 = *( _WORD *)reg_note->fld[0].rtwint; 
+                 ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/reg_scan_mark_refs/src/regclass.c:3015:31: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( i = (  struct rtx_def *)x[1]; 
+                              ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/reg_scan_mark_refs/src/regclass.c:3075:29: error: expected expression
+reg_scan_mark_refs( *( rtx *)( x->fld[v23].rtwint + 8LL * v38-- + 8), insn, note_flag, min_regno); 
+                            ^
+13 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/reg_scan_mark_refs/src/obj/regclass.o] Error 1

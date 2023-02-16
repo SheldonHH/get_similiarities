@@ -1,0 +1,18 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/deallocate_reload_reg/src/reload1.c:6471:72: error: expected expression
+clear_reload_reg_in_use( v4, *( ( _DWORD *)v2 + 18), *( ( reload_type *)v2 + 23), *( ( machine_mode *)v2 + 7)); 
+                                                                       ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/deallocate_reload_reg/src/reload1.c:6471:59: error: use of undeclared identifier 'reload_type'; did you mean 'reload_order'?
+clear_reload_reg_in_use( v4, *( ( _DWORD *)v2 + 18), *( ( reload_type *)v2 + 23), *( ( machine_mode *)v2 + 7)); 
+                                                          ^~~~~~~~~~~
+                                                          reload_order
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/deallocate_reload_reg/src/reload1.c:1652:14: note: 'reload_order' declared here
+static short reload_order[MAX_RELOADS];
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/deallocate_reload_reg/src/reload1.c:6471:102: error: expected expression
+clear_reload_reg_in_use( v4, *( ( _DWORD *)v2 + 18), *( ( reload_type *)v2 + 23), *( ( machine_mode *)v2 + 7)); 
+                                                                                                     ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/deallocate_reload_reg/src/reload1.c:6471:88: error: use of undeclared identifier 'machine_mode'
+clear_reload_reg_in_use( v4, *( ( _DWORD *)v2 + 18), *( ( reload_type *)v2 + 23), *( ( machine_mode *)v2 + 7)); 
+                                                                                       ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/deallocate_reload_reg/src/obj/reload1.o] Error 1

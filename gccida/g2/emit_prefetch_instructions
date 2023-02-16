@@ -1,0 +1,72 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/emit_prefetch_instructions/src/loop.c:4227:1: error: use of undeclared identifier 'induction_1'
+induction_1 *biv; // rbp 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/emit_prefetch_instructions/src/loop.c:4227:14: error: use of undeclared identifier 'biv'; did you mean 'div'?
+induction_1 *biv; // rbp 
+             ^~~
+             div
+/usr/include/stdlib.h:849:14: note: 'div' declared here
+extern div_t div (int __numer, int __denom)
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/emit_prefetch_instructions/src/loop.c:4229:1: error: use of undeclared identifier 'induction_1'
+induction_1 *v5; // rax 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/emit_prefetch_instructions/src/loop.c:4229:14: error: use of undeclared identifier 'v5'
+induction_1 *v5; // rax 
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/emit_prefetch_instructions/src/loop.c:4247:1: error: use of undeclared identifier 'induction_1'
+induction_1 **p_giv; // rbx 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/emit_prefetch_instructions/src/loop.c:4247:15: error: use of undeclared identifier 'p_giv'
+induction_1 **p_giv; // rbx 
+              ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/emit_prefetch_instructions/src/loop.c:4258:1: error: use of undeclared identifier 'induction_1'
+induction_1 *v34; // rbp 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/emit_prefetch_instructions/src/loop.c:4258:14: error: use of undeclared identifier 'v34'
+induction_1 *v34; // rbp 
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/emit_prefetch_instructions/src/loop.c:4275:1: error: use of undeclared identifier 'induction_1'
+induction_1 *v51; // rbx 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/emit_prefetch_instructions/src/loop.c:4275:14: error: use of undeclared identifier 'v51'
+induction_1 *v51; // rbx 
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/emit_prefetch_instructions/src/loop.c:4280:1: error: use of undeclared identifier 'induction_1'
+induction_1 *giv; // r14 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/emit_prefetch_instructions/src/loop.c:4280:14: error: use of undeclared identifier 'giv'; did you mean 'div'?
+induction_1 *giv; // r14 
+             ^~~
+             div
+/usr/include/stdlib.h:849:14: note: 'div' declared here
+extern div_t div (int __numer, int __denom)
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/emit_prefetch_instructions/src/loop.c:4339:1: error: use of undeclared identifier 'biv'
+biv = v2->biv; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/emit_prefetch_instructions/src/loop.c:4340:7: error: use of undeclared identifier 'biv'; did you mean 'div'?
+if ( !biv ) 
+      ^~~
+      div
+/usr/include/stdlib.h:849:14: note: 'div' declared here
+extern div_t div (int __numer, int __denom)
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/emit_prefetch_instructions/src/loop.c:4343:1: error: use of undeclared identifier 'v5'
+v5 = v2->biv; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/emit_prefetch_instructions/src/loop.c:4344:17: error: use of undeclared identifier 'biv'
+if ( *( _WORD *)biv->add_val == 54 ) 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/emit_prefetch_instructions/src/loop.c:4346:24: error: use of undeclared identifier 'biv'
+while ( ( *( ( _BYTE *)biv + 100) & 0x20) == 0 ) 
+                       ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/emit_prefetch_instructions/src/loop.c:4348:11: error: use of undeclared identifier 'v5'
+add_val = v5->add_val; 
+          ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/emit_prefetch_instructions/src/loop.c:4349:1: error: use of undeclared identifier 'v5'
+v5 = v5->next_iv; 
+^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/emit_prefetch_instructions/src/obj/loop.o] Error 1

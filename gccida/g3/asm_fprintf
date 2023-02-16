@@ -1,0 +1,16 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/asm_fprintf/src/final.c:4022:8: error: use of undeclared identifier 'sch_istable'; did you mean '_sch_istable'?
+if ( ( sch_istable[v7] & 4) == 0 ) 
+       ^~~~~~~~~~~
+       _sch_istable
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/asm_fprintf/src/safe-ctype.h:72:29: note: '_sch_istable' declared here
+extern const unsigned short _sch_istable[256];
+                            ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/asm_fprintf/src/final.c:4034:11: error: use of undeclared identifier 'sch_istable'; did you mean '_sch_istable'?
+while ( ( sch_istable[v9] & 4) != 0 ); 
+          ^~~~~~~~~~~
+          _sch_istable
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/asm_fprintf/src/safe-ctype.h:72:29: note: '_sch_istable' declared here
+extern const unsigned short _sch_istable[256];
+                            ^
+2 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/asm_fprintf/src/obj/final.o] Error 1

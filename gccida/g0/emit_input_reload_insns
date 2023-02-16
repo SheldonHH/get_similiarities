@@ -1,0 +1,19 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/emit_input_reload_insns/src/reload1.c:6615:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // [rsp+50h] [rbp-30h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/emit_input_reload_insns/src/reload1.c:6730:20: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( temp = ( rtx)insn[1]; temp && *( _WORD *)temp == 37; temp = ( rtx)temp[1] ) 
+                   ^~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/emit_input_reload_insns/src/reload1.c:6730:73: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( temp = ( rtx)insn[1]; temp && *( _WORD *)temp == 37; temp = ( rtx)temp[1] ) 
+                                                                        ^~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/emit_input_reload_insns/src/reload1.c:6739:32: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+if ( constraint_accepts_reg_p( insn_data_0[v6].operand->constraint, reloadreg) 
+                               ^~~~~~~~~~~
+                               insn_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/emit_input_reload_insns/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/emit_input_reload_insns/src/obj/reload1.o] Error 1

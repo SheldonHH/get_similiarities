@@ -1,0 +1,66 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_move_insn/src/expr.c:3261:1: error: statement requires expression of scalar type ('struct rtx_def' invalid)
+if ( x[1] ) 
+^    ~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_move_insn/src/expr.c:3265:22: error: use of undeclared identifier 'machine_mode'
+v30 = gen_reg_rtx( ( machine_mode)*( unsigned __int8 *)( x->fld[0].rtwint + 2)); 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_move_insn/src/expr.c:3267:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v32 = (  struct rtx_def *)x[1]; 
+                          ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_move_insn/src/expr.c:3291:35: error: expected expression
+v25 = protect_from_queue( *( rtx *)&x[1], 0); 
+                                  ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_move_insn/src/expr.c:3292:7: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+v35[0].m128i_i64[0] = ( __int64)v25; 
+~~~~~~^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_move_insn/src/expr.c:3293:43: error: expected ')'
+if ( v24 != x->fld[0].rtx || v25 != ( rtx)x[1] ) 
+                                          ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_move_insn/src/expr.c:3293:4: note: to match this '('
+if ( v24 != x->fld[0].rtx || v25 != ( rtx)x[1] ) 
+   ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_move_insn/src/expr.c:3295:57: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+v35[0] = ( __m128i)_mm_loadh_ps( ( const double *)v35[0].m128i_i64); 
+                                                  ~~~~~~^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_move_insn/src/expr.c:3306:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v7.rtwint = ( __int64)y->fld[0]; 
+                      ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_move_insn/src/expr.c:3309:43: error: expected expression
+v8 = replace_equiv_address_nv( y, *( rtx *)( v7.rtwint + 8)); 
+                                          ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_move_insn/src/expr.c:3313:22: error: use of undeclared identifier 'machine_mode'
+v10 = gen_reg_rtx( ( machine_mode)*( ( unsigned __int8 *)y + 2)); 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_move_insn/src/expr.c:3338:35: error: expected expression
+v27 = protect_from_queue( *( rtx *)&y[1], 0); 
+                                  ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_move_insn/src/expr.c:3339:7: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+v35[0].m128i_i64[0] = ( __int64)v27; 
+~~~~~~^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_move_insn/src/expr.c:3340:43: error: expected ')'
+if ( v26 != y->fld[0].rtx || v27 != ( rtx)y[1] ) 
+                                          ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_move_insn/src/expr.c:3340:4: note: to match this '('
+if ( v26 != y->fld[0].rtx || v27 != ( rtx)y[1] ) 
+   ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_move_insn/src/expr.c:3342:57: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+v35[0] = ( __m128i)_mm_loadh_ps( ( const double *)v35[0].m128i_i64); 
+                                                  ~~~~~~^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_move_insn/src/expr.c:3351:1: error: statement requires expression of scalar type ('struct rtx_def' invalid)
+if ( y[1] ) 
+^    ~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_move_insn/src/expr.c:3356:22: error: use of undeclared identifier 'machine_mode'
+v16 = gen_reg_rtx( ( machine_mode)*( unsigned __int8 *)( y->fld[0].rtwint + 2)); 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_move_insn/src/expr.c:3358:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v18 = (  struct rtx_def *)y[1]; 
+                          ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_move_insn/src/expr.c:3374:27: error: use of undeclared identifier 'machine_mode'
+if ( !memory_address_p( ( machine_mode)*( ( unsigned __int8 *)v3 + 2), v3->fld[0].rtx) 
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_move_insn/src/expr.c:3375:25: error: use of undeclared identifier 'machine_mode'
+&& !push_operand( v3, ( machine_mode)*( ( unsigned __int8 *)v3 + 2)) 
+                        ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_move_insn/src/obj/expr.o] Error 1

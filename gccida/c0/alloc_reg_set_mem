@@ -1,0 +1,12 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/alloc_reg_set_mem/src/gcse.c:1673:31: error: expected expression
+reg_set_table = ( reg_set_0 **)gmalloc( n); 
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/alloc_reg_set_mem/src/gcse.c:1673:19: error: use of undeclared identifier 'reg_set_0'; did you mean 'reg_set_p'?
+reg_set_table = ( reg_set_0 **)gmalloc( n); 
+                  ^~~~~~~~~
+                  reg_set_p
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/alloc_reg_set_mem/src/rtl.h:1469:12: note: 'reg_set_p' declared here
+extern int reg_set_p                    PARAMS ((rtx, rtx));
+           ^
+2 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/alloc_reg_set_mem/src/obj/gcse.o] Error 1

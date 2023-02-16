@@ -1,0 +1,22 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cpp_defined/src/cpphash.c:568:19: error: unknown type name 'cpp_reader_0'; did you mean 'cpp_reader'?
+int  cpp_defined( cpp_reader_0 *pfile, const unsigned __int8 *str, int len) 
+                  ^~~~~~~~~~~~
+                  cpp_reader
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cpp_defined/src/cpplib.h:36:27: note: 'cpp_reader' declared here
+typedef struct cpp_reader cpp_reader;
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cpp_defined/src/cpphash.c:571:1: error: unknown type name 'cpp_hashnode_0'; did you mean 'cpp_hashnode'?
+cpp_hashnode_0 *node; // [rsp+10h] [rbp-20h] 
+^~~~~~~~~~~~~~
+cpp_hashnode
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cpp_defined/src/cpplib.h:42:29: note: 'cpp_hashnode' declared here
+typedef struct cpp_hashnode cpp_hashnode;
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cpp_defined/src/cpphash.c:573:26: error: expected expression
+node = ( cpp_hashnode_0 *)ht_lookup( pfile->hash_table, str, len, HT_NO_INSERT); 
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cpp_defined/src/cpphash.c:573:10: error: use of undeclared identifier 'cpp_hashnode_0'
+node = ( cpp_hashnode_0 *)ht_lookup( pfile->hash_table, str, len, HT_NO_INSERT); 
+         ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cpp_defined/src/obj/cpphash.o] Error 1

@@ -1,0 +1,16 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/immediate_operand/src/recog.c:1589:33: error: must use 'enum' tag to refer to type 'machine_mode'
+int  immediate_operand( rtx op, machine_mode mode) 
+                                ^
+                                enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/immediate_operand/src/recog.c:1595:45: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( !*( ( _BYTE *)op + 2) && mode && ( *( &mode_class_0 + ( int)mode) & 0xFFFFFFFD) != 1 ) 
+                                            ^~~~~~~~~~~~
+                                            mode_class
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/immediate_operand/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/immediate_operand/src/recog.c:1595:72: error: invalid operands to binary expression ('const enum mode_class [59]' and 'unsigned int')
+if ( !*( ( _BYTE *)op + 2) && mode && ( *( &mode_class_0 + ( int)mode) & 0xFFFFFFFD) != 1 ) 
+                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^ ~~~~~~~~~~
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/immediate_operand/src/obj/recog.o] Error 1

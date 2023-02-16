@@ -1,0 +1,26 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/bitmap_set_bit/src/bitmap.c:926:12: error: expected expression
+*( _OWORD *)( object_base + 24) = 0LL; 
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/bitmap_set_bit/src/bitmap.c:926:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)( object_base + 24) = 0LL; 
+   ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/bitmap_set_bit/src/bitmap.c:931:12: error: expected expression
+*( _OWORD *)object_base = 0LL; 
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/bitmap_set_bit/src/bitmap.c:931:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)object_base = 0LL; 
+   ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/bitmap_set_bit/src/bitmap.c:951:48: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'unsigned long long' of different size
+*( __m128i *)object_base = _mm_unpacklo_epi64( ( __m128i)( unsigned __int64)v11, ( __m128i)( unsigned __int64)p_next); 
+                                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/bitmap_set_bit/src/bitmap.c:951:82: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'unsigned long long' of different size
+*( __m128i *)object_base = _mm_unpacklo_epi64( ( __m128i)( unsigned __int64)v11, ( __m128i)( unsigned __int64)p_next); 
+                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/bitmap_set_bit/src/bitmap.c:969:48: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'unsigned long long' of different size
+*( __m128i *)object_base = _mm_unpacklo_epi64( ( __m128i)( unsigned __int64)v12, ( __m128i)( unsigned __int64)v11); 
+                                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/bitmap_set_bit/src/bitmap.c:969:82: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'unsigned long long' of different size
+*( __m128i *)object_base = _mm_unpacklo_epi64( ( __m128i)( unsigned __int64)v12, ( __m128i)( unsigned __int64)v11); 
+                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/bitmap_set_bit/src/obj/bitmap.o] Error 1

@@ -1,0 +1,56 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/invalidate/src/cse.c:2303:26: error: must use 'enum' tag to refer to type 'machine_mode'
+void  invalidate( rtx x, machine_mode full_mode) 
+                         ^
+                         enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/invalidate/src/cse.c:2343:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode full_modea; // [rsp+B4h] [rbp-Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/invalidate/src/cse.c:2395:2: error: expected expression
+ struct cse_reg_info = cached_cse_reg_info; 
+ ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/invalidate/src/cse.c:2397:2: error: expected expression
+ struct cse_reg_info = get_cse_reg_info( xa->fld[0].rtuint); 
+ ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/invalidate/src/cse.c:2402:34: error: use of undeclared identifier 'machine_mode'
+LOBYTE( v23) = canon_hash( xa, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)xa)); 
+                                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/invalidate/src/cse.c:2402:49: error: expected expression
+LOBYTE( v23) = canon_hash( xa, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)xa)); 
+                                                ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/invalidate/src/cse.c:2449:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[( unsigned __int8)BYTE2( *( _DWORD *)xa)] != MODE_COMPLEX_INT ) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/invalidate/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/invalidate/src/cse.c:2450:7: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v21 = mode_class_0[( unsigned __int8)BYTE2( *( _DWORD *)xa)] == MODE_COMPLEX_FLOAT; 
+      ^~~~~~~~~~~~
+      mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/invalidate/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/invalidate/src/cse.c:2517:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[( unsigned __int8)BYTE2( *( _DWORD *)p_0->exp)] != MODE_COMPLEX_INT ) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/invalidate/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/invalidate/src/cse.c:2518:7: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v16 = mode_class_0[( unsigned __int8)BYTE2( *( _DWORD *)p_0->exp)] == MODE_COMPLEX_FLOAT; 
+      ^~~~~~~~~~~~
+      mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/invalidate/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/invalidate/src/cse.c:2536:38: error: use of undeclared identifier 'machine_mode'
+elt = lookup_for_remove( xa, hash, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)xa)); 
+                                     ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/invalidate/src/cse.c:2536:53: error: expected expression
+elt = lookup_for_remove( xa, hash, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)xa)); 
+                                                    ^
+12 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/invalidate/src/obj/cse.o] Error 1

@@ -1,0 +1,18 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/output_long_hexadecimal/src/diagnostic.c:947:32: error: unknown type name 'output_buffer_0'; did you mean 'output_buffer'?
+void  output_long_hexadecimal( output_buffer_0 *buffer, unsigned __int64 i) 
+                               ^~~~~~~~~~~~~~~
+                               output_buffer
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/output_long_hexadecimal/src/diagnostic.h:28:30: note: 'output_buffer' declared here
+typedef struct output_buffer output_buffer;
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/output_long_hexadecimal/src/diagnostic.c:947:7: error: conflicting types for 'output_long_hexadecimal'
+void  output_long_hexadecimal( output_buffer_0 *buffer, unsigned __int64 i) 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/output_long_hexadecimal/src/diagnostic.c:82:13: note: previous declaration is here
+static void output_long_hexadecimal PARAMS ((output_buffer *,
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/output_long_hexadecimal/src/diagnostic.c:949:32: error: use of undeclared identifier 'off_76BD38'
+sprintf( buffer->digit_buffer, off_76BD38, i); 
+                               ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/output_long_hexadecimal/src/obj/diagnostic.o] Error 1

@@ -1,0 +1,18 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_stack_save/src/explow.c:1412:24: error: must use 'enum' tag to refer to type 'save_level'
+void  emit_stack_save( save_level save_level, rtx *psave, rtx after) 
+                       ^
+                       enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_stack_save/src/explow.c:1438:29: error: use of undeclared identifier 'machine_mode'
+v13 = assign_stack_local( ( machine_mode)v5, mode_size[v5], 0); 
+                            ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_stack_save/src/explow.c:1440:22: error: use of undeclared identifier 'machine_mode'
+v13 = gen_reg_rtx( ( machine_mode)v5); 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_stack_save/src/explow.c:1455:26: error: use of undeclared identifier 'machine_mode'
+if ( memory_address_p( ( machine_mode)*( ( unsigned __int8 *)v4 + 2), rtx) ) 
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_stack_save/src/explow.c:1477:26: error: use of undeclared identifier 'machine_mode'
+if ( memory_address_p( ( machine_mode)*( ( unsigned __int8 *)v4 + 2), v9) ) 
+                         ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_stack_save/src/obj/explow.o] Error 1

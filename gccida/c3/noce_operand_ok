@@ -1,0 +1,18 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/noce_operand_ok/src/ifcvt.c:2066:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v6 = mode_class_0[v5]; 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/noce_operand_ok/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/noce_operand_ok/src/ifcvt.c:2079:12: error: expected identifier or '('
+ struct op = ( rtx)op[1]; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/noce_operand_ok/src/ifcvt.c:2084:2: error: expected expression
+ struct op = v1->fld[0].rtx; 
+ ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/noce_operand_ok/src/ifcvt.c:2090:26: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v8 = (  struct rtx_def *)op[1]; 
+                         ^~~~~
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/noce_operand_ok/src/obj/ifcvt.o] Error 1

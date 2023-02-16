@@ -1,0 +1,35 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/push_topmost_sequence/src/emit-rtl.c:4960:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *push_topmost_sequence( ) 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/push_topmost_sequence/src/emit-rtl.c:4960:12: error: conflicting types for 'push_topmost_sequence'
+tree_node *push_topmost_sequence( ) 
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/push_topmost_sequence/src/rtl.h:1842:13: note: previous declaration is here
+extern void push_topmost_sequence               PARAMS ((void));
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/push_topmost_sequence/src/emit-rtl.c:4965:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *result; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/push_topmost_sequence/src/emit-rtl.c:4969:24: error: expected identifier or '('
+ struct sequence_stack = emit->sequence_stack; 
+                       ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/push_topmost_sequence/src/emit-rtl.c:4975:24: error: expected identifier or '('
+ struct sequence_stack = sequence_stack->next; 
+                       ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/push_topmost_sequence/src/emit-rtl.c:4977:10: error: expected expression
+while (  struct sequence_stack ); 
+         ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/push_topmost_sequence/src/emit-rtl.c:4977:10: error: expected ')'
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/push_topmost_sequence/src/emit-rtl.c:4977:7: note: to match this '('
+while (  struct sequence_stack ); 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/push_topmost_sequence/src/emit-rtl.c:4980:23: error: expected expression
+result = ( tree_node *)p_first[2]; 
+                      ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/push_topmost_sequence/src/emit-rtl.c:4980:12: error: use of undeclared identifier 'tree_node'
+result = ( tree_node *)p_first[2]; 
+           ^
+9 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/push_topmost_sequence/src/obj/emit-rtl.o] Error 1

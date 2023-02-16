@@ -1,0 +1,39 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/hash_expr_1/src/gcse.c:2063:35: error: must use 'enum' tag to refer to type 'machine_mode'
+unsigned int  hash_expr_1( rtx x, machine_mode mode, int *do_not_record_p) 
+                                  ^
+                                  enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/hash_expr_1/src/gcse.c:2164:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v27 = ( unsigned __int8 *)x[1]; 
+                          ^~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/hash_expr_1/src/gcse.c:2181:15: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v30 = ( int *)x[2]; 
+              ^~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/hash_expr_1/src/gcse.c:2186:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v33.rtwint = ( __int64)x[2].fld[0]; 
+                       ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/hash_expr_1/src/gcse.c:2195:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( unsigned __int8 *)( *( _QWORD *)&v30[2 * v31 + 2] + 2LL), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/hash_expr_1/src/gcse.c:2197:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v33.rtwint = ( __int64)x[2].fld[0]; 
+                       ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/hash_expr_1/src/gcse.c:2217:15: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v30 = ( int *)x[2]; 
+              ^~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/hash_expr_1/src/gcse.c:2275:5: error: assigning to '__m128i' (vector of 2 'long long' values) from incompatible type 'long long'
+v58 = 0LL; 
+    ^ ~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/hash_expr_1/src/gcse.c:2281:5: error: assigning to '__m128i' (vector of 2 'long long' values) from incompatible type 'long long'
+v58 = 0LL; 
+    ^ ~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/hash_expr_1/src/gcse.c:2322:35: error: use of undeclared identifier 'machine_mode'
+v11 = v4 + hash_expr_1( v43[1], ( machine_mode)*( ( unsigned __int8 *)v43[1] + 2), do_not_record_p); 
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/hash_expr_1/src/gcse.c:2331:33: error: use of undeclared identifier 'machine_mode'
+v49 = hash_expr_1( ( rtx)v48, ( machine_mode)*( unsigned __int8 *)( v48 + 2), do_not_record_p); 
+                                ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/hash_expr_1/src/gcse.c:2349:18: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v8 = ( __int64 *)x[1]; 
+                 ^~~~
+12 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/hash_expr_1/src/obj/gcse.o] Error 1

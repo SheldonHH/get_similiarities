@@ -1,0 +1,107 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/regrename_optimize/src/regrename.c:666:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class *v2; // rdx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/regrename_optimize/src/regrename.c:682:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class v18; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/regrename_optimize/src/regrename.c:697:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class *v33; // r12 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/regrename_optimize/src/regrename.c:781:1: error: use of undeclared identifier 'closed_chains'
+closed_chains = 0LL; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/regrename_optimize/src/regrename.c:782:1: error: use of undeclared identifier 'open_chains'
+open_chains = 0LL; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/regrename_optimize/src/regrename.c:794:15: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+unavailable = recog_data_0.n_operands; 
+              ^~~~~~~~~~~~
+              recog_data
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/regrename_optimize/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/regrename_optimize/src/regrename.c:795:14: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+n_operands = recog_data_0.n_operands; 
+             ^~~~~~~~~~~~
+             recog_data
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/regrename_optimize/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/regrename_optimize/src/regrename.c:797:6: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( recog_data_0.n_operands > 0 ) 
+     ^~~~~~~~~~~~
+     recog_data
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/regrename_optimize/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/regrename_optimize/src/regrename.c:799:19: error: expected expression
+v2 = ( reg_class *)( 32LL * which_alternative + 9844808); 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/regrename_optimize/src/regrename.c:799:8: error: use of undeclared identifier 'reg_class'; did you mean 'regclass'?
+v2 = ( reg_class *)( 32LL * which_alternative + 9844808); 
+       ^~~~~~~~~
+       regclass
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/regrename_optimize/src/rtl.h:1970:13: note: 'regclass' declared here
+extern void regclass                    PARAMS ((rtx, int, FILE *));
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/regrename_optimize/src/regrename.c:809:52: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+else if ( *( ( int *)v2 + 3) < 0 && ( v31 != 38 || recog_data_0.operand_type[v1] != OP_OUT) ) 
+                                                   ^~~~~~~~~~~~
+                                                   recog_data
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/regrename_optimize/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/regrename_optimize/src/regrename.c:813:1: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+recog_data_0.operand_type[v1] = OP_INOUT; 
+^~~~~~~~~~~~
+recog_data
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/regrename_optimize/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/regrename_optimize/src/regrename.c:824:1: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+recog_data_0.operand_loc[v4], 
+^~~~~~~~~~~~
+recog_data
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/regrename_optimize/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/regrename_optimize/src/regrename.c:827:1: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+recog_data_0.operand_type[v4], 
+^~~~~~~~~~~~
+recog_data
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/regrename_optimize/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/regrename_optimize/src/regrename.c:835:30: error: use of undeclared identifier 'recog_data_0'
+to[v5] = ( HARD_REG_ELT_TYPE)recog_data_0.operand[v5]; 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/regrename_optimize/src/regrename.c:836:7: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( *recog_data_0.constraints[v5] ) 
+      ^~~~~~~~~~~~
+      recog_data
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/regrename_optimize/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/regrename_optimize/src/regrename.c:837:2: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+*recog_data_0.operand_loc[v5] = global_rtl[1]; 
+ ^~~~~~~~~~~~
+ recog_data
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/regrename_optimize/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/regrename_optimize/src/regrename.c:845:6: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( recog_data_0.n_dups > 0 ) 
+     ^~~~~~~~~~~~
+     recog_data
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/regrename_optimize/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/regrename_optimize/src/regrename.c:851:28: error: use of undeclared identifier 'recog_data_0'
+v8 = ( HARD_REG_ELT_TYPE *)recog_data_0.dup_loc[v6]; 
+                           ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/regrename_optimize/src/obj/regrename.o] Error 1

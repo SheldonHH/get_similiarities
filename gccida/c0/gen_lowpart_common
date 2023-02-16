@@ -1,0 +1,100 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_lowpart_common/src/emit-rtl.c:1287:26: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  gen_lowpart_common( machine_mode mode, rtx x) 
+                         ^
+                         enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_lowpart_common/src/emit-rtl.c:1318:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode modea; // [rsp+154h] [rbp-Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_lowpart_common/src/emit-rtl.c:1347:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[modea] == MODE_FLOAT && ( unsigned __int8)BYTE2( *( _DWORD *)xa) && msize > xsize ) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_lowpart_common/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_lowpart_common/src/emit-rtl.c:1349:42: error: use of undeclared identifier 'machine_mode'
+offset = subreg_lowpart_offset( modea, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)xa)); 
+                                         ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_lowpart_common/src/emit-rtl.c:1349:57: error: expected expression
+offset = subreg_lowpart_offset( modea, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)xa)); 
+                                                        ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_lowpart_common/src/emit-rtl.c:1351:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& ( mode_class_0[modea] == MODE_INT || mode_class_0[modea] == MODE_PARTIAL_INT) ) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_lowpart_common/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_lowpart_common/src/emit-rtl.c:1351:41: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& ( mode_class_0[modea] == MODE_INT || mode_class_0[modea] == MODE_PARTIAL_INT) ) 
+                                        ^~~~~~~~~~~~
+                                        mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_lowpart_common/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_lowpart_common/src/emit-rtl.c:1358:25: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+return gen_rtx_fmt_e( ( rtx_code)( unsigned __int16)*( _DWORD *)xa, modea, xa->fld[0].rtx); 
+                        ^~~~~~~~
+                        rtx_cost
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_lowpart_common/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_lowpart_common/src/emit-rtl.c:1358:36: error: expected expression
+return gen_rtx_fmt_e( ( rtx_code)( unsigned __int16)*( _DWORD *)xa, modea, xa->fld[0].rtx); 
+                                   ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_lowpart_common/src/emit-rtl.c:1365:42: error: use of undeclared identifier 'machine_mode'
+return simplify_gen_subreg( modea, xa, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)xa), offset); 
+                                         ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_lowpart_common/src/emit-rtl.c:1365:57: error: expected expression
+return simplify_gen_subreg( modea, xa, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)xa), offset); 
+                                                        ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_lowpart_common/src/emit-rtl.c:1367:8: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( ( mode_class_0[modea] == MODE_INT || mode_class_0[modea] == MODE_PARTIAL_INT) 
+       ^~~~~~~~~~~~
+       mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_lowpart_common/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_lowpart_common/src/emit-rtl.c:1367:43: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( ( mode_class_0[modea] == MODE_INT || mode_class_0[modea] == MODE_PARTIAL_INT) 
+                                          ^~~~~~~~~~~~
+                                          mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_lowpart_common/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_lowpart_common/src/emit-rtl.c:1387:20: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+rtwint = ( __int64)xa[1]; 
+                   ^~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_lowpart_common/src/emit-rtl.c:1407:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[modea] == MODE_FLOAT && mode_bitsize[modea] == 32 && ( unsigned __int16)*( _DWORD *)xa == 54 ) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_lowpart_common/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_lowpart_common/src/emit-rtl.c:1410:23: error: too many arguments to function call, expected 1, have 2
+ereal_from_float( &d, i); 
+~~~~~~~~~~~~~~~~      ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_lowpart_common/src/real.h:171:1: note: 'ereal_from_float' declared here
+extern REAL_VALUE_TYPE ereal_from_float PARAMS ((HOST_WIDE_INT));
+^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_lowpart_common/src/emit-rtl.c:1414:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[modea] == MODE_FLOAT 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_lowpart_common/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_lowpart_common/src/emit-rtl.c:1426:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+low = ( __int64)xa[1]; 
+                ^~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_lowpart_common/src/emit-rtl.c:1430:26: error: too many arguments to function call, expected 1, have 2
+ereal_from_double( &v21, i_0); 
+~~~~~~~~~~~~~~~~~        ^~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_lowpart_common/src/real.h:172:1: note: 'ereal_from_double' declared here
+extern REAL_VALUE_TYPE ereal_from_double PARAMS ((HOST_WIDE_INT *));
+^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_lowpart_common/src/obj/emit-rtl.o] Error 1

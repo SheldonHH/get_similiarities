@@ -1,0 +1,82 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/convert_move/src/expr.c:949:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v4; // r12d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/convert_move/src/expr.c:950:1: error: must use 'enum' tag to refer to type 'mode_class'
+mode_class v5; // r15d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/convert_move/src/machmode.h:52:30: note: enum 'mode_class' is hidden by a non-type declaration of 'mode_class' here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/convert_move/src/expr.c:953:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v8; // r13d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/convert_move/src/expr.c:979:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v34; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/convert_move/src/expr.c:987:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v42; // r15d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/convert_move/src/expr.c:988:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v43; // r14 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/convert_move/src/expr.c:1001:1: error: must use 'enum' tag to refer to type 'mode_class'
+mode_class v57; // [rsp+14h] [rbp-44h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/convert_move/src/machmode.h:52:30: note: enum 'mode_class' is hidden by a non-type declaration of 'mode_class' here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/convert_move/src/expr.c:1003:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code equiv_code; // [rsp+1Ch] [rbp-3Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/convert_move/src/expr.c:1008:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v5 = mode_class_0[v3]; 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/convert_move/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/convert_move/src/expr.c:1009:7: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v57 = mode_class_0[v58]; 
+      ^~~~~~~~~~~~
+      mode_class
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/convert_move/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/convert_move/src/expr.c:1022:21: error: use of undeclared identifier 'machine_mode'
+v9 = gen_lowpart( ( machine_mode)v3, v7); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/convert_move/src/expr.c:1048:29: error: use of undeclared identifier 'machine_mode'
+v9 = simplify_gen_subreg( ( machine_mode)v3, v9, ( machine_mode)*( ( unsigned __int8 *)v9 + 2), 0); 
+                            ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/convert_move/src/expr.c:1048:52: error: use of undeclared identifier 'machine_mode'
+v9 = simplify_gen_subreg( ( machine_mode)v3, v9, ( machine_mode)*( ( unsigned __int8 *)v9 + 2), 0); 
+                                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/convert_move/src/expr.c:1060:29: error: use of undeclared identifier 'machine_mode'
+v6 = simplify_gen_subreg( ( machine_mode)v58, v6, ( machine_mode)*( ( unsigned __int8 *)v6 + 2), 0); 
+                            ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/convert_move/src/expr.c:1060:53: error: use of undeclared identifier 'machine_mode'
+v6 = simplify_gen_subreg( ( machine_mode)v58, v6, ( machine_mode)*( ( unsigned __int8 *)v6 + 2), 0); 
+                                                    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/convert_move/src/expr.c:1069:23: error: use of undeclared identifier 'machine_mode'
+v18 = can_extend_p( ( machine_mode)v3, ( machine_mode)v58, 0); 
+                      ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/convert_move/src/expr.c:1069:42: error: use of undeclared identifier 'machine_mode'
+v18 = can_extend_p( ( machine_mode)v3, ( machine_mode)v58, 0); 
+                                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/convert_move/src/expr.c:1212:27: error: use of undeclared identifier 'machine_mode'
+v52 = can_extend_p( v8, ( machine_mode)v58, unsignedp); 
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/convert_move/src/expr.c:1216:41: error: invalid suffix 'xmode' on integer constant
+|| ( v22 = can_extend_p( v8, *(short *)0xmode, unsignedp), v22 == 1317) ) 
+                                        ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/convert_move/src/obj/expr.o] Error 1

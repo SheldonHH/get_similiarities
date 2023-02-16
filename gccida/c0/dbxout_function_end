@@ -1,0 +1,11 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/dbxout_function_end/src/dbxout.c:853:64: error: use of undeclared identifier 'dbxout_function_end_scope_labelno'
+sprintf( lscope_label_name, "*.%s%u", "Lscope", ( unsigned int)dbxout_function_end_scope_labelno); 
+                                                               ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/dbxout_function_end/src/dbxout.c:854:56: error: use of undeclared identifier 'dbxout_function_end_scope_labelno'
+fprintf( asmfile, ".%s%u:\n", "Lscope", ( unsigned int)dbxout_function_end_scope_labelno); 
+                                                       ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/dbxout_function_end/src/dbxout.c:855:3: error: use of undeclared identifier 'dbxout_function_end_scope_labelno'
+++dbxout_function_end_scope_labelno; 
+  ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/dbxout_function_end/src/obj/dbxout.o] Error 1

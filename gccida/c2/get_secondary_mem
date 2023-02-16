@@ -1,0 +1,30 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/get_secondary_mem/src/reload.c:1048:32: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  get_secondary_mem( rtx x, machine_mode mode, int opnum, reload_type type) 
+                               ^
+                               enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/get_secondary_mem/src/reload.c:1048:62: error: must use 'enum' tag to refer to type 'reload_type'
+rtx  get_secondary_mem( rtx x, machine_mode mode, int opnum, reload_type type) 
+                                                             ^
+                                                             enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/get_secondary_mem/src/reload.c:1050:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v5; // r12d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/get_secondary_mem/src/reload.c:1064:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v8 = mode_class_0[mode]; 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/get_secondary_mem/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/get_secondary_mem/src/reload.c:1070:38: error: expected ')'
+v5 = mode_for_size( v7, ( mode_class)v8, 0); 
+                                     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/get_secondary_mem/src/reload.c:1070:19: note: to match this '('
+v5 = mode_for_size( v7, ( mode_class)v8, 0); 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/get_secondary_mem/src/reload.c:1098:3: error: use of undeclared identifier 'reload_type'
+( reload_type)v12, 
+  ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/get_secondary_mem/src/obj/reload.o] Error 1

@@ -1,0 +1,21 @@
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/getopt_internal/src/utils/getopt.c:982:1: error: use of undeclared identifier '$58E8A322B99FFF983766F42E1DE15117'
+$58E8A322B99FFF983766F42E1DE15117 v14; // r14d 
+^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/getopt_internal/src/utils/getopt.c:1072:21: error: use of undeclared identifier '_getopt_initialized'
+if ( !gg_optind || !_getopt_initialized ) 
+                    ^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/getopt_internal/src/utils/getopt.c:1077:1: error: use of undeclared identifier '_getopt_initialized'; did you mean '__getopt_initialized'?
+_getopt_initialized = 1; 
+^~~~~~~~~~~~~~~~~~~
+__getopt_initialized
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/getopt_internal/src/utils/getopt.c:132:5: note: '__getopt_initialized' declared here
+int __getopt_initialized;
+    ^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/getopt_internal/src/utils/getopt.c:1087:1: error: use of undeclared identifier 'v14'
+v14 = ordering; 
+^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/getopt_internal/src/utils/getopt.c:1153:6: error: use of undeclared identifier 'v14'
+if ( v14 == REQUIRE_ORDER ) 
+     ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/getopt_internal/src/obj/5/getopt.o] Error 1

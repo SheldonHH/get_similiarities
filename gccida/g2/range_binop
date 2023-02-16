@@ -1,0 +1,30 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/range_binop/src/fold-const.c:3818:20: error: must use 'enum' tag to refer to type 'tree_code'
+tree  range_binop( tree_code code, tree type, tree arg0, int upper0_p, tree arg1, int upper1_p) 
+                   ^
+                   enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/range_binop/src/fold-const.c:3820:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v6; // r13 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/range_binop/src/fold-const.c:3822:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v8; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/range_binop/src/fold-const.c:3827:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v13; // rsi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/range_binop/src/fold-const.c:3863:20: error: expected expression
+v13 = ( tree_node *)*( &global_trees + 12); 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/range_binop/src/fold-const.c:3863:9: error: use of undeclared identifier 'tree_node'
+v13 = ( tree_node *)*( &global_trees + 12); 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/range_binop/src/fold-const.c:3865:20: error: expected expression
+v13 = ( tree_node *)*( &global_trees + 11); 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/range_binop/src/fold-const.c:3865:9: error: use of undeclared identifier 'tree_node'
+v13 = ( tree_node *)*( &global_trees + 11); 
+        ^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/range_binop/src/obj/fold-const.o] Error 1

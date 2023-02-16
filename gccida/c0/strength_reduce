@@ -1,0 +1,61 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/strength_reduce/src/loop.c:5401:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v3; // ecx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/strength_reduce/src/loop.c:5404:1: error: use of undeclared identifier 'induction_1'
+induction_1 *tv; // [rsp+28h] [rbp-78h] 
+^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/strength_reduce/src/loop.c:5404:14: error: use of undeclared identifier 'tv'
+induction_1 *tv; // [rsp+28h] [rbp-78h] 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/strength_reduce/src/loop.c:5406:1: error: use of undeclared identifier 'induction_1'
+induction_1 *v; // [rsp+38h] [rbp-68h] 
+^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/strength_reduce/src/loop.c:5406:14: error: use of undeclared identifier 'v'
+induction_1 *v; // [rsp+38h] [rbp-68h] 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/strength_reduce/src/loop.c:5407:1: error: use of undeclared identifier 'induction_1'
+induction_1 *va; // [rsp+38h] [rbp-68h] 
+^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/strength_reduce/src/loop.c:5407:14: error: use of undeclared identifier 'va'
+induction_1 *va; // [rsp+38h] [rbp-68h] 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/strength_reduce/src/loop.c:5418:19: error: expected identifier or '('
+ struct loop_info = (  struct loop_info *)loop->aux; 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/strength_reduce/src/loop.c:5424:36: error: invalid suffix 'xmode' on integer constant
+test_reg = gen_rtx_REG( *(short *)0xmode, 58); 
+                                   ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/strength_reduce/src/loop.c:5451:7: error: use of undeclared identifier 'v'
+for ( v = bl_0->giv; v; v = v->next_iv ) 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/strength_reduce/src/loop.c:5451:22: error: use of undeclared identifier 'v'
+for ( v = bl_0->giv; v; v = v->next_iv ) 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/strength_reduce/src/loop.c:5451:25: error: use of undeclared identifier 'v'
+for ( v = bl_0->giv; v; v = v->next_iv ) 
+                        ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/strength_reduce/src/loop.c:5451:29: error: use of undeclared identifier 'v'
+for ( v = bl_0->giv; v; v = v->next_iv ) 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/strength_reduce/src/loop.c:5453:23: error: use of undeclared identifier 'v'
+if ( ( ( *( ( _WORD *)v + 50) >> 2) & 1) == 0 && !v->same ) 
+                      ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/strength_reduce/src/loop.c:5453:51: error: use of undeclared identifier 'v'
+if ( ( ( *( ( _WORD *)v + 50) >> 2) & 1) == 0 && !v->same ) 
+                                                  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/strength_reduce/src/loop.c:5455:48: error: use of undeclared identifier 'v'
+benefit = loop_giv_reduce_benefit( loop, bl_0, v, test_reg); 
+                                               ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/strength_reduce/src/loop.c:5457:26: error: use of undeclared identifier 'v'
+|| benefit * threshold * v->lifetime >= insn_count 
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/strength_reduce/src/loop.c:5460:7: error: use of undeclared identifier 'tv'
+for ( tv = bl_0->biv; tv; tv = tv->next_iv ) 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/strength_reduce/src/loop.c:5460:23: error: use of undeclared identifier 'tv'
+for ( tv = bl_0->biv; tv; tv = tv->next_iv ) 
+                      ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/strength_reduce/src/obj/loop.o] Error 1

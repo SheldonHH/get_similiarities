@@ -1,0 +1,74 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/set_mem_attributes/src/emit-rtl.c:2170:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v7; // rcx 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/set_mem_attributes/src/emit-rtl.c:2188:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *imag; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/set_mem_attributes/src/emit-rtl.c:2189:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v26; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/set_mem_attributes/src/emit-rtl.c:2194:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *size_unit; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/set_mem_attributes/src/emit-rtl.c:2195:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v32; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/set_mem_attributes/src/emit-rtl.c:2197:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v34; // rsi 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/set_mem_attributes/src/emit-rtl.c:2198:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v35; // r15 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/set_mem_attributes/src/emit-rtl.c:2199:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v36; // rbp 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/set_mem_attributes/src/emit-rtl.c:2200:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v37; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/set_mem_attributes/src/emit-rtl.c:2202:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v39; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/set_mem_attributes/src/emit-rtl.c:2212:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v6 = ( _QWORD *)ref[1]; 
+                ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/set_mem_attributes/src/emit-rtl.c:2215:19: error: expected expression
+v7 = ( tree_node *)v6[1]; 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/set_mem_attributes/src/emit-rtl.c:2215:8: error: use of undeclared identifier 'tree_node'
+v7 = ( tree_node *)v6[1]; 
+       ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/set_mem_attributes/src/emit-rtl.c:2230:28: error: use of undeclared identifier 'machine_mode'
+v11 = gen_rtx_CONST_INT( ( machine_mode)ref, mode_size[v10]); 
+                           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/set_mem_attributes/src/emit-rtl.c:2235:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v12 = ( __int64)ref[1]; 
+                ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/set_mem_attributes/src/emit-rtl.c:2254:36: error: expected expression
+if ( v14 == 100 && t->decl.rtl ==  struct ref ) 
+                                   ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/set_mem_attributes/src/emit-rtl.c:2262:7: error: use of undeclared identifier 'lang_hooks_0'; did you mean 'lang_hooks'?
+if ( !lang_hooks_0.honor_readonly 
+      ^~~~~~~~~~~~
+      lang_hooks
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/set_mem_attributes/src/langhooks.h:168:32: note: 'lang_hooks' declared here
+extern const struct lang_hooks lang_hooks;
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/set_mem_attributes/src/emit-rtl.c:2294:27: error: use of undeclared identifier 'machine_mode'
+v9 = gen_rtx_CONST_INT( ( machine_mode)v26, v27); 
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/set_mem_attributes/src/emit-rtl.c:2324:27: error: use of undeclared identifier 'machine_mode'
+v9 = gen_rtx_CONST_INT( ( machine_mode)v32, v33); 
+                          ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/set_mem_attributes/src/obj/emit-rtl.o] Error 1

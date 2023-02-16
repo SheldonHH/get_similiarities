@@ -1,0 +1,16 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/elimination_effects/src/reload1.c:3132:35: error: must use 'enum' tag to refer to type 'machine_mode'
+void  elimination_effects( rtx x, machine_mode mem_mode) 
+                                  ^
+                                  enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/elimination_effects/src/reload1.c:3137:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code; // [rsp+20h] [rbp-20h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/elimination_effects/src/reload1.c:3171:13: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+src = ( rtx)x[1]; 
+            ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/elimination_effects/src/reload1.c:3249:39: error: use of undeclared identifier 'machine_mode'
+elimination_effects( x->fld[0].rtx, ( machine_mode)*( ( unsigned __int8 *)x + 2)); 
+                                      ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/elimination_effects/src/obj/reload1.o] Error 1

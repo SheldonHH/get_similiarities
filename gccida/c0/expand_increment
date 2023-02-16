@@ -1,0 +1,95 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_increment/src/expr.c:9437:1: error: must use 'enum' tag to refer to type 'tree_code'
+tree_code v4; // edx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_increment/src/expr.c:9439:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v6; // ecx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_increment/src/expr.c:9447:1: error: unknown type name 'optab_0'; did you mean 'optab'?
+optab_0 v16; // [rsp+78h] [rbp-98h] 
+^~~~~~~
+optab
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_increment/src/optabs.h:48:5: note: 'optab' declared here
+} * optab;
+    ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_increment/src/expr.c:9450:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *newexp; // [rsp+A8h] [rbp-68h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_increment/src/expr.c:9527:4: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+&& insn_data_0[icode].operand->predicate( op0, mode) 
+   ^~~~~~~~~~~
+   insn_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_increment/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_increment/src/expr.c:9527:41: error: called object type '<dependent type>' is not a function or function pointer
+&& insn_data_0[icode].operand->predicate( op0, mode) 
+                                        ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_increment/src/expr.c:9528:52: error: use of undeclared identifier 'machine_mode'
+&& insn_data_0[icode].operand[1].predicate( op0, ( machine_mode)mode) 
+                                                   ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_increment/src/expr.c:9528:4: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+&& insn_data_0[icode].operand[1].predicate( op0, ( machine_mode)mode) 
+   ^~~~~~~~~~~
+   insn_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_increment/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_increment/src/expr.c:9529:52: error: use of undeclared identifier 'machine_mode'
+&& insn_data_0[icode].operand[2].predicate( op1, ( machine_mode)mode) ) 
+                                                   ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_increment/src/expr.c:9529:4: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+&& insn_data_0[icode].operand[2].predicate( op1, ( machine_mode)mode) ) 
+   ^~~~~~~~~~~
+   insn_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_increment/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_increment/src/expr.c:9566:4: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+&& insn_data_0[icodea].operand->predicate( op0, mode) 
+   ^~~~~~~~~~~
+   insn_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_increment/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_increment/src/expr.c:9566:42: error: called object type '<dependent type>' is not a function or function pointer
+&& insn_data_0[icodea].operand->predicate( op0, mode) 
+                                         ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_increment/src/expr.c:9567:53: error: use of undeclared identifier 'machine_mode'
+&& insn_data_0[icodea].operand[1].predicate( op0, ( machine_mode)mode) ) 
+                                                    ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_increment/src/expr.c:9567:4: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+&& insn_data_0[icodea].operand[1].predicate( op0, ( machine_mode)mode) ) 
+   ^~~~~~~~~~~
+   insn_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_increment/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_increment/src/expr.c:9569:56: error: use of undeclared identifier 'machine_mode'
+if ( !insn_data_0[icodea].operand[2].predicate( op1, ( machine_mode)mode) ) 
+                                                       ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_increment/src/expr.c:9569:7: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+if ( !insn_data_0[icodea].operand[2].predicate( op1, ( machine_mode)mode) ) 
+      ^~~~~~~~~~~
+      insn_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_increment/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_increment/src/expr.c:9570:20: error: use of undeclared identifier 'machine_mode'
+op1 = force_reg( ( machine_mode)mode, op1); 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_increment/src/expr.c:9571:6: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+v5 = insn_data_0[icodea].genfun( op0, op0, op1); 
+     ^~~~~~~~~~~
+     insn_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_increment/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_increment/src/expr.c:9571:32: error: called object type '<dependent type>' is not a function or function pointer
+v5 = insn_data_0[icodea].genfun( op0, op0, op1); 
+                               ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_increment/src/obj/expr.o] Error 1

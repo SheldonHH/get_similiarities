@@ -1,0 +1,22 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_split_1136/src/insn-emit.c:13754:43: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+v1 = reverse_condition_maybe_unordered( ( rtx_code)*( _WORD *)new_op1); 
+                                          ^~~~~~~~
+                                          rtx_cost
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_split_1136/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_split_1136/src/insn-emit.c:13754:52: error: invalid operands to binary expression ('int (rtx, enum rtx_code)' (aka 'int (struct rtx_def *, enum rtx_code)') and 'uint16 *' (aka 'unsigned short *'))
+v1 = reverse_condition_maybe_unordered( ( rtx_code)*( _WORD *)new_op1); 
+                                        ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_split_1136/src/insn-emit.c:13756:27: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+v1 = reverse_condition( ( rtx_code)*( _WORD *)new_op1); 
+                          ^~~~~~~~
+                          rtx_cost
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_split_1136/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_split_1136/src/insn-emit.c:13756:36: error: invalid operands to binary expression ('int (rtx, enum rtx_code)' (aka 'int (struct rtx_def *, enum rtx_code)') and 'uint16 *' (aka 'unsigned short *'))
+v1 = reverse_condition( ( rtx_code)*( _WORD *)new_op1); 
+                        ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_split_1136/src/obj/insn-emit.o] Error 1

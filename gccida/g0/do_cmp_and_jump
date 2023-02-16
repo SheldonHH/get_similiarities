@@ -1,0 +1,20 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/do_cmp_and_jump/src/expmed.c:5172:44: error: must use 'enum' tag to refer to type 'rtx_code'
+void  do_cmp_and_jump( rtx arg1, rtx arg2, rtx_code op, machine_mode mode, rtx label) 
+                                           ^
+                                           enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/do_cmp_and_jump/src/expmed.c:5172:57: error: must use 'enum' tag to refer to type 'machine_mode'
+void  do_cmp_and_jump( rtx arg1, rtx arg2, rtx_code op, machine_mode mode, rtx label) 
+                                                        ^
+                                                        enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/do_cmp_and_jump/src/expmed.c:5176:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[mode] != MODE_INT || can_compare_p( op, mode, ccp_jump) ) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/do_cmp_and_jump/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/do_cmp_and_jump/src/expmed.c:5183:11: error: expected expression
+switch (  struct op ) 
+          ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/do_cmp_and_jump/src/obj/expmed.o] Error 1

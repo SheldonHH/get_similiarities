@@ -1,0 +1,12 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_used_regs_combine/src/combine.c:12229:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v11.rtwint = ( __int64)x->fld[0]; 
+                       ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_used_regs_combine/src/combine.c:12246:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v14 = ( ( unsigned int)( mode_class_0[( unsigned __int8)v13] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_used_regs_combine/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+2 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_used_regs_combine/src/obj/combine.o] Error 1

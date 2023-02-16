@@ -1,0 +1,20 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_builtin_setjmp_setup/src/builtins.c:916:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v4; // r15d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_builtin_setjmp_setup/src/builtins.c:917:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v5; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_builtin_setjmp_setup/src/builtins.c:925:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v13; // r13d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_builtin_setjmp_setup/src/builtins.c:940:21: error: use of undeclared identifier 'machine_mode'
+v8 = gen_rtx_MEM( ( machine_mode)( ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32), v7); 
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_builtin_setjmp_setup/src/builtins.c:945:22: error: use of undeclared identifier 'machine_mode'
+v11 = gen_rtx_MEM( ( machine_mode)v9, v10); 
+                     ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_builtin_setjmp_setup/src/obj/builtins.o] Error 1

@@ -1,0 +1,23 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/compare_constant_1/src/varasm.c:3119:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *elements; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/compare_constant_1/src/varasm.c:3124:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // [rsp+20h] [rbp-50h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/compare_constant_1/src/varasm.c:3264:13: error: invalid operands to binary expression ('struct rtx_def' and 'int')
+if ( rtl[1] == 37 ) 
+     ~~~~~~ ^  ~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/compare_constant_1/src/varasm.c:3323:7: error: use of undeclared identifier 'lang_hooks_0'; did you mean 'lang_hooks'?
+v11 = lang_hooks_0.expand_constant( v3); 
+      ^~~~~~~~~~~~
+      lang_hooks
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/compare_constant_1/src/langhooks.h:168:32: note: 'lang_hooks' declared here
+extern const struct lang_hooks lang_hooks;
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/compare_constant_1/src/varasm.c:3323:35: error: called object type '<dependent type>' is not a function or function pointer
+v11 = lang_hooks_0.expand_constant( v3); 
+                                  ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/compare_constant_1/src/obj/varasm.o] Error 1

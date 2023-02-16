@@ -1,0 +1,60 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/optimize_bit_field/src/function.c:3180:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v7; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/optimize_bit_field/src/function.c:3181:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v8; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/optimize_bit_field/src/function.c:3197:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v24; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/optimize_bit_field/src/function.c:3204:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v31; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/optimize_bit_field/src/function.c:3225:47: error: expected expression
+if ( v9 && !mode_dependent_address_p( *( rtx *)( v9 + 8)) && ( *( _BYTE *)( v9 + 3) & 8) == 0 ) 
+                                              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/optimize_bit_field/src/function.c:3237:14: error: expected expression
+v14 = ( rtx *)&body[1]; 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/optimize_bit_field/src/function.c:3239:31: error: expected ')'
+v15 = adjust_address_1( ( rtx)v9, v8, v13, 1, 1); 
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/optimize_bit_field/src/function.c:3239:23: note: to match this '('
+v15 = adjust_address_1( ( rtx)v9, v8, v13, 1, 1); 
+                      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/optimize_bit_field/src/function.c:3245:31: error: expected expression
+validate_change( insn, ( rtx *)loc, v15, 1); 
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/optimize_bit_field/src/function.c:3284:13: error: expected ';' after expression
+v19 = ( rtx)loc->rtwint; 
+            ^
+            ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/optimize_bit_field/src/function.c:3291:1: error: statement requires expression of scalar type ('struct rtx_def' invalid)
+if ( v20[1] ) 
+^    ~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/optimize_bit_field/src/function.c:3293:16: error: must use 'enum' tag to refer to type 'mode_class'
+v22 = *( const mode_class *)( ( char *)mode_class_0 + ( ( v21 >> 14) & 0x3FC)); 
+               ^
+               enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/optimize_bit_field/src/machmode.h:52:30: note: enum 'mode_class' is hidden by a non-type declaration of 'mode_class' here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/optimize_bit_field/src/function.c:3293:40: error: use of undeclared identifier 'mode_class_0'
+v22 = *( const mode_class *)( ( char *)mode_class_0 + ( ( v21 >> 14) & 0x3FC)); 
+                                       ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/optimize_bit_field/src/function.c:3296:13: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( v22 != mode_class_0[v23] ) 
+            ^~~~~~~~~~~~
+            mode_class
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/optimize_bit_field/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/optimize_bit_field/src/function.c:3300:31: error: expected expression
+validate_change( insn, ( rtx *)loc, v20, 1); 
+                              ^
+14 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/optimize_bit_field/src/obj/function.o] Error 1

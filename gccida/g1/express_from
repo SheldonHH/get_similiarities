@@ -1,0 +1,20 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/express_from/src/loop.c:7567:20: error: unknown type name 'induction_1'
+rtx  express_from( induction_1 *g1, induction_1 *g2) 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/express_from/src/loop.c:7567:37: error: unknown type name 'induction_1'
+rtx  express_from( induction_1 *g1, induction_1 *g2) 
+                                    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/express_from/src/loop.c:7605:78: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+&& ( ( add_val = g1->add_val, *( _WORD *)add_val == 78) && ( v13 = ( __int64)add_val[1], *( _WORD *)v13 == 54) 
+                                                                             ^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/express_from/src/loop.c:7607:31: error: use of undeclared identifier 'machine_mode'
+v14 = gen_rtx_fmt_ee( MULT, ( machine_mode)*( ( unsigned __int8 *)add_val + 2), add_val->fld[0].rtx, v15)) 
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/express_from/src/loop.c:7608:35: error: use of undeclared identifier 'machine_mode'
+: ( v14 = gen_rtx_fmt_ee( MULT, ( machine_mode)*( ( unsigned __int8 *)add_val + 2), g1->add_val, v6)), 
+                                  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/express_from/src/loop.c:7626:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v16 = (  struct rtx_def *)v8[1]; 
+                          ^~~~~
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/express_from/src/obj/loop.o] Error 1

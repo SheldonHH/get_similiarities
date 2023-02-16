@@ -1,0 +1,49 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/set_mem_offset/src/emit-rtl.c:2375:1: error: use of undeclared identifier '_OWORD'
+_OWORD *v16; // rax 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/set_mem_offset/src/emit-rtl.c:2375:9: error: use of undeclared identifier 'v16'
+_OWORD *v16; // rax 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/set_mem_offset/src/emit-rtl.c:2381:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v4 = ( __int64)mem[1]; 
+               ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/set_mem_offset/src/emit-rtl.c:2417:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v4 = ( __int64)mem[1]; 
+               ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/set_mem_offset/src/emit-rtl.c:2448:1: error: use of undeclared identifier 'v16'
+v16 = ggc_alloc( 0x28uLL); 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/set_mem_offset/src/emit-rtl.c:2449:9: error: use of undeclared identifier 'v16'
+*slot = v16; 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/set_mem_offset/src/emit-rtl.c:2450:15: error: use of undeclared identifier 'v16'
+*( ( _QWORD *)v16 + 4) = v20; 
+              ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/set_mem_offset/src/emit-rtl.c:2451:18: error: expected expression
+v17 = *( _OWORD *)arg0; 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/set_mem_offset/src/emit-rtl.c:2451:10: error: use of undeclared identifier '_OWORD'
+v17 = *( _OWORD *)arg0; 
+         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/set_mem_offset/src/emit-rtl.c:2452:1: error: use of undeclared identifier 'v16'; did you mean 'v14'?
+v16[1] = v19; 
+^~~
+v14
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/set_mem_offset/src/emit-rtl.c:2373:7: note: 'v14' declared here
+void *v14; // rax 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/set_mem_offset/src/emit-rtl.c:2452:8: error: incomplete type 'void' is not assignable
+v16[1] = v19; 
+~~~~~~ ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/set_mem_offset/src/emit-rtl.c:2453:2: error: use of undeclared identifier 'v16'; did you mean 'v14'?
+*v16 = v17; 
+ ^~~
+ v14
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/set_mem_offset/src/emit-rtl.c:2373:7: note: 'v14' declared here
+void *v14; // rax 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/set_mem_offset/src/emit-rtl.c:2453:6: error: incomplete type 'void' is not assignable
+*v16 = v17; 
+~~~~ ^
+13 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/set_mem_offset/src/obj/emit-rtl.o] Error 1

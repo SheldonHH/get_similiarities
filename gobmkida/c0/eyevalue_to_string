@@ -1,0 +1,23 @@
+/data/output_dir/patch/gobmk/ida/clang/O0/gobmk-clang-O0/eyevalue_to_string/src/engine/optics.c:2344:14: error: use of undeclared identifier 'eyevalue_to_string_result'; did you mean 'eyevalue_to_string'?
+gg_snprintf( eyevalue_to_string_result, 0x1DuLL, "[%d, %d, %d, %d]", e->a, e->b, e->c, d); 
+             ^~~~~~~~~~~~~~~~~~~~~~~~~
+             eyevalue_to_string
+/data/output_dir/patch/gobmk/ida/clang/O0/gobmk-clang-O0/eyevalue_to_string/src/engine/optics.c:2336:8: note: 'eyevalue_to_string' declared here
+char * eyevalue_to_string( struct eyevalue *e) 
+       ^
+/data/output_dir/patch/gobmk/ida/clang/O0/gobmk-clang-O0/eyevalue_to_string/src/engine/optics.c:2349:14: error: use of undeclared identifier 'eyevalue_to_string_result'; did you mean 'eyevalue_to_string'?
+gg_snprintf( eyevalue_to_string_result, 0x1DuLL, "%d%d%d%d", e->a, e->b, e->c, v2); 
+             ^~~~~~~~~~~~~~~~~~~~~~~~~
+             eyevalue_to_string
+/data/output_dir/patch/gobmk/ida/clang/O0/gobmk-clang-O0/eyevalue_to_string/src/engine/optics.c:2336:8: note: 'eyevalue_to_string' declared here
+char * eyevalue_to_string( struct eyevalue *e) 
+       ^
+/data/output_dir/patch/gobmk/ida/clang/O0/gobmk-clang-O0/eyevalue_to_string/src/engine/optics.c:2351:8: error: use of undeclared identifier 'eyevalue_to_string_result'; did you mean 'eyevalue_to_string'?
+return eyevalue_to_string_result; 
+       ^~~~~~~~~~~~~~~~~~~~~~~~~
+       eyevalue_to_string
+/data/output_dir/patch/gobmk/ida/clang/O0/gobmk-clang-O0/eyevalue_to_string/src/engine/optics.c:2336:8: note: 'eyevalue_to_string' declared here
+char * eyevalue_to_string( struct eyevalue *e) 
+       ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gobmk/ida/clang/O0/gobmk-clang-O0/eyevalue_to_string/src/obj/1/optics.o] Error 1

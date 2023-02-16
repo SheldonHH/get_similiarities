@@ -1,0 +1,35 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/vasprintf/src/vasprintf.c:617:6: error: conflicting types for 'vasprintf'
+int  vasprintf( char **result, const char *format,  struct __va_list_tag *args) 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/vasprintf/src/libiberty.h:283:12: note: previous declaration is here
+extern int vasprintf PARAMS ((char **, const char *, va_list))
+           ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/vasprintf/src/vasprintf.c:643:30: error: incomplete definition of type 'struct __va_list_tag'
+reg_save_area = ( char *)args->reg_save_area; 
+                         ~~~~^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/vasprintf/src/vasprintf.c:617:60: note: forward declaration of 'struct __va_list_tag'
+int  vasprintf( char **result, const char *format,  struct __va_list_tag *args) 
+                                                           ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/vasprintf/src/vasprintf.c:644:13: error: expected identifier or '('
+ struct arg = args; 
+            ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/vasprintf/src/vasprintf.c:645:18: error: expected expression
+v21 = *( _OWORD *)&args->gp_offset; 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/vasprintf/src/vasprintf.c:645:10: error: use of undeclared identifier '_OWORD'
+v21 = *( _OWORD *)&args->gp_offset; 
+         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/vasprintf/src/vasprintf.c:645:24: error: incomplete definition of type 'struct __va_list_tag'
+v21 = *( _OWORD *)&args->gp_offset; 
+                   ~~~~^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/vasprintf/src/vasprintf.c:617:60: note: forward declaration of 'struct __va_list_tag'
+int  vasprintf( char **result, const char *format,  struct __va_list_tag *args) 
+                                                           ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/vasprintf/src/vasprintf.c:718:15: error: use of undeclared identifier 'unk_71F3A8'
+if ( memchr( &unk_71F3A8, v16, 4uLL) ) 
+              ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/vasprintf/src/vasprintf.c:722:18: error: use of undeclared identifier 'unk_71F3A8'
+while ( memchr( &unk_71F3A8, v16, 4uLL) ); 
+                 ^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/vasprintf/src/obj/vasprintf.o] Error 1

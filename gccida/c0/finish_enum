@@ -1,0 +1,30 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/finish_enum/src/c-decl.c:6474:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *value; // [rsp+18h] [rbp-58h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/finish_enum/src/c-decl.c:6478:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *enum_value_type; // [rsp+30h] [rbp-40h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/finish_enum/src/c-decl.c:6479:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *maxnode; // [rsp+38h] [rbp-38h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/finish_enum/src/c-decl.c:6480:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *minnode; // [rsp+40h] [rbp-30h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/finish_enum/src/c-decl.c:6493:24: error: expected expression
+maxnode = ( tree_node *)*( &global_trees + 11); 
+                       ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/finish_enum/src/c-decl.c:6493:13: error: use of undeclared identifier 'tree_node'
+maxnode = ( tree_node *)*( &global_trees + 11); 
+            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/finish_enum/src/c-decl.c:6494:24: error: expected expression
+minnode = ( tree_node *)*( &global_trees + 11); 
+                       ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/finish_enum/src/c-decl.c:6494:13: error: use of undeclared identifier 'tree_node'
+minnode = ( tree_node *)*( &global_trees + 11); 
+            ^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/finish_enum/src/obj/c-decl.o] Error 1

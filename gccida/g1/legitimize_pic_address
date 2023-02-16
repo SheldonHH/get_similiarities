@@ -1,0 +1,72 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/legitimize_pic_address/src/i386.c:5472:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v6; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/legitimize_pic_address/src/i386.c:5482:4: error: expected ';' after expression
+rtx v16; // rbx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/legitimize_pic_address/src/i386.c:5482:5: error: use of undeclared identifier 'v16'
+rtx v16; // rbx 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/legitimize_pic_address/src/i386.c:5486:4: error: expected ';' after expression
+rtx v20; // rbx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/legitimize_pic_address/src/i386.c:5486:5: error: use of undeclared identifier 'v20'
+rtx v20; // rbx 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/legitimize_pic_address/src/i386.c:5496:4: error: expected ';' after expression
+rtx v31; // rbx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/legitimize_pic_address/src/i386.c:5496:5: error: use of undeclared identifier 'v31'
+rtx v31; // rbx 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/legitimize_pic_address/src/i386.c:5512:33: error: use of undeclared identifier 'machine_mode'
+v29 = gen_rtx_fmt_Ei( UNSPEC, ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), v28, 15); 
+                                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/legitimize_pic_address/src/i386.c:5513:31: error: use of undeclared identifier 'machine_mode'
+v30 = gen_rtx_fmt_e( CONST, ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), v29); 
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/legitimize_pic_address/src/i386.c:5514:22: error: use of undeclared identifier 'machine_mode'
+v31 = gen_rtx_MEM( ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), v30); 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/legitimize_pic_address/src/i386.c:5514:1: error: use of undeclared identifier 'v31'
+v31 = gen_rtx_MEM( ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), v30); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/legitimize_pic_address/src/i386.c:5515:14: error: use of undeclared identifier 'v31'
+*( ( _BYTE *)v31 + 3) |= 4u; 
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/legitimize_pic_address/src/i386.c:5516:6: error: use of undeclared identifier 'set_31'; did you mean 'set_of'?
+if ( set_31 == -1 ) 
+     ^~~~~~
+     set_of
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/legitimize_pic_address/src/rtl.h:1478:12: note: 'set_of' declared here
+extern rtx set_of                       PARAMS ((rtx, rtx));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/legitimize_pic_address/src/i386.c:5517:1: error: use of undeclared identifier 'set_31'
+set_31 = new_alias_set( ); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/legitimize_pic_address/src/i386.c:5518:20: error: use of undeclared identifier 'v31'
+set_mem_alias_set( v31, set_31); 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/legitimize_pic_address/src/i386.c:5518:25: error: use of undeclared identifier 'set_31'; did you mean 'set_of'?
+set_mem_alias_set( v31, set_31); 
+                        ^~~~~~
+                        set_of
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/legitimize_pic_address/src/rtl.h:1478:12: note: 'set_of' declared here
+extern rtx set_of                       PARAMS ((rtx, rtx));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/legitimize_pic_address/src/i386.c:5520:21: error: use of undeclared identifier 'machine_mode'
+v3 = gen_reg_rtx( ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4)); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/legitimize_pic_address/src/i386.c:5521:22: error: use of undeclared identifier 'v31'
+v32 = gen_movsi( v3, v31); 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/legitimize_pic_address/src/i386.c:5532:32: error: use of undeclared identifier 'machine_mode'
+v9 = gen_rtx_fmt_Ei( UNSPEC, ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), v8, 7); 
+                               ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/legitimize_pic_address/src/obj/i386.o] Error 1

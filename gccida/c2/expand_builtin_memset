@@ -1,0 +1,41 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_builtin_memset/src/builtins.c:2601:51: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  expand_builtin_memset( tree exp, rtx target, machine_mode mode) 
+                                                  ^
+                                                  enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_builtin_memset/src/builtins.c:2604:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *imag; // rbp 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_builtin_memset/src/builtins.c:2606:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *elements; // r15 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_builtin_memset/src/builtins.c:2608:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v9; // r12 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_builtin_memset/src/builtins.c:2616:4: error: expected ';' after expression
+rtx v18; // r14 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_builtin_memset/src/builtins.c:2616:5: error: use of undeclared identifier 'v18'
+rtx v18; // r14 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_builtin_memset/src/builtins.c:2656:1: error: use of undeclared identifier 'v18'
+v18 = get_memory_rtx( elements); 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_builtin_memset/src/builtins.c:2657:16: error: use of undeclared identifier 'v18'
+set_mem_align( v18, v11); 
+               ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_builtin_memset/src/builtins.c:2658:21: error: use of undeclared identifier 'v18'
+v6 = clear_storage( v18, v17); 
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_builtin_memset/src/builtins.c:2661:7: error: use of undeclared identifier 'v18'; did you mean 'v17'?
+rtx = v18->fld[0].rtx; 
+      ^~~
+      v17
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_builtin_memset/src/builtins.c:2615:18: note: 'v17' declared here
+ struct rtx_def *v17; // rbx 
+                 ^
+10 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_builtin_memset/src/obj/builtins.o] Error 1

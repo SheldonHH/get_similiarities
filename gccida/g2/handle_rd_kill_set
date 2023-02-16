@@ -1,0 +1,37 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/handle_rd_kill_set/src/gcse.c:3431:1: error: use of undeclared identifier 'reg_set_0'; did you mean 'reg_set_p'?
+reg_set_0 *v3; // rax 
+^~~~~~~~~
+reg_set_p
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/handle_rd_kill_set/src/rtl.h:1469:12: note: 'reg_set_p' declared here
+extern int reg_set_p                    PARAMS ((rtx, rtx));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/handle_rd_kill_set/src/gcse.c:3431:12: error: use of undeclared identifier 'v3'
+reg_set_0 *v3; // rax 
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/handle_rd_kill_set/src/gcse.c:3439:1: error: use of undeclared identifier 'v3'
+v3 = reg_set_table[regno]; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/handle_rd_kill_set/src/gcse.c:3440:6: error: use of undeclared identifier 'v3'
+if ( v3 ) 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/handle_rd_kill_set/src/gcse.c:3444:6: error: use of undeclared identifier 'uid_cuid_1'; did you mean 'uid_cuid'?
+v8 = uid_cuid_1; 
+     ^~~~~~~~~~
+     uid_cuid
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/handle_rd_kill_set/src/gcse.c:383:13: note: 'uid_cuid' declared here
+static int *uid_cuid;
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/handle_rd_kill_set/src/gcse.c:3448:9: error: use of undeclared identifier 'v3'
+rtint = v3->insn->fld[0].rtint; 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/handle_rd_kill_set/src/gcse.c:3454:1: error: use of undeclared identifier 'v3'
+v3 = v3->next; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/handle_rd_kill_set/src/gcse.c:3454:6: error: use of undeclared identifier 'v3'
+v3 = v3->next; 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/handle_rd_kill_set/src/gcse.c:3456:9: error: use of undeclared identifier 'v3'
+while ( v3 ); 
+        ^
+9 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/handle_rd_kill_set/src/obj/gcse.o] Error 1

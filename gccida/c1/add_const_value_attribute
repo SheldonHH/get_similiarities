@@ -1,0 +1,39 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/add_const_value_attribute/src/dwarf2out.c:9129:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v8.rtwint = ( __int64)rtl->fld[0]; 
+                      ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/add_const_value_attribute/src/dwarf2out.c:9137:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[( unsigned __int8)v5] != MODE_FLOAT ) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/add_const_value_attribute/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/add_const_value_attribute/src/dwarf2out.c:9143:20: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+r.r[2] = ( __int64)rtl[2]; 
+                   ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/add_const_value_attribute/src/dwarf2out.c:9146:14: error: passing 'long long *' to parameter of incompatible type 'realvaluetype'
+etartdouble( v7, r); 
+             ^~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/add_const_value_attribute/src/real.h:162:50: note: passing argument to parameter here
+extern void etartdouble         PARAMS ((REAL_VALUE_TYPE, long *));
+                                                        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/add_const_value_attribute/src/dwarf2out.c:9148:14: error: passing 'long long *' to parameter of incompatible type 'realvaluetype'
+etarldouble( v7, r); 
+             ^~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/add_const_value_attribute/src/real.h:163:50: note: passing argument to parameter here
+extern void etarldouble         PARAMS ((REAL_VALUE_TYPE, long *));
+                                                        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/add_const_value_attribute/src/dwarf2out.c:9152:21: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+rb.r[2] = ( __int64)rtl[2]; 
+                    ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/add_const_value_attribute/src/dwarf2out.c:9154:13: error: passing 'long long *' to parameter of incompatible type 'realvaluetype'
+etardouble( v7, rb); 
+            ^~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/add_const_value_attribute/src/real.h:164:49: note: passing argument to parameter here
+extern void etardouble          PARAMS ((REAL_VALUE_TYPE, long *));
+                                                        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/add_const_value_attribute/src/dwarf2out.c:9160:21: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+ra.r[2] = ( __int64)rtl[2]; 
+                    ^~~~~~
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/add_const_value_attribute/src/obj/dwarf2out.o] Error 1

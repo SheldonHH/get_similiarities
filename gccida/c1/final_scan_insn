@@ -1,0 +1,82 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/final_scan_insn/src/final.c:2281:10: error: conflicting types for 'final_scan_insn'
+rtunion  final_scan_insn( rtx insn, FILE *file, __int64 optimize, int prescan, int nopeepholes) 
+         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/final_scan_insn/src/output.h:76:12: note: previous declaration is here
+extern rtx final_scan_insn      PARAMS ((rtx, FILE *, int, int, int));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/final_scan_insn/src/final.c:2361:8: error: use of undeclared identifier 'debug_info_level_0'; did you mean 'debug_info_level'?
+if ( ( debug_info_level_0 & 0xFFFFFFFE) == 2 
+       ^~~~~~~~~~~~~~~~~~
+       debug_info_level
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/final_scan_insn/src/flags.h:53:30: note: 'debug_info_level' declared here
+extern enum debug_info_level debug_info_level;
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/final_scan_insn/src/final.c:2373:8: error: use of undeclared identifier 'debug_info_level_0'; did you mean 'debug_info_level'?
+if ( ( debug_info_level_0 & 0xFFFFFFFE) == 2 
+       ^~~~~~~~~~~~~~~~~~
+       debug_info_level
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/final_scan_insn/src/flags.h:53:30: note: 'debug_info_level' declared here
+extern enum debug_info_level debug_info_level;
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/final_scan_insn/src/final.c:2410:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v37.rtwint = ( __int64)insn[1].fld[0]; 
+                       ^~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/final_scan_insn/src/final.c:2452:15: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v16 = ( int *)insn[2]; 
+              ^~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/final_scan_insn/src/final.c:2532:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v6.rtwint = ( __int64)v46[1].fld[0]; 
+                      ^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/final_scan_insn/src/final.c:2546:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v29 = (  struct rtx_def *)insn[2]; 
+                          ^~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/final_scan_insn/src/final.c:2558:29: error: too many arguments provided to function-like macro invocation
+fatal_insn_not_found( insn, "final.c", 2551, "final_scan_insn"); 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/final_scan_insn/src/toplev.h:52:9: note: macro 'fatal_insn_not_found' defined here
+#define fatal_insn_not_found(insn) \
+        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/final_scan_insn/src/final.c:2558:1: error: use of undeclared identifier 'fatal_insn_not_found'; did you mean '_fatal_insn_not_found'?
+fatal_insn_not_found( insn, "final.c", 2551, "final_scan_insn"); 
+^~~~~~~~~~~~~~~~~~~~
+_fatal_insn_not_found
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/final_scan_insn/src/toplev.h:40:13: note: '_fatal_insn_not_found' declared here
+extern void _fatal_insn_not_found       PARAMS ((struct rtx_def *,
+            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/final_scan_insn/src/final.c:2577:13: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v43 = ( rtx)v43[1]; 
+            ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/final_scan_insn/src/final.c:2589:41: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+if ( v47 == insn && (  struct rtx_def *)v47[2] == v29 ) 
+                                        ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/final_scan_insn/src/final.c:2590:43: error: too many arguments provided to function-like macro invocation
+fatal_insn( "could not split insn", insn, "final.c", 2622, "final_scan_insn"); 
+                                          ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/final_scan_insn/src/toplev.h:50:9: note: macro 'fatal_insn' defined here
+#define fatal_insn(msgid, insn) \
+        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/final_scan_insn/src/final.c:2590:1: error: use of undeclared identifier 'fatal_insn'; did you mean '_fatal_insn'?
+fatal_insn( "could not split insn", insn, "final.c", 2622, "final_scan_insn"); 
+^~~~~~~~~~
+_fatal_insn
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/final_scan_insn/src/toplev.h:44:13: note: '_fatal_insn' declared here
+extern void _fatal_insn                 PARAMS ((const char *,
+            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/final_scan_insn/src/final.c:2595:33: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+output_asm_insn( insn_template, recog_data_0.operand); 
+                                ^~~~~~~~~~~~
+                                recog_data
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/final_scan_insn/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/final_scan_insn/src/final.c:2640:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v14 = ( __int64)insn[3]; 
+                ^~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/final_scan_insn/src/final.c:2671:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v26.rtwint = ( __int64)insn[1].fld[0]; 
+                       ^~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/final_scan_insn/src/final.c:2688:22: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v27 = ( const char *)insn[4]; 
+                     ^~~~~~~
+17 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/final_scan_insn/src/obj/final.o] Error 1

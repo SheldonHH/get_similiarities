@@ -1,0 +1,48 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/simplify_replace_rtx/src/simplify-rtx.c:718:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v4; // r13d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/simplify_replace_rtx/src/simplify-rtx.c:719:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v5; // r15d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/simplify_replace_rtx/src/simplify-rtx.c:723:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v10; // r14d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/simplify_replace_rtx/src/simplify-rtx.c:728:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v15; // r10d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/simplify_replace_rtx/src/simplify-rtx.c:733:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v20; // r14d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/simplify_replace_rtx/src/simplify-rtx.c:740:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v27; // r13d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/simplify_replace_rtx/src/simplify-rtx.c:745:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode op0_mode; // [rsp+Ch] [rbp-3Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/simplify_replace_rtx/src/simplify-rtx.c:755:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v19.rtwint = ( __int64)x->fld[0]; 
+                       ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/simplify_replace_rtx/src/simplify-rtx.c:788:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v9.rtwint = ( __int64)x->fld[0]; 
+                      ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/simplify_replace_rtx/src/simplify-rtx.c:806:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v12.rtwint = ( __int64)x->fld[0]; 
+                       ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/simplify_replace_rtx/src/simplify-rtx.c:835:22: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v25 = ( unsigned int)x[1]; 
+                     ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/simplify_replace_rtx/src/simplify-rtx.c:836:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v26.rtwint = ( __int64)x->fld[0]; 
+                       ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/simplify_replace_rtx/src/simplify-rtx.c:839:33: error: use of undeclared identifier 'machine_mode'
+result = simplify_gen_subreg( ( machine_mode)*( ( unsigned __int8 *)x + 2), v28, v27, v25); 
+                                ^
+13 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/simplify_replace_rtx/src/obj/simplify-rtx.o] Error 1

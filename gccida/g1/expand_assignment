@@ -1,0 +1,45 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_assignment/src/expr.c:4101:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *inner_reference; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_assignment/src/expr.c:4111:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v16; // rcx 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_assignment/src/expr.c:4115:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v20; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_assignment/src/expr.c:4137:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode1; // [rsp+1Ch] [rbp-5Ch] BYREF 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_assignment/src/expr.c:4176:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v19 = ( __int64)v9[1]; 
+                ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_assignment/src/expr.c:4219:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( ( BYTE5( to->common.type->block.abstract_origin) >> 1) & 0x7F), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_assignment/src/expr.c:4227:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( BYTE5( to->common.type->block.abstract_origin) >> 1), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_assignment/src/expr.c:4228:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( BYTE5( from->common.type->block.abstract_origin) >> 1), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_assignment/src/expr.c:4243:20: error: expected expression
+v20 = ( tree_node *)v14[1]; 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_assignment/src/expr.c:4243:9: error: use of undeclared identifier 'tree_node'
+v20 = ( tree_node *)v14[1]; 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_assignment/src/expr.c:4249:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v21 = ( __int64)v14[1]; 
+                ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_assignment/src/expr.c:4343:33: error: use of undeclared identifier 'machine_mode'
+v34 = expand_expr( from, 0LL, ( machine_mode)*( ( unsigned __int8 *)v18 + 2), EXPAND_NORMAL); 
+                                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_assignment/src/expr.c:4378:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( BYTE5( sizetype_tab[0]->block.abstract_origin) >> 1), 
+  ^
+13 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_assignment/src/obj/expr.o] Error 1

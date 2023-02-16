@@ -1,0 +1,34 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/fcmov_comparison_operator/src/i386.c:3765:41: error: must use 'enum' tag to refer to type 'machine_mode'
+int  fcmov_comparison_operator( rtx op, machine_mode mode) 
+                                        ^
+                                        enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/fcmov_comparison_operator/src/i386.c:3776:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code first_code; // [rsp+4h] [rbp-14h] BYREF 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/fcmov_comparison_operator/src/i386.c:3777:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code bypass_code; // [rsp+8h] [rbp-10h] BYREF 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/fcmov_comparison_operator/src/i386.c:3778:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code second_code[3]; // [rsp+Ch] [rbp-Ch] BYREF 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/fcmov_comparison_operator/src/i386.c:3796:29: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+ix86_fp_comparison_codes( ( rtx_code)v4, &bypass_code, &first_code, second_code); 
+                            ^~~~~~~~
+                            rtx_cost
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/fcmov_comparison_operator/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/fcmov_comparison_operator/src/i386.c:3796:38: error: expected ')'
+ix86_fp_comparison_codes( ( rtx_code)v4, &bypass_code, &first_code, second_code); 
+                                     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/fcmov_comparison_operator/src/i386.c:3796:25: note: to match this '('
+ix86_fp_comparison_codes( ( rtx_code)v4, &bypass_code, &first_code, second_code); 
+                        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/fcmov_comparison_operator/src/i386.c:3816:24: error: subscripted value is not an array, pointer, or vector
+return *(int *)0x63976C[( char)v11]; 
+               ~~~~~~~~^~~~~~~~~~~
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/fcmov_comparison_operator/src/obj/i386.o] Error 1

@@ -1,0 +1,14 @@
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/next_rand/src/utils/random.c:576:41: error: use of undeclared identifier 'xmmword_557150'
+v3 = _mm_load_si128( ( const __m128i *)&xmmword_557150); 
+                                        ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/next_rand/src/utils/random.c:594:1: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'long long' of different size
+( __m128i)0LL, 
+^~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/next_rand/src/utils/random.c:595:65: error: use of undeclared identifier 'xmmword_557160'
+_mm_and_si128( _mm_shuffle_epi32( ( __m128i)v4, 233), ( __m128i)xmmword_557160)), 
+                                                                ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/next_rand/src/utils/random.c:596:11: error: use of undeclared identifier 'xmmword_557170'
+( __m128i)xmmword_557170); 
+          ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/next_rand/src/obj/5/random.o] Error 1

@@ -1,0 +1,15 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/emit_move_insn/src/expr.c:3224:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // [rsp+2Ch] [rbp-4h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/emit_move_insn/src/expr.c:3232:27: error: use of undeclared identifier 'machine_mode'
+&& ( !memory_address_p( ( machine_mode)*( ( unsigned __int8 *)xa + 2), xa->fld[0].rtx) 
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/emit_move_insn/src/expr.c:3233:25: error: use of undeclared identifier 'machine_mode'
+&& !push_operand( xa, ( machine_mode)*( ( unsigned __int8 *)xa + 2)) 
+                        ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/emit_move_insn/src/expr.c:3244:27: error: use of undeclared identifier 'machine_mode'
+&& ( !memory_address_p( ( machine_mode)*( ( unsigned __int8 *)ya + 2), ya->fld[0].rtx) 
+                          ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/emit_move_insn/src/obj/expr.o] Error 1

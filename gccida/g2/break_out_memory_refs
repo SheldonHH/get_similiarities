@@ -1,0 +1,22 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/break_out_memory_refs/src/explow.c:789:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v4; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/break_out_memory_refs/src/explow.c:824:49: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+if ( x->fld[0].rtx == v6 && (  struct rtx_def *)x[1] == v7 ) 
+                                                ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/break_out_memory_refs/src/explow.c:826:26: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+return gen_rtx_fmt_ee( ( rtx_code)*( _WORD *)x, ( machine_mode)( ( ( BYTE3( target_flags) & 2) != 0) + 4), v6, v7); 
+                         ^~~~~~~~
+                         rtx_cost
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/break_out_memory_refs/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/break_out_memory_refs/src/explow.c:826:35: error: invalid operands to binary expression ('int (rtx, enum rtx_code)' (aka 'int (struct rtx_def *, enum rtx_code)') and 'uint16 *' (aka 'unsigned short *'))
+return gen_rtx_fmt_ee( ( rtx_code)*( _WORD *)x, ( machine_mode)( ( ( BYTE3( target_flags) & 2) != 0) + 4), v6, v7); 
+                       ~~~~~~~~~~~^~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/break_out_memory_refs/src/explow.c:826:51: error: use of undeclared identifier 'machine_mode'
+return gen_rtx_fmt_ee( ( rtx_code)*( _WORD *)x, ( machine_mode)( ( ( BYTE3( target_flags) & 2) != 0) + 4), v6, v7); 
+                                                  ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/break_out_memory_refs/src/obj/explow.o] Error 1

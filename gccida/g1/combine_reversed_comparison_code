@@ -1,0 +1,30 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/combine_reversed_comparison_code/src/combine.c:11542:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code  combine_reversed_comparison_code( rtx exp) 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/combine_reversed_comparison_code/src/combine.c:11544:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v2; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/combine_reversed_comparison_code/src/combine.c:11551:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v3.rtwint = ( __int64)exp->fld[0]; 
+                      ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/combine_reversed_comparison_code/src/combine.c:11552:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[*( unsigned __int8 *)( v3.rtwint + 2)] == MODE_CC ) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/combine_reversed_comparison_code/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/combine_reversed_comparison_code/src/combine.c:11559:3: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+( rtx_code)*( _WORD *)exp, 
+  ^~~~~~~~
+  rtx_cost
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/combine_reversed_comparison_code/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/combine_reversed_comparison_code/src/combine.c:11559:12: error: invalid operands to binary expression ('int (rtx, enum rtx_code)' (aka 'int (struct rtx_def *, enum rtx_code)') and 'uint16 *' (aka 'unsigned short *'))
+( rtx_code)*( _WORD *)exp, 
+~~~~~~~~~~~^~~~~~~~~~~~~~
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/combine_reversed_comparison_code/src/obj/combine.o] Error 1

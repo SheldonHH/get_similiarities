@@ -1,0 +1,59 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/copy_insn_1/src/emit-rtl.c:5142:6: error: expected ';' after expression
+rtvec v12; // rax 
+     ^
+     ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/copy_insn_1/src/emit-rtl.c:5142:7: error: use of undeclared identifier 'v12'; did you mean 'v2'?
+rtvec v12; // rax 
+      ^~~
+      v2
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/copy_insn_1/src/emit-rtl.c:5132:5: note: 'v2' declared here
+int v2; // r13d 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/copy_insn_1/src/emit-rtl.c:5145:4: error: expected ';' after expression
+rtx result; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/copy_insn_1/src/emit-rtl.c:5145:5: error: use of undeclared identifier 'result'
+rtx result; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/copy_insn_1/src/emit-rtl.c:5165:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v3.rtwint = ( __int64)orig->fld[0]; 
+                      ^~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/copy_insn_1/src/emit-rtl.c:5185:19: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+v4 = rtx_alloc( ( rtx_code)*( _WORD *)orig); 
+                  ^~~~~~~~
+                  rtx_cost
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/copy_insn_1/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/copy_insn_1/src/emit-rtl.c:5185:28: error: invalid operands to binary expression ('int (rtx, enum rtx_code)' (aka 'int (struct rtx_def *, enum rtx_code)') and 'uint16 *' (aka 'unsigned short *'))
+v4 = rtx_alloc( ( rtx_code)*( _WORD *)orig); 
+                ~~~~~~~~~~~^~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/copy_insn_1/src/emit-rtl.c:5223:1: error: use of undeclared identifier 'v12'
+v12 = rtvec_alloc( rtvec->num_elem); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/copy_insn_1/src/emit-rtl.c:5224:32: error: use of undeclared identifier 'v12'
+v4->fld[v8].rtwint = ( __int64)v12; 
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/copy_insn_1/src/emit-rtl.c:5225:15: error: use of undeclared identifier 'v12'
+p_num_elem = &v12->num_elem; 
+              ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/copy_insn_1/src/emit-rtl.c:5226:6: error: use of undeclared identifier 'v12'
+if ( v12->num_elem > 0 ) 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/copy_insn_1/src/emit-rtl.c:5232:61: error: expected expression
+*( _QWORD *)&p_num_elem[2 * v14 + 2] = copy_insn_1( *( rtx *)( orig->fld[v8].rtwint + 8LL * v14 + 8)); 
+                                                            ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/copy_insn_1/src/emit-rtl.c:5247:8: error: use of undeclared identifier 'result'
+return result; 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/copy_insn_1/src/emit-rtl.c:5263:36: error: expected ';' after expression
+orig_asm_operands_vector = ( rtvec)orig[2]; 
+                                   ^
+                                   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/copy_insn_1/src/emit-rtl.c:5264:36: error: expected ';' after expression
+copy_asm_operands_vector = ( rtvec)v4[2]; 
+                                   ^
+                                   ;
+15 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/copy_insn_1/src/obj/emit-rtl.o] Error 1

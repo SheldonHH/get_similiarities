@@ -1,0 +1,17 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/mark_reload_reg_in_use/src/reload1.c:4659:62: error: must use 'enum' tag to refer to type 'reload_type'
+void  mark_reload_reg_in_use( unsigned int regno, int opnum, reload_type type, machine_mode mode) 
+                                                             ^
+                                                             enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/mark_reload_reg_in_use/src/reload1.c:4659:80: error: must use 'enum' tag to refer to type 'machine_mode'
+void  mark_reload_reg_in_use( unsigned int regno, int opnum, reload_type type, machine_mode mode) 
+                                                                               ^
+                                                                               enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/mark_reload_reg_in_use/src/reload1.c:4683:25: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v8 = ( ( unsigned int)( mode_class_0[mode] - 5) < 2) + 1; 
+                        ^~~~~~~~~~~~
+                        mode_class
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/mark_reload_reg_in_use/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/mark_reload_reg_in_use/src/obj/reload1.o] Error 1

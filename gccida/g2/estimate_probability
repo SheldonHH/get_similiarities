@@ -1,0 +1,86 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/estimate_probability/src/predict.c:896:4: error: expected ';' after expression
+rtx v111; // [rsp+10h] [rbp-78h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/estimate_probability/src/predict.c:896:5: error: use of undeclared identifier 'v111'
+rtx v111; // [rsp+10h] [rbp-78h] 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/estimate_probability/src/predict.c:897:4: error: expected ';' after expression
+rtx reg_note; // [rsp+18h] [rbp-70h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/estimate_probability/src/predict.c:897:5: error: must use 'enum' tag to refer to type 'reg_note'
+rtx reg_note; // [rsp+18h] [rbp-70h] 
+    ^
+    enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/estimate_probability/src/predict.c:904:4: error: expected ';' after expression
+rtx earliest; // [rsp+48h] [rbp-40h] BYREF 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/estimate_probability/src/predict.c:904:5: error: use of undeclared identifier 'earliest'
+rtx earliest; // [rsp+48h] [rbp-40h] BYREF 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/estimate_probability/src/predict.c:1009:1: error: use of undeclared identifier 'v111'
+v111 = ( rtx)v87; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/estimate_probability/src/predict.c:1014:17: error: use of undeclared identifier 'v111'
+v87 = ( __int64)v111; 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/estimate_probability/src/predict.c:1018:17: error: use of undeclared identifier 'v111'
+v87 = ( __int64)v111; 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/estimate_probability/src/predict.c:1074:34: error: use of undeclared identifier 'earliest'
+condition = get_condition( v14, &earliest); 
+                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/estimate_probability/src/predict.c:1103:25: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v102.rtwint = ( __int64)condition->fld[0]; 
+                        ^~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/estimate_probability/src/predict.c:1104:8: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( ( mode_class_0[*( unsigned __int8 *)( v102.rtwint + 2)] & 0xFFFFFFFB) != 2 
+       ^~~~~~~~~~~~
+       mode_class
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/estimate_probability/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/estimate_probability/src/predict.c:1105:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& mode_class_0[*( unsigned __int8 *)( v102.rtwint + 2)] != MODE_VECTOR_FLOAT 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/estimate_probability/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/estimate_probability/src/predict.c:1106:10: error: expected ')'
+&& ( rtx)condition[1] != const_int_rtx[64] 
+         ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/estimate_probability/src/predict.c:1104:4: note: to match this '('
+if ( ( mode_class_0[*( unsigned __int8 *)( v102.rtwint + 2)] & 0xFFFFFFFB) != 2 
+   ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/estimate_probability/src/predict.c:1114:25: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v101.rtwint = ( __int64)condition->fld[0]; 
+                        ^~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/estimate_probability/src/predict.c:1115:8: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( ( mode_class_0[*( unsigned __int8 *)( v101.rtwint + 2)] & 0xFFFFFFFB) != 2 
+       ^~~~~~~~~~~~
+       mode_class
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/estimate_probability/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/estimate_probability/src/predict.c:1116:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& mode_class_0[*( unsigned __int8 *)( v101.rtwint + 2)] != MODE_VECTOR_FLOAT 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/estimate_probability/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/estimate_probability/src/predict.c:1117:10: error: expected ')'
+&& ( rtx)condition[1] != const_int_rtx[64] 
+         ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/estimate_probability/src/predict.c:1115:4: note: to match this '('
+if ( ( mode_class_0[*( unsigned __int8 *)( v101.rtwint + 2)] & 0xFFFFFFFB) != 2 
+   ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/estimate_probability/src/predict.c:1125:28: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v100 = (  struct rtx_def *)condition[1]; 
+                           ^~~~~~~~~~~~
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/estimate_probability/src/obj/predict.o] Error 1

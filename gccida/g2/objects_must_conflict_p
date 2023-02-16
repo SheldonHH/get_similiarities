@@ -1,0 +1,12 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/objects_must_conflict_p/src/alias.c:785:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v11; // rsi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/objects_must_conflict_p/src/alias.c:798:17: error: expected expression
+if ( *( _OWORD *)&t1 == 0LL ) 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/objects_must_conflict_p/src/alias.c:798:9: error: use of undeclared identifier '_OWORD'
+if ( *( _OWORD *)&t1 == 0LL ) 
+        ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/objects_must_conflict_p/src/obj/alias.o] Error 1

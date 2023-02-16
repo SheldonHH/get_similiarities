@@ -1,0 +1,61 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/legitimize_address/src/i386.c:5623:43: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  legitimize_address( rtx x, rtx oldx, machine_mode mode) 
+                                          ^
+                                          enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/legitimize_address/src/i386.c:5687:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v16 = ( __int64)x[1]; 
+                ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/legitimize_address/src/i386.c:5695:20: error: use of undeclared identifier 'machine_mode'
+v20 = force_reg( ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), x->fld[0].rtx); 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/legitimize_address/src/i386.c:5696:30: error: use of undeclared identifier 'machine_mode'
+v3 = gen_rtx_fmt_ee( MULT, ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), v20, v19); 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/legitimize_address/src/i386.c:5703:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v7.rtwint = ( __int64)v3->fld[0]; 
+                      ^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/legitimize_address/src/i386.c:5713:20: error: use of undeclared identifier 'machine_mode'
+v24 = force_reg( ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), *( rtx *)( v3->fld[0].rtwint + 8)); 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/legitimize_address/src/i386.c:5713:85: error: expected expression
+v24 = force_reg( ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), *( rtx *)( v3->fld[0].rtwint + 8)); 
+                                                                                    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/legitimize_address/src/i386.c:5716:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/legitimize_address/src/i386.c:5723:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v8 = ( __int64)v3[1]; 
+               ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/legitimize_address/src/i386.c:5733:20: error: use of undeclared identifier 'machine_mode'
+v28 = force_reg( ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), *( rtx *)( *( _QWORD *)&v3[1] + 8LL)); 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/legitimize_address/src/i386.c:5733:85: error: expected expression
+v28 = force_reg( ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), *( rtx *)( *( _QWORD *)&v3[1] + 8LL)); 
+                                                                                    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/legitimize_address/src/i386.c:5734:46: error: use of undeclared identifier 'machine_mode'
+*( _QWORD *)&v3[1] = gen_rtx_fmt_ee( MULT, ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), v28, v27); 
+                                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/legitimize_address/src/i386.c:5738:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v9 = ( _WORD *)v3[1]; 
+               ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/legitimize_address/src/i386.c:5741:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v29.rtwint = ( __int64)v3->fld[0]; 
+                       ^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/legitimize_address/src/i386.c:5747:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v10.rtwint = ( __int64)v3->fld[0]; 
+                       ^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/legitimize_address/src/i386.c:5750:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v30 = ( __int64)v3[1]; 
+                ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/legitimize_address/src/i386.c:5754:31: error: use of undeclared identifier 'machine_mode'
+v32 = gen_rtx_fmt_ee( PLUS, ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), v10.rtx, *( rtx *)( v30 + 8)); 
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/legitimize_address/src/i386.c:5754:105: error: expected expression
+v32 = gen_rtx_fmt_ee( PLUS, ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), v10.rtx, *( rtx *)( v30 + 8)); 
+                                                                                                        ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/legitimize_address/src/i386.c:5755:30: error: use of undeclared identifier 'machine_mode'
+v3 = gen_rtx_fmt_ee( PLUS, ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), v32, v31); 
+                             ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/legitimize_address/src/obj/i386.o] Error 1

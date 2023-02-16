@@ -1,0 +1,36 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/c_alignof_expr/src/c-common.c:2902:1: error: must use 'enum' tag to refer to type 'built_in_function'
+built_in_function f; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/c_alignof_expr/src/c-common.c:2904:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v4; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/c_alignof_expr/src/c-common.c:2910:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v11; // rdx 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/c_alignof_expr/src/c-common.c:2911:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v12; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/c_alignof_expr/src/c-common.c:2922:20: error: expected expression
+v11 = ( tree_node *)*( &global_trees + 16); 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/c_alignof_expr/src/c-common.c:2922:9: error: use of undeclared identifier 'tree_node'
+v11 = ( tree_node *)*( &global_trees + 16); 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/c_alignof_expr/src/c-common.c:2943:21: error: expected expression
+v4 = *( tree_node **)( *( _QWORD *)( low + 8) + 8LL); 
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/c_alignof_expr/src/c-common.c:2943:9: error: use of undeclared identifier 'tree_node'
+v4 = *( tree_node **)( *( _QWORD *)( low + 8) + 8LL); 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/c_alignof_expr/src/c-common.c:2961:21: error: expected expression
+v4 = *( tree_node **)( *( _QWORD *)( low + 8) + 8LL); 
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/c_alignof_expr/src/c-common.c:2961:9: error: use of undeclared identifier 'tree_node'
+v4 = *( tree_node **)( *( _QWORD *)( low + 8) + 8LL); 
+        ^
+10 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/c_alignof_expr/src/obj/c-common.o] Error 1

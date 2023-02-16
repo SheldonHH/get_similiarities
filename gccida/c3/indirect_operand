@@ -1,0 +1,49 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/indirect_operand/src/recog.c:1839:32: error: must use 'enum' tag to refer to type 'machine_mode'
+int  indirect_operand( rtx op, machine_mode mode) 
+                               ^
+                               enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/indirect_operand/src/recog.c:1841:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v2; // edx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/indirect_operand/src/recog.c:1842:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v3; // edx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/indirect_operand/src/recog.c:1844:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v5; // edx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/indirect_operand/src/recog.c:1848:4: error: expected ';' after expression
+rtx inner; // [rsp+10h] [rbp-20h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/indirect_operand/src/recog.c:1848:5: error: use of undeclared identifier 'inner'
+rtx inner; // [rsp+10h] [rbp-20h] 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/indirect_operand/src/recog.c:1855:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+offset = ( int)op[1]; 
+               ^~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/indirect_operand/src/recog.c:1856:1: error: use of undeclared identifier 'inner'
+inner = op->fld[0].rtx; 
+^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/indirect_operand/src/recog.c:1865:24: error: use of undeclared identifier 'inner'
+if ( !general_operand( inner->fld[0].rtx, v2) ) 
+                       ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/indirect_operand/src/recog.c:1869:37: error: use of undeclared identifier 'inner'
+if ( ( unsigned __int16)*( _DWORD *)inner->fld[0].rtwint == 75 ) 
+                                    ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/indirect_operand/src/recog.c:1872:41: error: use of undeclared identifier 'inner'
+if ( ( unsigned __int16)**( _DWORD **)( inner->fld[0].rtwint + 16) == 54 ) 
+                                        ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/indirect_operand/src/recog.c:1875:34: error: use of undeclared identifier 'inner'
+if ( *( _QWORD *)( *( _QWORD *)( inner->fld[0].rtwint + 16) + 8LL) == -offset ) 
+                                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/indirect_operand/src/recog.c:1880:31: error: expected expression
+v8 = general_operand( *( rtx *)( inner->fld[0].rtwint + 8), v3) != 0; 
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/indirect_operand/src/recog.c:1880:34: error: use of undeclared identifier 'inner'
+v8 = general_operand( *( rtx *)( inner->fld[0].rtwint + 8), v3) != 0; 
+                                 ^
+14 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/indirect_operand/src/obj/recog.o] Error 1

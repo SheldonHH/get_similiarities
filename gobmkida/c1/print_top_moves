@@ -1,0 +1,38 @@
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/print_top_moves/src/engine/value_moves.c:3121:12: error: expected expression
+*( _OWORD *)&best_moves[4] = 0LL; 
+           ^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/print_top_moves/src/engine/value_moves.c:3121:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&best_moves[4] = 0LL; 
+   ^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/print_top_moves/src/engine/value_moves.c:3122:12: error: expected expression
+*( _OWORD *)best_moves = 0LL; 
+           ^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/print_top_moves/src/engine/value_moves.c:3122:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)best_moves = 0LL; 
+   ^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/print_top_moves/src/engine/value_moves.c:3124:12: error: expected expression
+*( _OWORD *)best_move_values = 0LL; 
+           ^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/print_top_moves/src/engine/value_moves.c:3124:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)best_move_values = 0LL; 
+   ^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/print_top_moves/src/engine/value_moves.c:3125:12: error: expected expression
+*( _OWORD *)&best_move_values[4] = 0LL; 
+           ^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/print_top_moves/src/engine/value_moves.c:3125:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&best_move_values[4] = 0LL; 
+   ^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/print_top_moves/src/engine/value_moves.c:3135:38: error: too many arguments to function call, expected 2, have 3
+record_top_move( v1, *( float *)&v0, 0.0); 
+~~~~~~~~~~~~~~~                      ^~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/print_top_moves/src/engine/liberty.h:456:1: note: 'record_top_move' declared here
+void record_top_move(int move, float val);
+^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/print_top_moves/src/engine/value_moves.c:3147:18: error: use of undeclared identifier 'dword_9AC3A8'
+v4 = *( float *)&dword_9AC3A8[v3]; 
+                 ^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/print_top_moves/src/engine/value_moves.c:3150:68: error: use of undeclared identifier 'dword_9AC3D8'
+gprintf( "%d. %1M %f\n", ( unsigned int)( v3 + 11), ( unsigned int)dword_9AC3D8[v3], v4); 
+                                                                   ^
+11 errors generated.
+make: *** [/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/print_top_moves/src/obj/1/value_moves.o] Error 1

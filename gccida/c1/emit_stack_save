@@ -1,0 +1,12 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_stack_save/src/explow.c:1412:24: error: must use 'enum' tag to refer to type 'save_level'
+void  emit_stack_save( save_level save_level, rtx *psave, rtx after) 
+                       ^
+                       enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_stack_save/src/explow.c:1435:28: error: use of undeclared identifier 'machine_mode'
+v8 = assign_stack_local( ( machine_mode)v6, mode_size[v6], 0); 
+                           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_stack_save/src/explow.c:1437:21: error: use of undeclared identifier 'machine_mode'
+v8 = gen_reg_rtx( ( machine_mode)v6); 
+                    ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_stack_save/src/obj/explow.o] Error 1

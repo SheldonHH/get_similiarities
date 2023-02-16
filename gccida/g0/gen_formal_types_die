@@ -1,0 +1,33 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_formal_types_die/src/dwarf2out.c:10516:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *formal_type; // [rsp+30h] [rbp-10h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_formal_types_die/src/dwarf2out.c:10524:13: error: expected identifier or '('
+ struct arg = function_or_method_type->decl.arguments; 
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_formal_types_die/src/dwarf2out.c:10529:13: error: expected identifier or '('
+ struct arg = 0LL; 
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_formal_types_die/src/dwarf2out.c:10536:34: error: expected expression
+if ( formal_type == ( tree_node *)*( &global_trees + 27) ) 
+                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_formal_types_die/src/dwarf2out.c:10536:23: error: use of undeclared identifier 'tree_node'
+if ( formal_type == ( tree_node *)*( &global_trees + 27) ) 
+                      ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_formal_types_die/src/dwarf2out.c:10540:5: error: expected expression
+||  struct arg && ( BYTE2( arg->block.supercontext) & 0x40) != 0 ) 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_formal_types_die/src/dwarf2out.c:10545:7: error: expected expression
+if (  struct arg ) 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_formal_types_die/src/dwarf2out.c:10546:2: error: expected expression
+ struct arg = arg->common.chain; 
+ ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_formal_types_die/src/dwarf2out.c:10548:34: error: expected expression
+if ( formal_type != ( tree_node *)*( &global_trees + 27) ) 
+                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_formal_types_die/src/dwarf2out.c:10548:23: error: use of undeclared identifier 'tree_node'
+if ( formal_type != ( tree_node *)*( &global_trees + 27) ) 
+                      ^
+10 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_formal_types_die/src/obj/dwarf2out.o] Error 1

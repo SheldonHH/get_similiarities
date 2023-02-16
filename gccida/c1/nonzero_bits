@@ -1,0 +1,83 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/nonzero_bits/src/combine.c:8417:40: error: must use 'enum' tag to refer to type 'machine_mode'
+unsigned __int64  nonzero_bits( rtx x, machine_mode mode) 
+                                       ^
+                                       enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/nonzero_bits/src/combine.c:8419:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v2; // r12d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/nonzero_bits/src/combine.c:8470:4: error: expected ';' after expression
+rtx v54; // rdi 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/nonzero_bits/src/combine.c:8470:5: error: use of undeclared identifier 'v54'
+rtx v54; // rdi 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/nonzero_bits/src/combine.c:8483:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v7 = mode_class_0[v6]; 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/nonzero_bits/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/nonzero_bits/src/combine.c:8486:7: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v10 = mode_class_0[mode]; 
+      ^~~~~~~~~~~~
+      mode_class
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/nonzero_bits/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/nonzero_bits/src/combine.c:8531:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| mode_class_0[v53] == MODE_INT && mode_class_0[v2] == MODE_INT) 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/nonzero_bits/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/nonzero_bits/src/combine.c:8531:37: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| mode_class_0[v53] == MODE_INT && mode_class_0[v2] == MODE_INT) 
+                                    ^~~~~~~~~~~~
+                                    mode_class
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/nonzero_bits/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/nonzero_bits/src/combine.c:8536:8: error: use of undeclared identifier 'v54'
+&& ( ( v54 = reg_last_set[x->fld[0].rtuint], rtint = v54->fld[0].rtint, ( int)rtint <= max_uid_cuid) 
+       ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/nonzero_bits/src/combine.c:8536:54: error: use of undeclared identifier 'v54'
+&& ( ( v54 = reg_last_set[x->fld[0].rtuint], rtint = v54->fld[0].rtint, ( int)rtint <= max_uid_cuid) 
+                                                     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/nonzero_bits/src/combine.c:8538:22: error: use of undeclared identifier 'v54'
+: ( v56 = insn_cuid( v54)), 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/nonzero_bits/src/combine.c:8566:59: error: use of undeclared identifier 'machine_mode'
+v4 = mode_mask_array[v6] & nonzero_bits( x->fld[0].rtx, ( machine_mode)v6); 
+                                                          ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/nonzero_bits/src/combine.c:8581:29: error: expected expression
+v22 = nonzero_bits( *( rtx *)&x[1], v2); 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/nonzero_bits/src/combine.c:8593:29: error: expected expression
+v15 = nonzero_bits( *( rtx *)&x[1], v2); 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/nonzero_bits/src/combine.c:8681:29: error: expected expression
+v4 &= nonzero_bits( *( rtx *)&x[1], v2) & v39; 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/nonzero_bits/src/combine.c:8692:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v23 = (  struct rtx_def *)x[1]; 
+                          ^~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/nonzero_bits/src/combine.c:8700:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v24 = ( __int64)x[1]; 
+                ^~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/nonzero_bits/src/combine.c:8754:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[v2] == MODE_INT ) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/nonzero_bits/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/nonzero_bits/src/combine.c:8759:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v34.rtwint = ( __int64)x->fld[0]; 
+                       ^~~~~~~~~
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/nonzero_bits/src/obj/combine.o] Error 1

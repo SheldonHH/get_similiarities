@@ -1,0 +1,19 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/hash_expr_1/src/gcse.c:2063:35: error: must use 'enum' tag to refer to type 'machine_mode'
+unsigned int  hash_expr_1( rtx x, machine_mode mode, int *do_not_record_p) 
+                                  ^
+                                  enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/hash_expr_1/src/gcse.c:2074:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code; // [rsp+34h] [rbp-2Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/hash_expr_1/src/gcse.c:2114:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( unsigned __int8 *)( *( _QWORD *)( *( _QWORD *)&xa[2] + 8LL * ib + 8) + 2LL), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/hash_expr_1/src/gcse.c:2158:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( unsigned __int8 *)( *( _QWORD *)( xa->fld[0].rtwint + 8LL * ia + 8) + 2LL), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/hash_expr_1/src/gcse.c:2169:1: error: statement requires expression of scalar type ('struct rtx_def' invalid)
+if ( xa[1] ) 
+^    ~~~~~
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/hash_expr_1/src/obj/gcse.o] Error 1

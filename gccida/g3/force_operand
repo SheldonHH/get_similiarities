@@ -1,0 +1,60 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/force_operand/src/expr.c:5921:4: error: expected ';' after expression
+rtx v27; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/force_operand/src/expr.c:5921:5: error: use of undeclared identifier 'v27'
+rtx v27; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/force_operand/src/expr.c:5937:21: error: use of undeclared identifier 'machine_mode'
+v4 = gen_reg_rtx( ( machine_mode)*( ( unsigned __int8 *)value + 2)); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/force_operand/src/expr.c:5947:26: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v7 = (  struct rtx_def *)value[1]; 
+                         ^~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/force_operand/src/expr.c:5959:24: error: use of undeclared identifier 'machine_mode'
+return expand_binop( ( machine_mode)*( ( unsigned __int8 *)value + 2), v6, v19, v20, target, 0, OPTAB_LIB_WIDEN); 
+                       ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/force_operand/src/expr.c:5966:21: error: use of undeclared identifier 'machine_mode'
+v27 = negate_rtx( ( machine_mode)*( ( unsigned __int8 *)value + 2), *( rtx *)&value[1]); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/force_operand/src/expr.c:5966:77: error: expected expression
+v27 = negate_rtx( ( machine_mode)*( ( unsigned __int8 *)value + 2), *( rtx *)&value[1]); 
+                                                                            ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/force_operand/src/expr.c:5966:1: error: use of undeclared identifier 'v27'
+v27 = negate_rtx( ( machine_mode)*( ( unsigned __int8 *)value + 2), *( rtx *)&value[1]); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/force_operand/src/expr.c:5968:6: error: use of undeclared identifier 'v27'
+v7 = v27; 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/force_operand/src/expr.c:5975:23: error: use of undeclared identifier 'machine_mode'
+v11 = expand_binop( ( machine_mode)*( ( unsigned __int8 *)value + 2), v6, v10, v7, v4, 0, OPTAB_LIB_WIDEN); 
+                      ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/force_operand/src/expr.c:5976:30: error: expected expression
+v12 = force_operand( *( rtx *)( value->fld[0].rtwint + 16), 0LL); 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/force_operand/src/expr.c:5977:24: error: use of undeclared identifier 'machine_mode'
+return expand_binop( ( machine_mode)*( ( unsigned __int8 *)value + 2), v6, v11, v12, target, 0, OPTAB_LIB_WIDEN); 
+                       ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/force_operand/src/expr.c:5996:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v14.rtwint = ( __int64)value->fld[0]; 
+                       ^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/force_operand/src/expr.c:6003:22: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v16 = ( unsigned int)value[1]; 
+                     ^~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/force_operand/src/expr.c:6005:20: error: use of undeclared identifier 'machine_mode'
+v18 = force_reg( ( machine_mode)*( unsigned __int8 *)( value->fld[0].rtwint + 2), v17); 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/force_operand/src/expr.c:6006:31: error: use of undeclared identifier 'machine_mode'
+return simplify_gen_subreg( ( machine_mode)*( ( unsigned __int8 *)value + 2), v18, ( machine_mode)v15, v16); 
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/force_operand/src/expr.c:6006:86: error: use of undeclared identifier 'machine_mode'
+return simplify_gen_subreg( ( machine_mode)*( ( unsigned __int8 *)value + 2), v18, ( machine_mode)v15, v16); 
+                                                                                     ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/force_operand/src/expr.c:6013:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v21 = (  struct rtx_def *)value[1]; 
+                          ^~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/force_operand/src/expr.c:6022:23: error: use of undeclared identifier 'machine_mode'
+return expand_mult( ( machine_mode)*( ( unsigned __int8 *)value + 2), v24, v25, target, 1); 
+                      ^
+19 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/force_operand/src/obj/expr.o] Error 1

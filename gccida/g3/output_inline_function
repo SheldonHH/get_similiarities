@@ -1,0 +1,16 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/output_inline_function/src/integrate.c:3442:1: error: must use 'enum' tag to refer to type 'debug_info_type'
+debug_info_type v1; // r14d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/output_inline_function/src/integrate.c:3444:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *attributes; // rbp 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/output_inline_function/src/integrate.c:3449:29: error: expected expression
+attributes = *( tree_node **)&cfun; 
+                            ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/output_inline_function/src/integrate.c:3449:17: error: use of undeclared identifier 'tree_node'
+attributes = *( tree_node **)&cfun; 
+                ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/output_inline_function/src/obj/integrate.o] Error 1

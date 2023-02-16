@@ -1,0 +1,103 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/parse_number/src/cpplex.c:984:27: error: unknown type name 'cpp_reader_0'; did you mean 'cpp_reader'?
+ struct op  parse_number( cpp_reader_0 *pfile, const cpp_token_0 *tok) 
+                          ^~~~~~~~~~~~
+                          cpp_reader
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/parse_number/src/cpplib.h:36:27: note: 'cpp_reader' declared here
+typedef struct cpp_reader cpp_reader;
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/parse_number/src/cpplex.c:984:54: error: unknown type name 'cpp_token_0'; did you mean 'cpp_token'?
+ struct op  parse_number( cpp_reader_0 *pfile, const cpp_token_0 *tok) 
+                                                     ^~~~~~~~~~~
+                                                     cpp_token
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/parse_number/src/cpplib.h:40:26: note: 'cpp_token' declared here
+typedef struct cpp_token cpp_token;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/parse_number/src/cpplex.c:984:13: error: conflicting types for 'parse_number'
+ struct op  parse_number( cpp_reader_0 *pfile, const cpp_token_0 *tok) 
+            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/parse_number/src/cpplex.c:82:13: note: previous declaration is here
+static void parse_number PARAMS ((cpp_reader *, cpp_string *, cppchar_t, int));
+            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/parse_number/src/cpplex.c:1000:12: error: variable has incomplete type 'struct op'
+ struct op op; // [rsp+80h] [rbp-10h] 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/parse_number/src/cpplex.c:984:9: note: forward declaration of 'struct op'
+ struct op  parse_number( cpp_reader_0 *pfile, const cpp_token_0 *tok) 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/parse_number/src/cpplex.c:1028:8: error: use of undeclared identifier 'sch_istable'; did you mean '_sch_istable'?
+if ( ( sch_istable[( unsigned __int8)c] & 4) == 0 && ( base != 16 || ( sch_istable[( unsigned __int8)c] & 0x100) == 0) ) 
+       ^~~~~~~~~~~
+       _sch_istable
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/parse_number/src/safe-ctype.h:72:29: note: '_sch_istable' declared here
+extern const unsigned short _sch_istable[256];
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/parse_number/src/cpplex.c:1028:72: error: use of undeclared identifier 'sch_istable'; did you mean '_sch_istable'?
+if ( ( sch_istable[( unsigned __int8)c] & 4) == 0 && ( base != 16 || ( sch_istable[( unsigned __int8)c] & 0x100) == 0) ) 
+                                                                       ^~~~~~~~~~~
+                                                                       _sch_istable
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/parse_number/src/safe-ctype.h:72:29: note: '_sch_istable' declared here
+extern const unsigned short _sch_istable[256];
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/parse_number/src/cpplex.c:1030:22: error: use of undeclared identifier 'hex_value'; did you mean '_hex_value'?
+if ( largest_digit < hex_value[( unsigned __int8)c] ) 
+                     ^~~~~~~~~
+                     _hex_value
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/parse_number/src/libiberty.h:251:19: note: '_hex_value' declared here
+extern const char _hex_value[_hex_array_size];
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/parse_number/src/cpplex.c:1031:17: error: use of undeclared identifier 'hex_value'; did you mean '_hex_value'?
+largest_digit = hex_value[( unsigned __int8)c]; 
+                ^~~~~~~~~
+                _hex_value
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/parse_number/src/libiberty.h:251:19: note: '_hex_value' declared here
+extern const char _hex_value[_hex_array_size];
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/parse_number/src/cpplex.c:1034:6: error: use of undeclared identifier 'hex_value'; did you mean '_hex_value'?
+v4 = hex_value[( unsigned __int8)c] + base * n < ( unsigned __int64)n; 
+     ^~~~~~~~~
+     _hex_value
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/parse_number/src/libiberty.h:251:19: note: '_hex_value' declared here
+extern const char _hex_value[_hex_array_size];
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/parse_number/src/cpplex.c:1036:5: error: use of undeclared identifier 'hex_value'; did you mean '_hex_value'?
+l = hex_value[( unsigned __int8)c] + base * n; 
+    ^~~~~~~~~
+    _hex_value
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/parse_number/src/libiberty.h:251:19: note: '_hex_value' declared here
+extern const char _hex_value[_hex_array_size];
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/parse_number/src/cpplex.c:1056:11: error: use of undeclared identifier 'vsuf_1'
+sufftab = vsuf_1; 
+          ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/parse_number/src/cpplex.c:1061:11: error: use of undeclared identifier 'vsuf_2'
+sufftab = vsuf_2; 
+          ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/parse_number/src/cpplex.c:1072:11: error: use of undeclared identifier 'vsuf_3'
+sufftab = vsuf_3; 
+          ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/parse_number/src/cpplex.c:1075:46: error: subscript of pointer to incomplete type 'const struct suffix'
+for ( i = 0; i < nsuff && memcmp( p, &sufftab[i], end - p); ++i ) 
+                                      ~~~~~~~^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/parse_number/src/cpplex.c:989:15: note: forward declaration of 'struct suffix'
+const  struct suffix *sufftab; // [rsp+18h] [rbp-78h] 
+              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/parse_number/src/cpplex.c:1079:23: error: subscript of pointer to incomplete type 'const struct suffix'
+op.unsignedp = sufftab[i].u; 
+               ~~~~~~~^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/parse_number/src/cpplex.c:989:15: note: forward declaration of 'struct suffix'
+const  struct suffix *sufftab; // [rsp+18h] [rbp-78h] 
+              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/parse_number/src/cpplex.c:1080:45: error: subscript of pointer to incomplete type 'const struct suffix'
+if ( pfile->opts.warn_traditional && sufftab[i].u && !cpp_sys_macro_p( pfile) ) 
+                                     ~~~~~~~^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/parse_number/src/cpplex.c:989:15: note: forward declaration of 'struct suffix'
+const  struct suffix *sufftab; // [rsp+18h] [rbp-78h] 
+              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/parse_number/src/cpplex.c:1082:12: error: subscript of pointer to incomplete type 'const struct suffix'
+l = sufftab[i].l; 
+    ~~~~~~~^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/parse_number/src/cpplex.c:989:15: note: forward declaration of 'struct suffix'
+const  struct suffix *sufftab; // [rsp+18h] [rbp-78h] 
+              ^
+17 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/parse_number/src/obj/cpplex.o] Error 1

@@ -1,0 +1,15 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/get_run_time/src/timevar.c:979:10: error: conflicting types for 'get_run_time'
+__int64  get_run_time( ) 
+         ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/get_run_time/src/timevar.h:88:13: note: previous declaration is here
+extern long get_run_time PARAMS ((void));
+            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/get_run_time/src/timevar.c:983:14: error: use of undeclared identifier 'TV_TOTAL_0'; did you mean 'TV_TOTAL'?
+timevar_get( TV_TOTAL_0, &total_elapsed); 
+             ^~~~~~~~~~
+             TV_TOTAL
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/get_run_time/src/timevar.def:34:13: note: 'TV_TOTAL' declared here
+DEFTIMEVAR (TV_TOTAL                 , "total time")
+            ^
+2 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/get_run_time/src/obj/timevar.o] Error 1

@@ -1,0 +1,82 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_lowpart_common/src/emit-rtl.c:1287:26: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  gen_lowpart_common( machine_mode mode, rtx x) 
+                         ^
+                         enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_lowpart_common/src/emit-rtl.c:1301:1: error: must use 'enum' tag to refer to type 'mode_class'
+mode_class v15; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_lowpart_common/src/machmode.h:52:30: note: enum 'mode_class' is hidden by a non-type declaration of 'mode_class' here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_lowpart_common/src/emit-rtl.c:1303:4: error: expected ';' after expression
+rtx result; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_lowpart_common/src/emit-rtl.c:1303:5: error: use of undeclared identifier 'result'
+rtx result; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_lowpart_common/src/emit-rtl.c:1318:1: error: must use 'union' tag to refer to type 'real_extract'
+real_extract u; // [rsp+30h] [rbp-58h] BYREF 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_lowpart_common/src/emit-rtl.c:1336:7: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v15 = mode_class_0[v2]; 
+      ^~~~~~~~~~~~
+      mode_class
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_lowpart_common/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_lowpart_common/src/emit-rtl.c:1353:7: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v15 = mode_class_0[v2]; 
+      ^~~~~~~~~~~~
+      mode_class
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_lowpart_common/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_lowpart_common/src/emit-rtl.c:1369:1: error: use of undeclared identifier 'result'
+result = 0LL; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_lowpart_common/src/emit-rtl.c:1371:25: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+return gen_rtx_fmt_e( ( rtx_code)v16, mode, rtx); 
+                        ^~~~~~~~
+                        rtx_cost
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_lowpart_common/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_lowpart_common/src/emit-rtl.c:1371:34: error: expected ')'
+return gen_rtx_fmt_e( ( rtx_code)v16, mode, rtx); 
+                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_lowpart_common/src/emit-rtl.c:1371:21: note: to match this '('
+return gen_rtx_fmt_e( ( rtx_code)v16, mode, rtx); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_lowpart_common/src/emit-rtl.c:1372:8: error: use of undeclared identifier 'result'
+return result; 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_lowpart_common/src/emit-rtl.c:1394:42: error: use of undeclared identifier 'machine_mode'
+return simplify_gen_subreg( mode, rtx, ( machine_mode)v5, 0); 
+                                         ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_lowpart_common/src/emit-rtl.c:1412:1: error: use of undeclared identifier 'result'
+result = rtx; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_lowpart_common/src/emit-rtl.c:1414:8: error: use of undeclared identifier 'result'
+return result; 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_lowpart_common/src/emit-rtl.c:1415:20: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+rtwint = ( __int64)rtx[1]; 
+                   ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_lowpart_common/src/emit-rtl.c:1416:31: error: use of undeclared identifier 'machine_mode'
+return gen_rtx_CONST_INT_0( ( machine_mode)rtwint, v19); 
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_lowpart_common/src/emit-rtl.c:1421:20: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+rtwint = ( __int64)rtx[1]; 
+                   ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_lowpart_common/src/emit-rtl.c:1426:31: error: use of undeclared identifier 'machine_mode'
+return gen_rtx_CONST_INT_0( ( machine_mode)rtwint, v19); 
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_lowpart_common/src/emit-rtl.c:1439:56: error: passing 'rtunion' (aka 'union rtunion_def') to parameter of incompatible type 'uint64' (aka 'unsigned long long')
+( ( void (  *)( _QWORD, _QWORD))ereal_from_float)( &u, ( rtunion)rtx->fld[0].rtwint); 
+                                                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_lowpart_common/src/obj/emit-rtl.o] Error 1

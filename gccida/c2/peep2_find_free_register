@@ -1,0 +1,104 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/peep2_find_free_register/src/recog.c:3395:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/peep2_find_free_register/src/recog.c:3401:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v11; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/peep2_find_free_register/src/recog.c:3447:7: error: use of undeclared identifier 'peep2_insn_data_0'; did you mean 'peep2_insn_data'?
+if ( !peep2_insn_data_0[v5].insn ) 
+      ^~~~~~~~~~~~~~~~~
+      peep2_insn_data
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/peep2_find_free_register/src/recog.c:2841:31: note: 'peep2_insn_data' declared here
+static struct peep2_insn_data peep2_insn_data[MAX_INSNS_PER_PEEP2 + 1];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/peep2_find_free_register/src/recog.c:3450:32: error: use of undeclared identifier 'peep2_insn_data_0'; did you mean 'peep2_insn_data'?
+reg_set_to_hard_reg_set( &v48, peep2_insn_data_0[v5].live_before); 
+                               ^~~~~~~~~~~~~~~~~
+                               peep2_insn_data
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/peep2_find_free_register/src/recog.c:2841:31: note: 'peep2_insn_data' declared here
+static struct peep2_insn_data peep2_insn_data[MAX_INSNS_PER_PEEP2 + 1];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/peep2_find_free_register/src/recog.c:3455:7: error: use of undeclared identifier 'peep2_insn_data_0'; did you mean 'peep2_insn_data'?
+if ( !peep2_insn_data_0[v5].insn ) 
+      ^~~~~~~~~~~~~~~~~
+      peep2_insn_data
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/peep2_find_free_register/src/recog.c:2841:31: note: 'peep2_insn_data' declared here
+static struct peep2_insn_data peep2_insn_data[MAX_INSNS_PER_PEEP2 + 1];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/peep2_find_free_register/src/recog.c:3458:31: error: use of undeclared identifier 'peep2_insn_data_0'; did you mean 'peep2_insn_data'?
+reg_set_to_hard_reg_set( v49, peep2_insn_data_0[v5].live_before); 
+                              ^~~~~~~~~~~~~~~~~
+                              peep2_insn_data
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/peep2_find_free_register/src/recog.c:2841:31: note: 'peep2_insn_data' declared here
+static struct peep2_insn_data peep2_insn_data[MAX_INSNS_PER_PEEP2 + 1];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/peep2_find_free_register/src/recog.c:3526:7: error: use of undeclared identifier 'peep2_find_free_register_search_ofs'; did you mean 'peep2_find_free_register'?
+v13 = peep2_find_free_register_search_ofs + v12 - 53; 
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      peep2_find_free_register
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/peep2_find_free_register/src/recog.c:3391:6: note: 'peep2_find_free_register' declared here
+rtx  peep2_find_free_register( 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/peep2_find_free_register/src/recog.c:3527:6: error: use of undeclared identifier 'peep2_find_free_register_search_ofs'; did you mean 'peep2_find_free_register'?
+if ( peep2_find_free_register_search_ofs + v12 <= 52 ) 
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     peep2_find_free_register
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/peep2_find_free_register/src/recog.c:3391:6: note: 'peep2_find_free_register' declared here
+rtx  peep2_find_free_register( 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/peep2_find_free_register/src/recog.c:3528:7: error: use of undeclared identifier 'peep2_find_free_register_search_ofs'; did you mean 'peep2_find_free_register'?
+v13 = peep2_find_free_register_search_ofs + v12; 
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      peep2_find_free_register
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/peep2_find_free_register/src/recog.c:3391:6: note: 'peep2_find_free_register' declared here
+rtx  peep2_find_free_register( 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/peep2_find_free_register/src/recog.c:3551:1: error: use of undeclared identifier 'peep2_find_free_register_search_ofs'
+peep2_find_free_register_search_ofs = 0; 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/peep2_find_free_register/src/recog.c:3558:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v19 = ( ( unsigned int)( mode_class_0[mode] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/peep2_find_free_register/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/peep2_find_free_register/src/recog.c:3583:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v23 = ( ( unsigned int)( mode_class_0[mode] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/peep2_find_free_register/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/peep2_find_free_register/src/recog.c:3592:7: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'unsigned long long' of different size
+v27 = ( __m128i)v14; 
+      ^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/peep2_find_free_register/src/recog.c:3597:61: error: use of undeclared identifier 'xmm'
+v30 = _mm_add_epi32( _mm_shuffle_epi32( v29, 80), ( __m128i)xmm*(short *)0x641440); 
+                                                            ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/peep2_find_free_register/src/recog.c:3598:7: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'unsigned long long' of different size
+v31 = ( __m128i)v24; 
+      ^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/peep2_find_free_register/src/recog.c:3599:41: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'long long' of different size
+v32 = _mm_shuffle_epi32( _mm_add_epi32( ( __m128i)-1LL, ( __m128i)v15), 80); 
+                                        ^~~~~~~~~~~~~~
+/usr/lib/llvm-7/lib/clang/7.0.0/include/emmintrin.h:4347:52: note: expanded from macro '_mm_shuffle_epi32'
+  (__m128i)__builtin_ia32_pshufd((__v4si)(__m128i)(a), (int)(imm))
+                                                   ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/peep2_find_free_register/src/recog.c:3599:57: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'unsigned long long' of different size
+v32 = _mm_shuffle_epi32( _mm_add_epi32( ( __m128i)-1LL, ( __m128i)v15), 80); 
+                                                        ^~~~~~~~~~~~~
+/usr/lib/llvm-7/lib/clang/7.0.0/include/emmintrin.h:4347:52: note: expanded from macro '_mm_shuffle_epi32'
+  (__m128i)__builtin_ia32_pshufd((__v4si)(__m128i)(a), (int)(imm))
+                                                   ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/peep2_find_free_register/src/recog.c:3601:44: error: use of undeclared identifier 'xmm'
+si128 = _mm_load_si128( ( const __m128i *)&xmm*(short *)0x641420); 
+                                           ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/peep2_find_free_register/src/recog.c:3602:42: error: use of undeclared identifier 'xmm'
+v35 = _mm_load_si128( ( const __m128i *)&xmm*(short *)0x641450); 
+                                         ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/peep2_find_free_register/src/obj/recog.o] Error 1

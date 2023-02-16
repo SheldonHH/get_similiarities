@@ -1,0 +1,11 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/round_trampoline_addr/src/function.c:6249:21: error: use of undeclared identifier 'machine_mode'
+v1 = gen_reg_rtx( ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4)); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/round_trampoline_addr/src/function.c:6253:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/round_trampoline_addr/src/function.c:6260:31: error: use of undeclared identifier 'machine_mode'
+return expand_simple_binop( ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), AND, v4, v3, v4, 0, OPTAB_LIB_WIDEN); 
+                              ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/round_trampoline_addr/src/obj/function.o] Error 1

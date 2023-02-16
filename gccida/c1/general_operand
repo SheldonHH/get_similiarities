@@ -1,0 +1,27 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/general_operand/src/recog.c:1379:31: error: must use 'enum' tag to refer to type 'machine_mode'
+int  general_operand( rtx op, machine_mode mode) 
+                              ^
+                              enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/general_operand/src/recog.c:1383:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v4; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/general_operand/src/recog.c:1401:39: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( ( v3 & 0xFF0000) == 0 && v4 && ( mode_class_0[v4] | 2) != 3 ) 
+                                      ^~~~~~~~~~~~
+                                      mode_class
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/general_operand/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/general_operand/src/recog.c:1453:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[v9] != MODE_FLOAT || mode_size[v9] <= mode_size[BYTE2( v11)] ) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/general_operand/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/general_operand/src/recog.c:1486:37: error: use of undeclared identifier 'machine_mode'
+v15 = 4 * ( legitimate_address_p( ( machine_mode)*( ( unsigned __int8 *)v2 + 2), v14, 0) != 0); 
+                                    ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/general_operand/src/obj/recog.o] Error 1

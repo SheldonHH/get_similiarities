@@ -1,0 +1,47 @@
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/play_ascii/src/interface/play_ascii.c:1132:65: error: use of undeclared identifier 'dword_4A1CB8'
+sgftreeWriteResult( &sgftree, COERCE_DOUBLE( ( unsigned __int64)dword_4A1CB8[gameinfo->to_move == 1]), v4, 1); 
+                                                                ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/play_ascii/src/interface/play_ascii.c:1141:77: error: too many arguments to function call, expected 6, have 7
+sgf_write_header( sgftree.root, 1, random_seed, komi, level, chinese_rules, v4); 
+~~~~~~~~~~~~~~~~                                                            ^~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/play_ascii/src/include/sgftree.h:94:1: note: 'sgf_write_header' declared here
+void sgf_write_header(SGFNode *root, int overwrite, int seed, float komi,
+^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/play_ascii/src/interface/play_ascii.c:1165:77: error: too many arguments to function call, expected 6, have 7
+sgf_write_header( sgftree.root, 1, random_seed, komi, level, chinese_rules, v4); 
+~~~~~~~~~~~~~~~~                                                            ^~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/play_ascii/src/include/sgftree.h:94:1: note: 'sgf_write_header' declared here
+void sgf_write_header(SGFNode *root, int overwrite, int seed, float komi,
+^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/play_ascii/src/interface/play_ascii.c:1479:77: error: too many arguments to function call, expected 6, have 7
+sgf_write_header( sgftree.root, 1, random_seed, komi, level, chinese_rules, v4); 
+~~~~~~~~~~~~~~~~                                                            ^~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/play_ascii/src/include/sgftree.h:94:1: note: 'sgf_write_header' declared here
+void sgf_write_header(SGFNode *root, int overwrite, int seed, float komi,
+^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/play_ascii/src/interface/play_ascii.c:1655:57: error: too many arguments to function call, expected 3, have 4
+sgftreeWriteResult( &sgftree, *( double *)&v8.root, v4, 1); 
+~~~~~~~~~~~~~~~~~~                                      ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/play_ascii/src/include/sgftree.h:142:1: note: 'sgftreeWriteResult' declared here
+void sgftreeWriteResult(SGFTree *tree, float score, int overwrite);
+^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/play_ascii/src/interface/play_ascii.c:1674:99: error: too many arguments to function call, expected 3, have 4
+sgftreeCreateHeaderNode( &sgftree, board_size, COERCE_DOUBLE( ( unsigned __int64)LODWORD( komi)), v4); 
+~~~~~~~~~~~~~~~~~~~~~~~                                                                           ^~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/play_ascii/src/include/sgftree.h:155:1: note: 'sgftreeCreateHeaderNode' declared here
+void sgftreeCreateHeaderNode(SGFTree *tree, int boardsize, float komi);
+^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/play_ascii/src/interface/play_ascii.c:1677:45: error: too many arguments to function call, expected 3, have 4
+gameinfo_clear( gameinfo, board_size, komi, v4); 
+~~~~~~~~~~~~~~                              ^~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/play_ascii/src/include/gnugo.h:181:1: note: 'gameinfo_clear' declared here
+void gameinfo_clear(Gameinfo *ginfo, int boardsize, float komi);
+^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/play_ascii/src/interface/play_ascii.c:1701:77: error: too many arguments to function call, expected 6, have 7
+sgf_write_header( sgftree.root, 1, random_seed, komi, level, chinese_rules, v4); 
+~~~~~~~~~~~~~~~~                                                            ^~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/play_ascii/src/include/sgftree.h:94:1: note: 'sgf_write_header' declared here
+void sgf_write_header(SGFNode *root, int overwrite, int seed, float komi,
+^
+8 errors generated.
+make: *** [/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/play_ascii/src/obj/2/play_ascii.o] Error 1

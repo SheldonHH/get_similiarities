@@ -1,0 +1,38 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/dbxout_type_fields/src/dbxout.c:1197:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v5; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/dbxout_type_fields/src/dbxout.c:1198:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v6; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/dbxout_type_fields/src/dbxout.c:1203:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *rttree; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/dbxout_type_fields/src/dbxout.c:1209:13: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v4 = ( char)i[1]; 
+            ^~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/dbxout_type_fields/src/dbxout.c:1217:53: error: invalid operands to binary expression ('struct rtx_def' and 'int')
+if ( ( *( ( _BYTE *)&i[3] + 1) & 0x40) == 0 && i[1] != 32 ) 
+                                               ~~~~ ^  ~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/dbxout_type_fields/src/dbxout.c:1219:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v7.rtwint = ( __int64)i[4].fld[0]; 
+                      ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/dbxout_type_fields/src/dbxout.c:1243:11: error: invalid operands to binary expression ('struct rtx_def' and 'int')
+if ( i[1] != 37 || ( rttree = ( tree_node *)i[6]) == 0LL ) 
+     ~~~~ ^  ~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/dbxout_type_fields/src/dbxout.c:1243:44: error: expected expression
+if ( i[1] != 37 || ( rttree = ( tree_node *)i[6]) == 0LL ) 
+                                           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/dbxout_type_fields/src/dbxout.c:1243:33: error: use of undeclared identifier 'tree_node'
+if ( i[1] != 37 || ( rttree = ( tree_node *)i[6]) == 0LL ) 
+                                ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/dbxout_type_fields/src/dbxout.c:1246:13: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v12 = ( int)i[1]; 
+            ^~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/dbxout_type_fields/src/dbxout.c:1253:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v13.rtwint = ( __int64)i[7].fld[0]; 
+                       ^~~~~~~~~~~
+11 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/dbxout_type_fields/src/obj/dbxout.o] Error 1

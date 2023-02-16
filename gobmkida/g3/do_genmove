@@ -1,0 +1,86 @@
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/do_genmove/src/engine/genmove.c:751:10: error: conflicting types for 'do_genmove'
+__int64  do_genmove( int *move, int color, float pure_threat_value, int *allowed_moves, double a5, double a6) 
+         ^
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/do_genmove/src/engine/genmove.c:40:12: note: previous declaration is here
+static int do_genmove(int *move, int color, float pure_threat_value,
+           ^
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/do_genmove/src/engine/genmove.c:808:12: error: expected expression
+*( _OWORD *)&stats.nodes = 0LL; 
+           ^
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/do_genmove/src/engine/genmove.c:808:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&stats.nodes = 0LL; 
+   ^
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/do_genmove/src/engine/genmove.c:866:4: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v32.m128_i32[0] = 0; 
+~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/do_genmove/src/engine/genmove.c:871:21: error: invalid conversion between vector type '__m128' (vector of 4 'float' values) and integer type 'uint32' (aka 'unsigned int') of different size
+v33 = _mm_cmplt_ss( ( __m128)LODWORD( lower_bound), v32); 
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/do_genmove/src/engine/genmove.c:875:47: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v35 = COERCE_UNSIGNED_INT( -lower_bound) & v33.m128_i32[0]; 
+                                           ~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/do_genmove/src/engine/genmove.c:876:39: error: invalid conversion between vector type '__m128' (vector of 4 'float' values) and integer type 'uint32' (aka 'unsigned int') of different size
+*( _QWORD *)&a6 = _mm_andnot_ps( v33, ( __m128)LODWORD( lower_bound)).m128_u64[0]; 
+                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/do_genmove/src/engine/genmove.c:881:4: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v37.m128_i32[0] = 0; 
+~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/do_genmove/src/engine/genmove.c:882:21: error: invalid conversion between vector type '__m128' (vector of 4 'float' values) and integer type 'uint32' (aka 'unsigned int') of different size
+v38 = _mm_cmplt_ss( ( __m128)LODWORD( upper_bound), ( __m128)0LL); 
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/do_genmove/src/engine/genmove.c:882:53: error: invalid conversion between vector type '__m128' (vector of 4 'float' values) and integer type 'long long' of different size
+v38 = _mm_cmplt_ss( ( __m128)LODWORD( upper_bound), ( __m128)0LL); 
+                                                    ^~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/do_genmove/src/engine/genmove.c:885:47: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v41 = COERCE_UNSIGNED_INT( -upper_bound) & v38.m128_i32[0]; 
+                                           ~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/do_genmove/src/engine/genmove.c:886:27: error: invalid conversion between vector type '__m128' (vector of 4 'float' values) and integer type 'uint32' (aka 'unsigned int') of different size
+v42 = _mm_andnot_ps( v38, ( __m128)LODWORD( upper_bound)).m128_u32[0]; 
+                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/do_genmove/src/engine/genmove.c:890:21: error: invalid conversion between vector type '__m128' (vector of 4 'float' values) and integer type 'uint32' (aka 'unsigned int') of different size
+v44 = _mm_cmplt_ss( ( __m128)LODWORD( lower_bound), v37); 
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/do_genmove/src/engine/genmove.c:892:47: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v46 = COERCE_UNSIGNED_INT( -lower_bound) & v44.m128_i32[0]; 
+                                           ~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/do_genmove/src/engine/genmove.c:893:27: error: invalid conversion between vector type '__m128' (vector of 4 'float' values) and integer type 'uint32' (aka 'unsigned int') of different size
+v47 = _mm_andnot_ps( v44, ( __m128)LODWORD( lower_bound)).m128_u32[0]; 
+                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/do_genmove/src/engine/genmove.c:969:1: error: too many arguments to function call, expected 6, have 7
+a6) 
+^~
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/do_genmove/src/engine/liberty.h:530:1: note: 'review_move_reasons' declared here
+int review_move_reasons(int *move, float *val, int color,
+^
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/do_genmove/src/engine/genmove.c:1007:1: error: too many arguments to function call, expected 6, have 7
+a6) 
+^~
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/do_genmove/src/engine/liberty.h:530:1: note: 'review_move_reasons' declared here
+int review_move_reasons(int *move, float *val, int color,
+^
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/do_genmove/src/engine/genmove.c:1090:40: error: too many arguments to function call, expected 2, have 3
+record_top_move( v48, *( float *)&v52, *( float *)&v13); 
+~~~~~~~~~~~~~~~                        ^~~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/do_genmove/src/engine/liberty.h:456:1: note: 'record_top_move' declared here
+void record_top_move(int move, float val);
+^
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/do_genmove/src/engine/genmove.c:1130:42: error: too many arguments to function call, expected 2, have 3
+record_top_move( *move, *( float *)&v27, *( float *)&v13); 
+~~~~~~~~~~~~~~~                          ^~~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/do_genmove/src/engine/liberty.h:456:1: note: 'record_top_move' declared here
+void record_top_move(int move, float val);
+^
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/do_genmove/src/engine/genmove.c:1259:1: error: too many arguments to function call, expected 6, have 7
+a6) 
+^~
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/do_genmove/src/engine/liberty.h:530:1: note: 'review_move_reasons' declared here
+int review_move_reasons(int *move, float *val, int color,
+^
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/do_genmove/src/engine/genmove.c:1311:1: error: too many arguments to function call, expected 6, have 7
+a6) 
+^~
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/do_genmove/src/engine/liberty.h:530:1: note: 'review_move_reasons' declared here
+int review_move_reasons(int *move, float *val, int color,
+^
+21 errors generated.
+make: *** [/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/do_genmove/src/obj/1/genmove.o] Error 1

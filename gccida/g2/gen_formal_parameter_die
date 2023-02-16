@@ -1,0 +1,22 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_formal_parameter_die/src/dwarf2out.c:10458:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *chain; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_formal_parameter_die/src/dwarf2out.c:10459:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v10; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_formal_parameter_die/src/dwarf2out.c:10497:30: error: use of undeclared identifier 'a'
+fancy_abort( ( const char *)&a, 10025, "gen_formal_parameter_die"); 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_formal_parameter_die/src/dwarf2out.c:10543:30: error: use of undeclared identifier 'a'
+fancy_abort( ( const char *)&a, 9459, "add_abstract_origin_attribute"); 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_formal_parameter_die/src/dwarf2out.c:10544:49: error: member reference base type 'dw_die_ref' (aka 'struct die_struct *') is not a structure or union
+arguments = ( tree)*( ( _QWORD *)&decl_die_table->die_tag + uid); 
+                                  ~~~~~~~~~~~~~~^ ~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_formal_parameter_die/src/dwarf2out.c:10570:30: error: use of undeclared identifier 'a'
+fancy_abort( ( const char *)&a, 8989, "add_location_or_const_value_attribute"); 
+                             ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_formal_parameter_die/src/obj/dwarf2out.o] Error 1

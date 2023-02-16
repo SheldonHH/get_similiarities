@@ -1,0 +1,25 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_input_reload_insns/src/reload1.c:6613:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // [rsp+68h] [rbp-48h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_input_reload_insns/src/reload1.c:6726:15: error: use of undeclared identifier 'off_88ECD0'
+fancy_abort( &off_88ECD0[4], 6330, "emit_input_reload_insns"); 
+              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_input_reload_insns/src/reload1.c:6739:20: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( temp = ( rtx)insn[1]; ; temp = ( rtx)temp[1] ) 
+                   ^~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_input_reload_insns/src/reload1.c:6739:44: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( temp = ( rtx)insn[1]; ; temp = ( rtx)temp[1] ) 
+                                           ^~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_input_reload_insns/src/reload1.c:6754:32: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+if ( constraint_accepts_reg_p( insn_data_0[v5].operand->constraint, reloadreg) 
+                               ^~~~~~~~~~~
+                               insn_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_input_reload_insns/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_input_reload_insns/src/reload1.c:6779:15: error: use of undeclared identifier 'off_88ECD0'
+fancy_abort( &off_88ECD0[4], 6342, "emit_input_reload_insns"); 
+              ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_input_reload_insns/src/obj/reload1.o] Error 1

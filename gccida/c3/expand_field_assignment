@@ -1,0 +1,67 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_field_assignment/src/combine.c:6222:4: error: expected ';' after expression
+rtx v9; // r15 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_field_assignment/src/combine.c:6222:5: error: use of undeclared identifier 'v9'
+rtx v9; // r15 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_field_assignment/src/combine.c:6233:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v20; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_field_assignment/src/combine.c:6235:4: error: expected ';' after expression
+rtx v22; // r12 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_field_assignment/src/combine.c:6235:5: error: use of undeclared identifier 'v22'
+rtx v22; // r12 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_field_assignment/src/combine.c:6245:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v2.rtwint = ( __int64)x->fld[0]; 
+                      ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_field_assignment/src/combine.c:6252:15: error: expected expression
+rtx = *( rtx *)( v2.rtwint + 8); 
+              ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_field_assignment/src/combine.c:6253:1: error: use of undeclared identifier 'v9'
+v9 = *( rtx *)( v2.rtwint + 24); 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_field_assignment/src/combine.c:6253:14: error: expected expression
+v9 = *( rtx *)( v2.rtwint + 24); 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_field_assignment/src/combine.c:6255:17: error: use of undeclared identifier 'v9'
+if ( *( _WORD *)v9 == 54 
+                ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_field_assignment/src/combine.c:6256:4: error: use of undeclared identifier 'v9'
+&& v9->fld[0].rtwint + ( int)v7 > *( const unsigned __int16 *)( ( char *)mode_bitsize 
+   ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_field_assignment/src/combine.c:6259:29: error: use of undeclared identifier 'machine_mode'
+rtx = gen_rtx_fmt_e( USE, ( machine_mode)BYTE2( v3), rtx); 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_field_assignment/src/combine.c:6285:1: error: use of undeclared identifier 'v9'
+v9 = gen_rtx_CONST_INT( VOIDmode, v8); 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_field_assignment/src/combine.c:6291:7: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v17 = mode_class_0[BYTE2( v10)]; 
+      ^~~~~~~~~~~~
+      mode_class
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_field_assignment/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_field_assignment/src/combine.c:6309:1: error: use of undeclared identifier 'v22'
+v22 = copy_rtx( rtx); 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_field_assignment/src/combine.c:6310:29: error: use of undeclared identifier 'machine_mode'
+v23 = gen_binary( ASHIFT, ( machine_mode)v16, v21, v9); 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_field_assignment/src/combine.c:6310:52: error: use of undeclared identifier 'v9'
+v23 = gen_binary( ASHIFT, ( machine_mode)v16, v21, v9); 
+                                                   ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_field_assignment/src/combine.c:6311:34: error: use of undeclared identifier 'machine_mode'
+v24 = simplify_gen_unary( NOT, ( machine_mode)v16, v23, ( machine_mode)v16); 
+                                 ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_field_assignment/src/combine.c:6311:59: error: use of undeclared identifier 'machine_mode'
+v24 = simplify_gen_unary( NOT, ( machine_mode)v16, v23, ( machine_mode)v16); 
+                                                          ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_field_assignment/src/obj/combine.o] Error 1

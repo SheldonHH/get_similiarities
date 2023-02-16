@@ -1,0 +1,93 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_binary_operation/src/simplify-rtx.c:1335:33: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx  simplify_binary_operation( rtx_code code, machine_mode mode, rtx op0, rtx op1) 
+                                ^
+                                enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_binary_operation/src/simplify-rtx.c:1335:48: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  simplify_binary_operation( rtx_code code, machine_mode mode, rtx op0, rtx op1) 
+                                               ^
+                                               enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_binary_operation/src/simplify-rtx.c:1341:1: error: must use 'enum' tag to refer to type 'mode_class'
+mode_class v10; // r13d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_binary_operation/src/machmode.h:52:30: note: enum 'mode_class' is hidden by a non-type declaration of 'mode_class' here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_binary_operation/src/simplify-rtx.c:1379:4: error: expected ';' after expression
+rtx v48; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_binary_operation/src/simplify-rtx.c:1379:5: error: use of undeclared identifier 'v48'
+rtx v48; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_binary_operation/src/simplify-rtx.c:1428:4: error: expected ';' after expression
+rtx trueop1; // [rsp+8h] [rbp-90h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_binary_operation/src/simplify-rtx.c:1428:5: error: use of undeclared identifier 'trueop1'
+rtx trueop1; // [rsp+8h] [rbp-90h] 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_binary_operation/src/simplify-rtx.c:1430:4: error: expected ';' after expression
+rtx trueop1b; // [rsp+8h] [rbp-90h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_binary_operation/src/simplify-rtx.c:1430:5: error: use of undeclared identifier 'trueop1b'; did you mean 'trueop1a'?
+rtx trueop1b; // [rsp+8h] [rbp-90h] 
+    ^~~~~~~~
+    trueop1a
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_binary_operation/src/simplify-rtx.c:1429:9: note: 'trueop1a' declared here
+__int64 trueop1a; // [rsp+8h] [rbp-90h] 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_binary_operation/src/simplify-rtx.c:1431:4: error: expected ';' after expression
+rtx rhs; // [rsp+10h] [rbp-88h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_binary_operation/src/simplify-rtx.c:1431:5: error: use of undeclared identifier 'rhs'
+rtx rhs; // [rsp+10h] [rbp-88h] 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_binary_operation/src/simplify-rtx.c:1436:1: error: must use 'union' tag to refer to type 'real_extract'
+real_extract u; // [rsp+40h] [rbp-58h] BYREF 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_binary_operation/src/simplify-rtx.c:1437:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v107; // [rsp+58h] [rbp-40h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_binary_operation/src/simplify-rtx.c:1438:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v108; // [rsp+5Ch] [rbp-3Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_binary_operation/src/simplify-rtx.c:1441:1: error: use of undeclared identifier 'rhs'
+rhs = op1; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_binary_operation/src/simplify-rtx.c:1443:1: error: use of undeclared identifier 'trueop1'; did you mean 'trueop1a'?
+trueop1 = avoid_constant_pool_reference( op0); 
+^~~~~~~
+trueop1a
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_binary_operation/src/simplify-rtx.c:1429:9: note: 'trueop1a' declared here
+__int64 trueop1a; // [rsp+8h] [rbp-90h] 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_binary_operation/src/simplify-rtx.c:1450:7: error: use of undeclared identifier 'trueop1'; did you mean 'trueop1a'?
+v12 = trueop1; 
+      ^~~~~~~
+      trueop1a
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_binary_operation/src/simplify-rtx.c:1429:9: note: 'trueop1a' declared here
+__int64 trueop1a; // [rsp+8h] [rbp-90h] 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_binary_operation/src/simplify-rtx.c:1451:35: error: use of undeclared identifier 'trueop1'; did you mean 'trueop1a'?
+if ( swap_commutative_operands_p( trueop1, v8) ) 
+                                  ^~~~~~~
+                                  trueop1a
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_binary_operation/src/simplify-rtx.c:1429:9: note: 'trueop1a' declared here
+__int64 trueop1a; // [rsp+8h] [rbp-90h] 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_binary_operation/src/simplify-rtx.c:1453:1: error: use of undeclared identifier 'trueop1'; did you mean 'trueop1a'?
+trueop1 = v8; 
+^~~~~~~
+trueop1a
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_binary_operation/src/simplify-rtx.c:1429:9: note: 'trueop1a' declared here
+__int64 trueop1a; // [rsp+8h] [rbp-90h] 
+        ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_binary_operation/src/obj/simplify-rtx.o] Error 1

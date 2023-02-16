@@ -1,0 +1,93 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/get_attr_type/src/insn-attrtab.c:20931:1: error: must use 'enum' tag to refer to type 'attr_type'
+attr_type  get_attr_type( rtx insn) 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/get_attr_type/src/insn-attrtab.c:20934:1: error: must use 'enum' tag to refer to type 'attr_type'
+attr_type v3; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/get_attr_type/src/insn-attrtab.c:20936:1: error: must use 'enum' tag to refer to type 'attr_type'
+attr_type v5; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/get_attr_type/src/insn-attrtab.c:20938:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v7; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/get_attr_type/src/insn-attrtab.c:20941:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v10; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/get_attr_type/src/insn-attrtab.c:20950:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v19; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/get_attr_type/src/insn-attrtab.c:20952:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v21; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/get_attr_type/src/insn-attrtab.c:20958:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v28; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/get_attr_type/src/insn-attrtab.c:20959:1: error: must use 'enum' tag to refer to type 'attr_type'
+attr_type v29; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/get_attr_type/src/insn-attrtab.c:20967:4: error: expected ';' after expression
+rtx v37; // rcx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/get_attr_type/src/insn-attrtab.c:20967:5: error: use of undeclared identifier 'v37'
+rtx v37; // rcx 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/get_attr_type/src/insn-attrtab.c:20977:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v31 = (  struct rtx_def *)insn[2]; 
+                          ^~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/get_attr_type/src/insn-attrtab.c:20979:29: error: too many arguments provided to function-like macro invocation
+fatal_insn_not_found( insn, "insn-attrtab.c", 21978, "get_attr_type"); 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/get_attr_type/src/toplev.h:52:9: note: macro 'fatal_insn_not_found' defined here
+#define fatal_insn_not_found(insn) \
+        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/get_attr_type/src/insn-attrtab.c:20979:1: error: use of undeclared identifier 'fatal_insn_not_found'; did you mean '_fatal_insn_not_found'?
+fatal_insn_not_found( insn, "insn-attrtab.c", 21978, "get_attr_type"); 
+^~~~~~~~~~~~~~~~~~~~
+_fatal_insn_not_found
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/get_attr_type/src/toplev.h:40:13: note: '_fatal_insn_not_found' declared here
+extern void _fatal_insn_not_found       PARAMS ((struct rtx_def *,
+            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/get_attr_type/src/insn-attrtab.c:21176:7: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+v27 = recog_data_0.operand[1]; 
+      ^~~~~~~~~~~~
+      recog_data
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/get_attr_type/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/get_attr_type/src/insn-attrtab.c:21210:23: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( aligned_operand( recog_data_0.operand[1], HImode) ) 
+                      ^~~~~~~~~~~~
+                      recog_data
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/get_attr_type/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/get_attr_type/src/insn-attrtab.c:21217:24: error: subscripted value is not an array, pointer, or vector
+return *(int *)0x691130[which_alternative]; 
+               ~~~~~~~~^~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/get_attr_type/src/insn-attrtab.c:21256:25: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( !register_operand( recog_data_0.operand[0], QImode) ) 
+                        ^~~~~~~~~~~~
+                        recog_data
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/get_attr_type/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/get_attr_type/src/insn-attrtab.c:21259:22: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( q_regs_operand( recog_data_0.operand[0], QImode) ) 
+                     ^~~~~~~~~~~~
+                     recog_data
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/get_attr_type/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/get_attr_type/src/obj/insn-attrtab.o] Error 1

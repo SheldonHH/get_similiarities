@@ -1,0 +1,18 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/copy_rtx/src/rtl.c:833:28: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+|| ( v6.rtwint = ( __int64)orig->fld[0], *( _WORD *)v6.rtwint != 75) 
+                           ^~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/copy_rtx/src/rtl.c:838:19: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+v8 = rtx_alloc( ( rtx_code)( unsigned __int16)v2); 
+                  ^~~~~~~~
+                  rtx_cost
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/copy_rtx/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/copy_rtx/src/rtl.c:838:30: error: expected expression
+v8 = rtx_alloc( ( rtx_code)( unsigned __int16)v2); 
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/copy_rtx/src/rtl.c:879:70: error: expected expression
+*( _QWORD *)( v8->fld[v14].rtwint + 8 * v17 + 8) = copy_rtx( *( rtx *)( v1->fld[v14].rtwint + 8 * v17 + 8)); 
+                                                                     ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/copy_rtx/src/obj/rtl.o] Error 1

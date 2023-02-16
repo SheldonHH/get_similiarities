@@ -1,0 +1,54 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/print_operand/src/i386.c:6221:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v14; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/print_operand/src/i386.c:6233:1: error: must use 'enum' tag to refer to type 'mode_class'
+mode_class v26; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/print_operand/src/machmode.h:52:30: note: enum 'mode_class' is hidden by a non-type declaration of 'mode_class' here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/print_operand/src/i386.c:6315:17: error: use of undeclared identifier 'off_67C877'
+v18 = ( char *)&off_67C877; 
+                ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/print_operand/src/i386.c:6324:17: error: use of undeclared identifier 'off_6F2CE7'
+v18 = ( char *)&off_6F2CE7; 
+                ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/print_operand/src/i386.c:6329:17: error: use of undeclared identifier 'off_6F2CE1'
+v18 = ( char *)&off_6F2CE1; 
+                ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/print_operand/src/i386.c:6394:23: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+put_condition_code( ( rtx_code)v13, v14, v15, v20, v5); 
+                      ^~~~~~~~
+                      rtx_cost
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/print_operand/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/print_operand/src/i386.c:6394:32: error: expected ')'
+put_condition_code( ( rtx_code)v13, v14, v15, v20, v5); 
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/print_operand/src/i386.c:6394:19: note: to match this '('
+put_condition_code( ( rtx_code)v13, v14, v15, v20, v5); 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/print_operand/src/i386.c:6428:7: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v26 = mode_class_0[v12]; 
+      ^~~~~~~~~~~~
+      mode_class
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/print_operand/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/print_operand/src/i386.c:6450:20: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+r.r[2] = ( __int64)x[2]; 
+                   ^~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/print_operand/src/i386.c:6474:22: error: use of undeclared identifier 'unk_67B048'
+v7 = ( const char *)&unk_67B048; 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/print_operand/src/i386.c:6495:22: error: use of undeclared identifier 'unk_67B048'
+v7 = ( const char *)&unk_67B048; 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/print_operand/src/i386.c:6544:21: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+ra.r[2] = ( __int64)x[2]; 
+                    ^~~~
+12 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/print_operand/src/obj/i386.o] Error 1

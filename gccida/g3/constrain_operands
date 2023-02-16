@@ -1,0 +1,97 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/constrain_operands/src/recog.c:2798:4: error: expected ';' after expression
+rtx v20; // rsi 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/constrain_operands/src/recog.c:2798:5: error: use of undeclared identifier 'v20'; did you mean 'v10'?
+rtx v20; // rsi 
+    ^~~
+    v10
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/constrain_operands/src/recog.c:2788:9: note: 'v10' declared here
+__int16 v10; // ax 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/constrain_operands/src/recog.c:2799:4: error: expected ';' after expression
+rtx v21; // rdi 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/constrain_operands/src/recog.c:2799:5: error: use of undeclared identifier 'v21'; did you mean 'v11'?
+rtx v21; // rdi 
+    ^~~
+    v11
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/constrain_operands/src/recog.c:2789:6: note: 'v11' declared here
+char v11; // al 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/constrain_operands/src/recog.c:2804:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v26; // ecx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/constrain_operands/src/recog.c:2821:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // [rsp+20h] [rbp-338h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/constrain_operands/src/recog.c:2830:14: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+n_operands = recog_data_0.n_operands; 
+             ^~~~~~~~~~~~
+             recog_data
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/constrain_operands/src/recog.c:72:19: note: 'recog_data' declared here
+struct recog_data recog_data;
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/constrain_operands/src/recog.c:2833:22: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( !n_operands || !recog_data_0.n_alternatives || n_operands <= 0 ) 
+                     ^~~~~~~~~~~~
+                     recog_data
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/constrain_operands/src/recog.c:72:19: note: 'recog_data' declared here
+struct recog_data recog_data;
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/constrain_operands/src/recog.c:2836:113: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+*( const char **)( ( char *)&constraints[-1] + ( unsigned int)( 8 * n_operands)) = *( const char **)( ( char *)&recog_data_0.constraints[-1] 
+                                                                                                                ^~~~~~~~~~~~
+                                                                                                                recog_data
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/constrain_operands/src/recog.c:72:19: note: 'recog_data' declared here
+struct recog_data recog_data;
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/constrain_operands/src/recog.c:2838:23: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+qmemcpy( constraints, recog_data_0.constraints, 8LL * ( ( unsigned int)( 8 * n_operands - 1) >> 3)); 
+                      ^~~~~~~~~~~~
+                      recog_data
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/constrain_operands/src/recog.c:72:19: note: 'recog_data' declared here
+struct recog_data recog_data;
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/constrain_operands/src/recog.c:2870:7: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+rtx = recog_data_0.operand[v6]; 
+      ^~~~~~~~~~~~
+      recog_data
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/constrain_operands/src/recog.c:72:19: note: 'recog_data' declared here
+struct recog_data recog_data;
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/constrain_operands/src/recog.c:2883:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v28.rtwint = ( __int64)rtx->fld[0]; 
+                       ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/constrain_operands/src/recog.c:2891:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( unsigned __int8 *)( v28.rtwint + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/constrain_operands/src/recog.c:2893:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)rtx + 2)); 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/constrain_operands/src/recog.c:2894:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v28.rtwint = ( __int64)rtx->fld[0]; 
+                       ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/constrain_operands/src/recog.c:2897:13: error: expected ';' after expression
+rtx = ( rtx)v28.rtwint; 
+            ^
+            ;
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/constrain_operands/src/recog.c:2953:1: error: use of undeclared identifier 'v20'
+v20 = recog_data_0.operand[v6]; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/constrain_operands/src/recog.c:2953:7: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+v20 = recog_data_0.operand[v6]; 
+      ^~~~~~~~~~~~
+      recog_data
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/constrain_operands/src/recog.c:72:19: note: 'recog_data' declared here
+struct recog_data recog_data;
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/constrain_operands/src/recog.c:2954:1: error: use of undeclared identifier 'v21'
+v21 = recog_data_0.operand[v18]; 
+^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/constrain_operands/src/obj/recog.o] Error 1

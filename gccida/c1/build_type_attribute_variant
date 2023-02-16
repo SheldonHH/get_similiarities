@@ -1,0 +1,16 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/build_type_attribute_variant/src/tree.c:3146:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v2; // r14 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/build_type_attribute_variant/src/tree.c:3153:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v9; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/build_type_attribute_variant/src/tree.c:3159:12: error: expected expression
+*( _OWORD *)&v3->block.fragment_chain = 0LL; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/build_type_attribute_variant/src/tree.c:3159:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&v3->block.fragment_chain = 0LL; 
+   ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/build_type_attribute_variant/src/obj/tree.o] Error 1

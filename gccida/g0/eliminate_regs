@@ -1,0 +1,68 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/eliminate_regs/src/reload1.c:2748:29: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  eliminate_regs( rtx x, machine_mode mem_mode, rtx insn) 
+                            ^
+                            enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/eliminate_regs/src/reload1.c:2753:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v6; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/eliminate_regs/src/reload1.c:2755:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v8; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/eliminate_regs/src/reload1.c:2765:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code; // [rsp+60h] [rbp-50h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/eliminate_regs/src/reload1.c:2801:1: error: statement requires expression of scalar type ('struct rtx_def' invalid)
+if ( x[1] ) 
+^    ~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/eliminate_regs/src/reload1.c:2808:35: error: use of undeclared identifier 'machine_mode'
+xa = gen_rtx_fmt_ee( EXPR_LIST, ( machine_mode)*( ( unsigned __int8 *)x + 2), newc, *( rtx *)&x[1]); 
+                                  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/eliminate_regs/src/reload1.c:2813:34: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+if ( newd == (  struct rtx_def *)xa[1] ) 
+                                 ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/eliminate_regs/src/reload1.c:2817:3: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+( rtx_code)*( _WORD *)xa, 
+  ^~~~~~~~
+  rtx_cost
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/eliminate_regs/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/eliminate_regs/src/reload1.c:2817:12: error: invalid operands to binary expression ('int (rtx, enum rtx_code)' (aka 'int (struct rtx_def *, enum rtx_code)') and 'uint16 *' (aka 'unsigned short *'))
+( rtx_code)*( _WORD *)xa, 
+~~~~~~~~~~~^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/eliminate_regs/src/reload1.c:2818:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)xa + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/eliminate_regs/src/reload1.c:2847:30: error: use of undeclared identifier 'machine_mode'
+return gen_rtx_fmt_e( USE, ( machine_mode)*( ( unsigned __int8 *)x + 2), newg); 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/eliminate_regs/src/reload1.c:2921:34: error: use of undeclared identifier 'machine_mode'
+return adjust_address_1( newf, ( machine_mode)*( ( unsigned __int8 *)x + 2), *( _DWORD *)&x[1], 0, 1); 
+                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/eliminate_regs/src/reload1.c:2923:26: error: use of undeclared identifier 'machine_mode'
+return gen_rtx_SUBREG( ( machine_mode)*( ( unsigned __int8 *)x + 2), newf, *( _DWORD *)&x[1]); 
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/eliminate_regs/src/reload1.c:2947:31: error: use of undeclared identifier 'machine_mode'
+return gen_rtx_fmt_e( code, ( machine_mode)*( ( unsigned __int8 *)x + 2), newe); 
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/eliminate_regs/src/reload1.c:2951:40: error: use of undeclared identifier 'machine_mode'
+v11 = eliminate_regs( x->fld[0].rtx, ( machine_mode)*( ( unsigned __int8 *)x + 2), insn); 
+                                       ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/eliminate_regs/src/reload1.c:2996:62: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+if ( !reg_renumber || new0 == x->fld[0].rtx && new1 == ( rtx)x[1] ) 
+                                                             ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/eliminate_regs/src/reload1.c:3023:32: error: use of undeclared identifier 'machine_mode'
+return gen_rtx_fmt_ee( PLUS, ( machine_mode)*( ( unsigned __int8 *)x + 2), newb, const_int_rtx[64]); 
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/eliminate_regs/src/reload1.c:3079:1: error: statement requires expression of scalar type ('struct rtx_def' invalid)
+if ( x[1] ) 
+^    ~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/eliminate_regs/src/reload1.c:3083:60: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+if ( new0_0 == x->fld[0].rtx && v10 == (  struct rtx_def *)x[1] ) 
+                                                           ^~~~
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/eliminate_regs/src/obj/reload1.o] Error 1

@@ -1,0 +1,36 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/unsigned_type/src/c-common.c:1900:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *section_name; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/unsigned_type/src/c-common.c:1916:19: error: expected expression
+if ( ( tree_node *)*( &global_trees + 5) == section_name ) 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/unsigned_type/src/c-common.c:1916:8: error: use of undeclared identifier 'tree_node'
+if ( ( tree_node *)*( &global_trees + 5) == section_name ) 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/unsigned_type/src/c-common.c:1918:19: error: expected expression
+if ( ( tree_node *)*( &global_trees + 4) == section_name ) 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/unsigned_type/src/c-common.c:1918:8: error: use of undeclared identifier 'tree_node'
+if ( ( tree_node *)*( &global_trees + 4) == section_name ) 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/unsigned_type/src/c-common.c:1920:19: error: expected expression
+if ( ( tree_node *)*( &global_trees + 3) == section_name ) 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/unsigned_type/src/c-common.c:1920:8: error: use of undeclared identifier 'tree_node'
+if ( ( tree_node *)*( &global_trees + 3) == section_name ) 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/unsigned_type/src/c-common.c:1922:19: error: expected expression
+if ( ( tree_node *)*( &global_trees + 2) == section_name ) 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/unsigned_type/src/c-common.c:1922:8: error: use of undeclared identifier 'tree_node'
+if ( ( tree_node *)*( &global_trees + 2) == section_name ) 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/unsigned_type/src/c-common.c:1924:19: error: expected expression
+if ( ( tree_node *)*( &global_trees + 1) == section_name ) 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/unsigned_type/src/c-common.c:1924:8: error: use of undeclared identifier 'tree_node'
+if ( ( tree_node *)*( &global_trees + 1) == section_name ) 
+       ^
+11 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/unsigned_type/src/obj/c-common.o] Error 1

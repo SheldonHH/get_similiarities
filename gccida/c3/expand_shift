@@ -1,0 +1,81 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_shift/src/expmed.c:2369:20: error: must use 'enum' tag to refer to type 'tree_code'
+rtx  expand_shift( tree_code code, machine_mode mode, rtx shifted, tree amount, rtx target, int unsignedp) 
+                   ^
+                   enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_shift/src/expmed.c:2369:36: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  expand_shift( tree_code code, machine_mode mode, rtx shifted, tree amount, rtx target, int unsignedp) 
+                                   ^
+                                   enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_shift/src/expmed.c:2375:1: error: unknown type name 'optab_0'; did you mean 'optab'?
+optab_0 *v14; // rax 
+^~~~~~~
+optab
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_shift/src/optabs.h:48:5: note: 'optab' declared here
+} * optab;
+    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_shift/src/expmed.c:2386:1: error: unknown type name 'optab_0'; did you mean 'optab'?
+optab_0 *v25; // rcx 
+^~~~~~~
+optab
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_shift/src/optabs.h:48:5: note: 'optab' declared here
+} * optab;
+    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_shift/src/expmed.c:2388:1: error: must use 'enum' tag to refer to type 'optab_methods'
+optab_methods methods; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_shift/src/expmed.c:2389:1: error: unknown type name 'optab_0'; did you mean 'optab'?
+optab_0 *v28; // rcx 
+^~~~~~~
+optab
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_shift/src/optabs.h:48:5: note: 'optab' declared here
+} * optab;
+    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_shift/src/expmed.c:2391:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *type; // r13 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_shift/src/expmed.c:2392:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v32; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_shift/src/expmed.c:2394:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v34; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_shift/src/expmed.c:2395:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v35; // r13 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_shift/src/expmed.c:2401:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *exp; // [rsp+20h] [rbp-48h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_shift/src/expmed.c:2521:23: error: use of undeclared identifier 'tree_code'; did you mean 'tree_cons'?
+v37 = expand_shift( ( tree_code)( v39 ^ 0x53), mode, v36, exp, target, 1); 
+                      ^~~~~~~~~
+                      tree_cons
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_shift/src/tree.h:2477:13: note: 'tree_cons' declared here
+extern tree tree_cons                   PARAMS ((tree, tree, tree));
+            ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_shift/src/expmed.c:2521:45: error: too few arguments to function call, expected 3, have 1
+v37 = expand_shift( ( tree_code)( v39 ^ 0x53), mode, v36, exp, target, 1); 
+                    ~~~~~~~~~~~~            ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_shift/src/tree.h:2477:1: note: 'tree_cons' declared here
+extern tree tree_cons                   PARAMS ((tree, tree, tree));
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_shift/src/expmed.c:2522:23: error: use of undeclared identifier 'tree_code'; did you mean 'tree_cons'?
+v38 = expand_shift( ( tree_code)( v39 | 0x52), mode, v36, v35, 0LL, 1); 
+                      ^~~~~~~~~
+                      tree_cons
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_shift/src/tree.h:2477:13: note: 'tree_cons' declared here
+extern tree tree_cons                   PARAMS ((tree, tree, tree));
+            ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_shift/src/expmed.c:2522:45: error: too few arguments to function call, expected 3, have 1
+v38 = expand_shift( ( tree_code)( v39 | 0x52), mode, v36, v35, 0LL, 1); 
+                    ~~~~~~~~~~~~            ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_shift/src/tree.h:2477:1: note: 'tree_cons' declared here
+extern tree tree_cons                   PARAMS ((tree, tree, tree));
+^
+15 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_shift/src/obj/expmed.o] Error 1

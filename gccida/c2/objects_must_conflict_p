@@ -1,0 +1,12 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/objects_must_conflict_p/src/alias.c:781:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v8; // rsi 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/objects_must_conflict_p/src/alias.c:798:17: error: expected expression
+if ( *( _OWORD *)&t1 == 0LL || t1 && readonly_fields_p( t1) ) 
+                ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/objects_must_conflict_p/src/alias.c:798:9: error: use of undeclared identifier '_OWORD'
+if ( *( _OWORD *)&t1 == 0LL || t1 && readonly_fields_p( t1) ) 
+        ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/objects_must_conflict_p/src/obj/alias.o] Error 1

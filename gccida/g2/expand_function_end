@@ -1,0 +1,45 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_function_end/src/function.c:7277:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v8; // r12 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_function_end/src/function.c:7288:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v19; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_function_end/src/function.c:7304:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v35; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_function_end/src/function.c:7331:19: error: expected expression
+v8 = ( tree_node *)i[3]; 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_function_end/src/function.c:7331:8: error: use of undeclared identifier 'tree_node'
+v8 = ( tree_node *)i[3]; 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_function_end/src/function.c:7335:38: error: expected expression
+v11 = round_trampoline_addr( *( rtx *)( v10 + 8)); 
+                                     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_function_end/src/function.c:7400:20: error: expected expression
+v19 = ( tree_node *)p_chain[4]; 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_function_end/src/function.c:7400:9: error: use of undeclared identifier 'tree_node'
+v19 = ( tree_node *)p_chain[4]; 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_function_end/src/function.c:7410:14: error: expected expression
+if ( *( rtx *)( p_chain[4] + 144LL) == k ) 
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_function_end/src/function.c:7427:66: error: expected expression
+while ( !reg_mentioned_p( x_nonlocal_goto_handler_slots, *( rtx *)&k[2]) ) 
+                                                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_function_end/src/function.c:7429:39: error: expected ';' after expression
+x_nonlocal_goto_handler_slots = ( rtx)x_nonlocal_goto_handler_slots[1]; 
+                                      ^
+                                      ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_function_end/src/function.c:7441:93: error: expected expression
+if ( !x_nonlocal_goto_stack_level || !reg_mentioned_p( x_nonlocal_goto_stack_level, *( rtx *)&k[2]) ) 
+                                                                                            ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_function_end/src/function.c:7495:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v28.rtwint = ( __int64)v27->fld[0]; 
+                       ^~~~~~~~~~~
+13 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_function_end/src/obj/function.o] Error 1

@@ -1,0 +1,65 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_comparison_args/src/cse.c:3588:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code  find_comparison_args( 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_comparison_args/src/cse.c:3589:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_comparison_args/src/cse.c:3592:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode *pmode1, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_comparison_args/src/cse.c:3593:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode *pmode2) 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_comparison_args/src/cse.c:3622:6: error: use of undeclared identifier 'v33'
+rtx *v33; // [rsp+18h] [rbp-50h] 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_comparison_args/src/cse.c:3666:25: error: use of undeclared identifier 'machine_mode'
+v15 = canon_hash( v7, ( machine_mode)v10); 
+                        ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_comparison_args/src/cse.c:3687:1: error: use of undeclared identifier 'v33'
+v33 = v6; 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_comparison_args/src/cse.c:3694:6: error: use of undeclared identifier 'v33'
+v6 = v33; 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_comparison_args/src/cse.c:3722:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[v21] != MODE_INT ) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_comparison_args/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_comparison_args/src/cse.c:3727:16: error: expected expression
+parg2 = ( rtx *)0xFFFFFFFFLL; 
+               ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_comparison_args/src/cse.c:3740:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[( unsigned int)v21] != MODE_INT ) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_comparison_args/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_comparison_args/src/cse.c:3745:16: error: expected expression
+parg2 = ( rtx *)0xFFFFFFFFLL; 
+               ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_comparison_args/src/cse.c:3754:6: error: use of undeclared identifier 'v33'
+v6 = v33; 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_comparison_args/src/cse.c:3796:6: error: use of undeclared identifier 'v33'
+v6 = v33; 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_comparison_args/src/cse.c:3802:43: error: too many arguments to function call, expected 2, have 4
+v28 = reversed_comparison_code( exp, 0LL, ( __int64)parg2, (  struct rtx_def *)v11); 
+      ~~~~~~~~~~~~~~~~~~~~~~~~            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_comparison_args/src/rtl.h:1817:1: note: 'reversed_comparison_code' declared here
+extern enum rtx_code reversed_comparison_code PARAMS ((rtx, rtx));
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_comparison_args/src/cse.c:3807:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v31 = (  struct rtx_def *)exp[1]; 
+                          ^~~~~~
+16 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_comparison_args/src/obj/cse.o] Error 1

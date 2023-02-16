@@ -1,0 +1,45 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/put_var_into_stack/src/function.c:1821:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v4; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/put_var_into_stack/src/function.c:1825:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v8; // r11d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/put_var_into_stack/src/function.c:1828:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v11; // r14d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/put_var_into_stack/src/function.c:1829:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v12; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/put_var_into_stack/src/function.c:1830:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v13; // r11d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/put_var_into_stack/src/function.c:1850:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v33; // [rsp+4h] [rbp-54h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/put_var_into_stack/src/function.c:1851:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v34; // [rsp+4h] [rbp-54h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/put_var_into_stack/src/function.c:1907:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v27.rtwint = ( __int64)rtl->fld[0]; 
+                       ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/put_var_into_stack/src/function.c:1931:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v27.rtwint = ( __int64)rtl->fld[0]; 
+                       ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/put_var_into_stack/src/function.c:1949:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v28.rtwint = ( __int64)rtl->fld[0]; 
+                       ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/put_var_into_stack/src/function.c:1982:55: error: use of undeclared identifier 'machine_mode'
+put_reg_into_stack( v9, rtl, decl->common.type, v8, ( machine_mode)supercontext_low, v3, 0, v2, 0LL); 
+                                                      ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/put_var_into_stack/src/function.c:1992:30: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+hipart = (  struct rtx_def *)rtl[1]; 
+                             ^~~~~~
+12 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/put_var_into_stack/src/obj/function.o] Error 1

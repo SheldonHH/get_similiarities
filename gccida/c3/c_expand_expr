@@ -1,0 +1,30 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/c_expand_expr/src/c-common.c:4016:43: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  c_expand_expr( tree exp, rtx target, machine_mode tmode, expand_modifier modifier) 
+                                          ^
+                                          enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/c_expand_expr/src/c-common.c:4016:63: error: must use 'enum' tag to refer to type 'expand_modifier'
+rtx  c_expand_expr( tree exp, rtx target, machine_mode tmode, expand_modifier modifier) 
+                                                              ^
+                                                              enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/c_expand_expr/src/c-common.c:4019:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *decl; // [rsp+10h] [rbp-50h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/c_expand_expr/src/c-common.c:4024:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *rtl_expr; // [rsp+38h] [rbp-28h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/c_expand_expr/src/c-common.c:4046:14: error: expected identifier or '('
+ struct expr = *( tree *)( exp->int_cst.int_cst.low + 32); 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/c_expand_expr/src/c-common.c:4048:2: error: expected expression
+ struct expr = last; 
+ ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/c_expand_expr/src/c-common.c:4075:23: error: expected expression
+decl = *( tree_node **)( exp->int_cst.int_cst.low + 32); 
+                      ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/c_expand_expr/src/c-common.c:4075:11: error: use of undeclared identifier 'tree_node'
+decl = *( tree_node **)( exp->int_cst.int_cst.low + 32); 
+          ^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/c_expand_expr/src/obj/c-common.o] Error 1

@@ -1,0 +1,49 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/cse_main/src/cse.c:7520:4: error: expected ';' after expression
+rtx last; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/cse_main/src/cse.c:7520:5: error: use of undeclared identifier 'last'
+rtx last; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/cse_main/src/cse.c:7522:4: error: expected ';' after expression
+rtx v19; // rdx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/cse_main/src/cse.c:7522:5: error: use of undeclared identifier 'v19'
+rtx v19; // rdx 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/cse_main/src/cse.c:7539:1: error: use of undeclared identifier 'uid_cuid_0'; did you mean 'uid_cuid'?
+uid_cuid_0 = v8; 
+^~~~~~~~~~
+uid_cuid
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/cse_main/src/cse.c:360:13: note: 'uid_cuid' declared here
+static int *uid_cuid;
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/cse_main/src/cse.c:7576:1: error: use of undeclared identifier 'last'
+last = val.last; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/cse_main/src/cse.c:7578:7: error: use of undeclared identifier 'last'; did you mean 'labs'?
+if ( !last ) 
+      ^~~~
+      labs
+/usr/include/stdlib.h:838:17: note: 'labs' declared here
+extern long int labs (long int __x) __THROW __attribute__ ((__const__)) __wur;
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/cse_main/src/cse.c:7583:6: error: use of undeclared identifier 'last'
+v6 = last[1].fld[0].rtx; 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/cse_main/src/cse.c:7619:1: error: use of undeclared identifier 'v19'
+v19 = cse_basic_block( v6, v13, val.path, after_loop == 0); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/cse_main/src/cse.c:7626:6: error: use of undeclared identifier 'v19'
+v6 = v19; 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/cse_main/src/cse.c:7640:7: error: use of undeclared identifier 'uid_cuid_0'; did you mean 'uid_cuid'?
+free( uid_cuid_0); 
+      ^~~~~~~~~~
+      uid_cuid
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/cse_main/src/cse.c:360:13: note: 'uid_cuid' declared here
+static int *uid_cuid;
+            ^
+11 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/cse_main/src/obj/cse.o] Error 1

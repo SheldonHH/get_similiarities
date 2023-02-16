@@ -1,0 +1,14 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/eliminate_constant_term/src/explow.c:675:47: error: use of undeclared identifier 'machine_mode'
+&& ( tem = simplify_binary_operation( PLUS, ( machine_mode)*( ( unsigned __int8 *)x + 2), *constptr, *( rtx *)&x[1])) != 0LL 
+                                              ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/eliminate_constant_term/src/explow.c:686:18: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+if ( x1 == ( rtx)x[1] && x0 == x->fld[0].rtx ) 
+                 ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/eliminate_constant_term/src/explow.c:688:42: error: use of undeclared identifier 'machine_mode'
+tem = simplify_binary_operation( PLUS, ( machine_mode)*( ( unsigned __int8 *)x + 2), *constptr, tem); 
+                                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/eliminate_constant_term/src/explow.c:696:32: error: use of undeclared identifier 'machine_mode'
+return gen_rtx_fmt_ee( PLUS, ( machine_mode)*( ( unsigned __int8 *)x + 2), x0, x1); 
+                               ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/eliminate_constant_term/src/obj/explow.o] Error 1

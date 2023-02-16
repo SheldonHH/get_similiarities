@@ -1,0 +1,38 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/subst/src/combine.c:3790:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // [rsp+48h] [rbp-58h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/subst/src/combine.c:3802:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode op0_mode; // [rsp+70h] [rbp-30h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/subst/src/combine.c:3803:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code; // [rsp+74h] [rbp-2Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/subst/src/combine.c:3824:34: error: use of undeclared identifier 'machine_mode'
+return gen_rtx_fmt_e( CLOBBER, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)x), const_int_rtx[64]); 
+                                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/subst/src/combine.c:3824:49: error: expected expression
+return gen_rtx_fmt_e( CLOBBER, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)x), const_int_rtx[64]); 
+                                                ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/subst/src/combine.c:3967:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)xa->fld[0].rtwint), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/subst/src/combine.c:3967:18: error: expected expression
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)xa->fld[0].rtwint), 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/subst/src/combine.c:3976:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)xa), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/subst/src/combine.c:3976:18: error: expected expression
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)xa), 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/subst/src/combine.c:3978:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)xa->fld[0].rtwint)); 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/subst/src/combine.c:3978:18: error: expected expression
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)xa->fld[0].rtwint)); 
+                 ^
+11 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/subst/src/obj/combine.o] Error 1

@@ -1,0 +1,28 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_start_target_temps/src/stmt.c:3929:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v10; // rsi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_start_target_temps/src/stmt.c:3930:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v11; // rdx 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_start_target_temps/src/stmt.c:3969:21: error: member reference base type 'const __m128i' (vector of 2 'long long' values) is not a structure or union
+LODWORD( v4) = v7[3].m128i_i32[0] + 1; 
+               ~~~~~^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_start_target_temps/src/stmt.c:3971:6: error: member reference base type 'const __m128i' (vector of 2 'long long' values) is not a structure or union
+v7[3].m128i_i32[0] = ( int)v4; 
+~~~~~^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_start_target_temps/src/stmt.c:3983:36: error: expected expression
+if ( *v8 && ( ( v10 = ( tree_node *)*( ( _QWORD *)v9 + 8), v11 = ( tree_node *)*( ( _QWORD *)v9 + 9), v10) || v11) ) 
+                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_start_target_temps/src/stmt.c:3983:25: error: use of undeclared identifier 'tree_node'
+if ( *v8 && ( ( v10 = ( tree_node *)*( ( _QWORD *)v9 + 8), v11 = ( tree_node *)*( ( _QWORD *)v9 + 9), v10) || v11) ) 
+                        ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_start_target_temps/src/stmt.c:3983:79: error: expected expression
+if ( *v8 && ( ( v10 = ( tree_node *)*( ( _QWORD *)v9 + 8), v11 = ( tree_node *)*( ( _QWORD *)v9 + 9), v10) || v11) ) 
+                                                                              ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_start_target_temps/src/stmt.c:3983:68: error: use of undeclared identifier 'tree_node'
+if ( *v8 && ( ( v10 = ( tree_node *)*( ( _QWORD *)v9 + 8), v11 = ( tree_node *)*( ( _QWORD *)v9 + 9), v10) || v11) ) 
+                                                                   ^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_start_target_temps/src/obj/stmt.o] Error 1

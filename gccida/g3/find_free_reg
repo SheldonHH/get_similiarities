@@ -1,0 +1,41 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/find_free_reg/src/local-alloc.c:2648:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class a1, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/find_free_reg/src/local-alloc.c:2649:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/find_free_reg/src/local-alloc.c:2709:61: error: use of undeclared identifier 'qty_0'
+if ( ( *( _BYTE *)( *( _QWORD *)&cfun + 425LL) & 1) != 0 && qty_0[v30].n_calls_crossed > 0 ) 
+                                                            ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/find_free_reg/src/local-alloc.c:2718:7: error: use of undeclared identifier 'qty_0'
+if ( !qty_0[v30].n_calls_crossed ) 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/find_free_reg/src/local-alloc.c:2725:4: error: assigning to '__m128i' (vector of 2 'long long' values) from incompatible type 'long long'
+v9 = 0LL; 
+   ^ ~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/find_free_reg/src/local-alloc.c:2733:48: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+v8 |= _mm_or_si128( v9, _mm_srli_si128( v9, 8)).m128i_u64[0]; 
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/find_free_reg/src/local-alloc.c:2782:38: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( ( unsigned int)( *( ( _DWORD *)&mode_class_0 + ( int)mode) - 5) > 1 ) 
+                                     ^~~~~~~~~~~~
+                                     mode_class
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/find_free_reg/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/find_free_reg/src/local-alloc.c:2793:7: error: use of undeclared identifier 'unk_9ABB74'
+if ( &unk_9ABB74 == ( _UNKNOWN *)++v16 ) 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/find_free_reg/src/local-alloc.c:2830:10: error: use of undeclared identifier 'unk_9ABB74'
+while ( &unk_9ABB74 != ( _UNKNOWN *)v16 ); 
+         ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/find_free_reg/src/local-alloc.c:2847:19: error: use of undeclared identifier 'qty_0'
+n_calls_crossed = qty_0[v30].n_calls_crossed; 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/find_free_reg/src/local-alloc.c:2848:49: error: use of undeclared identifier 'qty_0'
+if ( !n_calls_crossed || 4 * n_calls_crossed >= qty_0[v30].n_refs ) 
+                                                ^
+11 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/find_free_reg/src/obj/local-alloc.o] Error 1

@@ -1,0 +1,12 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/valid_compound_expr_initializer/src/c-typeck.c:4835:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v11; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/valid_compound_expr_initializer/src/c-typeck.c:4981:20: error: expected expression
+v11 = ( tree_node *)global_trees; 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/valid_compound_expr_initializer/src/c-typeck.c:4981:9: error: use of undeclared identifier 'tree_node'
+v11 = ( tree_node *)global_trees; 
+        ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/valid_compound_expr_initializer/src/obj/c-typeck.o] Error 1

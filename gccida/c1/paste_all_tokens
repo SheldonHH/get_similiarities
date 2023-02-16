@@ -1,0 +1,78 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/paste_all_tokens/src/cppmacro.c:871:25: error: unknown type name 'cpp_reader_0'; did you mean 'cpp_reader'?
+void  paste_all_tokens( cpp_reader_0 *pfile, const cpp_token_0 *lhs) 
+                        ^~~~~~~~~~~~
+                        cpp_reader
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/paste_all_tokens/src/cpplib.h:36:27: note: 'cpp_reader' declared here
+typedef struct cpp_reader cpp_reader;
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/paste_all_tokens/src/cppmacro.c:871:52: error: unknown type name 'cpp_token_0'; did you mean 'cpp_token'?
+void  paste_all_tokens( cpp_reader_0 *pfile, const cpp_token_0 *lhs) 
+                                                   ^~~~~~~~~~~
+                                                   cpp_token
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/paste_all_tokens/src/cpplib.h:40:26: note: 'cpp_token' declared here
+typedef struct cpp_token cpp_token;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/paste_all_tokens/src/cppmacro.c:874:1: error: must use 'union' tag to refer to type 'utoken'
+utoken v3; // rbx 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/paste_all_tokens/src/cppmacro.c:875:1: error: must use 'union' tag to refer to type 'utoken'
+utoken v4; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/paste_all_tokens/src/cppmacro.c:878:1: error: unknown type name 'cpp_token_0'; did you mean 'cpp_token'?
+cpp_token_0 *token; // [rsp+0h] [rbp-28h] BYREF 
+^~~~~~~~~~~
+cpp_token
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/paste_all_tokens/src/cpplib.h:40:26: note: 'cpp_token' declared here
+typedef struct cpp_token cpp_token;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/paste_all_tokens/src/cppmacro.c:880:24: error: expected expression
+token = ( cpp_token_0 *)lhs; 
+                       ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/paste_all_tokens/src/cppmacro.c:880:11: error: use of undeclared identifier 'cpp_token_0'
+token = ( cpp_token_0 *)lhs; 
+          ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/paste_all_tokens/src/cppmacro.c:886:20: error: unknown type name 'cpp_token_0'; did you mean 'cpp_token'?
+v3.token = ( const cpp_token_0 *)context->first; 
+                   ^~~~~~~~~~~
+                   cpp_token
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/paste_all_tokens/src/cpplib.h:40:26: note: 'cpp_token' declared here
+typedef struct cpp_token cpp_token;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/paste_all_tokens/src/cppmacro.c:886:34: error: operand of type 'union utoken' where arithmetic or pointer type is required
+v3.token = ( const cpp_token_0 *)context->first; 
+                                 ^~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/paste_all_tokens/src/cppmacro.c:893:20: error: unknown type name 'cpp_token_0'; did you mean 'cpp_token'?
+v4.token = ( const cpp_token_0 *)context->first; 
+                   ^~~~~~~~~~~
+                   cpp_token
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/paste_all_tokens/src/cpplib.h:40:26: note: 'cpp_token' declared here
+typedef struct cpp_token cpp_token;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/paste_all_tokens/src/cppmacro.c:893:34: error: operand of type 'union utoken' where arithmetic or pointer type is required
+v4.token = ( const cpp_token_0 *)context->first; 
+                                 ^~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/paste_all_tokens/src/cppmacro.c:894:32: error: unknown type name 'cpp_token_0'; did you mean 'cpp_token'?
+context->first.token = ( const cpp_token_0 *)&v4.token->val; 
+                               ^~~~~~~~~~~
+                               cpp_token
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/paste_all_tokens/src/cpplib.h:40:26: note: 'cpp_token' declared here
+typedef struct cpp_token cpp_token;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/paste_all_tokens/src/cppmacro.c:895:21: error: unknown type name 'cpp_token_0'; did you mean 'cpp_token'?
+v3.token = *( const cpp_token_0 **)v4.token; 
+                    ^~~~~~~~~~~
+                    cpp_token
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/paste_all_tokens/src/cpplib.h:40:26: note: 'cpp_token' declared here
+typedef struct cpp_token cpp_token;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/paste_all_tokens/src/cppmacro.c:900:36: error: unknown type name 'cpp_token_0'; did you mean 'cpp_token'?
+if ( !paste_tokens( pfile, ( const cpp_token_0 **)&token, v3.token) ) 
+                                   ^~~~~~~~~~~
+                                   cpp_token
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/paste_all_tokens/src/cpplib.h:40:26: note: 'cpp_token' declared here
+typedef struct cpp_token cpp_token;
+                         ^
+14 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/paste_all_tokens/src/obj/cppmacro.o] Error 1

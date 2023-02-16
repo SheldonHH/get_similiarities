@@ -1,0 +1,48 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/sched_analyze_1/src/sched-deps.c:1015:24: error: unknown type name 'deps_0'
+void  sched_analyze_1( deps_0 *deps, rtx x, rtx insn) 
+                       ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/sched_analyze_1/src/sched-deps.c:1023:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v9; // edx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/sched_analyze_1/src/sched-deps.c:1036:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code; // [rsp+54h] [rbp-2Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/sched_analyze_1/src/sched-deps.c:1143:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[( unsigned __int8)BYTE2( *( _DWORD *)dest)] != MODE_COMPLEX_INT ) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/sched_analyze_1/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/sched_analyze_1/src/sched-deps.c:1144:7: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v13 = mode_class_0[( unsigned __int8)BYTE2( *( _DWORD *)dest)] == MODE_COMPLEX_FLOAT; 
+      ^~~~~~~~~~~~
+      mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/sched_analyze_1/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/sched_analyze_1/src/sched-deps.c:1181:16: error: expected expression
+if ( operator+=<char [3], QByteArray>( pending_mem->fld[0].rtx, t) ) 
+               ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/sched_analyze_1/src/sched-deps.c:1181:6: error: use of undeclared identifier 'operator'
+if ( operator+=<char [3], QByteArray>( pending_mem->fld[0].rtx, t) ) 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/sched_analyze_1/src/sched-deps.c:1181:17: error: expected expression
+if ( operator+=<char [3], QByteArray>( pending_mem->fld[0].rtx, t) ) 
+                ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/sched_analyze_1/src/sched-deps.c:1183:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+pending = ( rtx)pending[1]; 
+                ^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/sched_analyze_1/src/sched-deps.c:1184:21: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+pending_mem = ( rtx)pending_mem[1]; 
+                    ^~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/sched_analyze_1/src/sched-deps.c:1192:18: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+pendinga = ( rtx)pendinga[1]; 
+                 ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/sched_analyze_1/src/sched-deps.c:1193:22: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+pending_mema = ( rtx)pending_mema[1]; 
+                     ^~~~~~~~~~~~~~~
+12 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/sched_analyze_1/src/obj/sched-deps.o] Error 1

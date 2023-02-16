@@ -1,0 +1,79 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/back_branch_in_range_p/src/unroll.c:2828:4: error: expected ';' after expression
+rtx start; // rbp 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/back_branch_in_range_p/src/unroll.c:2828:5: error: use of undeclared identifier 'start'; did you mean 'stat'?
+rtx start; // rbp 
+    ^~~~~
+    stat
+/usr/include/x86_64-linux-gnu/sys/stat.h:205:12: note: 'stat' declared here
+extern int stat (const char *__restrict __file,
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/back_branch_in_range_p/src/unroll.c:2829:4: error: expected ';' after expression
+rtx nonnote_insn; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/back_branch_in_range_p/src/unroll.c:2829:5: error: use of undeclared identifier 'nonnote_insn'
+rtx nonnote_insn; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/back_branch_in_range_p/src/unroll.c:2833:4: error: expected ';' after expression
+rtx v9; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/back_branch_in_range_p/src/unroll.c:2833:5: error: use of undeclared identifier 'v9'
+rtx v9; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/back_branch_in_range_p/src/unroll.c:2837:1: error: use of undeclared identifier 'start'
+start = loop->start; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/back_branch_in_range_p/src/unroll.c:2838:1: error: use of undeclared identifier 'nonnote_insn'
+nonnote_insn = prev_nonnote_insn( end); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/back_branch_in_range_p/src/unroll.c:2839:6: error: use of undeclared identifier 'nonnote_insn'
+v6 = nonnote_insn; 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/back_branch_in_range_p/src/unroll.c:2840:17: error: use of undeclared identifier 'nonnote_insn'
+if ( *( _WORD *)nonnote_insn == 35 ) 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/back_branch_in_range_p/src/unroll.c:2841:26: error: use of undeclared identifier 'nonnote_insn'
+v6 = (  struct rtx_def *)nonnote_insn[1]; 
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/back_branch_in_range_p/src/unroll.c:2850:29: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+for ( v7.rtwint = ( __int64)rtx[1].fld[0]; v7.rtx != v6; v7.rtwint = *( __int64 *)( v7.rtwint + 24) ) 
+                            ^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/back_branch_in_range_p/src/unroll.c:2855:6: error: use of undeclared identifier 'start'; did you mean 'stat'?
+if ( start != rtx ) 
+     ^~~~~
+     stat
+/usr/include/x86_64-linux-gnu/sys/stat.h:205:12: note: 'stat' declared here
+extern int stat (const char *__restrict __file,
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/back_branch_in_range_p/src/unroll.c:2857:6: error: use of undeclared identifier 'start'; did you mean 'stat'?
+if ( start == v8 ) 
+     ^~~~~
+     stat
+/usr/include/x86_64-linux-gnu/sys/stat.h:205:12: note: 'stat' declared here
+extern int stat (const char *__restrict __file,
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/back_branch_in_range_p/src/unroll.c:2859:1: error: use of undeclared identifier 'v9'
+v9 = start; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/back_branch_in_range_p/src/unroll.c:2859:6: error: use of undeclared identifier 'start'; did you mean 'stat'?
+v9 = start; 
+     ^~~~~
+     stat
+/usr/include/x86_64-linux-gnu/sys/stat.h:205:12: note: 'stat' declared here
+extern int stat (const char *__restrict __file,
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/back_branch_in_range_p/src/unroll.c:2862:1: error: use of undeclared identifier 'v9'
+v9 = v9[1].fld[0].rtx; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/back_branch_in_range_p/src/unroll.c:2862:6: error: use of undeclared identifier 'v9'
+v9 = v9[1].fld[0].rtx; 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/back_branch_in_range_p/src/unroll.c:2863:6: error: use of undeclared identifier 'v9'
+if ( v9 == rtx ) 
+     ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/back_branch_in_range_p/src/obj/unroll.o] Error 1

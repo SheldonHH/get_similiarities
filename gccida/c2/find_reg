@@ -1,0 +1,111 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_reg/src/global.c:1458:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class v9; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_reg/src/global.c:1479:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class v30; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_reg/src/global.c:1480:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class v31; // r12d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_reg/src/global.c:1486:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class v37; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_reg/src/global.c:1487:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class v38; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_reg/src/global.c:1493:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class v44; // r12d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_reg/src/global.c:1494:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class v45; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_reg/src/global.c:1500:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class v51; // r13d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_reg/src/global.c:1501:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class v52; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_reg/src/global.c:1606:27: error: use of undeclared identifier 'allocno_0'; did you mean 'allocno'?
+v8 = *( int *)( ( char *)&allocno_0->reg + v7); 
+                          ^~~~~~~~~
+                          allocno
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_reg/src/global.c:135:24: note: 'allocno' declared here
+static struct allocno *allocno;
+                       ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_reg/src/global.c:1612:88: error: use of undeclared identifier 'allocno_0'; did you mean 'allocno'?
+v154 = ( unsigned __int64)*( _DWORD *)cfun->emit->x_regno_reg_rtx[*( int *)( ( char *)&allocno_0->reg + v7)] >> 16; 
+                                                                                       ^~~~~~~~~
+                                                                                       allocno
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_reg/src/global.c:135:24: note: 'allocno' declared here
+static struct allocno *allocno;
+                       ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_reg/src/global.c:1613:93: error: use of undeclared identifier 'allocno_0'; did you mean 'allocno'?
+v10 = ( unsigned __int8)BYTE2( *( _DWORD *)cfun->emit->x_regno_reg_rtx[*( int *)( ( char *)&allocno_0->reg + v7)]); 
+                                                                                            ^~~~~~~~~
+                                                                                            allocno
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_reg/src/global.c:1186:24: note: expanded from macro 'BYTE2'
+#define BYTE2(x) BYTEn(x, 2)
+                       ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_reg/src/global.c:1142:34: note: expanded from macro 'BYTEn'
+#define BYTEn(x, n) (*((_BYTE*)&(x)+n))
+                                 ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_reg/src/global.c:135:24: note: 'allocno' declared here
+static struct allocno *allocno;
+                       ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_reg/src/global.c:1619:28: error: use of undeclared identifier 'allocno_0'; did you mean 'allocno'?
+if ( !*( int *)( ( char *)&allocno_0->calls_crossed + v7) ) 
+                           ^~~~~~~~~
+                           allocno
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_reg/src/global.c:135:24: note: 'allocno' declared here
+static struct allocno *allocno;
+                       ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_reg/src/global.c:1623:49: error: use of undeclared identifier 'allocno_0'; did you mean 'allocno'?
+v12 = v157 | *( HARD_REG_ELT_TYPE *)( ( char *)&allocno_0->hard_reg_conflicts + v7); 
+                                                ^~~~~~~~~
+                                                allocno
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_reg/src/global.c:135:24: note: 'allocno' declared here
+static struct allocno *allocno;
+                       ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_reg/src/global.c:1625:42: error: use of undeclared identifier 'allocno_0'; did you mean 'allocno'?
+v13 = *( HARD_REG_ELT_TYPE *)( ( char *)&allocno_0->regs_someone_prefers + v7) | v12 | ~regs_used_so_far; 
+                                         ^~~~~~~~~
+                                         allocno
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_reg/src/global.c:135:24: note: 'allocno' declared here
+static struct allocno *allocno;
+                       ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_reg/src/global.c:1635:83: error: use of undeclared identifier 'machine_mode'
+if ( !_bittest64( ( const __int64 *)&v17, v19) && ix86_hard_regno_mode_ok( v19, ( machine_mode)v10) ) 
+                                                                                  ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_reg/src/global.c:1640:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v21 = ( ( unsigned int)( mode_class_0[v10] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_reg/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_reg/src/global.c:1687:7: error: use of undeclared identifier 'allocno_0'; did you mean 'allocno'?
+v25 = allocno_0; 
+      ^~~~~~~~~
+      allocno
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_reg/src/global.c:135:24: note: 'allocno' declared here
+static struct allocno *allocno;
+                       ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_reg/src/global.c:1689:50: error: use of undeclared identifier 'allocno_0'; did you mean 'allocno'?
+v27 = ~v17 & *( HARD_REG_ELT_TYPE *)( ( _BYTE *)&allocno_0->hard_reg_copy_preferences + v138); 
+                                                 ^~~~~~~~~
+                                                 allocno
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_reg/src/global.c:135:24: note: 'allocno' declared here
+static struct allocno *allocno;
+                       ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_reg/src/obj/global.o] Error 1

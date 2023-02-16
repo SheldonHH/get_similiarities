@@ -1,0 +1,60 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_expmed/src/expmed.c:589:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v21; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_expmed/src/expmed.c:606:25: error: invalid suffix 'xmode' on integer constant
+gen_rtx_REG( *(short *)0xmode, 10000); 
+                        ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_expmed/src/expmed.c:608:31: error: invalid suffix 'xmode' on integer constant
+reg = gen_rtx_REG( *(short *)0xmode, 10000); 
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_expmed/src/expmed.c:610:39: error: invalid suffix 'xmode' on integer constant
+v0 = gen_rtx_fmt_ee( PLUS, *(short *)0xmode, reg, reg); 
+                                      ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_expmed/src/expmed.c:612:41: error: invalid suffix 'xmode' on integer constant
+v1 = gen_rtx_fmt_ee( ASHIFT, *(short *)0xmode, reg, const_int_rtx[64]); 
+                                        ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_expmed/src/expmed.c:615:39: error: invalid suffix 'xmode' on integer constant
+v4 = gen_rtx_fmt_ee( MULT, *(short *)0xmode, reg, const_int_rtx[64]); 
+                                      ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_expmed/src/expmed.c:616:39: error: invalid suffix 'xmode' on integer constant
+v5 = gen_rtx_fmt_ee( PLUS, *(short *)0xmode, v4, reg); 
+                                      ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_expmed/src/expmed.c:619:39: error: invalid suffix 'xmode' on integer constant
+v8 = gen_rtx_fmt_ee( MULT, *(short *)0xmode, reg, const_int_rtx[64]); 
+                                      ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_expmed/src/expmed.c:620:40: error: invalid suffix 'xmode' on integer constant
+v9 = gen_rtx_fmt_ee( MINUS, *(short *)0xmode, v8, reg); 
+                                       ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_expmed/src/expmed.c:645:38: error: invalid suffix 'xmode' on integer constant
+v16 = gen_rtx_fmt_e( NEG, *(short *)0xmode, reg); 
+                                     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_expmed/src/expmed.c:648:39: error: invalid suffix 'xmode' on integer constant
+v18 = gen_rtx_fmt_ee( DIV, *(short *)0xmode, reg, v17); 
+                                      ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_expmed/src/expmed.c:651:39: error: invalid suffix 'xmode' on integer constant
+v20 = gen_rtx_fmt_ee( MOD, *(short *)0xmode, reg, v19); 
+                                      ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_expmed/src/expmed.c:666:37: error: use of undeclared identifier 'machine_mode'
+v22 = gen_rtx_fmt_e( ZERO_EXTEND, ( machine_mode)v34, v31); 
+                                    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_expmed/src/expmed.c:667:37: error: use of undeclared identifier 'machine_mode'
+v23 = gen_rtx_fmt_e( ZERO_EXTEND, ( machine_mode)v34, v31); 
+                                    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_expmed/src/expmed.c:668:31: error: use of undeclared identifier 'machine_mode'
+v24 = gen_rtx_fmt_ee( MULT, ( machine_mode)v34, v23, v22); 
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_expmed/src/expmed.c:671:37: error: use of undeclared identifier 'machine_mode'
+v26 = gen_rtx_fmt_e( ZERO_EXTEND, ( machine_mode)v34, v31); 
+                                    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_expmed/src/expmed.c:672:37: error: use of undeclared identifier 'machine_mode'
+v27 = gen_rtx_fmt_e( ZERO_EXTEND, ( machine_mode)v34, v31); 
+                                    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_expmed/src/expmed.c:673:31: error: use of undeclared identifier 'machine_mode'
+v28 = gen_rtx_fmt_ee( MULT, ( machine_mode)v34, v27, v26); 
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_expmed/src/expmed.c:674:35: error: use of undeclared identifier 'machine_mode'
+v29 = gen_rtx_fmt_ee( LSHIFTRT, ( machine_mode)v34, v28, v25); 
+                                  ^
+19 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_expmed/src/obj/expmed.o] Error 1

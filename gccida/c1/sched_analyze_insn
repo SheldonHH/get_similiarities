@@ -1,0 +1,92 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/sched_analyze_insn/src/sched-deps.c:1369:27: error: unknown type name 'deps_0'
+void  sched_analyze_insn( deps_0 *deps, rtx x, rtx insn, rtx loop_notes) 
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/sched_analyze_insn/src/sched-deps.c:1413:1: error: use of undeclared identifier 'deps_0'; did you mean 'deps'?
+deps_0 *v47; // r13 
+^~~~~~
+deps
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/sched_analyze_insn/src/sched-deps.c:1369:35: note: 'deps' declared here
+void  sched_analyze_insn( deps_0 *deps, rtx x, rtx insn, rtx loop_notes) 
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/sched_analyze_insn/src/sched-deps.c:1413:9: error: use of undeclared identifier 'v47'
+deps_0 *v47; // r13 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/sched_analyze_insn/src/sched-deps.c:1491:12: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v6 = ( rtx)x[1]; 
+           ^~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/sched_analyze_insn/src/sched-deps.c:1538:21: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( i = ( __int64)v5[4]; i; i = *( _QWORD *)( i + 16) ) 
+                    ^~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/sched_analyze_insn/src/sched-deps.c:1571:51: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( j = deps->pending_write_insns; j; j = ( rtx)j[1] ) 
+                                                  ^~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/sched_analyze_insn/src/sched-deps.c:1583:28: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+pending_read_insns = ( rtx)pending_read_insns[1]; 
+                           ^~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/sched_analyze_insn/src/sched-deps.c:1593:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v22 = (  struct rtx_def *)loop_notes[1]; 
+                          ^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/sched_analyze_insn/src/sched-deps.c:1601:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v25.rtwint = ( __int64)v23->fld[0]; 
+                       ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/sched_analyze_insn/src/sched-deps.c:1606:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v22 = (  struct rtx_def *)v23[1]; 
+                          ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/sched_analyze_insn/src/sched-deps.c:1643:49: error: use of undeclared identifier 'reg_note'; did you mean 'reg_names'?
+add_dependence_list( val, reg_last[v33].sets, ( reg_note)0); 
+                                                ^~~~~~~~
+                                                reg_names
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/sched_analyze_insn/src/regs.h:166:21: note: 'reg_names' declared here
+extern const char * reg_names[FIRST_PSEUDO_REGISTER];
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/sched_analyze_insn/src/sched-deps.c:1643:58: error: expected ')'
+add_dependence_list( val, reg_last[v33].sets, ( reg_note)0); 
+                                                         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/sched_analyze_insn/src/sched-deps.c:1643:20: note: to match this '('
+add_dependence_list( val, reg_last[v33].sets, ( reg_note)0); 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/sched_analyze_insn/src/sched-deps.c:1644:53: error: use of undeclared identifier 'reg_note'; did you mean 'reg_names'?
+add_dependence_list( val, reg_last[v33].clobbers, ( reg_note)0); 
+                                                    ^~~~~~~~
+                                                    reg_names
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/sched_analyze_insn/src/regs.h:166:21: note: 'reg_names' declared here
+extern const char * reg_names[FIRST_PSEUDO_REGISTER];
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/sched_analyze_insn/src/sched-deps.c:1644:62: error: expected ')'
+add_dependence_list( val, reg_last[v33].clobbers, ( reg_note)0); 
+                                                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/sched_analyze_insn/src/sched-deps.c:1644:20: note: to match this '('
+add_dependence_list( val, reg_last[v33].clobbers, ( reg_note)0); 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/sched_analyze_insn/src/sched-deps.c:1685:54: error: use of undeclared identifier 'reg_note'; did you mean 'reg_names'?
+add_dependence_list_and_free( val, &v45[v46].sets, ( reg_note)0); 
+                                                     ^~~~~~~~
+                                                     reg_names
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/sched_analyze_insn/src/regs.h:166:21: note: 'reg_names' declared here
+extern const char * reg_names[FIRST_PSEUDO_REGISTER];
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/sched_analyze_insn/src/sched-deps.c:1685:63: error: expected ')'
+add_dependence_list_and_free( val, &v45[v46].sets, ( reg_note)0); 
+                                                              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/sched_analyze_insn/src/sched-deps.c:1685:29: note: to match this '('
+add_dependence_list_and_free( val, &v45[v46].sets, ( reg_note)0); 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/sched_analyze_insn/src/sched-deps.c:1686:58: error: use of undeclared identifier 'reg_note'; did you mean 'reg_names'?
+add_dependence_list_and_free( val, &v45[v46].clobbers, ( reg_note)0); 
+                                                         ^~~~~~~~
+                                                         reg_names
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/sched_analyze_insn/src/regs.h:166:21: note: 'reg_names' declared here
+extern const char * reg_names[FIRST_PSEUDO_REGISTER];
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/sched_analyze_insn/src/sched-deps.c:1686:67: error: expected ')'
+add_dependence_list_and_free( val, &v45[v46].clobbers, ( reg_note)0); 
+                                                                  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/sched_analyze_insn/src/sched-deps.c:1686:29: note: to match this '('
+add_dependence_list_and_free( val, &v45[v46].clobbers, ( reg_note)0); 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/sched_analyze_insn/src/sched-deps.c:1705:1: error: use of undeclared identifier 'v47'
+v47 = deps; 
+^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/sched_analyze_insn/src/obj/sched-deps.o] Error 1

@@ -1,0 +1,80 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/scan_one_insn/src/regclass.c:1562:4: error: expected ';' after expression
+rtx v49; // rbp 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/scan_one_insn/src/regclass.c:1562:5: error: use of undeclared identifier 'v49'
+rtx v49; // rbp 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/scan_one_insn/src/regclass.c:1567:6: error: use of undeclared identifier 'v55'
+rtx *v55; // rdi 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/scan_one_insn/src/regclass.c:1568:6: error: use of undeclared identifier 'v56'
+rtx *v56; // rdi 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/scan_one_insn/src/regclass.c:1570:4: error: expected ';' after expression
+rtx ops[16]; // [rsp+10h] [rbp-EC8h] BYREF 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/scan_one_insn/src/regclass.c:1570:5: error: use of undeclared identifier 'ops'
+rtx ops[16]; // [rsp+10h] [rbp-EC8h] BYREF 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/scan_one_insn/src/regclass.c:1572:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode modes[2]; // [rsp+180h] [rbp-D58h] BYREF 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/scan_one_insn/src/regclass.c:1580:12: error: expected ';' after expression
+v3 = ( rtx)insn[2]; 
+           ^
+           ;
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/scan_one_insn/src/regclass.c:1584:34: error: expected expression
+v3 = single_set_2( insn, *( rtx *)&insn[2]); 
+                                 ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/scan_one_insn/src/regclass.c:1595:31: error: use of undeclared identifier 'machine_mode'
+v5 = ix86_memory_move_cost( ( machine_mode)*( unsigned __int8 *)( v3->fld[0].rtwint + 2), GENERAL_REGS, 1); 
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/scan_one_insn/src/regclass.c:1598:1: error: use of undeclared identifier 'costs_0'; did you mean 'costs'?
+costs_0[v7].mem_cost -= frequency * v5; 
+^~~~~~~
+costs
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/scan_one_insn/src/regclass.c:861:22: note: 'costs' declared here
+static struct costs *costs;
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/scan_one_insn/src/regclass.c:1599:30: error: expected expression
+record_address_regs( *( rtx *)( *( _QWORD *)&v3[1] + 8LL), GENERAL_REGS, 2 * v6); 
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/scan_one_insn/src/regclass.c:1607:4: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+&& recog_data_0.n_operands >= 3 
+   ^~~~~~~~~~~~
+   recog_data
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/scan_one_insn/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/scan_one_insn/src/regclass.c:1608:5: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+&& *recog_data_0.constraints[1] == 48 
+    ^~~~~~~~~~~~
+    recog_data
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/scan_one_insn/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/scan_one_insn/src/regclass.c:1609:18: error: use of undeclared identifier 'recog_data_0'
+&& !*( ( _BYTE *)recog_data_0.constraints[1] + 1) ) 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/scan_one_insn/src/regclass.c:1611:25: error: use of undeclared identifier 'recog_data_0'
+if ( ( v8 = *( _DWORD *)recog_data_0.operand[1], ( unsigned __int16)( *( _DWORD *)recog_data_0.operand[1] - 54) <= 0xEu) 
+                        ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/scan_one_insn/src/regclass.c:1611:83: error: use of undeclared identifier 'recog_data_0'
+if ( ( v8 = *( _DWORD *)recog_data_0.operand[1], ( unsigned __int16)( *( _DWORD *)recog_data_0.operand[1] - 54) <= 0xEu) 
+                                                                                  ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/scan_one_insn/src/regclass.c:1612:45: error: use of undeclared identifier 'recog_data_0'
+&& ( v9 = 24599, _bittest( &v9, *( _DWORD *)recog_data_0.operand[1] - 54)) 
+                                            ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/scan_one_insn/src/regclass.c:1616:20: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( !rtx_equal_p( recog_data_0.operand[0], recog_data_0.operand[1]) 
+                   ^~~~~~~~~~~~
+                   recog_data
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/scan_one_insn/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/scan_one_insn/src/obj/regclass.o] Error 1

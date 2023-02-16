@@ -1,0 +1,83 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/find_equiv_reg/src/reload.c:6780:19: error: conflicting types for 'find_equiv_reg'
+ struct rtx_def * find_equiv_reg( 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/find_equiv_reg/src/reload.h:326:12: note: previous declaration is here
+extern rtx find_equiv_reg PARAMS ((rtx, rtx, enum reg_class, int, short *,
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/find_equiv_reg/src/reload.c:6919:4: error: expected ';' after expression
+rtx datumb; // [rsp+20h] [rbp-68h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/find_equiv_reg/src/reload.c:6919:5: error: use of undeclared identifier 'datumb'
+rtx datumb; // [rsp+20h] [rbp-68h] 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/find_equiv_reg/src/reload.c:6920:4: error: expected ';' after expression
+rtx datumc; // [rsp+20h] [rbp-68h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/find_equiv_reg/src/reload.c:6920:5: error: use of undeclared identifier 'datumc'
+rtx datumc; // [rsp+20h] [rbp-68h] 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/find_equiv_reg/src/reload.c:6921:4: error: expected ';' after expression
+rtx datumd; // [rsp+20h] [rbp-68h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/find_equiv_reg/src/reload.c:6921:5: error: use of undeclared identifier 'datumd'
+rtx datumd; // [rsp+20h] [rbp-68h] 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/find_equiv_reg/src/reload.c:6944:24: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| flag_float_store && mode_class_0[*( ( unsigned __int8 *)in + 2)] == MODE_FLOAT 
+                       ^~~~~~~~~~~~
+                       mode_class
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/find_equiv_reg/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/find_equiv_reg/src/reload.c:7019:13: error: invalid operands to binary expression ('struct rtx_def *' and 'uint64 *' (aka 'unsigned long long *'))
+v14 = ( rtx)*( ( _QWORD *)v13 + 4); 
+      ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/find_equiv_reg/src/reload.c:7023:27: error: expected ')'
+v14 = single_set_2( ( rtx)v13, ( rtx)rtwint); 
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/find_equiv_reg/src/reload.c:7023:19: note: to match this '('
+v14 = single_set_2( ( rtx)v13, ( rtx)rtwint); 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/find_equiv_reg/src/reload.c:7029:27: error: expected expression
+if ( true_regnum( *( rtx *)&v14[1]) != ( _DWORD)rtuint 
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/find_equiv_reg/src/reload.c:7033:32: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+|| ( v24 = (  struct rtx_def *)v14[1], v33 = true_regnum( v24), v27 = v24, v16 = ( unsigned int)v33, v33 < 0) ) 
+                               ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/find_equiv_reg/src/reload.c:7039:27: error: expected expression
+if ( rtx_equal_p( *( rtx *)&v14[1], in) ) 
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/find_equiv_reg/src/reload.c:7058:33: error: expected ')'
+reg_note = find_reg_note( ( rtx)v13, REG_EQUIV, 0LL); 
+                                ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/find_equiv_reg/src/reload.c:7058:25: note: to match this '('
+reg_note = find_reg_note( ( rtx)v13, REG_EQUIV, 0LL); 
+                        ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/find_equiv_reg/src/reload.c:7063:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v22.rtwint = ( __int64)reg_note->fld[0]; 
+                       ^~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/find_equiv_reg/src/reload.c:7066:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[*( unsigned __int8 *)( v22.rtwint + 2)] != MODE_FLOAT ) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/find_equiv_reg/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/find_equiv_reg/src/reload.c:7073:30: error: expected ')'
+if ( !rtx_equal_p( in, ( rtx)rtwint) ) 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/find_equiv_reg/src/reload.c:7073:18: note: to match this '('
+if ( !rtx_equal_p( in, ( rtx)rtwint) ) 
+                 ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/find_equiv_reg/src/reload.c:7080:1: error: use of undeclared identifier 'datumc'
+datumc = v23; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/find_equiv_reg/src/reload.c:7082:7: error: use of undeclared identifier 'datumc'
+v27 = datumc; 
+      ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/find_equiv_reg/src/obj/reload.o] Error 1

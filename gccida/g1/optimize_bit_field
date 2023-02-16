@@ -1,0 +1,63 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/optimize_bit_field/src/function.c:3187:4: error: expected ';' after expression
+rtx v15; // r12 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/optimize_bit_field/src/function.c:3187:5: error: use of undeclared identifier 'v15'
+rtx v15; // r12 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/optimize_bit_field/src/function.c:3193:4: error: expected ';' after expression
+rtx v21; // rdx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/optimize_bit_field/src/function.c:3193:5: error: use of undeclared identifier 'v21'
+rtx v21; // rdx 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/optimize_bit_field/src/function.c:3200:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // [rsp+Ch] [rbp-3Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/optimize_bit_field/src/function.c:3202:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v5.rtwint = ( __int64)body->fld[0]; 
+                      ^~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/optimize_bit_field/src/function.c:3206:23: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v5.rtwint = ( __int64)body[1]; 
+                      ^~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/optimize_bit_field/src/function.c:3216:15: error: expected expression
+rtx = *( rtx *)( v5.rtwint + 8); 
+              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/optimize_bit_field/src/function.c:3253:1: error: use of undeclared identifier 'v15'
+v15 = adjust_address_1( rtx, mode, v13, 1, 1); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/optimize_bit_field/src/function.c:3259:31: error: expected expression
+validate_change( insn, ( rtx *)body->fld, v15, 1); 
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/optimize_bit_field/src/function.c:3259:43: error: use of undeclared identifier 'v15'
+validate_change( insn, ( rtx *)body->fld, v15, 1); 
+                                          ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/optimize_bit_field/src/function.c:3260:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v19 = ( __int64)body[1]; 
+                ^~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/optimize_bit_field/src/function.c:3265:33: error: use of undeclared identifier 'v15'
+if ( v20 && v20 != *( ( _BYTE *)v15 + 2) ) 
+                                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/optimize_bit_field/src/function.c:3270:1: error: use of undeclared identifier 'v21'
+v21 = ( rtx)body[1]; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/optimize_bit_field/src/function.c:3275:6: error: use of undeclared identifier 'v21'
+if ( v21[1] ) 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/optimize_bit_field/src/function.c:3277:1: error: use of undeclared identifier 'v21'
+v21 = v21->fld[0].rtx; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/optimize_bit_field/src/function.c:3277:7: error: use of undeclared identifier 'v21'
+v21 = v21->fld[0].rtx; 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/optimize_bit_field/src/function.c:3279:20: error: use of undeclared identifier 'v21'
+while ( *( _WORD *)v21 == 63 ); 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/optimize_bit_field/src/function.c:3281:20: error: use of undeclared identifier 'v15'
+v22 = *( ( _BYTE *)v15 + 2); 
+                   ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/optimize_bit_field/src/obj/function.o] Error 1

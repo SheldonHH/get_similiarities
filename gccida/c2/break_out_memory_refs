@@ -1,0 +1,24 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/break_out_memory_refs/src/explow.c:803:21: error: use of undeclared identifier 'machine_mode'
+return force_reg( ( machine_mode)BYTE2( v1), x); 
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/break_out_memory_refs/src/explow.c:810:55: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+if ( v5 != x->fld[0].rtx || v6 != (  struct rtx_def *)x[1] ) 
+                                                      ^~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/break_out_memory_refs/src/explow.c:812:3: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+( rtx_code)*( _WORD *)x, 
+  ^~~~~~~~
+  rtx_cost
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/break_out_memory_refs/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/break_out_memory_refs/src/explow.c:812:12: error: invalid operands to binary expression ('int (rtx, enum rtx_code)' (aka 'int (struct rtx_def *, enum rtx_code)') and 'uint16 *' (aka 'unsigned short *'))
+( rtx_code)*( _WORD *)x, 
+~~~~~~~~~~~^~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/break_out_memory_refs/src/explow.c:813:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/break_out_memory_refs/src/explow.c:819:21: error: use of undeclared identifier 'machine_mode'
+return force_reg( ( machine_mode)BYTE2( v1), x); 
+                    ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/break_out_memory_refs/src/obj/explow.o] Error 1

@@ -1,0 +1,68 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_field_assignment/src/combine.c:6234:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode imode; // [rsp+50h] [rbp-30h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_field_assignment/src/combine.c:6235:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode compute_mode; // [rsp+54h] [rbp-2Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_field_assignment/src/combine.c:6264:31: error: use of undeclared identifier 'machine_mode'
+inner = gen_rtx_fmt_e( USE, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)x->fld[0].rtwint), inner); 
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_field_assignment/src/combine.c:6264:46: error: expected expression
+inner = gen_rtx_fmt_e( USE, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)x->fld[0].rtwint), inner); 
+                                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_field_assignment/src/combine.c:6277:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[( unsigned __int8)BYTE2( *( _DWORD *)inner)] != MODE_INT 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_field_assignment/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_field_assignment/src/combine.c:6278:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& mode_class_0[( unsigned __int8)BYTE2( *( _DWORD *)inner)] != MODE_PARTIAL_INT 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_field_assignment/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_field_assignment/src/combine.c:6279:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& mode_class_0[( unsigned __int8)BYTE2( *( _DWORD *)inner)] != MODE_COMPLEX_INT 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_field_assignment/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_field_assignment/src/combine.c:6280:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& mode_class_0[( unsigned __int8)BYTE2( *( _DWORD *)inner)] != MODE_VECTOR_INT ) 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_field_assignment/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_field_assignment/src/combine.c:6282:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[( unsigned __int8)BYTE2( *( _DWORD *)inner)] != MODE_FLOAT 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_field_assignment/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_field_assignment/src/combine.c:6283:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& mode_class_0[( unsigned __int8)BYTE2( *( _DWORD *)inner)] != MODE_COMPLEX_FLOAT 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_field_assignment/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_field_assignment/src/combine.c:6284:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& mode_class_0[( unsigned __int8)BYTE2( *( _DWORD *)inner)] != MODE_VECTOR_FLOAT ) 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_field_assignment/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_field_assignment/src/combine.c:6326:33: error: use of undeclared identifier 'machine_mode'
+v8 = gen_lowpart_for_combine( ( machine_mode)BYTE2( *( _DWORD *)arg0), *( rtx *)&x[1]); 
+                                ^
+12 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_field_assignment/src/obj/combine.o] Error 1

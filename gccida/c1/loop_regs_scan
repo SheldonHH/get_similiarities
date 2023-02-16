@@ -1,0 +1,17 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/loop_regs_scan/src/loop.c:9986:14: error: expected expression
+v10 = ( rtx *)xcalloc( v7->num, 8uLL); 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/loop_regs_scan/src/loop.c:9994:43: error: expected expression
+find_single_use_in_loop( v7, top, *( rtx *)&top[2]); 
+                                          ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/loop_regs_scan/src/loop.c:9998:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v13 = (  struct rtx_def *)top[2]; 
+                          ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/loop_regs_scan/src/loop.c:10007:33: error: expected expression
+count_one_set( v7, top, *( rtx *)( *( _QWORD *)( *( _QWORD *)&top[2] + 8LL) + 8 * v16-- - 8), v10); 
+                                ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/loop_regs_scan/src/loop.c:10028:22: error: use of undeclared identifier 'machine_mode'
+v20 = gen_rtx_REG( ( machine_mode)( ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32), i); 
+                     ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/loop_regs_scan/src/obj/loop.o] Error 1

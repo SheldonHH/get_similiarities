@@ -1,0 +1,12 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/pushcase/src/stmt.c:5023:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *index_type; // [rsp+10h] [rbp-30h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/pushcase/src/stmt.c:5032:33: error: expected expression
+if ( index_type == ( tree_node *)global_trees ) 
+                                ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/pushcase/src/stmt.c:5032:22: error: use of undeclared identifier 'tree_node'
+if ( index_type == ( tree_node *)global_trees ) 
+                     ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/pushcase/src/obj/stmt.o] Error 1

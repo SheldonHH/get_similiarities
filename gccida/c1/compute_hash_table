@@ -1,0 +1,74 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compute_hash_table/src/gcse.c:2962:4: error: expected ';' after expression
+rtx reg_note; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compute_hash_table/src/gcse.c:2962:5: error: must use 'enum' tag to refer to type 'reg_note'
+rtx reg_note; // rax 
+    ^
+    enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compute_hash_table/src/gcse.c:2967:1: error: use of undeclared identifier 'reg_avail_info_0'; did you mean 'reg_avail_info'?
+reg_avail_info_0 = (  struct reg_avail_info *)gmalloc( 12 * max_gcse_regno); 
+^~~~~~~~~~~~~~~~
+reg_avail_info
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compute_hash_table/src/gcse.c:1300:31: note: 'reg_avail_info' declared here
+static struct reg_avail_info *reg_avail_info;
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compute_hash_table/src/gcse.c:2973:6: error: use of undeclared identifier 'reg_avail_info_0'; did you mean 'reg_avail_info'?
+v2 = reg_avail_info_0; 
+     ^~~~~~~~~~~~~~~~
+     reg_avail_info
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compute_hash_table/src/gcse.c:1300:31: note: 'reg_avail_info' declared here
+static struct reg_avail_info *reg_avail_info;
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compute_hash_table/src/gcse.c:3002:33: error: expected ')'
+record_last_reg_set_info( ( rtx)i, j); 
+                                ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compute_hash_table/src/gcse.c:3002:25: note: to match this '('
+record_last_reg_set_info( ( rtx)i, j); 
+                        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compute_hash_table/src/gcse.c:3004:18: error: expected ')'
+mark_call( ( rtx)i); 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compute_hash_table/src/gcse.c:3004:10: note: to match this '('
+mark_call( ( rtx)i); 
+         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compute_hash_table/src/gcse.c:3006:24: error: expected expression
+note_stores( *( ( rtx *)i + 4), record_last_set_info, i); 
+                       ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compute_hash_table/src/gcse.c:3019:1: error: must use 'enum' tag to refer to type 'reg_note'
+reg_note = find_reg_note( rtx, REG_LIBCALL, 0LL); 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compute_hash_table/src/gcse.c:3019:10: error: expected identifier or '('
+reg_note = find_reg_note( rtx, REG_LIBCALL, 0LL); 
+         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compute_hash_table/src/gcse.c:3021:6: error: use of undeclared identifier 'reg_note'; did you mean 'reg_names'?
+if ( reg_note ) 
+     ^~~~~~~~
+     reg_names
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compute_hash_table/src/hard-reg-set.h:485:21: note: 'reg_names' declared here
+extern const char * reg_names[FIRST_PSEUDO_REGISTER];
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compute_hash_table/src/gcse.c:3023:7: error: use of undeclared identifier 'reg_note'; did you mean 'reg_names'?
+if ( !reg_note && set_p ) 
+      ^~~~~~~~
+      reg_names
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compute_hash_table/src/hard-reg-set.h:485:21: note: 'reg_names' declared here
+extern const char * reg_names[FIRST_PSEUDO_REGISTER];
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compute_hash_table/src/gcse.c:3043:7: error: use of undeclared identifier 'reg_avail_info_0'; did you mean 'reg_avail_info'?
+free( reg_avail_info_0); 
+      ^~~~~~~~~~~~~~~~
+      reg_avail_info
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compute_hash_table/src/gcse.c:1300:31: note: 'reg_avail_info' declared here
+static struct reg_avail_info *reg_avail_info;
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compute_hash_table/src/gcse.c:3044:1: error: use of undeclared identifier 'reg_avail_info_0'; did you mean 'reg_avail_info'?
+reg_avail_info_0 = 0LL; 
+^~~~~~~~~~~~~~~~
+reg_avail_info
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compute_hash_table/src/gcse.c:1300:31: note: 'reg_avail_info' declared here
+static struct reg_avail_info *reg_avail_info;
+                              ^
+13 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compute_hash_table/src/obj/gcse.o] Error 1

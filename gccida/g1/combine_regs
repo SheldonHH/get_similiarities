@@ -1,0 +1,76 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/combine_regs/src/local-alloc.c:2269:4: error: expected ';' after expression
+rtx v11; // rcx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/combine_regs/src/local-alloc.c:2269:5: error: use of undeclared identifier 'v11'; did you mean 'v10'?
+rtx v11; // rcx 
+    ^~~
+    v10
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/combine_regs/src/local-alloc.c:2268:5: note: 'v10' declared here
+int v10; // r13d 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/combine_regs/src/local-alloc.c:2282:4: error: expected ';' after expression
+rtx v24; // rcx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/combine_regs/src/local-alloc.c:2282:5: error: use of undeclared identifier 'v24'
+rtx v24; // rcx 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/combine_regs/src/local-alloc.c:2294:4: error: expected ';' after expression
+rtx reg_note; // rdx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/combine_regs/src/local-alloc.c:2294:5: error: must use 'enum' tag to refer to type 'reg_note'
+rtx reg_note; // rdx 
+    ^
+    enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/combine_regs/src/local-alloc.c:2298:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class min_class; // r12d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/combine_regs/src/local-alloc.c:2302:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class v44; // r13d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/combine_regs/src/local-alloc.c:2303:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class v45; // r13d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/combine_regs/src/local-alloc.c:2323:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class insnb; // [rsp+8h] [rbp-50h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/combine_regs/src/local-alloc.c:2335:1: error: use of undeclared identifier 'v11'
+v11 = rtx; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/combine_regs/src/local-alloc.c:2345:21: error: use of undeclared identifier 'v11'
+v10 += *( _DWORD *)&v11[1] / ( ( target_flags & 0x2000000) == 0 ? 4 : 8); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/combine_regs/src/local-alloc.c:2350:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)v12, 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/combine_regs/src/local-alloc.c:2351:14: error: use of undeclared identifier 'v11'
+*( _DWORD *)&v11[1], 
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/combine_regs/src/local-alloc.c:2352:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)v11 + 2)); 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/combine_regs/src/local-alloc.c:2352:39: error: use of undeclared identifier 'v11'
+( machine_mode)*( ( unsigned __int8 *)v11 + 2)); 
+                                      ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/combine_regs/src/local-alloc.c:2382:28: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+usize = ( ( unsigned int)( mode_class_0[*( ( unsigned __int8 *)rtx + 2)] - 5) < 2) + 1; 
+                           ^~~~~~~~~~~~
+                           mode_class
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/combine_regs/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/combine_regs/src/local-alloc.c:2415:1: error: use of undeclared identifier 'v24'
+v24 = setreg; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/combine_regs/src/local-alloc.c:2425:36: error: use of undeclared identifier 'machine_mode'
+v10 -= subreg_regno_offset( v26, ( machine_mode)v25, *( _DWORD *)&v24[1], ( machine_mode)*( ( unsigned __int8 *)v24 + 2)); 
+                                   ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/combine_regs/src/obj/local-alloc.o] Error 1

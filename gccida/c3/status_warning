@@ -1,0 +1,15 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/status_warning/src/c-format.c:1477:1: error: unknown type name 'diagnostic_context_0'; did you mean 'diagnostic_context'?
+diagnostic_context_0 v3; // [rsp+D8h] [rbp-180h] BYREF 
+^~~~~~~~~~~~~~~~~~~~
+diagnostic_context
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/status_warning/src/diagnostic.h:29:35: note: 'diagnostic_context' declared here
+typedef struct diagnostic_context diagnostic_context;
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/status_warning/src/c-format.c:1486:50: error: expected expression
+set_diagnostic_context( &v3, msgid, ( va_list_0 *)va, ( const char *)input_filename, lineno, 1); 
+                                                 ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/status_warning/src/c-format.c:1486:39: error: use of undeclared identifier 'va_list_0'
+set_diagnostic_context( &v3, msgid, ( va_list_0 *)va, ( const char *)input_filename, lineno, 1); 
+                                      ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/status_warning/src/obj/c-format.o] Error 1

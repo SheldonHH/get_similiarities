@@ -1,0 +1,53 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/apply_change_group/src/recog.c:783:1: error: unknown type name 'change_t_0'; did you mean 'change_t'?
+change_t_0 *v4; // rax 
+^~~~~~~~~~
+change_t
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/apply_change_group/src/recog.c:178:3: note: 'change_t' declared here
+} change_t;
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/apply_change_group/src/recog.c:788:1: error: unknown type name 'change_t_0'; did you mean 'change_t'?
+change_t_0 *v10; // rax 
+^~~~~~~~~~
+change_t
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/apply_change_group/src/recog.c:178:3: note: 'change_t' declared here
+} change_t;
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/apply_change_group/src/recog.c:797:4: error: expected ';' after expression
+rtx v19; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/apply_change_group/src/recog.c:797:5: error: use of undeclared identifier 'v19'
+rtx v19; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/apply_change_group/src/recog.c:817:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v13 = ( __int64)object[2]; 
+                ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/apply_change_group/src/recog.c:836:1: error: use of undeclared identifier 'v19'
+v19 = gen_rtx_fmt_E( PARALLEL, VOIDmode, v18); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/apply_change_group/src/recog.c:837:18: error: use of undeclared identifier 'v19'
+rtwint = ( int *)v19->fld[0].rtwint; 
+                 ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/apply_change_group/src/recog.c:838:7: error: use of undeclared identifier 'v19'
+rtx = v19; 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/apply_change_group/src/recog.c:843:33: error: expected expression
+validate_change( object, ( rtx *)&object[2], rtx, 1); 
+                                ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/apply_change_group/src/recog.c:879:23: error: expected expression
+while ( ( change_t_0 *)v11 != v10 ); 
+                      ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/apply_change_group/src/recog.c:879:11: error: use of undeclared identifier 'change_t_0'
+while ( ( change_t_0 *)v11 != v10 ); 
+          ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/apply_change_group/src/recog.c:879:24: error: expected ')'
+while ( ( change_t_0 *)v11 != v10 ); 
+                       ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/apply_change_group/src/recog.c:879:7: note: to match this '('
+while ( ( change_t_0 *)v11 != v10 ); 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/apply_change_group/src/recog.c:900:30: error: use of undeclared identifier 'machine_mode'
+v7 = legitimate_address_p( ( machine_mode)*( ( unsigned __int8 *)object + 2), v6, 0); 
+                             ^
+13 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/apply_change_group/src/obj/recog.o] Error 1

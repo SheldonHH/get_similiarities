@@ -1,0 +1,35 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/simplify_and_const_int/src/combine.c:8283:37: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  simplify_and_const_int( rtx x, machine_mode mode, rtx varop, unsigned __int64 constop) 
+                                    ^
+                                    enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/simplify_and_const_int/src/combine.c:8292:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v13; // r14d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/simplify_and_const_int/src/combine.c:8293:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v14; // r12d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/simplify_and_const_int/src/combine.c:8328:38: error: use of undeclared identifier 'machine_mode'
+v15 = simplify_and_const_int( 0LL, ( machine_mode)BYTE2( v12), v5->fld[0].rtx, v10); 
+                                     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/simplify_and_const_int/src/combine.c:8329:38: error: use of undeclared identifier 'machine_mode'
+v16 = simplify_and_const_int( 0LL, ( machine_mode)*( ( unsigned __int8 *)v5 + 2), *( rtx *)&v5[1], v10); 
+                                     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/simplify_and_const_int/src/combine.c:8329:91: error: expected expression
+v16 = simplify_and_const_int( 0LL, ( machine_mode)*( ( unsigned __int8 *)v5 + 2), *( rtx *)&v5[1], v10); 
+                                                                                          ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/simplify_and_const_int/src/combine.c:8337:50: error: expected expression
+v19 = simplify_and_const_int( 0LL, mode, *( rtx *)&v5[1], v10); 
+                                                 ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/simplify_and_const_int/src/combine.c:8366:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v23 = ( __int64)x[1]; 
+                ^~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/simplify_and_const_int/src/combine.c:8370:18: error: expected expression
+do_SUBST( ( rtx *)&x[1], v24); 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/simplify_and_const_int/src/combine.c:8372:18: error: expected expression
+do_SUBST( ( rtx *)x->fld, rtx); 
+                 ^
+10 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/simplify_and_const_int/src/obj/combine.o] Error 1

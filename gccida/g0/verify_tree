@@ -1,0 +1,16 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/verify_tree/src/c-common.c:1499:1: error: must use 'enum' tag to refer to type 'tree_code'
+tree_code code; // [rsp+80h] [rbp-10h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/verify_tree/src/c-common.c:1622:23: error: use of undeclared identifier 'tree_code'; did you mean 'tree_cons'?
+max = first_rtl_op( ( tree_code)*( ( unsigned __int8 *)&xa->block.common + 16)); 
+                      ^~~~~~~~~
+                      tree_cons
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/verify_tree/src/tree.h:2477:13: note: 'tree_cons' declared here
+extern tree tree_cons                   PARAMS ((tree, tree, tree));
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/verify_tree/src/c-common.c:1622:33: error: invalid operands to binary expression ('tree (tree, tree, tree)' (aka 'union tree_node *(union tree_node *, union tree_node *, union tree_node *)') and 'unsigned char *')
+max = first_rtl_op( ( tree_code)*( ( unsigned __int8 *)&xa->block.common + 16)); 
+                    ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/verify_tree/src/obj/c-common.o] Error 1

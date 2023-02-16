@@ -1,0 +1,58 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/apply_result_size/src/builtins.c:1431:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode best_mode; // [rsp+4h] [rbp-Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/apply_result_size/src/builtins.c:1432:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // [rsp+8h] [rbp-8h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/apply_result_size/src/builtins.c:1433:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode modea; // [rsp+8h] [rbp-8h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/apply_result_size/src/builtins.c:1434:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode modeb; // [rsp+8h] [rbp-8h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/apply_result_size/src/builtins.c:1435:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode modec; // [rsp+8h] [rbp-8h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/apply_result_size/src/builtins.c:1438:6: error: use of undeclared identifier 'size_8'; did you mean 'sizeof'?
+if ( size_8 < 0 ) 
+     ^~~~~~
+     sizeof
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/apply_result_size/src/builtins.c:1438:13: error: expected expression
+if ( size_8 < 0 ) 
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/apply_result_size/src/builtins.c:1440:1: error: use of undeclared identifier 'size_8'
+size_8 = 0; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/apply_result_size/src/builtins.c:1478:6: error: use of undeclared identifier 'size_8'; did you mean 'sizeof'?
+if ( size_8 % align ) 
+     ^~~~~~
+     sizeof
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/apply_result_size/src/builtins.c:1478:13: error: expected expression
+if ( size_8 % align ) 
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/apply_result_size/src/builtins.c:1479:1: error: use of undeclared identifier 'size_8'
+size_8 = align * ( ( size_8 + align - 1) / align); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/apply_result_size/src/builtins.c:1479:22: error: use of undeclared identifier 'size_8'
+size_8 = align * ( ( size_8 + align - 1) / align); 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/apply_result_size/src/builtins.c:1480:1: error: use of undeclared identifier 'size_8'
+size_8 += mode_size[best_mode]; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/apply_result_size/src/builtins.c:1488:1: error: use of undeclared identifier 'size_8'
+size_8 = 116; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/apply_result_size/src/builtins.c:1490:8: error: use of undeclared identifier 'size_8'; did you mean 'sizeof'?
+return size_8; 
+       ^~~~~~
+       sizeof
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/apply_result_size/src/builtins.c:1490:14: error: expected expression
+return size_8; 
+             ^
+16 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/apply_result_size/src/obj/builtins.o] Error 1

@@ -1,0 +1,36 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/noce_emit_cmove/src/ifcvt.c:1348:61: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx  noce_emit_cmove(  struct noce_if_info *if_info, rtx x, rtx_code code, rtx cmp_a, rtx cmp_b, rtx vfalse, rtx vtrue) 
+                                                            ^
+                                                            enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/noce_emit_cmove/src/ifcvt.c:1360:32: error: use of undeclared identifier 'machine_mode'
+tmpa = gen_rtx_fmt_ee( code, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)if_info->cond), cmp_a, cmp_b); 
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/noce_emit_cmove/src/ifcvt.c:1360:47: error: expected expression
+tmpa = gen_rtx_fmt_ee( code, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)if_info->cond), cmp_a, cmp_b); 
+                                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/noce_emit_cmove/src/ifcvt.c:1361:39: error: use of undeclared identifier 'machine_mode'
+v7 = gen_rtx_fmt_eee( IF_THEN_ELSE, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)x), tmpa, vtrue, vfalse); 
+                                      ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/noce_emit_cmove/src/ifcvt.c:1361:54: error: expected expression
+v7 = gen_rtx_fmt_eee( IF_THEN_ELSE, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)x), tmpa, vtrue, vfalse); 
+                                                     ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/noce_emit_cmove/src/ifcvt.c:1378:33: error: use of undeclared identifier 'machine_mode'
+if ( !general_operand( cmp_a, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)cmp_a)) 
+                                ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/noce_emit_cmove/src/ifcvt.c:1378:48: error: expected expression
+if ( !general_operand( cmp_a, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)cmp_a)) 
+                                               ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/noce_emit_cmove/src/ifcvt.c:1379:31: error: use of undeclared identifier 'machine_mode'
+|| !general_operand( cmp_b, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)cmp_b)) ) 
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/noce_emit_cmove/src/ifcvt.c:1379:46: error: expected expression
+|| !general_operand( cmp_b, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)cmp_b)) ) 
+                                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/noce_emit_cmove/src/ifcvt.c:1402:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)x), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/noce_emit_cmove/src/ifcvt.c:1402:18: error: expected expression
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)x), 
+                 ^
+11 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/noce_emit_cmove/src/obj/ifcvt.o] Error 1

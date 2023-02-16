@@ -1,0 +1,21 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/extend_value_for_giv/src/loop.c:7867:28: error: unknown type name 'induction_1'
+rtx  extend_value_for_giv( induction_1 *v, rtx value) 
+                           ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/extend_value_for_giv/src/loop.c:7887:3: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+( rtx_code)( unsigned __int16)*( _DWORD *)ext_dep, 
+  ^~~~~~~~
+  rtx_cost
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/extend_value_for_giv/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/extend_value_for_giv/src/loop.c:7887:14: error: expected expression
+( rtx_code)( unsigned __int16)*( _DWORD *)ext_dep, 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/extend_value_for_giv/src/loop.c:7888:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)ext_dep), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/extend_value_for_giv/src/loop.c:7888:18: error: expected expression
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)ext_dep), 
+                 ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/extend_value_for_giv/src/obj/loop.o] Error 1

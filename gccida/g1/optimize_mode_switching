@@ -1,0 +1,114 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/optimize_mode_switching/src/lcm.c:1536:1: error: use of undeclared identifier 'transp_0'; did you mean 'transp'?
+transp_0 = sbitmap_vector_alloc( n_basic_blocks, 1u); 
+^~~~~~~~
+transp
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/optimize_mode_switching/src/lcm.c:889:17: note: 'transp' declared here
+static sbitmap *transp;
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/optimize_mode_switching/src/lcm.c:1537:1: error: use of undeclared identifier 'comp_0'; did you mean 'comp'?
+comp_0 = sbitmap_vector_alloc( n_basic_blocks, 1u); 
+^~~~~~
+comp
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/optimize_mode_switching/src/lcm.c:890:17: note: 'comp' declared here
+static sbitmap *comp;
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/optimize_mode_switching/src/lcm.c:1538:22: error: use of undeclared identifier 'transp_0'; did you mean 'transp'?
+sbitmap_vector_ones( transp_0, n_basic_blocks); 
+                     ^~~~~~~~
+                     transp
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/optimize_mode_switching/src/lcm.c:889:17: note: 'transp' declared here
+static sbitmap *transp;
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/optimize_mode_switching/src/lcm.c:1624:35: error: use of undeclared identifier 'reg_becomes_live_0'; did you mean 'reg_becomes_live'?
+note_stores( *( ( rtx *)v11 + 4), reg_becomes_live_0, live_at_edge); 
+                                  ^~~~~~~~~~~~~~~~~~
+                                  reg_becomes_live
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/optimize_mode_switching/src/lcm.c:993:1: note: 'reg_becomes_live' declared here
+reg_becomes_live (reg, setter, live)
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/optimize_mode_switching/src/lcm.c:1656:1: error: use of undeclared identifier 'transp_0'; did you mean 'transp'?
+transp_0[v2]->elms[0] &= ~1uLL; 
+^~~~~~~~
+transp
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/optimize_mode_switching/src/lcm.c:889:17: note: 'transp' declared here
+static sbitmap *transp;
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/optimize_mode_switching/src/lcm.c:1669:22: error: use of undeclared identifier 'comp_0'; did you mean 'comp'?
+sbitmap_vector_zero( comp_0, n_basic_blocks); 
+                     ^~~~~~
+                     comp
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/optimize_mode_switching/src/lcm.c:890:17: note: 'comp' declared here
+static sbitmap *comp;
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/optimize_mode_switching/src/lcm.c:1674:7: error: use of undeclared identifier 'comp_0'; did you mean 'comp'?
+v31 = comp_0; 
+      ^~~~~~
+      comp
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/optimize_mode_switching/src/lcm.c:890:17: note: 'comp' declared here
+static sbitmap *comp;
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/optimize_mode_switching/src/lcm.c:1693:25: error: use of undeclared identifier 'transp_0'; did you mean 'transp'?
+sbitmap_not( kill[v17], transp_0[v17]); 
+                        ^~~~~~~~
+                        transp
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/optimize_mode_switching/src/lcm.c:889:17: note: 'transp' declared here
+static sbitmap *transp;
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/optimize_mode_switching/src/lcm.c:1698:30: error: use of undeclared identifier 'transp_0'; did you mean 'transp'?
+v18 = pre_edge_lcm( file, 1, transp_0, comp_0, antic, kill, &insert_0, &delete); 
+                             ^~~~~~~~
+                             transp
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/optimize_mode_switching/src/lcm.c:889:17: note: 'transp' declared here
+static sbitmap *transp;
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/optimize_mode_switching/src/lcm.c:1698:40: error: use of undeclared identifier 'comp_0'; did you mean 'comp'?
+v18 = pre_edge_lcm( file, 1, transp_0, comp_0, antic, kill, &insert_0, &delete); 
+                                       ^~~~~~
+                                       comp
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/optimize_mode_switching/src/lcm.c:890:17: note: 'comp' declared here
+static sbitmap *comp;
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/optimize_mode_switching/src/lcm.c:1698:62: error: use of undeclared identifier 'insert_0'; did you mean 'insert'?
+v18 = pre_edge_lcm( file, 1, transp_0, comp_0, antic, kill, &insert_0, &delete); 
+                                                             ^~~~~~~~
+                                                             insert
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/optimize_mode_switching/src/lcm.c:892:17: note: 'insert' declared here
+static sbitmap *insert;
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/optimize_mode_switching/src/lcm.c:1708:8: error: use of undeclared identifier 'insert_0'; did you mean 'insert'?
+if ( ( insert_0[v20 / 8]->elms[0] & 1) != 0 ) 
+       ^~~~~~~~
+       insert
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/optimize_mode_switching/src/lcm.c:892:17: note: 'insert' declared here
+static sbitmap *insert;
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/optimize_mode_switching/src/lcm.c:1740:1: error: use of undeclared identifier 'transp_0'; did you mean 'transp'?
+transp_0[index]->elms[0] &= ~1uLL; 
+^~~~~~~~
+transp
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/optimize_mode_switching/src/lcm.c:889:17: note: 'transp' declared here
+static sbitmap *transp;
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/optimize_mode_switching/src/lcm.c:1828:7: error: use of undeclared identifier 'transp_0'; did you mean 'transp'?
+free( transp_0); 
+      ^~~~~~~~
+      transp
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/optimize_mode_switching/src/lcm.c:889:17: note: 'transp' declared here
+static sbitmap *transp;
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/optimize_mode_switching/src/lcm.c:1829:7: error: use of undeclared identifier 'comp_0'; did you mean 'comp'?
+free( comp_0); 
+      ^~~~~~
+      comp
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/optimize_mode_switching/src/lcm.c:890:17: note: 'comp' declared here
+static sbitmap *comp;
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/optimize_mode_switching/src/lcm.c:1831:7: error: use of undeclared identifier 'insert_0'; did you mean 'insert'?
+free( insert_0); 
+      ^~~~~~~~
+      insert
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/optimize_mode_switching/src/lcm.c:892:17: note: 'insert' declared here
+static sbitmap *insert;
+                ^
+16 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/optimize_mode_switching/src/obj/lcm.o] Error 1

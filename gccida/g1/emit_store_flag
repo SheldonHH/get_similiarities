@@ -1,0 +1,78 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_store_flag/src/expmed.c:4697:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_store_flag/src/expmed.c:4700:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_store_flag/src/expmed.c:4704:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v7; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_store_flag/src/expmed.c:4708:1: error: must use 'enum' tag to refer to type 'insn_code'
+insn_code v15; // r15d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_store_flag/src/expmed.c:4713:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v20; // r15d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_store_flag/src/expmed.c:4725:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v32; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_store_flag/src/expmed.c:4727:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v34; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_store_flag/src/expmed.c:4730:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v37; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_store_flag/src/expmed.c:4733:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v41; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_store_flag/src/expmed.c:4739:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v47; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_store_flag/src/expmed.c:4741:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v49; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_store_flag/src/expmed.c:4748:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v56; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_store_flag/src/expmed.c:4750:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v58; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_store_flag/src/expmed.c:4755:1: error: must use 'enum' tag to refer to type 'insn_code'
+insn_code v64; // [rsp+2Ch] [rbp-3Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_store_flag/src/expmed.c:4822:63: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( v61 == ( ( target_flags & 0x2000000) == 0 ? 64 : 128) && mode_class_0[mode] == MODE_INT ) 
+                                                              ^~~~~~~~~~~~
+                                                              mode_class
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_store_flag/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_store_flag/src/expmed.c:4833:32: error: invalid suffix 'xmode' on integer constant
+v29 = gen_highpart( *(short *)0xmode, v12); 
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_store_flag/src/expmed.c:4834:31: error: invalid suffix 'xmode' on integer constant
+v30 = gen_lowpart( *(short *)0xmode, v12); 
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_store_flag/src/expmed.c:4835:32: error: invalid suffix 'xmode' on integer constant
+v31 = expand_binop( *(short *)0xmode, optab_table[19], v29, v30, 0LL, unsignedp, OPTAB_DIRECT); 
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_store_flag/src/expmed.c:4837:58: error: invalid suffix 'xmode' on integer constant
+return emit_store_flag( target, v7, v31, v13, *(short *)0xmode, unsignedp, normalizep); 
+                                                         ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_store_flag/src/obj/expmed.o] Error 1

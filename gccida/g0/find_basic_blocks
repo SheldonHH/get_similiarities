@@ -1,0 +1,16 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_basic_blocks/src/cfgbuild.c:1075:15: error: use of undeclared identifier 'TV_CFG_0'; did you mean 'TV_CFG'?
+timevar_push( TV_CFG_0); 
+              ^~~~~~~~
+              TV_CFG
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_basic_blocks/src/timevar.def:43:13: note: 'TV_CFG' declared here
+DEFTIMEVAR (TV_CFG                   , "cfg construction")
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_basic_blocks/src/cfgbuild.c:1095:14: error: use of undeclared identifier 'TV_CFG_0'; did you mean 'TV_CFG'?
+timevar_pop( TV_CFG_0); 
+             ^~~~~~~~
+             TV_CFG
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_basic_blocks/src/timevar.def:43:13: note: 'TV_CFG' declared here
+DEFTIMEVAR (TV_CFG                   , "cfg construction")
+            ^
+2 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_basic_blocks/src/obj/cfgbuild.o] Error 1

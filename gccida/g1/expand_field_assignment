@@ -1,0 +1,70 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_field_assignment/src/combine.c:6226:4: error: expected ';' after expression
+rtx v14; // r13 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_field_assignment/src/combine.c:6226:5: error: use of undeclared identifier 'v14'
+rtx v14; // r13 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_field_assignment/src/combine.c:6229:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v17; // r15d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_field_assignment/src/combine.c:6230:1: error: must use 'enum' tag to refer to type 'mode_class'
+mode_class v18; // edx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_field_assignment/src/machmode.h:52:30: note: enum 'mode_class' is hidden by a non-type declaration of 'mode_class' here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_field_assignment/src/combine.c:6241:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v29; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_field_assignment/src/combine.c:6247:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v2.rtwint = ( __int64)x->fld[0]; 
+                      ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_field_assignment/src/combine.c:6254:15: error: expected expression
+rtx = *( rtx *)( v10 + 8); 
+              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_field_assignment/src/combine.c:6256:25: error: expected ')'
+v13 = subreg_lsb( ( rtx)v10); 
+                        ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_field_assignment/src/combine.c:6256:17: note: to match this '('
+v13 = subreg_lsb( ( rtx)v10); 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_field_assignment/src/combine.c:6257:1: error: use of undeclared identifier 'v14'
+v14 = gen_rtx_CONST_INT( VOIDmode, v13); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_field_assignment/src/combine.c:6280:34: error: use of undeclared identifier 'machine_mode'
+v28 = gen_lowpart_for_combine( ( machine_mode)v8, *( rtx *)&x[1]); 
+                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_field_assignment/src/combine.c:6280:59: error: expected expression
+v28 = gen_lowpart_for_combine( ( machine_mode)v8, *( rtx *)&x[1]); 
+                                                          ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_field_assignment/src/combine.c:6281:44: error: expected expression
+x = gen_rtx_fmt_ee( SET, VOIDmode, *( rtx *)( x->fld[0].rtwint + 8), v28); 
+                                           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_field_assignment/src/combine.c:6286:15: error: expected expression
+rtx = *( rtx *)( v2.rtwint + 8); 
+              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_field_assignment/src/combine.c:6289:15: error: expected expression
+v14 = *( rtx *)( v2.rtwint + 24); 
+              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_field_assignment/src/combine.c:6289:1: error: use of undeclared identifier 'v14'
+v14 = *( rtx *)( v2.rtwint + 24); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_field_assignment/src/combine.c:6290:17: error: use of undeclared identifier 'v14'
+if ( *( _WORD *)v14 == 54 && v14->fld[0].rtwint + ( int)v16 > mode_bitsize[*( ( unsigned __int8 *)rtx + 2)] ) 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_field_assignment/src/combine.c:6290:30: error: use of undeclared identifier 'v14'
+if ( *( _WORD *)v14 == 54 && v14->fld[0].rtwint + ( int)v16 > mode_bitsize[*( ( unsigned __int8 *)rtx + 2)] ) 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_field_assignment/src/combine.c:6291:29: error: use of undeclared identifier 'machine_mode'
+rtx = gen_rtx_fmt_e( USE, ( machine_mode)*( unsigned __int8 *)( v2.rtwint + 2), *( rtx *)( v2.rtwint + 8)); 
+                            ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_field_assignment/src/combine.c:6291:89: error: expected expression
+rtx = gen_rtx_fmt_e( USE, ( machine_mode)*( unsigned __int8 *)( v2.rtwint + 2), *( rtx *)( v2.rtwint + 8)); 
+                                                                                        ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_field_assignment/src/obj/combine.o] Error 1

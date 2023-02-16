@@ -1,0 +1,70 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/dequeue_and_dump/src/tree-dump.c:723:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v10; // rdx 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/dequeue_and_dump/src/tree-dump.c:726:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v13; // rdx 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/dequeue_and_dump/src/tree-dump.c:730:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v17; // rdx 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/dequeue_and_dump/src/tree-dump.c:735:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v22; // rbx 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/dequeue_and_dump/src/tree-dump.c:741:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v28; // rdx 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/dequeue_and_dump/src/tree-dump.c:745:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v32; // rdx 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/dequeue_and_dump/src/tree-dump.c:793:22: error: expected expression
+v10 = *( tree_node **)( key + 32); 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/dequeue_and_dump/src/tree-dump.c:793:10: error: use of undeclared identifier 'tree_node'
+v10 = *( tree_node **)( key + 32); 
+         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/dequeue_and_dump/src/tree-dump.c:798:7: error: use of undeclared identifier 'lang_hooks_0'; did you mean 'lang_hooks'?
+if ( !lang_hooks_0.tree_dump.dump_tree( di_0, ( tree)key) ) 
+      ^~~~~~~~~~~~
+      lang_hooks
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/dequeue_and_dump/src/langhooks.h:168:32: note: 'lang_hooks' declared here
+extern const struct lang_hooks lang_hooks;
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/dequeue_and_dump/src/tree-dump.c:798:39: error: called object type '<dependent type>' is not a function or function pointer
+if ( !lang_hooks_0.tree_dump.dump_tree( di_0, ( tree)key) ) 
+                                      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/dequeue_and_dump/src/tree-dump.c:814:22: error: expected expression
+v13 = *( tree_node **)( key + 40); 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/dequeue_and_dump/src/tree-dump.c:814:10: error: use of undeclared identifier 'tree_node'
+v13 = *( tree_node **)( key + 40); 
+         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/dequeue_and_dump/src/tree-dump.c:818:22: error: expected expression
+v13 = *( tree_node **)( key + 32); 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/dequeue_and_dump/src/tree-dump.c:818:10: error: use of undeclared identifier 'tree_node'
+v13 = *( tree_node **)( key + 32); 
+         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/dequeue_and_dump/src/tree-dump.c:822:22: error: expected expression
+v13 = *( tree_node **)( key + 32); 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/dequeue_and_dump/src/tree-dump.c:822:10: error: use of undeclared identifier 'tree_node'
+v13 = *( tree_node **)( key + 32); 
+         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/dequeue_and_dump/src/tree-dump.c:826:22: error: expected expression
+v13 = *( tree_node **)( key + 32); 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/dequeue_and_dump/src/tree-dump.c:826:10: error: use of undeclared identifier 'tree_node'
+v13 = *( tree_node **)( key + 32); 
+         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/dequeue_and_dump/src/tree-dump.c:832:22: error: expected expression
+v32 = *( tree_node **)( key + 32); 
+                     ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/dequeue_and_dump/src/obj/tree-dump.o] Error 1

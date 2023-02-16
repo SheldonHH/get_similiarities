@@ -1,0 +1,18 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_mem_addressof/src/function.c:3399:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v17; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_mem_addressof/src/function.c:3402:21: error: use of undeclared identifier 'machine_mode'
+v3 = gen_reg_rtx( ( machine_mode)*( ( unsigned __int8 *)reg + 2)); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_mem_addressof/src/function.c:3403:36: error: use of undeclared identifier 'machine_mode'
+v4 = gen_rtx_fmt_eit( ADDRESSOF, ( machine_mode)( ( ( BYTE3( target_flags) & 2) != 0) + 4), v3, rtint, decl); 
+                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_mem_addressof/src/function.c:3449:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)reg + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_mem_addressof/src/function.c:3493:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v15.rtwint = ( __int64)v4->fld[0]; 
+                       ^~~~~~~~~~
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_mem_addressof/src/obj/function.o] Error 1

@@ -1,0 +1,26 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/try_split/src/emit-rtl.c:3579:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+before = ( rtx)trial[1]; 
+               ^~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/try_split/src/emit-rtl.c:3630:72: error: assigning to 'uint64' (aka 'unsigned long long') from incompatible type 'struct rtx_def'
+*( _QWORD *)( *( _QWORD *)( seq->fld[0].rtwint + 8LL * ib + 8) + 64LL) = trial[4]; 
+                                                                       ^ ~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/try_split/src/emit-rtl.c:3633:57: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( notea = trial[3].fld[0].rtx; notea; notea = ( rtx)notea[1] ) 
+                                                        ^~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/try_split/src/emit-rtl.c:3658:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)notea), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/try_split/src/emit-rtl.c:3658:18: error: expected expression
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)notea), 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/try_split/src/emit-rtl.c:3670:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)notea), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/try_split/src/emit-rtl.c:3670:18: error: expected expression
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)notea), 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/try_split/src/emit-rtl.c:3708:14: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+return ( rtx)after[1]; 
+             ^~~~~~~~
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/try_split/src/obj/emit-rtl.o] Error 1

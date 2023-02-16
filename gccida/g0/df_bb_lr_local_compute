@@ -1,0 +1,52 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/df_bb_lr_local_compute/src/df.c:2236:4: error: expected ';' after expression
+rtx reg; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/df_bb_lr_local_compute/src/df.c:2236:5: error: use of undeclared identifier 'reg'
+rtx reg; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/df_bb_lr_local_compute/src/df.c:2244:4: error: expected ';' after expression
+rtx insn; // [rsp+48h] [rbp-8h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/df_bb_lr_local_compute/src/df.c:2244:5: error: use of undeclared identifier 'insn'
+rtx insn; // [rsp+48h] [rbp-8h] 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/df_bb_lr_local_compute/src/df.c:2246:17: error: expected identifier or '('
+ struct bb_info = &df_0->bbs[bb->index]; 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/df_bb_lr_local_compute/src/df.c:2247:7: error: use of undeclared identifier 'insn'
+for ( insn = bb->end; insn && insn != ( rtx)bb->head[1]; insn = ( rtx)insn[1] ) 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/df_bb_lr_local_compute/src/df.c:2247:31: error: use of undeclared identifier 'insn'
+for ( insn = bb->end; insn && insn != ( rtx)bb->head[1]; insn = ( rtx)insn[1] ) 
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/df_bb_lr_local_compute/src/df.c:2247:23: error: use of undeclared identifier 'insn'
+for ( insn = bb->end; insn && insn != ( rtx)bb->head[1]; insn = ( rtx)insn[1] ) 
+                      ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/df_bb_lr_local_compute/src/df.c:2247:58: error: use of undeclared identifier 'insn'
+for ( insn = bb->end; insn && insn != ( rtx)bb->head[1]; insn = ( rtx)insn[1] ) 
+                                                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/df_bb_lr_local_compute/src/df.c:2247:71: error: expected ')'
+for ( insn = bb->end; insn && insn != ( rtx)bb->head[1]; insn = ( rtx)insn[1] ) 
+                                                                      ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/df_bb_lr_local_compute/src/df.c:2247:5: note: to match this '('
+for ( insn = bb->end; insn && insn != ( rtx)bb->head[1]; insn = ( rtx)insn[1] ) 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/df_bb_lr_local_compute/src/df.c:2249:7: error: use of undeclared identifier 'insn'
+uid = insn->fld[0].rtuint; 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/df_bb_lr_local_compute/src/df.c:2250:27: error: use of undeclared identifier 'insn'
+if ( rtx_class[*( _WORD *)insn] == 105 ) 
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/df_bb_lr_local_compute/src/df.c:2267:1: error: use of undeclared identifier 'reg'
+reg = use->reg->fld[0].rtx; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/df_bb_lr_local_compute/src/df.c:2269:1: error: use of undeclared identifier 'reg'
+reg = use->reg; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/df_bb_lr_local_compute/src/df.c:2270:34: error: use of undeclared identifier 'reg'
+bitmap_set_bit( bb_info->lr_use, reg->fld[0].rtint); 
+                                 ^
+15 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/df_bb_lr_local_compute/src/obj/df.o] Error 1

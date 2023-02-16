@@ -1,0 +1,12 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/genrtl_for_stmt/src/c-semantics.c:972:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *attributes; // rbx 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/genrtl_for_stmt/src/c-semantics.c:1016:19: error: expected expression
+if ( ( tree_node *)global_trees != attributes ) 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/genrtl_for_stmt/src/c-semantics.c:1016:8: error: use of undeclared identifier 'tree_node'
+if ( ( tree_node *)global_trees != attributes ) 
+       ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/genrtl_for_stmt/src/obj/c-semantics.o] Error 1

@@ -1,0 +1,85 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/thread_jump/src/cfgcleanup.c:723:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v17; // r15d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/thread_jump/src/cfgcleanup.c:745:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v39; // [rsp+4h] [rbp-54h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/thread_jump/src/cfgcleanup.c:746:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v40; // [rsp+4h] [rbp-54h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/thread_jump/src/cfgcleanup.c:748:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v42; // [rsp+14h] [rbp-44h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/thread_jump/src/cfgcleanup.c:749:4: error: expected ';' after expression
+rtx v43; // [rsp+18h] [rbp-40h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/thread_jump/src/cfgcleanup.c:749:5: error: use of undeclared identifier 'v43'
+rtx v43; // [rsp+18h] [rbp-40h] 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/thread_jump/src/cfgcleanup.c:772:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v13 = ( __int64)v11[1]; 
+                ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/thread_jump/src/cfgcleanup.c:774:1: error: use of undeclared identifier 'v43'
+v43 = v12; 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/thread_jump/src/cfgcleanup.c:776:36: error: expected expression
+v16 = ( e->flags & 1) == ( *( rtx *)( v13 + 16) == global_rtl[0]) ? *v14 : reversed_comparison_code( ( rtx)v14, e->src->end); 
+                                   ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/thread_jump/src/cfgcleanup.c:776:108: error: expected ')'
+v16 = ( e->flags & 1) == ( *( rtx *)( v13 + 16) == global_rtl[0]) ? *v14 : reversed_comparison_code( ( rtx)v14, e->src->end); 
+                                                                                                           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/thread_jump/src/cfgcleanup.c:776:100: note: to match this '('
+v16 = ( e->flags & 1) == ( *( rtx *)( v13 + 16) == global_rtl[0]) ? *v14 : reversed_comparison_code( ( rtx)v14, e->src->end); 
+                                                                                                   ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/thread_jump/src/cfgcleanup.c:778:39: error: expected ')'
+v39 = reversed_comparison_code( ( rtx)v15, v7->end); 
+                                      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/thread_jump/src/cfgcleanup.c:778:31: note: to match this '('
+v39 = reversed_comparison_code( ( rtx)v15, v7->end); 
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/thread_jump/src/cfgcleanup.c:780:33: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+if ( !comparison_dominates_p( ( rtx_code)v16, v17) && !comparison_dominates_p( ( rtx_code)v16, v39) ) 
+                                ^~~~~~~~
+                                rtx_cost
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/thread_jump/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/thread_jump/src/cfgcleanup.c:780:42: error: expected ')'
+if ( !comparison_dominates_p( ( rtx_code)v16, v17) && !comparison_dominates_p( ( rtx_code)v16, v39) ) 
+                                         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/thread_jump/src/cfgcleanup.c:780:29: note: to match this '('
+if ( !comparison_dominates_p( ( rtx_code)v16, v17) && !comparison_dominates_p( ( rtx_code)v16, v39) ) 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/thread_jump/src/cfgcleanup.c:780:82: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+if ( !comparison_dominates_p( ( rtx_code)v16, v17) && !comparison_dominates_p( ( rtx_code)v16, v39) ) 
+                                                                                 ^~~~~~~~
+                                                                                 rtx_cost
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/thread_jump/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/thread_jump/src/cfgcleanup.c:780:91: error: expected ')'
+if ( !comparison_dominates_p( ( rtx_code)v16, v17) && !comparison_dominates_p( ( rtx_code)v16, v39) ) 
+                                                                                          ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/thread_jump/src/cfgcleanup.c:780:78: note: to match this '('
+if ( !comparison_dominates_p( ( rtx_code)v16, v17) && !comparison_dominates_p( ( rtx_code)v16, v39) ) 
+                                                                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/thread_jump/src/cfgcleanup.c:783:30: error: expected expression
+if ( !rtx_equal_p( *( ( rtx *)v14 + 1), *( ( rtx *)v15 + 1)) || !rtx_equal_p( *( ( rtx *)v14 + 2), *( ( rtx *)v15 + 2)) ) 
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/thread_jump/src/cfgcleanup.c:783:51: error: expected expression
+if ( !rtx_equal_p( *( ( rtx *)v14 + 1), *( ( rtx *)v15 + 1)) || !rtx_equal_p( *( ( rtx *)v14 + 2), *( ( rtx *)v15 + 2)) ) 
+                                                  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/thread_jump/src/cfgcleanup.c:783:89: error: expected expression
+if ( !rtx_equal_p( *( ( rtx *)v14 + 1), *( ( rtx *)v15 + 1)) || !rtx_equal_p( *( ( rtx *)v14 + 2), *( ( rtx *)v15 + 2)) ) 
+                                                                                        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/thread_jump/src/cfgcleanup.c:783:110: error: expected expression
+if ( !rtx_equal_p( *( ( rtx *)v14 + 1), *( ( rtx *)v15 + 1)) || !rtx_equal_p( *( ( rtx *)v14 + 2), *( ( rtx *)v15 + 2)) ) 
+                                                                                                             ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/thread_jump/src/obj/cfgcleanup.o] Error 1

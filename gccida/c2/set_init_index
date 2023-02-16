@@ -1,0 +1,60 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/set_init_index/src/c-typeck.c:6186:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v4; // r15 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/set_init_index/src/c-typeck.c:6189:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v7; // r14 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/set_init_index/src/c-typeck.c:6194:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v12; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/set_init_index/src/c-typeck.c:6195:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v13; // rbx 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/set_init_index/src/c-typeck.c:6278:13: error: use of undeclared identifier 'constructor_range_stack_0'; did you mean 'constructor_range_stack'?
+if ( v13 || constructor_range_stack_0 ) 
+            ^~~~~~~~~~~~~~~~~~~~~~~~~
+            constructor_range_stack
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/set_init_index/src/c-typeck.c:5036:33: note: 'constructor_range_stack' declared here
+struct constructor_range_stack *constructor_range_stack;
+                                ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/set_init_index/src/c-typeck.c:6281:13: error: use of undeclared identifier 'constructor_range_stack_0'; did you mean 'constructor_range_stack'?
+v14->prev = constructor_range_stack_0; 
+            ^~~~~~~~~~~~~~~~~~~~~~~~~
+            constructor_range_stack
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/set_init_index/src/c-typeck.c:5036:33: note: 'constructor_range_stack' declared here
+struct constructor_range_stack *constructor_range_stack;
+                                ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/set_init_index/src/c-typeck.c:6287:14: error: use of undeclared identifier 'constructor_stack_0'; did you mean 'constructor_stack'?
+v14->stack = constructor_stack_0; 
+             ^~~~~~~~~~~~~~~~~~~
+             constructor_stack
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/set_init_index/src/c-typeck.c:5021:27: note: 'constructor_stack' declared here
+struct constructor_stack *constructor_stack;
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/set_init_index/src/c-typeck.c:6289:6: error: use of undeclared identifier 'constructor_range_stack_0'; did you mean 'constructor_range_stack'?
+if ( constructor_range_stack_0 ) 
+     ^~~~~~~~~~~~~~~~~~~~~~~~~
+     constructor_range_stack
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/set_init_index/src/c-typeck.c:5036:33: note: 'constructor_range_stack' declared here
+struct constructor_range_stack *constructor_range_stack;
+                                ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/set_init_index/src/c-typeck.c:6290:1: error: use of undeclared identifier 'constructor_range_stack_0'; did you mean 'constructor_range_stack'?
+constructor_range_stack_0->next = v14; 
+^~~~~~~~~~~~~~~~~~~~~~~~~
+constructor_range_stack
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/set_init_index/src/c-typeck.c:5036:33: note: 'constructor_range_stack' declared here
+struct constructor_range_stack *constructor_range_stack;
+                                ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/set_init_index/src/c-typeck.c:6291:1: error: use of undeclared identifier 'constructor_range_stack_0'; did you mean 'constructor_range_stack'?
+constructor_range_stack_0 = v14; 
+^~~~~~~~~~~~~~~~~~~~~~~~~
+constructor_range_stack
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/set_init_index/src/c-typeck.c:5036:33: note: 'constructor_range_stack' declared here
+struct constructor_range_stack *constructor_range_stack;
+                                ^
+10 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/set_init_index/src/obj/c-typeck.o] Error 1

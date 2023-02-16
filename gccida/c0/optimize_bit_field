@@ -1,0 +1,38 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/optimize_bit_field/src/function.c:3190:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // [rsp+3Ch] [rbp-34h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/optimize_bit_field/src/function.c:3204:18: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+bitfield = ( rtx)body[1]; 
+                 ^~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/optimize_bit_field/src/function.c:3268:19: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( src = ( rtx)body[1]; ; src = src->fld[0].rtx ) 
+                  ^~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/optimize_bit_field/src/function.c:3272:13: error: invalid operands to binary expression ('struct rtx_def' and 'int')
+v8 = src[1] == 0; 
+     ~~~~~~ ^  ~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/optimize_bit_field/src/function.c:3277:22: error: use of undeclared identifier 'machine_mode'
+src = gen_lowpart( ( machine_mode)BYTE2( *( _DWORD *)memrefa), *( rtx *)&body[1]); 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/optimize_bit_field/src/function.c:3292:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[( unsigned __int8)BYTE2( *( _DWORD *)dest)] == mode_class_0[( unsigned __int8)BYTE2( *( _DWORD *)dest->fld[0].rtwint)] ) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/optimize_bit_field/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/optimize_bit_field/src/function.c:3292:66: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[( unsigned __int8)BYTE2( *( _DWORD *)dest)] == mode_class_0[( unsigned __int8)BYTE2( *( _DWORD *)dest->fld[0].rtwint)] ) 
+                                                                 ^~~~~~~~~~~~
+                                                                 mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/optimize_bit_field/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/optimize_bit_field/src/function.c:3311:25: error: use of undeclared identifier 'machine_mode'
+newreg = gen_reg_rtx( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)dest)); 
+                        ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/optimize_bit_field/src/function.c:3311:40: error: expected expression
+newreg = gen_reg_rtx( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)dest)); 
+                                       ^
+9 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/optimize_bit_field/src/obj/function.o] Error 1

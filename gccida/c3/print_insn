@@ -1,0 +1,16 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/print_insn/src/sched-ebb.c:595:10: error: use of undeclared identifier 'print_insn_tmp'; did you mean 'print_insn'?
+sprintf( print_insn_tmp, "%4d", insn->fld[0].rtuint); 
+         ^~~~~~~~~~~~~~
+         print_insn
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/print_insn/src/sched-ebb.c:593:14: note: 'print_insn' declared here
+const char * print_insn( rtx insn, int aligned) 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/print_insn/src/sched-ebb.c:596:8: error: use of undeclared identifier 'print_insn_tmp'; did you mean 'print_insn'?
+return print_insn_tmp; 
+       ^~~~~~~~~~~~~~
+       print_insn
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/print_insn/src/sched-ebb.c:593:14: note: 'print_insn' declared here
+const char * print_insn( rtx insn, int aligned) 
+             ^
+2 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/print_insn/src/obj/sched-ebb.o] Error 1

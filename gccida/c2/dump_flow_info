@@ -1,0 +1,19 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/dump_flow_info/src/cfg.c:929:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class v13; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/dump_flow_info/src/cfg.c:930:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class v14; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/dump_flow_info/src/cfg.c:990:29: error: use of undeclared identifier 'dump_flow_info_reg_class_names'
+fprintf( file, "; pref %s", dump_flow_info_reg_class_names[v13]); 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/dump_flow_info/src/cfg.c:994:7: error: use of undeclared identifier 'dump_flow_info_reg_class_names'
+v15 = dump_flow_info_reg_class_names[v13]; 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/dump_flow_info/src/cfg.c:996:43: error: use of undeclared identifier 'dump_flow_info_reg_class_names'
+fprintf( file, "; pref %s, else %s", v15, dump_flow_info_reg_class_names[v14]); 
+                                          ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/dump_flow_info/src/obj/cfg.o] Error 1

@@ -1,0 +1,19 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/make_field_assignment/src/combine.c:8042:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v3; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/make_field_assignment/src/combine.c:8046:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // [rsp+1Ch] [rbp-54h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/make_field_assignment/src/combine.c:8057:13: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+src = ( rtx)x[1]; 
+            ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/make_field_assignment/src/combine.c:8119:29: error: use of undeclared identifier 'machine_mode'
+v2 = nonzero_bits( other, ( machine_mode)*( ( unsigned __int8 *)dest + 2)); 
+                            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/make_field_assignment/src/combine.c:8138:45: error: use of undeclared identifier 'machine_mode'
+v5 = simplify_shift_const( 0LL, LSHIFTRT, ( machine_mode)*( ( unsigned __int8 *)src + 2), other, pos); 
+                                            ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/make_field_assignment/src/obj/combine.o] Error 1

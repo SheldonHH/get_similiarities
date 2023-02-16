@@ -1,0 +1,341 @@
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:584:15: error: incomplete definition of type 'struct __va_list_tag'
+gp_offset = ap->gp_offset; 
+            ~~^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:510:59: note: forward declaration of 'struct __va_list_tag'
+void  vgprintf( FILE *outputfile, const char *fmt, struct __va_list_tag *ap) 
+                                                          ^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:585:8: error: incomplete definition of type 'struct __va_list_tag'
+if ( ap->gp_offset > 0x2F ) 
+     ~~^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:510:59: note: forward declaration of 'struct __va_list_tag'
+void  vgprintf( FILE *outputfile, const char *fmt, struct __va_list_tag *ap) 
+                                                          ^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:587:40: error: incomplete definition of type 'struct __va_list_tag'
+overflow_arg_area = ( unsigned int *)ap->overflow_arg_area; 
+                                     ~~^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:510:59: note: forward declaration of 'struct __va_list_tag'
+void  vgprintf( FILE *outputfile, const char *fmt, struct __va_list_tag *ap) 
+                                                          ^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:588:3: error: incomplete definition of type 'struct __va_list_tag'
+ap->overflow_arg_area = overflow_arg_area + 2; 
+~~^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:510:59: note: forward declaration of 'struct __va_list_tag'
+void  vgprintf( FILE *outputfile, const char *fmt, struct __va_list_tag *ap) 
+                                                          ^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:592:51: error: incomplete definition of type 'struct __va_list_tag'
+overflow_arg_area = ( unsigned int *)( ( char *)ap->reg_save_area + gp_offset); 
+                                                ~~^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:510:59: note: forward declaration of 'struct __va_list_tag'
+void  vgprintf( FILE *outputfile, const char *fmt, struct __va_list_tag *ap) 
+                                                          ^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:593:3: error: incomplete definition of type 'struct __va_list_tag'
+ap->gp_offset = gp_offset + 8; 
+~~^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:510:59: note: forward declaration of 'struct __va_list_tag'
+void  vgprintf( FILE *outputfile, const char *fmt, struct __va_list_tag *ap) 
+                                                          ^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:627:9: error: incomplete definition of type 'struct __va_list_tag'
+v30 = ap->gp_offset; 
+      ~~^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:510:59: note: forward declaration of 'struct __va_list_tag'
+void  vgprintf( FILE *outputfile, const char *fmt, struct __va_list_tag *ap) 
+                                                          ^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:628:8: error: incomplete definition of type 'struct __va_list_tag'
+if ( ap->gp_offset > 0x2F ) 
+     ~~^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:510:59: note: forward declaration of 'struct __va_list_tag'
+void  vgprintf( FILE *outputfile, const char *fmt, struct __va_list_tag *ap) 
+                                                          ^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:630:17: error: incomplete definition of type 'struct __va_list_tag'
+v31 = ( int *)ap->overflow_arg_area; 
+              ~~^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:510:59: note: forward declaration of 'struct __va_list_tag'
+void  vgprintf( FILE *outputfile, const char *fmt, struct __va_list_tag *ap) 
+                                                          ^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:631:3: error: incomplete definition of type 'struct __va_list_tag'
+ap->overflow_arg_area = v31 + 2; 
+~~^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:510:59: note: forward declaration of 'struct __va_list_tag'
+void  vgprintf( FILE *outputfile, const char *fmt, struct __va_list_tag *ap) 
+                                                          ^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:635:28: error: incomplete definition of type 'struct __va_list_tag'
+v31 = ( int *)( ( char *)ap->reg_save_area + v30); 
+                         ~~^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:510:59: note: forward declaration of 'struct __va_list_tag'
+void  vgprintf( FILE *outputfile, const char *fmt, struct __va_list_tag *ap) 
+                                                          ^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:636:3: error: incomplete definition of type 'struct __va_list_tag'
+ap->gp_offset = v30 + 8; 
+~~^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:510:59: note: forward declaration of 'struct __va_list_tag'
+void  vgprintf( FILE *outputfile, const char *fmt, struct __va_list_tag *ap) 
+                                                          ^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:665:9: error: incomplete definition of type 'struct __va_list_tag'
+v28 = ap->gp_offset; 
+      ~~^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:510:59: note: forward declaration of 'struct __va_list_tag'
+void  vgprintf( FILE *outputfile, const char *fmt, struct __va_list_tag *ap) 
+                                                          ^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:666:8: error: incomplete definition of type 'struct __va_list_tag'
+if ( ap->gp_offset > 0x2F ) 
+     ~~^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:510:59: note: forward declaration of 'struct __va_list_tag'
+void  vgprintf( FILE *outputfile, const char *fmt, struct __va_list_tag *ap) 
+                                                          ^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:668:9: error: incomplete definition of type 'struct __va_list_tag'
+v29 = ap->overflow_arg_area; 
+      ~~^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:510:59: note: forward declaration of 'struct __va_list_tag'
+void  vgprintf( FILE *outputfile, const char *fmt, struct __va_list_tag *ap) 
+                                                          ^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:669:3: error: incomplete definition of type 'struct __va_list_tag'
+ap->overflow_arg_area = v29 + 1; 
+~~^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:510:59: note: forward declaration of 'struct __va_list_tag'
+void  vgprintf( FILE *outputfile, const char *fmt, struct __va_list_tag *ap) 
+                                                          ^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:673:18: error: incomplete definition of type 'struct __va_list_tag'
+v29 = ( char *)ap->reg_save_area + v28; 
+               ~~^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:510:59: note: forward declaration of 'struct __va_list_tag'
+void  vgprintf( FILE *outputfile, const char *fmt, struct __va_list_tag *ap) 
+                                                          ^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:674:3: error: incomplete definition of type 'struct __va_list_tag'
+ap->gp_offset = v28 + 8; 
+~~^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:510:59: note: forward declaration of 'struct __va_list_tag'
+void  vgprintf( FILE *outputfile, const char *fmt, struct __va_list_tag *ap) 
+                                                          ^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:676:22: error: use of undeclared identifier 'off_496654'
+fprintf( outputfile, off_496654, *v29); 
+                     ^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:681:8: error: incomplete definition of type 'struct __va_list_tag'
+v9 = ap->gp_offset; 
+     ~~^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:510:59: note: forward declaration of 'struct __va_list_tag'
+void  vgprintf( FILE *outputfile, const char *fmt, struct __va_list_tag *ap) 
+                                                          ^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:682:8: error: incomplete definition of type 'struct __va_list_tag'
+if ( ap->gp_offset > 0x2F ) 
+     ~~^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:510:59: note: forward declaration of 'struct __va_list_tag'
+void  vgprintf( FILE *outputfile, const char *fmt, struct __va_list_tag *ap) 
+                                                          ^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:684:26: error: incomplete definition of type 'struct __va_list_tag'
+v16 = ( unsigned int *)ap->overflow_arg_area; 
+                       ~~^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:510:59: note: forward declaration of 'struct __va_list_tag'
+void  vgprintf( FILE *outputfile, const char *fmt, struct __va_list_tag *ap) 
+                                                          ^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:686:3: error: incomplete definition of type 'struct __va_list_tag'
+ap->overflow_arg_area = v16 + 2; 
+~~^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:510:59: note: forward declaration of 'struct __va_list_tag'
+void  vgprintf( FILE *outputfile, const char *fmt, struct __va_list_tag *ap) 
+                                                          ^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:690:28: error: incomplete definition of type 'struct __va_list_tag'
+reg_save_area = ( char *)ap->reg_save_area; 
+                         ~~^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:510:59: note: forward declaration of 'struct __va_list_tag'
+void  vgprintf( FILE *outputfile, const char *fmt, struct __va_list_tag *ap) 
+                                                          ^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:692:3: error: incomplete definition of type 'struct __va_list_tag'
+ap->gp_offset = v11; 
+~~^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:510:59: note: forward declaration of 'struct __va_list_tag'
+void  vgprintf( FILE *outputfile, const char *fmt, struct __va_list_tag *ap) 
+                                                          ^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:696:26: error: incomplete definition of type 'struct __va_list_tag'
+v17 = ( unsigned int *)ap->overflow_arg_area; 
+                       ~~^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:510:59: note: forward declaration of 'struct __va_list_tag'
+void  vgprintf( FILE *outputfile, const char *fmt, struct __va_list_tag *ap) 
+                                                          ^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:698:3: error: incomplete definition of type 'struct __va_list_tag'
+ap->overflow_arg_area = v17 + 2; 
+~~^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:510:59: note: forward declaration of 'struct __va_list_tag'
+void  vgprintf( FILE *outputfile, const char *fmt, struct __va_list_tag *ap) 
+                                                          ^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:708:3: error: incomplete definition of type 'struct __va_list_tag'
+ap->gp_offset = v9 + 16; 
+~~^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:510:59: note: forward declaration of 'struct __va_list_tag'
+void  vgprintf( FILE *outputfile, const char *fmt, struct __va_list_tag *ap) 
+                                                          ^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:730:9: error: incomplete definition of type 'struct __va_list_tag'
+v26 = ap->gp_offset; 
+      ~~^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:510:59: note: forward declaration of 'struct __va_list_tag'
+void  vgprintf( FILE *outputfile, const char *fmt, struct __va_list_tag *ap) 
+                                                          ^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:731:8: error: incomplete definition of type 'struct __va_list_tag'
+if ( ap->gp_offset > 0x2F ) 
+     ~~^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:510:59: note: forward declaration of 'struct __va_list_tag'
+void  vgprintf( FILE *outputfile, const char *fmt, struct __va_list_tag *ap) 
+                                                          ^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:733:17: error: incomplete definition of type 'struct __va_list_tag'
+v27 = ( int *)ap->overflow_arg_area; 
+              ~~^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:510:59: note: forward declaration of 'struct __va_list_tag'
+void  vgprintf( FILE *outputfile, const char *fmt, struct __va_list_tag *ap) 
+                                                          ^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:734:3: error: incomplete definition of type 'struct __va_list_tag'
+ap->overflow_arg_area = v27 + 2; 
+~~^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:510:59: note: forward declaration of 'struct __va_list_tag'
+void  vgprintf( FILE *outputfile, const char *fmt, struct __va_list_tag *ap) 
+                                                          ^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:738:28: error: incomplete definition of type 'struct __va_list_tag'
+v27 = ( int *)( ( char *)ap->reg_save_area + v26); 
+                         ~~^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:510:59: note: forward declaration of 'struct __va_list_tag'
+void  vgprintf( FILE *outputfile, const char *fmt, struct __va_list_tag *ap) 
+                                                          ^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:739:3: error: incomplete definition of type 'struct __va_list_tag'
+ap->gp_offset = v26 + 8; 
+~~^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:510:59: note: forward declaration of 'struct __va_list_tag'
+void  vgprintf( FILE *outputfile, const char *fmt, struct __va_list_tag *ap) 
+                                                          ^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:744:9: error: incomplete definition of type 'struct __va_list_tag'
+v24 = ap->gp_offset; 
+      ~~^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:510:59: note: forward declaration of 'struct __va_list_tag'
+void  vgprintf( FILE *outputfile, const char *fmt, struct __va_list_tag *ap) 
+                                                          ^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:745:8: error: incomplete definition of type 'struct __va_list_tag'
+if ( ap->gp_offset > 0x2F ) 
+     ~~^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:510:59: note: forward declaration of 'struct __va_list_tag'
+void  vgprintf( FILE *outputfile, const char *fmt, struct __va_list_tag *ap) 
+                                                          ^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:747:26: error: incomplete definition of type 'struct __va_list_tag'
+v25 = ( unsigned int *)ap->overflow_arg_area; 
+                       ~~^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:510:59: note: forward declaration of 'struct __va_list_tag'
+void  vgprintf( FILE *outputfile, const char *fmt, struct __va_list_tag *ap) 
+                                                          ^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:748:3: error: incomplete definition of type 'struct __va_list_tag'
+ap->overflow_arg_area = v25 + 2; 
+~~^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:510:59: note: forward declaration of 'struct __va_list_tag'
+void  vgprintf( FILE *outputfile, const char *fmt, struct __va_list_tag *ap) 
+                                                          ^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:752:37: error: incomplete definition of type 'struct __va_list_tag'
+v25 = ( unsigned int *)( ( char *)ap->reg_save_area + v24); 
+                                  ~~^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:510:59: note: forward declaration of 'struct __va_list_tag'
+void  vgprintf( FILE *outputfile, const char *fmt, struct __va_list_tag *ap) 
+                                                          ^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:753:3: error: incomplete definition of type 'struct __va_list_tag'
+ap->gp_offset = v24 + 8; 
+~~^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:510:59: note: forward declaration of 'struct __va_list_tag'
+void  vgprintf( FILE *outputfile, const char *fmt, struct __va_list_tag *ap) 
+                                                          ^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:758:15: error: incomplete definition of type 'struct __va_list_tag'
+fp_offset = ap->fp_offset; 
+            ~~^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:510:59: note: forward declaration of 'struct __va_list_tag'
+void  vgprintf( FILE *outputfile, const char *fmt, struct __va_list_tag *ap) 
+                                                          ^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:761:20: error: incomplete definition of type 'struct __va_list_tag'
+v23 = ( double *)ap->overflow_arg_area; 
+                 ~~^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:510:59: note: forward declaration of 'struct __va_list_tag'
+void  vgprintf( FILE *outputfile, const char *fmt, struct __va_list_tag *ap) 
+                                                          ^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:762:3: error: incomplete definition of type 'struct __va_list_tag'
+ap->overflow_arg_area = v23 + 1; 
+~~^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:510:59: note: forward declaration of 'struct __va_list_tag'
+void  vgprintf( FILE *outputfile, const char *fmt, struct __va_list_tag *ap) 
+                                                          ^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:766:31: error: incomplete definition of type 'struct __va_list_tag'
+v23 = ( double *)( ( char *)ap->reg_save_area + fp_offset); 
+                            ~~^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:510:59: note: forward declaration of 'struct __va_list_tag'
+void  vgprintf( FILE *outputfile, const char *fmt, struct __va_list_tag *ap) 
+                                                          ^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:767:3: error: incomplete definition of type 'struct __va_list_tag'
+ap->fp_offset = fp_offset + 16; 
+~~^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:510:59: note: forward declaration of 'struct __va_list_tag'
+void  vgprintf( FILE *outputfile, const char *fmt, struct __va_list_tag *ap) 
+                                                          ^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:772:9: error: incomplete definition of type 'struct __va_list_tag'
+v20 = ap->gp_offset; 
+      ~~^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:510:59: note: forward declaration of 'struct __va_list_tag'
+void  vgprintf( FILE *outputfile, const char *fmt, struct __va_list_tag *ap) 
+                                                          ^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:773:8: error: incomplete definition of type 'struct __va_list_tag'
+if ( ap->gp_offset > 0x2F ) 
+     ~~^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:510:59: note: forward declaration of 'struct __va_list_tag'
+void  vgprintf( FILE *outputfile, const char *fmt, struct __va_list_tag *ap) 
+                                                          ^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:775:25: error: incomplete definition of type 'struct __va_list_tag'
+v21 = ( const char **)ap->overflow_arg_area; 
+                      ~~^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:510:59: note: forward declaration of 'struct __va_list_tag'
+void  vgprintf( FILE *outputfile, const char *fmt, struct __va_list_tag *ap) 
+                                                          ^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:776:3: error: incomplete definition of type 'struct __va_list_tag'
+ap->overflow_arg_area = v21 + 1; 
+~~^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:510:59: note: forward declaration of 'struct __va_list_tag'
+void  vgprintf( FILE *outputfile, const char *fmt, struct __va_list_tag *ap) 
+                                                          ^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:780:36: error: incomplete definition of type 'struct __va_list_tag'
+v21 = ( const char **)( ( char *)ap->reg_save_area + v20); 
+                                 ~~^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:510:59: note: forward declaration of 'struct __va_list_tag'
+void  vgprintf( FILE *outputfile, const char *fmt, struct __va_list_tag *ap) 
+                                                          ^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:781:3: error: incomplete definition of type 'struct __va_list_tag'
+ap->gp_offset = v20 + 8; 
+~~^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:510:59: note: forward declaration of 'struct __va_list_tag'
+void  vgprintf( FILE *outputfile, const char *fmt, struct __va_list_tag *ap) 
+                                                          ^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:786:9: error: incomplete definition of type 'struct __va_list_tag'
+v18 = ap->gp_offset; 
+      ~~^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:510:59: note: forward declaration of 'struct __va_list_tag'
+void  vgprintf( FILE *outputfile, const char *fmt, struct __va_list_tag *ap) 
+                                                          ^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:787:8: error: incomplete definition of type 'struct __va_list_tag'
+if ( ap->gp_offset > 0x2F ) 
+     ~~^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:510:59: note: forward declaration of 'struct __va_list_tag'
+void  vgprintf( FILE *outputfile, const char *fmt, struct __va_list_tag *ap) 
+                                                          ^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:789:26: error: incomplete definition of type 'struct __va_list_tag'
+v19 = ( unsigned int *)ap->overflow_arg_area; 
+                       ~~^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:510:59: note: forward declaration of 'struct __va_list_tag'
+void  vgprintf( FILE *outputfile, const char *fmt, struct __va_list_tag *ap) 
+                                                          ^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:790:3: error: incomplete definition of type 'struct __va_list_tag'
+ap->overflow_arg_area = v19 + 2; 
+~~^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:510:59: note: forward declaration of 'struct __va_list_tag'
+void  vgprintf( FILE *outputfile, const char *fmt, struct __va_list_tag *ap) 
+                                                          ^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:794:37: error: incomplete definition of type 'struct __va_list_tag'
+v19 = ( unsigned int *)( ( char *)ap->reg_save_area + v18); 
+                                  ~~^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:510:59: note: forward declaration of 'struct __va_list_tag'
+void  vgprintf( FILE *outputfile, const char *fmt, struct __va_list_tag *ap) 
+                                                          ^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:795:3: error: incomplete definition of type 'struct __va_list_tag'
+ap->gp_offset = v18 + 8; 
+~~^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/engine/printutils.c:510:59: note: forward declaration of 'struct __va_list_tag'
+void  vgprintf( FILE *outputfile, const char *fmt, struct __va_list_tag *ap) 
+                                                          ^
+57 errors generated.
+make: *** [/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/vgprintf/src/obj/1/printutils.o] Error 1

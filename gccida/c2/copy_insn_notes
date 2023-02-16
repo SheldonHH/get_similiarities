@@ -1,0 +1,69 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/copy_insn_notes/src/integrate.c:2169:4: error: expected ';' after expression
+rtx v9; // rbx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/copy_insn_notes/src/integrate.c:2169:5: error: use of undeclared identifier 'v9'
+rtx v9; // rbx 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/copy_insn_notes/src/integrate.c:2171:4: error: expected ';' after expression
+rtx v11; // r15 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/copy_insn_notes/src/integrate.c:2171:5: error: use of undeclared identifier 'v11'; did you mean 'v10'?
+rtx v11; // r15 
+    ^~~
+    v10
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/copy_insn_notes/src/integrate.c:2170:18: note: 'v10' declared here
+ struct rtx_def *v10; // rdi 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/copy_insn_notes/src/integrate.c:2173:4: error: expected ';' after expression
+rtx v13; // rsi 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/copy_insn_notes/src/integrate.c:2173:5: error: use of undeclared identifier 'v13'
+rtx v13; // rsi 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/copy_insn_notes/src/integrate.c:2176:4: error: expected ';' after expression
+rtx v16; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/copy_insn_notes/src/integrate.c:2176:5: error: use of undeclared identifier 'v16'
+rtx v16; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/copy_insn_notes/src/integrate.c:2177:4: error: expected ';' after expression
+rtx v17; // [rsp+0h] [rbp-38h] BYREF 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/copy_insn_notes/src/integrate.c:2177:5: error: use of undeclared identifier 'v17'
+rtx v17; // [rsp+0h] [rbp-38h] BYREF 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/copy_insn_notes/src/integrate.c:2179:1: error: use of undeclared identifier 'v17'
+v17 = v3; 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/copy_insn_notes/src/integrate.c:2190:1: error: use of undeclared identifier 'v9'
+v9 = map->insn_map[rtx->fld[0].rtint]; 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/copy_insn_notes/src/integrate.c:2191:6: error: use of undeclared identifier 'v9'
+if ( v9 ) 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/copy_insn_notes/src/integrate.c:2205:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v12 = ( __int64)rtx[2]; 
+                ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/copy_insn_notes/src/integrate.c:2208:26: error: expected expression
+copy_insn_notes( *( rtx *)( v12 + 8), map, eh_region_offset); 
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/copy_insn_notes/src/integrate.c:2209:26: error: expected expression
+copy_insn_notes( *( rtx *)( *( _QWORD *)&rtx[2] + 16LL), map, eh_region_offset); 
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/copy_insn_notes/src/integrate.c:2210:26: error: expected expression
+copy_insn_notes( *( rtx *)( *( _QWORD *)&rtx[2] + 24LL), map, eh_region_offset); 
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/copy_insn_notes/src/integrate.c:2215:28: error: use of undeclared identifier 'v9'
+*( _DWORD *)( *( _QWORD *)&v9[2] + 8LL) += eh_region_offset; 
+                           ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/copy_insn_notes/src/integrate.c:2218:1: error: use of undeclared identifier 'v17'
+v17 = copy_rtx_and_substitute( v10, map, 0); 
+^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/copy_insn_notes/src/obj/integrate.o] Error 1

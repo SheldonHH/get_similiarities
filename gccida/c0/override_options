@@ -1,0 +1,62 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/override_options/src/i386.c:1300:1: error: must use 'enum' tag to refer to type 'cmodel'
+cmodel v1; // ecx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/override_options/src/i386.c:1301:1: error: must use 'enum' tag to refer to type 'cmodel'
+cmodel v2; // ecx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/override_options/src/i386.c:1323:19: error: use of undeclared identifier 'override_options_cpu_names'
+ix86_cpu_string = override_options_cpu_names[12]; 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/override_options/src/i386.c:1384:37: error: use of undeclared identifier 'off_80612B'
+else if ( !strcmp( ix86_asm_string, off_80612B) ) 
+                                    ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/override_options/src/i386.c:1404:33: error: use of undeclared identifier 'override_options_processor_alias_table'
+if ( !strcmp( ix86_arch_string, override_options_processor_alias_table[i].name) ) 
+                                ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/override_options/src/i386.c:1406:13: error: use of undeclared identifier 'override_options_processor_alias_table'
+ix86_arch = override_options_processor_alias_table[i].processor; 
+            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/override_options/src/i386.c:1408:8: error: use of undeclared identifier 'override_options_processor_alias_table'
+if ( ( override_options_processor_alias_table[i].flags & 4) != 0 && ( target_flags & 0x8000) == 0 ) 
+       ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/override_options/src/i386.c:1410:8: error: use of undeclared identifier 'override_options_processor_alias_table'
+if ( ( override_options_processor_alias_table[i].flags & 0x10) != 0 && ( target_flags & 0x200000) == 0 ) 
+       ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/override_options/src/i386.c:1412:8: error: use of undeclared identifier 'override_options_processor_alias_table'
+if ( ( override_options_processor_alias_table[i].flags & 0x40) != 0 && ( target_flags & 0x800000) == 0 ) 
+       ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/override_options/src/i386.c:1414:8: error: use of undeclared identifier 'override_options_processor_alias_table'
+if ( ( override_options_processor_alias_table[i].flags & 1) != 0 && ( target_flags & 0x20000) == 0 ) 
+       ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/override_options/src/i386.c:1416:8: error: use of undeclared identifier 'override_options_processor_alias_table'
+if ( ( override_options_processor_alias_table[i].flags & 2) != 0 && ( target_flags & 0x80000) == 0 ) 
+       ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/override_options/src/i386.c:1418:8: error: use of undeclared identifier 'override_options_processor_alias_table'
+if ( ( override_options_processor_alias_table[i].flags & 8) != 0 ) 
+       ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/override_options/src/i386.c:1427:32: error: use of undeclared identifier 'override_options_processor_alias_table'
+if ( !strcmp( ix86_cpu_string, override_options_processor_alias_table[ia].name) ) 
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/override_options/src/i386.c:1429:12: error: use of undeclared identifier 'override_options_processor_alias_table'
+ix86_cpu = override_options_processor_alias_table[ia].processor; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/override_options/src/i386.c:1433:8: error: use of undeclared identifier 'override_options_processor_alias_table'
+if ( ( override_options_processor_alias_table[ia].flags & 8) != 0 ) 
+       ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/override_options/src/i386.c:1440:13: error: use of undeclared identifier 'override_options_processor_target_table'
+ix86_cost = override_options_processor_target_table[ix86_cpu].cost; 
+            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/override_options/src/i386.c:1441:17: error: use of undeclared identifier 'override_options_processor_target_table'
+target_flags |= override_options_processor_target_table[ix86_cpu].target_enable; 
+                ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/override_options/src/i386.c:1442:18: error: use of undeclared identifier 'override_options_processor_target_table'
+target_flags &= ~override_options_processor_target_table[ix86_cpu].target_disable; 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/override_options/src/i386.c:1512:15: error: use of undeclared identifier 'override_options_processor_target_table'
+align_loops = override_options_processor_target_table[ix86_cpu].align_loop; 
+              ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/override_options/src/obj/i386.o] Error 1

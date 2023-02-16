@@ -1,0 +1,81 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/noce_get_condition/src/ifcvt.c:1981:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v8; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/noce_get_condition/src/ifcvt.c:1990:4: error: expected ';' after expression
+rtx v18; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/noce_get_condition/src/ifcvt.c:1990:5: error: use of undeclared identifier 'v18'
+rtx v18; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/noce_get_condition/src/ifcvt.c:1991:4: error: expected ';' after expression
+rtx i; // rbx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/noce_get_condition/src/ifcvt.c:1991:5: error: use of undeclared identifier 'i'
+rtx i; // rbx 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/noce_get_condition/src/ifcvt.c:1995:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v2 = ( __int64)pc_set( jump)[1]; 
+               ^~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/noce_get_condition/src/ifcvt.c:1997:51: error: invalid operands to binary expression ('uint64' (aka 'unsigned long long') and 'struct rtx_def')
+v4 = *( _WORD *)v3 == 67 && *( _QWORD *)( v3 + 8) == jump[4]; 
+                            ~~~~~~~~~~~~~~~~~~~~~ ^  ~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/noce_get_condition/src/ifcvt.c:2001:35: error: must use 'enum' tag to refer to type 'mode_class'
+if ( ( _WORD)v7 != 61 || *( const mode_class *)( ( char *)mode_class_0 + ( ( v7 >> 14) & 0x3FC)) != MODE_INT ) 
+                                  ^
+                                  enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/noce_get_condition/src/machmode.h:52:30: note: enum 'mode_class' is hidden by a non-type declaration of 'mode_class' here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/noce_get_condition/src/ifcvt.c:2001:59: error: use of undeclared identifier 'mode_class_0'
+if ( ( _WORD)v7 != 61 || *( const mode_class *)( ( char *)mode_class_0 + ( ( v7 >> 14) & 0x3FC)) != MODE_INT ) 
+                                                          ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/noce_get_condition/src/ifcvt.c:2005:43: error: expected ')'
+v12 = canonicalize_condition( jump, ( rtx)v5, v4, earliest, 0LL); 
+                                          ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/noce_get_condition/src/ifcvt.c:2005:29: note: to match this '('
+v12 = canonicalize_condition( jump, ( rtx)v5, v4, earliest, 0LL); 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/noce_get_condition/src/ifcvt.c:2021:36: error: must use 'enum' tag to refer to type 'mode_class'
+if ( ( _WORD)v17 == 61 && *( const mode_class *)( ( char *)mode_class_0 + ( ( v17 >> 14) & 0x3FC)) == MODE_INT ) 
+                                   ^
+                                   enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/noce_get_condition/src/machmode.h:52:30: note: enum 'mode_class' is hidden by a non-type declaration of 'mode_class' here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/noce_get_condition/src/ifcvt.c:2021:60: error: use of undeclared identifier 'mode_class_0'
+if ( ( _WORD)v17 == 61 && *( const mode_class *)( ( char *)mode_class_0 + ( ( v17 >> 14) & 0x3FC)) == MODE_INT ) 
+                                                           ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/noce_get_condition/src/ifcvt.c:2023:43: error: expected ')'
+v18 = canonicalize_condition( jump, ( rtx)v5, v14, earliest, v16); 
+                                          ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/noce_get_condition/src/ifcvt.c:2023:29: note: to match this '('
+v18 = canonicalize_condition( jump, ( rtx)v5, v14, earliest, v16); 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/noce_get_condition/src/ifcvt.c:2023:1: error: use of undeclared identifier 'v18'
+v18 = canonicalize_condition( jump, ( rtx)v5, v14, earliest, v16); 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/noce_get_condition/src/ifcvt.c:2024:6: error: use of undeclared identifier 'v18'
+if ( v18 ) 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/noce_get_condition/src/ifcvt.c:2026:7: error: use of undeclared identifier 'v18'; did you mean 'v10'?
+v11 = v18; 
+      ^~~
+      v10
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/noce_get_condition/src/ifcvt.c:1982:5: note: 'v10' declared here
+int v10; // ebx 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/noce_get_condition/src/ifcvt.c:2027:7: error: use of undeclared identifier 'i'
+for ( i = *earliest; i != jump; i = i[1].fld[0].rtx ) 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/noce_get_condition/src/ifcvt.c:2027:22: error: use of undeclared identifier 'i'
+for ( i = *earliest; i != jump; i = i[1].fld[0].rtx ) 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/noce_get_condition/src/ifcvt.c:2027:33: error: use of undeclared identifier 'i'
+for ( i = *earliest; i != jump; i = i[1].fld[0].rtx ) 
+                                ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/noce_get_condition/src/obj/ifcvt.o] Error 1

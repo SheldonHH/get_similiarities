@@ -1,0 +1,33 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_oldest_value_reg/src/regrename.c:1776:29: error: must use 'enum' tag to refer to type 'reg_class'
+rtx  find_oldest_value_reg( reg_class a1, rtx reg,  struct value_data *vd) 
+                            ^
+                            enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_oldest_value_reg/src/regrename.c:1790:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v15; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_oldest_value_reg/src/regrename.c:1806:25: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v8 = ( ( unsigned int)( mode_class_0[v5] - 5) < 2) + 1; 
+                        ^~~~~~~~~~~~
+                        mode_class
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_oldest_value_reg/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_oldest_value_reg/src/regrename.c:1826:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v10 = ( ( unsigned int)( mode_class_0[mode] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_oldest_value_reg/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_oldest_value_reg/src/regrename.c:1858:51: error: use of undeclared identifier 'machine_mode'
+if ( v15 == ( _DWORD)v5 || mode_change_ok( v15, ( machine_mode)v5, ( unsigned int)vd) ) 
+                                                  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_oldest_value_reg/src/regrename.c:1865:30: error: use of undeclared identifier 'machine_mode'
+v12 = gen_rtx_fmt_i0( REG, ( machine_mode)v5, v14); 
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_oldest_value_reg/src/regrename.c:1866:21: error: assigning to 'uint32' (aka 'unsigned int') from incompatible type 'struct rtx_def'
+*( _DWORD *)&v12[1] = reg[1]; 
+                    ^ ~~~~~~
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_oldest_value_reg/src/obj/regrename.o] Error 1

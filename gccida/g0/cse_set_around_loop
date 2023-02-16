@@ -1,0 +1,21 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cse_set_around_loop/src/cse.c:7180:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v3; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cse_set_around_loop/src/cse.c:7209:36: error: use of undeclared identifier 'machine_mode'
+v5 = canon_hash( *( rtx *)&x[1], ( machine_mode)*( unsigned __int8 *)( x->fld[0].rtwint + 2)) & 0x1F; 
+                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cse_set_around_loop/src/cse.c:7227:26: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v8 = (  struct rtx_def *)p[2]; 
+                         ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cse_set_around_loop/src/cse.c:7235:13: error: expected identifier or '('
+ struct set = v8; 
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cse_set_around_loop/src/cse.c:7241:36: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+cse_check_loop_start_value = ( rtx)x[1]; 
+                                   ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cse_set_around_loop/src/cse.c:7278:49: error: use of undeclared identifier 'machine_mode'
+invalidate( *( rtx *)( x->fld[0].rtwint + 8), ( machine_mode)*( unsigned __int8 *)( x->fld[0].rtwint + 2)); 
+                                                ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cse_set_around_loop/src/obj/cse.o] Error 1

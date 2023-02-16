@@ -1,0 +1,21 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/immed_real_const_1/src/varasm.c:2660:26: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  immed_real_const_1( machine_mode mode, realvaluetype d) 
+                         ^
+                         enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/immed_real_const_1/src/varasm.c:2660:6: error: conflicting types for 'immed_real_const_1'
+rtx  immed_real_const_1( machine_mode mode, realvaluetype d) 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/immed_real_const_1/src/real.h:466:24: note: previous declaration is here
+extern struct rtx_def *immed_real_const_1       PARAMS ((REAL_VALUE_TYPE,
+                       ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/immed_real_const_1/src/varasm.c:2672:4: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+v10.m128i_i64[0] = d.r[2]; 
+~~~^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/immed_real_const_1/src/varasm.c:2718:29: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+*( _QWORD *)&result[2] = v10.m128i_i64[0]; 
+                         ~~~^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/immed_real_const_1/src/varasm.c:2719:15: error: use of undeclared identifier 'rtx_def'
+result[1] = ( rtx_def)_mm_load_si128( &v9); 
+              ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/immed_real_const_1/src/obj/varasm.o] Error 1

@@ -1,0 +1,54 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/reg_scan_mark_refs/src/regclass.c:2894:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v34; // rsi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/reg_scan_mark_refs/src/regclass.c:2896:4: error: expected ';' after expression
+rtx reg_note; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/reg_scan_mark_refs/src/regclass.c:2896:5: error: must use 'enum' tag to refer to type 'reg_note'
+rtx reg_note; // rax 
+    ^
+    enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/reg_scan_mark_refs/src/regclass.c:2912:11: error: expected ';' after expression
+x = ( rtx)x[1]; 
+          ^
+          ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/reg_scan_mark_refs/src/regclass.c:2928:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v9.rtwint = ( __int64)x->fld[0]; 
+                      ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/reg_scan_mark_refs/src/regclass.c:2932:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v11.rtwint = ( __int64)x->fld[0]; 
+                       ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/reg_scan_mark_refs/src/regclass.c:2947:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v11.rtwint = ( __int64)x->fld[0]; 
+                       ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/reg_scan_mark_refs/src/regclass.c:2977:19: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v27 = ( __int16 *)x[1]; 
+                  ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/reg_scan_mark_refs/src/regclass.c:3009:1: error: must use 'enum' tag to refer to type 'reg_note'
+reg_note = find_reg_note( insn, REG_EQUAL, 0LL); 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/reg_scan_mark_refs/src/regclass.c:3009:1: error: expected expression
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/reg_scan_mark_refs/src/regclass.c:3010:6: error: use of undeclared identifier 'reg_note'; did you mean 'reg_names'?
+if ( reg_note ) 
+     ^~~~~~~~
+     reg_names
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/reg_scan_mark_refs/src/regs.h:166:21: note: 'reg_names' declared here
+extern const char * reg_names[FIRST_PSEUDO_REGISTER];
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/reg_scan_mark_refs/src/regclass.c:3012:18: error: use of undeclared identifier 'reg_note'
+v37 = *( _WORD *)reg_note->fld[0].rtwint; 
+                 ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/reg_scan_mark_refs/src/regclass.c:3015:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v9.rtwint = ( __int64)x->fld[0]; 
+                      ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/reg_scan_mark_refs/src/regclass.c:3022:31: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( i = (  struct rtx_def *)x[1]; ; i = i->fld[0].rtx ) 
+                              ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/reg_scan_mark_refs/src/regclass.c:3075:29: error: expected expression
+reg_scan_mark_refs( *( rtx *)&rtwint[2 * v23 + 2], insn, note_flag, min_regno); 
+                            ^
+15 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/reg_scan_mark_refs/src/obj/regclass.o] Error 1

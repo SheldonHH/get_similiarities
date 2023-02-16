@@ -1,0 +1,74 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/delete_noop_moves/src/flow.c:1263:4: error: expected ';' after expression
+rtx reg_note; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/delete_noop_moves/src/flow.c:1263:5: error: must use 'enum' tag to refer to type 'reg_note'
+rtx reg_note; // rax 
+    ^
+    enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/delete_noop_moves/src/flow.c:1264:4: error: expected ';' after expression
+rtx v7; // r14 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/delete_noop_moves/src/flow.c:1264:5: error: use of undeclared identifier 'v7'
+rtx v7; // r14 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/delete_noop_moves/src/flow.c:1265:4: error: expected ';' after expression
+rtx real_insn; // r15 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/delete_noop_moves/src/flow.c:1265:5: error: use of undeclared identifier 'real_insn'
+rtx real_insn; // r15 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/delete_noop_moves/src/flow.c:1266:4: error: expected ';' after expression
+rtx v9; // r12 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/delete_noop_moves/src/flow.c:1266:5: error: use of undeclared identifier 'v9'
+rtx v9; // r12 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/delete_noop_moves/src/flow.c:1286:1: error: must use 'enum' tag to refer to type 'reg_note'
+reg_note = find_reg_note( v5, REG_LIBCALL, 0LL); 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/delete_noop_moves/src/flow.c:1286:10: error: expected identifier or '('
+reg_note = find_reg_note( v5, REG_LIBCALL, 0LL); 
+         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/delete_noop_moves/src/flow.c:1287:6: error: use of undeclared identifier 'reg_note'; did you mean 'reg_names'?
+if ( reg_note ) 
+     ^~~~~~~~
+     reg_names
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/delete_noop_moves/src/regs.h:166:21: note: 'reg_names' declared here
+extern const char * reg_names[FIRST_PSEUDO_REGISTER];
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/delete_noop_moves/src/flow.c:1289:1: error: use of undeclared identifier 'v7'
+v7 = reg_note; 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/delete_noop_moves/src/flow.c:1289:6: error: use of undeclared identifier 'reg_note'; did you mean 'reg_names'?
+v7 = reg_note; 
+     ^~~~~~~~
+     reg_names
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/delete_noop_moves/src/regs.h:166:21: note: 'reg_names' declared here
+extern const char * reg_names[FIRST_PSEUDO_REGISTER];
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/delete_noop_moves/src/flow.c:1290:6: error: use of undeclared identifier 'reg_note'
+if ( reg_note->fld[0].rtx != v5 ) 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/delete_noop_moves/src/flow.c:1292:1: error: use of undeclared identifier 'real_insn'
+real_insn = next_real_insn( v5); 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/delete_noop_moves/src/flow.c:1293:1: error: use of undeclared identifier 'v9'
+v9 = find_reg_note( v7->fld[0].rtx, REG_RETVAL, 0LL); 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/delete_noop_moves/src/flow.c:1293:21: error: use of undeclared identifier 'v7'
+v9 = find_reg_note( v7->fld[0].rtx, REG_RETVAL, 0LL); 
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/delete_noop_moves/src/flow.c:1297:1: error: use of undeclared identifier 'v7'
+v7->fld[0].rtx, 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/delete_noop_moves/src/flow.c:1298:1: error: use of undeclared identifier 'real_insn'
+real_insn[3].fld[0].rtx); 
+^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/delete_noop_moves/src/obj/flow.o] Error 1

@@ -1,0 +1,28 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/std_expand_builtin_va_start/src/builtins.c:3399:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *tt; // [rsp+18h] [rbp-38h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/std_expand_builtin_va_start/src/builtins.c:3402:5: error: expected ';' after expression
+tree t; // [rsp+30h] [rbp-20h] 
+    ^
+    ;
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/std_expand_builtin_va_start/src/builtins.c:3402:6: error: use of undeclared identifier 't'
+tree t; // [rsp+30h] [rbp-20h] 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/std_expand_builtin_va_start/src/builtins.c:3429:26: error: invalid operands to binary expression ('tree' (aka 'union tree_node *') and 'tree (*)[51]')
+tree = make_tree( ( tree)*( &global_trees + 28), nextarga); 
+                  ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/std_expand_builtin_va_start/src/builtins.c:3430:1: error: use of undeclared identifier 't'
+t = build( MODIFY_EXPR, tt, valist, tree); 
+^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/std_expand_builtin_va_start/src/builtins.c:3431:16: error: use of undeclared identifier 't'
+*( ( _DWORD *)&t->common + 4) = *( ( _DWORD *)&t->common + 4) & 0xFFFFFEFF | 0x100; 
+               ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/std_expand_builtin_va_start/src/builtins.c:3431:48: error: use of undeclared identifier 't'
+*( ( _DWORD *)&t->common + 4) = *( ( _DWORD *)&t->common + 4) & 0xFFFFFEFF | 0x100; 
+                                               ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/std_expand_builtin_va_start/src/builtins.c:3432:14: error: use of undeclared identifier 't'
+expand_expr( t, const_int_rtx[64], VOIDmode, EXPAND_NORMAL); 
+             ^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/std_expand_builtin_va_start/src/obj/builtins.o] Error 1

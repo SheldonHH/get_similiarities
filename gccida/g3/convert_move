@@ -1,0 +1,80 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/convert_move/src/expr.c:959:1: error: must use 'enum' tag to refer to type 'insn_code'
+insn_code v17; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/convert_move/src/expr.c:960:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v18; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/convert_move/src/expr.c:963:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v21; // r15 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/convert_move/src/expr.c:978:1: error: must use 'enum' tag to refer to type 'insn_code'
+insn_code v36; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/convert_move/src/expr.c:983:1: error: must use 'enum' tag to refer to type 'insn_code'
+insn_code v41; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/convert_move/src/expr.c:1003:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v61; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/convert_move/src/expr.c:1017:1: error: must use 'enum' tag to refer to type 'insn_code'
+insn_code codee; // [rsp+8h] [rbp-60h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/convert_move/src/expr.c:1030:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code equiv_code; // [rsp+2Ch] [rbp-3Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/convert_move/src/expr.c:1037:22: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v85 = *( ( _DWORD *)&mode_class_0 + v87); 
+                     ^~~~~~~~~~~~
+                     mode_class
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/convert_move/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/convert_move/src/expr.c:1038:24: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+frome = *( ( _DWORD *)&mode_class_0 + ( unsigned __int8)v6) == 2; 
+                       ^~~~~~~~~~~~
+                       mode_class
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/convert_move/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/convert_move/src/expr.c:1039:22: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v83 = *( ( _DWORD *)&mode_class_0 + ( unsigned __int8)v6); 
+                     ^~~~~~~~~~~~
+                     mode_class
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/convert_move/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/convert_move/src/expr.c:1051:21: error: use of undeclared identifier 'machine_mode'
+v8 = gen_lowpart( ( machine_mode)v87, ( rtx)v7); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/convert_move/src/expr.c:1078:29: error: use of undeclared identifier 'machine_mode'
+v8 = simplify_gen_subreg( ( machine_mode)v87, v8, ( machine_mode)*( ( unsigned __int8 *)v8 + 2), 0); 
+                            ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/convert_move/src/expr.c:1078:53: error: use of undeclared identifier 'machine_mode'
+v8 = simplify_gen_subreg( ( machine_mode)v87, v8, ( machine_mode)*( ( unsigned __int8 *)v8 + 2), 0); 
+                                                    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/convert_move/src/expr.c:1088:29: error: use of undeclared identifier 'machine_mode'
+to = simplify_gen_subreg( ( machine_mode)v6, to, ( machine_mode)*( ( unsigned __int8 *)to + 2), 0); 
+                            ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/convert_move/src/expr.c:1088:52: error: use of undeclared identifier 'machine_mode'
+to = simplify_gen_subreg( ( machine_mode)v6, to, ( machine_mode)*( ( unsigned __int8 *)to + 2), 0); 
+                                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/convert_move/src/expr.c:1106:23: error: use of undeclared identifier 'machine_mode'
+v36 = can_extend_p( ( machine_mode)v87, ( machine_mode)v6, unsignedp); 
+                      ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/convert_move/src/expr.c:1106:43: error: use of undeclared identifier 'machine_mode'
+v36 = can_extend_p( ( machine_mode)v87, ( machine_mode)v6, unsignedp); 
+                                          ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/convert_move/src/expr.c:1113:28: error: use of undeclared identifier 'machine_mode'
+|| ( v41 = can_extend_p( ( machine_mode)v87, *(short *)0xmode, unsignedp), 
+                           ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/convert_move/src/obj/expr.o] Error 1

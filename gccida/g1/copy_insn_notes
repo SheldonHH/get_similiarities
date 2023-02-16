@@ -1,0 +1,52 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_insn_notes/src/integrate.c:2174:4: error: expected ';' after expression
+rtx note; // [rsp+10h] [rbp-40h] BYREF 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_insn_notes/src/integrate.c:2174:5: error: use of undeclared identifier 'note'; did you mean 'none'?
+rtx note; // [rsp+10h] [rbp-40h] BYREF 
+    ^~~~
+    none
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_insn_notes/src/expr.h:119:17: note: 'none' declared here
+enum direction {none, upward, downward};  /* Value has this type.  */
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_insn_notes/src/integrate.c:2191:1: error: use of undeclared identifier 'note'
+note = copy_rtx_and_substitute( rtx, map, 0); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_insn_notes/src/integrate.c:2192:19: error: use of undeclared identifier 'note'; did you mean 'nice'?
+subst_constants( &note, 0LL, map, 0); 
+                  ^~~~
+                  nice
+/usr/include/unistd.h:601:12: note: 'nice' declared here
+extern int nice (int __inc) __THROW __wur;
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_insn_notes/src/integrate.c:2194:6: error: use of undeclared identifier 'note'; did you mean 'none'?
+v6 = note; 
+     ^~~~
+     none
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_insn_notes/src/expr.h:119:17: note: 'none' declared here
+enum direction {none, upward, downward};  /* Value has this type.  */
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_insn_notes/src/integrate.c:2195:40: error: use of undeclared identifier 'note'; did you mean 'goto'?
+for ( v10[3].fld[0].rtwint = ( __int64)note; v6; note = v6 ) 
+                                       ^~~~
+                                       goto
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_insn_notes/src/integrate.c:2195:40: error: expected expression
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_insn_notes/src/integrate.c:2195:50: error: use of undeclared identifier 'note'; did you mean 'none'?
+for ( v10[3].fld[0].rtwint = ( __int64)note; v6; note = v6 ) 
+                                                 ^~~~
+                                                 none
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_insn_notes/src/expr.h:119:17: note: 'none' declared here
+enum direction {none, upward, downward};  /* Value has this type.  */
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_insn_notes/src/integrate.c:2195:55: error: expression is not assignable
+for ( v10[3].fld[0].rtwint = ( __int64)note; v6; note = v6 ) 
+                                                 ~~~~ ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_insn_notes/src/integrate.c:2198:12: error: expected ';' after expression
+v6 = ( rtx)v6[1]; 
+           ^
+           ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_insn_notes/src/integrate.c:2224:26: error: expected expression
+copy_insn_notes( *( rtx *)( *( _QWORD *)&v3[2] + 8LL * i + 8), map, eh_region_offset); 
+                         ^
+11 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_insn_notes/src/obj/integrate.o] Error 1

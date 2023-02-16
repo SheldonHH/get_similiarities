@@ -1,0 +1,31 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_blkmode_from_reg/src/expr.c:2644:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v11; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_blkmode_from_reg/src/expr.c:2645:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v12; // r9d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_blkmode_from_reg/src/expr.c:2675:34: error: invalid suffix 'xmode' on integer constant
+v3 = convert_to_mode( *(short *)0xmode, srcreg, ( *( ( _BYTE *)&type->block.common + 17) & 0x20) != 0); 
+                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_blkmode_from_reg/src/expr.c:2685:31: error: invalid suffix 'orce' on integer constant
+src = operand_sub*(short *)0xforce( v3, i / v16, ( machine_mode)*( ( unsigned __int8 *)v3 + 2)); 
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_blkmode_from_reg/src/expr.c:2685:52: error: use of undeclared identifier 'machine_mode'
+src = operand_sub*(short *)0xforce( v3, i / v16, ( machine_mode)*( ( unsigned __int8 *)v3 + 2)); 
+                                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_blkmode_from_reg/src/expr.c:2685:7: error: use of undeclared identifier 'operand_sub'
+src = operand_sub*(short *)0xforce( v3, i / v16, ( machine_mode)*( ( unsigned __int8 *)v3 + 2)); 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_blkmode_from_reg/src/expr.c:2691:18: error: invalid suffix 'xmode' on integer constant
+v12 = *(short *)0xmode; 
+                 ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_blkmode_from_reg/src/expr.c:2708:18: error: invalid suffix 'xmode' on integer constant
+v12 = *(short *)0xmode; 
+                 ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_blkmode_from_reg/src/expr.c:2717:12: error: invalid suffix 'xmode' on integer constant
+*(short *)0xmode, 
+           ^
+9 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_blkmode_from_reg/src/obj/expr.o] Error 1

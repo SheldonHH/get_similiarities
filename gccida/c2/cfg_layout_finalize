@@ -1,0 +1,49 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cfg_layout_finalize/src/cfglayout.c:1058:4: error: expected ';' after expression
+rtx v14; // rcx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cfg_layout_finalize/src/cfglayout.c:1058:5: error: use of undeclared identifier 'v14'
+rtx v14; // rcx 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cfg_layout_finalize/src/cfglayout.c:1070:4: error: expected ';' after expression
+rtx reg_note; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cfg_layout_finalize/src/cfglayout.c:1070:5: error: must use 'enum' tag to refer to type 'reg_note'
+rtx reg_note; // rax 
+    ^
+    enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cfg_layout_finalize/src/cfglayout.c:1138:1: error: use of undeclared identifier 'v14'
+v14 = function_tail_eff_head; 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cfg_layout_finalize/src/cfglayout.c:1140:6: error: use of undeclared identifier 'v14'
+if ( v14 ) 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cfg_layout_finalize/src/cfglayout.c:1141:14: error: use of undeclared identifier 'v14'
+*( _QWORD *)&v14[1] = rtx; 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cfg_layout_finalize/src/cfglayout.c:1199:27: error: expected expression
+if ( v25->head == *( rtx *)( *( _QWORD *)v38 + 16LL) ) 
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cfg_layout_finalize/src/cfglayout.c:1214:1: error: must use 'enum' tag to refer to type 'reg_note'
+reg_note = find_reg_note( end, REG_BR_PROB, 0LL); 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cfg_layout_finalize/src/cfglayout.c:1214:10: error: expected identifier or '('
+reg_note = find_reg_note( end, REG_BR_PROB, 0LL); 
+         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cfg_layout_finalize/src/cfglayout.c:1215:33: error: use of undeclared identifier 'reg_note'
+if ( reg_note && *( __int64 *)( reg_note->fld[0].rtwint + 8) <= 4999 ) 
+                                ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cfg_layout_finalize/src/cfglayout.c:1215:6: error: use of undeclared identifier 'reg_note'; did you mean 'reg_names'?
+if ( reg_note && *( __int64 *)( reg_note->fld[0].rtwint + 8) <= 4999 ) 
+     ^~~~~~~~
+     reg_names
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cfg_layout_finalize/src/hard-reg-set.h:485:21: note: 'reg_names' declared here
+extern const char * reg_names[FIRST_PSEUDO_REGISTER];
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cfg_layout_finalize/src/cfglayout.c:1225:27: error: expected expression
+if ( v27->head == *( rtx *)( *( _QWORD *)v29 + 16LL) ) 
+                          ^
+13 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cfg_layout_finalize/src/obj/cfglayout.o] Error 1

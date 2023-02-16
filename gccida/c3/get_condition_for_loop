@@ -1,0 +1,22 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_condition_for_loop/src/loop.c:9815:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v11; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_condition_for_loop/src/loop.c:9822:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v4 = ( __int64)pc_set( x)[1]; 
+               ^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_condition_for_loop/src/loop.c:9826:28: error: invalid operands to binary expression ('uint64' (aka 'unsigned long long') and 'struct rtx_def')
+v3 = *( _QWORD *)( v6 + 8) == x[4]; 
+     ~~~~~~~~~~~~~~~~~~~~~ ^  ~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_condition_for_loop/src/loop.c:9834:25: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+v11 = swap_condition( ( rtx_code)*v9); 
+                        ^~~~~~~~
+                        rtx_cost
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_condition_for_loop/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_condition_for_loop/src/loop.c:9834:34: error: invalid operands to binary expression ('int (rtx, enum rtx_code)' (aka 'int (struct rtx_def *, enum rtx_code)') and 'unsigned short *')
+v11 = swap_condition( ( rtx_code)*v9); 
+                      ~~~~~~~~~~~^~~
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_condition_for_loop/src/obj/loop.o] Error 1

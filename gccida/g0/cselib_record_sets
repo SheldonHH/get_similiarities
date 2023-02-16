@@ -1,0 +1,61 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cselib_record_sets/src/cselib.c:1700:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v2; // ecx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cselib_record_sets/src/cselib.c:1702:1: error: use of undeclared identifier 'set_0'
+set_0 sets[106]; // [rsp+10h] [rbp-D80h] 
+^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cselib_record_sets/src/cselib.c:1713:14: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+body = ( rtx)insn[2]; 
+             ^~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cselib_record_sets/src/cselib.c:1715:14: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+body = ( rtx)insn[2]; 
+             ^~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cselib_record_sets/src/cselib.c:1719:14: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+body = ( rtx)body[1]; 
+             ^~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cselib_record_sets/src/cselib.c:1723:1: error: use of undeclared identifier 'sets'
+sets[0].src = ( rtx)body[1]; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cselib_record_sets/src/cselib.c:1723:21: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+sets[0].src = ( rtx)body[1]; 
+                    ^~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cselib_record_sets/src/cselib.c:1724:1: error: use of undeclared identifier 'sets'
+sets[0].dest = body->fld[0].rtx; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cselib_record_sets/src/cselib.c:1734:1: error: use of undeclared identifier 'sets'
+sets[n_sets].src = ( rtx)x[1]; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cselib_record_sets/src/cselib.c:1734:26: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+sets[n_sets].src = ( rtx)x[1]; 
+                         ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cselib_record_sets/src/cselib.c:1735:1: error: use of undeclared identifier 'sets'
+sets[n_sets++].dest = x->fld[0].rtx; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cselib_record_sets/src/cselib.c:1741:8: error: use of undeclared identifier 'sets'
+dest = sets[i].dest; 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cselib_record_sets/src/cselib.c:1742:17: error: use of undeclared identifier 'sets'
+if ( *( _WORD *)sets[i].dest == 64 ) 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cselib_record_sets/src/cselib.c:1745:1: error: use of undeclared identifier 'sets'
+sets[i].dest = dest; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cselib_record_sets/src/cselib.c:1749:7: error: use of undeclared identifier 'sets'
+src = sets[i].src; 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cselib_record_sets/src/cselib.c:1751:40: error: use of undeclared identifier 'machine_mode'
+src = gen_rtx_fmt_eee( IF_THEN_ELSE, ( machine_mode)*( ( unsigned __int8 *)src + 2), cond, src, dest); 
+                                       ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cselib_record_sets/src/cselib.c:1752:28: error: use of undeclared identifier 'machine_mode'
+v1 = cselib_lookup( src, ( machine_mode)*( ( unsigned __int8 *)dest + 2), 1); 
+                           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cselib_record_sets/src/cselib.c:1753:1: error: use of undeclared identifier 'sets'
+sets[i].src_elt = v1; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cselib_record_sets/src/cselib.c:1761:1: error: use of undeclared identifier 'sets'
+sets[i].dest_addr_elt = v3; 
+^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cselib_record_sets/src/obj/cselib.o] Error 1

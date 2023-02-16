@@ -1,0 +1,65 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_binary/src/combine.c:10331:18: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx  gen_binary( rtx_code code, machine_mode mode, rtx op0, rtx op1) 
+                 ^
+                 enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_binary/src/combine.c:10331:33: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  gen_binary( rtx_code code, machine_mode mode, rtx op0, rtx op1) 
+                                ^
+                                enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_binary/src/combine.c:10334:4: error: expected ';' after expression
+rtx v6; // r12 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_binary/src/combine.c:10334:5: error: use of undeclared identifier 'v6'
+rtx v6; // r12 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_binary/src/combine.c:10336:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v8; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_binary/src/combine.c:10337:4: error: expected ';' after expression
+rtx result; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_binary/src/combine.c:10337:5: error: use of undeclared identifier 'result'
+rtx result; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_binary/src/combine.c:10342:1: error: use of undeclared identifier 'v6'
+v6 = op1; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_binary/src/combine.c:10349:7: error: use of undeclared identifier 'v6'
+rtx = v6; 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_binary/src/combine.c:10350:1: error: use of undeclared identifier 'v6'
+v6 = v10; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_binary/src/combine.c:10352:1: error: use of undeclared identifier 'result'
+result = simplify_binary_operation( code, mode, rtx, v6); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_binary/src/combine.c:10352:54: error: use of undeclared identifier 'v6'
+result = simplify_binary_operation( code, mode, rtx, v6); 
+                                                     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_binary/src/combine.c:10353:7: error: use of undeclared identifier 'result'
+if ( !result ) 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_binary/src/combine.c:10355:40: error: use of undeclared identifier 'v6'
+if ( swap_commutative_operands_p( rtx, v6) ) 
+                                       ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_binary/src/combine.c:10356:36: error: use of undeclared identifier 'v6'
+return gen_rtx_fmt_ee( code, mode, v6, rtx); 
+                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_binary/src/combine.c:10364:1: error: use of undeclared identifier 'result'
+result = simplify_binary_operation( code, mode, op0, op1); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_binary/src/combine.c:10365:6: error: use of undeclared identifier 'result'
+if ( result ) 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_binary/src/combine.c:10366:8: error: use of undeclared identifier 'result'
+return result; 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_binary/src/combine.c:10372:1: error: use of undeclared identifier 'v6'
+v6 = ( rtx)op0[1]; 
+^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_binary/src/obj/combine.o] Error 1

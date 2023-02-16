@@ -1,0 +1,18 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/build_expr_wfl/src/tree.c:3102:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *identifier; // [rsp+8h] [rbp-28h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/build_expr_wfl/src/tree.c:3110:14: error: use of undeclared identifier 'build_expr_wfl_last_file'
+if ( file != build_expr_wfl_last_file ) 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/build_expr_wfl/src/tree.c:3112:1: error: use of undeclared identifier 'build_expr_wfl_last_file'
+build_expr_wfl_last_file = file; 
+^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/build_expr_wfl/src/tree.c:3117:1: error: use of undeclared identifier 'build_expr_wfl_last_filenode'
+build_expr_wfl_last_filenode = identifier; 
+^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/build_expr_wfl/src/tree.c:3119:39: error: use of undeclared identifier 'build_expr_wfl_last_filenode'
+wfl->int_cst.int_cst.high = ( __int64)build_expr_wfl_last_filenode; 
+                                      ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/build_expr_wfl/src/obj/tree.o] Error 1

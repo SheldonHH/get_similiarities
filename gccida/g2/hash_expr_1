@@ -1,0 +1,42 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/hash_expr_1/src/gcse.c:2063:35: error: must use 'enum' tag to refer to type 'machine_mode'
+unsigned int  hash_expr_1( rtx x, machine_mode mode, int *do_not_record_p) 
+                                  ^
+                                  enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/hash_expr_1/src/gcse.c:2134:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v23 = ( unsigned __int8 *)rtx[1]; 
+                          ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/hash_expr_1/src/gcse.c:2149:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v27 = ( __int64)rtx[2]; 
+                ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/hash_expr_1/src/gcse.c:2154:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v31.rtwint = ( __int64)rtx[2].fld[0]; 
+                       ^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/hash_expr_1/src/gcse.c:2162:26: error: expected ')'
+v30 = hash_expr_1( ( rtx)v29, ( machine_mode)*( unsigned __int8 *)( v29 + 2), do_not_record_p); 
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/hash_expr_1/src/gcse.c:2162:18: note: to match this '('
+v30 = hash_expr_1( ( rtx)v29, ( machine_mode)*( unsigned __int8 *)( v29 + 2), do_not_record_p); 
+                 ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/hash_expr_1/src/gcse.c:2163:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v31.rtwint = ( __int64)rtx[2].fld[0]; 
+                       ^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/hash_expr_1/src/gcse.c:2182:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v27 = ( __int64)rtx[2]; 
+                ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/hash_expr_1/src/gcse.c:2205:15: error: expected expression
+rtx = *( rtx *)( v27 + 8); 
+              ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/hash_expr_1/src/gcse.c:2253:9: error: expected expression
+*( rtx *)&v12[2 * v15 + 2], 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/hash_expr_1/src/gcse.c:2254:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( unsigned __int8 *)( *( _QWORD *)&v12[2 * v15 + 2] + 2LL), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/hash_expr_1/src/gcse.c:2272:18: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v16 = ( _DWORD *)rtx[1]; 
+                 ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/hash_expr_1/src/gcse.c:2352:28: error: expected expression
+v5 += hash_expr_1( *( rtx *)&v45[2 * v46 + 2], VOIDmode, do_not_record_p); 
+                           ^
+12 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/hash_expr_1/src/obj/gcse.o] Error 1

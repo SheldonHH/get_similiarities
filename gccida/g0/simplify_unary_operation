@@ -1,0 +1,72 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_unary_operation/src/simplify-rtx.c:873:32: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx  simplify_unary_operation( rtx_code code, machine_mode mode, rtx op, machine_mode op_mode) 
+                               ^
+                               enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_unary_operation/src/simplify-rtx.c:873:47: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  simplify_unary_operation( rtx_code code, machine_mode mode, rtx op, machine_mode op_mode) 
+                                              ^
+                                              enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_unary_operation/src/simplify-rtx.c:873:74: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  simplify_unary_operation( rtx_code code, machine_mode mode, rtx op, machine_mode op_mode) 
+                                                                         ^
+                                                                         enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_unary_operation/src/simplify-rtx.c:881:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode op_modea; // [rsp+2Ch] [rbp-D4h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_unary_operation/src/simplify-rtx.c:883:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode modea; // [rsp+38h] [rbp-C8h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_unary_operation/src/simplify-rtx.c:884:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code codea; // [rsp+3Ch] [rbp-C4h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_unary_operation/src/simplify-rtx.c:890:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code reversed; // [rsp+ACh] [rbp-54h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_unary_operation/src/simplify-rtx.c:921:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+lv = ( __int64)trueop[1]; 
+               ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_unary_operation/src/simplify-rtx.c:925:34: error: too many arguments to function call, expected 2, have 3
+real_value_truncate( &v9, modea, d); 
+~~~~~~~~~~~~~~~~~~~              ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_unary_operation/src/real.h:406:1: note: 'real_value_truncate' declared here
+extern REAL_VALUE_TYPE real_value_truncate PARAMS ((enum machine_mode,
+^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_unary_operation/src/simplify-rtx.c:942:18: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+lv_0 = ( __int64)trueop[1]; 
+                 ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_unary_operation/src/simplify-rtx.c:958:34: error: too many arguments to function call, expected 2, have 3
+real_value_truncate( &v9, modea, d_0); 
+~~~~~~~~~~~~~~~~~~~              ^~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_unary_operation/src/real.h:406:1: note: 'real_value_truncate' declared here
+extern REAL_VALUE_TYPE real_value_truncate PARAMS ((enum machine_mode,
+^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_unary_operation/src/simplify-rtx.c:1035:25: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+l1 = ( unsigned __int64)trueop[1]; 
+                        ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_unary_operation/src/simplify-rtx.c:1111:38: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+else if ( *( _WORD *)trueop == 55 && mode_class_0[modea] == MODE_FLOAT ) 
+                                     ^~~~~~~~~~~~
+                                     mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_unary_operation/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_unary_operation/src/simplify-rtx.c:1123:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& mode_class_0[*( ( unsigned __int8 *)trueop + 2)] == MODE_FLOAT 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_unary_operation/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_unary_operation/src/simplify-rtx.c:1124:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& mode_class_0[modea] == MODE_INT 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_unary_operation/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+15 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_unary_operation/src/obj/simplify-rtx.o] Error 1

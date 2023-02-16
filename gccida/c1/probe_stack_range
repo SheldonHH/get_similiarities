@@ -1,0 +1,32 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/probe_stack_range/src/explow.c:1932:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v5; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/probe_stack_range/src/explow.c:1942:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v15; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/probe_stack_range/src/explow.c:1947:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v20; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/probe_stack_range/src/explow.c:1964:25: error: use of undeclared identifier 'machine_mode'
+v2 = convert_to_mode( ( machine_mode)v4, size, 1); 
+                        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/probe_stack_range/src/explow.c:1986:32: error: use of undeclared identifier 'machine_mode'
+v14 = gen_rtx_fmt_ee( MINUS, ( machine_mode)v10, v12, v13); 
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/probe_stack_range/src/explow.c:1991:32: error: use of undeclared identifier 'machine_mode'
+v26 = gen_rtx_fmt_ee( MINUS, ( machine_mode)v10, v12, v27); 
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/probe_stack_range/src/explow.c:2010:20: error: use of undeclared identifier 'machine_mode'
+v19 = force_reg( ( machine_mode)( ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32), v19); 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/probe_stack_range/src/explow.c:2017:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/probe_stack_range/src/explow.c:2031:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32), 
+  ^
+9 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/probe_stack_range/src/obj/explow.o] Error 1

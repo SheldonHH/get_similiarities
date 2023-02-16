@@ -1,0 +1,23 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cselib_invalidate_regno/src/cselib.c:1420:52: error: must use 'enum' tag to refer to type 'machine_mode'
+void  cselib_invalidate_regno( unsigned int regno, machine_mode mode) 
+                                                   ^
+                                                   enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cselib_invalidate_regno/src/cselib.c:1450:30: error: use of undeclared identifier 'insn'
+fancy_abort( ( const char *)&insn, 968, "cselib_invalidate_regno"); 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cselib_invalidate_regno/src/cselib.c:1466:25: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v7 = ( ( unsigned int)( mode_class_0[mode] - 5) < 2) + 1; 
+                        ^~~~~~~~~~~~
+                        mode_class
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cselib_invalidate_regno/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cselib_invalidate_regno/src/cselib.c:1527:24: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v12 = ( unsigned int)( mode_class_0[*( ( unsigned __int8 *)elt->u.val_rtx + 2)] - 5) <= 1; 
+                       ^~~~~~~~~~~~
+                       mode_class
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cselib_invalidate_regno/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cselib_invalidate_regno/src/obj/cselib.o] Error 1

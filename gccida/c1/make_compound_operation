@@ -1,0 +1,72 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/make_compound_operation/src/combine.c:6799:38: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx  make_compound_operation( rtx x, rtx_code in_code) 
+                                     ^
+                                     enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/make_compound_operation/src/combine.c:6805:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v7; // r14d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/make_compound_operation/src/combine.c:6809:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v11; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/make_compound_operation/src/combine.c:6814:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v17; // r15d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/make_compound_operation/src/combine.c:6822:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v25; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/make_compound_operation/src/combine.c:6852:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v55; // r12d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/make_compound_operation/src/combine.c:6880:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v84; // [rsp+0h] [rbp-48h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/make_compound_operation/src/combine.c:6883:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v87; // [rsp+10h] [rbp-38h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/make_compound_operation/src/combine.c:6893:77: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+if ( ( ( _WORD)v4 == 74 || rtx_class[( unsigned __int16)v4] == 60) && ( rtx)v3[1] == const_int_rtx[64] ) 
+                                                                            ^~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/make_compound_operation/src/combine.c:6918:44: error: use of undeclared identifier 'machine_mode'
+v14 = force_to_mode( compound_operation, ( machine_mode)v12, 0xFFFFFFFFFFFFFFFFLL, 0LL, 0); 
+                                           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/make_compound_operation/src/combine.c:6930:29: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+&& ( v42.rtwint = ( __int64)compound_operation->fld[0], v41 <= mode_size[*( unsigned __int8 *)( v42.rtwint + 2)]) ) 
+                            ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/make_compound_operation/src/combine.c:6932:35: error: use of undeclared identifier 'machine_mode'
+return gen_lowpart_for_combine( ( machine_mode)v12, v42.rtx); 
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/make_compound_operation/src/combine.c:6937:3: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+( rtx_code)( unsigned __int16)*( _DWORD *)compound_operation, 
+  ^~~~~~~~
+  rtx_cost
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/make_compound_operation/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/make_compound_operation/src/combine.c:6937:14: error: expected expression
+( rtx_code)( unsigned __int16)*( _DWORD *)compound_operation, 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/make_compound_operation/src/combine.c:6938:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)v12, 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/make_compound_operation/src/combine.c:6943:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v16 = ( __int64)v3[1]; 
+                ^~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/make_compound_operation/src/combine.c:6958:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v22 = (  struct rtx_def *)( *fld)[1]; 
+                          ^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/make_compound_operation/src/combine.c:6984:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( unsigned __int8 *)( ( *fld)->fld[0].rtwint + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/make_compound_operation/src/combine.c:7007:30: error: use of undeclared identifier 'machine_mode'
+v56 = gen_rtx_fmt_ee( AND, ( machine_mode)v83, rtwint[1], *( rtx *)&v3[1]); 
+                             ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/make_compound_operation/src/obj/combine.o] Error 1

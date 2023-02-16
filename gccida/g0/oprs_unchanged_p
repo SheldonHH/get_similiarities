@@ -1,0 +1,18 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/oprs_unchanged_p/src/gcse.c:1848:9: error: use of undeclared identifier 'reg_avail_info_0'; did you mean 'reg_avail_info'?
+info = &reg_avail_info_0[x->fld[0].rtuint]; 
+        ^~~~~~~~~~~~~~~~
+        reg_avail_info
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/oprs_unchanged_p/src/gcse.c:1300:31: note: 'reg_avail_info' declared here
+static struct reg_avail_info *reg_avail_info;
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/oprs_unchanged_p/src/gcse.c:1852:41: error: use of undeclared identifier 'uid_cuid_1'
+result = info->last_set < *( ( _DWORD *)uid_cuid_1 + insn->fld[0].rtint); 
+                                        ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/oprs_unchanged_p/src/gcse.c:1854:43: error: use of undeclared identifier 'uid_cuid_1'
+result = info->first_set >= *( ( _DWORD *)uid_cuid_1 + insn->fld[0].rtint); 
+                                          ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/oprs_unchanged_p/src/gcse.c:1864:15: error: use of undeclared identifier 'uid_cuid_1'
+*( ( _DWORD *)uid_cuid_1 + insn->fld[0].rtint), 
+              ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/oprs_unchanged_p/src/obj/gcse.o] Error 1

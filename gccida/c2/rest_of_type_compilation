@@ -1,0 +1,20 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/rest_of_type_compilation/src/toplev.c:2792:1: error: must use 'enum' tag to refer to type 'debug_info_type'
+debug_info_type v2; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/rest_of_type_compilation/src/toplev.c:2796:15: error: use of undeclared identifier 'TV_SYMOUT_0'; did you mean 'TV_SYMOUT'?
+timevar_push( TV_SYMOUT_0); 
+              ^~~~~~~~~~~
+              TV_SYMOUT
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/rest_of_type_compilation/src/timevar.def:86:13: note: 'TV_SYMOUT' declared here
+DEFTIMEVAR (TV_SYMOUT                , "symout")
+            ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/rest_of_type_compilation/src/toplev.c:2807:14: error: use of undeclared identifier 'TV_SYMOUT_0'; did you mean 'TV_SYMOUT'?
+timevar_pop( TV_SYMOUT_0); 
+             ^~~~~~~~~~~
+             TV_SYMOUT
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/rest_of_type_compilation/src/timevar.def:86:13: note: 'TV_SYMOUT' declared here
+DEFTIMEVAR (TV_SYMOUT                , "symout")
+            ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/rest_of_type_compilation/src/obj/toplev.o] Error 1

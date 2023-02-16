@@ -1,0 +1,21 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/reg_overlap_mentioned_for_reload_p/src/reload.c:6723:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v9.rtwint = ( __int64)rtx->fld[0]; 
+                      ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/reg_overlap_mentioned_for_reload_p/src/reload.c:6735:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( unsigned __int8 *)( v9.rtwint + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/reg_overlap_mentioned_for_reload_p/src/reload.c:6737:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)BYTE2( v4)); 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/reg_overlap_mentioned_for_reload_p/src/reload.c:6748:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v11 = ( ( unsigned int)( mode_class_0[( unsigned __int8)v14] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/reg_overlap_mentioned_for_reload_p/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/reg_overlap_mentioned_for_reload_p/src/reload.c:6773:52: error: expected expression
+return reg_overlap_mentioned_for_reload_p( *( rtx *)&rtx[1], in) != 0; 
+                                                   ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/reg_overlap_mentioned_for_reload_p/src/obj/reload.o] Error 1

@@ -1,0 +1,53 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/find_basic_blocks/src/cfgbuild.c:1094:4: error: expected ';' after expression
+rtx nonnote_insn; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/find_basic_blocks/src/cfgbuild.c:1094:5: error: use of undeclared identifier 'nonnote_insn'
+rtx nonnote_insn; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/find_basic_blocks/src/cfgbuild.c:1103:15: error: use of undeclared identifier 'TV_CFG_0'; did you mean 'TV_CFG'?
+timevar_push( TV_CFG_0); 
+              ^~~~~~~~
+              TV_CFG
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/find_basic_blocks/src/timevar.def:43:13: note: 'TV_CFG' declared here
+DEFTIMEVAR (TV_CFG                   , "cfg construction")
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/find_basic_blocks/src/cfgbuild.c:1260:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v20 = ( __int64)f[2]; 
+                ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/find_basic_blocks/src/cfgbuild.c:1263:39: error: expected expression
+label_refs = find_label_refs( *( rtx *)( v20 + 8), lvl); 
+                                      ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/find_basic_blocks/src/cfgbuild.c:1264:32: error: expected expression
+v22 = find_label_refs( *( rtx *)( *( _QWORD *)&f[2] + 16LL), label_refs); 
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/find_basic_blocks/src/cfgbuild.c:1265:32: error: expected expression
+lvl = find_label_refs( *( rtx *)( *( _QWORD *)&f[2] + 24LL), v22); 
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/find_basic_blocks/src/cfgbuild.c:1290:30: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+for ( v24.rtwint = ( __int64)f[3].fld[0]; v24.rtwint; v24.rtwint = *( __int64 *)( v24.rtwint + 16) ) 
+                             ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/find_basic_blocks/src/cfgbuild.c:1295:1: error: use of undeclared identifier 'nonnote_insn'
+nonnote_insn = next_nonnote_insn( v25); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/find_basic_blocks/src/cfgbuild.c:1297:15: error: use of undeclared identifier 'nonnote_insn'
+|| *( _WORD *)nonnote_insn != 33 
+              ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/find_basic_blocks/src/cfgbuild.c:1296:9: error: use of undeclared identifier 'nonnote_insn'
+if ( ( !nonnote_insn 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/find_basic_blocks/src/cfgbuild.c:1298:39: error: use of undeclared identifier 'nonnote_insn'
+|| ( unsigned __int16)( **( _WORD **)&nonnote_insn[2] - 44) > 1u) 
+                                      ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/find_basic_blocks/src/cfgbuild.c:1303:35: error: expected expression
+lvl = alloc_EXPR_LIST( 0, *( rtx *)( v24.rtwint + 8), lvl); 
+                                  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/find_basic_blocks/src/cfgbuild.c:1333:14: error: use of undeclared identifier 'TV_CFG_0'; did you mean 'TV_CFG'?
+timevar_pop( TV_CFG_0); 
+             ^~~~~~~~
+             TV_CFG
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/find_basic_blocks/src/timevar.def:43:13: note: 'TV_CFG' declared here
+DEFTIMEVAR (TV_CFG                   , "cfg construction")
+            ^
+14 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/find_basic_blocks/src/obj/cfgbuild.o] Error 1

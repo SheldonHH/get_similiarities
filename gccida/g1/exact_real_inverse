@@ -1,0 +1,24 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/exact_real_inverse/src/real.c:1633:26: error: must use 'enum' tag to refer to type 'machine_mode'
+int  exact_real_inverse( machine_mode mode, realvaluetype *r) 
+                         ^
+                         enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/exact_real_inverse/src/real.c:1672:12: error: expected expression
+*( _OWORD *)&v6.r[1] = *( unsigned int *)&einv[4]; 
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/exact_real_inverse/src/real.c:1672:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&v6.r[1] = *( unsigned int *)&einv[4]; 
+   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/exact_real_inverse/src/real.c:1674:27: error: passing 'enum machine_mode' to parameter of incompatible type 'realvaluetype'
+real_value_truncate( &v7, mode, v6); 
+                          ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/exact_real_inverse/src/real.c:1677:22: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+*( _QWORD *)einv = v7.m128i_i64[0]; 
+                   ~~^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/exact_real_inverse/src/real.c:1678:26: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+*( _DWORD *)&einv[4] = v7.m128i_i32[2]; 
+                       ~~^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/exact_real_inverse/src/real.c:1680:8: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+if ( v7.m128i_i16[4] == ( __int16)0x8000 ) 
+     ~~^~~~~~~~~~
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/exact_real_inverse/src/obj/real.o] Error 1

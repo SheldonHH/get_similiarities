@@ -1,0 +1,61 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_binary/src/combine.c:10331:18: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx  gen_binary( rtx_code code, machine_mode mode, rtx op0, rtx op1) 
+                 ^
+                 enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_binary/src/combine.c:10331:33: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  gen_binary( rtx_code code, machine_mode mode, rtx op0, rtx op1) 
+                                ^
+                                enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_binary/src/combine.c:10336:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v8; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_binary/src/combine.c:10337:4: error: expected ';' after expression
+rtx result; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_binary/src/combine.c:10337:5: error: use of undeclared identifier 'result'
+rtx result; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_binary/src/combine.c:10350:1: error: use of undeclared identifier 'result'
+result = simplify_binary_operation( code, mode, v5, rtx); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_binary/src/combine.c:10351:6: error: use of undeclared identifier 'result'
+if ( result ) 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_binary/src/combine.c:10352:8: error: use of undeclared identifier 'result'
+return result; 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_binary/src/combine.c:10359:1: error: use of undeclared identifier 'result'
+result = simplify_binary_operation( code, mode, rtx, v5); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_binary/src/combine.c:10360:6: error: use of undeclared identifier 'result'
+if ( result ) 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_binary/src/combine.c:10361:8: error: use of undeclared identifier 'result'
+return result; 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_binary/src/combine.c:10372:1: error: use of undeclared identifier 'result'
+result = simplify_binary_operation( code, mode, op0, op1); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_binary/src/combine.c:10373:6: error: use of undeclared identifier 'result'
+if ( result ) 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_binary/src/combine.c:10374:8: error: use of undeclared identifier 'result'
+return result; 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_binary/src/combine.c:10381:12: error: expected ';' after expression
+v5 = ( rtx)op0[1]; 
+           ^
+           ;
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_binary/src/combine.c:10386:1: error: use of undeclared identifier 'result'
+result = simplify_relational_operation( code, v8, rtx, v5); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_binary/src/combine.c:10387:7: error: use of undeclared identifier 'result'
+if ( !result ) 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_binary/src/combine.c:10401:8: error: use of undeclared identifier 'result'
+return result; 
+       ^
+18 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_binary/src/obj/combine.o] Error 1

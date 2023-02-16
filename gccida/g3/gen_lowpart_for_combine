@@ -1,0 +1,67 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_lowpart_for_combine/src/combine.c:10227:31: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  gen_lowpart_for_combine( machine_mode mode, rtx x) 
+                              ^
+                              enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_lowpart_for_combine/src/combine.c:10230:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v3; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_lowpart_for_combine/src/combine.c:10232:4: error: expected ';' after expression
+rtx result; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_lowpart_for_combine/src/combine.c:10232:5: error: use of undeclared identifier 'result'
+rtx result; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_lowpart_for_combine/src/combine.c:10234:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v7; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_lowpart_for_combine/src/combine.c:10264:1: error: use of undeclared identifier 'result'
+result = rtx->fld[0].rtx; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_lowpart_for_combine/src/combine.c:10265:17: error: use of undeclared identifier 'result'
+if ( *( _WORD *)result == 66 ) 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_lowpart_for_combine/src/combine.c:10267:29: error: use of undeclared identifier 'result'
+if ( *( ( unsigned __int8 *)result + 2) == mode ) 
+                            ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_lowpart_for_combine/src/combine.c:10268:8: error: use of undeclared identifier 'result'
+return result; 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_lowpart_for_combine/src/combine.c:10273:1: error: use of undeclared identifier 'result'
+result = gen_lowpart_common( mode, rtx); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_lowpart_for_combine/src/combine.c:10274:6: error: use of undeclared identifier 'result'
+if ( result ) 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_lowpart_for_combine/src/combine.c:10275:8: error: use of undeclared identifier 'result'
+return result; 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_lowpart_for_combine/src/combine.c:10293:26: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+return gen_rtx_fmt_ee( ( rtx_code)( unsigned __int16)v6, mode, rtx->fld[0].rtx, *( rtx *)&rtx[1]); 
+                         ^~~~~~~~
+                         rtx_cost
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_lowpart_for_combine/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_lowpart_for_combine/src/combine.c:10293:37: error: expected expression
+return gen_rtx_fmt_ee( ( rtx_code)( unsigned __int16)v6, mode, rtx->fld[0].rtx, *( rtx *)&rtx[1]); 
+                                    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_lowpart_for_combine/src/combine.c:10293:89: error: expected expression
+return gen_rtx_fmt_ee( ( rtx_code)( unsigned __int16)v6, mode, rtx->fld[0].rtx, *( rtx *)&rtx[1]); 
+                                                                                        ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_lowpart_for_combine/src/combine.c:10302:1: error: use of undeclared identifier 'result'
+result = simplify_gen_subreg( mode, rtx, ( machine_mode)*( ( unsigned __int8 *)rtx + 2), v8); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_lowpart_for_combine/src/combine.c:10302:44: error: use of undeclared identifier 'machine_mode'
+result = simplify_gen_subreg( mode, rtx, ( machine_mode)*( ( unsigned __int8 *)rtx + 2), v8); 
+                                           ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_lowpart_for_combine/src/combine.c:10303:7: error: use of undeclared identifier 'result'
+if ( !result ) 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_lowpart_for_combine/src/combine.c:10306:8: error: use of undeclared identifier 'result'
+return result; 
+       ^
+19 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_lowpart_for_combine/src/obj/combine.o] Error 1

@@ -1,0 +1,31 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/purge_hard_subreg_sets/src/function.c:4002:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v5; // r14d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/purge_hard_subreg_sets/src/function.c:4012:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v15; // r14d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/purge_hard_subreg_sets/src/function.c:4025:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v2 = ( __int64)rtx[2]; 
+               ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/purge_hard_subreg_sets/src/function.c:4050:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( unsigned __int8)BYTE2( *v16), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/purge_hard_subreg_sets/src/function.c:4050:18: error: expected expression
+( machine_mode)( unsigned __int8)BYTE2( *v16), 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/purge_hard_subreg_sets/src/function.c:4052:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)BYTE2( v14)); 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/purge_hard_subreg_sets/src/function.c:4088:33: error: use of undeclared identifier 'machine_mode'
+v7 = subreg_regno_offset( v8, ( machine_mode)( unsigned __int8)BYTE2( *v6), v3[4], ( machine_mode)BYTE2( v4)); 
+                                ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/purge_hard_subreg_sets/src/function.c:4088:48: error: expected expression
+v7 = subreg_regno_offset( v8, ( machine_mode)( unsigned __int8)BYTE2( *v6), v3[4], ( machine_mode)BYTE2( v4)); 
+                                               ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/purge_hard_subreg_sets/src/function.c:4088:86: error: use of undeclared identifier 'machine_mode'
+v7 = subreg_regno_offset( v8, ( machine_mode)( unsigned __int8)BYTE2( *v6), v3[4], ( machine_mode)BYTE2( v4)); 
+                                                                                     ^
+9 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/purge_hard_subreg_sets/src/obj/function.o] Error 1

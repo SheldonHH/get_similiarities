@@ -1,0 +1,99 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_mult/src/expmed.c:2809:19: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  expand_mult( machine_mode mode, rtx op0, rtx op1, rtx target, int unsignedp) 
+                  ^
+                  enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_mult/src/expmed.c:2839:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v36; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_mult/src/expmed.c:2848:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v45; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_mult/src/expmed.c:2902:13: error: expected expression
+expand_mult::$15A4585A4BD47F0CBB7A268DC7D7DA95 variant; // [rsp+28h] [rbp-2E0h] 
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_mult/src/expmed.c:2911:21: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( *( ( _DWORD *)&mode_class_0 + *( ( unsigned __int8 *)op1 + 2)) != 1 ) 
+                    ^~~~~~~~~~~~
+                    mode_class
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_mult/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_mult/src/expmed.c:2963:1: error: use of undeclared identifier 'variant'
+variant = basic_variant; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_mult/src/expmed.c:2963:11: error: use of undeclared identifier 'basic_variant'
+variant = basic_variant; 
+          ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_mult/src/expmed.c:2967:1: error: use of undeclared identifier 'variant'
+variant = negate_variant; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_mult/src/expmed.c:2967:11: error: use of undeclared identifier 'negate_variant'
+variant = negate_variant; 
+          ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_mult/src/expmed.c:2980:1: error: use of undeclared identifier 'variant'
+variant = add_variant; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_mult/src/expmed.c:2980:11: error: use of undeclared identifier 'add_variant'; did you mean 'add_target'?
+variant = add_variant; 
+          ^~~~~~~~~~~
+          add_target
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_mult/src/expmed.c:2901:18: note: 'add_target' declared here
+ struct rtx_def *add_target; // [rsp+20h] [rbp-2E8h] 
+                 ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_mult/src/expmed.c:3041:25: error: use of undeclared identifier 'tree_code'; did you mean 'tree_cons'?
+v66 = expand_shift_1( ( tree_code)mode, temb, v74, 0LL, 0LL, v75); 
+                        ^~~~~~~~~
+                        tree_cons
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_mult/src/tree.h:2477:13: note: 'tree_cons' declared here
+extern tree tree_cons                   PARAMS ((tree, tree, tree));
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_mult/src/expmed.c:3041:35: error: expected ')'
+v66 = expand_shift_1( ( tree_code)mode, temb, v74, 0LL, 0LL, v75); 
+                                  ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_mult/src/expmed.c:3041:21: note: to match this '('
+v66 = expand_shift_1( ( tree_code)mode, temb, v74, 0LL, 0LL, v75); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_mult/src/expmed.c:3046:25: error: use of undeclared identifier 'tree_code'; did you mean 'tree_cons'?
+v70 = expand_shift_1( ( tree_code)mode, temb, v72, 0LL, 0LL, v73); 
+                        ^~~~~~~~~
+                        tree_cons
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_mult/src/tree.h:2477:13: note: 'tree_cons' declared here
+extern tree tree_cons                   PARAMS ((tree, tree, tree));
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_mult/src/expmed.c:3046:35: error: expected ')'
+v70 = expand_shift_1( ( tree_code)mode, temb, v72, 0LL, 0LL, v73); 
+                                  ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_mult/src/expmed.c:3046:21: note: to match this '('
+v70 = expand_shift_1( ( tree_code)mode, temb, v72, 0LL, 0LL, v73); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_mult/src/expmed.c:3073:25: error: use of undeclared identifier 'tree_code'; did you mean 'tree_cons'?
+v12 = expand_shift_1( ( tree_code)mode, v12, v31, 0LL, 0LL, v32); 
+                        ^~~~~~~~~
+                        tree_cons
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_mult/src/tree.h:2477:13: note: 'tree_cons' declared here
+extern tree tree_cons                   PARAMS ((tree, tree, tree));
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_mult/src/expmed.c:3073:35: error: expected ')'
+v12 = expand_shift_1( ( tree_code)mode, v12, v31, 0LL, 0LL, v32); 
+                                  ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_mult/src/expmed.c:3073:21: note: to match this '('
+v12 = expand_shift_1( ( tree_code)mode, v12, v31, 0LL, 0LL, v32); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_mult/src/expmed.c:3078:25: error: use of undeclared identifier 'tree_code'; did you mean 'tree_cons'?
+v66 = expand_shift_1( ( tree_code)mode, temb, v64, 0LL, 0LL, v65); 
+                        ^~~~~~~~~
+                        tree_cons
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_mult/src/tree.h:2477:13: note: 'tree_cons' declared here
+extern tree tree_cons                   PARAMS ((tree, tree, tree));
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_mult/src/expmed.c:3078:35: error: expected ')'
+v66 = expand_shift_1( ( tree_code)mode, temb, v64, 0LL, 0LL, v65); 
+                                  ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_mult/src/expmed.c:3078:21: note: to match this '('
+v66 = expand_shift_1( ( tree_code)mode, temb, v64, 0LL, 0LL, v65); 
+                    ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_mult/src/obj/expmed.o] Error 1

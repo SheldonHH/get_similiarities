@@ -1,0 +1,37 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/hoist_code/src/gcse.c:6161:20: error: expected identifier or '('
+for (  struct expr = expr_hash_table[i]; expr;  struct expr = expr->next_same_hash ) 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/hoist_code/src/gcse.c:6161:42: error: expected ';' in 'for' statement specifier
+for (  struct expr = expr_hash_table[i]; expr;  struct expr = expr->next_same_hash ) 
+                                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/hoist_code/src/gcse.c:6161:49: error: expected expression
+for (  struct expr = expr_hash_table[i]; expr;  struct expr = expr->next_same_hash ) 
+                                                ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/hoist_code/src/gcse.c:6161:49: error: expected ')'
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/hoist_code/src/gcse.c:6161:5: note: to match this '('
+for (  struct expr = expr_hash_table[i]; expr;  struct expr = expr->next_same_hash ) 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/hoist_code/src/gcse.c:6209:20: error: expected identifier or '('
+for (  struct occr = expr_0->antic_occr; 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/hoist_code/src/gcse.c:6210:1: error: expected ';' in 'for' statement specifier
+dominateda != *( _DWORD *)( basic_block_for_insn->data.l[occr->insn->fld[0].rtint] + 88) && occr; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/hoist_code/src/gcse.c:6211:2: error: expected expression
+ struct occr = occr->next ) 
+ ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/hoist_code/src/gcse.c:6211:2: error: expected ')'
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/hoist_code/src/gcse.c:6209:5: note: to match this '('
+for (  struct occr = expr_0->antic_occr; 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/hoist_code/src/gcse.c:6221:12: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v0 = ( rtx)insn[2]; 
+           ^~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/hoist_code/src/gcse.c:6229:13: error: expected identifier or '('
+ struct set = v0; 
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/hoist_code/src/gcse.c:6233:39: error: use of undeclared identifier 'machine_mode'
+expr_0->reaching_reg = gen_reg_rtx( ( machine_mode)*( unsigned __int8 *)( v0->fld[0].rtwint + 2)); 
+                                      ^
+11 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/hoist_code/src/obj/gcse.o] Error 1

@@ -1,0 +1,63 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ereal_to_decimal/src/real.c:1790:7: error: conflicting types for 'ereal_to_decimal'
+void  ereal_to_decimal( char *s, realvaluetype x) 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ereal_to_decimal/src/real.h:166:13: note: previous declaration is here
+extern void ereal_to_decimal    PARAMS ((REAL_VALUE_TYPE, char *));
+            ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ereal_to_decimal/src/real.c:1913:6: error: use of undeclared identifier 'rndprc'
+v6 = rndprc; 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ereal_to_decimal/src/real.c:1915:1: error: use of undeclared identifier 'wstring'
+wstring[0] = 0; 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ereal_to_decimal/src/real.c:1920:9: error: use of undeclared identifier 'wstring'
+strcpy( wstring, " NaN "); 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ereal_to_decimal/src/real.c:1923:1: error: use of undeclared identifier 'rndprc'
+rndprc = 80; 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ereal_to_decimal/src/real.c:1926:2: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+c.m128i_i64[0] = 0LL; 
+~^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ereal_to_decimal/src/real.c:1927:2: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+c.m128i_i32[2] = 1073709056; 
+~^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ereal_to_decimal/src/real.c:1933:9: error: use of undeclared identifier 'wstring'
+strcpy( wstring, " -Infinity "); 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ereal_to_decimal/src/real.c:1935:9: error: use of undeclared identifier 'wstring'
+strcpy( wstring, " Infinity "); 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ereal_to_decimal/src/real.c:1941:9: error: use of undeclared identifier 'wstring'
+strcpy( wstring, "NaN"); 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ereal_to_decimal/src/real.c:1975:7: error: use of undeclared identifier 'etens'
+v28 = etens[8]; 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ereal_to_decimal/src/real.c:1981:8: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+v30 = c.m128i_i16[4]; 
+      ~^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ereal_to_decimal/src/real.c:1982:8: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+v31 = c.m128i_i16[5]; 
+      ~^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ereal_to_decimal/src/real.c:1983:8: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+v32 = c.m128i_i16[5] & 0x7FFF; 
+      ~^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ereal_to_decimal/src/real.c:1989:7: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+if ( c.m128i_i16[5] < 0 ) 
+     ~^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ereal_to_decimal/src/real.c:1993:29: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+&& *( __int32 *)( ( char *)c.m128i_i32 + 2) == *( _DWORD *)&v104[2] 
+                           ~^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ereal_to_decimal/src/real.c:1994:30: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+&& *( __int32 *)( ( char *)&c.m128i_i32[1] + 2) == *( _DWORD *)&v104[6] ) 
+                            ~^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ereal_to_decimal/src/real.c:1997:49: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+*( _DWORD *)&v108[2] = *( __int32 *)( ( char *)c.m128i_i32 + 2); 
+                                               ~^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ereal_to_decimal/src/real.c:1998:24: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+*( _WORD *)&v108[6] = c.m128i_i16[3]; 
+                      ~^~~~~~~~~~
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ereal_to_decimal/src/obj/real.o] Error 1

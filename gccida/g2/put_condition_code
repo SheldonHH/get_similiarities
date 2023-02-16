@@ -1,0 +1,38 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/put_condition_code/src/i386.c:6003:27: error: must use 'enum' tag to refer to type 'rtx_code'
+void  put_condition_code( rtx_code code, machine_mode mode, int reverse, int fp, FILE *file) 
+                          ^
+                          enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/put_condition_code/src/i386.c:6003:42: error: must use 'enum' tag to refer to type 'machine_mode'
+void  put_condition_code( rtx_code code, machine_mode mode, int reverse, int fp, FILE *file) 
+                                         ^
+                                         enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/put_condition_code/src/i386.c:6005:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v8; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/put_condition_code/src/i386.c:6007:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code first_code[3]; // [rsp+Ch] [rbp-3Ch] BYREF 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/put_condition_code/src/i386.c:6008:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code second_code; // [rsp+18h] [rbp-30h] BYREF 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/put_condition_code/src/i386.c:6009:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code bypass_code[11]; // [rsp+1Ch] [rbp-2Ch] BYREF 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/put_condition_code/src/i386.c:6081:22: error: use of undeclared identifier 'unk_671F90'
+v9 = ( const char *)&unk_671F90; 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/put_condition_code/src/i386.c:6109:22: error: use of undeclared identifier 'unk_671F8D'
+v9 = ( const char *)&unk_671F8D; 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/put_condition_code/src/i386.c:6111:22: error: use of undeclared identifier 'unk_671F8A'
+v9 = ( const char *)&unk_671F8A; 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/put_condition_code/src/i386.c:6122:22: error: use of undeclared identifier 'off_671F86'
+v9 = ( const char *)&off_671F86; 
+                     ^
+10 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/put_condition_code/src/obj/i386.o] Error 1

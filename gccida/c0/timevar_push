@@ -1,0 +1,30 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/timevar_push/src/timevar.c:734:6: error: use of undeclared identifier 'stack_0'; did you mean 'stack'?
+if ( stack_0 ) 
+     ^~~~~~~
+     stack
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/timevar_push/src/timevar.c:160:34: note: 'stack' declared here
+static struct timevar_stack_def *stack;
+                                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/timevar_push/src/timevar.c:735:22: error: use of undeclared identifier 'stack_0'; did you mean 'stack'?
+timevar_accumulate( &stack_0->timevar->elapsed, &start_time, &now); 
+                     ^~~~~~~
+                     stack
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/timevar_push/src/timevar.c:160:34: note: 'stack' declared here
+static struct timevar_stack_def *stack;
+                                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/timevar_push/src/timevar.c:747:17: error: use of undeclared identifier 'stack_0'; did you mean 'stack'?
+context->next = stack_0; 
+                ^~~~~~~
+                stack
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/timevar_push/src/timevar.c:160:34: note: 'stack' declared here
+static struct timevar_stack_def *stack;
+                                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/timevar_push/src/timevar.c:748:1: error: use of undeclared identifier 'stack_0'; did you mean 'stack'?
+stack_0 = context; 
+^~~~~~~
+stack
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/timevar_push/src/timevar.c:160:34: note: 'stack' declared here
+static struct timevar_stack_def *stack;
+                                 ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/timevar_push/src/obj/timevar.o] Error 1

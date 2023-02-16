@@ -1,0 +1,38 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/oprs_unchanged_p/src/gcse.c:1850:15: error: use of undeclared identifier 'uid_cuid_1'
+*( ( _DWORD *)uid_cuid_1 + insn->fld[0].rtint), 
+              ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/oprs_unchanged_p/src/gcse.c:1872:6: error: use of undeclared identifier 'reg_avail_info_0'; did you mean 'reg_avail_info'?
+if ( reg_avail_info_0[rtx->fld[0].rtuint].last_bb == current_bb ) 
+     ^~~~~~~~~~~~~~~~
+     reg_avail_info
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/oprs_unchanged_p/src/gcse.c:1300:31: note: 'reg_avail_info' declared here
+static struct reg_avail_info *reg_avail_info;
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/oprs_unchanged_p/src/gcse.c:1875:70: error: use of undeclared identifier 'uid_cuid_1'
+return reg_avail_info_0[rtx->fld[0].rtuint].last_set < *( ( _DWORD *)uid_cuid_1 + insn->fld[0].rtint); 
+                                                                     ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/oprs_unchanged_p/src/gcse.c:1875:8: error: use of undeclared identifier 'reg_avail_info_0'; did you mean 'reg_avail_info'?
+return reg_avail_info_0[rtx->fld[0].rtuint].last_set < *( ( _DWORD *)uid_cuid_1 + insn->fld[0].rtint); 
+       ^~~~~~~~~~~~~~~~
+       reg_avail_info
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/oprs_unchanged_p/src/gcse.c:1300:31: note: 'reg_avail_info' declared here
+static struct reg_avail_info *reg_avail_info;
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/oprs_unchanged_p/src/gcse.c:1876:72: error: use of undeclared identifier 'uid_cuid_1'
+return reg_avail_info_0[rtx->fld[0].rtuint].first_set >= *( ( _DWORD *)uid_cuid_1 + insn->fld[0].rtint); 
+                                                                       ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/oprs_unchanged_p/src/gcse.c:1876:8: error: use of undeclared identifier 'reg_avail_info_0'; did you mean 'reg_avail_info'?
+return reg_avail_info_0[rtx->fld[0].rtuint].first_set >= *( ( _DWORD *)uid_cuid_1 + insn->fld[0].rtint); 
+       ^~~~~~~~~~~~~~~~
+       reg_avail_info
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/oprs_unchanged_p/src/gcse.c:1300:31: note: 'reg_avail_info' declared here
+static struct reg_avail_info *reg_avail_info;
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/oprs_unchanged_p/src/gcse.c:1892:34: error: expected expression
+v5 = oprs_unchanged_p( *( ( rtx *)rtx + v13), insn, avail_p); 
+                                 ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/oprs_unchanged_p/src/gcse.c:1907:35: error: expected expression
+while ( oprs_unchanged_p( *( rtx *)&v15[2 * v16 + 2], insn, avail_p) ) 
+                                  ^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/oprs_unchanged_p/src/obj/gcse.o] Error 1

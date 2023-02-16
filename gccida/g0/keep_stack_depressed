@@ -1,0 +1,38 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/keep_stack_depressed/src/function.c:7767:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v3; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/keep_stack_depressed/src/function.c:7768:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v4; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/keep_stack_depressed/src/function.c:7770:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v6; // edx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/keep_stack_depressed/src/function.c:7780:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v16; // edx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/keep_stack_depressed/src/function.c:7872:40: error: use of undeclared identifier 'machine_mode'
+if ( ix86_hard_regno_mode_ok( regno, ( machine_mode)v7) 
+                                       ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/keep_stack_depressed/src/function.c:7892:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[v8] == MODE_COMPLEX_INT 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/keep_stack_depressed/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/keep_stack_depressed/src/function.c:7893:64: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| ( ( target_flags & 0x2000000) == 0 ? ( v9 = 4) : ( v9 = 5), mode_class_0[v9] == MODE_COMPLEX_FLOAT) ) 
+                                                               ^~~~~~~~~~~~
+                                                               mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/keep_stack_depressed/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/keep_stack_depressed/src/function.c:7922:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v18 = (  struct rtx_def *)jump_insn[2]; 
+                          ^~~~~~~~~~~~
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/keep_stack_depressed/src/obj/function.o] Error 1

@@ -1,0 +1,66 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_logical/src/combine.c:5752:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v41; // [rsp+C8h] [rbp-98h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_logical/src/combine.c:5755:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code; // [rsp+F0h] [rbp-70h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_logical/src/combine.c:5763:4: error: expected ';' after expression
+rtx op1; // [rsp+138h] [rbp-28h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_logical/src/combine.c:5763:5: error: use of undeclared identifier 'op1'
+rtx op1; // [rsp+138h] [rbp-28h] 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_logical/src/combine.c:5764:4: error: expected ';' after expression
+rtx op0; // [rsp+140h] [rbp-20h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_logical/src/combine.c:5764:5: error: use of undeclared identifier 'op0'
+rtx op0; // [rsp+140h] [rbp-20h] 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_logical/src/combine.c:5765:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // [rsp+148h] [rbp-18h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_logical/src/combine.c:5766:4: error: expected ';' after expression
+rtx xa; // [rsp+150h] [rbp-10h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_logical/src/combine.c:5766:5: error: use of undeclared identifier 'xa'
+rtx xa; // [rsp+150h] [rbp-10h] 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_logical/src/combine.c:5768:1: error: use of undeclared identifier 'xa'
+xa = x; 
+^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_logical/src/combine.c:5770:1: error: use of undeclared identifier 'op0'
+op0 = x->fld[0].rtx; 
+^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_logical/src/combine.c:5771:1: error: use of undeclared identifier 'op1'
+op1 = ( rtx)x[1]; 
+^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_logical/src/combine.c:5775:37: error: use of undeclared identifier 'op0'
+if ( ( unsigned __int16)*( _DWORD *)op0 == 85 && rtx_equal_p( op0->fld[0].rtx, op1) && !side_effects_p( op1) ) 
+                                    ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_logical/src/combine.c:5775:63: error: use of undeclared identifier 'op0'
+if ( ( unsigned __int16)*( _DWORD *)op0 == 85 && rtx_equal_p( op0->fld[0].rtx, op1) && !side_effects_p( op1) ) 
+                                                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_logical/src/combine.c:5775:80: error: use of undeclared identifier 'op1'
+if ( ( unsigned __int16)*( _DWORD *)op0 == 85 && rtx_equal_p( op0->fld[0].rtx, op1) && !side_effects_p( op1) ) 
+                                                                               ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_logical/src/combine.c:5775:105: error: use of undeclared identifier 'op1'
+if ( ( unsigned __int16)*( _DWORD *)op0 == 85 && rtx_equal_p( op0->fld[0].rtx, op1) && !side_effects_p( op1) ) 
+                                                                                                        ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_logical/src/combine.c:5777:45: error: expected expression
+v2 = simplify_gen_unary( NOT, mode, *( rtx *)&op0[1], mode); 
+                                            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_logical/src/combine.c:5777:47: error: use of undeclared identifier 'op0'
+v2 = simplify_gen_unary( NOT, mode, *( rtx *)&op0[1], mode); 
+                                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_logical/src/combine.c:5778:1: error: use of undeclared identifier 'xa'
+xa = gen_binary( AND, mode, v2, op1); 
+^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_logical/src/obj/combine.o] Error 1

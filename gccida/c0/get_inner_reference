@@ -1,0 +1,72 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/get_inner_reference/src/expr.c:5712:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode *pmode, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/get_inner_reference/src/expr.c:5716:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v7; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/get_inner_reference/src/expr.c:5717:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v8; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/get_inner_reference/src/expr.c:5718:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v9; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/get_inner_reference/src/expr.c:5719:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v10; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/get_inner_reference/src/expr.c:5722:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *arg0; // [rsp+0h] [rbp-B0h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/get_inner_reference/src/expr.c:5723:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *initial; // [rsp+8h] [rbp-A8h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/get_inner_reference/src/expr.c:5724:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *newa; // [rsp+10h] [rbp-A0h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/get_inner_reference/src/expr.c:5727:14: error: expected expression
+tree_int_cst::$A887AD9C3C6C8CC7716950D571F57C9D array; // [rsp+30h] [rbp-80h] 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/get_inner_reference/src/expr.c:5730:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *tem; // [rsp+50h] [rbp-60h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/get_inner_reference/src/expr.c:5731:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *tema; // [rsp+50h] [rbp-60h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/get_inner_reference/src/expr.c:5735:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // [rsp+74h] [rbp-3Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/get_inner_reference/src/expr.c:5738:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode *pmodea; // [rsp+88h] [rbp-28h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/get_inner_reference/src/expr.c:5814:1: error: use of undeclared identifier 'array'
+array = *( tree_int_cst::$A887AD9C3C6C8CC7716950D571F57C9D *)&expa->block.vars; 
+^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/get_inner_reference/src/expr.c:5814:12: error: use of undeclared identifier 'tree_int_cst'
+array = *( tree_int_cst::$A887AD9C3C6C8CC7716950D571F57C9D *)&expa->block.vars; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/get_inner_reference/src/expr.c:5815:36: error: use of undeclared identifier 'array'
+domain = *( tree *)( *( _QWORD *)( array.low + 8) + 24LL); 
+                                   ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/get_inner_reference/src/expr.c:5820:53: error: use of undeclared identifier 'array'
+unit_size = *( tree *)( *( _QWORD *)( *( _QWORD *)( array.low + 8) + 8LL) + 40LL); 
+                                                    ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/get_inner_reference/src/expr.c:5823:37: error: use of undeclared identifier 'array'
+v7 = build( MINUS_EXPR, *( tree *)( array.high + 8), array.high, initial); 
+                                    ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/get_inner_reference/src/expr.c:5823:54: error: use of undeclared identifier 'array'
+v7 = build( MINUS_EXPR, *( tree *)( array.high + 8), array.high, initial); 
+                                                     ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/get_inner_reference/src/obj/expr.o] Error 1

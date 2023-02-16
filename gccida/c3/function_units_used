@@ -1,0 +1,68 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/function_units_used/src/insn-attrtab.c:11979:1: error: must use 'enum' tag to refer to type 'attr_athlon_fpunits'
+attr_athlon_fpunits attr_athlon_fpunits; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/function_units_used/src/insn-attrtab.c:11980:1: error: must use 'enum' tag to refer to type 'attr_memory'
+attr_memory attr_memory; // r13d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/function_units_used/src/insn-attrtab.c:11981:1: error: must use 'enum' tag to refer to type 'attr_pent_pair'
+attr_pent_pair attr_pent_pair; // r12d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/function_units_used/src/insn-attrtab.c:11983:1: error: must use 'enum' tag to refer to type 'processor_type'
+processor_type v5; // ecx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/function_units_used/src/insn-attrtab.c:11994:1: error: must use 'enum' tag to refer to type 'attr_athlon_fpunits'
+attr_athlon_fpunits v16; // r14d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/function_units_used/src/insn-attrtab.c:11979:21: note: enum 'attr_athlon_fpunits' is hidden by a non-type declaration of 'attr_athlon_fpunits' here
+attr_athlon_fpunits attr_athlon_fpunits; // ebx 
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/function_units_used/src/insn-attrtab.c:11999:1: error: must use 'enum' tag to refer to type 'processor_type'
+processor_type v21; // r8d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/function_units_used/src/insn-attrtab.c:12021:1: error: must use 'enum' tag to refer to type 'attr_mode'
+attr_mode attr_mode; // [rsp+Ch] [rbp-3Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/function_units_used/src/insn-attrtab.c:12022:1: error: must use 'enum' tag to refer to type 'attr_athlon_fpunits'
+attr_athlon_fpunits v44; // [rsp+10h] [rbp-38h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/function_units_used/src/insn-attrtab.c:11979:21: note: enum 'attr_athlon_fpunits' is hidden by a non-type declaration of 'attr_athlon_fpunits' here
+attr_athlon_fpunits attr_athlon_fpunits; // ebx 
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/function_units_used/src/insn-attrtab.c:12023:1: error: must use 'enum' tag to refer to type 'attr_athlon_decode'
+attr_athlon_decode attr_athlon_decode; // [rsp+14h] [rbp-34h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/function_units_used/src/insn-attrtab.c:12060:20: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+immediate_operand( recog_data_0.operand[1], VOIDmode); 
+                   ^~~~~~~~~~~~
+                   recog_data
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/function_units_used/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/function_units_used/src/insn-attrtab.c:12082:25: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+v9 = immediate_operand( recog_data_0.operand[1], VOIDmode); 
+                        ^~~~~~~~~~~~
+                        recog_data
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/function_units_used/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/function_units_used/src/insn-attrtab.c:12105:24: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+v20 = general_operand( recog_data_0.operand[0], QImode); 
+                       ^~~~~~~~~~~~
+                       recog_data
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/function_units_used/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/function_units_used/src/insn-attrtab.c:12154:29: error: subscripted value is not an array, pointer, or vector
+v24 = *(long long *)0x6E8758[attr_type - 14]; 
+                    ~~~~~~~~^~~~~~~~~~~~~~~
+13 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/function_units_used/src/obj/insn-attrtab.o] Error 1

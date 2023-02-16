@@ -1,0 +1,20 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/eliminate_constant_term/src/explow.c:681:26: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v4 = (  struct rtx_def *)x[1]; 
+                         ^~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/eliminate_constant_term/src/explow.c:684:41: error: use of undeclared identifier 'machine_mode'
+v5 = simplify_binary_operation( PLUS, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)x), *constptr, v4); 
+                                        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/eliminate_constant_term/src/explow.c:684:56: error: expected expression
+v5 = simplify_binary_operation( PLUS, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)x), *constptr, v4); 
+                                                       ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/eliminate_constant_term/src/explow.c:698:32: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+if ( v8 != (  struct rtx_def *)x[1] || v7 != x->fld[0].rtx ) 
+                               ^~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/eliminate_constant_term/src/explow.c:700:41: error: use of undeclared identifier 'machine_mode'
+v9 = simplify_binary_operation( PLUS, ( machine_mode)*( ( unsigned __int8 *)x + 2), *constptr, op1[0]); 
+                                        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/eliminate_constant_term/src/explow.c:707:32: error: use of undeclared identifier 'machine_mode'
+return gen_rtx_fmt_ee( PLUS, ( machine_mode)*( ( unsigned __int8 *)x + 2), v7, v8); 
+                               ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/eliminate_constant_term/src/obj/explow.o] Error 1

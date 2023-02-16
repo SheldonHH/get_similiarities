@@ -1,0 +1,20 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/sge_plus_constant/src/loop.c:7291:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v6; // [rsp+0h] [rbp-30h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/sge_plus_constant/src/loop.c:7292:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v7; // [rsp+4h] [rbp-2Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/sge_plus_constant/src/loop.c:7294:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // [rsp+14h] [rbp-1Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/sge_plus_constant/src/loop.c:7299:32: error: use of undeclared identifier 'machine_mode'
+return gen_rtx_fmt_ee( PLUS, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)x), x, c); 
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/sge_plus_constant/src/loop.c:7299:47: error: expected expression
+return gen_rtx_fmt_ee( PLUS, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)x), x, c); 
+                                              ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/sge_plus_constant/src/obj/loop.o] Error 1

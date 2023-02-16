@@ -1,0 +1,60 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/propagate_deps/src/sched-rgn.c:2893:31: error: unknown type name 'deps_0'
+void  propagate_deps( int bb, deps_0 *pred_deps) 
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/propagate_deps/src/sched-rgn.c:2907:1: error: use of undeclared identifier 'deps_0'
+deps_0 *v15; // rcx 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/propagate_deps/src/sched-rgn.c:2907:9: error: use of undeclared identifier 'v15'
+deps_0 *v15; // rcx 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/propagate_deps/src/sched-rgn.c:2914:1: error: use of undeclared identifier 'deps_0'
+deps_0 *v23; // [rsp+30h] [rbp-68h] 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/propagate_deps/src/sched-rgn.c:2914:9: error: use of undeclared identifier 'v23'
+deps_0 *v23; // [rsp+30h] [rbp-68h] 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/propagate_deps/src/sched-rgn.c:2940:1: error: use of undeclared identifier 'v23'
+v23 = bb_deps; 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/propagate_deps/src/sched-rgn.c:2984:20: error: use of undeclared identifier 'v23'
+bitmap_operation( &v23[v22].reg_last_in_use, &v23[v22].reg_last_in_use, from2, BITMAP_IOR); 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/propagate_deps/src/sched-rgn.c:2984:47: error: use of undeclared identifier 'v23'
+bitmap_operation( &v23[v22].reg_last_in_use, &v23[v22].reg_last_in_use, from2, BITMAP_IOR); 
+                                              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/propagate_deps/src/sched-rgn.c:2988:2: error: use of undeclared identifier 'v23'
+&v23[v22].pending_read_insns, 
+ ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/propagate_deps/src/sched-rgn.c:2989:2: error: use of undeclared identifier 'v23'
+&v23[v22].pending_read_mems); 
+ ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/propagate_deps/src/sched-rgn.c:2993:2: error: use of undeclared identifier 'v23'
+&v23[v4].pending_write_insns, 
+ ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/propagate_deps/src/sched-rgn.c:2994:2: error: use of undeclared identifier 'v23'
+&v23[v4].pending_write_mems); 
+ ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/propagate_deps/src/sched-rgn.c:2997:1: error: use of undeclared identifier 'v23'
+v23[v22].last_pending_memory_flush); 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/propagate_deps/src/sched-rgn.c:2995:1: error: use of undeclared identifier 'v23'
+v23[v4].last_pending_memory_flush = concat_INSN_LIST( 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/propagate_deps/src/sched-rgn.c:2998:1: error: use of undeclared identifier 'v23'
+v23[v4].pending_lists_length += pred_deps->pending_lists_length; 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/propagate_deps/src/sched-rgn.c:2999:1: error: use of undeclared identifier 'v23'
+v23[v4].pending_flush_length += pred_deps->pending_flush_length; 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/propagate_deps/src/sched-rgn.c:3000:79: error: use of undeclared identifier 'v23'
+v23[v4].last_function_call = concat_INSN_LIST( pred_deps->last_function_call, v23[v22].last_function_call); 
+                                                                              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/propagate_deps/src/sched-rgn.c:3000:1: error: use of undeclared identifier 'v23'
+v23[v4].last_function_call = concat_INSN_LIST( pred_deps->last_function_call, v23[v22].last_function_call); 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/propagate_deps/src/sched-rgn.c:3003:1: error: use of undeclared identifier 'v23'
+v23[v22].sched_before_next_call); 
+^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/propagate_deps/src/obj/sched-rgn.o] Error 1

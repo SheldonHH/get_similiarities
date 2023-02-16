@@ -1,0 +1,81 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/initialize_argument_information/src/calls.c:1605:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v30; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/initialize_argument_information/src/calls.c:1607:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v32; // rbx 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/initialize_argument_information/src/calls.c:1608:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *tree; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/initialize_argument_information/src/calls.c:1614:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *var; // rbp 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/initialize_argument_information/src/calls.c:1616:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v41; // rbx 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/initialize_argument_information/src/calls.c:1617:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v42; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/initialize_argument_information/src/calls.c:1623:12: error: assigning to 'struct args_size' from incompatible type 'long long'
+*args_size = 0LL; 
+           ^ ~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/initialize_argument_information/src/calls.c:1639:19: error: expected expression
+rttree = *( tree *)( v17 + 8); 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/initialize_argument_information/src/calls.c:1641:23: error: expected ')'
+if ( rttree == ( tree)global_trees || !rttree->int_cst.int_cst.low ) 
+                      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/initialize_argument_information/src/calls.c:1641:4: note: to match this '('
+if ( rttree == ( tree)global_trees || !rttree->int_cst.int_cst.low ) 
+   ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/initialize_argument_information/src/calls.c:1651:72: error: expected ')'
+if ( ( *( _BYTE *)( low + 16) == 25 || !contains_placeholder_p( ( tree)low)) 
+                                                                       ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/initialize_argument_information/src/calls.c:1651:63: note: to match this '('
+if ( ( *( _BYTE *)( low + 16) == 25 || !contains_placeholder_p( ( tree)low)) 
+                                                              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/initialize_argument_information/src/calls.c:1669:23: error: expected ')'
+make_decl_rtl( ( tree)v28, 0LL); 
+                      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/initialize_argument_information/src/calls.c:1669:14: note: to match this '('
+make_decl_rtl( ( tree)v28, 0LL); 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/initialize_argument_information/src/calls.c:1694:14: error: expected identifier or '('
+ struct expr = cfun->expr; 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/initialize_argument_information/src/calls.c:1702:20: error: expected ')'
+store_expr( ( tree)p_size[-6].constant, v27, 0); 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/initialize_argument_information/src/calls.c:1702:11: note: to match this '('
+store_expr( ( tree)p_size[-6].constant, v27, 0); 
+          ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/initialize_argument_information/src/calls.c:1713:38: error: expected ')'
+v31 = build1( ADDR_EXPR, v30, ( tree)p_size[-6].constant); 
+                                     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/initialize_argument_information/src/calls.c:1713:13: note: to match this '('
+v31 = build1( ADDR_EXPR, v30, ( tree)p_size[-6].constant); 
+            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/initialize_argument_information/src/calls.c:1723:36: error: use of undeclared identifier 'machine_mode'
+v36 = function_arg( args_so_far, ( machine_mode)v34, rttree, v35); 
+                                   ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/initialize_argument_information/src/calls.c:1725:25: error: expected ';' after expression
+p_size[-4].var = ( tree)v36; 
+                        ^
+                        ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/initialize_argument_information/src/calls.c:1761:24: error: use of undeclared identifier 'machine_mode'
+locate_and_pad_parm( ( machine_mode)v34, rttree, v38 != 0, fndecl, v20, p_size - 2, p_size, &v49); 
+                       ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/initialize_argument_information/src/calls.c:1788:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( ( unsigned __int8)HIBYTE( WORD2( rttree->block.abstract_origin)) >> 1), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/initialize_argument_information/src/calls.c:1791:14: error: invalid operands to binary expression ('union tree_node *' and 'uint64 *' (aka 'unsigned long long *'))
+v12 = ( tree)*p_chain; 
+      ~~~~~~~^~~~~~~~
+19 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/initialize_argument_information/src/obj/calls.o] Error 1

@@ -1,0 +1,11 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/cse_process_notes/src/cse.c:6938:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v16 = (  struct rtx_def *)x[1]; 
+                          ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/cse_process_notes/src/cse.c:6991:22: error: expected identifier or '('
+ struct cse_reg_info = get_cse_reg_info( rtint); 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/cse_process_notes/src/cse.c:7006:42: error: use of undeclared identifier 'machine_mode'
+|| ( result = gen_lowpart_if_possible( ( machine_mode)*( ( unsigned __int8 *)x + 2), const_rtx)) == 0LL ) 
+                                         ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/cse_process_notes/src/obj/cse.o] Error 1

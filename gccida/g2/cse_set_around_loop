@@ -1,0 +1,33 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/cse_set_around_loop/src/cse.c:7184:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v8; // r14d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/cse_set_around_loop/src/cse.c:7210:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v5.rtwint = ( __int64)x->fld[0]; 
+                      ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/cse_set_around_loop/src/cse.c:7219:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v5.rtwint = ( __int64)x->fld[0]; 
+                      ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/cse_set_around_loop/src/cse.c:7230:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v15 = (  struct rtx_def *)x[1]; 
+                          ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/cse_set_around_loop/src/cse.c:7237:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v15 = (  struct rtx_def *)x[1]; 
+                          ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/cse_set_around_loop/src/cse.c:7253:13: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v19 = ( rtx)i[2]; 
+            ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/cse_set_around_loop/src/cse.c:7256:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v21.rtwint = ( __int64)v19->fld[0]; 
+                       ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/cse_set_around_loop/src/cse.c:7265:39: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+cse_check_loop_start_value[0] = ( rtx)x[1]; 
+                                      ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/cse_set_around_loop/src/cse.c:7316:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v6.rtwint = ( __int64)x->fld[0]; 
+                      ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/cse_set_around_loop/src/cse.c:7324:42: error: use of undeclared identifier 'machine_mode'
+invalidate( *( rtx *)( v6.rtwint + 8), ( machine_mode)*( unsigned __int8 *)( v6.rtwint + 2)); 
+                                         ^
+10 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/cse_set_around_loop/src/obj/cse.o] Error 1

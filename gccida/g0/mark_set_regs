@@ -1,0 +1,68 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/mark_set_regs/src/flow.c:2892:4: error: expected ';' after expression
+rtx xa; // [rsp+10h] [rbp-40h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/mark_set_regs/src/flow.c:2892:5: error: use of undeclared identifier 'xa'
+rtx xa; // [rsp+10h] [rbp-40h] 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/mark_set_regs/src/flow.c:2893:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code; // [rsp+2Ch] [rbp-24h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/mark_set_regs/src/flow.c:2894:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code codea; // [rsp+2Ch] [rbp-24h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/mark_set_regs/src/flow.c:2895:4: error: expected ';' after expression
+rtx sub; // [rsp+30h] [rbp-20h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/mark_set_regs/src/flow.c:2895:5: error: use of undeclared identifier 'sub'
+rtx sub; // [rsp+30h] [rbp-20h] 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/mark_set_regs/src/flow.c:2897:4: error: expected ';' after expression
+rtx link; // [rsp+40h] [rbp-10h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/mark_set_regs/src/flow.c:2900:1: error: use of undeclared identifier 'xa'
+xa = x; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/mark_set_regs/src/flow.c:2904:12: error: non-object type 'int (const char *, const char *)' is not assignable
+for ( link = insn[3].fld[0].rtx; link; link = ( rtx)link[1] ) 
+      ~~~~ ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/mark_set_regs/src/flow.c:2904:45: error: non-object type 'int (const char *, const char *)' is not assignable
+for ( link = insn[3].fld[0].rtx; link; link = ( rtx)link[1] ) 
+                                       ~~~~ ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/mark_set_regs/src/flow.c:2904:53: error: expected ')'
+for ( link = insn[3].fld[0].rtx; link; link = ( rtx)link[1] ) 
+                                                    ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/mark_set_regs/src/flow.c:2904:5: note: to match this '('
+for ( link = insn[3].fld[0].rtx; link; link = ( rtx)link[1] ) 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/mark_set_regs/src/flow.c:2912:27: error: member reference base type 'int (const char *, const char *)' is not a structure or union
+mark_set_1( pbi, SET, link->fld[0].rtx, rtx, insn, pbi->flags); 
+                      ~~~~^ ~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/mark_set_regs/src/flow.c:2918:19: error: use of undeclared identifier 'xa'
+code = *( _WORD *)xa; 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/mark_set_regs/src/flow.c:2926:24: error: use of undeclared identifier 'xa'
+mark_set_1( pbi, code, xa->fld[0].rtx, cond, insn, pbi->flags); 
+                       ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/mark_set_regs/src/flow.c:2933:8: error: use of undeclared identifier 'xa'
+cond = xa->fld[0].rtx; 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/mark_set_regs/src/flow.c:2934:1: error: use of undeclared identifier 'xa'
+xa = ( rtx)xa[1]; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/mark_set_regs/src/flow.c:2938:23: error: use of undeclared identifier 'xa'
+for ( i = *( _DWORD *)xa->fld[0].rtwint - 1; ; --i ) 
+                      ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/mark_set_regs/src/flow.c:2942:1: error: use of undeclared identifier 'sub'
+sub = *( rtx *)( xa->fld[0].rtwint + 8LL * i + 8); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/mark_set_regs/src/flow.c:2942:15: error: expected expression
+sub = *( rtx *)( xa->fld[0].rtwint + 8LL * i + 8); 
+              ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/mark_set_regs/src/obj/flow.o] Error 1

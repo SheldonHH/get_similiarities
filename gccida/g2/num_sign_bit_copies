@@ -1,0 +1,82 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/num_sign_bit_copies/src/combine.c:8858:43: error: must use 'enum' tag to refer to type 'machine_mode'
+unsigned int  num_sign_bit_copies( rtx x, machine_mode mode) 
+                                          ^
+                                          enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/num_sign_bit_copies/src/combine.c:8862:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v5; // ecx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/num_sign_bit_copies/src/combine.c:8909:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code; // [rsp+Ch] [rbp-3Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/num_sign_bit_copies/src/combine.c:8925:8: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( ( mode_class_0[( int)v4] & 0xFFFFFFFB) == 2 
+       ^~~~~~~~~~~~
+       mode_class
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/num_sign_bit_copies/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/num_sign_bit_copies/src/combine.c:8926:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| mode_class_0[( int)v4] == MODE_VECTOR_FLOAT 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/num_sign_bit_copies/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/num_sign_bit_copies/src/combine.c:8927:34: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| ( v8 = *( ( _BYTE *)x + 2), ( mode_class_0[v8] & 0xFFFFFFFB) == 2) 
+                                 ^~~~~~~~~~~~
+                                 mode_class
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/num_sign_bit_copies/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/num_sign_bit_copies/src/combine.c:8928:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| mode_class_0[v8] == MODE_VECTOR_FLOAT ) 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/num_sign_bit_copies/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/num_sign_bit_copies/src/combine.c:8992:26: error: use of undeclared identifier 'machine_mode'
+v17 = nonzero_bits( x, ( machine_mode)v4); 
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/num_sign_bit_copies/src/combine.c:9006:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v39.rtwint = ( __int64)x->fld[0]; 
+                       ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/num_sign_bit_copies/src/combine.c:9009:52: error: use of undeclared identifier 'machine_mode'
+LODWORD( rtuint) = num_sign_bit_copies( v39.rtx, ( machine_mode)v4); 
+                                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/num_sign_bit_copies/src/combine.c:9028:49: error: expected expression
+LODWORD( rtuint) = num_sign_bit_copies( *( rtx *)&x[1], ( machine_mode)v4); 
+                                                ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/num_sign_bit_copies/src/combine.c:9028:59: error: use of undeclared identifier 'machine_mode'
+LODWORD( rtuint) = num_sign_bit_copies( *( rtx *)&x[1], ( machine_mode)v4); 
+                                                          ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/num_sign_bit_copies/src/combine.c:9029:47: error: use of undeclared identifier 'machine_mode'
+v40 = num_sign_bit_copies( x[1].fld[0].rtx, ( machine_mode)v4); 
+                                              ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/num_sign_bit_copies/src/combine.c:9036:10: error: expected ')'
+|| ( rtx)x[1] != const_int_rtx[63] 
+         ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/num_sign_bit_copies/src/combine.c:9035:4: note: to match this '('
+if ( v5 != PLUS 
+   ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/num_sign_bit_copies/src/combine.c:9043:45: error: use of undeclared identifier 'machine_mode'
+v27 = num_sign_bit_copies( x->fld[0].rtx, ( machine_mode)v4); 
+                                            ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/num_sign_bit_copies/src/combine.c:9044:36: error: expected expression
+v28 = num_sign_bit_copies( *( rtx *)&x[1], ( machine_mode)v4); 
+                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/num_sign_bit_copies/src/combine.c:9044:46: error: use of undeclared identifier 'machine_mode'
+v28 = num_sign_bit_copies( *( rtx *)&x[1], ( machine_mode)v4); 
+                                             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/num_sign_bit_copies/src/combine.c:9056:45: error: use of undeclared identifier 'machine_mode'
+v41 = num_sign_bit_copies( x->fld[0].rtx, ( machine_mode)v4); 
+                                            ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/num_sign_bit_copies/src/combine.c:9060:38: error: use of undeclared identifier 'machine_mode'
+v48 = nonzero_bits( x->fld[0].rtx, ( machine_mode)v4); 
+                                     ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/num_sign_bit_copies/src/obj/combine.o] Error 1

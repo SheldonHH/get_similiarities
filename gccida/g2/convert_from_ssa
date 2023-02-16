@@ -1,0 +1,62 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/convert_from_ssa/src/ssa.c:2640:4: error: expected ';' after expression
+rtx k; // rdi 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/convert_from_ssa/src/ssa.c:2640:5: error: use of undeclared identifier 'k'
+rtx k; // rdi 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/convert_from_ssa/src/ssa.c:2650:4: error: expected ';' after expression
+rtx data[2]; // [rsp+30h] [rbp-58h] BYREF 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/convert_from_ssa/src/ssa.c:2650:5: error: use of undeclared identifier 'data'
+rtx data[2]; // [rsp+30h] [rbp-58h] BYREF 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/convert_from_ssa/src/ssa.c:2691:1: error: use of undeclared identifier 'data'
+data[0] = *( rtx *)( v39 + 16); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/convert_from_ssa/src/ssa.c:2691:19: error: expected expression
+data[0] = *( rtx *)( v39 + 16); 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/convert_from_ssa/src/ssa.c:2692:17: error: use of undeclared identifier 'data'
+if ( *( _WORD *)data[0] == 61 ) 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/convert_from_ssa/src/ssa.c:2695:24: error: use of undeclared identifier 'data'
+bitmap_set_bit( &head, data[0]->fld[0].rtint); 
+                       ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/convert_from_ssa/src/ssa.c:2701:17: error: use of undeclared identifier 'data'
+if ( *( _WORD *)data[0] == 152 ) 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/convert_from_ssa/src/ssa.c:2704:15: error: use of undeclared identifier 'data'
+for_each_rtx( data, mark_reg_in_phi, &head); 
+              ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/convert_from_ssa/src/ssa.c:2736:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v17 = ( __int64)rtx[2]; 
+                ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/convert_from_ssa/src/ssa.c:2759:1: error: use of undeclared identifier 'data'
+data[0] = ( rtx)v1; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/convert_from_ssa/src/ssa.c:2760:1: error: use of undeclared identifier 'data'
+data[1] = ( rtx)v10; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/convert_from_ssa/src/ssa.c:2762:51: error: use of undeclared identifier 'data'
+for_each_successor_phi( v13, coalesce_reg_in_phi, data); 
+                                                  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/convert_from_ssa/src/ssa.c:2786:27: error: expected expression
+&& ( for_each_rtx( ( rtx *)v22 + 4, rename_equivalent_regs_in_insn, v1), 
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/convert_from_ssa/src/ssa.c:2787:22: error: expected expression
+for_each_rtx( ( rtx *)v22 + 7, rename_equivalent_regs_in_insn, v1), 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/convert_from_ssa/src/ssa.c:2800:27: error: expected expression
+emit_insn_before( *( rtx *)&v26[2 * v29 + 2], ( rtx)v22); 
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/convert_from_ssa/src/ssa.c:2846:17: error: invalid operands to binary expression ('rtx' (aka 'struct rtx_def *') and 'uint64 *' (aka 'unsigned long long *'))
+for ( k = ( rtx)**( ( _QWORD **)&basic_block_info->num_elements + v33); ; k = k[1].fld[0].rtx ) 
+          ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/convert_from_ssa/src/ssa.c:2846:7: error: use of undeclared identifier 'k'
+for ( k = ( rtx)**( ( _QWORD **)&basic_block_info->num_elements + v33); ; k = k[1].fld[0].rtx ) 
+      ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/convert_from_ssa/src/obj/ssa.o] Error 1

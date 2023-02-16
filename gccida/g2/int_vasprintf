@@ -1,0 +1,17 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/int_vasprintf/src/vasprintf.c:526:6: error: conflicting types for 'int_vasprintf'
+int  int_vasprintf( char **result, const char *format,  struct __va_list_tag *args) 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/int_vasprintf/src/vasprintf.c:61:12: note: previous declaration is here
+static int int_vasprintf PARAMS ((char **, const char *, va_list ));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/int_vasprintf/src/vasprintf.c:548:21: error: incomplete definition of type 'struct __va_list_tag'
+reg_save_area = args->reg_save_area; 
+                ~~~~^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/int_vasprintf/src/vasprintf.c:526:64: note: forward declaration of 'struct __va_list_tag'
+int  int_vasprintf( char **result, const char *format,  struct __va_list_tag *args) 
+                                                               ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/int_vasprintf/src/vasprintf.c:619:15: error: use of undeclared identifier 'off_70A4D6'
+if ( !strchr( off_70A4D6, v13) ) 
+              ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/int_vasprintf/src/obj/vasprintf.o] Error 1

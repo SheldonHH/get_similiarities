@@ -1,0 +1,66 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_float/src/optabs.c:4550:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v3; // r12d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_float/src/optabs.c:4553:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v7; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_float/src/optabs.c:4559:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v13; // r15d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_float/src/optabs.c:4560:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v14; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_float/src/optabs.c:4561:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v15; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_float/src/optabs.c:4564:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v18; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_float/src/optabs.c:4633:61: error: use of undeclared identifier 'machine_mode'
+emit_cmp_and_jump_insns( v12, const_int_rtx[64], GE, 0LL, ( machine_mode)*( ( unsigned __int8 *)v12 + 2), 0, v9); 
+                                                            ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_float/src/optabs.c:4634:14: error: passing 'realvaluetype *' to parameter of incompatible type 'realvaluetype'; remove &
+ereal_ldexp( &offset, mode_bitsize[*( ( unsigned __int8 *)v12 + 2)]); 
+             ^~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_float/src/real.h:160:60: note: passing argument to parameter here
+extern REAL_VALUE_TYPE ereal_ldexp PARAMS ((REAL_VALUE_TYPE, int));
+                                                           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_float/src/optabs.c:4635:27: error: passing 'enum machine_mode' to parameter of incompatible type 'realvaluetype'
+v16 = immed_real_const_1( v14, offset); 
+                          ^~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_float/src/real.h:466:67: note: passing argument to parameter here
+extern struct rtx_def *immed_real_const_1       PARAMS ((REAL_VALUE_TYPE,
+                                                                        ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_float/src/optabs.c:4646:26: error: use of undeclared identifier 'machine_mode'
+if ( significand_size( ( machine_mode)tempa) + 1 >= mode_bitsize[*( ( unsigned __int8 *)v12 + 2)] ) 
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_float/src/optabs.c:4650:21: error: use of undeclared identifier 'machine_mode'
+v4 = gen_reg_rtx( ( machine_mode)tempa); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_float/src/optabs.c:4745:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)v10 + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_float/src/optabs.c:4751:31: error: use of undeclared identifier 'machine_mode'
+v30 = gen_rtx_fmt_e( FLOAT, ( machine_mode)*( ( unsigned __int8 *)v10 + 2), v23); 
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_float/src/optabs.c:4796:31: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+emit_unop_insn( v6, v4, v8, ( rtx_code)( temp == 0 ? FLOAT : UNSIGNED_FLOAT)); 
+                              ^~~~~~~~
+                              rtx_cost
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_float/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_float/src/optabs.c:4796:76: error: too few arguments to function call, expected 2, have 1
+emit_unop_insn( v6, v4, v8, ( rtx_code)( temp == 0 ? FLOAT : UNSIGNED_FLOAT)); 
+                            ~~~~~~~~~~~                                    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_float/src/rtl.h:1787:1: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+^
+15 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_float/src/obj/optabs.o] Error 1

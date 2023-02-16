@@ -1,0 +1,34 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/force_const_mem/src/varasm.c:4240:23: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  force_const_mem( machine_mode mode, rtx x) 
+                      ^
+                      enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/force_const_mem/src/varasm.c:4242:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v2; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/force_const_mem/src/varasm.c:4251:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v11; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/force_const_mem/src/varasm.c:4252:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *tree; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/force_const_mem/src/varasm.c:4266:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v26; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/force_const_mem/src/varasm.c:4314:19: error: invalid suffix 'xmode' on integer constant
+mode = *(short *)0xmode; 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/force_const_mem/src/varasm.c:4349:43: error: use of undeclared identifier 'a'
+sprintf( label, "*.%s%u", ( const char *)&a.dw_attr_val, v16); 
+                                          ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/force_const_mem/src/varasm.c:4352:36: error: use of undeclared identifier 'machine_mode'
+v22 = gen_rtx_fmt_s( SYMBOL_REF, ( machine_mode)( ( ( BYTE3( target_flags) & 2) != 0) + 4), v21); 
+                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/force_const_mem/src/varasm.c:4360:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v27.rtwint = ( __int64)v25->fld[0]; 
+                       ^~~~~~~~~~~
+9 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/force_const_mem/src/obj/varasm.o] Error 1

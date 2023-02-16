@@ -1,0 +1,33 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/decode_rtx_const/src/varasm.c:4006:25: error: must use 'enum' tag to refer to type 'machine_mode'
+void  decode_rtx_const( machine_mode mode, rtx x,  struct rtx_const *value) 
+                        ^
+                        enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/decode_rtx_const/src/varasm.c:4014:27: error: use of undeclared identifier 'rtx_const'; did you mean 'rtx_cost'?
+memset( value, 0, sizeof( rtx_const)); 
+                          ^~~~~~~~~
+                          rtx_cost
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/decode_rtx_const/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/decode_rtx_const/src/varasm.c:4031:33: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+value->un.du.d.r[1] = ( __int64)x[1]; 
+                                ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/decode_rtx_const/src/varasm.c:4042:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[mode] == MODE_VECTOR_INT ) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/decode_rtx_const/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/decode_rtx_const/src/varasm.c:4049:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[mode] != MODE_VECTOR_FLOAT ) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/decode_rtx_const/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/decode_rtx_const/src/varasm.c:4051:33: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+value->un.du.d.r[i] = ( __int64)elt[1]; 
+                                ^~~~~~
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/decode_rtx_const/src/obj/varasm.o] Error 1

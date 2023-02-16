@@ -1,0 +1,66 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/shorten_compare/src/c-common.c:2118:73: error: must use 'enum' tag to refer to type 'tree_code'
+tree  shorten_compare( tree *op0_ptr, tree *op1_ptr, tree *restype_ptr, tree_code *rescode_ptr) 
+                                                                        ^
+                                                                        enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/shorten_compare/src/c-common.c:2121:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v6; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/shorten_compare/src/c-common.c:2122:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v7; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/shorten_compare/src/c-common.c:2123:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v8; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/shorten_compare/src/c-common.c:2124:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v9; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/shorten_compare/src/c-common.c:2138:1: error: must use 'enum' tag to refer to type 'tree_code'
+tree_code code; // [rsp+6Ch] [rbp-34h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/shorten_compare/src/c-common.c:2217:21: error: expected expression
+min_gt = *( _OWORD *)&primop1->block.vars < *( _OWORD *)&minval->block.vars; 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/shorten_compare/src/c-common.c:2217:13: error: use of undeclared identifier '_OWORD'
+min_gt = *( _OWORD *)&primop1->block.vars < *( _OWORD *)&minval->block.vars; 
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/shorten_compare/src/c-common.c:2217:56: error: expected expression
+min_gt = *( _OWORD *)&primop1->block.vars < *( _OWORD *)&minval->block.vars; 
+                                                       ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/shorten_compare/src/c-common.c:2217:48: error: use of undeclared identifier '_OWORD'
+min_gt = *( _OWORD *)&primop1->block.vars < *( _OWORD *)&minval->block.vars; 
+                                               ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/shorten_compare/src/c-common.c:2218:21: error: expected expression
+max_gt = *( _OWORD *)&primop1->block.vars < *( _OWORD *)&maxval->block.vars; 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/shorten_compare/src/c-common.c:2218:13: error: use of undeclared identifier '_OWORD'
+max_gt = *( _OWORD *)&primop1->block.vars < *( _OWORD *)&maxval->block.vars; 
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/shorten_compare/src/c-common.c:2218:56: error: expected expression
+max_gt = *( _OWORD *)&primop1->block.vars < *( _OWORD *)&maxval->block.vars; 
+                                                       ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/shorten_compare/src/c-common.c:2218:48: error: use of undeclared identifier '_OWORD'
+max_gt = *( _OWORD *)&primop1->block.vars < *( _OWORD *)&maxval->block.vars; 
+                                               ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/shorten_compare/src/c-common.c:2219:21: error: expected expression
+min_lt = *( _OWORD *)&minval->block.vars < *( _OWORD *)&primop1->block.vars; 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/shorten_compare/src/c-common.c:2219:13: error: use of undeclared identifier '_OWORD'
+min_lt = *( _OWORD *)&minval->block.vars < *( _OWORD *)&primop1->block.vars; 
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/shorten_compare/src/c-common.c:2219:55: error: expected expression
+min_lt = *( _OWORD *)&minval->block.vars < *( _OWORD *)&primop1->block.vars; 
+                                                      ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/shorten_compare/src/c-common.c:2219:47: error: use of undeclared identifier '_OWORD'
+min_lt = *( _OWORD *)&minval->block.vars < *( _OWORD *)&primop1->block.vars; 
+                                              ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/shorten_compare/src/c-common.c:2220:21: error: expected expression
+max_lt = *( _OWORD *)&maxval->block.vars < *( _OWORD *)&primop1->block.vars; 
+                    ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/shorten_compare/src/obj/c-common.o] Error 1

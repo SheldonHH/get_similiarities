@@ -1,0 +1,24 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/pad_to_arg_alignment/src/function.c:5854:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v5; // rbx 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/pad_to_arg_alignment/src/function.c:5855:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v6; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/pad_to_arg_alignment/src/function.c:5856:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v7; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/pad_to_arg_alignment/src/function.c:5863:19: error: use of undeclared identifier 'args_size'; did you mean 'tree_size'?
+save_constant = ( args_size)0LL; 
+                  ^~~~~~~~~
+                  tree_size
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/pad_to_arg_alignment/src/tree.h:2067:15: note: 'tree_size' declared here
+extern size_t tree_size                 PARAMS ((tree));
+              ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/pad_to_arg_alignment/src/function.c:5863:15: error: assigning to 'struct args_size' from incompatible type 'size_t (tree)' (aka 'unsigned long (union tree_node *)')
+save_constant = ( args_size)0LL; 
+              ^ ~~~~~~~~~~~~
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/pad_to_arg_alignment/src/obj/function.o] Error 1

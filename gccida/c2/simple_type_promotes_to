@@ -1,0 +1,12 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/simple_type_promotes_to/src/c-common.c:3476:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *section_name; // rcx 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/simple_type_promotes_to/src/c-common.c:3481:35: error: expected expression
+if ( section_name == ( tree_node *)*( &global_trees + 24) ) 
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/simple_type_promotes_to/src/c-common.c:3481:24: error: use of undeclared identifier 'tree_node'
+if ( section_name == ( tree_node *)*( &global_trees + 24) ) 
+                       ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/simple_type_promotes_to/src/obj/c-common.o] Error 1

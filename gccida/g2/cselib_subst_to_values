@@ -1,0 +1,41 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/cselib_subst_to_values/src/cselib.c:1256:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v5; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/cselib_subst_to_values/src/cselib.c:1270:6: error: expected ';' after expression
+rtvec v19; // rax 
+     ^
+     ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/cselib_subst_to_values/src/cselib.c:1270:7: error: use of undeclared identifier 'v19'
+rtvec v19; // rax 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/cselib_subst_to_values/src/cselib.c:1274:6: error: expected ';' after expression
+rtvec jc; // [rsp+0h] [rbp-58h] 
+     ^
+     ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/cselib_subst_to_values/src/cselib.c:1274:7: error: use of undeclared identifier 'jc'
+rtvec jc; // [rsp+0h] [rbp-58h] 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/cselib_subst_to_values/src/cselib.c:1363:1: error: use of undeclared identifier 'v19'
+v19 = rtvec_alloc( *rtwint); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/cselib_subst_to_values/src/cselib.c:1366:9: error: use of undeclared identifier 'v19'
+rtvec = v19; 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/cselib_subst_to_values/src/cselib.c:1367:33: error: use of undeclared identifier 'v19'
+v3->fld[v25].rtwint = ( __int64)v19; 
+                                ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/cselib_subst_to_values/src/cselib.c:1373:1: error: use of undeclared identifier 'jc'
+jc = v19; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/cselib_subst_to_values/src/cselib.c:1373:6: error: use of undeclared identifier 'v19'
+jc = v19; 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/cselib_subst_to_values/src/cselib.c:1374:10: error: use of undeclared identifier 'v19'
+memmove( v19->elem, rtwint + 2, 8 * v14); 
+         ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/cselib_subst_to_values/src/cselib.c:1375:9: error: use of undeclared identifier 'jc'
+rtvec = jc; 
+        ^
+12 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/cselib_subst_to_values/src/obj/cselib.o] Error 1

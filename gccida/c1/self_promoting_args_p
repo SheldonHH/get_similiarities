@@ -1,0 +1,30 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/self_promoting_args_p/src/c-common.c:3500:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v1; // r14 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/self_promoting_args_p/src/c-common.c:3501:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v2; // r15 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/self_promoting_args_p/src/c-common.c:3503:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *chain; // rbx 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/self_promoting_args_p/src/c-common.c:3504:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *elements; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/self_promoting_args_p/src/c-common.c:3507:19: error: expected expression
+v1 = ( tree_node *)*( &global_trees + 27); 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/self_promoting_args_p/src/c-common.c:3507:8: error: use of undeclared identifier 'tree_node'
+v1 = ( tree_node *)*( &global_trees + 27); 
+       ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/self_promoting_args_p/src/c-common.c:3508:19: error: expected expression
+v2 = ( tree_node *)*( &global_trees + 24); 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/self_promoting_args_p/src/c-common.c:3508:8: error: use of undeclared identifier 'tree_node'
+v2 = ( tree_node *)*( &global_trees + 24); 
+       ^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/self_promoting_args_p/src/obj/c-common.o] Error 1

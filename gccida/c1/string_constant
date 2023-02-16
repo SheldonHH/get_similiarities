@@ -1,0 +1,28 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/string_constant/src/expr.c:9399:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v8; // r15 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/string_constant/src/expr.c:9401:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v10; // rbx 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/string_constant/src/expr.c:9411:13: error: expected identifier or '('
+ struct arg = arg->vector.elements; 
+            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/string_constant/src/expr.c:9412:7: error: expected expression
+if (  struct arg == ( tree)global_trees ) 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/string_constant/src/expr.c:9429:19: error: expected expression
+v8 = ( tree_node *)low; 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/string_constant/src/expr.c:9429:8: error: use of undeclared identifier 'tree_node'
+v8 = ( tree_node *)low; 
+       ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/string_constant/src/expr.c:9440:20: error: expected expression
+v10 = ( tree_node *)high; 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/string_constant/src/expr.c:9440:9: error: use of undeclared identifier 'tree_node'
+v10 = ( tree_node *)high; 
+        ^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/string_constant/src/obj/expr.o] Error 1

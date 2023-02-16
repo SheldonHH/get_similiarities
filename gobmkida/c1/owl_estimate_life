@@ -1,0 +1,26 @@
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/owl_estimate_life/src/engine/owl.c:2697:10: error: conflicting types for 'owl_estimate_life'
+__int64  owl_estimate_life( 
+         ^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/owl_estimate_life/src/engine/owl.c:165:12: note: previous declaration is here
+static int owl_estimate_life(struct local_owl_data *owl,
+           ^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/owl_estimate_life/src/engine/owl.c:2724:90: error: too many arguments to function call, expected 8, have 10
+owl_determine_life( owl, 0LL, komaster, vital_moves, does_attack, probable_eyes, a7, a8, a9, eyemin); 
+~~~~~~~~~~~~~~~~~~                                                                       ^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/owl_estimate_life/src/engine/owl.c:159:1: note: 'owl_determine_life' declared here
+static void owl_determine_life(struct local_owl_data *owl,
+^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/owl_estimate_life/src/engine/owl.c:2747:9: error: use of undeclared identifier 'eyevalue'
+v17 = ( eyevalue)( *( _DWORD *)probable_eyes - matches_found); 
+        ^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/owl_estimate_life/src/engine/owl.c:2749:5: error: assigning to 'struct eyevalue' from incompatible type 'int'
+v17 = 0; 
+    ^ ~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/owl_estimate_life/src/engine/owl.c:2754:19: error: invalid operands to binary expression ('struct eyevalue' and 'int')
+|| *probable_eyes == 1 && min_eyes( ( struct eyevalue *)does_attack) > 3 
+   ~~~~~~~~~~~~~~ ^  ~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/owl_estimate_life/src/engine/owl.c:2759:21: error: invalid operands to binary expression ('struct eyevalue' and 'int')
+if ( *probable_eyes == 1 && min_eyes( ( struct eyevalue *)does_attack) >= 4 ) 
+     ~~~~~~~~~~~~~~ ^  ~
+6 errors generated.
+make: *** [/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/owl_estimate_life/src/obj/1/owl.o] Error 1

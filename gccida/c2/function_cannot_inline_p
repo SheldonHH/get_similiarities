@@ -1,0 +1,15 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/function_cannot_inline_p/src/integrate.c:648:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *values; // r12 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/function_cannot_inline_p/src/integrate.c:669:47: error: use of undeclared identifier 'unk_6FC398'
+if ( !v2 || ( cannot_inline = ( const char *)&unk_6FC398, v2->int_cst.int_cst.low == *( &global_trees + 27)) ) 
+                                              ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/function_cannot_inline_p/src/integrate.c:672:33: error: use of undeclared identifier 'unk_6FC398'
+cannot_inline = ( const char *)&unk_6FC398; 
+                                ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/function_cannot_inline_p/src/integrate.c:683:24: error: use of undeclared identifier 'unk_6FC408'
+return ( const char *)&unk_6FC408; 
+                       ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/function_cannot_inline_p/src/obj/integrate.o] Error 1

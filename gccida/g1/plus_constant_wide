@@ -1,0 +1,79 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/plus_constant_wide/src/explow.c:545:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v7; // r13d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/plus_constant_wide/src/explow.c:554:6: error: use of undeclared identifier 'constant_term_loc'; did you mean 'find_constant_term_loc'?
+rtx *constant_term_loc; // rbx 
+     ^~~~~~~~~~~~~~~~~
+     find_constant_term_loc
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/plus_constant_wide/src/rtl.h:1380:13: note: 'find_constant_term_loc' declared here
+extern rtx *find_constant_term_loc      PARAMS ((rtx *));
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/plus_constant_wide/src/explow.c:554:5: error: invalid operands to binary expression ('rtx' (aka 'struct rtx_def *') and 'rtx *(rtx *)' (aka 'struct rtx_def **(struct rtx_def **)'))
+rtx *constant_term_loc; // rbx 
+~~~ ^~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/plus_constant_wide/src/explow.c:557:4: error: expected ';' after expression
+rtx copy; // [rsp+10h] [rbp-38h] BYREF 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/plus_constant_wide/src/explow.c:557:5: error: use of undeclared identifier 'copy'; did you mean 'bcopy'?
+rtx copy; // [rsp+10h] [rbp-38h] BYREF 
+    ^~~~
+    bcopy
+/usr/include/strings.h:38:13: note: 'bcopy' declared here
+extern void bcopy (const void *__src, void *__dest, size_t __n)
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/plus_constant_wide/src/explow.c:558:4: error: expected ';' after expression
+rtx y; // [rsp+18h] [rbp-30h] BYREF 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/plus_constant_wide/src/explow.c:558:5: error: use of undeclared identifier 'y'
+rtx y; // [rsp+18h] [rbp-30h] BYREF 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/plus_constant_wide/src/explow.c:570:1: error: use of undeclared identifier 'y'
+y = rtx; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/plus_constant_wide/src/explow.c:576:88: error: use of undeclared identifier 'copy'; did you mean 'bcopy'?
+add_double( *( _QWORD *)&rtx[1], rtx[1].fld[0].rtwint, v4, v4 >> 63, &lv, ( __int64 *)&copy); 
+                                                                                       ^~~~
+                                                                                       bcopy
+/usr/include/strings.h:38:13: note: 'bcopy' declared here
+extern void bcopy (const void *__src, void *__dest, size_t __n)
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/plus_constant_wide/src/explow.c:577:42: error: use of undeclared identifier 'copy'
+return immed_double_const( lv, ( __int64)copy, VOIDmode); 
+                                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/plus_constant_wide/src/explow.c:586:23: error: expected identifier or '('
+ struct pool_constant = get_pool_constant( v8); 
+                      ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/plus_constant_wide/src/explow.c:588:25: error: use of undeclared identifier 'machine_mode'
+v2 = force_const_mem( ( machine_mode)*( ( unsigned __int8 *)rtx + 2), v10); 
+                        ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/plus_constant_wide/src/explow.c:589:26: error: use of undeclared identifier 'machine_mode'
+if ( memory_address_p( ( machine_mode)*( ( unsigned __int8 *)v2 + 2), v2->fld[0].rtx) ) 
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/plus_constant_wide/src/explow.c:598:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v11 = (  struct rtx_def *)rtx[1]; 
+                          ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/plus_constant_wide/src/explow.c:605:32: error: use of undeclared identifier 'machine_mode'
+v4 = trunc_int_for_mode( v4, ( machine_mode)v13); 
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/plus_constant_wide/src/explow.c:614:31: error: use of undeclared identifier 'y'
+if ( find_constant_term_loc( &y) ) 
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/plus_constant_wide/src/explow.c:616:1: error: use of undeclared identifier 'copy'
+copy = copy_rtx( rtx); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/plus_constant_wide/src/explow.c:617:1: error: use of undeclared identifier 'constant_term_loc'
+constant_term_loc = find_constant_term_loc( &copy); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/plus_constant_wide/src/explow.c:617:46: error: use of undeclared identifier 'copy'; did you mean 'bcopy'?
+constant_term_loc = find_constant_term_loc( &copy); 
+                                             ^~~~
+                                             bcopy
+/usr/include/strings.h:38:13: note: 'bcopy' declared here
+extern void bcopy (const void *__src, void *__dest, size_t __n)
+            ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/plus_constant_wide/src/obj/explow.o] Error 1

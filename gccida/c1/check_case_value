@@ -1,0 +1,20 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/check_case_value/src/c-common.c:1727:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *type; // rdx 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/check_case_value/src/c-common.c:1733:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v7; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/check_case_value/src/c-common.c:1734:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v8; // rbx 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/check_case_value/src/c-common.c:1773:19: error: expected expression
+v8 = ( tree_node *)global_trees; 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/check_case_value/src/c-common.c:1773:8: error: use of undeclared identifier 'tree_node'
+v8 = ( tree_node *)global_trees; 
+       ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/check_case_value/src/obj/c-common.o] Error 1

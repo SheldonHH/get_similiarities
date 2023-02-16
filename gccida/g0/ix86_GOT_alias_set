@@ -1,0 +1,19 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/ix86_GOT_alias_set/src/i386.c:5441:6: error: use of undeclared identifier 'set_36'; did you mean 'set_of'?
+if ( set_36 == -1 ) 
+     ^~~~~~
+     set_of
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/ix86_GOT_alias_set/src/rtl.h:1478:12: note: 'set_of' declared here
+extern rtx set_of                       PARAMS ((rtx, rtx));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/ix86_GOT_alias_set/src/i386.c:5442:1: error: use of undeclared identifier 'set_36'
+set_36 = new_alias_set( ); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/ix86_GOT_alias_set/src/i386.c:5443:8: error: use of undeclared identifier 'set_36'; did you mean 'set_of'?
+return set_36; 
+       ^~~~~~
+       set_of
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/ix86_GOT_alias_set/src/rtl.h:1478:12: note: 'set_of' declared here
+extern rtx set_of                       PARAMS ((rtx, rtx));
+           ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/ix86_GOT_alias_set/src/obj/i386.o] Error 1

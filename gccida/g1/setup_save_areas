@@ -1,0 +1,29 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/setup_save_areas/src/caller-save.c:755:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v21; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/setup_save_areas/src/caller-save.c:759:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode *v25; // r13 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/setup_save_areas/src/caller-save.c:786:25: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v7 = ( ( unsigned int)( mode_class_0[*( ( unsigned __int8 *)cfun->emit->x_regno_reg_rtx[v3] + 2)] - 5) < 2) + 1; 
+                        ^~~~~~~~~~~~
+                        mode_class
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/setup_save_areas/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/setup_save_areas/src/caller-save.c:835:24: error: expected expression
+v21 = *( machine_mode *)( ( char *)&regno_save_mode[0][v14] + v11); 
+                       ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/setup_save_areas/src/caller-save.c:835:10: error: use of undeclared identifier 'machine_mode'
+v21 = *( machine_mode *)( ( char *)&regno_save_mode[0][v14] + v11); 
+         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/setup_save_areas/src/caller-save.c:864:23: error: expected expression
+v25 = ( machine_mode *)( v11 + 9707172); 
+                      ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/setup_save_areas/src/caller-save.c:864:9: error: use of undeclared identifier 'machine_mode'
+v25 = ( machine_mode *)( v11 + 9707172); 
+        ^
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/setup_save_areas/src/obj/caller-save.o] Error 1

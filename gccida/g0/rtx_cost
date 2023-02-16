@@ -1,0 +1,38 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/rtx_cost/src/cse.c:1287:23: error: must use 'enum' tag to refer to type 'rtx_code'
+int  rtx_cost( rtx x, rtx_code outer_code) 
+                      ^
+                      enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/rtx_cost/src/cse.c:1309:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code; // [rsp+40h] [rbp-30h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/rtx_cost/src/cse.c:1389:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| mode_class_0[*( ( unsigned __int8 *)x + 2)] != MODE_INT 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/rtx_cost/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/rtx_cost/src/cse.c:1390:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& mode_class_0[*( ( unsigned __int8 *)x + 2)] != MODE_PARTIAL_INT 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/rtx_cost/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/rtx_cost/src/cse.c:1391:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& mode_class_0[*( ( unsigned __int8 *)x + 2)] != MODE_COMPLEX_INT 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/rtx_cost/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/rtx_cost/src/cse.c:1392:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& mode_class_0[*( ( unsigned __int8 *)x + 2)] != MODE_VECTOR_INT ) 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/rtx_cost/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/rtx_cost/src/obj/cse.o] Error 1

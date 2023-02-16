@@ -1,0 +1,52 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_float/src/optabs.c:4550:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v3; // ecx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_float/src/optabs.c:4557:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // [rsp+54h] [rbp-BCh] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_float/src/optabs.c:4568:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode imode; // [rsp+E8h] [rbp-28h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_float/src/optabs.c:4569:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode fmode; // [rsp+ECh] [rbp-24h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_float/src/optabs.c:4571:1: error: must use 'enum' tag to refer to type 'insn_code'
+insn_code icode; // [rsp+F8h] [rbp-18h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_float/src/optabs.c:4633:26: error: use of undeclared identifier 'machine_mode'
+|| can_float_p( fmode, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)froma), 0) == CODE_FOR_nothing); 
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_float/src/optabs.c:4633:41: error: expected expression
+|| can_float_p( fmode, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)froma), 0) == CODE_FOR_nothing); 
+                                        ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_float/src/optabs.c:4655:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)froma), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_float/src/optabs.c:4655:18: error: expected expression
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)froma), 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_float/src/optabs.c:4658:29: error: too many arguments to function call, expected 2, have 3
+ereal_ldexp( &v14, dconst1, mode_bitsize[( unsigned __int8)BYTE2( *( _DWORD *)froma)]); 
+~~~~~~~~~~~                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_float/src/real.h:160:1: note: 'ereal_ldexp' declared here
+extern REAL_VALUE_TYPE ereal_ldexp PARAMS ((REAL_VALUE_TYPE, int));
+^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_float/src/optabs.c:4780:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)toa), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_float/src/optabs.c:4780:18: error: expected expression
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)toa), 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_float/src/optabs.c:4786:30: error: use of undeclared identifier 'machine_mode'
+v7 = gen_rtx_fmt_e( FLOAT, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)toa), froma); 
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_float/src/optabs.c:4786:45: error: expected expression
+v7 = gen_rtx_fmt_e( FLOAT, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)toa), froma); 
+                                            ^
+14 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_float/src/obj/optabs.o] Error 1

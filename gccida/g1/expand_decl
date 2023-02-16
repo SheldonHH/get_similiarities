@@ -1,0 +1,64 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_decl/src/stmt.c:4332:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v6; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_decl/src/stmt.c:4346:4: error: expected ';' after expression
+rtx v20; // rbp 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_decl/src/stmt.c:4346:5: error: use of undeclared identifier 'v20'
+rtx v20; // rbp 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_decl/src/stmt.c:4351:4: error: expected ';' after expression
+rtx v25; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_decl/src/stmt.c:4351:5: error: use of undeclared identifier 'v25'
+rtx v25; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_decl/src/stmt.c:4353:4: error: expected ';' after expression
+rtx v27; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_decl/src/stmt.c:4353:5: error: use of undeclared identifier 'v27'
+rtx v27; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_decl/src/stmt.c:4384:22: error: use of undeclared identifier 'machine_mode'
+v13 = gen_reg_rtx( ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4)); 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_decl/src/stmt.c:4402:28: error: use of undeclared identifier 'machine_mode'
+v6 = promote_mode( type, ( machine_mode)supercontext, unsignedp, 0); 
+                           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_decl/src/stmt.c:4440:1: error: use of undeclared identifier 'v27'
+v27 = decl->decl.rtl; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_decl/src/stmt.c:4441:7: error: use of undeclared identifier 'v27'
+if ( !v27 ) 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_decl/src/stmt.c:4444:1: error: use of undeclared identifier 'v27'
+v27 = decl->decl.rtl; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_decl/src/stmt.c:4446:45: error: use of undeclared identifier 'v27'
+regno_decl[*( unsigned int *)( *( _QWORD *)&v27[1] + 8LL)] = decl; 
+                                            ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_decl/src/stmt.c:4490:1: error: use of undeclared identifier 'v20'
+v20 = assign_temp( decl, 1, 1, 1); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_decl/src/stmt.c:4491:21: error: use of undeclared identifier 'v20'
+set_mem_attributes( v20, decl, 1); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_decl/src/stmt.c:4492:18: error: use of undeclared identifier 'v20'
+decl->decl.rtl = v20; 
+                 ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_decl/src/stmt.c:4493:7: error: use of undeclared identifier 'v20'
+if ( !v20 ) 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_decl/src/stmt.c:4496:1: error: use of undeclared identifier 'v20'
+v20 = decl->decl.rtl; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_decl/src/stmt.c:4498:22: error: use of undeclared identifier 'v20'
+v21 = force_operand( v20->fld[0].rtx, rtx); 
+                     ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_decl/src/obj/stmt.o] Error 1

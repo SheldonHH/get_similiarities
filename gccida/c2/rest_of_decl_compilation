@@ -1,0 +1,34 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/rest_of_decl_compilation/src/toplev.c:2708:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *identifier; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/rest_of_decl_compilation/src/toplev.c:2727:15: error: use of undeclared identifier 'TV_VARCONST_0'; did you mean 'TV_VARCONST'?
+timevar_push( TV_VARCONST_0); 
+              ^~~~~~~~~~~~~
+              TV_VARCONST
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/rest_of_decl_compilation/src/timevar.def:54:13: note: 'TV_VARCONST' declared here
+DEFTIMEVAR (TV_VARCONST              , "varconst")
+            ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/rest_of_decl_compilation/src/toplev.c:2766:14: error: use of undeclared identifier 'TV_VARCONST_0'; did you mean 'TV_VARCONST'?
+timevar_pop( TV_VARCONST_0); 
+             ^~~~~~~~~~~~~
+             TV_VARCONST
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/rest_of_decl_compilation/src/timevar.def:54:13: note: 'TV_VARCONST' declared here
+DEFTIMEVAR (TV_VARCONST              , "varconst")
+            ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/rest_of_decl_compilation/src/toplev.c:2786:15: error: use of undeclared identifier 'TV_SYMOUT_0'; did you mean 'TV_SYMOUT'?
+timevar_push( TV_SYMOUT_0); 
+              ^~~~~~~~~~~
+              TV_SYMOUT
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/rest_of_decl_compilation/src/timevar.def:86:13: note: 'TV_SYMOUT' declared here
+DEFTIMEVAR (TV_SYMOUT                , "symout")
+            ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/rest_of_decl_compilation/src/toplev.c:2788:14: error: use of undeclared identifier 'TV_SYMOUT_0'; did you mean 'TV_SYMOUT'?
+timevar_pop( TV_SYMOUT_0); 
+             ^~~~~~~~~~~
+             TV_SYMOUT
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/rest_of_decl_compilation/src/timevar.def:86:13: note: 'TV_SYMOUT' declared here
+DEFTIMEVAR (TV_SYMOUT                , "symout")
+            ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/rest_of_decl_compilation/src/obj/toplev.o] Error 1

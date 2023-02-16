@@ -1,0 +1,65 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/sched_analyze_1/src/sched-deps.c:1015:24: error: unknown type name 'deps_0'
+void  sched_analyze_1( deps_0 *deps, rtx x, rtx insn) 
+                       ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/sched_analyze_1/src/sched-deps.c:1048:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v3.rtwint = ( __int64)x->fld[0]; 
+                      ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/sched_analyze_1/src/sched-deps.c:1117:50: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( i = deps->last_function_call; i; i = ( rtx)i[1] ) 
+                                                 ^~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/sched_analyze_1/src/sched-deps.c:1127:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v14 = ( ( unsigned int)( mode_class_0[( unsigned __int8)v13] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/sched_analyze_1/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/sched_analyze_1/src/sched-deps.c:1150:24: error: use of undeclared identifier 'invalid_operation'; did you mean 'bitmap_operation'?
+v33 = ( v14 - 1 < 0) ^ __OFADD__( -1, v14) | ( v14 == 1); 
+                       ^~~~~~~~~~~~~~~~~~~
+                       bitmap_operation
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/sched_analyze_1/src/sched-deps.c:823:25: note: expanded from macro '__OFADD__'
+#define __OFADD__(x, y) invalid_operation // Generate overflow flag for (x+y)
+                        ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/sched_analyze_1/src/bitmap.h:81:12: note: 'bitmap_operation' declared here
+extern int bitmap_operation PARAMS ((bitmap, bitmap, bitmap, enum bitmap_bits));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/sched_analyze_1/src/sched-deps.c:1150:22: error: invalid operands to binary expression ('int' and 'int (bitmap, bitmap, bitmap, enum bitmap_bits)' (aka 'int (struct bitmap_head_def *, struct bitmap_head_def *, struct bitmap_head_def *, enum bitmap_bits)'))
+v33 = ( v14 - 1 < 0) ^ __OFADD__( -1, v14) | ( v14 == 1); 
+      ~~~~~~~~~~~~~~ ^ ~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/sched_analyze_1/src/sched-deps.c:1161:24: error: use of undeclared identifier 'invalid_operation'; did you mean 'bitmap_operation'?
+v33 = ( v14 - 1 < 0) ^ __OFADD__( -1, v14) | ( v14 == 1); 
+                       ^~~~~~~~~~~~~~~~~~~
+                       bitmap_operation
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/sched_analyze_1/src/sched-deps.c:823:25: note: expanded from macro '__OFADD__'
+#define __OFADD__(x, y) invalid_operation // Generate overflow flag for (x+y)
+                        ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/sched_analyze_1/src/bitmap.h:81:12: note: 'bitmap_operation' declared here
+extern int bitmap_operation PARAMS ((bitmap, bitmap, bitmap, enum bitmap_bits));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/sched_analyze_1/src/sched-deps.c:1161:22: error: invalid operands to binary expression ('int' and 'int (bitmap, bitmap, bitmap, enum bitmap_bits)' (aka 'int (struct bitmap_head_def *, struct bitmap_head_def *, struct bitmap_head_def *, enum bitmap_bits)'))
+v33 = ( v14 - 1 < 0) ^ __OFADD__( -1, v14) | ( v14 == 1); 
+      ~~~~~~~~~~~~~~ ^ ~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/sched_analyze_1/src/sched-deps.c:1187:38: error: use of undeclared identifier 'machine_mode'
+cselib_lookup( rtwint->fld[0].rtx, ( machine_mode)( ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32), 1); 
+                                     ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/sched_analyze_1/src/sched-deps.c:1202:28: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+pending_read_insns = ( rtx)pending_read_insns[1]; 
+                           ^~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/sched_analyze_1/src/sched-deps.c:1216:29: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+pending_write_insns = ( rtx)pending_write_insns[1]; 
+                            ^~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/sched_analyze_1/src/sched-deps.c:1220:57: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( j = deps->last_pending_memory_flush; j; j = ( rtx)j[1] ) 
+                                                        ^~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/sched_analyze_1/src/sched-deps.c:1239:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v17 = (  struct rtx_def *)pending_read_insns[1]; 
+                          ^~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/sched_analyze_1/src/sched-deps.c:1253:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v19 = (  struct rtx_def *)v18[1]; 
+                          ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/sched_analyze_1/src/sched-deps.c:1268:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v21 = (  struct rtx_def *)last_pending_memory_flush[1]; 
+                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+15 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/sched_analyze_1/src/obj/sched-deps.o] Error 1

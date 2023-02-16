@@ -1,0 +1,51 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_builtin_strlen/src/builtins.c:2052:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *imag; // rbx 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_builtin_strlen/src/builtins.c:2054:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *elements; // rbp 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_builtin_strlen/src/builtins.c:2061:1: error: must use 'enum' tag to refer to type 'insn_code'
+insn_code insn_code; // edx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_builtin_strlen/src/builtins.c:2067:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v18; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_builtin_strlen/src/builtins.c:2077:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v29; // [rsp+20h] [rbp-38h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_builtin_strlen/src/builtins.c:2124:27: error: use of undeclared identifier 'machine_mode'
+operand0 = gen_reg_rtx( ( machine_mode)v13); 
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_builtin_strlen/src/builtins.c:2127:23: error: use of undeclared identifier 'machine_mode'
+addr = gen_reg_rtx( ( machine_mode)( ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32)); 
+                      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_builtin_strlen/src/builtins.c:2131:11: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+operand = insn_data_0[v16].operand; 
+          ^~~~~~~~~~~
+          insn_data
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_builtin_strlen/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_builtin_strlen/src/builtins.c:2133:50: error: use of undeclared identifier 'machine_mode'
+if ( !operand[2].predicate( const_int_rtx[64], ( machine_mode)*( ( unsigned __int16 *)&operand[2] + 8)) ) 
+                                                 ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_builtin_strlen/src/builtins.c:2137:7: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+v20 = insn_data_0[v16].genfun( operand0, v19); 
+      ^~~~~~~~~~~
+      insn_data
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_builtin_strlen/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_builtin_strlen/src/builtins.c:2137:30: error: called object type '<dependent type>' is not a function or function pointer
+v20 = insn_data_0[v16].genfun( operand0, v19); 
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_builtin_strlen/src/builtins.c:2160:27: error: use of undeclared identifier 'machine_mode'
+return convert_to_mode( ( machine_mode)v10, operand0, 0); 
+                          ^
+12 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_builtin_strlen/src/obj/builtins.o] Error 1

@@ -1,0 +1,21 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/failed_reload/src/reload1.c:5512:54: error: too many arguments provided to function-like macro invocation
+fatal_insn( "could not find a spill register", insn, &off_6CC868[4], 5051, "failed_reload"); 
+                                                     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/failed_reload/src/toplev.h:50:9: note: macro 'fatal_insn' defined here
+#define fatal_insn(msgid, insn) \
+        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/failed_reload/src/reload1.c:5512:1: error: use of undeclared identifier 'fatal_insn'; did you mean '_fatal_insn'?
+fatal_insn( "could not find a spill register", insn, &off_6CC868[4], 5051, "failed_reload"); 
+^~~~~~~~~~
+_fatal_insn
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/failed_reload/src/toplev.h:44:13: note: '_fatal_insn' declared here
+extern void _fatal_insn                 PARAMS ((const char *,
+            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/failed_reload/src/reload1.c:5516:12: error: expected expression
+*( _OWORD *)&rld[v2 / 0x68].in = 0LL; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/failed_reload/src/reload1.c:5516:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&rld[v2 / 0x68].in = 0LL; 
+   ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/failed_reload/src/obj/reload1.o] Error 1

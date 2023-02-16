@@ -1,0 +1,67 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/ix86_va_arg/src/i386.c:3036:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v2; // rbp 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/ix86_va_arg/src/i386.c:3056:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v22; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/ix86_va_arg/src/i386.c:3060:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v26; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/ix86_va_arg/src/i386.c:3078:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v45; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/ix86_va_arg/src/i386.c:3097:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v64; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/ix86_va_arg/src/i386.c:3107:4: error: expected ';' after expression
+rtx container; // [rsp+20h] [rbp-88h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/ix86_va_arg/src/i386.c:3107:5: error: use of undeclared identifier 'container'
+rtx container; // [rsp+20h] [rbp-88h] 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/ix86_va_arg/src/i386.c:3115:4: error: expected ';' after expression
+rtx addr_rtx; // [rsp+50h] [rbp-58h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/ix86_va_arg/src/i386.c:3115:5: error: use of undeclared identifier 'addr_rtx'
+rtx addr_rtx; // [rsp+50h] [rbp-58h] 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/ix86_va_arg/src/i386.c:3155:30: error: use of undeclared identifier 'machine_mode'
+v16 = construct_container( ( machine_mode)( BYTE5( type->block.abstract_origin) >> 1), type, 0, v14, v15, intreg_43, 0); 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/ix86_va_arg/src/i386.c:3155:107: error: use of undeclared identifier 'intreg_43'
+v16 = construct_container( ( machine_mode)( BYTE5( type->block.abstract_origin) >> 1), type, 0, v14, v15, intreg_43, 0); 
+                                                                                                          ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/ix86_va_arg/src/i386.c:3157:22: error: use of undeclared identifier 'machine_mode'
+rtx = gen_reg_rtx( ( machine_mode)( ( ( BYTE3( target_flags) & 2) != 0) + 4)); 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/ix86_va_arg/src/i386.c:3162:21: error: use of undeclared identifier 'machine_mode'
+examine_argument( ( machine_mode)( BYTE5( type->block.abstract_origin) >> 1), type, 0, &needed_intregs, needed_sseregs); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/ix86_va_arg/src/i386.c:3173:31: error: use of undeclared identifier 'machine_mode'
+int_addr_rtx = gen_reg_rtx( ( machine_mode)( ( ( BYTE3( target_flags) & 2) != 0) + 4)); 
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/ix86_va_arg/src/i386.c:3174:27: error: use of undeclared identifier 'machine_mode'
+src_addr = gen_reg_rtx( ( machine_mode)( ( ( BYTE3( target_flags) & 2) != 0) + 4)); 
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/ix86_va_arg/src/i386.c:3180:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v39.rtwint = ( __int64)v16->fld[0]; 
+                       ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/ix86_va_arg/src/i386.c:3253:37: error: use of undeclared identifier 'machine_mode'
+v23 = expand_expr( v22, src_addr, ( machine_mode)( ( ( BYTE3( target_flags) & 2) != 0) + 4), EXPAND_NORMAL); 
+                                    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/ix86_va_arg/src/i386.c:3269:1: error: use of undeclared identifier 'container'
+container = v16; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/ix86_va_arg/src/i386.c:3271:1: error: use of undeclared identifier 'addr_rtx'
+addr_rtx = rtx; 
+^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/ix86_va_arg/src/obj/i386.o] Error 1

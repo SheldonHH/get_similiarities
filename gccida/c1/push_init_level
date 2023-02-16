@@ -1,0 +1,61 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/push_init_level/src/c-typeck.c:5746:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *inited; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/push_init_level/src/c-typeck.c:5749:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v5; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/push_init_level/src/c-typeck.c:5758:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v14; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/push_init_level/src/c-typeck.c:5766:9: error: use of undeclared identifier 'constructor_stack_0'; did you mean 'constructor_stack'?
+while ( constructor_stack_0->implicit ) 
+        ^~~~~~~~~~~~~~~~~~~
+        constructor_stack
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/push_init_level/src/c-typeck.c:5021:27: note: 'constructor_stack' declared here
+struct constructor_stack *constructor_stack;
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/push_init_level/src/c-typeck.c:5815:12: error: use of undeclared identifier 'constructor_stack_0'; did you mean 'constructor_stack'?
+v7->next = constructor_stack_0; 
+           ^~~~~~~~~~~~~~~~~~~
+           constructor_stack
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/push_init_level/src/c-typeck.c:5021:27: note: 'constructor_stack' declared here
+struct constructor_stack *constructor_stack;
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/push_init_level/src/c-typeck.c:5817:1: error: use of undeclared identifier 'constructor_stack_0'; did you mean 'constructor_stack'?
+constructor_stack_0 = v7; 
+^~~~~~~~~~~~~~~~~~~
+constructor_stack
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/push_init_level/src/c-typeck.c:5021:27: note: 'constructor_stack' declared here
+struct constructor_stack *constructor_stack;
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/push_init_level/src/c-typeck.c:5820:51: error: use of undeclared identifier 'spelling_0'
+constructor_depth = ( unsigned __int64)( ( char *)spelling_0 - ( char *)spelling_base) >> 4; 
+                                                  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/push_init_level/src/c-typeck.c:5827:19: error: use of undeclared identifier 'constructor_range_stack_0'; did you mean 'constructor_range_stack'?
+v7->range_stack = constructor_range_stack_0; 
+                  ^~~~~~~~~~~~~~~~~~~~~~~~~
+                  constructor_range_stack
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/push_init_level/src/c-typeck.c:5036:33: note: 'constructor_range_stack' declared here
+struct constructor_range_stack *constructor_range_stack;
+                                ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/push_init_level/src/c-typeck.c:5828:1: error: use of undeclared identifier 'constructor_range_stack_0'; did you mean 'constructor_range_stack'?
+constructor_range_stack_0 = 0LL; 
+^~~~~~~~~~~~~~~~~~~~~~~~~
+constructor_range_stack
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/push_init_level/src/c-typeck.c:5036:33: note: 'constructor_range_stack' declared here
+struct constructor_range_stack *constructor_range_stack;
+                                ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/push_init_level/src/c-typeck.c:5917:32: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+constructor_max_index = ( tree)rtl[7]; 
+                               ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/push_init_level/src/c-typeck.c:5926:20: error: expected expression
+v14 = ( tree_node *)*( &global_trees + 17); 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/push_init_level/src/c-typeck.c:5926:9: error: use of undeclared identifier 'tree_node'
+v14 = ( tree_node *)*( &global_trees + 17); 
+        ^
+12 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/push_init_level/src/obj/c-typeck.o] Error 1

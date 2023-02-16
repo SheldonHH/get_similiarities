@@ -1,0 +1,33 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/create_basic_block_structure/src/cfgrtl.c:689:4: error: expected ';' after expression
+rtx v17; // rdx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/create_basic_block_structure/src/cfgrtl.c:689:5: error: use of undeclared identifier 'v17'
+rtx v17; // rdx 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/create_basic_block_structure/src/cfgrtl.c:694:82: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+if ( bb_note && ( *( ( _BYTE *)bb_note + 3) & 0x40) == 0 && ( v7 = ( basic_block)bb_note[2]) != 0LL && !v7->aux ) 
+                                                                                 ^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/create_basic_block_structure/src/cfgrtl.c:696:1: error: use of undeclared identifier 'v17'
+v17 = head; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/create_basic_block_structure/src/cfgrtl.c:699:1: error: use of undeclared identifier 'v17'
+v17 = ( rtx)head[1]; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/create_basic_block_structure/src/cfgrtl.c:702:6: error: use of undeclared identifier 'v17'
+if ( v17 != bb_note && v17[1].fld[0].rtx != bb_note ) 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/create_basic_block_structure/src/cfgrtl.c:702:24: error: use of undeclared identifier 'v17'
+if ( v17 != bb_note && v17[1].fld[0].rtx != bb_note ) 
+                       ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/create_basic_block_structure/src/cfgrtl.c:705:34: error: use of undeclared identifier 'v17'
+reorder_insns( bb_note, bb_note, v17); 
+                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/create_basic_block_structure/src/cfgrtl.c:754:46: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'unsigned long long' of different size
+*( __m128i *)&v7->head = _mm_unpacklo_epi64( ( __m128i)( unsigned __int64)rtx, ( __m128i)( unsigned __int64)end); 
+                                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/create_basic_block_structure/src/cfgrtl.c:754:80: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'unsigned long long' of different size
+*( __m128i *)&v7->head = _mm_unpacklo_epi64( ( __m128i)( unsigned __int64)rtx, ( __m128i)( unsigned __int64)end); 
+                                                                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+10 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/create_basic_block_structure/src/obj/cfgrtl.o] Error 1

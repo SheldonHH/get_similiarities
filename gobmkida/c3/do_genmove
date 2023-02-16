@@ -1,0 +1,101 @@
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/do_genmove/src/engine/genmove.c:751:10: error: conflicting types for 'do_genmove'
+__int64  do_genmove( int *move, int color, float pure_threat_value, int *allowed_moves, double a5, float a6) 
+         ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/do_genmove/src/engine/genmove.c:40:12: note: previous declaration is here
+static int do_genmove(int *move, int color, float pure_threat_value,
+           ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/do_genmove/src/engine/genmove.c:799:12: error: expected expression
+*( _OWORD *)&stats.nodes = 0LL; 
+           ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/do_genmove/src/engine/genmove.c:799:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&stats.nodes = 0LL; 
+   ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/do_genmove/src/engine/genmove.c:856:4: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v13.m128_i32[0] = 0; 
+~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/do_genmove/src/engine/genmove.c:862:21: error: invalid conversion between vector type '__m128' (vector of 4 'float' values) and integer type 'uint32' (aka 'unsigned int') of different size
+v16 = _mm_cmplt_ss( ( __m128)LODWORD( lower_bound), v13); 
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/do_genmove/src/engine/genmove.c:863:41: error: invalid conversion between vector type '__m128' (vector of 4 'float' values) and integer type 'uint32' (aka 'unsigned int') of different size
+v17 = COERCE_FLOAT( _mm_andnot_ps( v16, ( __m128)LODWORD( lower_bound)).m128_u32[0] | COERCE_UNSIGNED_INT( -lower_bound) & v16.m128_i32[0]); 
+                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/do_genmove/src/engine/genmove.c:863:127: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v17 = COERCE_FLOAT( _mm_andnot_ps( v16, ( __m128)LODWORD( lower_bound)).m128_u32[0] | COERCE_UNSIGNED_INT( -lower_bound) & v16.m128_i32[0]); 
+                                                                                                                           ~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/do_genmove/src/engine/genmove.c:872:21: error: invalid conversion between vector type '__m128' (vector of 4 'float' values) and integer type 'uint32' (aka 'unsigned int') of different size
+v27 = _mm_cmplt_ss( ( __m128)LODWORD( upper_bound), v13); 
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/do_genmove/src/engine/genmove.c:878:35: error: invalid conversion between vector type '__m128' (vector of 4 'float' values) and integer type 'uint32' (aka 'unsigned int') of different size
+COERCE_FLOAT( _mm_andnot_ps( v27, ( __m128)LODWORD( upper_bound)).m128_u32[0] | COERCE_UNSIGNED_INT( -upper_bound) & v27.m128_i32[0])); 
+                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/do_genmove/src/engine/genmove.c:878:121: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+COERCE_FLOAT( _mm_andnot_ps( v27, ( __m128)LODWORD( upper_bound)).m128_u32[0] | COERCE_UNSIGNED_INT( -upper_bound) & v27.m128_i32[0])); 
+                                                                                                                     ~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/do_genmove/src/engine/genmove.c:967:94: error: too many arguments to function call, expected 6, have 7
+if ( ( unsigned int)review_move_reasons( move, &v46, color, v47, lower_bound, allowed_moves, a6) && verbose ) 
+                    ~~~~~~~~~~~~~~~~~~~                                                      ^~
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/do_genmove/src/engine/liberty.h:530:1: note: 'review_move_reasons' declared here
+int review_move_reasons(int *move, float *val, int color,
+^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/do_genmove/src/engine/genmove.c:980:59: error: too many arguments to function call, expected 2, have 3
+if ( ( unsigned int)revise_thrashing_dragon( color, 15.0, 10.0) ) 
+                    ~~~~~~~~~~~~~~~~~~~~~~~               ^~~~
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/do_genmove/src/engine/genmove.c:57:1: note: 'revise_thrashing_dragon' declared here
+static int revise_thrashing_dragon(int color, float advantage);
+^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/do_genmove/src/engine/genmove.c:985:88: error: too many arguments to function call, expected 6, have 7
+if ( ( unsigned int)review_move_reasons( move, &v46, color, v47, score, allowed_moves, a6) && verbose ) 
+                    ~~~~~~~~~~~~~~~~~~~                                                ^~
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/do_genmove/src/engine/liberty.h:530:1: note: 'review_move_reasons' declared here
+int review_move_reasons(int *move, float *val, int color,
+^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/do_genmove/src/engine/genmove.c:1001:88: error: too many arguments to function call, expected 6, have 7
+if ( ( unsigned int)review_move_reasons( move, &v46, color, v47, score, allowed_moves, a6) && verbose ) 
+                    ~~~~~~~~~~~~~~~~~~~                                                ^~
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/do_genmove/src/engine/liberty.h:530:1: note: 'review_move_reasons' declared here
+int review_move_reasons(int *move, float *val, int color,
+^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/do_genmove/src/engine/genmove.c:1016:58: error: too many arguments to function call, expected 2, have 3
+if ( ( unsigned int)revise_thrashing_dragon( color, 0.0, 0.0) ) 
+                    ~~~~~~~~~~~~~~~~~~~~~~~              ^~~
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/do_genmove/src/engine/genmove.c:57:1: note: 'revise_thrashing_dragon' declared here
+static int revise_thrashing_dragon(int color, float advantage);
+^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/do_genmove/src/engine/genmove.c:1060:88: error: too many arguments to function call, expected 6, have 7
+if ( ( unsigned int)review_move_reasons( move, &v46, color, v47, score, allowed_moves, a6) && verbose ) 
+                    ~~~~~~~~~~~~~~~~~~~                                                ^~
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/do_genmove/src/engine/liberty.h:530:1: note: 'review_move_reasons' declared here
+int review_move_reasons(int *move, float *val, int color,
+^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/do_genmove/src/engine/genmove.c:1079:42: error: too many arguments to function call, expected 2, have 3
+record_top_move( *move, *( float *)&v36, 0.0); 
+~~~~~~~~~~~~~~~                          ^~~
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/do_genmove/src/engine/liberty.h:456:1: note: 'record_top_move' declared here
+void record_top_move(int move, float val);
+^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/do_genmove/src/engine/genmove.c:1081:24: error: use of undeclared identifier 'dword_9C7D6C'
+if ( v46 > *( float *)&dword_9C7D6C[19 * ( *move / 20) - 19 + v37] ) 
+                       ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/do_genmove/src/engine/genmove.c:1082:13: error: use of undeclared identifier 'dword_9C7D6C'
+*( float *)&dword_9C7D6C[19 * ( *move / 20) - 19 + v37] = v46; 
+            ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/do_genmove/src/engine/genmove.c:1114:42: error: too many arguments to function call, expected 2, have 3
+record_top_move( *move, *( float *)&v39, *( float *)&v31); 
+~~~~~~~~~~~~~~~                          ^~~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/do_genmove/src/engine/liberty.h:456:1: note: 'record_top_move' declared here
+void record_top_move(int move, float val);
+^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/do_genmove/src/engine/genmove.c:1116:24: error: use of undeclared identifier 'dword_9C7D6C'
+if ( v46 > *( float *)&dword_9C7D6C[19 * ( *move / 20) - 19 + v40] ) 
+                       ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/do_genmove/src/engine/genmove.c:1117:13: error: use of undeclared identifier 'dword_9C7D6C'
+*( float *)&dword_9C7D6C[19 * ( *move / 20) - 19 + v40] = v46; 
+            ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/do_genmove/src/engine/genmove.c:1150:24: error: use of undeclared identifier 'dword_9C7D6C'
+if ( v42 > *( float *)&dword_9C7D6C[19 * ( *move / 20) - 19 + v43] ) 
+                       ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/do_genmove/src/engine/genmove.c:1151:13: error: use of undeclared identifier 'dword_9C7D6C'
+*( float *)&dword_9C7D6C[19 * ( *move / 20) - 19 + v43] = v42; 
+            ^
+24 errors generated.
+make: *** [/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/do_genmove/src/obj/1/genmove.o] Error 1

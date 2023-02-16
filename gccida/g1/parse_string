@@ -1,0 +1,44 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/parse_string/src/cpplex.c:1092:21: error: unknown type name 'cpp_reader_0'; did you mean 'cpp_reader'?
+void  parse_string( cpp_reader_0 *pfile, cpp_token_0 *token, cppchar_t terminator) 
+                    ^~~~~~~~~~~~
+                    cpp_reader
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/parse_string/src/cpplib.h:36:27: note: 'cpp_reader' declared here
+typedef struct cpp_reader cpp_reader;
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/parse_string/src/cpplex.c:1092:42: error: unknown type name 'cpp_token_0'; did you mean 'cpp_token'?
+void  parse_string( cpp_reader_0 *pfile, cpp_token_0 *token, cppchar_t terminator) 
+                                         ^~~~~~~~~~~
+                                         cpp_token
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/parse_string/src/cpplib.h:40:26: note: 'cpp_token' declared here
+typedef struct cpp_token cpp_token;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/parse_string/src/cpplex.c:1094:1: error: unknown type name 'cpp_buffer_0'; did you mean 'cpp_buffer'?
+cpp_buffer_0 *buffer; // r13 
+^~~~~~~~~~~~
+cpp_buffer
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/parse_string/src/cpplib.h:38:27: note: 'cpp_buffer' declared here
+typedef struct cpp_buffer cpp_buffer;
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/parse_string/src/cpplex.c:1095:1: error: unknown type name '_cpp_buff_0'; did you mean '_cpp_buff'?
+_cpp_buff_0 *u_buff; // rax 
+^~~~~~~~~~~
+_cpp_buff
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/parse_string/src/cpphash.h:47:26: note: '_cpp_buff' declared here
+typedef struct _cpp_buff _cpp_buff;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/parse_string/src/cpplex.c:1099:1: error: unknown type name '_cpp_buff_0'; did you mean '_cpp_buff'?
+_cpp_buff_0 *v9; // rax 
+^~~~~~~~~~~
+_cpp_buff
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/parse_string/src/cpphash.h:47:26: note: '_cpp_buff' declared here
+typedef struct _cpp_buff _cpp_buff;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/parse_string/src/cpplex.c:1147:8: error: use of undeclared identifier 'sch_istable'; did you mean '_sch_istable'?
+if ( ( sch_istable[( unsigned __int8)v10] & 0x400) != 0 ) 
+       ^~~~~~~~~~~
+       _sch_istable
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/parse_string/src/safe-ctype.h:72:29: note: '_sch_istable' declared here
+extern const unsigned short _sch_istable[256];
+                            ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/parse_string/src/obj/cpplex.o] Error 1

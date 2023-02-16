@@ -1,0 +1,66 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/compute_branch_probabilities/src/profile.c:681:4: error: expected ';' after expression
+rtx end; // r12 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/compute_branch_probabilities/src/profile.c:681:5: error: use of undeclared identifier 'end'
+rtx end; // r12 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/compute_branch_probabilities/src/profile.c:686:1: error: use of undeclared identifier 'bb_info_1'
+bb_info_1 *bi; // [rsp+78h] [rbp-C8h] 
+^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/compute_branch_probabilities/src/profile.c:686:12: error: use of undeclared identifier 'bi'
+bb_info_1 *bi; // [rsp+78h] [rbp-C8h] 
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/compute_branch_probabilities/src/profile.c:689:4: error: expected ';' after expression
+rtx note; // [rsp+90h] [rbp-B0h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/compute_branch_probabilities/src/profile.c:689:5: error: use of undeclared identifier 'note'; did you mean 'none'?
+rtx note; // [rsp+90h] [rbp-B0h] 
+    ^~~~
+    none
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/compute_branch_probabilities/src/expr.h:119:17: note: 'none' declared here
+enum direction {none, upward, downward};  /* Value has this type.  */
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/compute_branch_probabilities/src/profile.c:808:1: error: use of undeclared identifier 'bi'
+bi = ( bb_info_1 *)v2->aux; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/compute_branch_probabilities/src/profile.c:808:19: error: expected expression
+bi = ( bb_info_1 *)v2->aux; 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/compute_branch_probabilities/src/profile.c:808:8: error: use of undeclared identifier 'bb_info_1'
+bi = ( bb_info_1 *)v2->aux; 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/compute_branch_probabilities/src/profile.c:809:19: error: use of undeclared identifier 'bi'
+if ( ( *( _BYTE *)bi & 1) == 0 ) 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/compute_branch_probabilities/src/profile.c:811:6: error: use of undeclared identifier 'bi'
+if ( bi->succ_count ) 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/compute_branch_probabilities/src/profile.c:813:7: error: use of undeclared identifier 'bi'
+if ( !bi->pred_count ) 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/compute_branch_probabilities/src/profile.c:819:12: error: use of undeclared identifier 'bi'
+*( _BYTE *)bi |= 1u; 
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/compute_branch_probabilities/src/profile.c:829:12: error: use of undeclared identifier 'bi'
+*( _BYTE *)bi |= 1u; 
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/compute_branch_probabilities/src/profile.c:833:19: error: use of undeclared identifier 'bi'
+if ( ( *( _BYTE *)bi & 1) != 0 ) 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/compute_branch_probabilities/src/profile.c:835:6: error: use of undeclared identifier 'bi'
+if ( bi->succ_count == 1 ) 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/compute_branch_probabilities/src/profile.c:851:3: error: use of undeclared identifier 'bi'
+--bi->succ_count; 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/compute_branch_probabilities/src/profile.c:855:6: error: use of undeclared identifier 'bi'
+if ( bi->pred_count == 1 ) 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/compute_branch_probabilities/src/profile.c:871:3: error: use of undeclared identifier 'bi'
+--bi->pred_count; 
+  ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/compute_branch_probabilities/src/obj/profile.o] Error 1

@@ -1,0 +1,9 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/set_unique_reg_note/src/emit-rtl.c:4779:37: error: must use 'enum' tag to refer to type 'reg_note'
+rtx  set_unique_reg_note( rtx insn, reg_note kind, rtx datum) 
+                                    ^
+                                    enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/set_unique_reg_note/src/emit-rtl.c:4804:39: error: use of undeclared identifier 'machine_mode'
+result = gen_rtx_fmt_ee( EXPR_LIST, ( machine_mode)kind, datum, insn[3].fld[0].rtx); 
+                                      ^
+2 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/set_unique_reg_note/src/obj/emit-rtl.o] Error 1

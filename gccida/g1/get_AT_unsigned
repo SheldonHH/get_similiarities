@@ -1,0 +1,66 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/get_AT_unsigned/src/dwarf2out.c:5332:48: error: must use 'enum' tag to refer to type 'dwarf_attribute'
+unsigned int  get_AT_unsigned( dw_die_ref die, dwarf_attribute attr_kind) 
+                                               ^
+                                               enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/get_AT_unsigned/src/dwarf2out.c:5336:1: error: must use 'enum' tag to refer to type 'dwarf_attribute'
+dwarf_attribute dw_attr; // edx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/get_AT_unsigned/src/dwarf2out.c:5339:1: error: must use 'enum' tag to refer to type 'dwarf_attribute'
+dwarf_attribute v8; // ecx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/get_AT_unsigned/src/dwarf2out.c:5340:4: error: expected ';' after expression
+rtx v9; // rdi 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/get_AT_unsigned/src/dwarf2out.c:5340:5: error: use of undeclared identifier 'v9'
+rtx v9; // rdi 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/get_AT_unsigned/src/dwarf2out.c:5342:1: error: must use 'enum' tag to refer to type 'dwarf_attribute'
+dwarf_attribute v11; // edx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/get_AT_unsigned/src/dwarf2out.c:5358:30: error: use of undeclared identifier 'a'
+fancy_abort( ( const char *)&a, 4588, "AT_ref"); 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/get_AT_unsigned/src/dwarf2out.c:5366:13: error: expected ';' after expression
+rtx = ( rtx)val_addr[1]; 
+            ^
+            ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/get_AT_unsigned/src/dwarf2out.c:5379:13: error: invalid operands to binary expression ('struct rtx_def' and 'int')
+if ( rtx[1] != 10 ) 
+     ~~~~~~ ^  ~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/get_AT_unsigned/src/dwarf2out.c:5380:30: error: use of undeclared identifier 'a'
+fancy_abort( ( const char *)&a, 4588, "AT_ref"); 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/get_AT_unsigned/src/dwarf2out.c:5399:30: error: use of undeclared identifier 'a'
+fancy_abort( ( const char *)&a, 4588, "AT_ref"); 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/get_AT_unsigned/src/dwarf2out.c:5407:1: error: use of undeclared identifier 'v9'
+v9 = ( rtx)rtx[1]; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/get_AT_unsigned/src/dwarf2out.c:5408:7: error: use of undeclared identifier 'v9'
+if ( !v9 ) 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/get_AT_unsigned/src/dwarf2out.c:5412:19: error: use of undeclared identifier 'v9'
+v10 = *( _DWORD *)v9; 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/get_AT_unsigned/src/dwarf2out.c:5413:31: error: use of undeclared identifier 'v9'
+if ( attr_kind == *( _DWORD *)v9 ) 
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/get_AT_unsigned/src/dwarf2out.c:5415:26: error: use of undeclared identifier 'v9'
+die_attr = ( dw_attr_ref)v9; 
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/get_AT_unsigned/src/dwarf2out.c:5420:6: error: use of undeclared identifier 'v9'
+if ( v9[1] != 10 ) 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/get_AT_unsigned/src/dwarf2out.c:5421:30: error: use of undeclared identifier 'a'
+fancy_abort( ( const char *)&a, 4588, "AT_ref"); 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/get_AT_unsigned/src/dwarf2out.c:5422:26: error: use of undeclared identifier 'v9'
+die_attr = ( dw_attr_ref)v9[1].fld[0].rtwint; 
+                         ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/get_AT_unsigned/src/obj/dwarf2out.o] Error 1

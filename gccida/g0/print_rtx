@@ -1,0 +1,62 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/print_rtx/src/print-rtl.c:581:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v8; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/print_rtx/src/print-rtl.c:591:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code subc; // [rsp+2Ch] [rbp-34h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/print_rtx/src/print-rtl.c:609:74: error: use of undeclared identifier 'unk_7FF665'
+fprintf( outfile, "\n%s%*s", print_rtx_head, 2 * indent, ( const char *)&unk_7FF665); 
+                                                                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/print_rtx/src/print-rtl.c:670:27: error: invalid operands to binary expression ('int' and 'struct rtx_def')
+if ( in_rtx->fld[0].rtint != in_rtx[1] ) 
+     ~~~~~~~~~~~~~~~~~~~~ ^  ~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/print_rtx/src/print-rtl.c:683:20: error: use of undeclared identifier 'off_7FF7A0'
+fprintf( outfile, &off_7FF7A0[4], *( _QWORD *)&in_rtx[2]); 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/print_rtx/src/print-rtl.c:687:1: error: statement requires expression of scalar type ('struct rtx_def' invalid)
+if ( in_rtx[2] ) 
+^    ~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/print_rtx/src/print-rtl.c:697:19: error: use of undeclared identifier 'off_7FF7A0'
+fprintf( outfile, off_7FF7A0, *( _DWORD *)&in_rtx[2]); 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/print_rtx/src/print-rtl.c:708:20: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+bb = ( basic_block)in_rtx[2]; 
+                   ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/print_rtx/src/print-rtl.c:710:20: error: use of undeclared identifier 'off_7FF7A0'
+fprintf( outfile, &off_7FF7A0[7], ( unsigned int)bb->index); 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/print_rtx/src/print-rtl.c:721:24: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+str_0 = ( const char *)in_rtx[2]; 
+                       ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/print_rtx/src/print-rtl.c:749:74: error: use of undeclared identifier 'unk_7FF665'
+fprintf( outfile, "\n%s%*s", print_rtx_head, 2 * indent, ( const char *)&unk_7FF665); 
+                                                                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/print_rtx/src/print-rtl.c:763:74: error: use of undeclared identifier 'unk_7FF665'
+fprintf( outfile, "\n%s%*s", print_rtx_head, 2 * indent, ( const char *)&unk_7FF665); 
+                                                                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/print_rtx/src/print-rtl.c:805:19: error: use of undeclared identifier 'off_7FF7A0'
+fprintf( outfile, off_7FF7A0, *( _DWORD *)&in_rtx[3]); 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/print_rtx/src/print-rtl.c:871:8: error: use of undeclared identifier 'hi_name_2'
+fputs( hi_name_2[in_rtx->fld[0].rtuint], outfile); 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/print_rtx/src/print-rtl.c:883:8: error: use of undeclared identifier 'hi_name_2'
+fputs( hi_name_2[in_rtx->fld[0].rtuint], outfile); 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/print_rtx/src/print-rtl.c:886:8: error: use of undeclared identifier 'qi_name_1'
+fputs( qi_name_1[in_rtx->fld[0].rtuint], outfile); 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/print_rtx/src/print-rtl.c:920:19: error: use of undeclared identifier 'off_7FF7A0'
+fprintf( outfile, off_7FF7A0, ( unsigned int)value); 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/print_rtx/src/print-rtl.c:936:19: error: use of undeclared identifier 'off_7FF7A0'
+fprintf( outfile, off_7FF7A0, in_rtx->fld[i].rtuint); 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/print_rtx/src/print-rtl.c:938:19: error: use of undeclared identifier 'off_7FF723'
+fprintf( outfile, off_7FF723, note_insn_name[in_rtx->fld[i].rtint + 100]); 
+                  ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/print_rtx/src/obj/print-rtl.o] Error 1

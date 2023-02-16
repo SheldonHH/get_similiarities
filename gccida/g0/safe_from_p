@@ -1,0 +1,45 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/safe_from_p/src/expr.c:6045:1: error: use of undeclared identifier 'save_expr_list_4'
+save_expr_list_4 = 0LL; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/safe_from_p/src/expr.c:6047:11: error: use of undeclared identifier 'save_expr_list_4'; did you mean 'in_expr_list_p'?
+for ( t = save_expr_list_4; t; t = t->common.chain ) 
+          ^~~~~~~~~~~~~~~~
+          in_expr_list_p
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/safe_from_p/src/rtl.h:1510:12: note: 'in_expr_list_p' declared here
+extern int in_expr_list_p               PARAMS ((rtx, rtx));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/safe_from_p/src/expr.c:6108:1: error: use of undeclared identifier 'save_expr_list_4'
+save_expr_list_4 = tree_cons( exp, 0LL, save_expr_list_4); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/safe_from_p/src/expr.c:6108:41: error: use of undeclared identifier 'save_expr_list_4'; did you mean 'in_expr_list_p'?
+save_expr_list_4 = tree_cons( exp, 0LL, save_expr_list_4); 
+                                        ^~~~~~~~~~~~~~~~
+                                        in_expr_list_p
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/safe_from_p/src/rtl.h:1510:12: note: 'in_expr_list_p' declared here
+extern int in_expr_list_p               PARAMS ((rtx, rtx));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/safe_from_p/src/expr.c:6127:12: error: used type 'struct rtx_def' where arithmetic or pointer type is required
+v8 = xa[1] ? **( _QWORD **)&xa[1] : 0LL; 
+     ~~~~~ ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/safe_from_p/src/expr.c:6156:24: error: use of undeclared identifier 'tree_code'; did you mean 'tree_cons'?
+nops = first_rtl_op( ( tree_code)*( ( unsigned __int8 *)&expa->block.common + 16)); 
+                       ^~~~~~~~~
+                       tree_cons
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/safe_from_p/src/tree.h:2477:13: note: 'tree_cons' declared here
+extern tree tree_cons                   PARAMS ((tree, tree, tree));
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/safe_from_p/src/expr.c:6156:34: error: invalid operands to binary expression ('tree (tree, tree, tree)' (aka 'union tree_node *(union tree_node *, union tree_node *, union tree_node *)') and 'unsigned char *')
+nops = first_rtl_op( ( tree_code)*( ( unsigned __int8 *)&expa->block.common + 16)); 
+                     ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/safe_from_p/src/expr.c:6162:57: error: use of undeclared identifier 'lang_hooks_0'; did you mean 'lang_hooks'?
+if ( *( ( _BYTE *)&expa->block.common + 16) > 0x92u && !lang_hooks_0.safe_from_p( xa, expa) ) 
+                                                        ^~~~~~~~~~~~
+                                                        lang_hooks
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/safe_from_p/src/langhooks.h:168:32: note: 'lang_hooks' declared here
+extern const struct lang_hooks lang_hooks;
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/safe_from_p/src/expr.c:6162:81: error: called object type '<dependent type>' is not a function or function pointer
+if ( *( ( _BYTE *)&expa->block.common + 16) > 0x92u && !lang_hooks_0.safe_from_p( xa, expa) ) 
+                                                                                ^
+9 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/safe_from_p/src/obj/expr.o] Error 1

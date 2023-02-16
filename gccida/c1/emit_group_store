@@ -1,0 +1,71 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_group_store/src/expr.c:2542:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v26; // r15d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_group_store/src/expr.c:2547:4: error: expected ';' after expression
+rtx srca; // [rsp+8h] [rbp-68h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_group_store/src/expr.c:2547:5: error: use of undeclared identifier 'srca'; did you mean 'src'?
+rtx srca; // [rsp+8h] [rbp-68h] 
+    ^~~~
+    src
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_group_store/src/expr.c:2517:43: note: 'src' declared here
+void  emit_group_store( rtx orig_dst, rtx src, int ssize) 
+                                          ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_group_store/src/expr.c:2548:4: error: expected ';' after expression
+rtx dest; // [rsp+10h] [rbp-60h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_group_store/src/expr.c:2548:5: error: use of undeclared identifier 'dest'
+rtx dest; // [rsp+10h] [rbp-60h] 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_group_store/src/expr.c:2550:6: error: use of undeclared identifier 'tmps'
+rtx *tmps; // [rsp+20h] [rbp-50h] 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_group_store/src/expr.c:2552:4: error: expected ';' after expression
+rtx dst; // [rsp+30h] [rbp-40h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_group_store/src/expr.c:2552:5: error: use of undeclared identifier 'dst'
+rtx dst; // [rsp+30h] [rbp-40h] 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_group_store/src/expr.c:2557:1: error: use of undeclared identifier 'dst'
+dst = orig_dst; 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_group_store/src/expr.c:2563:13: error: expected expression
+v5 = ( rtx *)( ( char *)&v30 - ( ( 8LL * *rtwint + 15) & 0xFFFFFFFFFFFFFFF0LL)); 
+            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_group_store/src/expr.c:2571:21: error: use of undeclared identifier 'machine_mode'
+v9 = gen_reg_rtx( ( machine_mode)*( unsigned __int8 *)( v8 + 2)); 
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_group_store/src/expr.c:2573:27: error: expected ')'
+emit_move_insn( v9, ( rtx)v8); 
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_group_store/src/expr.c:2573:15: note: to match this '('
+emit_move_insn( v9, ( rtx)v8); 
+              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_group_store/src/expr.c:2579:1: error: use of undeclared identifier 'tmps'
+tmps = v5; 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_group_store/src/expr.c:2581:7: error: use of undeclared identifier 'dst'
+v10 = dst; 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_group_store/src/expr.c:2582:19: error: use of undeclared identifier 'dst'
+v11 = *( _DWORD *)dst; 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_group_store/src/expr.c:2583:39: error: use of undeclared identifier 'dst'
+if ( ( unsigned __int16)( *( _DWORD *)dst - 65) >= 2u ) 
+                                      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_group_store/src/expr.c:2587:20: error: use of undeclared identifier 'dst'
+if ( !rtx_equal_p( dst, src) ) 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_group_store/src/expr.c:2589:7: error: use of undeclared identifier 'dst'
+v12 = dst; 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_group_store/src/expr.c:2591:28: error: use of undeclared identifier 'machine_mode'
+v14 = assign_stack_temp( ( machine_mode)*( ( unsigned __int8 *)dst + 2), ssizea, 0); 
+                           ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_group_store/src/obj/expr.o] Error 1

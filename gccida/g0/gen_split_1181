@@ -1,0 +1,24 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_split_1181/src/insn-emit.c:15177:39: error: use of undeclared identifier 'machine_mode'
+operands[4] = ix86_force_to_memory( ( machine_mode)*( ( unsigned __int8 *)operands[1] + 2), operands[1]); 
+                                      ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_split_1181/src/insn-emit.c:15178:39: error: use of undeclared identifier 'machine_mode'
+operands[4] = gen_rtx_fmt_e( FLOAT, ( machine_mode)*( ( unsigned __int8 *)*operands + 2), operands[4]); 
+                                      ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_split_1181/src/insn-emit.c:15180:3: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+( rtx_code)*( _WORD *)operands[3], 
+  ^~~~~~~~
+  rtx_cost
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_split_1181/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_split_1181/src/insn-emit.c:15180:12: error: invalid operands to binary expression ('int (rtx, enum rtx_code)' (aka 'int (struct rtx_def *, enum rtx_code)') and 'uint16 *' (aka 'unsigned short *'))
+( rtx_code)*( _WORD *)operands[3], 
+~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_split_1181/src/insn-emit.c:15181:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)operands[3] + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_split_1181/src/insn-emit.c:15186:26: error: use of undeclared identifier 'machine_mode'
+ix86_free_from_memory( ( machine_mode)*( ( unsigned __int8 *)operands[1] + 2)); 
+                         ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_split_1181/src/obj/insn-emit.o] Error 1

@@ -1,0 +1,47 @@
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_strategical_value/src/engine/value_moves.c:2489:4: error: assigning to '__m128d' (vector of 2 'double' values) from incompatible type 'long long'
+v8 = 0LL; 
+   ^ ~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_strategical_value/src/engine/value_moves.c:2490:3: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+v8.m128d_f64[0] = a3 * 0.65; 
+~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_strategical_value/src/engine/value_moves.c:2492:25: error: invalid conversion between vector type '__m128d' (vector of 2 'double' values) and integer type 'long long' of different size
+v10 = _mm_cmplt_sd( v8, ( __m128d)0LL).m128d_f64[0]; 
+                        ^~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_strategical_value/src/engine/value_moves.c:2493:55: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+*( _QWORD *)&v97 = ~*( _QWORD *)&v10 & *( _QWORD *)&v8.m128d_f64[0] | COERCE_UNSIGNED_INT64( -v8.m128d_f64[0]) & *( _QWORD *)&v10; 
+                                                    ~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_strategical_value/src/engine/value_moves.c:2493:97: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+*( _QWORD *)&v97 = ~*( _QWORD *)&v10 & *( _QWORD *)&v8.m128d_f64[0] | COERCE_UNSIGNED_INT64( -v8.m128d_f64[0]) & *( _QWORD *)&v10; 
+                                                                                              ~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_strategical_value/src/engine/value_moves.c:2494:14: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+*( float *)v8.m128d_f64 = v97; 
+           ~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_strategical_value/src/engine/value_moves.c:2495:20: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+v95 = *( float *)v8.m128d_f64; 
+                 ~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_strategical_value/src/engine/value_moves.c:2539:7: error: use of undeclared identifier 'qword_48CAC8'
+v20 = qword_48CAC8[v19]; 
+      ^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_strategical_value/src/engine/value_moves.c:2563:51: error: too many arguments to function call, expected 2, have 3
+d1d = soft_cap( dragon[v23].effective_size, 15.0, *( float *)&v9) * 1.8; 
+      ~~~~~~~~                                    ^~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_strategical_value/src/include/gg_utils.h:66:1: note: 'soft_cap' declared here
+float soft_cap(float a, float b);
+^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_strategical_value/src/engine/value_moves.c:2638:7: error: use of undeclared identifier 'qword_48CB40'
+v62 = qword_48CB40[dragon2[dragon[d1b].id].safety == 5]; 
+      ^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_strategical_value/src/engine/value_moves.c:2744:51: error: too many arguments to function call, expected 2, have 3
+d1f = soft_cap( dragon[v28].effective_size, 15.0, *( float *)&v9) * 1.8; 
+      ~~~~~~~~                                    ^~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_strategical_value/src/include/gg_utils.h:66:1: note: 'soft_cap' declared here
+float soft_cap(float a, float b);
+^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_strategical_value/src/engine/value_moves.c:2970:49: error: too few arguments to function call, expected 4, have 3
+    estimate_strategical_value(pos, color, score);
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~                  ^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_strategical_value/src/engine/value_moves.c:2382:1: note: 'estimate_strategical_value' declared here
+void  estimate_strategical_value( int pos, int color, float a3, float score) 
+^
+12 errors generated.
+make: *** [/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_strategical_value/src/obj/1/value_moves.o] Error 1

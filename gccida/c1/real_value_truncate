@@ -1,0 +1,23 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/real_value_truncate/src/real.c:1565:10: error: conflicting types for 'real_value_truncate'
+__int64  real_value_truncate( 
+         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/real_value_truncate/src/real.h:406:24: note: previous declaration is here
+extern REAL_VALUE_TYPE real_value_truncate PARAMS ((enum machine_mode,
+                       ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/real_value_truncate/src/real.c:1593:12: error: expected expression
+*( _OWORD *)v10.r = a7; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/real_value_truncate/src/real.c:1593:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)v10.r = a7; 
+   ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/real_value_truncate/src/real.c:1594:10: error: passing 'realvaluetype *' to parameter of incompatible type 'realvaluetype'; remove &
+etrunci( &v15, v10); 
+         ^~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/real_value_truncate/src/real.c:1622:12: error: expected expression
+*( _OWORD *)a1 = *( _OWORD *)v8->r; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/real_value_truncate/src/real.c:1622:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)a1 = *( _OWORD *)v8->r; 
+   ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/real_value_truncate/src/obj/real.o] Error 1

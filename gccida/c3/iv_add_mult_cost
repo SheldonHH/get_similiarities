@@ -1,0 +1,14 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/iv_add_mult_cost/src/loop.c:8242:43: error: use of undeclared identifier 'machine_mode'
+result = expand_mult_add( b, reg, m, a, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)reg), 1); 
+                                          ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/iv_add_mult_cost/src/loop.c:8242:58: error: expected expression
+result = expand_mult_add( b, reg, m, a, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)reg), 1); 
+                                                         ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/iv_add_mult_cost/src/loop.c:8245:51: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( last = get_last_insn( ); last; last = ( rtx)last[1] ) 
+                                                  ^~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/iv_add_mult_cost/src/loop.c:8250:12: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v6 = ( rtx)last[2]; 
+           ^~~~~~~
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/iv_add_mult_cost/src/obj/loop.o] Error 1

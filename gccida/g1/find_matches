@@ -1,0 +1,30 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_matches/src/regmove.c:2015:16: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+LODWORD( v3) = recog_data_0.n_operands - 1; 
+               ^~~~~~~~~~~~
+               recog_data
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_matches/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_matches/src/regmove.c:2026:6: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( recog_data_0.n_operands <= 0 ) 
+     ^~~~~~~~~~~~
+     recog_data
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_matches/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_matches/src/regmove.c:2037:6: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+v8 = recog_data_0.constraints[v4]; 
+     ^~~~~~~~~~~~
+     recog_data
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_matches/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_matches/src/regmove.c:2139:9: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+while ( recog_data_0.n_operands > ( int)v4 ); 
+        ^~~~~~~~~~~~
+        recog_data
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_matches/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_matches/src/obj/regmove.o] Error 1

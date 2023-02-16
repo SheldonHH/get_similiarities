@@ -1,0 +1,68 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_fix/src/optabs.c:4821:1: error: unknown type name 'optab_0'; did you mean 'optab'?
+optab_0 v3; // r8 
+^~~~~~~
+optab
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_fix/src/optabs.h:48:5: note: 'optab' declared here
+} * optab;
+    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_fix/src/optabs.c:4830:7: error: expected expression
+optab::$B50C8071A5A789E219D5EDC319094081 *v12; // r11 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_fix/src/optabs.c:4831:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v13; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_fix/src/optabs.c:4837:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v19; // r13d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_fix/src/optabs.c:4855:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v37; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_fix/src/optabs.c:4861:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v43; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_fix/src/optabs.c:4903:1: error: use of undeclared identifier 'v12'
+v12 = &optab_table[17]->handlers[v10]; 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_fix/src/optabs.c:4913:21: error: expected expression
+v17 = *( insn_code *)( ( char *)&fixtrunctab[0][0][v9] + v16); 
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_fix/src/optabs.c:4913:10: error: use of undeclared identifier 'insn_code'
+v17 = *( insn_code *)( ( char *)&fixtrunctab[0][0][v9] + v16); 
+         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_fix/src/optabs.c:4918:6: error: use of undeclared identifier 'v12'
+if ( v12->insn_code != CODE_FOR_nothing ) 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_fix/src/optabs.c:4920:21: error: expected expression
+v17 = *( insn_code *)( ( char *)&fixtab[0][0][v9] + v16); 
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_fix/src/optabs.c:4920:10: error: use of undeclared identifier 'insn_code'
+v17 = *( insn_code *)( ( char *)&fixtab[0][0][v9] + v16); 
+         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_fix/src/optabs.c:4930:6: error: use of undeclared identifier 'v12'
+if ( v12->insn_code != CODE_FOR_nothing ) 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_fix/src/optabs.c:4945:26: error: use of undeclared identifier 'machine_mode'
+v52 = convert_to_mode( ( machine_mode)v11, v52, 0); 
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_fix/src/optabs.c:4948:22: error: use of undeclared identifier 'machine_mode'
+v53 = gen_reg_rtx( ( machine_mode)*( ( unsigned __int8 *)v52 + 2)); 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_fix/src/optabs.c:4949:22: error: use of undeclared identifier 'machine_mode'
+v52 = expand_unop( ( machine_mode)*( ( unsigned __int8 *)v52 + 2), optab_table[17], v52, v53, 0); 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_fix/src/optabs.c:4970:21: error: expected expression
+v17 = *( insn_code *)( ( char *)&fixtrunctab[0][0][v9] + v21); 
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_fix/src/optabs.c:4970:10: error: use of undeclared identifier 'insn_code'
+v17 = *( insn_code *)( ( char *)&fixtrunctab[0][0][v9] + v21); 
+         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_fix/src/optabs.c:4977:6: error: use of undeclared identifier 'v12'
+if ( v12->insn_code != CODE_FOR_nothing ) 
+     ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_fix/src/obj/optabs.o] Error 1

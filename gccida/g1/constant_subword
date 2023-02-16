@@ -1,0 +1,80 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/constant_subword/src/emit-rtl.c:1775:44: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  constant_subword( rtx op, int offset, machine_mode mode) 
+                                           ^
+                                           enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/constant_subword/src/emit-rtl.c:1777:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v4; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/constant_subword/src/emit-rtl.c:1778:1: error: must use 'enum' tag to refer to type 'mode_class'
+mode_class v5; // ecx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/constant_subword/src/machmode.h:52:30: note: enum 'mode_class' is hidden by a non-type declaration of 'mode_class' here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/constant_subword/src/emit-rtl.c:1801:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v5 = mode_class_0[mode]; 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/constant_subword/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/constant_subword/src/emit-rtl.c:1811:7: error: expected expression
+if (  struct op == const_int_rtx[64] ) 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/constant_subword/src/emit-rtl.c:1834:20: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+rtwint = ( __int64)op[1]; 
+                   ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/constant_subword/src/emit-rtl.c:1838:45: error: invalid suffix 'xmode' on integer constant
+v9 = trunc_int_for_mode( rtwint, *(short *)0xmode); 
+                                            ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/constant_subword/src/emit-rtl.c:1846:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v5 = mode_class_0[mode]; 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/constant_subword/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/constant_subword/src/emit-rtl.c:1865:28: error: expected expression
+if ( const_int_rtx[64] ==  struct op ) 
+                           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/constant_subword/src/emit-rtl.c:1871:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v21 = ( __int64)op[1]; 
+                ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/constant_subword/src/emit-rtl.c:1873:26: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v23 = ( unsigned __int64)op[2]; 
+                         ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/constant_subword/src/emit-rtl.c:1878:14: error: passing 'long long *' to parameter of incompatible type 'realvaluetype'
+etartdouble( &v21, v18); 
+             ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/constant_subword/src/real.h:162:50: note: passing argument to parameter here
+extern void etartdouble         PARAMS ((REAL_VALUE_TYPE, long *));
+                                                        ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/constant_subword/src/emit-rtl.c:1880:14: error: passing 'long long *' to parameter of incompatible type 'realvaluetype'
+etarldouble( &v21, v18); 
+             ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/constant_subword/src/real.h:163:50: note: passing argument to parameter here
+extern void etarldouble         PARAMS ((REAL_VALUE_TYPE, long *));
+                                                        ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/constant_subword/src/emit-rtl.c:1895:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v21 = ( __int64)op[1]; 
+                ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/constant_subword/src/emit-rtl.c:1897:22: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v19.r[2] = ( __int64)op[2]; 
+                     ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/constant_subword/src/emit-rtl.c:1908:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v21 = ( __int64)op[1]; 
+                ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/constant_subword/src/emit-rtl.c:1910:26: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v23 = ( unsigned __int64)op[2]; 
+                         ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/constant_subword/src/emit-rtl.c:1911:12: error: expected expression
+*( _OWORD *)&v20.r[1] = __PAIR128__( v23, v14); 
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/constant_subword/src/emit-rtl.c:1911:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&v20.r[1] = __PAIR128__( v23, v14); 
+   ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/constant_subword/src/obj/emit-rtl.o] Error 1

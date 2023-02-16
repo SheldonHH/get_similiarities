@@ -1,0 +1,22 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/_cpp_init_tokenrun/src/cpplex.c:1216:26: error: unknown type name 'tokenrun_0'; did you mean 'tokenrun'?
+void  cpp_init_tokenrun( tokenrun_0 *run, unsigned int count) 
+                         ^~~~~~~~~~
+                         tokenrun
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/_cpp_init_tokenrun/src/cpphash.h:97:25: note: 'tokenrun' declared here
+typedef struct tokenrun tokenrun;
+                        ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/_cpp_init_tokenrun/src/cpplex.c:1218:1: error: unknown type name 'cpp_token_0'; did you mean 'cpp_token'?
+cpp_token_0 *v2; // rax 
+^~~~~~~~~~~
+cpp_token
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/_cpp_init_tokenrun/src/cpplib.h:40:26: note: 'cpp_token' declared here
+typedef struct cpp_token cpp_token;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/_cpp_init_tokenrun/src/cpplex.c:1220:21: error: expected expression
+v2 = ( cpp_token_0 *)xmalloc( 24LL * count); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/_cpp_init_tokenrun/src/cpplex.c:1220:8: error: use of undeclared identifier 'cpp_token_0'
+v2 = ( cpp_token_0 *)xmalloc( 24LL * count); 
+       ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/_cpp_init_tokenrun/src/obj/cpplex.o] Error 1

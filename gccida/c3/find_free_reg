@@ -1,0 +1,77 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_free_reg/src/local-alloc.c:2648:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class a1, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_free_reg/src/local-alloc.c:2649:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_free_reg/src/local-alloc.c:2647:10: error: conflicting types for 'find_free_reg'
+__int64  find_free_reg( 
+         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_free_reg/src/local-alloc.c:299:12: note: previous declaration is here
+static int find_free_reg        PARAMS ((enum reg_class, enum machine_mode,
+           ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_free_reg/src/local-alloc.c:2747:6: error: use of undeclared identifier 'qty_0'
+if ( qty_0[v8].n_calls_crossed > 0 ) 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_free_reg/src/local-alloc.c:2764:7: error: use of undeclared identifier 'qty_0'
+if ( !qty_0[v8].n_calls_crossed ) 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_free_reg/src/local-alloc.c:2779:7: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'HARD_REG_ELT_TYPE' (aka 'unsigned long long') of different size
+v14 = ( __m128i)v11; 
+      ^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_free_reg/src/local-alloc.c:2783:5: error: assigning to '__m128i' (vector of 2 'long long' values) from incompatible type 'long long'
+v15 = 0LL; 
+    ^ ~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_free_reg/src/local-alloc.c:2809:5: error: assigning to '__m128i' (vector of 2 'long long' values) from incompatible type 'long long'
+v15 = 0LL; 
+    ^ ~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_free_reg/src/local-alloc.c:2826:54: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+v11 = _mm_or_si128( _mm_shuffle_epi32( v21, 78), v21).m128i_u64[0]; 
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_free_reg/src/local-alloc.c:2852:19: error: use of undeclared identifier 'qty_0'
+n_calls_crossed = qty_0[v79].n_calls_crossed; 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_free_reg/src/local-alloc.c:2855:28: error: use of undeclared identifier 'qty_0'
+if ( 4 * n_calls_crossed < qty_0[v79].n_refs ) 
+                           ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_free_reg/src/local-alloc.c:2895:23: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( ( unsigned int)( mode_class_0[v73] - 5) >= 2 ) 
+                      ^~~~~~~~~~~~
+                      mode_class
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_free_reg/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_free_reg/src/local-alloc.c:2938:38: error: subscripted value is not an array, pointer, or vector
+v26 = ( unsigned int)*(int *)0x979AC4[v25]; 
+                             ~~~~~~~~^~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_free_reg/src/local-alloc.c:2953:23: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( ( unsigned int)( mode_class_0[v73] - 5) > 1 ) 
+                      ^~~~~~~~~~~~
+                      mode_class
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_free_reg/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_free_reg/src/local-alloc.c:2973:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v39 = ( ( unsigned int)( mode_class_0[v73] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_free_reg/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_free_reg/src/local-alloc.c:2983:33: error: subscripted value is not an array, pointer, or vector
+LODWORD( v26) = *(int *)0x718420[v37]; 
+                        ~~~~~~~~^~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_free_reg/src/local-alloc.c:3010:81: error: use of undeclared identifier 'xmm'
+v44 = _mm_add_epi32( _mm_shuffle_epi32( _mm_cvtsi32_si128( v39), 80), ( __m128i)xmm*(short *)0x65AE30); 
+                                                                                ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_free_reg/src/local-alloc.c:3014:44: error: use of undeclared identifier 'xmm'
+si128 = _mm_load_si128( ( const __m128i *)&xmm*(short *)0x65AE10); 
+                                           ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_free_reg/src/local-alloc.c:3015:42: error: use of undeclared identifier 'xmm'
+v48 = _mm_load_si128( ( const __m128i *)&xmm*(short *)0x65AE40); 
+                                         ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_free_reg/src/obj/local-alloc.o] Error 1

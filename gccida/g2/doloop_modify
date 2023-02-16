@@ -1,0 +1,14 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/doloop_modify/src/doloop.c:901:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v12.rtwint = ( __int64)condition->fld[0]; 
+                       ^~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/doloop_modify/src/doloop.c:909:12: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+if ( ( rtx)condition[1] != const_int_rtx[64] ) 
+           ^~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/doloop_modify/src/doloop.c:915:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v19 = (  struct rtx_def *)condition[1]; 
+                          ^~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/doloop_modify/src/doloop.c:928:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( unsigned __int8 *)( v12.rtwint + 2), 
+  ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/doloop_modify/src/obj/doloop.o] Error 1

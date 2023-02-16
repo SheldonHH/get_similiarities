@@ -1,0 +1,35 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/convert_modes/src/expr.c:1741:21: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  convert_modes( machine_mode mode, machine_mode oldmode, rtx x, int unsignedp) 
+                    ^
+                    enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/convert_modes/src/expr.c:1741:40: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  convert_modes( machine_mode mode, machine_mode oldmode, rtx x, int unsignedp) 
+                                       ^
+                                       enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/convert_modes/src/expr.c:1746:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v10; // edx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/convert_modes/src/expr.c:1770:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[mode] != MODE_INT ) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/convert_modes/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/convert_modes/src/expr.c:1796:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[oldmode] != MODE_INT 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/convert_modes/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/convert_modes/src/expr.c:1831:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[mode] != MODE_INT ) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/convert_modes/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/convert_modes/src/obj/expr.o] Error 1

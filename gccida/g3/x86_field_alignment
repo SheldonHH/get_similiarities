@@ -1,0 +1,22 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/x86_field_alignment/src/i386.c:13113:54: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( ( _DWORD)v5 == 16 || ( _DWORD)v5 == 22 || ( *( &mode_class_0 + v5) & 0xFFFFFFFB) == 1 ) 
+                                                     ^~~~~~~~~~~~
+                                                     mode_class
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/x86_field_alignment/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/x86_field_alignment/src/i386.c:13113:73: error: invalid operands to binary expression ('const enum mode_class [59]' and 'unsigned int')
+if ( ( _DWORD)v5 == 16 || ( _DWORD)v5 == 22 || ( *( &mode_class_0 + v5) & 0xFFFFFFFB) == 1 ) 
+                                                 ~~~~~~~~~~~~~~~~~~~~~~ ^ ~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/x86_field_alignment/src/i386.c:13127:54: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( ( _DWORD)v3 != 16 && ( _DWORD)v3 != 22 && ( *( &mode_class_0 + v3) & 0xFFFFFFFB) != 1 ) 
+                                                     ^~~~~~~~~~~~
+                                                     mode_class
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/x86_field_alignment/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/x86_field_alignment/src/i386.c:13127:73: error: invalid operands to binary expression ('const enum mode_class [59]' and 'unsigned int')
+if ( ( _DWORD)v3 != 16 && ( _DWORD)v3 != 22 && ( *( &mode_class_0 + v3) & 0xFFFFFFFB) != 1 ) 
+                                                 ~~~~~~~~~~~~~~~~~~~~~~ ^ ~~~~~~~~~~
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/x86_field_alignment/src/obj/i386.o] Error 1

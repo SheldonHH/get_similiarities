@@ -1,0 +1,26 @@
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/segment_region/src/engine/influence.c:1755:30: error: use of undeclared identifier 'marked_3'
+memset( marked_3, 0, sizeof( marked_3)); 
+                             ^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/segment_region/src/engine/influence.c:1755:9: error: use of undeclared identifier 'marked_3'
+memset( marked_3, 0, sizeof( marked_3)); 
+        ^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/segment_region/src/engine/influence.c:1761:25: error: use of undeclared identifier 'marked_3'
+if ( board[v4] != 3 && !marked_3[v4] && region_owner( q, v4) ) 
+                        ^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/segment_region/src/engine/influence.c:1767:1: error: use of undeclared identifier 'marked_3'
+marked_3[v4] = 1; 
+^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/segment_region/src/engine/influence.c:1799:26: error: use of undeclared identifier 'marked_3'
+if ( board[v16] != 3 && !marked_3[v16] && region_owner( v14, v16) == color ) 
+                         ^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/segment_region/src/engine/influence.c:1801:1: error: use of undeclared identifier 'marked_3'
+marked_3[v16] = 1; 
+^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/segment_region/src/engine/influence.c:1802:25: error: cannot assign to variable 'v14' with const-qualified type 'const struct influence_data *'
+v14->queue[queue_end++] = v16; 
+~~~~~~~~~~~~~~~~~~~~~~~ ^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/segment_region/src/engine/influence.c:1743:30: note: variable 'v14' declared const here
+const struct influence_data *v14; // r14 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+7 errors generated.
+make: *** [/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/segment_region/src/obj/1/influence.o] Error 1

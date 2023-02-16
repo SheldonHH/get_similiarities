@@ -1,0 +1,65 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/num_sign_bit_copies/src/combine.c:8858:43: error: must use 'enum' tag to refer to type 'machine_mode'
+unsigned int  num_sign_bit_copies( rtx x, machine_mode mode) 
+                                          ^
+                                          enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/num_sign_bit_copies/src/combine.c:8907:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code; // [rsp+C8h] [rbp-18h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/num_sign_bit_copies/src/combine.c:8908:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode modea; // [rsp+CCh] [rbp-14h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/num_sign_bit_copies/src/combine.c:8916:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| mode_class_0[modea] == MODE_FLOAT 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/num_sign_bit_copies/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/num_sign_bit_copies/src/combine.c:8917:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| mode_class_0[modea] == MODE_COMPLEX_FLOAT 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/num_sign_bit_copies/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/num_sign_bit_copies/src/combine.c:8918:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| mode_class_0[modea] == MODE_VECTOR_FLOAT 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/num_sign_bit_copies/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/num_sign_bit_copies/src/combine.c:8919:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| mode_class_0[( unsigned __int8)BYTE2( *( _DWORD *)x)] == MODE_FLOAT 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/num_sign_bit_copies/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/num_sign_bit_copies/src/combine.c:8920:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| mode_class_0[( unsigned __int8)BYTE2( *( _DWORD *)x)] == MODE_COMPLEX_FLOAT 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/num_sign_bit_copies/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/num_sign_bit_copies/src/combine.c:8921:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| mode_class_0[( unsigned __int8)BYTE2( *( _DWORD *)x)] == MODE_VECTOR_FLOAT ) 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/num_sign_bit_copies/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/num_sign_bit_copies/src/combine.c:9013:10: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+&& ( rtx)x[1] == const_int_rtx[63] 
+         ^~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/num_sign_bit_copies/src/combine.c:9264:34: error: use of undeclared identifier 'machine_mode'
+num0 = num_sign_bit_copies( x, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)x)); 
+                                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/num_sign_bit_copies/src/combine.c:9264:49: error: expected expression
+num0 = num_sign_bit_copies( x, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)x)); 
+                                                ^
+12 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/num_sign_bit_copies/src/obj/combine.o] Error 1

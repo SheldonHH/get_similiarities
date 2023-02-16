@@ -1,0 +1,40 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_reload_regs/src/reload1.c:2288:25: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v9 = ( ( unsigned int)( mode_class_0[v8] - 5) < 2) + 1; 
+                        ^~~~~~~~~~~~
+                        mode_class
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_reload_regs/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_reload_regs/src/reload1.c:2315:1: error: expected expression
+::n_reloads = n_reloads; 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_reload_regs/src/reload1.c:2320:35: error: expected expression
+specqsort( ( char *)reload_order, ::n_reloads, 2, ( int ( *)( ...))reload_reg_class_lower); 
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_reload_regs/src/reload1.c:2320:63: error: ISO C requires a named parameter before '...'
+specqsort( ( char *)reload_order, ::n_reloads, 2, ( int ( *)( ...))reload_reg_class_lower); 
+                                                              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_reload_regs/src/reload1.c:2322:7: error: expected expression
+v10 = ::n_reloads; 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_reload_regs/src/reload1.c:2323:6: error: expected expression
+if ( ::n_reloads <= 0 ) 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_reload_regs/src/reload1.c:2346:7: error: expected expression
+v10 = ::n_reloads; 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_reload_regs/src/reload1.c:2347:13: error: expected expression
+if ( v11 >= ::n_reloads ) 
+            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_reload_regs/src/reload1.c:2350:43: error: expected expression
+spill_failure( chain->insn, *( reg_class *)( v13 + 10314208)); 
+                                          ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_reload_regs/src/reload1.c:2350:32: error: use of undeclared identifier 'reg_class'; did you mean 'regclass'?
+spill_failure( chain->insn, *( reg_class *)( v13 + 10314208)); 
+                               ^~~~~~~~~
+                               regclass
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_reload_regs/src/rtl.h:1970:13: note: 'regclass' declared here
+extern void regclass                    PARAMS ((rtx, int, FILE *));
+            ^
+10 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_reload_regs/src/obj/reload1.o] Error 1

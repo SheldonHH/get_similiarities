@@ -1,0 +1,75 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/apply_result_size/src/builtins.c:1430:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode best_mode; // [rsp+0h] [rbp-10h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/apply_result_size/src/builtins.c:1431:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // [rsp+4h] [rbp-Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/apply_result_size/src/builtins.c:1432:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode modea; // [rsp+4h] [rbp-Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/apply_result_size/src/builtins.c:1433:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode modeb; // [rsp+4h] [rbp-Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/apply_result_size/src/builtins.c:1434:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode modec; // [rsp+4h] [rbp-Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/apply_result_size/src/builtins.c:1438:6: error: use of undeclared identifier 'apply_result_size_size'; did you mean 'apply_result_size'?
+if ( apply_result_size_size < 0 ) 
+     ^~~~~~~~~~~~~~~~~~~~~~
+     apply_result_size
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/apply_result_size/src/builtins.c:1428:6: note: 'apply_result_size' declared here
+int  apply_result_size( ) 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/apply_result_size/src/builtins.c:1440:1: error: use of undeclared identifier 'apply_result_size_size'
+apply_result_size_size = 0; 
+^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/apply_result_size/src/builtins.c:1478:6: error: use of undeclared identifier 'apply_result_size_size'; did you mean 'apply_result_size'?
+if ( apply_result_size_size % align ) 
+     ^~~~~~~~~~~~~~~~~~~~~~
+     apply_result_size
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/apply_result_size/src/builtins.c:1428:6: note: 'apply_result_size' declared here
+int  apply_result_size( ) 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/apply_result_size/src/builtins.c:1478:29: error: invalid operands to binary expression ('int (void)' and 'int')
+if ( apply_result_size_size % align ) 
+     ~~~~~~~~~~~~~~~~~~~~~~ ^ ~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/apply_result_size/src/builtins.c:1479:1: error: use of undeclared identifier 'apply_result_size_size'
+apply_result_size_size = align * ( ( align + apply_result_size_size - 1) / align); 
+^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/apply_result_size/src/builtins.c:1479:46: error: use of undeclared identifier 'apply_result_size_size'; did you mean 'apply_result_size'?
+apply_result_size_size = align * ( ( align + apply_result_size_size - 1) / align); 
+                                             ^~~~~~~~~~~~~~~~~~~~~~
+                                             apply_result_size
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/apply_result_size/src/builtins.c:1428:6: note: 'apply_result_size' declared here
+int  apply_result_size( ) 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/apply_result_size/src/builtins.c:1479:74: error: invalid operands to binary expression ('int (*)(void)' and 'int')
+apply_result_size_size = align * ( ( align + apply_result_size_size - 1) / align); 
+                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^ ~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/apply_result_size/src/builtins.c:1480:1: error: use of undeclared identifier 'apply_result_size_size'; did you mean 'apply_result_size'?
+apply_result_size_size += mode_size[best_mode]; 
+^~~~~~~~~~~~~~~~~~~~~~
+apply_result_size
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/apply_result_size/src/builtins.c:1428:6: note: 'apply_result_size' declared here
+int  apply_result_size( ) 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/apply_result_size/src/builtins.c:1480:24: error: invalid operands to binary expression ('int (void)' and 'const unsigned char')
+apply_result_size_size += mode_size[best_mode]; 
+~~~~~~~~~~~~~~~~~~~~~~ ^  ~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/apply_result_size/src/builtins.c:1488:1: error: use of undeclared identifier 'apply_result_size_size'
+apply_result_size_size = 116; 
+^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/apply_result_size/src/builtins.c:1490:8: error: use of undeclared identifier 'apply_result_size_size'; did you mean 'apply_result_size'?
+return apply_result_size_size; 
+       ^~~~~~~~~~~~~~~~~~~~~~
+       apply_result_size
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/apply_result_size/src/builtins.c:1428:6: note: 'apply_result_size' declared here
+int  apply_result_size( ) 
+     ^
+16 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/apply_result_size/src/obj/builtins.o] Error 1

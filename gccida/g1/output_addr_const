@@ -1,0 +1,42 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/output_addr_const/src/final.c:3839:4: error: expected ';' after expression
+rtx v7; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/output_addr_const/src/final.c:3839:5: error: use of undeclared identifier 'v7'
+rtx v7; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/output_addr_const/src/final.c:3860:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v3.rtwint = ( __int64)x[1].fld[0]; 
+                      ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/output_addr_const/src/final.c:3867:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v4 = ( __int64)x[1]; 
+               ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/output_addr_const/src/final.c:3896:34: error: expected expression
+output_addr_const( file, *( rtx *)&x[1]); 
+                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/output_addr_const/src/final.c:3905:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v6 = ( __int64)x[1]; 
+               ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/output_addr_const/src/final.c:3908:34: error: expected expression
+output_addr_const( file, *( rtx *)&x[1]); 
+                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/output_addr_const/src/final.c:3912:1: error: use of undeclared identifier 'v7'
+v7 = simplify_subtraction( x); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/output_addr_const/src/final.c:3913:5: error: use of undeclared identifier 'v7'
+x = v7; 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/output_addr_const/src/final.c:3914:17: error: use of undeclared identifier 'v7'
+if ( *( _WORD *)v7 != 76 ) 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/output_addr_const/src/final.c:3916:26: error: use of undeclared identifier 'v7'
+output_addr_const( file, v7->fld[0].rtx); 
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/output_addr_const/src/final.c:3918:26: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v8 = (  struct rtx_def *)x[1]; 
+                         ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/output_addr_const/src/final.c:3934:34: error: expected expression
+output_addr_const( file, *( rtx *)&x[1]); 
+                                 ^
+13 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/output_addr_const/src/obj/final.o] Error 1

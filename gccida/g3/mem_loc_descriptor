@@ -1,0 +1,76 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/mem_loc_descriptor/src/dwarf2out.c:8199:48: error: must use 'enum' tag to refer to type 'machine_mode'
+dw_loc_descr_ref  mem_loc_descriptor( rtx rtl, machine_mode mode) 
+                                               ^
+                                               enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/mem_loc_descriptor/src/dwarf2out.c:8206:4: error: expected ';' after expression
+rtx v8; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/mem_loc_descriptor/src/dwarf2out.c:8206:5: error: use of undeclared identifier 'v8'
+rtx v8; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/mem_loc_descriptor/src/dwarf2out.c:8228:1: error: must use 'enum' tag to refer to type 'dwarf_location_atom'
+dwarf_location_atom v30; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/mem_loc_descriptor/src/dwarf2out.c:8242:4: error: expected ';' after expression
+rtx pool_constant_mark; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/mem_loc_descriptor/src/dwarf2out.c:8242:5: error: use of undeclared identifier 'pool_constant_mark'; did you mean 'get_pool_constant_mark'?
+rtx pool_constant_mark; // rax 
+    ^~~~~~~~~~~~~~~~~~
+    get_pool_constant_mark
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/mem_loc_descriptor/src/rtl.h:1306:12: note: 'get_pool_constant_mark' declared here
+extern rtx get_pool_constant_mark       PARAMS ((rtx, bool *));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/mem_loc_descriptor/src/dwarf2out.c:8290:1: error: use of undeclared identifier 'pool_constant_mark'
+pool_constant_mark = get_pool_constant_mark( v3, marked); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/mem_loc_descriptor/src/dwarf2out.c:8291:17: error: use of undeclared identifier 'pool_constant_mark'
+if ( *( _WORD *)pool_constant_mark != 68 ) 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/mem_loc_descriptor/src/dwarf2out.c:8293:7: error: use of undeclared identifier 'pool_constant_mark'; did you mean 'get_pool_constant_mark'?
+rtx = pool_constant_mark; 
+      ^~~~~~~~~~~~~~~~~~
+      get_pool_constant_mark
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/mem_loc_descriptor/src/rtl.h:1306:12: note: 'get_pool_constant_mark' declared here
+extern rtx get_pool_constant_mark       PARAMS ((rtx, bool *));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/mem_loc_descriptor/src/dwarf2out.c:8294:21: error: use of undeclared identifier 'pool_constant_mark'
+if ( ( *( ( _BYTE *)pool_constant_mark + 3) & 4) != 0 ) 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/mem_loc_descriptor/src/dwarf2out.c:8296:25: error: use of undeclared identifier 'pool_constant_mark'; did you mean 'get_pool_constant_mark'?
+get_pool_constant_mark( pool_constant_mark, marked); 
+                        ^~~~~~~~~~~~~~~~~~
+                        get_pool_constant_mark
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/mem_loc_descriptor/src/rtl.h:1306:12: note: 'get_pool_constant_mark' declared here
+extern rtx get_pool_constant_mark       PARAMS ((rtx, bool *));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/mem_loc_descriptor/src/dwarf2out.c:8344:45: error: use of undeclared identifier 'machine_mode'
+v10 = mem_loc_descriptor( v3->fld[0].rtx, ( machine_mode)*( ( unsigned __int8 *)v3 + 2)); 
+                                            ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/mem_loc_descriptor/src/dwarf2out.c:8363:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v33.rtwint = ( __int64)v3->fld[0]; 
+                       ^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/mem_loc_descriptor/src/dwarf2out.c:8366:15: error: expected expression
+rtl = *( rtx *)( v33.rtwint + 8); 
+              ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/mem_loc_descriptor/src/dwarf2out.c:8372:35: error: expected expression
+v34 = mem_loc_descriptor( *( rtx *)&rtx[1], mode); 
+                                  ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/mem_loc_descriptor/src/dwarf2out.c:8405:1: error: use of undeclared identifier 'v8'
+v8 = gen_rtx_fmt_ee( PLUS, *(short *)0xmode, rtx->fld[0].rtx, v7); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/mem_loc_descriptor/src/dwarf2out.c:8405:39: error: invalid suffix 'xmode' on integer constant
+v8 = gen_rtx_fmt_ee( PLUS, *(short *)0xmode, rtx->fld[0].rtx, v7); 
+                                      ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/mem_loc_descriptor/src/dwarf2out.c:8406:17: error: use of undeclared identifier 'v8'
+v4 = *( _WORD *)v8; 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/mem_loc_descriptor/src/dwarf2out.c:8407:7: error: use of undeclared identifier 'v8'
+rtx = v8; 
+      ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/mem_loc_descriptor/src/obj/dwarf2out.o] Error 1

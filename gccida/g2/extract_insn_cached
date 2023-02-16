@@ -1,0 +1,16 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/extract_insn_cached/src/recog.c:2510:6: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( recog_data_0.insn != insn || insn[2].fld[0].rtint < 0 ) 
+     ^~~~~~~~~~~~
+     recog_data
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/extract_insn_cached/src/recog.c:72:19: note: 'recog_data' declared here
+struct recog_data recog_data;
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/extract_insn_cached/src/recog.c:2513:1: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+recog_data_0.insn = insn; 
+^~~~~~~~~~~~
+recog_data
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/extract_insn_cached/src/recog.c:72:19: note: 'recog_data' declared here
+struct recog_data recog_data;
+                  ^
+2 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/extract_insn_cached/src/obj/recog.o] Error 1

@@ -1,0 +1,65 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_assignment/src/expr.c:4102:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *inner_reference; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_assignment/src/expr.c:4103:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v8; // r13d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_assignment/src/expr.c:4105:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v10; // r15 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_assignment/src/expr.c:4143:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v48; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_assignment/src/expr.c:4145:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v50; // r15 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_assignment/src/expr.c:4150:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // [rsp+0h] [rbp-78h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_assignment/src/expr.c:4151:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode modea; // [rsp+0h] [rbp-78h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_assignment/src/expr.c:4155:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode pmode; // [rsp+Ch] [rbp-6Ch] BYREF 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_assignment/src/expr.c:4157:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v63; // [rsp+18h] [rbp-60h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_assignment/src/expr.c:4219:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v31 = ( __int64)v9[1]; 
+                ^~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_assignment/src/expr.c:4248:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v37 = ( __int64)v11[1]; 
+                ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_assignment/src/expr.c:4256:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v40 = ( __int64)v11[1]; 
+                ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_assignment/src/expr.c:4319:49: error: use of undeclared identifier 'machine_mode'
+v54 = store_field( v52, v45, v46, modea, exp, ( machine_mode)v47, v49, v50, alias_set); 
+                                                ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_assignment/src/expr.c:4325:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( ( unsigned __int8)HIBYTE( WORD2( v63->common.type->block.abstract_origin)) >> 1), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_assignment/src/expr.c:4326:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( ( unsigned __int8)HIBYTE( WORD2( v53->common.type->block.abstract_origin)) >> 1), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_assignment/src/expr.c:4385:33: error: use of undeclared identifier 'machine_mode'
+v20 = expand_expr( from, 0LL, ( machine_mode)*( ( unsigned __int8 *)v16 + 2), EXPAND_NORMAL); 
+                                ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_assignment/src/expr.c:4402:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v27.rtwint = ( __int64)v16->fld[0]; 
+                       ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_assignment/src/expr.c:4406:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( ( unsigned __int8)HIBYTE( WORD2( sizetype_tab[0]->block.abstract_origin)) >> 1), 
+  ^
+18 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_assignment/src/obj/expr.o] Error 1

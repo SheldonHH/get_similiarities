@@ -1,0 +1,18 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_builtin_longjmp/src/builtins.c:1109:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v8; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_builtin_longjmp/src/builtins.c:1128:19: error: use of undeclared identifier 'machine_mode'
+v5 = force_reg( ( machine_mode)( ( ( v3 | 0x500000000uLL) - 1) >> 32), buf_addr); 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_builtin_longjmp/src/builtins.c:1134:21: error: use of undeclared identifier 'machine_mode'
+v7 = gen_rtx_MEM( ( machine_mode)( ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32), v5); 
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_builtin_longjmp/src/builtins.c:1139:22: error: use of undeclared identifier 'machine_mode'
+v12 = gen_rtx_MEM( ( machine_mode)( v2 ^ 5), v11); 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_builtin_longjmp/src/builtins.c:1162:13: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v17 = ( rtx)v17[1]; 
+            ^~~~~~
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_builtin_longjmp/src/obj/builtins.o] Error 1

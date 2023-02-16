@@ -1,0 +1,14 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/combinable_i3pat/src/combine.c:1795:36: error: expected expression
+v11 = combinable_i3pat( i3, ( rtx *)&rtwint[2 * v19 + 2], i2dest, i1dest, i1_not_in_src, pi3dest_killed); 
+                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/combinable_i3pat/src/combine.c:1808:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+src = (  struct rtx_def *)v13[1]; 
+                          ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/combinable_i3pat/src/combine.c:1835:47: error: use of undeclared identifier 'machine_mode'
+|| ( v11 = ix86_hard_regno_mode_ok( rtuint, ( machine_mode)*( ( unsigned __int8 *)v15 + 2))) != 0 ) 
+                                              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/combinable_i3pat/src/combine.c:1842:61: error: expected expression
+if ( *( _WORD *)rtx == 61 && reg_referenced_p( rtx, *( rtx *)&i3[2]) ) 
+                                                            ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/combinable_i3pat/src/obj/combine.o] Error 1

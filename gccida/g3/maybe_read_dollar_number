@@ -1,0 +1,16 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/maybe_read_dollar_number/src/c-format.c:1595:8: error: use of undeclared identifier 'sch_istable'; did you mean '_sch_istable'?
+if ( ( sch_istable[*( unsigned __int8 *)*format] & 4) != 0 ) 
+       ^~~~~~~~~~~
+       _sch_istable
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/maybe_read_dollar_number/src/safe-ctype.h:72:29: note: '_sch_istable' declared here
+extern const unsigned short _sch_istable[256];
+                            ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/maybe_read_dollar_number/src/c-format.c:1615:8: error: use of undeclared identifier 'sch_istable'; did you mean '_sch_istable'?
+if ( ( sch_istable[v13] & 4) == 0 ) 
+       ^~~~~~~~~~~
+       _sch_istable
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/maybe_read_dollar_number/src/safe-ctype.h:72:29: note: '_sch_istable' declared here
+extern const unsigned short _sch_istable[256];
+                            ^
+2 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/maybe_read_dollar_number/src/obj/c-format.o] Error 1

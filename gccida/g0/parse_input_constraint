@@ -1,0 +1,15 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/parse_input_constraint/src/stmt.c:1983:2: error: expected expression
+ struct match = strtoul( &constraint[j], &end, 10); 
+ ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/parse_input_constraint/src/stmt.c:1984:7: error: expected expression
+if (  struct match >= noutputs ) 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/parse_input_constraint/src/stmt.c:2017:8: error: use of undeclared identifier 'sch_istable'; did you mean '_sch_istable'?
+if ( ( sch_istable[( unsigned __int8)constraint[j]] & 0x88) == 0 ) 
+       ^~~~~~~~~~~
+       _sch_istable
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/parse_input_constraint/src/safe-ctype.h:72:29: note: '_sch_istable' declared here
+extern const unsigned short _sch_istable[256];
+                            ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/parse_input_constraint/src/obj/stmt.o] Error 1

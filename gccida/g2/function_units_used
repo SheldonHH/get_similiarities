@@ -1,0 +1,61 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/function_units_used/src/insn-attrtab.c:11979:1: error: must use 'enum' tag to refer to type 'attr_athlon_fpunits'
+attr_athlon_fpunits attr_athlon_fpunits; // r12d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/function_units_used/src/insn-attrtab.c:11980:1: error: must use 'enum' tag to refer to type 'attr_athlon_decode'
+attr_athlon_decode attr_athlon_decode; // r14d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/function_units_used/src/insn-attrtab.c:11981:1: error: must use 'enum' tag to refer to type 'attr_memory'
+attr_memory attr_memory; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/function_units_used/src/insn-attrtab.c:11982:1: error: must use 'enum' tag to refer to type 'attr_pent_pair'
+attr_pent_pair attr_pent_pair; // r13d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/function_units_used/src/insn-attrtab.c:11984:1: error: must use 'enum' tag to refer to type 'processor_type'
+processor_type v6; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/function_units_used/src/insn-attrtab.c:12000:1: error: must use 'enum' tag to refer to type 'attr_mode'
+attr_mode attr_mode; // [rsp+4h] [rbp-44h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/function_units_used/src/insn-attrtab.c:12001:1: error: must use 'enum' tag to refer to type 'attr_mode'
+attr_mode attr_modea; // [rsp+4h] [rbp-44h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/function_units_used/src/insn-attrtab.c:12000:11: note: enum 'attr_mode' is hidden by a non-type declaration of 'attr_mode' here
+attr_mode attr_mode; // [rsp+4h] [rbp-44h] 
+          ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/function_units_used/src/insn-attrtab.c:12002:1: error: must use 'enum' tag to refer to type 'attr_mode'
+attr_mode attr_modeb; // [rsp+4h] [rbp-44h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/function_units_used/src/insn-attrtab.c:12000:11: note: enum 'attr_mode' is hidden by a non-type declaration of 'attr_mode' here
+attr_mode attr_mode; // [rsp+4h] [rbp-44h] 
+          ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/function_units_used/src/insn-attrtab.c:12055:20: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+immediate_operand( recog_data_0.operand[1], VOIDmode); 
+                   ^~~~~~~~~~~~
+                   recog_data
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/function_units_used/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/function_units_used/src/insn-attrtab.c:12078:26: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+v16 = immediate_operand( recog_data_0.operand[1], VOIDmode); 
+                         ^~~~~~~~~~~~
+                         recog_data
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/function_units_used/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/function_units_used/src/insn-attrtab.c:12202:24: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+v21 = general_operand( recog_data_0.operand[0], QImode); 
+                       ^~~~~~~~~~~~
+                       recog_data
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/function_units_used/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+11 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/function_units_used/src/obj/insn-attrtab.o] Error 1

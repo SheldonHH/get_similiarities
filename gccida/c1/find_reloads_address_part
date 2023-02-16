@@ -1,0 +1,65 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_reloads_address_part/src/reload.c:6157:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class a3, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_reloads_address_part/src/reload.c:6158:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_reloads_address_part/src/reload.c:6160:1: error: must use 'enum' tag to refer to type 'reload_type'
+reload_type type, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_reloads_address_part/src/reload.c:6171:4: error: expected ';' after expression
+rtx v19; // [rsp+0h] [rbp-38h] BYREF 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_reloads_address_part/src/reload.c:6171:5: error: use of undeclared identifier 'v19'
+rtx v19; // [rsp+0h] [rbp-38h] BYREF 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_reloads_address_part/src/reload.c:6173:1: error: use of undeclared identifier 'v19'
+v19 = v7; 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_reloads_address_part/src/reload.c:6183:1: error: use of undeclared identifier 'v19'
+v19 = v12; 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_reloads_address_part/src/reload.c:6195:43: error: expected expression
+if ( ix86_preferred_reload_class( *( rtx *)&x[1], a3) == NO_REGS ) 
+                                          ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_reloads_address_part/src/reload.c:6197:26: error: use of undeclared identifier 'machine_mode'
+v19 = force_const_mem( ( machine_mode)*( ( unsigned __int8 *)x + 2), *( rtx *)&x[1]); 
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_reloads_address_part/src/reload.c:6197:78: error: expected expression
+v19 = force_const_mem( ( machine_mode)*( ( unsigned __int8 *)x + 2), *( rtx *)&x[1]); 
+                                                                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_reloads_address_part/src/reload.c:6197:1: error: use of undeclared identifier 'v19'
+v19 = force_const_mem( ( machine_mode)*( ( unsigned __int8 *)x + 2), *( rtx *)&x[1]); 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_reloads_address_part/src/reload.c:6198:31: error: use of undeclared identifier 'machine_mode'
+v12 = gen_rtx_fmt_ee( PLUS, ( machine_mode)*( ( unsigned __int8 *)x + 2), x->fld[0].rtx, v19); 
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_reloads_address_part/src/reload.c:6198:90: error: use of undeclared identifier 'v19'
+v12 = gen_rtx_fmt_ee( PLUS, ( machine_mode)*( ( unsigned __int8 *)x + 2), x->fld[0].rtx, v19); 
+                                                                                         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_reloads_address_part/src/reload.c:6199:7: error: use of undeclared identifier 'v19'; did you mean 'v12'?
+rtx = v19->fld[0].rtx; 
+      ^~~
+      v12
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_reloads_address_part/src/reload.c:6164:5: note: 'v12' declared here
+rtx v12; // rbp 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_reloads_address_part/src/reload.c:6200:7: error: use of undeclared identifier 'v19'; did you mean 'v12'?
+fld = v19->fld; 
+      ^~~
+      v12
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_reloads_address_part/src/reload.c:6164:5: note: 'v12' declared here
+rtx v12; // rbp 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_reloads_address_part/src/reload.c:6202:47: error: expected expression
+find_reloads_address( mode, &v19, rtx, ( rtx *)fld, opnum, type, ind_levels, 0LL); 
+                                              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_reloads_address_part/src/reload.c:6202:30: error: use of undeclared identifier 'v19'
+find_reloads_address( mode, &v19, rtx, ( rtx *)fld, opnum, type, ind_levels, 0LL); 
+                             ^
+17 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_reloads_address_part/src/obj/reload.o] Error 1

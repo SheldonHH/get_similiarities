@@ -1,0 +1,52 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ix86_va_arg/src/i386.c:3036:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v2; // rbp 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ix86_va_arg/src/i386.c:3057:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v23; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ix86_va_arg/src/i386.c:3065:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v32; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ix86_va_arg/src/i386.c:3067:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v34; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ix86_va_arg/src/i386.c:3079:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v46; // r14d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ix86_va_arg/src/i386.c:3146:30: error: use of undeclared identifier 'machine_mode'
+v62 = construct_container( ( machine_mode)( BYTE5( type->block.abstract_origin) >> 1), type, 0, v13, v12, intreg_43, 0); 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ix86_va_arg/src/i386.c:3146:107: error: use of undeclared identifier 'intreg_43'
+v62 = construct_container( ( machine_mode)( BYTE5( type->block.abstract_origin) >> 1), type, 0, v13, v12, intreg_43, 0); 
+                                                                                                          ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ix86_va_arg/src/i386.c:3147:27: error: use of undeclared identifier 'machine_mode'
+addr_rtx = gen_reg_rtx( ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4)); 
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ix86_va_arg/src/i386.c:3153:21: error: use of undeclared identifier 'machine_mode'
+examine_argument( ( machine_mode)( BYTE5( type->block.abstract_origin) >> 1), type, 0, &needed_intregs, needed_sseregs); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ix86_va_arg/src/i386.c:3163:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v63.rtwint = ( __int64)v62->fld[0]; 
+                       ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ix86_va_arg/src/i386.c:3289:41: error: use of undeclared identifier 'machine_mode'
+v33 = expand_expr( v32, int_addr_rtx, ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), EXPAND_NORMAL); 
+                                        ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ix86_va_arg/src/i386.c:3296:32: error: use of undeclared identifier 'machine_mode'
+v35 = expand_expr( v34, v16, ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), EXPAND_NORMAL); 
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ix86_va_arg/src/i386.c:3322:31: error: use of undeclared identifier 'machine_mode'
+int_addr_rtx = gen_reg_rtx( ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4)); 
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ix86_va_arg/src/i386.c:3323:22: error: use of undeclared identifier 'machine_mode'
+v16 = gen_reg_rtx( ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4)); 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ix86_va_arg/src/i386.c:3338:37: error: use of undeclared identifier 'machine_mode'
+v25 = expand_expr( v24, addr_rtx, ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), EXPAND_NORMAL); 
+                                    ^
+15 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ix86_va_arg/src/obj/i386.o] Error 1

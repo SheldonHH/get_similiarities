@@ -1,0 +1,77 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/decompose/src/reload.c:2683:25: error: conflicting types for 'decompose'
+ struct decomposition * decompose(  struct decomposition *retstr, rtx x) 
+                        ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/decompose/src/reload.c:254:29: note: previous declaration is here
+static struct decomposition decompose PARAMS ((rtx));
+                            ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/decompose/src/reload.c:2694:4: error: expected ';' after expression
+rtx v14; // r12 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/decompose/src/reload.c:2694:5: error: use of undeclared identifier 'v14'
+rtx v14; // r12 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/decompose/src/reload.c:2741:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v19 = ( __int64)rtx[1]; 
+                ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/decompose/src/reload.c:2777:1: error: use of undeclared identifier 'v14'
+v14 = rtx->fld[0].rtx; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/decompose/src/reload.c:2779:38: error: use of undeclared identifier 'v14'
+if ( ( unsigned __int16)( *( _WORD *)v14 - 54) <= 0xEu ) 
+                                     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/decompose/src/reload.c:2780:55: error: use of undeclared identifier 'v14'
+v15 = ( ( 0x6017uLL >> ( ( unsigned __int8)*( _WORD *)v14 - 54)) ^ 1) & 1; 
+                                                      ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/decompose/src/reload.c:2781:17: error: use of undeclared identifier 'v14'
+if ( *( _WORD *)v14 == 140 || *( _WORD *)v14 == 134 || !v15 ) 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/decompose/src/reload.c:2781:42: error: use of undeclared identifier 'v14'
+if ( *( _WORD *)v14 == 140 || *( _WORD *)v14 == 134 || !v15 ) 
+                                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/decompose/src/reload.c:2783:13: error: expected ';' after expression
+rtx = ( rtx)rtx[1]; 
+            ^
+            ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/decompose/src/reload.c:2786:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v25 = (  struct rtx_def *)rtx[1]; 
+                          ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/decompose/src/reload.c:2793:1: error: use of undeclared identifier 'v14'
+v14 = v25; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/decompose/src/reload.c:2795:17: error: use of undeclared identifier 'v14'
+if ( *( _WORD *)v14 == 58 ) 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/decompose/src/reload.c:2796:1: error: use of undeclared identifier 'v14'
+v14 = v14->fld[0].rtx; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/decompose/src/reload.c:2796:7: error: use of undeclared identifier 'v14'; did you mean 'v16'?
+v14 = v14->fld[0].rtx; 
+      ^~~
+      v16
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/decompose/src/reload.c:2696:18: note: 'v16' declared here
+ struct rtx_def *v16; // rax 
+                 ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/decompose/src/reload.c:2797:17: error: use of undeclared identifier 'v14'
+if ( *( _WORD *)v14 != 75 ) 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/decompose/src/reload.c:2799:17: error: use of undeclared identifier 'v14'
+if ( *( _WORD *)v14 == 54 ) 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/decompose/src/reload.c:2804:10: error: use of undeclared identifier 'v14'; did you mean 'v16'?
+rtwint = v14->fld[0].rtwint; 
+         ^~~
+         v16
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/decompose/src/reload.c:2696:18: note: 'v16' declared here
+ struct rtx_def *v16; // rax 
+                 ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/decompose/src/reload.c:2817:7: error: use of undeclared identifier 'v14'; did you mean 'v16'?
+v27 = v14->fld[0].rtx; 
+      ^~~
+      v16
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/decompose/src/reload.c:2696:18: note: 'v16' declared here
+ struct rtx_def *v16; // rax 
+                 ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/decompose/src/obj/reload.o] Error 1

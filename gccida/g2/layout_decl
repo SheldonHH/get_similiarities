@@ -1,0 +1,41 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/layout_decl/src/stor-layout.c:802:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *imag; // rsi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/layout_decl/src/stor-layout.c:803:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v7; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/layout_decl/src/stor-layout.c:804:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v8; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/layout_decl/src/stor-layout.c:809:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v13; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/layout_decl/src/stor-layout.c:820:1: error: must use 'enum' tag to refer to type 'built_in_function'
+built_in_function f; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/layout_decl/src/stor-layout.c:822:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v26; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/layout_decl/src/stor-layout.c:823:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v27; // r13d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/layout_decl/src/stor-layout.c:826:1: error: must use 'enum' tag to refer to type 'built_in_function'
+built_in_function v30; // edx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/layout_decl/src/stor-layout.c:925:12: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( v5 && mode_class_0[v18 >> 1] == MODE_INT ) 
+           ^~~~~~~~~~~~
+           mode_class
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/layout_decl/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+9 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/layout_decl/src/obj/stor-layout.o] Error 1

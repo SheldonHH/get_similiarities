@@ -1,0 +1,20 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/real_value_from_int_cst/src/tree.c:1086:17: error: conflicting types for 'real_value_from_int_cst'
+realvaluetype * real_value_from_int_cst( realvaluetype *retstr, tree type, tree i) 
+                ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/real_value_from_int_cst/src/real.h:455:17: note: previous declaration is here
+REAL_VALUE_TYPE real_value_from_int_cst PARAMS ((union tree_node *,
+                ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/real_value_from_int_cst/src/tree.c:1093:12: error: expected expression
+*( _OWORD *)retstr->r = 0LL; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/real_value_from_int_cst/src/tree.c:1093:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)retstr->r = 0LL; 
+   ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/real_value_from_int_cst/src/tree.c:1100:38: error: use of undeclared identifier 'machine_mode'
+ereal_from_int( retstr, low, high, ( machine_mode)v5); 
+                                     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/real_value_from_int_cst/src/tree.c:1102:39: error: use of undeclared identifier 'machine_mode'
+ereal_from_uint( retstr, low, high, ( machine_mode)v5); 
+                                      ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/real_value_from_int_cst/src/obj/tree.o] Error 1

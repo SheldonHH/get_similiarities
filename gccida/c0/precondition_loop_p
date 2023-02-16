@@ -1,0 +1,29 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/precondition_loop_p/src/unroll.c:1864:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode *mode) 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/precondition_loop_p/src/unroll.c:1870:19: error: expected identifier or '('
+ struct loop_info = (  struct loop_info *)loop->aux; 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/precondition_loop_p/src/unroll.c:1885:20: error: invalid suffix 'xmode' on integer constant
+*mode = *(short *)0xmode; 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/precondition_loop_p/src/unroll.c:1917:11: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+else if ( mode_class_0[( unsigned __int8)BYTE2( *( _DWORD *)loop_info->final_value)] == MODE_FLOAT 
+          ^~~~~~~~~~~~
+          mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/precondition_loop_p/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/precondition_loop_p/src/unroll.c:1918:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| mode_class_0[( unsigned __int8)BYTE2( *( _DWORD *)loop_info->initial_value)] == MODE_FLOAT ) 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/precondition_loop_p/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/precondition_loop_p/src/unroll.c:1946:20: error: invalid suffix 'xmode' on integer constant
+*mode = *(short *)0xmode; 
+                   ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/precondition_loop_p/src/obj/unroll.o] Error 1

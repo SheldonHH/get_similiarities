@@ -1,0 +1,65 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/prepare_cmp_insn/src/optabs.c:3535:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code *pcomparison, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/prepare_cmp_insn/src/optabs.c:3537:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode *pmode, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/prepare_cmp_insn/src/optabs.c:3539:1: error: must use 'enum' tag to refer to type 'can_compare_purpose'
+can_compare_purpose purpose) 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/prepare_cmp_insn/src/optabs.c:3558:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v27; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/prepare_cmp_insn/src/optabs.c:3563:1: error: must use 'enum' tag to refer to type 'mode_class'
+mode_class v32; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/prepare_cmp_insn/src/machmode.h:52:30: note: enum 'mode_class' is hidden by a non-type declaration of 'mode_class' here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/prepare_cmp_insn/src/optabs.c:3585:20: error: use of undeclared identifier 'machine_mode'
+v10 = force_reg( ( machine_mode)v9, v10); 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/prepare_cmp_insn/src/optabs.c:3593:20: error: use of undeclared identifier 'machine_mode'
+v11 = force_reg( ( machine_mode)v9, v11); 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/prepare_cmp_insn/src/optabs.c:3602:20: error: use of undeclared identifier 'machine_mode'
+v10 = force_reg( ( machine_mode)v9, v10); 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/prepare_cmp_insn/src/optabs.c:3606:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v17 = ( __int64)v10[1]; 
+                ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/prepare_cmp_insn/src/optabs.c:3611:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v20 = ( __int64)v11[1]; 
+                ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/prepare_cmp_insn/src/optabs.c:3634:31: error: use of undeclared identifier 'insn_data_0'
+v27 = *( ( unsigned __int16 *)insn_data_0[1203].operand + 8); 
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/prepare_cmp_insn/src/optabs.c:3651:38: error: use of undeclared identifier 'machine_mode'
+if ( !can_compare_p( *pcomparison, ( machine_mode)v9, purpose) ) 
+                                     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/prepare_cmp_insn/src/optabs.c:3653:7: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v32 = mode_class_0[v9]; 
+      ^~~~~~~~~~~~
+      mode_class
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/prepare_cmp_insn/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/prepare_cmp_insn/src/optabs.c:3664:62: error: invalid suffix 'xmode' on integer constant
+emit_library_call( libfunc, LCT_CONST_MAKE_BLOCK, *(short *)0xmode, 2, v10, ( unsigned int)v9, v11, v9); 
+                                                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/prepare_cmp_insn/src/optabs.c:3665:31: error: invalid suffix 'xmode' on integer constant
+v35 = gen_reg_rtx( *(short *)0xmode); 
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/prepare_cmp_insn/src/optabs.c:3666:38: error: invalid suffix 'xmode' on integer constant
+v36 = hard_libcall_value( *(short *)0xmode); 
+                                     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/prepare_cmp_insn/src/optabs.c:3670:21: error: invalid suffix 'xmode' on integer constant
+*pmode = *(short *)0xmode; 
+                    ^
+17 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/prepare_cmp_insn/src/obj/optabs.o] Error 1

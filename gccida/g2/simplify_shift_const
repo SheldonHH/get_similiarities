@@ -1,0 +1,81 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/simplify_shift_const/src/combine.c:9380:35: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx  simplify_shift_const( rtx x, rtx_code code, machine_mode result_mode, rtx varop, int orig_count) 
+                                  ^
+                                  enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/simplify_shift_const/src/combine.c:9380:50: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  simplify_shift_const( rtx x, rtx_code code, machine_mode result_mode, rtx varop, int orig_count) 
+                                                 ^
+                                                 enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/simplify_shift_const/src/combine.c:9387:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v13; // r15d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/simplify_shift_const/src/combine.c:9390:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v16; // r10d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/simplify_shift_const/src/combine.c:9394:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v21; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/simplify_shift_const/src/combine.c:9399:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v26; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/simplify_shift_const/src/combine.c:9426:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v53; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/simplify_shift_const/src/combine.c:9429:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v56; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/simplify_shift_const/src/combine.c:9432:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v59; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/simplify_shift_const/src/combine.c:9454:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v81; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/simplify_shift_const/src/combine.c:9476:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // [rsp+Ch] [rbp-8Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/simplify_shift_const/src/combine.c:9480:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v108; // [rsp+20h] [rbp-78h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/simplify_shift_const/src/combine.c:9483:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v111; // [rsp+28h] [rbp-70h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/simplify_shift_const/src/combine.c:9484:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v112; // [rsp+28h] [rbp-70h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/simplify_shift_const/src/combine.c:9485:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v113; // [rsp+28h] [rbp-70h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/simplify_shift_const/src/combine.c:9490:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v118; // [rsp+30h] [rbp-68h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/simplify_shift_const/src/combine.c:9496:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code outer_op; // [rsp+50h] [rbp-48h] BYREF 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/simplify_shift_const/src/combine.c:9594:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v60.rtwint = ( __int64)varop->fld[0]; 
+                       ^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/simplify_shift_const/src/combine.c:9600:24: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+v63 = gen_rtx_fmt_e( ( rtx_code)( ( v13 != ASHIFTRT) + 120), mode, v61); 
+                       ^~~~~~~~
+                       rtx_cost
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/simplify_shift_const/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/simplify_shift_const/src/obj/combine.o] Error 1

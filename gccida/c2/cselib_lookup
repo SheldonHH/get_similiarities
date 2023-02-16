@@ -1,0 +1,56 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cselib_lookup/src/cselib.c:1341:36: error: must use 'enum' tag to refer to type 'machine_mode'
+cselib_val * cselib_lookup( rtx x, machine_mode mode, int create) 
+                                   ^
+                                   enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cselib_lookup/src/cselib.c:1415:7: error: use of undeclared identifier 'hash_table_0'; did you mean 'hash_table'?
+v22 = hash_table_0; 
+      ^~~~~~~~~~~~
+      hash_table
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cselib_lookup/src/cselib.c:82:15: note: 'hash_table' declared here
+static htab_t hash_table;
+              ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cselib_lookup/src/cselib.c:1430:61: error: use of undeclared identifier 'insert_option'
+slot_with_hash = htab_find_slot_with_hash( v22, v24, v21, ( insert_option)( create != 0)); 
+                                                            ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cselib_lookup/src/cselib.c:1494:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v11 = ( ( unsigned int)( mode_class_0[mode] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cselib_lookup/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cselib_lookup/src/cselib.c:1510:47: error: use of undeclared identifier 'machine_mode'
+elt = new_cselib_val( ++next_unknown_value, ( machine_mode)v7); 
+                                              ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cselib_lookup/src/cselib.c:1584:7: error: use of undeclared identifier 'hash_table_0'; did you mean 'hash_table'?
+v49 = hash_table_0; 
+      ^~~~~~~~~~~~
+      hash_table
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cselib_lookup/src/cselib.c:82:15: note: 'hash_table' declared here
+static htab_t hash_table;
+              ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cselib_lookup/src/cselib.c:1593:7: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v12 = mode_class_0[v7]; 
+      ^~~~~~~~~~~~
+      mode_class
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cselib_lookup/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cselib_lookup/src/cselib.c:1603:39: error: use of undeclared identifier 'machine_mode'
+v14 = cselib_lookup( x->fld[0].rtx, ( machine_mode)v7, create); 
+                                      ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cselib_lookup/src/cselib.c:1613:47: error: use of undeclared identifier 'machine_mode'
+v17 = new_cselib_val( ++next_unknown_value, ( machine_mode)v7); 
+                                              ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cselib_lookup/src/cselib.c:1691:7: error: use of undeclared identifier 'hash_table_0'; did you mean 'hash_table'?
+v60 = hash_table_0; 
+      ^~~~~~~~~~~~
+      hash_table
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cselib_lookup/src/cselib.c:82:15: note: 'hash_table' declared here
+static htab_t hash_table;
+              ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cselib_lookup/src/cselib.c:1697:30: error: use of undeclared identifier 'machine_mode'
+v5 = gen_rtx_fmt_e( CONST, ( machine_mode)v7, x); 
+                             ^
+11 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cselib_lookup/src/obj/cselib.o] Error 1

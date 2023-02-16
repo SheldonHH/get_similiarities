@@ -1,0 +1,19 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/flush_pending_lists/src/sched-deps.c:987:28: error: unknown type name 'deps_0'
+void  flush_pending_lists( deps_0 *deps, rtx insn, int for_read, int for_write) 
+                           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/flush_pending_lists/src/sched-deps.c:997:67: error: use of undeclared identifier 'reg_note'; did you mean 'reg_names'?
+add_dependence_list_and_free( insn, &deps->pending_write_insns, ( reg_note)v5); 
+                                                                  ^~~~~~~~
+                                                                  reg_names
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/flush_pending_lists/src/regs.h:166:21: note: 'reg_names' declared here
+extern const char * reg_names[FIRST_PSEUDO_REGISTER];
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/flush_pending_lists/src/sched-deps.c:1000:73: error: use of undeclared identifier 'reg_note'; did you mean 'reg_names'?
+add_dependence_list_and_free( insn, &deps->last_pending_memory_flush, ( reg_note)v5); 
+                                                                        ^~~~~~~~
+                                                                        reg_names
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/flush_pending_lists/src/regs.h:166:21: note: 'reg_names' declared here
+extern const char * reg_names[FIRST_PSEUDO_REGISTER];
+                    ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/flush_pending_lists/src/obj/sched-deps.o] Error 1

@@ -1,0 +1,21 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/outgoing_edges_match/src/cfgcleanup.c:1748:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v42 = ( __int64)v40[1]; 
+                ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/outgoing_edges_match/src/cfgcleanup.c:1750:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v44 = ( __int64)v41[1]; 
+                ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/outgoing_edges_match/src/cfgcleanup.c:1764:31: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+v8 = v52 == swap_condition( ( rtx_code)v46) 
+                              ^~~~~~~~
+                              rtx_cost
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/outgoing_edges_match/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/outgoing_edges_match/src/cfgcleanup.c:1764:40: error: expected ')'
+v8 = v52 == swap_condition( ( rtx_code)v46) 
+                                       ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/outgoing_edges_match/src/cfgcleanup.c:1764:27: note: to match this '('
+v8 = v52 == swap_condition( ( rtx_code)v46) 
+                          ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/outgoing_edges_match/src/obj/cfgcleanup.o] Error 1

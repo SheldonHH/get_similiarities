@@ -1,0 +1,66 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/protect_from_queue/src/expr.c:817:4: error: expected ';' after expression
+rtx result; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/protect_from_queue/src/expr.c:817:5: error: use of undeclared identifier 'result'
+rtx result; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/protect_from_queue/src/expr.c:819:4: error: expected ';' after expression
+rtx v6; // r13 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/protect_from_queue/src/expr.c:819:5: error: use of undeclared identifier 'v6'
+rtx v6; // r13 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/protect_from_queue/src/expr.c:820:4: error: expected ';' after expression
+rtx v7; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/protect_from_queue/src/expr.c:820:5: error: use of undeclared identifier 'v7'
+rtx v7; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/protect_from_queue/src/expr.c:825:4: error: expected ';' after expression
+rtx v12; // r12 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/protect_from_queue/src/expr.c:825:5: error: use of undeclared identifier 'v12'
+rtx v12; // r12 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/protect_from_queue/src/expr.c:826:4: error: expected ';' after expression
+rtx v13; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/protect_from_queue/src/expr.c:826:5: error: use of undeclared identifier 'v13'
+rtx v13; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/protect_from_queue/src/expr.c:827:4: error: expected ';' after expression
+rtx v14; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/protect_from_queue/src/expr.c:827:5: error: use of undeclared identifier 'v14'
+rtx v14; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/protect_from_queue/src/expr.c:839:1: error: statement requires expression of scalar type ('struct rtx_def' invalid)
+if ( x[1] ) 
+^    ~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/protect_from_queue/src/expr.c:844:21: error: use of undeclared identifier 'machine_mode'
+v8 = gen_reg_rtx( ( machine_mode)*( unsigned __int8 *)( x->fld[0].rtwint + 2)); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/protect_from_queue/src/expr.c:846:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v10 = (  struct rtx_def *)x[1]; 
+                          ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/protect_from_queue/src/expr.c:856:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v5.rtwint = ( __int64)x->fld[0]; 
+                      ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/protect_from_queue/src/expr.c:859:1: error: use of undeclared identifier 'v6'
+v6 = protect_from_queue( x->fld[0].rtx, 0); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/protect_from_queue/src/expr.c:860:23: error: use of undeclared identifier 'v6'
+if ( x->fld[0].rtx != v6 ) 
+                      ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/protect_from_queue/src/expr.c:862:1: error: use of undeclared identifier 'v7'
+v7 = copy_rtx( x); 
+^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/protect_from_queue/src/obj/expr.o] Error 1

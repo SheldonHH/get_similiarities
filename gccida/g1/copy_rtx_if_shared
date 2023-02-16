@@ -1,0 +1,18 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_rtx_if_shared/src/emit-rtl.c:3013:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v3.rtwint = ( __int64)orig->fld[0]; 
+                      ^~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_rtx_if_shared/src/emit-rtl.c:3029:19: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+v9 = rtx_alloc( ( rtx_code)v2); 
+                  ^~~~~~~~
+                  rtx_cost
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_rtx_if_shared/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_rtx_if_shared/src/emit-rtl.c:3029:28: error: expected ')'
+v9 = rtx_alloc( ( rtx_code)v2); 
+                           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_rtx_if_shared/src/emit-rtl.c:3029:15: note: to match this '('
+v9 = rtx_alloc( ( rtx_code)v2); 
+              ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_rtx_if_shared/src/obj/emit-rtl.o] Error 1

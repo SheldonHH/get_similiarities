@@ -1,0 +1,37 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/offsettable_address_p/src/recog.c:2394:42: error: must use 'enum' tag to refer to type 'machine_mode'
+int  offsettable_address_p( int strictp, machine_mode mode, rtx y) 
+                                         ^
+                                         enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/offsettable_address_p/src/recog.c:2396:27: error: unexpected type name 'rtx': expected identifier
+int ( *v3)( machine_mode, rtx); // rax 
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/offsettable_address_p/src/recog.c:2396:13: error: a parameter list without types is only allowed in a function definition
+int ( *v3)( machine_mode, rtx); // rax 
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/offsettable_address_p/src/recog.c:2402:33: error: unexpected type name 'rtx': expected identifier
+int ( *addressp)( machine_mode, rtx); // [rsp+28h] [rbp-18h] 
+                                ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/offsettable_address_p/src/recog.c:2402:19: error: a parameter list without types is only allowed in a function definition
+int ( *addressp)( machine_mode, rtx); // [rsp+28h] [rbp-18h] 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/offsettable_address_p/src/recog.c:2403:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code ycode; // [rsp+30h] [rbp-10h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/offsettable_address_p/src/recog.c:2410:32: error: unexpected type name 'rtx': expected identifier
+v3 = ( int ( *)( machine_mode, rtx))strict_memory_address_p; 
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/offsettable_address_p/src/recog.c:2410:18: error: a parameter list without types is only allowed in a function definition
+v3 = ( int ( *)( machine_mode, rtx))strict_memory_address_p; 
+                 ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/offsettable_address_p/src/recog.c:2412:32: error: unexpected type name 'rtx': expected identifier
+v3 = ( int ( *)( machine_mode, rtx))memory_address_p; 
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/offsettable_address_p/src/recog.c:2412:18: error: a parameter list without types is only allowed in a function definition
+v3 = ( int ( *)( machine_mode, rtx))memory_address_p; 
+                 ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/offsettable_address_p/src/recog.c:2443:31: error: use of undeclared identifier 'machine_mode'
+z = gen_rtx_fmt_ee( LO_SUM, ( machine_mode)*( ( unsigned __int8 *)y + 2), y->fld[0].rtx, v6); 
+                              ^
+11 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/offsettable_address_p/src/obj/recog.o] Error 1

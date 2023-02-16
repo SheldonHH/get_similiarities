@@ -1,0 +1,67 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_twoval_binop/src/optabs.c:2388:27: error: unknown type name 'optab_0'; did you mean 'optab'?
+int  expand_twoval_binop( optab_0 binoptab, rtx op0, rtx op1, rtx targ0, rtx targ1, int unsignedp) 
+                          ^~~~~~~
+                          optab
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_twoval_binop/src/optabs.h:48:5: note: 'optab' declared here
+} * optab;
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_twoval_binop/src/optabs.c:2391:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v10; // r13d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_twoval_binop/src/optabs.c:2396:1: error: must use 'enum' tag to refer to type 'insn_code'
+insn_code insn_code; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_twoval_binop/src/optabs.c:2401:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v21; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_twoval_binop/src/optabs.c:2402:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v22; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_twoval_binop/src/optabs.c:2410:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode cop0; // [rsp+28h] [rbp-60h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_twoval_binop/src/optabs.c:2413:1: error: must use 'enum' tag to refer to type 'mode_class'
+mode_class op1a; // [rsp+38h] [rbp-50h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_twoval_binop/src/machmode.h:52:30: note: enum 'mode_class' is hidden by a non-type declaration of 'mode_class' here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_twoval_binop/src/optabs.c:2414:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode0; // [rsp+44h] [rbp-44h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_twoval_binop/src/optabs.c:2422:8: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+op1a = mode_class_0[v10]; 
+       ^~~~~~~~~~~~
+       mode_class
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_twoval_binop/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_twoval_binop/src/optabs.c:2460:11: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+operand = insn_data_0[insn_code].operand; 
+          ^~~~~~~~~~~
+          insn_data
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_twoval_binop/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_twoval_binop/src/optabs.c:2466:25: error: use of undeclared identifier 'machine_mode'
+t0 = convert_to_mode( ( machine_mode)*( ( unsigned __int16 *)&operand[1] + 8), v11, unsignedp); 
+                        ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_twoval_binop/src/optabs.c:2477:7: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+v19 = insn_data_0[insn_code].genfun( targ0a, t0); 
+      ^~~~~~~~~~~
+      insn_data
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_twoval_binop/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_twoval_binop/src/optabs.c:2477:36: error: called object type '<dependent type>' is not a function or function pointer
+v19 = insn_data_0[insn_code].genfun( targ0a, t0); 
+                                   ^
+13 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_twoval_binop/src/obj/optabs.o] Error 1

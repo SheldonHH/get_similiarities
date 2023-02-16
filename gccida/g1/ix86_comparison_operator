@@ -1,0 +1,31 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ix86_comparison_operator/src/i386.c:3722:40: error: must use 'enum' tag to refer to type 'machine_mode'
+int  ix86_comparison_operator( rtx op, machine_mode mode) 
+                                       ^
+                                       enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ix86_comparison_operator/src/i386.c:3727:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code second_code; // [rsp+4h] [rbp-14h] BYREF 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ix86_comparison_operator/src/i386.c:3728:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code bypass_code; // [rsp+8h] [rbp-10h] BYREF 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ix86_comparison_operator/src/i386.c:3729:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code[3]; // [rsp+Ch] [rbp-Ch] BYREF 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ix86_comparison_operator/src/i386.c:3741:29: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+ix86_fp_comparison_codes( ( rtx_code)v2, &bypass_code, code, &second_code); 
+                            ^~~~~~~~
+                            rtx_cost
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ix86_comparison_operator/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ix86_comparison_operator/src/i386.c:3741:38: error: expected ')'
+ix86_fp_comparison_codes( ( rtx_code)v2, &bypass_code, code, &second_code); 
+                                     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ix86_comparison_operator/src/i386.c:3741:25: note: to match this '('
+ix86_fp_comparison_codes( ( rtx_code)v2, &bypass_code, code, &second_code); 
+                        ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ix86_comparison_operator/src/obj/i386.o] Error 1

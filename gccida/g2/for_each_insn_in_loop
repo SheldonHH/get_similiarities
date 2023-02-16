@@ -1,0 +1,74 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/for_each_insn_in_loop/src/loop.c:4635:4: error: expected ';' after expression
+rtx v10; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/for_each_insn_in_loop/src/loop.c:4635:5: error: use of undeclared identifier 'v10'
+rtx v10; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/for_each_insn_in_loop/src/loop.c:4637:4: error: expected ';' after expression
+rtx v12; // r14 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/for_each_insn_in_loop/src/loop.c:4637:5: error: use of undeclared identifier 'v12'; did you mean 'v11'?
+rtx v12; // r14 
+    ^~~
+    v11
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/for_each_insn_in_loop/src/loop.c:4636:9: note: 'v11' declared here
+__int16 v11; // cx 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/for_each_insn_in_loop/src/loop.c:4640:4: error: expected ';' after expression
+rtx exit_labels; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/for_each_insn_in_loop/src/loop.c:4640:5: error: use of undeclared identifier 'exit_labels'; did you mean 'emit_label'?
+rtx exit_labels; // rax 
+    ^~~~~~~~~~~
+    emit_label
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/for_each_insn_in_loop/src/rtl.h:1340:12: note: 'emit_label' declared here
+extern rtx emit_label                   PARAMS ((rtx));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/for_each_insn_in_loop/src/loop.c:4644:4: error: expected ';' after expression
+rtx top; // rbx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/for_each_insn_in_loop/src/loop.c:4644:5: error: use of undeclared identifier 'top'
+rtx top; // rbx 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/for_each_insn_in_loop/src/loop.c:4645:4: error: expected ';' after expression
+rtx v20; // r11 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/for_each_insn_in_loop/src/loop.c:4645:5: error: use of undeclared identifier 'v20'
+rtx v20; // r11 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/for_each_insn_in_loop/src/loop.c:4648:4: error: expected ';' after expression
+rtx v23; // [rsp+0h] [rbp-48h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/for_each_insn_in_loop/src/loop.c:4648:5: error: use of undeclared identifier 'v23'
+rtx v23; // [rsp+0h] [rbp-48h] 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/for_each_insn_in_loop/src/loop.c:4665:1: error: use of undeclared identifier 'v10'
+v10 = fncall( loop, rtx, v8, v3); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/for_each_insn_in_loop/src/loop.c:4666:18: error: use of undeclared identifier 'v10'
+v11 = *( _WORD *)v10; 
+                 ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/for_each_insn_in_loop/src/loop.c:4667:1: error: use of undeclared identifier 'v12'
+v12 = v10; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/for_each_insn_in_loop/src/loop.c:4667:7: error: use of undeclared identifier 'v10'
+v12 = v10; 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/for_each_insn_in_loop/src/loop.c:4668:17: error: use of undeclared identifier 'v10'
+if ( *( _WORD *)v10 != 36 ) 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/for_each_insn_in_loop/src/loop.c:4673:1: error: use of undeclared identifier 'top'
+top = v10[1].fld[0].rtx; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/for_each_insn_in_loop/src/loop.c:4673:7: error: use of undeclared identifier 'v10'
+top = v10[1].fld[0].rtx; 
+      ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/for_each_insn_in_loop/src/obj/loop.o] Error 1

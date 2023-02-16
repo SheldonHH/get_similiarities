@@ -1,0 +1,34 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/output_constant_pool/src/varasm.c:4458:51: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( i = cfun->epilogue_delay_list; i; i = ( rtx)i[1] ) 
+                                                  ^~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/output_constant_pool/src/varasm.c:4503:6: error: use of undeclared identifier 'in_section_0'; did you mean 'in_section'?
+if ( in_section_0 != in_const ) 
+     ^~~~~~~~~~~~
+     in_section
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/output_constant_pool/src/varasm.c:205:3: note: 'in_section' declared here
+} in_section = no_section;
+  ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/output_constant_pool/src/varasm.c:4506:1: error: use of undeclared identifier 'in_section_0'; did you mean 'in_section'?
+in_section_0 = in_const; 
+^~~~~~~~~~~~
+in_section
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/output_constant_pool/src/varasm.c:205:3: note: 'in_section' declared here
+} in_section = no_section;
+  ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/output_constant_pool/src/varasm.c:4552:18: error: use of undeclared identifier 'machine_mode'
+assemble_real( ( machine_mode)v16, v7->align, *( realvaluetype *)&constant[1]); 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/output_constant_pool/src/varasm.c:4601:16: error: passing 'const enum machine_mode' to parameter of incompatible type 'realvaluetype'
+assemble_real( inner_mode_array[v16], v7->align, *( realvaluetype *)( *( ( _QWORD *)v19 + 1) + 16LL)); 
+               ^~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/output_constant_pool/src/varasm.c:4608:1: error: passing 'const enum machine_mode' to parameter of incompatible type 'realvaluetype'
+inner_mode_array[v7->mode], 
+^~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/output_constant_pool/src/varasm.c:4622:12: error: expected expression
+*( _OWORD *)&varasm->x_first_pool = 0LL; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/output_constant_pool/src/varasm.c:4622:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&varasm->x_first_pool = 0LL; 
+   ^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/output_constant_pool/src/obj/varasm.o] Error 1

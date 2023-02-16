@@ -1,0 +1,75 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_relational_operation/src/simplify-rtx.c:2540:37: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx  simplify_relational_operation( rtx_code code, machine_mode mode, rtx op0, rtx op1) 
+                                    ^
+                                    enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_relational_operation/src/simplify-rtx.c:2540:52: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  simplify_relational_operation( rtx_code code, machine_mode mode, rtx op0, rtx op1) 
+                                                   ^
+                                                   enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_relational_operation/src/simplify-rtx.c:2542:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v4; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_relational_operation/src/simplify-rtx.c:2545:4: error: expected ';' after expression
+rtx v7; // r13 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_relational_operation/src/simplify-rtx.c:2545:5: error: use of undeclared identifier 'v7'
+rtx v7; // r13 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_relational_operation/src/simplify-rtx.c:2546:4: error: expected ';' after expression
+rtx v8; // rbx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_relational_operation/src/simplify-rtx.c:2546:5: error: use of undeclared identifier 'v8'
+rtx v8; // rbx 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_relational_operation/src/simplify-rtx.c:2549:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v11; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_relational_operation/src/simplify-rtx.c:2577:4: error: expected ';' after expression
+rtx result; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_relational_operation/src/simplify-rtx.c:2577:5: error: use of undeclared identifier 'result'
+rtx result; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_relational_operation/src/simplify-rtx.c:2580:1: error: must use 'enum' tag to refer to type 'mode_class'
+mode_class v42; // [rsp+8h] [rbp-60h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_relational_operation/src/machmode.h:52:30: note: enum 'mode_class' is hidden by a non-type declaration of 'mode_class' here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_relational_operation/src/simplify-rtx.c:2591:26: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v6 = (  struct rtx_def *)op0[1]; 
+                         ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_relational_operation/src/simplify-rtx.c:2594:1: error: use of undeclared identifier 'v7'
+v7 = avoid_constant_pool_reference( rtx); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_relational_operation/src/simplify-rtx.c:2595:1: error: use of undeclared identifier 'v8'
+v8 = avoid_constant_pool_reference( v6); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_relational_operation/src/simplify-rtx.c:2596:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[*( ( unsigned __int8 *)rtx + 2)] == MODE_CC ) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_relational_operation/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_relational_operation/src/simplify-rtx.c:2598:35: error: use of undeclared identifier 'v7'
+if ( swap_commutative_operands_p( v7, v8) ) 
+                                  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_relational_operation/src/simplify-rtx.c:2598:39: error: use of undeclared identifier 'v8'
+if ( swap_commutative_operands_p( v7, v8) ) 
+                                      ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_relational_operation/src/simplify-rtx.c:2601:7: error: use of undeclared identifier 'v7'
+v12 = v7; 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_relational_operation/src/simplify-rtx.c:2602:1: error: use of undeclared identifier 'v7'
+v7 = v8; 
+^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_relational_operation/src/obj/simplify-rtx.o] Error 1

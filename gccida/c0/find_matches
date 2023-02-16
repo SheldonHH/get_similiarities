@@ -1,0 +1,29 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_matches/src/regmove.c:2205:15: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+for ( op_no = recog_data_0.n_operands; --op_no >= 0; matchpa->with[op_no] = -1 ) 
+              ^~~~~~~~~~~~
+              recog_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_matches/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_matches/src/regmove.c:2207:26: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+for ( op_no = 0; op_no < recog_data_0.n_operands; ++op_no ) 
+                         ^~~~~~~~~~~~
+                         recog_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_matches/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_matches/src/regmove.c:2210:5: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+p = recog_data_0.constraints[op_no]; 
+    ^~~~~~~~~~~~
+    recog_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_matches/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_matches/src/regmove.c:2261:2: error: expected expression
+ struct match = strtoul( p - 1, &end, 10); 
+ ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_matches/src/regmove.c:2263:7: error: expected expression
+if (  struct match >= op_no || !likely_spilled[match] ) 
+      ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_matches/src/obj/regmove.o] Error 1

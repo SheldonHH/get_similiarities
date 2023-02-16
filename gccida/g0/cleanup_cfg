@@ -1,0 +1,16 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cleanup_cfg/src/cfgcleanup.c:2235:15: error: use of undeclared identifier 'TV_CLEANUP_CFG_0'; did you mean 'TV_CLEANUP_CFG'?
+timevar_push( TV_CLEANUP_CFG_0); 
+              ^~~~~~~~~~~~~~~~
+              TV_CLEANUP_CFG
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cleanup_cfg/src/timevar.def:45:13: note: 'TV_CLEANUP_CFG' declared here
+DEFTIMEVAR (TV_CLEANUP_CFG           , "cfg cleanup")
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cleanup_cfg/src/cfgcleanup.c:2244:14: error: use of undeclared identifier 'TV_CLEANUP_CFG_0'; did you mean 'TV_CLEANUP_CFG'?
+timevar_pop( TV_CLEANUP_CFG_0); 
+             ^~~~~~~~~~~~~~~~
+             TV_CLEANUP_CFG
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cleanup_cfg/src/timevar.def:45:13: note: 'TV_CLEANUP_CFG' declared here
+DEFTIMEVAR (TV_CLEANUP_CFG           , "cfg cleanup")
+            ^
+2 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cleanup_cfg/src/obj/cfgcleanup.o] Error 1

@@ -1,0 +1,12 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/check_case_value/src/c-common.c:1729:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *valuec; // [rsp+8h] [rbp-8h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/check_case_value/src/c-common.c:1761:23: error: expected expression
+valuec = ( tree_node *)global_trees; 
+                      ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/check_case_value/src/c-common.c:1761:12: error: use of undeclared identifier 'tree_node'
+valuec = ( tree_node *)global_trees; 
+           ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/check_case_value/src/obj/c-common.o] Error 1

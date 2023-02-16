@@ -1,0 +1,38 @@
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/crude_dragon_weakness/src/engine/dragon.c:2524:8: error: use of undeclared identifier 'dword_4A74B0'
+return dword_4A74B0[safety]; 
+       ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/crude_dragon_weakness/src/engine/dragon.c:2528:45: error: invalid conversion between vector type '__m128' (vector of 4 'float' values) and integer type 'uint32' (aka 'unsigned int') of different size
+v18 = gg_interpolate( &moyo_value2weakness, ( __m128)LODWORD( moyo_value), escape_route); 
+                                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/crude_dragon_weakness/src/engine/dragon.c:2529:16: error: member reference base type '__m64' (vector of 1 'long long' value) is not a structure or union
+*( float *)&v19.m64_u64 = v18; 
+            ~~~^~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/crude_dragon_weakness/src/engine/dragon.c:2530:47: error: invalid conversion between vector type '__m128' (vector of 4 'float' values) and integer type 'uint32' (aka 'unsigned int') of different size
+v21 = gg_interpolate( &escape_route2weakness, ( __m128)LODWORD( escape_route), escape_route); 
+                                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/crude_dragon_weakness/src/engine/dragon.c:2532:40: error: invalid conversion between vector type '__m128' (vector of 4 'float' values) and integer type 'uint32' (aka 'unsigned int') of different size
+v11 = gg_interpolate( &genus2weakness, ( __m128)LODWORD( v22), escape_route); 
+                                       ^~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/crude_dragon_weakness/src/engine/dragon.c:2545:16: error: member reference base type '__m64' (vector of 1 'long long' value) is not a structure or union
+*( float *)&v19.m64_u64 = v13; 
+            ~~~^~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/crude_dragon_weakness/src/engine/dragon.c:2567:21: error: passing '__m64' (vector of 1 'long long' value) to parameter of incompatible type '__m128' (vector of 4 'float' values)
+v15 = _mm_cvtps_pd( v19); 
+                    ^~~
+/usr/lib/llvm-7/lib/clang/7.0.0/include/emmintrin.h:1326:21: note: passing argument to parameter '__a' here
+_mm_cvtps_pd(__m128 __a)
+                    ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/crude_dragon_weakness/src/engine/dragon.c:2568:29: error: use of undeclared identifier 'xmmword_4A67A0'
+v16 = _mm_mul_pd( ( __m128d)xmmword_4A67A0, v15); 
+                            ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/crude_dragon_weakness/src/engine/dragon.c:2569:42: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+result = fmin( _mm_unpackhi_pd( v16, v16).m128d_f64[0] + v16.m128d_f64[0], v15.m128d_f64[0] * 1.3); 
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/crude_dragon_weakness/src/engine/dragon.c:2569:61: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+result = fmin( _mm_unpackhi_pd( v16, v16).m128d_f64[0] + v16.m128d_f64[0], v15.m128d_f64[0] * 1.3); 
+                                                         ~~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/crude_dragon_weakness/src/engine/dragon.c:2569:79: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+result = fmin( _mm_unpackhi_pd( v16, v16).m128d_f64[0] + v16.m128d_f64[0], v15.m128d_f64[0] * 1.3); 
+                                                                           ~~~^~~~~~~~~~
+11 errors generated.
+make: *** [/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/crude_dragon_weakness/src/obj/1/dragon.o] Error 1

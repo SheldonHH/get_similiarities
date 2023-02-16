@@ -1,0 +1,19 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_rtx_fmt_eee/src/genrtl.c:999:23: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx  gen_rtx_fmt_eee( rtx_code code, machine_mode mode, rtx arg0, rtx arg1, rtx arg2) 
+                      ^
+                      enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_rtx_fmt_eee/src/genrtl.c:999:38: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  gen_rtx_fmt_eee( rtx_code code, machine_mode mode, rtx arg0, rtx arg1, rtx arg2) 
+                                     ^
+                                     enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_rtx_fmt_eee/src/genrtl.c:1005:29: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'unsigned long long' of different size
+v8[0] = _mm_unpacklo_epi64( ( __m128i)( unsigned __int64)arg0, ( __m128i)( unsigned __int64)arg1); 
+                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_rtx_fmt_eee/src/genrtl.c:1005:64: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'unsigned long long' of different size
+v8[0] = _mm_unpacklo_epi64( ( __m128i)( unsigned __int64)arg0, ( __m128i)( unsigned __int64)arg1); 
+                                                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_rtx_fmt_eee/src/genrtl.c:1013:49: error: use of undeclared identifier 'rtx_def'
+*(  struct rtx_def *)&result->fld[0].rtwint = ( rtx_def)si128; 
+                                                ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_rtx_fmt_eee/src/obj/genrtl.o] Error 1

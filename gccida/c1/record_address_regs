@@ -1,0 +1,22 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/record_address_regs/src/regclass.c:2429:35: error: must use 'enum' tag to refer to type 'reg_class'
+void  record_address_regs( rtx x, reg_class a2, int scale) 
+                                  ^
+                                  enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/record_address_regs/src/regclass.c:2464:6: error: use of undeclared identifier 'costs_0'; did you mean 'costs'?
+v9 = costs_0; 
+     ^~~~~~~
+     costs
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/record_address_regs/src/regclass.c:861:22: note: 'costs' declared here
+static struct costs *costs;
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/record_address_regs/src/regclass.c:2468:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/record_address_regs/src/regclass.c:2484:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v15 = (  struct rtx_def *)x[1]; 
+                          ^~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/record_address_regs/src/regclass.c:2605:32: error: expected expression
+record_address_regs( *( ( rtx *)x + v8 - 1), a2, v3); 
+                               ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/record_address_regs/src/obj/regclass.o] Error 1

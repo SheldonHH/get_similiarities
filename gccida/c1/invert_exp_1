@@ -1,0 +1,12 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/invert_exp_1/src/jump.c:2567:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v5; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/invert_exp_1/src/jump.c:2575:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v3 = ( __int64)v2[1]; 
+               ^~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/invert_exp_1/src/jump.c:2583:28: error: use of undeclared identifier 'machine_mode'
+v7 = gen_rtx_fmt_ee( v5, ( machine_mode)*( unsigned __int8 *)( v4 + 2), *( rtx *)( v4 + 8), *( rtx *)( v4 + 16)); 
+                           ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/invert_exp_1/src/obj/jump.o] Error 1

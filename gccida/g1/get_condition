@@ -1,0 +1,45 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/get_condition/src/loop.c:9777:6: error: conflicting types for 'get_condition'
+rtx  get_condition( rtx insn) 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/get_condition/src/expr.h:337:12: note: previous declaration is here
+extern rtx get_condition PARAMS ((rtx, rtx *));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/get_condition/src/loop.c:9783:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v5; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/get_condition/src/loop.c:9784:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v6; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/get_condition/src/loop.c:9786:16: error: expected ';' after expression
+result = ( rtx)insn[2]; 
+               ^
+               ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/get_condition/src/loop.c:9795:12: error: expected ')'
+if ( ( rtx)result[1] == global_rtl[0] ) 
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/get_condition/src/loop.c:9795:4: note: to match this '('
+if ( ( rtx)result[1] == global_rtl[0] ) 
+   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/get_condition/src/loop.c:9797:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v2.rtwint = ( __int64)result->fld[0]; 
+                      ^~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/get_condition/src/loop.c:9801:18: error: expected expression
+result = *( rtx *)( v2.rtwint + 8); 
+                 ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/get_condition/src/loop.c:9802:26: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v3 = (  struct rtx_def *)result[1]; 
+                         ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/get_condition/src/loop.c:9809:27: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+v6 = reverse_condition( ( rtx_code)*( _WORD *)result); 
+                          ^~~~~~~~
+                          rtx_cost
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/get_condition/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/get_condition/src/loop.c:9809:36: error: invalid operands to binary expression ('int (rtx, enum rtx_code)' (aka 'int (struct rtx_def *, enum rtx_code)') and 'uint16 *' (aka 'unsigned short *'))
+v6 = reverse_condition( ( rtx_code)*( _WORD *)result); 
+                        ~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+10 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/get_condition/src/obj/loop.o] Error 1

@@ -1,0 +1,16 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/get_condition_for_loop/src/loop.c:9812:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v7; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/get_condition_for_loop/src/loop.c:9820:24: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+v7 = swap_condition( ( rtx_code)*v3); 
+                       ^~~~~~~~
+                       rtx_cost
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/get_condition_for_loop/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/get_condition_for_loop/src/loop.c:9820:33: error: invalid operands to binary expression ('int (rtx, enum rtx_code)' (aka 'int (struct rtx_def *, enum rtx_code)') and 'unsigned short *')
+v7 = swap_condition( ( rtx_code)*v3); 
+                     ~~~~~~~~~~~^~~
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/get_condition_for_loop/src/obj/loop.o] Error 1

@@ -1,0 +1,25 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/try_copy_prop/src/loop.c:10441:4: error: expected ';' after expression
+rtx v26; // [rsp+40h] [rbp-38h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/try_copy_prop/src/loop.c:10441:5: error: use of undeclared identifier 'v26'
+rtx v26; // [rsp+40h] [rbp-38h] 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/try_copy_prop/src/loop.c:10463:13: error: expected ';' after expression
+v11 = ( rtx)v6[2]; 
+            ^
+            ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/try_copy_prop/src/loop.c:10465:33: error: expected expression
+v11 = single_set_2( v6, *( rtx *)&v6[2]); 
+                                ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/try_copy_prop/src/loop.c:10468:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v12.rtwint = ( __int64)v11->fld[0]; 
+                       ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/try_copy_prop/src/loop.c:10486:1: error: use of undeclared identifier 'v26'
+v26 = replacement; 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/try_copy_prop/src/loop.c:10488:22: error: expected expression
+note_stores( *( rtx *)&v6[2], note_reg_stored, &data); 
+                     ^
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/try_copy_prop/src/obj/loop.o] Error 1

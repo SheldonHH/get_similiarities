@@ -1,0 +1,34 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/put_var_into_stack/src/function.c:1822:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v5; // r14d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/put_var_into_stack/src/function.c:1826:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v9; // r15d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/put_var_into_stack/src/function.c:1827:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v10; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/put_var_into_stack/src/function.c:1830:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v13; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/put_var_into_stack/src/function.c:1833:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *part_type; // [rsp+8h] [rbp-50h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/put_var_into_stack/src/function.c:1943:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v7.rtwint = ( __int64)rtl->fld[0]; 
+                      ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/put_var_into_stack/src/function.c:1959:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v8.rtwint = ( __int64)rtl->fld[0]; 
+                      ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/put_var_into_stack/src/function.c:1967:55: error: use of undeclared identifier 'machine_mode'
+put_reg_into_stack( v6, rtl, decl->common.type, v5, ( machine_mode)supercontext_low, volatile_p, 0, v2, 0LL); 
+                                                      ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/put_var_into_stack/src/function.c:1985:30: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+hipart = (  struct rtx_def *)rtl[1]; 
+                             ^~~~~~
+9 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/put_var_into_stack/src/obj/function.o] Error 1

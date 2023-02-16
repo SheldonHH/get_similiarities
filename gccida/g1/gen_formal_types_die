@@ -1,0 +1,16 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_formal_types_die/src/dwarf2out.c:10514:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *values; // rbx 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_formal_types_die/src/dwarf2out.c:10519:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v9; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_formal_types_die/src/dwarf2out.c:10596:19: error: expected expression
+v9 = ( tree_node *)i[4]; 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_formal_types_die/src/dwarf2out.c:10596:8: error: use of undeclared identifier 'tree_node'
+v9 = ( tree_node *)i[4]; 
+       ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_formal_types_die/src/obj/dwarf2out.o] Error 1

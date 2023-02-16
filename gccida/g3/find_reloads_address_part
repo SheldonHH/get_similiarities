@@ -1,0 +1,73 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/find_reloads_address_part/src/reload.c:6157:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class a3, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/find_reloads_address_part/src/reload.c:6158:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/find_reloads_address_part/src/reload.c:6160:1: error: must use 'enum' tag to refer to type 'reload_type'
+reload_type type, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/find_reloads_address_part/src/reload.c:6173:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v22; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/find_reloads_address_part/src/reload.c:6174:4: error: expected ';' after expression
+rtx tem; // [rsp+8h] [rbp-40h] BYREF 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/find_reloads_address_part/src/reload.c:6174:5: error: use of undeclared identifier 'tem'; did you mean 'tee'?
+rtx tem; // [rsp+8h] [rbp-40h] BYREF 
+    ^~~
+    tee
+/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h:416:18: note: 'tee' declared here
+extern __ssize_t tee (int __fdin, int __fdout, size_t __len,
+                 ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/find_reloads_address_part/src/reload.c:6188:1: error: use of undeclared identifier 'tem'
+tem = force_const_mem( mode, x); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/find_reloads_address_part/src/reload.c:6189:7: error: use of undeclared identifier 'tem'
+rtx = tem->fld[0].rtx; 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/find_reloads_address_part/src/reload.c:6190:7: error: use of undeclared identifier 'tem'; did you mean 'tee'?
+v11 = tem; 
+      ^~~
+      tee
+/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h:416:18: note: 'tee' declared here
+extern __ssize_t tee (int __fdin, int __fdout, size_t __len,
+                 ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/find_reloads_address_part/src/reload.c:6191:7: error: use of undeclared identifier 'tem'
+fld = tem->fld; 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/find_reloads_address_part/src/reload.c:6193:47: error: expected expression
+find_reloads_address( mode, &tem, rtx, ( rtx *)fld, opnum, type, ind_levels, 0LL); 
+                                              ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/find_reloads_address_part/src/reload.c:6193:30: error: use of undeclared identifier 'tem'; did you mean 'tee'?
+find_reloads_address( mode, &tem, rtx, ( rtx *)fld, opnum, type, ind_levels, 0LL); 
+                             ^~~
+                             tee
+/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h:416:18: note: 'tee' declared here
+extern __ssize_t tee (int __fdin, int __fdout, size_t __len,
+                 ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/find_reloads_address_part/src/reload.c:6207:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v18 = (  struct rtx_def *)x[1]; 
+                          ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/find_reloads_address_part/src/reload.c:6213:26: error: use of undeclared identifier 'machine_mode'
+v20 = force_const_mem( ( machine_mode)*( ( unsigned __int8 *)v11 + 2), *( rtx *)&v11[1]); 
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/find_reloads_address_part/src/reload.c:6213:80: error: expected expression
+v20 = force_const_mem( ( machine_mode)*( ( unsigned __int8 *)v11 + 2), *( rtx *)&v11[1]); 
+                                                                               ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/find_reloads_address_part/src/reload.c:6216:1: error: use of undeclared identifier 'tem'
+tem = v20; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/find_reloads_address_part/src/reload.c:6218:7: error: use of undeclared identifier 'tem'
+rtx = tem->fld[0].rtx; 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/find_reloads_address_part/src/reload.c:6219:7: error: use of undeclared identifier 'tem'
+fld = tem->fld; 
+      ^
+18 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/find_reloads_address_part/src/obj/reload.o] Error 1

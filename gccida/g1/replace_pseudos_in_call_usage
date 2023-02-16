@@ -1,0 +1,12 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/replace_pseudos_in_call_usage/src/reload1.c:1050:48: error: must use 'enum' tag to refer to type 'machine_mode'
+void  replace_pseudos_in_call_usage( rtx *loc, machine_mode mem_mode, rtx usage) 
+                                               ^
+                                               enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/replace_pseudos_in_call_usage/src/reload1.c:1097:23: error: use of undeclared identifier 'machine_mode'
+*loc = gen_rtx_MEM( ( machine_mode)*( ( unsigned __int8 *)v12 + 2), v15); 
+                      ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/replace_pseudos_in_call_usage/src/reload1.c:1118:51: error: use of undeclared identifier 'machine_mode'
+replace_pseudos_in_call_usage( ( rtx *)v4->fld, ( machine_mode)*( ( unsigned __int8 *)v4 + 2), usage); 
+                                                  ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/replace_pseudos_in_call_usage/src/obj/reload1.o] Error 1

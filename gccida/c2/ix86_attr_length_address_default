@@ -1,0 +1,16 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_attr_length_address_default/src/i386.c:10432:14: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+n_operands = recog_data_0.n_operands; 
+             ^~~~~~~~~~~~
+             recog_data
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_attr_length_address_default/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_attr_length_address_default/src/i386.c:10435:20: error: use of undeclared identifier 'changes'; did you mean 'vhangup'?
+v2 = ( __int64)*( &changes + n_operands--); 
+                   ^~~~~~~
+                   vhangup
+/usr/include/unistd.h:907:12: note: 'vhangup' declared here
+extern int vhangup (void) __THROW;
+           ^
+2 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_attr_length_address_default/src/obj/i386.o] Error 1

@@ -1,0 +1,27 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/fixup_var_refs_insn/src/function.c:2207:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode promoted_mode, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/fixup_var_refs_insn/src/function.c:2236:13: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v10 = ( rtx)insn[2]; 
+            ^~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/fixup_var_refs_insn/src/function.c:2237:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v11.rtwint = ( __int64)insn[3].fld[0]; 
+                       ^~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/fixup_var_refs_insn/src/function.c:2240:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v25.rtwint = ( __int64)v10->fld[0]; 
+                       ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/fixup_var_refs_insn/src/function.c:2280:13: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v22 = ( rtx)nonnote_insn[2]; 
+            ^~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/fixup_var_refs_insn/src/function.c:2284:25: error: invalid operands to binary expression ('long long' and 'struct rtx_def')
+if ( v22->fld[0].rtwint == v10[1] ) 
+     ~~~~~~~~~~~~~~~~~~ ^  ~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/fixup_var_refs_insn/src/function.c:2305:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v12.rtwint = ( __int64)insn[1].fld[0]; 
+                       ^~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/fixup_var_refs_insn/src/function.c:2343:95: error: use of undeclared identifier 'machine_mode'
+*( _QWORD *)( v11.rtwint + 8) = walk_fixup_memory_subreg( *( rtx *)( v11.rtwint + 8), insn, ( machine_mode)v13, v14); 
+                                                                                              ^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/fixup_var_refs_insn/src/obj/function.o] Error 1

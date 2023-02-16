@@ -1,0 +1,18 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/start_function/src/c-decl.c:6679:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *section_name; // rdx 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/start_function/src/c-decl.c:6754:68: error: expected expression
+|| ( section_name = decl1->decl.name, section_name == ( tree_node *)*( &global_trees + 50)) ) 
+                                                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/start_function/src/c-decl.c:6754:57: error: use of undeclared identifier 'tree_node'
+|| ( section_name = decl1->decl.name, section_name == ( tree_node *)*( &global_trees + 50)) ) 
+                                                        ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/start_function/src/c-decl.c:6766:68: error: expected expression
+|| ( section_name = decl1->decl.name, section_name == ( tree_node *)*( &global_trees + 50)) ) 
+                                                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/start_function/src/c-decl.c:6766:57: error: use of undeclared identifier 'tree_node'
+|| ( section_name = decl1->decl.name, section_name == ( tree_node *)*( &global_trees + 50)) ) 
+                                                        ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/start_function/src/obj/c-decl.o] Error 1

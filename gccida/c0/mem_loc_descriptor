@@ -1,0 +1,26 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/mem_loc_descriptor/src/dwarf2out.c:8199:48: error: must use 'enum' tag to refer to type 'machine_mode'
+dw_loc_descr_ref  mem_loc_descriptor( rtx rtl, machine_mode mode) 
+                                               ^
+                                               enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/mem_loc_descriptor/src/dwarf2out.c:8215:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v16; // [rsp+14h] [rbp-4Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/mem_loc_descriptor/src/dwarf2out.c:8221:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode modea; // [rsp+4Ch] [rbp-14h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/mem_loc_descriptor/src/dwarf2out.c:8274:58: error: use of undeclared identifier 'machine_mode'
+mem_loc_result = mem_loc_descriptor( rtla->fld[0].rtx, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)rtla)); 
+                                                         ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/mem_loc_descriptor/src/dwarf2out.c:8274:73: error: expected expression
+mem_loc_result = mem_loc_descriptor( rtla->fld[0].rtx, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)rtla)); 
+                                                                        ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/mem_loc_descriptor/src/dwarf2out.c:8301:18: error: invalid suffix 'xmode' on integer constant
+v16 = *(short *)0xmode; 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/mem_loc_descriptor/src/dwarf2out.c:8311:14: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+rtla = ( rtx)rtla[1]; 
+             ^~~~~~~
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/mem_loc_descriptor/src/obj/dwarf2out.o] Error 1

@@ -1,0 +1,17 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/maybe_eliminate_biv/src/loop.c:8964:23: error: use of undeclared identifier 'off_7447DC'
+v19 = ( const char *)&off_7447DC; 
+                      ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/maybe_eliminate_biv/src/loop.c:8990:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v15.rtwint = ( __int64)v14->fld[0]; 
+                       ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/maybe_eliminate_biv/src/loop.c:9003:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v15.rtwint = ( __int64)v18->fld[0]; 
+                       ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/maybe_eliminate_biv/src/loop.c:9022:84: error: too few arguments to function call, expected 7, have 6
+v10 = maybe_eliminate_biv_1( loop, *( rtx *)&start[2], start, bl_0, eliminate_p, v8); 
+      ~~~~~~~~~~~~~~~~~~~~~                                                        ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/maybe_eliminate_biv/src/loop.c:321:1: note: 'maybe_eliminate_biv_1' declared here
+static int maybe_eliminate_biv_1 PARAMS ((const struct loop *, rtx, rtx,
+^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/maybe_eliminate_biv/src/obj/loop.o] Error 1

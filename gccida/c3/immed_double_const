@@ -1,0 +1,16 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/immed_double_const/src/varasm.c:2569:50: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  immed_double_const( __int64 i0, __int64 i1, machine_mode mode) 
+                                                 ^
+                                                 enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/immed_double_const/src/varasm.c:2583:8: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( ( mode_class_0[mode] | 2) != 3 ) 
+       ^~~~~~~~~~~~
+       mode_class
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/immed_double_const/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/immed_double_const/src/varasm.c:2635:16: error: invalid operands to binary expression ('struct rtx_def' and 'long long')
+if ( result[1] == v4 && result[1].fld[0].rtwint == v3 && *( ( unsigned __int8 *)result + 2) == mode ) 
+     ~~~~~~~~~ ^  ~~
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/immed_double_const/src/obj/varasm.o] Error 1

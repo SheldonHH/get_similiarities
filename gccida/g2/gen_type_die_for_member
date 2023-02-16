@@ -1,0 +1,12 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_type_die_for_member/src/dwarf2out.c:10574:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *abstract_origin; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_type_die_for_member/src/dwarf2out.c:10583:83: error: member reference base type 'dw_die_ref' (aka 'struct die_struct *') is not a structure or union
+if ( ( unsigned int)uid >= decl_die_table_in_use || !*( ( _QWORD *)&decl_die_table->die_tag + uid) ) 
+                                                                    ~~~~~~~~~~~~~~^ ~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_type_die_for_member/src/dwarf2out.c:10587:30: error: use of undeclared identifier 'a'
+fancy_abort( ( const char *)&a, 10121, "gen_type_die_for_member"); 
+                             ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_type_die_for_member/src/obj/dwarf2out.o] Error 1

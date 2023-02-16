@@ -1,0 +1,29 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cpp_push_buffer/src/cpplib.c:2298:1: error: unknown type name 'cpp_buffer_0'; did you mean 'cpp_buffer'?
+cpp_buffer_0 * cpp_push_buffer( 
+^~~~~~~~~~~~
+cpp_buffer
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cpp_push_buffer/src/cpplib.h:38:27: note: 'cpp_buffer' declared here
+typedef struct cpp_buffer cpp_buffer;
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cpp_push_buffer/src/cpplib.c:2299:1: error: unknown type name 'cpp_reader_0'; did you mean 'cpp_reader'?
+cpp_reader_0 *pfile, 
+^~~~~~~~~~~~
+cpp_reader
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cpp_push_buffer/src/cpplib.h:36:27: note: 'cpp_reader' declared here
+typedef struct cpp_reader cpp_reader;
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cpp_push_buffer/src/cpplib.c:2307:1: error: unknown type name 'cpp_buffer_0'; did you mean 'cpp_buffer'?
+cpp_buffer_0 *object_base; // rdx 
+^~~~~~~~~~~~
+cpp_buffer
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cpp_push_buffer/src/cpplib.h:38:27: note: 'cpp_buffer' declared here
+typedef struct cpp_buffer cpp_buffer;
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cpp_push_buffer/src/cpplib.c:2314:31: error: expected expression
+object_base = ( cpp_buffer_0 *)pfile->buffer_ob.object_base; 
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cpp_push_buffer/src/cpplib.c:2314:17: error: use of undeclared identifier 'cpp_buffer_0'
+object_base = ( cpp_buffer_0 *)pfile->buffer_ob.object_base; 
+                ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cpp_push_buffer/src/obj/cpplib.o] Error 1

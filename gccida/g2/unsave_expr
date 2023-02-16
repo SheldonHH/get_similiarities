@@ -1,0 +1,12 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/unsave_expr/src/tree.c:2110:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *type; // rbp 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/unsave_expr/src/tree.c:2121:12: error: expected expression
+*( _OWORD *)&result->common.chain = 0LL; 
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/unsave_expr/src/tree.c:2121:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&result->common.chain = 0LL; 
+   ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/unsave_expr/src/obj/tree.o] Error 1

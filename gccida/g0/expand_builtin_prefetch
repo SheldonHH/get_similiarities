@@ -1,0 +1,24 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_builtin_prefetch/src/builtins.c:1190:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v1; // edx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_builtin_prefetch/src/builtins.c:1191:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v2; // edx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_builtin_prefetch/src/builtins.c:1193:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *arg0; // [rsp+10h] [rbp-30h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_builtin_prefetch/src/builtins.c:1245:74: error: use of undeclared identifier 'insn_data_0'
+if ( !insn_data_0[1316].operand->predicate( op0, *( ( unsigned __int16 *)insn_data_0[1316].operand + 8)) ) 
+                                                                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_builtin_prefetch/src/builtins.c:1245:7: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+if ( !insn_data_0[1316].operand->predicate( op0, *( ( unsigned __int16 *)insn_data_0[1316].operand + 8)) ) 
+      ^~~~~~~~~~~
+      insn_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_builtin_prefetch/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_builtin_prefetch/src/obj/builtins.o] Error 1

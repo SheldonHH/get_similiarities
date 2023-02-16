@@ -1,0 +1,26 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_agi_dependant/src/i386.c:10512:50: error: must use 'enum' tag to refer to type 'attr_type'
+int  ix86_agi_dependant( rtx insn, rtx dep_insn, attr_type insn_type) 
+                                                 ^
+                                                 enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_agi_dependant/src/i386.c:10519:14: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+addr = ( rtx)insn[2]; 
+             ^~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_agi_dependant/src/i386.c:10531:11: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+for ( i = recog_data_0.n_operands - 1; i >= 0; --i ) 
+          ^~~~~~~~~~~~
+          recog_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_agi_dependant/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_agi_dependant/src/i386.c:10533:37: error: use of undeclared identifier 'recog_data_0'
+if ( ( unsigned __int16)*( _DWORD *)recog_data_0.operand[i] == 66 ) 
+                                    ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_agi_dependant/src/i386.c:10534:23: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+return modified_in_p( recog_data_0.operand[i]->fld[0].rtx, dep_insn); 
+                      ^~~~~~~~~~~~
+                      recog_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_agi_dependant/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_agi_dependant/src/obj/i386.o] Error 1

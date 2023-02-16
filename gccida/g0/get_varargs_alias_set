@@ -1,0 +1,19 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/get_varargs_alias_set/src/alias.c:1172:6: error: use of undeclared identifier 'set_3'; did you mean 'set_of'?
+if ( set_3 == -1 ) 
+     ^~~~~
+     set_of
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/get_varargs_alias_set/src/rtl.h:1478:12: note: 'set_of' declared here
+extern rtx set_of                       PARAMS ((rtx, rtx));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/get_varargs_alias_set/src/alias.c:1173:1: error: use of undeclared identifier 'set_3'
+set_3 = new_alias_set( ); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/get_varargs_alias_set/src/alias.c:1174:8: error: use of undeclared identifier 'set_3'; did you mean 'set_of'?
+return set_3; 
+       ^~~~~
+       set_of
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/get_varargs_alias_set/src/rtl.h:1478:12: note: 'set_of' declared here
+extern rtx set_of                       PARAMS ((rtx, rtx));
+           ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/get_varargs_alias_set/src/obj/alias.o] Error 1

@@ -1,0 +1,94 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_if_then_else/src/combine.c:5132:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // [rsp+54h] [rbp-6Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_if_then_else/src/combine.c:5135:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode m; // [rsp+68h] [rbp-58h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_if_then_else/src/combine.c:5136:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code extend_op; // [rsp+6Ch] [rbp-54h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_if_then_else/src/combine.c:5137:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code op; // [rsp+70h] [rbp-50h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_if_then_else/src/combine.c:5140:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code false_code; // [rsp+80h] [rbp-40h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_if_then_else/src/combine.c:5148:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code true_code; // [rsp+94h] [rbp-2Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_if_then_else/src/combine.c:5155:18: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+true_rtx = ( rtx)x[1]; 
+                 ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_if_then_else/src/combine.c:5175:32: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+true_val = (  struct rtx_def *)cond[1]; 
+                               ^~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_if_then_else/src/combine.c:5189:34: error: use of undeclared identifier 'machine_mode'
+&& ( nzb = nonzero_bits( from, ( machine_mode)*( ( unsigned __int8 *)from + 2)), exact_log2_wide( nzb) >= 0) ) 
+                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_if_then_else/src/combine.c:5196:33: error: use of undeclared identifier 'machine_mode'
+&& num_sign_bit_copies( from, ( machine_mode)*( ( unsigned __int8 *)from + 2)) == mode_bitsize[*( ( unsigned __int8 *)from + 2)] ) 
+                                ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_if_then_else/src/combine.c:5227:18: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+true_rtx = ( rtx)x[1]; 
+                 ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_if_then_else/src/combine.c:5255:36: error: use of undeclared identifier 'machine_mode'
+v12 = reversed_comparison( cond, ( machine_mode)*( ( unsigned __int8 *)cond + 2), cond->fld[0].rtx, *( rtx *)&cond[1]); 
+                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_if_then_else/src/combine.c:5270:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& ( mode_class_0[mode] != MODE_FLOAT 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_if_then_else/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_if_then_else/src/combine.c:5271:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& mode_class_0[mode] != MODE_COMPLEX_FLOAT 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_if_then_else/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_if_then_else/src/combine.c:5272:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& mode_class_0[mode] != MODE_VECTOR_FLOAT 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_if_then_else/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_if_then_else/src/combine.c:5281:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& ( mode_class_0[mode] != MODE_FLOAT 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_if_then_else/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_if_then_else/src/combine.c:5282:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& mode_class_0[mode] != MODE_COMPLEX_FLOAT 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_if_then_else/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_if_then_else/src/combine.c:5283:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& mode_class_0[mode] != MODE_VECTOR_FLOAT 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_if_then_else/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_if_then_else/src/combine.c:5290:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[mode] == MODE_INT 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_if_then_else/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_if_then_else/src/obj/combine.o] Error 1

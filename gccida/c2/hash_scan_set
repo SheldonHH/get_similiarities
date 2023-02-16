@@ -1,0 +1,69 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/hash_scan_set/src/gcse.c:2655:4: error: expected ';' after expression
+rtx reg_note; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/hash_scan_set/src/gcse.c:2655:5: error: must use 'enum' tag to refer to type 'reg_note'
+rtx reg_note; // rax 
+    ^
+    enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/hash_scan_set/src/gcse.c:2656:4: error: expected ';' after expression
+rtx v28; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/hash_scan_set/src/gcse.c:2656:5: error: use of undeclared identifier 'v28'
+rtx v28; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/hash_scan_set/src/gcse.c:2664:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v36; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/hash_scan_set/src/gcse.c:2692:26: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v4 = (  struct rtx_def *)pat[1]; 
+                         ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/hash_scan_set/src/gcse.c:2696:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v6.rtwint = ( __int64)pat->fld[0]; 
+                      ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/hash_scan_set/src/gcse.c:2733:14: error: expected expression
+if ( *( rtx *)( basic_block_info->data.l[*( int *)( basic_block_for_insn->data.l[insn->fld[0].rtint] + 88)] + 8) != insn ) 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/hash_scan_set/src/gcse.c:2739:54: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+if ( *( _WORD *)v5 != 47 || ( v14.rtwint = ( __int64)v5->fld[0], *( _WORD *)v14.rtwint != 61) ) 
+                                                     ^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/hash_scan_set/src/gcse.c:2783:14: error: expected expression
+*( ( _OWORD *)object_base + 1) = 0LL; 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/hash_scan_set/src/gcse.c:2783:6: error: use of undeclared identifier '_OWORD'
+*( ( _OWORD *)object_base + 1) = 0LL; 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/hash_scan_set/src/gcse.c:2843:1: error: must use 'enum' tag to refer to type 'reg_note'
+reg_note = find_reg_note( insn, REG_EQUIV, 0LL); 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/hash_scan_set/src/gcse.c:2843:10: error: expected identifier or '('
+reg_note = find_reg_note( insn, REG_EQUIV, 0LL); 
+         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/hash_scan_set/src/gcse.c:2844:6: error: use of undeclared identifier 'reg_note'; did you mean 'reg_names'?
+if ( reg_note ) 
+     ^~~~~~~~
+     reg_names
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/hash_scan_set/src/hard-reg-set.h:485:21: note: 'reg_names' declared here
+extern const char * reg_names[FIRST_PSEUDO_REGISTER];
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/hash_scan_set/src/gcse.c:2846:17: error: use of undeclared identifier 'reg_note'
+if ( *( _WORD *)reg_note->fld[0].rtwint == 66 ) 
+                ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/hash_scan_set/src/gcse.c:2853:1: error: use of undeclared identifier 'v28'
+v28 = ( rtx)insn[2]; 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/hash_scan_set/src/gcse.c:2854:17: error: use of undeclared identifier 'v28'
+if ( *( _WORD *)v28 != 47 ) 
+                ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/hash_scan_set/src/gcse.c:2855:35: error: expected expression
+v28 = single_set_2( insn, *( rtx *)&insn[2]); 
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/hash_scan_set/src/gcse.c:2855:1: error: use of undeclared identifier 'v28'
+v28 = single_set_2( insn, *( rtx *)&insn[2]); 
+^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/hash_scan_set/src/obj/gcse.o] Error 1

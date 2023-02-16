@@ -1,0 +1,28 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/insert/src/cse.c:2016:82: error: must use 'enum' tag to refer to type 'machine_mode'
+ struct table_elt * insert( rtx x,  struct table_elt *classp, unsigned int hash, machine_mode mode) 
+                                                                                 ^
+                                                                                 enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/insert/src/cse.c:2076:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v30 = ( ( unsigned int)( mode_class_0[*( ( unsigned __int8 *)x + 2)] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/insert/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/insert/src/cse.c:2231:52: error: expected ')'
+if ( v36 != cached_regno || (  struct cse_reg_info = cached_cse_reg_info) == 0LL ) 
+                                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/insert/src/cse.c:2231:29: note: to match this '('
+if ( v36 != cached_regno || (  struct cse_reg_info = cached_cse_reg_info) == 0LL ) 
+                            ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/insert/src/cse.c:2231:75: error: expected expression
+if ( v36 != cached_regno || (  struct cse_reg_info = cached_cse_reg_info) == 0LL ) 
+                                                                          ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/insert/src/cse.c:2232:2: error: expected expression
+ struct cse_reg_info = get_cse_reg_info( v36); 
+ ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/insert/src/cse.c:2266:45: error: use of undeclared identifier 'machine_mode'
+v41->const_rtx = gen_lowpart_if_possible( ( machine_mode)*( ( unsigned __int8 *)x + 2), first_same_value->exp); 
+                                            ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/insert/src/obj/cse.o] Error 1

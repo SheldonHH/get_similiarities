@@ -1,0 +1,20 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/set_designator/src/c-typeck.c:6093:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *inited; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/set_designator/src/c-typeck.c:6103:6: error: use of undeclared identifier 'constructor_range_stack_0'; did you mean 'constructor_range_stack'?
+if ( constructor_range_stack_0 ) 
+     ^~~~~~~~~~~~~~~~~~~~~~~~~
+     constructor_range_stack
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/set_designator/src/c-typeck.c:5036:33: note: 'constructor_range_stack' declared here
+struct constructor_range_stack *constructor_range_stack;
+                                ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/set_designator/src/c-typeck.c:6105:9: error: use of undeclared identifier 'constructor_stack_0'; did you mean 'constructor_stack'?
+while ( constructor_stack_0->implicit ) 
+        ^~~~~~~~~~~~~~~~~~~
+        constructor_stack
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/set_designator/src/c-typeck.c:5021:27: note: 'constructor_stack' declared here
+struct constructor_stack *constructor_stack;
+                          ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/set_designator/src/obj/c-typeck.o] Error 1

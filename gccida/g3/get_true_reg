@@ -1,0 +1,30 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/get_true_reg/src/reg-stack.c:1033:4: error: expected ';' after expression
+rtx v6; // r12 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/get_true_reg/src/reg-stack.c:1033:5: error: use of undeclared identifier 'v6'
+rtx v6; // r12 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/get_true_reg/src/reg-stack.c:1049:1: error: use of undeclared identifier 'v6'
+v6 = rtx; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/get_true_reg/src/reg-stack.c:1053:14: error: expected expression
+fld = ( rtx *)v6->fld; 
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/get_true_reg/src/reg-stack.c:1060:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v5.rtwint = ( __int64)rtx->fld[0]; 
+                      ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/get_true_reg/src/reg-stack.c:1064:1: error: use of undeclared identifier 'v6'
+v6 = rtx; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/get_true_reg/src/reg-stack.c:1074:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( unsigned __int8 *)( v5.rtwint + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/get_true_reg/src/reg-stack.c:1076:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)rtx + 2))] 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/get_true_reg/src/reg-stack.c:1080:15: error: expected expression
+return ( rtx *)rtx->fld; 
+              ^
+9 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/get_true_reg/src/obj/reg-stack.o] Error 1

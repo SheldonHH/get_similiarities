@@ -1,0 +1,19 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/dead_or_set_regno_p/src/rtlanal.c:2195:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v5 = ( unsigned __int16 *)insn[2]; 
+                          ^~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/dead_or_set_regno_p/src/rtlanal.c:2248:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v30 = ( ( unsigned int)( mode_class_0[( unsigned __int8)v29] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/dead_or_set_regno_p/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/dead_or_set_regno_p/src/rtlanal.c:2302:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v32 = ( ( unsigned int)( mode_class_0[( unsigned __int8)v31] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/dead_or_set_regno_p/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/dead_or_set_regno_p/src/obj/rtlanal.o] Error 1

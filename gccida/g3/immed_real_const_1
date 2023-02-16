@@ -1,0 +1,31 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/immed_real_const_1/src/varasm.c:2660:26: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  immed_real_const_1( machine_mode mode, realvaluetype d) 
+                         ^
+                         enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/immed_real_const_1/src/varasm.c:2660:6: error: conflicting types for 'immed_real_const_1'
+rtx  immed_real_const_1( machine_mode mode, realvaluetype d) 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/immed_real_const_1/src/real.h:466:24: note: previous declaration is here
+extern struct rtx_def *immed_real_const_1       PARAMS ((REAL_VALUE_TYPE,
+                       ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/immed_real_const_1/src/varasm.c:2667:1: error: must use 'union' tag to refer to type 'real_extract'
+real_extract u; // [rsp+8h] [rbp-28h] BYREF 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/immed_real_const_1/src/varasm.c:2671:38: error: expected expression
+if ( !target_isnan( d) && *( _OWORD *)d.r == *( _OWORD *)dconst0.r && dconst0.r[2] == d.r[2] ) 
+                                     ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/immed_real_const_1/src/varasm.c:2671:30: error: use of undeclared identifier '_OWORD'
+if ( !target_isnan( d) && *( _OWORD *)d.r == *( _OWORD *)dconst0.r && dconst0.r[2] == d.r[2] ) 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/immed_real_const_1/src/varasm.c:2681:20: error: expected expression
+while ( *( _OWORD *)u.d.r != *( _OWORD *)&result[1] || result[2] != u.d.r[2] ) 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/immed_real_const_1/src/varasm.c:2681:12: error: use of undeclared identifier '_OWORD'
+while ( *( _OWORD *)u.d.r != *( _OWORD *)&result[1] || result[2] != u.d.r[2] ) 
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/immed_real_const_1/src/varasm.c:2703:15: error: use of undeclared identifier 'rtx_def'
+result[1] = ( rtx_def)v3; 
+              ^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/immed_real_const_1/src/obj/varasm.o] Error 1

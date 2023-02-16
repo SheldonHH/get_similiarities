@@ -1,0 +1,62 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/ix86_split_to_parts/src/i386.c:9042:52: error: must use 'enum' tag to refer to type 'machine_mode'
+int  ix86_split_to_parts( rtx operand, rtx *parts, machine_mode mode) 
+                                                   ^
+                                                   enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/ix86_split_to_parts/src/i386.c:9059:4: error: expected ';' after expression
+rtx op; // [rsp+18h] [rbp-60h] BYREF 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/ix86_split_to_parts/src/i386.c:9059:5: error: use of undeclared identifier 'op'
+rtx op; // [rsp+18h] [rbp-60h] BYREF 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/ix86_split_to_parts/src/i386.c:9063:12: error: expected identifier or '('
+ struct op = operand; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/ix86_split_to_parts/src/i386.c:9083:2: error: expected expression
+ struct op = get_pool_constant( rtx); 
+ ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/ix86_split_to_parts/src/i386.c:9085:17: error: use of undeclared identifier 'op'
+if ( *( _WORD *)op == 66 && !offsettable_memref_p( op) ) 
+                ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/ix86_split_to_parts/src/i386.c:9085:52: error: use of undeclared identifier 'op'
+if ( *( _WORD *)op == 66 && !offsettable_memref_p( op) ) 
+                                                   ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/ix86_split_to_parts/src/i386.c:9087:21: error: use of undeclared identifier 'op'
+if ( !push_operand( op, VOIDmode) ) 
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/ix86_split_to_parts/src/i386.c:9089:12: error: expected identifier or '('
+ struct op = copy_rtx( op); 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/ix86_split_to_parts/src/i386.c:9090:14: error: use of undeclared identifier 'op'
+*( ( _BYTE *)op + 2) = 5 - ( ( target_flags & 0x2000000) == 0); 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/ix86_split_to_parts/src/i386.c:9091:6: error: use of undeclared identifier 'op'
+v8 = op; 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/ix86_split_to_parts/src/i386.c:9092:12: error: use of undeclared identifier 'op'
+parts[2] = op; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/ix86_split_to_parts/src/i386.c:9099:12: error: use of undeclared identifier 'op'
+split_ti( &op, 1, parts, parts + 1); 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/ix86_split_to_parts/src/i386.c:9102:17: error: use of undeclared identifier 'op'
+if ( *( _WORD *)op == 61 ) 
+                ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/ix86_split_to_parts/src/i386.c:9106:31: error: use of undeclared identifier 'op'
+*parts = gen_rtx_REG( DImode, op->fld[0].rtint); 
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/ix86_split_to_parts/src/i386.c:9107:27: error: use of undeclared identifier 'op'
+v7 = gen_rtx_REG( SImode, op->fld[0].rtint + 1); 
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/ix86_split_to_parts/src/i386.c:9109:33: error: use of undeclared identifier 'op'
+else if ( offsettable_memref_p( op) ) 
+                                ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/ix86_split_to_parts/src/i386.c:9111:24: error: use of undeclared identifier 'op'
+v9 = adjust_address_1( op, DImode, 0LL, 1, 1); 
+                       ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/ix86_split_to_parts/src/i386.c:9112:12: error: expected identifier or '('
+ struct op = v9; 
+           ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/ix86_split_to_parts/src/obj/i386.o] Error 1

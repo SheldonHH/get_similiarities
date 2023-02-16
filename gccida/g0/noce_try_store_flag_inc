@@ -1,0 +1,18 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/noce_try_store_flag_inc/src/ifcvt.c:1238:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v3; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/noce_try_store_flag_inc/src/ifcvt.c:1248:10: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+|| ( rtx)if_info->a[1] != const_int_rtx[65] && ( rtx)if_info->a[1] != const_int_rtx[63] 
+         ^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/noce_try_store_flag_inc/src/ifcvt.c:1248:54: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+|| ( rtx)if_info->a[1] != const_int_rtx[65] && ( rtx)if_info->a[1] != const_int_rtx[63] 
+                                                     ^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/noce_try_store_flag_inc/src/ifcvt.c:1270:21: error: use of undeclared identifier 'machine_mode'
+v1 = gen_reg_rtx( ( machine_mode)*( ( unsigned __int8 *)if_info->x + 2)); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/noce_try_store_flag_inc/src/ifcvt.c:1279:33: error: use of undeclared identifier 'machine_mode'
+target = expand_simple_binop( ( machine_mode)*( ( unsigned __int8 *)if_info->x + 2), v3, x, target, x, 0, OPTAB_WIDEN); 
+                                ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/noce_try_store_flag_inc/src/obj/ifcvt.o] Error 1

@@ -1,0 +1,61 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/change_address/src/emit-rtl.c:2414:34: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  change_address( rtx memref, machine_mode mode, rtx addr) 
+                                 ^
+                                 enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/change_address/src/emit-rtl.c:2429:1: error: use of undeclared identifier '__m256i'
+__m256i arg0; // [rsp+0h] [rbp-58h] BYREF 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/change_address/src/emit-rtl.c:2434:18: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v5 = ( __int64 *)memref[1]; 
+                 ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/change_address/src/emit-rtl.c:2457:1: error: use of undeclared identifier 'arg0'
+arg0.m256i_i64[0] = v9; 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/change_address/src/emit-rtl.c:2460:61: error: use of undeclared identifier 'arg0'
+slot_with_hash = htab_find_slot_with_hash( const_int_htab, &arg0, v9, INSERT); 
+                                                            ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/change_address/src/emit-rtl.c:2465:42: error: use of undeclared identifier 'arg0'
+v7 = gen_rtx_fmt_w( CONST_INT, VOIDmode, arg0.m256i_i64[0]); 
+                                         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/change_address/src/emit-rtl.c:2473:40: error: use of undeclared identifier 'machine_mode'
+mode_alignment = get_mode_alignment( ( machine_mode)v4); 
+                                       ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/change_address/src/emit-rtl.c:2490:1: error: use of undeclared identifier 'arg0'
+arg0.m256i_i64[0] = v6; 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/change_address/src/emit-rtl.c:2491:12: error: expected expression
+*( _OWORD *)&arg0.m256i_u64[1] = 0LL; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/change_address/src/emit-rtl.c:2491:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&arg0.m256i_u64[1] = 0LL; 
+   ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/change_address/src/emit-rtl.c:2491:14: error: use of undeclared identifier 'arg0'
+*( _OWORD *)&arg0.m256i_u64[1] = 0LL; 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/change_address/src/emit-rtl.c:2492:1: error: use of undeclared identifier 'arg0'
+arg0.m256i_i64[3] = ( __int64)v7; 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/change_address/src/emit-rtl.c:2494:41: error: use of undeclared identifier 'arg0'
+slot = htab_find_slot( mem_attrs_htab, &arg0, INSERT); 
+                                        ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/change_address/src/emit-rtl.c:2502:18: error: expected expression
+v15 = *( _OWORD *)arg0.m256i_i8; 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/change_address/src/emit-rtl.c:2502:10: error: use of undeclared identifier '_OWORD'
+v15 = *( _OWORD *)arg0.m256i_i8; 
+         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/change_address/src/emit-rtl.c:2503:14: error: expected expression
+*( ( _OWORD *)v14 + 1) = *( _OWORD *)&arg0.m256i_u64[2]; 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/change_address/src/emit-rtl.c:2503:6: error: use of undeclared identifier '_OWORD'
+*( ( _OWORD *)v14 + 1) = *( _OWORD *)&arg0.m256i_u64[2]; 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/change_address/src/emit-rtl.c:2503:37: error: expected expression
+*( ( _OWORD *)v14 + 1) = *( _OWORD *)&arg0.m256i_u64[2]; 
+                                    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/change_address/src/emit-rtl.c:2503:29: error: use of undeclared identifier '_OWORD'
+*( ( _OWORD *)v14 + 1) = *( _OWORD *)&arg0.m256i_u64[2]; 
+                            ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/change_address/src/obj/emit-rtl.o] Error 1

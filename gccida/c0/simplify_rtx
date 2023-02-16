@@ -1,0 +1,40 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_rtx/src/simplify-rtx.c:3285:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // [rsp+18h] [rbp-18h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_rtx/src/simplify-rtx.c:3286:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code; // [rsp+1Ch] [rbp-14h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_rtx/src/simplify-rtx.c:3298:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)x->fld[0].rtwint)); 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_rtx/src/simplify-rtx.c:3298:18: error: expected expression
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)x->fld[0].rtwint)); 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_rtx/src/simplify-rtx.c:3305:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)BYTE2( *( _DWORD *)x->fld[0].rtwint), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_rtx/src/simplify-rtx.c:3322:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)x->fld[0].rtwint), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_rtx/src/simplify-rtx.c:3322:18: error: expected expression
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)x->fld[0].rtwint), 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_rtx/src/simplify-rtx.c:3326:6: error: use of undeclared identifier 'QTextBlock'
+if ( QTextBlock::operator<( x->fld[0].rtx, *( rtx *)&x[1]) ) 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_rtx/src/simplify-rtx.c:3329:30: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+x->fld[0].rtwint = ( __int64)x[1]; 
+                             ^~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_rtx/src/simplify-rtx.c:3338:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)BYTE2( *( _DWORD *)x->fld[0].rtwint), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_rtx/src/simplify-rtx.c:3346:21: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+rtwint = ( _DWORD *)x[1]; 
+                    ^~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_rtx/src/simplify-rtx.c:3347:47: error: use of undeclared identifier 'machine_mode'
+return simplify_relational_operation( code, ( machine_mode)BYTE2( *rtwint), x->fld[0].rtx, *( rtx *)&x[1]); 
+                                              ^
+12 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_rtx/src/obj/simplify-rtx.o] Error 1

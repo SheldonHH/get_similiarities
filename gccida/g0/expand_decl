@@ -1,0 +1,16 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_decl/src/stmt.c:4328:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v1; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_decl/src/stmt.c:4342:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode reg_mode; // [rsp+4Ch] [rbp-34h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_decl/src/stmt.c:4382:22: error: use of undeclared identifier 'machine_mode'
+x_1 = gen_rtx_MEM( ( machine_mode)LOBYTE( decl->block.supercontext), address); 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_decl/src/stmt.c:4430:34: error: use of undeclared identifier 'machine_mode'
+reg_mode = promote_mode( type, ( machine_mode)LOBYTE( decl->block.supercontext), &unsignedp, 0); 
+                                 ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_decl/src/obj/stmt.o] Error 1

@@ -1,0 +1,15 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/call_insn_operand/src/i386.c:3489:33: error: must use 'enum' tag to refer to type 'machine_mode'
+int  call_insn_operand( rtx op, machine_mode mode) 
+                                ^
+                                enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/call_insn_operand/src/i386.c:3496:24: error: expected expression
+if ( global_rtl[5] !=  struct op && global_rtl[3] !=  struct op && ( unsigned int)( op->fld[0].rtint - 53) > 4 ) 
+                       ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/call_insn_operand/src/i386.c:3497:31: error: use of undeclared identifier 'machine_mode'
+return general_operand( op, ( machine_mode)( ( ( BYTE3( target_flags) & 2) != 0) + 4)); 
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/call_insn_operand/src/i386.c:3503:31: error: use of undeclared identifier 'machine_mode'
+return general_operand( op, ( machine_mode)( ( ( BYTE3( target_flags) & 2) != 0) + 4)); 
+                              ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/call_insn_operand/src/obj/i386.o] Error 1

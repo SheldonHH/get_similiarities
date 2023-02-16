@@ -1,0 +1,71 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/memory_address/src/explow.c:931:22: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  memory_address( machine_mode mode, rtx x) 
+                     ^
+                     enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/memory_address/src/explow.c:938:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v7; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/memory_address/src/explow.c:941:4: error: expected ';' after expression
+rtx v10; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/memory_address/src/explow.c:941:5: error: use of undeclared identifier 'v10'
+rtx v10; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/memory_address/src/explow.c:942:4: error: expected ';' after expression
+rtx v11; // rbx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/memory_address/src/explow.c:942:5: error: use of undeclared identifier 'v11'
+rtx v11; // rbx 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/memory_address/src/explow.c:946:4: error: expected ';' after expression
+rtx v16; // rbx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/memory_address/src/explow.c:946:5: error: use of undeclared identifier 'v16'
+rtx v16; // rbx 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/memory_address/src/explow.c:948:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v18; // [rsp+Ch] [rbp-3Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/memory_address/src/explow.c:949:4: error: expected ';' after expression
+rtx constptr; // [rsp+10h] [rbp-38h] BYREF 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/memory_address/src/explow.c:949:5: error: use of undeclared identifier 'constptr'
+rtx constptr; // [rsp+10h] [rbp-38h] BYREF 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/memory_address/src/explow.c:1006:22: error: use of undeclared identifier 'machine_mode'
+v11 = gen_reg_rtx( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)v8)); 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/memory_address/src/explow.c:1006:37: error: expected expression
+v11 = gen_reg_rtx( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)v8)); 
+                                    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/memory_address/src/explow.c:1006:1: error: use of undeclared identifier 'v11'
+v11 = gen_reg_rtx( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)v8)); 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/memory_address/src/explow.c:1008:25: error: use of undeclared identifier 'v11'
+v8 = force_operand( v8, v11); 
+                        ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/memory_address/src/explow.c:1009:12: error: use of undeclared identifier 'v11'
+if ( v8 != v11 ) 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/memory_address/src/explow.c:1010:17: error: use of undeclared identifier 'v11'
+emit_move_insn( v11, v8); 
+                ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/memory_address/src/explow.c:1013:1: error: use of undeclared identifier 'constptr'
+constptr = const_int_rtx[64]; 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/memory_address/src/explow.c:1014:37: error: use of undeclared identifier 'constptr'; did you mean 'confstr'?
+v14 = eliminate_constant_term( v8, &constptr); 
+                                    ^~~~~~~~
+                                    confstr
+/usr/include/unistd.h:626:15: note: 'confstr' declared here
+extern size_t confstr (int __name, char *__buf, size_t __len) __THROW;
+              ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/memory_address/src/obj/explow.o] Error 1

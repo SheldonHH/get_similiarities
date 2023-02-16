@@ -1,0 +1,42 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/sched_analyze_1/src/sched-deps.c:1015:24: error: unknown type name 'deps_0'
+void  sched_analyze_1( deps_0 *deps, rtx x, rtx insn) 
+                       ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/sched_analyze_1/src/sched-deps.c:1022:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v8; // ecx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/sched_analyze_1/src/sched-deps.c:1024:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code; // [rsp+24h] [rbp-2Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/sched_analyze_1/src/sched-deps.c:1116:11: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+else if ( mode_class_0[*( ( unsigned __int8 *)dest + 2)] == MODE_COMPLEX_INT 
+          ^~~~~~~~~~~~
+          mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/sched_analyze_1/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/sched_analyze_1/src/sched-deps.c:1117:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| mode_class_0[*( ( unsigned __int8 *)dest + 2)] == MODE_COMPLEX_FLOAT ) 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/sched_analyze_1/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/sched_analyze_1/src/sched-deps.c:1157:6: error: use of undeclared identifier 'std'
+if ( std::allocator_traits<std::allocator<std::_Rb_tree_node<std::pair<std::string const, tcmalloc::MallocExtension::Property>>>>::allocate( 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/sched_analyze_1/src/sched-deps.c:1163:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+pending = ( rtx)pending[1]; 
+                ^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/sched_analyze_1/src/sched-deps.c:1164:21: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+pending_mem = ( rtx)pending_mem[1]; 
+                    ^~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/sched_analyze_1/src/sched-deps.c:1172:18: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+pendinga = ( rtx)pendinga[1]; 
+                 ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/sched_analyze_1/src/sched-deps.c:1173:22: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+pending_mema = ( rtx)pending_mema[1]; 
+                     ^~~~~~~~~~~~~~~
+10 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/sched_analyze_1/src/obj/sched-deps.o] Error 1

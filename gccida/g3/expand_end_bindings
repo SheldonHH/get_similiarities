@@ -1,0 +1,64 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_end_bindings/src/stmt.c:4181:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v5; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_end_bindings/src/stmt.c:4184:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v8; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_end_bindings/src/stmt.c:4208:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v32; // rcx 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_end_bindings/src/stmt.c:4248:42: error: expected expression
+warning_with_decl( vars, ( const char *)&::label.block.abstract_origin + 3); 
+                                         ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_end_bindings/src/stmt.c:4267:19: error: expected expression
+v5 = ( tree_node *)gen_label_rtx( ); 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_end_bindings/src/stmt.c:4267:8: error: use of undeclared identifier 'tree_node'
+v5 = ( tree_node *)gen_label_rtx( ); 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_end_bindings/src/stmt.c:4306:20: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+old_last_expr_value.m128_u64[0] = ( unsigned __int64)v4->data.loop.alt_end_label; 
+~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_end_bindings/src/stmt.c:4312:37: error: use of undeclared identifier 'machine_mode'
+v19 = gen_rtx_fmt_u00( LABEL_REF, ( machine_mode)( ( ( BYTE3( target_flags) & 2) != 0) + 4), v18); 
+                                    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_end_bindings/src/stmt.c:4316:71: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+emit_insns_before( old_expr_stmts_for_value, ( rtx)old_last_expr_value.m128_u64[0]); 
+                                                   ~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_end_bindings/src/stmt.c:4342:20: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+old_last_expr_value.m128_u64[0] = ( unsigned __int64)v4->data.loop.alt_end_label; 
+~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_end_bindings/src/stmt.c:4348:37: error: use of undeclared identifier 'machine_mode'
+v26 = gen_rtx_fmt_u00( LABEL_REF, ( machine_mode)( ( ( BYTE3( target_flags) & 2) != 0) + 4), v25); 
+                                    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_end_bindings/src/stmt.c:4352:71: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+emit_insns_before( old_expr_stmts_for_value, ( rtx)old_last_expr_value.m128_u64[0]); 
+                                                   ~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_end_bindings/src/stmt.c:4385:21: error: expected identifier or '('
+ struct label_chain = v4->data.block.label_chain; 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_end_bindings/src/stmt.c:4386:7: error: expected expression
+if (  struct label_chain ) 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_end_bindings/src/stmt.c:4400:21: error: expected identifier or '('
+ struct label_chain = v4->data.block.label_chain; 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_end_bindings/src/stmt.c:4412:2: error: expected expression
+ struct label_chain = label_chain->next; 
+ ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_end_bindings/src/stmt.c:4418:21: error: expected identifier or '('
+ struct label_chain = label_chain->next; 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_end_bindings/src/stmt.c:4420:10: error: expected expression
+while (  struct label_chain ); 
+         ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_end_bindings/src/stmt.c:4420:10: error: expected ')'
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_end_bindings/src/stmt.c:4420:7: note: to match this '('
+while (  struct label_chain ); 
+      ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_end_bindings/src/obj/stmt.o] Error 1

@@ -1,0 +1,67 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_goto/src/stmt.c:1247:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v1; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_goto/src/stmt.c:1266:4: error: expected ';' after expression
+rtx last_insn; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_goto/src/stmt.c:1266:5: error: use of undeclared identifier 'last_insn'
+rtx last_insn; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_goto/src/stmt.c:1267:4: error: expected ';' after expression
+rtx v21; // rbx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_goto/src/stmt.c:1267:5: error: use of undeclared identifier 'v21'
+rtx v21; // rbx 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_goto/src/stmt.c:1306:36: error: use of undeclared identifier 'machine_mode'
+v5 = gen_rtx_fmt_u00( LABEL_REF, ( machine_mode)v3, v4); 
+                                   ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_goto/src/stmt.c:1308:112: error: expected ')'
+for ( i = function_data->x_nonlocal_goto_handler_slots; x_nonlocal_labels->vector.elements != label; i = ( rtx)i[1] ) 
+                                                                                                               ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_goto/src/stmt.c:1308:5: note: to match this '('
+for ( i = function_data->x_nonlocal_goto_handler_slots; x_nonlocal_labels->vector.elements != label; i = ( rtx)i[1] ) 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_goto/src/stmt.c:1336:1: error: use of undeclared identifier 'last_insn'
+last_insn = get_last_insn( ); 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_goto/src/stmt.c:1337:6: error: use of undeclared identifier 'last_insn'
+if ( last_insn ) 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_goto/src/stmt.c:1339:1: error: use of undeclared identifier 'v21'
+v21 = last_insn; 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_goto/src/stmt.c:1339:7: error: use of undeclared identifier 'last_insn'
+v21 = last_insn; 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_goto/src/stmt.c:1340:20: error: use of undeclared identifier 'v21'
+while ( *( _WORD *)v21 != 34 ) 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_goto/src/stmt.c:1342:17: error: use of undeclared identifier 'v21'
+if ( *( _WORD *)v21 == 33 ) 
+                ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_goto/src/stmt.c:1344:74: error: use of undeclared identifier 'v21'; did you mean 'v11'?
+v21[3].fld[0].rtwint = ( __int64)alloc_EXPR_LIST( 27, const_int_rtx[64], v21[3].fld[0].rtx); 
+                                                                         ^~~
+                                                                         v11
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_goto/src/stmt.c:1257:18: note: 'v11' declared here
+ struct rtx_def *v11; // rax 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_goto/src/stmt.c:1344:1: error: use of undeclared identifier 'v21'; did you mean 'v11'?
+v21[3].fld[0].rtwint = ( __int64)alloc_EXPR_LIST( 27, const_int_rtx[64], v21[3].fld[0].rtx); 
+^~~
+v11
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_goto/src/stmt.c:1257:18: note: 'v11' declared here
+ struct rtx_def *v11; // rax 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_goto/src/stmt.c:1347:1: error: use of undeclared identifier 'v21'
+v21 = ( rtx)v21[1]; 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_goto/src/stmt.c:1348:7: error: use of undeclared identifier 'v21'
+if ( !v21 ) 
+      ^
+17 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_goto/src/obj/stmt.o] Error 1

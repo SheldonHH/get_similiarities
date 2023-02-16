@@ -1,0 +1,81 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/simplify_rtx/src/simplify-rtx.c:3283:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v2; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/simplify_rtx/src/simplify-rtx.c:3286:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v5; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/simplify_rtx/src/simplify-rtx.c:3297:3: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+( rtx_code)( unsigned __int16)*( _DWORD *)x, 
+  ^~~~~~~~
+  rtx_cost
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/simplify_rtx/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/simplify_rtx/src/simplify-rtx.c:3297:14: error: expected expression
+( rtx_code)( unsigned __int16)*( _DWORD *)x, 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/simplify_rtx/src/simplify-rtx.c:3300:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( unsigned __int8 *)( x->fld[0].rtwint + 2)); 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/simplify_rtx/src/simplify-rtx.c:3307:3: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+( rtx_code)( unsigned __int16)*( _DWORD *)x, 
+  ^~~~~~~~
+  rtx_cost
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/simplify_rtx/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/simplify_rtx/src/simplify-rtx.c:3307:14: error: expected expression
+( rtx_code)( unsigned __int16)*( _DWORD *)x, 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/simplify_rtx/src/simplify-rtx.c:3309:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( unsigned __int8 *)( x->fld[0].rtwint + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/simplify_rtx/src/simplify-rtx.c:3311:9: error: expected expression
+*( rtx *)&x[1], 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/simplify_rtx/src/simplify-rtx.c:3361:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v4.rtwint = ( __int64)x->fld[0]; 
+                      ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/simplify_rtx/src/simplify-rtx.c:3365:43: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+result = simplify_relational_operation( ( rtx_code)( unsigned __int16)*( _DWORD *)x, v5, x->fld[0].rtx, *( rtx *)&x[1]); 
+                                          ^~~~~~~~
+                                          rtx_cost
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/simplify_rtx/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/simplify_rtx/src/simplify-rtx.c:3365:54: error: expected expression
+result = simplify_relational_operation( ( rtx_code)( unsigned __int16)*( _DWORD *)x, v5, x->fld[0].rtx, *( rtx *)&x[1]); 
+                                                     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/simplify_rtx/src/simplify-rtx.c:3365:113: error: expected expression
+result = simplify_relational_operation( ( rtx_code)( unsigned __int16)*( _DWORD *)x, v5, x->fld[0].rtx, *( rtx *)&x[1]); 
+                                                                                                                ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/simplify_rtx/src/simplify-rtx.c:3368:58: error: expected expression
+if ( swap_commutative_operands_p( x->fld[0].rtx, *( rtx *)&x[1]) ) 
+                                                         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/simplify_rtx/src/simplify-rtx.c:3371:26: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v7 = (  struct rtx_def *)x[1]; 
+                         ^~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/simplify_rtx/src/simplify-rtx.c:3379:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+rtx = (  struct rtx_def *)x[1]; 
+                          ^~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/simplify_rtx/src/simplify-rtx.c:3381:39: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+result = simplify_binary_operation( ( rtx_code)v1, v2, v7, rtx); 
+                                      ^~~~~~~~
+                                      rtx_cost
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/simplify_rtx/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/simplify_rtx/src/simplify-rtx.c:3381:48: error: expected ')'
+result = simplify_binary_operation( ( rtx_code)v1, v2, v7, rtx); 
+                                               ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/simplify_rtx/src/simplify-rtx.c:3381:35: note: to match this '('
+result = simplify_binary_operation( ( rtx_code)v1, v2, v7, rtx); 
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/simplify_rtx/src/simplify-rtx.c:3388:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)x), 
+  ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/simplify_rtx/src/obj/simplify-rtx.o] Error 1

@@ -1,0 +1,72 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_split_long_move/src/i386.c:9189:4: error: expected ';' after expression
+rtx v12; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_split_long_move/src/i386.c:9189:5: error: use of undeclared identifier 'v12'
+rtx v12; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_split_long_move/src/i386.c:9206:4: error: expected ';' after expression
+rtx x; // [rsp+0h] [rbp-68h] BYREF 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_split_long_move/src/i386.c:9206:5: error: use of undeclared identifier 'x'
+rtx x; // [rsp+0h] [rbp-68h] BYREF 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_split_long_move/src/i386.c:9207:4: error: expected ';' after expression
+rtx v30[2]; // [rsp+8h] [rbp-60h] BYREF 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_split_long_move/src/i386.c:9207:5: error: use of undeclared identifier 'v30'
+rtx v30[2]; // [rsp+8h] [rbp-60h] BYREF 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_split_long_move/src/i386.c:9208:4: error: expected ';' after expression
+rtx parts; // [rsp+18h] [rbp-50h] BYREF 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_split_long_move/src/i386.c:9208:5: error: use of undeclared identifier 'parts'
+rtx parts; // [rsp+18h] [rbp-50h] BYREF 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_split_long_move/src/i386.c:9227:1: error: use of undeclared identifier 'v12'
+v12 = copy_rtx( *operands); 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_split_long_move/src/i386.c:9228:13: error: use of undeclared identifier 'v12'
+*operands = v12; 
+            ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_split_long_move/src/i386.c:9229:14: error: use of undeclared identifier 'v12'
+*( ( _BYTE *)v12 + 2) = 5 - ( ( target_flags & 0x2000000) == 0); 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_split_long_move/src/i386.c:9248:50: error: use of undeclared identifier 'machine_mode'
+v5 = ix86_split_to_parts( operands[1], &parts, ( machine_mode)*( ( unsigned __int8 *)*operands + 2)); 
+                                                 ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_split_long_move/src/i386.c:9248:41: error: use of undeclared identifier 'parts'; did you mean 'puts'?
+v5 = ix86_split_to_parts( operands[1], &parts, ( machine_mode)*( ( unsigned __int8 *)*operands + 2)); 
+                                        ^~~~~
+                                        puts
+/usr/include/stdio.h:632:12: note: 'puts' declared here
+extern int puts (const char *__s);
+           ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_split_long_move/src/i386.c:9249:39: error: use of undeclared identifier 'machine_mode'
+ix86_split_to_parts( *operands, &x, ( machine_mode)*( ( unsigned __int8 *)*operands + 2)); 
+                                      ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_split_long_move/src/i386.c:9249:34: error: use of undeclared identifier 'x'
+ix86_split_to_parts( *operands, &x, ( machine_mode)*( ( unsigned __int8 *)*operands + 2)); 
+                                 ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_split_long_move/src/i386.c:9257:12: error: expected ';' after expression
+v7 = ( rtx)parts_8.m128i_i64[0]; 
+           ^
+           ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_split_long_move/src/i386.c:9257:19: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+v7 = ( rtx)parts_8.m128i_i64[0]; 
+           ~~~~~~~^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_split_long_move/src/i386.c:9261:7: error: expected ')'
+( rtx)parts_8.m128i_i64[0], 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_split_long_move/src/i386.c:9260:20: note: to match this '('
+v7 = change_address( 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_split_long_move/src/i386.c:9264:8: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+parts_8.m128i_i64[0] = ( __int64)v7; 
+~~~~~~~^~~~~~~~~~
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_split_long_move/src/obj/i386.o] Error 1

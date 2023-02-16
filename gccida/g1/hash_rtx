@@ -1,0 +1,15 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/hash_rtx/src/cselib.c:1024:32: error: must use 'enum' tag to refer to type 'machine_mode'
+unsigned int  hash_rtx( rtx x, machine_mode mode, int create) 
+                               ^
+                               enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/hash_rtx/src/cselib.c:1098:30: error: use of undeclared identifier 'machine_mode'
+v7 += hash_rtx( ( rtx)v12, ( machine_mode)*( unsigned __int8 *)( v12 + 2), 0); 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/hash_rtx/src/cselib.c:1104:26: error: use of undeclared identifier 'machine_mode'
+v8 = cselib_lookup( x, ( machine_mode)v6, create); 
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/hash_rtx/src/cselib.c:1164:30: error: use of undeclared identifier 'insn'
+fancy_abort( ( const char *)&insn, 688, "hash_rtx"); 
+                             ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/hash_rtx/src/obj/cselib.o] Error 1

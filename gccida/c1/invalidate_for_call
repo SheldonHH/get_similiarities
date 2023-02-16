@@ -1,0 +1,24 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/invalidate_for_call/src/cse.c:2572:51: error: expected ')'
+if ( v0 != cached_regno || (  struct cse_reg_info = cached_cse_reg_info) == 0LL ) 
+                                                  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/invalidate_for_call/src/cse.c:2572:28: note: to match this '('
+if ( v0 != cached_regno || (  struct cse_reg_info = cached_cse_reg_info) == 0LL ) 
+                           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/invalidate_for_call/src/cse.c:2572:74: error: expected expression
+if ( v0 != cached_regno || (  struct cse_reg_info = cached_cse_reg_info) == 0LL ) 
+                                                                         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/invalidate_for_call/src/cse.c:2573:2: error: expected expression
+ struct cse_reg_info = get_cse_reg_info( v0); 
+ ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/invalidate_for_call/src/cse.c:2607:35: error: must use 'enum' tag to refer to type 'mode_class'
+v12 = ( ( unsigned int)( *( const mode_class *)( ( char *)mode_class_0 + ( ( *( _DWORD *)v7->exp >> 14) & 0x3FC)) 
+                                  ^
+                                  enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/invalidate_for_call/src/machmode.h:52:30: note: enum 'mode_class' is hidden by a non-type declaration of 'mode_class' here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/invalidate_for_call/src/cse.c:2607:59: error: use of undeclared identifier 'mode_class_0'
+v12 = ( ( unsigned int)( *( const mode_class *)( ( char *)mode_class_0 + ( ( *( _DWORD *)v7->exp >> 14) & 0x3FC)) 
+                                                          ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/invalidate_for_call/src/obj/cse.o] Error 1

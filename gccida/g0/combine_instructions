@@ -1,0 +1,73 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/combine_instructions/src/combine.c:971:4: error: expected ';' after expression
+rtx link; // [rsp+20h] [rbp-40h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/combine_instructions/src/combine.c:974:4: error: expected ';' after expression
+rtx nextlinks; // [rsp+38h] [rbp-28h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/combine_instructions/src/combine.c:974:5: error: use of undeclared identifier 'nextlinks'; did you mean 'next_insn'?
+rtx nextlinks; // [rsp+38h] [rbp-28h] 
+    ^~~~~~~~~
+    next_insn
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/combine_instructions/src/rtl.h:1347:12: note: 'next_insn' declared here
+extern rtx next_insn                    PARAMS ((rtx));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/combine_instructions/src/combine.c:975:4: error: expected ';' after expression
+rtx links; // [rsp+40h] [rbp-20h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/combine_instructions/src/combine.c:975:5: error: use of undeclared identifier 'links'; did you mean 'link'?
+rtx links; // [rsp+40h] [rbp-20h] 
+    ^~~~~
+    link
+/usr/include/unistd.h:792:12: note: 'link' declared here
+extern int link (const char *__from, const char *__to)
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/combine_instructions/src/combine.c:977:4: error: expected ';' after expression
+rtx next; // [rsp+50h] [rbp-10h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/combine_instructions/src/combine.c:977:5: error: use of undeclared identifier 'next'
+rtx next; // [rsp+50h] [rbp-10h] 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/combine_instructions/src/combine.c:978:4: error: expected ';' after expression
+rtx insn; // [rsp+58h] [rbp-8h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/combine_instructions/src/combine.c:978:5: error: use of undeclared identifier 'insn'
+rtx insn; // [rsp+58h] [rbp-8h] 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/combine_instructions/src/combine.c:988:25: error: expected expression
+reg_last_death = ( rtx *)xmalloc( 8LL * nregs); 
+                        ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/combine_instructions/src/combine.c:989:23: error: expected expression
+reg_last_set = ( rtx *)xmalloc( 8LL * nregs); 
+                      ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/combine_instructions/src/combine.c:990:29: error: expected expression
+reg_last_set_value = ( rtx *)xmalloc( 8LL * nregs); 
+                            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/combine_instructions/src/combine.c:994:37: error: expected expression
+reg_last_set_mode = ( machine_mode *)xmalloc( 4LL * nregs); 
+                                    ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/combine_instructions/src/combine.c:994:23: error: use of undeclared identifier 'machine_mode'
+reg_last_set_mode = ( machine_mode *)xmalloc( 4LL * nregs); 
+                      ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/combine_instructions/src/combine.c:999:1: error: use of undeclared identifier 'insn'
+insn = f; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/combine_instructions/src/combine.c:1001:9: error: use of undeclared identifier 'insn'
+while ( insn ) 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/combine_instructions/src/combine.c:1003:10: error: use of undeclared identifier 'insn'
+if ( i < insn->fld[0].rtint ) 
+         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/combine_instructions/src/combine.c:1004:5: error: use of undeclared identifier 'insn'
+i = insn->fld[0].rtint; 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/combine_instructions/src/combine.c:1005:1: error: use of undeclared identifier 'insn'
+insn = insn[1].fld[0].rtx; 
+^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/combine_instructions/src/obj/combine.o] Error 1

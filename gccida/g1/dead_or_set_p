@@ -1,0 +1,9 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dead_or_set_p/src/rtlanal.c:2151:25: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v6 = ( ( unsigned int)( mode_class_0[*( ( unsigned __int8 *)x + 2)] - 5) < 2) + 1; 
+                        ^~~~~~~~~~~~
+                        mode_class
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dead_or_set_p/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+1 error generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dead_or_set_p/src/obj/rtlanal.o] Error 1

@@ -1,0 +1,23 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/strength_reduce/src/loop.c:5402:1: error: use of undeclared identifier 'induction_1'
+induction_1 *v5; // rbp 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/strength_reduce/src/loop.c:5402:14: error: use of undeclared identifier 'v5'
+induction_1 *v5; // rbp 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/strength_reduce/src/loop.c:5436:1: error: use of undeclared identifier 'v5'
+v5 = ( induction_1 *)gen_rtx_REG( *(short *)0xmode, 58); 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/strength_reduce/src/loop.c:5436:21: error: expected expression
+v5 = ( induction_1 *)gen_rtx_REG( *(short *)0xmode, 58); 
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/strength_reduce/src/loop.c:5436:8: error: use of undeclared identifier 'induction_1'
+v5 = ( induction_1 *)gen_rtx_REG( *(short *)0xmode, 58); 
+       ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/strength_reduce/src/loop.c:5439:35: error: use of undeclared identifier 'machine_mode'
+addr_placeholder = gen_reg_rtx( ( machine_mode)( ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32)); 
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/strength_reduce/src/loop.c:5474:82: error: use of undeclared identifier 'v5'
+v14 = loop_giv_reduce_benefit( (  struct loop *)p_regno, (  struct iv_class *)i, v5, v12); 
+                                                                                 ^
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/strength_reduce/src/obj/loop.o] Error 1

@@ -1,0 +1,28 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/can_throw_internal/src/except.c:3537:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v8; // rbp 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/can_throw_internal/src/except.c:3540:1: error: must use 'enum' tag to refer to type 'reachable_code'
+reachable_code level; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/can_throw_internal/src/except.c:3552:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v12 = ( __int64)insn[2]; 
+                ^~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/can_throw_internal/src/except.c:3567:19: error: expected expression
+v8 = ( tree_node *)v10[6]; 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/can_throw_internal/src/except.c:3567:8: error: use of undeclared identifier 'tree_node'
+v8 = ( tree_node *)v10[6]; 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/can_throw_internal/src/except.c:3585:14: error: expected expression
+v4 = *( rtx *)( *( _QWORD *)( v12 + 8) + 8LL); 
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/can_throw_internal/src/except.c:3590:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v5 = ( _WORD *)v4[2]; 
+               ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/can_throw_internal/src/except.c:3602:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v5 = ( _WORD *)v4[2]; 
+               ^~~~~
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/can_throw_internal/src/obj/except.o] Error 1

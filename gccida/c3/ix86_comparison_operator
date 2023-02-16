@@ -1,0 +1,40 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/ix86_comparison_operator/src/i386.c:3722:40: error: must use 'enum' tag to refer to type 'machine_mode'
+int  ix86_comparison_operator( rtx op, machine_mode mode) 
+                                       ^
+                                       enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/ix86_comparison_operator/src/i386.c:3728:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code first_code; // [rsp+14h] [rbp-4h] BYREF 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/ix86_comparison_operator/src/i386.c:3765:29: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+ix86_fp_comparison_codes( ( rtx_code)( unsigned __int16)v2, ( rtx_code *)&v5, &first_code, ( rtx_code *)&v5 + 1); 
+                            ^~~~~~~~
+                            rtx_cost
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/ix86_comparison_operator/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/ix86_comparison_operator/src/i386.c:3765:40: error: expected expression
+ix86_fp_comparison_codes( ( rtx_code)( unsigned __int16)v2, ( rtx_code *)&v5, &first_code, ( rtx_code *)&v5 + 1); 
+                                       ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/ix86_comparison_operator/src/i386.c:3765:73: error: expected expression
+ix86_fp_comparison_codes( ( rtx_code)( unsigned __int16)v2, ( rtx_code *)&v5, &first_code, ( rtx_code *)&v5 + 1); 
+                                                                        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/ix86_comparison_operator/src/i386.c:3765:63: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+ix86_fp_comparison_codes( ( rtx_code)( unsigned __int16)v2, ( rtx_code *)&v5, &first_code, ( rtx_code *)&v5 + 1); 
+                                                              ^~~~~~~~
+                                                              rtx_cost
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/ix86_comparison_operator/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/ix86_comparison_operator/src/i386.c:3765:104: error: expected expression
+ix86_fp_comparison_codes( ( rtx_code)( unsigned __int16)v2, ( rtx_code *)&v5, &first_code, ( rtx_code *)&v5 + 1); 
+                                                                                                       ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/ix86_comparison_operator/src/i386.c:3765:94: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+ix86_fp_comparison_codes( ( rtx_code)( unsigned __int16)v2, ( rtx_code *)&v5, &first_code, ( rtx_code *)&v5 + 1); 
+                                                                                             ^~~~~~~~
+                                                                                             rtx_cost
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/ix86_comparison_operator/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/ix86_comparison_operator/src/obj/i386.o] Error 1

@@ -1,0 +1,16 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/gen_split_1230/src/insn-emit.c:17153:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v1; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/gen_split_1230/src/insn-emit.c:17159:24: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+v1 = swap_condition( ( rtx_code)*( _WORD *)operands[1]); 
+                       ^~~~~~~~
+                       rtx_cost
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/gen_split_1230/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/gen_split_1230/src/insn-emit.c:17159:33: error: invalid operands to binary expression ('int (rtx, enum rtx_code)' (aka 'int (struct rtx_def *, enum rtx_code)') and 'uint16 *' (aka 'unsigned short *'))
+v1 = swap_condition( ( rtx_code)*( _WORD *)operands[1]); 
+                     ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/gen_split_1230/src/obj/insn-emit.o] Error 1

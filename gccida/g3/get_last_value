@@ -1,0 +1,60 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/get_last_value/src/combine.c:11971:6: error: conflicting types for 'get_last_value'
+rtx  get_last_value(  struct bitmap_head_def *a1) 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/get_last_value/src/combine.c:397:12: note: previous declaration is here
+static rtx get_last_value       PARAMS ((rtx));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/get_last_value/src/combine.c:11982:4: error: expected ';' after expression
+rtx loc[2]; // [rsp+8h] [rbp-10h] BYREF 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/get_last_value/src/combine.c:11982:5: error: use of undeclared identifier 'loc'
+rtx loc[2]; // [rsp+8h] [rbp-10h] BYREF 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/get_last_value/src/combine.c:11988:30: error: expected ')'
+if ( subreg_lowpart_p( ( rtx)a1) ) 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/get_last_value/src/combine.c:11988:22: note: to match this '('
+if ( subreg_lowpart_p( ( rtx)a1) ) 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/get_last_value/src/combine.c:11993:50: error: too few arguments to function call, expected 1, have 0
+last_value = (  struct rtx_def *)get_last_value( ); 
+                                 ~~~~~~~~~~~~~~  ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/get_last_value/src/combine.c:397:1: note: 'get_last_value' declared here
+static rtx get_last_value       PARAMS ((rtx));
+^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/get_last_value/src/combine.c:11994:1: error: use of undeclared identifier 'loc'
+loc[0] = last_value; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/get_last_value/src/combine.c:11996:35: error: use of undeclared identifier 'machine_mode'
+return gen_lowpart_for_combine( ( machine_mode)*( ( unsigned __int8 *)v1 + 2), last_value); 
+                                  ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/get_last_value/src/combine.c:12004:1: error: use of undeclared identifier 'loc'
+loc[0] = reg_last_set_value[v3]; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/get_last_value/src/combine.c:12005:7: error: use of undeclared identifier 'loc'
+if ( !loc[0] ) 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/get_last_value/src/combine.c:12025:20: error: expected ')'
+insn_cuid_0( ( rtx)a1); 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/get_last_value/src/combine.c:12025:12: note: to match this '('
+insn_cuid_0( ( rtx)a1); 
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/get_last_value/src/combine.c:12039:31: error: use of undeclared identifier 'loc'
+&& ( get_last_value_validate( loc, v4, *( ( _DWORD *)reg_last_set_label + v3), 0) 
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/get_last_value/src/combine.c:12040:25: error: use of undeclared identifier 'loc'
+|| ( loc[0] = copy_rtx( loc[0]), 
+                        ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/get_last_value/src/combine.c:12040:6: error: use of undeclared identifier 'loc'
+|| ( loc[0] = copy_rtx( loc[0]), 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/get_last_value/src/combine.c:12041:26: error: use of undeclared identifier 'loc'
+get_last_value_validate( loc, reg_last_set[v3], *( ( _DWORD *)reg_last_set_label + v3), 1))) ) 
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/get_last_value/src/combine.c:12043:8: error: use of undeclared identifier 'loc'
+return loc[0]; 
+       ^
+15 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/get_last_value/src/obj/combine.o] Error 1

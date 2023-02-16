@@ -1,0 +1,12 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/set_reload_reg/src/reload1.c:5532:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode test_mode; // [rsp+4h] [rbp-1Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/set_reload_reg/src/reload1.c:5549:53: error: use of undeclared identifier 'machine_mode'
+|| rld[r].out && !ix86_hard_regno_mode_ok( regno, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)rld[r].out)) ) 
+                                                    ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/set_reload_reg/src/reload1.c:5549:68: error: expected expression
+|| rld[r].out && !ix86_hard_regno_mode_ok( regno, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)rld[r].out)) ) 
+                                                                   ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/set_reload_reg/src/obj/reload1.o] Error 1

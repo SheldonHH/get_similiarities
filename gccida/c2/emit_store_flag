@@ -1,0 +1,83 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_store_flag/src/expmed.c:4697:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_store_flag/src/expmed.c:4700:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_store_flag/src/expmed.c:4725:1: error: must use 'enum' tag to refer to type 'mode_class'
+mode_class v32; // ecx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_store_flag/src/machmode.h:52:30: note: enum 'mode_class' is hidden by a non-type declaration of 'mode_class' here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_store_flag/src/expmed.c:4732:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v39; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_store_flag/src/expmed.c:4734:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v41; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_store_flag/src/expmed.c:4737:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v44; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_store_flag/src/expmed.c:4739:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v46; // r12d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_store_flag/src/expmed.c:4743:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v50; // r12d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_store_flag/src/expmed.c:4749:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v56; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_store_flag/src/expmed.c:4754:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v61; // r14d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_store_flag/src/expmed.c:4755:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v62; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_store_flag/src/expmed.c:4759:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v66; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_store_flag/src/expmed.c:4769:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v76; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_store_flag/src/expmed.c:4771:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode oldmode; // [rsp+Ch] [rbp-6Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_store_flag/src/expmed.c:4772:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v79; // [rsp+10h] [rbp-68h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_store_flag/src/expmed.c:4774:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v82; // [rsp+28h] [rbp-50h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_store_flag/src/expmed.c:4863:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| mode_class_0[v28] != MODE_INT 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_store_flag/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_store_flag/src/expmed.c:4871:32: error: invalid suffix 'xmode' on integer constant
+v11 = gen_highpart( *(short *)0xmode, v16); 
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_store_flag/src/expmed.c:4872:31: error: invalid suffix 'xmode' on integer constant
+v12 = gen_lowpart( *(short *)0xmode, v16); 
+                              ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_store_flag/src/obj/expmed.o] Error 1

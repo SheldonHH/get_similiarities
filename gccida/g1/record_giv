@@ -1,0 +1,73 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_giv/src/loop.c:6076:1: error: unknown type name 'induction_1'
+induction_1 *v, 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_giv/src/loop.c:6084:1: error: must use 'enum' tag to refer to type 'g_types'
+g_types type, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_giv/src/loop.c:6106:4: error: expected ';' after expression
+rtx v33; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_giv/src/loop.c:6106:5: error: use of undeclared identifier 'v33'
+rtx v33; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_giv/src/loop.c:6112:4: error: expected ';' after expression
+rtx mult_valb; // [rsp+8h] [rbp-50h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_giv/src/loop.c:6112:5: error: use of undeclared identifier 'mult_valb'; did you mean 'mult_val'?
+rtx mult_valb; // [rsp+8h] [rbp-50h] 
+    ^~~~~~~~~
+    mult_val
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_giv/src/loop.c:6080:5: note: 'mult_val' declared here
+rtx mult_val, 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_giv/src/loop.c:6113:4: error: expected ';' after expression
+rtx set; // [rsp+10h] [rbp-48h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_giv/src/loop.c:6113:5: error: use of undeclared identifier 'set'
+rtx set; // [rsp+10h] [rbp-48h] 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_giv/src/loop.c:6117:13: error: expected identifier or '('
+ struct set = 0LL; 
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_giv/src/loop.c:6120:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v23 = (  struct rtx_def *)insn[2]; 
+                          ^~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_giv/src/loop.c:6121:13: error: expected identifier or '('
+ struct set = v23; 
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_giv/src/loop.c:6123:2: error: expected expression
+ struct set = single_set_2( insn, v23); 
+ ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_giv/src/loop.c:6162:31: error: expected expression
+v->next_iv = *( induction_1 **)( v36 + 24); 
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_giv/src/loop.c:6162:17: error: use of undeclared identifier 'induction_1'
+v->next_iv = *( induction_1 **)( v36 + 24); 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_giv/src/loop.c:6172:34: error: use of undeclared identifier 'set'
+v->mode = *( unsigned __int8 *)( set->fld[0].rtwint + 2); 
+                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_giv/src/loop.c:6183:31: error: expected expression
+v->next_iv = *( induction_1 **)( v21 + 24); 
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_giv/src/loop.c:6183:17: error: use of undeclared identifier 'induction_1'
+v->next_iv = *( induction_1 **)( v21 + 24); 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_giv/src/loop.c:6188:1: error: use of undeclared identifier 'mult_valb'; did you mean 'mult_val'?
+mult_valb = ( rtx)reg_n_info; 
+^~~~~~~~~
+mult_val
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_giv/src/loop.c:6080:5: note: 'mult_val' declared here
+rtx mult_val, 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_giv/src/loop.c:6188:19: error: expected ';' after expression
+mult_valb = ( rtx)reg_n_info; 
+                  ^
+                  ;
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_giv/src/obj/loop.o] Error 1

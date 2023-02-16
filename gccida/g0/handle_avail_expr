@@ -1,0 +1,17 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/handle_avail_expr/src/gcse.c:3934:26: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v3 = (  struct rtx_def *)insn_computes_expr[2]; 
+                         ^~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/handle_avail_expr/src/gcse.c:3969:13: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+pat = ( rtx)insn[2]; 
+            ^~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/handle_avail_expr/src/gcse.c:3971:12: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+to = ( rtx)expr_set[1]; 
+           ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/handle_avail_expr/src/gcse.c:3991:21: error: use of undeclared identifier 'machine_mode'
+to = gen_reg_rtx( ( machine_mode)*( unsigned __int8 *)( expr_set->fld[0].rtwint + 2)); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/handle_avail_expr/src/gcse.c:4006:13: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+pat = ( rtx)insn[2]; 
+            ^~~~~~~
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/handle_avail_expr/src/obj/gcse.o] Error 1

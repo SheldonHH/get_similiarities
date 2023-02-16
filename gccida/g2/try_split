@@ -1,0 +1,69 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/try_split/src/emit-rtl.c:3557:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v4; // r14d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/try_split/src/emit-rtl.c:3589:4: error: expected ';' after expression
+rtx v37; // rdi 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/try_split/src/emit-rtl.c:3589:5: error: use of undeclared identifier 'v37'
+rtx v37; // rdi 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/try_split/src/emit-rtl.c:3593:4: error: expected ';' after expression
+rtx before; // [rsp+10h] [rbp-58h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/try_split/src/emit-rtl.c:3593:5: error: use of undeclared identifier 'before'
+rtx before; // [rsp+10h] [rbp-58h] 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/try_split/src/emit-rtl.c:3597:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v3.rtwint = ( __int64)trial[1].fld[0]; 
+                      ^~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/try_split/src/emit-rtl.c:3598:1: error: use of undeclared identifier 'before'
+before = ( rtx)trial[1]; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/try_split/src/emit-rtl.c:3646:27: error: expected expression
+if ( rtx_equal_p( *( rtx *)( v10 + 32), pat) ) 
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/try_split/src/emit-rtl.c:3664:26: error: expected expression
+mark_jump_label( *( rtx *)( v13 + 32), *( rtx *)&rtwint[2 * v11 + 2], 0); 
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/try_split/src/emit-rtl.c:3664:48: error: expected expression
+mark_jump_label( *( rtx *)( v13 + 32), *( rtx *)&rtwint[2 * v11 + 2], 0); 
+                                               ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/try_split/src/emit-rtl.c:3666:40: error: expected ')'
+if ( v4 != -1 && any_condjump_p( ( rtx)v13) && !find_reg_note( ( rtx)v13, REG_BR_PROB, 0LL) ) 
+                                       ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/try_split/src/emit-rtl.c:3666:32: note: to match this '('
+if ( v4 != -1 && any_condjump_p( ( rtx)v13) && !find_reg_note( ( rtx)v13, REG_BR_PROB, 0LL) ) 
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/try_split/src/emit-rtl.c:3666:70: error: expected ')'
+if ( v4 != -1 && any_condjump_p( ( rtx)v13) && !find_reg_note( ( rtx)v13, REG_BR_PROB, 0LL) ) 
+                                                                     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/try_split/src/emit-rtl.c:3666:62: note: to match this '('
+if ( v4 != -1 && any_condjump_p( ( rtx)v13) && !find_reg_note( ( rtx)v13, REG_BR_PROB, 0LL) ) 
+                                                             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/try_split/src/emit-rtl.c:3682:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v18.rtwint = ( __int64)trial[3].fld[0]; 
+                       ^~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/try_split/src/emit-rtl.c:3694:25: error: assigning to 'uint64' (aka 'unsigned long long') from incompatible type 'struct rtx_def'
+*( _QWORD *)( v28 + 64) = trial[4]; 
+                        ^ ~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/try_split/src/emit-rtl.c:3717:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( unsigned __int8 *)( v18.rtwint + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/try_split/src/emit-rtl.c:3718:9: error: expected expression
+*( rtx *)( v18.rtwint + 8), 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/try_split/src/emit-rtl.c:3719:9: error: expected expression
+*( rtx *)( v36 + 56)); 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/try_split/src/emit-rtl.c:3744:78: error: expected expression
+if ( *( _WORD *)v22 == 34 || flag_non_call_exceptions && may_trap_p( *( rtx *)( v22 + 32)) ) 
+                                                                             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/try_split/src/emit-rtl.c:3746:70: error: expected expression
+*( _QWORD *)( v22 + 56) = gen_rtx_fmt_ee( EXPR_LIST, XCmode, *( rtx *)( v18.rtwint + 8), *( rtx *)( v22 + 56)); 
+                                                                     ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/try_split/src/obj/emit-rtl.o] Error 1

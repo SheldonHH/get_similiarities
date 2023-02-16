@@ -1,0 +1,39 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_plus_minus/src/simplify-rtx.c:2260:27: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx  simplify_plus_minus( rtx_code code, machine_mode mode, rtx op0, rtx op1, int force) 
+                          ^
+                          enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_plus_minus/src/simplify-rtx.c:2260:42: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  simplify_plus_minus( rtx_code code, machine_mode mode, rtx op0, rtx op1, int force) 
+                                         ^
+                                         enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_plus_minus/src/simplify-rtx.c:2266:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v9; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_plus_minus/src/simplify-rtx.c:2269:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code ncode; // [rsp+2Ch] [rbp-114h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_plus_minus/src/simplify-rtx.c:2275:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code this_code; // [rsp+48h] [rbp-F8h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_plus_minus/src/simplify-rtx.c:2305:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode modea; // [rsp+130h] [rbp-10h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_plus_minus/src/simplify-rtx.c:2306:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code codea; // [rsp+134h] [rbp-Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_plus_minus/src/simplify-rtx.c:2371:23: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+ops[n_ops].op = ( rtx)this_op[1]; 
+                      ^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_plus_minus/src/simplify-rtx.c:2443:6: error: use of undeclared identifier 'QTextBlock'
+if ( QTextBlock::operator<( lhs, rhs) ) 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_plus_minus/src/simplify-rtx.c:2502:46: error: ISO C requires a named parameter before '...'
+specqsort( ( char *)ops, ic, 16, ( int ( *)( ...))simplify_plus_minus_op_data_cmp); 
+                                             ^
+10 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_plus_minus/src/obj/simplify-rtx.o] Error 1

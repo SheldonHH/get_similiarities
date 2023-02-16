@@ -1,0 +1,16 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/debug_reload_to_stream/src/reload.c:7428:51: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+fprintf( v1, "%ssecondary_in_icode = %s", "\n\t", insn_data_0[v8].name); 
+                                                  ^~~~~~~~~~~
+                                                  insn_data
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/debug_reload_to_stream/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/debug_reload_to_stream/src/reload.c:7433:48: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+fprintf( v1, "%ssecondary_out_icode = %s", v9, insn_data_0[v10].name); 
+                                               ^~~~~~~~~~~
+                                               insn_data
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/debug_reload_to_stream/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+2 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/debug_reload_to_stream/src/obj/reload.o] Error 1

@@ -1,0 +1,79 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/sched_analyze_insn/src/sched-deps.c:1369:27: error: unknown type name 'deps_0'
+void  sched_analyze_insn( deps_0 *deps, rtx x, rtx insn, rtx loop_notes) 
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/sched_analyze_insn/src/sched-deps.c:1377:1: error: use of undeclared identifier 'deps_0'; did you mean 'deps'?
+deps_0 *v12; // rbp 
+^~~~~~
+deps
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/sched_analyze_insn/src/sched-deps.c:1369:35: note: 'deps' declared here
+void  sched_analyze_insn( deps_0 *deps, rtx x, rtx insn, rtx loop_notes) 
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/sched_analyze_insn/src/sched-deps.c:1377:9: error: use of undeclared identifier 'v12'; did you mean 'v10'?
+deps_0 *v12; // rbp 
+        ^~~
+        v10
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/sched_analyze_insn/src/sched-deps.c:1375:18: note: 'v10' declared here
+ struct rtx_def *v10; // rbx 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/sched_analyze_insn/src/sched-deps.c:1608:12: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v6 = ( rtx)x[1]; 
+           ^~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/sched_analyze_insn/src/sched-deps.c:1637:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v10 = (  struct rtx_def *)v10[1]; 
+                          ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/sched_analyze_insn/src/sched-deps.c:1651:1: error: use of undeclared identifier 'v12'
+v12 = deps; 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/sched_analyze_insn/src/sched-deps.c:1654:21: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( j = ( __int64)insn[4]; j; j = *( _QWORD *)( j + 16) ) 
+                    ^~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/sched_analyze_insn/src/sched-deps.c:1685:51: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( k = deps->pending_write_insns; k; k = ( rtx)k[1] ) 
+                                                  ^~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/sched_analyze_insn/src/sched-deps.c:1697:28: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+pending_read_insns = ( rtx)pending_read_insns[1]; 
+                           ^~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/sched_analyze_insn/src/sched-deps.c:1701:57: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( m = deps->last_pending_memory_flush; m; m = ( rtx)m[1] ) 
+                                                        ^~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/sched_analyze_insn/src/sched-deps.c:1707:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v16 = (  struct rtx_def *)loop_notes[1]; 
+                          ^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/sched_analyze_insn/src/sched-deps.c:1715:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v19.rtwint = ( __int64)v17->fld[0]; 
+                       ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/sched_analyze_insn/src/sched-deps.c:1720:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v16 = (  struct rtx_def *)v17[1]; 
+                          ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/sched_analyze_insn/src/sched-deps.c:1749:12: error: use of undeclared identifier 'v12'
+reg_last = v12->reg_last; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/sched_analyze_insn/src/sched-deps.c:1750:47: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( ii = reg_last[v75].sets; ii; ii = ( rtx)ii[1] ) 
+                                              ^~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/sched_analyze_insn/src/sched-deps.c:1751:41: error: use of undeclared identifier 'reg_note'; did you mean 'reg_names'?
+add_dependence( insn, ii->fld[0].rtx, ( reg_note)0); 
+                                        ^~~~~~~~
+                                        reg_names
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/sched_analyze_insn/src/regs.h:166:21: note: 'reg_names' declared here
+extern const char * reg_names[FIRST_PSEUDO_REGISTER];
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/sched_analyze_insn/src/sched-deps.c:1751:50: error: expected ')'
+add_dependence( insn, ii->fld[0].rtx, ( reg_note)0); 
+                                                 ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/sched_analyze_insn/src/sched-deps.c:1751:15: note: to match this '('
+add_dependence( insn, ii->fld[0].rtx, ( reg_note)0); 
+              ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/sched_analyze_insn/src/sched-deps.c:1754:51: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( jj = reg_last[v75].clobbers; jj; jj = ( rtx)jj[1] ) 
+                                                  ^~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/sched_analyze_insn/src/sched-deps.c:1755:41: error: use of undeclared identifier 'reg_note'; did you mean 'reg_names'?
+add_dependence( insn, jj->fld[0].rtx, ( reg_note)0); 
+                                        ^~~~~~~~
+                                        reg_names
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/sched_analyze_insn/src/regs.h:166:21: note: 'reg_names' declared here
+extern const char * reg_names[FIRST_PSEUDO_REGISTER];
+                    ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/sched_analyze_insn/src/obj/sched-deps.o] Error 1

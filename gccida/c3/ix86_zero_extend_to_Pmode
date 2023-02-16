@@ -1,0 +1,12 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/ix86_zero_extend_to_Pmode/src/i386.c:9559:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v2; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/ix86_zero_extend_to_Pmode/src/i386.c:9567:21: error: use of undeclared identifier 'machine_mode'
+return force_reg( ( machine_mode)v3, exp); 
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/ix86_zero_extend_to_Pmode/src/i386.c:9570:21: error: use of undeclared identifier 'machine_mode'
+v5 = gen_reg_rtx( ( machine_mode)v3); 
+                    ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/ix86_zero_extend_to_Pmode/src/obj/i386.o] Error 1

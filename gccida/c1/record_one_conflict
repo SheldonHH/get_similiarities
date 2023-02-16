@@ -1,0 +1,16 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/record_one_conflict/src/global.c:1824:1: error: use of undeclared identifier 'allocno_0'; did you mean 'allocno'?
+allocno_0[v8].hard_reg_conflicts |= hard_regs_live; 
+^~~~~~~~~
+allocno
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/record_one_conflict/src/global.c:135:24: note: 'allocno' declared here
+static struct allocno *allocno;
+                       ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/record_one_conflict/src/global.c:1846:25: error: use of undeclared identifier 'allocno_0'; did you mean 'allocno'?
+p_hard_reg_conflicts = &allocno_0->hard_reg_conflicts; 
+                        ^~~~~~~~~
+                        allocno
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/record_one_conflict/src/global.c:135:24: note: 'allocno' declared here
+static struct allocno *allocno;
+                       ^
+2 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/record_one_conflict/src/obj/global.o] Error 1

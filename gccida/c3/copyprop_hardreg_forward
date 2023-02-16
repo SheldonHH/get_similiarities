@@ -1,0 +1,110 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/copyprop_hardreg_forward/src/regrename.c:2224:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class v37; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/copyprop_hardreg_forward/src/regrename.c:2246:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class v59; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/copyprop_hardreg_forward/src/regrename.c:2364:14: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+n_operands = recog_data_0.n_operands; 
+             ^~~~~~~~~~~~
+             recog_data
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/copyprop_hardreg_forward/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/copyprop_hardreg_forward/src/regrename.c:2384:18: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( *v15 < 0 && recog_data_0.operand_type[v16] != OP_OUT ) 
+                 ^~~~~~~~~~~~
+                 recog_data
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/copyprop_hardreg_forward/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/copyprop_hardreg_forward/src/regrename.c:2391:1: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+recog_data_0.operand_type[v16] = OP_INOUT; 
+^~~~~~~~~~~~
+recog_data
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/copyprop_hardreg_forward/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/copyprop_hardreg_forward/src/regrename.c:2407:1: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+recog_data_0.operand_type[j] = OP_INOUT; 
+^~~~~~~~~~~~
+recog_data
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/copyprop_hardreg_forward/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/copyprop_hardreg_forward/src/regrename.c:2422:13: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+kill_value( recog_data_0.operand[v20], v9); 
+            ^~~~~~~~~~~~
+            recog_data
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/copyprop_hardreg_forward/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/copyprop_hardreg_forward/src/regrename.c:2433:13: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+kill_value( recog_data_0.operand[v22], v9); 
+            ^~~~~~~~~~~~
+            recog_data
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/copyprop_hardreg_forward/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/copyprop_hardreg_forward/src/regrename.c:2441:13: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+reg = ( rtx)v104[1]; 
+            ^~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/copyprop_hardreg_forward/src/regrename.c:2455:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v29 = ( ( unsigned int)( mode_class_0[( unsigned __int8)v25] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/copyprop_hardreg_forward/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/copyprop_hardreg_forward/src/regrename.c:2456:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v30 = ( ( unsigned int)( mode_class_0[mode] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/copyprop_hardreg_forward/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/copyprop_hardreg_forward/src/regrename.c:2498:45: error: use of undeclared identifier 'reg_class'; did you mean 'regclass'?
+oldest_value_reg = find_oldest_value_reg( ( reg_class)*( ( _DWORD *)&regclass_map + rtuint), reg, v9); 
+                                            ^~~~~~~~~
+                                            regclass
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/copyprop_hardreg_forward/src/rtl.h:1970:13: note: 'regclass' declared here
+extern void regclass                    PARAMS ((rtx, int, FILE *));
+            ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/copyprop_hardreg_forward/src/regrename.c:2498:55: error: invalid operands to binary expression ('void (rtx, int, FILE *)' (aka 'void (struct rtx_def *, int, struct _IO_FILE *)') and 'uint32 *' (aka 'unsigned int *'))
+oldest_value_reg = find_oldest_value_reg( ( reg_class)*( ( _DWORD *)&regclass_map + rtuint), reg, v9); 
+                                          ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/copyprop_hardreg_forward/src/regrename.c:2530:30: error: use of undeclared identifier 'machine_mode'
+v69 = gen_rtx_fmt_i0( REG, ( machine_mode)v26, v71); 
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/copyprop_hardreg_forward/src/regrename.c:2537:21: error: assigning to 'uint32' (aka 'unsigned int') from incompatible type 'struct rtx_def'
+*( _DWORD *)&v69[1] = reg[1]; 
+                    ^ ~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/copyprop_hardreg_forward/src/regrename.c:2558:8: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( !*recog_data_0.constraints[v31] ) 
+       ^~~~~~~~~~~~
+       recog_data
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/copyprop_hardreg_forward/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/copyprop_hardreg_forward/src/regrename.c:2560:7: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+v32 = recog_data_0.operand[v31]; 
+      ^~~~~~~~~~~~
+      recog_data
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/copyprop_hardreg_forward/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/copyprop_hardreg_forward/src/regrename.c:2564:24: error: invalid operands to binary expression ('int' and 'struct rtx_def')
+if ( v32->fld[0].rtint == v32[1] || recog_data_0.operand_type[v31] ) 
+     ~~~~~~~~~~~~~~~~~ ^  ~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/copyprop_hardreg_forward/src/regrename.c:2564:37: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( v32->fld[0].rtint == v32[1] || recog_data_0.operand_type[v31] ) 
+                                    ^~~~~~~~~~~~
+                                    recog_data
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/copyprop_hardreg_forward/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/copyprop_hardreg_forward/src/obj/regrename.o] Error 1

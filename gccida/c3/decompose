@@ -1,0 +1,39 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/decompose/src/reload.c:2683:19: error: conflicting types for 'decompose'
+ struct rtx_def * decompose(  struct decomposition *retstr, rtx x) 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/decompose/src/reload.c:254:29: note: previous declaration is here
+static struct decomposition decompose PARAMS ((rtx));
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/decompose/src/reload.c:2713:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v31; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/decompose/src/reload.c:2771:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v14 = ( ( unsigned int)( mode_class_0[( unsigned __int8)v12] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/decompose/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/decompose/src/reload.c:2862:14: error: expected ';' after expression
+base = ( rtx)rtwint->start; 
+             ^
+             ;
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/decompose/src/reload.c:2900:34: error: use of undeclared identifier 'machine_mode'
+result = gen_rtx_fmt_ee( PLUS, ( machine_mode)*( ( unsigned __int8 *)result + 2), result, *( rtx *)&base[1]); 
+                                 ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/decompose/src/reload.c:2900:99: error: expected expression
+result = gen_rtx_fmt_ee( PLUS, ( machine_mode)*( ( unsigned __int8 *)result + 2), result, *( rtx *)&base[1]); 
+                                                                                                  ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/decompose/src/reload.c:2908:14: error: expected ';' after expression
+base = ( rtx)base[1]; 
+             ^
+             ;
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/decompose/src/reload.c:2920:34: error: use of undeclared identifier 'machine_mode'
+result = gen_rtx_fmt_e( CONST, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)result), result); 
+                                 ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/decompose/src/reload.c:2920:49: error: expected expression
+result = gen_rtx_fmt_e( CONST, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)result), result); 
+                                                ^
+9 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/decompose/src/obj/reload.o] Error 1

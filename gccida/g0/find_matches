@@ -1,0 +1,26 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_matches/src/regmove.c:2011:15: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+for ( op_no = recog_data_0.n_operands; --op_no >= 0; matchp->with[op_no] = matchp->commutative[op_no] ) 
+              ^~~~~~~~~~~~
+              recog_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_matches/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_matches/src/regmove.c:2013:26: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+for ( op_no = 0; op_no < recog_data_0.n_operands; ++op_no ) 
+                         ^~~~~~~~~~~~
+                         recog_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_matches/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_matches/src/regmove.c:2016:5: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+p = recog_data_0.constraints[op_no]; 
+    ^~~~~~~~~~~~
+    recog_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_matches/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_matches/src/regmove.c:2060:15: error: expected identifier or '('
+ struct match = match_ul; 
+              ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_matches/src/obj/regmove.o] Error 1

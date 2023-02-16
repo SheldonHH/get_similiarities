@@ -1,0 +1,64 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/distribute_links/src/combine.c:13126:4: error: expected ';' after expression
+rtx v10; // rdi 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/distribute_links/src/combine.c:13126:5: error: use of undeclared identifier 'v10'; did you mean 'v1'?
+rtx v10; // rdi 
+    ^~~
+    v1
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/distribute_links/src/combine.c:13117:5: note: 'v1' declared here
+rtx v1; // r13 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/distribute_links/src/combine.c:13140:12: error: expected ';' after expression
+v1 = ( rtx)v1[1]; 
+           ^
+           ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/distribute_links/src/combine.c:13145:12: error: invalid operands to binary expression ('struct rtx_def *' and 'uint64 *' (aka 'unsigned long long *'))
+v2 = ( rtx)*( ( _QWORD *)rtwint + 4); 
+     ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/distribute_links/src/combine.c:13148:26: error: expected ')'
+v2 = single_set_2( ( rtx)rtwint, v2); 
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/distribute_links/src/combine.c:13148:18: note: to match this '('
+v2 = single_set_2( ( rtx)rtwint, v2); 
+                 ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/distribute_links/src/combine.c:13181:46: error: expected expression
+if ( reg_overlap_mentioned_p( rtx, *( ( rtx *)v7 + 4)) ) 
+                                             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/distribute_links/src/combine.c:13183:40: error: expected expression
+if ( !reg_referenced_p( rtx, *( ( rtx *)v7 + 4)) ) 
+                                       ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/distribute_links/src/combine.c:13199:1: error: use of undeclared identifier 'v10'
+v10 = added_links_insn; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/distribute_links/src/combine.c:13202:6: error: use of undeclared identifier 'v10'
+if ( v10 ) 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/distribute_links/src/combine.c:13204:9: error: use of undeclared identifier 'v10'; did you mean 'v1'?
+rtint = v10->fld[0].rtint; 
+        ^~~
+        v1
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/distribute_links/src/combine.c:13117:5: note: 'v1' declared here
+rtx v1; // r13 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/distribute_links/src/combine.c:13206:47: error: use of undeclared identifier 'v10'
+v13 = ( int)rtint > max_uid_cuid ? insn_cuid( v10) : *( ( _DWORD *)uid_cuid + rtint); 
+                                              ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/distribute_links/src/combine.c:13208:42: error: expected ')'
+v15 = v12 < ( int)v14 ? insn_cuid( ( rtx)v7) : *( ( _DWORD *)uid_cuid + v14); 
+                                         ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/distribute_links/src/combine.c:13208:34: note: to match this '('
+v15 = v12 < ( int)v14 ? insn_cuid( ( rtx)v7) : *( ( _DWORD *)uid_cuid + v14); 
+                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/distribute_links/src/combine.c:13212:26: error: expected ';' after expression
+added_links_insn = ( rtx)v7; 
+                         ^
+                         ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/distribute_links/src/combine.c:13227:29: error: expected ')'
+if ( find_reg_fusage( ( rtx)v7, USE, rtx) ) 
+                            ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/distribute_links/src/combine.c:13227:21: note: to match this '('
+if ( find_reg_fusage( ( rtx)v7, USE, rtx) ) 
+                    ^
+14 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/distribute_links/src/obj/combine.o] Error 1

@@ -1,0 +1,75 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/set_mem_attributes/src/emit-rtl.c:2170:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v6; // r14 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/set_mem_attributes/src/emit-rtl.c:2182:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *imag; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/set_mem_attributes/src/emit-rtl.c:2185:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v21; // rbp 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/set_mem_attributes/src/emit-rtl.c:2186:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v22; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/set_mem_attributes/src/emit-rtl.c:2188:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v24; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/set_mem_attributes/src/emit-rtl.c:2195:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v31; // r14 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/set_mem_attributes/src/emit-rtl.c:2197:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *size_unit; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/set_mem_attributes/src/emit-rtl.c:2205:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v5 = ( __int64)ref[1]; 
+               ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/set_mem_attributes/src/emit-rtl.c:2208:21: error: expected expression
+v6 = *( tree_node **)( v5 + 8); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/set_mem_attributes/src/emit-rtl.c:2208:9: error: use of undeclared identifier 'tree_node'
+v6 = *( tree_node **)( v5 + 8); 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/set_mem_attributes/src/emit-rtl.c:2226:19: error: expected expression
+v6 = ( tree_node *)ref[1]; 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/set_mem_attributes/src/emit-rtl.c:2226:8: error: use of undeclared identifier 'tree_node'
+v6 = ( tree_node *)ref[1]; 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/set_mem_attributes/src/emit-rtl.c:2231:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v5 = ( __int64)ref[1]; 
+               ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/set_mem_attributes/src/emit-rtl.c:2253:14: error: expected expression
+if ( rtl ==  struct ref ) 
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/set_mem_attributes/src/emit-rtl.c:2263:18: error: use of undeclared identifier 'lang_hooks_0'; did you mean 'lang_hooks'?
+honor_readonly = lang_hooks_0.honor_readonly; 
+                 ^~~~~~~~~~~~
+                 lang_hooks
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/set_mem_attributes/src/langhooks.h:168:32: note: 'lang_hooks' declared here
+extern const struct lang_hooks lang_hooks;
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/set_mem_attributes/src/emit-rtl.c:2264:7: error: use of undeclared identifier 'lang_hooks_0'; did you mean 'lang_hooks'?
+if ( !lang_hooks_0.honor_readonly || ( v14 & 0x10) == 0 && ( *( ( _BYTE *)&elements->block.common + 17) & 0x10) == 0 ) 
+      ^~~~~~~~~~~~
+      lang_hooks
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/set_mem_attributes/src/langhooks.h:168:32: note: 'lang_hooks' declared here
+extern const struct lang_hooks lang_hooks;
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/set_mem_attributes/src/emit-rtl.c:2334:72: error: use of undeclared identifier 'machine_mode'
+mem_attrs = get_mem_attrs( alias, v31, const_int_rtx[64], v7, align, ( machine_mode)*( ( unsigned __int8 *)ref + 2)); 
+                                                                       ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/set_mem_attributes/src/emit-rtl.c:2338:60: error: use of undeclared identifier 'machine_mode'
+mem_attrs = get_mem_attrs( alias, v6, offset, v7, align, ( machine_mode)*( ( unsigned __int8 *)ref + 2)); 
+                                                           ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/set_mem_attributes/src/emit-rtl.c:2343:20: error: expected expression
+v21 = ( tree_node *)*( &global_trees + 15); 
+                   ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/set_mem_attributes/src/obj/emit-rtl.o] Error 1

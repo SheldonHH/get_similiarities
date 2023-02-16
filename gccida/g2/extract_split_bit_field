@@ -1,0 +1,56 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/extract_split_bit_field/src/expmed.c:2252:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v20; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/extract_split_bit_field/src/expmed.c:2258:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v26; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/extract_split_bit_field/src/expmed.c:2260:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v28; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/extract_split_bit_field/src/expmed.c:2272:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v9 = ( __int64)op0[1]; 
+               ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/extract_split_bit_field/src/expmed.c:2300:22: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v23 = ( unsigned int)op0[1]; 
+                     ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/extract_split_bit_field/src/expmed.c:2314:22: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v23 = ( unsigned int)op0[1]; 
+                     ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/extract_split_bit_field/src/expmed.c:2317:31: error: invalid suffix 'orce' on integer constant
+v25 = operand_sub*(short *)0xforce( 
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/extract_split_bit_field/src/expmed.c:2320:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( unsigned __int8 *)( op0->fld[0].rtwint + 2)); 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/extract_split_bit_field/src/expmed.c:2317:7: error: use of undeclared identifier 'operand_sub'
+v25 = operand_sub*(short *)0xforce( 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/extract_split_bit_field/src/expmed.c:2329:31: error: invalid suffix 'orce' on integer constant
+v30 = operand_sub*(short *)0xforce( op0, v21, ( machine_mode)*( ( unsigned __int8 *)op0 + 2)); 
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/extract_split_bit_field/src/expmed.c:2329:49: error: use of undeclared identifier 'machine_mode'
+v30 = operand_sub*(short *)0xforce( op0, v21, ( machine_mode)*( ( unsigned __int8 *)op0 + 2)); 
+                                                ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/extract_split_bit_field/src/expmed.c:2329:7: error: use of undeclared identifier 'operand_sub'
+v30 = operand_sub*(short *)0xforce( op0, v21, ( machine_mode)*( ( unsigned __int8 *)op0 + 2)); 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/extract_split_bit_field/src/expmed.c:2342:55: error: invalid suffix 'xmode' on integer constant
+fixed_bit_field = extract_fixed_bit_field( *(short *)0xmode, v18, v17, v16, v22, 0LL, 1); 
+                                                      ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/extract_split_bit_field/src/expmed.c:2348:45: error: invalid suffix 'xmode' on integer constant
+v11 = expand_shift( LSHIFT_EXPR, *(short *)0xmode, thispos, v20, 0LL, 1); 
+                                            ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/extract_split_bit_field/src/expmed.c:2357:32: error: invalid suffix 'xmode' on integer constant
+v11 = expand_binop( *(short *)0xmode, optab_table[19], v11, result, 0LL, 1, OPTAB_LIB_WIDEN); 
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/extract_split_bit_field/src/expmed.c:2372:45: error: invalid suffix 'xmode' on integer constant
+v27 = expand_shift( LSHIFT_EXPR, *(short *)0xmode, firsta, v26, 0LL, 0); 
+                                            ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/extract_split_bit_field/src/expmed.c:2376:46: error: invalid suffix 'xmode' on integer constant
+return expand_shift( RSHIFT_EXPR, *(short *)0xmode, v27, v28, 0LL, 0); 
+                                             ^
+17 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/extract_split_bit_field/src/obj/expmed.o] Error 1

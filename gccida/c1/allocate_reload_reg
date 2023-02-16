@@ -1,0 +1,49 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/allocate_reload_reg/src/reload1.c:5611:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode *v27; // [rsp+10h] [rbp-48h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/allocate_reload_reg/src/reload1.c:5617:23: error: expected expression
+v27 = ( machine_mode *)( v3 + 10314220); 
+                      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/allocate_reload_reg/src/reload1.c:5617:9: error: use of undeclared identifier 'machine_mode'
+v27 = ( machine_mode *)( v3 + 10314220); 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/allocate_reload_reg/src/reload1.c:5635:81: error: expected expression
+if ( reload_reg_free_p( spill_regs[v5], *( _DWORD *)( v4 + 40), *( reload_type *)( v4 + 60)) 
+                                                                                ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/allocate_reload_reg/src/reload1.c:5635:68: error: use of undeclared identifier 'reload_type'; did you mean 'reload_order'?
+if ( reload_reg_free_p( spill_regs[v5], *( _DWORD *)( v4 + 40), *( reload_type *)( v4 + 60)) 
+                                                                   ^~~~~~~~~~~
+                                                                   reload_order
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/allocate_reload_reg/src/reload1.c:1652:14: note: 'reload_order' declared here
+static short reload_order[MAX_RELOADS];
+             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/allocate_reload_reg/src/reload1.c:5642:3: error: use of undeclared identifier 'reload_type'; did you mean 'reload_order'?
+( reload_type)*( _DWORD *)( v4 + 60), 
+  ^~~~~~~~~~~
+  reload_order
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/allocate_reload_reg/src/reload1.c:1652:14: note: 'reload_order' declared here
+static short reload_order[MAX_RELOADS];
+             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/allocate_reload_reg/src/reload1.c:5642:15: error: invalid operands to binary expression ('short [180]' and 'uint32 *' (aka 'unsigned int *'))
+( reload_type)*( _DWORD *)( v4 + 60), 
+~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/allocate_reload_reg/src/reload1.c:5659:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v15 = ( ( unsigned int)( mode_class_0[v13] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/allocate_reload_reg/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/allocate_reload_reg/src/reload1.c:5692:71: error: expected expression
+v22 = reload_reg_free_p( v20, *( _DWORD *)( v4 + 40), *( reload_type *)( v4 + 60)); 
+                                                                      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/allocate_reload_reg/src/reload1.c:5692:58: error: use of undeclared identifier 'reload_type'; did you mean 'reload_order'?
+v22 = reload_reg_free_p( v20, *( _DWORD *)( v4 + 40), *( reload_type *)( v4 + 60)); 
+                                                         ^~~~~~~~~~~
+                                                         reload_order
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/allocate_reload_reg/src/reload1.c:1652:14: note: 'reload_order' declared here
+static short reload_order[MAX_RELOADS];
+             ^
+10 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/allocate_reload_reg/src/obj/reload1.o] Error 1

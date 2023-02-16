@@ -1,0 +1,53 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_field_assignment/src/combine.c:6224:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v11; // r15d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_field_assignment/src/combine.c:6242:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v30; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_field_assignment/src/combine.c:6248:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v2.rtwint = ( __int64)x->fld[0]; 
+                      ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_field_assignment/src/combine.c:6255:15: error: expected expression
+rtx = *( rtx *)( v27 + 8); 
+              ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_field_assignment/src/combine.c:6257:25: error: expected ')'
+v28 = subreg_lsb( ( rtx)v27); 
+                        ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_field_assignment/src/combine.c:6257:17: note: to match this '('
+v28 = subreg_lsb( ( rtx)v27); 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_field_assignment/src/combine.c:6267:22: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v10 = *( ( _DWORD *)&mode_class_0 + v9); 
+                     ^~~~~~~~~~~~
+                     mode_class
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_field_assignment/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_field_assignment/src/combine.c:6282:45: error: expected expression
+v13 = gen_lowpart_for_combine( v11, *( rtx *)&x[1]); 
+                                            ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_field_assignment/src/combine.c:6297:14: error: expected expression
+v5 = *( rtx *)( v2.rtwint + 24); 
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_field_assignment/src/combine.c:6299:15: error: expected expression
+rtx = *( rtx *)( v2.rtwint + 8); 
+              ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_field_assignment/src/combine.c:6302:29: error: use of undeclared identifier 'machine_mode'
+rtx = gen_rtx_fmt_e( USE, ( machine_mode)*( unsigned __int8 *)( v2.rtwint + 2), *( rtx *)( v2.rtwint + 8)); 
+                            ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_field_assignment/src/combine.c:6302:89: error: expected expression
+rtx = gen_rtx_fmt_e( USE, ( machine_mode)*( unsigned __int8 *)( v2.rtwint + 2), *( rtx *)( v2.rtwint + 8)); 
+                                                                                        ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_field_assignment/src/combine.c:6323:34: error: use of undeclared identifier 'machine_mode'
+v29 = gen_lowpart_for_combine( ( machine_mode)v25, *( rtx *)&x[1]); 
+                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_field_assignment/src/combine.c:6323:60: error: expected expression
+v29 = gen_lowpart_for_combine( ( machine_mode)v25, *( rtx *)&x[1]); 
+                                                           ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_field_assignment/src/combine.c:6324:44: error: expected expression
+x = gen_rtx_fmt_ee( SET, VOIDmode, *( rtx *)( x->fld[0].rtwint + 8), v29); 
+                                           ^
+14 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_field_assignment/src/obj/combine.o] Error 1

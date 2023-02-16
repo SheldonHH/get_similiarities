@@ -1,0 +1,99 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/record_value_for_reg/src/combine.c:11623:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode *v14; // r8 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/record_value_for_reg/src/combine.c:11641:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v32; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/record_value_for_reg/src/combine.c:11654:4: error: expected ';' after expression
+rtx valuea[8]; // [rsp+18h] [rbp-40h] BYREF 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/record_value_for_reg/src/combine.c:11654:5: error: use of undeclared identifier 'valuea'; did you mean 'value'?
+rtx valuea[8]; // [rsp+18h] [rbp-40h] BYREF 
+    ^~~~~~
+    value
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/record_value_for_reg/src/combine.c:11612:52: note: 'value' declared here
+void  record_value_for_reg( rtx reg, rtx insn, rtx value) 
+                                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/record_value_for_reg/src/combine.c:11658:1: error: use of undeclared identifier 'valuea'; did you mean 'value'?
+valuea[0] = value; 
+^~~~~~
+value
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/record_value_for_reg/src/combine.c:11612:52: note: 'value' declared here
+void  record_value_for_reg( rtx reg, rtx insn, rtx value) 
+                                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/record_value_for_reg/src/combine.c:11658:11: error: assigning to 'struct rtx_def' from incompatible type 'rtx' (aka 'struct rtx_def *'); dereference with *
+valuea[0] = value; 
+          ^ ~~~~~
+            *
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/record_value_for_reg/src/combine.c:11665:25: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v3 = ( ( unsigned int)( mode_class_0[v8] - 5) < 2) + 1; 
+                        ^~~~~~~~~~~~
+                        mode_class
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/record_value_for_reg/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/record_value_for_reg/src/combine.c:11686:7: error: use of undeclared identifier 'valuea'
+if ( !valuea[0] 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/record_value_for_reg/src/combine.c:11688:35: error: use of undeclared identifier 'valuea'
+|| !reg_overlap_mentioned_p( reg, valuea[0]) 
+                                  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/record_value_for_reg/src/combine.c:11720:7: error: use of undeclared identifier 'valuea'; did you mean 'value'?
+v20 = valuea[0]; 
+      ^~~~~~
+      value
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/record_value_for_reg/src/combine.c:11612:52: note: 'value' declared here
+void  record_value_for_reg( rtx reg, rtx insn, rtx value) 
+                                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/record_value_for_reg/src/combine.c:11720:5: error: assigning to 'rtx' (aka 'struct rtx_def *') from incompatible type 'struct rtx_def'; take the address with &
+v20 = valuea[0]; 
+    ^ ~~~~~~~~~
+      &
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/record_value_for_reg/src/combine.c:11721:6: error: use of undeclared identifier 'valuea'; did you mean 'value'?
+if ( valuea[0] ) 
+     ^~~~~~
+     value
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/record_value_for_reg/src/combine.c:11612:52: note: 'value' declared here
+void  record_value_for_reg( rtx reg, rtx insn, rtx value) 
+                                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/record_value_for_reg/src/combine.c:11721:1: error: statement requires expression of scalar type ('struct rtx_def' invalid)
+if ( valuea[0] ) 
+^    ~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/record_value_for_reg/src/combine.c:11723:20: error: use of undeclared identifier 'valuea'
+update_table_tick( valuea[0]); 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/record_value_for_reg/src/combine.c:11724:7: error: use of undeclared identifier 'valuea'; did you mean 'value'?
+v20 = valuea[0]; 
+      ^~~~~~
+      value
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/record_value_for_reg/src/combine.c:11612:52: note: 'value' declared here
+void  record_value_for_reg( rtx reg, rtx insn, rtx value) 
+                                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/record_value_for_reg/src/combine.c:11724:5: error: assigning to 'rtx' (aka 'struct rtx_def *') from incompatible type 'struct rtx_def'; take the address with &
+v20 = valuea[0]; 
+    ^ ~~~~~~~~~
+      &
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/record_value_for_reg/src/combine.c:11739:7: error: use of undeclared identifier 'valuea'; did you mean 'value'?
+v20 = valuea[0]; 
+      ^~~~~~
+      value
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/record_value_for_reg/src/combine.c:11612:52: note: 'value' declared here
+void  record_value_for_reg( rtx reg, rtx insn, rtx value) 
+                                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/record_value_for_reg/src/combine.c:11739:5: error: assigning to 'rtx' (aka 'struct rtx_def *') from incompatible type 'struct rtx_def'; take the address with &
+v20 = valuea[0]; 
+    ^ ~~~~~~~~~
+      &
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/record_value_for_reg/src/combine.c:11747:7: error: use of undeclared identifier 'valuea'; did you mean 'value'?
+v20 = valuea[0]; 
+      ^~~~~~
+      value
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/record_value_for_reg/src/combine.c:11612:52: note: 'value' declared here
+void  record_value_for_reg( rtx reg, rtx insn, rtx value) 
+                                                   ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/record_value_for_reg/src/obj/combine.o] Error 1

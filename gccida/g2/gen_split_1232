@@ -1,0 +1,28 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_split_1232/src/insn-emit.c:17281:44: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+*( _WORD *)operands[1] = swap_condition( ( rtx_code)*( _WORD *)v21); 
+                                           ^~~~~~~~
+                                           rtx_cost
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_split_1232/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_split_1232/src/insn-emit.c:17281:53: error: invalid operands to binary expression ('int (rtx, enum rtx_code)' (aka 'int (struct rtx_def *, enum rtx_code)') and 'uint16 *' (aka 'unsigned short *'))
+*( _WORD *)operands[1] = swap_condition( ( rtx_code)*( _WORD *)v21); 
+                                         ~~~~~~~~~~~^~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_split_1232/src/insn-emit.c:17283:37: error: use of undeclared identifier 'machine_mode'
+if ( const0_operand( operands[2], ( machine_mode)*( ( unsigned __int8 *)*operands + 2)) ) 
+                                    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_split_1232/src/insn-emit.c:17303:18: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+v10 = gen_rtx( ( rtx_code)*( _WORD *)v6, ( machine_mode)*( ( unsigned __int8 *)v6 + 2), v9, v7); 
+                 ^~~~~~~~
+                 rtx_cost
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_split_1232/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_split_1232/src/insn-emit.c:17303:27: error: invalid operands to binary expression ('int (rtx, enum rtx_code)' (aka 'int (struct rtx_def *, enum rtx_code)') and 'uint16 *' (aka 'unsigned short *'))
+v10 = gen_rtx( ( rtx_code)*( _WORD *)v6, ( machine_mode)*( ( unsigned __int8 *)v6 + 2), v9, v7); 
+               ~~~~~~~~~~~^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_split_1232/src/insn-emit.c:17303:44: error: use of undeclared identifier 'machine_mode'
+v10 = gen_rtx( ( rtx_code)*( _WORD *)v6, ( machine_mode)*( ( unsigned __int8 *)v6 + 2), v9, v7); 
+                                           ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_split_1232/src/obj/insn-emit.o] Error 1

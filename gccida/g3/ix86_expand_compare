@@ -1,0 +1,19 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/ix86_expand_compare/src/i386.c:8129:27: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx  ix86_expand_compare( rtx_code code, rtx *second_test, rtx *bypass_test) 
+                          ^
+                          enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/ix86_expand_compare/src/i386.c:8145:21: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( *( ( _DWORD *)&mode_class_0 + *( ( unsigned __int8 *)v4 + 2)) == 2 ) 
+                    ^~~~~~~~~~~~
+                    mode_class
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/ix86_expand_compare/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/ix86_expand_compare/src/i386.c:8172:21: error: use of undeclared identifier 'machine_mode'
+v7 = gen_rtx_REG( ( machine_mode)v6, 17); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/ix86_expand_compare/src/i386.c:8173:33: error: use of undeclared identifier 'machine_mode'
+v8 = gen_rtx_fmt_ee( COMPARE, ( machine_mode)v6, v4, v3); 
+                                ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/ix86_expand_compare/src/obj/i386.o] Error 1

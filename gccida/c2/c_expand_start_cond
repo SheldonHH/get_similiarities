@@ -1,0 +1,30 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/c_expand_start_cond/src/c-common.c:760:27: error: use of undeclared identifier 'if_stack_0'; did you mean 'if_stack'?
+v6 = ( if_elt *)xrealloc( if_stack_0, 32 * v5); 
+                          ^~~~~~~~~~
+                          if_stack
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/c_expand_start_cond/src/c-common.c:262:16: note: 'if_stack' declared here
+static if_elt *if_stack;
+               ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/c_expand_start_cond/src/c-common.c:762:1: error: use of undeclared identifier 'if_stack_0'; did you mean 'if_stack'?
+if_stack_0 = v6; 
+^~~~~~~~~~
+if_stack
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/c_expand_start_cond/src/c-common.c:262:16: note: 'if_stack' declared here
+static if_elt *if_stack;
+               ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/c_expand_start_cond/src/c-common.c:766:6: error: use of undeclared identifier 'if_stack_0'; did you mean 'if_stack'?
+v7 = if_stack_0; 
+     ^~~~~~~~~~
+     if_stack
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/c_expand_start_cond/src/c-common.c:262:16: note: 'if_stack' declared here
+static if_elt *if_stack;
+               ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/c_expand_start_cond/src/c-common.c:769:1: error: use of undeclared identifier 'if_stack_0'; did you mean 'if_stack'?
+if_stack_0[v9].compstmt_count = compstmt_count; 
+^~~~~~~~~~
+if_stack
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/c_expand_start_cond/src/c-common.c:262:16: note: 'if_stack' declared here
+static if_elt *if_stack;
+               ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/c_expand_start_cond/src/obj/c-common.o] Error 1

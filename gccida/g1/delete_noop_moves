@@ -1,0 +1,74 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/delete_noop_moves/src/flow.c:1261:4: error: expected ';' after expression
+rtx reg_note; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/delete_noop_moves/src/flow.c:1261:5: error: must use 'enum' tag to refer to type 'reg_note'
+rtx reg_note; // rax 
+    ^
+    enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/delete_noop_moves/src/flow.c:1262:4: error: expected ';' after expression
+rtx v5; // r14 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/delete_noop_moves/src/flow.c:1262:5: error: use of undeclared identifier 'v5'
+rtx v5; // r14 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/delete_noop_moves/src/flow.c:1263:4: error: expected ';' after expression
+rtx real_insn; // r15 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/delete_noop_moves/src/flow.c:1263:5: error: use of undeclared identifier 'real_insn'
+rtx real_insn; // r15 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/delete_noop_moves/src/flow.c:1265:4: error: expected ';' after expression
+rtx retval_note; // [rsp+0h] [rbp-40h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/delete_noop_moves/src/flow.c:1265:5: error: use of undeclared identifier 'retval_note'
+rtx retval_note; // [rsp+0h] [rbp-40h] 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/delete_noop_moves/src/flow.c:1280:1: error: must use 'enum' tag to refer to type 'reg_note'
+reg_note = find_reg_note( v2, REG_LIBCALL, 0LL); 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/delete_noop_moves/src/flow.c:1280:10: error: expected identifier or '('
+reg_note = find_reg_note( v2, REG_LIBCALL, 0LL); 
+         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/delete_noop_moves/src/flow.c:1281:1: error: use of undeclared identifier 'v5'
+v5 = reg_note; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/delete_noop_moves/src/flow.c:1281:6: error: use of undeclared identifier 'reg_note'; did you mean 'reg_names'?
+v5 = reg_note; 
+     ^~~~~~~~
+     reg_names
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/delete_noop_moves/src/regs.h:166:21: note: 'reg_names' declared here
+extern const char * reg_names[FIRST_PSEUDO_REGISTER];
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/delete_noop_moves/src/flow.c:1282:6: error: use of undeclared identifier 'reg_note'; did you mean 'reg_names'?
+if ( reg_note ) 
+     ^~~~~~~~
+     reg_names
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/delete_noop_moves/src/regs.h:166:21: note: 'reg_names' declared here
+extern const char * reg_names[FIRST_PSEUDO_REGISTER];
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/delete_noop_moves/src/flow.c:1284:6: error: use of undeclared identifier 'reg_note'
+if ( reg_note->fld[0].rtx != v2 ) 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/delete_noop_moves/src/flow.c:1286:1: error: use of undeclared identifier 'real_insn'
+real_insn = next_real_insn( v2); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/delete_noop_moves/src/flow.c:1287:1: error: use of undeclared identifier 'retval_note'
+retval_note = find_reg_note( v5->fld[0].rtx, REG_RETVAL, 0LL); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/delete_noop_moves/src/flow.c:1287:30: error: use of undeclared identifier 'v5'
+retval_note = find_reg_note( v5->fld[0].rtx, REG_RETVAL, 0LL); 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/delete_noop_moves/src/flow.c:1291:1: error: use of undeclared identifier 'v5'
+v5->fld[0].rtx, 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/delete_noop_moves/src/flow.c:1292:1: error: use of undeclared identifier 'real_insn'
+real_insn[3].fld[0].rtx); 
+^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/delete_noop_moves/src/obj/flow.o] Error 1

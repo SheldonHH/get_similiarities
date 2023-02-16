@@ -1,0 +1,69 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/set_mem_attributes/src/emit-rtl.c:2168:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v3; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/set_mem_attributes/src/emit-rtl.c:2180:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v15; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/set_mem_attributes/src/emit-rtl.c:2182:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v17; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/set_mem_attributes/src/emit-rtl.c:2187:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *off_tree; // [rsp+38h] [rbp-28h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/set_mem_attributes/src/emit-rtl.c:2191:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *expr; // [rsp+58h] [rbp-8h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/set_mem_attributes/src/emit-rtl.c:2194:1: error: statement requires expression of scalar type ('struct rtx_def' invalid)
+if ( ref[1] ) 
+^    ~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/set_mem_attributes/src/emit-rtl.c:2195:21: error: expected expression
+v3 = *( tree_node **)( *( _QWORD *)&ref[1] + 8LL); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/set_mem_attributes/src/emit-rtl.c:2195:9: error: use of undeclared identifier 'tree_node'
+v3 = *( tree_node **)( *( _QWORD *)&ref[1] + 8LL); 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/set_mem_attributes/src/emit-rtl.c:2198:14: error: expected identifier or '('
+ struct expr = v3; 
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/set_mem_attributes/src/emit-rtl.c:2199:1: error: statement requires expression of scalar type ('struct rtx_def' invalid)
+if ( ref[1] ) 
+^    ~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/set_mem_attributes/src/emit-rtl.c:2204:1: error: statement requires expression of scalar type ('struct rtx_def' invalid)
+if ( ref[1] ) 
+^    ~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/set_mem_attributes/src/emit-rtl.c:2217:1: error: statement requires expression of scalar type ('struct rtx_def' invalid)
+if ( ref[1] ) 
+^    ~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/set_mem_attributes/src/emit-rtl.c:2232:13: error: expected expression
+if ( v8 ==  struct ref ) 
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/set_mem_attributes/src/emit-rtl.c:2243:7: error: use of undeclared identifier 'lang_hooks_0'; did you mean 'lang_hooks'?
+v10 = lang_hooks_0.honor_readonly 
+      ^~~~~~~~~~~~
+      lang_hooks
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/set_mem_attributes/src/langhooks.h:168:32: note: 'lang_hooks' declared here
+extern const struct lang_hooks lang_hooks;
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/set_mem_attributes/src/emit-rtl.c:2284:14: error: expected identifier or '('
+ struct expr = ta; 
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/set_mem_attributes/src/emit-rtl.c:2306:25: error: expected expression
+off_tree = ( tree_node *)*( &global_trees + 15); 
+                        ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/set_mem_attributes/src/emit-rtl.c:2306:14: error: use of undeclared identifier 'tree_node'
+off_tree = ( tree_node *)*( &global_trees + 15); 
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/set_mem_attributes/src/emit-rtl.c:2318:14: error: expected identifier or '('
+ struct expr = component_ref_for_mem_expr( ta); 
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/set_mem_attributes/src/emit-rtl.c:2329:14: error: expected identifier or '('
+ struct expr = component_ref_for_mem_expr( ta); 
+             ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/set_mem_attributes/src/obj/emit-rtl.o] Error 1

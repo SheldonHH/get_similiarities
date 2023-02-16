@@ -1,0 +1,21 @@
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/do_compute_effective_worm_sizes/src/engine/worm.c:1073:6: error: use of undeclared identifier 'do_compute_effective_worm_sizes_worms'
+v6 = do_compute_effective_worm_sizes_worms[21]; 
+     ^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/do_compute_effective_worm_sizes/src/engine/worm.c:1136:1: error: use of undeclared identifier 'do_compute_effective_worm_sizes_worms'; did you mean 'do_compute_effective_worm_sizes'?
+do_compute_effective_worm_sizes_worms[v10][( int)v16] = do_compute_effective_worm_sizes_worms[v14][v15]; 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+do_compute_effective_worm_sizes
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/do_compute_effective_worm_sizes/src/engine/worm.c:1036:7: note: 'do_compute_effective_worm_sizes' declared here
+void  do_compute_effective_worm_sizes( int color, int ( *cw)[4], int *ncw, int max_distance) 
+      ^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/do_compute_effective_worm_sizes/src/engine/worm.c:1136:1: error: subscript of pointer to function type 'void (int, int (*)[4], int *, int)'
+do_compute_effective_worm_sizes_worms[v10][( int)v16] = do_compute_effective_worm_sizes_worms[v14][v15]; 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/do_compute_effective_worm_sizes/src/engine/worm.c:1136:57: error: use of undeclared identifier 'do_compute_effective_worm_sizes_worms'
+do_compute_effective_worm_sizes_worms[v10][( int)v16] = do_compute_effective_worm_sizes_worms[v14][v15]; 
+                                                        ^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/do_compute_effective_worm_sizes/src/engine/worm.c:1142:41: error: use of undeclared identifier 'do_compute_effective_worm_sizes_worms'
+while ( *( _DWORD *)( v11 + 4 * v17) != do_compute_effective_worm_sizes_worms[v14][v15] ) 
+                                        ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/do_compute_effective_worm_sizes/src/obj/1/worm.o] Error 1

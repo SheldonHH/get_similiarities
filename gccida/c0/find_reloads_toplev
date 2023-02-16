@@ -1,0 +1,57 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_reloads_toplev/src/reload.c:4798:1: error: must use 'enum' tag to refer to type 'reload_type'
+reload_type type, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_reloads_toplev/src/reload.c:4820:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code; // [rsp+84h] [rbp-2Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_reloads_toplev/src/reload.c:4824:1: error: must use 'enum' tag to refer to type 'reload_type'
+reload_type typea; // [rsp+98h] [rbp-18h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_reloads_toplev/src/reload.c:4846:25: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( replace_reloads && recog_data_0.operand[opnuma] != xa ) 
+                        ^~~~~~~~~~~~
+                        recog_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_reloads_toplev/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_reloads_toplev/src/reload.c:4854:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)mem), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_reloads_toplev/src/reload.c:4854:18: error: expected expression
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)mem), 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_reloads_toplev/src/reload.c:4872:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)xa), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_reloads_toplev/src/reload.c:4872:18: error: expected expression
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)xa), 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_reloads_toplev/src/reload.c:4893:31: error: use of undeclared identifier 'machine_mode'
+tem_0 = gen_lowpart_common( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)xa), reg_equiv_constant[regno_0]); 
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_reloads_toplev/src/reload.c:4893:46: error: expected expression
+tem_0 = gen_lowpart_common( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)xa), reg_equiv_constant[regno_0]); 
+                                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_reloads_toplev/src/reload.c:4914:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)xa->fld[0].rtwint)); 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_reloads_toplev/src/reload.c:4914:18: error: expected expression
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)xa->fld[0].rtwint)); 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_reloads_toplev/src/reload.c:4917:32: error: use of undeclared identifier 'machine_mode'
+tem_0b = gen_lowpart_common( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)xa), tem_0a); 
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_reloads_toplev/src/reload.c:4917:47: error: expected expression
+tem_0b = gen_lowpart_common( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)xa), tem_0a); 
+                                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_reloads_toplev/src/reload.c:4945:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)xa), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_reloads_toplev/src/reload.c:4945:18: error: expected expression
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)xa), 
+                 ^
+16 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_reloads_toplev/src/obj/reload.o] Error 1

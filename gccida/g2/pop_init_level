@@ -1,0 +1,83 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/pop_init_level/src/c-typeck.c:5940:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *replacement_value; // r12 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/pop_init_level/src/c-typeck.c:5943:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *inited; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/pop_init_level/src/c-typeck.c:5948:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *imag; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/pop_init_level/src/c-typeck.c:5952:6: error: use of undeclared identifier 'constructor_stack_0'; did you mean 'constructor_stack'?
+v1 = constructor_stack_0; 
+     ^~~~~~~~~~~~~~~~~~~
+     constructor_stack
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/pop_init_level/src/c-typeck.c:5021:27: note: 'constructor_stack' declared here
+struct constructor_stack *constructor_stack;
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/pop_init_level/src/c-typeck.c:5955:9: error: use of undeclared identifier 'constructor_stack_0'; did you mean 'constructor_stack'?
+for ( ; constructor_stack_0->implicit; v1 = constructor_stack_0 ) 
+        ^~~~~~~~~~~~~~~~~~~
+        constructor_stack
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/pop_init_level/src/c-typeck.c:5021:27: note: 'constructor_stack' declared here
+struct constructor_stack *constructor_stack;
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/pop_init_level/src/c-typeck.c:5955:45: error: use of undeclared identifier 'constructor_stack_0'; did you mean 'constructor_stack'?
+for ( ; constructor_stack_0->implicit; v1 = constructor_stack_0 ) 
+                                            ^~~~~~~~~~~~~~~~~~~
+                                            constructor_stack
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/pop_init_level/src/c-typeck.c:5021:27: note: 'constructor_stack' declared here
+struct constructor_stack *constructor_stack;
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/pop_init_level/src/c-typeck.c:5960:6: error: use of undeclared identifier 'constructor_range_stack_0'; did you mean 'constructor_range_stack'?
+if ( constructor_range_stack_0 ) 
+     ^~~~~~~~~~~~~~~~~~~~~~~~~
+     constructor_range_stack
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/pop_init_level/src/c-typeck.c:5036:33: note: 'constructor_range_stack' declared here
+struct constructor_range_stack *constructor_range_stack;
+                                ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/pop_init_level/src/c-typeck.c:6023:1: error: use of undeclared identifier 'spelling_0'; did you mean 'spelling'?
+spelling_0 = &spelling_base[constructor_depth]; 
+^~~~~~~~~~
+spelling
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/pop_init_level/src/c-typeck.c:4491:25: note: 'spelling' declared here
+static struct spelling *spelling;       /* Next stack element (unused).  */
+                        ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/pop_init_level/src/c-typeck.c:6044:34: error: expected expression
+replacement_value = ( tree_node *)global_trees; 
+                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/pop_init_level/src/c-typeck.c:6044:23: error: use of undeclared identifier 'tree_node'
+replacement_value = ( tree_node *)global_trees; 
+                      ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/pop_init_level/src/c-typeck.c:6090:1: error: use of undeclared identifier 'constructor_range_stack_0'; did you mean 'constructor_range_stack'?
+constructor_range_stack_0 = v1->range_stack; 
+^~~~~~~~~~~~~~~~~~~~~~~~~
+constructor_range_stack
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/pop_init_level/src/c-typeck.c:5036:33: note: 'constructor_range_stack' declared here
+struct constructor_range_stack *constructor_range_stack;
+                                ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/pop_init_level/src/c-typeck.c:6091:1: error: use of undeclared identifier 'spelling_0'; did you mean 'spelling'?
+spelling_0 = &spelling_base[depth]; 
+^~~~~~~~~~
+spelling
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/pop_init_level/src/c-typeck.c:4491:25: note: 'spelling' declared here
+static struct spelling *spelling;       /* Next stack element (unused).  */
+                        ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/pop_init_level/src/c-typeck.c:6092:1: error: use of undeclared identifier 'constructor_stack_0'; did you mean 'constructor_stack'?
+constructor_stack_0 = v1->next; 
+^~~~~~~~~~~~~~~~~~~
+constructor_stack
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/pop_init_level/src/c-typeck.c:5021:27: note: 'constructor_stack' declared here
+struct constructor_stack *constructor_stack;
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/pop_init_level/src/c-typeck.c:6096:7: error: use of undeclared identifier 'constructor_stack_0'; did you mean 'constructor_stack'?
+if ( !constructor_stack_0 ) 
+      ^~~~~~~~~~~~~~~~~~~
+      constructor_stack
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/pop_init_level/src/c-typeck.c:5021:27: note: 'constructor_stack' declared here
+struct constructor_stack *constructor_stack;
+                          ^
+14 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/pop_init_level/src/obj/c-typeck.o] Error 1

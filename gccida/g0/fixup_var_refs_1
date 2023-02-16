@@ -1,0 +1,68 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/fixup_var_refs_1/src/function.c:2396:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode promoted_mode, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/fixup_var_refs_1/src/function.c:2433:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode wanted_mode_0; // [rsp+7Ch] [rbp-C4h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/fixup_var_refs_1/src/function.c:2436:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode is_mode_0; // [rsp+8Ch] [rbp-B4h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/fixup_var_refs_1/src/function.c:2446:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode new_mode; // [rsp+D0h] [rbp-70h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/fixup_var_refs_1/src/function.c:2447:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode new_mode_0; // [rsp+D4h] [rbp-6Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/fixup_var_refs_1/src/function.c:2450:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode is_mode; // [rsp+E4h] [rbp-5Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/fixup_var_refs_1/src/function.c:2465:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code; // [rsp+104h] [rbp-3Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/fixup_var_refs_1/src/function.c:2474:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode wanted_mode; // [rsp+13Ch] [rbp-4h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/fixup_var_refs_1/src/function.c:2493:36: error: use of undeclared identifier 'machine_mode'
+replacemente->new = gen_reg_rtx( ( machine_mode)*( ( unsigned __int8 *)var + 2)); 
+                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/fixup_var_refs_1/src/function.c:2502:23: error: use of undeclared identifier 'machine_mode'
+temd = gen_reg_rtx( ( machine_mode)*( unsigned __int8 *)( x->fld[0].rtwint + 2)); 
+                      ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/fixup_var_refs_1/src/function.c:2504:22: error: use of undeclared identifier 'machine_mode'
+v15 = gen_lowpart( ( machine_mode)*( ( unsigned __int8 *)var + 2), temd); 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/fixup_var_refs_1/src/function.c:2510:13: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+src = ( rtx)x[1]; 
+            ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/fixup_var_refs_1/src/function.c:2557:24: error: use of undeclared identifier 'machine_mode'
+tem1a = gen_reg_rtx( ( machine_mode)*( ( unsigned __int8 *)temc + 2)); 
+                       ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/fixup_var_refs_1/src/function.c:2570:21: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+if ( ( var == ( rtx)x[1] || **( _WORD **)&x[1] == 63 && var == *( rtx *)( *( _QWORD *)&x[1] + 8LL)) 
+                    ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/fixup_var_refs_1/src/function.c:2578:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+: ( v21 = ( rtx)insn[2]), 
+                ^~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/fixup_var_refs_1/src/function.c:2586:36: error: use of undeclared identifier 'machine_mode'
+replacementf->new = gen_reg_rtx( ( machine_mode)*( ( unsigned __int8 *)var + 2)); 
+                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/fixup_var_refs_1/src/function.c:2619:22: error: assigning to 'uint64' (aka 'unsigned long long') from incompatible type 'struct rtx_def'
+*( _QWORD *)&insn[2] = last[2]; 
+                     ^ ~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/fixup_var_refs_1/src/function.c:2637:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+: ( v23 = ( rtx)insn[2]), 
+                ^~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/fixup_var_refs_1/src/function.c:2648:22: error: use of undeclared identifier 'machine_mode'
+v26 = gen_reg_rtx( ( machine_mode)*( ( unsigned __int8 *)fixeddesta + 2)); 
+                     ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/fixup_var_refs_1/src/obj/function.o] Error 1

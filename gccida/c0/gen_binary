@@ -1,0 +1,23 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_binary/src/combine.c:10331:18: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx  gen_binary( rtx_code code, machine_mode mode, rtx op0, rtx op1) 
+                 ^
+                 enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_binary/src/combine.c:10331:33: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  gen_binary( rtx_code code, machine_mode mode, rtx op0, rtx op1) 
+                                ^
+                                enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_binary/src/combine.c:10333:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode op_mode; // [rsp+Ch] [rbp-34h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_binary/src/combine.c:10341:31: error: use of undeclared identifier 'QTextBlock'
+if ( rtx_class[code] == 99 && QTextBlock::operator<( op0, op1) ) 
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_binary/src/combine.c:10352:14: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+op1a = ( rtx)op0a[1]; 
+             ^~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_binary/src/combine.c:10366:31: error: use of undeclared identifier 'QTextBlock'
+if ( rtx_class[code] == 99 && QTextBlock::operator<( op0a, op1a) ) 
+                              ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_binary/src/obj/combine.o] Error 1

@@ -1,0 +1,22 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/output_addressed_constants/src/varasm.c:4711:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v9; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/output_addressed_constants/src/varasm.c:4713:6: error: use of undeclared identifier 'lang_hooks_0'; did you mean 'lang_hooks'?
+v1 = lang_hooks_0.expand_constant( exp); 
+     ^~~~~~~~~~~~
+     lang_hooks
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/output_addressed_constants/src/langhooks.h:168:32: note: 'lang_hooks' declared here
+extern const struct lang_hooks lang_hooks;
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/output_addressed_constants/src/varasm.c:4713:34: error: called object type '<dependent type>' is not a function or function pointer
+v1 = lang_hooks_0.expand_constant( exp); 
+                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/output_addressed_constants/src/varasm.c:4740:19: error: expected expression
+v9 = ( tree_node *)high[4]; 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/output_addressed_constants/src/varasm.c:4740:8: error: use of undeclared identifier 'tree_node'
+v9 = ( tree_node *)high[4]; 
+       ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/output_addressed_constants/src/obj/varasm.o] Error 1

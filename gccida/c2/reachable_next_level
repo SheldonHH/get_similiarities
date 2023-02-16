@@ -1,0 +1,30 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/reachable_next_level/src/except.c:3313:1: error: must use 'enum' tag to refer to type 'reachable_code'
+reachable_code  reachable_next_level(  struct eh_region *region, tree type_thrown,  struct reachable_info *info) 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/reachable_next_level/src/except.c:3321:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *aka; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/reachable_next_level/src/except.c:3326:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v16; // rbx 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/reachable_next_level/src/except.c:3333:1: error: must use 'enum' tag to refer to type 'reachable_code'
+reachable_code result; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/reachable_next_level/src/except.c:3382:20: error: expected expression
+aka = ( tree_node *)prev_try->aka; 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/reachable_next_level/src/except.c:3382:9: error: use of undeclared identifier 'tree_node'
+aka = ( tree_node *)prev_try->aka; 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/reachable_next_level/src/except.c:3410:20: error: expected expression
+v16 = ( tree_node *)v13->aka; 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/reachable_next_level/src/except.c:3410:9: error: use of undeclared identifier 'tree_node'
+v16 = ( tree_node *)v13->aka; 
+        ^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/reachable_next_level/src/obj/except.o] Error 1

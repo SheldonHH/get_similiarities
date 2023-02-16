@@ -1,0 +1,13 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/compute_record_mode/src/stor-layout.c:1666:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v1; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/compute_record_mode/src/stor-layout.c:1674:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // [rsp+1Ch] [rbp-14h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/compute_record_mode/src/stor-layout.c:1694:6: error: use of undeclared identifier 'QCameraExposure'
+v2 = QCameraExposure::setAutoIsoSensitivity( ( tree)field); 
+     ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/compute_record_mode/src/obj/stor-layout.o] Error 1

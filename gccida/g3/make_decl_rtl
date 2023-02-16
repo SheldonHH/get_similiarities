@@ -1,0 +1,25 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/make_decl_rtl/src/varasm.c:1282:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode supercontext_low; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/make_decl_rtl/src/varasm.c:1380:38: error: use of undeclared identifier 'machine_mode'
+if ( ix86_hard_regno_mode_ok( v11, ( machine_mode)( BYTE5( type->block.abstract_origin) >> 1)) ) 
+                                     ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/make_decl_rtl/src/varasm.c:1389:30: error: use of undeclared identifier 'machine_mode'
+v22 = gen_rtx_fmt_i0( REG, ( machine_mode)LOBYTE( decl->block.supercontext), v11); 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/make_decl_rtl/src/varasm.c:1403:38: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( ( unsigned int)( *( ( _DWORD *)&mode_class_0 + v23) - 5) > 1 ) 
+                                     ^~~~~~~~~~~~
+                                     mode_class
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/make_decl_rtl/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/make_decl_rtl/src/varasm.c:1500:36: error: use of undeclared identifier 'machine_mode'
+v15 = gen_rtx_fmt_s( SYMBOL_REF, ( machine_mode)( ( ( BYTE3( target_flags) & 2) != 0) + 4), low); 
+                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/make_decl_rtl/src/varasm.c:1501:22: error: use of undeclared identifier 'machine_mode'
+v16 = gen_rtx_MEM( ( machine_mode)LOBYTE( decl->block.supercontext), v15); 
+                     ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/make_decl_rtl/src/obj/varasm.o] Error 1

@@ -1,0 +1,65 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_inline_function/src/integrate.c:1174:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v63; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_inline_function/src/integrate.c:1180:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v69; // r12 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_inline_function/src/integrate.c:1182:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v71; // r13 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_inline_function/src/integrate.c:1205:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v95; // r12d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_inline_function/src/integrate.c:1217:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode pmode; // [rsp+40h] [rbp-A8h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_inline_function/src/integrate.c:1260:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( *( _BYTE *)( *( _QWORD *)( i->int_cst.int_cst.low + 8) + 61LL) >> 1), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_inline_function/src/integrate.c:1296:33: error: use of undeclared identifier 'machine_mode'
+*v20 = expand_expr( v26, 0LL, ( machine_mode)v28, EXPAND_SUM); 
+                                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_inline_function/src/integrate.c:1302:30: error: use of undeclared identifier 'machine_mode'
+pmode = promote_mode( v27, ( machine_mode)v28, ( int *)&unsignedp, 0); 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_inline_function/src/integrate.c:1306:32: error: use of undeclared identifier 'machine_mode'
+v30 = expand_expr( v26, 0LL, ( machine_mode)v28, EXPAND_SUM); 
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_inline_function/src/integrate.c:1309:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( BYTE5( v26->common.type->block.abstract_origin) >> 1), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_inline_function/src/integrate.c:1339:27: error: use of undeclared identifier 'machine_mode'
+v25 = copy_to_mode_reg( ( machine_mode)*( ( unsigned __int8 *)v29 + 2), v25); 
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_inline_function/src/integrate.c:1411:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v62.rtwint = ( __int64)v61->fld[0]; 
+                       ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_inline_function/src/integrate.c:1420:27: error: use of undeclared identifier 'machine_mode'
+if ( !memory_address_p( ( machine_mode)*( ( unsigned __int8 *)temp + 2), temp->fld[0].rtx) ) 
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_inline_function/src/integrate.c:1457:25: error: use of undeclared identifier 'machine_mode'
+v96 = gen_rtx_SUBREG( ( machine_mode)v98, target, 0); 
+                        ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_inline_function/src/integrate.c:1461:22: error: use of undeclared identifier 'machine_mode'
+v96 = gen_reg_rtx( ( machine_mode)v98); 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_inline_function/src/integrate.c:1480:30: error: use of undeclared identifier 'machine_mode'
+|| ( target = gen_reg_rtx( ( machine_mode)v66), *( _WORD *)target != 65) ) 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_inline_function/src/integrate.c:1485:70: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v32->reg_map[*( unsigned int *)( *( _QWORD *)&rtl[1] + 8LL)] = ( rtx)target[1]; 
+                                                                     ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_inline_function/src/integrate.c:1504:20: error: use of undeclared identifier 'machine_mode'
+v85 = force_reg( ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), temp); 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_inline_function/src/integrate.c:1507:28: error: use of undeclared identifier 'machine_mode'
+temp = copy_to_mode_reg( ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), v85); 
+                           ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_inline_function/src/obj/integrate.o] Error 1

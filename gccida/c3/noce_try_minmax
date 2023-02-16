@@ -1,0 +1,49 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/noce_try_minmax/src/ifcvt.c:1756:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code op; // [rsp+18h] [rbp-38h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/noce_try_minmax/src/ifcvt.c:1757:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code; // [rsp+1Ch] [rbp-34h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/noce_try_minmax/src/ifcvt.c:1768:8: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( ( mode_class_0[( unsigned __int8)BYTE2( *( _DWORD *)if_infoa->x)] == MODE_FLOAT 
+       ^~~~~~~~~~~~
+       mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/noce_try_minmax/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/noce_try_minmax/src/ifcvt.c:1769:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| mode_class_0[( unsigned __int8)BYTE2( *( _DWORD *)if_infoa->x)] == MODE_COMPLEX_FLOAT 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/noce_try_minmax/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/noce_try_minmax/src/ifcvt.c:1770:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| mode_class_0[( unsigned __int8)BYTE2( *( _DWORD *)if_infoa->x)] == MODE_VECTOR_FLOAT) 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/noce_try_minmax/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/noce_try_minmax/src/ifcvt.c:1798:2: error: expected expression
+ struct op = SMIN; 
+ ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/noce_try_minmax/src/ifcvt.c:1805:2: error: expected expression
+ struct op = SMAX; 
+ ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/noce_try_minmax/src/ifcvt.c:1810:2: error: expected expression
+ struct op = UMIN; 
+ ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/noce_try_minmax/src/ifcvt.c:1815:2: error: expected expression
+ struct op = UMAX; 
+ ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/noce_try_minmax/src/ifcvt.c:1820:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)if_infoa->x), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/noce_try_minmax/src/ifcvt.c:1820:18: error: expected expression
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)if_infoa->x), 
+                 ^
+11 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/noce_try_minmax/src/obj/ifcvt.o] Error 1

@@ -1,0 +1,48 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_binary_real/src/simplify-rtx.c:1258:1: error: must use 'union' tag to refer to type 'real_extract'
+real_extract u_0; // [rsp+68h] [rbp-88h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_binary_real/src/simplify-rtx.c:1259:1: error: must use 'union' tag to refer to type 'real_extract'
+real_extract u; // [rsp+80h] [rbp-70h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_binary_real/src/simplify-rtx.c:1268:22: error: expected expression
+u = *( real_extract *)( *( _QWORD *)p + 16LL); 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_binary_real/src/simplify-rtx.c:1268:8: error: use of undeclared identifier 'real_extract'; did you mean 'insn_extract'?
+u = *( real_extract *)( *( _QWORD *)p + 16LL); 
+       ^~~~~~~~~~~~
+       insn_extract
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_binary_real/src/recog.h:124:13: note: 'insn_extract' declared here
+extern void insn_extract                PARAMS ((rtx));
+            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_binary_real/src/simplify-rtx.c:1270:24: error: expected expression
+u_0 = *( real_extract *)( *( ( _QWORD *)p + 1) + 16LL); 
+                       ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_binary_real/src/simplify-rtx.c:1270:10: error: use of undeclared identifier 'real_extract'; did you mean 'insn_extract'?
+u_0 = *( real_extract *)( *( ( _QWORD *)p + 1) + 16LL); 
+         ^~~~~~~~~~~~
+         insn_extract
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_binary_real/src/recog.h:124:13: note: 'insn_extract' declared here
+extern void insn_extract                PARAMS ((rtx));
+            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_binary_real/src/simplify-rtx.c:1272:46: error: expected expression
+real_value_truncate( &v5, *( ( machine_mode *)p + 7), u.d); 
+                                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_binary_real/src/simplify-rtx.c:1272:32: error: use of undeclared identifier 'machine_mode'
+real_value_truncate( &v5, *( ( machine_mode *)p + 7), u.d); 
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_binary_real/src/simplify-rtx.c:1274:39: error: too many arguments to function call, expected 2, have 3
+real_value_truncate( &v4, args->mode, f1); 
+~~~~~~~~~~~~~~~~~~~                   ^~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_binary_real/src/real.h:406:1: note: 'real_value_truncate' declared here
+extern REAL_VALUE_TYPE real_value_truncate PARAMS ((enum machine_mode,
+^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_binary_real/src/simplify-rtx.c:1278:39: error: too many arguments to function call, expected 2, have 3
+real_value_truncate( &v3, args->mode, value); 
+~~~~~~~~~~~~~~~~~~~                   ^~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_binary_real/src/real.h:406:1: note: 'real_value_truncate' declared here
+extern REAL_VALUE_TYPE real_value_truncate PARAMS ((enum machine_mode,
+^
+10 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_binary_real/src/obj/simplify-rtx.o] Error 1

@@ -1,0 +1,21 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/count_one_set/src/loop.c:3965:6: error: use of undeclared identifier 'v24'
+rtx *v24; // [rsp+10h] [rbp-38h] 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/count_one_set/src/loop.c:3971:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v8.rtwint = ( __int64)x->fld[0]; 
+                      ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/count_one_set/src/loop.c:3997:1: error: use of undeclared identifier 'v24'
+v24 = &last_set[rtint]; 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/count_one_set/src/loop.c:4007:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v13 = ( ( unsigned int)( mode_class_0[v14] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/count_one_set/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/count_one_set/src/loop.c:4047:1: error: use of undeclared identifier 'v24'
+v24[i] = insn; 
+^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/count_one_set/src/obj/loop.o] Error 1

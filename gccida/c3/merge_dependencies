@@ -1,0 +1,20 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/merge_dependencies/src/dependence.c:1685:16: error: function cannot return array type 'int [13]'
+direction_type ( *direction)[13], 
+               ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/merge_dependencies/src/dependence.c:1697:4: error: use of undeclared identifier 'direction'
+( *direction)[13 * i] = star; 
+   ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/merge_dependencies/src/dependence.c:1710:4: error: use of undeclared identifier 'direction'
+( *direction)[13 * i] = merge_dependencies_direction_merge[( *direction)[13 * i]][( *direction)[13 * i + j]]; 
+   ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/merge_dependencies/src/dependence.c:1710:63: error: use of undeclared identifier 'direction'
+( *direction)[13 * i] = merge_dependencies_direction_merge[( *direction)[13 * i]][( *direction)[13 * i + j]]; 
+                                                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/merge_dependencies/src/dependence.c:1710:25: error: use of undeclared identifier 'merge_dependencies_direction_merge'
+( *direction)[13 * i] = merge_dependencies_direction_merge[( *direction)[13 * i]][( *direction)[13 * i + j]]; 
+                        ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/merge_dependencies/src/dependence.c:1710:86: error: use of undeclared identifier 'direction'
+( *direction)[13 * i] = merge_dependencies_direction_merge[( *direction)[13 * i]][( *direction)[13 * i + j]]; 
+                                                                                     ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/merge_dependencies/src/obj/dependence.o] Error 1

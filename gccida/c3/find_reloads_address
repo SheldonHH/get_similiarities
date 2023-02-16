@@ -1,0 +1,83 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_reloads_address/src/reload.c:5033:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_reloads_address/src/reload.c:5038:1: error: must use 'enum' tag to refer to type 'reload_type'
+reload_type type, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_reloads_address/src/reload.c:5032:10: error: conflicting types for 'find_reloads_address'
+__int64  find_reloads_address( 
+         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_reloads_address/src/reload.c:260:12: note: previous declaration is here
+static int find_reloads_address PARAMS ((enum machine_mode, rtx *, rtx, rtx *,
+           ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_reloads_address/src/reload.c:5053:1: error: must use 'enum' tag to refer to type 'reload_type'
+reload_type v24; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_reloads_address/src/reload.c:5054:1: error: must use 'enum' tag to refer to type 'reload_type'
+reload_type v25; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_reloads_address/src/reload.c:5055:1: error: must use 'enum' tag to refer to type 'reload_type'
+reload_type v26; // r9d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_reloads_address/src/reload.c:5057:1: error: must use 'enum' tag to refer to type 'reload_type'
+reload_type v28; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_reloads_address/src/reload.c:5059:4: error: expected ';' after expression
+rtx v30; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_reloads_address/src/reload.c:5059:5: error: use of undeclared identifier 'v30'
+rtx v30; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_reloads_address/src/reload.c:5061:1: error: must use 'enum' tag to refer to type 'reload_type'
+reload_type v32; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_reloads_address/src/reload.c:5062:4: error: expected ';' after expression
+rtx memloc; // rbx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_reloads_address/src/reload.c:5062:5: error: use of undeclared identifier 'memloc'; did you mean 'malloc'?
+rtx memloc; // rbx 
+    ^~~~~~
+    malloc
+/usr/include/malloc.h:38:14: note: 'malloc' declared here
+extern void *malloc (size_t __size) __THROW __attribute_malloc__ __wur;
+             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_reloads_address/src/reload.c:5063:6: error: use of undeclared identifier 'fld'; did you mean 'rld'?
+rtx *fld; // r14 
+     ^~~
+     rld
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_reloads_address/src/reload.c:121:15: note: 'rld' declared here
+struct reload rld[MAX_RELOADS];
+              ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_reloads_address/src/reload.c:5063:5: error: invalid operands to binary expression ('struct rtx_def *' and 'struct reload [180]')
+rtx *fld; // r14 
+~~~ ^~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_reloads_address/src/reload.c:5065:1: error: must use 'enum' tag to refer to type 'reload_type'
+reload_type v36; // r9d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_reloads_address/src/reload.c:5066:4: error: expected ';' after expression
+rtx v37; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_reloads_address/src/reload.c:5066:5: error: use of undeclared identifier 'v37'
+rtx v37; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_reloads_address/src/reload.c:5074:4: error: expected ';' after expression
+rtx v45; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_reloads_address/src/reload.c:5074:5: error: use of undeclared identifier 'v45'
+rtx v45; // rax 
+    ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_reloads_address/src/obj/reload.o] Error 1

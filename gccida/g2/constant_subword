@@ -1,0 +1,66 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/constant_subword/src/emit-rtl.c:1775:44: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  constant_subword( rtx op, int offset, machine_mode mode) 
+                                           ^
+                                           enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/constant_subword/src/emit-rtl.c:1799:21: error: use of undeclared identifier 'mode_class_0'
+v4 = ( unsigned int)mode_class_0[mode]; 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/constant_subword/src/emit-rtl.c:1808:40: error: expected expression
+if ( v8 == v6 || const_int_rtx[64] ==  struct op ) 
+                                       ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/constant_subword/src/emit-rtl.c:1826:20: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+rtwint = ( __int64)op[1]; 
+                   ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/constant_subword/src/emit-rtl.c:1829:33: error: invalid suffix 'xmode' on integer constant
+v13 = ( unsigned int)*(short *)0xmode; 
+                                ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/constant_subword/src/emit-rtl.c:1832:46: error: invalid suffix 'xmode' on integer constant
+v14 = trunc_int_for_mode( rtwint, *(short *)0xmode); 
+                                             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/constant_subword/src/emit-rtl.c:1846:28: error: expected expression
+if ( const_int_rtx[64] ==  struct op ) 
+                           ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/constant_subword/src/emit-rtl.c:1857:22: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v18.r[2] = ( __int64)op[2]; 
+                     ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/constant_subword/src/emit-rtl.c:1868:7: error: expected expression
+if (  struct op == const_int_rtx[64] ) 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/constant_subword/src/emit-rtl.c:1873:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v24 = ( __int64)op[2]; 
+                ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/constant_subword/src/emit-rtl.c:1876:12: error: expected expression
+*( _OWORD *)v20.r = *( _OWORD *)v23; 
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/constant_subword/src/emit-rtl.c:1876:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)v20.r = *( _OWORD *)v23; 
+   ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/constant_subword/src/emit-rtl.c:1878:14: error: passing 'long long [2]' to parameter of incompatible type 'realvaluetype'
+etartdouble( v23, v20); 
+             ^~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/constant_subword/src/real.h:162:50: note: passing argument to parameter here
+extern void etartdouble         PARAMS ((REAL_VALUE_TYPE, long *));
+                                                        ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/constant_subword/src/emit-rtl.c:1880:14: error: passing 'long long [2]' to parameter of incompatible type 'realvaluetype'
+etarldouble( v23, v20); 
+             ^~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/constant_subword/src/real.h:163:50: note: passing argument to parameter here
+extern void etarldouble         PARAMS ((REAL_VALUE_TYPE, long *));
+                                                        ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/constant_subword/src/emit-rtl.c:1892:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v16 = ( __int64)op[2]; 
+                ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/constant_subword/src/emit-rtl.c:1897:12: error: expected expression
+*( _OWORD *)v19.r = *( _OWORD *)v23; 
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/constant_subword/src/emit-rtl.c:1897:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)v19.r = *( _OWORD *)v23; 
+   ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/constant_subword/src/emit-rtl.c:1898:13: error: passing 'long long [2]' to parameter of incompatible type 'realvaluetype'
+etardouble( v23, v19); 
+            ^~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/constant_subword/src/real.h:164:49: note: passing argument to parameter here
+extern void etardouble          PARAMS ((REAL_VALUE_TYPE, long *));
+                                                        ^
+18 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/constant_subword/src/obj/emit-rtl.o] Error 1

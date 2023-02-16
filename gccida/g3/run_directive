@@ -1,0 +1,42 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/run_directive/src/cpplib.c:863:22: error: unknown type name 'cpp_reader_0'; did you mean 'cpp_reader'?
+void  run_directive( cpp_reader_0 *pfile, int dir_no, const char *buf, size_t count) 
+                     ^~~~~~~~~~~~
+                     cpp_reader
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/run_directive/src/cpplib.h:36:27: note: 'cpp_reader' declared here
+typedef struct cpp_reader cpp_reader;
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/run_directive/src/cpplib.c:868:1: error: unknown type name 'cpp_buffer_0'; did you mean 'cpp_buffer'?
+cpp_buffer_0 *object_base; // rdx 
+^~~~~~~~~~~~
+cpp_buffer
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/run_directive/src/cpplib.h:38:27: note: 'cpp_buffer' declared here
+typedef struct cpp_buffer cpp_buffer;
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/run_directive/src/cpplib.c:869:1: error: unknown type name 'cpp_buffer_0'; did you mean 'cpp_buffer'?
+cpp_buffer_0 *v10; // rax 
+^~~~~~~~~~~~
+cpp_buffer
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/run_directive/src/cpplib.h:38:27: note: 'cpp_buffer' declared here
+typedef struct cpp_buffer cpp_buffer;
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/run_directive/src/cpplib.c:871:1: error: unknown type name 'cpp_buffer_0'; did you mean 'cpp_buffer'?
+cpp_buffer_0 *buffer; // rax 
+^~~~~~~~~~~~
+cpp_buffer
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/run_directive/src/cpplib.h:38:27: note: 'cpp_buffer' declared here
+typedef struct cpp_buffer cpp_buffer;
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/run_directive/src/cpplib.c:883:31: error: expected expression
+object_base = ( cpp_buffer_0 *)pfile->buffer_ob.object_base; 
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/run_directive/src/cpplib.c:883:17: error: use of undeclared identifier 'cpp_buffer_0'
+object_base = ( cpp_buffer_0 *)pfile->buffer_ob.object_base; 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/run_directive/src/cpplib.c:884:23: error: expected expression
+v10 = ( cpp_buffer_0 *)( next_free + 144); 
+                      ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/run_directive/src/cpplib.c:884:9: error: use of undeclared identifier 'cpp_buffer_0'
+v10 = ( cpp_buffer_0 *)( next_free + 144); 
+        ^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/run_directive/src/obj/cpplib.o] Error 1

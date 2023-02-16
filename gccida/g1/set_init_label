@@ -1,0 +1,13 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/set_init_label/src/c-typeck.c:6252:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *values; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/set_init_label/src/c-typeck.c:6275:6: error: use of undeclared identifier 'constructor_range_stack_0'; did you mean 'constructor_range_stack'?
+if ( constructor_range_stack_0 ) 
+     ^~~~~~~~~~~~~~~~~~~~~~~~~
+     constructor_range_stack
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/set_init_label/src/c-typeck.c:5036:33: note: 'constructor_range_stack' declared here
+struct constructor_range_stack *constructor_range_stack;
+                                ^
+2 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/set_init_label/src/obj/c-typeck.o] Error 1

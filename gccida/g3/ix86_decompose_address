@@ -1,0 +1,63 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/ix86_decompose_address/src/i386.c:4937:4: error: expected ';' after expression
+rtx v12; // rdx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/ix86_decompose_address/src/i386.c:4937:5: error: use of undeclared identifier 'v12'
+rtx v12; // rdx 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/ix86_decompose_address/src/i386.c:4946:4: error: expected ';' after expression
+rtx v21; // rdx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/ix86_decompose_address/src/i386.c:4946:5: error: use of undeclared identifier 'v21'
+rtx v21; // rdx 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/ix86_decompose_address/src/i386.c:4960:14: error: expected ';' after expression
+addr = ( rtx)addr[1]; 
+             ^
+             ;
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/ix86_decompose_address/src/i386.c:4972:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v17.rtwint = ( __int64)rtx->fld[0]; 
+                       ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/ix86_decompose_address/src/i386.c:4973:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v18 = ( __int64)rtx[1]; 
+                ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/ix86_decompose_address/src/i386.c:4984:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v19.rtwint = ( __int64)rtx->fld[0]; 
+                       ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/ix86_decompose_address/src/i386.c:4985:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v20 = (  struct rtx_def *)rtx[1]; 
+                          ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/ix86_decompose_address/src/i386.c:4993:15: error: expected expression
+rtx = *( rtx *)( v19.rtwint + 8); 
+              ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/ix86_decompose_address/src/i386.c:5042:1: error: use of undeclared identifier 'v12'
+v12 = addr; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/ix86_decompose_address/src/i386.c:5046:7: error: use of undeclared identifier 'v12'
+rtx = v12; 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/ix86_decompose_address/src/i386.c:5049:1: error: use of undeclared identifier 'v21'
+v21 = addr; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/ix86_decompose_address/src/i386.c:5051:7: error: use of undeclared identifier 'v21'
+rtx = v21; 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/ix86_decompose_address/src/i386.c:5099:47: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'unsigned long long' of different size
+*( __m128i *)&out->base = _mm_unpacklo_epi64( ( __m128i)v10, ( __m128i)( unsigned __int64)rtx); 
+                                              ^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/ix86_decompose_address/src/i386.c:5099:62: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'unsigned long long' of different size
+*( __m128i *)&out->base = _mm_unpacklo_epi64( ( __m128i)v10, ( __m128i)( unsigned __int64)rtx); 
+                                                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/ix86_decompose_address/src/i386.c:5117:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v15 = ( __int64)addr[1]; 
+                ^~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/ix86_decompose_address/src/i386.c:5149:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v17.rtwint = ( __int64)addr->fld[0]; 
+                       ^~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/ix86_decompose_address/src/i386.c:5150:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v18 = ( __int64)addr[1]; 
+                ^~~~~~~
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/ix86_decompose_address/src/obj/i386.o] Error 1

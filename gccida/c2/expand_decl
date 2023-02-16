@@ -1,0 +1,72 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_decl/src/stmt.c:4345:4: error: expected ';' after expression
+rtx v19; // r15 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_decl/src/stmt.c:4345:5: error: use of undeclared identifier 'v19'
+rtx v19; // r15 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_decl/src/stmt.c:4347:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v21; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_decl/src/stmt.c:4348:4: error: expected ';' after expression
+rtx v22; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_decl/src/stmt.c:4348:5: error: use of undeclared identifier 'v22'
+rtx v22; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_decl/src/stmt.c:4349:6: error: use of undeclared identifier 'p_rtl'
+rtx *p_rtl; // r15 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_decl/src/stmt.c:4352:6: error: use of undeclared identifier 'v26'
+rtx *v26; // rax 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_decl/src/stmt.c:4354:4: error: expected ';' after expression
+rtx v28; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_decl/src/stmt.c:4354:5: error: use of undeclared identifier 'v28'
+rtx v28; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_decl/src/stmt.c:4387:22: error: use of undeclared identifier 'machine_mode'
+v13 = gen_reg_rtx( ( machine_mode)( ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32)); 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_decl/src/stmt.c:4420:1: error: use of undeclared identifier 'v19'
+v19 = assign_temp( decl, 1, 1, 1); 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_decl/src/stmt.c:4421:21: error: use of undeclared identifier 'v19'
+set_mem_attributes( v19, decl, 1); 
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_decl/src/stmt.c:4422:18: error: use of undeclared identifier 'v19'
+decl->decl.rtl = v19; 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_decl/src/stmt.c:4425:7: error: use of undeclared identifier 'v19'
+if ( !v19 ) 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_decl/src/stmt.c:4428:1: error: use of undeclared identifier 'v19'
+v19 = decl->decl.rtl; 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_decl/src/stmt.c:4430:22: error: use of undeclared identifier 'v19'; did you mean 'v29'?
+v20 = force_operand( v19->fld[0].rtx, rtx); 
+                     ^~~
+                     v29
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_decl/src/stmt.c:4355:18: note: 'v29' declared here
+ struct rtx_def *v29; // rdi 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_decl/src/stmt.c:4443:3: error: use of undeclared identifier 'save_level'; did you mean 'save_expr'?
+( save_level)( x_block_stack->next == 0LL), 
+  ^~~~~~~~~~
+  save_expr
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_decl/src/tree.h:2528:13: note: 'save_expr' declared here
+extern tree save_expr                   PARAMS ((tree));
+            ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_decl/src/stmt.c:4457:22: error: use of undeclared identifier 'machine_mode'
+v12 = gen_rtx_MEM( ( machine_mode)LOBYTE( decl->block.supercontext), dynamic_stack_space); 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_decl/src/stmt.c:4466:29: error: use of undeclared identifier 'machine_mode'
+v21 = promote_mode( type, ( machine_mode)( unsigned __int8)v5, punsignedp, 0); 
+                            ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_decl/src/obj/stmt.o] Error 1

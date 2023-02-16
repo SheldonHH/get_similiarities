@@ -1,0 +1,47 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/sched_analyze_1/src/sched-deps.c:1015:24: error: unknown type name 'deps_0'
+void  sched_analyze_1( deps_0 *deps, rtx x, rtx insn) 
+                       ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/sched_analyze_1/src/sched-deps.c:1106:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v14 = ( ( unsigned int)( mode_class_0[( unsigned __int8)v13] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/sched_analyze_1/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/sched_analyze_1/src/sched-deps.c:1129:24: error: use of undeclared identifier 'invalid_operation'; did you mean 'bitmap_operation'?
+v25 = ( v14 - 1 < 0) ^ __OFADD__( -1, v14) | ( v14 == 1); 
+                       ^~~~~~~~~~~~~~~~~~~
+                       bitmap_operation
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/sched_analyze_1/src/sched-deps.c:823:25: note: expanded from macro '__OFADD__'
+#define __OFADD__(x, y) invalid_operation // Generate overflow flag for (x+y)
+                        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/sched_analyze_1/src/bitmap.h:81:12: note: 'bitmap_operation' declared here
+extern int bitmap_operation PARAMS ((bitmap, bitmap, bitmap, enum bitmap_bits));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/sched_analyze_1/src/sched-deps.c:1129:22: error: invalid operands to binary expression ('int' and 'int (bitmap, bitmap, bitmap, enum bitmap_bits)' (aka 'int (struct bitmap_head_def *, struct bitmap_head_def *, struct bitmap_head_def *, enum bitmap_bits)'))
+v25 = ( v14 - 1 < 0) ^ __OFADD__( -1, v14) | ( v14 == 1); 
+      ~~~~~~~~~~~~~~ ^ ~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/sched_analyze_1/src/sched-deps.c:1140:24: error: use of undeclared identifier 'invalid_operation'; did you mean 'bitmap_operation'?
+v25 = ( v14 - 1 < 0) ^ __OFADD__( -1, v14) | ( v14 == 1); 
+                       ^~~~~~~~~~~~~~~~~~~
+                       bitmap_operation
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/sched_analyze_1/src/sched-deps.c:823:25: note: expanded from macro '__OFADD__'
+#define __OFADD__(x, y) invalid_operation // Generate overflow flag for (x+y)
+                        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/sched_analyze_1/src/bitmap.h:81:12: note: 'bitmap_operation' declared here
+extern int bitmap_operation PARAMS ((bitmap, bitmap, bitmap, enum bitmap_bits));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/sched_analyze_1/src/sched-deps.c:1140:22: error: invalid operands to binary expression ('int' and 'int (bitmap, bitmap, bitmap, enum bitmap_bits)' (aka 'int (struct bitmap_head_def *, struct bitmap_head_def *, struct bitmap_head_def *, enum bitmap_bits)'))
+v25 = ( v14 - 1 < 0) ^ __OFADD__( -1, v14) | ( v14 == 1); 
+      ~~~~~~~~~~~~~~ ^ ~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/sched_analyze_1/src/sched-deps.c:1165:35: error: use of undeclared identifier 'machine_mode'
+cselib_lookup( v15->fld[0].rtx, ( machine_mode)( ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32), 1); 
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/sched_analyze_1/src/sched-deps.c:1180:28: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+pending_read_insns = ( rtx)pending_read_insns[1]; 
+                           ^~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/sched_analyze_1/src/sched-deps.c:1194:29: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+pending_write_insns = ( rtx)pending_write_insns[1]; 
+                            ^~~~~~~~~~~~~~~~~~~~~~
+9 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/sched_analyze_1/src/obj/sched-deps.o] Error 1

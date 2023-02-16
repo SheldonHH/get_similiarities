@@ -1,0 +1,26 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/subst/src/combine.c:3791:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // [rsp+28h] [rbp-38h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/subst/src/combine.c:3803:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode op0_mode; // [rsp+58h] [rbp-8h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/subst/src/combine.c:3804:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code; // [rsp+5Ch] [rbp-4h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/subst/src/combine.c:3825:34: error: use of undeclared identifier 'machine_mode'
+return gen_rtx_fmt_e( CLOBBER, ( machine_mode)*( ( unsigned __int8 *)x + 2), const_int_rtx[64]); 
+                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/subst/src/combine.c:3958:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( unsigned __int8 *)( xa->fld[0].rtwint + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/subst/src/combine.c:3967:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)xa + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/subst/src/combine.c:3969:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( unsigned __int8 *)( xa->fld[0].rtwint + 2)); 
+  ^
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/subst/src/obj/combine.o] Error 1

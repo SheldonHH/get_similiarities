@@ -1,0 +1,74 @@
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/review_move_reasons/src/engine/value_moves.c:3444:10: error: conflicting types for 'review_move_reasons'
+__int64  review_move_reasons( 
+         ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/review_move_reasons/src/engine/liberty.h:530:5: note: previous declaration is here
+int review_move_reasons(int *move, float *val, int color,
+    ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/review_move_reasons/src/engine/value_moves.c:3766:6: error: expected expression
+if ( ::move[v21].reason[( unsigned int)v22] == -1 ) 
+     ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/review_move_reasons/src/engine/value_moves.c:3773:6: error: expected expression
+if ( ::move[v21].reason[( unsigned int)v22] == -1 ) 
+     ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/review_move_reasons/src/engine/value_moves.c:3908:6: error: expected expression
+if ( ::move[v21].reason[v25] != -1 ) 
+     ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/review_move_reasons/src/engine/value_moves.c:4264:7: error: expected expression
+v85 = ::move[i].reason[v81]; 
+      ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/review_move_reasons/src/engine/value_moves.c:4608:29: error: use of undeclared identifier 'stones_on_board_stone_count_for_position'
+v151 = *( int *)( ( char *)&stones_on_board_stone_count_for_position + v150); 
+                            ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/review_move_reasons/src/engine/value_moves.c:4801:59: error: invalid conversion between vector type '__m128' (vector of 4 'float' values) and integer type 'uint32' (aka 'unsigned int') of different size
+v170 = value_move_reasons( v168, v217, pure_threat_value, ( __m128)LODWORD( score), a7); 
+                                                          ^~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/review_move_reasons/src/engine/value_moves.c:4803:1: error: expected expression
+::move[v171].value = v170; 
+^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/review_move_reasons/src/engine/value_moves.c:4806:9: error: expected expression
+v172 = &::move[v171]; 
+        ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/review_move_reasons/src/engine/value_moves.c:4809:22: error: expected expression
+v169 = v172->value + ::move[v168].randomness_scaling * ( ::move[v168].random_number * 0.01); 
+                     ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/review_move_reasons/src/engine/value_moves.c:4844:20: error: expected expression
+v179 = ( float *)( ::move + 11848); 
+                   ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/review_move_reasons/src/engine/value_moves.c:4928:6: error: expected expression
+if ( ::move[v191].additional_ko_value <= 0.0 ) 
+     ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/review_move_reasons/src/engine/value_moves.c:4946:9: error: expected expression
+v204 = &::move[v191]; 
+        ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/review_move_reasons/src/engine/value_moves.c:4964:9: error: expected expression
+v204 = &::move[v191]; 
+        ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/review_move_reasons/src/engine/value_moves.c:4995:9: error: expected expression
+v204 = &::move[v191]; 
+        ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/review_move_reasons/src/engine/value_moves.c:5006:9: error: expected expression
+v204 = &::move[v191]; 
+        ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/review_move_reasons/src/engine/value_moves.c:5017:9: error: expected expression
+v204 = &::move[v191]; 
+        ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/review_move_reasons/src/engine/value_moves.c:5085:14: error: expected expression
+*( _QWORD *)&::move[moveb].value = 0LL; 
+             ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/review_move_reasons/src/engine/value_moves.c:5094:20: error: expected expression
+v176 = ( float *)( ::move + 11848); 
+                   ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/review_move_reasons/src/engine/value_moves.c:5143:1: error: expected expression
+::move[v207].value = ::move[v207].value - v205; 
+^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/review_move_reasons/src/engine/value_moves.c:5144:8: error: expected expression
+v208 = ::move[v207].final_value - v205; 
+       ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/review_move_reasons/src/engine/value_moves.c:5153:30: error: too many arguments to function call, expected 2, have 3
+record_top_move( v206, v208, *( float *)&pose); 
+~~~~~~~~~~~~~~~              ^~~~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/review_move_reasons/src/engine/value_moves.c:2677:1: note: 'record_top_move' declared here
+void
+^
+22 errors generated.
+make: *** [/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/review_move_reasons/src/obj/1/value_moves.o] Error 1

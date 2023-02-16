@@ -1,0 +1,22 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/build1/src/tree.c:2943:15: error: must use 'enum' tag to refer to type 'tree_code'
+tree  build1( tree_code code, tree type, tree node) 
+              ^
+              enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/build1/src/tree.c:2945:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v4; // rbx 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/build1/src/tree.c:2949:19: error: expected expression
+v4 = ( tree_node *)ggc_alloc( 0x28uLL); 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/build1/src/tree.c:2949:8: error: use of undeclared identifier 'tree_node'
+v4 = ( tree_node *)ggc_alloc( 0x28uLL); 
+       ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/build1/src/tree.c:2950:12: error: expected expression
+*( _OWORD *)&v4->common.chain = 0LL; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/build1/src/tree.c:2950:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&v4->common.chain = 0LL; 
+   ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/build1/src/obj/tree.o] Error 1

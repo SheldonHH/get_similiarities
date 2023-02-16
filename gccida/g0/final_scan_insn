@@ -1,0 +1,81 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/final_scan_insn/src/final.c:2347:6: error: use of undeclared identifier 'debug_info_level_0'; did you mean 'debug_info_level'?
+if ( debug_info_level_0 == DINFO_LEVEL_NORMAL 
+     ^~~~~~~~~~~~~~~~~~
+     debug_info_level
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/final_scan_insn/src/flags.h:53:30: note: 'debug_info_level' declared here
+extern enum debug_info_level debug_info_level;
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/final_scan_insn/src/final.c:2348:4: error: use of undeclared identifier 'debug_info_level_0'; did you mean 'debug_info_level'?
+|| debug_info_level_0 == DINFO_LEVEL_VERBOSE 
+   ^~~~~~~~~~~~~~~~~~
+   debug_info_level
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/final_scan_insn/src/flags.h:53:30: note: 'debug_info_level' declared here
+extern enum debug_info_level debug_info_level;
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/final_scan_insn/src/final.c:2363:6: error: use of undeclared identifier 'debug_info_level_0'; did you mean 'debug_info_level'?
+if ( debug_info_level_0 == DINFO_LEVEL_NORMAL 
+     ^~~~~~~~~~~~~~~~~~
+     debug_info_level
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/final_scan_insn/src/flags.h:53:30: note: 'debug_info_level' declared here
+extern enum debug_info_level debug_info_level;
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/final_scan_insn/src/final.c:2364:4: error: use of undeclared identifier 'debug_info_level_0'; did you mean 'debug_info_level'?
+|| debug_info_level_0 == DINFO_LEVEL_VERBOSE 
+   ^~~~~~~~~~~~~~~~~~
+   debug_info_level
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/final_scan_insn/src/flags.h:53:30: note: 'debug_info_level' declared here
+extern enum debug_info_level debug_info_level;
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/final_scan_insn/src/final.c:2483:6: error: statement requires expression of scalar type ('struct rtx_def' invalid)
+else if ( insna[4] ) 
+     ^    ~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/final_scan_insn/src/final.c:2497:14: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+body = ( rtx)insna[2]; 
+             ^~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/final_scan_insn/src/final.c:2592:14: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+body = ( rtx)insna[2]; 
+             ^~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/final_scan_insn/src/final.c:2603:34: error: use of undeclared identifier 'unk_774FF3'
+print_rtx_head = ( const char *)&unk_774FF3; 
+                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/final_scan_insn/src/final.c:2606:30: error: too many arguments provided to function-like macro invocation
+fatal_insn_not_found( insna, "final.c", 2551, "final_scan_insn"); 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/final_scan_insn/src/toplev.h:52:9: note: macro 'fatal_insn_not_found' defined here
+#define fatal_insn_not_found(insn) \
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/final_scan_insn/src/final.c:2606:1: error: use of undeclared identifier 'fatal_insn_not_found'; did you mean '_fatal_insn_not_found'?
+fatal_insn_not_found( insna, "final.c", 2551, "final_scan_insn"); 
+^~~~~~~~~~~~~~~~~~~~
+_fatal_insn_not_found
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/final_scan_insn/src/toplev.h:40:13: note: '_fatal_insn_not_found' declared here
+extern void _fatal_insn_not_found       PARAMS ((struct rtx_def *,
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/final_scan_insn/src/final.c:2617:37: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+if ( newa == insna && body == ( rtx)newa[2] ) 
+                                    ^~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/final_scan_insn/src/final.c:2618:44: error: too many arguments provided to function-like macro invocation
+fatal_insn( "could not split insn", insna, "final.c", 2622, "final_scan_insn"); 
+                                           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/final_scan_insn/src/toplev.h:50:9: note: macro 'fatal_insn' defined here
+#define fatal_insn(msgid, insn) \
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/final_scan_insn/src/final.c:2618:1: error: use of undeclared identifier 'fatal_insn'; did you mean '_fatal_insn'?
+fatal_insn( "could not split insn", insna, "final.c", 2622, "final_scan_insn"); 
+^~~~~~~~~~
+_fatal_insn
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/final_scan_insn/src/toplev.h:44:13: note: '_fatal_insn' declared here
+extern void _fatal_insn                 PARAMS ((const char *,
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/final_scan_insn/src/final.c:2623:29: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+output_asm_insn( templatea, recog_data_0.operand); 
+                            ^~~~~~~~~~~~
+                            recog_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/final_scan_insn/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/final_scan_insn/src/final.c:2639:64: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( prev = insna; prev != last_ignored_compare; prev = ( rtx)prev[1] ) 
+                                                               ^~~~~~~
+15 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/final_scan_insn/src/obj/final.o] Error 1

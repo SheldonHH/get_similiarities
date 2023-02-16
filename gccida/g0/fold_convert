@@ -1,0 +1,26 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/fold_convert/src/fold-const.c:2634:39: error: too many arguments to function call, expected 2, have 3
+real_value_from_int_cst( &v10, type1, type->decl.initial); 
+~~~~~~~~~~~~~~~~~~~~~~~               ^~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/fold_convert/src/real.h:455:1: note: 'real_value_from_int_cst' declared here
+REAL_VALUE_TYPE real_value_from_int_cst PARAMS ((union tree_node *,
+^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/fold_convert/src/real.h:110:25: note: expanded from macro 'REAL_VALUE_TYPE'
+#define REAL_VALUE_TYPE realvaluetype
+                        ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/fold_convert/src/fold-const.c:2639:39: error: too many arguments to function call, expected 2, have 3
+real_value_from_int_cst( &v10, type1, type->decl.abstract_origin); 
+~~~~~~~~~~~~~~~~~~~~~~~               ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/fold_convert/src/real.h:455:1: note: 'real_value_from_int_cst' declared here
+REAL_VALUE_TYPE real_value_from_int_cst PARAMS ((union tree_node *,
+^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/fold_convert/src/real.h:110:25: note: expanded from macro 'REAL_VALUE_TYPE'
+#define REAL_VALUE_TYPE realvaluetype
+                        ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/fold_convert/src/fold-const.c:2677:12: error: expected expression
+*( _OWORD *)v9.r = *( _OWORD *)&arg1a->block.vars; 
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/fold_convert/src/fold-const.c:2677:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)v9.r = *( _OWORD *)&arg1a->block.vars; 
+   ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/fold_convert/src/obj/fold-const.o] Error 1

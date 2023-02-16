@@ -1,0 +1,12 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/gen_split_956/src/insn-emit.c:8691:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v1; // r14d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/gen_split_956/src/insn-emit.c:8699:30: error: use of undeclared identifier 'machine_mode'
+operands[1] = gen_lowpart( ( machine_mode)( ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32), operands[1]); 
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/gen_split_956/src/insn-emit.c:8700:30: error: use of undeclared identifier 'machine_mode'
+operands[3] = gen_lowpart( ( machine_mode)( ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32), operands[3]); 
+                             ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/gen_split_956/src/obj/insn-emit.o] Error 1

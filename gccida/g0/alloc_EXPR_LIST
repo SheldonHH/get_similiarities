@@ -1,0 +1,8 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/alloc_EXPR_LIST/src/lists.c:558:37: error: use of undeclared identifier 'machine_mode'
+return gen_rtx_fmt_ee( EXPR_LIST, ( machine_mode)kind, val, next); 
+                                    ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/alloc_EXPR_LIST/src/lists.c:560:26: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+unused_expr_list = ( rtx)unused_expr_list[1]; 
+                         ^~~~~~~~~~~~~~~~~~~
+2 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/alloc_EXPR_LIST/src/obj/lists.o] Error 1

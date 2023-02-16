@@ -1,0 +1,22 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/change_stack/src/reg-stack.c:2712:52: error: must use 'enum' tag to refer to type 'emit_where'
+void  change_stack( rtx insn, stack old, stack a3, emit_where where) 
+                                                   ^
+                                                   enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/change_stack/src/reg-stack.c:2745:17: error: expected identifier or '('
+ struct reg_set = a3->reg_set; 
+                ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/change_stack/src/reg-stack.c:2748:34: error: expected expression
+emit_pop_insn( rtx, old, *( rtx *)&may_move_out_cost[57][15][118 * v11 + 4], EMIT_BEFORE); 
+                                 ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/change_stack/src/reg-stack.c:2748:36: error: use of undeclared identifier 'may_move_out_cost'
+emit_pop_insn( rtx, old, *( rtx *)&may_move_out_cost[57][15][118 * v11 + 4], EMIT_BEFORE); 
+                                   ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/change_stack/src/reg-stack.c:2808:35: error: expected expression
+emit_swap_insn( rtx, old, *( rtx *)( v15 + 10272592)); 
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/change_stack/src/reg-stack.c:2827:28: error: expected ';' after expression
+current_block->end = ( rtx)rtx[1]; 
+                           ^
+                           ;
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/change_stack/src/obj/reg-stack.o] Error 1

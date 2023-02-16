@@ -1,0 +1,42 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/optimize_sibling_and_tail_recursive_calls/src/sibcall.c:1087:9: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+? ( rtx)insn_0[2] 
+        ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/optimize_sibling_and_tail_recursive_calls/src/sibcall.c:1102:29: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+return_value_pseudo = ( rtx)v2[1]; 
+                            ^~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/optimize_sibling_and_tail_recursive_calls/src/sibcall.c:1141:33: error: use of undeclared identifier 'sibcall_use_tail_recursion_0'; did you mean 'sibcall_use_tail_recursion'?
+replace_call_placeholder( insn, sibcall_use_tail_recursion_0); 
+                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                sibcall_use_tail_recursion
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/optimize_sibling_and_tail_recursive_calls/src/rtl.h:2108:3: note: 'sibcall_use_tail_recursion' declared here
+  sibcall_use_tail_recursion,
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/optimize_sibling_and_tail_recursive_calls/src/sibcall.c:1145:6: error: use of undeclared identifier 'sibcall_use_normal_0'; did you mean 'sibcall_use_normal'?
+v1 = sibcall_use_normal_0; 
+     ^~~~~~~~~~~~~~~~~~~~
+     sibcall_use_normal
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/optimize_sibling_and_tail_recursive_calls/src/rtl.h:2107:3: note: 'sibcall_use_normal' declared here
+  sibcall_use_normal = 1,
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/optimize_sibling_and_tail_recursive_calls/src/sibcall.c:1147:6: error: use of undeclared identifier 'sibcall_use_sibcall_0'; did you mean 'sibcall_use_sibcall'?
+v1 = sibcall_use_sibcall_0; 
+     ^~~~~~~~~~~~~~~~~~~~~
+     sibcall_use_sibcall
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/optimize_sibling_and_tail_recursive_calls/src/rtl.h:2109:3: note: 'sibcall_use_sibcall' declared here
+  sibcall_use_sibcall
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/optimize_sibling_and_tail_recursive_calls/src/sibcall.c:1160:19: error: expected identifier or '('
+for (  struct arg = current_function_decl->decl.arguments; arg;  struct arg = arg->common.chain ) 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/optimize_sibling_and_tail_recursive_calls/src/sibcall.c:1160:60: error: expected ';' in 'for' statement specifier
+for (  struct arg = current_function_decl->decl.arguments; arg;  struct arg = arg->common.chain ) 
+                                                           ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/optimize_sibling_and_tail_recursive_calls/src/sibcall.c:1160:66: error: expected expression
+for (  struct arg = current_function_decl->decl.arguments; arg;  struct arg = arg->common.chain ) 
+                                                                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/optimize_sibling_and_tail_recursive_calls/src/sibcall.c:1160:66: error: expected ')'
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/optimize_sibling_and_tail_recursive_calls/src/sibcall.c:1160:5: note: to match this '('
+for (  struct arg = current_function_decl->decl.arguments; arg;  struct arg = arg->common.chain ) 
+    ^
+9 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/optimize_sibling_and_tail_recursive_calls/src/obj/sibcall.o] Error 1

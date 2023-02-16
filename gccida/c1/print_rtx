@@ -1,0 +1,74 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/print_rtx/src/print-rtl.c:617:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v45; // rsi 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/print_rtx/src/print-rtl.c:623:4: error: expected ';' after expression
+rtx v51; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/print_rtx/src/print-rtl.c:623:5: error: use of undeclared identifier 'v51'
+rtx v51; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/print_rtx/src/print-rtl.c:752:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v16 = ( __int64)in_rtx[1]; 
+                ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/print_rtx/src/print-rtl.c:770:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v33 = ( __int64)in_rtx[2]; 
+                ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/print_rtx/src/print-rtl.c:780:19: error: use of undeclared identifier 'off_607A24'
+fprintf( outfile, off_607A24, *( _DWORD *)&in_rtx[2]); 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/print_rtx/src/print-rtl.c:789:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+rtx = (  struct rtx_def *)in_rtx[2]; 
+                          ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/print_rtx/src/print-rtl.c:792:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v34 = ( __int64)in_rtx[2]; 
+                ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/print_rtx/src/print-rtl.c:799:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v33 = ( __int64)in_rtx[2]; 
+                ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/print_rtx/src/print-rtl.c:841:20: error: expected expression
+print_rtx( *( rtx *)&v11[2 * v12++ + 2]); 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/print_rtx/src/print-rtl.c:896:19: error: use of undeclared identifier 'off_607A24'
+fprintf( outfile, off_607A24, *( _DWORD *)&in_rtx[3]); 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/print_rtx/src/print-rtl.c:949:7: error: use of undeclared identifier 'print_rtx_hi_name'; did you mean 'print_rtx_head'?
+v35 = print_rtx_hi_name[v23]; 
+      ^~~~~~~~~~~~~~~~~
+      print_rtx_head
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/print_rtx/src/print-rtl.c:66:13: note: 'print_rtx_head' declared here
+const char *print_rtx_head = "";
+            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/print_rtx/src/print-rtl.c:960:7: error: use of undeclared identifier 'print_rtx_qi_name'; did you mean 'print_rtx_head'?
+v35 = print_rtx_qi_name[v23]; 
+      ^~~~~~~~~~~~~~~~~
+      print_rtx_head
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/print_rtx/src/print-rtl.c:66:13: note: 'print_rtx_head' declared here
+const char *print_rtx_head = "";
+            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/print_rtx/src/print-rtl.c:972:7: error: use of undeclared identifier 'print_rtx_hi_name'; did you mean 'print_rtx_head'?
+v35 = print_rtx_hi_name[in_rtx->fld[0].rtuint]; 
+      ^~~~~~~~~~~~~~~~~
+      print_rtx_head
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/print_rtx/src/print-rtl.c:66:13: note: 'print_rtx_head' declared here
+const char *print_rtx_head = "";
+            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/print_rtx/src/print-rtl.c:989:19: error: use of undeclared identifier 'off_63A0C3'
+fprintf( outfile, off_63A0C3, ( unsigned int)( v23 - 29)); 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/print_rtx/src/print-rtl.c:1022:19: error: use of undeclared identifier 'off_607A24'
+fprintf( outfile, off_607A24, rtuint); 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/print_rtx/src/print-rtl.c:1051:19: error: use of undeclared identifier 'off_607A24'
+fprintf( outfile, off_607A24); 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/print_rtx/src/print-rtl.c:1061:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v14.rtwint = ( __int64)in_rtx->fld[v4]; 
+                       ^~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/print_rtx/src/print-rtl.c:1075:19: error: use of undeclared identifier 'off_607A24'
+fprintf( outfile, off_607A24, *( unsigned int *)( v14.rtwint + 8)); 
+                  ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/print_rtx/src/obj/print-rtl.o] Error 1

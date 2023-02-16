@@ -1,0 +1,47 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/mark_set_resources/src/resource.c:1088:71: error: must use 'enum' tag to refer to type 'mark_resource_type'
+void  mark_set_resources( rtx x,  struct resources *res, int in_dest, mark_resource_type mark_type) 
+                                                                      ^
+                                                                      enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/mark_set_resources/src/resource.c:1121:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code; // [rsp+74h] [rbp-1Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/mark_set_resources/src/resource.c:1151:20: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( link = ( rtx)x[4]; link; link = ( rtx)link[1] ) 
+                   ^~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/mark_set_resources/src/resource.c:1151:45: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( link = ( rtx)x[4]; link; link = ( rtx)link[1] ) 
+                                            ^~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/mark_set_resources/src/resource.c:1160:11: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+x = ( rtx)x[2]; 
+          ^~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/mark_set_resources/src/resource.c:1244:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[( unsigned __int8)BYTE2( *( _DWORD *)x)] != MODE_COMPLEX_INT ) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/mark_set_resources/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/mark_set_resources/src/resource.c:1245:7: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v18 = mode_class_0[( unsigned __int8)BYTE2( *( _DWORD *)x)] == MODE_COMPLEX_FLOAT; 
+      ^~~~~~~~~~~~
+      mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/mark_set_resources/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/mark_set_resources/src/resource.c:1301:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[( unsigned __int8)BYTE2( *( _DWORD *)x)] != MODE_COMPLEX_INT ) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/mark_set_resources/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/mark_set_resources/src/resource.c:1302:7: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v22 = mode_class_0[( unsigned __int8)BYTE2( *( _DWORD *)x)] == MODE_COMPLEX_FLOAT; 
+      ^~~~~~~~~~~~
+      mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/mark_set_resources/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+9 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/mark_set_resources/src/obj/resource.o] Error 1

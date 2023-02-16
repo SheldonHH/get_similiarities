@@ -1,0 +1,34 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/set_reload_reg/src/reload1.c:5534:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v5; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/set_reload_reg/src/reload1.c:5553:55: error: expected expression
+if ( !ix86_hard_regno_mode_ok( v7, *( ( machine_mode *)&rld + 26 * r + 7)) ) 
+                                                      ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/set_reload_reg/src/reload1.c:5553:41: error: use of undeclared identifier 'machine_mode'
+if ( !ix86_hard_regno_mode_ok( v7, *( ( machine_mode *)&rld + 26 * r + 7)) ) 
+                                        ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/set_reload_reg/src/reload1.c:5558:62: error: use of undeclared identifier 'machine_mode'
+if ( *( _BYTE *)( v8 + 2) && !ix86_hard_regno_mode_ok( v7, ( machine_mode)*( unsigned __int8 *)( v8 + 2)) ) 
+                                                             ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/set_reload_reg/src/reload1.c:5564:38: error: use of undeclared identifier 'machine_mode'
+if ( !ix86_hard_regno_mode_ok( v7, ( machine_mode)*( unsigned __int8 *)( v9 + 2)) ) 
+                                     ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/set_reload_reg/src/reload1.c:5570:73: error: expected expression
+mark_reload_reg_in_use( v11, *( ( _DWORD *)v12 + 18), *( ( reload_type *)v12 + 23), *( ( machine_mode *)v12 + 7)); 
+                                                                        ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/set_reload_reg/src/reload1.c:5570:60: error: use of undeclared identifier 'reload_type'; did you mean 'reload_order'?
+mark_reload_reg_in_use( v11, *( ( _DWORD *)v12 + 18), *( ( reload_type *)v12 + 23), *( ( machine_mode *)v12 + 7)); 
+                                                           ^~~~~~~~~~~
+                                                           reload_order
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/set_reload_reg/src/reload1.c:1652:14: note: 'reload_order' declared here
+static short reload_order[MAX_RELOADS];
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/set_reload_reg/src/reload1.c:5570:104: error: expected expression
+mark_reload_reg_in_use( v11, *( ( _DWORD *)v12 + 18), *( ( reload_type *)v12 + 23), *( ( machine_mode *)v12 + 7)); 
+                                                                                                       ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/set_reload_reg/src/reload1.c:5570:90: error: use of undeclared identifier 'machine_mode'
+mark_reload_reg_in_use( v11, *( ( _DWORD *)v12 + 18), *( ( reload_type *)v12 + 23), *( ( machine_mode *)v12 + 7)); 
+                                                                                         ^
+9 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/set_reload_reg/src/obj/reload1.o] Error 1

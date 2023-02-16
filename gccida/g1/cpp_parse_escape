@@ -1,0 +1,44 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cpp_parse_escape/src/cpplex.c:2156:1: error: unknown type name 'cpp_reader_0'; did you mean 'cpp_reader'?
+cpp_reader_0 *pfile, 
+^~~~~~~~~~~~
+cpp_reader
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cpp_parse_escape/src/cpplib.h:36:27: note: 'cpp_reader' declared here
+typedef struct cpp_reader cpp_reader;
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cpp_parse_escape/src/cpplex.c:2250:11: error: use of undeclared identifier 'sch_istable'; did you mean '_sch_istable'?
+while ( ( sch_istable[*v7] & 0x100) != 0 ) 
+          ^~~~~~~~~~~
+          _sch_istable
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cpp_parse_escape/src/safe-ctype.h:72:29: note: '_sch_istable' declared here
+extern const unsigned short _sch_istable[256];
+                            ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cpp_parse_escape/src/cpplex.c:2253:7: error: use of undeclared identifier 'hex_value'; did you mean '_hex_value'?
+v14 = hex_value[*v7]; 
+      ^~~~~~~~~
+      _hex_value
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cpp_parse_escape/src/libiberty.h:251:19: note: '_hex_value' declared here
+extern const char _hex_value[_hex_array_size];
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cpp_parse_escape/src/cpplex.c:2305:8: error: use of undeclared identifier 'sch_istable'; did you mean '_sch_istable'?
+if ( ( sch_istable[( _QWORD)v6] & 0x100) == 0 ) 
+       ^~~~~~~~~~~
+       _sch_istable
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cpp_parse_escape/src/safe-ctype.h:72:29: note: '_sch_istable' declared here
+extern const unsigned short _sch_istable[256];
+                            ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cpp_parse_escape/src/cpplex.c:2310:7: error: use of undeclared identifier 'hex_value'; did you mean '_hex_value'?
+v18 = hex_value[v16]; 
+      ^~~~~~~~~
+      _hex_value
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cpp_parse_escape/src/libiberty.h:251:19: note: '_hex_value' declared here
+extern const char _hex_value[_hex_array_size];
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cpp_parse_escape/src/cpplex.c:2335:8: error: use of undeclared identifier 'sch_istable'; did you mean '_sch_istable'?
+if ( ( sch_istable[v8] & 0xAC) != 0 ) 
+       ^~~~~~~~~~~
+       _sch_istable
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cpp_parse_escape/src/safe-ctype.h:72:29: note: '_sch_istable' declared here
+extern const unsigned short _sch_istable[256];
+                            ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cpp_parse_escape/src/obj/cpplex.o] Error 1

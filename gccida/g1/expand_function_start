@@ -1,0 +1,36 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_function_start/src/function.c:6972:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v10; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_function_start/src/function.c:6983:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *pending_sizes; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_function_start/src/function.c:6984:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v22; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_function_start/src/function.c:6987:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v25; // rbx 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_function_start/src/function.c:7049:22: error: use of undeclared identifier 'machine_mode'
+v37 = gen_reg_rtx( ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4)); 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_function_start/src/function.c:7053:22: error: use of undeclared identifier 'machine_mode'
+v38 = gen_rtx_MEM( ( machine_mode)LOBYTE( subr->decl.result->block.supercontext), v37); 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_function_start/src/function.c:7068:32: error: use of undeclared identifier 'machine_mode'
+v24->decl.rtl = gen_reg_rtx( ( machine_mode)*( ( unsigned __int8 *)v23 + 2)); 
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_function_start/src/function.c:7109:25: error: use of undeclared identifier 'machine_mode'
+v30 = memory_address( ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), v29); 
+                        ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_function_start/src/function.c:7110:22: error: use of undeclared identifier 'machine_mode'
+v31 = gen_rtx_MEM( ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), v30); 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_function_start/src/function.c:7133:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v16.rtwint = ( __int64)rtl->fld[0]; 
+                       ^~~~~~~~~~~
+10 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_function_start/src/obj/function.o] Error 1

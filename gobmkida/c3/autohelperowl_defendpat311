@@ -1,0 +1,8 @@
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/autohelperowl_defendpat311/src/patterns/owl_defendpat.c:4737:28: error: use of undeclared identifier 'invalid_operation'
+return !( ( v7 + v8 < 0) ^ __OFADD__( v7, v8) | ( v7 + v8 == 0)); 
+                           ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/autohelperowl_defendpat311/src/patterns/owl_defendpat.c:4532:25: note: expanded from macro '__OFADD__'
+#define __OFADD__(x, y) invalid_operation // Generate overflow flag for (x+y)
+                        ^
+1 error generated.
+make: *** [/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/autohelperowl_defendpat311/src/obj/3/owl_defendpat.o] Error 1

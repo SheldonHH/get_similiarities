@@ -1,0 +1,30 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/can_fix_p/src/optabs.c:4515:1: error: must use 'enum' tag to refer to type 'insn_code'
+insn_code  can_fix_p( machine_mode fixmode, machine_mode fltmode, int unsignedp, int *truncp_ptr) 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/can_fix_p/src/optabs.c:4515:23: error: must use 'enum' tag to refer to type 'machine_mode'
+insn_code  can_fix_p( machine_mode fixmode, machine_mode fltmode, int unsignedp, int *truncp_ptr) 
+                      ^
+                      enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/can_fix_p/src/optabs.c:4515:45: error: must use 'enum' tag to refer to type 'machine_mode'
+insn_code  can_fix_p( machine_mode fixmode, machine_mode fltmode, int unsignedp, int *truncp_ptr) 
+                                            ^
+                                            enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/can_fix_p/src/optabs.c:4520:1: error: must use 'enum' tag to refer to type 'insn_code'
+insn_code result; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/can_fix_p/src/optabs.c:4526:24: error: expected expression
+result = *( insn_code *)( ( char *)&fixtrunctab[0][0][v5] + v6); 
+                       ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/can_fix_p/src/optabs.c:4526:13: error: use of undeclared identifier 'insn_code'
+result = *( insn_code *)( ( char *)&fixtrunctab[0][0][v5] + v6); 
+            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/can_fix_p/src/optabs.c:4533:22: error: expected expression
+return *( insn_code *)( ( char *)&fixtab[0][0][v5] + v6); 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/can_fix_p/src/optabs.c:4533:11: error: use of undeclared identifier 'insn_code'
+return *( insn_code *)( ( char *)&fixtab[0][0][v5] + v6); 
+          ^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/can_fix_p/src/obj/optabs.o] Error 1

@@ -1,0 +1,76 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/hash_scan_set/src/gcse.c:2636:4: error: expected ';' after expression
+rtx reg_equal_equiv_note; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/hash_scan_set/src/gcse.c:2636:5: error: use of undeclared identifier 'reg_equal_equiv_note'; did you mean 'find_reg_equal_equiv_note'?
+rtx reg_equal_equiv_note; // rax 
+    ^~~~~~~~~~~~~~~~~~~~
+    find_reg_equal_equiv_note
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/hash_scan_set/src/rtl.h:1491:12: note: 'find_reg_equal_equiv_note' declared here
+extern rtx find_reg_equal_equiv_note    PARAMS ((rtx));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/hash_scan_set/src/gcse.c:2644:4: error: expected ';' after expression
+rtx reg_note; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/hash_scan_set/src/gcse.c:2644:5: error: must use 'enum' tag to refer to type 'reg_note'
+rtx reg_note; // rax 
+    ^
+    enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/hash_scan_set/src/gcse.c:2646:4: error: expected ';' after expression
+rtx v19; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/hash_scan_set/src/gcse.c:2646:5: error: use of undeclared identifier 'v19'
+rtx v19; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/hash_scan_set/src/gcse.c:2650:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+rtx = (  struct rtx_def *)pat[1]; 
+                          ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/hash_scan_set/src/gcse.c:2654:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v5.rtwint = ( __int64)pat->fld[0]; 
+                      ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/hash_scan_set/src/gcse.c:2660:1: error: use of undeclared identifier 'reg_equal_equiv_note'
+reg_equal_equiv_note = find_reg_equal_equiv_note( insn); 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/hash_scan_set/src/gcse.c:2661:6: error: use of undeclared identifier 'reg_equal_equiv_note'; did you mean 'find_reg_equal_equiv_note'?
+if ( reg_equal_equiv_note ) 
+     ^~~~~~~~~~~~~~~~~~~~
+     find_reg_equal_equiv_note
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/hash_scan_set/src/rtl.h:1491:12: note: 'find_reg_equal_equiv_note' declared here
+extern rtx find_reg_equal_equiv_note    PARAMS ((rtx));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/hash_scan_set/src/gcse.c:2663:26: error: use of undeclared identifier 'reg_equal_equiv_note'
+if ( ( v10 = *( _DWORD *)reg_equal_equiv_note->fld[0].rtwint, ( unsigned __int16)( v10 - 54) <= 0xEu) 
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/hash_scan_set/src/gcse.c:2668:7: error: use of undeclared identifier 'reg_equal_equiv_note'
+rtx = reg_equal_equiv_note->fld[0].rtx; 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/hash_scan_set/src/gcse.c:2679:6: error: use of undeclared identifier 'reg_note'; did you mean 'reg_names'?
+|| ( reg_note = find_reg_note( insn, REG_EQUIV, 0LL)) != 0LL && *( _WORD *)reg_note->fld[0].rtwint == 66 ) 
+     ^~~~~~~~
+     reg_names
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/hash_scan_set/src/hard-reg-set.h:485:21: note: 'reg_names' declared here
+extern const char * reg_names[FIRST_PSEUDO_REGISTER];
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/hash_scan_set/src/gcse.c:2679:15: error: array type 'const char *[53]' is not assignable
+|| ( reg_note = find_reg_note( insn, REG_EQUIV, 0LL)) != 0LL && *( _WORD *)reg_note->fld[0].rtwint == 66 ) 
+     ~~~~~~~~ ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/hash_scan_set/src/gcse.c:2679:76: error: use of undeclared identifier 'reg_note'
+|| ( reg_note = find_reg_note( insn, REG_EQUIV, 0LL)) != 0LL && *( _WORD *)reg_note->fld[0].rtwint == 66 ) 
+                                                                           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/hash_scan_set/src/gcse.c:2704:14: error: expected expression
+if ( *( rtx *)( basic_block_info->data.l[*( int *)( basic_block_for_insn->data.l[insn->fld[0].rtint] + 88)] 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/hash_scan_set/src/gcse.c:2724:1: error: use of undeclared identifier 'v19'
+v19 = ( rtx)insn[2]; 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/hash_scan_set/src/gcse.c:2725:17: error: use of undeclared identifier 'v19'
+if ( *( _WORD *)v19 != 47 ) 
+                ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/hash_scan_set/src/gcse.c:2726:35: error: expected expression
+v19 = single_set_2( insn, *( rtx *)&insn[2]); 
+                                  ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/hash_scan_set/src/obj/gcse.o] Error 1

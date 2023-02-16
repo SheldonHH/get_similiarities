@@ -1,0 +1,54 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_return/src/stmt.c:3498:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v2; // rsi 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_return/src/stmt.c:3525:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode fieldmode; // [rsp+34h] [rbp-11Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_return/src/stmt.c:3537:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode result_reg_mode; // [rsp+90h] [rbp-C0h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_return/src/stmt.c:3538:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode tmpmode; // [rsp+94h] [rbp-BCh] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_return/src/stmt.c:3603:14: error: expected identifier or '('
+ struct expr = build( 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_return/src/stmt.c:3615:14: error: expected identifier or '('
+ struct expr = build( MODIFY_EXPR, v2, result, v4); 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_return/src/stmt.c:3671:31: error: invalid suffix 'xmode' on integer constant
+v12 = gen_reg_rtx( *(short *)0xmode); 
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_return/src/stmt.c:3688:31: error: invalid suffix 'orce' on integer constant
+src = operand_sub*(short *)0xforce( result_val, bitpos / v15, BLKmode); 
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_return/src/stmt.c:3688:7: error: use of undeclared identifier 'operand_sub'
+src = operand_sub*(short *)0xforce( result_val, bitpos / v15, BLKmode); 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_return/src/stmt.c:3703:24: error: invalid suffix 'xmode' on integer constant
+fieldmode = *(short *)0xmode; 
+                       ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_return/src/stmt.c:3704:79: error: invalid suffix 'xmode' on integer constant
+bit_field = extract_bit_field( src, bitsize, bitpos % v17, 1, 0LL, *(short *)0xmode, *(short *)0xmode, v18); 
+                                                                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_return/src/stmt.c:3704:97: error: invalid suffix 'xmode' on integer constant
+bit_field = extract_bit_field( src, bitsize, bitpos % v17, 1, 0LL, *(short *)0xmode, *(short *)0xmode, v18); 
+                                                                                                ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_return/src/stmt.c:3717:55: error: invalid suffix 'xmode' on integer constant
+if ( mode_size[tmpmode] >= ( int)mode_size[*(short *)0xmode] ) 
+                                                      ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_return/src/stmt.c:3720:30: error: invalid suffix 'xmode' on integer constant
+result_reg_mode = *(short *)0xmode; 
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_return/src/stmt.c:3751:39: error: use of undeclared identifier 'machine_mode'
+v24 = expand_expr( retval_rhs, val, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)val), EXPAND_NORMAL); 
+                                      ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_return/src/stmt.c:3751:54: error: expected expression
+v24 = expand_expr( retval_rhs, val, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)val), EXPAND_NORMAL); 
+                                                     ^
+16 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_return/src/obj/stmt.o] Error 1

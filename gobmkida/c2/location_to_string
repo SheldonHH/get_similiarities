@@ -1,0 +1,24 @@
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/location_to_string/src/engine/printutils.c:746:7: error: use of undeclared identifier 'location_to_string_init'; did you mean 'location_to_string'?
+if ( !location_to_string_init ) 
+      ^~~~~~~~~~~~~~~~~~~~~~~
+      location_to_string
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/location_to_string/src/engine/printutils.c:736:14: note: 'location_to_string' declared here
+const char * location_to_string( int pos) 
+             ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/location_to_string/src/engine/printutils.c:749:9: error: use of undeclared identifier 'location_to_string_buf'
+strcpy( location_to_string_buf[0], "Pass"); 
+        ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/location_to_string/src/engine/printutils.c:751:6: error: use of undeclared identifier 'byte_A3EB76'
+v3 = byte_A3EB76; 
+     ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/location_to_string/src/engine/printutils.c:757:1: error: use of undeclared identifier 'byte_A3EB75'
+byte_A3EB75[5 * i] = v5; 
+^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/location_to_string/src/engine/printutils.c:763:1: error: use of undeclared identifier 'byte_A3EB76'
+byte_A3EB76[5 * i] = v6 / 0xAu + 48; 
+^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/location_to_string/src/engine/printutils.c:770:1: error: use of undeclared identifier 'location_to_string_init'
+location_to_string_init = 1; 
+^
+6 errors generated.
+make: *** [/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/location_to_string/src/obj/1/printutils.o] Error 1

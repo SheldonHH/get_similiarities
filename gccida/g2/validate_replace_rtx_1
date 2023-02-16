@@ -1,0 +1,77 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/validate_replace_rtx_1/src/recog.c:910:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v15; // r12d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/validate_replace_rtx_1/src/recog.c:918:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v23; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/validate_replace_rtx_1/src/recog.c:923:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v28; // edx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/validate_replace_rtx_1/src/recog.c:926:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v31; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/validate_replace_rtx_1/src/recog.c:928:4: error: expected ';' after expression
+rtx v33; // rcx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/validate_replace_rtx_1/src/recog.c:928:5: error: use of undeclared identifier 'v33'
+rtx v33; // rcx 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/validate_replace_rtx_1/src/recog.c:935:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode op0_mode; // [rsp+4h] [rbp-74h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/validate_replace_rtx_1/src/recog.c:936:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v42; // [rsp+10h] [rbp-68h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/validate_replace_rtx_1/src/recog.c:938:4: error: expected ';' after expression
+rtx x; // [rsp+18h] [rbp-60h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/validate_replace_rtx_1/src/recog.c:938:5: error: use of undeclared identifier 'x'
+rtx x; // [rsp+18h] [rbp-60h] 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/validate_replace_rtx_1/src/recog.c:940:4: error: expected ';' after expression
+rtx froma; // [rsp+20h] [rbp-58h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/validate_replace_rtx_1/src/recog.c:940:5: error: use of undeclared identifier 'froma'; did you mean 'from'?
+rtx froma; // [rsp+20h] [rbp-58h] 
+    ^~~~~
+    from
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/validate_replace_rtx_1/src/recog.c:898:45: note: 'from' declared here
+void  validate_replace_rtx_1( rtx *loc, rtx from, rtx to, rtx object) 
+                                            ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/validate_replace_rtx_1/src/recog.c:968:1: error: use of undeclared identifier 'x'
+x = v4; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/validate_replace_rtx_1/src/recog.c:970:1: error: use of undeclared identifier 'froma'; did you mean 'from'?
+froma = v7; 
+^~~~~
+from
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/validate_replace_rtx_1/src/recog.c:898:45: note: 'from' declared here
+void  validate_replace_rtx_1( rtx *loc, rtx from, rtx to, rtx object) 
+                                            ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/validate_replace_rtx_1/src/recog.c:974:14: error: expected expression
+v12 = ( rtx *)&v4->fld[v8]; 
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/validate_replace_rtx_1/src/recog.c:984:1: error: use of undeclared identifier 'v33'
+v33 = *v12; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/validate_replace_rtx_1/src/recog.c:993:32: error: expected expression
+validate_replace_rtx_1( ( rtx *)( ( char *)v33 + i), v36, v35, object); 
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/validate_replace_rtx_1/src/recog.c:993:44: error: use of undeclared identifier 'v33'
+validate_replace_rtx_1( ( rtx *)( ( char *)v33 + i), v36, v35, object); 
+                                           ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/validate_replace_rtx_1/src/recog.c:996:1: error: use of undeclared identifier 'v33'
+v33 = *v12; 
+^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/validate_replace_rtx_1/src/obj/recog.o] Error 1

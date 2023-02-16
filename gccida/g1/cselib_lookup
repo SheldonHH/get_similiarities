@@ -1,0 +1,37 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cselib_lookup/src/cselib.c:1341:36: error: must use 'enum' tag to refer to type 'machine_mode'
+cselib_val * cselib_lookup( rtx x, machine_mode mode, int create) 
+                                   ^
+                                   enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cselib_lookup/src/cselib.c:1344:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v4; // r12d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cselib_lookup/src/cselib.c:1395:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v18 = ( ( unsigned int)( mode_class_0[v4] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cselib_lookup/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cselib_lookup/src/cselib.c:1413:46: error: use of undeclared identifier 'machine_mode'
+v8 = new_cselib_val( ++next_unknown_value, ( machine_mode)v3); 
+                                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cselib_lookup/src/cselib.c:1426:28: error: use of undeclared identifier 'hash_table_0'; did you mean 'hash_table'?
+*htab_find_slot_with_hash( hash_table_0, x, v8->value, INSERT) = v8; 
+                           ^~~~~~~~~~~~
+                           hash_table
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cselib_lookup/src/cselib.c:82:15: note: 'hash_table' declared here
+static htab_t hash_table;
+              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cselib_lookup/src/cselib.c:1441:68: error: use of undeclared identifier 'insert_option'
+slot_with_hash = htab_find_slot_with_hash( hash_table_0, v9, v7, ( insert_option)( create != 0)); 
+                                                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cselib_lookup/src/cselib.c:1441:44: error: use of undeclared identifier 'hash_table_0'; did you mean 'hash_table'?
+slot_with_hash = htab_find_slot_with_hash( hash_table_0, v9, v7, ( insert_option)( create != 0)); 
+                                           ^~~~~~~~~~~~
+                                           hash_table
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cselib_lookup/src/cselib.c:82:15: note: 'hash_table' declared here
+static htab_t hash_table;
+              ^
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cselib_lookup/src/obj/cselib.o] Error 1

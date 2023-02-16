@@ -1,0 +1,18 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/reversed_comparison_code/src/jump.c:1228:10: error: conflicting types for 'reversed_comparison_code'
+__int64  reversed_comparison_code( rtx comparison, rtx insn, __int64 a3,  struct rtx_def *a4) 
+         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/reversed_comparison_code/src/rtl.h:1817:22: note: previous declaration is here
+extern enum rtx_code reversed_comparison_code PARAMS ((rtx, rtx));
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/reversed_comparison_code/src/jump.c:1232:3: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+( rtx_code)*( _WORD *)comparison, 
+  ^~~~~~~~
+  rtx_cost
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/reversed_comparison_code/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/reversed_comparison_code/src/jump.c:1232:12: error: invalid operands to binary expression ('int (rtx, enum rtx_code)' (aka 'int (struct rtx_def *, enum rtx_code)') and 'uint16 *' (aka 'unsigned short *'))
+( rtx_code)*( _WORD *)comparison, 
+~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/reversed_comparison_code/src/obj/jump.o] Error 1

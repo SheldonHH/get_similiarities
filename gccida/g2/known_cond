@@ -1,0 +1,87 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/known_cond/src/combine.c:7846:25: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx  known_cond( rtx x, rtx_code cond, rtx reg, rtx val) 
+                        ^
+                        enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/known_cond/src/combine.c:7848:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v5; // r13d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/known_cond/src/combine.c:7870:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v29; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/known_cond/src/combine.c:7872:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v31; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/known_cond/src/combine.c:7885:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& ( mode_class_0[*( ( unsigned __int8 *)x + 2)] & 0xFFFFFFFB) != 2 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/known_cond/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/known_cond/src/combine.c:7886:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& mode_class_0[*( ( unsigned __int8 *)x + 2)] != MODE_VECTOR_FLOAT 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/known_cond/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/known_cond/src/combine.c:7887:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& ( mode_class_0[*( ( unsigned __int8 *)val + 2)] & 0xFFFFFFFB) != 2 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/known_cond/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/known_cond/src/combine.c:7888:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& mode_class_0[*( ( unsigned __int8 *)val + 2)] != MODE_VECTOR_FLOAT ) 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/known_cond/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/known_cond/src/combine.c:7906:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( unsigned __int8 *)( x->fld[0].rtwint + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/known_cond/src/combine.c:7908:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( unsigned __int8 *)( x->fld[0].rtwint + 2)); 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/known_cond/src/combine.c:7941:36: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+if ( comparison_dominates_p( v5, ( rtx_code)v8) ) 
+                                   ^~~~~~~~
+                                   rtx_cost
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/known_cond/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/known_cond/src/combine.c:7941:45: error: expected ')'
+if ( comparison_dominates_p( v5, ( rtx_code)v8) ) 
+                                            ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/known_cond/src/combine.c:7941:28: note: to match this '('
+if ( comparison_dominates_p( v5, ( rtx_code)v8) ) 
+                           ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/known_cond/src/combine.c:7965:14: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+return ( rtx)x[1]; 
+             ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/known_cond/src/combine.c:7980:14: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+return ( rtx)x[1]; 
+             ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/known_cond/src/combine.c:8041:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v25.rtwint = ( __int64)x->fld[0]; 
+                       ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/known_cond/src/combine.c:8047:29: error: use of undeclared identifier 'machine_mode'
+result = simplify_subreg( ( machine_mode)*( ( unsigned __int8 *)x + 2), v27, ( machine_mode)v26, *( _DWORD *)&x[1]); 
+                            ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/known_cond/src/combine.c:8047:80: error: use of undeclared identifier 'machine_mode'
+result = simplify_subreg( ( machine_mode)*( ( unsigned __int8 *)x + 2), v27, ( machine_mode)v26, *( _DWORD *)&x[1]); 
+                                                                               ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/known_cond/src/combine.c:8055:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v18.rtwint = ( __int64)x->fld[0]; 
+                       ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/known_cond/src/combine.c:8061:51: error: use of undeclared identifier 'machine_mode'
+result = simplify_unary_operation( ZERO_EXTEND, ( machine_mode)*( ( unsigned __int8 *)x + 2), v20, ( machine_mode)v19); 
+                                                  ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/known_cond/src/obj/combine.o] Error 1

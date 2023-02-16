@@ -1,0 +1,20 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_caller_save/src/caller-save.c:577:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v2; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_caller_save/src/caller-save.c:583:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v8; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_caller_save/src/caller-save.c:588:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode n; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_caller_save/src/caller-save.c:648:22: error: use of undeclared identifier 'machine_mode'
+v29 = gen_rtx_REG( ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), v5); 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_caller_save/src/caller-save.c:653:35: error: use of undeclared identifier 'machine_mode'
+address = gen_rtx_fmt_ee( PLUS, ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), v29, v10); 
+                                  ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_caller_save/src/obj/caller-save.o] Error 1

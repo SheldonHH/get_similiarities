@@ -1,0 +1,25 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/get_alias_set/src/alias.c:945:6: error: use of undeclared identifier 'lang_hooks_0'; did you mean 'lang_hooks'?
+v1 = lang_hooks_0.get_alias_set( i); 
+     ^~~~~~~~~~~~
+     lang_hooks
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/get_alias_set/src/langhooks.h:168:32: note: 'lang_hooks' declared here
+extern const struct lang_hooks lang_hooks;
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/get_alias_set/src/alias.c:945:32: error: called object type '<dependent type>' is not a function or function pointer
+v1 = lang_hooks_0.get_alias_set( i); 
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/get_alias_set/src/alias.c:994:19: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v18 = ( __int64 *)rtl[1]; 
+                  ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/get_alias_set/src/alias.c:1008:6: error: use of undeclared identifier 'lang_hooks_0'; did you mean 'lang_hooks'?
+v1 = lang_hooks_0.get_alias_set( placeholder->decl.section_name); 
+     ^~~~~~~~~~~~
+     lang_hooks
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/get_alias_set/src/langhooks.h:168:32: note: 'lang_hooks' declared here
+extern const struct lang_hooks lang_hooks;
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/get_alias_set/src/alias.c:1008:32: error: called object type '<dependent type>' is not a function or function pointer
+v1 = lang_hooks_0.get_alias_set( placeholder->decl.section_name); 
+                               ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/get_alias_set/src/obj/alias.o] Error 1

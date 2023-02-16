@@ -1,0 +1,19 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/immed_real_const_1/src/varasm.c:2660:26: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  immed_real_const_1( machine_mode mode, realvaluetype d) 
+                         ^
+                         enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/immed_real_const_1/src/varasm.c:2660:6: error: conflicting types for 'immed_real_const_1'
+rtx  immed_real_const_1( machine_mode mode, realvaluetype d) 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/immed_real_const_1/src/real.h:466:24: note: previous declaration is here
+extern struct rtx_def *immed_real_const_1       PARAMS ((REAL_VALUE_TYPE,
+                       ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/immed_real_const_1/src/varasm.c:2664:1: error: must use 'union' tag to refer to type 'real_extract'
+real_extract u; // [rsp+8h] [rbp-38h] BYREF 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/immed_real_const_1/src/varasm.c:2688:12: error: use of undeclared identifier 'rtx_def'
+rtx[1] = ( rtx_def)_mm_loadu_si128( ( const __m128i *)&u); 
+           ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/immed_real_const_1/src/obj/varasm.o] Error 1

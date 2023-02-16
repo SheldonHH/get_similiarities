@@ -1,0 +1,96 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/apply_args_size/src/builtins.c:1352:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v3; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/apply_args_size/src/builtins.c:1354:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v5; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/apply_args_size/src/builtins.c:1358:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v9; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/apply_args_size/src/builtins.c:1359:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v10; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/apply_args_size/src/builtins.c:1360:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v11; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/apply_args_size/src/builtins.c:1364:6: error: use of undeclared identifier 'apply_args_size_size'; did you mean 'apply_args_size'?
+if ( apply_args_size_size < 0 ) 
+     ^~~~~~~~~~~~~~~~~~~~
+     apply_args_size
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/apply_args_size/src/builtins.c:1348:6: note: 'apply_args_size' declared here
+int  apply_args_size( ) 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/apply_args_size/src/builtins.c:1367:1: error: use of undeclared identifier 'apply_args_size_size'
+apply_args_size_size = v1; 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/apply_args_size/src/builtins.c:1369:1: error: use of undeclared identifier 'apply_args_size_size'
+apply_args_size_size = 2 * v1; 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/apply_args_size/src/builtins.c:1386:25: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v6 = ( ( unsigned int)( mode_class_0[v5] - 5) < 2) + 1; 
+                        ^~~~~~~~~~~~
+                        mode_class
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/apply_args_size/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/apply_args_size/src/builtins.c:1449:6: error: use of undeclared identifier 'apply_args_size_size'; did you mean 'apply_args_size'?
+if ( apply_args_size_size % v12 ) 
+     ^~~~~~~~~~~~~~~~~~~~
+     apply_args_size
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/apply_args_size/src/builtins.c:1348:6: note: 'apply_args_size' declared here
+int  apply_args_size( ) 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/apply_args_size/src/builtins.c:1449:27: error: invalid operands to binary expression ('int (void)' and 'int')
+if ( apply_args_size_size % v12 ) 
+     ~~~~~~~~~~~~~~~~~~~~ ^ ~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/apply_args_size/src/builtins.c:1450:1: error: use of undeclared identifier 'apply_args_size_size'
+apply_args_size_size = v12 + apply_args_size_size - 1 - ( v12 + apply_args_size_size - 1) % v12; 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/apply_args_size/src/builtins.c:1450:30: error: use of undeclared identifier 'apply_args_size_size'; did you mean 'apply_args_size'?
+apply_args_size_size = v12 + apply_args_size_size - 1 - ( v12 + apply_args_size_size - 1) % v12; 
+                             ^~~~~~~~~~~~~~~~~~~~
+                             apply_args_size
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/apply_args_size/src/builtins.c:1348:6: note: 'apply_args_size' declared here
+int  apply_args_size( ) 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/apply_args_size/src/builtins.c:1450:65: error: use of undeclared identifier 'apply_args_size_size'; did you mean 'apply_args_size'?
+apply_args_size_size = v12 + apply_args_size_size - 1 - ( v12 + apply_args_size_size - 1) % v12; 
+                                                                ^~~~~~~~~~~~~~~~~~~~
+                                                                apply_args_size
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/apply_args_size/src/builtins.c:1348:6: note: 'apply_args_size' declared here
+int  apply_args_size( ) 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/apply_args_size/src/builtins.c:1450:91: error: invalid operands to binary expression ('int (*)(void)' and 'int')
+apply_args_size_size = v12 + apply_args_size_size - 1 - ( v12 + apply_args_size_size - 1) % v12; 
+                                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^ ~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/apply_args_size/src/builtins.c:1451:7: error: use of undeclared identifier 'apply_args_size_size'; did you mean 'apply_args_size'?
+v13 = apply_args_size_size; 
+      ^~~~~~~~~~~~~~~~~~~~
+      apply_args_size
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/apply_args_size/src/builtins.c:1348:6: note: 'apply_args_size' declared here
+int  apply_args_size( ) 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/apply_args_size/src/builtins.c:1452:28: error: use of undeclared identifier 'apply_args_size_size'; did you mean 'apply_args_size'?
+apply_args_reg_offset[i] = apply_args_size_size; 
+                           ^~~~~~~~~~~~~~~~~~~~
+                           apply_args_size
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/apply_args_size/src/builtins.c:1348:6: note: 'apply_args_size' declared here
+int  apply_args_size( ) 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/apply_args_size/src/builtins.c:1453:1: error: use of undeclared identifier 'apply_args_size_size'
+apply_args_size_size = v13 + mode_size[v3]; 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/apply_args_size/src/builtins.c:1465:8: error: use of undeclared identifier 'apply_args_size_size'; did you mean 'apply_args_size'?
+return apply_args_size_size; 
+       ^~~~~~~~~~~~~~~~~~~~
+       apply_args_size
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/apply_args_size/src/builtins.c:1348:6: note: 'apply_args_size' declared here
+int  apply_args_size( ) 
+     ^
+19 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/apply_args_size/src/obj/builtins.o] Error 1

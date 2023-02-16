@@ -1,0 +1,53 @@
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/make_dragons/src/engine/dragon.c:921:44: error: use of undeclared identifier 'xmmword_4AFAB0'
+si128 = _mm_load_si128( ( const __m128i *)&xmmword_4AFAB0); 
+                                           ^
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/make_dragons/src/engine/dragon.c:995:48: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+*( _QWORD *)&v3 = _mm_unpacklo_epi32( v35, v36).m128i_u64[0]; 
+                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/make_dragons/src/engine/dragon.c:1010:48: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+*( _QWORD *)&v3 = _mm_unpacklo_epi32( v33, v34).m128i_u64[0]; 
+                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/make_dragons/src/engine/dragon.c:1315:33: error: member reference base type 'const __m128i' (vector of 2 'long long' values) is not a structure or union
+*( _QWORD *)( v90 + 64) = v91[4].m128i_i64[0]; 
+                          ~~~~~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/make_dragons/src/engine/dragon.c:1316:33: error: member reference base type 'const __m128i' (vector of 2 'long long' values) is not a structure or union
+*( _DWORD *)( v90 + 72) = v91[4].m128i_i32[2]; 
+                          ~~~~~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/make_dragons/src/engine/dragon.c:1681:6: error: assigning to '__m128i' (vector of 2 'long long' values) from incompatible type 'long long'
+v142 = 0LL; 
+     ^ ~~~
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/make_dragons/src/engine/dragon.c:1683:16: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+*( float *)v142.m128i_i32 = ( float)( v143->escape_route - 10); 
+           ~~~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/make_dragons/src/engine/dragon.c:1688:1: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'uint32' (aka 'unsigned int') of different size
+( __m128i)LODWORD( v143->moyo_territorial_value), 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/make_dragons/src/engine/dragon.c:1726:26: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+_mm_cvtsi32_si128( v206)).m128i_u64[0]; 
+~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/make_dragons/src/engine/dragon.c:1808:35: error: member reference base type 'const __m128i' (vector of 2 'long long' values) is not a structure or union
+*( _QWORD *)( v153 + 64) = v155[4].m128i_i64[0]; 
+                           ~~~~~~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/make_dragons/src/engine/dragon.c:1809:35: error: member reference base type 'const __m128i' (vector of 2 'long long' values) is not a structure or union
+*( _DWORD *)( v153 + 72) = v155[4].m128i_i32[2]; 
+                           ~~~~~~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/make_dragons/src/engine/dragon.c:1834:6: error: assigning to '__m128i' (vector of 2 'long long' values) from incompatible type 'long long'
+v161 = 0LL; 
+     ^ ~~~
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/make_dragons/src/engine/dragon.c:1836:16: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+*( float *)v161.m128i_i32 = ( float)( v162->escape_route - 10); 
+           ~~~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/make_dragons/src/engine/dragon.c:1841:1: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'uint32' (aka 'unsigned int') of different size
+( __m128i)LODWORD( v162->moyo_territorial_value), 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/make_dragons/src/engine/dragon.c:1914:35: error: member reference base type 'const __m128i' (vector of 2 'long long' values) is not a structure or union
+*( _QWORD *)( v125 + 64) = v168[4].m128i_i64[0]; 
+                           ~~~~~~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/make_dragons/src/engine/dragon.c:1915:35: error: member reference base type 'const __m128i' (vector of 2 'long long' values) is not a structure or union
+*( _DWORD *)( v125 + 72) = v168[4].m128i_i32[2]; 
+                           ~~~~~~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/make_dragons/src/engine/dragon.c:1956:18: error: operand of type 'struct eyevalue' where arithmetic or pointer type is required
+v178 = ( __int64)*v176; 
+                 ^~~~~
+17 errors generated.
+make: *** [/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/make_dragons/src/obj/1/dragon.o] Error 1

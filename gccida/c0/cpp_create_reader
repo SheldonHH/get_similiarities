@@ -1,0 +1,26 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cpp_create_reader/src/cppinit.c:942:1: error: unknown type name 'cpp_reader_0'; did you mean 'cpp_reader'?
+cpp_reader_0 * cpp_create_reader( c_lang lang) 
+^~~~~~~~~~~~
+cpp_reader
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cpp_create_reader/src/cpplib.h:36:27: note: 'cpp_reader' declared here
+typedef struct cpp_reader cpp_reader;
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cpp_create_reader/src/cppinit.c:942:35: error: must use 'enum' tag to refer to type 'c_lang'
+cpp_reader_0 * cpp_create_reader( c_lang lang) 
+                                  ^
+                                  enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cpp_create_reader/src/cppinit.c:944:1: error: unknown type name 'cpp_reader_0'; did you mean 'cpp_reader'?
+cpp_reader_0 *pfile; // [rsp+0h] [rbp-10h] 
+^~~~~~~~~~~~
+cpp_reader
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cpp_create_reader/src/cpplib.h:36:27: note: 'cpp_reader' declared here
+typedef struct cpp_reader cpp_reader;
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cpp_create_reader/src/cppinit.c:947:25: error: expected expression
+pfile = ( cpp_reader_0 *)xcalloc( 1uLL, 0x340uLL); 
+                        ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cpp_create_reader/src/cppinit.c:947:11: error: use of undeclared identifier 'cpp_reader_0'
+pfile = ( cpp_reader_0 *)xcalloc( 1uLL, 0x340uLL); 
+          ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cpp_create_reader/src/obj/cppinit.o] Error 1

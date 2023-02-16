@@ -1,0 +1,78 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_loop_headers/src/jump.c:629:6: error: use of undeclared identifier 'reg_map'; did you mean 'reg_scan'?
+rtx *reg_map; // [rsp+8h] [rbp-60h] 
+     ^~~~~~~
+     reg_scan
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_loop_headers/src/rtl.h:1971:13: note: 'reg_scan' declared here
+extern void reg_scan                    PARAMS ((rtx, unsigned int, int));
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_loop_headers/src/jump.c:629:5: error: invalid operands to binary expression ('struct rtx_def *' and 'void (rtx, unsigned int, int)' (aka 'void (struct rtx_def *, unsigned int, int)'))
+rtx *reg_map; // [rsp+8h] [rbp-60h] 
+~~~ ^~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_loop_headers/src/jump.c:632:4: error: expected ';' after expression
+rtx temp; // [rsp+20h] [rbp-48h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_loop_headers/src/jump.c:632:5: error: use of undeclared identifier 'temp'
+rtx temp; // [rsp+20h] [rbp-48h] 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_loop_headers/src/jump.c:653:1: error: use of undeclared identifier 'temp'
+temp = ( rtx)v1[1]; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_loop_headers/src/jump.c:696:1: error: use of undeclared identifier 'reg_map'
+reg_map = 0LL; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_loop_headers/src/jump.c:704:1: error: use of undeclared identifier 'reg_map'
+reg_map = 0LL; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_loop_headers/src/jump.c:711:12: error: expected ';' after expression
+v6 = ( rtx)v7[2]; 
+           ^
+           ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_loop_headers/src/jump.c:714:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v8.rtwint = ( __int64)v6->fld[0]; 
+                      ^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_loop_headers/src/jump.c:728:7: error: use of undeclared identifier 'reg_map'; did you mean 'reg_scan'?
+if ( !reg_map ) 
+      ^~~~~~~
+      reg_scan
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_loop_headers/src/rtl.h:1971:13: note: 'reg_scan' declared here
+extern void reg_scan                    PARAMS ((rtx, unsigned int, int));
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_loop_headers/src/jump.c:729:1: error: use of undeclared identifier 'reg_map'
+reg_map = ( rtx *)xcalloc( nregs, 8uLL); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_loop_headers/src/jump.c:729:18: error: expected expression
+reg_map = ( rtx *)xcalloc( nregs, 8uLL); 
+                 ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_loop_headers/src/jump.c:731:8: error: use of undeclared identifier 'reg_map'
+v12 = &reg_map[*( unsigned int *)( v8.rtwint + 8)]; 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_loop_headers/src/jump.c:732:23: error: use of undeclared identifier 'machine_mode'
+*v12 = gen_reg_rtx( ( machine_mode)*( unsigned __int8 *)( v8.rtwint + 2)); 
+                      ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_loop_headers/src/jump.c:765:21: error: assigning to 'uint64' (aka 'unsigned long long') from incompatible type 'struct rtx_def'
+*( _QWORD *)&v14[2] = v16[2]; 
+                    ^ ~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_loop_headers/src/jump.c:771:26: error: expected expression
+v25 = copy_insn( *( rtx *)&v16[2]); 
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_loop_headers/src/jump.c:774:6: error: use of undeclared identifier 'reg_map'; did you mean 'reg_scan'?
+if ( reg_map ) 
+     ^~~~~~~
+     reg_scan
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_loop_headers/src/rtl.h:1971:13: note: 'reg_scan' declared here
+extern void reg_scan                    PARAMS ((rtx, unsigned int, int));
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_loop_headers/src/jump.c:776:23: error: expected expression
+replace_regs( *( rtx *)&v26[2], reg_map, nregs, 1); 
+                      ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_loop_headers/src/jump.c:776:33: error: use of undeclared identifier 'reg_map'; did you mean 'reg_scan'?
+replace_regs( *( rtx *)&v26[2], reg_map, nregs, 1); 
+                                ^~~~~~~
+                                reg_scan
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_loop_headers/src/rtl.h:1971:13: note: 'reg_scan' declared here
+extern void reg_scan                    PARAMS ((rtx, unsigned int, int));
+            ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_loop_headers/src/obj/jump.o] Error 1

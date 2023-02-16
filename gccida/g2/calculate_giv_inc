@@ -1,0 +1,77 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/calculate_giv_inc/src/unroll.c:2049:6: error: conflicting types for 'calculate_giv_inc'
+rtx  calculate_giv_inc( rtx a1,  struct rtx_def *a2, int a3) 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/calculate_giv_inc/src/unroll.c:203:12: note: previous declaration is here
+static rtx calculate_giv_inc PARAMS ((rtx, rtx, unsigned int));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/calculate_giv_inc/src/unroll.c:2058:4: error: expected ';' after expression
+rtx last_value; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/calculate_giv_inc/src/unroll.c:2058:5: error: use of undeclared identifier 'last_value'
+rtx last_value; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/calculate_giv_inc/src/unroll.c:2066:4: error: expected ';' after expression
+rtx v21; // rbp 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/calculate_giv_inc/src/unroll.c:2066:5: error: use of undeclared identifier 'v21'; did you mean 'v20'?
+rtx v21; // rbp 
+    ^~~
+    v20
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/calculate_giv_inc/src/unroll.c:2065:9: note: 'v20' declared here
+__int64 v20; // rdx 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/calculate_giv_inc/src/unroll.c:2070:4: error: expected ';' after expression
+rtx v25; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/calculate_giv_inc/src/unroll.c:2070:5: error: use of undeclared identifier 'v25'
+rtx v25; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/calculate_giv_inc/src/unroll.c:2071:4: error: expected ';' after expression
+rtx reg_note; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/calculate_giv_inc/src/unroll.c:2071:5: error: must use 'enum' tag to refer to type 'reg_note'
+rtx reg_note; // rax 
+    ^
+    enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/calculate_giv_inc/src/unroll.c:2072:4: error: expected ';' after expression
+rtx v27; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/calculate_giv_inc/src/unroll.c:2072:5: error: use of undeclared identifier 'v27'
+rtx v27; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/calculate_giv_inc/src/unroll.c:2074:4: error: expected ';' after expression
+rtx pinsn[8]; // [rsp+8h] [rbp-40h] BYREF 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/calculate_giv_inc/src/unroll.c:2074:5: error: use of undeclared identifier 'pinsn'
+rtx pinsn[8]; // [rsp+8h] [rbp-40h] BYREF 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/calculate_giv_inc/src/unroll.c:2078:1: error: use of undeclared identifier 'pinsn'
+pinsn[0] = a2; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/calculate_giv_inc/src/unroll.c:2081:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v7 = ( __int64)a1[1]; 
+               ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/calculate_giv_inc/src/unroll.c:2084:27: error: use of undeclared identifier 'pinsn'
+v8 = ( unsigned __int16 *)pinsn[0][1]; 
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/calculate_giv_inc/src/unroll.c:2086:1: error: use of undeclared identifier 'pinsn'
+pinsn[0] = ( rtx)v8; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/calculate_giv_inc/src/unroll.c:2089:12: error: invalid operands to binary expression ('rtx' (aka 'struct rtx_def *') and 'uint64 *' (aka 'unsigned long long *'))
+a1 = ( rtx)*( ( _QWORD *)v8 + 4); 
+     ~~~~~~^~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/calculate_giv_inc/src/unroll.c:2091:26: error: expected ')'
+a1 = single_set_2( ( rtx)v8, *( ( rtx *)v8 + 4)); 
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/calculate_giv_inc/src/unroll.c:2091:18: note: to match this '('
+a1 = single_set_2( ( rtx)v8, *( ( rtx *)v8 + 4)); 
+                 ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/calculate_giv_inc/src/obj/unroll.o] Error 1

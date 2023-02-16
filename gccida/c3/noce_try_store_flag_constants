@@ -1,0 +1,43 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/noce_try_store_flag_constants/src/ifcvt.c:1110:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v9; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/noce_try_store_flag_constants/src/ifcvt.c:1118:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v17; // edx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/noce_try_store_flag_constants/src/ifcvt.c:1124:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v23; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/noce_try_store_flag_constants/src/ifcvt.c:1125:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v24; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/noce_try_store_flag_constants/src/ifcvt.c:1126:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v25; // r14d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/noce_try_store_flag_constants/src/ifcvt.c:1128:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v27; // r14d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/noce_try_store_flag_constants/src/ifcvt.c:1133:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v33; // [rsp+14h] [rbp-34h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/noce_try_store_flag_constants/src/ifcvt.c:1208:35: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+v16 = expand_simple_binop( v33, ( rtx_code)( 76 - ( v8 == 1)), v15, v14, if_info->x, 0, OPTAB_WIDEN); 
+                                  ^~~~~~~~
+                                  rtx_cost
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/noce_try_store_flag_constants/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/noce_try_store_flag_constants/src/ifcvt.c:1208:61: error: too few arguments to function call, expected 2, have 1
+v16 = expand_simple_binop( v33, ( rtx_code)( 76 - ( v8 == 1)), v15, v14, if_info->x, 0, OPTAB_WIDEN); 
+                                ~~~~~~~~~~~                 ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/noce_try_store_flag_constants/src/rtl.h:1787:1: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+^
+9 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/noce_try_store_flag_constants/src/obj/ifcvt.o] Error 1

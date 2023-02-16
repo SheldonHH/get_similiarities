@@ -1,0 +1,33 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_unop_insn/src/optabs.c:3115:55: error: must use 'enum' tag to refer to type 'rtx_code'
+void  emit_unop_insn( int icode, rtx target, rtx op0, rtx_code code) 
+                                                      ^
+                                                      enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_unop_insn/src/optabs.c:3118:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v7; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_unop_insn/src/optabs.c:3126:11: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+operand = insn_data_0[icode].operand; 
+          ^~~~~~~~~~~
+          insn_data
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_unop_insn/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_unop_insn/src/optabs.c:3135:33: error: use of undeclared identifier 'machine_mode'
+if ( !operand->predicate( v8, ( machine_mode)*( ( unsigned __int8 *)v8 + 2)) 
+                                ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_unop_insn/src/optabs.c:3138:22: error: use of undeclared identifier 'machine_mode'
+v11 = gen_reg_rtx( ( machine_mode)*( ( unsigned __int8 *)v8 + 2)); 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_unop_insn/src/optabs.c:3140:7: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+v12 = insn_data_0[icode].genfun( v11, v10); 
+      ^~~~~~~~~~~
+      insn_data
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_unop_insn/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_unop_insn/src/optabs.c:3140:32: error: called object type '<dependent type>' is not a function or function pointer
+v12 = insn_data_0[icode].genfun( v11, v10); 
+                               ^
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_unop_insn/src/obj/optabs.o] Error 1

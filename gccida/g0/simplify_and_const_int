@@ -1,0 +1,25 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_and_const_int/src/combine.c:8283:37: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  simplify_and_const_int( rtx x, machine_mode mode, rtx varop, unsigned __int64 constop) 
+                                    ^
+                                    enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_and_const_int/src/combine.c:8323:37: error: use of undeclared identifier 'machine_mode'
+v6 = simplify_and_const_int( 0LL, ( machine_mode)*( ( unsigned __int8 *)varopa + 2), *( rtx *)&varopa[1], constopb); 
+                                    ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_and_const_int/src/combine.c:8324:37: error: use of undeclared identifier 'machine_mode'
+v7 = simplify_and_const_int( 0LL, ( machine_mode)*( ( unsigned __int8 *)varopa + 2), varopa->fld[0].rtx, constopb); 
+                                    ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_and_const_int/src/combine.c:8325:20: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+v8 = gen_binary( ( rtx_code)*( _WORD *)varopa, ( machine_mode)*( ( unsigned __int8 *)varopa + 2), v7, v6); 
+                   ^~~~~~~~
+                   rtx_cost
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_and_const_int/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_and_const_int/src/combine.c:8325:29: error: invalid operands to binary expression ('int (rtx, enum rtx_code)' (aka 'int (struct rtx_def *, enum rtx_code)') and 'uint16 *' (aka 'unsigned short *'))
+v8 = gen_binary( ( rtx_code)*( _WORD *)varopa, ( machine_mode)*( ( unsigned __int8 *)varopa + 2), v7, v6); 
+                 ~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_and_const_int/src/combine.c:8325:50: error: use of undeclared identifier 'machine_mode'
+v8 = gen_binary( ( rtx_code)*( _WORD *)varopa, ( machine_mode)*( ( unsigned __int8 *)varopa + 2), v7, v6); 
+                                                 ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_and_const_int/src/obj/combine.o] Error 1

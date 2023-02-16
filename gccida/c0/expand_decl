@@ -1,0 +1,22 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_decl/src/stmt.c:4328:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v1; // ecx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_decl/src/stmt.c:4345:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode reg_mode; // [rsp+C8h] [rbp-28h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_decl/src/stmt.c:4394:22: error: use of undeclared identifier 'machine_mode'
+x_1 = gen_rtx_MEM( ( machine_mode)( unsigned __int8)decla->real_cst.real_cst.r[2], address); 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_decl/src/stmt.c:4394:37: error: expected expression
+x_1 = gen_rtx_MEM( ( machine_mode)( unsigned __int8)decla->real_cst.real_cst.r[2], address); 
+                                    ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_decl/src/stmt.c:4442:34: error: use of undeclared identifier 'machine_mode'
+reg_mode = promote_mode( type, ( machine_mode)( unsigned __int8)decla->real_cst.real_cst.r[2], &unsignedp, 0); 
+                                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_decl/src/stmt.c:4442:49: error: expected expression
+reg_mode = promote_mode( type, ( machine_mode)( unsigned __int8)decla->real_cst.real_cst.r[2], &unsignedp, 0); 
+                                                ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_decl/src/obj/stmt.o] Error 1

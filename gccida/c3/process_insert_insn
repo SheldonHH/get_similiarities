@@ -1,0 +1,11 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/process_insert_insn/src/gcse.c:5054:6: error: conflicting types for 'process_insert_insn'
+rtx  process_insert_insn(  struct expr *expr, __int64 a2) 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/process_insert_insn/src/gcse.c:664:12: note: previous declaration is here
+static rtx process_insert_insn  PARAMS ((struct expr *));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/process_insert_insn/src/gcse.c:5063:29: error: use of undeclared identifier 'machine_mode'
+if ( general_operand( v2, ( machine_mode)*( unsigned __int8 *)( a2 + 2)) ) 
+                            ^
+2 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/process_insert_insn/src/obj/gcse.o] Error 1

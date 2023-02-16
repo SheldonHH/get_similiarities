@@ -1,0 +1,16 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/peep2_regno_dead_p/src/recog.c:3344:7: error: use of undeclared identifier 'peep2_insn_data_0'; did you mean 'peep2_insn_data'?
+if ( !peep2_insn_data_0[v2].insn ) 
+      ^~~~~~~~~~~~~~~~~
+      peep2_insn_data
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/peep2_regno_dead_p/src/recog.c:2841:31: note: 'peep2_insn_data' declared here
+static struct peep2_insn_data peep2_insn_data[MAX_INSNS_PER_PEEP2 + 1];
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/peep2_regno_dead_p/src/recog.c:3346:22: error: use of undeclared identifier 'peep2_insn_data_0'; did you mean 'peep2_insn_data'?
+return bitmap_bit_p( peep2_insn_data_0[v2].live_before, regno) == 0; 
+                     ^~~~~~~~~~~~~~~~~
+                     peep2_insn_data
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/peep2_regno_dead_p/src/recog.c:2841:31: note: 'peep2_insn_data' declared here
+static struct peep2_insn_data peep2_insn_data[MAX_INSNS_PER_PEEP2 + 1];
+                              ^
+2 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/peep2_regno_dead_p/src/obj/recog.o] Error 1

@@ -1,0 +1,60 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/identify_call_return_value/src/sibcall.c:535:4: error: expected ';' after expression
+rtx v15; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/identify_call_return_value/src/sibcall.c:535:5: error: use of undeclared identifier 'v15'
+rtx v15; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/identify_call_return_value/src/sibcall.c:537:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v4.rtwint = ( __int64)cp->fld[0]; 
+                      ^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/identify_call_return_value/src/sibcall.c:573:13: error: invalid operands to binary expression ('struct rtx_def *' and 'uint64 *' (aka 'unsigned long long *'))
+v12 = ( rtx)*( ( _QWORD *)rtwint + 4); 
+      ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/identify_call_return_value/src/sibcall.c:575:27: error: expected ')'
+v12 = single_set_2( ( rtx)rtwint, *( ( rtx *)rtwint + 4)); 
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/identify_call_return_value/src/sibcall.c:575:19: note: to match this '('
+v12 = single_set_2( ( rtx)rtwint, *( ( rtx *)rtwint + 4)); 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/identify_call_return_value/src/sibcall.c:581:33: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+if ( v12 && (  struct rtx_def *)v12[1] == v8 ) 
+                                ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/identify_call_return_value/src/sibcall.c:590:13: error: invalid operands to binary expression ('struct rtx_def *' and 'uint64 *' (aka 'unsigned long long *'))
+v15 = ( rtx)*( ( _QWORD *)v14 + 4); 
+      ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/identify_call_return_value/src/sibcall.c:590:1: error: use of undeclared identifier 'v15'
+v15 = ( rtx)*( ( _QWORD *)v14 + 4); 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/identify_call_return_value/src/sibcall.c:591:17: error: use of undeclared identifier 'v15'
+if ( *( _WORD *)v15 != 47 ) 
+                ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/identify_call_return_value/src/sibcall.c:592:27: error: expected ')'
+v15 = single_set_2( ( rtx)v14, *( ( rtx *)v14 + 4)); 
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/identify_call_return_value/src/sibcall.c:592:19: note: to match this '('
+v15 = single_set_2( ( rtx)v14, *( ( rtx *)v14 + 4)); 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/identify_call_return_value/src/sibcall.c:592:1: error: use of undeclared identifier 'v15'
+v15 = single_set_2( ( rtx)v14, *( ( rtx *)v14 + 4)); 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/identify_call_return_value/src/sibcall.c:596:1: error: use of undeclared identifier 'v15'
+v15 = 0LL; 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/identify_call_return_value/src/sibcall.c:598:33: error: use of undeclared identifier 'v15'
+if ( v15 && (  struct rtx_def *)v15[1] == rtx ) 
+                                ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/identify_call_return_value/src/sibcall.c:598:6: error: use of undeclared identifier 'v15'
+if ( v15 && (  struct rtx_def *)v15[1] == rtx ) 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/identify_call_return_value/src/sibcall.c:600:7: error: use of undeclared identifier 'v15'
+rtx = v15->fld[0].rtx; 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/identify_call_return_value/src/sibcall.c:611:37: error: expected ')'
+if ( !reg_set_between_p( rtx, ( rtx)v14, 0LL) ) 
+                                    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/identify_call_return_value/src/sibcall.c:611:24: note: to match this '('
+if ( !reg_set_between_p( rtx, ( rtx)v14, 0LL) ) 
+                       ^
+16 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/identify_call_return_value/src/obj/sibcall.o] Error 1

@@ -1,0 +1,41 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/c_expand_body/src/c-decl.c:7488:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *imag; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/c_expand_body/src/c-decl.c:7500:15: error: use of undeclared identifier 'TV_INTEGRATION_0'; did you mean 'TV_INTEGRATION'?
+timevar_push( TV_INTEGRATION_0); 
+              ^~~~~~~~~~~~~~~~
+              TV_INTEGRATION
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/c_expand_body/src/timevar.def:55:13: note: 'TV_INTEGRATION' declared here
+DEFTIMEVAR (TV_INTEGRATION           , "integration")
+            ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/c_expand_body/src/c-decl.c:7507:14: error: use of undeclared identifier 'TV_INTEGRATION_0'; did you mean 'TV_INTEGRATION'?
+timevar_pop( TV_INTEGRATION_0); 
+             ^~~~~~~~~~~~~~~~
+             TV_INTEGRATION
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/c_expand_body/src/timevar.def:55:13: note: 'TV_INTEGRATION' declared here
+DEFTIMEVAR (TV_INTEGRATION           , "integration")
+            ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/c_expand_body/src/c-decl.c:7512:14: error: use of undeclared identifier 'TV_INTEGRATION_0'; did you mean 'TV_INTEGRATION'?
+timevar_pop( TV_INTEGRATION_0); 
+             ^~~~~~~~~~~~~~~~
+             TV_INTEGRATION
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/c_expand_body/src/timevar.def:55:13: note: 'TV_INTEGRATION' declared here
+DEFTIMEVAR (TV_INTEGRATION           , "integration")
+            ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/c_expand_body/src/c-decl.c:7518:15: error: use of undeclared identifier 'TV_EXPAND_0'; did you mean 'TV_EXPAND'?
+timevar_push( TV_EXPAND_0); 
+              ^~~~~~~~~~~
+              TV_EXPAND
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/c_expand_body/src/timevar.def:53:13: note: 'TV_EXPAND' declared here
+DEFTIMEVAR (TV_EXPAND                , "expand")
+            ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/c_expand_body/src/c-decl.c:7639:14: error: use of undeclared identifier 'TV_EXPAND_0'; did you mean 'TV_EXPAND'?
+timevar_pop( TV_EXPAND_0); 
+             ^~~~~~~~~~~
+             TV_EXPAND
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/c_expand_body/src/timevar.def:53:13: note: 'TV_EXPAND' declared here
+DEFTIMEVAR (TV_EXPAND                , "expand")
+            ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/c_expand_body/src/obj/c-decl.o] Error 1

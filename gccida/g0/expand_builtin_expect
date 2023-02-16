@@ -1,0 +1,12 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_builtin_expect/src/builtins.c:3880:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *exp; // [rsp+20h] [rbp-10h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_builtin_expect/src/builtins.c:3895:24: error: use of undeclared identifier 'machine_mode'
+targeta = force_reg( ( machine_mode)*( ( unsigned __int8 *)targeta + 2), targeta); 
+                       ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_builtin_expect/src/builtins.c:3896:32: error: use of undeclared identifier 'machine_mode'
+rtx_c = expand_expr( c, 0LL, ( machine_mode)*( ( unsigned __int8 *)targeta + 2), EXPAND_NORMAL); 
+                               ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_builtin_expect/src/obj/builtins.o] Error 1

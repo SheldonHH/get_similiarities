@@ -1,0 +1,16 @@
+/data/output_dir/patch/bzip2/ida/clang/O0/bzip2-clang-O0/default_bzfree/src/bzlib.c:689:45: error: use of undeclared identifier 'default_bzfree'; did you mean 'default_bzalloc'?
+   if (strm->bzfree == NULL) strm->bzfree = default_bzfree;
+                                            ^~~~~~~~~~~~~~
+                                            default_bzalloc
+/data/output_dir/patch/bzip2/ida/clang/O0/bzip2-clang-O0/default_bzfree/src/bzlib.c:159:7: note: 'default_bzalloc' declared here
+void* default_bzalloc ( void* opaque, Int32 items, Int32 size )
+      ^
+/data/output_dir/patch/bzip2/ida/clang/O0/bzip2-clang-O0/default_bzfree/src/bzlib.c:1029:45: error: use of undeclared identifier 'default_bzfree'; did you mean 'default_bzalloc'?
+   if (strm->bzfree == NULL) strm->bzfree = default_bzfree;
+                                            ^~~~~~~~~~~~~~
+                                            default_bzalloc
+/data/output_dir/patch/bzip2/ida/clang/O0/bzip2-clang-O0/default_bzfree/src/bzlib.c:159:7: note: 'default_bzalloc' declared here
+void* default_bzalloc ( void* opaque, Int32 items, Int32 size )
+      ^
+2 errors generated.
+make: *** [/data/output_dir/patch/bzip2/ida/clang/O0/bzip2-clang-O0/default_bzfree/src/obj/bzlib.o] Error 1

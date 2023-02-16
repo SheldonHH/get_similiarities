@@ -1,0 +1,32 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/oprs_unchanged_p/src/gcse.c:1854:6: error: use of undeclared identifier 'reg_avail_info_0'; did you mean 'reg_avail_info'?
+if ( reg_avail_info_0[x->fld[0].rtuint].last_bb != current_bb ) 
+     ^~~~~~~~~~~~~~~~
+     reg_avail_info
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/oprs_unchanged_p/src/gcse.c:1300:31: note: 'reg_avail_info' declared here
+static struct reg_avail_info *reg_avail_info;
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/oprs_unchanged_p/src/gcse.c:1857:68: error: use of undeclared identifier 'uid_cuid_1'
+return reg_avail_info_0[x->fld[0].rtuint].last_set < *( ( _DWORD *)uid_cuid_1 + insn->fld[0].rtint); 
+                                                                   ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/oprs_unchanged_p/src/gcse.c:1857:8: error: use of undeclared identifier 'reg_avail_info_0'; did you mean 'reg_avail_info'?
+return reg_avail_info_0[x->fld[0].rtuint].last_set < *( ( _DWORD *)uid_cuid_1 + insn->fld[0].rtint); 
+       ^~~~~~~~~~~~~~~~
+       reg_avail_info
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/oprs_unchanged_p/src/gcse.c:1300:31: note: 'reg_avail_info' declared here
+static struct reg_avail_info *reg_avail_info;
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/oprs_unchanged_p/src/gcse.c:1858:70: error: use of undeclared identifier 'uid_cuid_1'
+return reg_avail_info_0[x->fld[0].rtuint].first_set >= *( ( _DWORD *)uid_cuid_1 + insn->fld[0].rtint); 
+                                                                     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/oprs_unchanged_p/src/gcse.c:1858:8: error: use of undeclared identifier 'reg_avail_info_0'; did you mean 'reg_avail_info'?
+return reg_avail_info_0[x->fld[0].rtuint].first_set >= *( ( _DWORD *)uid_cuid_1 + insn->fld[0].rtint); 
+       ^~~~~~~~~~~~~~~~
+       reg_avail_info
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/oprs_unchanged_p/src/gcse.c:1300:31: note: 'reg_avail_info' declared here
+static struct reg_avail_info *reg_avail_info;
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/oprs_unchanged_p/src/gcse.c:1862:15: error: use of undeclared identifier 'uid_cuid_1'
+*( ( _DWORD *)uid_cuid_1 + insn->fld[0].rtint), 
+              ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/oprs_unchanged_p/src/obj/gcse.o] Error 1

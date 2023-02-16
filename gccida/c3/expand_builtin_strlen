@@ -1,0 +1,56 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_builtin_strlen/src/builtins.c:2051:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v2; // ecx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_builtin_strlen/src/builtins.c:2057:1: error: must use 'enum' tag to refer to type 'insn_code'
+insn_code icode; // [rsp+34h] [rbp-6Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_builtin_strlen/src/builtins.c:2058:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode char_mode; // [rsp+38h] [rbp-68h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_builtin_strlen/src/builtins.c:2059:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode insn_mode; // [rsp+3Ch] [rbp-64h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_builtin_strlen/src/builtins.c:2065:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *src; // [rsp+68h] [rbp-38h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_builtin_strlen/src/builtins.c:2107:38: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+char_mode = *( ( unsigned __int16 *)&insn_data_0[icode].operand[2] + 8); 
+                                     ^~~~~~~~~~~
+                                     insn_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_builtin_strlen/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_builtin_strlen/src/builtins.c:2110:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int16 *)&insn_data_0[icode].operand[2] + 8)) ) 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_builtin_strlen/src/builtins.c:2110:41: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+( machine_mode)*( ( unsigned __int16 *)&insn_data_0[icode].operand[2] + 8)) ) 
+                                        ^~~~~~~~~~~
+                                        insn_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_builtin_strlen/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_builtin_strlen/src/builtins.c:2108:7: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+if ( !insn_data_0[icode].operand[2].predicate( 
+      ^~~~~~~~~~~
+      insn_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_builtin_strlen/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_builtin_strlen/src/builtins.c:2112:10: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+genfun = insn_data_0[icode].genfun; 
+         ^~~~~~~~~~~
+         insn_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_builtin_strlen/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_builtin_strlen/src/builtins.c:2138:27: error: use of undeclared identifier 'machine_mode'
+return convert_to_mode( ( machine_mode)value_mode, result, 0); 
+                          ^
+11 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_builtin_strlen/src/obj/builtins.o] Error 1

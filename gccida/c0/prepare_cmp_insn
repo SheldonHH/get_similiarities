@@ -1,0 +1,63 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/prepare_cmp_insn/src/optabs.c:3535:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code *pcomparison, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/prepare_cmp_insn/src/optabs.c:3537:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode *pmode, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/prepare_cmp_insn/src/optabs.c:3539:1: error: must use 'enum' tag to refer to type 'can_compare_purpose'
+can_compare_purpose purpose) 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/prepare_cmp_insn/src/optabs.c:3552:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode result_mode; // [rsp+74h] [rbp-5Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/prepare_cmp_insn/src/optabs.c:3554:1: error: must use 'enum' tag to refer to type 'mode_class'
+mode_class classa; // [rsp+80h] [rbp-50h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/prepare_cmp_insn/src/machmode.h:52:30: note: enum 'mode_class' is hidden by a non-type declaration of 'mode_class' here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/prepare_cmp_insn/src/optabs.c:3560:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // [rsp+9Ch] [rbp-34h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/prepare_cmp_insn/src/optabs.c:3567:10: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+classa = mode_class_0[*( int *)pmode]; 
+         ^~~~~~~~~~~~
+         mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/prepare_cmp_insn/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/prepare_cmp_insn/src/optabs.c:3603:1: error: statement requires expression of scalar type ('struct rtx_def' invalid)
+if ( x[1] ) 
+^    ~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/prepare_cmp_insn/src/optabs.c:3607:1: error: statement requires expression of scalar type ('struct rtx_def' invalid)
+if ( y[1] ) 
+^    ~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/prepare_cmp_insn/src/optabs.c:3613:1: error: statement requires expression of scalar type ('struct rtx_def' invalid)
+if ( y[1] ) 
+^    ~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/prepare_cmp_insn/src/optabs.c:3621:1: error: statement requires expression of scalar type ('struct rtx_def' invalid)
+if ( x[1] ) 
+^    ~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/prepare_cmp_insn/src/optabs.c:3633:39: error: use of undeclared identifier 'insn_data_0'
+result_mode = *( ( unsigned __int16 *)insn_data_0[1203].operand + 8); 
+                                      ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/prepare_cmp_insn/src/optabs.c:3660:62: error: invalid suffix 'xmode' on integer constant
+emit_library_call( libfunc, LCT_CONST_MAKE_BLOCK, *(short *)0xmode, 2, x, ( unsigned int)mode, y, mode); 
+                                                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/prepare_cmp_insn/src/optabs.c:3661:31: error: invalid suffix 'xmode' on integer constant
+v10 = gen_reg_rtx( *(short *)0xmode); 
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/prepare_cmp_insn/src/optabs.c:3662:37: error: invalid suffix 'xmode' on integer constant
+v9 = hard_libcall_value( *(short *)0xmode); 
+                                    ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/prepare_cmp_insn/src/optabs.c:3666:21: error: invalid suffix 'xmode' on integer constant
+*pmode = *(short *)0xmode; 
+                    ^
+16 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/prepare_cmp_insn/src/obj/optabs.o] Error 1

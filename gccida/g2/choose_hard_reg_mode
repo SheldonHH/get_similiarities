@@ -1,0 +1,64 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/choose_hard_reg_mode/src/regclass.c:1147:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode  choose_hard_reg_mode( unsigned int regno, unsigned int nregs) 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/choose_hard_reg_mode/src/regclass.c:1150:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v4; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/choose_hard_reg_mode/src/regclass.c:1152:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v6; // r14d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/choose_hard_reg_mode/src/regclass.c:1157:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v11; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/choose_hard_reg_mode/src/regclass.c:1163:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v17; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/choose_hard_reg_mode/src/regclass.c:1169:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v23; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/choose_hard_reg_mode/src/regclass.c:1201:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v32 = ( ( unsigned int)( mode_class_0[v4] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/choose_hard_reg_mode/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/choose_hard_reg_mode/src/regclass.c:1276:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v33 = ( ( unsigned int)( mode_class_0[v11] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/choose_hard_reg_mode/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/choose_hard_reg_mode/src/regclass.c:1341:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v34 = ( ( unsigned int)( mode_class_0[v17] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/choose_hard_reg_mode/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/choose_hard_reg_mode/src/regclass.c:1381:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v35 = ( ( unsigned int)( mode_class_0[v23] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/choose_hard_reg_mode/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/choose_hard_reg_mode/src/regclass.c:1404:30: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+else if ( ( ( unsigned int)( mode_class_0[v29] - 5) < 2) + 1 == nregs ) 
+                             ^~~~~~~~~~~~
+                             mode_class
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/choose_hard_reg_mode/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/choose_hard_reg_mode/src/regclass.c:1407:40: error: use of undeclared identifier 'machine_mode'
+if ( ix86_hard_regno_mode_ok( regno, ( machine_mode)v29) ) 
+                                       ^
+12 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/choose_hard_reg_mode/src/obj/regclass.o] Error 1

@@ -1,0 +1,12 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/build_compound_literal/src/c-decl.c:4363:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *identifier; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/build_compound_literal/src/c-decl.c:4401:80: error: use of undeclared identifier 'var_labelno'
+v2 = sprintf( ( char *)&v5 - 32, "%s.%d", "__compound_literal", ( unsigned int)var_labelno); 
+                                                                               ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/build_compound_literal/src/c-decl.c:4402:3: error: use of undeclared identifier 'var_labelno'
+++var_labelno; 
+  ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/build_compound_literal/src/obj/c-decl.o] Error 1

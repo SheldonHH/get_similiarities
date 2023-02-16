@@ -1,0 +1,59 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/form_sum/src/reload.c:5481:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v10; // ecx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/form_sum/src/reload.c:5483:4: error: expected ';' after expression
+rtx v12; // r9 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/form_sum/src/reload.c:5483:5: error: use of undeclared identifier 'v12'
+rtx v12; // r9 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/form_sum/src/reload.c:5488:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v17; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/form_sum/src/reload.c:5512:1: error: use of undeclared identifier 'v12'
+v12 = y; 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/form_sum/src/reload.c:5520:1: error: use of undeclared identifier 'v12'
+v12 = x; 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/form_sum/src/reload.c:5526:26: error: use of undeclared identifier 'v12'
+v6 = (  struct rtx_def *)v12[1]; 
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/form_sum/src/reload.c:5534:7: error: use of undeclared identifier 'v12'; did you mean 'v16'?
+rtx = v12->fld[0].rtx; 
+      ^~~
+      v16
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/form_sum/src/reload.c:5487:18: note: 'v16' declared here
+ struct rtx_def *v16; // rcx 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/form_sum/src/reload.c:5548:17: error: use of undeclared identifier 'v12'
+v16 = form_sum( v12, x->fld[0].rtx); 
+                ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/form_sum/src/reload.c:5549:11: error: expected ';' after expression
+y = ( rtx)x[1]; 
+          ^
+          ;
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/form_sum/src/reload.c:5558:35: error: use of undeclared identifier 'v12'
+return gen_rtx_fmt_ee( PLUS, v17, v12, x); 
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/form_sum/src/reload.c:5563:35: error: use of undeclared identifier 'v12'
+return gen_rtx_fmt_ee( PLUS, v17, v12, x); 
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/form_sum/src/reload.c:5566:1: error: use of undeclared identifier 'v12'
+v12 = v12->fld[0].rtx; 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/form_sum/src/reload.c:5566:7: error: use of undeclared identifier 'v12'; did you mean 'v16'?
+v12 = v12->fld[0].rtx; 
+      ^~~
+      v16
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/form_sum/src/reload.c:5487:18: note: 'v16' declared here
+ struct rtx_def *v16; // rcx 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/form_sum/src/reload.c:5569:34: error: use of undeclared identifier 'v12'
+v20 = gen_rtx_fmt_ee( PLUS, v17, v12, x); 
+                                 ^
+15 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/form_sum/src/obj/reload.o] Error 1

@@ -1,0 +1,26 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/debug_tree/src/print-tree.c:511:1: error: use of undeclared identifier 'table_0'; did you mean 'table'?
+table_0 = (  struct bucket **)permalloc( 296); 
+^~~~~~~
+table
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/debug_tree/src/print-tree.c:40:24: note: 'table' declared here
+static struct bucket **table;
+                       ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/debug_tree/src/print-tree.c:512:9: error: use of undeclared identifier 'table_0'; did you mean 'table'?
+memset( table_0, 0, 0x128uLL); 
+        ^~~~~~~
+        table
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/debug_tree/src/print-tree.c:40:24: note: 'table' declared here
+static struct bucket **table;
+                       ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/debug_tree/src/print-tree.c:513:22: error: use of undeclared identifier 'arg0'
+print_node( stderr, &arg0, node, 0); 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/debug_tree/src/print-tree.c:514:1: error: use of undeclared identifier 'table_0'; did you mean 'table'?
+table_0 = 0LL; 
+^~~~~~~
+table
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/debug_tree/src/print-tree.c:40:24: note: 'table' declared here
+static struct bucket **table;
+                       ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/debug_tree/src/obj/print-tree.o] Error 1

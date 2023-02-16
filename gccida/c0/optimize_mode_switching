@@ -1,0 +1,81 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/optimize_mode_switching/src/lcm.c:1503:1: error: use of undeclared identifier 'bb_info_0'
+bb_info_0 *info_0; // [rsp+88h] [rbp-A8h] 
+^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/optimize_mode_switching/src/lcm.c:1503:12: error: use of undeclared identifier 'info_0'
+bb_info_0 *info_0; // [rsp+88h] [rbp-A8h] 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/optimize_mode_switching/src/lcm.c:1511:1: error: use of undeclared identifier 'bb_info_0'
+bb_info_0 *info; // [rsp+C0h] [rbp-70h] 
+^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/optimize_mode_switching/src/lcm.c:1511:12: error: use of undeclared identifier 'info'
+bb_info_0 *info; // [rsp+C0h] [rbp-70h] 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/optimize_mode_switching/src/lcm.c:1519:1: error: use of undeclared identifier 'bb_info_0'
+bb_info_0 *bb_info[1]; // [rsp+E8h] [rbp-48h] 
+^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/optimize_mode_switching/src/lcm.c:1519:12: error: use of undeclared identifier 'bb_info'
+bb_info_0 *bb_info[1]; // [rsp+E8h] [rbp-48h] 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/optimize_mode_switching/src/lcm.c:1537:1: error: must use 'struct' tag to refer to type 'bb_info'
+bb_info[n_entities] = ( bb_info_0 *)xcalloc( ( int)n_basic_blocks, 0x10uLL); 
+^
+struct 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/optimize_mode_switching/src/lcm.c:1537:21: error: expected identifier or '('
+bb_info[n_entities] = ( bb_info_0 *)xcalloc( ( int)n_basic_blocks, 0x10uLL); 
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/optimize_mode_switching/src/lcm.c:1540:6: error: use of undeclared identifier 'optimize_mode_switching_num_modes'
+if ( optimize_mode_switching_num_modes[e] > max_num_modes ) 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/optimize_mode_switching/src/lcm.c:1541:17: error: use of undeclared identifier 'optimize_mode_switching_num_modes'
+max_num_modes = optimize_mode_switching_num_modes[e]; 
+                ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/optimize_mode_switching/src/lcm.c:1547:1: error: use of undeclared identifier 'transp_0'; did you mean 'transp'?
+transp_0 = sbitmap_vector_alloc( n_basic_blocks, n_entities); 
+^~~~~~~~
+transp
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/optimize_mode_switching/src/lcm.c:889:17: note: 'transp' declared here
+static sbitmap *transp;
+                ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/optimize_mode_switching/src/lcm.c:1548:1: error: use of undeclared identifier 'comp_0'; did you mean 'comp'?
+comp_0 = sbitmap_vector_alloc( n_basic_blocks, n_entities); 
+^~~~~~
+comp
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/optimize_mode_switching/src/lcm.c:890:17: note: 'comp' declared here
+static sbitmap *comp;
+                ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/optimize_mode_switching/src/lcm.c:1549:22: error: use of undeclared identifier 'transp_0'; did you mean 'transp'?
+sbitmap_vector_ones( transp_0, n_basic_blocks); 
+                     ^~~~~~~~
+                     transp
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/optimize_mode_switching/src/lcm.c:889:17: note: 'transp' declared here
+static sbitmap *transp;
+                ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/optimize_mode_switching/src/lcm.c:1553:11: error: use of undeclared identifier 'optimize_mode_switching_num_modes'
+no_mode = optimize_mode_switching_num_modes[e_0]; 
+          ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/optimize_mode_switching/src/lcm.c:1554:1: error: use of undeclared identifier 'info'
+info = bb_info[j]; 
+^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/optimize_mode_switching/src/lcm.c:1554:8: error: use of undeclared identifier 'bb_info'
+info = bb_info[j]; 
+       ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/optimize_mode_switching/src/lcm.c:1594:15: error: use of undeclared identifier 'info'; did you mean 'insn'?
+add_seginfo( &info[bb], ptr); 
+              ^~~~
+              insn
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/optimize_mode_switching/src/lcm.c:1526:5: note: 'insn' declared here
+rtx insn; // [rsp+118h] [rbp-18h] 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/optimize_mode_switching/src/lcm.c:1595:1: error: use of undeclared identifier 'transp_0'; did you mean 'transp'?
+transp_0[bb]->elms[( unsigned int)j >> 6] &= ~( 1LL << ( j & 0x3F)); 
+^~~~~~~~
+transp
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/optimize_mode_switching/src/lcm.c:889:17: note: 'transp' declared here
+static sbitmap *transp;
+                ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/optimize_mode_switching/src/lcm.c:1597:53: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( link = insn[3].fld[0].rtx; link; link = ( rtx)link[1] ) 
+                                                    ^~~~~~~
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/optimize_mode_switching/src/obj/lcm.o] Error 1

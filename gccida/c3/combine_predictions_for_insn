@@ -1,0 +1,28 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/combine_predictions_for_insn/src/predict.c:709:53: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( note = insn[3].fld[0].rtx; note; note = ( rtx)note[1] ) 
+                                                    ^~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/combine_predictions_for_insn/src/predict.c:727:8: error: use of undeclared identifier 'predictor_info_0'; did you mean 'predictor_info'?
+if ( ( predictor_info_0[best_predictor].flags & 1) != 0 ) 
+       ^~~~~~~~~~~~~~~~
+       predictor_info
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/combine_predictions_for_insn/src/predict.c:86:36: note: 'predictor_info' declared here
+static const struct predictor_info predictor_info[]= {
+                                   ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/combine_predictions_for_insn/src/predict.c:749:20: error: use of undeclared identifier 'br_predictor'; did you mean 'best_predictor'?
+dump_prediction( ( br_predictor)predictor_0, *( _QWORD *)( *( _QWORD *)( ( *pnote)->fld[0].rtwint + 16) + 8LL), bb, v5); 
+                   ^~~~~~~~~~~~
+                   best_predictor
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/combine_predictions_for_insn/src/predict.c:694:5: note: 'best_predictor' declared here
+int best_predictor; // [rsp+50h] [rbp-30h] 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/combine_predictions_for_insn/src/predict.c:749:33: error: expected ')'
+dump_prediction( ( br_predictor)predictor_0, *( _QWORD *)( *( _QWORD *)( ( *pnote)->fld[0].rtwint + 16) + 8LL), bb, v5); 
+                                ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/combine_predictions_for_insn/src/predict.c:749:16: note: to match this '('
+dump_prediction( ( br_predictor)predictor_0, *( _QWORD *)( *( _QWORD *)( ( *pnote)->fld[0].rtwint + 16) + 8LL), bb, v5); 
+               ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/combine_predictions_for_insn/src/predict.c:750:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+*pnote = ( rtx)( *pnote)[1]; 
+               ^~~~~~~~~~~~
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/combine_predictions_for_insn/src/obj/predict.o] Error 1

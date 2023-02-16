@@ -1,0 +1,52 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/check_ext_dependent_givs/src/loop.c:7710:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code; // [rsp+24h] [rbp-7Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/check_ext_dependent_givs/src/loop.c:7716:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode biv_mode; // [rsp+54h] [rbp-4Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/check_ext_dependent_givs/src/loop.c:7720:1: error: use of undeclared identifier 'induction_1'
+induction_1 *v; // [rsp+70h] [rbp-30h] 
+^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/check_ext_dependent_givs/src/loop.c:7720:14: error: use of undeclared identifier 'v'
+induction_1 *v; // [rsp+70h] [rbp-30h] 
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/check_ext_dependent_givs/src/loop.c:7785:7: error: use of undeclared identifier 'v'
+for ( v = bl_0->giv; v; v = v->next_iv ) 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/check_ext_dependent_givs/src/loop.c:7785:22: error: use of undeclared identifier 'v'
+for ( v = bl_0->giv; v; v = v->next_iv ) 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/check_ext_dependent_givs/src/loop.c:7785:25: error: use of undeclared identifier 'v'
+for ( v = bl_0->giv; v; v = v->next_iv ) 
+                        ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/check_ext_dependent_givs/src/loop.c:7785:29: error: use of undeclared identifier 'v'
+for ( v = bl_0->giv; v; v = v->next_iv ) 
+                            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/check_ext_dependent_givs/src/loop.c:7787:6: error: use of undeclared identifier 'v'
+if ( v->ext_dependent ) 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/check_ext_dependent_givs/src/loop.c:7789:19: error: use of undeclared identifier 'v'
+code = *( _WORD *)v->ext_dependent; 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/check_ext_dependent_givs/src/loop.c:7797:46: error: use of undeclared identifier 'v'
+max = mode_mask_array[*( ( unsigned __int8 *)v->ext_dependent + 2)] >> 1; 
+                                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/check_ext_dependent_givs/src/loop.c:7822:76: error: use of undeclared identifier 'v'
+fprintf( loop_dump_stream, "Verified ext dependent giv at %d of reg %d\n", v->insn->fld[0].rtuint, bl_0->regno); 
+                                                                           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/check_ext_dependent_givs/src/loop.c:7833:1: error: use of undeclared identifier 'v'
+v->insn->fld[0].rtuint, 
+^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/check_ext_dependent_givs/src/loop.c:7844:1: error: use of undeclared identifier 'v'
+v->insn->fld[0].rtuint, 
+^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/check_ext_dependent_givs/src/loop.c:7850:1: error: use of undeclared identifier 'v'
+v->insn->fld[0].rtuint, 
+^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/check_ext_dependent_givs/src/loop.c:7854:14: error: use of undeclared identifier 'v'
+*( ( _BYTE *)v + 100) |= 4u; 
+             ^
+16 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/check_ext_dependent_givs/src/obj/loop.o] Error 1

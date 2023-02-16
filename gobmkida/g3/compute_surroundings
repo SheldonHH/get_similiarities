@@ -1,0 +1,68 @@
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/compute_surroundings/src/engine/surround.c:1088:5: error: assigning to '__m128d' (vector of 2 'double' values) from incompatible type 'long long'
+v92 = 0LL; 
+    ^ ~~~
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/compute_surroundings/src/engine/surround.c:1089:4: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+v92.m128d_f64[0] = ( float)( v91 % 20 - 1) 
+~~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/compute_surroundings/src/engine/surround.c:1094:15: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+if ( fabs( v92.m128d_f64[0]) < 4.503599627370496e15 ) 
+           ~~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/compute_surroundings/src/engine/surround.c:1096:4: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+v93.m128d_f64[0] = ( double)( int)v92.m128d_f64[0]; 
+~~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/compute_surroundings/src/engine/surround.c:1096:38: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+v93.m128d_f64[0] = ( double)( int)v92.m128d_f64[0]; 
+                                  ~~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/compute_surroundings/src/engine/surround.c:1097:17: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+*( _QWORD *)&v92.m128d_f64[0] = COERCE_UNSIGNED_INT64( 
+             ~~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/compute_surroundings/src/engine/surround.c:1098:4: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+v93.m128d_f64[0] 
+~~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/compute_surroundings/src/engine/surround.c:1099:29: error: expected expression
++ COERCE_DOUBLE( *( _OWORD *)&_mm_cmpgt_sd( v92, v93) & 0x3FF0000000000000LL)) | *( _QWORD *)&v92.m128d_f64[0] & 0x8000000000000000LL; 
+                            ^
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/compute_surroundings/src/engine/surround.c:1099:21: error: use of undeclared identifier '_OWORD'
++ COERCE_DOUBLE( *( _OWORD *)&_mm_cmpgt_sd( v92, v93) & 0x3FF0000000000000LL)) | *( _QWORD *)&v92.m128d_f64[0] & 0x8000000000000000LL; 
+                    ^
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/compute_surroundings/src/engine/surround.c:1099:98: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
++ COERCE_DOUBLE( *( _OWORD *)&_mm_cmpgt_sd( v92, v93) & 0x3FF0000000000000LL)) | *( _QWORD *)&v92.m128d_f64[0] & 0x8000000000000000LL; 
+                                                                                              ~~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/compute_surroundings/src/engine/surround.c:1101:16: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+v94 = ( int)v92.m128d_f64[0]; 
+            ~~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/compute_surroundings/src/engine/surround.c:1120:4: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+v99.m128d_f64[0] = ( float)( v98 % 20 - 1) 
+~~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/compute_surroundings/src/engine/surround.c:1125:15: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+if ( fabs( v99.m128d_f64[0]) < 4.503599627370496e15 ) 
+           ~~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/compute_surroundings/src/engine/surround.c:1127:6: error: assigning to '__m128d' (vector of 2 'double' values) from incompatible type 'long long'
+v100 = 0LL; 
+     ^ ~~~
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/compute_surroundings/src/engine/surround.c:1128:5: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+v100.m128d_f64[0] = ( double)( int)v99.m128d_f64[0]; 
+~~~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/compute_surroundings/src/engine/surround.c:1128:39: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+v100.m128d_f64[0] = ( double)( int)v99.m128d_f64[0]; 
+                                   ~~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/compute_surroundings/src/engine/surround.c:1129:17: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+*( _QWORD *)&v99.m128d_f64[0] = COERCE_UNSIGNED_INT64( 
+             ~~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/compute_surroundings/src/engine/surround.c:1130:5: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+v100.m128d_f64[0] 
+~~~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/compute_surroundings/src/engine/surround.c:1131:29: error: expected expression
+- COERCE_DOUBLE( *( _OWORD *)&_mm_cmpgt_sd( v100, v99) & 0x3FF0000000000000LL)) | *( _QWORD *)&v99.m128d_f64[0] & 0x8000000000000000LL; 
+                            ^
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/compute_surroundings/src/engine/surround.c:1131:21: error: use of undeclared identifier '_OWORD'
+- COERCE_DOUBLE( *( _OWORD *)&_mm_cmpgt_sd( v100, v99) & 0x3FF0000000000000LL)) | *( _QWORD *)&v99.m128d_f64[0] & 0x8000000000000000LL; 
+                    ^
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/compute_surroundings/src/engine/surround.c:1131:99: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+- COERCE_DOUBLE( *( _OWORD *)&_mm_cmpgt_sd( v100, v99) & 0x3FF0000000000000LL)) | *( _QWORD *)&v99.m128d_f64[0] & 0x8000000000000000LL; 
+                                                                                               ~~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/compute_surroundings/src/engine/surround.c:1133:17: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+v101 = ( int)v99.m128d_f64[0]; 
+             ~~~^~~~~~~~~~
+22 errors generated.
+make: *** [/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/compute_surroundings/src/obj/1/surround.o] Error 1

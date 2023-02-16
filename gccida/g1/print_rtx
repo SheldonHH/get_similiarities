@@ -1,0 +1,61 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/print_rtx/src/print-rtl.c:606:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v34; // rsi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/print_rtx/src/print-rtl.c:628:19: error: use of undeclared identifier 'to'
+fwrite( ( char *)&to.current + 6, 1uLL, 5uLL, outfile); 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/print_rtx/src/print-rtl.c:701:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v14 = ( __int64)in_rtx[1]; 
+                ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/print_rtx/src/print-rtl.c:720:22: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v16 = ( const char *)in_rtx[2]; 
+                     ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/print_rtx/src/print-rtl.c:730:19: error: use of undeclared identifier 'off_6376D2'
+fprintf( outfile, off_6376D2, *( _DWORD *)&in_rtx[2]); 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/print_rtx/src/print-rtl.c:741:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v15 = ( __int64)in_rtx[2]; 
+                ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/print_rtx/src/print-rtl.c:750:20: error: expected expression
+print_rtx( *( rtx *)&in_rtx[2]); 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/print_rtx/src/print-rtl.c:756:22: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v16 = ( const char *)in_rtx[2]; 
+                     ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/print_rtx/src/print-rtl.c:800:22: error: expected expression
+print_rtx( *( ( rtx *)&rtwint->current + v21++)); 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/print_rtx/src/print-rtl.c:884:19: error: use of undeclared identifier 'off_6376D2'
+fprintf( outfile, off_6376D2, ( unsigned int)v22, v11); 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/print_rtx/src/print-rtl.c:919:8: error: use of undeclared identifier 'hi_name_2'
+fputs( hi_name_2[v24], outfile); 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/print_rtx/src/print-rtl.c:938:19: error: use of undeclared identifier 'off_6663DA'
+fprintf( outfile, off_6663DA, ( unsigned int)( v24 - 29)); 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/print_rtx/src/print-rtl.c:949:8: error: use of undeclared identifier 'hi_name_2'
+fputs( hi_name_2[in_rtx->fld[0].rtuint], outfile); 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/print_rtx/src/print-rtl.c:953:8: error: use of undeclared identifier 'hi_name_2'
+fputs( hi_name_2[in_rtx->fld[0].rtuint], outfile); 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/print_rtx/src/print-rtl.c:956:8: error: use of undeclared identifier 'qi_name_1'
+fputs( qi_name_1[v24], outfile); 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/print_rtx/src/print-rtl.c:977:19: error: use of undeclared identifier 'off_6376D2'
+fprintf( outfile, off_6376D2, *( _DWORD *)&in_rtx[3], v11); 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/print_rtx/src/print-rtl.c:982:19: error: use of undeclared identifier 'off_6376D2'
+fprintf( outfile, off_6376D2); 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/print_rtx/src/print-rtl.c:984:19: error: use of undeclared identifier 'off_661611'
+fprintf( outfile, off_661611, note_insn_name[v28]); 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/print_rtx/src/print-rtl.c:1011:19: error: use of undeclared identifier 'off_6376D2'
+fprintf( outfile, off_6376D2, LODWORD( v29->current)); 
+                  ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/print_rtx/src/obj/print-rtl.o] Error 1

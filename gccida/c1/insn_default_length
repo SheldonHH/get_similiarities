@@ -1,0 +1,43 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/insn_default_length/src/insn-attrtab.c:522:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v6; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/insn_default_length/src/insn-attrtab.c:539:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v13 = (  struct rtx_def *)insn[2]; 
+                          ^~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/insn_default_length/src/insn-attrtab.c:542:29: error: too many arguments provided to function-like macro invocation
+fatal_insn_not_found( insn, "insn-attrtab.c", 356, "insn_default_length"); 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/insn_default_length/src/toplev.h:52:9: note: macro 'fatal_insn_not_found' defined here
+#define fatal_insn_not_found(insn) \
+        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/insn_default_length/src/insn-attrtab.c:542:1: error: use of undeclared identifier 'fatal_insn_not_found'; did you mean '_fatal_insn_not_found'?
+fatal_insn_not_found( insn, "insn-attrtab.c", 356, "insn_default_length"); 
+^~~~~~~~~~~~~~~~~~~~
+_fatal_insn_not_found
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/insn_default_length/src/toplev.h:40:13: note: '_fatal_insn_not_found' declared here
+extern void _fatal_insn_not_found       PARAMS ((struct rtx_def *,
+            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/insn_default_length/src/insn-attrtab.c:737:6: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+v5 = recog_data_0.operand[0]; 
+     ^~~~~~~~~~~~
+     recog_data
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/insn_default_length/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/insn_default_length/src/insn-attrtab.c:750:6: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+v5 = recog_data_0.operand[0]; 
+     ^~~~~~~~~~~~
+     recog_data
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/insn_default_length/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/insn_default_length/src/insn-attrtab.c:764:6: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+v5 = recog_data_0.operand[0]; 
+     ^~~~~~~~~~~~
+     recog_data
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/insn_default_length/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/insn_default_length/src/obj/insn-attrtab.o] Error 1

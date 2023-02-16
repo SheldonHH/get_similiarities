@@ -1,0 +1,15 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/decode_reg_name/src/varasm.c:1226:46: error: use of undeclared identifier 'sch_istable'; did you mean '_sch_istable'?
+for ( i = strlen( asmspeca) - 1; i >= 0 && ( sch_istable[( unsigned __int8)asmspeca[i]] & 4) != 0; --i ) 
+                                             ^~~~~~~~~~~
+                                             _sch_istable
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/decode_reg_name/src/safe-ctype.h:72:29: note: '_sch_istable' declared here
+extern const unsigned short _sch_istable[256];
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/decode_reg_name/src/varasm.c:1249:25: error: use of undeclared identifier 'decode_reg_name_table'
+if ( !strcmp( asmspeca, decode_reg_name_table[ic].name) ) 
+                        ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/decode_reg_name/src/varasm.c:1250:8: error: use of undeclared identifier 'decode_reg_name_table'
+return decode_reg_name_table[ic].number; 
+       ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/decode_reg_name/src/obj/varasm.o] Error 1

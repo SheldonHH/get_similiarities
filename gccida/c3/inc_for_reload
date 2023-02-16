@@ -1,0 +1,55 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/inc_for_reload/src/reload1.c:8373:4: error: expected ';' after expression
+rtx add_insn; // [rsp+60h] [rbp-50h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/inc_for_reload/src/reload1.c:8376:4: error: expected ';' after expression
+rtx incloc; // [rsp+80h] [rbp-30h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/inc_for_reload/src/reload1.c:8376:5: error: use of undeclared identifier 'incloc'
+rtx incloc; // [rsp+80h] [rbp-30h] 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/inc_for_reload/src/reload1.c:8380:1: error: use of undeclared identifier 'incloc'
+incloc = value->fld[0].rtx; 
+^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/inc_for_reload/src/reload1.c:8388:37: error: use of undeclared identifier 'incloc'
+if ( ( unsigned __int16)*( _DWORD *)incloc == 61 ) 
+                                    ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/inc_for_reload/src/reload1.c:8389:21: error: use of undeclared identifier 'incloc'
+reg_last_reload_reg[incloc->fld[0].rtuint] = 0LL; 
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/inc_for_reload/src/reload1.c:8401:30: error: use of undeclared identifier 'machine_mode'
+v5 = gen_rtx_fmt_ee( PLUS, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)incloc), incloc, inc); 
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/inc_for_reload/src/reload1.c:8401:45: error: expected expression
+v5 = gen_rtx_fmt_ee( PLUS, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)incloc), incloc, inc); 
+                                            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/inc_for_reload/src/reload1.c:8401:80: error: use of undeclared identifier 'incloc'
+v5 = gen_rtx_fmt_ee( PLUS, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)incloc), incloc, inc); 
+                                                                               ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/inc_for_reload/src/reload1.c:8401:89: error: use of undeclared identifier 'incloc'
+v5 = gen_rtx_fmt_ee( PLUS, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)incloc), incloc, inc); 
+                                                                                        ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/inc_for_reload/src/reload1.c:8402:37: error: use of undeclared identifier 'incloc'
+v6 = gen_rtx_fmt_ee( SET, VOIDmode, incloc, v5); 
+                                    ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/inc_for_reload/src/reload1.c:8403:10: error: non-object type 'void (rtx)' (aka 'void (struct rtx_def *)') is not assignable
+add_insn = emit_insn( v6); 
+~~~~~~~~ ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/inc_for_reload/src/reload1.c:8404:6: error: subscript of pointer to function type 'void (rtx)' (aka 'void (struct rtx_def *)')
+if ( add_insn[2].fld[0].rtint < 0 ) 
+     ^~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/inc_for_reload/src/reload1.c:8407:9: error: subscript of pointer to function type 'void (rtx)' (aka 'void (struct rtx_def *)')
+rtint = add_insn[2].fld[0].rtint; 
+        ^~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/inc_for_reload/src/reload1.c:8415:32: error: use of undeclared identifier 'incloc'
+v7 = gen_move_insn( reloadreg, incloc); 
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/inc_for_reload/src/reload1.c:8427:22: error: use of undeclared identifier 'incloc'
+v12 = gen_move_insn( incloc, reloadreg); 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/inc_for_reload/src/reload1.c:8442:22: error: use of undeclared identifier 'incloc'
+v10 = gen_move_insn( incloc, reloadreg); 
+                     ^
+17 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/inc_for_reload/src/obj/reload1.o] Error 1

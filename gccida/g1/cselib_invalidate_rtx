@@ -1,0 +1,15 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cselib_invalidate_rtx/src/cselib.c:1642:48: error: use of undeclared identifier 'machine_mode'
+cselib_invalidate_regno( rtx->fld[0].rtuint, ( machine_mode)*( ( unsigned __int8 *)rtx + 2)); 
+                                               ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cselib_invalidate_rtx/src/cselib.c:1646:16: error: use of undeclared identifier 'hash_table_0'; did you mean 'hash_table'?
+htab_traverse( hash_table_0, cselib_invalidate_mem_1, rtx); 
+               ^~~~~~~~~~~~
+               hash_table
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cselib_invalidate_rtx/src/cselib.c:82:15: note: 'hash_table' declared here
+static htab_t hash_table;
+              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cselib_invalidate_rtx/src/cselib.c:1648:27: error: use of undeclared identifier 'machine_mode'
+if ( push_operand( rtx, ( machine_mode)*( ( unsigned __int8 *)rtx + 2)) ) 
+                          ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cselib_invalidate_rtx/src/obj/cselib.o] Error 1

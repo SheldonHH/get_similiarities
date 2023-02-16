@@ -1,0 +1,12 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/set_reload_reg/src/reload1.c:5535:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/set_reload_reg/src/reload1.c:5563:69: error: use of undeclared identifier 'machine_mode'
+if ( !in || !*( ( _BYTE *)in + 2) || ix86_hard_regno_mode_ok( v6, ( machine_mode)*( ( unsigned __int8 *)in + 2)) ) 
+                                                                    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/set_reload_reg/src/reload1.c:5566:45: error: use of undeclared identifier 'machine_mode'
+if ( !out || ix86_hard_regno_mode_ok( v6, ( machine_mode)*( ( unsigned __int8 *)out + 2)) ) 
+                                            ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/set_reload_reg/src/obj/reload1.o] Error 1

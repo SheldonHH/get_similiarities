@@ -1,0 +1,14 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_jump_insn_after/src/emit-rtl.c:4459:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v11.rtwint = ( __int64)v10[1].fld[0]; 
+                       ^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_jump_insn_after/src/emit-rtl.c:4462:11: error: use of undeclared identifier 'rtx_def'
+v3[1] = ( rtx_def)_mm_unpacklo_epi64( ( __m128i)( unsigned __int64)v10, ( __m128i)( unsigned __int64)v11.rtwint); 
+          ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_jump_insn_after/src/emit-rtl.c:4514:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v15 = ( __int64)v10[2]; 
+                ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_jump_insn_after/src/emit-rtl.c:4535:7: error: assigning to 'struct rtx_def' from incompatible type 'long long'
+v4[3] = 0LL; 
+      ^ ~~~
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_jump_insn_after/src/obj/emit-rtl.o] Error 1

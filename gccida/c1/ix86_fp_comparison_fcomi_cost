@@ -1,0 +1,30 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/ix86_fp_comparison_fcomi_cost/src/i386.c:7891:37: error: must use 'enum' tag to refer to type 'rtx_code'
+int  ix86_fp_comparison_fcomi_cost( rtx_code code) 
+                                    ^
+                                    enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/ix86_fp_comparison_fcomi_cost/src/i386.c:7895:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code first_code; // [rsp+14h] [rbp-4h] BYREF 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/ix86_fp_comparison_fcomi_cost/src/i386.c:7900:45: error: expected expression
+ix86_fp_comparison_codes( code, ( rtx_code *)&v3 + 1, &first_code, ( rtx_code *)&v3); 
+                                            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/ix86_fp_comparison_fcomi_cost/src/i386.c:7900:35: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+ix86_fp_comparison_codes( code, ( rtx_code *)&v3 + 1, &first_code, ( rtx_code *)&v3); 
+                                  ^~~~~~~~
+                                  rtx_cost
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/ix86_fp_comparison_fcomi_cost/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/ix86_fp_comparison_fcomi_cost/src/i386.c:7900:80: error: expected expression
+ix86_fp_comparison_codes( code, ( rtx_code *)&v3 + 1, &first_code, ( rtx_code *)&v3); 
+                                                                               ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/ix86_fp_comparison_fcomi_cost/src/i386.c:7900:70: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+ix86_fp_comparison_codes( code, ( rtx_code *)&v3 + 1, &first_code, ( rtx_code *)&v3); 
+                                                                     ^~~~~~~~
+                                                                     rtx_cost
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/ix86_fp_comparison_fcomi_cost/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/ix86_fp_comparison_fcomi_cost/src/obj/i386.o] Error 1

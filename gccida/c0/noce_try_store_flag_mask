@@ -1,0 +1,18 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/noce_try_store_flag_mask/src/ifcvt.c:1298:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v1; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/noce_try_store_flag_mask/src/ifcvt.c:1315:21: error: use of undeclared identifier 'machine_mode'
+v2 = gen_reg_rtx( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)if_info->x)); 
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/noce_try_store_flag_mask/src/ifcvt.c:1315:36: error: expected expression
+v2 = gen_reg_rtx( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)if_info->x)); 
+                                   ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/noce_try_store_flag_mask/src/ifcvt.c:1319:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)if_info->x), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/noce_try_store_flag_mask/src/ifcvt.c:1319:18: error: expected expression
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)if_info->x), 
+                 ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/noce_try_store_flag_mask/src/obj/ifcvt.o] Error 1

@@ -1,0 +1,92 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/check_asm_stack_operands/src/reg-stack.c:1077:6: error: use of undeclared identifier 'v15'
+rtx *v15; // rax 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/check_asm_stack_operands/src/reg-stack.c:1082:4: error: expected ';' after expression
+rtx v20; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/check_asm_stack_operands/src/reg-stack.c:1082:5: error: use of undeclared identifier 'v20'; did you mean 'v2'?
+rtx v20; // rax 
+    ^~~
+    v2
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/check_asm_stack_operands/src/reg-stack.c:1064:5: note: 'v2' declared here
+int v2; // r14d 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/check_asm_stack_operands/src/reg-stack.c:1088:6: error: use of undeclared identifier 'v26'
+rtx *v26; // r14 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/check_asm_stack_operands/src/reg-stack.c:1089:4: error: expected ';' after expression
+rtx v27; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/check_asm_stack_operands/src/reg-stack.c:1089:5: error: use of undeclared identifier 'v27'
+rtx v27; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/check_asm_stack_operands/src/reg-stack.c:1095:4: error: expected ';' after expression
+rtx v33; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/check_asm_stack_operands/src/reg-stack.c:1095:5: error: use of undeclared identifier 'v33'
+rtx v33; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/check_asm_stack_operands/src/reg-stack.c:1099:6: error: use of undeclared identifier 'clobber_reg'
+rtx *clobber_reg; // [rsp+8h] [rbp-D8h] 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/check_asm_stack_operands/src/reg-stack.c:1103:4: error: expected ';' after expression
+rtx insna; // [rsp+20h] [rbp-C0h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/check_asm_stack_operands/src/reg-stack.c:1103:5: error: use of undeclared identifier 'insna'; did you mean 'insn'?
+rtx insna; // [rsp+20h] [rbp-C0h] 
+    ^~~~~
+    insn
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/check_asm_stack_operands/src/reg-stack.c:1061:36: note: 'insn' declared here
+int  check_asm_stack_operands( rtx insn) 
+                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/check_asm_stack_operands/src/reg-stack.c:1109:1: error: use of undeclared identifier 'insna'; did you mean 'insn'?
+insna = insn; 
+^~~~~
+insn
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/check_asm_stack_operands/src/reg-stack.c:1061:36: note: 'insn' declared here
+int  check_asm_stack_operands( rtx insn) 
+                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/check_asm_stack_operands/src/reg-stack.c:1110:26: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v1 = (  struct rtx_def *)insn[2]; 
+                         ^~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/check_asm_stack_operands/src/reg-stack.c:1117:14: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+n_operands = recog_data_0.n_operands; 
+             ^~~~~~~~~~~~
+             recog_data
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/check_asm_stack_operands/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/check_asm_stack_operands/src/reg-stack.c:1118:17: error: expected expression
+rtwint = ( rtx *)( unsigned int)( recog_data_0.n_operands - asm_operand_n_inputs); 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/check_asm_stack_operands/src/reg-stack.c:1118:20: error: expected expression
+rtwint = ( rtx *)( unsigned int)( recog_data_0.n_operands - asm_operand_n_inputs); 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/check_asm_stack_operands/src/reg-stack.c:1118:35: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+rtwint = ( rtx *)( unsigned int)( recog_data_0.n_operands - asm_operand_n_inputs); 
+                                  ^~~~~~~~~~~~
+                                  recog_data
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/check_asm_stack_operands/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/check_asm_stack_operands/src/reg-stack.c:1119:13: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+n_outputs = recog_data_0.n_operands - asm_operand_n_inputs; 
+            ^~~~~~~~~~~~
+            recog_data
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/check_asm_stack_operands/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/check_asm_stack_operands/src/reg-stack.c:1122:14: error: use of undeclared identifier 'insna'; did you mean 'insn'?
+*( _QWORD *)&insna[2] = gen_rtx_fmt_e( USE, VOIDmode, const_int_rtx[64]); 
+             ^~~~~
+             insn
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/check_asm_stack_operands/src/reg-stack.c:1061:36: note: 'insn' declared here
+int  check_asm_stack_operands( rtx insn) 
+                                   ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/check_asm_stack_operands/src/obj/reg-stack.o] Error 1

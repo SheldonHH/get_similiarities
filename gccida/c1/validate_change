@@ -1,0 +1,15 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/validate_change/src/recog.c:672:1: error: unknown type name 'change_t_0'; did you mean 'change_t'?
+change_t_0 *v10; // rcx 
+^~~~~~~~~~
+change_t
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/validate_change/src/recog.c:178:3: note: 'change_t' declared here
+} change_t;
+  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/validate_change/src/recog.c:690:25: error: expected expression
+changes = ( change_t_0 *)xrealloc( changes, 32LL * v9); 
+                        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/validate_change/src/recog.c:690:13: error: use of undeclared identifier 'change_t_0'
+changes = ( change_t_0 *)xrealloc( changes, 32LL * v9); 
+            ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/validate_change/src/obj/recog.o] Error 1

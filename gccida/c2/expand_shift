@@ -1,0 +1,90 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_shift/src/expmed.c:2369:20: error: must use 'enum' tag to refer to type 'tree_code'
+rtx  expand_shift( tree_code code, machine_mode mode, rtx shifted, tree amount, rtx target, int unsignedp) 
+                   ^
+                   enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_shift/src/expmed.c:2369:36: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  expand_shift( tree_code code, machine_mode mode, rtx shifted, tree amount, rtx target, int unsignedp) 
+                                   ^
+                                   enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_shift/src/expmed.c:2378:1: error: must use 'enum' tag to refer to type 'optab_methods'
+optab_methods methods; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_shift/src/expmed.c:2379:1: error: unknown type name 'optab_0'; did you mean 'optab'?
+optab_0 *v16; // rax 
+^~~~~~~
+optab
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_shift/src/optabs.h:48:5: note: 'optab' declared here
+} * optab;
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_shift/src/expmed.c:2386:1: error: unknown type name 'optab_0'; did you mean 'optab'?
+optab_0 *v23; // rcx 
+^~~~~~~
+optab
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_shift/src/optabs.h:48:5: note: 'optab' declared here
+} * optab;
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_shift/src/expmed.c:2387:1: error: unknown type name 'optab_0'; did you mean 'optab'?
+optab_0 *v24; // rcx 
+^~~~~~~
+optab
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_shift/src/optabs.h:48:5: note: 'optab' declared here
+} * optab;
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_shift/src/expmed.c:2389:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *type; // r13 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_shift/src/expmed.c:2390:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *tree; // r15 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_shift/src/expmed.c:2391:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v28; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_shift/src/expmed.c:2392:5: error: expected ';' after expression
+tree v29; // rax 
+    ^
+    ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_shift/src/expmed.c:2392:6: error: use of undeclared identifier 'v29'
+tree v29; // rax 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_shift/src/expmed.c:2393:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v30; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_shift/src/expmed.c:2394:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v31; // r13 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_shift/src/expmed.c:2401:5: error: expected ';' after expression
+tree v41; // [rsp+40h] [rbp-38h] 
+    ^
+    ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_shift/src/expmed.c:2401:6: error: use of undeclared identifier 'v41'
+tree v41; // [rsp+40h] [rbp-38h] 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_shift/src/expmed.c:2408:1: error: use of undeclared identifier 'v41'
+v41 = amount; 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_shift/src/expmed.c:2504:8: error: use of undeclared identifier 'v41'; did you mean 'v31'?
+type = v41->common.type; 
+       ^~~
+       v31
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_shift/src/expmed.c:2394:12: note: 'v31' declared here
+tree_node *v31; // r13 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_shift/src/expmed.c:2507:1: error: use of undeclared identifier 'v29'
+v29 = convert( type, v28); 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_shift/src/expmed.c:2508:32: error: use of undeclared identifier 'v29'; did you mean 'v19'?
+v30 = build( MINUS_EXPR, type, v29, v41); 
+                               ^~~
+                               v19
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_shift/src/expmed.c:2382:9: note: 'v19' declared here
+__int64 v19; // rsi 
+        ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_shift/src/obj/expmed.o] Error 1

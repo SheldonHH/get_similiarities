@@ -1,0 +1,34 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/mark_referenced_regs/src/caller-save.c:1030:4: error: expected ';' after expression
+rtx v19; // rdx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/mark_referenced_regs/src/caller-save.c:1030:5: error: use of undeclared identifier 'v19'
+rtx v19; // rdx 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/mark_referenced_regs/src/caller-save.c:1039:31: error: expected expression
+mark_referenced_regs( *( rtx *)&x[1]); 
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/mark_referenced_regs/src/caller-save.c:1052:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v6.rtwint = ( __int64)rtx->fld[0]; 
+                      ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/mark_referenced_regs/src/caller-save.c:1081:31: error: expected expression
+mark_referenced_regs( *( rtx *)( rtx->fld[v4].rtwint + 8LL * v22-- + 8)); 
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/mark_referenced_regs/src/caller-save.c:1110:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v12 = ( ( unsigned int)( mode_class_0[*( ( unsigned __int8 *)rtx + 2)] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/mark_referenced_regs/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/mark_referenced_regs/src/caller-save.c:1143:1: error: use of undeclared identifier 'v19'
+v19 = reg_equiv_mem[rtint]; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/mark_referenced_regs/src/caller-save.c:1144:6: error: use of undeclared identifier 'v19'
+if ( v19 ) 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/mark_referenced_regs/src/caller-save.c:1146:23: error: use of undeclared identifier 'v19'
+mark_referenced_regs( v19->fld[0].rtx); 
+                      ^
+9 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/mark_referenced_regs/src/obj/caller-save.o] Error 1

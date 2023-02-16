@@ -1,0 +1,20 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/field_byte_offset/src/dwarf2out.c:8879:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v2; // r14 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/field_byte_offset/src/dwarf2out.c:8880:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *imag; // r13 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/field_byte_offset/src/dwarf2out.c:8881:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v4; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/field_byte_offset/src/dwarf2out.c:8899:21: error: expected expression
+imag = ( tree_node *)*( &global_trees + 17); 
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/field_byte_offset/src/dwarf2out.c:8899:10: error: use of undeclared identifier 'tree_node'
+imag = ( tree_node *)*( &global_trees + 17); 
+         ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/field_byte_offset/src/obj/dwarf2out.o] Error 1

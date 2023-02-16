@@ -1,0 +1,17 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/stack_adjust_offset/src/dwarf2out.c:1398:10: error: conflicting types for 'stack_adjust_offset'
+__int64  stack_adjust_offset( rtx pattern) 
+         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/stack_adjust_offset/src/dwarf2out.c:283:13: note: previous declaration is here
+static long stack_adjust_offset         PARAMS ((rtx));
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/stack_adjust_offset/src/dwarf2out.c:1409:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v1.rtwint = ( __int64)pattern->fld[0]; 
+                      ^~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/stack_adjust_offset/src/dwarf2out.c:1412:14: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v5 = ( rtx *)pattern[1]; 
+             ^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/stack_adjust_offset/src/dwarf2out.c:1445:30: error: use of undeclared identifier 'a'
+fancy_abort( ( const char *)&a, 972, "stack_adjust_offset"); 
+                             ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/stack_adjust_offset/src/obj/dwarf2out.o] Error 1

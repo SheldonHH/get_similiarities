@@ -1,0 +1,43 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/subreg_regno/src/rtlanal.c:3530:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v1.rtwint = ( __int64)x->fld[0]; 
+                      ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/subreg_regno/src/rtlanal.c:3532:21: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v3 = ( unsigned int)x[1]; 
+                    ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/subreg_regno/src/rtlanal.c:3543:40: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v9 = ( ( unsigned int)( *( ( _DWORD *)&mode_class_0 + v5) - 5) < 2) + 1; 
+                                       ^~~~~~~~~~~~
+                                       mode_class
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/subreg_regno/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/subreg_regno/src/rtlanal.c:3600:38: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( ( unsigned int)( *( ( _DWORD *)&mode_class_0 + v5) - 5) <= 1 ) 
+                                     ^~~~~~~~~~~~
+                                     mode_class
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/subreg_regno/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/subreg_regno/src/rtlanal.c:3607:38: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( ( unsigned int)( *( ( _DWORD *)&mode_class_0 + ( int)v10) - 5) > 1 ) 
+                                     ^~~~~~~~~~~~
+                                     mode_class
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/subreg_regno/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/subreg_regno/src/rtlanal.c:3617:38: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( ( unsigned int)( *( ( _DWORD *)&mode_class_0 + v5) - 5) <= 1 ) 
+                                     ^~~~~~~~~~~~
+                                     mode_class
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/subreg_regno/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/subreg_regno/src/rtlanal.c:3622:38: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( ( unsigned int)( *( ( _DWORD *)&mode_class_0 + v2) - 5) > 1 ) 
+                                     ^~~~~~~~~~~~
+                                     mode_class
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/subreg_regno/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/subreg_regno/src/obj/rtlanal.o] Error 1

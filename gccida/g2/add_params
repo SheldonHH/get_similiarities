@@ -1,0 +1,15 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/add_params/src/params.c:503:25: error: unknown type name 'param_info_0'; did you mean 'param_info'?
+void  add_params( const param_info_0 *params, size_t n) 
+                        ^~~~~~~~~~~~
+                        param_info
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/add_params/src/params.h:53:3: note: 'param_info' declared here
+} param_info;
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/add_params/src/params.c:507:35: error: expected expression
+compiler_params = ( param_info_0 *)xrealloc( compiler_params, 24 * ( n + num_compiler_params)); 
+                                  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/add_params/src/params.c:507:21: error: use of undeclared identifier 'param_info_0'
+compiler_params = ( param_info_0 *)xrealloc( compiler_params, 24 * ( n + num_compiler_params)); 
+                    ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/add_params/src/obj/params.o] Error 1

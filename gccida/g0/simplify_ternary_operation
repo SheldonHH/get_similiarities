@@ -1,0 +1,88 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_ternary_operation/src/simplify-rtx.c:2822:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_ternary_operation/src/simplify-rtx.c:2823:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_ternary_operation/src/simplify-rtx.c:2824:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode op0_mode, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_ternary_operation/src/simplify-rtx.c:2829:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v7; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_ternary_operation/src/simplify-rtx.c:2831:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code tmp; // [rsp+3Ch] [rbp-34h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_ternary_operation/src/simplify-rtx.c:2835:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode cmp_mode; // [rsp+5Ch] [rbp-14h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_ternary_operation/src/simplify-rtx.c:2854:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& ( mode_class_0[mode] != MODE_FLOAT 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_ternary_operation/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_ternary_operation/src/simplify-rtx.c:2855:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& mode_class_0[mode] != MODE_COMPLEX_FLOAT 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_ternary_operation/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_ternary_operation/src/simplify-rtx.c:2856:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& mode_class_0[mode] != MODE_VECTOR_FLOAT 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_ternary_operation/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_ternary_operation/src/simplify-rtx.c:2865:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& ( mode_class_0[mode] != MODE_FLOAT 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_ternary_operation/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_ternary_operation/src/simplify-rtx.c:2866:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& mode_class_0[mode] != MODE_COMPLEX_FLOAT 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_ternary_operation/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_ternary_operation/src/simplify-rtx.c:2867:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& mode_class_0[mode] != MODE_VECTOR_FLOAT 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_ternary_operation/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_ternary_operation/src/simplify-rtx.c:2883:41: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+temp = simplify_relational_operation( ( rtx_code)*( _WORD *)op0a, cmp_mode, op0a->fld[0].rtx, *( rtx *)&op0a[1]); 
+                                        ^~~~~~~~
+                                        rtx_cost
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_ternary_operation/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_ternary_operation/src/simplify-rtx.c:2883:50: error: invalid operands to binary expression ('int (rtx, enum rtx_code)' (aka 'int (struct rtx_def *, enum rtx_code)') and 'uint16 *' (aka 'unsigned short *'))
+temp = simplify_relational_operation( ( rtx_code)*( _WORD *)op0a, cmp_mode, op0a->fld[0].rtx, *( rtx *)&op0a[1]); 
+                                      ~~~~~~~~~~~^~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_ternary_operation/src/simplify-rtx.c:2895:26: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+return gen_rtx_fmt_ee( ( rtx_code)*( _WORD *)op0a, mode, op0a->fld[0].rtx, *( rtx *)&op0a[1]); 
+                         ^~~~~~~~
+                         rtx_cost
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_ternary_operation/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_ternary_operation/src/simplify-rtx.c:2895:35: error: invalid operands to binary expression ('int (rtx, enum rtx_code)' (aka 'int (struct rtx_def *, enum rtx_code)') and 'uint16 *' (aka 'unsigned short *'))
+return gen_rtx_fmt_ee( ( rtx_code)*( _WORD *)op0a, mode, op0a->fld[0].rtx, *( rtx *)&op0a[1]); 
+                       ~~~~~~~~~~~^~~~~~~~~~~~~~~
+16 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_ternary_operation/src/obj/simplify-rtx.o] Error 1

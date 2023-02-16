@@ -1,0 +1,71 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/classify_argument/src/i386.c:2106:25: error: must use 'enum' tag to refer to type 'machine_mode'
+int  classify_argument( machine_mode mode, tree type, x86_64_reg_class *classes, int bit_offset) 
+                        ^
+                        enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/classify_argument/src/i386.c:2106:55: error: must use 'enum' tag to refer to type 'x86_64_reg_class'
+int  classify_argument( machine_mode mode, tree type, x86_64_reg_class *classes, int bit_offset) 
+                                                      ^
+                                                      enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/classify_argument/src/i386.c:2110:1: error: must use 'enum' tag to refer to type 'x86_64_reg_class'
+x86_64_reg_class v6; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/classify_argument/src/i386.c:2111:1: error: must use 'enum' tag to refer to type 'x86_64_reg_class'
+x86_64_reg_class v7; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/classify_argument/src/i386.c:2114:1: error: must use 'enum' tag to refer to type 'x86_64_reg_class'
+x86_64_reg_class v10; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/classify_argument/src/i386.c:2115:1: error: must use 'enum' tag to refer to type 'x86_64_reg_class'
+x86_64_reg_class v11; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/classify_argument/src/i386.c:2116:1: error: must use 'enum' tag to refer to type 'x86_64_reg_class'
+x86_64_reg_class v12; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/classify_argument/src/i386.c:2118:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v14; // [rsp+28h] [rbp-F8h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/classify_argument/src/i386.c:2144:1: error: must use 'enum' tag to refer to type 'x86_64_reg_class'
+x86_64_reg_class subclasses[4]; // [rsp+E0h] [rbp-40h] BYREF 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/classify_argument/src/i386.c:2150:1: error: must use 'enum' tag to refer to type 'x86_64_reg_class'
+x86_64_reg_class *classesa; // [rsp+108h] [rbp-18h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/classify_argument/src/i386.c:2152:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode modea; // [rsp+118h] [rbp-8h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/classify_argument/src/i386.c:2195:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( ( unsigned __int8)HIBYTE( WORD2( binfo->common.type->block.abstract_origin)) >> 1), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/classify_argument/src/i386.c:2215:11: error: use of undeclared identifier 'QCameraExposure'
+for ( i = QCameraExposure::setAutoIsoSensitivity( field) / 8 / 8; ; ++i ) 
+          ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/classify_argument/src/i386.c:2218:7: error: use of undeclared identifier 'QCameraExposure'
+v16 = QCameraExposure::setAutoIsoSensitivity( field); 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/classify_argument/src/i386.c:2229:6: error: use of undeclared identifier 'QCameraExposure'
+v8 = QCameraExposure::setAutoIsoSensitivity( field); 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/classify_argument/src/i386.c:2230:30: error: use of undeclared identifier 'machine_mode'
+num_0 = classify_argument( ( machine_mode)v15, v14, subclasses, ( bit_offseta + v8) % 256); 
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/classify_argument/src/i386.c:2235:6: error: use of undeclared identifier 'QCameraExposure'
+v9 = QCameraExposure::setAutoIsoSensitivity( field); 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/classify_argument/src/i386.c:2247:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( ( unsigned __int8)HIBYTE( WORD2( typea->common.type->block.abstract_origin)) >> 1), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/classify_argument/src/i386.c:2276:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( ( unsigned __int8)HIBYTE( WORD2( binfo_0->common.type->block.abstract_origin)) >> 1), 
+  ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/classify_argument/src/obj/i386.o] Error 1

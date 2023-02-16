@@ -1,0 +1,26 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/optimize_unexecutable_edges/src/ssa-ccp.c:1202:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v2; // ecx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/optimize_unexecutable_edges/src/ssa-ccp.c:1205:5: error: expected ';' after expression
+edge edge_0; // [rsp+18h] [rbp-38h] 
+    ^
+    ;
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/optimize_unexecutable_edges/src/ssa-ccp.c:1205:6: error: use of undeclared identifier 'edge_0'
+edge edge_0; // [rsp+18h] [rbp-38h] 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/optimize_unexecutable_edges/src/ssa-ccp.c:1251:1: error: use of undeclared identifier 'edge_0'
+edge_0 = bb->succ; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/optimize_unexecutable_edges/src/ssa-ccp.c:1259:8: error: use of undeclared identifier 'edge_0'; did you mean 'edge'?
+if ( ( edge_0->flags & 1) != 0 ) 
+       ^~~~~~
+       edge
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/optimize_unexecutable_edges/src/ssa-ccp.c:1204:6: note: 'edge' declared here
+edge edge; // [rsp+10h] [rbp-40h] 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/optimize_unexecutable_edges/src/ssa-ccp.c:1270:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v3 = ( __int64)insn_0[2]; 
+               ^~~~~~~~~
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/optimize_unexecutable_edges/src/obj/ssa-ccp.o] Error 1

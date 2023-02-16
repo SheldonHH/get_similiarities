@@ -1,0 +1,127 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/extract_insn/src/recog.c:2551:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v9; // ecx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/extract_insn/src/recog.c:2562:18: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v1 = ( __int16 *)insn[2]; 
+                 ^~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/extract_insn/src/recog.c:2563:13: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+*( _WORD *)&recog_data_0.n_operands = 0; 
+            ^~~~~~~~~~~~
+            recog_data
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/extract_insn/src/recog.c:72:19: note: 'recog_data' declared here
+struct recog_data recog_data;
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/extract_insn/src/recog.c:2564:1: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+recog_data_0.n_alternatives = 0; 
+^~~~~~~~~~~~
+recog_data
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/extract_insn/src/recog.c:72:19: note: 'recog_data' declared here
+struct recog_data recog_data;
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/extract_insn/src/recog.c:2566:1: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+recog_data_0.insn = 0LL; 
+^~~~~~~~~~~~
+recog_data
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/extract_insn/src/recog.c:72:19: note: 'recog_data' declared here
+struct recog_data recog_data;
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/extract_insn/src/recog.c:2578:1: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+recog_data_0.n_operands = v15; 
+^~~~~~~~~~~~
+recog_data
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/extract_insn/src/recog.c:72:19: note: 'recog_data' declared here
+struct recog_data recog_data;
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/extract_insn/src/recog.c:2581:29: error: too many arguments provided to function-like macro invocation
+fatal_insn_not_found( insn, "recog.c", 2139, "extract_insn"); 
+                            ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/extract_insn/src/toplev.h:52:9: note: macro 'fatal_insn_not_found' defined here
+#define fatal_insn_not_found(insn) \
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/extract_insn/src/recog.c:2581:1: error: use of undeclared identifier 'fatal_insn_not_found'; did you mean '_fatal_insn_not_found'?
+fatal_insn_not_found( insn, "recog.c", 2139, "extract_insn"); 
+^~~~~~~~~~~~~~~~~~~~
+_fatal_insn_not_found
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/extract_insn/src/toplev.h:40:13: note: '_fatal_insn_not_found' declared here
+extern void _fatal_insn_not_found       PARAMS ((struct rtx_def *,
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/extract_insn/src/recog.c:2586:1: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+recog_data_0.operand, 
+^~~~~~~~~~~~
+recog_data
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/extract_insn/src/recog.c:72:19: note: 'recog_data' declared here
+struct recog_data recog_data;
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/extract_insn/src/recog.c:2587:1: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+recog_data_0.operand_loc, 
+^~~~~~~~~~~~
+recog_data
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/extract_insn/src/recog.c:72:19: note: 'recog_data' declared here
+struct recog_data recog_data;
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/extract_insn/src/recog.c:2588:1: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+recog_data_0.constraints, 
+^~~~~~~~~~~~
+recog_data
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/extract_insn/src/recog.c:72:19: note: 'recog_data' declared here
+struct recog_data recog_data;
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/extract_insn/src/recog.c:2589:1: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+recog_data_0.operand_mode); 
+^~~~~~~~~~~~
+recog_data
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/extract_insn/src/recog.c:72:19: note: 'recog_data' declared here
+struct recog_data recog_data;
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/extract_insn/src/recog.c:2592:7: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+v17 = recog_data_0.constraints[0]; 
+      ^~~~~~~~~~~~
+      recog_data
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/extract_insn/src/recog.c:72:19: note: 'recog_data' declared here
+struct recog_data recog_data;
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/extract_insn/src/recog.c:2593:1: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+recog_data_0.n_alternatives = 1; 
+^~~~~~~~~~~~
+recog_data
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/extract_insn/src/recog.c:72:19: note: 'recog_data' declared here
+struct recog_data recog_data;
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/extract_insn/src/recog.c:2595:12: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+for ( i = *recog_data_0.constraints[0]; *v17; i = *v17 ) 
+           ^~~~~~~~~~~~
+           recog_data
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/extract_insn/src/recog.c:72:19: note: 'recog_data' declared here
+struct recog_data recog_data;
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/extract_insn/src/recog.c:2599:1: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+recog_data_0.n_alternatives = n_alternatives; 
+^~~~~~~~~~~~
+recog_data
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/extract_insn/src/recog.c:72:19: note: 'recog_data' declared here
+struct recog_data recog_data;
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/extract_insn/src/recog.c:2604:6: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( recog_data_0.n_alternatives <= 30 ) 
+     ^~~~~~~~~~~~
+     recog_data
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/extract_insn/src/recog.c:72:19: note: 'recog_data' declared here
+struct recog_data recog_data;
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/extract_insn/src/recog.c:2621:29: error: too many arguments provided to function-like macro invocation
+fatal_insn_not_found( insn, "recog.c", 2148, "extract_insn"); 
+                            ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/extract_insn/src/toplev.h:52:9: note: macro 'fatal_insn_not_found' defined here
+#define fatal_insn_not_found(insn) \
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/extract_insn/src/recog.c:2621:1: error: use of undeclared identifier 'fatal_insn_not_found'; did you mean '_fatal_insn_not_found'?
+fatal_insn_not_found( insn, "recog.c", 2148, "extract_insn"); 
+^~~~~~~~~~~~~~~~~~~~
+_fatal_insn_not_found
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/extract_insn/src/toplev.h:40:13: note: '_fatal_insn_not_found' declared here
+extern void _fatal_insn_not_found       PARAMS ((struct rtx_def *,
+            ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/extract_insn/src/obj/recog.o] Error 1

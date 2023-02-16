@@ -1,0 +1,69 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cleanup_cfg/src/cfgcleanup.c:2316:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v84; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cleanup_cfg/src/cfgcleanup.c:2317:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v85; // r12d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cleanup_cfg/src/cfgcleanup.c:2421:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code2; // [rsp+44h] [rbp-74h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cleanup_cfg/src/cfgcleanup.c:2422:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code2a; // [rsp+44h] [rbp-74h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cleanup_cfg/src/cfgcleanup.c:2428:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v198; // [rsp+6Ch] [rbp-4Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cleanup_cfg/src/cfgcleanup.c:2433:15: error: use of undeclared identifier 'TV_CLEANUP_CFG_0'; did you mean 'TV_CLEANUP_CFG'?
+timevar_push( TV_CLEANUP_CFG_0); 
+              ^~~~~~~~~~~~~~~~
+              TV_CLEANUP_CFG
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cleanup_cfg/src/timevar.def:45:13: note: 'TV_CLEANUP_CFG' declared here
+DEFTIMEVAR (TV_CLEANUP_CFG           , "cfg cleanup")
+            ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cleanup_cfg/src/cfgcleanup.c:2558:13: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v24 = ( rtx)v24[1]; 
+            ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cleanup_cfg/src/cfgcleanup.c:2572:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v27 = (  struct rtx_def *)end[4]; 
+                          ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cleanup_cfg/src/cfgcleanup.c:2576:29: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+&& ( v28.rtwint = ( __int64)v27[1].fld[0]) != 0 
+                            ^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cleanup_cfg/src/cfgcleanup.c:2646:13: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v43 = ( rtx)v43[1]; 
+            ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cleanup_cfg/src/cfgcleanup.c:2703:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v55.rtwint = ( __int64)v53[1].fld[0]; 
+                       ^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cleanup_cfg/src/cfgcleanup.c:2926:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v79 = ( __int64)v77[1]; 
+                ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cleanup_cfg/src/cfgcleanup.c:2931:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v82 = ( __int64)v78[1]; 
+                ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cleanup_cfg/src/cfgcleanup.c:2937:72: error: too many arguments to function call, expected 2, have 4
+v84 = ( unsigned int)reversed_comparison_code( ( rtx)v80, e->src->end, v82, v81); 
+                     ~~~~~~~~~~~~~~~~~~~~~~~~                          ^~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cleanup_cfg/src/rtl.h:1817:1: note: 'reversed_comparison_code' declared here
+extern enum rtx_code reversed_comparison_code PARAMS ((rtx, rtx));
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cleanup_cfg/src/cfgcleanup.c:2939:71: error: too many arguments to function call, expected 2, have 4
+code2 = ( unsigned int)reversed_comparison_code( ( rtx)v83, v71->end, v82, v81); 
+                       ~~~~~~~~~~~~~~~~~~~~~~~~                       ^~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cleanup_cfg/src/rtl.h:1817:1: note: 'reversed_comparison_code' declared here
+extern enum rtx_code reversed_comparison_code PARAMS ((rtx, rtx));
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cleanup_cfg/src/cfgcleanup.c:3501:14: error: use of undeclared identifier 'TV_CLEANUP_CFG_0'; did you mean 'TV_CLEANUP_CFG'?
+timevar_pop( TV_CLEANUP_CFG_0); 
+             ^~~~~~~~~~~~~~~~
+             TV_CLEANUP_CFG
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cleanup_cfg/src/timevar.def:45:13: note: 'TV_CLEANUP_CFG' declared here
+DEFTIMEVAR (TV_CLEANUP_CFG           , "cfg cleanup")
+            ^
+16 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cleanup_cfg/src/obj/cfgcleanup.o] Error 1

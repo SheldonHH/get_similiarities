@@ -1,0 +1,36 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/record_address_regs/src/regclass.c:2429:35: error: must use 'enum' tag to refer to type 'reg_class'
+void  record_address_regs( rtx x, reg_class a2, int scale) 
+                                  ^
+                                  enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/record_address_regs/src/regclass.c:2431:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class v3; // ecx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/record_address_regs/src/regclass.c:2432:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class v4; // ecx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/record_address_regs/src/regclass.c:2433:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v5; // ecx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/record_address_regs/src/regclass.c:2439:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code0; // [rsp+40h] [rbp-10h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/record_address_regs/src/regclass.c:2440:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code1; // [rsp+44h] [rbp-Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/record_address_regs/src/regclass.c:2454:7: error: use of undeclared identifier 'costs_0'; did you mean 'costs'?
+pp = &costs_0[x->fld[0].rtuint]; 
+      ^~~~~~~
+      costs
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/record_address_regs/src/regclass.c:861:22: note: 'costs' declared here
+static struct costs *costs;
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/record_address_regs/src/regclass.c:2471:14: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+arg1 = ( rtx)x[1]; 
+             ^~~~
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/record_address_regs/src/obj/regclass.o] Error 1

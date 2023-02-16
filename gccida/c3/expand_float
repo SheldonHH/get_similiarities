@@ -1,0 +1,69 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_float/src/optabs.c:4551:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v4; // r15d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_float/src/optabs.c:4555:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v8; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_float/src/optabs.c:4562:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v15; // r12d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_float/src/optabs.c:4570:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v23; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_float/src/optabs.c:4572:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v25; // edx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_float/src/optabs.c:4577:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v30; // r13d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_float/src/optabs.c:4581:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v34; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_float/src/optabs.c:4670:8: error: use of undeclared identifier 'off_71A8C0'
+v39 = &off_71A8C0 + ( char)v38; 
+       ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_float/src/optabs.c:4676:8: error: use of undeclared identifier 'off_71A8D8'
+v39 = &off_71A8D8 + ( char)v49; 
+       ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_float/src/optabs.c:4682:8: error: use of undeclared identifier 'off_71A8F0'
+v39 = &off_71A8F0 + ( char)v47; 
+       ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_float/src/optabs.c:4688:8: error: use of undeclared identifier 'off_71A908'
+v39 = &off_71A908 + ( char)v48; 
+       ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_float/src/optabs.c:4700:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)v19 + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_float/src/optabs.c:4706:31: error: use of undeclared identifier 'machine_mode'
+v53 = gen_rtx_fmt_e( FLOAT, ( machine_mode)*( ( unsigned __int8 *)v19 + 2), v37); 
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_float/src/optabs.c:4738:26: error: use of undeclared identifier 'machine_mode'
+if ( significand_size( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)v19)) + 1 < *( const unsigned __int16 *)( ( char *)mode_bitsize + ( ( *( _DWORD *)v21 >> 15) & 0x1FE)) ) 
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_float/src/optabs.c:4738:41: error: expected expression
+if ( significand_size( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)v19)) + 1 < *( const unsigned __int16 *)( ( char *)mode_bitsize + ( ( *( _DWORD *)v21 >> 15) & 0x1FE)) ) 
+                                        ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_float/src/optabs.c:4777:61: error: use of undeclared identifier 'machine_mode'
+emit_cmp_and_jump_insns( v21, const_int_rtx[64], GE, 0LL, ( machine_mode)*( ( unsigned __int8 *)v21 + 2), 0, v18); 
+                                                            ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_float/src/optabs.c:4781:1: error: too many arguments to function call, expected 2, have 8
+v40, 
+^~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_float/src/real.h:160:1: note: 'ereal_ldexp' declared here
+extern REAL_VALUE_TYPE ereal_ldexp PARAMS ((REAL_VALUE_TYPE, int));
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_float/src/optabs.c:4788:27: error: passing 'enum machine_mode' to parameter of incompatible type 'realvaluetype'
+v45 = immed_real_const_1( v23, v57); 
+                          ^~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_float/src/real.h:466:67: note: passing argument to parameter here
+extern struct rtx_def *immed_real_const_1       PARAMS ((REAL_VALUE_TYPE,
+                                                                        ^
+18 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_float/src/obj/optabs.o] Error 1

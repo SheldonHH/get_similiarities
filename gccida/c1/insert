@@ -1,0 +1,72 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/insert/src/cse.c:2016:82: error: must use 'enum' tag to refer to type 'machine_mode'
+ struct table_elt * insert( rtx x,  struct table_elt *classp, unsigned int hash, machine_mode mode) 
+                                                                                 ^
+                                                                                 enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/insert/src/cse.c:2051:4: error: expected ';' after expression
+rtx v41; // r14 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/insert/src/cse.c:2051:5: error: use of undeclared identifier 'v41'
+rtx v41; // r14 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/insert/src/cse.c:2059:4: error: expected ';' after expression
+rtx v49; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/insert/src/cse.c:2059:5: error: use of undeclared identifier 'v49'
+rtx v49; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/insert/src/cse.c:2072:4: error: expected ';' after expression
+rtx v63; // [rsp+10h] [rbp-48h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/insert/src/cse.c:2072:5: error: use of undeclared identifier 'v63'
+rtx v63; // [rsp+10h] [rbp-48h] 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/insert/src/cse.c:2073:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v64; // [rsp+1Ch] [rbp-3Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/insert/src/cse.c:2078:54: error: expected ')'
+if ( rtint != cached_regno || (  struct cse_reg_info = cached_cse_reg_info) == 0LL ) 
+                                                     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/insert/src/cse.c:2078:31: note: to match this '('
+if ( rtint != cached_regno || (  struct cse_reg_info = cached_cse_reg_info) == 0LL ) 
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/insert/src/cse.c:2078:77: error: expected expression
+if ( rtint != cached_regno || (  struct cse_reg_info = cached_cse_reg_info) == 0LL ) 
+                                                                            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/insert/src/cse.c:2079:2: error: expected expression
+ struct cse_reg_info = get_cse_reg_info( rtint); 
+ ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/insert/src/cse.c:2095:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v13 = ( ( unsigned int)( mode_class_0[( unsigned __int8)v12] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/insert/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/insert/src/cse.c:2138:12: error: expected expression
+*( _OWORD *)&v16->next_same_value = 0LL; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/insert/src/cse.c:2138:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&v16->next_same_value = 0LL; 
+   ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/insert/src/cse.c:2144:1: error: use of undeclared identifier 'v63'
+v63 = x; 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/insert/src/cse.c:2184:7: error: use of undeclared identifier 'v63'
+v28 = v63; 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/insert/src/cse.c:2220:7: error: use of undeclared identifier 'v63'
+v28 = v63; 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/insert/src/cse.c:2228:7: error: use of undeclared identifier 'v63'
+v28 = v63; 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/insert/src/cse.c:2251:7: error: use of undeclared identifier 'v63'
+v28 = v63; 
+      ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/insert/src/obj/cse.o] Error 1

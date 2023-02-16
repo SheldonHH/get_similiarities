@@ -1,0 +1,62 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/override_options/src/i386.c:1300:1: error: must use 'enum' tag to refer to type 'cmodel'
+cmodel v1; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/override_options/src/i386.c:1301:1: error: must use 'enum' tag to refer to type 'cmodel'
+cmodel v2; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/override_options/src/i386.c:1325:19: error: use of undeclared identifier 'cpu_names_52'
+ix86_cpu_string = cpu_names_52[12]; 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/override_options/src/i386.c:1389:37: error: use of undeclared identifier 'off_77AEB2'
+else if ( !strcmp( ix86_asm_string, off_77AEB2) ) 
+                                    ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/override_options/src/i386.c:1410:33: error: use of undeclared identifier 'processor_alias_table_51'
+if ( !strcmp( ix86_arch_string, processor_alias_table_51[i].name) ) 
+                                ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/override_options/src/i386.c:1412:13: error: use of undeclared identifier 'processor_alias_table_51'
+ix86_arch = processor_alias_table_51[i].processor; 
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/override_options/src/i386.c:1414:8: error: use of undeclared identifier 'processor_alias_table_51'
+if ( ( processor_alias_table_51[i].flags & 4) != 0 && ( target_flags & 0x8000) == 0 ) 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/override_options/src/i386.c:1420:8: error: use of undeclared identifier 'processor_alias_table_51'
+if ( ( processor_alias_table_51[i].flags & 0x10) != 0 && ( target_flags & 0x200000) == 0 ) 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/override_options/src/i386.c:1422:8: error: use of undeclared identifier 'processor_alias_table_51'
+if ( ( processor_alias_table_51[i].flags & 0x40) != 0 && ( target_flags & 0x800000) == 0 ) 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/override_options/src/i386.c:1424:8: error: use of undeclared identifier 'processor_alias_table_51'
+if ( ( processor_alias_table_51[i].flags & 1) != 0 && ( target_flags & 0x20000) == 0 ) 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/override_options/src/i386.c:1426:8: error: use of undeclared identifier 'processor_alias_table_51'
+if ( ( processor_alias_table_51[i].flags & 2) != 0 && ( target_flags & 0x80000) == 0 ) 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/override_options/src/i386.c:1428:8: error: use of undeclared identifier 'processor_alias_table_51'
+if ( ( processor_alias_table_51[i].flags & 8) != 0 ) 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/override_options/src/i386.c:1437:32: error: use of undeclared identifier 'processor_alias_table_51'
+if ( !strcmp( ix86_cpu_string, processor_alias_table_51[ia].name) ) 
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/override_options/src/i386.c:1439:12: error: use of undeclared identifier 'processor_alias_table_51'
+ix86_cpu = processor_alias_table_51[ia].processor; 
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/override_options/src/i386.c:1443:8: error: use of undeclared identifier 'processor_alias_table_51'
+if ( ( processor_alias_table_51[ia].flags & 8) != 0 ) 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/override_options/src/i386.c:1450:13: error: use of undeclared identifier 'processor_target_table_50'
+ix86_cost = processor_target_table_50[ix86_cpu].cost; 
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/override_options/src/i386.c:1451:17: error: use of undeclared identifier 'processor_target_table_50'
+target_flags |= processor_target_table_50[ix86_cpu].target_enable; 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/override_options/src/i386.c:1452:18: error: use of undeclared identifier 'processor_target_table_50'
+target_flags &= ~processor_target_table_50[ix86_cpu].target_disable; 
+                 ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/override_options/src/i386.c:1514:15: error: use of undeclared identifier 'processor_target_table_50'
+align_loops = processor_target_table_50[ix86_cpu].align_loop; 
+              ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/override_options/src/obj/i386.o] Error 1

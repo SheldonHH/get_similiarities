@@ -1,0 +1,61 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/override_options/src/i386.c:1340:18: error: expected expression
+override_options::pta_flags flags; // eax 
+                 ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/override_options/src/i386.c:1363:14: error: expected ';' at end of declaration
+void *__ptr32 *v64; // rdi 
+             ^
+             ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/override_options/src/i386.c:1608:20: error: use of undeclared identifier 'processor_alias_table_49'
+if ( !strcmp( v14, processor_alias_table_49[v15].name) ) 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/override_options/src/i386.c:1614:13: error: use of undeclared identifier 'processor_alias_table_49'
+ix86_arch = processor_alias_table_49[( int)v15].processor; 
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/override_options/src/i386.c:1616:1: error: use of undeclared identifier 'flags'
+flags = processor_alias_table_49[( int)v15].flags; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/override_options/src/i386.c:1616:9: error: use of undeclared identifier 'processor_alias_table_49'
+flags = processor_alias_table_49[( int)v15].flags; 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/override_options/src/i386.c:1617:8: error: use of undeclared identifier 'flags'
+if ( ( flags & 4) != 0 ) 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/override_options/src/i386.c:1626:8: error: use of undeclared identifier 'flags'
+if ( ( flags & 0x10) != 0 && ( target_flags & 0x200000) == 0 ) 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/override_options/src/i386.c:1628:8: error: use of undeclared identifier 'flags'
+if ( ( flags & 0x40) != 0 && ( target_flags & 0x800000) == 0 ) 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/override_options/src/i386.c:1630:8: error: use of undeclared identifier 'flags'
+if ( ( flags & 1) != 0 && ( target_flags & 0x20000) == 0 ) 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/override_options/src/i386.c:1632:8: error: use of undeclared identifier 'flags'
+if ( ( flags & 2) != 0 && ( target_flags & 0x80000) == 0 ) 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/override_options/src/i386.c:1634:8: error: use of undeclared identifier 'flags'
+if ( ( flags & 8) != 0 ) 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/override_options/src/i386.c:1644:20: error: use of undeclared identifier 'processor_alias_table_49'
+if ( !strcmp( v17, processor_alias_table_49[v18].name) ) 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/override_options/src/i386.c:1650:12: error: use of undeclared identifier 'processor_alias_table_49'
+ix86_cpu = processor_alias_table_49[( int)v18].processor; 
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/override_options/src/i386.c:1652:8: error: use of undeclared identifier 'processor_alias_table_49'
+if ( ( processor_alias_table_49[v19].flags & 8) != 0 ) 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/override_options/src/i386.c:1658:8: error: use of undeclared identifier 'processor_target_table_48'
+cost = processor_target_table_48[ix86_cpu].cost; 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/override_options/src/i386.c:1660:24: error: subscripted value is not an array, pointer, or vector
+v44 = ~*(int *)0x6634CC[10 * ix86_cpu] & ( target_flags | *(int *)0x6634C8[10 * ix86_cpu]); 
+               ~~~~~~~~^~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/override_options/src/i386.c:1660:75: error: subscripted value is not an array, pointer, or vector
+v44 = ~*(int *)0x6634CC[10 * ix86_cpu] & ( target_flags | *(int *)0x6634C8[10 * ix86_cpu]); 
+                                                                  ~~~~~~~~^~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/override_options/src/i386.c:1733:31: error: subscripted value is not an array, pointer, or vector
+align_loops = *(int *)0x6634D0[10 * ix86_cpu]; 
+                      ~~~~~~~~^~~~~~~~~~~~~~
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/override_options/src/obj/i386.o] Error 1

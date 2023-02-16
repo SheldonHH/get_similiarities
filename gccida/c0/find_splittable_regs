@@ -1,0 +1,39 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_splittable_regs/src/unroll.c:2972:54: error: must use 'enum' tag to refer to type 'unroll_types'
+int  find_splittable_regs( const  struct loop *loop, unroll_types unroll_type, int unroll_number) 
+                                                     ^
+                                                     enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_splittable_regs/src/unroll.c:2987:1: error: use of undeclared identifier 'induction_1'
+induction_1 *v; // [rsp+88h] [rbp-28h] 
+^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_splittable_regs/src/unroll.c:2987:14: error: use of undeclared identifier 'v'
+induction_1 *v; // [rsp+88h] [rbp-28h] 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_splittable_regs/src/unroll.c:3015:7: error: use of undeclared identifier 'v'
+for ( v = bl_0->biv; ; v = v->next_iv ) 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_splittable_regs/src/unroll.c:3015:24: error: use of undeclared identifier 'v'
+for ( v = bl_0->biv; ; v = v->next_iv ) 
+                       ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_splittable_regs/src/unroll.c:3015:28: error: use of undeclared identifier 'v'
+for ( v = bl_0->biv; ; v = v->next_iv ) 
+                           ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_splittable_regs/src/unroll.c:3019:7: error: use of undeclared identifier 'v'
+v10 = v != 0LL; 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_splittable_regs/src/unroll.c:3022:47: error: use of undeclared identifier 'v'
+if ( rtx_class[( unsigned __int16)*( _DWORD *)v->insn] == 105 ) 
+                                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_splittable_regs/src/unroll.c:3024:40: error: use of undeclared identifier 'v'
+if ( ( unsigned __int16)**( _DWORD **)&v->insn[2] == 47 ) 
+                                       ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_splittable_regs/src/unroll.c:3025:12: error: use of undeclared identifier 'v'
+v9 = ( rtx)v->insn[2]; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_splittable_regs/src/unroll.c:3027:39: error: use of undeclared identifier 'v'
+v9 = single_set_2( v->insn, *( rtx *)&v->insn[2]); 
+                                      ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_splittable_regs/src/unroll.c:3027:20: error: use of undeclared identifier 'v'
+v9 = single_set_2( v->insn, *( rtx *)&v->insn[2]); 
+                   ^
+12 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_splittable_regs/src/obj/unroll.o] Error 1

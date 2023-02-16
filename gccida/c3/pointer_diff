@@ -1,0 +1,48 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/pointer_diff/src/c-typeck.c:3108:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v3; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/pointer_diff/src/c-typeck.c:3110:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *orig_op0; // [rsp+10h] [rbp-70h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/pointer_diff/src/c-typeck.c:3115:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *con0; // [rsp+48h] [rbp-38h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/pointer_diff/src/c-typeck.c:3117:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *restype; // [rsp+58h] [rbp-28h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/pointer_diff/src/c-typeck.c:3119:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *result; // [rsp+68h] [rbp-18h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/pointer_diff/src/c-typeck.c:3120:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *op1a; // [rsp+70h] [rbp-10h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/pointer_diff/src/c-typeck.c:3122:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *op0a; // [rsp+78h] [rbp-8h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/pointer_diff/src/c-typeck.c:3127:24: error: expected expression
+restype = ( tree_node *)*( &global_trees + 30); 
+                       ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/pointer_diff/src/c-typeck.c:3127:13: error: use of undeclared identifier 'tree_node'
+restype = ( tree_node *)*( &global_trees + 30); 
+            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/pointer_diff/src/c-typeck.c:3140:21: error: expected expression
+con0 = ( tree_node *)low; 
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/pointer_diff/src/c-typeck.c:3140:10: error: use of undeclared identifier 'tree_node'
+con0 = ( tree_node *)low; 
+         ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/pointer_diff/src/c-typeck.c:3148:23: error: expected expression
+con0 = *( tree_node **)( low + 32); 
+                      ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/pointer_diff/src/c-typeck.c:3148:11: error: use of undeclared identifier 'tree_node'
+con0 = *( tree_node **)( low + 32); 
+          ^
+13 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/pointer_diff/src/obj/c-typeck.o] Error 1

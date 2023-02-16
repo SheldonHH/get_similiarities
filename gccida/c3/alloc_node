@@ -1,0 +1,55 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/alloc_node/src/cpphash.c:498:1: error: unknown type name 'cpp_hashnode_0'; did you mean 'cpp_hashnode'?
+cpp_hashnode_0 * alloc_node(  struct hash_table *table) 
+^~~~~~~~~~~~~~
+cpp_hashnode
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/alloc_node/src/cpplib.h:42:29: note: 'cpp_hashnode' declared here
+typedef struct cpp_hashnode cpp_hashnode;
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/alloc_node/src/cpphash.c:498:18: error: conflicting types for 'alloc_node'
+cpp_hashnode_0 * alloc_node(  struct hash_table *table) 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/alloc_node/src/cpphash.c:31:22: note: previous declaration is here
+static cpp_hashnode *alloc_node PARAMS ((hash_table *));
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/alloc_node/src/cpphash.c:500:1: error: unknown type name 'cpp_hashnode_0'; did you mean 'cpp_hashnode'?
+cpp_hashnode_0 *value; // [rsp+10h] [rbp-40h] 
+^~~~~~~~~~~~~~
+cpp_hashnode
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/alloc_node/src/cpplib.h:42:29: note: 'cpp_hashnode' declared here
+typedef struct cpp_hashnode cpp_hashnode;
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/alloc_node/src/cpphash.c:503:13: error: incomplete definition of type 'struct hash_table'
+__h = &table->pfile->hash_ob; 
+       ~~~~~^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/alloc_node/src/cpphash.c:498:38: note: forward declaration of 'struct hash_table'
+cpp_hashnode_0 * alloc_node(  struct hash_table *table) 
+                                     ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/alloc_node/src/cpphash.c:504:11: error: incomplete definition of type 'struct hash_table'
+if ( table->pfile->hash_ob.chunk_limit - table->pfile->hash_ob.next_free < 32 ) 
+     ~~~~~^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/alloc_node/src/cpphash.c:498:38: note: forward declaration of 'struct hash_table'
+cpp_hashnode_0 * alloc_node(  struct hash_table *table) 
+                                     ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/alloc_node/src/cpphash.c:504:47: error: incomplete definition of type 'struct hash_table'
+if ( table->pfile->hash_ob.chunk_limit - table->pfile->hash_ob.next_free < 32 ) 
+                                         ~~~~~^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/alloc_node/src/cpphash.c:498:38: note: forward declaration of 'struct hash_table'
+cpp_hashnode_0 * alloc_node(  struct hash_table *table) 
+                                     ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/alloc_node/src/cpphash.c:507:27: error: expected expression
+value = ( cpp_hashnode_0 *)__h->object_base; 
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/alloc_node/src/cpphash.c:507:11: error: use of undeclared identifier 'cpp_hashnode_0'
+value = ( cpp_hashnode_0 *)__h->object_base; 
+          ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/alloc_node/src/cpphash.c:508:24: error: expected expression
+if ( ( cpp_hashnode_0 *)__h->next_free == value ) 
+                       ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/alloc_node/src/cpphash.c:508:8: error: use of undeclared identifier 'cpp_hashnode_0'
+if ( ( cpp_hashnode_0 *)__h->next_free == value ) 
+       ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/alloc_node/src/cpphash.c:514:27: error: use of undeclared identifier 'cpp_hashnode_0'
+memset( value, 0, sizeof( cpp_hashnode_0)); 
+                          ^
+11 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/alloc_node/src/obj/cpphash.o] Error 1

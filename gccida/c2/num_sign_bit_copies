@@ -1,0 +1,82 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/num_sign_bit_copies/src/combine.c:8858:43: error: must use 'enum' tag to refer to type 'machine_mode'
+unsigned int  num_sign_bit_copies( rtx x, machine_mode mode) 
+                                          ^
+                                          enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/num_sign_bit_copies/src/combine.c:8863:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v5; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/num_sign_bit_copies/src/combine.c:8877:4: error: expected ';' after expression
+rtx last_value; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/num_sign_bit_copies/src/combine.c:8877:5: error: use of undeclared identifier 'last_value'
+rtx last_value; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/num_sign_bit_copies/src/combine.c:8942:7: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v10 = mode_class_0[( int)v2]; 
+      ^~~~~~~~~~~~
+      mode_class
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/num_sign_bit_copies/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/num_sign_bit_copies/src/combine.c:8945:7: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v11 = mode_class_0[v5]; 
+      ^~~~~~~~~~~~
+      mode_class
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/num_sign_bit_copies/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/num_sign_bit_copies/src/combine.c:9006:1: error: use of undeclared identifier 'last_value'
+last_value = get_last_value( v7); 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/num_sign_bit_copies/src/combine.c:9007:6: error: use of undeclared identifier 'last_value'; did you mean '_hex_value'?
+if ( last_value ) 
+     ^~~~~~~~~~
+     _hex_value
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/num_sign_bit_copies/src/libiberty.h:251:19: note: '_hex_value' declared here
+extern const char _hex_value[_hex_array_size];
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/num_sign_bit_copies/src/combine.c:9010:18: error: use of undeclared identifier 'last_value'
+v3 = *( _DWORD *)last_value; 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/num_sign_bit_copies/src/combine.c:9011:43: error: use of undeclared identifier 'last_value'
+v5 = ( unsigned __int8)BYTE2( *( _DWORD *)last_value); 
+                                          ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/num_sign_bit_copies/src/combine.c:9013:53: error: use of undeclared identifier 'last_value'
+LODWORD( v2) = ( unsigned __int8)BYTE2( *( _DWORD *)last_value); 
+                                                    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/num_sign_bit_copies/src/combine.c:9014:6: error: use of undeclared identifier 'last_value'; did you mean '_hex_value'?
+v7 = last_value; 
+     ^~~~~~~~~~
+     _hex_value
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/num_sign_bit_copies/src/libiberty.h:251:19: note: '_hex_value' declared here
+extern const char _hex_value[_hex_array_size];
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/num_sign_bit_copies/src/combine.c:9025:32: error: use of undeclared identifier 'machine_mode'
+|| ( v65 = nonzero_bits( v7, ( machine_mode)v2), _bittest64( &v65, ( unsigned __int8)( v12 - 1))) ) 
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/num_sign_bit_copies/src/combine.c:9042:35: error: use of undeclared identifier 'machine_mode'
+v23 = num_sign_bit_copies( v38, ( machine_mode)v2); 
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/num_sign_bit_copies/src/combine.c:9057:36: error: expected expression
+v27 = num_sign_bit_copies( *( rtx *)&v7[1], ( machine_mode)v2); 
+                                   ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/num_sign_bit_copies/src/combine.c:9057:47: error: use of undeclared identifier 'machine_mode'
+v27 = num_sign_bit_copies( *( rtx *)&v7[1], ( machine_mode)v2); 
+                                              ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/num_sign_bit_copies/src/combine.c:9064:10: error: expected ')'
+|| ( rtx)v7[1] != const_int_rtx[63] 
+         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/num_sign_bit_copies/src/combine.c:9062:4: note: to match this '('
+if ( ( _WORD)v3 != 75 
+   ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/num_sign_bit_copies/src/combine.c:9068:46: error: use of undeclared identifier 'machine_mode'
+v30 = num_sign_bit_copies( v7->fld[0].rtx, ( machine_mode)v2); 
+                                             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/num_sign_bit_copies/src/combine.c:9069:36: error: expected expression
+v31 = num_sign_bit_copies( *( rtx *)&v7[1], ( machine_mode)v2); 
+                                   ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/num_sign_bit_copies/src/obj/combine.o] Error 1

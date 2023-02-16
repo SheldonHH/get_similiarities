@@ -1,0 +1,27 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/memory_address/src/explow.c:931:22: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  memory_address( machine_mode mode, rtx x) 
+                     ^
+                     enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/memory_address/src/explow.c:934:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v4; // edx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/memory_address/src/explow.c:937:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v7; // edx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/memory_address/src/explow.c:940:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode modea; // [rsp+Ch] [rbp-34h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/memory_address/src/explow.c:972:31: error: use of undeclared identifier 'machine_mode'
+if ( !legitimate_address_p( ( machine_mode)xa, xa, v9) ) 
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/memory_address/src/explow.c:980:38: error: use of undeclared identifier 'machine_mode'
+xa = legitimize_address( v2, oldx, ( machine_mode)xa); 
+                                     ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/memory_address/src/explow.c:991:29: error: use of undeclared identifier 'machine_mode'
+y = gen_rtx_fmt_ee( PLUS, ( machine_mode)*( ( unsigned __int8 *)xa + 2), v6, v5), 
+                            ^
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/memory_address/src/obj/explow.o] Error 1

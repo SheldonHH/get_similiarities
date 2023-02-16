@@ -1,0 +1,78 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/verify_flow_info/src/cfgrtl.c:2110:4: error: expected ';' after expression
+rtx v38; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/verify_flow_info/src/cfgrtl.c:2110:5: error: use of undeclared identifier 'v38'
+rtx v38; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/verify_flow_info/src/cfgrtl.c:2123:4: error: expected ';' after expression
+rtx insns; // [rsp+10h] [rbp-48h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/verify_flow_info/src/cfgrtl.c:2123:5: error: use of undeclared identifier 'insns'
+rtx insns; // [rsp+10h] [rbp-48h] 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/verify_flow_info/src/cfgrtl.c:2129:1: error: use of undeclared identifier 'insns'
+insns = get_insns( ); 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/verify_flow_info/src/cfgrtl.c:2145:19: error: expected ';' after expression
+last_insn = ( rtx)last_insn[1]; 
+                  ^
+                  ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/verify_flow_info/src/cfgrtl.c:2172:19: error: expected ';' after expression
+last_insn = ( rtx)last_insn[1]; 
+                  ^
+                  ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/verify_flow_info/src/cfgrtl.c:2230:53: error: too many arguments provided to function-like macro invocation
+fatal_insn( "wrong insn in the fallthru edge", end, "cfgrtl.c", 1717, "verify_flow_info"); 
+                                                    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/verify_flow_info/src/toplev.h:50:9: note: macro 'fatal_insn' defined here
+#define fatal_insn(msgid, insn) \
+        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/verify_flow_info/src/cfgrtl.c:2230:1: error: use of undeclared identifier 'fatal_insn'; did you mean '_fatal_insn'?
+fatal_insn( "wrong insn in the fallthru edge", end, "cfgrtl.c", 1717, "verify_flow_info"); 
+^~~~~~~~~~
+_fatal_insn
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/verify_flow_info/src/toplev.h:44:13: note: '_fatal_insn' declared here
+extern void _fatal_insn                 PARAMS ((const char *,
+            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/verify_flow_info/src/cfgrtl.c:2260:27: error: use of undeclared identifier 'insns'
+v6 = ( unsigned __int16 *)insns; 
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/verify_flow_info/src/cfgrtl.c:2266:27: error: use of undeclared identifier 'insns'
+v6 = ( unsigned __int16 *)insns; 
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/verify_flow_info/src/cfgrtl.c:2296:13: error: invalid operands to binary expression ('uint64' (aka 'unsigned long long') and 'struct edge_def *')
+v2[v36 + 2] -= j; 
+~~~~~~~~~~~ ^  ~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/verify_flow_info/src/cfgrtl.c:2300:1: error: use of undeclared identifier 'v38'
+v38 = v20->end; 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/verify_flow_info/src/cfgrtl.c:2301:11: error: use of undeclared identifier 'v38'
+if ( k == v38[1].fld[0].rtx ) 
+          ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/verify_flow_info/src/cfgrtl.c:2319:6: error: use of undeclared identifier 'v38'
+if ( v38 == ( rtx)v42 ) 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/verify_flow_info/src/cfgrtl.c:2352:66: error: too many arguments provided to function-like macro invocation
+fatal_insn( "flow control insn inside a basic block", ( rtx)v42, "cfgrtl.c", 1829, "verify_flow_info"); 
+                                                                 ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/verify_flow_info/src/toplev.h:50:9: note: macro 'fatal_insn' defined here
+#define fatal_insn(msgid, insn) \
+        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/verify_flow_info/src/cfgrtl.c:2352:1: error: use of undeclared identifier 'fatal_insn'; did you mean '_fatal_insn'?
+fatal_insn( "flow control insn inside a basic block", ( rtx)v42, "cfgrtl.c", 1829, "verify_flow_info"); 
+^~~~~~~~~~
+_fatal_insn
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/verify_flow_info/src/toplev.h:44:13: note: '_fatal_insn' declared here
+extern void _fatal_insn                 PARAMS ((const char *,
+            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/verify_flow_info/src/cfgrtl.c:2362:27: error: use of undeclared identifier 'insns'
+v6 = ( unsigned __int16 *)insns; 
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/verify_flow_info/src/cfgrtl.c:2372:13: error: invalid operands to binary expression ('uint64' (aka 'unsigned long long') and 'edge' (aka 'struct edge_def *'))
+v2[v10 + 2] -= n; 
+~~~~~~~~~~~ ^  ~
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/verify_flow_info/src/obj/cfgrtl.o] Error 1

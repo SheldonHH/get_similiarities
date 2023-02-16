@@ -1,0 +1,31 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/reg_is_born/src/local-alloc.c:2546:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v9; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/reg_is_born/src/local-alloc.c:2574:7: error: use of undeclared identifier 'next_qty_0'; did you mean 'next_qty'?
+v10 = next_qty_0++; 
+      ^~~~~~~~~~
+      next_qty
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/reg_is_born/src/local-alloc.c:81:12: note: 'next_qty' declared here
+static int next_qty;
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/reg_is_born/src/local-alloc.c:2579:8: error: use of undeclared identifier 'qty_0'
+v12 = &qty_0[v11]; 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/reg_is_born/src/local-alloc.c:2587:8: error: use of undeclared identifier 'qty_0'
+v14 = &qty_0[v11]; 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/reg_is_born/src/local-alloc.c:2589:8: error: use of undeclared identifier 'qty_0'
+v15 = &qty_0[v11]; 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/reg_is_born/src/local-alloc.c:2596:1: error: use of undeclared identifier 'qty_0'
+qty_0[v6].death = -1; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/reg_is_born/src/local-alloc.c:2599:21: error: use of undeclared identifier 'machine_mode'
+mark_life( rtint, ( machine_mode)*( ( unsigned __int8 *)reg + 2), 1); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/reg_is_born/src/local-alloc.c:2601:26: error: use of undeclared identifier 'machine_mode'
+post_mark_life( rtint, ( machine_mode)*( ( unsigned __int8 *)reg + 2), 1, birth, 2 * this_insn_number); 
+                         ^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/reg_is_born/src/obj/local-alloc.o] Error 1

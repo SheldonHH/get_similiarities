@@ -1,0 +1,67 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_base_value/src/alias.c:1202:4: error: expected ';' after expression
+rtx v5; // rbp 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_base_value/src/alias.c:1202:5: error: use of undeclared identifier 'v5'
+rtx v5; // rbp 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_base_value/src/alias.c:1206:4: error: expected ';' after expression
+rtx base_value; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_base_value/src/alias.c:1206:5: error: use of undeclared identifier 'base_value'
+rtx base_value; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_base_value/src/alias.c:1207:4: error: expected ';' after expression
+rtx v10; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_base_value/src/alias.c:1207:5: error: use of undeclared identifier 'v10'; did you mean 'v1'?
+rtx v10; // rax 
+    ^~~
+    v1
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_base_value/src/alias.c:1199:5: note: 'v1' declared here
+rtx v1; // rbx 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_base_value/src/alias.c:1254:1: error: use of undeclared identifier 'v5'
+v5 = ( rtx)src[1]; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_base_value/src/alias.c:1257:20: error: use of undeclared identifier 'v5'
+if ( ( *( _DWORD *)v5 & 0x8000FFFF) == -2147483587 ) 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_base_value/src/alias.c:1258:33: error: expected expression
+return find_base_value( *( rtx *)&src[1]); 
+                                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_base_value/src/alias.c:1261:1: error: use of undeclared identifier 'base_value'
+base_value = find_base_value( src->fld[0].rtx); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_base_value/src/alias.c:1262:6: error: use of undeclared identifier 'base_value'
+if ( base_value ) 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_base_value/src/alias.c:1263:6: error: use of undeclared identifier 'base_value'
+v1 = base_value; 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_base_value/src/alias.c:1265:17: error: use of undeclared identifier 'v5'
+if ( *( _WORD *)v5 == 61 ) 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_base_value/src/alias.c:1267:24: error: use of undeclared identifier 'v5'
+v10 = find_base_value( v5); 
+                       ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_base_value/src/alias.c:1267:1: error: use of undeclared identifier 'v10'
+v10 = find_base_value( v5); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_base_value/src/alias.c:1268:6: error: use of undeclared identifier 'v10'
+if ( v10 ) 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_base_value/src/alias.c:1269:1: error: use of undeclared identifier 'v5'
+v5 = v10; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_base_value/src/alias.c:1269:6: error: use of undeclared identifier 'v10'
+v5 = v10; 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_base_value/src/alias.c:1275:7: error: use of undeclared identifier 'v5'
+if ( !v5 ) 
+      ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_base_value/src/obj/alias.o] Error 1

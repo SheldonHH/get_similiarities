@@ -1,0 +1,98 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_binary_operation/src/simplify-rtx.c:1335:33: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx  simplify_binary_operation( rtx_code code, machine_mode mode, rtx op0, rtx op1) 
+                                ^
+                                enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_binary_operation/src/simplify-rtx.c:1335:48: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  simplify_binary_operation( rtx_code code, machine_mode mode, rtx op0, rtx op1) 
+                                               ^
+                                               enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_binary_operation/src/simplify-rtx.c:1358:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v25; // [rsp+8Ch] [rbp-214h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_binary_operation/src/simplify-rtx.c:1360:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v27; // [rsp+ACh] [rbp-1F4h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_binary_operation/src/simplify-rtx.c:1395:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode modea; // [rsp+290h] [rbp-10h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_binary_operation/src/simplify-rtx.c:1396:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code codea; // [rsp+294h] [rbp-Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_binary_operation/src/simplify-rtx.c:1408:32: error: use of undeclared identifier 'QTextBlock'
+if ( rtx_class[codea] == 99 && QTextBlock::operator<( trueop0, trueop1) ) 
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_binary_operation/src/simplify-rtx.c:1417:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[modea] == MODE_FLOAT 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_binary_operation/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_binary_operation/src/simplify-rtx.c:1432:11: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+else if ( mode_class_0[modea] == MODE_INT 
+          ^~~~~~~~~~~~
+          mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_binary_operation/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_binary_operation/src/simplify-rtx.c:1439:25: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+l1 = ( unsigned __int64)trueop0[1]; 
+                        ^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_binary_operation/src/simplify-rtx.c:1452:25: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+l2 = ( unsigned __int64)trueop1[1]; 
+                        ^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_binary_operation/src/simplify-rtx.c:1718:12: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+if ( ( rtx)op0a[1] != const_int_rtx[64] ) 
+           ^~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_binary_operation/src/simplify-rtx.c:1720:12: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+if ( ( rtx)op1a[1] != const_int_rtx[64] ) 
+           ^~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_binary_operation/src/simplify-rtx.c:1728:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| mode_class_0[( unsigned __int8)BYTE2( *( _DWORD *)xop00)] != MODE_CC 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_binary_operation/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_binary_operation/src/simplify-rtx.c:1729:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| mode_class_0[( unsigned __int8)BYTE2( *( _DWORD *)xop10)] != MODE_CC ) 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_binary_operation/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_binary_operation/src/simplify-rtx.c:1735:8: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( ( mode_class_0[modea] == MODE_FLOAT 
+       ^~~~~~~~~~~~
+       mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_binary_operation/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_binary_operation/src/simplify-rtx.c:1736:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| mode_class_0[modea] == MODE_COMPLEX_FLOAT 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_binary_operation/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_binary_operation/src/simplify-rtx.c:1737:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| mode_class_0[modea] == MODE_VECTOR_FLOAT) 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_binary_operation/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_binary_operation/src/simplify-rtx.c:1748:8: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( ( mode_class_0[modea] == MODE_INT 
+       ^~~~~~~~~~~~
+       mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_binary_operation/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_binary_operation/src/obj/simplify-rtx.o] Error 1

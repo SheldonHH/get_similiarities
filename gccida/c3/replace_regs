@@ -1,0 +1,36 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/replace_regs/src/rtlanal.c:2972:4: error: expected ';' after expression
+rtx v16; // rsi 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/replace_regs/src/rtlanal.c:2972:5: error: use of undeclared identifier 'v16'
+rtx v16; // rsi 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/replace_regs/src/rtlanal.c:2992:44: error: expected expression
+*( _QWORD *)&v7[1] = replace_regs( *( rtx *)&v7[1], reg_map, nregs, 0); 
+                                           ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/replace_regs/src/rtlanal.c:3017:51: error: expected expression
+*( ( _QWORD *)v7 + v18) = replace_regs( *( ( rtx *)v7 + v18), reg_map, nregs, replace_dest); 
+                                                  ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/replace_regs/src/rtlanal.c:3028:9: error: expected expression
+*( rtx *)&v21[2 * v22 + 2], 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/replace_regs/src/rtlanal.c:3070:1: error: use of undeclared identifier 'v16'
+v16 = reg_map[v15]; 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/replace_regs/src/rtlanal.c:3071:25: error: use of undeclared identifier 'v16'
+if ( !v16 || *( _WORD *)v16 != 63 ) 
+                        ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/replace_regs/src/rtlanal.c:3071:7: error: use of undeclared identifier 'v16'
+if ( !v16 || *( _WORD *)v16 != 63 ) 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/replace_regs/src/rtlanal.c:3073:31: error: use of undeclared identifier 'machine_mode'
+return simplify_gen_subreg( ( machine_mode)BYTE2( v8), v16, ( machine_mode)BYTE2( v14), *( _DWORD *)&x[1]); 
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/replace_regs/src/rtlanal.c:3073:63: error: use of undeclared identifier 'machine_mode'
+return simplify_gen_subreg( ( machine_mode)BYTE2( v8), v16, ( machine_mode)BYTE2( v14), *( _DWORD *)&x[1]); 
+                                                              ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/replace_regs/src/rtlanal.c:3073:56: error: use of undeclared identifier 'v16'
+return simplify_gen_subreg( ( machine_mode)BYTE2( v8), v16, ( machine_mode)BYTE2( v14), *( _DWORD *)&x[1]); 
+                                                       ^
+11 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/replace_regs/src/obj/rtlanal.o] Error 1

@@ -1,0 +1,32 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/precondition_loop_p/src/unroll.c:1864:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode *mode) 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/precondition_loop_p/src/unroll.c:1899:20: error: invalid suffix 'xmode' on integer constant
+*mode = *(short *)0xmode; 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/precondition_loop_p/src/unroll.c:1998:15: error: must use 'enum' tag to refer to type 'mode_class'
+if ( *( const mode_class *)( ( char *)mode_class_0 + ( ( **( ( _DWORD **)aux + 6) >> 14) & 0x3FC)) == MODE_FLOAT 
+              ^
+              enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/precondition_loop_p/src/machmode.h:52:30: note: enum 'mode_class' is hidden by a non-type declaration of 'mode_class' here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/precondition_loop_p/src/unroll.c:1998:39: error: use of undeclared identifier 'mode_class_0'
+if ( *( const mode_class *)( ( char *)mode_class_0 + ( ( **( ( _DWORD **)aux + 6) >> 14) & 0x3FC)) == MODE_FLOAT 
+                                      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/precondition_loop_p/src/unroll.c:2000:10: error: must use 'enum' tag to refer to type 'mode_class'
+*( const mode_class *)( ( char *)mode_class_0 + ( ( *( _DWORD *)v15 >> 14) & 0x3FC)) == MODE_FLOAT) ) 
+         ^
+         enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/precondition_loop_p/src/machmode.h:52:30: note: enum 'mode_class' is hidden by a non-type declaration of 'mode_class' here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/precondition_loop_p/src/unroll.c:2000:34: error: use of undeclared identifier 'mode_class_0'
+*( const mode_class *)( ( char *)mode_class_0 + ( ( *( _DWORD *)v15 >> 14) & 0x3FC)) == MODE_FLOAT) ) 
+                                 ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/precondition_loop_p/src/unroll.c:2043:20: error: invalid suffix 'xmode' on integer constant
+*mode = *(short *)0xmode; 
+                   ^
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/precondition_loop_p/src/obj/unroll.o] Error 1

@@ -1,0 +1,36 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/builtin_macro/src/cppmacro.c:598:21: error: unknown type name 'cpp_reader_0'; did you mean 'cpp_reader'?
+int  builtin_macro( cpp_reader_0 *pfile, cpp_hashnode_0 *node) 
+                    ^~~~~~~~~~~~
+                    cpp_reader
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/builtin_macro/src/cpplib.h:36:27: note: 'cpp_reader' declared here
+typedef struct cpp_reader cpp_reader;
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/builtin_macro/src/cppmacro.c:598:42: error: unknown type name 'cpp_hashnode_0'; did you mean 'cpp_hashnode'?
+int  builtin_macro( cpp_reader_0 *pfile, cpp_hashnode_0 *node) 
+                                         ^~~~~~~~~~~~~~
+                                         cpp_hashnode
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/builtin_macro/src/cpplib.h:42:29: note: 'cpp_hashnode' declared here
+typedef struct cpp_hashnode cpp_hashnode;
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/builtin_macro/src/cppmacro.c:604:1: error: unknown type name 'cpp_token_0'; did you mean 'cpp_token'?
+cpp_token_0 *p_time; // rdx 
+^~~~~~~~~~~
+cpp_token
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/builtin_macro/src/cpplib.h:40:26: note: 'cpp_token' declared here
+typedef struct cpp_token cpp_token;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/builtin_macro/src/cppmacro.c:613:7: error: unknown type name 'cpp_token_0'; did you mean 'cpp_token'?
+const cpp_token_0 *v15; // rax 
+      ^~~~~~~~~~~
+      cpp_token
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/builtin_macro/src/cpplib.h:40:26: note: 'cpp_token' declared here
+typedef struct cpp_token cpp_token;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/builtin_macro/src/cppmacro.c:691:25: error: expected expression
+p_time = ( cpp_token_0 *)v15; 
+                        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/builtin_macro/src/cppmacro.c:691:12: error: use of undeclared identifier 'cpp_token_0'
+p_time = ( cpp_token_0 *)v15; 
+           ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/builtin_macro/src/obj/cppmacro.o] Error 1

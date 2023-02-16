@@ -1,0 +1,96 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_dummy_reload/src/reload.c:2296:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode inmode, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_dummy_reload/src/reload.c:2297:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode outmode, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_dummy_reload/src/reload.c:2298:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class classa, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_dummy_reload/src/reload.c:2325:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class classb; // [rsp+80h] [rbp+10h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_dummy_reload/src/reload.c:2346:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( unsigned __int8 *)( out->fld[0].rtwint + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_dummy_reload/src/reload.c:2348:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)out + 2)); 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_dummy_reload/src/reload.c:2356:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( unsigned __int8 *)( in->fld[0].rtwint + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_dummy_reload/src/reload.c:2358:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)in + 2)); 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_dummy_reload/src/reload.c:2398:11: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+else if ( mode_class_0[outmode] == MODE_COMPLEX_INT || mode_class_0[outmode] == MODE_COMPLEX_FLOAT ) 
+          ^~~~~~~~~~~~
+          mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_dummy_reload/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_dummy_reload/src/reload.c:2398:56: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+else if ( mode_class_0[outmode] == MODE_COMPLEX_INT || mode_class_0[outmode] == MODE_COMPLEX_FLOAT ) 
+                                                       ^~~~~~~~~~~~
+                                                       mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_dummy_reload/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_dummy_reload/src/reload.c:2411:68: error: use of undeclared identifier 'this_insn_1'; did you mean 'this_insn'?
+&& !refers_to_regno_for_reload_p( regno, regno + nwords, *( rtx *)&this_insn_1[2], outloc) ) 
+                                                                   ^~~~~~~~~~~
+                                                                   this_insn
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_dummy_reload/src/reload.c:181:12: note: 'this_insn' declared here
+static rtx this_insn;
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_dummy_reload/src/reload.c:2432:31: error: use of undeclared identifier 'this_insn_1'; did you mean 'this_insn'?
+&& ( !value || find_reg_note( this_insn_1, REG_UNUSED, real_out)) 
+                              ^~~~~~~~~~~
+                              this_insn
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_dummy_reload/src/reload.c:181:12: note: 'this_insn' declared here
+static rtx this_insn;
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_dummy_reload/src/reload.c:2433:19: error: use of undeclared identifier 'this_insn_1'; did you mean 'this_insn'?
+&& find_reg_note( this_insn_1, REG_DEAD, real_in) 
+                  ^~~~~~~~~~~
+                  this_insn
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_dummy_reload/src/reload.c:181:12: note: 'this_insn' declared here
+static rtx this_insn;
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_dummy_reload/src/reload.c:2437:51: error: use of undeclared identifier 'machine_mode'
+if ( ix86_hard_regno_mode_ok( in->fld[0].rtint, ( machine_mode)v16) ) 
+                                                  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_dummy_reload/src/reload.c:2473:11: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+else if ( mode_class_0[inmode] == MODE_COMPLEX_INT || mode_class_0[inmode] == MODE_COMPLEX_FLOAT ) 
+          ^~~~~~~~~~~~
+          mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_dummy_reload/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_dummy_reload/src/reload.c:2473:55: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+else if ( mode_class_0[inmode] == MODE_COMPLEX_INT || mode_class_0[inmode] == MODE_COMPLEX_FLOAT ) 
+                                                      ^~~~~~~~~~~~
+                                                      mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_dummy_reload/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_dummy_reload/src/reload.c:2483:65: error: use of undeclared identifier 'this_insn_1'; did you mean 'this_insn'?
+&& !hard_reg_set_here_p( regno_0, nwords_0 + regno_0, *( rtx *)&this_insn_1[2]) 
+                                                                ^~~~~~~~~~~
+                                                                this_insn
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_dummy_reload/src/reload.c:181:12: note: 'this_insn' declared here
+static rtx this_insn;
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_dummy_reload/src/reload.c:2484:93: error: use of undeclared identifier 'this_insn_1'; did you mean 'this_insn'?
+&& ( !earlyclobber || !refers_to_regno_for_reload_p( regno_0, regno_0 + nwords_0, *( rtx *)&this_insn_1[2], inloc)) ) 
+                                                                                            ^~~~~~~~~~~
+                                                                                            this_insn
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_dummy_reload/src/reload.c:181:12: note: 'this_insn' declared here
+static rtx this_insn;
+           ^
+18 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_dummy_reload/src/obj/reload.o] Error 1

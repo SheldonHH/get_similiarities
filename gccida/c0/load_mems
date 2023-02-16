@@ -1,0 +1,72 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/load_mems/src/loop.c:10059:1: error: unknown type name 'rtx_pair_0'; did you mean 'rtx_pair'?
+rtx_pair_0 rr; // [rsp+60h] [rbp-140h] BYREF 
+^~~~~~~~~~
+rtx_pair
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/load_mems/src/loop.c:368:3: note: 'rtx_pair' declared here
+} rtx_pair;
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/load_mems/src/loop.c:10061:20: error: expected identifier or '('
+unsigned __int64 *(short *)0x_0; // [rsp+78h] [rbp-128h] 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/load_mems/src/loop.c:10061:20: error: expected ')'
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/load_mems/src/loop.c:10061:19: note: to match this '('
+unsigned __int64 *(short *)0x_0; // [rsp+78h] [rbp-128h] 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/load_mems/src/loop.c:10062:16: error: expected identifier or '('
+unsigned int *(short *)0xnum__0; // [rsp+84h] [rbp-11Ch] 
+               ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/load_mems/src/loop.c:10062:16: error: expected ')'
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/load_mems/src/loop.c:10062:15: note: to match this '('
+unsigned int *(short *)0xnum__0; // [rsp+84h] [rbp-11Ch] 
+              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/load_mems/src/loop.c:10067:20: error: expected identifier or '('
+unsigned __int64 *(short *)0x; // [rsp+A0h] [rbp-100h] 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/load_mems/src/loop.c:10067:20: error: expected ')'
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/load_mems/src/loop.c:10067:19: note: to match this '('
+unsigned __int64 *(short *)0x; // [rsp+A0h] [rbp-100h] 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/load_mems/src/loop.c:10068:16: error: expected identifier or '('
+unsigned int *(short *)0xnum_; // [rsp+ACh] [rbp-F4h] 
+               ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/load_mems/src/loop.c:10068:16: error: expected ')'
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/load_mems/src/loop.c:10068:15: note: to match this '('
+unsigned int *(short *)0xnum_; // [rsp+ACh] [rbp-F4h] 
+              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/load_mems/src/loop.c:10100:19: error: expected identifier or '('
+ struct loop_info = (  struct loop_info *)loop->aux; 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/load_mems/src/loop.c:10118:10: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+|| ( rtx)p[4] == loopa->top && *( rtx *)( p[1].fld[0].rtwint + 24) == loopa->end && any_uncondjump_p( p) ) 
+         ^~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/load_mems/src/loop.c:10127:12: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+if ( ( rtx)p[4] != end_label ) 
+           ^~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/load_mems/src/loop.c:10149:37: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( p = loopa->start; ; p = ( rtx)p[1] ) 
+                                    ^~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/load_mems/src/loop.c:10152:1: error: statement requires expression of scalar type ('struct rtx_def' invalid)
+if ( p[1] ) 
+^    ~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/load_mems/src/loop.c:10170:86: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( mem_list_entry = loop_info->store_mems; mem_list_entry; mem_list_entry = ( rtx)mem_list_entry[1] ) 
+                                                                                     ^~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/load_mems/src/loop.c:10182:37: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( flag_float_store && written && mode_class_0[( unsigned __int8)BYTE2( *( _DWORD *)mem)] == MODE_FLOAT ) 
+                                    ^~~~~~~~~~~~
+                                    mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/load_mems/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/load_mems/src/loop.c:10201:22: error: use of undeclared identifier 'machine_mode'
+reg = gen_reg_rtx( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)mem)); 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/load_mems/src/loop.c:10201:37: error: expected expression
+reg = gen_reg_rtx( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)mem)); 
+                                    ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/load_mems/src/loop.c:10210:26: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v8 = (  struct rtx_def *)p[2]; 
+                         ^~~~
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/load_mems/src/obj/loop.o] Error 1

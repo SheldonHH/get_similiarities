@@ -1,0 +1,37 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/undo_all/src/combine.c:3323:9: error: use of undeclared identifier 'undobuf_0'; did you mean 'undobuf'?
+undos = undobuf_0.undos; 
+        ^~~~~~~~~
+        undobuf
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/undo_all/src/combine.c:334:23: note: 'undobuf' declared here
+static struct undobuf undobuf;
+                      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/undo_all/src/combine.c:3324:6: error: use of undeclared identifier 'undobuf_0'; did you mean 'undobuf'?
+if ( undobuf_0.undos ) 
+     ^~~~~~~~~
+     undobuf
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/undo_all/src/combine.c:334:23: note: 'undobuf' declared here
+static struct undobuf undobuf;
+                      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/undo_all/src/combine.c:3333:15: error: use of undeclared identifier 'undobuf_0'; did you mean 'undobuf'?
+undos->next = undobuf_0.frees; 
+              ^~~~~~~~~
+              undobuf
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/undo_all/src/combine.c:334:23: note: 'undobuf' declared here
+static struct undobuf undobuf;
+                      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/undo_all/src/combine.c:3334:1: error: use of undeclared identifier 'undobuf_0'; did you mean 'undobuf'?
+undobuf_0.frees = undos; 
+^~~~~~~~~
+undobuf
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/undo_all/src/combine.c:334:23: note: 'undobuf' declared here
+static struct undobuf undobuf;
+                      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/undo_all/src/combine.c:3339:1: error: use of undeclared identifier 'undobuf_0'; did you mean 'undobuf'?
+undobuf_0.undos = 0LL; 
+^~~~~~~~~
+undobuf
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/undo_all/src/combine.c:334:23: note: 'undobuf' declared here
+static struct undobuf undobuf;
+                      ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/undo_all/src/obj/combine.o] Error 1

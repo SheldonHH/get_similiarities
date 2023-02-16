@@ -1,0 +1,78 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_reload_insns/src/reload1.c:7654:35: error: must use 'enum' tag to refer to type 'mode_class'
+v21 = ( ( unsigned int)( *( const mode_class *)( ( char *)mode_class_0 + ( ( *( _DWORD *)*v94 >> 14) & 0x3FC)) - 5) < 2) 
+                                  ^
+                                  enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_reload_insns/src/machmode.h:52:30: note: enum 'mode_class' is hidden by a non-type declaration of 'mode_class' here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_reload_insns/src/reload1.c:7654:59: error: use of undeclared identifier 'mode_class_0'
+v21 = ( ( unsigned int)( *( const mode_class *)( ( char *)mode_class_0 + ( ( *( _DWORD *)*v94 >> 14) & 0x3FC)) - 5) < 2) 
+                                                          ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_reload_insns/src/reload1.c:7684:85: error: expected expression
+v25 = reload_reg_reaches_end_p( v22, *( _DWORD *)( v16 + 10314264), *( reload_type *)( v16 + 10314284)); 
+                                                                                    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_reload_insns/src/reload1.c:7684:72: error: use of undeclared identifier 'reload_type'; did you mean 'reload_order'?
+v25 = reload_reg_reaches_end_p( v22, *( _DWORD *)( v16 + 10314264), *( reload_type *)( v16 + 10314284)); 
+                                                                       ^~~~~~~~~~~
+                                                                       reload_order
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_reload_insns/src/reload1.c:1652:14: note: 'reload_order' declared here
+static short reload_order[MAX_RELOADS];
+             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_reload_insns/src/reload1.c:7702:84: error: expected expression
+if ( reload_reg_reaches_end_p( v38, *( _DWORD *)( v96 + 10314264), *( reload_type *)( v96 + 10314284)) ) 
+                                                                                   ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_reload_insns/src/reload1.c:7702:71: error: use of undeclared identifier 'reload_type'; did you mean 'reload_order'?
+if ( reload_reg_reaches_end_p( v38, *( _DWORD *)( v96 + 10314264), *( reload_type *)( v96 + 10314284)) ) 
+                                                                      ^~~~~~~~~~~
+                                                                      reload_order
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_reload_insns/src/reload1.c:1652:14: note: 'reload_order' declared here
+static short reload_order[MAX_RELOADS];
+             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_reload_insns/src/reload1.c:7765:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v52 = ( ( unsigned int)( mode_class_0[v53] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_reload_insns/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_reload_insns/src/reload1.c:7859:13: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v54 = ( rtx)insn[2]; 
+            ^~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_reload_insns/src/reload1.c:7869:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v41 = (  struct rtx_def *)v54[1]; 
+                          ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_reload_insns/src/reload1.c:7911:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v57 = ( ( unsigned int)( mode_class_0[v56] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_reload_insns/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_reload_insns/src/reload1.c:7943:17: error: use of undeclared identifier 'unk_9CF8CC'
+v81 = ( char *)&unk_9CF8CC + 4 * v80; 
+                ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_reload_insns/src/reload1.c:7953:23: error: subscripted value is not an array, pointer, or vector
+*(long long *)0x9CF6F8[v83 + v82] = ( __int64)v42; 
+              ~~~~~~~~^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_reload_insns/src/reload1.c:7954:23: error: subscripted value is not an array, pointer, or vector
+*(long long *)0x9D09A8[v83 + v82] = ( __int64)v35; 
+              ~~~~~~~~^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_reload_insns/src/reload1.c:7956:23: error: subscripted value is not an array, pointer, or vector
+*(long long *)0x9CF9B8[v83 + v82] = ( __int64)v42; 
+              ~~~~~~~~^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_reload_insns/src/reload1.c:7978:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v44 = ( ( unsigned int)( mode_class_0[v43] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_reload_insns/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_reload_insns/src/reload1.c:8017:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v33 = ( ( unsigned int)( mode_class_0[v34] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_reload_insns/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+16 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_reload_insns/src/obj/reload1.o] Error 1

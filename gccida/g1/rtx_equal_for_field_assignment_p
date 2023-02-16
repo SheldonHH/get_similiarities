@@ -1,0 +1,14 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/rtx_equal_for_field_assignment_p/src/combine.c:8020:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v5.rtwint = ( __int64)y->fld[0]; 
+                      ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/rtx_equal_for_field_assignment_p/src/combine.c:8023:33: error: use of undeclared identifier 'machine_mode'
+v6 = gen_lowpart_for_combine( ( machine_mode)*( unsigned __int8 *)( v5.rtwint + 2), x); 
+                                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/rtx_equal_for_field_assignment_p/src/combine.c:8029:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v3.rtwint = ( __int64)x->fld[0]; 
+                      ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/rtx_equal_for_field_assignment_p/src/combine.c:8032:33: error: use of undeclared identifier 'machine_mode'
+v4 = gen_lowpart_for_combine( ( machine_mode)*( unsigned __int8 *)( v3.rtwint + 2), y); 
+                                ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/rtx_equal_for_field_assignment_p/src/obj/combine.o] Error 1

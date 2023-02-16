@@ -1,0 +1,71 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_function_end/src/function.c:7276:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *values; // rbx 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_function_end/src/function.c:7289:4: error: expected ';' after expression
+rtx v20; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_function_end/src/function.c:7289:5: error: use of undeclared identifier 'v20'; did you mean 'v10'?
+rtx v20; // rax 
+    ^~~
+    v10
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_function_end/src/function.c:7279:18: note: 'v10' declared here
+ struct rtx_def *v10; // rbp 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_function_end/src/function.c:7293:4: error: expected ';' after expression
+rtx v24; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_function_end/src/function.c:7293:5: error: use of undeclared identifier 'v24'
+rtx v24; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_function_end/src/function.c:7296:4: error: expected ';' after expression
+rtx return_rtx; // rbx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_function_end/src/function.c:7296:5: error: use of undeclared identifier 'return_rtx'
+rtx return_rtx; // rbx 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_function_end/src/function.c:7300:4: error: expected ';' after expression
+rtx v31; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_function_end/src/function.c:7300:5: error: use of undeclared identifier 'v31'
+rtx v31; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_function_end/src/function.c:7302:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v33; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_function_end/src/function.c:7303:4: error: expected ';' after expression
+rtx v34; // rbp 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_function_end/src/function.c:7303:5: error: use of undeclared identifier 'v34'
+rtx v34; // rbp 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_function_end/src/function.c:7317:38: error: expected expression
+v10 = round_trampoline_addr( *( rtx *)( v9 + 8)); 
+                                     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_function_end/src/function.c:7386:1: error: use of undeclared identifier 'v20'
+v20 = current_function_decl->decl.rtl; 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_function_end/src/function.c:7387:7: error: use of undeclared identifier 'v20'
+if ( !v20 ) 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_function_end/src/function.c:7390:1: error: use of undeclared identifier 'v20'
+v20 = current_function_decl->decl.rtl; 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_function_end/src/function.c:7392:17: error: use of undeclared identifier 'v20'
+if ( *( _WORD *)v20 != 66 ) 
+                ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_function_end/src/function.c:7394:24: error: use of undeclared identifier 'v20'
+v21.rtwint = ( __int64)v20->fld[0]; 
+                       ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_function_end/src/function.c:7397:1: error: use of undeclared identifier 'v24'
+v24 = expand_builtin_return_addr( BUILT_IN_RETURN_ADDRESS, 0, global_rtl[4]); 
+^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_function_end/src/obj/function.o] Error 1

@@ -1,0 +1,12 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_vmmaskcmpv4sf3/src/insn-emit.c:3766:17: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+v4 = gen_rtx( ( rtx_code)( unsigned __int16)*( _DWORD *)operand3, V4SImode, operand1, operand2); 
+                ^~~~~~~~
+                rtx_cost
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_vmmaskcmpv4sf3/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_vmmaskcmpv4sf3/src/insn-emit.c:3766:28: error: expected expression
+v4 = gen_rtx( ( rtx_code)( unsigned __int16)*( _DWORD *)operand3, V4SImode, operand1, operand2); 
+                           ^
+2 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_vmmaskcmpv4sf3/src/obj/insn-emit.o] Error 1

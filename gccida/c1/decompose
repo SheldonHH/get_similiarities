@@ -1,0 +1,89 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/decompose/src/reload.c:2683:25: error: conflicting types for 'decompose'
+ struct decomposition * decompose(  struct decomposition *retstr, rtx x) 
+                        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/decompose/src/reload.c:254:29: note: previous declaration is here
+static struct decomposition decompose PARAMS ((rtx));
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/decompose/src/reload.c:2705:4: error: expected ';' after expression
+rtx v24; // r15 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/decompose/src/reload.c:2705:5: error: use of undeclared identifier 'v24'
+rtx v24; // r15 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/decompose/src/reload.c:2706:4: error: expected ';' after expression
+rtx rtwint; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/decompose/src/reload.c:2706:5: error: use of undeclared identifier 'rtwint'; did you mean 'rtuint'?
+rtx rtwint; // rax 
+    ^~~~~~
+    rtuint
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/decompose/src/reload.c:2688:9: note: 'rtuint' declared here
+__int64 rtuint; // rcx 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/decompose/src/reload.c:2713:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v32; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/decompose/src/reload.c:2750:20: error: too many arguments to function call, expected 1, have 2
+decompose( retstr, rtx); 
+~~~~~~~~~          ^~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/decompose/src/reload.c:254:1: note: 'decompose' declared here
+static struct decomposition decompose PARAMS ((rtx));
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/decompose/src/reload.c:2758:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v18 = ( ( unsigned int)( mode_class_0[( unsigned __int8)BYTE2( *( _DWORD *)x)] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/decompose/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/decompose/src/reload.c:2785:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v10.rtwint = ( __int64)x->fld[0]; 
+                       ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/decompose/src/reload.c:2812:15: error: expected expression
+v24 = *( rtx *)( v10.rtwint + 8); 
+              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/decompose/src/reload.c:2812:1: error: use of undeclared identifier 'v24'
+v24 = *( rtx *)( v10.rtwint + 8); 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/decompose/src/reload.c:2813:1: error: use of undeclared identifier 'rtwint'; did you mean 'rtuint'?
+rtwint = *( rtx *)( v10.rtwint + 16); 
+^~~~~~
+rtuint
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/decompose/src/reload.c:2688:9: note: 'rtuint' declared here
+__int64 rtuint; // rcx 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/decompose/src/reload.c:2813:18: error: expected expression
+rtwint = *( rtx *)( v10.rtwint + 16); 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/decompose/src/reload.c:2821:1: error: use of undeclared identifier 'rtwint'; did you mean 'rtuint'?
+rtwint = *( rtx *)( v10.rtwint + 8); 
+^~~~~~
+rtuint
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/decompose/src/reload.c:2688:9: note: 'rtuint' declared here
+__int64 rtuint; // rcx 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/decompose/src/reload.c:2821:18: error: expected expression
+rtwint = *( rtx *)( v10.rtwint + 8); 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/decompose/src/reload.c:2822:15: error: expected expression
+v24 = *( rtx *)( v10.rtwint + 16); 
+              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/decompose/src/reload.c:2822:1: error: use of undeclared identifier 'v24'
+v24 = *( rtx *)( v10.rtwint + 16); 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/decompose/src/reload.c:2827:1: error: use of undeclared identifier 'rtwint'; did you mean 'rtuint'?
+rtwint = 0LL; 
+^~~~~~
+rtuint
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/decompose/src/reload.c:2688:9: note: 'rtuint' declared here
+__int64 rtuint; // rcx 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/decompose/src/reload.c:2828:1: error: use of undeclared identifier 'v24'
+v24 = 0LL; 
+^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/decompose/src/obj/reload.o] Error 1

@@ -1,0 +1,77 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_push_insn/src/expr.c:3718:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_push_insn/src/expr.c:3745:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v30; // r15d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_push_insn/src/expr.c:3747:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v32; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_push_insn/src/expr.c:3750:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v36; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_push_insn/src/expr.c:3752:1: error: unknown type name 'optab_0'; did you mean 'optab'?
+optab_0 v38; // rbx 
+^~~~~~~
+optab
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_push_insn/src/optabs.h:48:5: note: 'optab' declared here
+} * optab;
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_push_insn/src/expr.c:3754:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v40; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_push_insn/src/expr.c:3765:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v51; // r15d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_push_insn/src/expr.c:3769:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v55; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_push_insn/src/expr.c:3795:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v81; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_push_insn/src/expr.c:3796:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v82; // ecx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_push_insn/src/expr.c:3889:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v86.rtwint = ( __int64)v101->fld[0]; 
+                       ^~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_push_insn/src/expr.c:3899:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v86.rtwint = ( __int64)v101->fld[0]; 
+                       ^~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_push_insn/src/expr.c:3941:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_push_insn/src/expr.c:3991:20: error: expected expression
+if ( *( insn_code *)( ( char *)&optab_table[30]->handlers[0].insn_code + v48) != CODE_FOR_nothing 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_push_insn/src/expr.c:3991:9: error: use of undeclared identifier 'insn_code'
+if ( *( insn_code *)( ( char *)&optab_table[30]->handlers[0].insn_code + v48) != CODE_FOR_nothing 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_push_insn/src/expr.c:4041:31: error: invalid suffix 'xmode' on integer constant
+v72 = gen_rtx_REG( *(short *)0xmode, rtint + v71); 
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_push_insn/src/expr.c:4042:31: error: invalid suffix 'orce' on integer constant
+v73 = operand_sub*(short *)0xforce( v16, v71, mode); 
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_push_insn/src/expr.c:4042:7: error: use of undeclared identifier 'operand_sub'
+v73 = operand_sub*(short *)0xforce( v16, v71, mode); 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_push_insn/src/expr.c:4067:11: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+operand = insn_data_0[v57].operand; 
+          ^~~~~~~~~~~
+          insn_data
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_push_insn/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_push_insn/src/obj/expr.o] Error 1

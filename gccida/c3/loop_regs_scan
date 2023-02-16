@@ -1,0 +1,20 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/loop_regs_scan/src/loop.c:10016:14: error: expected expression
+v13 = ( rtx *)xcalloc( v8->num, 8uLL); 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/loop_regs_scan/src/loop.c:10024:43: error: expected expression
+find_single_use_in_loop( v8, top, *( rtx *)&top[2]); 
+                                          ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/loop_regs_scan/src/loop.c:10028:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v16 = (  struct rtx_def *)top[2]; 
+                          ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/loop_regs_scan/src/loop.c:10036:33: error: expected expression
+count_one_set( v8, top, *( rtx *)&rtwint[2 * v19], v13); 
+                                ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/loop_regs_scan/src/loop.c:10040:33: error: expected expression
+count_one_set( v8, top, *( rtx *)( *( _QWORD *)( *( _QWORD *)&top[2] + 8LL) + 8 * v19-- - 8), v13); 
+                                ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/loop_regs_scan/src/loop.c:10062:22: error: use of undeclared identifier 'machine_mode'
+v23 = gen_rtx_REG( ( machine_mode)( ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32), i); 
+                     ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/loop_regs_scan/src/obj/loop.o] Error 1

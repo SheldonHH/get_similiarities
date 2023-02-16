@@ -1,0 +1,63 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/df_uses_record/src/df.c:1475:51: error: must use 'enum' tag to refer to type 'df_ref_type'
+void  df_uses_record(  struct df *df_0, rtx *loc, df_ref_type ref_type, basic_block bb, rtx insn, df_ref_flags flags) 
+                                                  ^
+                                                  enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/df_uses_record/src/df.c:1475:99: error: must use 'enum' tag to refer to type 'df_ref_flags'
+void  df_uses_record(  struct df *df_0, rtx *loc, df_ref_type ref_type, basic_block bb, rtx insn, df_ref_flags flags) 
+                                                                                                  ^
+                                                                                                  enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/df_uses_record/src/df.c:1490:6: error: use of undeclared identifier 'v19'
+rtx *v19; // rbp 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/df_uses_record/src/df.c:1492:4: error: expected ';' after expression
+rtx v21; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/df_uses_record/src/df.c:1492:5: error: use of undeclared identifier 'v21'
+rtx v21; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/df_uses_record/src/df.c:1510:15: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v13 = ( int *)rtx[2]; 
+              ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/df_uses_record/src/df.c:1517:30: error: expected expression
+df_uses_record( df_0, ( rtx *)&v13[2 * v14 + 2], DF_REF_REG_USE, bb, insn, ( df_ref_flags)0); 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/df_uses_record/src/df.c:1517:78: error: use of undeclared identifier 'df_ref_flags'
+df_uses_record( df_0, ( rtx *)&v13[2 * v14 + 2], DF_REF_REG_USE, bb, insn, ( df_ref_flags)0); 
+                                                                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/df_uses_record/src/df.c:1518:15: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v13 = ( int *)rtx[2]; 
+              ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/df_uses_record/src/df.c:1535:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v9.rtwint = ( __int64)rtx->fld[0]; 
+                      ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/df_uses_record/src/df.c:1536:30: error: expected expression
+df_uses_record( df_0, ( rtx *)&rtx[1], DF_REF_REG_USE, bb, insn, ( df_ref_flags)0); 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/df_uses_record/src/df.c:1536:68: error: use of undeclared identifier 'df_ref_flags'
+df_uses_record( df_0, ( rtx *)&rtx[1], DF_REF_REG_USE, bb, insn, ( df_ref_flags)0); 
+                                                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/df_uses_record/src/df.c:1552:30: error: expected expression
+df_uses_record( df_0, ( rtx *)( v9.rtwint + 8), DF_REF_REG_USE, bb, insn, DF_REF_READ_WRITE); 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/df_uses_record/src/df.c:1559:30: error: expected expression
+df_uses_record( df_0, ( rtx *)( v12 + 8), DF_REF_REG_USE, bb, insn, DF_REF_READ_WRITE); 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/df_uses_record/src/df.c:1562:30: error: expected expression
+df_uses_record( df_0, ( rtx *)( v9.rtwint + 8), DF_REF_REG_MEM_STORE, bb, insn, ( df_ref_flags)0); 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/df_uses_record/src/df.c:1562:83: error: use of undeclared identifier 'df_ref_flags'
+df_uses_record( df_0, ( rtx *)( v9.rtwint + 8), DF_REF_REG_MEM_STORE, bb, insn, ( df_ref_flags)0); 
+                                                                                  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/df_uses_record/src/df.c:1573:30: error: expected expression
+df_uses_record( df_0, ( rtx *)( v9.rtwint + 8), DF_REF_REG_USE, bb, insn, DF_REF_READ_WRITE); 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/df_uses_record/src/df.c:1574:30: error: expected expression
+df_uses_record( df_0, ( rtx *)( v9.rtwint + 16), DF_REF_REG_USE, bb, insn, ( df_ref_flags)0); 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/df_uses_record/src/df.c:1574:78: error: use of undeclared identifier 'df_ref_flags'
+df_uses_record( df_0, ( rtx *)( v9.rtwint + 16), DF_REF_REG_USE, bb, insn, ( df_ref_flags)0); 
+                                                                             ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/df_uses_record/src/obj/df.o] Error 1

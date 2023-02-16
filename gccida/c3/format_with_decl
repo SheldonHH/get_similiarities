@@ -1,0 +1,16 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/format_with_decl/src/diagnostic.c:1304:25: error: unknown type name 'output_buffer_0'; did you mean 'output_buffer'?
+void  format_with_decl( output_buffer_0 *buffer, tree decl) 
+                        ^~~~~~~~~~~~~~~
+                        output_buffer
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/format_with_decl/src/diagnostic.h:28:30: note: 'output_buffer' declared here
+typedef struct output_buffer output_buffer;
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/format_with_decl/src/diagnostic.c:1336:11: error: use of undeclared identifier 'sch_istable'; did you mean '_sch_istable'?
+while ( ( sch_istable[*( ( unsigned __int8 *)p - 1)] & 0x88) == 0 ); 
+          ^~~~~~~~~~~
+          _sch_istable
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/format_with_decl/src/safe-ctype.h:72:29: note: '_sch_istable' declared here
+extern const unsigned short _sch_istable[256];
+                            ^
+2 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/format_with_decl/src/obj/diagnostic.o] Error 1

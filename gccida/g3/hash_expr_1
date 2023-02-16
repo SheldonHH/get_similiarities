@@ -1,0 +1,65 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/hash_expr_1/src/gcse.c:2063:35: error: must use 'enum' tag to refer to type 'machine_mode'
+unsigned int  hash_expr_1( rtx x, machine_mode mode, int *do_not_record_p) 
+                                  ^
+                                  enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/hash_expr_1/src/gcse.c:2078:4: error: expected ';' after expression
+rtx v19; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/hash_expr_1/src/gcse.c:2078:5: error: use of undeclared identifier 'v19'
+rtx v19; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/hash_expr_1/src/gcse.c:2142:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v31 = ( unsigned __int8 *)rtx[1]; 
+                          ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/hash_expr_1/src/gcse.c:2157:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v35 = ( __int64)rtx[2]; 
+                ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/hash_expr_1/src/gcse.c:2162:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v39.rtwint = ( __int64)rtx[2].fld[0]; 
+                       ^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/hash_expr_1/src/gcse.c:2170:26: error: expected ')'
+v38 = hash_expr_1( ( rtx)v37, ( machine_mode)*( unsigned __int8 *)( v37 + 2), do_not_record_p); 
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/hash_expr_1/src/gcse.c:2170:18: note: to match this '('
+v38 = hash_expr_1( ( rtx)v37, ( machine_mode)*( unsigned __int8 *)( v37 + 2), do_not_record_p); 
+                 ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/hash_expr_1/src/gcse.c:2171:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v39.rtwint = ( __int64)rtx[2].fld[0]; 
+                       ^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/hash_expr_1/src/gcse.c:2190:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v35 = ( __int64)rtx[2]; 
+                ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/hash_expr_1/src/gcse.c:2213:15: error: expected expression
+rtx = *( rtx *)( v35 + 8); 
+              ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/hash_expr_1/src/gcse.c:2247:1: error: use of undeclared identifier 'v19'
+v19 = rtx; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/hash_expr_1/src/gcse.c:2248:5: error: assigning to '__m128i' (vector of 2 'long long' values) from incompatible type 'long long'
+v20 = 0LL; 
+    ^ ~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/hash_expr_1/src/gcse.c:2251:51: error: use of undeclared identifier 'v19'
+v21 = ( __m128)_mm_loadu_si128( ( const __m128i *)v19[1].fld); 
+                                                  ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/hash_expr_1/src/gcse.c:2252:51: error: use of undeclared identifier 'v19'
+v22 = ( __m128)_mm_loadu_si128( ( const __m128i *)v19[2].fld); 
+                                                  ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/hash_expr_1/src/gcse.c:2253:1: error: use of undeclared identifier 'v19'
+v19 += 2; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/hash_expr_1/src/gcse.c:2256:34: error: use of undeclared identifier 'v19'
+while ( &rtx[2 * ( v18 >> 2)] != v19 ); 
+                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/hash_expr_1/src/gcse.c:2287:9: error: expected expression
+*( rtx *)&v12[2 * v15 + 2], 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/hash_expr_1/src/gcse.c:2288:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( unsigned __int8 *)( *( _QWORD *)&v12[2 * v15 + 2] + 2LL), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/hash_expr_1/src/gcse.c:2306:18: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v16 = ( _DWORD *)rtx[1]; 
+                 ^~~~~~
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/hash_expr_1/src/obj/gcse.o] Error 1

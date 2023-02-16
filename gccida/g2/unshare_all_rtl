@@ -1,0 +1,25 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/unshare_all_rtl/src/emit-rtl.c:2762:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *imag; // rbp 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/unshare_all_rtl/src/emit-rtl.c:2766:4: error: expected ';' after expression
+rtx v13; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/unshare_all_rtl/src/emit-rtl.c:2766:5: error: use of undeclared identifier 'v13'
+rtx v13; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/unshare_all_rtl/src/emit-rtl.c:2802:35: error: expected expression
+v11 = copy_rtx_if_shared( *( rtx *)&i[2]); 
+                                  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/unshare_all_rtl/src/emit-rtl.c:2805:1: error: use of undeclared identifier 'v13'
+v13 = copy_rtx_if_shared( rtx); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/unshare_all_rtl/src/emit-rtl.c:2806:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v14 = (  struct rtx_def *)i[3]; 
+                          ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/unshare_all_rtl/src/emit-rtl.c:2807:32: error: use of undeclared identifier 'v13'
+i[3].fld[0].rtwint = ( __int64)v13; 
+                               ^
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/unshare_all_rtl/src/obj/emit-rtl.o] Error 1

@@ -1,0 +1,15 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/copy_most_rtx/src/emit-rtl.c:2894:19: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+v5 = rtx_alloc( ( rtx_code)( unsigned __int16)*( _DWORD *)orig); 
+                  ^~~~~~~~
+                  rtx_cost
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/copy_most_rtx/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/copy_most_rtx/src/emit-rtl.c:2894:30: error: expected expression
+v5 = rtx_alloc( ( rtx_code)( unsigned __int16)*( _DWORD *)orig); 
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/copy_most_rtx/src/emit-rtl.c:2937:9: error: expected expression
+*( rtx *)( v2->fld[v13].rtwint + 8 * v17 + 8), 
+        ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/copy_most_rtx/src/obj/emit-rtl.o] Error 1

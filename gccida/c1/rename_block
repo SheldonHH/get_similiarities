@@ -1,0 +1,61 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/rename_block/src/ssa.c:1447:4: error: expected ';' after expression
+rtx v16; // rdi 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/rename_block/src/ssa.c:1447:5: error: use of undeclared identifier 'v16'
+rtx v16; // rdi 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/rename_block/src/ssa.c:1473:13: error: expected expression
+v7 = ( rtx *)&head[2]; 
+            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/rename_block/src/ssa.c:1474:22: error: expected expression
+for_each_rtx( ( rtx *)&head[2], rename_insn_1, &data); 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/rename_block/src/ssa.c:1475:22: error: expected expression
+for_each_rtx( ( rtx *)head[3].fld, rename_insn_1, &data); 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/rename_block/src/ssa.c:1500:23: error: expected ')'
+while ( head != ( rtx)end ); 
+                      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/rename_block/src/ssa.c:1500:7: note: to match this '('
+while ( head != ( rtx)end ); 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/rename_block/src/ssa.c:1514:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v15 = ( __int64)rtx[2]; 
+                ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/rename_block/src/ssa.c:1517:15: error: expected expression
+v16 = *( rtx *)( v15 + 8); 
+              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/rename_block/src/ssa.c:1517:1: error: use of undeclared identifier 'v16'
+v16 = *( rtx *)( v15 + 8); 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/rename_block/src/ssa.c:1518:10: error: use of undeclared identifier 'v16'; did you mean 'v19'?
+rtuint = v16->fld[0].rtuint; 
+         ^~~
+         v19
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/rename_block/src/ssa.c:1450:18: note: 'v19' declared here
+ struct rtx_def *v19; // r14 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/rename_block/src/ssa.c:1520:1: error: use of undeclared identifier 'v16'
+v16 = ssa_rename_from_lookup( rtuint); 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/rename_block/src/ssa.c:1521:7: error: use of undeclared identifier 'v16'
+if ( !v16 ) 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/rename_block/src/ssa.c:1523:29: error: use of undeclared identifier 'v16'
+v18 = ssa_rename_to_lookup( v16); 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/rename_block/src/ssa.c:1526:37: error: expected ')'
+if ( !remove_phi_alternative( ( rtx)v15, block) ) 
+                                    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/rename_block/src/ssa.c:1526:29: note: to match this '('
+if ( !remove_phi_alternative( ( rtx)v15, block) ) 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/rename_block/src/ssa.c:1542:25: error: expected ')'
+*phi_alternative( ( rtx)v15, bb) = v19; 
+                        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/rename_block/src/ssa.c:1542:17: note: to match this '('
+*phi_alternative( ( rtx)v15, bb) = v19; 
+                ^
+15 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/rename_block/src/obj/ssa.o] Error 1

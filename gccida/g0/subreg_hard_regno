@@ -1,0 +1,9 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/subreg_hard_regno/src/emit-rtl.c:1250:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // [rsp+2Ch] [rbp-4h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/subreg_hard_regno/src/emit-rtl.c:1259:60: error: use of undeclared identifier 'machine_mode'
+if ( check_mode && !ix86_hard_regno_mode_ok( base_regno, ( machine_mode)*( ( unsigned __int8 *)reg + 2)) ) 
+                                                           ^
+2 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/subreg_hard_regno/src/obj/emit-rtl.o] Error 1

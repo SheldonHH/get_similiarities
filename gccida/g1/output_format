@@ -1,0 +1,15 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/output_format/src/diagnostic.c:1088:22: error: unknown type name 'output_buffer_0'; did you mean 'output_buffer'?
+void  output_format( output_buffer_0 *buffer) 
+                     ^~~~~~~~~~~~~~~
+                     output_buffer
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/output_format/src/diagnostic.h:28:30: note: 'output_buffer' declared here
+typedef struct output_buffer output_buffer;
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/output_format/src/diagnostic.c:1195:32: error: use of undeclared identifier 'off_6544E1'
+sprintf( buffer->digit_buffer, off_6544E1, *v12); 
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/output_format/src/diagnostic.c:1211:32: error: use of undeclared identifier 'off_6544E5'
+sprintf( buffer->digit_buffer, off_6544E5, *v18); 
+                               ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/output_format/src/obj/diagnostic.o] Error 1

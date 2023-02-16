@@ -1,0 +1,50 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/invalidate/src/cse.c:2303:26: error: must use 'enum' tag to refer to type 'machine_mode'
+void  invalidate( rtx x, machine_mode full_mode) 
+                         ^
+                         enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/invalidate/src/cse.c:2319:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode full_modea; // [rsp+4h] [rbp-7Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/invalidate/src/cse.c:2377:2: error: expected expression
+ struct cse_reg_info = cached_cse_reg_info; 
+ ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/invalidate/src/cse.c:2379:2: error: expected expression
+ struct cse_reg_info = get_cse_reg_info( x->fld[0].rtuint); 
+ ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/invalidate/src/cse.c:2384:23: error: use of undeclared identifier 'machine_mode'
+v4 = canon_hash( x, ( machine_mode)*( ( unsigned __int8 *)x + 2)) & 0x1F; 
+                      ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/invalidate/src/cse.c:2429:11: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+else if ( mode_class_0[*( ( unsigned __int8 *)x + 2)] == MODE_COMPLEX_INT 
+          ^~~~~~~~~~~~
+          mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/invalidate/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/invalidate/src/cse.c:2430:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| mode_class_0[*( ( unsigned __int8 *)x + 2)] == MODE_COMPLEX_FLOAT ) 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/invalidate/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/invalidate/src/cse.c:2494:11: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+else if ( mode_class_0[*( ( unsigned __int8 *)p_0->exp + 2)] == MODE_COMPLEX_INT 
+          ^~~~~~~~~~~~
+          mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/invalidate/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/invalidate/src/cse.c:2495:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| mode_class_0[*( ( unsigned __int8 *)p_0->exp + 2)] == MODE_COMPLEX_FLOAT ) 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/invalidate/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/invalidate/src/cse.c:2515:37: error: use of undeclared identifier 'machine_mode'
+elt = lookup_for_remove( x, hash, ( machine_mode)*( ( unsigned __int8 *)x + 2)); 
+                                    ^
+10 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/invalidate/src/obj/cse.o] Error 1

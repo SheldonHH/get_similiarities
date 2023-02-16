@@ -1,0 +1,29 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/df_insn_refs_record/src/df.c:1682:29: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+for ( v5.rtwint = ( __int64)insn[3].fld[0]; v5.rtwint; v5.rtwint = *( __int64 *)( v5.rtwint + 16) ) 
+                            ^~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/df_insn_refs_record/src/df.c:1685:77: error: use of undeclared identifier 'df_ref_flags'
+df_uses_record( df_0, ( rtx *)( v5.rtwint + 8), DF_REF_REG_USE, bb, insn, ( df_ref_flags)0); 
+                                                                            ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/df_insn_refs_record/src/df.c:1690:21: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( i = ( __int64)insn[4]; i; i = *( _QWORD *)( i + 16) ) 
+                    ^~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/df_insn_refs_record/src/df.c:1694:70: error: use of undeclared identifier 'df_ref_flags'
+df_uses_record( df_0, ( rtx *)( v9 + 8), DF_REF_REG_USE, bb, insn, ( df_ref_flags)0); 
+                                                                     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/df_insn_refs_record/src/df.c:1697:68: error: use of undeclared identifier 'df_ref_flags'
+df_uses_record( df_0, ( rtx *)v7->fld, DF_REF_REG_USE, bb, insn, ( df_ref_flags)0); 
+                                                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/df_insn_refs_record/src/df.c:1705:69: error: use of undeclared identifier 'df_ref_flags'
+df_uses_record( df_0, ( rtx *)v10->fld, DF_REF_REG_USE, bb, insn, ( df_ref_flags)0); 
+                                                                    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/df_insn_refs_record/src/df.c:1710:69: error: use of undeclared identifier 'df_ref_flags'
+df_uses_record( df_0, ( rtx *)&insn[2], DF_REF_REG_USE, bb, insn, ( df_ref_flags)0); 
+                                                                    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/df_insn_refs_record/src/df.c:1724:33: error: use of undeclared identifier 'machine_mode'
+v13 = gen_rtx_fmt_e( CLOBBER, ( machine_mode)*( ( unsigned __int8 *)v12 + 2), v12); 
+                                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/df_insn_refs_record/src/df.c:1729:21: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( m = ( __int64)insn[4]; m; m = *( _QWORD *)( m + 16) ) 
+                    ^~~~~~~
+9 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/df_insn_refs_record/src/obj/df.o] Error 1

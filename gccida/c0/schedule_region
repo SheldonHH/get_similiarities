@@ -1,0 +1,24 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/schedule_region/src/sched-rgn.c:3140:21: error: expected expression
+bb_deps = ( deps_0 *)xmalloc( 104LL * ( int)current_nr_blocks); 
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/schedule_region/src/sched-rgn.c:3140:13: error: use of undeclared identifier 'deps_0'
+bb_deps = ( deps_0 *)xmalloc( 104LL * ( int)current_nr_blocks); 
+            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/schedule_region/src/sched-rgn.c:3194:39: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+current_sched_info->prev_head = ( rtx)head_1[1]; 
+                                      ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/schedule_region/src/sched-rgn.c:3203:55: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( note = head_1[3].fld[0].rtx; note; note = ( rtx)note[1] ) 
+                                                      ^~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/schedule_region/src/sched-rgn.c:3208:14: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+note = ( rtx)note[1]; 
+             ^~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/schedule_region/src/sched-rgn.c:3220:22: error: use of undeclared identifier 'sched_n_insns_0'; did you mean 'sched_n_insns'?
+sched_rgn_n_insns += sched_n_insns_0; 
+                     ^~~~~~~~~~~~~~~
+                     sched_n_insns
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/schedule_region/src/sched-rgn.c:1958:12: note: 'sched_n_insns' declared here
+static int sched_n_insns;
+           ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/schedule_region/src/obj/sched-rgn.o] Error 1

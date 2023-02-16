@@ -1,0 +1,20 @@
+/data/output_dir/patch/gobmk/ida/gcc/O1/gobmk-gcc-O1/finish_and_score_game/src/interface/play_gtp.c:2927:6: error: use of undeclared identifier 'current_seed_3'
+if ( current_seed_3 == seed ) 
+     ^
+/data/output_dir/patch/gobmk/ida/gcc/O1/gobmk-gcc-O1/finish_and_score_game/src/interface/play_gtp.c:2948:12: error: use of undeclared identifier 'current_board_2'
+if ( v8 != current_board_2[0][k + v5] ) 
+           ^
+/data/output_dir/patch/gobmk/ida/gcc/O1/gobmk-gcc-O1/finish_and_score_game/src/interface/play_gtp.c:2950:1: error: use of undeclared identifier 'current_board_2'
+current_board_2[0][k + v5] = v8; 
+^
+/data/output_dir/patch/gobmk/ida/gcc/O1/gobmk-gcc-O1/finish_and_score_game/src/interface/play_gtp.c:2969:1: error: use of undeclared identifier 'current_seed_3'
+current_seed_3 = seed; 
+^
+/data/output_dir/patch/gobmk/ida/gcc/O1/gobmk-gcc-O1/finish_and_score_game/src/interface/play_gtp.c:3004:55: error: too many arguments to function call, expected 3, have 4
+final_score = aftermath_compute_score( v10, komi, v1, 0LL); 
+              ~~~~~~~~~~~~~~~~~~~~~~~                 ^~~
+/data/output_dir/patch/gobmk/ida/gcc/O1/gobmk-gcc-O1/finish_and_score_game/src/include/gnugo.h:479:1: note: 'aftermath_compute_score' declared here
+float aftermath_compute_score(int color, float komi, SGFTree *tree);
+^
+5 errors generated.
+make: *** [/data/output_dir/patch/gobmk/ida/gcc/O1/gobmk-gcc-O1/finish_and_score_game/src/obj/2/play_gtp.o] Error 1

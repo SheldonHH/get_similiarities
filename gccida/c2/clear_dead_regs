@@ -1,0 +1,71 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/clear_dead_regs/src/regrename.c:591:49: error: must use 'enum' tag to refer to type 'machine_mode'
+void  clear_dead_regs( HARD_REG_ELT_TYPE *pset, machine_mode kind, rtx notes) 
+                                                ^
+                                                enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/clear_dead_regs/src/regrename.c:638:44: error: use of undeclared identifier 'xmm'
+si128 = _mm_load_si128( ( const __m128i *)&xmm*(short *)0x641440); 
+                                           ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/clear_dead_regs/src/regrename.c:640:42: error: use of undeclared identifier 'xmm'
+v10 = _mm_load_si128( ( const __m128i *)&xmm*(short *)0x641420); 
+                                         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/clear_dead_regs/src/regrename.c:641:42: error: use of undeclared identifier 'xmm'
+v11 = _mm_load_si128( ( const __m128i *)&xmm*(short *)0x641450); 
+                                         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/clear_dead_regs/src/regrename.c:655:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v17 = ( ( unsigned int)( mode_class_0[( unsigned __int8)v16] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/clear_dead_regs/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/clear_dead_regs/src/regrename.c:681:23: error: invalid conversion between vector type '__m128d' (vector of 2 'double' values) and integer type 'unsigned long long' of different size
+v25 = _mm_shuffle_pd( ( __m128d)v18, ( __m128d)xmm*(short *)0x675E90, 2); 
+                      ^~~~~~~~~~~~~
+/usr/lib/llvm-7/lib/clang/7.0.0/include/emmintrin.h:4761:52: note: expanded from macro '_mm_shuffle_pd'
+  (__m128d)__builtin_ia32_shufpd((__v2df)(__m128d)(a), (__v2df)(__m128d)(b), \
+                                                   ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/clear_dead_regs/src/regrename.c:681:48: error: use of undeclared identifier 'xmm'
+v25 = _mm_shuffle_pd( ( __m128d)v18, ( __m128d)xmm*(short *)0x675E90, 2); 
+                                               ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/clear_dead_regs/src/regrename.c:682:7: error: invalid conversion between vector type '__m128d' (vector of 2 'double' values) and integer type 'long long' of different size
+v26 = ( __m128d)-1LL; 
+      ^~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/clear_dead_regs/src/regrename.c:683:46: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'long long' of different size
+v27 = _mm_shuffle_epi32( _mm_add_epi32( v24, ( __m128i)-1LL), 80); 
+                                             ^~~~~~~~~~~~~~
+/usr/lib/llvm-7/lib/clang/7.0.0/include/emmintrin.h:4347:52: note: expanded from macro '_mm_shuffle_epi32'
+  (__m128i)__builtin_ia32_pshufd((__v4si)(__m128i)(a), (int)(imm))
+                                                   ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/clear_dead_regs/src/regrename.c:690:53: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'long long' of different size
+v32 = _mm_unpacklo_epi32( _mm_add_epi32( v27, v23), ( __m128i)0LL); 
+                                                    ^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/clear_dead_regs/src/regrename.c:691:23: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+*( _QWORD *)&v33 = v10.m128i_i64[0] << v32.m128i_i8[0]; 
+                   ~~~^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/clear_dead_regs/src/regrename.c:691:43: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+*( _QWORD *)&v33 = v10.m128i_i64[0] << v32.m128i_i8[0]; 
+                                       ~~~^~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/clear_dead_regs/src/regrename.c:693:53: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'long long' of different size
+v35 = _mm_unpacklo_epi32( _mm_add_epi32( v28, v23), ( __m128i)0LL); 
+                                                    ^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/clear_dead_regs/src/regrename.c:694:4: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+v34.m128d_f64[0] = v33; 
+~~~^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/clear_dead_regs/src/regrename.c:695:5: error: assigning to '__m128d' (vector of 2 'double' values) from incompatible type 'int'
+v25 = _mm_andn_pd( v34, v31); 
+    ^ ~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/clear_dead_regs/src/regrename.c:697:17: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+*( _QWORD *)&v36.m128d_f64[0] = v10.m128i_i64[0] << v35.m128i_i8[0]; 
+             ~~~^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/clear_dead_regs/src/regrename.c:697:36: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+*( _QWORD *)&v36.m128d_f64[0] = v10.m128i_i64[0] << v35.m128i_i8[0]; 
+                                ~~~^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/clear_dead_regs/src/regrename.c:697:56: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+*( _QWORD *)&v36.m128d_f64[0] = v10.m128i_i64[0] << v35.m128i_i8[0]; 
+                                                    ~~~^~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/clear_dead_regs/src/regrename.c:698:5: error: assigning to '__m128d' (vector of 2 'double' values) from incompatible type 'int'
+v26 = _mm_andn_pd( v36, v30); 
+    ^ ~~~~~~~~~~~~~~~~~~~~~~
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/clear_dead_regs/src/obj/regrename.o] Error 1

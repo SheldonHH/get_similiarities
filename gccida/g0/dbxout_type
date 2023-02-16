@@ -1,0 +1,34 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/dbxout_type/src/dbxout.c:1507:1: error: must use 'enum' tag to refer to type 'typestatus'
+typestatus status; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/dbxout_type/src/dbxout.c:1508:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v5; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/dbxout_type/src/dbxout.c:1509:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v6; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/dbxout_type/src/dbxout.c:1534:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *tem; // [rsp+28h] [rbp-8h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/dbxout_type/src/dbxout.c:1558:6: error: expected expression
+v2 = ::next_type_number++; 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/dbxout_type/src/dbxout.c:1560:6: error: expected expression
+if ( ::next_type_number == typevec_len ) 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/dbxout_type/src/dbxout.c:1951:70: error: use of undeclared identifier 'lang_hooks_0'; did you mean 'lang_hooks'?
+if ( ( *( ( _BYTE *)&child->block.common + 18) & 4) != 0 && !strcmp( lang_hooks_0.name, "GNU C++") ) 
+                                                                     ^~~~~~~~~~~~
+                                                                     lang_hooks
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/dbxout_type/src/langhooks.h:168:32: note: 'lang_hooks' declared here
+extern const struct lang_hooks lang_hooks;
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/dbxout_type/src/dbxout.c:2023:7: error: use of undeclared identifier 'anonymous_type_number_3'
+v16 = anonymous_type_number_3++; 
+      ^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/dbxout_type/src/obj/dbxout.o] Error 1

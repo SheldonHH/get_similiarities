@@ -1,0 +1,62 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/insns_match_p/src/cfgcleanup.c:1335:4: error: expected ';' after expression
+rtx s1; // [rsp+0h] [rbp-48h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/insns_match_p/src/cfgcleanup.c:1335:5: error: use of undeclared identifier 's1'
+rtx s1; // [rsp+0h] [rbp-48h] 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/insns_match_p/src/cfgcleanup.c:1336:4: error: expected ';' after expression
+rtx s2; // [rsp+8h] [rbp-40h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/insns_match_p/src/cfgcleanup.c:1336:5: error: use of undeclared identifier 's2'
+rtx s2; // [rsp+8h] [rbp-40h] 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/insns_match_p/src/cfgcleanup.c:1341:26: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v6 = (  struct rtx_def *)i1[2]; 
+                         ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/insns_match_p/src/cfgcleanup.c:1342:26: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v7 = (  struct rtx_def *)i2[2]; 
+                         ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/insns_match_p/src/cfgcleanup.c:1347:27: error: expected expression
+v8 = rtx_equal_p( *( rtx *)&i1[4], *( rtx *)&i2[4]); 
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/insns_match_p/src/cfgcleanup.c:1347:44: error: expected expression
+v8 = rtx_equal_p( *( rtx *)&i1[4], *( rtx *)&i2[4]); 
+                                           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/insns_match_p/src/cfgcleanup.c:1354:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v9.rtwint = ( __int64)i1[3].fld[0]; 
+                      ^~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/insns_match_p/src/cfgcleanup.c:1375:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v14.rtwint = ( __int64)i2[3].fld[0]; 
+                       ^~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/insns_match_p/src/cfgcleanup.c:1406:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v14.rtwint = ( __int64)i2[3].fld[0]; 
+                       ^~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/insns_match_p/src/cfgcleanup.c:1442:1: error: use of undeclared identifier 's1'
+s1 = 0LL; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/insns_match_p/src/cfgcleanup.c:1445:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v26 = (  struct rtx_def *)i1[2]; 
+                          ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/insns_match_p/src/cfgcleanup.c:1446:1: error: use of undeclared identifier 's1'
+s1 = v26; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/insns_match_p/src/cfgcleanup.c:1448:1: error: use of undeclared identifier 's1'
+s1 = single_set_2( i1, v26); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/insns_match_p/src/cfgcleanup.c:1453:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v24 = (  struct rtx_def *)i2[2]; 
+                          ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/insns_match_p/src/cfgcleanup.c:1454:1: error: use of undeclared identifier 's2'
+s2 = v24; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/insns_match_p/src/cfgcleanup.c:1456:1: error: use of undeclared identifier 's2'
+s2 = single_set_2( i2, v24); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/insns_match_p/src/cfgcleanup.c:1457:10: error: use of undeclared identifier 's1'
+result = s1 != 0LL && s2 != 0LL; 
+         ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/insns_match_p/src/obj/cfgcleanup.o] Error 1

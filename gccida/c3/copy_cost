@@ -1,0 +1,27 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/copy_cost/src/regclass.c:2364:26: error: must use 'enum' tag to refer to type 'machine_mode'
+int  copy_cost_0( rtx x, machine_mode mode, reg_class a3, int to_p) 
+                         ^
+                         enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/copy_cost/src/regclass.c:2364:45: error: must use 'enum' tag to refer to type 'reg_class'
+int  copy_cost_0( rtx x, machine_mode mode, reg_class a3, int to_p) 
+                                            ^
+                                            enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/copy_cost/src/regclass.c:2367:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class v6; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/copy_cost/src/regclass.c:2382:37: error: use of undeclared identifier 'reg_class'; did you mean 'regclass'?
+return v8 + copy_cost_0( x, mode, ( reg_class)v7, 2); 
+                                    ^~~~~~~~~
+                                    regclass
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/copy_cost/src/regclass.c:1182:1: note: 'regclass' declared here
+regclass (f, nregs, dump)
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/copy_cost/src/regclass.c:2382:47: error: expected ')'
+return v8 + copy_cost_0( x, mode, ( reg_class)v7, 2); 
+                                              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/copy_cost/src/regclass.c:2382:24: note: to match this '('
+return v8 + copy_cost_0( x, mode, ( reg_class)v7, 2); 
+                       ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/copy_cost/src/obj/regclass.o] Error 1

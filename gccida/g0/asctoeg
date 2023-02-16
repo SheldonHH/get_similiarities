@@ -1,0 +1,30 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/asctoeg/src/real.c:5722:5: error: use of undeclared identifier 'hex_value'; did you mean '_hex_value'?
+k = hex_value[( unsigned __int8)*s]; 
+    ^~~~~~~~~
+    _hex_value
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/asctoeg/src/libiberty.h:251:19: note: '_hex_value' declared here
+extern const char _hex_value[_hex_array_size];
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/asctoeg/src/real.c:5730:3: error: use of undeclared identifier 'sch_istable'; did you mean '_sch_istable'?
+( sch_istable[( unsigned __int8)*sp_0] & 4) != 0 
+  ^~~~~~~~~~~
+  _sch_istable
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/asctoeg/src/safe-ctype.h:72:29: note: '_sch_istable' declared here
+extern const unsigned short _sch_istable[256];
+                            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/asctoeg/src/real.c:5731:20: error: use of undeclared identifier 'sch_istable'; did you mean '_sch_istable'?
+|| base == 16 && ( sch_istable[( unsigned __int8)*sp_0] & 0x100) != 0; 
+                   ^~~~~~~~~~~
+                   _sch_istable
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/asctoeg/src/safe-ctype.h:72:29: note: '_sch_istable' declared here
+extern const unsigned short _sch_istable[256];
+                            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/asctoeg/src/real.c:5874:8: error: use of undeclared identifier 'sch_istable'; did you mean '_sch_istable'?
+if ( ( sch_istable[( unsigned __int8)*s] & 4) == 0 ) 
+       ^~~~~~~~~~~
+       _sch_istable
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/asctoeg/src/safe-ctype.h:72:29: note: '_sch_istable' declared here
+extern const unsigned short _sch_istable[256];
+                            ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/asctoeg/src/obj/real.o] Error 1

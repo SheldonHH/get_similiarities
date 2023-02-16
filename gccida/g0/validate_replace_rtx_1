@@ -1,0 +1,69 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/validate_replace_rtx_1/src/recog.c:902:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v6; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/validate_replace_rtx_1/src/recog.c:903:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v7; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/validate_replace_rtx_1/src/recog.c:911:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode new_mode; // [rsp+30h] [rbp-60h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/validate_replace_rtx_1/src/recog.c:912:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode new_mode_0; // [rsp+34h] [rbp-5Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/validate_replace_rtx_1/src/recog.c:915:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode is_mode; // [rsp+3Ch] [rbp-54h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/validate_replace_rtx_1/src/recog.c:918:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode wanted_mode; // [rsp+4Ch] [rbp-44h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/validate_replace_rtx_1/src/recog.c:920:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode op0_mode; // [rsp+58h] [rbp-38h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/validate_replace_rtx_1/src/recog.c:921:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code; // [rsp+5Ch] [rbp-34h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/validate_replace_rtx_1/src/recog.c:922:4: error: expected ';' after expression
+rtx x; // [rsp+60h] [rbp-30h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/validate_replace_rtx_1/src/recog.c:922:5: error: use of undeclared identifier 'x'
+rtx x; // [rsp+60h] [rbp-30h] 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/validate_replace_rtx_1/src/recog.c:926:1: error: use of undeclared identifier 'x'
+x = *loc; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/validate_replace_rtx_1/src/recog.c:931:19: error: use of undeclared identifier 'x'
+code = *( _WORD *)x; 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/validate_replace_rtx_1/src/recog.c:932:29: error: use of undeclared identifier 'x'
+fmt = rtx_format[*( _WORD *)x]; 
+                            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/validate_replace_rtx_1/src/recog.c:934:35: error: use of undeclared identifier 'x'
+op0_mode = *( unsigned __int8 *)( x->fld[0].rtwint + 2); 
+                                  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/validate_replace_rtx_1/src/recog.c:935:6: error: use of undeclared identifier 'x'
+if ( x == from 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/validate_replace_rtx_1/src/recog.c:936:15: error: use of undeclared identifier 'x'
+|| *( _WORD *)x == 61 
+              ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/validate_replace_rtx_1/src/recog.c:938:17: error: use of undeclared identifier 'x'
+&& *( ( _BYTE *)x + 2) == *( ( _BYTE *)from + 2) 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/validate_replace_rtx_1/src/recog.c:939:4: error: use of undeclared identifier 'x'
+&& x->fld[0].rtint == from->fld[0].rtint 
+   ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/validate_replace_rtx_1/src/recog.c:940:15: error: use of undeclared identifier 'x'
+|| *( _WORD *)x == *( _WORD *)from && *( ( _BYTE *)x + 2) == *( ( _BYTE *)from + 2) && rtx_equal_p( x, from) ) 
+              ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/validate_replace_rtx_1/src/obj/recog.o] Error 1

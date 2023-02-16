@@ -1,0 +1,66 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/validate_replace_rtx_1/src/recog.c:911:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v15; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/validate_replace_rtx_1/src/recog.c:917:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v21; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/validate_replace_rtx_1/src/recog.c:919:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v23; // edx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/validate_replace_rtx_1/src/recog.c:922:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v26; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/validate_replace_rtx_1/src/recog.c:936:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code; // [rsp+14h] [rbp-64h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/validate_replace_rtx_1/src/recog.c:937:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode op0_mode; // [rsp+20h] [rbp-58h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/validate_replace_rtx_1/src/recog.c:977:13: error: expected expression
+v9 = ( rtx *)&v4->fld[v7]; 
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/validate_replace_rtx_1/src/recog.c:995:32: error: expected expression
+validate_replace_rtx_1( ( rtx *)( ( char *)*v9 + v12), from, to, object); 
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/validate_replace_rtx_1/src/recog.c:1020:88: error: expected expression
+if ( ( v16 == 60 || v16 == 99) && swap_commutative_operands_p( v4->fld[0].rtx, *( rtx *)&v4[1]) ) 
+                                                                                       ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/validate_replace_rtx_1/src/recog.c:1023:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v25 = (  struct rtx_def *)v4[1]; 
+                          ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/validate_replace_rtx_1/src/recog.c:1034:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v30 = (  struct rtx_def *)v4[1]; 
+                          ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/validate_replace_rtx_1/src/recog.c:1039:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)v4 + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/validate_replace_rtx_1/src/recog.c:1041:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)v4 + 2)); 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/validate_replace_rtx_1/src/recog.c:1042:36: error: use of undeclared identifier 'machine_mode'
+v32 = simplify_gen_binary( PLUS, ( machine_mode)*( ( unsigned __int8 *)v4 + 2), v4->fld[0].rtx, v31); 
+                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/validate_replace_rtx_1/src/recog.c:1050:26: error: use of undeclared identifier 'machine_mode'
+v35 = simplify_subreg( ( machine_mode)*( ( unsigned __int8 *)v4 + 2), v4->fld[0].rtx, op0_mode, *( _DWORD *)&v4[1]); 
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/validate_replace_rtx_1/src/recog.c:1053:38: error: use of undeclared identifier 'machine_mode'
+&& ( v35 = gen_rtx_fmt_e( CLOBBER, ( machine_mode)*( ( unsigned __int8 *)v4 + 2), const_int_rtx[64])) != 0LL ) 
+                                     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/validate_replace_rtx_1/src/recog.c:1060:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v28 = (  struct rtx_def *)v4[1]; 
+                          ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/validate_replace_rtx_1/src/recog.c:1063:36: error: use of undeclared identifier 'machine_mode'
+v29 = simplify_gen_binary( PLUS, ( machine_mode)*( ( unsigned __int8 *)v4 + 2), v4->fld[0].rtx, v28); 
+                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/validate_replace_rtx_1/src/recog.c:1072:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v33.rtwint = ( __int64)v4->fld[0]; 
+                       ^~~~~~~~~~
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/validate_replace_rtx_1/src/obj/recog.o] Error 1

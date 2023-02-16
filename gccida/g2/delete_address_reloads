@@ -1,0 +1,75 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/delete_address_reloads/src/reload1.c:8209:4: error: expected ';' after expression
+rtx v10; // rsi 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/delete_address_reloads/src/reload1.c:8209:5: error: use of undeclared identifier 'v10'
+rtx v10; // rsi 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/delete_address_reloads/src/reload1.c:8214:1: error: use of undeclared identifier 'v10'; did you mean 'v11'?
+v10 = ( rtx)dead_insn[2]; 
+^~~
+v11
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/delete_address_reloads/src/reload1.c:8210:9: note: 'v11' declared here
+rtunion v11; // rax 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/delete_address_reloads/src/reload1.c:8214:5: error: assigning to 'rtunion' (aka 'union rtunion_def') from incompatible type 'struct rtx_def *'
+v10 = ( rtx)dead_insn[2]; 
+    ^ ~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/delete_address_reloads/src/reload1.c:8215:17: error: use of undeclared identifier 'v10'
+if ( *( _WORD *)v10 == 47 || ( v10 = single_set_2( dead_insn, v10)) != 0LL ) 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/delete_address_reloads/src/reload1.c:8215:63: error: use of undeclared identifier 'v10'
+if ( *( _WORD *)v10 == 47 || ( v10 = single_set_2( dead_insn, v10)) != 0LL ) 
+                                                              ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/delete_address_reloads/src/reload1.c:8215:32: error: use of undeclared identifier 'v10'; did you mean 'v11'?
+if ( *( _WORD *)v10 == 47 || ( v10 = single_set_2( dead_insn, v10)) != 0LL ) 
+                               ^~~
+                               v11
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/delete_address_reloads/src/reload1.c:8210:9: note: 'v11' declared here
+rtunion v11; // rax 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/delete_address_reloads/src/reload1.c:8217:24: error: use of undeclared identifier 'v10'
+v11.rtwint = ( __int64)v10->fld[0]; 
+                       ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/delete_address_reloads/src/reload1.c:8219:46: error: expected expression
+delete_address_reloads_1( dead_insn, *( rtx *)( v11.rtwint + 8), current_insn); 
+                                             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/delete_address_reloads/src/reload1.c:8222:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v2 = ( unsigned __int16 *)dead_insn[1]; 
+                          ^~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/delete_address_reloads/src/reload1.c:8227:48: error: invalid operands to binary expression ('struct rtx_def *' and 'uint64 *' (aka 'unsigned long long *'))
+if ( rtx_class[*rtwint] != 105 || ( v4 = ( rtx)*( ( _QWORD *)rtwint + 4), *( _WORD *)v4 == 47) ) 
+                                         ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/delete_address_reloads/src/reload1.c:8234:55: error: expected expression
+v4 = single_set_2( dead_insn[1].fld[0].rtx, *( ( rtx *)rtwint + 4)); 
+                                                      ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/delete_address_reloads/src/reload1.c:8238:12: error: invalid operands to binary expression ('struct rtx_def *' and 'uint64 *' (aka 'unsigned long long *'))
+v5 = ( rtx)*( ( _QWORD *)v2 + 4); 
+     ~~~~~~^~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/delete_address_reloads/src/reload1.c:8240:26: error: expected ')'
+v5 = single_set_2( ( rtx)v2, *( ( rtx *)v2 + 4)); 
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/delete_address_reloads/src/reload1.c:8240:18: note: to match this '('
+v5 = single_set_2( ( rtx)v2, *( ( rtx *)v2 + 4)); 
+                 ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/delete_address_reloads/src/reload1.c:8245:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v6 = ( __int64)v4[1]; 
+               ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/delete_address_reloads/src/reload1.c:8248:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v7 = ( __int64)v5[1]; 
+               ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/delete_address_reloads/src/reload1.c:8254:32: error: expected expression
+if ( rtx_equal_p( rtx, *( rtx *)( *( _QWORD *)&v4[1] + 8LL)) 
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/delete_address_reloads/src/reload1.c:8255:30: error: expected expression
+&& rtx_equal_p( rtx, *( rtx *)( *( _QWORD *)&v5[1] + 8LL)) 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/delete_address_reloads/src/reload1.c:8259:29: error: expected ')'
+delete_related_insns( ( rtx)v2); 
+                            ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/delete_address_reloads/src/reload1.c:8259:21: note: to match this '('
+delete_related_insns( ( rtx)v2); 
+                    ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/delete_address_reloads/src/obj/reload1.o] Error 1

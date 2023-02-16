@@ -1,0 +1,65 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/cse_set_around_loop/src/cse.c:7193:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v18; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/cse_set_around_loop/src/cse.c:7195:6: error: use of undeclared identifier 'loc'
+rtx *loc; // [rsp+0h] [rbp-58h] 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/cse_set_around_loop/src/cse.c:7197:4: error: expected ';' after expression
+rtx data; // [rsp+10h] [rbp-48h] BYREF 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/cse_set_around_loop/src/cse.c:7197:5: error: use of undeclared identifier 'data'
+rtx data; // [rsp+10h] [rbp-48h] BYREF 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/cse_set_around_loop/src/cse.c:7198:4: error: expected ';' after expression
+rtx pattern; // [rsp+18h] [rbp-40h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/cse_set_around_loop/src/cse.c:7198:5: error: use of undeclared identifier 'pattern'
+rtx pattern; // [rsp+18h] [rbp-40h] 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/cse_set_around_loop/src/cse.c:7199:4: error: expected ';' after expression
+rtx object; // [rsp+20h] [rbp-38h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/cse_set_around_loop/src/cse.c:7199:5: error: use of undeclared identifier 'object'
+rtx object; // [rsp+20h] [rbp-38h] 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/cse_set_around_loop/src/cse.c:7206:26: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v4 = (  struct rtx_def *)x[1]; 
+                         ^~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/cse_set_around_loop/src/cse.c:7209:26: error: expected expression
+v7 = canon_hash( *( rtx *)&x[1], ( machine_mode)BYTE2( v3)); 
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/cse_set_around_loop/src/cse.c:7209:36: error: use of undeclared identifier 'machine_mode'
+v7 = canon_hash( *( rtx *)&x[1], ( machine_mode)BYTE2( v3)); 
+                                   ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/cse_set_around_loop/src/cse.c:7210:31: error: use of undeclared identifier 'machine_mode'
+v8 = lookup( v4, v7 & 0x1F, ( machine_mode)*( unsigned __int8 *)( x->fld[0].rtwint + 2)); 
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/cse_set_around_loop/src/cse.c:7216:1: error: use of undeclared identifier 'loc'
+loc = ( rtx *)&x[1]; 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/cse_set_around_loop/src/cse.c:7216:14: error: expected expression
+loc = ( rtx *)&x[1]; 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/cse_set_around_loop/src/cse.c:7222:18: error: use of undeclared identifier 'loc'
+if ( *( _WORD *)*loc != 61 ) 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/cse_set_around_loop/src/cse.c:7223:21: error: use of undeclared identifier 'loc'
+v10 = notreg_cost( *loc, SET); 
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/cse_set_around_loop/src/cse.c:7237:13: error: expected ';' after expression
+v14 = ( rtx)v12[2]; 
+            ^
+            ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/cse_set_around_loop/src/cse.c:7239:34: error: expected expression
+v14 = single_set_2( v12, *( rtx *)&v12[2]); 
+                                 ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/cse_set_around_loop/src/cse.c:7250:25: error: expected expression
+&& rtx_equal_p( *( rtx *)&v14[1], *loc) ) 
+                        ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/cse_set_around_loop/src/obj/cse.o] Error 1

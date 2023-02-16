@@ -1,0 +1,29 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ix86_expand_move/src/i386.c:7235:25: error: must use 'enum' tag to refer to type 'machine_mode'
+void  ix86_expand_move( machine_mode mode, rtx *operands) 
+                        ^
+                        enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ix86_expand_move/src/i386.c:7254:49: error: use of undeclared identifier 'machine_mode'
+|| ( v7 = operands[1], !symbolic_operand( v7, ( machine_mode)v5)) ) 
+                                                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ix86_expand_move/src/i386.c:7283:10: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( ( ( mode_class_0[mode] & 0xFFFFFFFB) == 2 || mode_class_0[mode] == MODE_VECTOR_FLOAT) 
+         ^~~~~~~~~~~~
+         mode_class
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ix86_expand_move/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ix86_expand_move/src/i386.c:7283:51: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( ( ( mode_class_0[mode] & 0xFFFFFFFB) == 2 || mode_class_0[mode] == MODE_VECTOR_FLOAT) 
+                                                  ^~~~~~~~~~~~
+                                                  mode_class
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ix86_expand_move/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ix86_expand_move/src/i386.c:7299:28: error: use of undeclared identifier 'machine_mode'
+operands[1] = force_reg( ( machine_mode)v5, v7); 
+                           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ix86_expand_move/src/i386.c:7303:21: error: use of undeclared identifier 'machine_mode'
+v8 = gen_reg_rtx( ( machine_mode)v5); 
+                    ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ix86_expand_move/src/obj/i386.o] Error 1

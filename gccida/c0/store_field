@@ -1,0 +1,42 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/store_field/src/expr.c:5497:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/store_field/src/expr.c:5499:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode value_mode, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/store_field/src/expr.c:5504:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v9; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/store_field/src/expr.c:5514:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode tmode; // [rsp+ECh] [rbp-64h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/store_field/src/expr.c:5515:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *count; // [rsp+F0h] [rbp-60h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/store_field/src/expr.c:5556:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| mode_class_0[mode] == MODE_COMPLEX_INT 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/store_field/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/store_field/src/expr.c:5557:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| mode_class_0[mode] == MODE_COMPLEX_FLOAT) 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/store_field/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/store_field/src/expr.c:5586:16: error: used type 'struct rtx_def' where arithmetic or pointer type is required
+if ( to_rtx[1] ? **( _QWORD **)&to_rtx[1] : 0LL ) 
+     ~~~~~~~~~ ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/store_field/src/expr.c:5597:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( ( unsigned __int8)HIBYTE( WORD2( exp->common.type->block.abstract_origin)) >> 1), 
+  ^
+9 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/store_field/src/obj/expr.o] Error 1

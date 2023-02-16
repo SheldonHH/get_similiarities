@@ -1,0 +1,80 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_va_start/src/i386.c:2979:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *type; // r14 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_va_start/src/i386.c:2982:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v15; // rbx 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_va_start/src/i386.c:2988:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v21; // rbp 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_va_start/src/i386.c:2989:5: error: expected ';' after expression
+tree v22; // rax 
+    ^
+    ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_va_start/src/i386.c:2989:6: error: use of undeclared identifier 'v22'; did you mean 'v21'?
+tree v22; // rax 
+     ^~~
+     v21
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_va_start/src/i386.c:2988:12: note: 'v21' declared here
+tree_node *v21; // rbp 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_va_start/src/i386.c:2990:5: error: expected ';' after expression
+tree v23; // rax 
+    ^
+    ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_va_start/src/i386.c:2990:6: error: use of undeclared identifier 'v23'
+tree v23; // rax 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_va_start/src/i386.c:2991:5: error: expected ';' after expression
+tree v24; // rax 
+    ^
+    ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_va_start/src/i386.c:2991:6: error: use of undeclared identifier 'v24'
+tree v24; // rax 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_va_start/src/i386.c:2992:5: error: expected ';' after expression
+tree v25; // rax 
+    ^
+    ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_va_start/src/i386.c:2992:6: error: use of undeclared identifier 'v25'
+tree v25; // rax 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_va_start/src/i386.c:2993:5: error: expected ';' after expression
+tree v26; // [rsp+0h] [rbp-48h] 
+    ^
+    ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_va_start/src/i386.c:2993:6: error: use of undeclared identifier 'v26'
+tree v26; // [rsp+0h] [rbp-48h] 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_va_start/src/i386.c:2994:5: error: expected ';' after expression
+tree v27; // [rsp+8h] [rbp-40h] 
+    ^
+    ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_va_start/src/i386.c:2994:6: error: use of undeclared identifier 'v27'
+tree v27; // [rsp+8h] [rbp-40h] 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_va_start/src/i386.c:2995:5: error: expected ';' after expression
+tree v28; // [rsp+10h] [rbp-38h] 
+    ^
+    ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_va_start/src/i386.c:2995:6: error: use of undeclared identifier 'v28'
+tree v28; // [rsp+10h] [rbp-38h] 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_va_start/src/i386.c:3004:35: error: expected ')'
+v8 = build( COMPONENT_REF, ( tree)v3[1], v7, v3); 
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_va_start/src/i386.c:3004:11: note: to match this '('
+v8 = build( COMPONENT_REF, ( tree)v3[1], v7, v3); 
+          ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_va_start/src/i386.c:3005:36: error: expected ')'
+v28 = build( COMPONENT_REF, ( tree)v4[1], v7, v4); 
+                                   ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_va_start/src/i386.c:3005:12: note: to match this '('
+v28 = build( COMPONENT_REF, ( tree)v4[1], v7, v4); 
+           ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_va_start/src/obj/i386.o] Error 1

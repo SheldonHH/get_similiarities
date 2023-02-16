@@ -1,0 +1,21 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cse_process_notes/src/cse.c:6923:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code; // [rsp+64h] [rbp-1Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cse_process_notes/src/cse.c:6934:1: error: statement requires expression of scalar type ('struct rtx_def' invalid)
+if ( x[1] ) 
+^    ~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cse_process_notes/src/cse.c:6951:2: error: expected expression
+ struct cse_reg_info = cached_cse_reg_info; 
+ ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cse_process_notes/src/cse.c:6953:2: error: expected expression
+ struct cse_reg_info = get_cse_reg_info( x->fld[0].rtuint); 
+ ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cse_process_notes/src/cse.c:6970:41: error: use of undeclared identifier 'machine_mode'
+&& ( new_0 = gen_lowpart_if_possible( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)x), ent->const_rtx)) != 0LL ) 
+                                        ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cse_process_notes/src/cse.c:6970:56: error: expected expression
+&& ( new_0 = gen_lowpart_if_possible( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)x), ent->const_rtx)) != 0LL ) 
+                                                       ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cse_process_notes/src/obj/cse.o] Error 1

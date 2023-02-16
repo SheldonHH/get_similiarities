@@ -1,0 +1,66 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/extract_split_bit_field/src/expmed.c:2244:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v10; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/extract_split_bit_field/src/expmed.c:2246:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v12; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/extract_split_bit_field/src/expmed.c:2247:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v13; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/extract_split_bit_field/src/expmed.c:2249:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v15; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/extract_split_bit_field/src/expmed.c:2250:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v17; // [rsp+2Ch] [rbp-B4h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/extract_split_bit_field/src/expmed.c:2251:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // [rsp+3Ch] [rbp-A4h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/extract_split_bit_field/src/expmed.c:2279:1: error: statement requires expression of scalar type ('struct rtx_def' invalid)
+if ( op0[1] ) 
+^    ~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/extract_split_bit_field/src/expmed.c:2295:1: error: statement requires expression of scalar type ('struct rtx_def' invalid)
+if ( op0[1] ) 
+^    ~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/extract_split_bit_field/src/expmed.c:2330:32: error: invalid suffix 'orce' on integer constant
+word = operand_sub*(short *)0xforce( 
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/extract_split_bit_field/src/expmed.c:2333:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)op0->fld[0].rtwint)); 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/extract_split_bit_field/src/expmed.c:2333:18: error: expected expression
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)op0->fld[0].rtwint)); 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/extract_split_bit_field/src/expmed.c:2330:8: error: use of undeclared identifier 'operand_sub'
+word = operand_sub*(short *)0xforce( 
+       ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/extract_split_bit_field/src/expmed.c:2338:32: error: invalid suffix 'orce' on integer constant
+word = operand_sub*(short *)0xforce( op0, offset, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)op0)); 
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/extract_split_bit_field/src/expmed.c:2338:53: error: use of undeclared identifier 'machine_mode'
+word = operand_sub*(short *)0xforce( op0, offset, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)op0)); 
+                                                    ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/extract_split_bit_field/src/expmed.c:2338:68: error: expected expression
+word = operand_sub*(short *)0xforce( op0, offset, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)op0)); 
+                                                                   ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/extract_split_bit_field/src/expmed.c:2338:8: error: use of undeclared identifier 'operand_sub'
+word = operand_sub*(short *)0xforce( op0, offset, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)op0)); 
+       ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/extract_split_bit_field/src/expmed.c:2345:44: error: invalid suffix 'xmode' on integer constant
+part = extract_fixed_bit_field( *(short *)0xmode, word, ( unit * offset) >> 3, v19, thispos, 0LL, 1); 
+                                           ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/extract_split_bit_field/src/expmed.c:2349:19: error: invalid suffix 'xmode' on integer constant
+mode = *(short *)0xmode; 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/extract_split_bit_field/src/expmed.c:2356:35: error: invalid suffix 'xmode' on integer constant
+result = expand_binop( *(short *)0xmode, optab_table[19], part, result, 0LL, 1, OPTAB_LIB_WIDEN); 
+                                  ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/extract_split_bit_field/src/obj/expmed.o] Error 1

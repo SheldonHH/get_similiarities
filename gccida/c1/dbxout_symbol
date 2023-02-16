@@ -1,0 +1,34 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/dbxout_symbol/src/dbxout.c:2300:10: error: conflicting types for 'dbxout_symbol'
+__int64  dbxout_symbol( tree decl, int local) 
+         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/dbxout_symbol/src/dbxout.h:21:12: note: previous declaration is here
+extern int dbxout_symbol                PARAMS ((tree, int));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/dbxout_symbol/src/dbxout.c:2307:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v8; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/dbxout_symbol/src/dbxout.c:2311:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *initial; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/dbxout_symbol/src/dbxout.c:2319:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v20; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/dbxout_symbol/src/dbxout.c:2320:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v21; // r15 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/dbxout_symbol/src/dbxout.c:2325:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v26; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/dbxout_symbol/src/dbxout.c:2399:20: error: expected expression
+v26 = ( tree_node *)*( &global_trees + 27); 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/dbxout_symbol/src/dbxout.c:2399:9: error: use of undeclared identifier 'tree_node'
+v26 = ( tree_node *)*( &global_trees + 27); 
+        ^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/dbxout_symbol/src/obj/dbxout.o] Error 1

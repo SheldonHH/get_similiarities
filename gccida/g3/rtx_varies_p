@@ -1,0 +1,23 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/rtx_varies_p/src/rtlanal.c:597:6: error: use of undeclared identifier 'v12'
+rtx *v12; // r14 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/rtx_varies_p/src/rtlanal.c:612:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+rtx = (  struct rtx_def *)x[1]; 
+                          ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/rtx_varies_p/src/rtlanal.c:681:14: error: expected expression
+v12 = ( rtx *)( rtwint + 2); 
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/rtx_varies_p/src/rtlanal.c:681:1: error: use of undeclared identifier 'v12'
+v12 = ( rtx *)( rtwint + 2); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/rtx_varies_p/src/rtlanal.c:683:25: error: use of undeclared identifier 'v12'
+while ( !rtx_varies_p( *v12, for_alias) ) 
+                        ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/rtx_varies_p/src/rtlanal.c:685:22: error: expected expression
+if ( ++v12 == ( rtx *)v13 ) 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/rtx_varies_p/src/rtlanal.c:685:8: error: use of undeclared identifier 'v12'
+if ( ++v12 == ( rtx *)v13 ) 
+       ^
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/rtx_varies_p/src/obj/rtlanal.o] Error 1

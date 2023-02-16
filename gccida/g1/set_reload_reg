@@ -1,0 +1,36 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/set_reload_reg/src/reload1.c:5542:21: error: use of undeclared identifier 'machine_mode'
+v2 = gen_rtx_REG( ( machine_mode)*( ( _DWORD *)&rld + 26 * r + 7), spill_regs[i]); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/set_reload_reg/src/reload1.c:5546:58: error: expected expression
+result = ix86_hard_regno_mode_ok( v3, *( ( machine_mode *)&rld + 26 * r + 7)); 
+                                                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/set_reload_reg/src/reload1.c:5546:44: error: use of undeclared identifier 'machine_mode'
+result = ix86_hard_regno_mode_ok( v3, *( ( machine_mode *)&rld + 26 * r + 7)); 
+                                           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/set_reload_reg/src/reload1.c:5552:46: error: use of undeclared identifier 'machine_mode'
+|| ( result = ix86_hard_regno_mode_ok( v3, ( machine_mode)*( unsigned __int8 *)( v5 + 2))) != 0 ) 
+                                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/set_reload_reg/src/reload1.c:5555:55: error: use of undeclared identifier 'machine_mode'
+if ( !v6 || ( result = ix86_hard_regno_mode_ok( v3, ( machine_mode)*( unsigned __int8 *)( v6 + 2))) != 0 ) 
+                                                      ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/set_reload_reg/src/reload1.c:5562:19: error: expected expression
+*( ( reload_type *)&rld + 26 * r + 23), 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/set_reload_reg/src/reload1.c:5562:6: error: use of undeclared identifier 'reload_type'; did you mean 'reload_order'?
+*( ( reload_type *)&rld + 26 * r + 23), 
+     ^~~~~~~~~~~
+     reload_order
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/set_reload_reg/src/reload1.c:1652:14: note: 'reload_order' declared here
+static short reload_order[MAX_RELOADS];
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/set_reload_reg/src/reload1.c:5563:20: error: expected expression
+*( ( machine_mode *)&rld + 26 * r + 7)); 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/set_reload_reg/src/reload1.c:5563:6: error: use of undeclared identifier 'machine_mode'
+*( ( machine_mode *)&rld + 26 * r + 7)); 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/set_reload_reg/src/reload1.c:5564:23: error: array type 'struct reload [180]' is not assignable
+*( &rld + 13 * r + 8) = v2; 
+~~~~~~~~~~~~~~~~~~~~~ ^
+10 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/set_reload_reg/src/obj/reload1.o] Error 1

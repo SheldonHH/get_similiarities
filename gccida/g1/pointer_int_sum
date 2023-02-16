@@ -1,0 +1,39 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/pointer_int_sum/src/c-common.c:2452:24: error: must use 'enum' tag to refer to type 'tree_code'
+tree  pointer_int_sum( tree_code resultcode, tree ptrop, tree intop) 
+                       ^
+                       enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/pointer_int_sum/src/c-common.c:2461:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v12; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/pointer_int_sum/src/c-common.c:2462:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v13; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/pointer_int_sum/src/c-common.c:2463:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v14; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/pointer_int_sum/src/c-common.c:2465:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v16; // r12 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/pointer_int_sum/src/c-common.c:2469:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v20; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/pointer_int_sum/src/c-common.c:2518:25: error: use of undeclared identifier 'tree_code'; did you mean 'tree_cons'?
+v4 = build_binary_op( ( tree_code)subcode, v4, v20, 1); 
+                        ^~~~~~~~~
+                        tree_cons
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/pointer_int_sum/src/tree.h:2477:13: note: 'tree_cons' declared here
+extern tree tree_cons                   PARAMS ((tree, tree, tree));
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/pointer_int_sum/src/c-common.c:2518:35: error: expected ')'
+v4 = build_binary_op( ( tree_code)subcode, v4, v20, 1); 
+                                  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/pointer_int_sum/src/c-common.c:2518:21: note: to match this '('
+v4 = build_binary_op( ( tree_code)subcode, v4, v20, 1); 
+                    ^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/pointer_int_sum/src/obj/c-common.o] Error 1

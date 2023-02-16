@@ -1,0 +1,80 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/force_to_mode/src/combine.c:7104:28: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  force_to_mode( rtx x, machine_mode mode, unsigned __int64 mask, rtx reg, int just_select) 
+                           ^
+                           enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/force_to_mode/src/combine.c:7108:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v9; // r14d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/force_to_mode/src/combine.c:7109:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v10; // r15d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/force_to_mode/src/combine.c:7123:4: error: expected ';' after expression
+rtx v25; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/force_to_mode/src/combine.c:7123:5: error: use of undeclared identifier 'v25'
+rtx v25; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/force_to_mode/src/combine.c:7180:4: error: expected ';' after expression
+rtx v82; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/force_to_mode/src/combine.c:7180:5: error: use of undeclared identifier 'v82'
+rtx v82; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/force_to_mode/src/combine.c:7205:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[mode] != mode_class_0[*( ( unsigned __int8 *)x + 2)] 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/force_to_mode/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/force_to_mode/src/combine.c:7205:28: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[mode] != mode_class_0[*( ( unsigned __int8 *)x + 2)] 
+                           ^~~~~~~~~~~~
+                           mode_class
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/force_to_mode/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/force_to_mode/src/combine.c:7206:36: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+|| ( v10 = mode, !have_insn_for( ( rtx_code)v8, mode)) ) 
+                                   ^~~~~~~~
+                                   rtx_cost
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/force_to_mode/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/force_to_mode/src/combine.c:7206:45: error: expected ')'
+|| ( v10 = mode, !have_insn_for( ( rtx_code)v8, mode)) ) 
+                                            ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/force_to_mode/src/combine.c:7206:32: note: to match this '('
+|| ( v10 = mode, !have_insn_for( ( rtx_code)v8, mode)) ) 
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/force_to_mode/src/combine.c:7237:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v14.rtwint = ( __int64)x->fld[0]; 
+                       ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/force_to_mode/src/combine.c:7262:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v14.rtwint = ( __int64)x->fld[0]; 
+                       ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/force_to_mode/src/combine.c:7271:30: error: expected expression
+v94 = force_to_mode( *( rtx *)&x[1], mode, mask, reg, next_select); 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/force_to_mode/src/combine.c:7272:34: error: use of undeclared identifier 'machine_mode'
+v95 = gen_lowpart_for_combine( ( machine_mode)*( ( unsigned __int8 *)x + 2), v94); 
+                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/force_to_mode/src/combine.c:7273:18: error: expected expression
+do_SUBST( ( rtx *)&x[1], v95); 
+                 ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/force_to_mode/src/combine.c:7275:34: error: use of undeclared identifier 'machine_mode'
+v97 = gen_lowpart_for_combine( ( machine_mode)*( ( unsigned __int8 *)x + 2), v96); 
+                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/force_to_mode/src/combine.c:7276:18: error: expected expression
+do_SUBST( ( rtx *)x[1].fld, v97); 
+                 ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/force_to_mode/src/combine.c:7294:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v38.rtwint = ( __int64)x->fld[0]; 
+                       ^~~~~~~~~
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/force_to_mode/src/obj/combine.o] Error 1

@@ -1,0 +1,76 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/update_giv_derive/src/loop.c:6445:1: error: use of undeclared identifier 'induction_1'
+induction_1 *giv; // [rsp+38h] [rbp-18h] 
+^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/update_giv_derive/src/loop.c:6445:14: error: use of undeclared identifier 'giv'; did you mean 'div'?
+induction_1 *giv; // [rsp+38h] [rbp-18h] 
+             ^~~
+             div
+/usr/include/stdlib.h:849:14: note: 'div' declared here
+extern div_t div (int __numer, int __denom)
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/update_giv_derive/src/loop.c:6446:1: error: use of undeclared identifier 'induction_1'
+induction_1 *biv; // [rsp+40h] [rbp-10h] 
+^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/update_giv_derive/src/loop.c:6446:14: error: use of undeclared identifier 'biv'; did you mean 'div'?
+induction_1 *biv; // [rsp+40h] [rbp-10h] 
+             ^~~
+             div
+/usr/include/stdlib.h:849:14: note: 'div' declared here
+extern div_t div (int __numer, int __denom)
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/update_giv_derive/src/loop.c:6453:7: error: use of undeclared identifier 'biv'
+for ( biv = bl_0->biv; biv; biv = biv->next_iv ) 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/update_giv_derive/src/loop.c:6453:24: error: use of undeclared identifier 'biv'; did you mean 'div'?
+for ( biv = bl_0->biv; biv; biv = biv->next_iv ) 
+                       ^~~
+                       div
+/usr/include/stdlib.h:849:14: note: 'div' declared here
+extern div_t div (int __numer, int __denom)
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/update_giv_derive/src/loop.c:6453:29: error: use of undeclared identifier 'biv'
+for ( biv = bl_0->biv; biv; biv = biv->next_iv ) 
+                            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/update_giv_derive/src/loop.c:6453:35: error: use of undeclared identifier 'biv'
+for ( biv = bl_0->biv; biv; biv = biv->next_iv ) 
+                                  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/update_giv_derive/src/loop.c:6455:55: error: use of undeclared identifier 'biv'
+if ( *( _WORD *)p == 36 || *( _WORD *)p == 33 || p == biv->insn ) 
+                                                      ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/update_giv_derive/src/loop.c:6457:7: error: use of undeclared identifier 'giv'
+for ( giv = bl_0->giv; giv; giv = giv->next_iv ) 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/update_giv_derive/src/loop.c:6457:24: error: use of undeclared identifier 'giv'; did you mean 'div'?
+for ( giv = bl_0->giv; giv; giv = giv->next_iv ) 
+                       ^~~
+                       div
+/usr/include/stdlib.h:849:14: note: 'div' declared here
+extern div_t div (int __numer, int __denom)
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/update_giv_derive/src/loop.c:6457:29: error: use of undeclared identifier 'giv'
+for ( giv = bl_0->giv; giv; giv = giv->next_iv ) 
+                            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/update_giv_derive/src/loop.c:6457:35: error: use of undeclared identifier 'giv'
+for ( giv = bl_0->giv; giv; giv = giv->next_iv ) 
+                                  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/update_giv_derive/src/loop.c:6459:21: error: use of undeclared identifier 'giv'
+if ( ( *( ( _BYTE *)giv + 100) & 0x40) == 0 ) 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/update_giv_derive/src/loop.c:6461:43: error: use of undeclared identifier 'giv'
+if ( *( _WORD *)p != 36 || ( *( ( _BYTE *)giv + 100) & 8) != 0 ) 
+                                          ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/update_giv_derive/src/loop.c:6463:6: error: use of undeclared identifier 'giv'
+if ( giv->mult_val != const_int_rtx[64] && ( *( ( _BYTE *)giv + 100) & 1) == 0 ) 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/update_giv_derive/src/loop.c:6463:59: error: use of undeclared identifier 'giv'
+if ( giv->mult_val != const_int_rtx[64] && ( *( ( _BYTE *)giv + 100) & 1) == 0 ) 
+                                                          ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/update_giv_derive/src/loop.c:6465:11: error: use of undeclared identifier 'biv'
+if ( p == biv->insn ) 
+          ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/update_giv_derive/src/loop.c:6468:6: error: use of undeclared identifier 'biv'
+if ( biv->mult_val == const_int_rtx[65] ) 
+     ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/update_giv_derive/src/obj/loop.o] Error 1

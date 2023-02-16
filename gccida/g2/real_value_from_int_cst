@@ -1,0 +1,14 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/real_value_from_int_cst/src/tree.c:1086:17: error: conflicting types for 'real_value_from_int_cst'
+realvaluetype * real_value_from_int_cst( realvaluetype *retstr, tree type, tree i) 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/real_value_from_int_cst/src/real.h:455:17: note: previous declaration is here
+REAL_VALUE_TYPE real_value_from_int_cst PARAMS ((union tree_node *,
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/real_value_from_int_cst/src/tree.c:1104:35: error: use of undeclared identifier 'machine_mode'
+ereal_from_uint( &d, low, high, ( machine_mode)v7); 
+                                  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/real_value_from_int_cst/src/tree.c:1106:34: error: use of undeclared identifier 'machine_mode'
+ereal_from_int( &d, low, high, ( machine_mode)v7); 
+                                 ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/real_value_from_int_cst/src/obj/tree.o] Error 1

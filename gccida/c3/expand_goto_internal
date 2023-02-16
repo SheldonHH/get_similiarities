@@ -1,0 +1,15 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_goto_internal/src/stmt.c:1339:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *cleanups; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_goto_internal/src/stmt.c:1360:1: error: statement requires expression of scalar type ('struct rtx_def' invalid)
+if ( label[1] ) 
+^    ~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_goto_internal/src/stmt.c:1459:17: error: expected expression
+if ( *( _OWORD *)&v13->data.case_stmt.nominal_type == 0LL ) 
+                ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_goto_internal/src/stmt.c:1459:9: error: use of undeclared identifier '_OWORD'
+if ( *( _OWORD *)&v13->data.case_stmt.nominal_type == 0LL ) 
+        ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_goto_internal/src/obj/stmt.o] Error 1

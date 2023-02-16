@@ -1,0 +1,31 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_attr_length_immediate_default/src/i386.c:10394:6: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( recog_data_0.n_operands <= 0 ) 
+     ^~~~~~~~~~~~
+     recog_data
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_attr_length_immediate_default/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_attr_length_immediate_default/src/i386.c:10396:24: error: use of undeclared identifier 'recog_data_0'
+v2 = ( unsigned __int8)recog_data_0.n_operands + 1LL; 
+                       ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_attr_length_immediate_default/src/i386.c:10401:21: error: use of undeclared identifier 'changes_allocated'
+v5 = *( ( _QWORD *)&changes_allocated + v2); 
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_attr_length_immediate_default/src/i386.c:10411:40: error: too many arguments provided to function-like macro invocation
+fatal_insn( "unknown insn mode", insn, "i386.c", 9956, "ix86_attr_length_immediate_default"); 
+                                       ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_attr_length_immediate_default/src/toplev.h:50:9: note: macro 'fatal_insn' defined here
+#define fatal_insn(msgid, insn) \
+        ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_attr_length_immediate_default/src/i386.c:10411:1: error: use of undeclared identifier 'fatal_insn'; did you mean '_fatal_insn'?
+fatal_insn( "unknown insn mode", insn, "i386.c", 9956, "ix86_attr_length_immediate_default"); 
+^~~~~~~~~~
+_fatal_insn
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_attr_length_immediate_default/src/toplev.h:44:13: note: '_fatal_insn' declared here
+extern void _fatal_insn                 PARAMS ((const char *,
+            ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_attr_length_immediate_default/src/i386.c:10412:26: error: subscripted value is not an array, pointer, or vector
+result = *(int *)0x67A6E0[v7]; 
+                 ~~~~~~~~^~~
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_attr_length_immediate_default/src/obj/i386.o] Error 1

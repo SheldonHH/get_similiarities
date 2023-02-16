@@ -1,0 +1,22 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/next_tokenrun/src/cpplex.c:1227:1: error: unknown type name 'tokenrun_0'; did you mean 'tokenrun'?
+tokenrun_0 * next_tokenrun( tokenrun_0 *run) 
+^~~~~~~~~~
+tokenrun
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/next_tokenrun/src/cpphash.h:97:25: note: 'tokenrun' declared here
+typedef struct tokenrun tokenrun;
+                        ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/next_tokenrun/src/cpplex.c:1227:29: error: unknown type name 'tokenrun_0'; did you mean 'tokenrun'?
+tokenrun_0 * next_tokenrun( tokenrun_0 *run) 
+                            ^~~~~~~~~~
+                            tokenrun
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/next_tokenrun/src/cpphash.h:97:25: note: 'tokenrun' declared here
+typedef struct tokenrun tokenrun;
+                        ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/next_tokenrun/src/cpplex.c:1231:27: error: expected expression
+run->next = ( tokenrun_0 *)xmalloc( 0x20uLL); 
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/next_tokenrun/src/cpplex.c:1231:15: error: use of undeclared identifier 'tokenrun_0'
+run->next = ( tokenrun_0 *)xmalloc( 0x20uLL); 
+              ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/next_tokenrun/src/obj/cpplex.o] Error 1

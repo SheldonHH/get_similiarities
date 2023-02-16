@@ -1,0 +1,31 @@
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/compute_escape_influence/src/engine/influence.c:2012:6: error: use of undeclared identifier 'cached_board_2'
+if ( cached_board_2[v5] != v10 ) 
+     ^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/compute_escape_influence/src/engine/influence.c:2014:1: error: use of undeclared identifier 'cached_board_2'
+cached_board_2[v5] = v10; 
+^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/compute_escape_influence/src/engine/influence.c:2021:13: error: use of undeclared identifier 'active_caches_1'
+*( _QWORD *)active_caches_1 = 0LL; 
+            ^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/compute_escape_influence/src/engine/influence.c:2022:6: error: use of undeclared identifier 'active_caches_1'
+if ( active_caches_1[v6] ) 
+     ^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/compute_escape_influence/src/engine/influence.c:2027:19: error: use of undeclared identifier 'escape_values_0'; did you mean 'escape_value'?
+escape_value[i] = escape_values_0[2 * i + v9]; 
+                  ^~~~~~~~~~~~~~~
+                  escape_value
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/compute_escape_influence/src/engine/influence.c:1994:98: note: 'escape_value' declared here
+void  compute_escape_influence( int color, const char *safe_stones, const float *strength, char *escape_value) 
+                                                                                                 ^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/compute_escape_influence/src/engine/influence.c:2060:1: error: use of undeclared identifier 'escape_values_0'; did you mean 'escape_value'?
+escape_values_0[2 * j + v9] = escape_value[j]; 
+^~~~~~~~~~~~~~~
+escape_value
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/compute_escape_influence/src/engine/influence.c:1994:98: note: 'escape_value' declared here
+void  compute_escape_influence( int color, const char *safe_stones, const float *strength, char *escape_value) 
+                                                                                                 ^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/compute_escape_influence/src/engine/influence.c:2062:1: error: use of undeclared identifier 'active_caches_1'
+active_caches_1[v6] = 1; 
+^
+7 errors generated.
+make: *** [/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/compute_escape_influence/src/obj/1/influence.o] Error 1

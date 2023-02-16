@@ -1,0 +1,76 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_equiv_reg/src/reload.c:6783:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class a3, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_equiv_reg/src/reload.c:6787:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode) 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_equiv_reg/src/reload.c:6804:4: error: expected ';' after expression
+rtx v22; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_equiv_reg/src/reload.c:6804:5: error: use of undeclared identifier 'v22'
+rtx v22; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_equiv_reg/src/reload.c:6812:4: error: expected ';' after expression
+rtx v30; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_equiv_reg/src/reload.c:6812:5: error: use of undeclared identifier 'v30'
+rtx v30; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_equiv_reg/src/reload.c:6822:4: error: expected ';' after expression
+rtx v40; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_equiv_reg/src/reload.c:6822:5: error: use of undeclared identifier 'v40'
+rtx v40; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_equiv_reg/src/reload.c:6890:4: error: expected ';' after expression
+rtx datum; // [rsp+40h] [rbp-78h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_equiv_reg/src/reload.c:6890:5: error: use of undeclared identifier 'datum'
+rtx datum; // [rsp+40h] [rbp-78h] 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_equiv_reg/src/reload.c:6899:4: error: expected ';' after expression
+rtx v122; // [rsp+70h] [rbp-48h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_equiv_reg/src/reload.c:6899:5: error: use of undeclared identifier 'v122'
+rtx v122; // [rsp+70h] [rbp-48h] 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_equiv_reg/src/reload.c:6931:34: error: must use 'enum' tag to refer to type 'mode_class'
+|| ( v103 = 0, v34 = 0, *( const mode_class *)( ( char *)mode_class_0 + ( ( v7 >> 14) & 0x3FC)) != MODE_FLOAT) ) 
+                                 ^
+                                 enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_equiv_reg/src/machmode.h:52:30: note: enum 'mode_class' is hidden by a non-type declaration of 'mode_class' here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_equiv_reg/src/reload.c:6931:58: error: use of undeclared identifier 'mode_class_0'
+|| ( v103 = 0, v34 = 0, *( const mode_class *)( ( char *)mode_class_0 + ( ( v7 >> 14) & 0x3FC)) != MODE_FLOAT) ) 
+                                                         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_equiv_reg/src/reload.c:6939:14: error: expected ';' after return statement
+return ( rtx)rtwint; 
+             ^
+             ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_equiv_reg/src/reload.c:6970:14: error: expected ';' after return statement
+return ( rtx)rtwint; 
+             ^
+             ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_equiv_reg/src/reload.c:6982:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v11 = ( __int64)insn[1]; 
+                ^~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_equiv_reg/src/reload.c:7007:15: error: expected expression
+v12 = *( rtx *)( v11 + 32); 
+              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_equiv_reg/src/reload.c:7010:27: error: expected ')'
+v13 = single_set_2( ( rtx)v11, *( rtx *)( v11 + 32)); 
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_equiv_reg/src/reload.c:7010:19: note: to match this '('
+v13 = single_set_2( ( rtx)v11, *( rtx *)( v11 + 32)); 
+                  ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_equiv_reg/src/obj/reload.o] Error 1

@@ -1,0 +1,44 @@
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/compute_eyes_pessimistic/src/engine/optics.c:1404:12: error: use of undeclared identifier 'eyevalue'
+*value = ( eyevalue)16842752; 
+           ^
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/compute_eyes_pessimistic/src/engine/optics.c:1409:8: error: assigning to 'struct eyevalue' from incompatible type 'int'
+*value = 0; 
+       ^ ~
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/compute_eyes_pessimistic/src/engine/optics.c:1418:12: error: use of undeclared identifier 'eyevalue'
+*value = ( eyevalue)16843009; 
+           ^
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/compute_eyes_pessimistic/src/engine/optics.c:1440:12: error: use of undeclared identifier 'eyevalue'
+*value = ( eyevalue)33686018; 
+           ^
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/compute_eyes_pessimistic/src/engine/optics.c:1459:1: error: use of undeclared identifier 'result_0'
+result_0, 
+^
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/compute_eyes_pessimistic/src/engine/optics.c:1467:51: error: use of undeclared identifier 'result_0'
+gprintf( " guess_eye - %s, pessimistic_min=%d\n", result_0, ( unsigned int)v25); 
+                                                  ^
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/compute_eyes_pessimistic/src/engine/optics.c:1485:14: error: use of undeclared identifier 'result_0'
+gg_snprintf( result_0, 0x1DuLL, "%d%d%d%d", v40, ( unsigned int)v40, v41, v41); 
+             ^
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/compute_eyes_pessimistic/src/engine/optics.c:1532:14: error: use of undeclared identifier 'result_0'
+gg_snprintf( result_0, 0x1DuLL, "[%d, %d, %d, %d]", value->a); 
+             ^
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/compute_eyes_pessimistic/src/engine/optics.c:1534:14: error: use of undeclared identifier 'result_0'
+gg_snprintf( result_0, 0x1DuLL, "%d%d%d%d", value->a); 
+             ^
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/compute_eyes_pessimistic/src/engine/optics.c:1535:56: error: use of undeclared identifier 'result_0'
+gprintf( " graph matching - %s, pessimistic_min=%d\n", result_0, ( unsigned int)v25); 
+                                                       ^
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/compute_eyes_pessimistic/src/engine/optics.c:1603:50: error: too many arguments to function call, expected 2, have 3
+v37 = gg_normalize_float2int( v36, 0.0099999998, v36); 
+      ~~~~~~~~~~~~~~~~~~~~~~                     ^~~
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/compute_eyes_pessimistic/src/include/gg_utils.h:52:1: note: 'gg_normalize_float2int' declared here
+int gg_normalize_float2int(float x, float a);
+^
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/compute_eyes_pessimistic/src/engine/optics.c:1604:64: error: too many arguments to function call, expected 2, have 3
+if ( v37 > ( int)gg_normalize_float2int( scorea, 0.0099999998, v36) ) 
+                 ~~~~~~~~~~~~~~~~~~~~~~                        ^~~
+/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/compute_eyes_pessimistic/src/include/gg_utils.h:52:1: note: 'gg_normalize_float2int' declared here
+int gg_normalize_float2int(float x, float a);
+^
+12 errors generated.
+make: *** [/data/output_dir/patch/gobmk/ida/gcc/O3/gobmk-gcc-O3/compute_eyes_pessimistic/src/obj/1/optics.o] Error 1

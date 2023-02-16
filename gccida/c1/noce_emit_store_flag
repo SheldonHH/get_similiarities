@@ -1,0 +1,9 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/noce_emit_store_flag/src/ifcvt.c:974:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v11; // r12d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/noce_emit_store_flag/src/ifcvt.c:1004:30: error: use of undeclared identifier 'machine_mode'
+v12 = gen_rtx_fmt_ee( v11, ( machine_mode)*( ( unsigned __int8 *)x + 2), cond->fld[0].rtx, *( rtx *)&cond[1]); 
+                             ^
+2 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/noce_emit_store_flag/src/obj/ifcvt.o] Error 1

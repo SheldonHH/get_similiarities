@@ -1,0 +1,15 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/equiv_constant/src/cse.c:4813:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v4; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/equiv_constant/src/cse.c:4830:2: error: expected expression
+ struct cse_reg_info = cached_cse_reg_info; 
+ ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/equiv_constant/src/cse.c:4832:2: error: expected expression
+ struct cse_reg_info = get_cse_reg_info( x->fld[0].rtuint); 
+ ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/equiv_constant/src/cse.c:4835:33: error: use of undeclared identifier 'machine_mode'
+xa = gen_lowpart_if_possible( ( machine_mode)*( ( unsigned __int8 *)x + 2), x_ent->const_rtx); 
+                                ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/equiv_constant/src/obj/cse.o] Error 1

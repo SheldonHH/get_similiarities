@@ -1,0 +1,15 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/noce_try_store_flag_inc/src/ifcvt.c:1242:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v8; // r14d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/noce_try_store_flag_inc/src/ifcvt.c:1258:26: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v5 = (  struct rtx_def *)a[1]; 
+                         ^~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/noce_try_store_flag_inc/src/ifcvt.c:1274:21: error: use of undeclared identifier 'machine_mode'
+v9 = gen_reg_rtx( ( machine_mode)*( ( unsigned __int8 *)if_info->x + 2)); 
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/noce_try_store_flag_inc/src/ifcvt.c:1278:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)if_info->x + 2), 
+  ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/noce_try_store_flag_inc/src/obj/ifcvt.o] Error 1

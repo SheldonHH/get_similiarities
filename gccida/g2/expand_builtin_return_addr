@@ -1,0 +1,15 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_builtin_return_addr/src/builtins.c:849:34: error: must use 'enum' tag to refer to type 'built_in_function'
+rtx  expand_builtin_return_addr( built_in_function fndecl_code, int count, rtx tem) 
+                                 ^
+                                 enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_builtin_return_addr/src/builtins.c:866:25: error: use of undeclared identifier 'machine_mode'
+v10 = memory_address( ( machine_mode)( ( ( BYTE3( target_flags) & 2) != 0) + 4), tem); 
+                        ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_builtin_return_addr/src/builtins.c:868:22: error: use of undeclared identifier 'machine_mode'
+v11 = gen_rtx_MEM( ( machine_mode)( ( ( BYTE3( target_flags) & 2) != 0) + 4), v10); 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_builtin_return_addr/src/builtins.c:887:23: error: use of undeclared identifier 'machine_mode'
+return gen_rtx_MEM( ( machine_mode)( ( ( BYTE3( target_flags) & 2) != 0) + 4), v7); 
+                      ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_builtin_return_addr/src/obj/builtins.o] Error 1

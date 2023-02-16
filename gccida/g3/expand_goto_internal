@@ -1,0 +1,38 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_goto_internal/src/stmt.c:1341:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v11; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_goto_internal/src/stmt.c:1352:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v22; // rsi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_goto_internal/src/stmt.c:1355:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v25; // rdx 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_goto_internal/src/stmt.c:1361:30: error: expected expression
+fancy_abort( ( const char *)&::label, 881, "expand_goto_internal"); 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_goto_internal/src/stmt.c:1362:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v4 = ( _QWORD *)label[1]; 
+                ^~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_goto_internal/src/stmt.c:1382:20: error: expected expression
+v11 = ( tree_node *)v8[8]; 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_goto_internal/src/stmt.c:1382:9: error: use of undeclared identifier 'tree_node'
+v11 = ( tree_node *)v8[8]; 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_goto_internal/src/stmt.c:1464:20: error: expected expression
+v22 = ( tree_node *)v15[8]; 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_goto_internal/src/stmt.c:1464:9: error: use of undeclared identifier 'tree_node'
+v22 = ( tree_node *)v15[8]; 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_goto_internal/src/stmt.c:1469:20: error: expected expression
+v25 = ( tree_node *)v15[9]; 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_goto_internal/src/stmt.c:1469:9: error: use of undeclared identifier 'tree_node'
+v25 = ( tree_node *)v15[9]; 
+        ^
+11 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_goto_internal/src/obj/stmt.o] Error 1

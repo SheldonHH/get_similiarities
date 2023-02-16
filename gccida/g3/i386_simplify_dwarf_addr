@@ -1,0 +1,23 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/i386_simplify_dwarf_addr/src/i386.c:5964:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v5.rtwint = ( __int64)rtx->fld[0]; 
+                      ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/i386_simplify_dwarf_addr/src/i386.c:5966:16: error: expected expression
+return *( rtx *)( *( _QWORD *)( v5.rtwint + 8) + 8LL); 
+               ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/i386_simplify_dwarf_addr/src/i386.c:5972:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v6 = ( __int64)rtx[1]; 
+               ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/i386_simplify_dwarf_addr/src/i386.c:5975:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v7.rtwint = ( __int64)rtx->fld[0]; 
+                      ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/i386_simplify_dwarf_addr/src/i386.c:6024:18: error: expected expression
+result = *( rtx *)( *( _QWORD *)( v13 + 8) + 8LL); 
+                 ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/i386_simplify_dwarf_addr/src/i386.c:6046:50: error: expected expression
+result = gen_rtx_fmt_ee( PLUS, VOIDmode, *( rtx *)( *( _QWORD *)( v14 + 8) + 8LL), v15); 
+                                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/i386_simplify_dwarf_addr/src/i386.c:6048:32: error: use of undeclared identifier 'machine_mode'
+return gen_rtx_fmt_ee( PLUS, ( machine_mode)( 5 - ( ( ( unsigned int)target_flags & 0x2000000) == 0)), v8, result); 
+                               ^
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/i386_simplify_dwarf_addr/src/obj/i386.o] Error 1

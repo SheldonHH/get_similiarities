@@ -1,0 +1,50 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/copy_insn_1/src/emit-rtl.c:5147:6: error: expected ';' after expression
+rtvec v17; // rax 
+     ^
+     ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/copy_insn_1/src/emit-rtl.c:5147:7: error: use of undeclared identifier 'v17'
+rtvec v17; // rax 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/copy_insn_1/src/emit-rtl.c:5161:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v10.rtwint = ( __int64)orig->fld[0]; 
+                       ^~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/copy_insn_1/src/emit-rtl.c:5170:19: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+v5 = rtx_alloc( ( rtx_code)( unsigned __int16)v2); 
+                  ^~~~~~~~
+                  rtx_cost
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/copy_insn_1/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/copy_insn_1/src/emit-rtl.c:5170:30: error: expected expression
+v5 = rtx_alloc( ( rtx_code)( unsigned __int16)v2); 
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/copy_insn_1/src/emit-rtl.c:5210:1: error: use of undeclared identifier 'v17'
+v17 = rtvec_alloc( rtvec->num_elem); 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/copy_insn_1/src/emit-rtl.c:5211:33: error: use of undeclared identifier 'v17'
+v5->fld[v14].rtwint = ( __int64)v17; 
+                                ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/copy_insn_1/src/emit-rtl.c:5212:6: error: use of undeclared identifier 'v17'; did you mean 'v15'?
+if ( v17->num_elem > 0 ) 
+     ^~~
+     v15
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/copy_insn_1/src/emit-rtl.c:5145:7: note: 'v15' declared here
+rtvec v15; // rax 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/copy_insn_1/src/emit-rtl.c:5217:73: error: expected expression
+*( _QWORD *)( v5->fld[v14].rtwint + 8 * v18 + 8) = copy_insn_1( *( rtx *)( orig->fld[v14].rtwint 
+                                                                        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/copy_insn_1/src/emit-rtl.c:5234:15: error: expected ';' after expression
+v15 = ( rtvec)copy_insn_1( rtx); 
+              ^
+              ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/copy_insn_1/src/emit-rtl.c:5245:36: error: expected ';' after expression
+orig_asm_operands_vector = ( rtvec)orig[2]; 
+                                   ^
+                                   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/copy_insn_1/src/emit-rtl.c:5246:36: error: expected ';' after expression
+copy_asm_operands_vector = ( rtvec)v5[2]; 
+                                   ^
+                                   ;
+12 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/copy_insn_1/src/obj/emit-rtl.o] Error 1

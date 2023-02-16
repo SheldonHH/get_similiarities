@@ -1,0 +1,41 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dump_flow_info/src/cfg.c:926:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class v10; // r15d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dump_flow_info/src/cfg.c:927:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class v11; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dump_flow_info/src/cfg.c:978:29: error: use of undeclared identifier 'reg_class_names_9'; did you mean 'reg_class_size'?
+fprintf( file, "; pref %s", reg_class_names_9[v10]); 
+                            ^~~~~~~~~~~~~~~~~
+                            reg_class_size
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dump_flow_info/src/hard-reg-set.h:459:21: note: 'reg_class_size' declared here
+extern unsigned int reg_class_size[N_REG_CLASSES];
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dump_flow_info/src/cfg.c:982:38: error: use of undeclared identifier 'reg_class_names_9'; did you mean 'reg_class_size'?
+fprintf( file, "; pref %s, else %s", reg_class_names_9[v10], reg_class_names_9[v11]); 
+                                     ^~~~~~~~~~~~~~~~~
+                                     reg_class_size
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dump_flow_info/src/hard-reg-set.h:459:21: note: 'reg_class_size' declared here
+extern unsigned int reg_class_size[N_REG_CLASSES];
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dump_flow_info/src/cfg.c:982:62: error: use of undeclared identifier 'reg_class_names_9'; did you mean 'reg_class_size'?
+fprintf( file, "; pref %s, else %s", reg_class_names_9[v10], reg_class_names_9[v11]); 
+                                                             ^~~~~~~~~~~~~~~~~
+                                                             reg_class_size
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dump_flow_info/src/hard-reg-set.h:459:21: note: 'reg_class_size' declared here
+extern unsigned int reg_class_size[N_REG_CLASSES];
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dump_flow_info/src/cfg.c:986:32: error: use of undeclared identifier 'reg_class_names_9'; did you mean 'reg_class_size'?
+fprintf( file, "; %s or none", reg_class_names_9[v10]); 
+                               ^~~~~~~~~~~~~~~~~
+                               reg_class_size
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dump_flow_info/src/hard-reg-set.h:459:21: note: 'reg_class_size' declared here
+extern unsigned int reg_class_size[N_REG_CLASSES];
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dump_flow_info/src/cfg.c:990:10: error: use of undeclared identifier 'unk_636F04'
+fwrite( &unk_636F04, 1uLL, 9uLL, file); 
+         ^
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dump_flow_info/src/obj/cfg.o] Error 1

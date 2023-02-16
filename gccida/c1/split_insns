@@ -1,0 +1,43 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/split_insns/src/insn-recog.c:56087:1: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+recog_data_0.insn = 0LL; 
+^~~~~~~~~~~~
+recog_data
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/split_insns/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/split_insns/src/insn-recog.c:56093:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v4.rtwint = ( __int64)x0->fld[0]; 
+                      ^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/split_insns/src/insn-recog.c:56094:42: error: invalid operands to binary expression ('struct rtx_def' and 'int')
+if ( *( _DWORD *)v4.rtwint == 1 && x0[1] == 13 ) 
+                                   ~~~~~ ^  ~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/split_insns/src/insn-recog.c:56102:1: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+recog_data_0.operand[0] = ( rtx)v5; 
+^~~~~~~~~~~~
+recog_data
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/split_insns/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/split_insns/src/insn-recog.c:56104:24: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+return gen_split_1179( recog_data_0.operand); 
+                       ^~~~~~~~~~~~
+                       recog_data
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/split_insns/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/split_insns/src/insn-recog.c:56111:1: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+recog_data_0.operand[0] = ( rtx)v5; 
+^~~~~~~~~~~~
+recog_data
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/split_insns/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/split_insns/src/insn-recog.c:56113:24: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+return gen_split_1178( recog_data_0.operand); 
+                       ^~~~~~~~~~~~
+                       recog_data
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/split_insns/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/split_insns/src/obj/insn-recog.o] Error 1

@@ -1,0 +1,25 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/store_by_pieces_1/src/expr.c:2913:1: error: must use 'enum' tag to refer to type 'insn_code'
+insn_code icode; // [rsp+14h] [rbp-2Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/store_by_pieces_1/src/expr.c:2914:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode tmode; // [rsp+18h] [rbp-28h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/store_by_pieces_1/src/expr.c:2915:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode tmodea; // [rsp+18h] [rbp-28h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/store_by_pieces_1/src/expr.c:2916:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // [rsp+1Ch] [rbp-24h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/store_by_pieces_1/src/expr.c:2978:20: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+store_by_pieces_2( insn_data_0[icode].genfun, mode, data); 
+                   ^~~~~~~~~~~
+                   insn_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/store_by_pieces_1/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/store_by_pieces_1/src/obj/expr.o] Error 1

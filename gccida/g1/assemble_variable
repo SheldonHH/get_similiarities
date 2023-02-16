@@ -1,0 +1,41 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/assemble_variable/src/varasm.c:1928:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v12; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/assemble_variable/src/varasm.c:1941:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v25; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/assemble_variable/src/varasm.c:2056:26: error: expected expression
+if ( v25 != ( tree_node *)global_trees ) 
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/assemble_variable/src/varasm.c:2056:15: error: use of undeclared identifier 'tree_node'
+if ( v25 != ( tree_node *)global_trees ) 
+              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/assemble_variable/src/varasm.c:2063:34: error: expected expression
+if ( !v12 || v12 == ( tree_node *)global_trees ) 
+                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/assemble_variable/src/varasm.c:2063:23: error: use of undeclared identifier 'tree_node'
+if ( !v12 || v12 == ( tree_node *)global_trees ) 
+                      ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/assemble_variable/src/varasm.c:2098:15: error: use of undeclared identifier 'off_6F973A'
+fprintf( v29, off_6F973A, "object"); 
+              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/assemble_variable/src/varasm.c:2134:26: error: expected expression
+if ( v12 == ( tree_node *)global_trees ) 
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/assemble_variable/src/varasm.c:2134:15: error: use of undeclared identifier 'tree_node'
+if ( v12 == ( tree_node *)global_trees ) 
+              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/assemble_variable/src/varasm.c:2146:6: error: use of undeclared identifier 'in_section_0'; did you mean 'in_section'?
+if ( in_section_0 == in_text ) 
+     ^~~~~~~~~~~~
+     in_section
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/assemble_variable/src/varasm.c:205:3: note: 'in_section' declared here
+} in_section = no_section;
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/assemble_variable/src/varasm.c:2157:24: error: use of undeclared identifier 'off_6F973A'
+fprintf( asm_out_file, off_6F973A, "object"); 
+                       ^
+11 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/assemble_variable/src/obj/varasm.o] Error 1

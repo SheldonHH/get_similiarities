@@ -1,0 +1,37 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/undo_commit/src/combine.c:3350:9: error: use of undeclared identifier 'undobuf_0'; did you mean 'undobuf'?
+undos = undobuf_0.undos; 
+        ^~~~~~~~~
+        undobuf
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/undo_commit/src/combine.c:334:23: note: 'undobuf' declared here
+static struct undobuf undobuf;
+                      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/undo_commit/src/combine.c:3351:6: error: use of undeclared identifier 'undobuf_0'; did you mean 'undobuf'?
+if ( undobuf_0.undos ) 
+     ^~~~~~~~~
+     undobuf
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/undo_commit/src/combine.c:334:23: note: 'undobuf' declared here
+static struct undobuf undobuf;
+                      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/undo_commit/src/combine.c:3356:15: error: use of undeclared identifier 'undobuf_0'; did you mean 'undobuf'?
+undos->next = undobuf_0.frees; 
+              ^~~~~~~~~
+              undobuf
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/undo_commit/src/combine.c:334:23: note: 'undobuf' declared here
+static struct undobuf undobuf;
+                      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/undo_commit/src/combine.c:3357:1: error: use of undeclared identifier 'undobuf_0'; did you mean 'undobuf'?
+undobuf_0.frees = undos; 
+^~~~~~~~~
+undobuf
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/undo_commit/src/combine.c:334:23: note: 'undobuf' declared here
+static struct undobuf undobuf;
+                      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/undo_commit/src/combine.c:3362:1: error: use of undeclared identifier 'undobuf_0'; did you mean 'undobuf'?
+undobuf_0.undos = 0LL; 
+^~~~~~~~~
+undobuf
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/undo_commit/src/combine.c:334:23: note: 'undobuf' declared here
+static struct undobuf undobuf;
+                      ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/undo_commit/src/obj/combine.o] Error 1

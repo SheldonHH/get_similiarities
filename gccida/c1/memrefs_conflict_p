@@ -1,0 +1,72 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/memrefs_conflict_p/src/alias.c:1996:4: error: expected ';' after expression
+rtx v15; // rbx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/memrefs_conflict_p/src/alias.c:1996:5: error: use of undeclared identifier 'v15'
+rtx v15; // rbx 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/memrefs_conflict_p/src/alias.c:2013:4: error: expected ';' after expression
+rtx v32; // r15 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/memrefs_conflict_p/src/alias.c:2013:5: error: use of undeclared identifier 'v32'
+rtx v32; // r15 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/memrefs_conflict_p/src/alias.c:2022:4: error: expected ';' after expression
+rtx v41; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/memrefs_conflict_p/src/alias.c:2022:5: error: use of undeclared identifier 'v41'
+rtx v41; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/memrefs_conflict_p/src/alias.c:2026:4: error: expected ';' after expression
+rtx v45; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/memrefs_conflict_p/src/alias.c:2026:5: error: use of undeclared identifier 'v45'
+rtx v45; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/memrefs_conflict_p/src/alias.c:2048:13: error: expected ';' after expression
+rtx = ( rtx)addr[1]; 
+            ^
+            ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/memrefs_conflict_p/src/alias.c:2062:1: error: use of undeclared identifier 'v15'
+v15 = ( rtx)y[1]; 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/memrefs_conflict_p/src/alias.c:2066:1: error: use of undeclared identifier 'v15'
+v15 = y->fld[0].rtx; 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/memrefs_conflict_p/src/alias.c:2071:1: error: use of undeclared identifier 'v15'
+v15 = canon_rtx( v16); 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/memrefs_conflict_p/src/alias.c:2073:35: error: use of undeclared identifier 'v15'
+if ( rtx_equal_for_memref_p( rtx, v15) ) 
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/memrefs_conflict_p/src/alias.c:2079:35: error: use of undeclared identifier 'invalid_operation'; did you mean 'bitmap_operation'?
+&& ( c >= 0 || ( c + ysize < 0) ^ __OFADD__( c, ysize) | ( c + ysize == 0)) ) 
+                                  ^~~~~~~~~~~~~~~~~~~~
+                                  bitmap_operation
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/memrefs_conflict_p/src/alias.c:1794:25: note: expanded from macro '__OFADD__'
+#define __OFADD__(x, y) invalid_operation // Generate overflow flag for (x+y)
+                        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/memrefs_conflict_p/src/bitmap.h:81:12: note: 'bitmap_operation' declared here
+extern int bitmap_operation PARAMS ((bitmap, bitmap, bitmap, enum bitmap_bits));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/memrefs_conflict_p/src/alias.c:2079:33: error: invalid operands to binary expression ('int' and 'int (bitmap, bitmap, bitmap, enum bitmap_bits)' (aka 'int (struct bitmap_head_def *, struct bitmap_head_def *, struct bitmap_head_def *, enum bitmap_bits)'))
+&& ( c >= 0 || ( c + ysize < 0) ^ __OFADD__( c, ysize) | ( c + ysize == 0)) ) 
+               ~~~~~~~~~~~~~~~~ ^ ~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/memrefs_conflict_p/src/alias.c:2089:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v17 = (  struct rtx_def *)rtx[1]; 
+                          ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/memrefs_conflict_p/src/alias.c:2090:17: error: use of undeclared identifier 'v15'
+if ( *( _WORD *)v15 == 75 ) 
+                ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/memrefs_conflict_p/src/alias.c:2093:7: error: use of undeclared identifier 'v15'
+v18 = v15->fld[0].rtx; 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/memrefs_conflict_p/src/alias.c:2094:27: error: use of undeclared identifier 'v15'
+v19 = (  struct rtx_def *)v15[1]; 
+                          ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/memrefs_conflict_p/src/obj/alias.o] Error 1

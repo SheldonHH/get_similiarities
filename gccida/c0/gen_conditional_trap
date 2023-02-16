@@ -1,0 +1,12 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_conditional_trap/src/insn-emit.c:19574:29: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+v2 = ix86_expand_compare( ( rtx_code)( unsigned __int16)*( _DWORD *)operand0, 0LL, 0LL); 
+                            ^~~~~~~~
+                            rtx_cost
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_conditional_trap/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_conditional_trap/src/insn-emit.c:19574:40: error: expected expression
+v2 = ix86_expand_compare( ( rtx_code)( unsigned __int16)*( _DWORD *)operand0, 0LL, 0LL); 
+                                       ^
+2 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_conditional_trap/src/obj/insn-emit.o] Error 1

@@ -1,0 +1,24 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_mult_highpart_adjust/src/expmed.c:3200:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_mult_highpart_adjust/src/expmed.c:3208:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v10; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_mult_highpart_adjust/src/expmed.c:3217:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v19; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_mult_highpart_adjust/src/expmed.c:3225:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code; // [rsp+1Ch] [rbp-4Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_mult_highpart_adjust/src/expmed.c:3243:64: error: use of undeclared identifier 'optab_methods'
+v14 = expand_binop( mode, optab_table[23], v27, v12, 0LL, 0, ( optab_methods)methods); 
+                                                               ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_mult_highpart_adjust/src/expmed.c:3269:64: error: use of undeclared identifier 'optab_methods'
+v23 = expand_binop( mode, optab_table[23], op1, v21, 0LL, 0, ( optab_methods)v22); 
+                                                               ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_mult_highpart_adjust/src/obj/expmed.o] Error 1

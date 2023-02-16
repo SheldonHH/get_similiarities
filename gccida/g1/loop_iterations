@@ -1,0 +1,82 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/loop_iterations/src/unroll.c:4007:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v24; // r14d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/loop_iterations/src/unroll.c:4009:1: error: use of undeclared identifier 'induction_1'
+induction_1 *biv; // r14 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/loop_iterations/src/unroll.c:4009:14: error: use of undeclared identifier 'biv'; did you mean 'div'?
+induction_1 *biv; // r14 
+             ^~~
+             div
+/usr/include/stdlib.h:849:14: note: 'div' declared here
+extern div_t div (int __numer, int __denom)
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/loop_iterations/src/unroll.c:4012:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v29; // r14d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/loop_iterations/src/unroll.c:4017:4: error: expected ';' after expression
+rtx v34; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/loop_iterations/src/unroll.c:4017:5: error: use of undeclared identifier 'v34'
+rtx v34; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/loop_iterations/src/unroll.c:4018:4: error: expected ';' after expression
+rtx v35; // r15 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/loop_iterations/src/unroll.c:4018:5: error: use of undeclared identifier 'v35'
+rtx v35; // r15 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/loop_iterations/src/unroll.c:4020:4: error: expected ';' after expression
+rtx v37; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/loop_iterations/src/unroll.c:4020:5: error: use of undeclared identifier 'v37'
+rtx v37; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/loop_iterations/src/unroll.c:4021:4: error: expected ';' after expression
+rtx v38; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/loop_iterations/src/unroll.c:4021:5: error: use of undeclared identifier 'v38'
+rtx v38; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/loop_iterations/src/unroll.c:4031:4: error: expected ';' after expression
+rtx const2; // [rsp+8h] [rbp-60h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/loop_iterations/src/unroll.c:4031:5: error: use of undeclared identifier 'const2'; did you mean 'const2c'?
+rtx const2; // [rsp+8h] [rbp-60h] 
+    ^~~~~~
+    const2c
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/loop_iterations/src/unroll.c:4030:18: note: 'const2c' declared here
+ struct rtx_def *const2c; // [rsp+8h] [rbp-60h] 
+                 ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/loop_iterations/src/unroll.c:4034:4: error: expected ';' after expression
+rtx increment; // [rsp+10h] [rbp-58h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/loop_iterations/src/unroll.c:4034:5: error: use of undeclared identifier 'increment'
+rtx increment; // [rsp+10h] [rbp-58h] 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/loop_iterations/src/unroll.c:4053:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v3 = ( __int64)loop->end[1]; 
+               ^~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/loop_iterations/src/unroll.c:4121:23: error: expected ')'
+while ( cont != ( rtx)v7 ); 
+                      ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/loop_iterations/src/unroll.c:4121:7: note: to match this '('
+while ( cont != ( rtx)v7 ); 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/loop_iterations/src/unroll.c:4124:65: error: expected ')'
+result = ( unsigned __int64)get_condition_for_loop( loop, ( rtx)v3); 
+                                                                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/loop_iterations/src/unroll.c:4124:51: note: to match this '('
+result = ( unsigned __int64)get_condition_for_loop( loop, ( rtx)v3); 
+                                                  ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/loop_iterations/src/obj/unroll.o] Error 1

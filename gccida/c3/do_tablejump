@@ -1,0 +1,27 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/do_tablejump/src/expr.c:11017:32: error: must use 'enum' tag to refer to type 'machine_mode'
+void  do_tablejump( rtx index, machine_mode mode, rtx range, rtx table_label, rtx default_label) 
+                               ^
+                               enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/do_tablejump/src/expr.c:11035:25: error: use of undeclared identifier 'machine_mode'
+v6 = convert_to_mode( ( machine_mode)v7, v6, 1); 
+                        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/do_tablejump/src/expr.c:11040:31: error: use of undeclared identifier 'machine_mode'
+v10 = gen_rtx_fmt_ee( MULT, ( machine_mode)v8, v6, v9); 
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/do_tablejump/src/expr.c:11041:37: error: use of undeclared identifier 'machine_mode'
+v11 = gen_rtx_fmt_u00( LABEL_REF, ( machine_mode)( ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32), table_label); 
+                                    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/do_tablejump/src/expr.c:11042:31: error: use of undeclared identifier 'machine_mode'
+v12 = gen_rtx_fmt_ee( PLUS, ( machine_mode)v8, v10, v11); 
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/do_tablejump/src/expr.c:11043:33: error: use of undeclared identifier 'machine_mode'
+v13 = memory_address_noforce( ( machine_mode)( ( ( target_flags & 0x2000000) == 0 || ( _DWORD)flag_pic != 0) ^ 5), v12); 
+                                ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/do_tablejump/src/expr.c:11044:22: error: use of undeclared identifier 'machine_mode'
+v14 = gen_reg_rtx( ( machine_mode)( ( ( target_flags & 0x2000000) == 0 || ( _DWORD)flag_pic != 0) ^ 5)); 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/do_tablejump/src/expr.c:11045:22: error: use of undeclared identifier 'machine_mode'
+v15 = gen_rtx_MEM( ( machine_mode)( ( ( target_flags & 0x2000000) == 0 || ( _DWORD)flag_pic != 0) ^ 5), v13); 
+                     ^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/do_tablejump/src/obj/expr.o] Error 1

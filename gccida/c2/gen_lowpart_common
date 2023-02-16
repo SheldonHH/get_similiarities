@@ -1,0 +1,80 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_lowpart_common/src/emit-rtl.c:1287:26: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  gen_lowpart_common( machine_mode mode, rtx x) 
+                         ^
+                         enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_lowpart_common/src/emit-rtl.c:1295:1: error: must use 'enum' tag to refer to type 'mode_class'
+mode_class v8; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_lowpart_common/src/machmode.h:52:30: note: enum 'mode_class' is hidden by a non-type declaration of 'mode_class' here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_lowpart_common/src/emit-rtl.c:1298:4: error: expected ';' after expression
+rtx result; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_lowpart_common/src/emit-rtl.c:1298:5: error: use of undeclared identifier 'result'
+rtx result; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_lowpart_common/src/emit-rtl.c:1306:1: error: use of undeclared identifier '__m256'
+__m256 element; // [rsp+20h] [rbp-78h] BYREF 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_lowpart_common/src/emit-rtl.c:1326:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v8 = mode_class_0[mode]; 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_lowpart_common/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_lowpart_common/src/emit-rtl.c:1338:25: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+return gen_rtx_fmt_e( ( rtx_code)( unsigned __int16)v3, mode, x->fld[0].rtx); 
+                        ^~~~~~~~
+                        rtx_cost
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_lowpart_common/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_lowpart_common/src/emit-rtl.c:1338:36: error: expected expression
+return gen_rtx_fmt_e( ( rtx_code)( unsigned __int16)v3, mode, x->fld[0].rtx); 
+                                   ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_lowpart_common/src/emit-rtl.c:1347:41: error: use of undeclared identifier 'machine_mode'
+return simplify_gen_subreg( mode, v2, ( machine_mode)v4, 0); 
+                                        ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_lowpart_common/src/emit-rtl.c:1365:13: error: use of undeclared identifier 'element'
+*( _QWORD *)element.m256_f32 = v16; 
+            ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_lowpart_common/src/emit-rtl.c:1374:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v13 = ( __int64)v2[1]; 
+                ^~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_lowpart_common/src/emit-rtl.c:1375:13: error: use of undeclared identifier 'element'
+*( _QWORD *)element.m256_f32 = v13; 
+            ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_lowpart_common/src/emit-rtl.c:1380:50: error: use of undeclared identifier 'element'
+slot_with_hash = htab_find_slot_with_hash( v17, &element, v13, INSERT); 
+                                                 ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_lowpart_common/src/emit-rtl.c:1381:13: error: invalid operands to binary expression ('rtx' (aka 'struct rtx_def *') and 'void **')
+rtx = ( rtx)*slot_with_hash; 
+      ~~~~~~^~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_lowpart_common/src/emit-rtl.c:1385:56: error: use of undeclared identifier 'element'
+rtx = gen_rtx_fmt_w( CONST_INT, VOIDmode, *( __int64 *)element.m256_f32); 
+                                                       ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_lowpart_common/src/emit-rtl.c:1398:25: error: too many arguments to function call, expected 1, have 2
+ereal_from_float( &v21, v2->fld[0].rtwint); 
+~~~~~~~~~~~~~~~~        ^~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_lowpart_common/src/real.h:171:1: note: 'ereal_from_float' declared here
+extern REAL_VALUE_TYPE ereal_from_float PARAMS ((HOST_WIDE_INT));
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_lowpart_common/src/emit-rtl.c:1406:26: error: too many arguments to function call, expected 1, have 2
+ereal_from_double( &v21, d); 
+~~~~~~~~~~~~~~~~~        ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_lowpart_common/src/real.h:172:1: note: 'ereal_from_double' declared here
+extern REAL_VALUE_TYPE ereal_from_double PARAMS ((HOST_WIDE_INT *));
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_lowpart_common/src/emit-rtl.c:1408:14: error: use of undeclared identifier 'element'
+*( _QWORD *)&element.m256_f32[4] = v21.r[2]; 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_lowpart_common/src/emit-rtl.c:1409:12: error: expected expression
+*( _OWORD *)element.m256_f32 = *( _OWORD *)v21.r; 
+           ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_lowpart_common/src/obj/emit-rtl.o] Error 1

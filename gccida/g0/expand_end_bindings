@@ -1,0 +1,16 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_end_bindings/src/stmt.c:4186:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *old_last_expr_type; // [rsp+40h] [rbp-30h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_end_bindings/src/stmt.c:4241:23: error: use of undeclared identifier 'save_level'; did you mean 'save_expr'?
+emit_stack_restore( ( save_level)( thisblock->next == 0LL), thisblock->data.cond.next_label, 0LL); 
+                      ^~~~~~~~~~
+                      save_expr
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_end_bindings/src/tree.h:2528:13: note: 'save_expr' declared here
+extern tree save_expr                   PARAMS ((tree));
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_end_bindings/src/stmt.c:4254:38: error: assigning to 'uint64' (aka 'unsigned long long') from incompatible type 'struct rtx_def'
+*( _QWORD *)&emit_note( 0LL, -97)[2] = thisblock->data.loop.alt_end_label[2]; 
+                                     ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_end_bindings/src/obj/stmt.o] Error 1

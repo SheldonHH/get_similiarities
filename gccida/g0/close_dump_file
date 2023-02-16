@@ -1,0 +1,23 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/close_dump_file/src/toplev.c:2318:24: error: must use 'enum' tag to refer to type 'dump_file_index'
+void  close_dump_file( dump_file_index index, void ( *func)( FILE *, rtx), rtx insns) 
+                       ^
+                       enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/close_dump_file/src/toplev.c:2325:15: error: use of undeclared identifier 'TV_DUMP_0'; did you mean 'TV_DUMP'?
+timevar_push( TV_DUMP_0); 
+              ^~~~~~~~~
+              TV_DUMP
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/close_dump_file/src/timevar.def:40:13: note: 'TV_DUMP' declared here
+DEFTIMEVAR (TV_DUMP                  , "dump files")
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/close_dump_file/src/toplev.c:2329:16: error: expected identifier or '('
+ struct suffix = concat( seq, dump_file[index].extension, 0LL); 
+               ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/close_dump_file/src/toplev.c:2341:14: error: use of undeclared identifier 'TV_DUMP_0'; did you mean 'TV_DUMP'?
+timevar_pop( TV_DUMP_0); 
+             ^~~~~~~~~
+             TV_DUMP
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/close_dump_file/src/timevar.def:40:13: note: 'TV_DUMP' declared here
+DEFTIMEVAR (TV_DUMP                  , "dump files")
+            ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/close_dump_file/src/obj/toplev.o] Error 1

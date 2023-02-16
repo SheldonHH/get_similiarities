@@ -1,0 +1,19 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/output_asm_name/src/final.c:3460:71: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+fprintf( asm_out_file, "\t%s %d\t%s", "#", debug_insn->fld[0].rtuint, insn_data_0[rtint].name); 
+                                                                      ^~~~~~~~~~~
+                                                                      insn_data
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/output_asm_name/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/output_asm_name/src/final.c:3461:6: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+if ( insn_data_0[rtint].n_alternatives > 1 ) 
+     ^~~~~~~~~~~
+     insn_data
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/output_asm_name/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/output_asm_name/src/final.c:3462:24: error: use of undeclared identifier 'off_65D071'
+fprintf( asm_out_file, off_65D071, ( unsigned int)( which_alternative + 1)); 
+                       ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/output_asm_name/src/obj/final.o] Error 1

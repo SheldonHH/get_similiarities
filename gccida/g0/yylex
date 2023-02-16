@@ -1,0 +1,16 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/yylex/src/c-parse.c:5456:15: error: use of undeclared identifier 'TV_LEX_0'; did you mean 'TV_LEX'?
+timevar_push( TV_LEX_0); 
+              ^~~~~~~~
+              TV_LEX
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/yylex/src/timevar.def:51:13: note: 'TV_LEX' declared here
+DEFTIMEVAR (TV_LEX                   , "lexical analysis")
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/yylex/src/c-parse.c:5458:14: error: use of undeclared identifier 'TV_LEX_0'; did you mean 'TV_LEX'?
+timevar_pop( TV_LEX_0); 
+             ^~~~~~~~
+             TV_LEX
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/yylex/src/timevar.def:51:13: note: 'TV_LEX' declared here
+DEFTIMEVAR (TV_LEX                   , "lexical analysis")
+            ^
+2 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/yylex/src/obj/c-parse.o] Error 1

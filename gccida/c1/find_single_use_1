@@ -1,0 +1,73 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_single_use_1/src/recog.c:1218:6: error: use of undeclared identifier 'v22'
+rtx *v22; // rax 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_single_use_1/src/recog.c:1221:6: error: use of undeclared identifier 'v25'
+rtx *v25; // rbx 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_single_use_1/src/recog.c:1223:4: error: expected ';' after expression
+rtx v27; // rcx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_single_use_1/src/recog.c:1223:5: error: use of undeclared identifier 'v27'
+rtx v27; // rcx 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_single_use_1/src/recog.c:1224:6: error: use of undeclared identifier 'single_use_1'; did you mean 'single_set_2'?
+rtx *single_use_1; // rax 
+     ^~~~~~~~~~~~
+     single_set_2
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_single_use_1/src/rtl.h:1470:12: note: 'single_set_2' declared here
+extern rtx single_set_2                 PARAMS ((rtx, rtx));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_single_use_1/src/recog.c:1224:5: error: invalid operands to binary expression ('struct rtx_def *' and 'rtx (rtx, rtx)' (aka 'struct rtx_def *(struct rtx_def *, struct rtx_def *)'))
+rtx *single_use_1; // rax 
+~~~ ^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_single_use_1/src/recog.c:1239:14: error: expected expression
+fld = ( rtx *)v4->fld; 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_single_use_1/src/recog.c:1244:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v11.rtwint = ( __int64)v4->fld[0]; 
+                       ^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_single_use_1/src/recog.c:1257:14: error: expected expression
+fld = ( rtx *)&v4[1]; 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_single_use_1/src/recog.c:1277:14: error: expected expression
+v25 = ( rtx *)&v23[2 * v24]; 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_single_use_1/src/recog.c:1277:1: error: use of undeclared identifier 'v25'
+v25 = ( rtx *)&v23[2 * v24]; 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_single_use_1/src/recog.c:1280:1: error: use of undeclared identifier 'v27'
+v27 = *v25; 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_single_use_1/src/recog.c:1280:8: error: use of undeclared identifier 'v25'; did you mean 'v29'?
+v27 = *v25; 
+       ^~~
+       v29
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_single_use_1/src/recog.c:1225:13: note: 'v29' declared here
+const char *v29; // [rsp+8h] [rbp-40h] 
+            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_single_use_1/src/recog.c:1281:1: error: use of undeclared identifier 'single_use_1'
+single_use_1 = loc; 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_single_use_1/src/recog.c:1282:7: error: use of undeclared identifier 'v25'; did you mean 'v29'?
+if ( *v25 != dest ) 
+      ^~~
+      v29
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_single_use_1/src/recog.c:1225:13: note: 'v29' declared here
+const char *v29; // [rsp+8h] [rbp-40h] 
+            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_single_use_1/src/recog.c:1285:15: error: use of undeclared identifier 'v27'
+|| *( _WORD *)v27 != 61 
+              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_single_use_1/src/recog.c:1286:6: error: use of undeclared identifier 'single_use_1'
+|| ( single_use_1 = loc, v27->fld[0].rtint != dest->fld[0].rtint) ) 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_single_use_1/src/recog.c:1286:26: error: use of undeclared identifier 'v27'
+|| ( single_use_1 = loc, v27->fld[0].rtint != dest->fld[0].rtint) ) 
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_single_use_1/src/recog.c:1288:1: error: use of undeclared identifier 'single_use_1'
+single_use_1 = find_single_use_1( dest, v25); 
+^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_single_use_1/src/obj/recog.o] Error 1

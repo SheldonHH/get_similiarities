@@ -1,0 +1,57 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/rtx_cost/src/cse.c:1287:23: error: must use 'enum' tag to refer to type 'rtx_code'
+int  rtx_cost( rtx x, rtx_code outer_code) 
+                      ^
+                      enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/rtx_cost/src/cse.c:1341:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v8 = ( __int64)x[1]; 
+               ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/rtx_cost/src/cse.c:1346:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v9 = ( __int64)x[1]; 
+               ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/rtx_cost/src/cse.c:1518:35: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+v5 += rtx_cost( x->fld[v6].rtx, ( rtx_code)v4); 
+                                  ^~~~~~~~
+                                  rtx_cost
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/rtx_cost/src/cse.c:1287:6: note: 'rtx_cost' declared here
+int  rtx_cost( rtx x, rtx_code outer_code) 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/rtx_cost/src/cse.c:1518:44: error: expected ')'
+v5 += rtx_cost( x->fld[v6].rtx, ( rtx_code)v4); 
+                                           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/rtx_cost/src/cse.c:1518:15: note: to match this '('
+v5 += rtx_cost( x->fld[v6].rtx, ( rtx_code)v4); 
+              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/rtx_cost/src/cse.c:1528:52: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+v5 += rtx_cost( *( rtx *)&rtwint[2 * v47++ + 2], ( rtx_code)v4); 
+                                                   ^~~~~~~~
+                                                   rtx_cost
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/rtx_cost/src/cse.c:1287:6: note: 'rtx_cost' declared here
+int  rtx_cost( rtx x, rtx_code outer_code) 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/rtx_cost/src/cse.c:1528:61: error: expected ')'
+v5 += rtx_cost( *( rtx *)&rtwint[2 * v47++ + 2], ( rtx_code)v4); 
+                                                            ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/rtx_cost/src/cse.c:1528:15: note: to match this '('
+v5 += rtx_cost( *( rtx *)&rtwint[2 * v47++ + 2], ( rtx_code)v4); 
+              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/rtx_cost/src/cse.c:1543:7: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v26 = mode_class_0[*( ( unsigned __int8 *)x + 2)] & 0xFFFFFFFD; 
+      ^~~~~~~~~~~~
+      mode_class
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/rtx_cost/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/rtx_cost/src/cse.c:1557:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v29.rtwint = ( __int64)x->fld[0]; 
+                       ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/rtx_cost/src/cse.c:1634:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v19 = ( __int64)x[1]; 
+                ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/rtx_cost/src/cse.c:1653:19: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v24 = ( __int64 *)x[1]; 
+                  ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/rtx_cost/src/cse.c:1697:19: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v24 = ( __int64 *)x[1]; 
+                  ^~~~
+12 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/rtx_cost/src/obj/cse.o] Error 1

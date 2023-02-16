@@ -1,0 +1,113 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/copyprop_hardreg_forward_1/src/regrename.c:2003:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // [rsp+28h] [rbp-48h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/copyprop_hardreg_forward_1/src/regrename.c:2031:12: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v2 = ( rtx)insn[2]; 
+           ^~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/copyprop_hardreg_forward_1/src/regrename.c:2034:13: error: expected identifier or '('
+ struct set = v2; 
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/copyprop_hardreg_forward_1/src/regrename.c:2039:9: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+n_ops = recog_data_0.n_operands; 
+        ^~~~~~~~~~~~
+        recog_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/copyprop_hardreg_forward_1/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/copyprop_hardreg_forward_1/src/regrename.c:2047:73: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( matches >= 0 || recog_op_alt[i][alt].matched >= 0 || predicated && recog_data_0.operand_type[i] == OP_OUT ) 
+                                                                        ^~~~~~~~~~~~
+                                                                        recog_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/copyprop_hardreg_forward_1/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/copyprop_hardreg_forward_1/src/regrename.c:2048:1: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+recog_data_0.operand_type[i] = OP_INOUT; 
+^~~~~~~~~~~~
+recog_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/copyprop_hardreg_forward_1/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/copyprop_hardreg_forward_1/src/regrename.c:2053:13: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+kill_value( recog_data_0.operand[ia], vd); 
+            ^~~~~~~~~~~~
+            recog_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/copyprop_hardreg_forward_1/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/copyprop_hardreg_forward_1/src/regrename.c:2060:13: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+kill_value( recog_data_0.operand[ib], vd); 
+            ^~~~~~~~~~~~
+            recog_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/copyprop_hardreg_forward_1/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/copyprop_hardreg_forward_1/src/regrename.c:2064:13: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+src = ( rtx)set[1]; 
+            ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/copyprop_hardreg_forward_1/src/regrename.c:2092:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v3 = mode_class_0[*( ( unsigned __int8 *)src + 2)] == MODE_COMPLEX_INT 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/copyprop_hardreg_forward_1/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/copyprop_hardreg_forward_1/src/regrename.c:2093:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| mode_class_0[*( ( unsigned __int8 *)src + 2)] == MODE_COMPLEX_FLOAT 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/copyprop_hardreg_forward_1/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/copyprop_hardreg_forward_1/src/regrename.c:2120:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v7 = mode_class_0[vd->e[regno].mode] == MODE_COMPLEX_INT || mode_class_0[vd->e[regno].mode] == MODE_COMPLEX_FLOAT 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/copyprop_hardreg_forward_1/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/copyprop_hardreg_forward_1/src/regrename.c:2120:61: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v7 = mode_class_0[vd->e[regno].mode] == MODE_COMPLEX_INT || mode_class_0[vd->e[regno].mode] == MODE_COMPLEX_FLOAT 
+                                                            ^~~~~~~~~~~~
+                                                            mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/copyprop_hardreg_forward_1/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/copyprop_hardreg_forward_1/src/regrename.c:2132:7: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( *recog_data_0.constraints[ic] ) 
+      ^~~~~~~~~~~~
+      recog_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/copyprop_hardreg_forward_1/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/copyprop_hardreg_forward_1/src/regrename.c:2135:15: error: use of undeclared identifier 'recog_data_0'
+|| *( _WORD *)recog_data_0.operand[ic] != 61 
+              ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/copyprop_hardreg_forward_1/src/regrename.c:2136:4: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+|| recog_data_0.operand[ic]->fld[0].rtint != recog_data_0.operand[ic][1] ) 
+   ^~~~~~~~~~~~
+   recog_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/copyprop_hardreg_forward_1/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/copyprop_hardreg_forward_1/src/regrename.c:2136:46: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+|| recog_data_0.operand[ic]->fld[0].rtint != recog_data_0.operand[ic][1] ) 
+                                             ^~~~~~~~~~~~
+                                             recog_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/copyprop_hardreg_forward_1/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/copyprop_hardreg_forward_1/src/regrename.c:2136:43: error: invalid operands to binary expression ('int' and 'struct rtx_def')
+|| recog_data_0.operand[ic]->fld[0].rtint != recog_data_0.operand[ic][1] ) 
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^  ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/copyprop_hardreg_forward_1/src/regrename.c:2144:6: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( recog_data_0.operand_type[ic] ) 
+     ^~~~~~~~~~~~
+     recog_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/copyprop_hardreg_forward_1/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/copyprop_hardreg_forward_1/src/obj/regrename.o] Error 1

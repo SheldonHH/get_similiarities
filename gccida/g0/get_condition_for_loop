@@ -1,0 +1,47 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/get_condition_for_loop/src/loop.c:9810:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v5; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/get_condition_for_loop/src/loop.c:9811:4: error: expected ';' after expression
+rtx comparison; // [rsp+18h] [rbp-18h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/get_condition_for_loop/src/loop.c:9811:5: error: use of undeclared identifier 'comparison'
+rtx comparison; // [rsp+18h] [rbp-18h] 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/get_condition_for_loop/src/loop.c:9813:1: error: use of undeclared identifier 'comparison'
+comparison = get_condition_0( x, 0LL); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/get_condition_for_loop/src/loop.c:9814:46: error: use of undeclared identifier 'comparison'
+if ( !comparison || !loop_invariant_p( loop, comparison->fld[0].rtx) || loop_invariant_p( loop, *( rtx *)&comparison[1]) ) 
+                                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/get_condition_for_loop/src/loop.c:9814:7: error: use of undeclared identifier 'comparison'
+if ( !comparison || !loop_invariant_p( loop, comparison->fld[0].rtx) || loop_invariant_p( loop, *( rtx *)&comparison[1]) ) 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/get_condition_for_loop/src/loop.c:9814:105: error: expected expression
+if ( !comparison || !loop_invariant_p( loop, comparison->fld[0].rtx) || loop_invariant_p( loop, *( rtx *)&comparison[1]) ) 
+                                                                                                        ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/get_condition_for_loop/src/loop.c:9814:107: error: use of undeclared identifier 'comparison'
+if ( !comparison || !loop_invariant_p( loop, comparison->fld[0].rtx) || loop_invariant_p( loop, *( rtx *)&comparison[1]) ) 
+                                                                                                          ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/get_condition_for_loop/src/loop.c:9815:8: error: use of undeclared identifier 'comparison'
+return comparison; 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/get_condition_for_loop/src/loop.c:9816:7: error: use of undeclared identifier 'comparison'
+rtx = comparison->fld[0].rtx; 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/get_condition_for_loop/src/loop.c:9817:26: error: use of undeclared identifier 'comparison'
+v4 = (  struct rtx_def *)comparison[1]; 
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/get_condition_for_loop/src/loop.c:9818:24: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+v5 = swap_condition( ( rtx_code)*( _WORD *)comparison); 
+                       ^~~~~~~~
+                       rtx_cost
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/get_condition_for_loop/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/get_condition_for_loop/src/loop.c:9818:44: error: use of undeclared identifier 'comparison'
+v5 = swap_condition( ( rtx_code)*( _WORD *)comparison); 
+                                           ^
+13 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/get_condition_for_loop/src/obj/loop.o] Error 1

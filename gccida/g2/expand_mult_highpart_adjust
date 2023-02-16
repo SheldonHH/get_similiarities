@@ -1,0 +1,40 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_mult_highpart_adjust/src/expmed.c:3200:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_mult_highpart_adjust/src/expmed.c:3209:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v10; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_mult_highpart_adjust/src/expmed.c:3214:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v15; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_mult_highpart_adjust/src/expmed.c:3224:25: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+v13 = gen_rtx_fmt_ee( ( rtx_code)v8, mode, adj_operand, v12); 
+                        ^~~~~~~~
+                        rtx_cost
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_mult_highpart_adjust/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_mult_highpart_adjust/src/expmed.c:3224:34: error: expected ')'
+v13 = gen_rtx_fmt_ee( ( rtx_code)v8, mode, adj_operand, v12); 
+                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_mult_highpart_adjust/src/expmed.c:3224:21: note: to match this '('
+v13 = gen_rtx_fmt_ee( ( rtx_code)v8, mode, adj_operand, v12); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_mult_highpart_adjust/src/expmed.c:3229:25: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+v18 = gen_rtx_fmt_ee( ( rtx_code)v8, mode, v14, v17); 
+                        ^~~~~~~~
+                        rtx_cost
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_mult_highpart_adjust/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_mult_highpart_adjust/src/expmed.c:3229:34: error: expected ')'
+v18 = gen_rtx_fmt_ee( ( rtx_code)v8, mode, v14, v17); 
+                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_mult_highpart_adjust/src/expmed.c:3229:21: note: to match this '('
+v18 = gen_rtx_fmt_ee( ( rtx_code)v8, mode, v14, v17); 
+                    ^
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_mult_highpart_adjust/src/obj/expmed.o] Error 1

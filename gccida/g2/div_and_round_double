@@ -1,0 +1,12 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/div_and_round_double/src/fold-const.c:1026:1: error: must use 'enum' tag to refer to type 'tree_code'
+tree_code code, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/div_and_round_double/src/fold-const.c:1475:7: error: use of undeclared identifier 'invalid_operation'
+v37 = __CFADD__( *v13, ( _QWORD)lnum_origa); 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/div_and_round_double/src/fold-const.c:830:25: note: expanded from macro '__CFADD__'
+#define __CFADD__(x, y) invalid_operation // Generate carry flag for (x+y)
+                        ^
+2 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/div_and_round_double/src/obj/fold-const.o] Error 1

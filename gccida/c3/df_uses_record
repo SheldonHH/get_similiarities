@@ -1,0 +1,68 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/df_uses_record/src/df.c:1475:51: error: must use 'enum' tag to refer to type 'df_ref_type'
+void  df_uses_record(  struct df *df_0, rtx *loc, df_ref_type ref_type, basic_block bb, rtx insn, df_ref_flags flags) 
+                                                  ^
+                                                  enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/df_uses_record/src/df.c:1475:99: error: must use 'enum' tag to refer to type 'df_ref_flags'
+void  df_uses_record(  struct df *df_0, rtx *loc, df_ref_type ref_type, basic_block bb, rtx insn, df_ref_flags flags) 
+                                                                                                  ^
+                                                                                                  enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/df_uses_record/src/df.c:1478:1: error: must use 'enum' tag to refer to type 'df_ref_flags'
+df_ref_flags v7; // r9d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/df_uses_record/src/df.c:1482:1: error: must use 'enum' tag to refer to type 'df_ref_type'
+df_ref_type v12; // r13d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/df_uses_record/src/df.c:1484:4: error: expected ';' after expression
+rtx v14; // rbp 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/df_uses_record/src/df.c:1484:5: error: use of undeclared identifier 'v14'
+rtx v14; // rbp 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/df_uses_record/src/df.c:1493:1: error: must use 'enum' tag to refer to type 'df_ref_flags'
+df_ref_flags v23; // r9d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/df_uses_record/src/df.c:1496:1: error: must use 'enum' tag to refer to type 'df_ref_flags'
+df_ref_flags v26; // r9d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/df_uses_record/src/df.c:1497:6: error: use of undeclared identifier 'v27'
+rtx *v27; // rbp 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/df_uses_record/src/df.c:1504:1: error: must use 'enum' tag to refer to type 'df_ref_flags'
+df_ref_flags v34; // [rsp+14h] [rbp-44h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/df_uses_record/src/df.c:1524:1: error: use of undeclared identifier 'v14'
+v14 = rtx; 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/df_uses_record/src/df.c:1533:15: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v29 = ( int *)rtx[2]; 
+              ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/df_uses_record/src/df.c:1540:30: error: expected expression
+df_uses_record( df_0, ( rtx *)&v29[v30], DF_REF_REG_USE, bb, 0LL, v7); 
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/df_uses_record/src/df.c:1544:15: error: use of undeclared identifier 'v14'
+v29 = ( int *)v14[2]; 
+              ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/df_uses_record/src/df.c:1561:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v22.rtwint = ( __int64)rtx->fld[0]; 
+                       ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/df_uses_record/src/df.c:1562:30: error: expected expression
+df_uses_record( df_0, ( rtx *)&rtx[1], DF_REF_REG_USE, bb, 0LL, v7); 
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/df_uses_record/src/df.c:1585:13: error: expected expression
+v9 = ( rtx *)( v22.rtwint + 8); 
+            ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/df_uses_record/src/df.c:1593:13: error: expected expression
+v9 = ( rtx *)( v28 + 4); 
+            ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/df_uses_record/src/df.c:1597:14: error: expected expression
+v27 = ( rtx *)( v22.rtwint + 8); 
+             ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/df_uses_record/src/obj/df.o] Error 1

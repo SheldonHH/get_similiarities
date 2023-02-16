@@ -1,0 +1,26 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/pushdecl/src/c-decl.c:2630:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v3; // rdx 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/pushdecl/src/c-decl.c:2635:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *initial; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/pushdecl/src/c-decl.c:2637:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *oldlocal; // [rsp+18h] [rbp-48h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/pushdecl/src/c-decl.c:2828:12: error: expected expression
+*( _OWORD *)( ( char *)&x->block + 88) = *( _OWORD *)( ( char *)&oldglobal->block + 88); 
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/pushdecl/src/c-decl.c:2828:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)( ( char *)&x->block + 88) = *( _OWORD *)( ( char *)&oldglobal->block + 88); 
+   ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/pushdecl/src/c-decl.c:2828:53: error: expected expression
+*( _OWORD *)( ( char *)&x->block + 88) = *( _OWORD *)( ( char *)&oldglobal->block + 88); 
+                                                    ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/pushdecl/src/c-decl.c:2828:45: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)( ( char *)&x->block + 88) = *( _OWORD *)( ( char *)&oldglobal->block + 88); 
+                                            ^
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/pushdecl/src/obj/c-decl.o] Error 1

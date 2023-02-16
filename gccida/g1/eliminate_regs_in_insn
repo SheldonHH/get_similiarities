@@ -1,0 +1,76 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/eliminate_regs_in_insn/src/reload1.c:3426:4: error: expected ';' after expression
+rtx new_body; // [rsp+10h] [rbp-248h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/eliminate_regs_in_insn/src/reload1.c:3426:5: error: use of undeclared identifier 'new_body'
+rtx new_body; // [rsp+10h] [rbp-248h] 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/eliminate_regs_in_insn/src/reload1.c:3427:4: error: expected ';' after expression
+rtx old_set; // [rsp+20h] [rbp-238h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/eliminate_regs_in_insn/src/reload1.c:3427:5: error: use of undeclared identifier 'old_set'
+rtx old_set; // [rsp+20h] [rbp-238h] 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/eliminate_regs_in_insn/src/reload1.c:3430:4: error: expected ';' after expression
+rtx orig_operand[30]; // [rsp+40h] [rbp-218h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/eliminate_regs_in_insn/src/reload1.c:3430:5: error: use of undeclared identifier 'orig_operand'
+rtx orig_operand[30]; // [rsp+40h] [rbp-218h] 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/eliminate_regs_in_insn/src/reload1.c:3431:4: error: expected ';' after expression
+rtx substed_operand[30]; // [rsp+130h] [rbp-128h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/eliminate_regs_in_insn/src/reload1.c:3431:5: error: use of undeclared identifier 'substed_operand'
+rtx substed_operand[30]; // [rsp+130h] [rbp-128h] 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/eliminate_regs_in_insn/src/reload1.c:3436:1: error: use of undeclared identifier 'new_body'
+new_body = ( rtx)insn[2]; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/eliminate_regs_in_insn/src/reload1.c:3437:21: error: use of undeclared identifier 'new_body'
+v4 = asm_noperands( new_body); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/eliminate_regs_in_insn/src/reload1.c:3443:1: error: use of undeclared identifier 'old_set'
+old_set = 0LL; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/eliminate_regs_in_insn/src/reload1.c:3446:26: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v8 = (  struct rtx_def *)insn[2]; 
+                         ^~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/eliminate_regs_in_insn/src/reload1.c:3447:1: error: use of undeclared identifier 'old_set'
+old_set = v8; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/eliminate_regs_in_insn/src/reload1.c:3456:1: error: use of undeclared identifier 'old_set'
+old_set = single_set_2( insn, v8); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/eliminate_regs_in_insn/src/reload1.c:3467:7: error: use of undeclared identifier 'old_set'; did you mean 'pc_set'?
+if ( !old_set ) 
+      ^~~~~~~
+      pc_set
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/eliminate_regs_in_insn/src/rtl.h:1803:12: note: 'pc_set' declared here
+extern rtx pc_set                       PARAMS ((rtx));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/eliminate_regs_in_insn/src/reload1.c:3470:22: error: use of undeclared identifier 'new_body'
+elimination_effects( new_body, VOIDmode); 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/eliminate_regs_in_insn/src/reload1.c:3472:6: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( recog_data_0.n_operands <= 0 ) 
+     ^~~~~~~~~~~~
+     recog_data
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/eliminate_regs_in_insn/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/eliminate_regs_in_insn/src/reload1.c:3486:7: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+v27 = recog_data_0.operand[v11]; 
+      ^~~~~~~~~~~~
+      recog_data
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/eliminate_regs_in_insn/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/eliminate_regs_in_insn/src/reload1.c:3487:1: error: use of undeclared identifier 'orig_operand'
+orig_operand[v11] = v27; 
+^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/eliminate_regs_in_insn/src/obj/reload1.o] Error 1

@@ -1,0 +1,105 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/regrename_optimize/src/regrename.c:672:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class *v8; // rdx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/regrename_optimize/src/regrename.c:676:1: error: must use 'enum' tag to refer to type 'op_type'
+op_type v12; // r8d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/regrename_optimize/src/regrename.c:695:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class v31; // r10d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/regrename_optimize/src/regrename.c:745:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v81; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/regrename_optimize/src/regrename.c:751:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class *v87; // r13 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/regrename_optimize/src/regrename.c:813:1: error: use of undeclared identifier 'closed_chains'
+closed_chains = 0LL; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/regrename_optimize/src/regrename.c:814:1: error: use of undeclared identifier 'open_chains'
+open_chains = 0LL; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/regrename_optimize/src/regrename.c:825:14: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+n_operands = recog_data_0.n_operands; 
+             ^~~~~~~~~~~~
+             recog_data
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/regrename_optimize/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/regrename_optimize/src/regrename.c:828:6: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( recog_data_0.n_operands > 0 ) 
+     ^~~~~~~~~~~~
+     recog_data
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/regrename_optimize/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/regrename_optimize/src/regrename.c:831:19: error: expected expression
+v8 = ( reg_class *)( 32LL * ( int)which_alternative + 9947208); 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/regrename_optimize/src/regrename.c:831:8: error: use of undeclared identifier 'reg_class'; did you mean 'regclass'?
+v8 = ( reg_class *)( 32LL * ( int)which_alternative + 9947208); 
+       ^~~~~~~~~
+       regclass
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/regrename_optimize/src/rtl.h:1970:13: note: 'regclass' declared here
+extern void regclass                    PARAMS ((rtx, int, FILE *));
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/regrename_optimize/src/regrename.c:841:6: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( recog_data_0.operand_type[v7] == OP_OUT ) 
+     ^~~~~~~~~~~~
+     recog_data
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/regrename_optimize/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/regrename_optimize/src/regrename.c:844:1: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+recog_data_0.operand_type[v7] = OP_INOUT; 
+^~~~~~~~~~~~
+recog_data
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/regrename_optimize/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/regrename_optimize/src/regrename.c:861:7: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+v11 = recog_data_0.operand_loc[v10]; 
+      ^~~~~~~~~~~~
+      recog_data
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/regrename_optimize/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/regrename_optimize/src/regrename.c:862:7: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+v12 = recog_data_0.operand_type[v10++]; 
+      ^~~~~~~~~~~~
+      recog_data
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/regrename_optimize/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/regrename_optimize/src/regrename.c:869:31: error: use of undeclared identifier 'recog_data_0'
+to[v13] = ( HARD_REG_ELT_TYPE)recog_data_0.operand[v13]; 
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/regrename_optimize/src/regrename.c:870:7: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( *recog_data_0.constraints[v13] ) 
+      ^~~~~~~~~~~~
+      recog_data
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/regrename_optimize/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/regrename_optimize/src/regrename.c:871:2: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+*recog_data_0.operand_loc[v13] = global_rtl[1]; 
+ ^~~~~~~~~~~~
+ recog_data
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/regrename_optimize/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/regrename_optimize/src/regrename.c:883:10: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+n_dups = recog_data_0.n_dups; 
+         ^~~~~~~~~~~~
+         recog_data
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/regrename_optimize/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/regrename_optimize/src/obj/regrename.o] Error 1

@@ -1,0 +1,50 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/build_complex/src/tree.c:1232:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v7; // r12 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/build_complex/src/tree.c:1240:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v15; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/build_complex/src/tree.c:1241:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v16; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/build_complex/src/tree.c:1258:19: error: expected expression
+v7 = ( tree_node *)ggc_alloc( v6); 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/build_complex/src/tree.c:1258:8: error: use of undeclared identifier 'tree_node'
+v7 = ( tree_node *)ggc_alloc( v6); 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/build_complex/src/tree.c:1294:19: error: expected expression
+v7 = ( tree_node *)ggc_alloc( v20); 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/build_complex/src/tree.c:1294:8: error: use of undeclared identifier 'tree_node'
+v7 = ( tree_node *)ggc_alloc( v20); 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/build_complex/src/tree.c:1299:20: error: expected expression
+v15 = ( tree_node *)ggc_alloc( 0xD0uLL); 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/build_complex/src/tree.c:1299:9: error: use of undeclared identifier 'tree_node'
+v15 = ( tree_node *)ggc_alloc( 0xD0uLL); 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/build_complex/src/tree.c:1310:20: error: expected expression
+v16 = ( tree_node *)ggc_alloc( 0xA8uLL); 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/build_complex/src/tree.c:1310:9: error: use of undeclared identifier 'tree_node'
+v16 = ( tree_node *)ggc_alloc( 0xA8uLL); 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/build_complex/src/tree.c:1335:19: error: expected expression
+v7 = ( tree_node *)ggc_alloc( v19); 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/build_complex/src/tree.c:1335:8: error: use of undeclared identifier 'tree_node'
+v7 = ( tree_node *)ggc_alloc( v19); 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/build_complex/src/tree.c:1343:52: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'unsigned long long' of different size
+*( __m128i *)&v7->block.vars = _mm_unpacklo_epi64( ( __m128i)( unsigned __int64)real, ( __m128i)( unsigned __int64)imag); 
+                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/build_complex/src/tree.c:1343:87: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'unsigned long long' of different size
+*( __m128i *)&v7->block.vars = _mm_unpacklo_epi64( ( __m128i)( unsigned __int64)real, ( __m128i)( unsigned __int64)imag); 
+                                                                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+15 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/build_complex/src/obj/tree.o] Error 1

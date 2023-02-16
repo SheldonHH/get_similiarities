@@ -1,0 +1,32 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/build_insn_chain/src/global.c:2296:14: error: expected expression
+if ( *( rtx *)basic_block_info->data.l[b] == rtx ) 
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/build_insn_chain/src/global.c:2336:29: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+for ( v8.rtwint = ( __int64)rtx[3].fld[0]; v8.rtwint; v8.rtwint = *( __int64 *)( v8.rtwint + 16) ) 
+                            ^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/build_insn_chain/src/global.c:2342:37: error: use of undeclared identifier 'machine_mode'
+reg_dies( *( _DWORD *)( v10 + 8), ( machine_mode)*( unsigned __int8 *)( v10 + 2), v9); 
+                                    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/build_insn_chain/src/global.c:2346:22: error: expected expression
+note_stores( *( rtx *)&rtx[2], reg_becomes_live, &v9->dead_or_set); 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/build_insn_chain/src/global.c:2355:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v11.rtwint = ( __int64)rtx[3].fld[0]; 
+                       ^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/build_insn_chain/src/global.c:2364:37: error: use of undeclared identifier 'machine_mode'
+reg_dies( *( _DWORD *)( v12 + 8), ( machine_mode)*( unsigned __int8 *)( v12 + 2), v9); 
+                                    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/build_insn_chain/src/global.c:2390:68: error: expected ')'
+&& ( ( unsigned __int16)( v14 - 44) > 1u || !prev_real_insn( ( rtx)m) || *( _WORD *)prev_real_insn( ( rtx)m) != 33) ) 
+                                                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/build_insn_chain/src/global.c:2390:60: note: to match this '('
+&& ( ( unsigned __int16)( v14 - 44) > 1u || !prev_real_insn( ( rtx)m) || *( _WORD *)prev_real_insn( ( rtx)m) != 33) ) 
+                                                           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/build_insn_chain/src/global.c:2390:107: error: expected ')'
+&& ( ( unsigned __int16)( v14 - 44) > 1u || !prev_real_insn( ( rtx)m) || *( _WORD *)prev_real_insn( ( rtx)m) != 33) ) 
+                                                                                                          ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/build_insn_chain/src/global.c:2390:99: note: to match this '('
+&& ( ( unsigned __int16)( v14 - 44) > 1u || !prev_real_insn( ( rtx)m) || *( _WORD *)prev_real_insn( ( rtx)m) != 33) ) 
+                                                                                                  ^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/build_insn_chain/src/obj/global.o] Error 1

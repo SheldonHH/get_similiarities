@@ -1,0 +1,67 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_group_load/src/expr.c:2422:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v16; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_group_load/src/expr.c:2429:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v23; // r13d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_group_load/src/expr.c:2431:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v25; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_group_load/src/expr.c:2436:4: error: expected ';' after expression
+rtx bit_field; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_group_load/src/expr.c:2436:5: error: use of undeclared identifier 'bit_field'
+rtx bit_field; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_group_load/src/expr.c:2442:4: error: expected ';' after expression
+rtx v36; // [rsp+8h] [rbp-78h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_group_load/src/expr.c:2442:5: error: use of undeclared identifier 'v36'
+rtx v36; // [rsp+8h] [rbp-78h] 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_group_load/src/expr.c:2448:6: error: use of undeclared identifier 'tmps'
+rtx *tmps; // [rsp+38h] [rbp-48h] 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_group_load/src/expr.c:2450:4: error: expected ';' after expression
+rtx src; // [rsp+48h] [rbp-38h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_group_load/src/expr.c:2450:5: error: use of undeclared identifier 'src'
+rtx src; // [rsp+48h] [rbp-38h] 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_group_load/src/expr.c:2451:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode[2]; // [rsp+50h] [rbp-30h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_group_load/src/expr.c:2459:13: error: expected expression
+v6 = ( rtx *)( ( char *)&v35 - ( ( 8LL * *rtwint + 15) & 0xFFFFFFFFFFFFFFF0LL)); 
+            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_group_load/src/expr.c:2467:1: error: use of undeclared identifier 'src'
+src = orig_src; 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_group_load/src/expr.c:2468:1: error: use of undeclared identifier 'tmps'
+tmps = v6; 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_group_load/src/expr.c:2469:1: error: use of undeclared identifier 'v36'
+v36 = dst; 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_group_load/src/expr.c:2518:22: error: use of undeclared identifier 'src'
+emit_move_insn( v14, src); 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_group_load/src/expr.c:2524:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v18 = ( __int64)v14[1]; 
+                ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_group_load/src/expr.c:2548:6: error: use of undeclared identifier 'tmps'
+v6 = tmps; 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_group_load/src/expr.c:2549:1: error: use of undeclared identifier 'tmps'
+tmps[v8] = v14; 
+^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_group_load/src/obj/expr.o] Error 1

@@ -1,0 +1,12 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_lowpart/src/emit-rtl.c:1624:19: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  gen_lowpart( machine_mode mode, rtx x) 
+                  ^
+                  enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_lowpart/src/emit-rtl.c:1650:19: error: use of undeclared identifier 'machine_mode'
+v3 = force_reg( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)x), x); 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_lowpart/src/emit-rtl.c:1650:34: error: expected expression
+v3 = force_reg( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)x), x); 
+                                 ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_lowpart/src/obj/emit-rtl.o] Error 1

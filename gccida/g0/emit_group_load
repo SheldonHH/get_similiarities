@@ -1,0 +1,12 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/emit_group_load/src/expr.c:2424:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // [rsp+3Ch] [rbp-34h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/emit_group_load/src/expr.c:2465:22: error: use of undeclared identifier 'machine_mode'
+src = gen_reg_rtx( ( machine_mode)*( ( unsigned __int8 *)orig_srca + 2)); 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/emit_group_load/src/expr.c:2507:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)src + 2), 
+  ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/emit_group_load/src/obj/expr.o] Error 1

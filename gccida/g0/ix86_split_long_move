@@ -1,0 +1,61 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/ix86_split_long_move/src/i386.c:9188:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // [rsp+54h] [rbp-1Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/ix86_split_long_move/src/i386.c:9229:55: error: use of undeclared identifier 'machine_mode'
+nparts = ix86_split_to_parts( operands[1], part[1], ( machine_mode)*( ( unsigned __int8 *)*operands + 2)); 
+                                                      ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/ix86_split_long_move/src/i386.c:9230:44: error: use of undeclared identifier 'machine_mode'
+ix86_split_to_parts( *operands, part[0], ( machine_mode)*( ( unsigned __int8 *)*operands + 2)); 
+                                           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/ix86_split_long_move/src/i386.c:9236:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)part[1][1] + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/ix86_split_long_move/src/i386.c:9240:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)part[1][0] + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/ix86_split_long_move/src/i386.c:9266:44: error: use of undeclared identifier 'machine_mode'
+part[1][0] = change_address( part[1][0], ( machine_mode)v3, part[0][nparts - 1]); 
+                                           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/ix86_split_long_move/src/i386.c:9333:14: error: expected expression
+*( ( _OWORD *)operands + 1) = *( _OWORD *)&part[0][0]; 
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/ix86_split_long_move/src/i386.c:9333:6: error: use of undeclared identifier '_OWORD'
+*( ( _OWORD *)operands + 1) = *( _OWORD *)&part[0][0]; 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/ix86_split_long_move/src/i386.c:9333:42: error: expected expression
+*( ( _OWORD *)operands + 1) = *( _OWORD *)&part[0][0]; 
+                                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/ix86_split_long_move/src/i386.c:9333:34: error: use of undeclared identifier '_OWORD'
+*( ( _OWORD *)operands + 1) = *( _OWORD *)&part[0][0]; 
+                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/ix86_split_long_move/src/i386.c:9335:12: error: expected expression
+*( _OWORD *)( operands + 5) = *( _OWORD *)&part[1][0]; 
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/ix86_split_long_move/src/i386.c:9335:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)( operands + 5) = *( _OWORD *)&part[1][0]; 
+   ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/ix86_split_long_move/src/i386.c:9335:42: error: expected expression
+*( _OWORD *)( operands + 5) = *( _OWORD *)&part[1][0]; 
+                                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/ix86_split_long_move/src/i386.c:9335:34: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)( operands + 5) = *( _OWORD *)&part[1][0]; 
+                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/ix86_split_long_move/src/i386.c:9340:14: error: expected expression
+*( ( _OWORD *)operands + 1) = *( _OWORD *)&part[0][0]; 
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/ix86_split_long_move/src/i386.c:9340:6: error: use of undeclared identifier '_OWORD'
+*( ( _OWORD *)operands + 1) = *( _OWORD *)&part[0][0]; 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/ix86_split_long_move/src/i386.c:9340:42: error: expected expression
+*( ( _OWORD *)operands + 1) = *( _OWORD *)&part[0][0]; 
+                                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/ix86_split_long_move/src/i386.c:9340:34: error: use of undeclared identifier '_OWORD'
+*( ( _OWORD *)operands + 1) = *( _OWORD *)&part[0][0]; 
+                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/ix86_split_long_move/src/i386.c:9341:12: error: expected expression
+*( _OWORD *)( operands + 5) = *( _OWORD *)&part[1][0]; 
+           ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/ix86_split_long_move/src/obj/i386.o] Error 1

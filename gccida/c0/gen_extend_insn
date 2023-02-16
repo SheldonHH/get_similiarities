@@ -1,0 +1,20 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_extend_insn/src/optabs.c:4497:37: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  gen_extend_insn( rtx x, rtx y, machine_mode mto, machine_mode mfrom, int unsignedp) 
+                                    ^
+                                    enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_extend_insn/src/optabs.c:4497:55: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  gen_extend_insn( rtx x, rtx y, machine_mode mto, machine_mode mfrom, int unsignedp) 
+                                                      ^
+                                                      enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_extend_insn/src/optabs.c:4499:8: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+return insn_data_0[extendtab[mto][mfrom][unsignedp != 0]].genfun( x, y); 
+       ^~~~~~~~~~~
+       insn_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_extend_insn/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_extend_insn/src/optabs.c:4499:65: error: called object type '<dependent type>' is not a function or function pointer
+return insn_data_0[extendtab[mto][mfrom][unsignedp != 0]].genfun( x, y); 
+                                                                ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_extend_insn/src/obj/optabs.o] Error 1

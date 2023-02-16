@@ -1,0 +1,86 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/wipe_dead_reg/src/local-alloc.c:2642:20: error: use of undeclared identifier 'this_insn_0'; did you mean 'this_insn'?
+if ( **( _WORD **)&this_insn_0[2] == 39 ) 
+                   ^~~~~~~~~~~
+                   this_insn
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/wipe_dead_reg/src/local-alloc.c:243:12: note: 'this_insn' declared here
+static rtx this_insn;
+           ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/wipe_dead_reg/src/local-alloc.c:2644:21: error: use of undeclared identifier 'this_insn_0'; did you mean 'this_insn'?
+if ( multiple_sets( this_insn_0) ) 
+                    ^~~~~~~~~~~
+                    this_insn
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/wipe_dead_reg/src/local-alloc.c:243:12: note: 'this_insn' declared here
+static rtx this_insn;
+           ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/wipe_dead_reg/src/local-alloc.c:2646:40: error: use of undeclared identifier 'this_insn_0'; did you mean 'this_insn'?
+v5 = *( unsigned int **)( *( _QWORD *)&this_insn_0[2] + 8LL); 
+                                       ^~~~~~~~~~~
+                                       this_insn
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/wipe_dead_reg/src/local-alloc.c:243:12: note: 'this_insn' declared here
+static rtx this_insn;
+           ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/wipe_dead_reg/src/local-alloc.c:2661:47: error: use of undeclared identifier 'this_insn_0'; did you mean 'this_insn'?
+v7 = *( _QWORD *)( *( _QWORD *)( *( _QWORD *)&this_insn_0[2] + 8LL) + 8 * v6); 
+                                              ^~~~~~~~~~~
+                                              this_insn
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/wipe_dead_reg/src/local-alloc.c:243:12: note: 'this_insn' declared here
+static rtx this_insn;
+           ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/wipe_dead_reg/src/local-alloc.c:2679:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v13 = ( ( unsigned int)( mode_class_0[v11] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/wipe_dead_reg/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/wipe_dead_reg/src/local-alloc.c:2704:81: error: use of undeclared identifier 'xmm'
+v21 = _mm_add_epi32( _mm_shuffle_epi32( _mm_cvtsi32_si128( v19), 80), ( __m128i)xmm*(short *)0x65AE30); 
+                                                                                ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/wipe_dead_reg/src/local-alloc.c:2706:33: error: invalid conversion between vector type '__m128d' (vector of 2 'double' values) and integer type 'HARD_REG_ELT_TYPE' (aka 'unsigned long long') of different size
+v23 = ( __m128i)_mm_shuffle_pd( ( __m128d)regs_live, ( __m128d)xmm*(short *)0x68FC00, 2); 
+                                ^~~~~~~~~~~~~~~~~~~
+/usr/lib/llvm-7/lib/clang/7.0.0/include/emmintrin.h:4761:52: note: expanded from macro '_mm_shuffle_pd'
+  (__m128d)__builtin_ia32_shufpd((__v2df)(__m128d)(a), (__v2df)(__m128d)(b), \
+                                                   ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/wipe_dead_reg/src/local-alloc.c:2706:64: error: use of undeclared identifier 'xmm'
+v23 = ( __m128i)_mm_shuffle_pd( ( __m128d)regs_live, ( __m128d)xmm*(short *)0x68FC00, 2); 
+                                                               ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/wipe_dead_reg/src/local-alloc.c:2707:73: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'unsigned long long' of different size
+v24 = _mm_shuffle_epi32( _mm_add_epi32( _mm_cvtsi32_si128( 0xFFFFFFFE), ( __m128i)rtuint), 80); 
+                                                                        ^~~~~~~~~~~~~~~~
+/usr/lib/llvm-7/lib/clang/7.0.0/include/emmintrin.h:4347:52: note: expanded from macro '_mm_shuffle_epi32'
+  (__m128i)__builtin_ia32_pshufd((__v4si)(__m128i)(a), (int)(imm))
+                                                   ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/wipe_dead_reg/src/local-alloc.c:2708:7: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'long long' of different size
+v25 = ( __m128i)-1LL; 
+      ^~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/wipe_dead_reg/src/local-alloc.c:2709:44: error: use of undeclared identifier 'xmm'
+si128 = _mm_load_si128( ( const __m128i *)&xmm*(short *)0x65AE10); 
+                                           ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/wipe_dead_reg/src/local-alloc.c:2710:42: error: use of undeclared identifier 'xmm'
+v27 = _mm_load_si128( ( const __m128i *)&xmm*(short *)0x65AE40); 
+                                         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/wipe_dead_reg/src/local-alloc.c:2716:53: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'long long' of different size
+v31 = _mm_unpacklo_epi32( _mm_add_epi32( v22, v21), ( __m128i)0LL); 
+                                                    ^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/wipe_dead_reg/src/local-alloc.c:2717:25: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+*( _QWORD *)&v32 = si128.m128i_i64[0] << v31.m128i_i8[0]; 
+                   ~~~~~^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/wipe_dead_reg/src/local-alloc.c:2717:45: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+*( _QWORD *)&v32 = si128.m128i_i64[0] << v31.m128i_i8[0]; 
+                                         ~~~^~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/wipe_dead_reg/src/local-alloc.c:2719:53: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'long long' of different size
+v34 = _mm_unpacklo_epi32( _mm_add_epi32( v24, v21), ( __m128i)0LL); 
+                                                    ^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/wipe_dead_reg/src/local-alloc.c:2720:4: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+v33.m128d_f64[0] = v32; 
+~~~^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/wipe_dead_reg/src/local-alloc.c:2721:7: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'int' of different size
+v23 = ( __m128i)_mm_andn_pd( v33, v30); 
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/wipe_dead_reg/src/local-alloc.c:2723:17: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+*( _QWORD *)&v35.m128d_f64[0] = si128.m128i_i64[0] << v34.m128i_i8[0]; 
+             ~~~^~~~~~~~~~
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/wipe_dead_reg/src/obj/local-alloc.o] Error 1

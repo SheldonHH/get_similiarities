@@ -1,0 +1,28 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/gen_add2_insn/src/optabs.c:4282:11: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+operand = insn_data_0[*( int *)( ( char *)&optab_table[0]->handlers[0].insn_code + v2)].operand; 
+          ^~~~~~~~~~~
+          insn_data
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/gen_add2_insn/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/gen_add2_insn/src/optabs.c:4283:32: error: use of undeclared identifier 'machine_mode'
+if ( !operand->predicate( x, ( machine_mode)*( ( unsigned __int16 *)operand + 8)) 
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/gen_add2_insn/src/optabs.c:4284:32: error: use of undeclared identifier 'machine_mode'
+|| !operand[1].predicate( x, ( machine_mode)*( ( unsigned __int16 *)&operand[1] + 8)) 
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/gen_add2_insn/src/optabs.c:4285:32: error: use of undeclared identifier 'machine_mode'
+|| !operand[2].predicate( y, ( machine_mode)*( ( unsigned __int16 *)&operand[2] + 8)) ) 
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/gen_add2_insn/src/optabs.c:4289:8: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+return insn_data_0[v3].genfun( x, x); 
+       ^~~~~~~~~~~
+       insn_data
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/gen_add2_insn/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/gen_add2_insn/src/optabs.c:4289:30: error: called object type '<dependent type>' is not a function or function pointer
+return insn_data_0[v3].genfun( x, x); 
+                             ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/gen_add2_insn/src/obj/optabs.o] Error 1

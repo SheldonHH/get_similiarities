@@ -1,0 +1,26 @@
+/data/output_dir/patch/gobmk/ida/gcc/O0/gobmk-gcc-O0/play_solo/src/interface/play_solo.c:530:6: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'unsigned int' of different size
+v2 = ( __m128i)0x40B00000u; 
+     ^~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/gcc/O0/gobmk-gcc-O0/play_solo/src/interface/play_solo.c:532:10: error: expected expression
+tcmalloc::TList<tcmalloc::Span>::Elem::Elem( &sgftree); 
+         ^
+/data/output_dir/patch/gobmk/ida/gcc/O0/gobmk-gcc-O0/play_solo/src/interface/play_solo.c:533:14: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+*( float *)v2.m128i_i32 = gnugo_get_komi( ); 
+           ~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/gcc/O0/gobmk-gcc-O0/play_solo/src/interface/play_solo.c:536:6: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'unsigned int' of different size
+v4 = ( __m128i)0x40B00000u; 
+     ^~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/gcc/O0/gobmk-gcc-O0/play_solo/src/interface/play_solo.c:596:15: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+*( double *)v4.m128i_i64 = gg_cputime( ); 
+            ~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/gcc/O0/gobmk-gcc-O0/play_solo/src/interface/play_solo.c:597:20: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+t2 = *( double *)v4.m128i_i64; 
+                 ~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/gcc/O0/gobmk-gcc-O0/play_solo/src/interface/play_solo.c:599:14: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+*( float *)v4.m128i_i32 = Isis::UrlDb::GetFileName( &lower_bound, &upper_bound); 
+           ~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/gcc/O0/gobmk-gcc-O0/play_solo/src/interface/play_solo.c:599:27: error: use of undeclared identifier 'Isis'
+*( float *)v4.m128i_i32 = Isis::UrlDb::GetFileName( &lower_bound, &upper_bound); 
+                          ^
+8 errors generated.
+make: *** [/data/output_dir/patch/gobmk/ida/gcc/O0/gobmk-gcc-O0/play_solo/src/obj/2/play_solo.o] Error 1

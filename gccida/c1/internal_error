@@ -1,0 +1,33 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/internal_error/src/diagnostic.c:1682:1: error: unknown type name 'diagnostic_context_0'; did you mean 'diagnostic_context'?
+diagnostic_context_0 v2; // [rsp+D0h] [rbp-188h] BYREF 
+^~~~~~~~~~~~~~~~~~~~
+diagnostic_context
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/internal_error/src/diagnostic.h:29:35: note: 'diagnostic_context' declared here
+typedef struct diagnostic_context diagnostic_context;
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/internal_error/src/diagnostic.c:1689:7: error: expected expression
+swift::warning( stderr, "%s:%d: confused by earlier errors, bailing out\n", input_filename, ( unsigned int)lineno); 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/internal_error/src/diagnostic.c:1693:46: error: expected expression
+internal_error_function( msgid, ( va_list_0 *)va); 
+                                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/internal_error/src/diagnostic.c:1693:35: error: use of undeclared identifier 'va_list_0'
+internal_error_function( msgid, ( va_list_0 *)va); 
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/internal_error/src/diagnostic.c:1694:50: error: expected expression
+set_diagnostic_context( &v2, msgid, ( va_list_0 *)va, input_filename, lineno, 0); 
+                                                 ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/internal_error/src/diagnostic.c:1694:39: error: use of undeclared identifier 'va_list_0'
+set_diagnostic_context( &v2, msgid, ( va_list_0 *)va, input_filename, lineno, 0); 
+                                      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/internal_error/src/diagnostic.c:1696:7: error: expected expression
+swift::warning( 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/internal_error/src/diagnostic.c:1696:1: error: redefinition of label 'swift'
+swift::warning( 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/internal_error/src/diagnostic.c:1689:1: note: previous definition is here
+swift::warning( stderr, "%s:%d: confused by earlier errors, bailing out\n", input_filename, ( unsigned int)lineno); 
+^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/internal_error/src/obj/diagnostic.o] Error 1

@@ -1,0 +1,21 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/reload_cse_simplify_set/src/reload1.c:8677:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class dclass; // [rsp+Ch] [rbp-3Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/reload_cse_simplify_set/src/reload1.c:8684:26: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v5 = (  struct rtx_def *)set[1]; 
+                         ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/reload_cse_simplify_set/src/reload1.c:8694:31: error: use of undeclared identifier 'machine_mode'
+v9 = ix86_memory_move_cost( ( machine_mode)*( ( unsigned __int8 *)v5 + 2), dclass, 1); 
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/reload_cse_simplify_set/src/reload1.c:8703:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)v5 + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/reload_cse_simplify_set/src/reload1.c:8708:28: error: use of undeclared identifier 'machine_mode'
+v10 = cselib_lookup( v5, ( machine_mode)*( unsigned __int8 *)( set->fld[0].rtwint + 2), 0); 
+                           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/reload_cse_simplify_set/src/reload1.c:8725:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)loc + 2), 
+  ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/reload_cse_simplify_set/src/obj/reload1.o] Error 1

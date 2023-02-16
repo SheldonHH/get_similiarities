@@ -1,0 +1,85 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_emit_once/src/emit-rtl.c:5418:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v1; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_emit_once/src/emit-rtl.c:5420:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v3; // r10d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_emit_once/src/emit-rtl.c:5422:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v5; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_emit_once/src/emit-rtl.c:5423:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v6; // edx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_emit_once/src/emit-rtl.c:5425:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v8; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_emit_once/src/emit-rtl.c:5426:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v9; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_emit_once/src/emit-rtl.c:5427:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v10; // edx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_emit_once/src/emit-rtl.c:5428:1: error: must use 'enum' tag to refer to type 'mode_class'
+mode_class v11; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_emit_once/src/machmode.h:52:30: note: enum 'mode_class' is hidden by a non-type declaration of 'mode_class' here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_emit_once/src/emit-rtl.c:5433:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode k; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_emit_once/src/emit-rtl.c:5435:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v18; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_emit_once/src/emit-rtl.c:5436:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode m; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_emit_once/src/emit-rtl.c:5437:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode n; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_emit_once/src/emit-rtl.c:5438:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode ii; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_emit_once/src/emit-rtl.c:5442:1: error: must use 'union' tag to refer to type 'real_extract'
+real_extract u; // [rsp+20h] [rbp-58h] BYREF 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_emit_once/src/emit-rtl.c:5450:12: error: invalid suffix 'xmode' on integer constant
+*(short *)0xmode = VOIDmode; 
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_emit_once/src/emit-rtl.c:5481:12: error: invalid suffix 'xmode' on integer constant
+*(short *)0xmode = v3; 
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_emit_once/src/emit-rtl.c:5502:7: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v11 = mode_class_0[5]; 
+      ^~~~~~~~~~~~
+      mode_class
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_emit_once/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_emit_once/src/emit-rtl.c:5507:7: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v11 = mode_class_0[4]; 
+      ^~~~~~~~~~~~
+      mode_class
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_emit_once/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_emit_once/src/emit-rtl.c:5513:32: error: use of undeclared identifier 'machine_mode'
+global_rtl[2] = gen_raw_REG( ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), 7); 
+                               ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_emit_once/src/obj/emit-rtl.o] Error 1

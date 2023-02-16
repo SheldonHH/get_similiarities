@@ -1,0 +1,91 @@
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/dragon_escape/src/engine/dragon.c:2229:7: error: use of undeclared identifier 'dragon_escape_mx_initialized'; did you mean 'dragon2_initialized'?
+if ( !dragon_escape_mx_initialized ) 
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      dragon2_initialized
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/dragon_escape/src/engine/dragon.c:70:12: note: 'dragon2_initialized' declared here
+static int dragon2_initialized;
+           ^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/dragon_escape/src/engine/dragon.c:2231:38: error: use of undeclared identifier 'dragon_escape_mx'; did you mean 'dragon_escape'?
+memset( dragon_escape_mx, 0, sizeof( dragon_escape_mx)); 
+                                     ^~~~~~~~~~~~~~~~
+                                     dragon_escape
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/dragon_escape/src/engine/dragon.c:2169:6: note: 'dragon_escape' declared here
+int  dragon_escape( char *goal, int color, char *escape_value) 
+     ^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/dragon_escape/src/engine/dragon.c:2231:9: error: use of undeclared identifier 'dragon_escape_mx'; did you mean 'dragon_escape'?
+memset( dragon_escape_mx, 0, sizeof( dragon_escape_mx)); 
+        ^~~~~~~~~~~~~~~~
+        dragon_escape
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/dragon_escape/src/engine/dragon.c:2169:6: note: 'dragon_escape' declared here
+int  dragon_escape( char *goal, int color, char *escape_value) 
+     ^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/dragon_escape/src/engine/dragon.c:2232:1: error: use of undeclared identifier 'dragon_escape_mx_initialized'
+dragon_escape_mx_initialized = 1; 
+^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/dragon_escape/src/engine/dragon.c:2241:1: error: use of undeclared identifier 'dragon_escape_mx'; did you mean 'dragon_escape'?
+dragon_escape_mx[i] = 1; 
+^~~~~~~~~~~~~~~~
+dragon_escape
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/dragon_escape/src/engine/dragon.c:2169:6: note: 'dragon_escape' declared here
+int  dragon_escape( char *goal, int color, char *escape_value) 
+     ^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/dragon_escape/src/engine/dragon.c:2241:1: error: subscript of pointer to function type 'int (char *, int, char *)'
+dragon_escape_mx[i] = 1; 
+^~~~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/dragon_escape/src/engine/dragon.c:2285:19: error: use of undeclared identifier 'dword_98C9D0'
+if ( v14 != 3 && !dword_98C9D0[( _QWORD)v13] ) 
+                  ^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/dragon_escape/src/engine/dragon.c:2298:1: error: use of undeclared identifier 'dword_98C9D0'
+dword_98C9D0[( _QWORD)v13] = 1; 
+^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/dragon_escape/src/engine/dragon.c:2301:25: error: use of undeclared identifier 'byte_9AA89F'
+v16 = ( unsigned __int8)byte_9AA89F[( _QWORD)v13]; 
+                        ^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/dragon_escape/src/engine/dragon.c:2308:30: error: use of undeclared identifier 'byte_9AA89E'
+&& ( v28 = ( unsigned __int8)byte_9AA89E[( _QWORD)v13], v28 != 3) 
+                             ^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/dragon_escape/src/engine/dragon.c:2318:25: error: use of undeclared identifier 'byte_9AA88C'
+v18 = ( unsigned __int8)byte_9AA88C[( _QWORD)v13]; 
+                        ^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/dragon_escape/src/engine/dragon.c:2327:30: error: use of undeclared identifier 'byte_9AA88D'
+&& ( v32 = ( unsigned __int8)byte_9AA88D[( _QWORD)v13], v32 != 3) 
+                             ^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/dragon_escape/src/engine/dragon.c:2336:19: error: use of undeclared identifier 'dword_98C984'
+if ( v20 != 3 && !dword_98C984[( _QWORD)v13] ) 
+                  ^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/dragon_escape/src/engine/dragon.c:2340:30: error: use of undeclared identifier 'byte_9AA88D'
+&& ( v33 = ( unsigned __int8)byte_9AA88D[( _QWORD)v13], v33 != 3) 
+                             ^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/dragon_escape/src/engine/dragon.c:2349:1: error: use of undeclared identifier 'dword_98C984'
+dword_98C984[( _QWORD)v13] = 1; 
+^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/dragon_escape/src/engine/dragon.c:2354:60: error: use of undeclared identifier 'dword_98C9CC'
+if ( !( ( unsigned __int8)v14 | ( unsigned __int8)v16) && !dword_98C9CC[( _QWORD)v13] ) 
+                                                           ^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/dragon_escape/src/engine/dragon.c:2366:1: error: use of undeclared identifier 'dword_98C9CC'
+dword_98C9CC[( _QWORD)v13] = 1; 
+^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/dragon_escape/src/engine/dragon.c:2391:30: error: use of undeclared identifier 'byte_9AA88E'
+&& ( v47 = ( unsigned __int8)byte_9AA88E[( _QWORD)v13], v47 != 3) 
+                             ^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/dragon_escape/src/engine/dragon.c:2399:60: error: use of undeclared identifier 'dword_98C9D4'
+if ( !( ( unsigned __int8)v14 | ( unsigned __int8)v20) && !dword_98C9D4[( _QWORD)v13] ) 
+                                                           ^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/dragon_escape/src/engine/dragon.c:2411:1: error: use of undeclared identifier 'dword_98C9D4'
+dword_98C9D4[( _QWORD)v13] = 1; 
+^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/dragon_escape/src/engine/dragon.c:2427:6: error: use of undeclared identifier 'dragon_escape_mx'
+if ( dragon_escape_mx[v51] != 1 ) 
+     ^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/dragon_escape/src/engine/dragon.c:2434:1: error: use of undeclared identifier 'dragon_escape_mx'; did you mean 'dragon_escape'?
+dragon_escape_mx[v51] = 0; 
+^~~~~~~~~~~~~~~~
+dragon_escape
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/dragon_escape/src/engine/dragon.c:2169:6: note: 'dragon_escape' declared here
+int  dragon_escape( char *goal, int color, char *escape_value) 
+     ^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/dragon_escape/src/engine/dragon.c:2434:1: error: subscript of pointer to function type 'int (char *, int, char *)'
+dragon_escape_mx[v51] = 0; 
+^~~~~~~~~~~~~~~~
+23 errors generated.
+make: *** [/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/dragon_escape/src/obj/1/dragon.o] Error 1

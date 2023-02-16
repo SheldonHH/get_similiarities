@@ -1,0 +1,20 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/bit_from_pos/src/stor-layout.c:982:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v2; // rbp 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/bit_from_pos/src/stor-layout.c:983:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v3; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/bit_from_pos/src/stor-layout.c:984:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v4; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/bit_from_pos/src/stor-layout.c:986:19: error: expected expression
+v2 = ( tree_node *)*( &global_trees + 19); 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/bit_from_pos/src/stor-layout.c:986:8: error: use of undeclared identifier 'tree_node'
+v2 = ( tree_node *)*( &global_trees + 19); 
+       ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/bit_from_pos/src/obj/stor-layout.o] Error 1

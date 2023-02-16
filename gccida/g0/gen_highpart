@@ -1,0 +1,12 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_highpart/src/emit-rtl.c:1666:20: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  gen_highpart( machine_mode mode, rtx x) 
+                   ^
+                   enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_highpart/src/emit-rtl.c:1680:38: error: use of undeclared identifier 'machine_mode'
+v3 = subreg_highpart_offset( mode, ( machine_mode)*( ( unsigned __int8 *)x + 2)); 
+                                     ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_highpart/src/emit-rtl.c:1681:42: error: use of undeclared identifier 'machine_mode'
+result = simplify_gen_subreg( mode, x, ( machine_mode)*( ( unsigned __int8 *)x + 2), v3); 
+                                         ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/gen_highpart/src/obj/emit-rtl.o] Error 1

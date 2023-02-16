@@ -1,0 +1,48 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/set_init_label/src/c-typeck.c:6252:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *values; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/set_init_label/src/c-typeck.c:6273:6: error: use of undeclared identifier 'constructor_range_stack_0'; did you mean 'constructor_range_stack'?
+if ( constructor_range_stack_0 ) 
+     ^~~~~~~~~~~~~~~~~~~~~~~~~
+     constructor_range_stack
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/set_init_label/src/c-typeck.c:5036:33: note: 'constructor_range_stack' declared here
+struct constructor_range_stack *constructor_range_stack;
+                                ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/set_init_label/src/c-typeck.c:6276:12: error: use of undeclared identifier 'constructor_range_stack_0'; did you mean 'constructor_range_stack'?
+v2->prev = constructor_range_stack_0; 
+           ^~~~~~~~~~~~~~~~~~~~~~~~~
+           constructor_range_stack
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/set_init_label/src/c-typeck.c:5036:33: note: 'constructor_range_stack' declared here
+struct constructor_range_stack *constructor_range_stack;
+                                ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/set_init_label/src/c-typeck.c:6282:13: error: use of undeclared identifier 'constructor_stack_0'; did you mean 'constructor_stack'?
+v2->stack = constructor_stack_0; 
+            ^~~~~~~~~~~~~~~~~~~
+            constructor_stack
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/set_init_label/src/c-typeck.c:5021:27: note: 'constructor_stack' declared here
+struct constructor_stack *constructor_stack;
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/set_init_label/src/c-typeck.c:6284:6: error: use of undeclared identifier 'constructor_range_stack_0'; did you mean 'constructor_range_stack'?
+if ( constructor_range_stack_0 ) 
+     ^~~~~~~~~~~~~~~~~~~~~~~~~
+     constructor_range_stack
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/set_init_label/src/c-typeck.c:5036:33: note: 'constructor_range_stack' declared here
+struct constructor_range_stack *constructor_range_stack;
+                                ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/set_init_label/src/c-typeck.c:6285:1: error: use of undeclared identifier 'constructor_range_stack_0'; did you mean 'constructor_range_stack'?
+constructor_range_stack_0->next = v2; 
+^~~~~~~~~~~~~~~~~~~~~~~~~
+constructor_range_stack
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/set_init_label/src/c-typeck.c:5036:33: note: 'constructor_range_stack' declared here
+struct constructor_range_stack *constructor_range_stack;
+                                ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/set_init_label/src/c-typeck.c:6286:1: error: use of undeclared identifier 'constructor_range_stack_0'; did you mean 'constructor_range_stack'?
+constructor_range_stack_0 = v2; 
+^~~~~~~~~~~~~~~~~~~~~~~~~
+constructor_range_stack
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/set_init_label/src/c-typeck.c:5036:33: note: 'constructor_range_stack' declared here
+struct constructor_range_stack *constructor_range_stack;
+                                ^
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/set_init_label/src/obj/c-typeck.o] Error 1

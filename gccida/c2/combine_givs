@@ -1,0 +1,73 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/combine_givs/src/loop.c:7918:1: error: use of undeclared identifier 'induction_1'
+induction_1 *giv; // rax 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/combine_givs/src/loop.c:7918:14: error: use of undeclared identifier 'giv'; did you mean 'div'?
+induction_1 *giv; // rax 
+             ^~~
+             div
+/usr/include/stdlib.h:849:14: note: 'div' declared here
+extern div_t div (int __numer, int __denom)
+             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/combine_givs/src/loop.c:7920:1: error: use of undeclared identifier 'induction_1'
+induction_1 *v4; // rcx 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/combine_givs/src/loop.c:7920:14: error: use of undeclared identifier 'v4'
+induction_1 *v4; // rcx 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/combine_givs/src/loop.c:7938:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v22; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/combine_givs/src/loop.c:7982:1: error: use of undeclared identifier 'giv'
+giv = bl_0->giv; 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/combine_givs/src/loop.c:7983:6: error: use of undeclared identifier 'giv'; did you mean 'div'?
+if ( giv ) 
+     ^~~
+     div
+/usr/include/stdlib.h:849:14: note: 'div' declared here
+extern div_t div (int __numer, int __denom)
+             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/combine_givs/src/loop.c:7986:1: error: use of undeclared identifier 'v4'
+v4 = bl_0->giv; 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/combine_givs/src/loop.c:7989:23: error: use of undeclared identifier 'v4'
+v3 = ( ( *( ( _WORD *)v4 + 50) & 4) == 0LL) + ( unsigned __int64)( unsigned int)v3; 
+                      ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/combine_givs/src/loop.c:7990:1: error: use of undeclared identifier 'v4'
+v4 = v4->next_iv; 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/combine_givs/src/loop.c:7990:6: error: use of undeclared identifier 'v4'
+v4 = v4->next_iv; 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/combine_givs/src/loop.c:7992:9: error: use of undeclared identifier 'v4'
+while ( v4 ); 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/combine_givs/src/loop.c:7998:21: error: use of undeclared identifier 'giv'
+if ( ( *( ( _BYTE *)giv + 100) & 4) == 0 ) 
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/combine_givs/src/loop.c:8001:95: error: use of undeclared identifier 'giv'
+*( __int64 *)( ( char *)&v52 + 8 * v7 - ( ( 8 * v3 + 15) & 0xFFFFFFFFFFFFFFF0LL)) = ( __int64)giv; 
+                                                                                              ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/combine_givs/src/loop.c:8003:1: error: use of undeclared identifier 'giv'
+giv = giv->next_iv; 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/combine_givs/src/loop.c:8003:7: error: use of undeclared identifier 'giv'
+giv = giv->next_iv; 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/combine_givs/src/loop.c:8005:9: error: use of undeclared identifier 'giv'; did you mean 'div'?
+while ( giv ); 
+        ^~~
+        div
+/usr/include/stdlib.h:849:14: note: 'div' declared here
+extern div_t div (int __numer, int __denom)
+             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/combine_givs/src/loop.c:8053:36: error: expected expression
+v20 = express_from( ( induction_1 *)v16, *( induction_1 **)( v13 + 8 * v18)); 
+                                   ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/combine_givs/src/loop.c:8053:23: error: use of undeclared identifier 'induction_1'
+v20 = express_from( ( induction_1 *)v16, *( induction_1 **)( v13 + 8 * v18)); 
+                      ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/combine_givs/src/obj/loop.o] Error 1

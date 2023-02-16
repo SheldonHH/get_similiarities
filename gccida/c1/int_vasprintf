@@ -1,0 +1,35 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/int_vasprintf/src/vasprintf.c:526:6: error: conflicting types for 'int_vasprintf'
+int  int_vasprintf( char **result, const char *format,  struct __va_list_tag *args) 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/int_vasprintf/src/vasprintf.c:61:12: note: previous declaration is here
+static int int_vasprintf PARAMS ((char **, const char *, va_list ));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/int_vasprintf/src/vasprintf.c:557:30: error: incomplete definition of type 'struct __va_list_tag'
+reg_save_area = ( char *)args->reg_save_area; 
+                         ~~~~^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/int_vasprintf/src/vasprintf.c:526:64: note: forward declaration of 'struct __va_list_tag'
+int  int_vasprintf( char **result, const char *format,  struct __va_list_tag *args) 
+                                                               ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/int_vasprintf/src/vasprintf.c:558:13: error: expected identifier or '('
+ struct arg = args; 
+            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/int_vasprintf/src/vasprintf.c:559:18: error: expected expression
+v24 = *( _OWORD *)&args->gp_offset; 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/int_vasprintf/src/vasprintf.c:559:10: error: use of undeclared identifier '_OWORD'
+v24 = *( _OWORD *)&args->gp_offset; 
+         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/int_vasprintf/src/vasprintf.c:559:24: error: incomplete definition of type 'struct __va_list_tag'
+v24 = *( _OWORD *)&args->gp_offset; 
+                   ~~~~^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/int_vasprintf/src/vasprintf.c:526:64: note: forward declaration of 'struct __va_list_tag'
+int  int_vasprintf( char **result, const char *format,  struct __va_list_tag *args) 
+                                                               ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/int_vasprintf/src/vasprintf.c:628:15: error: use of undeclared identifier 'off_6E33E0'
+if ( memchr( &off_6E33E0, v19, 4uLL) ) 
+              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/int_vasprintf/src/vasprintf.c:632:18: error: use of undeclared identifier 'off_6E33E0'
+while ( memchr( &off_6E33E0, v19, 4uLL) ); 
+                 ^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/int_vasprintf/src/obj/vasprintf.o] Error 1

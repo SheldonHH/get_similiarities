@@ -1,0 +1,30 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/noce_get_alt_condition/src/ifcvt.c:1612:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v12; // r15d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/noce_get_alt_condition/src/ifcvt.c:1632:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v8 = ( __int64)pc_set( if_info->jump)[1]; 
+               ^~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/noce_get_alt_condition/src/ifcvt.c:1636:23: error: invalid operands to binary expression ('struct rtx_def' and 'uint64' (aka 'unsigned long long'))
+v7 = if_info->jump[4] == *( _QWORD *)( v10 + 8); 
+     ~~~~~~~~~~~~~~~~ ^  ~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/noce_get_alt_condition/src/ifcvt.c:1642:14: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+op_b = ( rtx)cond[1]; 
+             ^~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/noce_get_alt_condition/src/ifcvt.c:1643:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v13 = (  struct rtx_def *)if_info->cond_earliest[1]; 
+                          ^~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/noce_get_alt_condition/src/ifcvt.c:1680:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v17.rtwint = ( __int64)op_b->fld[0]; 
+                       ^~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/noce_get_alt_condition/src/ifcvt.c:1715:12: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+if ( ( rtx)cond[1] != op_b ) 
+           ^~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/noce_get_alt_condition/src/ifcvt.c:1718:29: error: use of undeclared identifier 'machine_mode'
+v5 = gen_rtx_fmt_ee( v12, ( machine_mode)*( unsigned __int8 *)( v9 + 2), tmp, op_b); 
+                            ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/noce_get_alt_condition/src/ifcvt.c:1734:14: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+jump = ( rtx)jump[1]; 
+             ^~~~~~~
+9 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/noce_get_alt_condition/src/obj/ifcvt.o] Error 1

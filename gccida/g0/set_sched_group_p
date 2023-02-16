@@ -1,0 +1,18 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/set_sched_group_p/src/sched-deps.c:931:20: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( link = ( rtx)prev[3]; link; link = ( rtx)link[1] ) 
+                   ^~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/set_sched_group_p/src/sched-deps.c:931:48: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( link = ( rtx)prev[3]; link; link = ( rtx)link[1] ) 
+                                               ^~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/set_sched_group_p/src/sched-deps.c:932:43: error: use of undeclared identifier 'reg_note'; did you mean 'reg_names'?
+add_dependence( insn, link->fld[0].rtx, ( reg_note)*( ( unsigned __int8 *)link + 2)); 
+                                          ^~~~~~~~
+                                          reg_names
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/set_sched_group_p/src/regs.h:166:21: note: 'reg_names' declared here
+extern const char * reg_names[FIRST_PSEUDO_REGISTER];
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/set_sched_group_p/src/sched-deps.c:932:52: error: invalid operands to binary expression ('const char *[53]' and 'unsigned char *')
+add_dependence( insn, link->fld[0].rtx, ( reg_note)*( ( unsigned __int8 *)link + 2)); 
+                                        ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/set_sched_group_p/src/obj/sched-deps.o] Error 1

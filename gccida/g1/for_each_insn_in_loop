@@ -1,0 +1,72 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/for_each_insn_in_loop/src/loop.c:4634:4: error: expected ';' after expression
+rtx scan_start; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/for_each_insn_in_loop/src/loop.c:4634:5: error: use of undeclared identifier 'scan_start'
+rtx scan_start; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/for_each_insn_in_loop/src/loop.c:4637:4: error: expected ';' after expression
+rtx exit_labels; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/for_each_insn_in_loop/src/loop.c:4637:5: error: use of undeclared identifier 'exit_labels'; did you mean 'emit_label'?
+rtx exit_labels; // rax 
+    ^~~~~~~~~~~
+    emit_label
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/for_each_insn_in_loop/src/rtl.h:1340:12: note: 'emit_label' declared here
+extern rtx emit_label                   PARAMS ((rtx));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/for_each_insn_in_loop/src/loop.c:4639:4: error: expected ';' after expression
+rtx v14; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/for_each_insn_in_loop/src/loop.c:4639:5: error: use of undeclared identifier 'v14'
+rtx v14; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/for_each_insn_in_loop/src/loop.c:4640:4: error: expected ';' after expression
+rtx v15; // r12 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/for_each_insn_in_loop/src/loop.c:4640:5: error: use of undeclared identifier 'v15'
+rtx v15; // r12 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/for_each_insn_in_loop/src/loop.c:4655:1: error: use of undeclared identifier 'v14'
+v14 = fncall( loop, insn_in_loop, v7, v4); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/for_each_insn_in_loop/src/loop.c:4656:1: error: use of undeclared identifier 'v15'
+v15 = v14; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/for_each_insn_in_loop/src/loop.c:4656:7: error: use of undeclared identifier 'v14'
+v15 = v14; 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/for_each_insn_in_loop/src/loop.c:4657:17: error: use of undeclared identifier 'v14'
+if ( *( _WORD *)v14 == 36 ) 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/for_each_insn_in_loop/src/loop.c:4659:7: error: use of undeclared identifier 'v14'; did you mean 'v11'?
+rtx = v14[1].fld[0].rtx; 
+      ^~~
+      v11
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/for_each_insn_in_loop/src/loop.c:4636:18: note: 'v11' declared here
+ struct rtx_def *v11; // rsi 
+                 ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/for_each_insn_in_loop/src/loop.c:4660:1: error: use of undeclared identifier 'scan_start'
+scan_start = loop->scan_start; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/for_each_insn_in_loop/src/loop.c:4661:13: error: use of undeclared identifier 'scan_start'
+if ( rtx != scan_start ) 
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/for_each_insn_in_loop/src/loop.c:4668:13: error: use of undeclared identifier 'scan_start'
+if ( rtx == scan_start || !rtx ) 
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/for_each_insn_in_loop/src/loop.c:4681:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v11 = (  struct rtx_def *)rtx[4]; 
+                          ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/for_each_insn_in_loop/src/loop.c:4682:60: error: use of undeclared identifier 'v15'
+if ( v11 && v11 != loop->scan_start && !loop_insn_first_p( v15, v11) ) 
+                                                           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/for_each_insn_in_loop/src/loop.c:4689:1: error: use of undeclared identifier 'scan_start'
+scan_start = loop->scan_start; 
+^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/for_each_insn_in_loop/src/obj/loop.o] Error 1

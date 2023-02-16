@@ -1,0 +1,11 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/add_insn_before/src/emit-rtl.c:3895:25: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v2 = ( unsigned __int64)before[1]; 
+                        ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/add_insn_before/src/emit-rtl.c:3898:13: error: use of undeclared identifier 'rtx_def'
+insn[1] = ( rtx_def)_mm_unpacklo_epi64( ( __m128i)v2, ( __m128i)( unsigned __int64)before); 
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/add_insn_before/src/emit-rtl.c:3950:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v7 = ( __int64)before[2]; 
+               ^~~~~~~~~
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/add_insn_before/src/obj/emit-rtl.o] Error 1

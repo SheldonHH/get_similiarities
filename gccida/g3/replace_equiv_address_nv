@@ -1,0 +1,63 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/replace_equiv_address_nv/src/emit-rtl.c:2580:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v3; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/replace_equiv_address_nv/src/emit-rtl.c:2581:4: error: expected ';' after expression
+rtx v4; // r8 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/replace_equiv_address_nv/src/emit-rtl.c:2581:5: error: use of undeclared identifier 'v4'
+rtx v4; // r8 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/replace_equiv_address_nv/src/emit-rtl.c:2582:4: error: expected ';' after expression
+rtx v5; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/replace_equiv_address_nv/src/emit-rtl.c:2582:5: error: use of undeclared identifier 'v5'
+rtx v5; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/replace_equiv_address_nv/src/emit-rtl.c:2590:50: error: use of undeclared identifier 'v4'
+if ( !rtx_equal_p( rtx, memref->fld[0].rtx) || ( v4 = memref, v3 != *( ( unsigned __int8 *)memref + 2)) ) 
+                                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/replace_equiv_address_nv/src/emit-rtl.c:2592:1: error: use of undeclared identifier 'v5'
+v5 = gen_rtx_fmt_e0( MEM, v3, rtx); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/replace_equiv_address_nv/src/emit-rtl.c:2593:14: error: use of undeclared identifier 'v5'
+*( _QWORD *)&v5[1] = 0LL; 
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/replace_equiv_address_nv/src/emit-rtl.c:2594:1: error: use of undeclared identifier 'v4'
+v4 = v5; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/replace_equiv_address_nv/src/emit-rtl.c:2594:6: error: use of undeclared identifier 'v5'
+v4 = v5; 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/replace_equiv_address_nv/src/emit-rtl.c:2595:9: error: use of undeclared identifier 'v5'
+LOBYTE( v5) = *( ( _BYTE *)memref + 3) & 8 | *( ( _BYTE *)v5 + 3) & 0xF7; 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/replace_equiv_address_nv/src/emit-rtl.c:2595:59: error: use of undeclared identifier 'v5'
+LOBYTE( v5) = *( ( _BYTE *)memref + 3) & 8 | *( ( _BYTE *)v5 + 3) & 0xF7; 
+                                                          ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/replace_equiv_address_nv/src/emit-rtl.c:2596:14: error: use of undeclared identifier 'v4'
+*( ( _BYTE *)v4 + 3) = ( _BYTE)v5; 
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/replace_equiv_address_nv/src/emit-rtl.c:2596:32: error: use of undeclared identifier 'v5'
+*( ( _BYTE *)v4 + 3) = ( _BYTE)v5; 
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/replace_equiv_address_nv/src/emit-rtl.c:2597:9: error: use of undeclared identifier 'v5'
+LOBYTE( v5) = *( ( _BYTE *)memref + 3) & 0x10 | ( unsigned __int8)v5 & 0xEF; 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/replace_equiv_address_nv/src/emit-rtl.c:2597:67: error: use of undeclared identifier 'v5'
+LOBYTE( v5) = *( ( _BYTE *)memref + 3) & 0x10 | ( unsigned __int8)v5 & 0xEF; 
+                                                                  ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/replace_equiv_address_nv/src/emit-rtl.c:2598:14: error: use of undeclared identifier 'v4'
+*( ( _BYTE *)v4 + 3) = ( _BYTE)v5; 
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/replace_equiv_address_nv/src/emit-rtl.c:2598:32: error: use of undeclared identifier 'v5'
+*( ( _BYTE *)v4 + 3) = ( _BYTE)v5; 
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/replace_equiv_address_nv/src/emit-rtl.c:2599:9: error: use of undeclared identifier 'v5'
+LOBYTE( v5) = *( ( _BYTE *)memref + 3) & 0x80 | ( unsigned __int8)v5 & 0x7F; 
+        ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/replace_equiv_address_nv/src/obj/emit-rtl.o] Error 1

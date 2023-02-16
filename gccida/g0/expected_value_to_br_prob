@@ -1,0 +1,25 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expected_value_to_br_prob/src/predict.c:1028:12: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+ev = ( rtx)insn[2]; 
+           ^~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expected_value_to_br_prob/src/predict.c:1064:24: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+v2 = gen_rtx_fmt_ee( ( rtx_code)*( _WORD *)cond, VOIDmode, *( rtx *)&ev[1], *( rtx *)&cond[1]); 
+                       ^~~~~~~~
+                       rtx_cost
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expected_value_to_br_prob/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expected_value_to_br_prob/src/predict.c:1064:33: error: invalid operands to binary expression ('int (rtx, enum rtx_code)' (aka 'int (struct rtx_def *, enum rtx_code)') and 'uint16 *' (aka 'unsigned short *'))
+v2 = gen_rtx_fmt_ee( ( rtx_code)*( _WORD *)cond, VOIDmode, *( rtx *)&ev[1], *( rtx *)&cond[1]); 
+                     ~~~~~~~~~~~^~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expected_value_to_br_prob/src/predict.c:1068:48: error: use of undeclared identifier 'prediction'; did you mean 'predict_insn'?
+predict_insn_def( insn, PRED_BUILTIN_EXPECT, ( prediction)( conda == const_true_rtx)); 
+                                               ^~~~~~~~~~
+                                               predict_insn
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expected_value_to_br_prob/src/predict.c:95:1: note: 'predict_insn' declared here
+predict_insn (insn, predictor, probability)
+^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expected_value_to_br_prob/src/predict.c:1068:46: error: passing 'void' to parameter of incompatible type 'unsigned int'
+predict_insn_def( insn, PRED_BUILTIN_EXPECT, ( prediction)( conda == const_true_rtx)); 
+                                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expected_value_to_br_prob/src/obj/predict.o] Error 1

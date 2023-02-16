@@ -1,0 +1,44 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/adjust_address_1/src/emit-rtl.c:2439:36: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  adjust_address_1( rtx memref, machine_mode mode, __int64 offset, int validate, int adjust) 
+                                   ^
+                                   enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/adjust_address_1/src/emit-rtl.c:2444:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v8; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/adjust_address_1/src/emit-rtl.c:2448:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v12; // rsi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/adjust_address_1/src/emit-rtl.c:2456:1: error: statement requires expression of scalar type ('struct rtx_def' invalid)
+if ( memref[1] ) 
+^    ~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/adjust_address_1/src/emit-rtl.c:2462:1: error: statement requires expression of scalar type ('struct rtx_def' invalid)
+if ( memref[1] ) 
+^    ~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/adjust_address_1/src/emit-rtl.c:2473:26: error: use of undeclared identifier 'machine_mode'
+|| get_mode_alignment( ( machine_mode)*( ( unsigned __int8 *)memref + 2)) >> 3 <= ( unsigned __int64)offset ) 
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/adjust_address_1/src/emit-rtl.c:2499:1: error: statement requires expression of scalar type ('struct rtx_def' invalid)
+if ( memref[1] ) 
+^    ~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/adjust_address_1/src/emit-rtl.c:2505:1: error: statement requires expression of scalar type ('struct rtx_def' invalid)
+if ( memref[1] ) 
+^    ~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/adjust_address_1/src/emit-rtl.c:2524:1: error: statement requires expression of scalar type ('struct rtx_def' invalid)
+if ( memref[1] ) 
+^    ~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/adjust_address_1/src/emit-rtl.c:2525:22: error: expected expression
+v12 = *( tree_node **)( *( _QWORD *)&memref[1] + 8LL); 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/adjust_address_1/src/emit-rtl.c:2525:10: error: use of undeclared identifier 'tree_node'
+v12 = *( tree_node **)( *( _QWORD *)&memref[1] + 8LL); 
+         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/adjust_address_1/src/emit-rtl.c:2528:1: error: statement requires expression of scalar type ('struct rtx_def' invalid)
+if ( memref[1] ) 
+^    ~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/adjust_address_1/src/emit-rtl.c:2532:78: error: use of undeclared identifier 'machine_mode'
+*( _QWORD *)&newa[1] = get_mem_attrs( v13, v12, memoffset, size, memalign, ( machine_mode)*( ( unsigned __int8 *)newa + 2)); 
+                                                                             ^
+13 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/adjust_address_1/src/obj/emit-rtl.o] Error 1

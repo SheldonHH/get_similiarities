@@ -1,0 +1,54 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/release_pages/src/ggc-page.c:1231:1: error: unknown type name 'page_group_0'; did you mean 'page_group'?
+page_group_0 *g; // [rsp+0h] [rbp-20h] 
+^~~~~~~~~~~~
+page_group
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/release_pages/src/ggc-page.c:267:3: note: 'page_group' declared here
+} page_group;
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/release_pages/src/ggc-page.c:1232:1: error: unknown type name 'page_entry_0'; did you mean 'page_entry'?
+page_entry_0 *p; // [rsp+8h] [rbp-18h] 
+^~~~~~~~~~~~
+page_entry
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/release_pages/src/ggc-page.c:249:3: note: 'page_entry' declared here
+} page_entry;
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/release_pages/src/ggc-page.c:1233:1: error: unknown type name 'page_group_0'; did you mean 'page_group'?
+page_group_0 **gp; // [rsp+10h] [rbp-10h] 
+^~~~~~~~~~~~
+page_group
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/release_pages/src/ggc-page.c:267:3: note: 'page_group' declared here
+} page_group;
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/release_pages/src/ggc-page.c:1234:1: error: unknown type name 'page_entry_0'; did you mean 'page_entry'?
+page_entry_0 **pp; // [rsp+18h] [rbp-8h] 
+^~~~~~~~~~~~
+page_entry
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/release_pages/src/ggc-page.c:249:3: note: 'page_entry' declared here
+} page_entry;
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/release_pages/src/ggc-page.c:1236:23: error: expected expression
+pp = ( page_entry_0 **)( &G + 2640); 
+                      ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/release_pages/src/ggc-page.c:1236:8: error: use of undeclared identifier 'page_entry_0'
+pp = ( page_entry_0 **)( &G + 2640); 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/release_pages/src/ggc-page.c:1244:23: error: expected expression
+pp = ( page_entry_0 **)*pp; 
+                      ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/release_pages/src/ggc-page.c:1244:8: error: use of undeclared identifier 'page_entry_0'
+pp = ( page_entry_0 **)*pp; 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/release_pages/src/ggc-page.c:1252:23: error: expected expression
+gp = ( page_group_0 **)( &G + 2648); 
+                      ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/release_pages/src/ggc-page.c:1252:8: error: use of undeclared identifier 'page_group_0'
+gp = ( page_group_0 **)( &G + 2648); 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/release_pages/src/ggc-page.c:1260:23: error: expected expression
+gp = ( page_group_0 **)*gp; 
+                      ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/release_pages/src/ggc-page.c:1260:8: error: use of undeclared identifier 'page_group_0'
+gp = ( page_group_0 **)*gp; 
+       ^
+12 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/release_pages/src/obj/ggc-page.o] Error 1

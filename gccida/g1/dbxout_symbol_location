@@ -1,0 +1,97 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dbxout_symbol_location/src/dbxout.c:2612:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v25; // rbp 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dbxout_symbol_location/src/dbxout.c:2613:4: error: expected ';' after expression
+rtx homea; // [rsp+8h] [rbp-30h] BYREF 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dbxout_symbol_location/src/dbxout.c:2613:5: error: use of undeclared identifier 'homea'; did you mean 'home'?
+rtx homea; // [rsp+8h] [rbp-30h] BYREF 
+    ^~~~~
+    home
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dbxout_symbol_location/src/dbxout.c:2591:76: note: 'home' declared here
+int  dbxout_symbol_location( tree decl, tree type, const char *suffix, rtx home) 
+                                                                           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dbxout_symbol_location/src/dbxout.c:2617:1: error: use of undeclared identifier 'homea'; did you mean 'home'?
+homea = home; 
+^~~~~
+home
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dbxout_symbol_location/src/dbxout.c:2591:76: note: 'home' declared here
+int  dbxout_symbol_location( tree decl, tree type, const char *suffix, rtx home) 
+                                                                           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dbxout_symbol_location/src/dbxout.c:2629:1: error: use of undeclared identifier 'homea'; did you mean 'home'?
+homea = alter_subreg( &homea); 
+^~~~~
+home
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dbxout_symbol_location/src/dbxout.c:2591:76: note: 'home' declared here
+int  dbxout_symbol_location( tree decl, tree type, const char *suffix, rtx home) 
+                                                                           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dbxout_symbol_location/src/dbxout.c:2629:24: error: use of undeclared identifier 'homea'; did you mean 'home'?
+homea = alter_subreg( &homea); 
+                       ^~~~~
+                       home
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dbxout_symbol_location/src/dbxout.c:2591:76: note: 'home' declared here
+int  dbxout_symbol_location( tree decl, tree type, const char *suffix, rtx home) 
+                                                                           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dbxout_symbol_location/src/dbxout.c:2631:17: error: use of undeclared identifier 'homea'
+v7 = *( _WORD *)homea; 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dbxout_symbol_location/src/dbxout.c:2632:17: error: use of undeclared identifier 'homea'
+if ( *( _WORD *)homea == 61 ) 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dbxout_symbol_location/src/dbxout.c:2634:9: error: use of undeclared identifier 'homea'; did you mean 'home'?
+rtint = homea->fld[0].rtint; 
+        ^~~~~
+        home
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dbxout_symbol_location/src/dbxout.c:2591:76: note: 'home' declared here
+int  dbxout_symbol_location( tree decl, tree type, const char *suffix, rtx home) 
+                                                                           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dbxout_symbol_location/src/dbxout.c:2651:17: error: use of undeclared identifier 'homea'
+if ( *( _WORD *)homea->fld[0].rtwint == 68 ) 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dbxout_symbol_location/src/dbxout.c:2660:20: error: use of undeclared identifier 'homea'; did you mean 'home'?
+current_sym_addr = homea->fld[0].rtx; 
+                   ^~~~~
+                   home
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dbxout_symbol_location/src/dbxout.c:2591:76: note: 'home' declared here
+int  dbxout_symbol_location( tree decl, tree type, const char *suffix, rtx home) 
+                                                                           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dbxout_symbol_location/src/dbxout.c:2663:27: error: use of undeclared identifier 'lang_hooks_0'; did you mean 'lang_hooks'?
+if ( !initial || !strcmp( lang_hooks_0.name, "GNU C++") && initial == ( tree)global_trees ) 
+                          ^~~~~~~~~~~~
+                          lang_hooks
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dbxout_symbol_location/src/langhooks.h:168:32: note: 'lang_hooks' declared here
+extern const struct lang_hooks lang_hooks;
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dbxout_symbol_location/src/dbxout.c:2675:23: error: expected identifier or '('
+ struct pool_constant = get_pool_constant( current_sym_addr); 
+                      ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dbxout_symbol_location/src/dbxout.c:2684:23: error: use of undeclared identifier 'homea'
+v8.rtwint = ( __int64)homea->fld[0]; 
+                      ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dbxout_symbol_location/src/dbxout.c:2716:28: error: expected expression
+current_sym_addr = *( rtx *)( v8.rtwint + 8); 
+                           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dbxout_symbol_location/src/dbxout.c:2757:7: error: expected expression
+if (  struct suffix ) 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dbxout_symbol_location/src/dbxout.c:2770:45: error: use of undeclared identifier 'homea'; did you mean 'home'?
+dbxout_symbol_location( decl, v25, "$real", homea->fld[0].rtx); 
+                                            ^~~~~
+                                            home
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dbxout_symbol_location/src/dbxout.c:2591:76: note: 'home' declared here
+int  dbxout_symbol_location( tree decl, tree type, const char *suffix, rtx home) 
+                                                                           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dbxout_symbol_location/src/dbxout.c:2774:53: error: expected expression
+dbxout_symbol_location( decl, v25, "$imag", *( rtx *)&homea[1]); 
+                                                    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dbxout_symbol_location/src/dbxout.c:2774:55: error: use of undeclared identifier 'homea'; did you mean 'home'?
+dbxout_symbol_location( decl, v25, "$imag", *( rtx *)&homea[1]); 
+                                                      ^~~~~
+                                                      home
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dbxout_symbol_location/src/dbxout.c:2591:76: note: 'home' declared here
+int  dbxout_symbol_location( tree decl, tree type, const char *suffix, rtx home) 
+                                                                           ^
+19 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dbxout_symbol_location/src/obj/dbxout.o] Error 1

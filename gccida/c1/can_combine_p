@@ -1,0 +1,64 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/can_combine_p/src/combine.c:1398:10: error: conflicting types for 'can_combine_p'
+__int64  can_combine_p( rtx insn, rtx i3, rtx pred, rtx succ, rtx *pdest, rtx *psrc) 
+         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/can_combine_p/src/combine.c:348:12: note: previous declaration is here
+static int can_combine_p        PARAMS ((rtx, rtx, rtx, rtx, rtx *, rtx *));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/can_combine_p/src/combine.c:1438:4: error: expected ';' after expression
+rtx v47; // [rsp+10h] [rbp-58h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/can_combine_p/src/combine.c:1438:5: error: use of undeclared identifier 'v47'
+rtx v47; // [rsp+10h] [rbp-58h] 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/can_combine_p/src/combine.c:1439:6: error: use of undeclared identifier 'v48'
+rtx *v48; // [rsp+28h] [rbp-40h] 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/can_combine_p/src/combine.c:1456:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v12 = (  struct rtx_def *)insn[2]; 
+                          ^~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/can_combine_p/src/combine.c:1459:1: error: use of undeclared identifier 'v48'
+v48 = pdest; 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/can_combine_p/src/combine.c:1468:1: error: use of undeclared identifier 'v48'
+v48 = pdest; 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/can_combine_p/src/combine.c:1486:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v17.rtwint = ( __int64)v15->fld[0]; 
+                       ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/can_combine_p/src/combine.c:1489:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v18 = ( __int64)v9[2]; 
+                ^~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/can_combine_p/src/combine.c:1504:50: error: expected expression
+if ( reg_set_between_p( v15->fld[0].rtx, *( rtx *)&insn[1], i3) ) 
+                                                 ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/can_combine_p/src/combine.c:1568:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v27 = (  struct rtx_def *)v25[1]; 
+                          ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/can_combine_p/src/combine.c:1625:54: error: use of undeclared identifier 'machine_mode'
+if ( v37 <= 0x34 && !ix86_hard_regno_mode_ok( v37, ( machine_mode)BYTE2( v36)) ) 
+                                                     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/can_combine_p/src/combine.c:1628:54: error: use of undeclared identifier 'machine_mode'
+if ( v38 <= 0x34 && !ix86_hard_regno_mode_ok( v38, ( machine_mode)*( ( unsigned __int8 *)v27 + 2)) ) 
+                                                     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/can_combine_p/src/combine.c:1632:1: error: use of undeclared identifier 'v47'
+v47 = succ; 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/can_combine_p/src/combine.c:1633:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v39 = ( __int64)v9[2]; 
+                ^~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/can_combine_p/src/combine.c:1644:39: error: expected expression
+&& ( reg_overlap_mentioned_p( *( rtx *)( v42 + 8), v27) 
+                                      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/can_combine_p/src/combine.c:1645:25: error: expected expression
+|| rtx_equal_p( *( rtx *)( *( _QWORD *)( *( _QWORD *)( *( _QWORD *)&v9[2] + 8LL) + 8 * v41 - 8) + 8LL), rtx)) ) 
+                        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/can_combine_p/src/combine.c:1656:39: error: expected expression
+if ( pred && volatile_refs_p( *( rtx *)&pred[2]) ) 
+                                      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/can_combine_p/src/combine.c:1662:91: error: expected expression
+if ( i != ( unsigned __int16 *)pred && rtx_class[*i] == 105 && volatile_refs_p( *( ( rtx *)i + 4)) ) 
+                                                                                          ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/can_combine_p/src/obj/combine.o] Error 1

@@ -1,0 +1,72 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/sge_plus_constant/src/loop.c:7292:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v8; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/sge_plus_constant/src/loop.c:7294:4: error: expected ';' after expression
+rtx v10; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/sge_plus_constant/src/loop.c:7294:5: error: use of undeclared identifier 'v10'
+rtx v10; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/sge_plus_constant/src/loop.c:7295:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v11; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/sge_plus_constant/src/loop.c:7297:4: error: expected ';' after expression
+rtx v13; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/sge_plus_constant/src/loop.c:7297:5: error: use of undeclared identifier 'v13'; did you mean 'v11'?
+rtx v13; // rax 
+    ^~~
+    v11
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/sge_plus_constant/src/loop.c:7295:14: note: 'v11' declared here
+machine_mode v11; // esi 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/sge_plus_constant/src/loop.c:7303:26: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v6 = (  struct rtx_def *)x[1]; 
+                         ^~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/sge_plus_constant/src/loop.c:7308:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v9.rtwint = ( __int64)x->fld[0]; 
+                      ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/sge_plus_constant/src/loop.c:7309:1: error: use of undeclared identifier 'v10'; did you mean 'v11'?
+v10 = gen_rtx_CONST_INT( VOIDmode, v6->fld[0].rtwint + c->fld[0].rtwint); 
+^~~
+v11
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/sge_plus_constant/src/loop.c:7295:14: note: 'v11' declared here
+machine_mode v11; // esi 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/sge_plus_constant/src/loop.c:7312:7: error: use of undeclared identifier 'v10'; did you mean 'v11'?
+rtx = v10; 
+      ^~~
+      v11
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/sge_plus_constant/src/loop.c:7295:14: note: 'v11' declared here
+machine_mode v11; // esi 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/sge_plus_constant/src/loop.c:7318:1: error: use of undeclared identifier 'v13'; did you mean 'v11'?
+v13 = sge_plus_constant( x->fld[0].rtx, c); 
+^~~
+v11
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/sge_plus_constant/src/loop.c:7295:14: note: 'v11' declared here
+machine_mode v11; // esi 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/sge_plus_constant/src/loop.c:7319:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+rtx = (  struct rtx_def *)x[1]; 
+                          ^~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/sge_plus_constant/src/loop.c:7323:1: error: use of undeclared identifier 'v13'; did you mean 'v11'?
+v13 = sge_plus_constant( v6, c); 
+^~~
+v11
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/sge_plus_constant/src/loop.c:7295:14: note: 'v11' declared here
+machine_mode v11; // esi 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/sge_plus_constant/src/loop.c:7327:10: error: use of undeclared identifier 'v13'; did you mean 'v11'?
+rtwint = v13; 
+         ^~~
+         v11
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/sge_plus_constant/src/loop.c:7295:14: note: 'v11' declared here
+machine_mode v11; // esi 
+             ^
+14 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/sge_plus_constant/src/obj/loop.o] Error 1

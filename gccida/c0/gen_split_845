@@ -1,0 +1,12 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_split_845/src/insn-emit.c:5824:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v1; // ecx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_split_845/src/insn-emit.c:5853:39: error: use of undeclared identifier 'machine_mode'
+operands[2] = gen_rtx_fmt_e( FLOAT, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)*operands), operands[2]); 
+                                      ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_split_845/src/insn-emit.c:5853:54: error: expected expression
+operands[2] = gen_rtx_fmt_e( FLOAT, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)*operands), operands[2]); 
+                                                     ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_split_845/src/obj/insn-emit.o] Error 1

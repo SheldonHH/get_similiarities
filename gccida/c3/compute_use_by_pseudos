@@ -1,0 +1,68 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/compute_use_by_pseudos/src/reload1.c:1143:44: error: use of undeclared identifier 'xmm'
+si128 = _mm_load_si128( ( const __m128i *)&xmm*(short *)0x65AE30); 
+                                           ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/compute_use_by_pseudos/src/reload1.c:1144:41: error: use of undeclared identifier 'xmm'
+v5 = _mm_load_si128( ( const __m128i *)&xmm*(short *)0x65AE10); 
+                                        ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/compute_use_by_pseudos/src/reload1.c:1145:41: error: use of undeclared identifier 'xmm'
+v6 = _mm_load_si128( ( const __m128i *)&xmm*(short *)0x65AE40); 
+                                        ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/compute_use_by_pseudos/src/reload1.c:1168:15: error: use of undeclared identifier 'off_723588'
+fancy_abort( &off_723588[4], 573, "compute_use_by_pseudos"); 
+              ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/compute_use_by_pseudos/src/reload1.c:1174:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v18 = ( ( unsigned int)( mode_class_0[( unsigned __int8)v16] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/compute_use_by_pseudos/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/compute_use_by_pseudos/src/reload1.c:1202:7: error: invalid conversion between vector type '__m128d' (vector of 2 'double' values) and integer type 'unsigned long long' of different size
+v25 = ( __m128d)v19; 
+      ^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/compute_use_by_pseudos/src/reload1.c:1205:5: error: assigning to '__m128d' (vector of 2 'double' values) from incompatible type 'long long'
+v28 = 0LL; 
+    ^ ~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/compute_use_by_pseudos/src/reload1.c:1209:53: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'long long' of different size
+v30 = _mm_unpacklo_epi32( _mm_add_epi32( v26, v24), ( __m128i)0LL); 
+                                                    ^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/compute_use_by_pseudos/src/reload1.c:1211:53: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'long long' of different size
+v32 = _mm_unpacklo_epi32( _mm_add_epi32( v27, v24), ( __m128i)0LL); 
+                                                    ^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/compute_use_by_pseudos/src/reload1.c:1212:4: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+v31.m128i_i64[0] = v5.m128i_i64[0] << v30.m128i_i8[0]; 
+~~~^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/compute_use_by_pseudos/src/reload1.c:1212:22: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+v31.m128i_i64[0] = v5.m128i_i64[0] << v30.m128i_i8[0]; 
+                   ~~^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/compute_use_by_pseudos/src/reload1.c:1212:42: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+v31.m128i_i64[0] = v5.m128i_i64[0] << v30.m128i_i8[0]; 
+                                      ~~~^~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/compute_use_by_pseudos/src/reload1.c:1215:17: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+*( _QWORD *)&v33.m128d_f64[0] = v5.m128i_i64[0] << v32.m128i_i8[0]; 
+             ~~~^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/compute_use_by_pseudos/src/reload1.c:1215:35: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+*( _QWORD *)&v33.m128d_f64[0] = v5.m128i_i64[0] << v32.m128i_i8[0]; 
+                                ~~^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/compute_use_by_pseudos/src/reload1.c:1215:55: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+*( _QWORD *)&v33.m128d_f64[0] = v5.m128i_i64[0] << v32.m128i_i8[0]; 
+                                                   ~~~^~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/compute_use_by_pseudos/src/reload1.c:1222:54: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+v19 = _mm_or_si128( _mm_shuffle_epi32( v34, 78), v34).m128i_u64[0]; 
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/compute_use_by_pseudos/src/reload1.c:1262:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v43 = ( ( unsigned int)( mode_class_0[v41] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/compute_use_by_pseudos/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/compute_use_by_pseudos/src/reload1.c:1290:7: error: invalid conversion between vector type '__m128d' (vector of 2 'double' values) and integer type 'unsigned long long' of different size
+v50 = ( __m128d)v44; 
+      ^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/compute_use_by_pseudos/src/reload1.c:1293:5: error: assigning to '__m128d' (vector of 2 'double' values) from incompatible type 'long long'
+v53 = 0LL; 
+    ^ ~~~
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/compute_use_by_pseudos/src/obj/reload1.o] Error 1

@@ -1,0 +1,78 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/force_nonfallthru_and_redirect/src/cfgrtl.c:1389:12: error: expected ';' after expression
+basic_block v12; // r15 
+           ^
+           ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/force_nonfallthru_and_redirect/src/cfgrtl.c:1389:13: error: use of undeclared identifier 'v12'; did you mean 'v11'?
+basic_block v12; // r15 
+            ^~~
+            v11
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/force_nonfallthru_and_redirect/src/cfgrtl.c:1388:9: note: 'v11' declared here
+rtunion v11; // rax 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/force_nonfallthru_and_redirect/src/cfgrtl.c:1395:4: error: expected ';' after expression
+rtx v18; // rbx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/force_nonfallthru_and_redirect/src/cfgrtl.c:1395:5: error: use of undeclared identifier 'v18'
+rtx v18; // rbx 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/force_nonfallthru_and_redirect/src/cfgrtl.c:1448:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v11.rtwint = ( __int64)rtx[1].fld[0]; 
+                       ^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/force_nonfallthru_and_redirect/src/cfgrtl.c:1460:1: error: use of undeclared identifier 'v12'
+v12 = create_basic_block( src->index + 1, rtx, 0LL); 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/force_nonfallthru_and_redirect/src/cfgrtl.c:1461:1: error: use of undeclared identifier 'v12'
+v12->count = e->count; 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/force_nonfallthru_and_redirect/src/cfgrtl.c:1462:1: error: use of undeclared identifier 'v12'
+v12->frequency = ( e->src->frequency * e->probability + 5000) / 10000; 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/force_nonfallthru_and_redirect/src/cfgrtl.c:1463:1: error: use of undeclared identifier 'v12'
+v12->loop_depth = target->loop_depth; 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/force_nonfallthru_and_redirect/src/cfgrtl.c:1477:1: error: use of undeclared identifier 'v12'
+v12->global_live_at_start = bitmap_initialize( ( bitmap)object_base); 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/force_nonfallthru_and_redirect/src/cfgrtl.c:1489:1: error: use of undeclared identifier 'v12'
+v12->global_live_at_end = bitmap_initialize( ( bitmap)v15); 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/force_nonfallthru_and_redirect/src/cfgrtl.c:1490:14: error: use of undeclared identifier 'v12'
+bitmap_copy( v12->global_live_at_start, target->global_live_at_start); 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/force_nonfallthru_and_redirect/src/cfgrtl.c:1491:14: error: use of undeclared identifier 'v12'
+bitmap_copy( v12->global_live_at_end, target->global_live_at_start); 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/force_nonfallthru_and_redirect/src/cfgrtl.c:1493:27: error: use of undeclared identifier 'v12'; did you mean 'v19'?
+edge = make_edge( e->src, v12, 1); 
+                          ^~~
+                          v19
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/force_nonfallthru_and_redirect/src/cfgrtl.c:1396:18: note: 'v19' declared here
+ struct rtx_def *v19; // rax 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/force_nonfallthru_and_redirect/src/cfgrtl.c:1496:24: error: use of undeclared identifier 'v12'; did you mean 'v19'?
+redirect_edge_pred( e, v12); 
+                       ^~~
+                       v19
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/force_nonfallthru_and_redirect/src/cfgrtl.c:1396:18: note: 'v19' declared here
+ struct rtx_def *v19; // rax 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/force_nonfallthru_and_redirect/src/cfgrtl.c:1498:7: error: use of undeclared identifier 'v12'
+src = v12; 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/force_nonfallthru_and_redirect/src/cfgrtl.c:1502:1: error: use of undeclared identifier 'v12'
+v12 = 0LL; 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/force_nonfallthru_and_redirect/src/cfgrtl.c:1514:1: error: use of undeclared identifier 'v18'
+v18 = block_label( target); 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/force_nonfallthru_and_redirect/src/cfgrtl.c:1515:17: error: use of undeclared identifier 'v18'; did you mean 'v19'?
+v19 = gen_jump( v18); 
+                ^~~
+                v19
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/force_nonfallthru_and_redirect/src/cfgrtl.c:1396:18: note: 'v19' declared here
+ struct rtx_def *v19; // rax 
+                 ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/force_nonfallthru_and_redirect/src/obj/cfgrtl.o] Error 1

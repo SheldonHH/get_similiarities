@@ -1,0 +1,41 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/record_one_conflict/src/global.c:1810:20: error: expected identifier or '('
+unsigned __int64 *(short *)0x; // [rsp+14h] [rbp-20h] 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/record_one_conflict/src/global.c:1810:20: error: expected ')'
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/record_one_conflict/src/global.c:1810:19: note: to match this '('
+unsigned __int64 *(short *)0x; // [rsp+14h] [rbp-20h] 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/record_one_conflict/src/global.c:1821:1: error: use of undeclared identifier 'allocno_0'; did you mean 'allocno_'?
+allocno_0[( __int64)ialloc].hard_reg_conflicts |= hard_regs_live; 
+^~~~~~~~~
+allocno_
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/record_one_conflict/src/global.c:1812:5: note: 'allocno_' declared here
+int allocno_; // [rsp+28h] [rbp-Ch] 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/record_one_conflict/src/global.c:1821:10: error: subscripted value is not an array, pointer, or vector
+allocno_0[( __int64)ialloc].hard_reg_conflicts |= hard_regs_live; 
+~~~~~~~~~^~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/record_one_conflict/src/global.c:1833:12: error: invalid suffix 'x' on integer constant
+*(short *)0x = *v1; 
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/record_one_conflict/src/global.c:1835:20: error: invalid suffix 'x' on integer constant
+while ( *(short *)0x ) 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/record_one_conflict/src/global.c:1837:19: error: invalid suffix 'x' on integer constant
+if ( ( *(short *)0x & 1) != 0 ) 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/record_one_conflict/src/global.c:1838:1: error: use of undeclared identifier 'allocno_0'; did you mean 'allocno_'?
+allocno_0[( __int64)j].hard_reg_conflicts |= 1LL << regno; 
+^~~~~~~~~
+allocno_
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/record_one_conflict/src/global.c:1812:5: note: 'allocno_' declared here
+int allocno_; // [rsp+28h] [rbp-Ch] 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/record_one_conflict/src/global.c:1838:10: error: subscripted value is not an array, pointer, or vector
+allocno_0[( __int64)j].hard_reg_conflicts |= 1LL << regno; 
+~~~~~~~~~^~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/record_one_conflict/src/global.c:1839:12: error: invalid suffix 'x' on integer constant
+*(short *)0x >>= 1; 
+           ^
+10 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/record_one_conflict/src/obj/global.o] Error 1

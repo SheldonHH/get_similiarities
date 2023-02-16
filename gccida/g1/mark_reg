@@ -1,0 +1,12 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/mark_reg/src/flow.c:1383:30: error: use of undeclared identifier 'to'
+fancy_abort( ( const char *)&to, 918, "mark_reg"); 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/mark_reg/src/flow.c:1389:23: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( ( unsigned int)( mode_class_0[*( ( unsigned __int8 *)reg + 2)] - 5) > 1 ) 
+                      ^~~~~~~~~~~~
+                      mode_class
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/mark_reg/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+2 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/mark_reg/src/obj/flow.o] Error 1

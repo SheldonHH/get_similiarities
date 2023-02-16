@@ -1,0 +1,51 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_base_term/src/alias.c:1700:4: error: expected ';' after expression
+rtx v4; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_base_term/src/alias.c:1700:5: error: use of undeclared identifier 'v4'
+rtx v4; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_base_term/src/alias.c:1741:26: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v3 = (  struct rtx_def *)base_term[1]; 
+                         ^~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_base_term/src/alias.c:1759:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+rtx = (  struct rtx_def *)base_term[1]; 
+                          ^~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_base_term/src/alias.c:1765:1: error: use of undeclared identifier 'v4'
+v4 = find_base_term( v3); 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_base_term/src/alias.c:1770:7: error: use of undeclared identifier 'v4'
+if ( !v4 ) 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_base_term/src/alias.c:1772:18: error: use of undeclared identifier 'v4'
+v6 = *( _DWORD *)v4; 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_base_term/src/alias.c:1773:39: error: use of undeclared identifier 'v4'
+if ( ( unsigned __int16)( *( _DWORD *)v4 - 67) < 2u ) 
+                                      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_base_term/src/alias.c:1774:8: error: use of undeclared identifier 'v4'
+return v4; 
+       ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_base_term/src/alias.c:1777:13: error: use of undeclared identifier 'v4'
+base_term = v4; 
+            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_base_term/src/alias.c:1784:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v11 = ( __int64)base_term[1]; 
+                ^~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_base_term/src/alias.c:1810:1: error: use of undeclared identifier 'v4'
+v4 = find_base_term( ( rtx)v9[1]); 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_base_term/src/alias.c:1810:28: error: expected ')'
+v4 = find_base_term( ( rtx)v9[1]); 
+                           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_base_term/src/alias.c:1810:20: note: to match this '('
+v4 = find_base_term( ( rtx)v9[1]); 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_base_term/src/alias.c:1811:6: error: use of undeclared identifier 'v4'
+if ( v4 ) 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_base_term/src/alias.c:1817:8: error: use of undeclared identifier 'v4'
+return v4; 
+       ^
+15 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_base_term/src/obj/alias.o] Error 1

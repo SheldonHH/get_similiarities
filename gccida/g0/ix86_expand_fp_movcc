@@ -1,0 +1,61 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/ix86_expand_fp_movcc/src/i386.c:8887:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v3; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/ix86_expand_fp_movcc/src/i386.c:8890:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v6; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/ix86_expand_fp_movcc/src/i386.c:8906:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code; // [rsp+5Ch] [rbp-24h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/ix86_expand_fp_movcc/src/i386.c:8931:26: error: use of undeclared identifier 'machine_mode'
+*operands = force_reg( ( machine_mode)*( ( unsigned __int8 *)*operands + 2), *operands); 
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/ix86_expand_fp_movcc/src/i386.c:8933:20: error: use of undeclared identifier 'machine_mode'
+op0 = force_reg( ( machine_mode)*( ( unsigned __int8 *)*operands + 2), op0); 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/ix86_expand_fp_movcc/src/i386.c:8944:26: error: use of undeclared identifier 'machine_mode'
+*operands = force_reg( ( machine_mode)*( ( unsigned __int8 *)*operands + 2), *operands); 
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/ix86_expand_fp_movcc/src/i386.c:8946:20: error: use of undeclared identifier 'machine_mode'
+op0 = force_reg( ( machine_mode)*( ( unsigned __int8 *)*operands + 2), op0); 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/ix86_expand_fp_movcc/src/i386.c:8961:24: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+v3 = swap_condition( ( rtx_code)*( _WORD *)operands[1]); 
+                       ^~~~~~~~
+                       rtx_cost
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/ix86_expand_fp_movcc/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/ix86_expand_fp_movcc/src/i386.c:8961:33: error: invalid operands to binary expression ('int (rtx, enum rtx_code)' (aka 'int (struct rtx_def *, enum rtx_code)') and 'uint16 *' (aka 'unsigned short *'))
+v3 = swap_condition( ( rtx_code)*( _WORD *)operands[1]); 
+                     ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/ix86_expand_fp_movcc/src/i386.c:8972:43: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+v6 = reverse_condition_maybe_unordered( ( rtx_code)*( _WORD *)operands[1]); 
+                                          ^~~~~~~~
+                                          rtx_cost
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/ix86_expand_fp_movcc/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/ix86_expand_fp_movcc/src/i386.c:8972:52: error: invalid operands to binary expression ('int (rtx, enum rtx_code)' (aka 'int (struct rtx_def *, enum rtx_code)') and 'uint16 *' (aka 'unsigned short *'))
+v6 = reverse_condition_maybe_unordered( ( rtx_code)*( _WORD *)operands[1]); 
+                                        ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/ix86_expand_fp_movcc/src/i386.c:8996:22: error: use of undeclared identifier 'machine_mode'
+tmp = gen_reg_rtx( ( machine_mode)*( ( unsigned __int8 *)*operands + 2)); 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/ix86_expand_fp_movcc/src/i386.c:9002:22: error: use of undeclared identifier 'machine_mode'
+tmp = gen_reg_rtx( ( machine_mode)*( ( unsigned __int8 *)*operands + 2)); 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/ix86_expand_fp_movcc/src/i386.c:9008:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)*operands + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/ix86_expand_fp_movcc/src/i386.c:9018:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)*operands + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/ix86_expand_fp_movcc/src/i386.c:9029:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)*operands + 2), 
+  ^
+16 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/ix86_expand_fp_movcc/src/obj/i386.o] Error 1

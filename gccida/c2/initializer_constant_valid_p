@@ -1,0 +1,52 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/initializer_constant_valid_p/src/varasm.c:4787:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v18; // r15 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/initializer_constant_valid_p/src/varasm.c:4788:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v19; // rcx 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/initializer_constant_valid_p/src/varasm.c:4809:6: error: use of undeclared identifier 'lang_hooks_0'; did you mean 'lang_hooks'?
+v3 = lang_hooks_0.expand_constant( value); 
+     ^~~~~~~~~~~~
+     lang_hooks
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/initializer_constant_valid_p/src/langhooks.h:168:32: note: 'lang_hooks' declared here
+extern const struct lang_hooks lang_hooks;
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/initializer_constant_valid_p/src/varasm.c:4809:34: error: called object type '<dependent type>' is not a function or function pointer
+v3 = lang_hooks_0.expand_constant( value); 
+                                 ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/initializer_constant_valid_p/src/varasm.c:4844:26: error: expected expression
+if ( v18 == ( tree_node *)*( &global_trees + 14) ) 
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/initializer_constant_valid_p/src/varasm.c:4844:15: error: use of undeclared identifier 'tree_node'
+if ( v18 == ( tree_node *)*( &global_trees + 14) ) 
+              ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/initializer_constant_valid_p/src/varasm.c:4846:26: error: expected expression
+if ( v19 == ( tree_node *)*( &global_trees + 14) || v18 == ( tree_node *)*( &global_trees + 14) ) 
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/initializer_constant_valid_p/src/varasm.c:4846:15: error: use of undeclared identifier 'tree_node'
+if ( v19 == ( tree_node *)*( &global_trees + 14) || v18 == ( tree_node *)*( &global_trees + 14) ) 
+              ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/initializer_constant_valid_p/src/varasm.c:4846:73: error: expected expression
+if ( v19 == ( tree_node *)*( &global_trees + 14) || v18 == ( tree_node *)*( &global_trees + 14) ) 
+                                                                        ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/initializer_constant_valid_p/src/varasm.c:4846:62: error: use of undeclared identifier 'tree_node'
+if ( v19 == ( tree_node *)*( &global_trees + 14) || v18 == ( tree_node *)*( &global_trees + 14) ) 
+                                                             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/initializer_constant_valid_p/src/varasm.c:4896:7: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v29 = mode_class_0[v28]; 
+      ^~~~~~~~~~~~
+      mode_class
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/initializer_constant_valid_p/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/initializer_constant_valid_p/src/varasm.c:4912:7: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v33 = mode_class_0[v32]; 
+      ^~~~~~~~~~~~
+      mode_class
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/initializer_constant_valid_p/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+12 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/initializer_constant_valid_p/src/obj/varasm.o] Error 1

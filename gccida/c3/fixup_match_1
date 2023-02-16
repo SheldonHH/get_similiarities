@@ -1,0 +1,40 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/fixup_match_1/src/regmove.c:2177:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code; // [rsp+118h] [rbp-68h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/fixup_match_1/src/regmove.c:2269:13: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v35 = ( rtx)q[2]; 
+            ^~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/fixup_match_1/src/regmove.c:2310:13: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v33 = ( rtx)p[2]; 
+            ^~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/fixup_match_1/src/regmove.c:2323:60: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v31 = ( unsigned __int16)**( _DWORD **)&p[2] == 47 ? ( rtx)p[2] : single_set_2( p, *( rtx *)&p[2]); 
+                                                           ^~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/fixup_match_1/src/regmove.c:2351:24: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+validate_change( insn, recog_data_0.operand_loc[match_number], src, 1); 
+                       ^~~~~~~~~~~~
+                       recog_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/fixup_match_1/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/fixup_match_1/src/regmove.c:2390:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+pat = (  struct rtx_def *)insn[2]; 
+                          ^~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/fixup_match_1/src/regmove.c:2396:34: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( insna = p; ; insna = ( rtx)insna[1] ) 
+                                 ^~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/fixup_match_1/src/regmove.c:2400:16: error: invalid operands to binary expression ('struct rtx_def' and 'uint64' (aka 'unsigned long long'))
+v27 = insna[2] != ( _QWORD)pat; 
+      ~~~~~~~~ ^  ~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/fixup_match_1/src/regmove.c:2423:19: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( q_0 = ( rtx)insna[1]; q_0; q_0 = ( rtx)q_0[1] ) 
+                  ^~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/fixup_match_1/src/regmove.c:2423:46: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( q_0 = ( rtx)insna[1]; q_0; q_0 = ( rtx)q_0[1] ) 
+                                             ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/fixup_match_1/src/regmove.c:2438:13: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v26 = ( rtx)q_0[2]; 
+            ^~~~~~
+11 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/fixup_match_1/src/obj/regmove.o] Error 1

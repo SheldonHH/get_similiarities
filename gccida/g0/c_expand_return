@@ -1,0 +1,20 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/c_expand_return/src/c-typeck.c:7500:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v3; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/c_expand_return/src/c-typeck.c:7501:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *retvala; // [rsp+8h] [rbp-38h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/c_expand_return/src/c-typeck.c:7503:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *t; // [rsp+20h] [rbp-20h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/c_expand_return/src/c-typeck.c:7521:24: error: expected expression
+if ( t == ( tree_node *)global_trees ) 
+                       ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/c_expand_return/src/c-typeck.c:7521:13: error: use of undeclared identifier 'tree_node'
+if ( t == ( tree_node *)global_trees ) 
+            ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/c_expand_return/src/obj/c-typeck.o] Error 1

@@ -1,0 +1,27 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/put_addressof_into_stack/src/function.c:3449:40: error: unknown type name 'hash_table_0'; did you mean 'hash_table'?
+void  put_addressof_into_stack( rtx r, hash_table_0 *ht) 
+                                       ^~~~~~~~~~~~
+                                       hash_table
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/put_addressof_into_stack/src/hashtable.h:40:19: note: 'hash_table' declared here
+typedef struct ht hash_table;
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/put_addressof_into_stack/src/function.c:3449:7: error: conflicting types for 'put_addressof_into_stack'
+void  put_addressof_into_stack( rtx r, hash_table_0 *ht) 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/put_addressof_into_stack/src/function.c:292:13: note: previous declaration is here
+static void put_addressof_into_stack PARAMS ((rtx, struct hash_table *));
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/put_addressof_into_stack/src/function.c:3471:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)reg + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/put_addressof_into_stack/src/function.c:3472:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)reg + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/put_addressof_into_stack/src/function.c:3484:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)reg + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/put_addressof_into_stack/src/function.c:3485:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)reg + 2), 
+  ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/put_addressof_into_stack/src/obj/function.o] Error 1

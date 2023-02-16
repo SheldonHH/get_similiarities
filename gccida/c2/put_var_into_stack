@@ -1,0 +1,35 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/put_var_into_stack/src/function.c:1822:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v5; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/put_var_into_stack/src/function.c:1829:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v12; // ecx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/put_var_into_stack/src/function.c:1835:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v18; // r12d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/put_var_into_stack/src/function.c:1836:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v19; // rbp 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/put_var_into_stack/src/function.c:1846:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v29; // [rsp+Ch] [rbp-4Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/put_var_into_stack/src/function.c:1848:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v31; // [rsp+18h] [rbp-40h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/put_var_into_stack/src/function.c:1909:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v16.rtwint = ( __int64)rtl->fld[0]; 
+                       ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/put_var_into_stack/src/function.c:1921:57: error: use of undeclared identifier 'machine_mode'
+put_reg_into_stack( v11, rtl, decl->common.type, v12, ( machine_mode)v8, v15, 0, ( unsigned __int8)v4, 0LL); 
+                                                        ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/put_var_into_stack/src/function.c:1930:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v30 = (  struct rtx_def *)rtl[1]; 
+                          ^~~~~~
+9 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/put_var_into_stack/src/obj/function.o] Error 1

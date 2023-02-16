@@ -1,0 +1,62 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/do_SUBST/src/combine.c:890:21: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( *( ( _DWORD *)&mode_class_0 + *( ( unsigned __int8 *)v2 + 2)) == 1 && *( _WORD *)newval == 54 ) 
+                    ^~~~~~~~~~~~
+                    mode_class
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/do_SUBST/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/do_SUBST/src/combine.c:893:46: error: use of undeclared identifier 'machine_mode'
+if ( rtwint != trunc_int_for_mode( rtwint, ( machine_mode)*( ( unsigned __int8 *)v2 + 2)) ) 
+                                             ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/do_SUBST/src/combine.c:898:21: error: use of undeclared identifier 'undobuf_0'
+frees = ( __m128i *)undobuf_0.frees; 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/do_SUBST/src/combine.c:899:6: error: use of undeclared identifier 'undobuf_0'; did you mean 'undobuf'?
+if ( undobuf_0.frees ) 
+     ^~~~~~~~~
+     undobuf
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/do_SUBST/src/combine.c:334:23: note: 'undobuf' declared here
+static struct undobuf undobuf;
+                      ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/do_SUBST/src/combine.c:900:1: error: use of undeclared identifier 'undobuf_0'; did you mean 'undobuf'?
+undobuf_0.frees = undobuf_0.frees->next; 
+^~~~~~~~~
+undobuf
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/do_SUBST/src/combine.c:334:23: note: 'undobuf' declared here
+static struct undobuf undobuf;
+                      ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/do_SUBST/src/combine.c:900:19: error: use of undeclared identifier 'undobuf_0'; did you mean 'undobuf'?
+undobuf_0.frees = undobuf_0.frees->next; 
+                  ^~~~~~~~~
+                  undobuf
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/do_SUBST/src/combine.c:334:23: note: 'undobuf' declared here
+static struct undobuf undobuf;
+                      ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/do_SUBST/src/combine.c:903:9: error: use of undeclared identifier 'undobuf_0'; did you mean 'undobuf'?
+undos = undobuf_0.undos; 
+        ^~~~~~~~~
+        undobuf
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/do_SUBST/src/combine.c:334:23: note: 'undobuf' declared here
+static struct undobuf undobuf;
+                      ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/do_SUBST/src/combine.c:904:6: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+frees->m128i_i32[2] = 0; 
+~~~~~^ ~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/do_SUBST/src/combine.c:905:32: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'unsigned long long' of different size
+frees[1] = _mm_unpacklo_epi64( ( __m128i)( unsigned __int64)v2, ( __m128i)( unsigned __int64)into); 
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/do_SUBST/src/combine.c:905:65: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'unsigned long long' of different size
+frees[1] = _mm_unpacklo_epi64( ( __m128i)( unsigned __int64)v2, ( __m128i)( unsigned __int64)into); 
+                                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/do_SUBST/src/combine.c:907:6: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+frees->m128i_i64[0] = ( __int64)undos; 
+~~~~~^ ~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/do_SUBST/src/combine.c:908:1: error: use of undeclared identifier 'undobuf_0'; did you mean 'undobuf'?
+undobuf_0.undos = (  struct undo *)frees; 
+^~~~~~~~~
+undobuf
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/do_SUBST/src/combine.c:334:23: note: 'undobuf' declared here
+static struct undobuf undobuf;
+                      ^
+12 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/do_SUBST/src/obj/combine.o] Error 1

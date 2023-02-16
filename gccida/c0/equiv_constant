@@ -1,0 +1,26 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/equiv_constant/src/cse.c:4829:2: error: expected expression
+ struct cse_reg_info = cached_cse_reg_info; 
+ ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/equiv_constant/src/cse.c:4831:2: error: expected expression
+ struct cse_reg_info = get_cse_reg_info( x->fld[0].rtuint); 
+ ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/equiv_constant/src/cse.c:4834:33: error: use of undeclared identifier 'machine_mode'
+xa = gen_lowpart_if_possible( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)x), x_ent->const_rtx); 
+                                ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/equiv_constant/src/cse.c:4834:48: error: expected expression
+xa = gen_lowpart_if_possible( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)x), x_ent->const_rtx); 
+                                               ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/equiv_constant/src/cse.c:4861:23: error: use of undeclared identifier 'machine_mode'
+v1 = safe_hash( xb, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)xb)); 
+                      ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/equiv_constant/src/cse.c:4861:38: error: expected expression
+v1 = safe_hash( xb, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)xb)); 
+                                     ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/equiv_constant/src/cse.c:4862:32: error: use of undeclared identifier 'machine_mode'
+elt = lookup( xb, v1 & 0x1F, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)xb)); 
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/equiv_constant/src/cse.c:4862:47: error: expected expression
+elt = lookup( xb, v1 & 0x1F, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)xb)); 
+                                              ^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/equiv_constant/src/obj/cse.o] Error 1

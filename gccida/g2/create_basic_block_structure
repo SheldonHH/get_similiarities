@@ -1,0 +1,27 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/create_basic_block_structure/src/cfgrtl.c:688:4: error: expected ';' after expression
+rtx v16; // rdx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/create_basic_block_structure/src/cfgrtl.c:688:5: error: use of undeclared identifier 'v16'
+rtx v16; // rdx 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/create_basic_block_structure/src/cfgrtl.c:693:82: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+if ( bb_note && ( *( ( _BYTE *)bb_note + 3) & 0x40) == 0 && ( v7 = ( basic_block)bb_note[2]) != 0LL && !v7->aux ) 
+                                                                                 ^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/create_basic_block_structure/src/cfgrtl.c:695:1: error: use of undeclared identifier 'v16'
+v16 = head; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/create_basic_block_structure/src/cfgrtl.c:698:1: error: use of undeclared identifier 'v16'
+v16 = ( rtx)head[1]; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/create_basic_block_structure/src/cfgrtl.c:701:6: error: use of undeclared identifier 'v16'
+if ( v16 != bb_note && v16[1].fld[0].rtx != bb_note ) 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/create_basic_block_structure/src/cfgrtl.c:701:24: error: use of undeclared identifier 'v16'
+if ( v16 != bb_note && v16[1].fld[0].rtx != bb_note ) 
+                       ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/create_basic_block_structure/src/cfgrtl.c:704:34: error: use of undeclared identifier 'v16'
+reorder_insns( bb_note, bb_note, v16); 
+                                 ^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/create_basic_block_structure/src/obj/cfgrtl.o] Error 1

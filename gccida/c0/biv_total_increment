@@ -1,0 +1,35 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/biv_total_increment/src/unroll.c:2924:1: error: use of undeclared identifier 'induction_1'
+induction_1 *v; // [rsp+8h] [rbp-18h] 
+^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/biv_total_increment/src/unroll.c:2924:14: error: use of undeclared identifier 'v'
+induction_1 *v; // [rsp+8h] [rbp-18h] 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/biv_total_increment/src/unroll.c:2927:7: error: use of undeclared identifier 'v'
+for ( v = bl_0->biv; v; v = v->next_iv ) 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/biv_total_increment/src/unroll.c:2927:22: error: use of undeclared identifier 'v'
+for ( v = bl_0->biv; v; v = v->next_iv ) 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/biv_total_increment/src/unroll.c:2927:25: error: use of undeclared identifier 'v'
+for ( v = bl_0->biv; v; v = v->next_iv ) 
+                        ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/biv_total_increment/src/unroll.c:2927:29: error: use of undeclared identifier 'v'
+for ( v = bl_0->biv; v; v = v->next_iv ) 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/biv_total_increment/src/unroll.c:2929:23: error: use of undeclared identifier 'v'
+if ( ( ( *( ( _WORD *)v + 50) >> 3) & 1) == 0 
+                      ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/biv_total_increment/src/unroll.c:2930:4: error: use of undeclared identifier 'v'
+|| v->mult_val != const_int_rtx[65] 
+   ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/biv_total_increment/src/unroll.c:2931:21: error: use of undeclared identifier 'v'
+|| ( ( *( ( _WORD *)v + 50) >> 5) & 1) != 0 ) 
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/biv_total_increment/src/unroll.c:2935:56: error: use of undeclared identifier 'v'
+result = fold_rtx_mult_add( result, const_int_rtx[65], v->add_val, v->mode); 
+                                                       ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/biv_total_increment/src/unroll.c:2935:68: error: use of undeclared identifier 'v'
+result = fold_rtx_mult_add( result, const_int_rtx[65], v->add_val, v->mode); 
+                                                                   ^
+11 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/biv_total_increment/src/obj/unroll.o] Error 1

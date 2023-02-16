@@ -1,0 +1,12 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ggc_mark_tree_hash_table_ptr/src/ggc-common.c:1120:45: error: expected expression
+ggc_mark_tree_hash_table( *( hash_table_0 **)elt); 
+                                            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ggc_mark_tree_hash_table_ptr/src/ggc-common.c:1120:30: error: use of undeclared identifier 'hash_table_0'; did you mean 'hash_table_init'?
+ggc_mark_tree_hash_table( *( hash_table_0 **)elt); 
+                             ^~~~~~~~~~~~
+                             hash_table_init
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ggc_mark_tree_hash_table_ptr/src/hash.h:69:13: note: 'hash_table_init' declared here
+extern void hash_table_init
+            ^
+2 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ggc_mark_tree_hash_table_ptr/src/obj/ggc-common.o] Error 1

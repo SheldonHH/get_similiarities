@@ -1,0 +1,36 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/replace_regs/src/rtlanal.c:2972:4: error: expected ';' after expression
+rtx v16; // rsi 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/replace_regs/src/rtlanal.c:2972:5: error: use of undeclared identifier 'v16'
+rtx v16; // rsi 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/replace_regs/src/rtlanal.c:3003:44: error: expected expression
+*( _QWORD *)&v7[1] = replace_regs( *( rtx *)&v7[1], reg_map, nregs, 0); 
+                                           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/replace_regs/src/rtlanal.c:3037:1: error: use of undeclared identifier 'v16'
+v16 = reg_map[v15]; 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/replace_regs/src/rtlanal.c:3038:25: error: use of undeclared identifier 'v16'
+if ( !v16 || *( _WORD *)v16 != 63 ) 
+                        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/replace_regs/src/rtlanal.c:3038:7: error: use of undeclared identifier 'v16'
+if ( !v16 || *( _WORD *)v16 != 63 ) 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/replace_regs/src/rtlanal.c:3040:29: error: use of undeclared identifier 'machine_mode'
+v7 = simplify_gen_subreg( ( machine_mode)BYTE2( v8), v16, ( machine_mode)BYTE2( v14), *( _DWORD *)&x[1]); 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/replace_regs/src/rtlanal.c:3040:61: error: use of undeclared identifier 'machine_mode'
+v7 = simplify_gen_subreg( ( machine_mode)BYTE2( v8), v16, ( machine_mode)BYTE2( v14), *( _DWORD *)&x[1]); 
+                                                            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/replace_regs/src/rtlanal.c:3040:54: error: use of undeclared identifier 'v16'
+v7 = simplify_gen_subreg( ( machine_mode)BYTE2( v8), v16, ( machine_mode)BYTE2( v14), *( _DWORD *)&x[1]); 
+                                                     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/replace_regs/src/rtlanal.c:3054:51: error: expected expression
+*( ( _QWORD *)v7 + v18) = replace_regs( *( ( rtx *)v7 + v18), reg_map, nregs, replace_dest); 
+                                                  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/replace_regs/src/rtlanal.c:3065:9: error: expected expression
+*( rtx *)&v21[2 * v22 + 2], 
+        ^
+11 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/replace_regs/src/obj/rtlanal.o] Error 1

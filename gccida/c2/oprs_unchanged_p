@@ -1,0 +1,81 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/oprs_unchanged_p/src/gcse.c:1827:4: error: expected ';' after expression
+rtx v6; // rbx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/oprs_unchanged_p/src/gcse.c:1827:5: error: use of undeclared identifier 'v6'
+rtx v6; // rbx 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/oprs_unchanged_p/src/gcse.c:1852:1: error: use of undeclared identifier 'v6'
+v6 = modify_mem_list[*( int *)( basic_block_info->data.l[current_bb] + 88)]; 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/oprs_unchanged_p/src/gcse.c:1853:6: error: use of undeclared identifier 'v6'
+if ( v6 ) 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/oprs_unchanged_p/src/gcse.c:1855:6: error: use of undeclared identifier 'uid_cuid_1'; did you mean 'uid_cuid'?
+v7 = uid_cuid_1; 
+     ^~~~~~~~~~
+     uid_cuid
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/oprs_unchanged_p/src/gcse.c:383:13: note: 'uid_cuid' declared here
+static int *uid_cuid;
+            ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/oprs_unchanged_p/src/gcse.c:1856:20: error: use of undeclared identifier 'uid_cuid_1'
+v8 = *( ( _DWORD *)uid_cuid_1 + insn->fld[0].rtint); 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/oprs_unchanged_p/src/gcse.c:1859:23: error: use of undeclared identifier 'v6'
+v9.rtwint = ( __int64)v6->fld[0]; 
+                      ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/oprs_unchanged_p/src/gcse.c:1872:1: error: use of undeclared identifier 'gcse_mem_operand'
+gcse_mem_operand = rtx; 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/oprs_unchanged_p/src/gcse.c:1873:1: error: use of undeclared identifier 'gcse_mems_conflict_p'
+gcse_mems_conflict_p = 0; 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/oprs_unchanged_p/src/gcse.c:1875:22: error: expected expression
+note_stores( *( rtx *)( v9.rtwint + 32), mems_conflict_for_gcse_p, 0LL); 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/oprs_unchanged_p/src/gcse.c:1876:6: error: use of undeclared identifier 'gcse_mems_conflict_p'
+if ( gcse_mems_conflict_p ) 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/oprs_unchanged_p/src/gcse.c:1879:1: error: use of undeclared identifier 'v6'
+v6 = ( rtx)v6[1]; 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/oprs_unchanged_p/src/gcse.c:1880:7: error: use of undeclared identifier 'v6'
+if ( !v6 ) 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/oprs_unchanged_p/src/gcse.c:1882:6: error: use of undeclared identifier 'uid_cuid_1'; did you mean 'uid_cuid'?
+v7 = uid_cuid_1; 
+     ^~~~~~~~~~
+     uid_cuid
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/oprs_unchanged_p/src/gcse.c:383:13: note: 'uid_cuid' declared here
+static int *uid_cuid;
+            ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/oprs_unchanged_p/src/gcse.c:1903:6: error: use of undeclared identifier 'reg_avail_info_0'; did you mean 'reg_avail_info'?
+if ( reg_avail_info_0[rtx->fld[0].rtuint].last_bb == current_bb ) 
+     ^~~~~~~~~~~~~~~~
+     reg_avail_info
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/oprs_unchanged_p/src/gcse.c:1300:31: note: 'reg_avail_info' declared here
+static struct reg_avail_info *reg_avail_info;
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/oprs_unchanged_p/src/gcse.c:1906:70: error: use of undeclared identifier 'uid_cuid_1'
+return reg_avail_info_0[rtx->fld[0].rtuint].last_set < *( ( _DWORD *)uid_cuid_1 + insn->fld[0].rtint); 
+                                                                     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/oprs_unchanged_p/src/gcse.c:1906:8: error: use of undeclared identifier 'reg_avail_info_0'; did you mean 'reg_avail_info'?
+return reg_avail_info_0[rtx->fld[0].rtuint].last_set < *( ( _DWORD *)uid_cuid_1 + insn->fld[0].rtint); 
+       ^~~~~~~~~~~~~~~~
+       reg_avail_info
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/oprs_unchanged_p/src/gcse.c:1300:31: note: 'reg_avail_info' declared here
+static struct reg_avail_info *reg_avail_info;
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/oprs_unchanged_p/src/gcse.c:1907:72: error: use of undeclared identifier 'uid_cuid_1'
+return reg_avail_info_0[rtx->fld[0].rtuint].first_set >= *( ( _DWORD *)uid_cuid_1 + insn->fld[0].rtint); 
+                                                                       ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/oprs_unchanged_p/src/gcse.c:1907:8: error: use of undeclared identifier 'reg_avail_info_0'; did you mean 'reg_avail_info'?
+return reg_avail_info_0[rtx->fld[0].rtuint].first_set >= *( ( _DWORD *)uid_cuid_1 + insn->fld[0].rtint); 
+       ^~~~~~~~~~~~~~~~
+       reg_avail_info
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/oprs_unchanged_p/src/gcse.c:1300:31: note: 'reg_avail_info' declared here
+static struct reg_avail_info *reg_avail_info;
+                              ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/oprs_unchanged_p/src/obj/gcse.o] Error 1

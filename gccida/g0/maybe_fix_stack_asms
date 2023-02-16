@@ -1,0 +1,23 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/maybe_fix_stack_asms/src/reload1.c:1770:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode operand_mode[30]; // [rsp+0h] [rbp-1C0h] BYREF 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/maybe_fix_stack_asms/src/reload1.c:1790:13: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+pat = ( rtx)chain->insn[2]; 
+            ^~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/maybe_fix_stack_asms/src/reload1.c:1806:27: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+decode_asm_operands( pat, recog_data_0.operand, recog_data_0.operand_loc, constraints, operand_mode); 
+                          ^~~~~~~~~~~~
+                          recog_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/maybe_fix_stack_asms/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/maybe_fix_stack_asms/src/reload1.c:1806:49: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+decode_asm_operands( pat, recog_data_0.operand, recog_data_0.operand_loc, constraints, operand_mode); 
+                                                ^~~~~~~~~~~~
+                                                recog_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/maybe_fix_stack_asms/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/maybe_fix_stack_asms/src/obj/reload1.o] Error 1

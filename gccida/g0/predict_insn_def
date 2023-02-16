@@ -1,0 +1,24 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/predict_insn_def/src/predict.c:576:35: error: must use 'enum' tag to refer to type 'br_predictor'
+void  predict_insn_def( rtx insn, br_predictor predictor, prediction taken) 
+                                  ^
+                                  enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/predict_insn_def/src/predict.c:576:59: error: must use 'enum' tag to refer to type 'prediction'
+void  predict_insn_def( rtx insn, br_predictor predictor, prediction taken) 
+                                                          ^
+                                                          enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/predict_insn_def/src/predict.c:580:15: error: use of undeclared identifier 'predictor_info_0'; did you mean 'predictor_info'?
+probability = predictor_info_0[predictor].hitrate; 
+              ^~~~~~~~~~~~~~~~
+              predictor_info
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/predict_insn_def/src/predict.c:86:36: note: 'predictor_info' declared here
+static const struct predictor_info predictor_info[]= {
+                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/predict_insn_def/src/predict.c:581:15: error: use of undeclared identifier 'TAKEN_0'; did you mean 'TAKEN'?
+if ( taken != TAKEN_0 ) 
+              ^~~~~~~
+              TAKEN
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/predict_insn_def/src/predict.h:34:4: note: 'TAKEN' declared here
+   TAKEN
+   ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/predict_insn_def/src/obj/predict.o] Error 1

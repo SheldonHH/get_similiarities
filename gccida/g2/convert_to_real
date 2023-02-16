@@ -1,0 +1,29 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/convert_to_real/src/convert.c:544:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v6; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/convert_to_real/src/convert.c:545:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v7; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/convert_to_real/src/convert.c:561:18: error: use of undeclared identifier 'tree_code'; did you mean 'tree_cons'?
+return build1( ( tree_code)( ( flag_float_store == 0) + 114), type, expr); 
+                 ^~~~~~~~~
+                 tree_cons
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/convert_to_real/src/tree.h:2477:13: note: 'tree_cons' declared here
+extern tree tree_cons                   PARAMS ((tree, tree, tree));
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/convert_to_real/src/convert.c:561:60: error: too few arguments to function call, expected 3, have 1
+return build1( ( tree_code)( ( flag_float_store == 0) + 114), type, expr); 
+               ~~~~~~~~~~~~                                ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/convert_to_real/src/tree.h:2477:1: note: 'tree_cons' declared here
+extern tree tree_cons                   PARAMS ((tree, tree, tree));
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/convert_to_real/src/convert.c:569:14: error: expected identifier or '('
+ struct expr = ( tree)*( &global_trees + 11); 
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/convert_to_real/src/convert.c:578:14: error: expected identifier or '('
+ struct expr = ( tree)*( &global_trees + 11); 
+             ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/convert_to_real/src/obj/convert.o] Error 1

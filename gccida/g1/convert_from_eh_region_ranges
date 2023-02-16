@@ -1,0 +1,77 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/convert_from_eh_region_ranges/src/except.c:1896:1: error: must use 'enum' tag to refer to type 'eh_region_type'
+eh_region_type type; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/convert_from_eh_region_ranges/src/except.c:1908:4: error: expected ';' after expression
+rtx resume; // rsi 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/convert_from_eh_region_ranges/src/except.c:1908:5: error: use of undeclared identifier 'resume'; did you mean 'rename'?
+rtx resume; // rsi 
+    ^~~~~~
+    rename
+/usr/include/stdio.h:146:12: note: 'rename' declared here
+extern int rename (const char *__old, const char *__new) __THROW;
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/convert_from_eh_region_ranges/src/except.c:1910:4: error: expected ';' after expression
+rtx label; // rsi 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/convert_from_eh_region_ranges/src/except.c:1910:5: error: use of undeclared identifier 'label'
+rtx label; // rsi 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/convert_from_eh_region_ranges/src/except.c:1912:4: error: expected ';' after expression
+rtx continue_label; // rdx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/convert_from_eh_region_ranges/src/except.c:1912:5: error: use of undeclared identifier 'continue_label'
+rtx continue_label; // rdx 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/convert_from_eh_region_ranges/src/except.c:1916:4: error: expected ';' after expression
+rtx insns; // [rsp+8h] [rbp-20h] BYREF 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/convert_from_eh_region_ranges/src/except.c:1916:5: error: use of undeclared identifier 'insns'
+rtx insns; // [rsp+8h] [rbp-20h] BYREF 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/convert_from_eh_region_ranges/src/except.c:1975:1: error: use of undeclared identifier 'insns'
+insns = get_insns( ); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/convert_from_eh_region_ranges/src/except.c:1976:35: error: use of undeclared identifier 'insns'
+convert_from_eh_region_ranges_1( &insns, v11, 0); 
+                                  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/convert_from_eh_region_ranges/src/except.c:2055:7: error: use of undeclared identifier 'insns'
+rtx = insns; 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/convert_from_eh_region_ranges/src/except.c:2082:1: error: use of undeclared identifier 'resume'
+resume = v35->resume; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/convert_from_eh_region_ranges/src/except.c:2083:6: error: use of undeclared identifier 'resume'; did you mean 'rename'?
+if ( resume ) 
+     ^~~~~~
+     rename
+/usr/include/stdio.h:146:12: note: 'rename' declared here
+extern int rename (const char *__old, const char *__new) __THROW;
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/convert_from_eh_region_ranges/src/except.c:2085:12: error: use of undeclared identifier 'resume'
+v37 = &v30[resume->fld[0].rtint]; 
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/convert_from_eh_region_ranges/src/except.c:2090:1: error: use of undeclared identifier 'label'
+label = v35->label; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/convert_from_eh_region_ranges/src/except.c:2091:6: error: use of undeclared identifier 'label'; did you mean 'labs'?
+if ( label ) 
+     ^~~~~
+     labs
+/usr/include/stdlib.h:838:17: note: 'labs' declared here
+extern long int labs (long int __x) __THROW __attribute__ ((__const__)) __wur;
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/convert_from_eh_region_ranges/src/except.c:2093:12: error: use of undeclared identifier 'label'
+v39 = &v30[label->fld[0].rtint]; 
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/convert_from_eh_region_ranges/src/except.c:2100:1: error: use of undeclared identifier 'continue_label'
+continue_label = v35->u.try.continue_label; 
+^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/convert_from_eh_region_ranges/src/obj/except.o] Error 1

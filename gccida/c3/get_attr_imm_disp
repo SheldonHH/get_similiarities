@@ -1,0 +1,112 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_attr_imm_disp/src/insn-attrtab.c:12900:1: error: must use 'enum' tag to refer to type 'attr_imm_disp'
+attr_imm_disp  get_attr_imm_disp( rtx insn) 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_attr_imm_disp/src/insn-attrtab.c:12903:1: error: must use 'enum' tag to refer to type 'attr_imm_disp'
+attr_imm_disp v3; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_attr_imm_disp/src/insn-attrtab.c:12908:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v8; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_attr_imm_disp/src/insn-attrtab.c:12914:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v15; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_attr_imm_disp/src/insn-attrtab.c:12918:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v19; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_attr_imm_disp/src/insn-attrtab.c:12928:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v17 = (  struct rtx_def *)insn[2]; 
+                          ^~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_attr_imm_disp/src/insn-attrtab.c:12930:29: error: too many arguments provided to function-like macro invocation
+fatal_insn_not_found( insn, "insn-attrtab.c", 13072, "get_attr_imm_disp"); 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_attr_imm_disp/src/toplev.h:52:9: note: macro 'fatal_insn_not_found' defined here
+#define fatal_insn_not_found(insn) \
+        ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_attr_imm_disp/src/insn-attrtab.c:12930:1: error: use of undeclared identifier 'fatal_insn_not_found'; did you mean '_fatal_insn_not_found'?
+fatal_insn_not_found( insn, "insn-attrtab.c", 13072, "get_attr_imm_disp"); 
+^~~~~~~~~~~~~~~~~~~~
+_fatal_insn_not_found
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_attr_imm_disp/src/toplev.h:40:13: note: '_fatal_insn_not_found' declared here
+extern void _fatal_insn_not_found       PARAMS ((struct rtx_def *,
+            ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_attr_imm_disp/src/insn-attrtab.c:13092:7: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+v18 = recog_data_0.operand[1]; 
+      ^~~~~~~~~~~~
+      recog_data
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_attr_imm_disp/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_attr_imm_disp/src/insn-attrtab.c:13120:22: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( q_regs_operand( recog_data_0.operand[0], QImode) ) 
+                     ^~~~~~~~~~~~
+                     recog_data
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_attr_imm_disp/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_attr_imm_disp/src/insn-attrtab.c:13159:7: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+v18 = recog_data_0.operand[1]; 
+      ^~~~~~~~~~~~
+      recog_data
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_attr_imm_disp/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_attr_imm_disp/src/insn-attrtab.c:13165:35: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( memory_displacement_operand( recog_data_0.operand[0], VOIDmode) ) 
+                                  ^~~~~~~~~~~~
+                                  recog_data
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_attr_imm_disp/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_attr_imm_disp/src/insn-attrtab.c:13167:6: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+v4 = recog_data_0.operand[1]; 
+     ^~~~~~~~~~~~
+     recog_data
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_attr_imm_disp/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_attr_imm_disp/src/insn-attrtab.c:13176:24: error: subscripted value is not an array, pointer, or vector
+return *(int *)0x6E8734[which_alternative - 4]; 
+               ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_attr_imm_disp/src/insn-attrtab.c:13395:6: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+v7 = recog_data_0.operand[2]; 
+     ^~~~~~~~~~~~
+     recog_data
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_attr_imm_disp/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_attr_imm_disp/src/insn-attrtab.c:13405:6: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+v7 = recog_data_0.operand[2]; 
+     ^~~~~~~~~~~~
+     recog_data
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_attr_imm_disp/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_attr_imm_disp/src/insn-attrtab.c:13421:6: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+v7 = recog_data_0.operand[2]; 
+     ^~~~~~~~~~~~
+     recog_data
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_attr_imm_disp/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_attr_imm_disp/src/insn-attrtab.c:13437:6: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+v7 = recog_data_0.operand[2]; 
+     ^~~~~~~~~~~~
+     recog_data
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_attr_imm_disp/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_attr_imm_disp/src/insn-attrtab.c:13476:52: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( !_bittest( &v20, ix86_cpu) || const1_operand( recog_data_0.operand[2], VOIDmode) || !_bittest( &v20, ix86_cpu) ) 
+                                                   ^~~~~~~~~~~~
+                                                   recog_data
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_attr_imm_disp/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_attr_imm_disp/src/obj/insn-attrtab.o] Error 1

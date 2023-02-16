@@ -1,0 +1,73 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/apply_distributive_law/src/combine.c:8165:4: error: expected ';' after expression
+rtx v9; // r13 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/apply_distributive_law/src/combine.c:8165:5: error: use of undeclared identifier 'v9'
+rtx v9; // r13 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/apply_distributive_law/src/combine.c:8166:4: error: expected ';' after expression
+rtx v10; // r14 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/apply_distributive_law/src/combine.c:8166:5: error: use of undeclared identifier 'v10'; did you mean 'v1'?
+rtx v10; // r14 
+    ^~~
+    v1
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/apply_distributive_law/src/combine.c:8158:5: note: 'v1' declared here
+rtx v1; // rbx 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/apply_distributive_law/src/combine.c:8173:4: error: expected ';' after expression
+rtx v17; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/apply_distributive_law/src/combine.c:8173:5: error: use of undeclared identifier 'v17'
+rtx v17; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/apply_distributive_law/src/combine.c:8174:6: error: use of undeclared identifier 'fld'
+rtx *fld; // rbp 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/apply_distributive_law/src/combine.c:8177:6: error: use of undeclared identifier 'v21'
+rtx *v21; // r14 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/apply_distributive_law/src/combine.c:8180:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v24; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/apply_distributive_law/src/combine.c:8182:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code; // [rsp+0h] [rbp-38h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/apply_distributive_law/src/combine.c:8186:15: error: must use 'enum' tag to refer to type 'mode_class'
+v3 = *( const mode_class *)( ( char *)mode_class_0 + ( ( *( _DWORD *)x >> 14) & 0x3FC)); 
+              ^
+              enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/apply_distributive_law/src/machmode.h:52:30: note: enum 'mode_class' is hidden by a non-type declaration of 'mode_class' here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/apply_distributive_law/src/combine.c:8186:39: error: use of undeclared identifier 'mode_class_0'
+v3 = *( const mode_class *)( ( char *)mode_class_0 + ( ( *( _DWORD *)x >> 14) & 0x3FC)); 
+                                      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/apply_distributive_law/src/combine.c:8197:26: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v8 = (  struct rtx_def *)v1[1]; 
+                         ^~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/apply_distributive_law/src/combine.c:8200:1: error: use of undeclared identifier 'v9'
+v9 = expand_compound_operation( rtx); 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/apply_distributive_law/src/combine.c:8201:1: error: use of undeclared identifier 'v10'
+v10 = expand_compound_operation( v8); 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/apply_distributive_law/src/combine.c:8202:18: error: use of undeclared identifier 'v9'
+v11 = *( _WORD *)v9; 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/apply_distributive_law/src/combine.c:8203:33: error: use of undeclared identifier 'v10'
+if ( ( _DWORD)v11 == *( _WORD *)v10 ) 
+                                ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/apply_distributive_law/src/combine.c:8208:22: error: use of undeclared identifier 'v9'
+if ( ( ( *( _DWORD *)v9->fld[0].rtwint ^ *( _DWORD *)v10->fld[0].rtwint) & 0xFF0000) == 0 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/apply_distributive_law/src/combine.c:8208:54: error: use of undeclared identifier 'v10'
+if ( ( ( *( _DWORD *)v9->fld[0].rtwint ^ *( _DWORD *)v10->fld[0].rtwint) & 0xFF0000) == 0 
+                                                     ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/apply_distributive_law/src/obj/combine.o] Error 1

@@ -1,0 +1,36 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_function_start/src/function.c:6983:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v21; // rbx 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_function_start/src/function.c:6988:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v26; // rbx 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_function_start/src/function.c:6991:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v29; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_function_start/src/function.c:7003:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *pending_sizes; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_function_start/src/function.c:7027:31: error: use of undeclared identifier 'machine_mode'
+v12 = assign_stack_local_1( ( machine_mode)v11, mode_size[v11], 0, v6); 
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_function_start/src/function.c:7046:22: error: use of undeclared identifier 'machine_mode'
+v14 = gen_reg_rtx( ( machine_mode)( ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32)); 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_function_start/src/function.c:7050:22: error: use of undeclared identifier 'machine_mode'
+v15 = gen_rtx_MEM( ( machine_mode)LOBYTE( subr->decl.result->block.supercontext), v14); 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_function_start/src/function.c:7064:46: error: use of undeclared identifier 'machine_mode'
+subr->decl.result->decl.rtl = gen_reg_rtx( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)v17)); 
+                                             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_function_start/src/function.c:7064:61: error: expected expression
+subr->decl.result->decl.rtl = gen_reg_rtx( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)v17)); 
+                                                            ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_function_start/src/function.c:7139:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v36.rtwint = ( __int64)rtl->fld[0]; 
+                       ^~~~~~~~~~~
+10 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_function_start/src/obj/function.o] Error 1

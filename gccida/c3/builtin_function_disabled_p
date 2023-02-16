@@ -1,0 +1,27 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/builtin_function_disabled_p/src/c-common.c:3369:1: error: use of undeclared identifier 'disabled_builtin_0'; did you mean 'disabled_builtins'?
+disabled_builtin_0 *p; // [rsp+8h] [rbp-18h] 
+^~~~~~~~~~~~~~~~~~
+disabled_builtins
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/builtin_function_disabled_p/src/c-common.c:2878:26: note: 'disabled_builtins' declared here
+static disabled_builtin *disabled_builtins = NULL;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/builtin_function_disabled_p/src/c-common.c:3369:21: error: use of undeclared identifier 'p'
+disabled_builtin_0 *p; // [rsp+8h] [rbp-18h] 
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/builtin_function_disabled_p/src/c-common.c:3371:7: error: use of undeclared identifier 'p'
+for ( p = disabled_builtins; p; p = p->next ) 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/builtin_function_disabled_p/src/c-common.c:3371:30: error: use of undeclared identifier 'p'
+for ( p = disabled_builtins; p; p = p->next ) 
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/builtin_function_disabled_p/src/c-common.c:3371:33: error: use of undeclared identifier 'p'
+for ( p = disabled_builtins; p; p = p->next ) 
+                                ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/builtin_function_disabled_p/src/c-common.c:3371:37: error: use of undeclared identifier 'p'
+for ( p = disabled_builtins; p; p = p->next ) 
+                                    ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/builtin_function_disabled_p/src/c-common.c:3373:21: error: use of undeclared identifier 'p'
+if ( !strcmp( name, p->name) ) 
+                    ^
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/builtin_function_disabled_p/src/obj/c-common.o] Error 1

@@ -1,0 +1,30 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/undo_all/src/combine.c:3323:11: error: use of undeclared identifier 'undobuf_0'; did you mean 'undobuf'?
+for ( i = undobuf_0.undos; i; undobuf_0.frees = v1 ) 
+          ^~~~~~~~~
+          undobuf
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/undo_all/src/combine.c:334:23: note: 'undobuf' declared here
+static struct undobuf undobuf;
+                      ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/undo_all/src/combine.c:3323:31: error: use of undeclared identifier 'undobuf_0'; did you mean 'undobuf'?
+for ( i = undobuf_0.undos; i; undobuf_0.frees = v1 ) 
+                              ^~~~~~~~~
+                              undobuf
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/undo_all/src/combine.c:334:23: note: 'undobuf' declared here
+static struct undobuf undobuf;
+                      ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/undo_all/src/combine.c:3331:12: error: use of undeclared identifier 'undobuf_0'; did you mean 'undobuf'?
+v1->next = undobuf_0.frees; 
+           ^~~~~~~~~
+           undobuf
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/undo_all/src/combine.c:334:23: note: 'undobuf' declared here
+static struct undobuf undobuf;
+                      ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/undo_all/src/combine.c:3333:1: error: use of undeclared identifier 'undobuf_0'; did you mean 'undobuf'?
+undobuf_0.undos = 0LL; 
+^~~~~~~~~
+undobuf
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/undo_all/src/combine.c:334:23: note: 'undobuf' declared here
+static struct undobuf undobuf;
+                      ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/undo_all/src/obj/combine.o] Error 1

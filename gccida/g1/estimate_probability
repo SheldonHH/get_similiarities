@@ -1,0 +1,106 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/estimate_probability/src/predict.c:873:4: error: expected ';' after expression
+rtx reg_note; // [rsp+38h] [rbp-50h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/estimate_probability/src/predict.c:873:5: error: must use 'enum' tag to refer to type 'reg_note'
+rtx reg_note; // [rsp+38h] [rbp-50h] 
+    ^
+    enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/estimate_probability/src/predict.c:874:4: error: expected ';' after expression
+rtx earliest; // [rsp+48h] [rbp-40h] BYREF 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/estimate_probability/src/predict.c:874:5: error: use of undeclared identifier 'earliest'
+rtx earliest; // [rsp+48h] [rbp-40h] BYREF 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/estimate_probability/src/predict.c:901:41: error: use of undeclared identifier 'TAKEN_0'; did you mean 'TAKEN'?
+predict_edge_def( v2, PRED_LOOP_BRANCH, TAKEN_0); 
+                                        ^~~~~~~
+                                        TAKEN
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/estimate_probability/src/predict.h:34:4: note: 'TAKEN' declared here
+   TAKEN
+   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/estimate_probability/src/predict.c:955:37: error: use of undeclared identifier 'NOT_TAKEN_0'; did you mean 'NOT_TAKEN'?
+predict_edge_def( k, PRED_NORETURN, NOT_TAKEN_0); 
+                                    ^~~~~~~~~~~
+                                    NOT_TAKEN
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/estimate_probability/src/predict.h:33:4: note: 'NOT_TAKEN' declared here
+   NOT_TAKEN,
+   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/estimate_probability/src/predict.c:972:41: error: use of undeclared identifier 'NOT_TAKEN_0'; did you mean 'NOT_TAKEN'?
+predict_edge_def( m, PRED_ERROR_RETURN, NOT_TAKEN_0); 
+                                        ^~~~~~~~~~~
+                                        NOT_TAKEN
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/estimate_probability/src/predict.h:33:4: note: 'NOT_TAKEN' declared here
+   NOT_TAKEN,
+   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/estimate_probability/src/predict.c:995:33: error: use of undeclared identifier 'NOT_TAKEN_0'; did you mean 'NOT_TAKEN'?
+predict_edge_def( m, PRED_CALL, NOT_TAKEN_0); 
+                                ^~~~~~~~~~~
+                                NOT_TAKEN
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/estimate_probability/src/predict.h:33:4: note: 'NOT_TAKEN' declared here
+   NOT_TAKEN,
+   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/estimate_probability/src/predict.c:1003:38: error: use of undeclared identifier 'earliest'
+condition_0 = get_condition_0( v17, &earliest); 
+                                     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/estimate_probability/src/predict.c:1013:38: error: use of undeclared identifier 'NOT_TAKEN_0'; did you mean 'NOT_TAKEN'?
+predict_insn_def( v17, PRED_POINTER, NOT_TAKEN_0); 
+                                     ^~~~~~~~~~~
+                                     NOT_TAKEN
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/estimate_probability/src/predict.h:33:4: note: 'NOT_TAKEN' declared here
+   NOT_TAKEN,
+   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/estimate_probability/src/predict.c:1017:38: error: use of undeclared identifier 'TAKEN_0'; did you mean 'TAKEN'?
+predict_insn_def( v17, PRED_POINTER, TAKEN_0); 
+                                     ^~~~~~~
+                                     TAKEN
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/estimate_probability/src/predict.h:34:4: note: 'TAKEN' declared here
+   TAKEN
+   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/estimate_probability/src/predict.c:1025:46: error: use of undeclared identifier 'prediction'; did you mean 'predict_insn'?
+predict_insn_def( v17, PRED_UNCONDITIONAL, ( prediction)( const_int_rtx[64] != condition_0)); 
+                                             ^~~~~~~~~~
+                                             predict_insn
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/estimate_probability/src/predict.c:95:1: note: 'predict_insn' declared here
+predict_insn (insn, predictor, probability)
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/estimate_probability/src/predict.c:1025:44: error: passing 'void' to parameter of incompatible type 'unsigned int'
+predict_insn_def( v17, PRED_UNCONDITIONAL, ( prediction)( const_int_rtx[64] != condition_0)); 
+                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/estimate_probability/src/predict.c:1029:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v31.rtwint = ( __int64)condition_0->fld[0]; 
+                       ^~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/estimate_probability/src/predict.c:1030:8: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( ( mode_class_0[*( unsigned __int8 *)( v31.rtwint + 2)] & 0xFFFFFFFB) != 2 
+       ^~~~~~~~~~~~
+       mode_class
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/estimate_probability/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/estimate_probability/src/predict.c:1031:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& mode_class_0[*( unsigned __int8 *)( v31.rtwint + 2)] != MODE_VECTOR_FLOAT 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/estimate_probability/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/estimate_probability/src/predict.c:1032:10: error: expected ')'
+&& ( rtx)condition_0[1] != const_int_rtx[64] 
+         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/estimate_probability/src/predict.c:1030:4: note: to match this '('
+if ( ( mode_class_0[*( unsigned __int8 *)( v31.rtwint + 2)] & 0xFFFFFFFB) != 2 
+   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/estimate_probability/src/predict.c:1035:46: error: use of undeclared identifier 'TAKEN_0'; did you mean 'TAKEN'?
+predict_insn_def( v17, PRED_OPCODE_NONEQUAL, TAKEN_0); 
+                                             ^~~~~~~
+                                             TAKEN
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/estimate_probability/src/predict.h:34:4: note: 'TAKEN' declared here
+   TAKEN
+   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/estimate_probability/src/predict.c:1040:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v30.rtwint = ( __int64)condition_0->fld[0]; 
+                       ^~~~~~~~~~~~~~~~~~~
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/estimate_probability/src/obj/predict.o] Error 1

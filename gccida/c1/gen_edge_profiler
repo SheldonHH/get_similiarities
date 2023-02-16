@@ -1,0 +1,9 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/gen_edge_profiler/src/profile.c:1547:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v1; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/gen_edge_profiler/src/profile.c:1559:19: error: use of undeclared identifier 'machine_mode'
+v2 = force_reg( ( machine_mode)( ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32), profiler_label); 
+                  ^
+2 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/gen_edge_profiler/src/obj/profile.o] Error 1

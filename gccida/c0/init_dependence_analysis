@@ -1,0 +1,21 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/init_dependence_analysis/src/dependence.c:692:1: error: unknown type name 'def_use_0'; did you mean 'def_use'?
+def_use_0 *du_ptr; // [rsp+0h] [rbp-10h] 
+^~~~~~~~~
+def_use
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/init_dependence_analysis/src/dependence.c:102:3: note: 'def_use' declared here
+} def_use;
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/init_dependence_analysis/src/dependence.c:701:29: error: expected expression
+for ( du_ptr = ( def_use_0 *)*( ( _QWORD *)&def_use_chain->name + def_use_chain->elements_used); 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/init_dependence_analysis/src/dependence.c:701:18: error: use of undeclared identifier 'def_use_0'
+for ( du_ptr = ( def_use_0 *)*( ( _QWORD *)&def_use_chain->name + def_use_chain->elements_used); 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/init_dependence_analysis/src/dependence.c:703:23: error: expected expression
+du_ptr = ( def_use_0 *)*( ( _QWORD *)&def_use_chain->name + def_use_chain->elements_used) ) 
+                      ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/init_dependence_analysis/src/dependence.c:703:12: error: use of undeclared identifier 'def_use_0'
+du_ptr = ( def_use_0 *)*( ( _QWORD *)&def_use_chain->name + def_use_chain->elements_used) ) 
+           ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/init_dependence_analysis/src/obj/dependence.o] Error 1

@@ -1,0 +1,83 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/canonicalize_condition/src/loop.c:9535:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // [rsp+38h] [rbp-68h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/canonicalize_condition/src/loop.c:9542:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code; // [rsp+6Ch] [rbp-34h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/canonicalize_condition/src/loop.c:9549:13: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+op1 = ( rtx)cond[1]; 
+            ^~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/canonicalize_condition/src/loop.c:9570:13: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+op1 = ( rtx)op0[1]; 
+            ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/canonicalize_condition/src/loop.c:9582:13: error: expected identifier or '('
+ struct set = set_of( op0, prev); 
+            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/canonicalize_condition/src/loop.c:9583:7: error: expected expression
+if (  struct set ) 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/canonicalize_condition/src/loop.c:9588:7: error: expected expression
+if (  struct set ) 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/canonicalize_condition/src/loop.c:9593:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& mode_class_0[( unsigned __int8)BYTE2( *( _DWORD *)set->fld[0].rtwint)] == MODE_INT 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/canonicalize_condition/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/canonicalize_condition/src/loop.c:9597:8: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& ( ( mode_class_0[mode] == MODE_CC) == ( mode_class_0[( unsigned __int8)BYTE2( *( _DWORD *)set->fld[0].rtwint)] == MODE_CC) 
+       ^~~~~~~~~~~~
+       mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/canonicalize_condition/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/canonicalize_condition/src/loop.c:9597:44: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& ( ( mode_class_0[mode] == MODE_CC) == ( mode_class_0[( unsigned __int8)BYTE2( *( _DWORD *)set->fld[0].rtwint)] == MODE_CC) 
+                                           ^~~~~~~~~~~~
+                                           mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/canonicalize_condition/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/canonicalize_condition/src/loop.c:9601:11: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+x = ( rtx)set[1]; 
+          ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/canonicalize_condition/src/loop.c:9608:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| mode_class_0[( unsigned __int8)BYTE2( *( _DWORD *)set->fld[0].rtwint)] != MODE_INT 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/canonicalize_condition/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/canonicalize_condition/src/loop.c:9611:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| ( mode_class_0[mode] == MODE_CC) != ( mode_class_0[( unsigned __int8)BYTE2( *( _DWORD *)set->fld[0].rtwint)] == MODE_CC) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/canonicalize_condition/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/canonicalize_condition/src/loop.c:9611:42: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| ( mode_class_0[mode] == MODE_CC) != ( mode_class_0[( unsigned __int8)BYTE2( *( _DWORD *)set->fld[0].rtwint)] == MODE_CC) 
+                                         ^~~~~~~~~~~~
+                                         mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/canonicalize_condition/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/canonicalize_condition/src/loop.c:9618:11: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+x = ( rtx)set[1]; 
+          ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/canonicalize_condition/src/loop.c:9637:13: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+op1 = ( rtx)x[1]; 
+            ^~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/canonicalize_condition/src/loop.c:9657:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[( unsigned __int8)BYTE2( *( _DWORD *)op0)] == MODE_CC ) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/canonicalize_condition/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+17 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/canonicalize_condition/src/obj/loop.o] Error 1

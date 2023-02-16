@@ -1,0 +1,76 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_mult_add/src/expmed.c:4638:61: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  expand_mult_add( rtx x, rtx target, rtx mult, rtx add, machine_mode mode, int unsignedp) 
+                                                            ^
+                                                            enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_mult_add/src/expmed.c:4640:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v9; // rbx 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_mult_add/src/expmed.c:4641:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v10; // r12 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_mult_add/src/expmed.c:4643:5: error: expected ';' after expression
+tree v12; // rax 
+    ^
+    ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_mult_add/src/expmed.c:4643:6: error: use of undeclared identifier 'v12'; did you mean 'v10'?
+tree v12; // rax 
+     ^~~
+     v10
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_mult_add/src/expmed.c:4641:12: note: 'v10' declared here
+tree_node *v10; // r12 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_mult_add/src/expmed.c:4644:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v13; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_mult_add/src/expmed.c:4645:5: error: expected ';' after expression
+tree v14; // rbp 
+    ^
+    ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_mult_add/src/expmed.c:4645:6: error: use of undeclared identifier 'v14'
+tree v14; // rbp 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_mult_add/src/expmed.c:4646:5: error: expected ';' after expression
+tree v15; // rax 
+    ^
+    ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_mult_add/src/expmed.c:4646:6: error: use of undeclared identifier 'v15'
+tree v15; // rax 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_mult_add/src/expmed.c:4647:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v16; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_mult_add/src/expmed.c:4648:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v17; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_mult_add/src/expmed.c:4653:24: error: use of undeclared identifier 'machine_mode'
+v10 = type_for_mode( ( machine_mode)*( ( unsigned __int8 *)add + 2), unsignedp); 
+                       ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_mult_add/src/expmed.c:4655:1: error: use of undeclared identifier 'v12'
+v12 = make_tree( v9, mult); 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_mult_add/src/expmed.c:4656:35: error: use of undeclared identifier 'v12'
+v13 = build( MULT_EXPR, v9, tree, v12); 
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_mult_add/src/expmed.c:4657:1: error: use of undeclared identifier 'v14'
+v14 = fold( v13); 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_mult_add/src/expmed.c:4658:1: error: use of undeclared identifier 'v15'
+v15 = make_tree( v10, add); 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_mult_add/src/expmed.c:4659:29: error: use of undeclared identifier 'v14'; did you mean 'v10'?
+v16 = build( PLUS_EXPR, v9, v14, v15); 
+                            ^~~
+                            v10
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_mult_add/src/expmed.c:4641:12: note: 'v10' declared here
+tree_node *v10; // r12 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_mult_add/src/expmed.c:4659:34: error: use of undeclared identifier 'v15'
+v16 = build( PLUS_EXPR, v9, v14, v15); 
+                                 ^
+19 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_mult_add/src/obj/expmed.o] Error 1

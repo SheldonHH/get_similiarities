@@ -1,0 +1,34 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/convert_modes/src/expr.c:1741:21: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  convert_modes( machine_mode mode, machine_mode oldmode, rtx x, int unsignedp) 
+                    ^
+                    enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/convert_modes/src/expr.c:1741:40: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  convert_modes( machine_mode mode, machine_mode oldmode, rtx x, int unsignedp) 
+                                       ^
+                                       enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/convert_modes/src/expr.c:1767:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| mode_class_0[mode] != MODE_INT 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/convert_modes/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/convert_modes/src/expr.c:1778:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v11.rtwint = ( __int64)v5->fld[0]; 
+                       ^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/convert_modes/src/expr.c:1788:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[mode] == MODE_INT && mode_class_0[oldmode] == MODE_INT ) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/convert_modes/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/convert_modes/src/expr.c:1788:40: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[mode] == MODE_INT && mode_class_0[oldmode] == MODE_INT ) 
+                                       ^~~~~~~~~~~~
+                                       mode_class
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/convert_modes/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/convert_modes/src/obj/expr.o] Error 1

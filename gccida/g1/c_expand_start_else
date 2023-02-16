@@ -1,0 +1,23 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/c_expand_start_else/src/c-common.c:809:7: error: use of undeclared identifier 'if_stack_0'; did you mean 'if_stack'?
+v1 = &if_stack_0[v0 - 2]; 
+      ^~~~~~~~~~
+      if_stack
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/c_expand_start_else/src/c-common.c:262:16: note: 'if_stack' declared here
+static if_elt *if_stack;
+               ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/c_expand_start_else/src/c-common.c:810:6: error: use of undeclared identifier 'if_stack_0'; did you mean 'if_stack'?
+if ( if_stack_0[v0 - 1].compstmt_count == v1->compstmt_count ) 
+     ^~~~~~~~~~
+     if_stack
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/c_expand_start_else/src/c-common.c:262:16: note: 'if_stack' declared here
+static if_elt *if_stack;
+               ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/c_expand_start_else/src/c-common.c:814:7: error: use of undeclared identifier 'if_stack_0'; did you mean 'if_stack'?
+v2 = &if_stack_0[if_stack_pointer - 1]; 
+      ^~~~~~~~~~
+      if_stack
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/c_expand_start_else/src/c-common.c:262:16: note: 'if_stack' declared here
+static if_elt *if_stack;
+               ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/c_expand_start_else/src/obj/c-common.o] Error 1

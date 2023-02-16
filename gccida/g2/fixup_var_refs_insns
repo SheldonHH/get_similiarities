@@ -1,0 +1,28 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/fixup_var_refs_insns/src/function.c:2126:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode promoted_mode, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/fixup_var_refs_insns/src/function.c:2138:4: error: expected ';' after expression
+rtx seq; // [rsp+8h] [rbp-50h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/fixup_var_refs_insns/src/function.c:2138:5: error: use of undeclared identifier 'seq'
+rtx seq; // [rsp+8h] [rbp-50h] 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/fixup_var_refs_insns/src/function.c:2161:1: error: use of undeclared identifier 'seq'
+seq = ( rtx)*( ( _QWORD *)v11 + 4); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/fixup_var_refs_insns/src/function.c:2161:13: error: invalid operands to binary expression ('rtx' (aka 'struct rtx_def *') and 'uint64 *' (aka 'unsigned long long *'))
+seq = ( rtx)*( ( _QWORD *)v11 + 4); 
+      ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/fixup_var_refs_insns/src/function.c:2162:1: error: use of undeclared identifier 'seq'
+seq->fld[v16].rtwint = ( __int64)get_insns( ); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/fixup_var_refs_insns/src/function.c:2173:28: error: expected ')'
+fixup_var_refs_insn( ( rtx)v11, var, promoted_mode, unsignedp, toplevel, may_share); 
+                           ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/fixup_var_refs_insns/src/function.c:2173:20: note: to match this '('
+fixup_var_refs_insn( ( rtx)v11, var, promoted_mode, unsignedp, toplevel, may_share); 
+                   ^
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/fixup_var_refs_insns/src/obj/function.o] Error 1

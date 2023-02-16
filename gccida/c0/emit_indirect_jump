@@ -1,0 +1,20 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_indirect_jump/src/optabs.c:4105:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v1; // edx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_indirect_jump/src/optabs.c:4106:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v2; // ecx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_indirect_jump/src/optabs.c:4114:7: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+if ( !insn_data_0[1159].operand->predicate( loc, v1) ) 
+      ^~~~~~~~~~~
+      insn_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_indirect_jump/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_indirect_jump/src/optabs.c:4114:43: error: called object type '<dependent type>' is not a function or function pointer
+if ( !insn_data_0[1159].operand->predicate( loc, v1) ) 
+                                          ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_indirect_jump/src/obj/optabs.o] Error 1

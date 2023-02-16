@@ -1,0 +1,72 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cse_set_around_loop/src/cse.c:7202:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v26; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cse_set_around_loop/src/cse.c:7203:6: error: use of undeclared identifier 'loc'
+rtx *loc; // [rsp+0h] [rbp-58h] 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cse_set_around_loop/src/cse.c:7205:4: error: expected ';' after expression
+rtx pattern; // [rsp+18h] [rbp-40h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cse_set_around_loop/src/cse.c:7205:5: error: use of undeclared identifier 'pattern'
+rtx pattern; // [rsp+18h] [rbp-40h] 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cse_set_around_loop/src/cse.c:7206:4: error: expected ';' after expression
+rtx after; // [rsp+20h] [rbp-38h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cse_set_around_loop/src/cse.c:7206:5: error: use of undeclared identifier 'after'
+rtx after; // [rsp+20h] [rbp-38h] 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cse_set_around_loop/src/cse.c:7213:26: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v4 = (  struct rtx_def *)x[1]; 
+                         ^~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cse_set_around_loop/src/cse.c:7216:32: error: expected expression
+v6 = table[canon_hash( *( rtx *)&x[1], ( machine_mode)BYTE2( v3)) & 0x1F]; 
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cse_set_around_loop/src/cse.c:7216:42: error: use of undeclared identifier 'machine_mode'
+v6 = table[canon_hash( *( rtx *)&x[1], ( machine_mode)BYTE2( v3)) & 0x1F]; 
+                                         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cse_set_around_loop/src/cse.c:7219:1: error: use of undeclared identifier 'loc'
+loc = ( rtx *)&x[1]; 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cse_set_around_loop/src/cse.c:7219:14: error: expected expression
+loc = ( rtx *)&x[1]; 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cse_set_around_loop/src/cse.c:7239:8: error: use of undeclared identifier 'loc'
+v10 = *loc; 
+       ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cse_set_around_loop/src/cse.c:7240:20: error: use of undeclared identifier 'loc'
+v11 = *( _DWORD *)*loc; 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cse_set_around_loop/src/cse.c:7245:25: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| ( v13 = BYTE2( v11), mode_class_0[v13] != MODE_INT) 
+                        ^~~~~~~~~~~~
+                        mode_class
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cse_set_around_loop/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cse_set_around_loop/src/cse.c:7246:25: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| ( v14 = BYTE2( v12), mode_class_0[v14] != MODE_INT) 
+                        ^~~~~~~~~~~~
+                        mode_class
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cse_set_around_loop/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cse_set_around_loop/src/cse.c:7248:24: error: use of undeclared identifier 'loc'
+|| !subreg_lowpart_p( *loc) ) 
+                       ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cse_set_around_loop/src/cse.c:7263:13: error: expected ';' after expression
+v18 = ( rtx)v16[2]; 
+            ^
+            ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cse_set_around_loop/src/cse.c:7265:34: error: expected expression
+v18 = single_set_2( v16, *( rtx *)&v16[2]); 
+                                 ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cse_set_around_loop/src/cse.c:7269:74: error: expected expression
+if ( ( _WORD)v19 == 61 && BYTE2( v19) == i->mode && rtx_equal_p( *( rtx *)&v18[1], *loc) ) 
+                                                                         ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cse_set_around_loop/src/obj/cse.o] Error 1

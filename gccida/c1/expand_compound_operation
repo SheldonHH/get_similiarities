@@ -1,0 +1,67 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_compound_operation/src/combine.c:6100:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v24 = ( __int64)x[1]; 
+                ^~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_compound_operation/src/combine.c:6103:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v25.rtwint = ( __int64)x[1].fld[0]; 
+                       ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_compound_operation/src/combine.c:6110:29: error: use of undeclared identifier 'machine_mode'
+v26 = gen_rtx_fmt_e( USE, ( machine_mode)BYTE2( v2), v1->fld[0].rtx); 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_compound_operation/src/combine.c:6111:18: error: expected expression
+do_SUBST( ( rtx *)v1->fld, v26); 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_compound_operation/src/combine.c:6117:39: error: use of undeclared identifier 'machine_mode'
+v10 = nonzero_bits( v1->fld[0].rtx, ( machine_mode)*( unsigned __int8 *)( v1->fld[0].rtwint + 2)); 
+                                      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_compound_operation/src/combine.c:6121:37: error: use of undeclared identifier 'machine_mode'
+v28 = gen_rtx_fmt_e( ZERO_EXTEND, ( machine_mode)*( ( unsigned __int8 *)v1 + 2), rtx); 
+                                    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_compound_operation/src/combine.c:6127:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v12.rtwint = ( __int64)v1->fld[0]; 
+                       ^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_compound_operation/src/combine.c:6134:27: error: expected ')'
+v15 = nonzero_bits( ( rtx)v13, ( machine_mode)( unsigned __int8)v14); 
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_compound_operation/src/combine.c:6134:19: note: to match this '('
+v15 = nonzero_bits( ( rtx)v13, ( machine_mode)( unsigned __int8)v14); 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_compound_operation/src/combine.c:6135:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v16.rtwint = ( __int64)v1->fld[0]; 
+                       ^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_compound_operation/src/combine.c:6137:16: error: expected expression
+return *( rtx *)( v16.rtwint + 8); 
+               ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_compound_operation/src/combine.c:6140:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v17.rtwint = ( __int64)v1->fld[0]; 
+                       ^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_compound_operation/src/combine.c:6148:29: error: expected expression
+v30 = nonzero_bits( *( rtx *)( v1->fld[0].rtwint + 8), ( machine_mode)v29); 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_compound_operation/src/combine.c:6148:58: error: use of undeclared identifier 'machine_mode'
+v30 = nonzero_bits( *( rtx *)( v1->fld[0].rtwint + 8), ( machine_mode)v29); 
+                                                         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_compound_operation/src/combine.c:6149:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v16.rtwint = ( __int64)v1->fld[0]; 
+                       ^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_compound_operation/src/combine.c:6151:16: error: expected expression
+return *( rtx *)( v16.rtwint + 8); 
+               ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_compound_operation/src/combine.c:6161:29: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+|| ( v31.rtwint = ( __int64)v1->fld[0], result = *( rtx *)( v31.rtwint + 8), rtx_class[*( _WORD *)result] != 60) 
+                            ^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_compound_operation/src/combine.c:6161:58: error: expected expression
+|| ( v31.rtwint = ( __int64)v1->fld[0], result = *( rtx *)( v31.rtwint + 8), rtx_class[*( _WORD *)result] != 60) 
+                                                         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_compound_operation/src/combine.c:6173:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)v1 + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_compound_operation/src/combine.c:6176:36: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+v23 = simplify_shift_const( 0LL, ( rtx_code)( v3 + 89), ( machine_mode)v20, v27, ( int)v21 - ( int)v7); 
+                                   ^~~~~~~~
+                                   rtx_cost
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_compound_operation/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_compound_operation/src/obj/combine.o] Error 1

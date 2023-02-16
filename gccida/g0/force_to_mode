@@ -1,0 +1,76 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/force_to_mode/src/combine.c:7104:28: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  force_to_mode( rtx x, machine_mode mode, unsigned __int64 mask, rtx reg, int just_select) 
+                           ^
+                           enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/force_to_mode/src/combine.c:7107:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v7; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/force_to_mode/src/combine.c:7159:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code; // [rsp+70h] [rbp-40h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/force_to_mode/src/combine.c:7166:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode op_mode; // [rsp+9Ch] [rbp-14h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/force_to_mode/src/combine.c:7174:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[mode] == mode_class_0[*( ( unsigned __int8 *)x + 2)] && have_insn_for( code, mode) ) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/force_to_mode/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/force_to_mode/src/combine.c:7174:28: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[mode] == mode_class_0[*( ( unsigned __int8 *)x + 2)] && have_insn_for( code, mode) ) 
+                           ^~~~~~~~~~~~
+                           mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/force_to_mode/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/force_to_mode/src/combine.c:7234:34: error: use of undeclared identifier 'machine_mode'
+v38 = gen_lowpart_for_combine( ( machine_mode)*( ( unsigned __int8 *)x + 2), v37); 
+                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/force_to_mode/src/combine.c:7237:34: error: use of undeclared identifier 'machine_mode'
+v40 = gen_lowpart_for_combine( ( machine_mode)*( ( unsigned __int8 *)x + 2), v39); 
+                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/force_to_mode/src/combine.c:7260:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)x + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/force_to_mode/src/combine.c:7262:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)x + 2)); 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/force_to_mode/src/combine.c:7270:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)x + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/force_to_mode/src/combine.c:7272:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)x + 2)); 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/force_to_mode/src/combine.c:7311:24: error: use of undeclared identifier 'machine_mode'
+y = gen_binary( AND, ( machine_mode)*( ( unsigned __int8 *)xa + 2), xa->fld[0].rtx, v11); 
+                       ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/force_to_mode/src/combine.c:7327:46: error: use of undeclared identifier 'machine_mode'
+if ( ( v16 & ~nonzero_bits( x->fld[0].rtx, ( machine_mode)*( ( unsigned __int8 *)x + 2))) == 0 ) 
+                                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/force_to_mode/src/combine.c:7334:3: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+( rtx_code)*( _WORD *)x, 
+  ^~~~~~~~
+  rtx_cost
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/force_to_mode/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/force_to_mode/src/combine.c:7334:12: error: invalid operands to binary expression ('int (rtx, enum rtx_code)' (aka 'int (struct rtx_def *, enum rtx_code)') and 'uint16 *' (aka 'unsigned short *'))
+( rtx_code)*( _WORD *)x, 
+~~~~~~~~~~~^~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/force_to_mode/src/combine.c:7335:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)x + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/force_to_mode/src/combine.c:7340:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)x + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/force_to_mode/src/combine.c:7353:101: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+if ( op_mode != *( ( unsigned __int8 *)x + 2) || op0 != x->fld[0].rtx || op1 != (  struct rtx_def *)x[1] ) 
+                                                                                                    ^~~~
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/force_to_mode/src/obj/combine.o] Error 1

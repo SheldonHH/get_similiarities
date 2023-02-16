@@ -1,0 +1,69 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/plus_constant_wide/src/explow.c:548:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v11; // r15d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/plus_constant_wide/src/explow.c:552:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v16; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/plus_constant_wide/src/explow.c:555:4: error: expected ';' after expression
+rtx v19; // rbp 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/plus_constant_wide/src/explow.c:555:5: error: use of undeclared identifier 'v19'
+rtx v19; // rbp 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/plus_constant_wide/src/explow.c:556:4: error: expected ';' after expression
+rtx arg0; // [rsp+8h] [rbp-40h] BYREF 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/plus_constant_wide/src/explow.c:556:5: error: use of undeclared identifier 'arg0'
+rtx arg0; // [rsp+8h] [rbp-40h] BYREF 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/plus_constant_wide/src/explow.c:558:4: error: expected ';' after expression
+rtx p; // [rsp+18h] [rbp-30h] BYREF 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/plus_constant_wide/src/explow.c:558:5: error: use of undeclared identifier 'p'
+rtx p; // [rsp+18h] [rbp-30h] BYREF 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/plus_constant_wide/src/explow.c:567:1: error: use of undeclared identifier 'p'
+p = x; 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/plus_constant_wide/src/explow.c:575:88: error: use of undeclared identifier 'arg0'
+add_double( *( _QWORD *)&x[1], x[1].fld[0].rtwint, v3, v3 >> 63, ( unsigned __int64 *)&arg0, &i1); 
+                                                                                       ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/plus_constant_wide/src/explow.c:576:38: error: use of undeclared identifier 'arg0'
+return immed_double_const( ( __int64)arg0, i1, VOIDmode); 
+                                     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/plus_constant_wide/src/explow.c:587:23: error: expected identifier or '('
+ struct pool_constant = get_pool_constant( rtx); 
+                      ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/plus_constant_wide/src/explow.c:589:1: error: use of undeclared identifier 'v19'
+v19 = force_const_mem( v16, v18); 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/plus_constant_wide/src/explow.c:590:27: error: use of undeclared identifier 'machine_mode'
+if ( !memory_address_p( ( machine_mode)*( ( unsigned __int8 *)v19 + 2), v19->fld[0].rtx) ) 
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/plus_constant_wide/src/explow.c:590:63: error: use of undeclared identifier 'v19'
+if ( !memory_address_p( ( machine_mode)*( ( unsigned __int8 *)v19 + 2), v19->fld[0].rtx) ) 
+                                                              ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/plus_constant_wide/src/explow.c:590:73: error: use of undeclared identifier 'v19'; did you mean 'v18'?
+if ( !memory_address_p( ( machine_mode)*( ( unsigned __int8 *)v19 + 2), v19->fld[0].rtx) ) 
+                                                                        ^~~
+                                                                        v18
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/plus_constant_wide/src/explow.c:554:18: note: 'v18' declared here
+ struct rtx_def *v18; // rax 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/plus_constant_wide/src/explow.c:602:8: error: use of undeclared identifier 'v19'
+return v19; 
+       ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/plus_constant_wide/src/explow.c:604:26: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v6 = (  struct rtx_def *)x[1]; 
+                         ^~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/plus_constant_wide/src/explow.c:637:32: error: use of undeclared identifier 'p'
+if ( !find_constant_term_loc( &p) ) 
+                               ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/plus_constant_wide/src/obj/explow.o] Error 1

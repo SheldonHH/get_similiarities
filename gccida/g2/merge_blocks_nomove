@@ -1,0 +1,76 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/merge_blocks_nomove/src/cfgrtl.c:992:4: error: expected ';' after expression
+rtx head; // r12 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/merge_blocks_nomove/src/cfgrtl.c:992:5: error: use of undeclared identifier 'head'; did you mean 'read'?
+rtx head; // r12 
+    ^~~~
+    read
+/usr/include/unistd.h:363:16: note: 'read' declared here
+extern ssize_t read (int __fd, void *__buf, size_t __nbytes) __wur;
+               ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/merge_blocks_nomove/src/cfgrtl.c:993:4: error: expected ';' after expression
+rtx end; // r14 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/merge_blocks_nomove/src/cfgrtl.c:993:5: error: use of undeclared identifier 'end'
+rtx end; // r14 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/merge_blocks_nomove/src/cfgrtl.c:994:4: error: expected ';' after expression
+rtx v6; // rbp 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/merge_blocks_nomove/src/cfgrtl.c:994:5: error: use of undeclared identifier 'v6'
+rtx v6; // rbp 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/merge_blocks_nomove/src/cfgrtl.c:1001:4: error: expected ';' after expression
+rtx v13; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/merge_blocks_nomove/src/cfgrtl.c:1001:5: error: use of undeclared identifier 'v13'
+rtx v13; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/merge_blocks_nomove/src/cfgrtl.c:1012:1: error: use of undeclared identifier 'head'
+head = b->head; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/merge_blocks_nomove/src/cfgrtl.c:1013:1: error: use of undeclared identifier 'end'
+end = b->end; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/merge_blocks_nomove/src/cfgrtl.c:1015:1: error: use of undeclared identifier 'v6'
+v6 = a->end; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/merge_blocks_nomove/src/cfgrtl.c:1020:11: error: use of undeclared identifier 'head'; did you mean 'read'?
+b_empty = head == end; 
+          ^~~~
+          read
+/usr/include/unistd.h:363:16: note: 'read' declared here
+extern ssize_t read (int __fd, void *__buf, size_t __nbytes) __wur;
+               ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/merge_blocks_nomove/src/cfgrtl.c:1020:19: error: use of undeclared identifier 'end'
+b_empty = head == end; 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/merge_blocks_nomove/src/cfgrtl.c:1021:17: error: use of undeclared identifier 'head'
+v7 = *( _WORD *)head[1].fld[0].rtwint; 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/merge_blocks_nomove/src/cfgrtl.c:1022:1: error: use of undeclared identifier 'head'
+head = head[1].fld[0].rtx; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/merge_blocks_nomove/src/cfgrtl.c:1022:8: error: use of undeclared identifier 'head'
+head = head[1].fld[0].rtx; 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/merge_blocks_nomove/src/cfgrtl.c:1024:18: error: use of undeclared identifier 'head'
+if ( v7 == 37 && head[2].fld[0].rtint == -80 ) 
+                 ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/merge_blocks_nomove/src/cfgrtl.c:1027:6: error: use of undeclared identifier 'head'; did you mean 'read'?
+if ( head != end ) 
+     ^~~~
+     read
+/usr/include/unistd.h:363:16: note: 'read' declared here
+extern ssize_t read (int __fd, void *__buf, size_t __nbytes) __wur;
+               ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/merge_blocks_nomove/src/cfgrtl.c:1027:14: error: use of undeclared identifier 'end'
+if ( head != end ) 
+             ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/merge_blocks_nomove/src/obj/cfgrtl.o] Error 1

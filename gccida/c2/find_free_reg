@@ -1,0 +1,76 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_free_reg/src/local-alloc.c:2648:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class a1, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_free_reg/src/local-alloc.c:2649:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_free_reg/src/local-alloc.c:2647:10: error: conflicting types for 'find_free_reg'
+__int64  find_free_reg( 
+         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_free_reg/src/local-alloc.c:299:12: note: previous declaration is here
+static int find_free_reg        PARAMS ((enum reg_class, enum machine_mode,
+           ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_free_reg/src/local-alloc.c:2745:46: error: use of undeclared identifier 'qty_0'
+if ( ( *( ( _BYTE *)cfun + 425) & 1) != 0 && qty_0[v8].n_calls_crossed > 0 ) 
+                                             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_free_reg/src/local-alloc.c:2758:7: error: use of undeclared identifier 'qty_0'
+if ( !qty_0[v8].n_calls_crossed ) 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_free_reg/src/local-alloc.c:2774:7: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'unsigned long long' of different size
+v17 = ( __m128i)v15; 
+      ^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_free_reg/src/local-alloc.c:2778:5: error: assigning to '__m128i' (vector of 2 'long long' values) from incompatible type 'long long'
+v18 = 0LL; 
+    ^ ~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_free_reg/src/local-alloc.c:2804:5: error: assigning to '__m128i' (vector of 2 'long long' values) from incompatible type 'long long'
+v18 = 0LL; 
+    ^ ~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_free_reg/src/local-alloc.c:2821:54: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+v15 = _mm_or_si128( _mm_shuffle_epi32( v24, 78), v24).m128i_u64[0]; 
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_free_reg/src/local-alloc.c:2848:19: error: use of undeclared identifier 'qty_0'
+n_calls_crossed = qty_0[v81].n_calls_crossed; 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_free_reg/src/local-alloc.c:2851:28: error: use of undeclared identifier 'qty_0'
+if ( 4 * n_calls_crossed < qty_0[v81].n_refs ) 
+                           ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_free_reg/src/local-alloc.c:2907:23: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( ( unsigned int)( mode_class_0[mode] - 5) < 2 ) 
+                      ^~~~~~~~~~~~
+                      mode_class
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_free_reg/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_free_reg/src/local-alloc.c:2922:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v34 = ( ( unsigned int)( mode_class_0[mode] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_free_reg/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_free_reg/src/local-alloc.c:2962:61: error: use of undeclared identifier 'xmm'
+v42 = _mm_add_epi32( _mm_shuffle_epi32( v41, 80), ( __m128i)xmm*(short *)0x641440); 
+                                                            ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_free_reg/src/local-alloc.c:2964:41: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'long long' of different size
+v44 = _mm_shuffle_epi32( _mm_add_epi32( ( __m128i)-1LL, v43), 80); 
+                                        ^~~~~~~~~~~~~~
+/usr/lib/llvm-7/lib/clang/7.0.0/include/emmintrin.h:4347:52: note: expanded from macro '_mm_shuffle_epi32'
+  (__m128i)__builtin_ia32_pshufd((__v4si)(__m128i)(a), (int)(imm))
+                                                   ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_free_reg/src/local-alloc.c:2966:44: error: use of undeclared identifier 'xmm'
+si128 = _mm_load_si128( ( const __m128i *)&xmm*(short *)0x641420); 
+                                           ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_free_reg/src/local-alloc.c:2967:42: error: use of undeclared identifier 'xmm'
+v47 = _mm_load_si128( ( const __m128i *)&xmm*(short *)0x641450); 
+                                         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_free_reg/src/local-alloc.c:2969:5: error: assigning to '__m128d' (vector of 2 'double' values) from incompatible type 'long long'
+v49 = 0LL; 
+    ^ ~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_free_reg/src/local-alloc.c:2970:5: error: assigning to '__m128i' (vector of 2 'long long' values) from incompatible type 'long long'
+v50 = 0LL; 
+    ^ ~~~
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_free_reg/src/obj/local-alloc.o] Error 1

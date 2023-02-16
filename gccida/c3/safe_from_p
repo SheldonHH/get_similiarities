@@ -1,0 +1,72 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/safe_from_p/src/expr.c:6016:4: error: expected ';' after expression
+rtx v15; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/safe_from_p/src/expr.c:6016:5: error: use of undeclared identifier 'v15'
+rtx v15; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/safe_from_p/src/expr.c:6022:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v21; // rsi 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/safe_from_p/src/expr.c:6024:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *imag; // rsi 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/safe_from_p/src/expr.c:6025:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *elements; // rsi 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/safe_from_p/src/expr.c:6070:1: error: use of undeclared identifier 'safe_from_p_save_expr_list'
+safe_from_p_save_expr_list = 0LL; 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/safe_from_p/src/expr.c:6072:11: error: use of undeclared identifier 'safe_from_p_save_expr_list'
+for ( i = safe_from_p_save_expr_list; i; i = i->common.chain ) 
+          ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/safe_from_p/src/expr.c:6128:18: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v13 = ( _QWORD *)rtx[1]; 
+                 ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/safe_from_p/src/expr.c:6166:1: error: use of undeclared identifier 'safe_from_p_save_expr_list'
+safe_from_p_save_expr_list = tree_cons( exp, 0LL, safe_from_p_save_expr_list); 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/safe_from_p/src/expr.c:6166:51: error: use of undeclared identifier 'safe_from_p_save_expr_list'
+safe_from_p_save_expr_list = tree_cons( exp, 0LL, safe_from_p_save_expr_list); 
+                                                  ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/safe_from_p/src/expr.c:6189:1: error: use of undeclared identifier 'v15'
+v15 = exp->decl.rtl; 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/safe_from_p/src/expr.c:6191:25: error: use of undeclared identifier 'v15'
+if ( !v15 || *( _WORD *)v15 != 66 ) 
+                        ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/safe_from_p/src/expr.c:6191:7: error: use of undeclared identifier 'v15'
+if ( !v15 || *( _WORD *)v15 != 66 ) 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/safe_from_p/src/expr.c:6193:7: error: use of undeclared identifier 'v15'
+rtl = v15->fld[0].rtx; 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/safe_from_p/src/expr.c:6197:26: error: use of undeclared identifier 'tree_code'; did you mean 'tree_cons'?
+rtl_op = first_rtl_op( ( tree_code)*( ( unsigned __int8 *)&exp->block.common + 16)); 
+                         ^~~~~~~~~
+                         tree_cons
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/safe_from_p/src/tree.h:2477:13: note: 'tree_cons' declared here
+extern tree tree_cons                   PARAMS ((tree, tree, tree));
+            ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/safe_from_p/src/expr.c:6197:36: error: invalid operands to binary expression ('tree (tree, tree, tree)' (aka 'union tree_node *(union tree_node *, union tree_node *, union tree_node *)') and 'unsigned char *')
+rtl_op = first_rtl_op( ( tree_code)*( ( unsigned __int8 *)&exp->block.common + 16)); 
+                       ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/safe_from_p/src/expr.c:6199:67: error: use of undeclared identifier 'lang_hooks_0'; did you mean 'lang_hooks'?
+return *( ( unsigned __int8 *)&exp->block.common + 16) < 0x93u || lang_hooks_0.safe_from_p( rtx, exp); 
+                                                                  ^~~~~~~~~~~~
+                                                                  lang_hooks
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/safe_from_p/src/langhooks.h:168:32: note: 'lang_hooks' declared here
+extern const struct lang_hooks lang_hooks;
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/safe_from_p/src/expr.c:6199:91: error: called object type '<dependent type>' is not a function or function pointer
+return *( ( unsigned __int8 *)&exp->block.common + 16) < 0x93u || lang_hooks_0.safe_from_p( rtx, exp); 
+                                                                                          ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/safe_from_p/src/expr.c:6229:20: error: expected expression
+v21 = ( tree_node *)*( ( _QWORD *)&exp->vector.elements + v20); 
+                   ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/safe_from_p/src/obj/expr.o] Error 1

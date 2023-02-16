@@ -1,0 +1,40 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/add_bound_info/src/dwarf2out.c:9547:48: error: must use 'enum' tag to refer to type 'dwarf_attribute'
+void  add_bound_info( dw_die_ref subrange_die, dwarf_attribute bound_attr, tree bound) 
+                                               ^
+                                               enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/add_bound_info/src/dwarf2out.c:9562:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *type; // rsi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/add_bound_info/src/dwarf2out.c:9573:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v30; // rsi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/add_bound_info/src/dwarf2out.c:9588:1: error: must use 'enum' tag to refer to type 'dwarf_attribute'
+dwarf_attribute dw_attr; // edx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/add_bound_info/src/dwarf2out.c:9592:1: error: must use 'enum' tag to refer to type 'dwarf_attribute'
+dwarf_attribute v49; // edx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/add_bound_info/src/dwarf2out.c:9651:30: error: use of undeclared identifier 'a'
+fancy_abort( ( const char *)&a, 4588, "AT_ref"); 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/add_bound_info/src/dwarf2out.c:9776:46: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'unsigned long long' of different size
+*( __m128i *)&v37->die = _mm_unpacklo_epi64( ( __m128i)( unsigned __int64)v15, ( __m128i)( unsigned __int64)bound); 
+                                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/add_bound_info/src/dwarf2out.c:9776:80: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'unsigned long long' of different size
+*( __m128i *)&v37->die = _mm_unpacklo_epi64( ( __m128i)( unsigned __int64)v15, ( __m128i)( unsigned __int64)bound); 
+                                                                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/add_bound_info/src/dwarf2out.c:9808:46: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'unsigned long long' of different size
+*( __m128i *)&v51->die = _mm_unpacklo_epi64( ( __m128i)( unsigned __int64)v15, ( __m128i)( unsigned __int64)bound); 
+                                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/add_bound_info/src/dwarf2out.c:9808:80: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'unsigned long long' of different size
+*( __m128i *)&v51->die = _mm_unpacklo_epi64( ( __m128i)( unsigned __int64)v15, ( __m128i)( unsigned __int64)bound); 
+                                                                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/add_bound_info/src/dwarf2out.c:9843:22: error: use of undeclared identifier 'machine_mode'
+v26 = gen_rtx_MEM( ( machine_mode)*( ( unsigned __int8 *)v26 + 2), fixed); 
+                     ^
+11 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/add_bound_info/src/obj/dwarf2out.o] Error 1

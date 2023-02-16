@@ -1,0 +1,19 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/mark_used_reg/src/flow.c:3975:23: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v9 = ( unsigned int)( mode_class_0[*( ( unsigned __int8 *)reg + 2)] - 5) <= 1; 
+                      ^~~~~~~~~~~~
+                      mode_class
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/mark_used_reg/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/mark_used_reg/src/flow.c:3994:7: error: use of undeclared identifier 'invalid_operation'; did you mean 'bitmap_operation'?
+v10 = __CFADD__( ( _DWORD)rtuint, v9); 
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      bitmap_operation
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/mark_used_reg/src/flow.c:3741:25: note: expanded from macro '__CFADD__'
+#define __CFADD__(x, y) invalid_operation // Generate carry flag for (x+y)
+                        ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/mark_used_reg/src/bitmap.h:81:12: note: 'bitmap_operation' declared here
+extern int bitmap_operation PARAMS ((bitmap, bitmap, bitmap, enum bitmap_bits));
+           ^
+2 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/mark_used_reg/src/obj/flow.o] Error 1

@@ -1,0 +1,35 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/scan_rtx_address/src/regrename.c:987:45: error: must use 'enum' tag to refer to type 'reg_class'
+void  scan_rtx_address( rtx insn, rtx *loc, reg_class a3, scan_actions action, machine_mode mode) 
+                                            ^
+                                            enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/scan_rtx_address/src/regrename.c:987:59: error: must use 'enum' tag to refer to type 'scan_actions'
+void  scan_rtx_address( rtx insn, rtx *loc, reg_class a3, scan_actions action, machine_mode mode) 
+                                                          ^
+                                                          enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/scan_rtx_address/src/regrename.c:987:80: error: must use 'enum' tag to refer to type 'machine_mode'
+void  scan_rtx_address( rtx insn, rtx *loc, reg_class a3, scan_actions action, machine_mode mode) 
+                                                                               ^
+                                                                               enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/scan_rtx_address/src/regrename.c:994:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code1; // [rsp+38h] [rbp-58h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/scan_rtx_address/src/regrename.c:995:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code0; // [rsp+3Ch] [rbp-54h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/scan_rtx_address/src/regrename.c:1000:1: error: must use 'enum' tag to refer to type 'scan_actions'
+scan_actions actiona; // [rsp+78h] [rbp-18h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/scan_rtx_address/src/regrename.c:1012:65: error: use of undeclared identifier 'machine_mode'
+scan_rtx_address( insn, ( rtx *)x->fld, GENERAL_REGS, action, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)x)); 
+                                                                ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/scan_rtx_address/src/regrename.c:1012:80: error: expected expression
+scan_rtx_address( insn, ( rtx *)x->fld, GENERAL_REGS, action, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)x)); 
+                                                                               ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/scan_rtx_address/src/regrename.c:1018:13: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+op1 = ( rtx)x[1]; 
+            ^~~~
+9 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/scan_rtx_address/src/obj/regrename.o] Error 1

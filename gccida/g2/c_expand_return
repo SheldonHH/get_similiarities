@@ -1,0 +1,20 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/c_expand_return/src/c-typeck.c:7499:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v1; // rbp 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/c_expand_return/src/c-typeck.c:7501:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v3; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/c_expand_return/src/c-typeck.c:7507:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v9; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/c_expand_return/src/c-typeck.c:7539:19: error: expected expression
+if ( ( tree_node *)global_trees != v3 ) 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/c_expand_return/src/c-typeck.c:7539:8: error: use of undeclared identifier 'tree_node'
+if ( ( tree_node *)global_trees != v3 ) 
+       ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/c_expand_return/src/obj/c-typeck.o] Error 1

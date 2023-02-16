@@ -1,0 +1,63 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/assemble_variable/src/varasm.c:1928:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v12; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/assemble_variable/src/varasm.c:1931:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *size_unit; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/assemble_variable/src/varasm.c:1942:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v26; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/assemble_variable/src/varasm.c:1948:1: error: must use 'enum' tag to refer to type 'built_in_function'
+built_in_function f; // r13d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/assemble_variable/src/varasm.c:2040:26: error: expected expression
+if ( v26 != ( tree_node *)global_trees ) 
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/assemble_variable/src/varasm.c:2040:15: error: use of undeclared identifier 'tree_node'
+if ( v26 != ( tree_node *)global_trees ) 
+              ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/assemble_variable/src/varasm.c:2047:34: error: expected expression
+if ( !v12 || v12 == ( tree_node *)global_trees ) 
+                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/assemble_variable/src/varasm.c:2047:23: error: use of undeclared identifier 'tree_node'
+if ( !v12 || v12 == ( tree_node *)global_trees ) 
+                      ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/assemble_variable/src/varasm.c:2065:6: error: use of undeclared identifier 'in_section_0'; did you mean 'in_section'?
+if ( in_section_0 != in_bss ) 
+     ^~~~~~~~~~~~
+     in_section
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/assemble_variable/src/varasm.c:205:3: note: 'in_section' declared here
+} in_section = no_section;
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/assemble_variable/src/varasm.c:2068:1: error: use of undeclared identifier 'in_section_0'; did you mean 'in_section'?
+in_section_0 = in_bss; 
+^~~~~~~~~~~~
+in_section
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/assemble_variable/src/varasm.c:205:3: note: 'in_section' declared here
+} in_section = no_section;
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/assemble_variable/src/varasm.c:2080:15: error: use of undeclared identifier 'off_70902E'
+fprintf( v31, off_70902E, "object"); 
+              ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/assemble_variable/src/varasm.c:2117:19: error: expected expression
+if ( ( tree_node *)global_trees == v12 ) 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/assemble_variable/src/varasm.c:2117:8: error: use of undeclared identifier 'tree_node'
+if ( ( tree_node *)global_trees == v12 ) 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/assemble_variable/src/varasm.c:2129:6: error: use of undeclared identifier 'in_section_0'; did you mean 'in_section'?
+if ( in_section_0 == in_text ) 
+     ^~~~~~~~~~~~
+     in_section
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/assemble_variable/src/varasm.c:205:3: note: 'in_section' declared here
+} in_section = no_section;
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/assemble_variable/src/varasm.c:2140:24: error: use of undeclared identifier 'off_70902E'
+fprintf( asm_out_file, off_70902E, "object"); 
+                       ^
+15 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/assemble_variable/src/obj/varasm.o] Error 1

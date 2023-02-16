@@ -1,0 +1,12 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/push_block/src/expr.c:3585:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v11; // r12d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/push_block/src/expr.c:3589:23: error: use of undeclared identifier 'machine_mode'
+v5 = convert_modes( ( machine_mode)( ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32), ptr_mode, size, 1); 
+                      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/push_block/src/expr.c:3601:26: error: use of undeclared identifier 'machine_mode'
+v5 = copy_to_mode_reg( ( machine_mode)( ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32), v5); 
+                         ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/push_block/src/obj/expr.o] Error 1

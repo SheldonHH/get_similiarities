@@ -1,0 +1,19 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/add_subscript_info/src/dwarf2out.c:9683:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *upper; // [rsp+18h] [rbp-28h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/add_subscript_info/src/dwarf2out.c:9684:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *lower; // [rsp+20h] [rbp-20h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/add_subscript_info/src/dwarf2out.c:9697:22: error: expected expression
+upper = ( tree_node *)domain[7]; 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/add_subscript_info/src/dwarf2out.c:9697:11: error: use of undeclared identifier 'tree_node'
+upper = ( tree_node *)domain[7]; 
+          ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/add_subscript_info/src/dwarf2out.c:9699:16: error: invalid operands to binary expression ('struct rtx_def' and 'int')
+&& ( domain[1] != 6 
+     ~~~~~~~~~ ^  ~
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/add_subscript_info/src/obj/dwarf2out.o] Error 1

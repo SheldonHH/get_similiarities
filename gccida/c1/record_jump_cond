@@ -1,0 +1,69 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/record_jump_cond/src/cse.c:4958:25: error: must use 'enum' tag to refer to type 'rtx_code'
+void  record_jump_cond( rtx_code code, machine_mode mode, rtx op0, rtx op1, int reversed_nonequality) 
+                        ^
+                        enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/record_jump_cond/src/cse.c:4958:40: error: must use 'enum' tag to refer to type 'machine_mode'
+void  record_jump_cond( rtx_code code, machine_mode mode, rtx op0, rtx op1, int reversed_nonequality) 
+                                       ^
+                                       enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/record_jump_cond/src/cse.c:4977:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v25; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/record_jump_cond/src/cse.c:4986:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v34; // edx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/record_jump_cond/src/cse.c:4994:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v42; // r13d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/record_jump_cond/src/cse.c:5019:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v67; // [rsp+8h] [rbp-40h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/record_jump_cond/src/cse.c:5026:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v7.rtwint = ( __int64)op0->fld[0]; 
+                      ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/record_jump_cond/src/cse.c:5030:33: error: use of undeclared identifier 'machine_mode'
+v9 = gen_lowpart_if_possible( ( machine_mode)*( unsigned __int8 *)( v7.rtwint + 2), op1); 
+                                ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/record_jump_cond/src/cse.c:5033:24: error: use of undeclared identifier 'machine_mode'
+v9 = gen_rtx_SUBREG( ( machine_mode)v8, op1, 0); 
+                       ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/record_jump_cond/src/cse.c:5039:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v11.rtwint = ( __int64)op1->fld[0]; 
+                       ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/record_jump_cond/src/cse.c:5043:34: error: use of undeclared identifier 'machine_mode'
+v13 = gen_lowpart_if_possible( ( machine_mode)*( unsigned __int8 *)( v11.rtwint + 2), op0); 
+                                 ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/record_jump_cond/src/cse.c:5046:25: error: use of undeclared identifier 'machine_mode'
+v13 = gen_rtx_SUBREG( ( machine_mode)v12, op0, 0); 
+                        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/record_jump_cond/src/cse.c:5057:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v15.rtwint = ( __int64)op0->fld[0]; 
+                       ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/record_jump_cond/src/cse.c:5061:34: error: use of undeclared identifier 'machine_mode'
+v17 = gen_lowpart_if_possible( ( machine_mode)*( unsigned __int8 *)( v15.rtwint + 2), op1); 
+                                 ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/record_jump_cond/src/cse.c:5064:25: error: use of undeclared identifier 'machine_mode'
+v17 = gen_rtx_SUBREG( ( machine_mode)v16, op1, 0); 
+                        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/record_jump_cond/src/cse.c:5073:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v19.rtwint = ( __int64)op1->fld[0]; 
+                       ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/record_jump_cond/src/cse.c:5077:34: error: use of undeclared identifier 'machine_mode'
+v21 = gen_lowpart_if_possible( ( machine_mode)*( unsigned __int8 *)( v19.rtwint + 2), op0); 
+                                 ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/record_jump_cond/src/cse.c:5080:25: error: use of undeclared identifier 'machine_mode'
+v21 = gen_rtx_SUBREG( ( machine_mode)v20, op0, 0); 
+                        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/record_jump_cond/src/cse.c:5091:55: error: expected ')'
+if ( rtuint != cached_regno || (  struct cse_reg_info = cached_cse_reg_info) == 0LL ) 
+                                                      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/record_jump_cond/src/cse.c:5091:32: note: to match this '('
+if ( rtuint != cached_regno || (  struct cse_reg_info = cached_cse_reg_info) == 0LL ) 
+                               ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/record_jump_cond/src/obj/cse.o] Error 1

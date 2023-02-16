@@ -1,0 +1,22 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/add_subscript_info/src/dwarf2out.c:9688:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *rttree; // r13 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/add_subscript_info/src/dwarf2out.c:9689:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v8; // r12 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/add_subscript_info/src/dwarf2out.c:9701:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v6.rtwint = ( __int64)rtl->fld[0]; 
+                      ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/add_subscript_info/src/dwarf2out.c:9703:19: error: expected expression
+v8 = ( tree_node *)rtl[7]; 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/add_subscript_info/src/dwarf2out.c:9703:8: error: use of undeclared identifier 'tree_node'
+v8 = ( tree_node *)rtl[7]; 
+       ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/add_subscript_info/src/dwarf2out.c:9705:13: error: invalid operands to binary expression ('struct rtx_def' and 'int')
+&& ( rtl[1] != 6 || *( _QWORD *)&rtl[6] || *( _BYTE *)( v6.rtwint + 16) != 6 || *( _QWORD *)( v6.rtwint + 96)) ) 
+     ~~~~~~ ^  ~
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/add_subscript_info/src/obj/dwarf2out.o] Error 1

@@ -1,0 +1,27 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/express_from_1/src/loop.c:7470:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v4; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/express_from_1/src/loop.c:7490:12: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+oa = ( rtx)aa[1]; 
+           ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/express_from_1/src/loop.c:7493:12: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+ra = ( rtx)aa[1]; 
+           ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/express_from_1/src/loop.c:7497:26: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+ob = (  struct rtx_def *)ba[1]; 
+                         ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/express_from_1/src/loop.c:7500:12: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+rb = ( rtx)ba[1]; 
+           ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/express_from_1/src/loop.c:7514:32: error: use of undeclared identifier 'machine_mode'
+return gen_rtx_fmt_ee( PLUS, ( machine_mode)*( ( unsigned __int8 *)ba + 2), rb, oba); 
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/express_from_1/src/loop.c:7530:14: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+oa_0 = ( rtx)aa[1]; 
+             ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/express_from_1/src/loop.c:7567:14: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+return ( rtx)ba[1]; 
+             ^~~~~
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/express_from_1/src/obj/loop.o] Error 1

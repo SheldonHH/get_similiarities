@@ -1,0 +1,81 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ht_dump_statistics/src/hashtable.c:704:7: error: conflicting types for 'ht_dump_statistics'
+void  ht_dump_statistics(  struct hash_table *table) 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ht_dump_statistics/src/hashtable.h:84:13: note: previous declaration is here
+extern void ht_dump_statistics PARAMS ((hash_table *));
+            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ht_dump_statistics/src/hashtable.c:745:10: error: incomplete definition of type 'struct hash_table'
+p = table->entries; 
+    ~~~~~^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ht_dump_statistics/src/hashtable.c:704:35: note: forward declaration of 'struct hash_table'
+void  ht_dump_statistics(  struct hash_table *table) 
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ht_dump_statistics/src/hashtable.c:746:17: error: incomplete definition of type 'struct hash_table'
+limit = &p[table->nslots]; 
+           ~~~~~^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ht_dump_statistics/src/hashtable.c:704:35: note: forward declaration of 'struct hash_table'
+void  ht_dump_statistics(  struct hash_table *table) 
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ht_dump_statistics/src/hashtable.c:761:15: error: incomplete definition of type 'struct hash_table'
+nelts = tablea->nelements; 
+        ~~~~~~^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ht_dump_statistics/src/hashtable.c:704:35: note: forward declaration of 'struct hash_table'
+void  ht_dump_statistics(  struct hash_table *table) 
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ht_dump_statistics/src/hashtable.c:762:41: error: incomplete definition of type 'struct hash_table'
+overhead = _obstack_memory_used( &tablea->stack) - total_bytes; 
+                                  ~~~~~~^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ht_dump_statistics/src/hashtable.c:704:35: note: forward declaration of 'struct hash_table'
+void  ht_dump_statistics(  struct hash_table *table) 
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ht_dump_statistics/src/hashtable.c:763:23: error: incomplete definition of type 'struct hash_table'
+headers = 8LL * tablea->nslots; 
+                ~~~~~~^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ht_dump_statistics/src/hashtable.c:704:35: note: forward declaration of 'struct hash_table'
+void  ht_dump_statistics(  struct hash_table *table) 
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ht_dump_statistics/src/hashtable.c:765:48: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'size_t' (aka 'unsigned long') of different size
+v1 = _mm_sub_pd( ( __m128d)_mm_unpacklo_epi32( ( __m128i)nids, ( __m128i)xmm*(short *)0x8021E0), ( __m128d)xmm*(short *)0x8021F0); 
+                                               ^~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ht_dump_statistics/src/hashtable.c:765:74: error: use of undeclared identifier 'xmm'
+v1 = _mm_sub_pd( ( __m128d)_mm_unpacklo_epi32( ( __m128i)nids, ( __m128i)xmm*(short *)0x8021E0), ( __m128d)xmm*(short *)0x8021F0); 
+                                                                         ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ht_dump_statistics/src/hashtable.c:765:108: error: use of undeclared identifier 'xmm'
+v1 = _mm_sub_pd( ( __m128d)_mm_unpacklo_epi32( ( __m128i)nids, ( __m128i)xmm*(short *)0x8021E0), ( __m128d)xmm*(short *)0x8021F0); 
+                                                                                                           ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ht_dump_statistics/src/hashtable.c:767:85: error: use of undeclared identifier 'xmm'
+( __m128d)_mm_unpacklo_epi32( _mm_loadl_epi64( ( const __m128i *)&nelts), ( __m128i)xmm*(short *)0x8021E0), 
+                                                                                    ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ht_dump_statistics/src/hashtable.c:768:11: error: use of undeclared identifier 'xmm'
+( __m128d)xmm*(short *)0x8021F0); 
+          ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ht_dump_statistics/src/hashtable.c:773:27: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+( _mm_unpackhi_pd( v1, v1).m128d_f64[0] + v1.m128d_f64[0]) 
+  ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ht_dump_statistics/src/hashtable.c:773:45: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+( _mm_unpackhi_pd( v1, v1).m128d_f64[0] + v1.m128d_f64[0]) 
+                                          ~~^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ht_dump_statistics/src/hashtable.c:775:29: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+/ ( _mm_unpackhi_pd( v2, v2).m128d_f64[0] + v2.m128d_f64[0])); 
+    ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ht_dump_statistics/src/hashtable.c:775:47: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+/ ( _mm_unpackhi_pd( v2, v2).m128d_f64[0] + v2.m128d_f64[0])); 
+                                            ~~^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ht_dump_statistics/src/hashtable.c:776:42: error: incomplete definition of type 'struct hash_table'
+fprintf( stderr, "slots\t\t%lu\n", tablea->nslots); 
+                                   ~~~~~~^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ht_dump_statistics/src/hashtable.c:704:35: note: forward declaration of 'struct hash_table'
+void  ht_dump_statistics(  struct hash_table *table) 
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ht_dump_statistics/src/hashtable.c:849:91: error: use of undeclared identifier 'xmm'
+( __m128d)_mm_unpacklo_epi32( _mm_loadl_epi64( ( const __m128i *)&total_bytes), ( __m128i)xmm*(short *)0x8021E0), 
+                                                                                          ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ht_dump_statistics/src/hashtable.c:850:11: error: use of undeclared identifier 'xmm'
+( __m128d)xmm*(short *)0x8021F0); 
+          ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ht_dump_statistics/src/hashtable.c:852:85: error: use of undeclared identifier 'xmm'
+( __m128d)_mm_unpacklo_epi32( _mm_loadl_epi64( ( const __m128i *)&nelts), ( __m128i)xmm*(short *)0x8021E0), 
+                                                                                    ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ht_dump_statistics/src/obj/hashtable.o] Error 1

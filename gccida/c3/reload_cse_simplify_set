@@ -1,0 +1,41 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/reload_cse_simplify_set/src/reload1.c:8680:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class class2; // [rsp+Ch] [rbp-3Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/reload_cse_simplify_set/src/reload1.c:8687:26: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v5 = (  struct rtx_def *)set[1]; 
+                         ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/reload_cse_simplify_set/src/reload1.c:8696:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)BYTE2( v7), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/reload_cse_simplify_set/src/reload1.c:8697:17: error: expected expression
+*( ( reg_class *)&regclass_map + v5->fld[0].rtuint), 
+                ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/reload_cse_simplify_set/src/reload1.c:8697:6: error: use of undeclared identifier 'reg_class'; did you mean 'regclass'?
+*( ( reg_class *)&regclass_map + v5->fld[0].rtuint), 
+     ^~~~~~~~~
+     regclass
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/reload_cse_simplify_set/src/rtl.h:1970:13: note: 'regclass' declared here
+extern void regclass                    PARAMS ((rtx, int, FILE *));
+            ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/reload_cse_simplify_set/src/reload1.c:8701:31: error: use of undeclared identifier 'machine_mode'
+v8 = ix86_memory_move_cost( ( machine_mode)BYTE2( v7), class2, 1); 
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/reload_cse_simplify_set/src/reload1.c:8709:28: error: use of undeclared identifier 'machine_mode'
+v10 = cselib_lookup( v5, ( machine_mode)*( unsigned __int8 *)( set->fld[0].rtwint + 2), 0); 
+                           ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/reload_cse_simplify_set/src/reload1.c:8738:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)BYTE2( v15), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/reload_cse_simplify_set/src/reload1.c:8739:17: error: expected expression
+*( ( reg_class *)&regclass_map + loc->fld[0].rtuint), 
+                ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/reload_cse_simplify_set/src/reload1.c:8739:6: error: use of undeclared identifier 'reg_class'; did you mean 'regclass'?
+*( ( reg_class *)&regclass_map + loc->fld[0].rtuint), 
+     ^~~~~~~~~
+     regclass
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/reload_cse_simplify_set/src/rtl.h:1970:13: note: 'regclass' declared here
+extern void regclass                    PARAMS ((rtx, int, FILE *));
+            ^
+10 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/reload_cse_simplify_set/src/obj/reload1.o] Error 1

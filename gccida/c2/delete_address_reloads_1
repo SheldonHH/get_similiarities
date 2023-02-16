@@ -1,0 +1,56 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/delete_address_reloads_1/src/reload1.c:8266:32: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( i = ( unsigned __int16 *)dead_insn[1]; i; i = ( unsigned __int16 *)*( ( _QWORD *)i + 2) ) 
+                               ^~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/delete_address_reloads_1/src/reload1.c:8273:30: error: expected expression
+if ( reg_set_p( x, *( ( rtx *)i + 4)) ) 
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/delete_address_reloads_1/src/reload1.c:8277:13: error: invalid operands to binary expression ('struct rtx_def *' and 'uint64 *' (aka 'unsigned long long *'))
+v14 = ( rtx)*( ( _QWORD *)i + 4); 
+      ~~~~~~^~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/delete_address_reloads_1/src/reload1.c:8279:27: error: expected ')'
+v14 = single_set_2( ( rtx)i, *( ( rtx *)i + 4)); 
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/delete_address_reloads_1/src/reload1.c:8279:19: note: to match this '('
+v14 = single_set_2( ( rtx)i, *( ( rtx *)i + 4)); 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/delete_address_reloads_1/src/reload1.c:8288:31: error: expected expression
+if ( !reg_set_p( rtx, *( rtx *)&dead_insn[2]) ) 
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/delete_address_reloads_1/src/reload1.c:8299:39: error: expected expression
+if ( reg_referenced_p( v16, *( ( rtx *)j + 4)) ) 
+                                      ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/delete_address_reloads_1/src/reload1.c:8308:22: error: use of undeclared identifier 'byte_9FE5BF'
+if ( *v23 != v16 || !byte_9FE5BF[v24] ) 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/delete_address_reloads_1/src/reload1.c:8338:22: error: use of undeclared identifier 'byte_9FE5BF'
+if ( *v20 != v16 || !byte_9FE5BF[v19] ) 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/delete_address_reloads_1/src/reload1.c:8348:32: error: expected expression
+if ( reg_set_p( v16, *( ( rtx *)j + 4)) ) 
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/delete_address_reloads_1/src/reload1.c:8353:33: error: expected ')'
+delete_address_reloads_1( ( rtx)i, *( rtx *)&v14[1], current_insn); 
+                                ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/delete_address_reloads_1/src/reload1.c:8353:25: note: to match this '('
+delete_address_reloads_1( ( rtx)i, *( rtx *)&v14[1], current_insn); 
+                        ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/delete_address_reloads_1/src/reload1.c:8355:20: error: expected ')'
+delete_insn( ( rtx)i); 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/delete_address_reloads_1/src/reload1.c:8355:12: note: to match this '('
+delete_insn( ( rtx)i); 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/delete_address_reloads_1/src/reload1.c:8362:37: error: expected expression
+if ( reg_referenced_p( x, *( ( rtx *)i + 4)) ) 
+                                    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/delete_address_reloads_1/src/reload1.c:8383:46: error: expected expression
+delete_address_reloads_1( dead_insn, *( rtx *)&v12[2 * v13], current_insn); 
+                                             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/delete_address_reloads_1/src/reload1.c:8387:46: error: expected expression
+delete_address_reloads_1( dead_insn, *( rtx *)( *( ( _QWORD *)x + v8) + 8 * v13-- - 8), current_insn); 
+                                             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/delete_address_reloads_1/src/reload1.c:8394:48: error: expected expression
+delete_address_reloads_1( dead_insn, *( ( rtx *)x + v8), current_insn); 
+                                               ^
+15 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/delete_address_reloads_1/src/obj/reload1.o] Error 1

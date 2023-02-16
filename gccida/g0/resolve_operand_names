@@ -1,0 +1,13 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/resolve_operand_names/src/stmt.c:2532:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *stringa; // [rsp+18h] [rbp-28h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/resolve_operand_names/src/stmt.c:2556:8: error: use of undeclared identifier 'sch_istable'; did you mean '_sch_istable'?
+if ( ( sch_istable[( unsigned __int8)pb[1]] & 0x88) != 0 && pb[2] == 91 ) 
+       ^~~~~~~~~~~
+       _sch_istable
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/resolve_operand_names/src/safe-ctype.h:72:29: note: '_sch_istable' declared here
+extern const unsigned short _sch_istable[256];
+                            ^
+2 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/resolve_operand_names/src/obj/stmt.o] Error 1

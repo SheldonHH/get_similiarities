@@ -1,0 +1,61 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compute_block_backward_dependences/src/sched-rgn.c:3004:1: error: use of undeclared identifier 'deps_0'
+deps_0 deps; // [rsp+10h] [rbp-78h] BYREF 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compute_block_backward_dependences/src/sched-rgn.c:3007:1: error: must use 'struct' tag to refer to type 'deps'
+deps.reg_last_in_use = bb_deps[v1].reg_last_in_use; 
+^
+struct 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compute_block_backward_dependences/src/sched-rgn.c:3007:5: error: expected identifier or '('
+deps.reg_last_in_use = bb_deps[v1].reg_last_in_use; 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compute_block_backward_dependences/src/sched-rgn.c:3008:12: error: expected expression
+*( _OWORD *)&deps.in_post_call_group_p = *( _OWORD *)&bb_deps[v1].in_post_call_group_p; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compute_block_backward_dependences/src/sched-rgn.c:3008:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&deps.in_post_call_group_p = *( _OWORD *)&bb_deps[v1].in_post_call_group_p; 
+   ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compute_block_backward_dependences/src/sched-rgn.c:3008:14: error: use of undeclared identifier 'deps'
+*( _OWORD *)&deps.in_post_call_group_p = *( _OWORD *)&bb_deps[v1].in_post_call_group_p; 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compute_block_backward_dependences/src/sched-rgn.c:3008:53: error: expected expression
+*( _OWORD *)&deps.in_post_call_group_p = *( _OWORD *)&bb_deps[v1].in_post_call_group_p; 
+                                                    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compute_block_backward_dependences/src/sched-rgn.c:3008:45: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&deps.in_post_call_group_p = *( _OWORD *)&bb_deps[v1].in_post_call_group_p; 
+                                            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compute_block_backward_dependences/src/sched-rgn.c:3009:17: error: expected expression
+v2 = *( _OWORD *)&bb_deps[v1].pending_read_insns; 
+                ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compute_block_backward_dependences/src/sched-rgn.c:3009:9: error: use of undeclared identifier '_OWORD'
+v2 = *( _OWORD *)&bb_deps[v1].pending_read_insns; 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compute_block_backward_dependences/src/sched-rgn.c:3010:17: error: expected expression
+v3 = *( _OWORD *)&bb_deps[v1].pending_write_insns; 
+                ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compute_block_backward_dependences/src/sched-rgn.c:3010:9: error: use of undeclared identifier '_OWORD'
+v3 = *( _OWORD *)&bb_deps[v1].pending_write_insns; 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compute_block_backward_dependences/src/sched-rgn.c:3011:17: error: expected expression
+v4 = *( _OWORD *)&bb_deps[v1].pending_lists_length; 
+                ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compute_block_backward_dependences/src/sched-rgn.c:3011:9: error: use of undeclared identifier '_OWORD'
+v4 = *( _OWORD *)&bb_deps[v1].pending_lists_length; 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compute_block_backward_dependences/src/sched-rgn.c:3012:12: error: expected expression
+*( _OWORD *)&deps.last_function_call = *( _OWORD *)&bb_deps[v1].last_function_call; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compute_block_backward_dependences/src/sched-rgn.c:3012:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&deps.last_function_call = *( _OWORD *)&bb_deps[v1].last_function_call; 
+   ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compute_block_backward_dependences/src/sched-rgn.c:3012:14: error: use of undeclared identifier 'deps'
+*( _OWORD *)&deps.last_function_call = *( _OWORD *)&bb_deps[v1].last_function_call; 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compute_block_backward_dependences/src/sched-rgn.c:3012:51: error: expected expression
+*( _OWORD *)&deps.last_function_call = *( _OWORD *)&bb_deps[v1].last_function_call; 
+                                                  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compute_block_backward_dependences/src/sched-rgn.c:3012:43: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&deps.last_function_call = *( _OWORD *)&bb_deps[v1].last_function_call; 
+                                          ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compute_block_backward_dependences/src/obj/sched-rgn.o] Error 1

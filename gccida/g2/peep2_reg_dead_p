@@ -1,0 +1,23 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/peep2_reg_dead_p/src/recog.c:3373:7: error: use of undeclared identifier 'peep2_insn_data_0'; did you mean 'peep2_insn_data'?
+if ( !peep2_insn_data_0[v2].insn ) 
+      ^~~~~~~~~~~~~~~~~
+      peep2_insn_data
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/peep2_reg_dead_p/src/recog.c:2841:31: note: 'peep2_insn_data' declared here
+static struct peep2_insn_data peep2_insn_data[MAX_INSNS_PER_PEEP2 + 1];
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/peep2_reg_dead_p/src/recog.c:3379:25: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v6 = ( ( unsigned int)( mode_class_0[v4] - 5) < 2) + 1; 
+                        ^~~~~~~~~~~~
+                        mode_class
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/peep2_reg_dead_p/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/peep2_reg_dead_p/src/recog.c:3406:24: error: use of undeclared identifier 'peep2_insn_data_0'; did you mean 'peep2_insn_data'?
+while ( !bitmap_bit_p( peep2_insn_data_0[v2].live_before, v9) ); 
+                       ^~~~~~~~~~~~~~~~~
+                       peep2_insn_data
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/peep2_reg_dead_p/src/recog.c:2841:31: note: 'peep2_insn_data' declared here
+static struct peep2_insn_data peep2_insn_data[MAX_INSNS_PER_PEEP2 + 1];
+                              ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/peep2_reg_dead_p/src/obj/recog.o] Error 1

@@ -1,0 +1,42 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_free_reg/src/local-alloc.c:2648:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class a1, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_free_reg/src/local-alloc.c:2649:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_free_reg/src/local-alloc.c:2674:46: error: use of undeclared identifier 'qty_0'
+if ( ( *( ( _BYTE *)cfun + 425) & 1) != 0 && qty_0[qtyno].n_calls_crossed > 0 ) 
+                                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_free_reg/src/local-alloc.c:2680:11: error: use of undeclared identifier 'qty_0'
+else if ( qty_0[qtyno].n_calls_crossed ) 
+          ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_free_reg/src/local-alloc.c:2694:14: error: use of undeclared identifier 'eliminables_0'
+v9 |= 1LL << eliminables_0[i].from; 
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_free_reg/src/local-alloc.c:2735:7: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v13 = mode_class_0[mode] == MODE_COMPLEX_INT || mode_class_0[mode] == MODE_COMPLEX_FLOAT ? 2 : 1; 
+      ^~~~~~~~~~~~
+      mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_free_reg/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_free_reg/src/local-alloc.c:2735:49: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v13 = mode_class_0[mode] == MODE_COMPLEX_INT || mode_class_0[mode] == MODE_COMPLEX_FLOAT ? 2 : 1; 
+                                                ^~~~~~~~~~~~
+                                                mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_free_reg/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_free_reg/src/local-alloc.c:2755:5: error: use of undeclared identifier 'qty_0'
+|| !qty_0[qtyno].n_calls_crossed 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_free_reg/src/local-alloc.c:2756:8: error: use of undeclared identifier 'qty_0'
+|| 4 * qty_0[qtyno].n_calls_crossed >= qty_0[qtyno].n_refs ) 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_free_reg/src/local-alloc.c:2756:40: error: use of undeclared identifier 'qty_0'
+|| 4 * qty_0[qtyno].n_calls_crossed >= qty_0[qtyno].n_refs ) 
+                                       ^
+10 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_free_reg/src/obj/local-alloc.o] Error 1

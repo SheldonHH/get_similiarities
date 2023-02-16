@@ -1,0 +1,82 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_decl/src/stmt.c:4331:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode supercontext_low; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_decl/src/stmt.c:4332:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v6; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_decl/src/stmt.c:4333:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v7; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_decl/src/stmt.c:4345:1: error: must use 'enum' tag to refer to type 'built_in_function'
+built_in_function v19; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_decl/src/stmt.c:4346:4: error: expected ';' after expression
+rtx v20; // rbx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_decl/src/stmt.c:4346:5: error: use of undeclared identifier 'v20'
+rtx v20; // rbx 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_decl/src/stmt.c:4354:1: error: must use 'enum' tag to refer to type 'built_in_function'
+built_in_function f; // edx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_decl/src/stmt.c:4356:4: error: expected ';' after expression
+rtx v30; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_decl/src/stmt.c:4356:5: error: use of undeclared identifier 'v30'; did you mean 'v10'?
+rtx v30; // rax 
+    ^~~
+    v10
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_decl/src/stmt.c:4336:18: note: 'v10' declared here
+ struct rtx_def *v10; // rdi 
+                 ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_decl/src/stmt.c:4358:4: error: expected ';' after expression
+rtx v32; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_decl/src/stmt.c:4358:5: error: use of undeclared identifier 'v32'
+rtx v32; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_decl/src/stmt.c:4361:1: error: must use 'enum' tag to refer to type 'built_in_function'
+built_in_function v35; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_decl/src/stmt.c:4363:4: error: expected ';' after expression
+rtx v37; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_decl/src/stmt.c:4363:5: error: use of undeclared identifier 'v37'
+rtx v37; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_decl/src/stmt.c:4441:1: error: use of undeclared identifier 'v37'
+v37 = decl->decl.rtl; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_decl/src/stmt.c:4442:7: error: use of undeclared identifier 'v37'
+if ( !v37 ) 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_decl/src/stmt.c:4445:1: error: use of undeclared identifier 'v37'
+v37 = decl->decl.rtl; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_decl/src/stmt.c:4447:60: error: use of undeclared identifier 'v37'; did you mean 'v31'?
+*( _QWORD *)( v36 + 8LL * *( unsigned int *)( *( _QWORD *)&v37[1] + 8LL)) = decl; 
+                                                           ^~~
+                                                           v31
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_decl/src/stmt.c:4357:18: note: 'v31' declared here
+ struct rtx_def *v31; // rbx 
+                 ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_decl/src/stmt.c:4466:20: error: use of undeclared identifier 'save_level'; did you mean 'save_expr'?
+emit_stack_save( ( save_level)( *( _QWORD *)( v23 + 8) == 0LL), ( rtx *)( v23 + 40), *( rtx *)( v23 + 48)); 
+                   ^~~~~~~~~~
+                   save_expr
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_decl/src/tree.h:2528:13: note: 'save_expr' declared here
+extern tree save_expr                   PARAMS ((tree));
+            ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_decl/src/obj/stmt.o] Error 1

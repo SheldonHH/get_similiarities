@@ -1,0 +1,32 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/c_expand_return/src/c-typeck.c:7499:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v1; // r14 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/c_expand_return/src/c-typeck.c:7501:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v3; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/c_expand_return/src/c-typeck.c:7506:14: error: expected expression
+tree_int_cst::$A887AD9C3C6C8CC7716950D571F57C9D *p_int_cst; // rcx 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/c_expand_return/src/c-typeck.c:7512:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v15; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/c_expand_return/src/c-typeck.c:7543:25: error: expected expression
+if ( v3 == ( tree_node *)global_trees ) 
+                        ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/c_expand_return/src/c-typeck.c:7543:14: error: use of undeclared identifier 'tree_node'
+if ( v3 == ( tree_node *)global_trees ) 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/c_expand_return/src/c-typeck.c:7573:1: error: use of undeclared identifier 'p_int_cst'
+p_int_cst = &elements->int_cst.int_cst; 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/c_expand_return/src/c-typeck.c:7575:19: error: use of undeclared identifier 'p_int_cst'
+elements = ( tree)p_int_cst->low; 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/c_expand_return/src/c-typeck.c:7581:1: error: use of undeclared identifier 'p_int_cst'
+p_int_cst = &elements->int_cst.int_cst; 
+^
+9 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/c_expand_return/src/obj/c-typeck.o] Error 1

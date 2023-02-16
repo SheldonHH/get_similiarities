@@ -1,0 +1,15 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/alter_reg/src/reload1.c:2422:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // [rsp+38h] [rbp-8h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/alter_reg/src/reload1.c:2445:27: error: use of undeclared identifier 'machine_mode'
+x = assign_stack_local( ( machine_mode)*( ( unsigned __int8 *)cfun->emit->x_regno_reg_rtx[i] + 2), v3, v4); 
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/alter_reg/src/reload1.c:2473:1: error: statement requires expression of scalar type ('struct rtx_def' invalid)
+if ( spill_stack_slot[from_reg][1] ) 
+^    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/alter_reg/src/reload1.c:2487:29: error: use of undeclared identifier 'machine_mode'
+xa = adjust_address_1( x, ( machine_mode)*( ( unsigned __int8 *)cfun->emit->x_regno_reg_rtx[i] + 2), 0LL, 0, 1); 
+                            ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/alter_reg/src/obj/reload1.o] Error 1

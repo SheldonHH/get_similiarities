@@ -1,0 +1,52 @@
+/data/output_dir/patch/gobmk/ida/gcc/O0/gobmk-gcc-O0/dump_stack/src/engine/board.c:1250:14: error: expected ';' at end of declaration
+void *__ptr32 *v1; // rsi 
+             ^
+             ;
+/data/output_dir/patch/gobmk/ida/gcc/O0/gobmk-gcc-O0/dump_stack/src/engine/board.c:1251:7: error: redefinition of '__ptr32'
+void *__ptr32 *v2; // rcx 
+      ^
+/data/output_dir/patch/gobmk/ida/gcc/O0/gobmk-gcc-O0/dump_stack/src/engine/board.c:1250:7: note: previous definition is here
+void *__ptr32 *v1; // rsi 
+      ^
+/data/output_dir/patch/gobmk/ida/gcc/O0/gobmk-gcc-O0/dump_stack/src/engine/board.c:1251:14: error: expected ';' at end of declaration
+void *__ptr32 *v2; // rcx 
+             ^
+             ;
+/data/output_dir/patch/gobmk/ida/gcc/O0/gobmk-gcc-O0/dump_stack/src/engine/board.c:1257:1: error: use of undeclared identifier 'v2'
+v2 = &off_4DA70C; 
+^
+/data/output_dir/patch/gobmk/ida/gcc/O0/gobmk-gcc-O0/dump_stack/src/engine/board.c:1257:7: error: use of undeclared identifier 'off_4DA70C'
+v2 = &off_4DA70C; 
+      ^
+/data/output_dir/patch/gobmk/ida/gcc/O0/gobmk-gcc-O0/dump_stack/src/engine/board.c:1259:1: error: use of undeclared identifier 'v2'
+v2 = &off_4DA70C + 2; 
+^
+/data/output_dir/patch/gobmk/ida/gcc/O0/gobmk-gcc-O0/dump_stack/src/engine/board.c:1259:7: error: use of undeclared identifier 'off_4DA70C'
+v2 = &off_4DA70C + 2; 
+      ^
+/data/output_dir/patch/gobmk/ida/gcc/O0/gobmk-gcc-O0/dump_stack/src/engine/board.c:1260:1: error: use of undeclared identifier 'v1'
+v1 = v2; 
+^
+/data/output_dir/patch/gobmk/ida/gcc/O0/gobmk-gcc-O0/dump_stack/src/engine/board.c:1260:6: error: use of undeclared identifier 'v2'
+v1 = v2; 
+     ^
+/data/output_dir/patch/gobmk/ida/gcc/O0/gobmk-gcc-O0/dump_stack/src/engine/board.c:1261:23: error: use of undeclared identifier 'v2'
+gprintf( "%o%s:%1m ", v2, ( const char *)( unsigned int)stack[n]); 
+                      ^
+/data/output_dir/patch/gobmk/ida/gcc/O0/gobmk-gcc-O0/dump_stack/src/engine/board.c:1265:1: error: use of undeclared identifier 'v1'
+v1 = ( void *__ptr32 *)( unsigned int)( count_variations - 1); 
+^
+/data/output_dir/patch/gobmk/ida/gcc/O0/gobmk-gcc-O0/dump_stack/src/engine/board.c:1265:14: error: expected ')'
+v1 = ( void *__ptr32 *)( unsigned int)( count_variations - 1); 
+             ^
+/data/output_dir/patch/gobmk/ida/gcc/O0/gobmk-gcc-O0/dump_stack/src/engine/board.c:1265:6: note: to match this '('
+v1 = ( void *__ptr32 *)( unsigned int)( count_variations - 1); 
+     ^
+/data/output_dir/patch/gobmk/ida/gcc/O0/gobmk-gcc-O0/dump_stack/src/engine/board.c:1266:32: error: use of undeclared identifier 'v1'
+gprintf( "%o ( variation %d)", v1, v0); 
+                               ^
+/data/output_dir/patch/gobmk/ida/gcc/O0/gobmk-gcc-O0/dump_stack/src/engine/board.c:1268:18: error: use of undeclared identifier 'v1'
+gprintf( "%o\n", v1); 
+                 ^
+14 errors generated.
+make: *** [/data/output_dir/patch/gobmk/ida/gcc/O0/gobmk-gcc-O0/dump_stack/src/obj/1/board.o] Error 1

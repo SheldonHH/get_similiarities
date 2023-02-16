@@ -1,0 +1,50 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/can_throw_internal/src/except.c:3539:4: error: expected ';' after expression
+rtx reg_note; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/can_throw_internal/src/except.c:3539:5: error: must use 'enum' tag to refer to type 'reg_note'
+rtx reg_note; // rax 
+    ^
+    enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/can_throw_internal/src/except.c:3542:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *type_list; // r14 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/can_throw_internal/src/except.c:3543:1: error: must use 'enum' tag to refer to type 'reachable_code'
+reachable_code level; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/can_throw_internal/src/except.c:3551:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v3 = ( __int64)insn[2]; 
+               ^~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/can_throw_internal/src/except.c:3554:14: error: expected expression
+v2 = *( rtx *)( *( _QWORD *)( v3 + 8) + 8LL); 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/can_throw_internal/src/except.c:3560:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v4 = ( __int64)v2[2]; 
+               ^~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/can_throw_internal/src/except.c:3571:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v4 = ( __int64)v2[2]; 
+               ^~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/can_throw_internal/src/except.c:3586:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v4 = ( __int64)v2[2]; 
+               ^~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/can_throw_internal/src/except.c:3609:1: error: must use 'enum' tag to refer to type 'reg_note'
+reg_note = find_reg_note( v2, REG_EH_REGION, 0LL); 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/can_throw_internal/src/except.c:3609:10: error: expected identifier or '('
+reg_note = find_reg_note( v2, REG_EH_REGION, 0LL); 
+         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/can_throw_internal/src/except.c:3610:6: error: use of undeclared identifier 'reg_note'; did you mean 'reg_names'?
+if ( reg_note ) 
+     ^~~~~~~~
+     reg_names
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/can_throw_internal/src/hard-reg-set.h:485:21: note: 'reg_names' declared here
+extern const char * reg_names[FIRST_PSEUDO_REGISTER];
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/can_throw_internal/src/except.c:3612:21: error: use of undeclared identifier 'reg_note'
+v10 = *( _QWORD *)( reg_note->fld[0].rtwint + 8); 
+                    ^
+13 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/can_throw_internal/src/obj/except.o] Error 1

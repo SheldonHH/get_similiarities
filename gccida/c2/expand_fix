@@ -1,0 +1,77 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_fix/src/optabs.c:4821:1: error: unknown type name 'optab_0'; did you mean 'optab'?
+optab_0 v3; // r8 
+^~~~~~~
+optab
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_fix/src/optabs.h:48:5: note: 'optab' declared here
+} * optab;
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_fix/src/optabs.c:4828:7: error: expected expression
+optab::$B50C8071A5A789E219D5EDC319094081 *v12; // rdi 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_fix/src/optabs.c:4847:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v31; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_fix/src/optabs.c:4853:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v37; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_fix/src/optabs.c:4889:1: error: use of undeclared identifier 'v12'
+v12 = &optab_table[17]->handlers[v10]; 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_fix/src/optabs.c:4896:21: error: expected expression
+v17 = *( insn_code *)( ( char *)&fixtrunctab[0][0][v9] + v16); 
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_fix/src/optabs.c:4896:10: error: use of undeclared identifier 'insn_code'
+v17 = *( insn_code *)( ( char *)&fixtrunctab[0][0][v9] + v16); 
+         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_fix/src/optabs.c:4903:6: error: use of undeclared identifier 'v12'
+if ( v12->insn_code != CODE_FOR_nothing ) 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_fix/src/optabs.c:4905:21: error: expected expression
+v17 = *( insn_code *)( ( char *)&fixtab[0][0][v9] + v16); 
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_fix/src/optabs.c:4905:10: error: use of undeclared identifier 'insn_code'
+v17 = *( insn_code *)( ( char *)&fixtab[0][0][v9] + v16); 
+         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_fix/src/optabs.c:4924:26: error: use of undeclared identifier 'machine_mode'
+v45 = convert_to_mode( ( machine_mode)v11, v45, 0); 
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_fix/src/optabs.c:4927:22: error: use of undeclared identifier 'machine_mode'
+v46 = gen_reg_rtx( ( machine_mode)*( ( unsigned __int8 *)v45 + 2)); 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_fix/src/optabs.c:4928:22: error: use of undeclared identifier 'machine_mode'
+v45 = expand_unop( ( machine_mode)*( ( unsigned __int8 *)v45 + 2), optab_table[17], v45, v46, 0); 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_fix/src/optabs.c:4931:22: error: use of undeclared identifier 'machine_mode'
+v55 = gen_reg_rtx( ( machine_mode)v14); 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_fix/src/optabs.c:4932:34: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+emit_unop_insn( v17, v55, v45, ( rtx_code)( 2 * ( operand0 != 0) + 126)); 
+                                 ^~~~~~~~
+                                 rtx_cost
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_fix/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_fix/src/optabs.c:4932:71: error: too few arguments to function call, expected 2, have 1
+emit_unop_insn( v17, v55, v45, ( rtx_code)( 2 * ( operand0 != 0) + 126)); 
+                               ~~~~~~~~~~~                            ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_fix/src/rtl.h:1787:1: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_fix/src/optabs.c:4937:6: error: use of undeclared identifier 'v12'
+if ( v12->insn_code != CODE_FOR_nothing ) 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_fix/src/optabs.c:5072:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)v41 + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_fix/src/optabs.c:5078:24: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+v52 = gen_rtx_fmt_e( ( rtx_code)( 2 * ( unsignedp != 0) + 126), ( machine_mode)*( ( unsigned __int8 *)v41 + 2), v49); 
+                       ^~~~~~~~
+                       rtx_cost
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_fix/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_fix/src/obj/optabs.o] Error 1

@@ -1,0 +1,58 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/simplify_ternary_operation/src/simplify-rtx.c:2822:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/simplify_ternary_operation/src/simplify-rtx.c:2823:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/simplify_ternary_operation/src/simplify-rtx.c:2824:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode op0_mode, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/simplify_ternary_operation/src/simplify-rtx.c:2836:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v16; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/simplify_ternary_operation/src/simplify-rtx.c:2846:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v26; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/simplify_ternary_operation/src/simplify-rtx.c:2858:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v10.rtwint = ( __int64)op1->fld[0]; 
+                       ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/simplify_ternary_operation/src/simplify-rtx.c:2859:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v11.rtwint = ( __int64)op2->fld[0]; 
+                       ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/simplify_ternary_operation/src/simplify-rtx.c:2890:7: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v22 = mode_class_0[mode]; 
+      ^~~~~~~~~~~~
+      mode_class
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/simplify_ternary_operation/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/simplify_ternary_operation/src/simplify-rtx.c:2900:7: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v24 = mode_class_0[mode]; 
+      ^~~~~~~~~~~~
+      mode_class
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/simplify_ternary_operation/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/simplify_ternary_operation/src/simplify-rtx.c:2914:40: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+v17 = simplify_relational_operation( ( rtx_code)*( _WORD *)v7, op0_mode, v7->fld[0].rtx, *( rtx *)&v7[1]); 
+                                       ^~~~~~~~
+                                       rtx_cost
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/simplify_ternary_operation/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/simplify_ternary_operation/src/simplify-rtx.c:2914:49: error: invalid operands to binary expression ('int (rtx, enum rtx_code)' (aka 'int (struct rtx_def *, enum rtx_code)') and 'uint16 *' (aka 'unsigned short *'))
+v17 = simplify_relational_operation( ( rtx_code)*( _WORD *)v7, op0_mode, v7->fld[0].rtx, *( rtx *)&v7[1]); 
+                                     ~~~~~~~~~~~^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/simplify_ternary_operation/src/simplify-rtx.c:2932:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v20.rtwint = ( __int64)v6->fld[0]; 
+                       ^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/simplify_ternary_operation/src/simplify-rtx.c:2933:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v21.rtwint = ( __int64)op2->fld[0]; 
+                       ^~~~~~~~~~~
+13 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/simplify_ternary_operation/src/obj/simplify-rtx.o] Error 1

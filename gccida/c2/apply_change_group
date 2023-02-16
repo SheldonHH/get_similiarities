@@ -1,0 +1,61 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/apply_change_group/src/recog.c:788:6: error: use of undeclared identifier 'v9'
+rtx *v9; // rsi 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/apply_change_group/src/recog.c:789:4: error: expected ';' after expression
+rtx v10; // rdx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/apply_change_group/src/recog.c:789:5: error: use of undeclared identifier 'v10'
+rtx v10; // rdx 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/apply_change_group/src/recog.c:796:6: error: use of undeclared identifier 'p_old'
+rtx *p_old; // rdx 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/apply_change_group/src/recog.c:815:31: error: use of undeclared identifier 'machine_mode'
+if ( !legitimate_address_p( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)object), rtx, 0) ) 
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/apply_change_group/src/recog.c:815:46: error: expected expression
+if ( !legitimate_address_p( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)object), rtx, 0) ) 
+                                             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/apply_change_group/src/recog.c:826:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v5 = ( unsigned __int16 *)object[2]; 
+                          ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/apply_change_group/src/recog.c:832:63: error: expected expression
+if ( **( _WORD **)&v7[2 * v8] != 49 || asm_noperands( *( rtx *)&object[2]) >= 0 ) 
+                                                              ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/apply_change_group/src/recog.c:838:1: error: use of undeclared identifier 'v9'
+v9 = ( rtx *)&object[2]; 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/apply_change_group/src/recog.c:838:13: error: expected expression
+v9 = ( rtx *)&object[2]; 
+            ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/apply_change_group/src/recog.c:841:13: error: invalid operands to binary expression ('struct rtx_def *' and 'uint64 *' (aka 'unsigned long long *'))
+v10 = ( rtx)*( ( _QWORD *)v7 + 1); 
+      ~~~~~~^~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/apply_change_group/src/recog.c:841:1: error: use of undeclared identifier 'v10'
+v10 = ( rtx)*( ( _QWORD *)v7 + 1); 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/apply_change_group/src/recog.c:846:1: error: use of undeclared identifier 'v10'
+v10 = gen_rtx_fmt_E( PARALLEL, VOIDmode, v11); 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/apply_change_group/src/recog.c:847:18: error: use of undeclared identifier 'v10'
+rtwint = ( int *)v10->fld[0].rtwint; 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/apply_change_group/src/recog.c:855:18: error: use of undeclared identifier 'v10'
+rtwint = ( int *)v10->fld[0].rtwint; 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/apply_change_group/src/recog.c:859:1: error: use of undeclared identifier 'v9'
+v9 = ( rtx *)&object[2]; 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/apply_change_group/src/recog.c:859:13: error: expected expression
+v9 = ( rtx *)&object[2]; 
+            ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/apply_change_group/src/recog.c:861:26: error: use of undeclared identifier 'v9'
+validate_change( object, v9, v10, 1); 
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/apply_change_group/src/recog.c:861:30: error: use of undeclared identifier 'v10'
+validate_change( object, v9, v10, 1); 
+                             ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/apply_change_group/src/obj/recog.o] Error 1

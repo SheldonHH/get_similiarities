@@ -1,0 +1,35 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_best_addr/src/cse.c:3351:43: error: must use 'enum' tag to refer to type 'machine_mode'
+void  find_best_addr( rtx insn, rtx *loc, machine_mode mode) 
+                                          ^
+                                          enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_best_addr/src/cse.c:3361:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v11; // edx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_best_addr/src/cse.c:3449:26: error: use of undeclared identifier 'machine_mode'
+v9 = canon_hash( addr, ( machine_mode)v10) & 0x1F; 
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_best_addr/src/cse.c:3500:25: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+c = (  struct rtx_def *)( *loc)[1]; 
+                        ^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_best_addr/src/cse.c:3512:42: error: use of undeclared identifier 'machine_mode'
+v15 = canon_hash( ( *loc)->fld[0].rtx, ( machine_mode)v16) & 0x1F; 
+                                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_best_addr/src/cse.c:3517:44: error: use of undeclared identifier 'machine_mode'
+elta = lookup( ( *loc)->fld[0].rtx, v15, ( machine_mode)v17); 
+                                           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_best_addr/src/cse.c:3539:31: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+newa = simplify_gen_binary( ( rtx_code)*( _WORD *)*loc, ( machine_mode)v19, pc->exp, c); 
+                              ^~~~~~~~
+                              rtx_cost
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_best_addr/src/cse.c:825:1: note: 'rtx_cost' declared here
+rtx_cost (x, outer_code)
+^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_best_addr/src/cse.c:3539:40: error: invalid operands to binary expression ('int ()' and 'uint16 *' (aka 'unsigned short *'))
+newa = simplify_gen_binary( ( rtx_code)*( _WORD *)*loc, ( machine_mode)v19, pc->exp, c); 
+                            ~~~~~~~~~~~^~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_best_addr/src/cse.c:3539:59: error: use of undeclared identifier 'machine_mode'
+newa = simplify_gen_binary( ( rtx_code)*( _WORD *)*loc, ( machine_mode)v19, pc->exp, c); 
+                                                          ^
+9 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_best_addr/src/obj/cse.o] Error 1

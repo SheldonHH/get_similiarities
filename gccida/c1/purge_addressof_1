@@ -1,0 +1,68 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/purge_addressof_1/src/function.c:3499:68: error: unknown type name 'hash_table_0'; did you mean 'hash_table'?
+bool  purge_addressof_1( rtx *loc, rtx insn, int force, int store, hash_table_0 *ht) 
+                                                                   ^~~~~~~~~~~~
+                                                                   hash_table
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/purge_addressof_1/src/hashtable.h:40:19: note: 'hash_table' declared here
+typedef struct ht hash_table;
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/purge_addressof_1/src/function.c:3499:7: error: conflicting types for 'purge_addressof_1'
+bool  purge_addressof_1( rtx *loc, rtx insn, int force, int store, hash_table_0 *ht) 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/purge_addressof_1/src/function.c:293:13: note: previous declaration is here
+static bool purge_addressof_1 PARAMS ((rtx *, rtx, int, int,
+            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/purge_addressof_1/src/function.c:3529:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v35; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/purge_addressof_1/src/function.c:3552:6: error: use of undeclared identifier 'v59'
+rtx *v59; // r15 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/purge_addressof_1/src/function.c:3559:6: error: use of undeclared identifier 'v67'
+rtx *v67; // [rsp+18h] [rbp-60h] 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/purge_addressof_1/src/function.c:3578:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v58.rtwint = ( __int64)v10->fld[0]; 
+                       ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/purge_addressof_1/src/function.c:3581:1: error: use of undeclared identifier 'v59'
+v59 = loc; 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/purge_addressof_1/src/function.c:3583:25: error: expected expression
+v61 = copy_rtx( *( rtx *)( v58.rtwint + 8)); 
+                        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/purge_addressof_1/src/function.c:3584:29: error: use of undeclared identifier 'v59'
+if ( !validate_change( v60, v59, v61, 0) && !validate_replace_rtx( v10, v61, v60) ) 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/purge_addressof_1/src/function.c:3588:29: error: use of undeclared identifier 'v59'
+if ( !validate_change( v60, v59, v62, 0) && !validate_replace_rtx( v10, v62, v60) ) 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/purge_addressof_1/src/function.c:3604:33: error: expected expression
+v49 = purge_addressof_1( ( rtx *)v10->fld, v7, force, 1, ht); 
+                                ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/purge_addressof_1/src/function.c:3605:39: error: expected expression
+v11 = v49 & purge_addressof_1( ( rtx *)&v10[1], v7, force, 0, ht); 
+                                      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/purge_addressof_1/src/function.c:3611:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v13.rtwint = ( __int64)v10->fld[0]; 
+                       ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/purge_addressof_1/src/function.c:3621:26: error: use of undeclared identifier 'machine_mode'
+adjust_address_1( v14, ( machine_mode)BYTE2( v12), 0LL, 0, 1); 
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/purge_addressof_1/src/function.c:3632:55: error: expected expression
+for ( i = purge_addressof_replacements; ; i = *( rtx *)( v20 + 16) ) 
+                                                      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/purge_addressof_1/src/function.c:3634:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v18.rtwint = ( __int64)v10->fld[0]; 
+                       ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/purge_addressof_1/src/function.c:3642:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v20 = ( __int64)i[1]; 
+                ^~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/purge_addressof_1/src/function.c:3669:27: error: use of undeclared identifier 'machine_mode'
+if ( int_mode_for_mode( ( machine_mode)BYTE2( v15)) == BLKmode ) 
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/purge_addressof_1/src/function.c:3671:1: error: use of undeclared identifier 'v67'
+v67 = loc; 
+^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/purge_addressof_1/src/obj/function.o] Error 1

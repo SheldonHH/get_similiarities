@@ -1,0 +1,47 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/function_units_used/src/insn-attrtab.c:12084:1: error: must use 'enum' tag to refer to type 'attr_type'
+attr_type attr_type; // [rsp+50h] [rbp-20h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/function_units_used/src/insn-attrtab.c:12085:1: error: must use 'enum' tag to refer to type 'attr_pent_pair'
+attr_pent_pair attr_pent_pair; // [rsp+54h] [rbp-1Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/function_units_used/src/insn-attrtab.c:12086:1: error: must use 'enum' tag to refer to type 'attr_mode'
+attr_mode attr_mode; // [rsp+58h] [rbp-18h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/function_units_used/src/insn-attrtab.c:12087:1: error: must use 'enum' tag to refer to type 'attr_memory'
+attr_memory attr_memory; // [rsp+5Ch] [rbp-14h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/function_units_used/src/insn-attrtab.c:12088:1: error: must use 'enum' tag to refer to type 'attr_athlon_decode'
+attr_athlon_decode attr_athlon_decode; // [rsp+60h] [rbp-10h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/function_units_used/src/insn-attrtab.c:12089:1: error: must use 'enum' tag to refer to type 'attr_athlon_fpunits'
+attr_athlon_fpunits attr_athlon_fpunits; // [rsp+64h] [rbp-Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/function_units_used/src/insn-attrtab.c:12106:20: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+immediate_operand( recog_data_0.operand[1], VOIDmode); 
+                   ^~~~~~~~~~~~
+                   recog_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/function_units_used/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/function_units_used/src/insn-attrtab.c:12134:35: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+&& ( v77 = 1, !immediate_operand( recog_data_0.operand[1], VOIDmode)) 
+                                  ^~~~~~~~~~~~
+                                  recog_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/function_units_used/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/function_units_used/src/insn-attrtab.c:12384:33: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+|| ( v59 = 1, !general_operand( recog_data_0.operand[0], QImode)) ) 
+                                ^~~~~~~~~~~~
+                                recog_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/function_units_used/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+9 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/function_units_used/src/obj/insn-attrtab.o] Error 1

@@ -1,0 +1,21 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/noce_emit_cmove/src/ifcvt.c:1351:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/noce_emit_cmove/src/ifcvt.c:1365:31: error: use of undeclared identifier 'machine_mode'
+v12 = gen_rtx_fmt_ee( code, ( machine_mode)*( ( unsigned __int8 *)if_info->cond + 2), cmp_a, cmp_b); 
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/noce_emit_cmove/src/ifcvt.c:1366:40: error: use of undeclared identifier 'machine_mode'
+v13 = gen_rtx_fmt_eee( IF_THEN_ELSE, ( machine_mode)*( ( unsigned __int8 *)x + 2), v12, vtrue, vfalse); 
+                                       ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/noce_emit_cmove/src/ifcvt.c:1379:32: error: use of undeclared identifier 'machine_mode'
+if ( general_operand( cmp_a, ( machine_mode)*( ( unsigned __int8 *)cmp_a + 2)) 
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/noce_emit_cmove/src/ifcvt.c:1380:30: error: use of undeclared identifier 'machine_mode'
+&& general_operand( cmp_b, ( machine_mode)*( ( unsigned __int8 *)cmp_b + 2)) ) 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/noce_emit_cmove/src/ifcvt.c:1390:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)x + 2), 
+  ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/noce_emit_cmove/src/obj/ifcvt.o] Error 1

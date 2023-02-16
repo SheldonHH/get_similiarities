@@ -1,0 +1,22 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/insns_for_mem_walk/src/function.c:3831:32: error: expected expression
+hash_lookup( *( hash_table_0 **)data, ( *r)->fld[0].rtx, 1, 0LL); 
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/insns_for_mem_walk/src/function.c:3831:17: error: use of undeclared identifier 'hash_table_0'; did you mean 'hash_table_init'?
+hash_lookup( *( hash_table_0 **)data, ( *r)->fld[0].rtx, 1, 0LL); 
+                ^~~~~~~~~~~~
+                hash_table_init
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/insns_for_mem_walk/src/hash.h:69:13: note: 'hash_table_init' declared here
+extern void hash_table_init
+            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/insns_for_mem_walk/src/function.c:3839:71: error: expected expression
+ifme = (  struct insns_for_mem_entry *)hash_lookup( *( hash_table_0 **)data, *r, 0, 0LL); 
+                                                                      ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/insns_for_mem_walk/src/function.c:3839:56: error: use of undeclared identifier 'hash_table_0'; did you mean 'hash_table_init'?
+ifme = (  struct insns_for_mem_entry *)hash_lookup( *( hash_table_0 **)data, *r, 0, 0LL); 
+                                                       ^~~~~~~~~~~~
+                                                       hash_table_init
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/insns_for_mem_walk/src/hash.h:69:13: note: 'hash_table_init' declared here
+extern void hash_table_init
+            ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/insns_for_mem_walk/src/obj/function.o] Error 1

@@ -1,0 +1,30 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/validate_arglist/src/builtins.c:4574:1: error: must use 'enum' tag to refer to type 'tree_code'
+tree_code *overflow_arg_area; // rax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/validate_arglist/src/builtins.c:4576:1: error: must use 'enum' tag to refer to type 'tree_code'
+tree_code code; // [rsp+20h] [rbp-B8h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/validate_arglist/src/builtins.c:4603:34: error: expected expression
+overflow_arg_area = ( tree_code *)ap[0].overflow_arg_area; 
+                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/validate_arglist/src/builtins.c:4603:23: error: use of undeclared identifier 'tree_code'; did you mean 'tree_cons'?
+overflow_arg_area = ( tree_code *)ap[0].overflow_arg_area; 
+                      ^~~~~~~~~
+                      tree_cons
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/validate_arglist/src/tree.h:2477:13: note: 'tree_cons' declared here
+extern tree tree_cons                   PARAMS ((tree, tree, tree));
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/validate_arglist/src/builtins.c:4608:34: error: expected expression
+overflow_arg_area = ( tree_code *)( ( char *)ap[0].reg_save_area + ap[0].gp_offset); 
+                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/validate_arglist/src/builtins.c:4608:23: error: use of undeclared identifier 'tree_code'; did you mean 'tree_cons'?
+overflow_arg_area = ( tree_code *)( ( char *)ap[0].reg_save_area + ap[0].gp_offset); 
+                      ^~~~~~~~~
+                      tree_cons
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/validate_arglist/src/tree.h:2477:13: note: 'tree_cons' declared here
+extern tree tree_cons                   PARAMS ((tree, tree, tree));
+            ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/validate_arglist/src/obj/builtins.o] Error 1

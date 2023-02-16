@@ -1,0 +1,78 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_store_flag/src/expmed.c:4697:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_store_flag/src/expmed.c:4700:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_store_flag/src/expmed.c:4707:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v10; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_store_flag/src/expmed.c:4708:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v11; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_store_flag/src/expmed.c:4709:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v12; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_store_flag/src/expmed.c:4713:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v16; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_store_flag/src/expmed.c:4726:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode target_mode; // [rsp+FCh] [rbp-44h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_store_flag/src/expmed.c:4727:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode compare_mode; // [rsp+100h] [rbp-40h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_store_flag/src/expmed.c:4728:1: error: must use 'enum' tag to refer to type 'insn_code'
+insn_code icode; // [rsp+104h] [rbp-3Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_store_flag/src/expmed.c:4736:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code codea; // [rsp+12Ch] [rbp-14h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_store_flag/src/expmed.c:4745:6: error: use of undeclared identifier 'QTextBlock'
+if ( QTextBlock::operator<( op0a, op1a) ) 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_store_flag/src/expmed.c:4805:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& mode_class_0[mode] == MODE_INT 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_store_flag/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_store_flag/src/expmed.c:4811:33: error: invalid suffix 'xmode' on integer constant
+op0h = gen_highpart( *(short *)0xmode, op0a); 
+                                ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_store_flag/src/expmed.c:4812:32: error: invalid suffix 'xmode' on integer constant
+op0l = gen_lowpart( *(short *)0xmode, op0a); 
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_store_flag/src/expmed.c:4813:36: error: invalid suffix 'xmode' on integer constant
+op0both = expand_binop( *(short *)0xmode, optab_table[19], op0h, op0l, 0LL, unsignedp, OPTAB_DIRECT); 
+                                   ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_store_flag/src/expmed.c:4815:66: error: invalid suffix 'xmode' on integer constant
+return emit_store_flag( target, codea, op0both, op1a, *(short *)0xmode, unsignedp, normalizep); 
+                                                                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_store_flag/src/expmed.c:4819:31: error: invalid suffix 'xmode' on integer constant
+v8 = gen_highpart( *(short *)0xmode, op0a); 
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_store_flag/src/expmed.c:4820:61: error: invalid suffix 'xmode' on integer constant
+return emit_store_flag( target, codea, v8, op1a, *(short *)0xmode, unsignedp, normalizep); 
+                                                            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_store_flag/src/expmed.c:4824:68: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( op1a == const_int_rtx[64] && ( codea == LT || codea == GE) && mode_class_0[mode] == MODE_INT ) 
+                                                                   ^~~~~~~~~~~~
+                                                                   mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_store_flag/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_store_flag/src/obj/expmed.o] Error 1

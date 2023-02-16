@@ -1,0 +1,27 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/convert_to_mode/src/expr.c:1719:23: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  convert_to_mode( machine_mode mode, rtx x, int unsignedp) 
+                      ^
+                      enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/convert_to_mode/src/expr.c:1749:21: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( *( ( _DWORD *)&mode_class_0 + ( int)mode) != 1 ) 
+                    ^~~~~~~~~~~~
+                    mode_class
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/convert_to_mode/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/convert_to_mode/src/expr.c:1774:21: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( *( ( _DWORD *)&mode_class_0 + ( int)mode) != 1 ) 
+                    ^~~~~~~~~~~~
+                    mode_class
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/convert_to_mode/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/convert_to_mode/src/expr.c:1778:21: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( *( ( _DWORD *)&mode_class_0 + v5) == 1 
+                    ^~~~~~~~~~~~
+                    mode_class
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/convert_to_mode/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/convert_to_mode/src/obj/expr.o] Error 1

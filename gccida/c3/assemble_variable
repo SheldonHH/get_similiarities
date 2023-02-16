@@ -1,0 +1,68 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/assemble_variable/src/varasm.c:1933:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v17; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/assemble_variable/src/varasm.c:1934:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v18; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/assemble_variable/src/varasm.c:1935:1: error: use of undeclared identifier 'splay_tree_value'
+splay_tree_value v19; // rax 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/assemble_variable/src/varasm.c:1951:1: error: must use 'enum' tag to refer to type 'built_in_function'
+built_in_function f; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/assemble_variable/src/varasm.c:1957:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v41; // rbp 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/assemble_variable/src/varasm.c:1958:1: error: use of undeclared identifier 'splay_tree_value'
+splay_tree_value v42; // r14 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/assemble_variable/src/varasm.c:2074:26: error: expected expression
+if ( v17 != ( tree_node *)global_trees ) 
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/assemble_variable/src/varasm.c:2074:15: error: use of undeclared identifier 'tree_node'
+if ( v17 != ( tree_node *)global_trees ) 
+              ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/assemble_variable/src/varasm.c:2081:1: error: use of undeclared identifier 'v19'
+v19 = global_trees; 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/assemble_variable/src/varasm.c:2082:33: error: expected expression
+if ( v18 && v18 != ( tree_node *)global_trees || dont_output_data || decl->decl.section_name ) 
+                                ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/assemble_variable/src/varasm.c:2082:22: error: use of undeclared identifier 'tree_node'
+if ( v18 && v18 != ( tree_node *)global_trees || dont_output_data || decl->decl.section_name ) 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/assemble_variable/src/varasm.c:2088:1: error: use of undeclared identifier 'v19'
+v19 = global_trees; 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/assemble_variable/src/varasm.c:2090:26: error: expected expression
+if ( v18 == ( tree_node *)v19 ) 
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/assemble_variable/src/varasm.c:2090:15: error: use of undeclared identifier 'tree_node'
+if ( v18 == ( tree_node *)v19 ) 
+              ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/assemble_variable/src/varasm.c:2104:6: error: use of undeclared identifier 'in_section_0'; did you mean 'in_section'?
+if ( in_section_0 == in_text ) 
+     ^~~~~~~~~~~~
+     in_section
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/assemble_variable/src/varasm.c:205:3: note: 'in_section' declared here
+} in_section = no_section;
+  ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/assemble_variable/src/varasm.c:2123:33: error: use of undeclared identifier 'off_73AB94'
+fprintf( ( FILE *)asm_out_file, off_73AB94, "object"); 
+                                ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/assemble_variable/src/varasm.c:2156:1: error: use of undeclared identifier 'v42'
+v42 = global_trees; 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/assemble_variable/src/varasm.c:2159:34: error: expected expression
+if ( !v41 || v41 == ( tree_node *)v42 ) 
+                                 ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/assemble_variable/src/varasm.c:2159:23: error: use of undeclared identifier 'tree_node'
+if ( !v41 || v41 == ( tree_node *)v42 ) 
+                      ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/assemble_variable/src/obj/varasm.o] Error 1

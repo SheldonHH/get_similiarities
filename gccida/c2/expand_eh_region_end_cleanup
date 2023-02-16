@@ -1,0 +1,18 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_eh_region_end_cleanup/src/except.c:1233:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *failure; // [rsp+10h] [rbp-48h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_eh_region_end_cleanup/src/except.c:1285:21: error: use of undeclared identifier 'machine_mode'
+v8 = gen_reg_rtx( ( machine_mode)( ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32)); 
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_eh_region_end_cleanup/src/except.c:1290:26: error: use of undeclared identifier 'machine_mode'
+exc_ptr = gen_reg_rtx( ( machine_mode)( ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32)); 
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_eh_region_end_cleanup/src/except.c:1294:31: error: invalid suffix 'xmode' on integer constant
+v11 = gen_reg_rtx( *(short *)0xmode); 
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_eh_region_end_cleanup/src/except.c:1299:34: error: invalid suffix 'xmode' on integer constant
+filter = gen_reg_rtx( *(short *)0xmode); 
+                                 ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_eh_region_end_cleanup/src/obj/except.o] Error 1

@@ -1,0 +1,34 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/insert/src/cse.c:2016:82: error: must use 'enum' tag to refer to type 'machine_mode'
+ struct table_elt * insert( rtx x,  struct table_elt *classp, unsigned int hash, machine_mode mode) 
+                                                                                 ^
+                                                                                 enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/insert/src/cse.c:2045:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v35; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/insert/src/cse.c:2092:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v42 = ( ( unsigned int)( mode_class_0[v39] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/insert/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/insert/src/cse.c:2127:22: error: expected identifier or '('
+ struct cse_reg_info = get_cse_reg_info( rtuint); 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/insert/src/cse.c:2366:32: error: use of undeclared identifier 'this_insn_0'; did you mean 'this_insn'?
+v44[v45->reg_qty].const_insn = this_insn_0; 
+                               ^~~~~~~~~~~
+                               this_insn
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/insert/src/cse.c:276:12: note: 'this_insn' declared here
+static rtx this_insn;
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/insert/src/cse.c:2391:19: error: use of undeclared identifier 'this_insn_0'; did you mean 'this_insn'?
+v34->const_insn = this_insn_0; 
+                  ^~~~~~~~~~~
+                  this_insn
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/insert/src/cse.c:276:12: note: 'this_insn' declared here
+static rtx this_insn;
+           ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/insert/src/obj/cse.o] Error 1

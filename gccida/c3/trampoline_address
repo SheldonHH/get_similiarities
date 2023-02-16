@@ -1,0 +1,41 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/trampoline_address/src/function.c:6172:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v7; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/trampoline_address/src/function.c:6176:4: error: expected ';' after expression
+rtx v11; // r14 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/trampoline_address/src/function.c:6176:5: error: use of undeclared identifier 'v11'; did you mean 'v10'?
+rtx v11; // r14 
+    ^~~
+    v10
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/trampoline_address/src/function.c:6175:19: note: 'v10' declared here
+ struct function *v10; // rcx 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/trampoline_address/src/function.c:6186:44: error: expected expression
+while ( x_trampoline_list->type.values !=  struct function ) 
+                                           ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/trampoline_address/src/function.c:6202:32: error: expected expression
+while ( chain->type.values !=  struct function ) 
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/trampoline_address/src/function.c:6235:1: error: use of undeclared identifier 'v11'
+v11 = assign_stack_local_1( BLKmode, v9, 0, v10); 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/trampoline_address/src/function.c:6237:40: error: use of undeclared identifier 'v11'
+node->int_cst.int_cst.high = ( __int64)v11; 
+                                       ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/trampoline_address/src/function.c:6242:7: error: use of undeclared identifier 'v11'
+rtx = v11->fld[0].rtx; 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/trampoline_address/src/function.c:6246:22: error: use of undeclared identifier 'machine_mode'
+v13 = gen_reg_rtx( ( machine_mode)( ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32)); 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/trampoline_address/src/function.c:6250:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/trampoline_address/src/function.c:6258:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32), 
+  ^
+11 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/trampoline_address/src/obj/function.o] Error 1

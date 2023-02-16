@@ -1,0 +1,28 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_call/src/insn-emit.c:14697:4: error: expected ';' after expression
+rtx v11; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_call/src/insn-emit.c:14697:5: error: use of undeclared identifier 'v11'; did you mean 'v10'?
+rtx v11; // rax 
+    ^~~
+    v10
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_call/src/insn-emit.c:14696:18: note: 'v10' declared here
+ struct rtx_def *v10; // rax 
+                 ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_call/src/insn-emit.c:14704:33: error: use of undeclared identifier 'machine_mode'
+if ( !call_insn_operand( rtx, ( machine_mode)( ( ( BYTE3( target_flags) & 2) != 0) + 4)) ) 
+                                ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_call/src/insn-emit.c:14706:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( ( ( BYTE3( target_flags) & 2) != 0) + 4), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_call/src/insn-emit.c:14713:1: error: use of undeclared identifier 'v11'
+v11 = emit_call_insn( v10); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_call/src/insn-emit.c:14714:17: error: expected expression
+use_reg( ( rtx *)&v11[4], v9); 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_call/src/insn-emit.c:14714:19: error: use of undeclared identifier 'v11'
+use_reg( ( rtx *)&v11[4], v9); 
+                  ^
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/gen_call/src/obj/insn-emit.o] Error 1

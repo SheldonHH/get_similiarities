@@ -1,0 +1,20 @@
+/data/output_dir/patch/gobmk/ida/clang/O0/gobmk-clang-O0/load_and_score_sgf_file/src/interface/play_solo.c:714:9: error: use of undeclared identifier 'QQmlJS'
+score = QQmlJS::Managed::operator new( &lower_bound, &upper_bound); 
+        ^
+/data/output_dir/patch/gobmk/ida/clang/O0/gobmk-clang-O0/load_and_score_sgf_file/src/interface/play_solo.c:733:34: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'uint32' (aka 'unsigned int') of different size
+COERCE_FLOAT( _mm_cvtsi128_si32( ( __m128i)LODWORD( score)) ^ 0x80000000)); 
+                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O0/gobmk-clang-O0/load_and_score_sgf_file/src/interface/play_solo.c:744:6: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'uint32' (aka 'unsigned int') of different size
+v5 = ( __m128i)LODWORD( score); 
+     ^~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O0/gobmk-clang-O0/load_and_score_sgf_file/src/interface/play_solo.c:745:15: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+*( double *)v5.m128i_i64 = score; 
+            ~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O0/gobmk-clang-O0/load_and_score_sgf_file/src/interface/play_solo.c:746:57: error: use of undeclared identifier 'xmmword_4ED940'
+if ( result == *( double *)_mm_and_si128( v5, ( __m128i)xmmword_4ED940).m128i_i64 && winner == dummy ) 
+                                                        ^
+/data/output_dir/patch/gobmk/ida/clang/O0/gobmk-clang-O0/load_and_score_sgf_file/src/interface/play_solo.c:781:35: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'uint32' (aka 'unsigned int') of different size
+LODWORD( v7) = _mm_cvtsi128_si32( ( __m128i)LODWORD( score)) ^ 0x80000000; 
+                                  ^~~~~~~~~~~~~~~~~~~~~~~~~
+6 errors generated.
+make: *** [/data/output_dir/patch/gobmk/ida/clang/O0/gobmk-clang-O0/load_and_score_sgf_file/src/obj/2/play_solo.o] Error 1

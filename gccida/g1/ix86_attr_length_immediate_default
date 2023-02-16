@@ -1,0 +1,36 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ix86_attr_length_immediate_default/src/i386.c:10388:1: error: must use 'enum' tag to refer to type 'attr_mode'
+attr_mode attr_mode; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ix86_attr_length_immediate_default/src/i386.c:10394:16: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+LODWORD( v4) = recog_data_0.n_operands - 1; 
+               ^~~~~~~~~~~~
+               recog_data
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ix86_attr_length_immediate_default/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ix86_attr_length_immediate_default/src/i386.c:10401:6: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+v7 = recog_data_0.operand[v4]; 
+     ^~~~~~~~~~~~
+     recog_data
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ix86_attr_length_immediate_default/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ix86_attr_length_immediate_default/src/i386.c:10409:30: error: use of undeclared identifier 'stru_665A39'
+fancy_abort( ( const char *)&stru_665A39, 9933, "ix86_attr_length_immediate_default"); 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ix86_attr_length_immediate_default/src/i386.c:10428:1: error: too many arguments provided to function-like macro invocation
+( const char *)&stru_665A39, 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ix86_attr_length_immediate_default/src/toplev.h:50:9: note: macro 'fatal_insn' defined here
+#define fatal_insn(msgid, insn) \
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ix86_attr_length_immediate_default/src/i386.c:10425:1: error: use of undeclared identifier 'fatal_insn'; did you mean '_fatal_insn'?
+fatal_insn( 
+^~~~~~~~~~
+_fatal_insn
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ix86_attr_length_immediate_default/src/toplev.h:44:13: note: '_fatal_insn' declared here
+extern void _fatal_insn                 PARAMS ((const char *,
+            ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/ix86_attr_length_immediate_default/src/obj/i386.o] Error 1

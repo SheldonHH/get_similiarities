@@ -1,0 +1,15 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_rgns/src/sched-rgn.c:1411:24: error: use of undeclared identifier 'invalid_operation'; did you mean 'bitmap_operation'?
+v34 = ( v32 - 1 < 0) ^ __OFADD__( -1LL, v32) | ( v32 == 1); 
+                       ^~~~~~~~~~~~~~~~~~~~~
+                       bitmap_operation
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_rgns/src/sched-rgn.c:893:25: note: expanded from macro '__OFADD__'
+#define __OFADD__(x, y) invalid_operation // Generate overflow flag for (x+y)
+                        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_rgns/src/bitmap.h:81:12: note: 'bitmap_operation' declared here
+extern int bitmap_operation PARAMS ((bitmap, bitmap, bitmap, enum bitmap_bits));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_rgns/src/sched-rgn.c:1411:22: error: invalid operands to binary expression ('int' and 'int (bitmap, bitmap, bitmap, enum bitmap_bits)' (aka 'int (struct bitmap_head_def *, struct bitmap_head_def *, struct bitmap_head_def *, enum bitmap_bits)'))
+v34 = ( v32 - 1 < 0) ^ __OFADD__( -1LL, v32) | ( v32 == 1); 
+      ~~~~~~~~~~~~~~ ^ ~~~~~~~~~~~~~~~~~~~~~
+2 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_rgns/src/obj/sched-rgn.o] Error 1

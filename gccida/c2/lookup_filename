@@ -1,0 +1,61 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/lookup_filename/src/dwarf2out.c:12248:16: error: use of undeclared identifier 'file_table_0'; did you mean 'file_table'?
+LODWORD( v1) = file_table_0.table; 
+               ^~~~~~~~~~~~
+               file_table
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/lookup_filename/src/dwarf2out.c:3310:26: note: 'file_table' declared here
+static struct file_table file_table;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/lookup_filename/src/dwarf2out.c:12249:16: error: use of undeclared identifier 'file_table_0'; did you mean 'file_table'?
+if ( !LODWORD( file_table_0.table) 
+               ^~~~~~~~~~~~
+               file_table
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/lookup_filename/src/dwarf2out.c:11964:27: note: expanded from macro 'LODWORD'
+#define LODWORD(x) DWORDn(x,LOW_IND(x,_DWORD))
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/lookup_filename/src/dwarf2out.c:11927:36: note: expanded from macro 'DWORDn'
+#define DWORDn(x, n) (*((_DWORD*)&(x)+n))
+                                   ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/lookup_filename/src/dwarf2out.c:3310:26: note: 'file_table' declared here
+static struct file_table file_table;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/lookup_filename/src/dwarf2out.c:12250:75: error: use of undeclared identifier 'file_table_0'; did you mean 'file_table'?
+|| strcmp( file_name, *( const char **)( cfa_temp.offset + 8LL * LODWORD( file_table_0.table))) ) 
+                                                                          ^~~~~~~~~~~~
+                                                                          file_table
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/lookup_filename/src/dwarf2out.c:11964:27: note: expanded from macro 'LODWORD'
+#define LODWORD(x) DWORDn(x,LOW_IND(x,_DWORD))
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/lookup_filename/src/dwarf2out.c:11927:36: note: expanded from macro 'DWORDn'
+#define DWORDn(x, n) (*((_DWORD*)&(x)+n))
+                                   ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/lookup_filename/src/dwarf2out.c:3310:26: note: 'file_table' declared here
+static struct file_table file_table;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/lookup_filename/src/dwarf2out.c:12264:10: error: use of undeclared identifier 'file_table_0'; did you mean 'file_table'?
+LODWORD( file_table_0.table) = v1; 
+         ^~~~~~~~~~~~
+         file_table
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/lookup_filename/src/dwarf2out.c:11964:27: note: expanded from macro 'LODWORD'
+#define LODWORD(x) DWORDn(x,LOW_IND(x,_DWORD))
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/lookup_filename/src/dwarf2out.c:11927:36: note: expanded from macro 'DWORDn'
+#define DWORDn(x, n) (*((_DWORD*)&(x)+n))
+                                   ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/lookup_filename/src/dwarf2out.c:3310:26: note: 'file_table' declared here
+static struct file_table file_table;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/lookup_filename/src/dwarf2out.c:12279:10: error: use of undeclared identifier 'file_table_0'; did you mean 'file_table'?
+LODWORD( file_table_0.table) = v1; 
+         ^~~~~~~~~~~~
+         file_table
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/lookup_filename/src/dwarf2out.c:11964:27: note: expanded from macro 'LODWORD'
+#define LODWORD(x) DWORDn(x,LOW_IND(x,_DWORD))
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/lookup_filename/src/dwarf2out.c:11927:36: note: expanded from macro 'DWORDn'
+#define DWORDn(x, n) (*((_DWORD*)&(x)+n))
+                                   ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/lookup_filename/src/dwarf2out.c:3310:26: note: 'file_table' declared here
+static struct file_table file_table;
+                         ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/lookup_filename/src/obj/dwarf2out.o] Error 1

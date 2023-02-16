@@ -1,0 +1,74 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/reload_combine_note_use/src/reload1.c:9426:6: error: use of undeclared identifier 'v11'; did you mean 'v10'?
+rtx *v11; // rbp 
+     ^~~
+     v10
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/reload_combine_note_use/src/reload1.c:9425:9: note: 'v10' declared here
+__int64 v10; // r13 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/reload_combine_note_use/src/reload1.c:9426:5: error: invalid operands to binary expression ('rtx' (aka 'struct rtx_def *') and 'long long')
+rtx *v11; // rbp 
+~~~ ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/reload_combine_note_use/src/reload1.c:9431:1: error: use of undeclared identifier '$46E27178171750CEF28E8B43DEBEAD96'
+$46E27178171750CEF28E8B43DEBEAD96 *v16; // r13 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/reload_combine_note_use/src/reload1.c:9431:36: error: use of undeclared identifier 'v16'
+$46E27178171750CEF28E8B43DEBEAD96 *v16; // r13 
+                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/reload_combine_note_use/src/reload1.c:9439:4: error: expected ';' after expression
+rtx v24; // rdi 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/reload_combine_note_use/src/reload1.c:9439:5: error: use of undeclared identifier 'v24'
+rtx v24; // rdi 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/reload_combine_note_use/src/reload1.c:9464:13: error: expected expression
+xp = ( rtx *)&rtx[1]; 
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/reload_combine_note_use/src/reload1.c:9470:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v7.rtwint = ( __int64)rtx->fld[0]; 
+                      ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/reload_combine_note_use/src/reload1.c:9478:24: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v35 = ( unsigned int)( mode_class_0[v31] - 5) <= 1; 
+                       ^~~~~~~~~~~~
+                       mode_class
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/reload_combine_note_use/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/reload_combine_note_use/src/reload1.c:9509:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v23.rtwint = ( __int64)rtx->fld[0]; 
+                       ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/reload_combine_note_use/src/reload1.c:9522:12: error: expected ';' after expression
+v4 = ( rtx)rtx[1]; 
+           ^
+           ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/reload_combine_note_use/src/reload1.c:9561:23: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( ( unsigned int)( mode_class_0[v14] - 5) <= 1 ) 
+                      ^~~~~~~~~~~~
+                      mode_class
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/reload_combine_note_use/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/reload_combine_note_use/src/reload1.c:9567:1: error: use of undeclared identifier 'v16'
+v16 = &reg_state[( int)rtuint]; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/reload_combine_note_use/src/reload1.c:9568:7: error: use of undeclared identifier 'v16'
+v17 = v16->use_index - 1; 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/reload_combine_note_use/src/reload1.c:9569:1: error: use of undeclared identifier 'v16'
+v16->use_index = v17; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/reload_combine_note_use/src/reload1.c:9575:1: error: use of undeclared identifier 'v16'
+v16->offset = v4; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/reload_combine_note_use/src/reload1.c:9576:1: error: use of undeclared identifier 'v16'
+v16->use_ruid = v28; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/reload_combine_note_use/src/reload1.c:9579:23: error: use of undeclared identifier 'v16'
+if ( rtx_equal_p( v4, v16->offset) ) 
+                      ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/reload_combine_note_use/src/reload1.c:9583:9: error: expected expression
+*( rtx *)( ( char *)&reg_state[0].reg_use[0].insn + v18) = insn; 
+        ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/reload_combine_note_use/src/obj/reload1.o] Error 1

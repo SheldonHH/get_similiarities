@@ -1,0 +1,42 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_single_push_insn/src/expr.c:3629:30: error: must use 'enum' tag to refer to type 'machine_mode'
+void  emit_single_push_insn( machine_mode mode, rtx x, tree type) 
+                             ^
+                             enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_single_push_insn/src/expr.c:3636:1: error: must use 'enum' tag to refer to type 'insn_code'
+insn_code insn_code; // r13d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_single_push_insn/src/expr.c:3649:14: error: expected identifier or '('
+ struct expr = cfun->expr; 
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_single_push_insn/src/expr.c:3656:14: error: expected identifier or '('
+ struct expr = cfun->expr; 
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_single_push_insn/src/expr.c:3666:33: error: use of undeclared identifier 'machine_mode'
+v14 = gen_rtx_fmt_e( PRE_DEC, ( machine_mode)( 4 - ( ( v6 == 0) - 1)), global_rtl[2]); 
+                                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_single_push_insn/src/expr.c:3671:31: error: use of undeclared identifier 'machine_mode'
+v18 = gen_rtx_fmt_ee( PLUS, ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), global_rtl[2], v17); 
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_single_push_insn/src/expr.c:3672:37: error: use of undeclared identifier 'machine_mode'
+v14 = gen_rtx_fmt_ee( PRE_MODIFY, ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), global_rtl[2], v18); 
+                                    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_single_push_insn/src/expr.c:3686:13: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+predicate = insn_data_0[insn_code].operand->predicate; 
+            ^~~~~~~~~~~
+            insn_data
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_single_push_insn/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_single_push_insn/src/expr.c:3696:7: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+v13 = insn_data_0[insn_code].genfun( x, ( rtx)v7); 
+      ^~~~~~~~~~~
+      insn_data
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_single_push_insn/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_single_push_insn/src/expr.c:3696:36: error: called object type '<dependent type>' is not a function or function pointer
+v13 = insn_data_0[insn_code].genfun( x, ( rtx)v7); 
+                                   ^
+10 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_single_push_insn/src/obj/expr.o] Error 1

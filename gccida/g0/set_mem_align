@@ -1,0 +1,28 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/set_mem_align/src/emit-rtl.c:2339:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v2; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/set_mem_align/src/emit-rtl.c:2342:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v5; // rsi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/set_mem_align/src/emit-rtl.c:2346:1: error: statement requires expression of scalar type ('struct rtx_def' invalid)
+if ( mem[1] ) 
+^    ~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/set_mem_align/src/emit-rtl.c:2358:1: error: statement requires expression of scalar type ('struct rtx_def' invalid)
+if ( mem[1] ) 
+^    ~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/set_mem_align/src/emit-rtl.c:2362:1: error: statement requires expression of scalar type ('struct rtx_def' invalid)
+if ( mem[1] ) 
+^    ~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/set_mem_align/src/emit-rtl.c:2363:21: error: expected expression
+v5 = *( tree_node **)( *( _QWORD *)&mem[1] + 8LL); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/set_mem_align/src/emit-rtl.c:2363:9: error: use of undeclared identifier 'tree_node'
+v5 = *( tree_node **)( *( _QWORD *)&mem[1] + 8LL); 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/set_mem_align/src/emit-rtl.c:2366:1: error: statement requires expression of scalar type ('struct rtx_def' invalid)
+if ( mem[1] ) 
+^    ~~~~~~
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/set_mem_align/src/obj/emit-rtl.o] Error 1

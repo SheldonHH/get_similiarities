@@ -1,0 +1,14 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/tree_cons/src/tree.c:1782:26: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'unsigned long long' of different size
+v6 = _mm_unpacklo_epi64( ( __m128i)( unsigned __int64)purpose, ( __m128i)( unsigned __int64)value); 
+                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/tree_cons/src/tree.c:1782:64: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'unsigned long long' of different size
+v6 = _mm_unpacklo_epi64( ( __m128i)( unsigned __int64)purpose, ( __m128i)( unsigned __int64)value); 
+                                                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/tree_cons/src/tree.c:1785:12: error: expected expression
+*( _OWORD *)&result->decl.common.type = 0LL; 
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/tree_cons/src/tree.c:1785:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&result->decl.common.type = 0LL; 
+   ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/tree_cons/src/obj/tree.o] Error 1

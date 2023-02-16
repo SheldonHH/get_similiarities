@@ -1,0 +1,17 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/loc_descriptor_from_tree/src/dwarf2out.c:8458:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *imag; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/loc_descriptor_from_tree/src/dwarf2out.c:8460:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *inner_reference; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/loc_descriptor_from_tree/src/dwarf2out.c:8537:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode pmode[13]; // [rsp+34h] [rbp-34h] BYREF 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/loc_descriptor_from_tree/src/dwarf2out.c:8620:34: error: use of undeclared identifier 'machine_mode'
+v81 = mem_loc_descriptor( rtx, ( machine_mode)BYTE2( v26)); 
+                                 ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/loc_descriptor_from_tree/src/obj/dwarf2out.o] Error 1

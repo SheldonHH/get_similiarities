@@ -1,0 +1,16 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/hex_digit_value/src/cpplex.c:2052:6: error: use of undeclared identifier 'hex_value'; did you mean '_hex_value'?
+if ( hex_value[( unsigned __int8)c] == 99 ) 
+     ^~~~~~~~~
+     _hex_value
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/hex_digit_value/src/libiberty.h:251:19: note: '_hex_value' declared here
+extern const char _hex_value[_hex_array_size];
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/hex_digit_value/src/cpplex.c:2054:8: error: use of undeclared identifier 'hex_value'; did you mean '_hex_value'?
+return hex_value[( unsigned __int8)c]; 
+       ^~~~~~~~~
+       _hex_value
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/hex_digit_value/src/libiberty.h:251:19: note: '_hex_value' declared here
+extern const char _hex_value[_hex_array_size];
+                  ^
+2 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/hex_digit_value/src/obj/cpplex.o] Error 1

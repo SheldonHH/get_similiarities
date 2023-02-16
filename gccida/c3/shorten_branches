@@ -1,0 +1,72 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/shorten_branches/src/final.c:1414:4: error: expected ';' after expression
+rtx v64; // rbx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/shorten_branches/src/final.c:1414:5: error: use of undeclared identifier 'v64'
+rtx v64; // rbx 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/shorten_branches/src/final.c:1437:4: error: expected ';' after expression
+rtx v87; // [rsp+18h] [rbp-C0h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/shorten_branches/src/final.c:1437:5: error: use of undeclared identifier 'v87'
+rtx v87; // [rsp+18h] [rbp-C0h] 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/shorten_branches/src/final.c:1440:1: error: use of undeclared identifier 'v87'
+v87 = first; 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/shorten_branches/src/final.c:1555:20: error: expected expression
+uid_align = ( rtx *)xcalloc( v2, 8uLL); 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/shorten_branches/src/final.c:1568:22: error: expected expression
+v26[rtint] = *( rtx *)&v88[0]; 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/shorten_branches/src/final.c:1572:22: error: expected expression
+v26[rtint] = *( rtx *)&v88[0]; 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/shorten_branches/src/final.c:1575:20: error: invalid operands to binary expression ('rtx' (aka 'struct rtx_def *') and 'uint64 *' (aka 'unsigned long long *'))
+v26[rtint] = ( rtx)*( ( _QWORD *)v88 + v30); 
+             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/shorten_branches/src/final.c:1581:26: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'unsigned long long' of different size
+v32 = _mm_shuffle_epi32( ( __m128i)( unsigned __int64)last_insn, 68); 
+      ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/lib/llvm-7/lib/clang/7.0.0/include/emmintrin.h:4347:52: note: expanded from macro '_mm_shuffle_epi32'
+  (__m128i)__builtin_ia32_pshufd((__v4si)(__m128i)(a), (int)(imm))
+                                                   ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/shorten_branches/src/final.c:1615:19: error: expected ';' after expression
+last_insn = ( rtx)last_insn[1]; 
+                  ^
+                  ;
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/shorten_branches/src/final.c:1637:6: error: use of undeclared identifier 'v87'
+if ( v87 ) 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/shorten_branches/src/final.c:1640:7: error: use of undeclared identifier 'v87'
+rtx = v87; 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/shorten_branches/src/final.c:1654:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v45 = (  struct rtx_def *)rtx[2]; 
+                          ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/shorten_branches/src/final.c:1658:58: error: expected expression
+if ( ( _WORD)v46 == 40 || ( v47 = asm_noperands( *( rtx *)&rtx[2]), LOWORD( v46) = *( _WORD *)v45, v47 >= 0) ) 
+                                                         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/shorten_branches/src/final.c:1689:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v51.rtwint = ( __int64)v45->fld[0]; 
+                       ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/shorten_branches/src/final.c:1697:29: error: expected expression
+if ( asm_noperands( *( rtx *)( v53 + 32)) >= 0 ) 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/shorten_branches/src/final.c:1717:40: error: expected ')'
+v60 = v58 * insn_default_length( ( rtx)v53); 
+                                       ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/shorten_branches/src/final.c:1717:32: note: to match this '('
+v60 = v58 * insn_default_length( ( rtx)v53); 
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/shorten_branches/src/final.c:1724:34: error: expected ')'
+v60 = insn_default_length( ( rtx)v53); 
+                                 ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/shorten_branches/src/final.c:1724:26: note: to match this '('
+v60 = insn_default_length( ( rtx)v53); 
+                         ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/shorten_branches/src/obj/final.o] Error 1

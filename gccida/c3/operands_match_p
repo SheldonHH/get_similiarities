@@ -1,0 +1,32 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/operands_match_p/src/reload.c:2574:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v9.rtwint = ( __int64)rtx->fld[0]; 
+                      ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/operands_match_p/src/reload.c:2581:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( unsigned __int8 *)( v9.rtwint + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/operands_match_p/src/reload.c:2583:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)BYTE2( v4)); 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/operands_match_p/src/reload.c:2601:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v13.rtwint = ( __int64)y->fld[0]; 
+                       ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/operands_match_p/src/reload.c:2608:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( unsigned __int8 *)( v13.rtwint + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/operands_match_p/src/reload.c:2610:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)BYTE2( v6)); 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/operands_match_p/src/reload.c:2667:37: error: expected expression
+matched = operands_match_p( *( rtx *)&v21[2 * v22], *( rtx *)&v23[2 * v22]); 
+                                    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/operands_match_p/src/reload.c:2667:61: error: expected expression
+matched = operands_match_p( *( rtx *)&v21[2 * v22], *( rtx *)&v23[2 * v22]); 
+                                                            ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/operands_match_p/src/reload.c:2690:35: error: expected expression
+v25 = operands_match_p( *( ( rtx *)rtx + v16), *( ( rtx *)y + v16)); 
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/operands_match_p/src/reload.c:2690:58: error: expected expression
+v25 = operands_match_p( *( ( rtx *)rtx + v16), *( ( rtx *)y + v16)); 
+                                                         ^
+10 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/operands_match_p/src/obj/reload.o] Error 1

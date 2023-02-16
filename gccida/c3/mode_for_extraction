@@ -1,0 +1,34 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/mode_for_extraction/src/expmed.c:688:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode  mode_for_extraction( extraction_pattern pattern, int opno) 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/mode_for_extraction/src/expmed.c:688:36: error: must use 'enum' tag to refer to type 'extraction_pattern'
+machine_mode  mode_for_extraction( extraction_pattern pattern, int opno) 
+                                   ^
+                                   enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/mode_for_extraction/src/expmed.c:696:9: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+data = &insn_data_0[1112]; 
+        ^~~~~~~~~~~
+        insn_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/mode_for_extraction/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/mode_for_extraction/src/expmed.c:702:9: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+data = &insn_data_0[1113]; 
+        ^~~~~~~~~~~
+        insn_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/mode_for_extraction/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/mode_for_extraction/src/expmed.c:707:9: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+data = &insn_data_0[1114]; 
+        ^~~~~~~~~~~
+        insn_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/mode_for_extraction/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/mode_for_extraction/src/expmed.c:713:19: error: invalid suffix 'xmode' on integer constant
+return *(short *)0xmode; 
+                  ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/mode_for_extraction/src/obj/expmed.o] Error 1

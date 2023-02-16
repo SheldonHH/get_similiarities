@@ -1,0 +1,25 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/replace_pseudos_in_call_usage/src/reload1.c:1050:48: error: must use 'enum' tag to refer to type 'machine_mode'
+void  replace_pseudos_in_call_usage( rtx *loc, machine_mode mem_mode, rtx usage) 
+                                               ^
+                                               enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/replace_pseudos_in_call_usage/src/reload1.c:1056:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code; // [rsp+1Ch] [rbp-24h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/replace_pseudos_in_call_usage/src/reload1.c:1082:23: error: use of undeclared identifier 'machine_mode'
+*loc = gen_rtx_MEM( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)xa), reg_equiv_address[regno]); 
+                      ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/replace_pseudos_in_call_usage/src/reload1.c:1082:38: error: expected expression
+*loc = gen_rtx_MEM( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)xa), reg_equiv_address[regno]); 
+                                     ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/replace_pseudos_in_call_usage/src/reload1.c:1089:15: error: use of undeclared identifier 'off_88ECD0'
+fancy_abort( &off_88ECD0[4], 627, "replace_pseudos_in_call_usage"); 
+              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/replace_pseudos_in_call_usage/src/reload1.c:1103:50: error: use of undeclared identifier 'machine_mode'
+replace_pseudos_in_call_usage( ( rtx *)x->fld, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)x), usage); 
+                                                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/replace_pseudos_in_call_usage/src/reload1.c:1103:65: error: expected expression
+replace_pseudos_in_call_usage( ( rtx *)x->fld, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)x), usage); 
+                                                                ^
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/replace_pseudos_in_call_usage/src/obj/reload1.o] Error 1

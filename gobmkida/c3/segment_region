@@ -1,0 +1,93 @@
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/segment_region/src/engine/influence.c:1758:43: error: use of undeclared identifier 'segment_region_marked'; did you mean 'segment_region'?
+memset( segment_region_marked, 0, sizeof( segment_region_marked)); 
+                                          ^~~~~~~~~~~~~~~~~~~~~
+                                          segment_region
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/segment_region/src/engine/influence.c:1732:7: note: 'segment_region' declared here
+void  segment_region( struct influence_data *q, owner_function_ptr region_owner, int type, int *segmentation) 
+      ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/segment_region/src/engine/influence.c:1758:9: error: use of undeclared identifier 'segment_region_marked'; did you mean 'segment_region'?
+memset( segment_region_marked, 0, sizeof( segment_region_marked)); 
+        ^~~~~~~~~~~~~~~~~~~~~
+        segment_region
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/segment_region/src/engine/influence.c:1732:7: note: 'segment_region' declared here
+void  segment_region( struct influence_data *q, owner_function_ptr region_owner, int type, int *segmentation) 
+      ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/segment_region/src/engine/influence.c:1761:24: error: use of undeclared identifier 'segment_region_marked'
+if ( board[i] != 3 && !segment_region_marked[i] && region_owner( q, i) ) 
+                       ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/segment_region/src/engine/influence.c:1766:1: error: use of undeclared identifier 'segment_region_marked'; did you mean 'segment_region'?
+segment_region_marked[i] = 1; 
+^~~~~~~~~~~~~~~~~~~~~
+segment_region
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/segment_region/src/engine/influence.c:1732:7: note: 'segment_region' declared here
+void  segment_region( struct influence_data *q, owner_function_ptr region_owner, int type, int *segmentation) 
+      ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/segment_region/src/engine/influence.c:1766:1: error: subscript of pointer to function type 'void (struct influence_data *, owner_function_ptr, int, int *)' (aka 'void (struct influence_data *, int (*)(const struct influence_data *, int), int, int *)')
+segment_region_marked[i] = 1; 
+^~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/segment_region/src/engine/influence.c:1780:3: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v9.m128_i32[0] = 0; 
+~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/segment_region/src/engine/influence.c:1781:21: error: invalid conversion between vector type '__m128' (vector of 4 'float' values) and integer type 'uint32' (aka 'unsigned int') of different size
+v10 = _mm_cmplt_ss( ( __m128)LODWORD( q->territory_value[v8]), v9); 
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/segment_region/src/engine/influence.c:1783:37: error: invalid conversion between vector type '__m128' (vector of 4 'float' values) and integer type 'uint32' (aka 'unsigned int') of different size
++ COERCE_FLOAT( _mm_andnot_ps( v10, ( __m128)LODWORD( q->territory_value[v8])).m128_u32[0] | COERCE_UNSIGNED_INT( -q->territory_value[v8]) & v10.m128_i32[0]); 
+                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/segment_region/src/engine/influence.c:1783:145: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
++ COERCE_FLOAT( _mm_andnot_ps( v10, ( __m128)LODWORD( q->territory_value[v8])).m128_u32[0] | COERCE_UNSIGNED_INT( -q->territory_value[v8]) & v10.m128_i32[0]); 
+                                                                                                                                             ~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/segment_region/src/engine/influence.c:1791:6: error: use of undeclared identifier 'segment_region_marked'
+if ( segment_region_marked[v11] ) 
+     ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/segment_region/src/engine/influence.c:1802:7: error: use of undeclared identifier 'segment_region_marked'
+if ( !segment_region_marked[v14] ) 
+      ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/segment_region/src/engine/influence.c:1809:1: error: use of undeclared identifier 'segment_region_marked'; did you mean 'segment_region'?
+segment_region_marked[v14] = 1; 
+^~~~~~~~~~~~~~~~~~~~~
+segment_region
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/segment_region/src/engine/influence.c:1732:7: note: 'segment_region' declared here
+void  segment_region( struct influence_data *q, owner_function_ptr region_owner, int type, int *segmentation) 
+      ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/segment_region/src/engine/influence.c:1809:1: error: subscript of pointer to function type 'void (struct influence_data *, owner_function_ptr, int, int *)' (aka 'void (struct influence_data *, int (*)(const struct influence_data *, int), int, int *)')
+segment_region_marked[v14] = 1; 
+^~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/segment_region/src/engine/influence.c:1820:7: error: use of undeclared identifier 'segment_region_marked'
+if ( !segment_region_marked[v16] ) 
+      ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/segment_region/src/engine/influence.c:1834:1: error: use of undeclared identifier 'segment_region_marked'; did you mean 'segment_region'?
+segment_region_marked[v16] = 1; 
+^~~~~~~~~~~~~~~~~~~~~
+segment_region
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/segment_region/src/engine/influence.c:1732:7: note: 'segment_region' declared here
+void  segment_region( struct influence_data *q, owner_function_ptr region_owner, int type, int *segmentation) 
+      ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/segment_region/src/engine/influence.c:1834:1: error: subscript of pointer to function type 'void (struct influence_data *, owner_function_ptr, int, int *)' (aka 'void (struct influence_data *, int (*)(const struct influence_data *, int), int, int *)')
+segment_region_marked[v16] = 1; 
+^~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/segment_region/src/engine/influence.c:1843:7: error: use of undeclared identifier 'segment_region_marked'
+if ( !segment_region_marked[v20] ) 
+      ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/segment_region/src/engine/influence.c:1850:1: error: use of undeclared identifier 'segment_region_marked'; did you mean 'segment_region'?
+segment_region_marked[v20] = 1; 
+^~~~~~~~~~~~~~~~~~~~~
+segment_region
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/segment_region/src/engine/influence.c:1732:7: note: 'segment_region' declared here
+void  segment_region( struct influence_data *q, owner_function_ptr region_owner, int type, int *segmentation) 
+      ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/segment_region/src/engine/influence.c:1850:1: error: subscript of pointer to function type 'void (struct influence_data *, owner_function_ptr, int, int *)' (aka 'void (struct influence_data *, int (*)(const struct influence_data *, int), int, int *)')
+segment_region_marked[v20] = 1; 
+^~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/segment_region/src/engine/influence.c:1876:1: error: use of undeclared identifier 'segment_region_marked'; did you mean 'segment_region'?
+segment_region_marked[v11] = 1; 
+^~~~~~~~~~~~~~~~~~~~~
+segment_region
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/segment_region/src/engine/influence.c:1732:7: note: 'segment_region' declared here
+void  segment_region( struct influence_data *q, owner_function_ptr region_owner, int type, int *segmentation) 
+      ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/segment_region/src/engine/influence.c:1876:1: error: subscript of pointer to function type 'void (struct influence_data *, owner_function_ptr, int, int *)' (aka 'void (struct influence_data *, int (*)(const struct influence_data *, int), int, int *)')
+segment_region_marked[v11] = 1; 
+^~~~~~~~~~~~~~~~~~~~~
+21 errors generated.
+make: *** [/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/segment_region/src/obj/1/influence.o] Error 1

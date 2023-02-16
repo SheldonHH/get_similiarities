@@ -1,0 +1,88 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/final_scan_insn/src/final.c:2281:6: error: conflicting types for 'final_scan_insn'
+rtx  final_scan_insn( rtx insn, FILE *file, __int64 optimize, __int64 prescan, __int64 nopeepholes) 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/final_scan_insn/src/output.h:76:12: note: previous declaration is here
+extern rtx final_scan_insn      PARAMS ((rtx, FILE *, int, int, int));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/final_scan_insn/src/final.c:2335:4: error: expected ';' after expression
+rtx insna; // [rsp+8h] [rbp-38h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/final_scan_insn/src/final.c:2335:5: error: use of undeclared identifier 'insna'; did you mean 'insn'?
+rtx insna; // [rsp+8h] [rbp-38h] 
+    ^~~~~
+    insn
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/final_scan_insn/src/final.c:2281:27: note: 'insn' declared here
+rtx  final_scan_insn( rtx insn, FILE *file, __int64 optimize, __int64 prescan, __int64 nopeepholes) 
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/final_scan_insn/src/final.c:2353:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v11 = ( __int64)insn[3]; 
+                ^~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/final_scan_insn/src/final.c:2378:22: error: unexpected type name 'FILE': expected identifier
+( ( void (  *)( rtx, FILE *, __int64))debug_hooks->label)( insn, file, optimize); 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/final_scan_insn/src/final.c:2378:27: error: expected ')'
+( ( void (  *)( rtx, FILE *, __int64))debug_hooks->label)( insn, file, optimize); 
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/final_scan_insn/src/final.c:2378:15: note: to match this '('
+( ( void (  *)( rtx, FILE *, __int64))debug_hooks->label)( insn, file, optimize); 
+              ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/final_scan_insn/src/final.c:2378:17: error: a parameter list without types is only allowed in a function definition
+( ( void (  *)( rtx, FILE *, __int64))debug_hooks->label)( insn, file, optimize); 
+                ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/final_scan_insn/src/final.c:2384:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v23.rtwint = ( __int64)insn[1].fld[0]; 
+                       ^~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/final_scan_insn/src/final.c:2406:22: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v24 = ( const char *)insn[4]; 
+                     ^~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/final_scan_insn/src/final.c:2440:8: error: use of undeclared identifier 'debug_info_level_0'; did you mean 'debug_info_level'?
+if ( ( debug_info_level_0 & 0xFFFFFFFE) == 2 
+       ^~~~~~~~~~~~~~~~~~
+       debug_info_level
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/final_scan_insn/src/flags.h:53:30: note: 'debug_info_level' declared here
+extern enum debug_info_level debug_info_level;
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/final_scan_insn/src/final.c:2462:8: error: use of undeclared identifier 'debug_info_level_0'; did you mean 'debug_info_level'?
+if ( ( debug_info_level_0 & 0xFFFFFFFE) == 2 
+       ^~~~~~~~~~~~~~~~~~
+       debug_info_level
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/final_scan_insn/src/flags.h:53:30: note: 'debug_info_level' declared here
+extern enum debug_info_level debug_info_level;
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/final_scan_insn/src/final.c:2568:22: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v54 = ( const char *)v5[2]; 
+                     ^~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/final_scan_insn/src/final.c:2609:15: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v13 = ( int *)insn[2]; 
+              ^~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/final_scan_insn/src/final.c:2666:29: error: expected expression
+if ( asm_noperands( *( rtx *)&insn[2]) >= 0 ) 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/final_scan_insn/src/final.c:2668:28: error: expected ')'
+v18 = asm_noperands( ( rtx)v13); 
+                           ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/final_scan_insn/src/final.c:2668:20: note: to match this '('
+v18 = asm_noperands( ( rtx)v13); 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/final_scan_insn/src/final.c:2669:14: error: expected expression
+v19 = ( rtx *)( ( char *)&filea - ( ( 8LL * v18 + 15) & 0xFFFFFFFFFFFFFFF0LL)); 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/final_scan_insn/src/final.c:2674:7: error: expected ')'
+( rtx)v13, 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/final_scan_insn/src/final.c:2673:26: note: to match this '('
+v21 = decode_asm_operands( 
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/final_scan_insn/src/final.c:2702:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v31 = (  struct rtx_def *)insn[2]; 
+                          ^~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/final_scan_insn/src/final.c:2714:29: error: too many arguments provided to function-like macro invocation
+fatal_insn_not_found( insn, "final.c", 2551, "final_scan_insn"); 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/final_scan_insn/src/toplev.h:52:9: note: macro 'fatal_insn_not_found' defined here
+#define fatal_insn_not_found(insn) \
+        ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/final_scan_insn/src/obj/final.o] Error 1

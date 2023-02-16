@@ -1,0 +1,77 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/toplev_main/src/toplev.c:5725:1: error: unknown type name 'param_info_0'; did you mean 'param_info'?
+param_info_0 *v23; // rax 
+^~~~~~~~~~~~
+param_info
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/toplev_main/src/params.h:53:3: note: 'param_info' declared here
+} param_info;
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/toplev_main/src/toplev.c:5731:7: error: unknown type name '$3377C5ED3DDB78AC88FD034015BE03B0'
+const $3377C5ED3DDB78AC88FD034015BE03B0 *n; // rbx 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/toplev_main/src/toplev.c:5753:7: error: unknown type name '$3377C5ED3DDB78AC88FD034015BE03B0'
+const $3377C5ED3DDB78AC88FD034015BE03B0 *v51; // r14 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/toplev_main/src/toplev.c:5800:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *chain; // rbp 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/toplev_main/src/toplev.c:5838:1: error: use of undeclared identifier 'lang_hooks_0'; did you mean 'lang_hooks'?
+lang_hooks_0.init_options( ); 
+^~~~~~~~~~~~
+lang_hooks
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/toplev_main/src/langhooks.h:168:32: note: 'lang_hooks' declared here
+extern const struct lang_hooks lang_hooks;
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/toplev_main/src/toplev.c:5924:17: error: use of undeclared identifier 'lang_hooks_0'; did you mean 'lang_hooks'?
+decode_option = lang_hooks_0.decode_option; 
+                ^~~~~~~~~~~~
+                lang_hooks
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/toplev_main/src/langhooks.h:168:32: note: 'lang_hooks' declared here
+extern const struct lang_hooks lang_hooks;
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/toplev_main/src/toplev.c:6296:10: error: use of undeclared identifier 'unk_939F0A'
+while ( &unk_939F0A != ( _UNKNOWN *)v66 ); 
+         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/toplev_main/src/toplev.c:6308:44: error: use of undeclared identifier 'lang_hooks_0'
+( ( void (  *)( __int64, unsigned __int64))lang_hooks_0.set_yydebug)( 1LL, v63); 
+                                           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/toplev_main/src/toplev.c:6322:10: error: use of undeclared identifier 'unk_939F08'
+while ( &unk_939F08 != ( _UNKNOWN *)v67 ); 
+         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/toplev_main/src/toplev.c:6442:34: error: use of undeclared identifier 'machine_mode'
+stack_limit_rtx = gen_rtx_REG( ( machine_mode)( 5 - ( ( target_flags & 0x2000000) == 0)), v48); 
+                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/toplev_main/src/toplev.c:6448:48: error: use of undeclared identifier 'machine_mode'
+stack_limit_rtx = gen_rtx_fmt_s( SYMBOL_REF, ( machine_mode)( 5 - ( ( target_flags & 0x2000000) == 0)), v49); 
+                                               ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/toplev_main/src/toplev.c:6491:13: error: expected identifier or '('
+ struct arg = ""; 
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/toplev_main/src/toplev.c:6504:8: error: use of undeclared identifier 'sch_istable'; did you mean '_sch_istable'?
+if ( ( sch_istable[*( unsigned __int8 *)v56] & 4) == 0 ) 
+       ^~~~~~~~~~~
+       _sch_istable
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/toplev_main/src/safe-ctype.h:72:29: note: '_sch_istable' declared here
+extern const unsigned short _sch_istable[256];
+                            ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/toplev_main/src/toplev.c:6508:13: error: expected identifier or '('
+ struct arg = v51[-1].arg; 
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/toplev_main/src/toplev.c:6514:1: error: use of undeclared identifier 'level_3'
+level_3 = v57; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/toplev_main/src/toplev.c:6523:6: error: use of undeclared identifier 'level_3'
+if ( level_3 == 2 ) 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/toplev_main/src/toplev.c:6530:7: error: use of undeclared identifier 'level_3'
+v59 = level_3; 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/toplev_main/src/toplev.c:6531:7: error: use of undeclared identifier 'level_3'
+if ( !level_3 ) 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/toplev_main/src/toplev.c:6533:1: error: use of undeclared identifier 'level_3'
+level_3 = v59; 
+^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/toplev_main/src/obj/toplev.o] Error 1

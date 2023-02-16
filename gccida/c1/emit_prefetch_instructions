@@ -1,0 +1,68 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_prefetch_instructions/src/loop.c:4306:4: error: expected ';' after expression
+rtx operand0; // [rsp+28h] [rbp-1650h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_prefetch_instructions/src/loop.c:4306:5: error: use of undeclared identifier 'operand0'
+rtx operand0; // [rsp+28h] [rbp-1650h] 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_prefetch_instructions/src/loop.c:4307:4: error: expected ';' after expression
+rtx operand0a; // [rsp+28h] [rbp-1650h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_prefetch_instructions/src/loop.c:4307:5: error: use of undeclared identifier 'operand0a'
+rtx operand0a; // [rsp+28h] [rbp-1650h] 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_prefetch_instructions/src/loop.c:4309:4: error: expected ';' after expression
+rtx x; // [rsp+30h] [rbp-1648h] BYREF 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_prefetch_instructions/src/loop.c:4309:5: error: use of undeclared identifier 'x'
+rtx x; // [rsp+30h] [rbp-1648h] BYREF 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_prefetch_instructions/src/loop.c:4366:38: error: expected expression
+print_rtl( loop_dump_stream, *( rtx *)( v8 + 72)); 
+                                     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_prefetch_instructions/src/loop.c:4386:38: error: expected expression
+print_rtl( loop_dump_stream, *( rtx *)( v8 + 72)); 
+                                     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_prefetch_instructions/src/loop.c:4414:1: error: use of undeclared identifier 'operand0'; did you mean 'operand0b'?
+operand0 = ( rtx)v9; 
+^~~~~~~~
+operand0b
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_prefetch_instructions/src/loop.c:4308:18: note: 'operand0b' declared here
+ struct rtx_def *operand0b; // [rsp+28h] [rbp-1650h] 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_prefetch_instructions/src/loop.c:4414:18: error: expected ';' after expression
+operand0 = ( rtx)v9; 
+                 ^
+                 ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_prefetch_instructions/src/loop.c:4419:21: error: use of undeclared identifier 'operand0'
+|| ( v15 = ( _QWORD)operand0 * *( _QWORD *)( v14 + 8), v15 > 0x1000) 
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_prefetch_instructions/src/loop.c:4420:65: error: expected expression
+|| ( v16 = *( int *)( v13 + 48), !loop_invariant_p( v1, *( rtx *)( v13 + 72))) 
+                                                                ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_prefetch_instructions/src/loop.c:4429:25: error: expected expression
+v18 = copy_rtx( *( rtx *)( v13 + 72)); 
+                        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_prefetch_instructions/src/loop.c:4430:1: error: use of undeclared identifier 'x'
+x = v18; 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_prefetch_instructions/src/loop.c:4431:25: error: expected expression
+v19 = copy_rtx( *( rtx *)( v6 + 40)); 
+                        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_prefetch_instructions/src/loop.c:4432:1: error: use of undeclared identifier 'x'
+x = simplify_gen_binary( PLUS, ( machine_mode)( ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32), v19, v18); 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_prefetch_instructions/src/loop.c:4432:34: error: use of undeclared identifier 'machine_mode'
+x = simplify_gen_binary( PLUS, ( machine_mode)( ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32), v19, v18); 
+                                 ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_prefetch_instructions/src/loop.c:4433:34: error: use of undeclared identifier 'x'
+v20 = remove_constant_addition( &x); 
+                                 ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_prefetch_instructions/src/loop.c:4441:22: error: expected expression
+note_stores( *( rtx *)( *( _QWORD *)v13 + 32LL), check_store, &data); 
+                     ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_prefetch_instructions/src/obj/loop.o] Error 1

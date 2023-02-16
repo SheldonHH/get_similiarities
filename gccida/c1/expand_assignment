@@ -1,0 +1,57 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_assignment/src/expr.c:4102:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *inner_reference; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_assignment/src/expr.c:4103:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v8; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_assignment/src/expr.c:4106:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v11; // r14 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_assignment/src/expr.c:4138:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v43; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_assignment/src/expr.c:4141:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *type; // r14 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_assignment/src/expr.c:4143:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v48; // ecx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_assignment/src/expr.c:4150:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode pmode; // [rsp+14h] [rbp-64h] BYREF 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_assignment/src/expr.c:4189:24: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+&& ( ( v15 = ( __int64)v10[1]) == 0 ? ( v16 = 8) : ( v16 = *( _DWORD *)( v15 + 32)), v16 == get_mode_alignment( v8)) ) 
+                       ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_assignment/src/expr.c:4211:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v34 = ( __int64)v17[1]; 
+                ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_assignment/src/expr.c:4219:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v37 = ( __int64)v17[1]; 
+                ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_assignment/src/expr.c:4266:51: error: use of undeclared identifier 'machine_mode'
+v50 = store_field( targeta, v41, v42, v48, exp, ( machine_mode)v44, v45, type, alias_set); 
+                                                  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_assignment/src/expr.c:4272:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( ( unsigned __int8)HIBYTE( WORD2( v58->common.type->block.abstract_origin)) >> 1), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_assignment/src/expr.c:4273:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( ( unsigned __int8)HIBYTE( WORD2( v49->common.type->block.abstract_origin)) >> 1), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_assignment/src/expr.c:4350:33: error: use of undeclared identifier 'machine_mode'
+v20 = expand_expr( from, 0LL, ( machine_mode)*( ( unsigned __int8 *)v18 + 2), EXPAND_NORMAL); 
+                                ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_assignment/src/expr.c:4376:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v25.rtwint = ( __int64)v18->fld[0]; 
+                       ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_assignment/src/expr.c:4380:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( ( unsigned __int8)HIBYTE( WORD2( sizetype_tab[0]->block.abstract_origin)) >> 1), 
+  ^
+16 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_assignment/src/obj/expr.o] Error 1

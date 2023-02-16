@@ -1,0 +1,57 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cse_main/src/cse.c:7519:4: error: expected ';' after expression
+rtx v15; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cse_main/src/cse.c:7519:5: error: use of undeclared identifier 'v15'
+rtx v15; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cse_main/src/cse.c:7523:4: error: expected ';' after expression
+rtx v20; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cse_main/src/cse.c:7523:5: error: use of undeclared identifier 'v20'; did you mean 'v10'?
+rtx v20; // rax 
+    ^~~
+    v10
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cse_main/src/cse.c:7514:5: note: 'v10' declared here
+int v10; // eax 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cse_main/src/cse.c:7540:1: error: use of undeclared identifier 'uid_cuid_0'; did you mean 'uid_cuid'?
+uid_cuid_0 = v7; 
+^~~~~~~~~~
+uid_cuid
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cse_main/src/cse.c:360:13: note: 'uid_cuid' declared here
+static int *uid_cuid;
+            ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cse_main/src/cse.c:7580:7: error: expected expression
+swift::warning( 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cse_main/src/cse.c:7604:1: error: use of undeclared identifier 'v15'
+v15 = cse_basic_block( v6, last, data.path, around_loop); 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cse_main/src/cse.c:7606:6: error: use of undeclared identifier 'v15'
+v6 = v15; 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cse_main/src/cse.c:7646:1: error: use of undeclared identifier 'v20'; did you mean 'v10'?
+v20 = cse_basic_block( v6, data.last, data.path, around_loop); 
+^~~
+v10
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cse_main/src/cse.c:7514:5: note: 'v10' declared here
+int v10; // eax 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cse_main/src/cse.c:7648:6: error: use of undeclared identifier 'v20'; did you mean 'v10'?
+v6 = v20; 
+     ^~~
+     v10
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cse_main/src/cse.c:7514:5: note: 'v10' declared here
+int v10; // eax 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cse_main/src/cse.c:7662:7: error: use of undeclared identifier 'uid_cuid_0'; did you mean 'uid_cuid'?
+free( uid_cuid_0); 
+      ^~~~~~~~~~
+      uid_cuid
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cse_main/src/cse.c:360:13: note: 'uid_cuid' declared here
+static int *uid_cuid;
+            ^
+11 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cse_main/src/obj/cse.o] Error 1

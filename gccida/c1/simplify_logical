@@ -1,0 +1,67 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/simplify_logical/src/combine.c:5728:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v16; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/simplify_logical/src/combine.c:5744:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v32; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/simplify_logical/src/combine.c:5758:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v46; // r12d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/simplify_logical/src/combine.c:5764:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v52; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/simplify_logical/src/combine.c:5769:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v57; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/simplify_logical/src/combine.c:5770:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v58; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/simplify_logical/src/combine.c:5775:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v63; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/simplify_logical/src/combine.c:5783:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v6 = ( __int64)x[1]; 
+               ^~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/simplify_logical/src/combine.c:5790:37: error: use of undeclared identifier 'machine_mode'
+v35 = nonzero_bits( ( rtx)rtwint, ( machine_mode)v4); 
+                                    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/simplify_logical/src/combine.c:5791:41: error: use of undeclared identifier 'machine_mode'
+v36 = ( v35 & nonzero_bits( ( rtx)v6, ( machine_mode)v4)) == 0; 
+                                        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/simplify_logical/src/combine.c:5836:47: error: use of undeclared identifier 'machine_mode'
+result = reversed_comparison( ( rtx)rtwint, ( machine_mode)v4, *( ( rtx *)rtwint + 1), *( ( rtx *)rtwint + 2)); 
+                                              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/simplify_logical/src/combine.c:5853:47: error: use of undeclared identifier 'machine_mode'
+result = reversed_comparison( ( rtx)rtwint, ( machine_mode)v4, *( ( rtx *)rtwint + 1), *( ( rtx *)rtwint + 2)); 
+                                              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/simplify_logical/src/combine.c:5861:31: error: use of undeclared identifier 'machine_mode'
+return gen_rtx_fmt_ee( v32, ( machine_mode)v4, v31, v30); 
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/simplify_logical/src/combine.c:5865:34: error: use of undeclared identifier 'machine_mode'
+v15 = simplify_gen_unary( NOT, ( machine_mode)v4, v65, ( machine_mode)v4); 
+                                 ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/simplify_logical/src/combine.c:5865:58: error: use of undeclared identifier 'machine_mode'
+v15 = simplify_gen_unary( NOT, ( machine_mode)v4, v65, ( machine_mode)v4); 
+                                                         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/simplify_logical/src/combine.c:5870:26: error: use of undeclared identifier 'machine_mode'
+v38 = gen_binary( XOR, ( machine_mode)v4, ( rtx)rtwint, ( rtx)v6); 
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/simplify_logical/src/combine.c:5871:35: error: use of undeclared identifier 'machine_mode'
+return simplify_gen_unary( NOT, ( machine_mode)v4, v38, ( machine_mode)v4); 
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/simplify_logical/src/combine.c:5871:59: error: use of undeclared identifier 'machine_mode'
+return simplify_gen_unary( NOT, ( machine_mode)v4, v38, ( machine_mode)v4); 
+                                                          ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/simplify_logical/src/combine.c:5877:62: error: use of undeclared identifier 'machine_mode'
+&& ( ~*( _QWORD *)( v6 + 8) & nonzero_bits( x->fld[0].rtx, ( machine_mode)v4)) == 0 
+                                                             ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/simplify_logical/src/obj/combine.o] Error 1

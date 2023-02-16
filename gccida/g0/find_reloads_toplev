@@ -1,0 +1,35 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_reloads_toplev/src/reload.c:4798:1: error: must use 'enum' tag to refer to type 'reload_type'
+reload_type type, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_reloads_toplev/src/reload.c:4815:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code; // [rsp+60h] [rbp-10h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_reloads_toplev/src/reload.c:4833:25: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( replace_reloads && recog_data_0.operand[opnum] != xa ) 
+                        ^~~~~~~~~~~~
+                        recog_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_reloads_toplev/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_reloads_toplev/src/reload.c:4840:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)mem + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_reloads_toplev/src/reload.c:4858:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)xa + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_reloads_toplev/src/reload.c:4879:31: error: use of undeclared identifier 'machine_mode'
+tem_0 = gen_lowpart_common( ( machine_mode)*( ( unsigned __int8 *)xa + 2), reg_equiv_constant[regno_0]); 
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_reloads_toplev/src/reload.c:4899:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( unsigned __int8 *)( xa->fld[0].rtwint + 2)); 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_reloads_toplev/src/reload.c:4902:31: error: use of undeclared identifier 'machine_mode'
+tem_0 = gen_lowpart_common( ( machine_mode)*( ( unsigned __int8 *)xa + 2), tem_0); 
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_reloads_toplev/src/reload.c:4929:34: error: use of undeclared identifier 'machine_mode'
+&& ( !strict_memory_address_p( ( machine_mode)*( ( unsigned __int8 *)xa + 2), reg_equiv_mem[regno_0]->fld[0].rtx) 
+                                 ^
+9 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_reloads_toplev/src/obj/reload.o] Error 1

@@ -1,0 +1,48 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/probe_stack_range/src/explow.c:1932:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v5; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/probe_stack_range/src/explow.c:1946:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v19; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/probe_stack_range/src/explow.c:1948:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v21; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/probe_stack_range/src/explow.c:1953:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v26; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/probe_stack_range/src/explow.c:1970:25: error: use of undeclared identifier 'machine_mode'
+v2 = convert_to_mode( ( machine_mode)v4, size, 1); 
+                        ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/probe_stack_range/src/explow.c:1993:32: error: use of undeclared identifier 'machine_mode'
+v15 = gen_rtx_fmt_ee( MINUS, ( machine_mode)v12, v13, v14); 
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/probe_stack_range/src/explow.c:1994:31: error: invalid suffix 'xmode' on integer constant
+v16 = gen_rtx_MEM( *(short *)0xmode, v15); 
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/probe_stack_range/src/explow.c:2004:32: error: use of undeclared identifier 'machine_mode'
+v18 = gen_rtx_fmt_ee( MINUS, ( machine_mode)v12, v13, v17); 
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/probe_stack_range/src/explow.c:2005:18: error: invalid suffix 'xmode' on integer constant
+v19 = *(short *)0xmode; 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/probe_stack_range/src/explow.c:2025:20: error: use of undeclared identifier 'machine_mode'
+v25 = force_reg( ( machine_mode)( ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32), v25); 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/probe_stack_range/src/explow.c:2029:31: error: invalid suffix 'xmode' on integer constant
+v32 = gen_rtx_MEM( *(short *)0xmode, v25); 
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/probe_stack_range/src/explow.c:2034:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/probe_stack_range/src/explow.c:2048:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/probe_stack_range/src/explow.c:2054:18: error: invalid suffix 'xmode' on integer constant
+v19 = *(short *)0xmode; 
+                 ^
+14 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/probe_stack_range/src/obj/explow.o] Error 1

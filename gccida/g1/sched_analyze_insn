@@ -1,0 +1,99 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/sched_analyze_insn/src/sched-deps.c:1369:27: error: unknown type name 'deps_0'
+void  sched_analyze_insn( deps_0 *deps, rtx x, rtx insn, rtx loop_notes) 
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/sched_analyze_insn/src/sched-deps.c:1454:12: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v5 = ( rtx)x[1]; 
+           ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/sched_analyze_insn/src/sched-deps.c:1494:21: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( i = ( __int64)insn[4]; i; i = *( _QWORD *)( i + 16) ) 
+                    ^~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/sched_analyze_insn/src/sched-deps.c:1518:51: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( j = deps->pending_write_insns; j; j = ( rtx)j[1] ) 
+                                                  ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/sched_analyze_insn/src/sched-deps.c:1521:66: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( k = deps->pending_read_mems; pending_read_insns; k = ( rtx)k[1] ) 
+                                                                 ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/sched_analyze_insn/src/sched-deps.c:1525:28: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+pending_read_insns = ( rtx)pending_read_insns[1]; 
+                           ^~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/sched_analyze_insn/src/sched-deps.c:1532:13: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v10 = ( rtx)loop_notes[1]; 
+            ^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/sched_analyze_insn/src/sched-deps.c:1551:13: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v10 = ( rtx)v10[1]; 
+            ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/sched_analyze_insn/src/sched-deps.c:1583:41: error: use of undeclared identifier 'reg_note'; did you mean 'reg_names'?
+add_dependence_list( insn, v39->sets, ( reg_note)0); 
+                                        ^~~~~~~~
+                                        reg_names
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/sched_analyze_insn/src/regs.h:166:21: note: 'reg_names' declared here
+extern const char * reg_names[FIRST_PSEUDO_REGISTER];
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/sched_analyze_insn/src/sched-deps.c:1583:50: error: expected ')'
+add_dependence_list( insn, v39->sets, ( reg_note)0); 
+                                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/sched_analyze_insn/src/sched-deps.c:1583:20: note: to match this '('
+add_dependence_list( insn, v39->sets, ( reg_note)0); 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/sched_analyze_insn/src/sched-deps.c:1584:45: error: use of undeclared identifier 'reg_note'; did you mean 'reg_names'?
+add_dependence_list( insn, v39->clobbers, ( reg_note)0); 
+                                            ^~~~~~~~
+                                            reg_names
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/sched_analyze_insn/src/regs.h:166:21: note: 'reg_names' declared here
+extern const char * reg_names[FIRST_PSEUDO_REGISTER];
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/sched_analyze_insn/src/sched-deps.c:1584:54: error: expected ')'
+add_dependence_list( insn, v39->clobbers, ( reg_note)0); 
+                                                     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/sched_analyze_insn/src/sched-deps.c:1584:20: note: to match this '('
+add_dependence_list( insn, v39->clobbers, ( reg_note)0); 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/sched_analyze_insn/src/sched-deps.c:1609:51: error: use of undeclared identifier 'reg_note'; did you mean 'reg_names'?
+add_dependence_list_and_free( insn, &v42->sets, ( reg_note)0); 
+                                                  ^~~~~~~~
+                                                  reg_names
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/sched_analyze_insn/src/regs.h:166:21: note: 'reg_names' declared here
+extern const char * reg_names[FIRST_PSEUDO_REGISTER];
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/sched_analyze_insn/src/sched-deps.c:1609:60: error: expected ')'
+add_dependence_list_and_free( insn, &v42->sets, ( reg_note)0); 
+                                                           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/sched_analyze_insn/src/sched-deps.c:1609:29: note: to match this '('
+add_dependence_list_and_free( insn, &v42->sets, ( reg_note)0); 
+                            ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/sched_analyze_insn/src/sched-deps.c:1610:55: error: use of undeclared identifier 'reg_note'; did you mean 'reg_names'?
+add_dependence_list_and_free( insn, &v42->clobbers, ( reg_note)0); 
+                                                      ^~~~~~~~
+                                                      reg_names
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/sched_analyze_insn/src/regs.h:166:21: note: 'reg_names' declared here
+extern const char * reg_names[FIRST_PSEUDO_REGISTER];
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/sched_analyze_insn/src/sched-deps.c:1610:64: error: expected ')'
+add_dependence_list_and_free( insn, &v42->clobbers, ( reg_note)0); 
+                                                               ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/sched_analyze_insn/src/sched-deps.c:1610:29: note: to match this '('
+add_dependence_list_and_free( insn, &v42->clobbers, ( reg_note)0); 
+                            ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/sched_analyze_insn/src/sched-deps.c:1653:41: error: use of undeclared identifier 'reg_note'; did you mean 'reg_names'?
+add_dependence_list( insn, v48->sets, ( reg_note)0); 
+                                        ^~~~~~~~
+                                        reg_names
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/sched_analyze_insn/src/regs.h:166:21: note: 'reg_names' declared here
+extern const char * reg_names[FIRST_PSEUDO_REGISTER];
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/sched_analyze_insn/src/sched-deps.c:1653:50: error: expected ')'
+add_dependence_list( insn, v48->sets, ( reg_note)0); 
+                                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/sched_analyze_insn/src/sched-deps.c:1653:20: note: to match this '('
+add_dependence_list( insn, v48->sets, ( reg_note)0); 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/sched_analyze_insn/src/sched-deps.c:1654:45: error: use of undeclared identifier 'reg_note'; did you mean 'reg_names'?
+add_dependence_list( insn, v48->clobbers, ( reg_note)0); 
+                                            ^~~~~~~~
+                                            reg_names
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/sched_analyze_insn/src/regs.h:166:21: note: 'reg_names' declared here
+extern const char * reg_names[FIRST_PSEUDO_REGISTER];
+                    ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/sched_analyze_insn/src/obj/sched-deps.o] Error 1

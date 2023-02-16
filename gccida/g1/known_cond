@@ -1,0 +1,85 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/known_cond/src/combine.c:7846:25: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx  known_cond( rtx x, rtx_code cond, rtx reg, rtx val) 
+                        ^
+                        enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/known_cond/src/combine.c:7849:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v5; // r12d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/known_cond/src/combine.c:7860:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v16; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/known_cond/src/combine.c:7883:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& ( mode_class_0[*( ( unsigned __int8 *)x + 2)] & 0xFFFFFFFB) != 2 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/known_cond/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/known_cond/src/combine.c:7884:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& mode_class_0[*( ( unsigned __int8 *)x + 2)] != MODE_VECTOR_FLOAT 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/known_cond/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/known_cond/src/combine.c:7885:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& ( mode_class_0[*( ( unsigned __int8 *)val + 2)] & 0xFFFFFFFB) != 2 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/known_cond/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/known_cond/src/combine.c:7886:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& mode_class_0[*( ( unsigned __int8 *)val + 2)] != MODE_VECTOR_FLOAT ) 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/known_cond/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/known_cond/src/combine.c:7904:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( unsigned __int8 *)( x->fld[0].rtwint + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/known_cond/src/combine.c:7906:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( unsigned __int8 *)( x->fld[0].rtwint + 2)); 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/known_cond/src/combine.c:7926:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v17.rtwint = ( __int64)x->fld[0]; 
+                       ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/known_cond/src/combine.c:7932:26: error: use of undeclared identifier 'machine_mode'
+v21 = simplify_subreg( ( machine_mode)*( ( unsigned __int8 *)v4 + 2), v19, ( machine_mode)v18, *( _DWORD *)&v4[1]); 
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/known_cond/src/combine.c:7932:78: error: use of undeclared identifier 'machine_mode'
+v21 = simplify_subreg( ( machine_mode)*( ( unsigned __int8 *)v4 + 2), v19, ( machine_mode)v18, *( _DWORD *)&v4[1]); 
+                                                                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/known_cond/src/combine.c:7940:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v23.rtwint = ( __int64)x->fld[0]; 
+                       ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/known_cond/src/combine.c:7946:48: error: use of undeclared identifier 'machine_mode'
+v26 = simplify_unary_operation( ZERO_EXTEND, ( machine_mode)*( ( unsigned __int8 *)v4 + 2), v25, ( machine_mode)v24); 
+                                               ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/known_cond/src/combine.c:7946:100: error: use of undeclared identifier 'machine_mode'
+v26 = simplify_unary_operation( ZERO_EXTEND, ( machine_mode)*( ( unsigned __int8 *)v4 + 2), v25, ( machine_mode)v24); 
+                                                                                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/known_cond/src/combine.c:7965:36: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+if ( comparison_dominates_p( v5, ( rtx_code)v6) ) 
+                                   ^~~~~~~~
+                                   rtx_cost
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/known_cond/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/known_cond/src/combine.c:7965:45: error: expected ')'
+if ( comparison_dominates_p( v5, ( rtx_code)v6) ) 
+                                            ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/known_cond/src/combine.c:7965:28: note: to match this '('
+if ( comparison_dominates_p( v5, ( rtx_code)v6) ) 
+                           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/known_cond/src/combine.c:8003:14: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+return ( rtx)x[1]; 
+             ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/known_cond/src/combine.c:8045:14: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+return ( rtx)x[1]; 
+             ^~~~
+19 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/known_cond/src/obj/combine.o] Error 1

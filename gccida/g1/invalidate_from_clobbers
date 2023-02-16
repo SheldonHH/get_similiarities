@@ -1,0 +1,11 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/invalidate_from_clobbers/src/cse.c:6876:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v2.rtwint = ( __int64)x->fld[0]; 
+                      ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/invalidate_from_clobbers/src/cse.c:6886:42: error: use of undeclared identifier 'machine_mode'
+invalidate( *( rtx *)( v2.rtwint + 8), ( machine_mode)*( unsigned __int8 *)( v2.rtwint + 2)); 
+                                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/invalidate_from_clobbers/src/cse.c:6908:31: error: use of undeclared identifier 'machine_mode'
+invalidate( v6->fld[0].rtx, ( machine_mode)*( ( unsigned __int8 *)v6 + 2)); 
+                              ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/invalidate_from_clobbers/src/obj/cse.o] Error 1

@@ -1,0 +1,56 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/check_dbra_loop/src/loop.c:8361:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode_0; // [rsp+94h] [rbp-13Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/check_dbra_loop/src/loop.c:8364:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // [rsp+ACh] [rbp-124h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/check_dbra_loop/src/loop.c:8366:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code cmp_code; // [rsp+C0h] [rbp-110h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/check_dbra_loop/src/loop.c:8405:19: error: expected identifier or '('
+ struct loop_info = (  struct loop_info *)loop->aux; 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/check_dbra_loop/src/loop.c:8410:14: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+jump = ( rtx)loop_end[1]; 
+             ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/check_dbra_loop/src/loop.c:8446:62: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+|| ( unsigned __int16)*( _DWORD *)comparison == 102 && ( rtx)comparison[1] == const_int_rtx[64]) 
+                                                             ^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/check_dbra_loop/src/loop.c:8462:78: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( p = loop_start; p && ( unsigned __int16)*( _DWORD *)p != 36; p = ( rtx)p[1] ) 
+                                                                             ^~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/check_dbra_loop/src/loop.c:8471:10: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+&& ( rtx)before_comparison[1] == const_int_rtx[64] 
+         ^~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/check_dbra_loop/src/loop.c:8501:60: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v18 = ( unsigned __int16)**( _DWORD **)&p[2] == 47 ? ( rtx)p[2] : single_set_2( p, *( rtx *)&p[2]); 
+                                                           ^~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/check_dbra_loop/src/loop.c:8569:28: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+add_val.rtwint = ( __int64)bl_0->biv->add_val->fld[0]; 
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/check_dbra_loop/src/loop.c:8570:26: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+comparison_value = ( rtx)comparison[1]; 
+                         ^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/check_dbra_loop/src/loop.c:8694:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)reg), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/check_dbra_loop/src/loop.c:8694:18: error: expected expression
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)reg), 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/check_dbra_loop/src/loop.c:8700:19: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( tem = ( rtx)loop_end[1]; ; tem = ( rtx)tem[1] ) 
+                  ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/check_dbra_loop/src/loop.c:8700:46: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( tem = ( rtx)loop_end[1]; ; tem = ( rtx)tem[1] ) 
+                                             ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/check_dbra_loop/src/loop.c:8720:60: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v11 = ( unsigned __int16)**( _DWORD **)&p[2] == 47 ? ( rtx)p[2] : single_set_2( p, *( rtx *)&p[2]); 
+                                                           ^~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/check_dbra_loop/src/loop.c:8733:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+*pnote = ( rtx)( *pnote)[1]; 
+               ^~~~~~~~~~~~
+17 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/check_dbra_loop/src/obj/loop.o] Error 1

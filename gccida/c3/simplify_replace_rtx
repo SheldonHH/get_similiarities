@@ -1,0 +1,94 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/simplify_replace_rtx/src/simplify-rtx.c:727:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v13; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/simplify_replace_rtx/src/simplify-rtx.c:729:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v15; // r14d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/simplify_replace_rtx/src/simplify-rtx.c:735:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v21; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/simplify_replace_rtx/src/simplify-rtx.c:737:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v23; // r13d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/simplify_replace_rtx/src/simplify-rtx.c:741:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v27; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/simplify_replace_rtx/src/simplify-rtx.c:743:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode outermode; // [rsp+Ch] [rbp-3Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/simplify_replace_rtx/src/simplify-rtx.c:744:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v30; // [rsp+10h] [rbp-38h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/simplify_replace_rtx/src/simplify-rtx.c:761:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v20.rtwint = ( __int64)x->fld[0]; 
+                       ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/simplify_replace_rtx/src/simplify-rtx.c:765:34: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+v4 = simplify_unary_operation( ( rtx_code)v5, outermode, v3, v21); 
+                                 ^~~~~~~~
+                                 rtx_cost
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/simplify_replace_rtx/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/simplify_replace_rtx/src/simplify-rtx.c:765:43: error: expected ')'
+v4 = simplify_unary_operation( ( rtx_code)v5, outermode, v3, v21); 
+                                          ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/simplify_replace_rtx/src/simplify-rtx.c:765:30: note: to match this '('
+v4 = simplify_unary_operation( ( rtx_code)v5, outermode, v3, v21); 
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/simplify_replace_rtx/src/simplify-rtx.c:768:25: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+return gen_rtx_fmt_e( ( rtx_code)v5, outermode, v3); 
+                        ^~~~~~~~
+                        rtx_cost
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/simplify_replace_rtx/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/simplify_replace_rtx/src/simplify-rtx.c:768:34: error: expected ')'
+return gen_rtx_fmt_e( ( rtx_code)v5, outermode, v3); 
+                                 ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/simplify_replace_rtx/src/simplify-rtx.c:768:21: note: to match this '('
+return gen_rtx_fmt_e( ( rtx_code)v5, outermode, v3); 
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/simplify_replace_rtx/src/simplify-rtx.c:798:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v14.rtwint = ( __int64)x->fld[0]; 
+                       ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/simplify_replace_rtx/src/simplify-rtx.c:856:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v22.rtwint = ( __int64)x->fld[0]; 
+                       ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/simplify_replace_rtx/src/simplify-rtx.c:869:39: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+v4 = simplify_relational_operation( ( rtx_code)v5, v23, v24, v25); 
+                                      ^~~~~~~~
+                                      rtx_cost
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/simplify_replace_rtx/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/simplify_replace_rtx/src/simplify-rtx.c:869:48: error: expected ')'
+v4 = simplify_relational_operation( ( rtx_code)v5, v23, v24, v25); 
+                                               ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/simplify_replace_rtx/src/simplify-rtx.c:869:35: note: to match this '('
+v4 = simplify_relational_operation( ( rtx_code)v5, v23, v24, v25); 
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/simplify_replace_rtx/src/simplify-rtx.c:875:25: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+v27 = swap_condition( ( rtx_code)v5); 
+                        ^~~~~~~~
+                        rtx_cost
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/simplify_replace_rtx/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/simplify_replace_rtx/src/simplify-rtx.c:875:34: error: expected ')'
+v27 = swap_condition( ( rtx_code)v5); 
+                                 ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/simplify_replace_rtx/src/simplify-rtx.c:875:21: note: to match this '('
+v27 = swap_condition( ( rtx_code)v5); 
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/simplify_replace_rtx/src/simplify-rtx.c:893:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( unsigned __int8 *)( x->fld[0].rtwint + 2), 
+  ^
+19 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/simplify_replace_rtx/src/obj/simplify-rtx.o] Error 1

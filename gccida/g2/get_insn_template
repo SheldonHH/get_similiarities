@@ -1,0 +1,16 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/get_insn_template/src/final.c:2257:7: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+v2 = &insn_data_0[code]; 
+      ^~~~~~~~~~~
+      insn_data
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/get_insn_template/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/get_insn_template/src/final.c:2266:32: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+return ( const char *)output( &recog_data_0); 
+                               ^~~~~~~~~~~~
+                               recog_data
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/get_insn_template/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+2 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/get_insn_template/src/obj/final.o] Error 1

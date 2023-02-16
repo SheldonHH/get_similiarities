@@ -1,0 +1,19 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/get_AT/src/dwarf2out.c:5253:38: error: must use 'enum' tag to refer to type 'dwarf_attribute'
+dw_attr_ref  get_AT( dw_die_ref die, dwarf_attribute attr_kind) 
+                                     ^
+                                     enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/get_AT/src/dwarf2out.c:5257:1: error: must use 'enum' tag to refer to type 'dwarf_attribute'
+dwarf_attribute dw_attr; // edx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/get_AT/src/dwarf2out.c:5275:30: error: use of undeclared identifier 'a'
+fancy_abort( ( const char *)&a, 4588, "AT_ref"); 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/get_AT/src/dwarf2out.c:5287:14: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v5 = ( int *)val_addr[1]; 
+             ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/get_AT/src/dwarf2out.c:5298:30: error: use of undeclared identifier 'a'
+fancy_abort( ( const char *)&a, 4588, "AT_ref"); 
+                             ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/get_AT/src/obj/dwarf2out.o] Error 1

@@ -1,0 +1,69 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/loop_givs_rescan/src/loop.c:5181:1: error: use of undeclared identifier 'induction_1'
+induction_1 *giv; // rbx 
+^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/loop_givs_rescan/src/loop.c:5181:14: error: use of undeclared identifier 'giv'; did you mean 'div'?
+induction_1 *giv; // rbx 
+             ^~~
+             div
+/usr/include/stdlib.h:849:14: note: 'div' declared here
+extern div_t div (int __numer, int __denom)
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/loop_givs_rescan/src/loop.c:5182:1: error: use of undeclared identifier 'induction_1'
+induction_1 *same; // rax 
+^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/loop_givs_rescan/src/loop.c:5182:14: error: use of undeclared identifier 'same'
+induction_1 *same; // rax 
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/loop_givs_rescan/src/loop.c:5187:1: error: must use 'enum' tag to refer to type 'g_types'
+g_types giv_type; // edx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/loop_givs_rescan/src/loop.c:5209:1: error: use of undeclared identifier 'giv'
+giv = bl_0->giv; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/loop_givs_rescan/src/loop.c:5210:6: error: use of undeclared identifier 'giv'; did you mean 'div'?
+if ( giv ) 
+     ^~~
+     div
+/usr/include/stdlib.h:849:14: note: 'div' declared here
+extern div_t div (int __numer, int __denom)
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/loop_givs_rescan/src/loop.c:5214:1: error: use of undeclared identifier 'same'
+same = giv->same; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/loop_givs_rescan/src/loop.c:5214:8: error: use of undeclared identifier 'giv'
+same = giv->same; 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/loop_givs_rescan/src/loop.c:5215:6: error: use of undeclared identifier 'same'
+if ( same ) 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/loop_givs_rescan/src/loop.c:5217:21: error: use of undeclared identifier 'giv'
+if ( ( *( ( _BYTE *)giv + 100) & 4) == 0 ) 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/loop_givs_rescan/src/loop.c:5219:11: error: use of undeclared identifier 'giv'
+new_reg = giv->new_reg; 
+          ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/loop_givs_rescan/src/loop.c:5223:6: error: use of undeclared identifier 'giv'
+if ( giv->giv_type ) 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/loop_givs_rescan/src/loop.c:5226:21: error: use of undeclared identifier 'giv'
+if ( ( *( ( _BYTE *)giv + 100) & 1) != 0 ) 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/loop_givs_rescan/src/loop.c:5228:9: error: use of undeclared identifier 'giv'
+reg_map[giv->dest_reg->fld[0].rtuint] = new_reg; 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/loop_givs_rescan/src/loop.c:5232:22: error: use of undeclared identifier 'giv'
+v15 = gen_move_insn( giv->dest_reg, new_reg); 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/loop_givs_rescan/src/loop.c:5233:23: error: use of undeclared identifier 'giv'
+emit_insn_after( v15, giv->insn); 
+                      ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/loop_givs_rescan/src/loop.c:5238:18: error: use of undeclared identifier 'giv'
+validate_change( giv->insn, giv->location, new_reg, 0); 
+                 ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/loop_givs_rescan/src/loop.c:5238:29: error: use of undeclared identifier 'giv'
+validate_change( giv->insn, giv->location, new_reg, 0); 
+                            ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/loop_givs_rescan/src/obj/loop.o] Error 1

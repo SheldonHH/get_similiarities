@@ -1,0 +1,36 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/sge_plus_constant/src/loop.c:7292:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v8; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/sge_plus_constant/src/loop.c:7295:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v11; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/sge_plus_constant/src/loop.c:7297:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v13; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/sge_plus_constant/src/loop.c:7298:4: error: expected ';' after expression
+rtx v14; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/sge_plus_constant/src/loop.c:7298:5: error: use of undeclared identifier 'v14'
+rtx v14; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/sge_plus_constant/src/loop.c:7304:26: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v6 = (  struct rtx_def *)x[1]; 
+                         ^~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/sge_plus_constant/src/loop.c:7316:1: error: use of undeclared identifier 'v14'
+v14 = sge_plus_constant( x->fld[0].rtx, v2); 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/sge_plus_constant/src/loop.c:7317:26: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v2 = (  struct rtx_def *)x[1]; 
+                         ^~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/sge_plus_constant/src/loop.c:7321:1: error: use of undeclared identifier 'v14'
+v14 = sge_plus_constant( v6, v2); 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/sge_plus_constant/src/loop.c:7325:7: error: use of undeclared identifier 'v14'
+v12 = v14; 
+      ^
+10 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/sge_plus_constant/src/obj/loop.o] Error 1

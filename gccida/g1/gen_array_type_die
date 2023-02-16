@@ -1,0 +1,28 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_array_type_die/src/dwarf2out.c:10233:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *rttree; // r15 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_array_type_die/src/dwarf2out.c:10234:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v17; // r14 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_array_type_die/src/dwarf2out.c:10247:30: error: use of undeclared identifier 'a'
+fancy_abort( ( const char *)&a, 5026, "add_child_die"); 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_array_type_die/src/dwarf2out.c:10302:30: error: use of undeclared identifier 'a'
+fancy_abort( ( const char *)&a, 5026, "add_child_die"); 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_array_type_die/src/dwarf2out.c:10309:20: error: expected expression
+v17 = ( tree_node *)rtl[7]; 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_array_type_die/src/dwarf2out.c:10309:9: error: use of undeclared identifier 'tree_node'
+v17 = ( tree_node *)rtl[7]; 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_array_type_die/src/dwarf2out.c:10310:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v18.rtwint = ( __int64)rtl->fld[0]; 
+                       ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_array_type_die/src/dwarf2out.c:10312:13: error: invalid operands to binary expression ('struct rtx_def' and 'int')
+&& ( rtl[1] != 6 || *( _QWORD *)&rtl[6] || *( _BYTE *)( v18.rtwint + 16) != 6 || *( _QWORD *)( v18.rtwint + 96)) ) 
+     ~~~~~~ ^  ~
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_array_type_die/src/obj/dwarf2out.o] Error 1

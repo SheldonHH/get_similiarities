@@ -1,0 +1,78 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_reload/src/reload1.c:7813:46: error: must use 'enum' tag to refer to type 'reload_type'
+rtx  gen_reload( rtx out, rtx in, int opnum, reload_type type) 
+                                             ^
+                                             enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_reload/src/reload1.c:7816:4: error: expected ';' after expression
+rtx last_insn; // rbp 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_reload/src/reload1.c:7816:5: error: use of undeclared identifier 'last_insn'
+rtx last_insn; // rbp 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_reload/src/reload1.c:7820:4: error: expected ';' after expression
+rtx v12; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_reload/src/reload1.c:7820:5: error: use of undeclared identifier 'v12'
+rtx v12; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_reload/src/reload1.c:7824:4: error: expected ';' after expression
+rtx v16; // r12 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_reload/src/reload1.c:7824:5: error: use of undeclared identifier 'v16'
+rtx v16; // r12 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_reload/src/reload1.c:7828:4: error: expected ';' after expression
+rtx v20; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_reload/src/reload1.c:7828:5: error: use of undeclared identifier 'v20'; did you mean 'v10'?
+rtx v20; // rax 
+    ^~~
+    v10
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_reload/src/reload1.c:7818:18: note: 'v10' declared here
+ struct rtx_def *v10; // rax 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_reload/src/reload1.c:7833:4: error: expected ';' after expression
+rtx v25; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_reload/src/reload1.c:7833:5: error: use of undeclared identifier 'v25'
+rtx v25; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_reload/src/reload1.c:7836:4: error: expected ';' after expression
+rtx secondary_mem; // r14 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_reload/src/reload1.c:7836:5: error: use of undeclared identifier 'secondary_mem'; did you mean 'get_secondary_mem'?
+rtx secondary_mem; // r14 
+    ^~~~~~~~~~~~~
+    get_secondary_mem
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_reload/src/reload.h:260:12: note: 'get_secondary_mem' declared here
+extern rtx get_secondary_mem PARAMS ((rtx, enum machine_mode,
+           ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_reload/src/reload1.c:7837:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v29; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_reload/src/reload1.c:7839:4: error: expected ';' after expression
+rtx v31; // r14 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_reload/src/reload1.c:7839:5: error: use of undeclared identifier 'v31'
+rtx v31; // r14 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_reload/src/reload1.c:7842:1: error: must use 'enum' tag to refer to type 'reload_type'
+reload_type v35; // [rsp+4h] [rbp-44h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_reload/src/reload1.c:7847:1: error: use of undeclared identifier 'last_insn'
+last_insn = get_last_insn( ); 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_reload/src/reload1.c:7851:34: error: use of undeclared identifier 'machine_mode'
+&& ( v10 = gen_lowpart_common( ( machine_mode)v9, out)) != 0LL ) 
+                                 ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_reload/src/obj/reload1.o] Error 1

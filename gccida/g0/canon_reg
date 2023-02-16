@@ -1,0 +1,18 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/canon_reg/src/cse.c:3293:2: error: expected expression
+ struct cse_reg_info = cached_cse_reg_info; 
+ ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/canon_reg/src/cse.c:3295:2: error: expected expression
+ struct cse_reg_info = get_cse_reg_info( x->fld[0].rtuint); 
+ ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/canon_reg/src/cse.c:3324:14: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+rtint < 0 || insn_data_0[rtint].n_dups > 0)) ) 
+             ^~~~~~~~~~~
+             insn_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/canon_reg/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/canon_reg/src/cse.c:3337:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v6.rtwint = ( __int64)x->fld[i]; 
+                      ^~~~~~~~~
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/canon_reg/src/obj/cse.o] Error 1

@@ -1,0 +1,62 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/build_nt/src/tree.c:3027:16: error: must use 'enum' tag to refer to type 'tree_code'
+tree build_nt( tree_code code, ...) 
+               ^
+               enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/build_nt/src/tree.c:3036:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v8; // r8 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/build_nt/src/tree.c:3038:1: error: use of undeclared identifier '$A887AD9C3C6C8CC7716950D571F57C9D'
+$A887AD9C3C6C8CC7716950D571F57C9D *p_int_cst; // rax 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/build_nt/src/tree.c:3038:36: error: use of undeclared identifier 'p_int_cst'
+$A887AD9C3C6C8CC7716950D571F57C9D *p_int_cst; // rax 
+                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/build_nt/src/tree.c:3062:1: error: use of undeclared identifier 'p_int_cst'
+p_int_cst = &node->int_cst.int_cst; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/build_nt/src/tree.c:3070:1: error: use of undeclared identifier 'p_int_cst'
+p_int_cst = ( $A887AD9C3C6C8CC7716950D571F57C9D *)( ( char *)p_int_cst + 8); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/build_nt/src/tree.c:3070:50: error: expected expression
+p_int_cst = ( $A887AD9C3C6C8CC7716950D571F57C9D *)( ( char *)p_int_cst + 8); 
+                                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/build_nt/src/tree.c:3070:15: error: use of undeclared identifier '$A887AD9C3C6C8CC7716950D571F57C9D'
+p_int_cst = ( $A887AD9C3C6C8CC7716950D571F57C9D *)( ( char *)p_int_cst + 8); 
+              ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/build_nt/src/tree.c:3070:62: error: use of undeclared identifier 'p_int_cst'
+p_int_cst = ( $A887AD9C3C6C8CC7716950D571F57C9D *)( ( char *)p_int_cst + 8); 
+                                                             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/build_nt/src/tree.c:3072:1: error: use of undeclared identifier 'p_int_cst'
+p_int_cst[-1].high = *( _QWORD *)&v16[v13]; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/build_nt/src/tree.c:3073:56: error: expected expression
+if ( p_int_cst == ( $A887AD9C3C6C8CC7716950D571F57C9D *)v12 ) 
+                                                       ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/build_nt/src/tree.c:3073:21: error: use of undeclared identifier '$A887AD9C3C6C8CC7716950D571F57C9D'
+if ( p_int_cst == ( $A887AD9C3C6C8CC7716950D571F57C9D *)v12 ) 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/build_nt/src/tree.c:3073:6: error: use of undeclared identifier 'p_int_cst'
+if ( p_int_cst == ( $A887AD9C3C6C8CC7716950D571F57C9D *)v12 ) 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/build_nt/src/tree.c:3077:1: error: use of undeclared identifier 'p_int_cst'
+p_int_cst = ( $A887AD9C3C6C8CC7716950D571F57C9D *)( ( char *)p_int_cst + 8); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/build_nt/src/tree.c:3077:50: error: expected expression
+p_int_cst = ( $A887AD9C3C6C8CC7716950D571F57C9D *)( ( char *)p_int_cst + 8); 
+                                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/build_nt/src/tree.c:3077:15: error: use of undeclared identifier '$A887AD9C3C6C8CC7716950D571F57C9D'
+p_int_cst = ( $A887AD9C3C6C8CC7716950D571F57C9D *)( ( char *)p_int_cst + 8); 
+              ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/build_nt/src/tree.c:3077:62: error: use of undeclared identifier 'p_int_cst'
+p_int_cst = ( $A887AD9C3C6C8CC7716950D571F57C9D *)( ( char *)p_int_cst + 8); 
+                                                             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/build_nt/src/tree.c:3079:1: error: use of undeclared identifier 'p_int_cst'
+p_int_cst[-1].high = *( _QWORD *)v14; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/build_nt/src/tree.c:3081:59: error: expected expression
+while ( p_int_cst != ( $A887AD9C3C6C8CC7716950D571F57C9D *)v12 ); 
+                                                          ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/build_nt/src/obj/tree.o] Error 1

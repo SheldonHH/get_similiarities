@@ -1,0 +1,28 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/warning_with_file_and_line/src/diagnostic.c:1732:23: error: variable has incomplete type 'struct __va_list_tag'
+ struct __va_list_tag v14; // [rsp+0h] [rbp-258h] BYREF 
+                      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/warning_with_file_and_line/src/diagnostic.c:1732:9: note: forward declaration of 'struct __va_list_tag'
+ struct __va_list_tag v14; // [rsp+0h] [rbp-258h] BYREF 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/warning_with_file_and_line/src/diagnostic.c:1745:1: error: unknown type name 'diagnostic_context_0'; did you mean 'diagnostic_context'?
+diagnostic_context_0 v27; // [rsp+D8h] [rbp-180h] BYREF 
+^~~~~~~~~~~~~~~~~~~~
+diagnostic_context
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/warning_with_file_and_line/src/diagnostic.h:29:35: note: 'diagnostic_context' declared here
+typedef struct diagnostic_context diagnostic_context;
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/warning_with_file_and_line/src/diagnostic.c:1746:1: error: unknown type name 'va_list_0'; did you mean 'va_list'?
+va_list_0 ap; // [rsp+260h] [rbp+8h] BYREF 
+^~~~~~~~~
+va_list
+/usr/include/stdio.h:46:20: note: 'va_list' declared here
+typedef _G_va_list va_list;
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/warning_with_file_and_line/src/diagnostic.c:1762:51: error: expected expression
+set_diagnostic_context( &v27, msgid, ( va_list_0 *)&v14, file, line, 1); 
+                                                  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/warning_with_file_and_line/src/diagnostic.c:1762:40: error: use of undeclared identifier 'va_list_0'
+set_diagnostic_context( &v27, msgid, ( va_list_0 *)&v14, file, line, 1); 
+                                       ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/warning_with_file_and_line/src/obj/diagnostic.o] Error 1

@@ -1,0 +1,44 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_reloads_toplev/src/reload.c:4798:1: error: must use 'enum' tag to refer to type 'reload_type'
+reload_type type, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_reloads_toplev/src/reload.c:4795:6: error: conflicting types for 'find_reloads_toplev'
+int  find_reloads_toplev( 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_reloads_toplev/src/reload.c:257:12: note: previous declaration is here
+static rtx find_reloads_toplev  PARAMS ((rtx, int, enum reload_type, int,
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_reloads_toplev/src/reload.c:4826:1: error: must use 'enum' tag to refer to type 'reload_type'
+reload_type v32; // [rsp+14h] [rbp-54h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_reloads_toplev/src/reload.c:4841:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)arg0 + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_reloads_toplev/src/reload.c:4866:25: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( replace_reloads && recog_data_0.operand[opnum] != arg0 ) 
+                        ^~~~~~~~~~~~
+                        recog_data
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_reloads_toplev/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_reloads_toplev/src/reload.c:4873:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)memloc + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_reloads_toplev/src/reload.c:4933:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v11.rtwint = ( __int64)x->fld[0]; 
+                       ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_reloads_toplev/src/reload.c:4949:48: error: use of undeclared identifier 'machine_mode'
+reloads_subreg_address = gen_lowpart_common( ( machine_mode)*( ( unsigned __int8 *)arg0 + 2), v21); 
+                                               ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_reloads_toplev/src/reload.c:4970:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( unsigned __int8 *)( arg0->fld[0].rtwint + 2)); 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_reloads_toplev/src/reload.c:4974:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)arg0 + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_reloads_toplev/src/reload.c:5008:34: error: use of undeclared identifier 'machine_mode'
+&& ( !strict_memory_address_p( ( machine_mode)*( ( unsigned __int8 *)arg0 + 2), reloads_subreg_address->fld[0].rtx) 
+                                 ^
+11 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_reloads_toplev/src/obj/reload.o] Error 1

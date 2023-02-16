@@ -1,0 +1,86 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_if_then_else/src/combine.c:5121:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode m; // [rsp+8Ch] [rbp-A4h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_if_then_else/src/combine.c:5122:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code extend_op; // [rsp+90h] [rbp-A0h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_if_then_else/src/combine.c:5123:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code op; // [rsp+94h] [rbp-9Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_if_then_else/src/combine.c:5134:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code false_code; // [rsp+E8h] [rbp-48h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_if_then_else/src/combine.c:5141:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code true_code; // [rsp+FCh] [rbp-34h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_if_then_else/src/combine.c:5145:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // [rsp+11Ch] [rbp-14h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_if_then_else/src/combine.c:5150:18: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+true_rtx = ( rtx)x[1]; 
+                 ^~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_if_then_else/src/combine.c:5176:32: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+true_val = (  struct rtx_def *)cond[1]; 
+                               ^~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_if_then_else/src/combine.c:5190:34: error: use of undeclared identifier 'machine_mode'
+&& ( nzb = nonzero_bits( from, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)from)), exact_log2_wide( nzb) >= 0) ) 
+                                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_if_then_else/src/combine.c:5190:49: error: expected expression
+&& ( nzb = nonzero_bits( from, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)from)), exact_log2_wide( nzb) >= 0) ) 
+                                                ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_if_then_else/src/combine.c:5197:33: error: use of undeclared identifier 'machine_mode'
+&& num_sign_bit_copies( from, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)from)) == mode_bitsize[( unsigned __int8)BYTE2( *( _DWORD *)from)] ) 
+                                ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_if_then_else/src/combine.c:5197:48: error: expected expression
+&& num_sign_bit_copies( from, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)from)) == mode_bitsize[( unsigned __int8)BYTE2( *( _DWORD *)from)] ) 
+                                               ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_if_then_else/src/combine.c:5224:18: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+true_rtx = ( rtx)x[1]; 
+                 ^~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_if_then_else/src/combine.c:5253:35: error: use of undeclared identifier 'machine_mode'
+v5 = reversed_comparison( cond, ( machine_mode)BYTE2( *( _DWORD *)cond), cond->fld[0].rtx, *( rtx *)&cond[1]); 
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_if_then_else/src/combine.c:5268:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& ( mode_class_0[mode] != MODE_FLOAT 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_if_then_else/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_if_then_else/src/combine.c:5269:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& mode_class_0[mode] != MODE_COMPLEX_FLOAT 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_if_then_else/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_if_then_else/src/combine.c:5270:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& mode_class_0[mode] != MODE_VECTOR_FLOAT 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_if_then_else/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_if_then_else/src/combine.c:5279:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& ( mode_class_0[mode] != MODE_FLOAT 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_if_then_else/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_if_then_else/src/combine.c:5280:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& mode_class_0[mode] != MODE_COMPLEX_FLOAT 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_if_then_else/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_if_then_else/src/obj/combine.o] Error 1

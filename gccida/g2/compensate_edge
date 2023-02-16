@@ -1,0 +1,18 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/compensate_edge/src/reg-stack.c:3003:17: error: expected identifier or '('
+ struct reg_set = v6->reg_set; 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/compensate_edge/src/reg-stack.c:3044:37: error: use of undeclared identifier 'emit_where'; did you mean 'emit_note'?
+change_stack( v21, &tmpstack, v6, ( emit_where)v22); 
+                                    ^~~~~~~~~~
+                                    emit_note
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/compensate_edge/src/rtl.h:1343:12: note: 'emit_note' declared here
+extern rtx emit_note                    PARAMS ((const char *, int));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/compensate_edge/src/reg-stack.c:3044:48: error: expected ')'
+change_stack( v21, &tmpstack, v6, ( emit_where)v22); 
+                                               ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/compensate_edge/src/reg-stack.c:3044:13: note: to match this '('
+change_stack( v21, &tmpstack, v6, ( emit_where)v22); 
+            ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/compensate_edge/src/obj/reg-stack.o] Error 1

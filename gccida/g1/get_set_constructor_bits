@@ -1,0 +1,32 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/get_set_constructor_bits/src/tree.c:5152:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v6; // r13 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/get_set_constructor_bits/src/tree.c:5153:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v7; // r12 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/get_set_constructor_bits/src/tree.c:5154:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v8; // rbx 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/get_set_constructor_bits/src/tree.c:5162:58: error: subscript of pointer to incomplete type 'struct rtx_def'
+domain_min = tree_low_cst( init->common.type->int_cst.rtl[6].fld[0].rttree, 0); 
+                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/get_set_constructor_bits/src/config.h:7:8: note: forward declaration of 'struct rtx_def'
+struct rtx_def;
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/get_set_constructor_bits/src/tree.c:5176:21: error: expected expression
+v7 = *( tree_node **)( high + 32); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/get_set_constructor_bits/src/tree.c:5176:9: error: use of undeclared identifier 'tree_node'
+v7 = *( tree_node **)( high + 32); 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/get_set_constructor_bits/src/tree.c:5186:21: error: expected expression
+v8 = *( tree_node **)( high + 24); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/get_set_constructor_bits/src/tree.c:5186:9: error: use of undeclared identifier 'tree_node'
+v8 = *( tree_node **)( high + 24); 
+        ^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/get_set_constructor_bits/src/obj/tree.o] Error 1

@@ -1,0 +1,27 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/copy_blkmode_from_reg/src/expr.c:2639:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v5; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/copy_blkmode_from_reg/src/expr.c:2685:39: error: invalid suffix 'xmode' on integer constant
+srcrega = convert_to_mode( *(short *)0xmode, srcreg, ( *( ( _BYTE *)&type->block.common + 17) & 0x20) != 0); 
+                                      ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/copy_blkmode_from_reg/src/expr.c:2701:31: error: invalid suffix 'orce' on integer constant
+src = operand_sub*(short *)0xforce( srcrega, xbitpos / v8, ( machine_mode)*( ( unsigned __int8 *)srcrega + 2)); 
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/copy_blkmode_from_reg/src/expr.c:2701:62: error: use of undeclared identifier 'machine_mode'
+src = operand_sub*(short *)0xforce( srcrega, xbitpos / v8, ( machine_mode)*( ( unsigned __int8 *)srcrega + 2)); 
+                                                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/copy_blkmode_from_reg/src/expr.c:2701:7: error: use of undeclared identifier 'operand_sub'
+src = operand_sub*(short *)0xforce( srcrega, xbitpos / v8, ( machine_mode)*( ( unsigned __int8 *)srcrega + 2)); 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/copy_blkmode_from_reg/src/expr.c:2727:80: error: invalid suffix 'xmode' on integer constant
+bit_field = extract_bit_field( src, bitsize, xbitpos % v13, 1, 0LL, *(short *)0xmode, *(short *)0xmode, v12); 
+                                                                               ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/copy_blkmode_from_reg/src/expr.c:2727:98: error: invalid suffix 'xmode' on integer constant
+bit_field = extract_bit_field( src, bitsize, xbitpos % v13, 1, 0LL, *(short *)0xmode, *(short *)0xmode, v12); 
+                                                                                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/copy_blkmode_from_reg/src/expr.c:2732:57: error: invalid suffix 'xmode' on integer constant
+store_bit_field( dst, bitsize, bitpos % v15, *(short *)0xmode, bit_field, v11); 
+                                                        ^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/copy_blkmode_from_reg/src/obj/expr.o] Error 1

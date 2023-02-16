@@ -1,0 +1,70 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/set_mem_attributes/src/emit-rtl.c:2170:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v5; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/set_mem_attributes/src/emit-rtl.c:2172:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v7; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/set_mem_attributes/src/emit-rtl.c:2174:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *tt; // [rsp+0h] [rbp-C0h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/set_mem_attributes/src/emit-rtl.c:2187:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v22; // [rsp+60h] [rbp-60h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/set_mem_attributes/src/emit-rtl.c:2188:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *off_tree; // [rsp+70h] [rbp-50h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/set_mem_attributes/src/emit-rtl.c:2192:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *expr; // [rsp+98h] [rbp-28h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/set_mem_attributes/src/emit-rtl.c:2197:1: error: statement requires expression of scalar type ('struct rtx_def' invalid)
+if ( ref[1] ) 
+^    ~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/set_mem_attributes/src/emit-rtl.c:2198:22: error: expected expression
+v22 = *( tree_node **)( *( _QWORD *)&ref[1] + 8LL); 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/set_mem_attributes/src/emit-rtl.c:2198:10: error: use of undeclared identifier 'tree_node'
+v22 = *( tree_node **)( *( _QWORD *)&ref[1] + 8LL); 
+         ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/set_mem_attributes/src/emit-rtl.c:2201:14: error: expected identifier or '('
+ struct expr = v22; 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/set_mem_attributes/src/emit-rtl.c:2202:1: error: statement requires expression of scalar type ('struct rtx_def' invalid)
+if ( ref[1] ) 
+^    ~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/set_mem_attributes/src/emit-rtl.c:2207:1: error: statement requires expression of scalar type ('struct rtx_def' invalid)
+if ( ref[1] ) 
+^    ~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/set_mem_attributes/src/emit-rtl.c:2220:1: error: statement requires expression of scalar type ('struct rtx_def' invalid)
+if ( ref[1] ) 
+^    ~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/set_mem_attributes/src/emit-rtl.c:2234:7: error: expected expression
+if (  struct ref == v16 ) 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/set_mem_attributes/src/emit-rtl.c:2255:7: error: use of undeclared identifier 'lang_hooks_0'; did you mean 'lang_hooks'?
+if ( !lang_hooks_0.honor_readonly 
+      ^~~~~~~~~~~~
+      lang_hooks
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/set_mem_attributes/src/langhooks.h:168:32: note: 'lang_hooks' declared here
+extern const struct lang_hooks lang_hooks;
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/set_mem_attributes/src/emit-rtl.c:2319:14: error: expected identifier or '('
+ struct expr = ta; 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/set_mem_attributes/src/emit-rtl.c:2342:25: error: expected expression
+off_tree = ( tree_node *)*( &global_trees + 15); 
+                        ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/set_mem_attributes/src/emit-rtl.c:2342:14: error: use of undeclared identifier 'tree_node'
+off_tree = ( tree_node *)*( &global_trees + 15); 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/set_mem_attributes/src/emit-rtl.c:2355:14: error: expected identifier or '('
+ struct expr = component_ref_for_mem_expr( ta); 
+             ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/set_mem_attributes/src/obj/emit-rtl.o] Error 1

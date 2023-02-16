@@ -1,0 +1,27 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/warning/src/diagnostic.c:1755:1: error: unknown type name 'diagnostic_context_0'; did you mean 'diagnostic_context'?
+diagnostic_context_0 s; // [rsp+D0h] [rbp-198h] BYREF 
+^~~~~~~~~~~~~~~~~~~~
+diagnostic_context
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/warning/src/diagnostic.h:29:35: note: 'diagnostic_context' declared here
+typedef struct diagnostic_context diagnostic_context;
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/warning/src/diagnostic.c:1762:27: error: expected expression
+s.args_ptr = ( va_list_0 *)va; 
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/warning/src/diagnostic.c:1762:16: error: use of undeclared identifier 'va_list_0'
+s.args_ptr = ( va_list_0 *)va; 
+               ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/warning/src/diagnostic.c:1766:12: error: expected expression
+*( _OWORD *)&s.begin_diagnostic = *( _OWORD *)&global_dc->begin_diagnostic; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/warning/src/diagnostic.c:1766:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&s.begin_diagnostic = *( _OWORD *)&global_dc->begin_diagnostic; 
+   ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/warning/src/diagnostic.c:1766:46: error: expected expression
+*( _OWORD *)&s.begin_diagnostic = *( _OWORD *)&global_dc->begin_diagnostic; 
+                                             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/warning/src/diagnostic.c:1766:38: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&s.begin_diagnostic = *( _OWORD *)&global_dc->begin_diagnostic; 
+                                     ^
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/warning/src/obj/diagnostic.o] Error 1

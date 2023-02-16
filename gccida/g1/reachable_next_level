@@ -1,0 +1,42 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/reachable_next_level/src/except.c:3313:1: error: must use 'enum' tag to refer to type 'reachable_code'
+reachable_code  reachable_next_level(  struct eh_region *region, tree type_thrown,  struct reachable_info *info) 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/reachable_next_level/src/except.c:3315:1: error: must use 'enum' tag to refer to type 'eh_region_type'
+eh_region_type type; // r13d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/reachable_next_level/src/except.c:3318:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v8; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/reachable_next_level/src/except.c:3319:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *aka; // r14 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/reachable_next_level/src/except.c:3320:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *type_list; // rsi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/reachable_next_level/src/except.c:3321:1: error: must use 'enum' tag to refer to type 'reachable_code'
+reachable_code result; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/reachable_next_level/src/except.c:3323:1: error: must use 'enum' tag to refer to type 'reachable_code'
+reachable_code ret; // [rsp+Ch] [rbp-3Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/reachable_next_level/src/except.c:3389:20: error: expected expression
+aka = ( tree_node *)prev_try->aka; 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/reachable_next_level/src/except.c:3389:9: error: use of undeclared identifier 'tree_node'
+aka = ( tree_node *)prev_try->aka; 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/reachable_next_level/src/except.c:3413:19: error: expected expression
+v8 = ( tree_node *)prev_try->aka; 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/reachable_next_level/src/except.c:3413:8: error: use of undeclared identifier 'tree_node'
+v8 = ( tree_node *)prev_try->aka; 
+       ^
+11 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/reachable_next_level/src/obj/except.o] Error 1

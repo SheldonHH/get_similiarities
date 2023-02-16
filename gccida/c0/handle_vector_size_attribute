@@ -1,0 +1,35 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/handle_vector_size_attribute/src/attribs.c:1710:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *new_type; // [rsp+30h] [rbp-60h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/handle_vector_size_attribute/src/attribs.c:1712:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode new_mode; // [rsp+44h] [rbp-4Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/handle_vector_size_attribute/src/attribs.c:1714:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // [rsp+4Ch] [rbp-44h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/handle_vector_size_attribute/src/attribs.c:1741:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& ( mode_class_0[( unsigned __int8)HIBYTE( WORD2( type->block.abstract_origin)) >> 1] == MODE_FLOAT 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/handle_vector_size_attribute/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/handle_vector_size_attribute/src/attribs.c:1742:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| mode_class_0[( unsigned __int8)HIBYTE( WORD2( type->block.abstract_origin)) >> 1] == MODE_INT) 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/handle_vector_size_attribute/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/handle_vector_size_attribute/src/attribs.c:1749:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[orig_mode] == MODE_INT ) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/handle_vector_size_attribute/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/handle_vector_size_attribute/src/obj/attribs.o] Error 1

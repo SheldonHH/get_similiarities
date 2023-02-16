@@ -1,0 +1,37 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/rest_of_decl_compilation/src/toplev.c:2708:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *identifier; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/rest_of_decl_compilation/src/toplev.c:2726:15: error: use of undeclared identifier 'TV_VARCONST_0'; did you mean 'TV_VARCONST'?
+timevar_push( TV_VARCONST_0); 
+              ^~~~~~~~~~~~~
+              TV_VARCONST
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/rest_of_decl_compilation/src/timevar.def:54:13: note: 'TV_VARCONST' declared here
+DEFTIMEVAR (TV_VARCONST              , "varconst")
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/rest_of_decl_compilation/src/toplev.c:2738:14: error: use of undeclared identifier 'TV_VARCONST_0'; did you mean 'TV_VARCONST'?
+timevar_pop( TV_VARCONST_0); 
+             ^~~~~~~~~~~~~
+             TV_VARCONST
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/rest_of_decl_compilation/src/timevar.def:54:13: note: 'TV_VARCONST' declared here
+DEFTIMEVAR (TV_VARCONST              , "varconst")
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/rest_of_decl_compilation/src/toplev.c:2754:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v11.rtwint = ( __int64)rtl->fld[0]; 
+                       ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/rest_of_decl_compilation/src/toplev.c:2783:15: error: use of undeclared identifier 'TV_SYMOUT_0'; did you mean 'TV_SYMOUT'?
+timevar_push( TV_SYMOUT_0); 
+              ^~~~~~~~~~~
+              TV_SYMOUT
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/rest_of_decl_compilation/src/timevar.def:86:13: note: 'TV_SYMOUT' declared here
+DEFTIMEVAR (TV_SYMOUT                , "symout")
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/rest_of_decl_compilation/src/toplev.c:2785:14: error: use of undeclared identifier 'TV_SYMOUT_0'; did you mean 'TV_SYMOUT'?
+timevar_pop( TV_SYMOUT_0); 
+             ^~~~~~~~~~~
+             TV_SYMOUT
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/rest_of_decl_compilation/src/timevar.def:86:13: note: 'TV_SYMOUT' declared here
+DEFTIMEVAR (TV_SYMOUT                , "symout")
+            ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/rest_of_decl_compilation/src/obj/toplev.o] Error 1

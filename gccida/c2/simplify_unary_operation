@@ -1,0 +1,70 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/simplify_unary_operation/src/simplify-rtx.c:873:32: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx  simplify_unary_operation( rtx_code code, machine_mode mode, rtx op, machine_mode op_mode) 
+                               ^
+                               enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/simplify_unary_operation/src/simplify-rtx.c:873:47: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  simplify_unary_operation( rtx_code code, machine_mode mode, rtx op, machine_mode op_mode) 
+                                              ^
+                                              enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/simplify_unary_operation/src/simplify-rtx.c:873:74: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  simplify_unary_operation( rtx_code code, machine_mode mode, rtx op, machine_mode op_mode) 
+                                                                         ^
+                                                                         enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/simplify_unary_operation/src/simplify-rtx.c:877:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode pool_mode; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/simplify_unary_operation/src/simplify-rtx.c:878:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v11; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/simplify_unary_operation/src/simplify-rtx.c:888:4: error: expected ';' after expression
+rtx result; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/simplify_unary_operation/src/simplify-rtx.c:888:5: error: use of undeclared identifier 'result'
+rtx result; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/simplify_unary_operation/src/simplify-rtx.c:891:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v24; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/simplify_unary_operation/src/simplify-rtx.c:904:23: error: expected identifier or '('
+ struct pool_constant = op; 
+                      ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/simplify_unary_operation/src/simplify-rtx.c:908:23: error: expected identifier or '('
+ struct pool_constant = op; 
+                      ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/simplify_unary_operation/src/simplify-rtx.c:911:23: error: expected identifier or '('
+ struct pool_constant = get_pool_constant( op->fld[0].rtx); 
+                      ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/simplify_unary_operation/src/simplify-rtx.c:916:23: error: expected identifier or '('
+ struct pool_constant = simplify_subreg( v11, pool_constant, pool_mode, 0); 
+                      ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/simplify_unary_operation/src/simplify-rtx.c:918:2: error: expected expression
+ struct pool_constant = op; 
+ ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/simplify_unary_operation/src/simplify-rtx.c:934:20: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+rtwint = ( __int64)pool_constant[1]; 
+                   ^~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/simplify_unary_operation/src/simplify-rtx.c:955:24: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v13 = ( signed __int64)pool_constant[1]; 
+                       ^~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/simplify_unary_operation/src/simplify-rtx.c:973:26: error: passing 'unsigned int' to parameter of incompatible type 'realvaluetype'
+real_value_truncate( i1, ( unsigned int)mode); 
+                         ^~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/simplify_unary_operation/src/real.h:407:24: note: passing argument to parameter here
+                                                  REAL_VALUE_TYPE));
+                                                                 ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/simplify_unary_operation/src/simplify-rtx.c:990:1: error: use of undeclared identifier 'result'
+result = 0LL; 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/simplify_unary_operation/src/simplify-rtx.c:1036:1: error: use of undeclared identifier 'result'
+result = gen_rtx_CONST_INT( VOIDmode, v32); 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/simplify_unary_operation/src/simplify-rtx.c:1045:8: error: use of undeclared identifier 'result'
+return result; 
+       ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/simplify_unary_operation/src/obj/simplify-rtx.o] Error 1

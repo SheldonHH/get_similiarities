@@ -1,0 +1,72 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/apply_distributive_law/src/combine.c:8159:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v2; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/apply_distributive_law/src/combine.c:8162:4: error: expected ';' after expression
+rtx v5; // r12 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/apply_distributive_law/src/combine.c:8162:5: error: use of undeclared identifier 'v5'
+rtx v5; // r12 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/apply_distributive_law/src/combine.c:8163:4: error: expected ';' after expression
+rtx v6; // r13 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/apply_distributive_law/src/combine.c:8163:5: error: use of undeclared identifier 'v6'
+rtx v6; // r13 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/apply_distributive_law/src/combine.c:8164:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v7; // r14d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/apply_distributive_law/src/combine.c:8176:8: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( ( mode_class_0[*( ( unsigned __int8 *)x + 2)] & 0xFFFFFFFB) != 2 
+       ^~~~~~~~~~~~
+       mode_class
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/apply_distributive_law/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/apply_distributive_law/src/combine.c:8177:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& mode_class_0[*( ( unsigned __int8 *)x + 2)] != MODE_VECTOR_FLOAT ) 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/apply_distributive_law/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/apply_distributive_law/src/combine.c:8185:26: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v4 = (  struct rtx_def *)v1[1]; 
+                         ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/apply_distributive_law/src/combine.c:8188:1: error: use of undeclared identifier 'v5'
+v5 = expand_compound_operation( rtx); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/apply_distributive_law/src/combine.c:8189:1: error: use of undeclared identifier 'v6'
+v6 = expand_compound_operation( v4); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/apply_distributive_law/src/combine.c:8190:26: error: use of undeclared identifier 'v5'
+LOWORD( v7) = *( _WORD *)v5; 
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/apply_distributive_law/src/combine.c:8191:17: error: use of undeclared identifier 'v5'
+if ( *( _WORD *)v5 == *( _WORD *)v6 ) 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/apply_distributive_law/src/combine.c:8191:34: error: use of undeclared identifier 'v6'
+if ( *( _WORD *)v5 == *( _WORD *)v6 ) 
+                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/apply_distributive_law/src/combine.c:8196:19: error: use of undeclared identifier 'v5'
+if ( *( _BYTE *)( v5->fld[0].rtwint + 2) == *( _BYTE *)( v6->fld[0].rtwint + 2) && v5[1] == v6[1] ) 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/apply_distributive_law/src/combine.c:8196:58: error: use of undeclared identifier 'v6'
+if ( *( _BYTE *)( v5->fld[0].rtwint + 2) == *( _BYTE *)( v6->fld[0].rtwint + 2) && v5[1] == v6[1] ) 
+                                                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/apply_distributive_law/src/combine.c:8196:84: error: use of undeclared identifier 'v5'
+if ( *( _BYTE *)( v5->fld[0].rtwint + 2) == *( _BYTE *)( v6->fld[0].rtwint + 2) && v5[1] == v6[1] ) 
+                                                                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/apply_distributive_law/src/combine.c:8196:93: error: use of undeclared identifier 'v6'
+if ( *( _BYTE *)( v5->fld[0].rtwint + 2) == *( _BYTE *)( v6->fld[0].rtwint + 2) && v5[1] == v6[1] ) 
+                                                                                            ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/apply_distributive_law/src/combine.c:8198:24: error: use of undeclared identifier 'v5'
+if ( subreg_lowpart_p( v5) ) 
+                       ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/apply_distributive_law/src/obj/combine.o] Error 1

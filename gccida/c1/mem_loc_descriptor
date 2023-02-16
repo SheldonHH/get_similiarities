@@ -1,0 +1,40 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mem_loc_descriptor/src/dwarf2out.c:8199:48: error: must use 'enum' tag to refer to type 'machine_mode'
+dw_loc_descr_ref  mem_loc_descriptor( rtx rtl, machine_mode mode) 
+                                               ^
+                                               enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mem_loc_descriptor/src/dwarf2out.c:8206:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v8; // r14d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mem_loc_descriptor/src/dwarf2out.c:8210:1: error: must use 'enum' tag to refer to type 'dwarf_location_atom'
+dwarf_location_atom v12; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mem_loc_descriptor/src/dwarf2out.c:8214:1: error: must use 'enum' tag to refer to type 'dwarf_location_atom'
+dwarf_location_atom v16; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mem_loc_descriptor/src/dwarf2out.c:8279:55: error: use of undeclared identifier 'machine_mode'
+list_head[0] = mem_loc_descriptor( rtx->fld[0].rtx, ( machine_mode)BYTE2( v4)); 
+                                                      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mem_loc_descriptor/src/dwarf2out.c:8286:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v22.rtwint = ( __int64)rtx->fld[0]; 
+                       ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mem_loc_descriptor/src/dwarf2out.c:8288:36: error: expected expression
+return mem_loc_descriptor( *( rtx *)( v22.rtwint + 8), mode); 
+                                   ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mem_loc_descriptor/src/dwarf2out.c:8295:35: error: expected expression
+v15 = mem_loc_descriptor( *( rtx *)&rtx[1], mode); 
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mem_loc_descriptor/src/dwarf2out.c:8304:17: error: invalid suffix 'xmode' on integer constant
+v8 = *(short *)0xmode; 
+                ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mem_loc_descriptor/src/dwarf2out.c:8313:13: error: expected ';' after expression
+rtx = ( rtx)rtx[1]; 
+            ^
+            ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mem_loc_descriptor/src/dwarf2out.c:8329:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v20 = (  struct rtx_def *)rtx[1]; 
+                          ^~~~~~
+11 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mem_loc_descriptor/src/obj/dwarf2out.o] Error 1

@@ -1,0 +1,16 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/declare_return_variable/src/tree-inline.c:1067:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v2; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/declare_return_variable/src/tree-inline.c:1083:7: error: use of undeclared identifier 'lang_hooks_0'; did you mean 'lang_hooks'?
+var = lang_hooks_0.tree_inlining.copy_res_decl_for_inlining( 
+      ^~~~~~~~~~~~
+      lang_hooks
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/declare_return_variable/src/langhooks.h:168:32: note: 'lang_hooks' declared here
+extern const struct lang_hooks lang_hooks;
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/declare_return_variable/src/tree-inline.c:1083:60: error: called object type '<dependent type>' is not a function or function pointer
+var = lang_hooks_0.tree_inlining.copy_res_decl_for_inlining( 
+                                                           ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/declare_return_variable/src/obj/tree-inline.o] Error 1

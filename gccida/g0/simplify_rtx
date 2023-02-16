@@ -1,0 +1,29 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_rtx/src/simplify-rtx.c:3283:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v3; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_rtx/src/simplify-rtx.c:3285:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // [rsp+18h] [rbp-8h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_rtx/src/simplify-rtx.c:3286:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code; // [rsp+1Ch] [rbp-4h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_rtx/src/simplify-rtx.c:3297:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( unsigned __int8 *)( x->fld[0].rtwint + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_rtx/src/simplify-rtx.c:3311:30: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+x->fld[0].rtwint = ( __int64)x[1]; 
+                             ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_rtx/src/simplify-rtx.c:3323:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( unsigned __int8 *)( x->fld[0].rtwint + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_rtx/src/simplify-rtx.c:3340:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( unsigned __int8 *)( x->fld[0].rtwint + 2)); 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_rtx/src/simplify-rtx.c:3348:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( unsigned __int8 *)( x->fld[0].rtwint + 2), 
+  ^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_rtx/src/obj/simplify-rtx.o] Error 1

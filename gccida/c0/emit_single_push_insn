@@ -1,0 +1,39 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_single_push_insn/src/expr.c:3629:30: error: must use 'enum' tag to refer to type 'machine_mode'
+void  emit_single_push_insn( machine_mode mode, rtx x, tree type) 
+                             ^
+                             enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_single_push_insn/src/expr.c:3632:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v4; // ecx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_single_push_insn/src/expr.c:3636:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v8; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_single_push_insn/src/expr.c:3637:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v9; // [rsp+4h] [rbp-5Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_single_push_insn/src/expr.c:3642:1: error: must use 'enum' tag to refer to type 'insn_code'
+insn_code icode; // [rsp+2Ch] [rbp-34h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_single_push_insn/src/expr.c:3696:8: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+pred = insn_data_0[icode].operand->predicate; 
+       ^~~~~~~~~~~
+       insn_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_single_push_insn/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_single_push_insn/src/expr.c:3702:6: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+v3 = insn_data_0[icode].genfun( xa); 
+     ^~~~~~~~~~~
+     insn_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_single_push_insn/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_single_push_insn/src/expr.c:3702:31: error: called object type '<dependent type>' is not a function or function pointer
+v3 = insn_data_0[icode].genfun( xa); 
+                              ^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_single_push_insn/src/obj/expr.o] Error 1

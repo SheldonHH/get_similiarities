@@ -1,0 +1,24 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_end_loop/src/stmt.c:3146:32: error: expected expression
+emit_note_before( -94, *( rtx *)( v0 + 32)); 
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_end_loop/src/stmt.c:3174:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v14 = (  struct rtx_def *)v1[1]; 
+                          ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_end_loop/src/stmt.c:3225:30: error: use of undeclared identifier 'label'; did you mean 'labs'?
+fancy_abort( ( const char *)&label, 2733, "expand_end_loop"); 
+                             ^~~~~
+                             labs
+/usr/include/stdlib.h:838:17: note: 'labs' declared here
+extern long int labs (long int __x) __THROW __attribute__ ((__const__)) __wur;
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_end_loop/src/stmt.c:3242:21: error: expected expression
+emit_label( *( rtx *)( *( _QWORD *)( *( _QWORD *)( *( _QWORD *)&cfun + 8LL) + 24LL) + 40LL)); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_end_loop/src/stmt.c:3263:62: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'unsigned long long' of different size
+*( __m128i *)&stmt_obstack.object_base = _mm_unpacklo_epi64( ( __m128i)v10, ( __m128i)v10); 
+                                                             ^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_end_loop/src/stmt.c:3263:77: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'unsigned long long' of different size
+*( __m128i *)&stmt_obstack.object_base = _mm_unpacklo_epi64( ( __m128i)v10, ( __m128i)v10); 
+                                                                            ^~~~~~~~~~~~~
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_end_loop/src/obj/stmt.o] Error 1

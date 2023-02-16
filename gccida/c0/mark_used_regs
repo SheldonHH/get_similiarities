@@ -1,0 +1,21 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/mark_used_regs/src/flow.c:4149:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code; // [rsp+5Ch] [rbp-24h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/mark_used_regs/src/flow.c:4165:11: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+x = ( rtx)x[1]; 
+          ^~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/mark_used_regs/src/flow.c:4304:28: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+next = (  struct rtx_def *)temp[1]; 
+                           ^~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/mark_used_regs/src/flow.c:4305:16: error: expected expression
+if ( operator+=<char [3], QByteArray>( temp->fld[0].rtx, x) ) 
+               ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/mark_used_regs/src/flow.c:4305:6: error: use of undeclared identifier 'operator'
+if ( operator+=<char [3], QByteArray>( temp->fld[0].rtx, x) ) 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/mark_used_regs/src/flow.c:4305:17: error: expected expression
+if ( operator+=<char [3], QByteArray>( temp->fld[0].rtx, x) ) 
+                ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/mark_used_regs/src/obj/flow.o] Error 1

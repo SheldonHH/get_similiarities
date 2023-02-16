@@ -1,0 +1,38 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_call_pop/src/insn-emit.c:14642:4: error: expected ';' after expression
+rtx v10; // r13 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_call_pop/src/insn-emit.c:14642:5: error: use of undeclared identifier 'v10'
+rtx v10; // r13 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_call_pop/src/insn-emit.c:14643:4: error: expected ';' after expression
+rtx v11; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_call_pop/src/insn-emit.c:14643:5: error: use of undeclared identifier 'v11'
+rtx v11; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_call_pop/src/insn-emit.c:14662:33: error: use of undeclared identifier 'machine_mode'
+if ( !call_insn_operand( rtx, ( machine_mode)( ( ( BYTE3( target_flags) & 2) != 0) + 4)) ) 
+                                ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_call_pop/src/insn-emit.c:14664:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( ( ( BYTE3( target_flags) & 2) != 0) + 4), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_call_pop/src/insn-emit.c:14671:1: error: use of undeclared identifier 'v10'
+v10 = gen_rtx_fmt_ee( SET, VOIDmode, v9, v8); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_call_pop/src/insn-emit.c:14672:1: error: use of undeclared identifier 'v11'
+v11 = gen_rtx_fmt_ee( CALL, VOIDmode, operand0, operand1); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_call_pop/src/insn-emit.c:14673:21: error: use of undeclared identifier 'v11'; did you mean 'v12'?
+v12 = gen_rtvec( 2, v11, v10); 
+                    ^~~
+                    v12
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_call_pop/src/insn-emit.c:14644:20: note: 'v12' declared here
+ struct rtvec_def *v12; // rax 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_call_pop/src/insn-emit.c:14673:26: error: use of undeclared identifier 'v10'
+v12 = gen_rtvec( 2, v11, v10); 
+                         ^
+10 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_call_pop/src/obj/insn-emit.o] Error 1

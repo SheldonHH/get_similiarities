@@ -1,0 +1,72 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cpp_push_buffer/src/cpplib.c:2298:1: error: unknown type name 'cpp_buffer_0'; did you mean 'cpp_buffer'?
+cpp_buffer_0 * cpp_push_buffer( 
+^~~~~~~~~~~~
+cpp_buffer
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cpp_push_buffer/src/cpplib.h:38:27: note: 'cpp_buffer' declared here
+typedef struct cpp_buffer cpp_buffer;
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cpp_push_buffer/src/cpplib.c:2299:1: error: unknown type name 'cpp_reader_0'; did you mean 'cpp_reader'?
+cpp_reader_0 *pfile, 
+^~~~~~~~~~~~
+cpp_reader
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cpp_push_buffer/src/cpplib.h:36:27: note: 'cpp_reader' declared here
+typedef struct cpp_reader cpp_reader;
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cpp_push_buffer/src/cpplib.c:2308:1: error: unknown type name 'cpp_buffer_0'; did you mean 'cpp_buffer'?
+cpp_buffer_0 *result; // rax 
+^~~~~~~~~~~~
+cpp_buffer
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cpp_push_buffer/src/cpplib.h:38:27: note: 'cpp_buffer' declared here
+typedef struct cpp_buffer cpp_buffer;
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cpp_push_buffer/src/cpplib.c:2321:26: error: expected expression
+result = ( cpp_buffer_0 *)pfile->buffer_ob.object_base; 
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cpp_push_buffer/src/cpplib.c:2321:12: error: use of undeclared identifier 'cpp_buffer_0'
+result = ( cpp_buffer_0 *)pfile->buffer_ob.object_base; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cpp_push_buffer/src/cpplib.c:2333:12: error: expected expression
+*( _OWORD *)&result->buf = 0LL; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cpp_push_buffer/src/cpplib.c:2333:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&result->buf = 0LL; 
+   ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cpp_push_buffer/src/cpplib.c:2334:12: error: expected expression
+*( _OWORD *)&result->line_base = 0LL; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cpp_push_buffer/src/cpplib.c:2334:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&result->line_base = 0LL; 
+   ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cpp_push_buffer/src/cpplib.c:2335:12: error: expected expression
+*( _OWORD *)&result->backup_to = 0LL; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cpp_push_buffer/src/cpplib.c:2335:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&result->backup_to = 0LL; 
+   ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cpp_push_buffer/src/cpplib.c:2336:12: error: expected expression
+*( _OWORD *)&result->last_Wtrigraphs = 0LL; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cpp_push_buffer/src/cpplib.c:2336:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&result->last_Wtrigraphs = 0LL; 
+   ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cpp_push_buffer/src/cpplib.c:2337:12: error: expected expression
+*( _OWORD *)&result->dir.dev = 0LL; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cpp_push_buffer/src/cpplib.c:2337:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&result->dir.dev = 0LL; 
+   ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cpp_push_buffer/src/cpplib.c:2338:12: error: expected expression
+*( _OWORD *)&result->dir.len = 0LL; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cpp_push_buffer/src/cpplib.c:2338:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&result->dir.len = 0LL; 
+   ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cpp_push_buffer/src/cpplib.c:2339:12: error: expected expression
+*( _OWORD *)&result->dir.next = 0LL; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cpp_push_buffer/src/cpplib.c:2339:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&result->dir.next = 0LL; 
+   ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/cpp_push_buffer/src/obj/cpplib.o] Error 1

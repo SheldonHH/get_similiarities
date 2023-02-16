@@ -1,0 +1,66 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/init_alias_analysis/src/alias.c:2958:6: error: use of undeclared identifier 'v37'
+rtx *v37; // rdx 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/init_alias_analysis/src/alias.c:2962:6: error: use of undeclared identifier 'v41'
+rtx *v41; // rsi 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/init_alias_analysis/src/alias.c:2966:4: error: expected ';' after expression
+rtx v45; // rdx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/init_alias_analysis/src/alias.c:2966:5: error: use of undeclared identifier 'v45'
+rtx v45; // rdx 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/init_alias_analysis/src/alias.c:2968:6: error: use of undeclared identifier 'v47'
+rtx *v47; // rax 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/init_alias_analysis/src/alias.c:2973:6: error: use of undeclared identifier 'v52'
+rtx *v52; // r13 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/init_alias_analysis/src/alias.c:2974:4: error: expected ';' after expression
+rtx note; // [rsp+8h] [rbp-40h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/init_alias_analysis/src/alias.c:2974:5: error: use of undeclared identifier 'note'; did you mean 'none'?
+rtx note; // [rsp+8h] [rbp-40h] 
+    ^~~~
+    none
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/init_alias_analysis/src/expr.h:119:17: note: 'none' declared here
+enum direction {none, upward, downward};  /* Value has this type.  */
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/init_alias_analysis/src/alias.c:2978:26: error: expected expression
+reg_known_value = ( rtx *)( ( char *)xcalloc( v0 - 53, 8uLL) - 424); 
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/init_alias_analysis/src/alias.c:2982:25: error: expected expression
+reg_base_value = ( rtx *)xcalloc( ( unsigned int)( 2 * v0), 8uLL); 
+                        ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/init_alias_analysis/src/alias.c:2984:29: error: expected expression
+new_reg_base_value = ( rtx *)xmalloc( 8LL * ( unsigned int)reg_base_value_size); 
+                            ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/init_alias_analysis/src/alias.c:2991:14: error: expected expression
+v47 = ( rtx *)xrealloc( alias_invariant, 8LL * ( unsigned int)reg_base_value_size); 
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/init_alias_analysis/src/alias.c:2991:1: error: use of undeclared identifier 'v47'
+v47 = ( rtx *)xrealloc( alias_invariant, 8LL * ( unsigned int)reg_base_value_size); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/init_alias_analysis/src/alias.c:2993:19: error: use of undeclared identifier 'v47'
+alias_invariant = v47; 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/init_alias_analysis/src/alias.c:2994:9: error: use of undeclared identifier 'v47'
+memset( v47, 0, 8LL * ( unsigned int)reg_base_value_size); 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/init_alias_analysis/src/alias.c:3011:21: error: use of undeclared identifier 'machine_mode'
+v9 = gen_rtx_REG( ( machine_mode)( ( ( BYTE3( target_flags) & 2) != 0) + 4), v7); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/init_alias_analysis/src/alias.c:3019:33: error: use of undeclared identifier 'machine_mode'
+v12 = gen_rtx_fmt_e( ADDRESS, ( machine_mode)( ( ( BYTE3( target_flags) & 2) != 0) + 4), global_rtl[2]); 
+                                ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/init_alias_analysis/src/alias.c:3023:33: error: use of undeclared identifier 'machine_mode'
+v15 = gen_rtx_fmt_e( ADDRESS, ( machine_mode)( !v13 + 4), global_rtl[5]); 
+                                ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/init_alias_analysis/src/alias.c:3027:33: error: use of undeclared identifier 'machine_mode'
+v17 = gen_rtx_fmt_e( ADDRESS, ( machine_mode)( !v13 + 4), global_rtl[3]); 
+                                ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/init_alias_analysis/src/obj/alias.o] Error 1

@@ -1,0 +1,38 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_referenced_regs/src/caller-save.c:1030:4: error: expected ';' after expression
+rtx v20; // rcx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_referenced_regs/src/caller-save.c:1030:5: error: use of undeclared identifier 'v20'
+rtx v20; // rcx 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_referenced_regs/src/caller-save.c:1063:31: error: expected expression
+mark_referenced_regs( *( rtx *)&x[1]); 
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_referenced_regs/src/caller-save.c:1081:1: error: use of undeclared identifier 'v20'
+v20 = reg_equiv_mem[rtint]; 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_referenced_regs/src/caller-save.c:1082:6: error: use of undeclared identifier 'v20'
+if ( v20 ) 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_referenced_regs/src/caller-save.c:1084:7: error: use of undeclared identifier 'v20'; did you mean 'v21'?
+v21 = v20->fld[0].rtx; 
+      ^~~
+      v21
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_referenced_regs/src/caller-save.c:1031:18: note: 'v21' declared here
+ struct rtx_def *v21; // rdi 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_referenced_regs/src/caller-save.c:1100:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v10 = ( ( unsigned int)( mode_class_0[v8] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_referenced_regs/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_referenced_regs/src/caller-save.c:1147:31: error: expected expression
+mark_referenced_regs( *( rtx *)( *( ( _QWORD *)rtx + v14) + 8 * v19-- - 8)); 
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_referenced_regs/src/caller-save.c:1153:33: error: expected expression
+mark_referenced_regs( *( ( rtx *)rtx + v14)); 
+                                ^
+9 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_referenced_regs/src/obj/caller-save.o] Error 1

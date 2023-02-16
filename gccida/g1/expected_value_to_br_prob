@@ -1,0 +1,63 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expected_value_to_br_prob/src/predict.c:1014:4: error: expected ';' after expression
+rtx v4; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expected_value_to_br_prob/src/predict.c:1014:5: error: use of undeclared identifier 'v4'
+rtx v4; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expected_value_to_br_prob/src/predict.c:1015:4: error: expected ';' after expression
+rtx v5; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expected_value_to_br_prob/src/predict.c:1015:5: error: use of undeclared identifier 'v5'
+rtx v5; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expected_value_to_br_prob/src/predict.c:1038:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v3 = ( __int64)rtx[2]; 
+               ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expected_value_to_br_prob/src/predict.c:1049:1: error: use of undeclared identifier 'v4'
+v4 = pc_set( rtx); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expected_value_to_br_prob/src/predict.c:1050:1: error: use of undeclared identifier 'v5'
+v5 = canonicalize_condition( rtx, *( rtx *)( *( _QWORD *)&v4[1] + 8LL), 0, 0LL, v2); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expected_value_to_br_prob/src/predict.c:1050:43: error: expected expression
+v5 = canonicalize_condition( rtx, *( rtx *)( *( _QWORD *)&v4[1] + 8LL), 0, 0LL, v2); 
+                                          ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expected_value_to_br_prob/src/predict.c:1050:59: error: use of undeclared identifier 'v4'
+v5 = canonicalize_condition( rtx, *( rtx *)( *( _QWORD *)&v4[1] + 8LL), 0, 0LL, v2); 
+                                                          ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expected_value_to_br_prob/src/predict.c:1051:6: error: use of undeclared identifier 'v5'
+if ( v5 ) 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expected_value_to_br_prob/src/predict.c:1053:6: error: use of undeclared identifier 'v5'
+if ( v5->fld[0].rtx == v2 ) 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expected_value_to_br_prob/src/predict.c:1055:26: error: use of undeclared identifier 'v5'
+v6 = (  struct rtx_def *)v5[1]; 
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expected_value_to_br_prob/src/predict.c:1058:24: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+v7 = gen_rtx_fmt_ee( ( rtx_code)*( _WORD *)v5, VOIDmode, *( rtx *)( v3 + 16), v6); 
+                       ^~~~~~~~
+                       rtx_cost
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expected_value_to_br_prob/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expected_value_to_br_prob/src/predict.c:1058:44: error: use of undeclared identifier 'v5'
+v7 = gen_rtx_fmt_ee( ( rtx_code)*( _WORD *)v5, VOIDmode, *( rtx *)( v3 + 16), v6); 
+                                           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expected_value_to_br_prob/src/predict.c:1058:66: error: expected expression
+v7 = gen_rtx_fmt_ee( ( rtx_code)*( _WORD *)v5, VOIDmode, *( rtx *)( v3 + 16), v6); 
+                                                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expected_value_to_br_prob/src/predict.c:1062:47: error: use of undeclared identifier 'prediction'; did you mean 'predict_insn'?
+predict_insn_def( rtx, PRED_BUILTIN_EXPECT, ( prediction)( const_true_rtx == v8)); 
+                                              ^~~~~~~~~~
+                                              predict_insn
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expected_value_to_br_prob/src/predict.c:95:1: note: 'predict_insn' declared here
+predict_insn (insn, predictor, probability)
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expected_value_to_br_prob/src/predict.c:1062:45: error: passing 'void' to parameter of incompatible type 'unsigned int'
+predict_insn_def( rtx, PRED_BUILTIN_EXPECT, ( prediction)( const_true_rtx == v8)); 
+                                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+17 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expected_value_to_br_prob/src/obj/predict.o] Error 1

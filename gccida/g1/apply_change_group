@@ -1,0 +1,18 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/apply_change_group/src/recog.c:786:1: error: unknown type name 'change_t_0'; did you mean 'change_t'?
+change_t_0 *v7; // rax 
+^~~~~~~~~~
+change_t
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/apply_change_group/src/recog.c:178:3: note: 'change_t' declared here
+} change_t;
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/apply_change_group/src/recog.c:806:27: error: use of undeclared identifier 'machine_mode'
+if ( !memory_address_p( ( machine_mode)*( ( unsigned __int8 *)object + 2), object->fld[0].rtx) ) 
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/apply_change_group/src/recog.c:812:26: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v9 = (  struct rtx_def *)object[2]; 
+                         ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/apply_change_group/src/recog.c:815:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v11.rtwint = ( __int64)v9->fld[0]; 
+                       ^~~~~~~~~~
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/apply_change_group/src/obj/recog.o] Error 1

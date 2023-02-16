@@ -1,0 +1,73 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_mult_highpart/src/expmed.c:3237:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_mult_highpart/src/expmed.c:3254:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v18; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_mult_highpart/src/expmed.c:3258:1: error: unknown type name 'optab_0'; did you mean 'optab'?
+optab_0 *v23; // rcx 
+^~~~~~~
+optab
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_mult_highpart/src/optabs.h:48:5: note: 'optab' declared here
+} * optab;
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_mult_highpart/src/expmed.c:3260:1: error: unknown type name 'optab_0'; did you mean 'optab'?
+optab_0 *v25; // rcx 
+^~~~~~~
+optab
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_mult_highpart/src/optabs.h:48:5: note: 'optab' declared here
+} * optab;
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_mult_highpart/src/expmed.c:3274:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v39; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_mult_highpart/src/expmed.c:3278:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v43; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_mult_highpart/src/expmed.c:3281:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v46; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_mult_highpart/src/expmed.c:3298:41: error: use of undeclared identifier 'machine_mode'
+v13 = immed_double_const( cnst1, v12, ( machine_mode)v10); 
+                                        ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_mult_highpart/src/expmed.c:3302:51: error: subscripted value is not an array, pointer, or vector
+&& mul_cost[( unsigned int)v10] + *(int *)0x96749C[v7] < max_cost ) 
+                                          ~~~~~~~~^~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_mult_highpart/src/expmed.c:3304:26: error: use of undeclared identifier 'machine_mode'
+v16 = convert_to_mode( ( machine_mode)v10, op0, unsignedp); 
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_mult_highpart/src/expmed.c:3305:22: error: use of undeclared identifier 'machine_mode'
+v17 = expand_mult( ( machine_mode)v10, v16, v13, 0LL, 0); 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_mult_highpart/src/expmed.c:3307:36: error: use of undeclared identifier 'machine_mode'
+v19 = expand_shift( RSHIFT_EXPR, ( machine_mode)v10, v17, v18, 0LL, 1); 
+                                   ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_mult_highpart/src/expmed.c:3308:31: error: use of undeclared identifier 'machine_mode'
+return convert_modes( mode, ( machine_mode)v10, v19, unsignedp); 
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_mult_highpart/src/expmed.c:3331:48: error: subscripted value is not an array, pointer, or vector
+|| mul_highpart_cost[v6] + 2 * *(int *)0x96749C[v14] + 4 * add_cost >= max_cost ) 
+                                       ~~~~~~~~^~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_mult_highpart/src/expmed.c:3382:36: error: use of undeclared identifier 'machine_mode'
+v44 = expand_shift( RSHIFT_EXPR, ( machine_mode)oldmode, v42, v43, 0LL, 1); 
+                                   ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_mult_highpart/src/expmed.c:3383:30: error: use of undeclared identifier 'machine_mode'
+v45 = convert_modes( mode, ( machine_mode)oldmode, v44, v40); 
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_mult_highpart/src/expmed.c:3395:23: error: use of undeclared identifier 'machine_mode'
+v34 = expand_binop( ( machine_mode)v28, v30, op0, v55, 0LL, v33, OPTAB_WIDEN); 
+                      ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_mult_highpart/src/expmed.c:3399:17: error: invalid suffix 'xmode' on integer constant
+if ( *(short *)0xmode == mode ) 
+                ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_mult_highpart/src/expmed.c:3402:36: error: use of undeclared identifier 'machine_mode'
+v47 = expand_shift( RSHIFT_EXPR, ( machine_mode)oldmode, v35, v46, 0LL, 1); 
+                                   ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_mult_highpart/src/obj/expmed.o] Error 1

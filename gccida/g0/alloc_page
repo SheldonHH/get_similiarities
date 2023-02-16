@@ -1,0 +1,21 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/alloc_page/src/ggc-page.c:1040:1: error: unknown type name 'page_group_0'; did you mean 'page_group'?
+page_group_0 *group; // [rsp+70h] [rbp-30h] 
+^~~~~~~~~~~~
+page_group
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/alloc_page/src/ggc-page.c:267:3: note: 'page_group' declared here
+} page_group;
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/alloc_page/src/ggc-page.c:1095:25: error: expected expression
+group = ( page_group_0 *)enda; 
+                        ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/alloc_page/src/ggc-page.c:1095:11: error: use of undeclared identifier 'page_group_0'
+group = ( page_group_0 *)enda; 
+          ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/alloc_page/src/ggc-page.c:1099:25: error: expected expression
+group = ( page_group_0 *)( page - 32); 
+                        ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/alloc_page/src/ggc-page.c:1099:11: error: use of undeclared identifier 'page_group_0'
+group = ( page_group_0 *)( page - 32); 
+          ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/alloc_page/src/obj/ggc-page.o] Error 1

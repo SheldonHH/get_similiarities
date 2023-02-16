@@ -1,0 +1,52 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/force_operand/src/expr.c:5903:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v8; // [rsp+8h] [rbp-88h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/force_operand/src/expr.c:5904:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode outermode; // [rsp+Ch] [rbp-84h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/force_operand/src/expr.c:5905:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v10; // [rsp+24h] [rbp-6Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/force_operand/src/expr.c:5906:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v11; // [rsp+3Ch] [rbp-54h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/force_operand/src/expr.c:5907:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // [rsp+4Ch] [rbp-44h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/force_operand/src/expr.c:5927:28: error: use of undeclared identifier 'machine_mode'
+subtarget = gen_reg_rtx( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)value)); 
+                           ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/force_operand/src/expr.c:5927:43: error: expected expression
+subtarget = gen_reg_rtx( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)value)); 
+                                          ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/force_operand/src/expr.c:5946:28: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+op2a = (  struct rtx_def *)value[1]; 
+                           ^~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/force_operand/src/expr.c:5962:22: error: use of undeclared identifier 'machine_mode'
+op2a = negate_rtx( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)value), op2a); 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/force_operand/src/expr.c:5962:37: error: expected expression
+op2a = negate_rtx( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)value), op2a); 
+                                    ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/force_operand/src/expr.c:5972:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)value), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/force_operand/src/expr.c:5972:18: error: expected expression
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)value), 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/force_operand/src/expr.c:6004:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)value->fld[0].rtwint), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/force_operand/src/expr.c:6004:18: error: expected expression
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)value->fld[0].rtwint), 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/force_operand/src/expr.c:6010:13: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+op2 = ( rtx)value[1]; 
+            ^~~~~~~~
+15 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/force_operand/src/obj/expr.o] Error 1

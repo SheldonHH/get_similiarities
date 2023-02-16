@@ -1,0 +1,36 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/_cpp_get_buff/src/cpplex.c:2457:1: error: unknown type name '_cpp_buff_0'; did you mean '_cpp_buff'?
+_cpp_buff_0 * cpp_get_buff( cpp_reader_0 *pfile, size_t min_size) 
+^~~~~~~~~~~
+_cpp_buff
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/_cpp_get_buff/src/cpphash.h:47:26: note: '_cpp_buff' declared here
+typedef struct _cpp_buff _cpp_buff;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/_cpp_get_buff/src/cpplex.c:2457:29: error: unknown type name 'cpp_reader_0'; did you mean 'cpp_reader'?
+_cpp_buff_0 * cpp_get_buff( cpp_reader_0 *pfile, size_t min_size) 
+                            ^~~~~~~~~~~~
+                            cpp_reader
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/_cpp_get_buff/src/cpplib.h:36:27: note: 'cpp_reader' declared here
+typedef struct cpp_reader cpp_reader;
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/_cpp_get_buff/src/cpplex.c:2460:1: error: unknown type name '_cpp_buff_0'; did you mean '_cpp_buff'?
+_cpp_buff_0 **p; // [rsp+8h] [rbp-28h] 
+^~~~~~~~~~~
+_cpp_buff
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/_cpp_get_buff/src/cpphash.h:47:26: note: '_cpp_buff' declared here
+typedef struct _cpp_buff _cpp_buff;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/_cpp_get_buff/src/cpplex.c:2461:1: error: unknown type name '_cpp_buff_0'; did you mean '_cpp_buff'?
+_cpp_buff_0 *result; // [rsp+10h] [rbp-20h] 
+^~~~~~~~~~~
+_cpp_buff
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/_cpp_get_buff/src/cpphash.h:47:26: note: '_cpp_buff' declared here
+typedef struct _cpp_buff _cpp_buff;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/_cpp_get_buff/src/cpplex.c:2463:53: error: expected expression
+for ( p = &pfile->free_buffs; ; p = ( _cpp_buff_0 **)*p ) 
+                                                    ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/_cpp_get_buff/src/cpplex.c:2463:39: error: use of undeclared identifier '_cpp_buff_0'
+for ( p = &pfile->free_buffs; ; p = ( _cpp_buff_0 **)*p ) 
+                                      ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/_cpp_get_buff/src/obj/cpplex.o] Error 1

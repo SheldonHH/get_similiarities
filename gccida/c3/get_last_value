@@ -1,0 +1,42 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_last_value/src/combine.c:11981:4: error: expected ';' after expression
+rtx loc[2]; // [rsp+8h] [rbp-10h] BYREF 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_last_value/src/combine.c:11981:5: error: use of undeclared identifier 'loc'
+rtx loc[2]; // [rsp+8h] [rbp-10h] BYREF 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_last_value/src/combine.c:11987:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v2.rtwint = ( __int64)x->fld[0]; 
+                      ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_last_value/src/combine.c:11991:1: error: use of undeclared identifier 'loc'
+loc[0] = last_value; 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_last_value/src/combine.c:11993:35: error: use of undeclared identifier 'machine_mode'
+return gen_lowpart_for_combine( ( machine_mode)*( ( unsigned __int8 *)x + 2), last_value); 
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_last_value/src/combine.c:12000:1: error: use of undeclared identifier 'loc'
+loc[0] = reg_last_set_value[rtuint]; 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_last_value/src/combine.c:12001:7: error: use of undeclared identifier 'loc'
+if ( !loc[0] 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_last_value/src/combine.c:12025:48: error: use of undeclared identifier 'loc'
+last_value_validate = get_last_value_validate( loc, v6, *( ( _DWORD *)reg_last_set_label + rtuint), 0); 
+                                               ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_last_value/src/combine.c:12026:10: error: use of undeclared identifier 'loc'
+result = loc[0]; 
+         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_last_value/src/combine.c:12029:1: error: use of undeclared identifier 'loc'
+loc[0] = copy_rtx( loc[0]); 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_last_value/src/combine.c:12029:20: error: use of undeclared identifier 'loc'
+loc[0] = copy_rtx( loc[0]); 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_last_value/src/combine.c:12030:31: error: use of undeclared identifier 'loc'
+if ( get_last_value_validate( loc, reg_last_set[rtuint], *( ( _DWORD *)reg_last_set_label + rtuint), 1) ) 
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_last_value/src/combine.c:12031:8: error: use of undeclared identifier 'loc'
+return loc[0]; 
+       ^
+13 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_last_value/src/obj/combine.o] Error 1

@@ -1,0 +1,40 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/decode_addr_const/src/varasm.c:2766:14: error: expected expression
+tree_int_cst::$A887AD9C3C6C8CC7716950D571F57C9D *p_int_cst; // rbx 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/decode_addr_const/src/varasm.c:2767:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v5; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/decode_addr_const/src/varasm.c:2771:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v9; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/decode_addr_const/src/varasm.c:2780:1: error: use of undeclared identifier 'p_int_cst'
+p_int_cst = &exp->int_cst.int_cst; 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/decode_addr_const/src/varasm.c:2785:7: error: use of undeclared identifier 'p_int_cst'
+low = p_int_cst->low; 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/decode_addr_const/src/varasm.c:2791:1: error: use of undeclared identifier 'p_int_cst'
+p_int_cst = ( tree_int_cst::$A887AD9C3C6C8CC7716950D571F57C9D *)( low + 32); 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/decode_addr_const/src/varasm.c:2791:15: error: use of undeclared identifier 'tree_int_cst'
+p_int_cst = ( tree_int_cst::$A887AD9C3C6C8CC7716950D571F57C9D *)( low + 32); 
+              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/decode_addr_const/src/varasm.c:2792:33: error: use of undeclared identifier 'p_int_cst'
+v3 += int_byte_position( ( tree)p_int_cst->high); 
+                                ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/decode_addr_const/src/varasm.c:2798:21: error: expected expression
+v9 = *( tree_node **)( low + 40); 
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/decode_addr_const/src/varasm.c:2798:9: error: use of undeclared identifier 'tree_node'
+v9 = *( tree_node **)( low + 40); 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/decode_addr_const/src/varasm.c:2799:1: error: use of undeclared identifier 'p_int_cst'
+p_int_cst = ( tree_int_cst::$A887AD9C3C6C8CC7716950D571F57C9D *)( low + 32); 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/decode_addr_const/src/varasm.c:2799:15: error: use of undeclared identifier 'tree_int_cst'
+p_int_cst = ( tree_int_cst::$A887AD9C3C6C8CC7716950D571F57C9D *)( low + 32); 
+              ^
+12 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/decode_addr_const/src/obj/varasm.o] Error 1

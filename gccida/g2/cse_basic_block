@@ -1,0 +1,72 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/cse_basic_block/src/cse.c:7671:4: error: expected ';' after expression
+rtx v21; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/cse_basic_block/src/cse.c:7671:5: error: use of undeclared identifier 'v21'
+rtx v21; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/cse_basic_block/src/cse.c:7672:1: error: must use 'enum' tag to refer to type 'taken'
+taken status; // edx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/cse_basic_block/src/cse.c:7675:4: error: expected ';' after expression
+rtx v25; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/cse_basic_block/src/cse.c:7675:5: error: use of undeclared identifier 'v25'
+rtx v25; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/cse_basic_block/src/cse.c:7676:4: error: expected ';' after expression
+rtx reg_note; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/cse_basic_block/src/cse.c:7676:5: error: must use 'enum' tag to refer to type 'reg_note'
+rtx reg_note; // rax 
+    ^
+    enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/cse_basic_block/src/cse.c:7682:4: error: expected ';' after expression
+rtx nonnote_insn; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/cse_basic_block/src/cse.c:7682:5: error: use of undeclared identifier 'nonnote_insn'
+rtx nonnote_insn; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/cse_basic_block/src/cse.c:7690:5: error: invalid operands to binary expression ('rtx' (aka 'struct rtx_def *') and 'double (double)')
+rtx *exp; // rdi 
+~~~ ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/cse_basic_block/src/cse.c:7783:30: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+for ( v28.rtwint = ( __int64)rtx[1].fld[0]; v28.rtwint; v28.rtwint = *( __int64 *)( v28.rtwint + 24) ) 
+                             ^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/cse_basic_block/src/cse.c:7816:35: error: expected expression
+invalidate_from_clobbers( *( rtx *)( v28.rtwint + 32)); 
+                                  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/cse_basic_block/src/cse.c:7817:22: error: expected expression
+note_stores( *( rtx *)( v28.rtwint + 32), invalidate_skipped_set, 0LL); 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/cse_basic_block/src/cse.c:7825:13: error: expected ';' after expression
+rtx = ( rtx)rtx[4]; 
+            ^
+            ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/cse_basic_block/src/cse.c:7841:14: error: expected ';' after return statement
+return ( rtx)v31.rtwint; 
+             ^
+             ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/cse_basic_block/src/cse.c:7843:12: error: expected ')'
+if ( ( rtx)rtx[4] == to ) 
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/cse_basic_block/src/cse.c:7843:4: note: to match this '('
+if ( ( rtx)rtx[4] == to ) 
+   ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/cse_basic_block/src/cse.c:7852:13: error: expected ';' after expression
+rtx = ( rtx)to[1]; 
+            ^
+            ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/cse_basic_block/src/cse.c:7867:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v31.rtwint = ( __int64)rtx[1].fld[0]; 
+                       ^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/cse_basic_block/src/cse.c:7868:23: error: use of undeclared identifier 'nonnote_insn'
+if ( !v31.rtwint || ( nonnote_insn = prev_nonnote_insn( rtx)) != 0LL && *( _WORD *)nonnote_insn == 35 ) 
+                      ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/cse_basic_block/src/obj/cse.o] Error 1

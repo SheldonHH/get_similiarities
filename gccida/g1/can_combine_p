@@ -1,0 +1,29 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/can_combine_p/src/combine.c:1441:26: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v9 = (  struct rtx_def *)insn[2]; 
+                         ^~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/can_combine_p/src/combine.c:1447:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v11.rtwint = ( __int64)v9->fld[0]; 
+                       ^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/can_combine_p/src/combine.c:1459:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v12.rtwint = ( __int64)v17->fld[0]; 
+                       ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/can_combine_p/src/combine.c:1462:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v13 = ( __int64)i3[2]; 
+                ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/can_combine_p/src/combine.c:1510:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v21.rtwint = ( __int64)v20->fld[0]; 
+                       ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/can_combine_p/src/combine.c:1515:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v22 = ( __int64)v20[1]; 
+                ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/can_combine_p/src/combine.c:1573:46: error: use of undeclared identifier 'machine_mode'
+reg_fusage = ix86_hard_regno_mode_ok( v31, ( machine_mode)*( unsigned __int8 *)( v21.rtwint + 2)); 
+                                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/can_combine_p/src/combine.c:1580:46: error: use of undeclared identifier 'machine_mode'
+reg_fusage = ix86_hard_regno_mode_ok( v32, ( machine_mode)*( unsigned __int8 *)( v22 + 2)); 
+                                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/can_combine_p/src/combine.c:1592:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v28 = ( __int64)i3[2]; 
+                ^~~~~
+9 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/can_combine_p/src/obj/combine.o] Error 1

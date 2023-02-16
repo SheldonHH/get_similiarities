@@ -1,0 +1,82 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/sched_analyze_1/src/sched-deps.c:1015:24: error: unknown type name 'deps_0'
+void  sched_analyze_1( deps_0 *deps, rtx x, rtx insn) 
+                       ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/sched_analyze_1/src/sched-deps.c:1040:1: error: must use 'enum' tag to refer to type 'reg_note'
+reg_note v28; // edx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/sched_analyze_1/src/sched-deps.c:1047:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v3.rtwint = ( __int64)x->fld[0]; 
+                      ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/sched_analyze_1/src/sched-deps.c:1077:38: error: use of undeclared identifier 'machine_mode'
+cselib_lookup( rtwint->fld[0].rtx, ( machine_mode)( ( ( BYTE3( target_flags) & 2) != 0) + 4), 1); 
+                                     ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/sched_analyze_1/src/sched-deps.c:1087:66: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( i = deps->pending_read_mems; pending_read_insns; i = ( rtx)pending_mem[1] ) 
+                                                                 ^~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/sched_analyze_1/src/sched-deps.c:1094:28: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+pending_read_insns = ( rtx)pending_read_insns[1]; 
+                           ^~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/sched_analyze_1/src/sched-deps.c:1095:11: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+i = ( rtx)pending_mem[1]; 
+          ^~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/sched_analyze_1/src/sched-deps.c:1099:59: error: use of undeclared identifier 'reg_note'; did you mean 'reg_names'?
+add_dependence_2( insn, pending_read_insns->fld[0].rtx, ( reg_note)pending_mem); 
+                                                          ^~~~~~~~
+                                                          reg_names
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/sched_analyze_1/src/regs.h:166:21: note: 'reg_names' declared here
+extern const char * reg_names[FIRST_PSEUDO_REGISTER];
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/sched_analyze_1/src/sched-deps.c:1099:68: error: expected ')'
+add_dependence_2( insn, pending_read_insns->fld[0].rtx, ( reg_note)pending_mem); 
+                                                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/sched_analyze_1/src/sched-deps.c:1099:17: note: to match this '('
+add_dependence_2( insn, pending_read_insns->fld[0].rtx, ( reg_note)pending_mem); 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/sched_analyze_1/src/sched-deps.c:1100:28: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+pending_read_insns = ( rtx)pending_read_insns[1]; 
+                           ^~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/sched_analyze_1/src/sched-deps.c:1104:68: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( j = deps->pending_write_mems; pending_write_insns; j = ( rtx)pending_mema[1] ) 
+                                                                   ^~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/sched_analyze_1/src/sched-deps.c:1111:29: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+pending_write_insns = ( rtx)pending_write_insns[1]; 
+                            ^~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/sched_analyze_1/src/sched-deps.c:1112:11: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+j = ( rtx)pending_mema[1]; 
+          ^~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/sched_analyze_1/src/sched-deps.c:1116:60: error: use of undeclared identifier 'reg_note'; did you mean 'reg_names'?
+add_dependence_1( insn, pending_write_insns->fld[0].rtx, ( reg_note)pending_mema); 
+                                                           ^~~~~~~~
+                                                           reg_names
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/sched_analyze_1/src/regs.h:166:21: note: 'reg_names' declared here
+extern const char * reg_names[FIRST_PSEUDO_REGISTER];
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/sched_analyze_1/src/sched-deps.c:1116:69: error: expected ')'
+add_dependence_1( insn, pending_write_insns->fld[0].rtx, ( reg_note)pending_mema); 
+                                                                    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/sched_analyze_1/src/sched-deps.c:1116:17: note: to match this '('
+add_dependence_1( insn, pending_write_insns->fld[0].rtx, ( reg_note)pending_mema); 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/sched_analyze_1/src/sched-deps.c:1117:29: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+pending_write_insns = ( rtx)pending_write_insns[1]; 
+                            ^~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/sched_analyze_1/src/sched-deps.c:1120:57: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( k = deps->last_pending_memory_flush; k; k = ( rtx)k[1] ) 
+                                                        ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/sched_analyze_1/src/sched-deps.c:1121:42: error: use of undeclared identifier 'reg_note'; did you mean 'reg_names'?
+add_dependence_2( insn, k->fld[0].rtx, ( reg_note)j); 
+                                         ^~~~~~~~
+                                         reg_names
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/sched_analyze_1/src/regs.h:166:21: note: 'reg_names' declared here
+extern const char * reg_names[FIRST_PSEUDO_REGISTER];
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/sched_analyze_1/src/sched-deps.c:1121:51: error: expected ')'
+add_dependence_2( insn, k->fld[0].rtx, ( reg_note)j); 
+                                                  ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/sched_analyze_1/src/sched-deps.c:1121:17: note: to match this '('
+add_dependence_2( insn, k->fld[0].rtx, ( reg_note)j); 
+                ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/sched_analyze_1/src/obj/sched-deps.o] Error 1

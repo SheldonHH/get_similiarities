@@ -1,0 +1,89 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_arg/src/cppmacro.c:1403:19: error: unknown type name 'cpp_reader_0'; did you mean 'cpp_reader'?
+void  expand_arg( cpp_reader_0 *pfile, macro_arg_0 *arg) 
+                  ^~~~~~~~~~~~
+                  cpp_reader
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_arg/src/cpplib.h:36:27: note: 'cpp_reader' declared here
+typedef struct cpp_reader cpp_reader;
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_arg/src/cppmacro.c:1403:40: error: unknown type name 'macro_arg_0'; did you mean 'macro_arg'?
+void  expand_arg( cpp_reader_0 *pfile, macro_arg_0 *arg) 
+                                       ^~~~~~~~~~~
+                                       macro_arg
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_arg/src/cppmacro.c:43:26: note: 'macro_arg' declared here
+typedef struct macro_arg macro_arg;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_arg/src/cppmacro.c:1405:1: error: must use 'union' tag to refer to type 'utoken'
+utoken v3; // r15 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_arg/src/cppmacro.c:1409:7: error: unknown type name 'cpp_token_0'; did you mean 'cpp_token'?
+const cpp_token_0 *token; // rax 
+      ^~~~~~~~~~~
+      cpp_token
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_arg/src/cpplib.h:40:26: note: 'cpp_token' declared here
+typedef struct cpp_token cpp_token;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_arg/src/cppmacro.c:1410:7: error: unknown type name 'cpp_token_0'; did you mean 'cpp_token'?
+const cpp_token_0 **expanded; // rdx 
+      ^~~~~~~~~~~
+      cpp_token
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_arg/src/cpplib.h:40:26: note: 'cpp_token' declared here
+typedef struct cpp_token cpp_token;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_arg/src/cppmacro.c:1413:1: error: unknown type name 'cpp_hashnode_0'; did you mean 'cpp_hashnode'?
+cpp_hashnode_0 *macro; // rax 
+^~~~~~~~~~~~~~
+cpp_hashnode
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_arg/src/cpplib.h:42:29: note: 'cpp_hashnode' declared here
+typedef struct cpp_hashnode cpp_hashnode;
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_arg/src/cppmacro.c:1414:1: error: unknown type name '_cpp_buff_0'; did you mean '_cpp_buff'?
+_cpp_buff_0 *buff; // rsi 
+^~~~~~~~~~~
+_cpp_buff
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_arg/src/cpphash.h:47:26: note: '_cpp_buff' declared here
+typedef struct _cpp_buff _cpp_buff;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_arg/src/cppmacro.c:1418:25: error: unknown type name 'cpp_token_0'; did you mean 'cpp_token'?
+arg->expanded = ( const cpp_token_0 **)xmalloc( 0x800uLL); 
+                        ^~~~~~~~~~~
+                        cpp_token
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_arg/src/cpplib.h:40:26: note: 'cpp_token' declared here
+typedef struct cpp_token cpp_token;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_arg/src/cppmacro.c:1419:20: error: unknown type name 'cpp_token_0'; did you mean 'cpp_token'?
+v3.token = ( const cpp_token_0 *)arg->first; 
+                   ^~~~~~~~~~~
+                   cpp_token
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_arg/src/cpplib.h:40:26: note: 'cpp_token' declared here
+typedef struct cpp_token cpp_token;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_arg/src/cppmacro.c:1431:12: error: expected expression
+*( _OWORD *)&next->buff = 0LL; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_arg/src/cppmacro.c:1431:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&next->buff = 0LL; 
+   ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_arg/src/cppmacro.c:1434:28: error: unknown type name 'cpp_token_0'; did you mean 'cpp_token'?
+next->last.token = ( const cpp_token_0 *)( ( char *)v3.token + 8 * v4); 
+                           ^~~~~~~~~~~
+                           cpp_token
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_arg/src/cpplib.h:40:26: note: 'cpp_token' declared here
+typedef struct cpp_token cpp_token;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_arg/src/cppmacro.c:1439:20: error: unknown type name 'cpp_token_0'; did you mean 'cpp_token'?
+v3.token = ( const cpp_token_0 *)( unsigned int)( 2 * LODWORD( v3.token)); 
+                   ^~~~~~~~~~~
+                   cpp_token
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_arg/src/cpplib.h:40:26: note: 'cpp_token' declared here
+typedef struct cpp_token cpp_token;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_arg/src/cppmacro.c:1440:25: error: unknown type name 'cpp_token_0'; did you mean 'cpp_token'?
+arg->expanded = ( const cpp_token_0 **)xrealloc( arg->expanded, 8 * ( __int64)v3.token); 
+                        ^~~~~~~~~~~
+                        cpp_token
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_arg/src/cpplib.h:40:26: note: 'cpp_token' declared here
+typedef struct cpp_token cpp_token;
+                         ^
+14 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_arg/src/obj/cppmacro.o] Error 1

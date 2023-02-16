@@ -1,0 +1,15 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/mem_loc_descriptor/src/dwarf2out.c:8199:48: error: must use 'enum' tag to refer to type 'machine_mode'
+dw_loc_descr_ref  mem_loc_descriptor( rtx rtl, machine_mode mode) 
+                                               ^
+                                               enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/mem_loc_descriptor/src/dwarf2out.c:8269:58: error: use of undeclared identifier 'machine_mode'
+mem_loc_result = mem_loc_descriptor( rtla->fld[0].rtx, ( machine_mode)*( ( unsigned __int8 *)rtla + 2)); 
+                                                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/mem_loc_descriptor/src/dwarf2out.c:8301:41: error: invalid suffix 'xmode' on integer constant
+rtla = gen_rtx_fmt_ee( PLUS, *(short *)0xmode, rtla->fld[0].rtx, v8); 
+                                        ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/mem_loc_descriptor/src/dwarf2out.c:8304:14: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+rtla = ( rtx)rtla[1]; 
+             ^~~~~~~
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/mem_loc_descriptor/src/obj/dwarf2out.o] Error 1

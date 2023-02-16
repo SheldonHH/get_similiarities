@@ -1,0 +1,36 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/plus_constant_wide/src/explow.c:546:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v9; // [rsp+Ch] [rbp-A4h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/plus_constant_wide/src/explow.c:548:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v11; // [rsp+20h] [rbp-90h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/plus_constant_wide/src/explow.c:559:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // [rsp+84h] [rbp-2Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/plus_constant_wide/src/explow.c:561:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code; // [rsp+94h] [rbp-1Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/plus_constant_wide/src/explow.c:581:25: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+l1 = ( unsigned __int64)xa[1]; 
+                        ^~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/plus_constant_wide/src/explow.c:599:23: error: expected identifier or '('
+ struct pool_constant = get_pool_constant( xa->fld[0].rtx); 
+                      ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/plus_constant_wide/src/explow.c:602:27: error: use of undeclared identifier 'machine_mode'
+if ( !memory_address_p( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)tem), tem->fld[0].rtx) ) 
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/plus_constant_wide/src/explow.c:602:42: error: expected expression
+if ( !memory_address_p( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)tem), tem->fld[0].rtx) ) 
+                                         ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/plus_constant_wide/src/explow.c:614:32: error: use of undeclared identifier 'machine_mode'
+ca = trunc_int_for_mode( ca, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)xa)); 
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/plus_constant_wide/src/explow.c:614:47: error: expected expression
+ca = trunc_int_for_mode( ca, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)xa)); 
+                                              ^
+10 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/plus_constant_wide/src/obj/explow.o] Error 1

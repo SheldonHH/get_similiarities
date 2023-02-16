@@ -1,0 +1,30 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/div_and_round_double/src/fold-const.c:1026:1: error: must use 'enum' tag to refer to type 'tree_code'
+tree_code code, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/div_and_round_double/src/fold-const.c:1336:24: error: use of undeclared identifier 'invalid_operation'
+v51 = ( v84 - 1 < 0) ^ __OFADD__( -1LL, v84) | ( v84 == 1); 
+                       ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/div_and_round_double/src/fold-const.c:832:25: note: expanded from macro '__OFADD__'
+#define __OFADD__(x, y) invalid_operation // Generate overflow flag for (x+y)
+                        ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/div_and_round_double/src/fold-const.c:1470:7: error: use of undeclared identifier 'invalid_operation'
+v77 = __CFADD__( lnum_orig, *lrem); 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/div_and_round_double/src/fold-const.c:830:25: note: expanded from macro '__CFADD__'
+#define __CFADD__(x, y) invalid_operation // Generate carry flag for (x+y)
+                        ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/div_and_round_double/src/fold-const.c:1485:7: error: use of undeclared identifier 'invalid_operation'
+v77 = __CFADD__( ( *v17)++, 1LL); 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/div_and_round_double/src/fold-const.c:830:25: note: expanded from macro '__CFADD__'
+#define __CFADD__(x, y) invalid_operation // Generate carry flag for (x+y)
+                        ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/div_and_round_double/src/fold-const.c:1570:7: error: use of undeclared identifier 'invalid_operation'
+v77 = __CFADD__( lnum_orig, *lrem); 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/div_and_round_double/src/fold-const.c:830:25: note: expanded from macro '__CFADD__'
+#define __CFADD__(x, y) invalid_operation // Generate carry flag for (x+y)
+                        ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/div_and_round_double/src/obj/fold-const.o] Error 1

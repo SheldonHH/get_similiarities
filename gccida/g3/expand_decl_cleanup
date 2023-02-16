@@ -1,0 +1,34 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_decl_cleanup/src/stmt.c:4553:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v6; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_decl_cleanup/src/stmt.c:4558:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v11; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_decl_cleanup/src/stmt.c:4559:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v12; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_decl_cleanup/src/stmt.c:4561:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v14; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_decl_cleanup/src/stmt.c:4565:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v19; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_decl_cleanup/src/stmt.c:4580:30: error: invalid suffix 'xmode' on integer constant
+v4 = gen_reg_rtx( *(short *)0xmode); 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_decl_cleanup/src/stmt.c:4587:32: error: invalid suffix 'xmode' on integer constant
+v6 = type_for_mode( *(short *)0xmode, 1); 
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_decl_cleanup/src/stmt.c:4592:38: error: expected expression
+v11 = build( COND_EXPR, ( tree_node *)*( &global_trees + 27), ( __int64)v9, ( __int64)cleanup, v8, v10, v21, v22); 
+                                     ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_decl_cleanup/src/stmt.c:4592:27: error: use of undeclared identifier 'tree_node'
+v11 = build( COND_EXPR, ( tree_node *)*( &global_trees + 27), ( __int64)v9, ( __int64)cleanup, v8, v10, v21, v22); 
+                          ^
+9 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/expand_decl_cleanup/src/obj/stmt.o] Error 1

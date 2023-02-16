@@ -1,0 +1,66 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/ix86_split_fp_branch/src/i386.c:8352:29: error: must use 'enum' tag to refer to type 'rtx_code'
+void  ix86_split_fp_branch( rtx_code code, rtx op1, rtx op2, rtx target1, rtx target2, rtx tmp) 
+                            ^
+                            enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/ix86_split_fp_branch/src/i386.c:8383:4: error: expected ';' after expression
+rtx v38; // r15 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/ix86_split_fp_branch/src/i386.c:8383:5: error: use of undeclared identifier 'v38'
+rtx v38; // r15 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/ix86_split_fp_branch/src/i386.c:8385:4: error: expected ';' after expression
+rtx v40; // r13 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/ix86_split_fp_branch/src/i386.c:8385:5: error: use of undeclared identifier 'v40'
+rtx v40; // r13 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/ix86_split_fp_branch/src/i386.c:8392:4: error: expected ';' after expression
+rtx i; // [rsp+8h] [rbp-50h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/ix86_split_fp_branch/src/i386.c:8392:5: error: use of undeclared identifier 'i'
+rtx i; // [rsp+8h] [rbp-50h] 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/ix86_split_fp_branch/src/i386.c:8393:4: error: expected ';' after expression
+rtx second; // [rsp+10h] [rbp-48h] BYREF 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/ix86_split_fp_branch/src/i386.c:8393:5: error: use of undeclared identifier 'second'
+rtx second; // [rsp+10h] [rbp-48h] BYREF 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/ix86_split_fp_branch/src/i386.c:8394:4: error: expected ';' after expression
+rtx bypass; // [rsp+18h] [rbp-40h] BYREF 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/ix86_split_fp_branch/src/i386.c:8394:5: error: use of undeclared identifier 'bypass'
+rtx bypass; // [rsp+18h] [rbp-40h] BYREF 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/ix86_split_fp_branch/src/i386.c:8404:53: error: use of undeclared identifier 'second'
+v11 = ix86_expand_fp_compare( code, op1, op2, tmp, &second, &bypass); 
+                                                    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/ix86_split_fp_branch/src/i386.c:8404:62: error: use of undeclared identifier 'bypass'
+v11 = ix86_expand_fp_compare( code, op1, op2, tmp, &second, &bypass); 
+                                                             ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/ix86_split_fp_branch/src/i386.c:8406:7: error: use of undeclared identifier 'bypass'
+v13 = bypass; 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/ix86_split_fp_branch/src/i386.c:8410:7: error: use of undeclared identifier 'bypass'
+if ( !bypass ) 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/ix86_split_fp_branch/src/i386.c:8419:1: error: use of undeclared identifier 'v40'
+v40 = global_rtl[0]; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/ix86_split_fp_branch/src/i386.c:8423:7: error: use of undeclared identifier 'v40'
+v42 = v40; 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/ix86_split_fp_branch/src/i386.c:8425:48: error: use of undeclared identifier 'bypass'
+v43 = gen_rtx_fmt_eee( IF_THEN_ELSE, VOIDmode, bypass, v41, v42); 
+                                               ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/ix86_split_fp_branch/src/i386.c:8431:7: error: use of undeclared identifier 'bypass'
+if ( !bypass ) 
+      ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/ix86_split_fp_branch/src/obj/i386.o] Error 1

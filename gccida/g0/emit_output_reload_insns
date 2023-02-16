@@ -1,0 +1,80 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/emit_output_reload_insns/src/reload1.c:7107:1: error: must use 'enum' tag to refer to type 'insn_code'
+insn_code tertiary_icode; // [rsp+68h] [rbp-58h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/emit_output_reload_insns/src/reload1.c:7113:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // [rsp+94h] [rbp-2Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/emit_output_reload_insns/src/reload1.c:7130:44: error: too many arguments provided to function-like macro invocation
+fatal_insn( "VOIDmode on an output", insn, "reload1.c", 6651, "emit_output_reload_insns"); 
+                                           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/emit_output_reload_insns/src/toplev.h:50:9: note: macro 'fatal_insn' defined here
+#define fatal_insn(msgid, insn) \
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/emit_output_reload_insns/src/reload1.c:7130:1: error: use of undeclared identifier 'fatal_insn'; did you mean '_fatal_insn'?
+fatal_insn( "VOIDmode on an output", insn, "reload1.c", 6651, "emit_output_reload_insns"); 
+^~~~~~~~~~
+_fatal_insn
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/emit_output_reload_insns/src/toplev.h:44:13: note: '_fatal_insn' declared here
+extern void _fatal_insn                 PARAMS ((const char *,
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/emit_output_reload_insns/src/reload1.c:7132:19: error: invalid suffix 'xmode' on integer constant
+mode = *(short *)0xmode; 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/emit_output_reload_insns/src/reload1.c:7133:31: error: invalid suffix 'xmode' on integer constant
+old = gen_rtx_REG( *(short *)0xmode, reloadreg->fld[0].rtint); 
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/emit_output_reload_insns/src/reload1.c:7164:29: error: use of undeclared identifier 'machine_mode'
+tem = gen_lowpart_common( ( machine_mode)*( unsigned __int8 *)( real_old->fld[0].rtwint + 2), reloadreg); 
+                            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/emit_output_reload_insns/src/reload1.c:7172:6: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+v4 = insn_data_0[tertiary_icode].genfun( real_old, reloadreg, third_reloadreg); 
+     ^~~~~~~~~~~
+     insn_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/emit_output_reload_insns/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/emit_output_reload_insns/src/reload1.c:7172:40: error: called object type '<dependent type>' is not a function or function pointer
+v4 = insn_data_0[tertiary_icode].genfun( real_old, reloadreg, third_reloadreg); 
+                                       ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/emit_output_reload_insns/src/reload1.c:7179:6: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+v3 = insn_data_0[rl->secondary_out_icode].genfun( real_old, second_reloadreg, reloadreg); 
+     ^~~~~~~~~~~
+     insn_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/emit_output_reload_insns/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/emit_output_reload_insns/src/reload1.c:7179:49: error: called object type '<dependent type>' is not a function or function pointer
+v3 = insn_data_0[rl->secondary_out_icode].genfun( real_old, second_reloadreg, reloadreg); 
+                                                ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/emit_output_reload_insns/src/reload1.c:7193:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+: ( v5 = ( rtx)insn[2]), 
+               ^~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/emit_output_reload_insns/src/reload1.c:7194:15: error: expected ')'
+(  struct set = v5) == 0LL 
+              ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/emit_output_reload_insns/src/reload1.c:7194:1: note: to match this '('
+(  struct set = v5) == 0LL 
+^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/emit_output_reload_insns/src/reload1.c:7194:21: error: expected expression
+(  struct set = v5) == 0LL 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/emit_output_reload_insns/src/reload1.c:7206:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+pat = (  struct rtx_def *)p[2]; 
+                          ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/emit_output_reload_insns/src/reload1.c:7213:12: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v6 = ( rtx)insn[2]; 
+           ^~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/emit_output_reload_insns/src/reload1.c:7225:12: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+if ( ( rtx)v6[1] == rl->reg_rtx ) 
+           ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/emit_output_reload_insns/src/reload1.c:7239:39: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v7 = **( _WORD **)&p[2] == 47 ? ( rtx)p[2] : single_set_2( p, *( rtx *)&p[2]); 
+                                      ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/emit_output_reload_insns/src/reload1.c:7244:22: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+if ( s >= 0 && ( rtx)v7[1] == rl->reg_rtx && ( rtx)v7->fld[0].rtwint == rld[s].reg_rtx ) 
+                     ^~~~~
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/emit_output_reload_insns/src/obj/reload1.o] Error 1

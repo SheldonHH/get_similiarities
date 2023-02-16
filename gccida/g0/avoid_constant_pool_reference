@@ -1,0 +1,9 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/avoid_constant_pool_reference/src/simplify-rtx.c:624:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode cmode; // [rsp+1Ch] [rbp-14h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/avoid_constant_pool_reference/src/simplify-rtx.c:638:25: error: use of undeclared identifier 'machine_mode'
+ca = simplify_subreg( ( machine_mode)*( ( unsigned __int8 *)x + 2), c, cmode, 0); 
+                        ^
+2 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/avoid_constant_pool_reference/src/obj/simplify-rtx.o] Error 1

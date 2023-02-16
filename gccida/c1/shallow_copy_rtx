@@ -1,0 +1,12 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/shallow_copy_rtx/src/rtl.c:924:23: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+result = rtx_alloc( ( rtx_code)*( _WORD *)orig); 
+                      ^~~~~~~~
+                      rtx_cost
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/shallow_copy_rtx/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/shallow_copy_rtx/src/rtl.c:924:32: error: invalid operands to binary expression ('int (rtx, enum rtx_code)' (aka 'int (struct rtx_def *, enum rtx_code)') and 'uint16 *' (aka 'unsigned short *'))
+result = rtx_alloc( ( rtx_code)*( _WORD *)orig); 
+                    ~~~~~~~~~~~^~~~~~~~~~~~~~~
+2 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/shallow_copy_rtx/src/obj/rtl.o] Error 1

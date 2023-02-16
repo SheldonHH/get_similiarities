@@ -1,0 +1,35 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_reloads_address_part/src/reload.c:6157:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class a3, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_reloads_address_part/src/reload.c:6158:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_reloads_address_part/src/reload.c:6160:1: error: must use 'enum' tag to refer to type 'reload_type'
+reload_type type, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_reloads_address_part/src/reload.c:6165:1: error: must use 'enum' tag to refer to type 'reload_type'
+reload_type typea; // [rsp+60h] [rbp-20h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_reloads_address_part/src/reload.c:6167:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode modea; // [rsp+68h] [rbp-18h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_reloads_address_part/src/reload.c:6168:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class classa; // [rsp+6Ch] [rbp-14h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_reloads_address_part/src/reload.c:6203:28: error: use of undeclared identifier 'machine_mode'
+tem_0 = force_const_mem( ( machine_mode)BYTE2( *( _DWORD *)xa), *( rtx *)&xa[1]); 
+                           ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_reloads_address_part/src/reload.c:6204:30: error: use of undeclared identifier 'machine_mode'
+xa = gen_rtx_fmt_ee( PLUS, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)xa), xa->fld[0].rtx, tem_0); 
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_reloads_address_part/src/reload.c:6204:45: error: expected expression
+xa = gen_rtx_fmt_ee( PLUS, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)xa), xa->fld[0].rtx, tem_0); 
+                                            ^
+9 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_reloads_address_part/src/obj/reload.o] Error 1

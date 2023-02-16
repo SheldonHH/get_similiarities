@@ -1,0 +1,67 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/subst_indexed_address/src/reload.c:5537:4: error: expected ';' after expression
+rtx v8; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/subst_indexed_address/src/reload.c:5537:5: error: use of undeclared identifier 'v8'
+rtx v8; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/subst_indexed_address/src/reload.c:5538:4: error: expected ';' after expression
+rtx v9; // rsi 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/subst_indexed_address/src/reload.c:5538:5: error: use of undeclared identifier 'v9'
+rtx v9; // rsi 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/subst_indexed_address/src/reload.c:5539:4: error: expected ';' after expression
+rtx v10; // rcx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/subst_indexed_address/src/reload.c:5539:5: error: use of undeclared identifier 'v10'; did you mean 'v1'?
+rtx v10; // rcx 
+    ^~~
+    v1
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/subst_indexed_address/src/reload.c:5530:18: note: 'v1' declared here
+ struct rtx_def *v1; // rbx 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/subst_indexed_address/src/reload.c:5548:26: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v3 = (  struct rtx_def *)addr[1]; 
+                         ^~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/subst_indexed_address/src/reload.c:5553:6: error: use of undeclared identifier 'v10'
+&& ( v10 = reg_equiv_constant[v5]) != 0LL ) 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/subst_indexed_address/src/reload.c:5555:7: error: use of undeclared identifier 'v10'
+rtx = v10; 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/subst_indexed_address/src/reload.c:5556:1: error: use of undeclared identifier 'v9'
+v9 = ( rtx)addr[1]; 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/subst_indexed_address/src/reload.c:5564:6: error: use of undeclared identifier 'v9'
+|| ( v9 = reg_equiv_constant[rtuint]) == 0LL ) 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/subst_indexed_address/src/reload.c:5568:1: error: use of undeclared identifier 'v8'
+v8 = subst_indexed_address( addr->fld[0].rtx); 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/subst_indexed_address/src/reload.c:5569:6: error: use of undeclared identifier 'v8'
+if ( v8 != rtx ) 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/subst_indexed_address/src/reload.c:5571:7: error: use of undeclared identifier 'v8'
+rtx = v8; 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/subst_indexed_address/src/reload.c:5572:1: error: use of undeclared identifier 'v9'
+v9 = v3; 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/subst_indexed_address/src/reload.c:5579:1: error: use of undeclared identifier 'v9'
+v9 = subst_indexed_address( v3); 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/subst_indexed_address/src/reload.c:5580:6: error: use of undeclared identifier 'v9'
+if ( v9 == v3 ) 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/subst_indexed_address/src/reload.c:5585:17: error: use of undeclared identifier 'v9'
+if ( *( _WORD *)v9 == 75 ) 
+                ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/subst_indexed_address/src/reload.c:5587:28: error: use of undeclared identifier 'v9'
+fld = (  struct rtx_def **)v9->fld; 
+                           ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/subst_indexed_address/src/obj/reload.o] Error 1

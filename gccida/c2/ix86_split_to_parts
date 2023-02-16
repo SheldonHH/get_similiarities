@@ -1,0 +1,99 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_split_to_parts/src/i386.c:9042:52: error: must use 'enum' tag to refer to type 'machine_mode'
+int  ix86_split_to_parts( rtx operand, rtx *parts, machine_mode mode) 
+                                                   ^
+                                                   enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_split_to_parts/src/i386.c:9049:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v10; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_split_to_parts/src/i386.c:9051:4: error: expected ';' after expression
+rtx v12; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_split_to_parts/src/i386.c:9051:5: error: use of undeclared identifier 'v12'
+rtx v12; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_split_to_parts/src/i386.c:9062:4: error: expected ';' after expression
+rtx operands; // [rsp+18h] [rbp-70h] BYREF 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_split_to_parts/src/i386.c:9062:5: error: use of undeclared identifier 'operands'; did you mean 'operand'?
+rtx operands; // [rsp+18h] [rbp-70h] BYREF 
+    ^~~~~~~~
+    operand
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_split_to_parts/src/i386.c:9042:31: note: 'operand' declared here
+int  ix86_split_to_parts( rtx operand, rtx *parts, machine_mode mode) 
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_split_to_parts/src/i386.c:9066:23: error: expected identifier or '('
+ struct pool_constant = operand; 
+                      ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_split_to_parts/src/i386.c:9067:1: error: use of undeclared identifier 'operands'; did you mean 'operand'?
+operands = operand; 
+^~~~~~~~
+operand
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_split_to_parts/src/i386.c:9042:31: note: 'operand' declared here
+int  ix86_split_to_parts( rtx operand, rtx *parts, machine_mode mode) 
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_split_to_parts/src/i386.c:9096:23: error: expected identifier or '('
+ struct pool_constant = get_pool_constant( rtx); 
+                      ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_split_to_parts/src/i386.c:9097:1: error: use of undeclared identifier 'operands'; did you mean 'operand'?
+operands = pool_constant; 
+^~~~~~~~
+operand
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_split_to_parts/src/i386.c:9042:31: note: 'operand' declared here
+int  ix86_split_to_parts( rtx operand, rtx *parts, machine_mode mode) 
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_split_to_parts/src/i386.c:9108:12: error: use of undeclared identifier 'operands'; did you mean 'operand'?
+split_di( &operands, 1, parts, parts + 1); 
+           ^~~~~~~~
+           operand
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_split_to_parts/src/i386.c:9042:31: note: 'operand' declared here
+int  ix86_split_to_parts( rtx operand, rtx *parts, machine_mode mode) 
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_split_to_parts/src/i386.c:9122:1: error: use of undeclared identifier 'operands'; did you mean 'operand'?
+operands = v13; 
+^~~~~~~~
+operand
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_split_to_parts/src/i386.c:9042:31: note: 'operand' declared here
+int  ix86_split_to_parts( rtx operand, rtx *parts, machine_mode mode) 
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_split_to_parts/src/i386.c:9133:22: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v25.r[2] = ( __int64)pool_constant[2]; 
+                     ^~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_split_to_parts/src/i386.c:9139:13: error: passing 'long long [3]' to parameter of incompatible type 'realvaluetype'
+etardouble( v26.r, v25); 
+            ^~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_split_to_parts/src/real.h:164:49: note: passing argument to parameter here
+extern void etardouble          PARAMS ((REAL_VALUE_TYPE, long *));
+                                                        ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_split_to_parts/src/i386.c:9144:14: error: passing 'long long [3]' to parameter of incompatible type 'realvaluetype'
+etartdouble( v26.r, v25); 
+             ^~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_split_to_parts/src/real.h:162:50: note: passing argument to parameter here
+extern void etartdouble         PARAMS ((REAL_VALUE_TYPE, long *));
+                                                        ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_split_to_parts/src/i386.c:9146:14: error: passing 'long long [3]' to parameter of incompatible type 'realvaluetype'
+etarldouble( v26.r, v25); 
+             ^~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_split_to_parts/src/real.h:163:50: note: passing argument to parameter here
+extern void etarldouble         PARAMS ((REAL_VALUE_TYPE, long *));
+                                                        ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_split_to_parts/src/i386.c:9188:22: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v26.r[2] = ( __int64)pool_constant[2]; 
+                     ^~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_split_to_parts/src/i386.c:9193:14: error: passing 'long long [3]' to parameter of incompatible type 'realvaluetype'
+etartdouble( v25.r, r); 
+             ^~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_split_to_parts/src/real.h:162:50: note: passing argument to parameter here
+extern void etartdouble         PARAMS ((REAL_VALUE_TYPE, long *));
+                                                        ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_split_to_parts/src/i386.c:9195:14: error: passing 'long long [3]' to parameter of incompatible type 'realvaluetype'
+etarldouble( v25.r, r); 
+             ^~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_split_to_parts/src/real.h:163:50: note: passing argument to parameter here
+extern void etarldouble         PARAMS ((REAL_VALUE_TYPE, long *));
+                                                        ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_split_to_parts/src/obj/i386.o] Error 1

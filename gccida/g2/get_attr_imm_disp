@@ -1,0 +1,128 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/get_attr_imm_disp/src/insn-attrtab.c:12900:1: error: must use 'enum' tag to refer to type 'attr_imm_disp'
+attr_imm_disp  get_attr_imm_disp( rtx insn) 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/get_attr_imm_disp/src/insn-attrtab.c:12918:26: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v8 = (  struct rtx_def *)insn[2]; 
+                         ^~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/get_attr_imm_disp/src/insn-attrtab.c:12920:29: error: too many arguments provided to function-like macro invocation
+fatal_insn_not_found( insn, "insn-attrtab.c", 13072, "get_attr_imm_disp"); 
+                            ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/get_attr_imm_disp/src/toplev.h:52:9: note: macro 'fatal_insn_not_found' defined here
+#define fatal_insn_not_found(insn) \
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/get_attr_imm_disp/src/insn-attrtab.c:12920:1: error: use of undeclared identifier 'fatal_insn_not_found'; did you mean '_fatal_insn_not_found'?
+fatal_insn_not_found( insn, "insn-attrtab.c", 13072, "get_attr_imm_disp"); 
+^~~~~~~~~~~~~~~~~~~~
+_fatal_insn_not_found
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/get_attr_imm_disp/src/toplev.h:40:13: note: '_fatal_insn_not_found' declared here
+extern void _fatal_insn_not_found       PARAMS ((struct rtx_def *,
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/get_attr_imm_disp/src/insn-attrtab.c:13080:38: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( !flag_pic || !symbolic_operand( recog_data_0.operand[1], SImode) ) 
+                                     ^~~~~~~~~~~~
+                                     recog_data
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/get_attr_imm_disp/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/get_attr_imm_disp/src/insn-attrtab.c:13112:36: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( !memory_displacement_operand( recog_data_0.operand[0], VOIDmode) ) 
+                                   ^~~~~~~~~~~~
+                                   recog_data
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/get_attr_imm_disp/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/get_attr_imm_disp/src/insn-attrtab.c:13114:27: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+return immediate_operand( recog_data_0.operand[1], VOIDmode) != 0; 
+                          ^~~~~~~~~~~~
+                          recog_data
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/get_attr_imm_disp/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/get_attr_imm_disp/src/insn-attrtab.c:13117:23: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( !q_regs_operand( recog_data_0.operand[0], QImode) ) 
+                      ^~~~~~~~~~~~
+                      recog_data
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/get_attr_imm_disp/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/get_attr_imm_disp/src/insn-attrtab.c:13155:38: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( !flag_pic || !symbolic_operand( recog_data_0.operand[1], DImode) ) 
+                                     ^~~~~~~~~~~~
+                                     recog_data
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/get_attr_imm_disp/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/get_attr_imm_disp/src/insn-attrtab.c:13370:22: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+v3 = incdec_operand( recog_data_0.operand[2], DImode); 
+                     ^~~~~~~~~~~~
+                     recog_data
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/get_attr_imm_disp/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/get_attr_imm_disp/src/insn-attrtab.c:13379:23: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( !incdec_operand( recog_data_0.operand[2], SImode) ) 
+                      ^~~~~~~~~~~~
+                      recog_data
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/get_attr_imm_disp/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/get_attr_imm_disp/src/insn-attrtab.c:13395:23: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( !incdec_operand( recog_data_0.operand[2], HImode) ) 
+                      ^~~~~~~~~~~~
+                      recog_data
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/get_attr_imm_disp/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/get_attr_imm_disp/src/insn-attrtab.c:13411:23: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( !incdec_operand( recog_data_0.operand[2], QImode) ) 
+                      ^~~~~~~~~~~~
+                      recog_data
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/get_attr_imm_disp/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/get_attr_imm_disp/src/insn-attrtab.c:13447:22: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( const1_operand( recog_data_0.operand[2], VOIDmode) 
+                     ^~~~~~~~~~~~
+                     recog_data
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/get_attr_imm_disp/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/get_attr_imm_disp/src/insn-attrtab.c:13449:21: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+|| !const1_operand( recog_data_0.operand[2], VOIDmode) ) 
+                    ^~~~~~~~~~~~
+                    recog_data
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/get_attr_imm_disp/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/get_attr_imm_disp/src/insn-attrtab.c:13482:22: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( const0_operand( recog_data_0.operand[2], SImode) 
+                     ^~~~~~~~~~~~
+                     recog_data
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/get_attr_imm_disp/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/get_attr_imm_disp/src/insn-attrtab.c:13483:33: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+&& memory_displacement_operand( recog_data_0.operand[0], VOIDmode) 
+                                ^~~~~~~~~~~~
+                                recog_data
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/get_attr_imm_disp/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/get_attr_imm_disp/src/insn-attrtab.c:13484:23: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+&& immediate_operand( recog_data_0.operand[1], VOIDmode) ) 
+                      ^~~~~~~~~~~~
+                      recog_data
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/get_attr_imm_disp/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/get_attr_imm_disp/src/insn-attrtab.c:13494:23: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( !const0_operand( recog_data_0.operand[2], DImode) 
+                      ^~~~~~~~~~~~
+                      recog_data
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/get_attr_imm_disp/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/get_attr_imm_disp/src/obj/insn-attrtab.o] Error 1

@@ -1,0 +1,39 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/inlinable_function_p/src/tree-inline.c:1128:37: error: unknown type name 'inline_data_0'; did you mean 'inline_data'?
+int  inlinable_function_p( tree fn, inline_data_0 *id) 
+                                    ^~~~~~~~~~~~~
+                                    inline_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/inlinable_function_p/src/tree-inline.c:101:3: note: 'inline_data' declared here
+} inline_data;
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/inlinable_function_p/src/tree-inline.c:1143:6: error: use of undeclared identifier 'lang_hooks_0'; did you mean 'lang_hooks'?
+&& ( lang_hooks_0.tree_inlining.disregard_inline_limits( fna) || 10 * fna->decl.u1.i <= compiler_params->value / 2) ) 
+     ^~~~~~~~~~~~
+     lang_hooks
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/inlinable_function_p/src/langhooks.h:168:32: note: 'lang_hooks' declared here
+extern const struct lang_hooks lang_hooks;
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/inlinable_function_p/src/tree-inline.c:1143:56: error: called object type '<dependent type>' is not a function or function pointer
+&& ( lang_hooks_0.tree_inlining.disregard_inline_limits( fna) || 10 * fna->decl.u1.i <= compiler_params->value / 2) ) 
+                                                       ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/inlinable_function_p/src/tree-inline.c:1148:7: error: use of undeclared identifier 'lang_hooks_0'; did you mean 'lang_hooks'?
+if ( !lang_hooks_0.tree_inlining.disregard_inline_limits( fna) ) 
+      ^~~~~~~~~~~~
+      lang_hooks
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/inlinable_function_p/src/langhooks.h:168:32: note: 'lang_hooks' declared here
+extern const struct lang_hooks lang_hooks;
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/inlinable_function_p/src/tree-inline.c:1148:57: error: called object type '<dependent type>' is not a function or function pointer
+if ( !lang_hooks_0.tree_inlining.disregard_inline_limits( fna) ) 
+                                                        ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/inlinable_function_p/src/tree-inline.c:1154:19: error: use of undeclared identifier 'lang_hooks_0'; did you mean 'lang_hooks'?
+if ( inlinable && lang_hooks_0.tree_inlining.cannot_inline_tree_fn( &fna) ) 
+                  ^~~~~~~~~~~~
+                  lang_hooks
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/inlinable_function_p/src/langhooks.h:168:32: note: 'lang_hooks' declared here
+extern const struct lang_hooks lang_hooks;
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/inlinable_function_p/src/tree-inline.c:1154:67: error: called object type '<dependent type>' is not a function or function pointer
+if ( inlinable && lang_hooks_0.tree_inlining.cannot_inline_tree_fn( &fna) ) 
+                                                                  ^
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/inlinable_function_p/src/obj/tree-inline.o] Error 1

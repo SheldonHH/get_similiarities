@@ -1,0 +1,33 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_builtin_setjmp_receiver/src/builtins.c:979:18: error: expected ')'
+ struct rtx_def *arg_pointer_save_area; // rax 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_builtin_setjmp_receiver/src/function.h:533:36: note: expanded from macro 'arg_pointer_save_area'
+#define arg_pointer_save_area (cfun->x_arg_pointer_save_area)
+                                   ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_builtin_setjmp_receiver/src/builtins.c:979:18: note: to match this '('
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_builtin_setjmp_receiver/src/function.h:533:31: note: expanded from macro 'arg_pointer_save_area'
+#define arg_pointer_save_area (cfun->x_arg_pointer_save_area)
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_builtin_setjmp_receiver/src/builtins.c:993:27: error: use of undeclared identifier 'expand_builtin_setjmp_receiver_elim_regs'
+for ( i = 0LL; i < 4 && ( expand_builtin_setjmp_receiver_elim_regs[i].from != 16 || *(int *)0x7D4134[2 * i] != 6); ++i ) 
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_builtin_setjmp_receiver/src/builtins.c:993:101: error: subscripted value is not an array, pointer, or vector
+for ( i = 0LL; i < 4 && ( expand_builtin_setjmp_receiver_elim_regs[i].from != 16 || *(int *)0x7D4134[2 * i] != 6); ++i ) 
+                                                                                            ~~~~~~~~^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_builtin_setjmp_receiver/src/builtins.c:998:1: error: no member named 'x_arg_pointer_save_area' in 'struct rtx_def'
+arg_pointer_save_area = get_arg_pointer_save_area( cfun); 
+^~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_builtin_setjmp_receiver/src/function.h:533:38: note: expanded from macro 'arg_pointer_save_area'
+#define arg_pointer_save_area (cfun->x_arg_pointer_save_area)
+                               ~~~~  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_builtin_setjmp_receiver/src/builtins.c:999:19: error: no member named 'x_arg_pointer_save_area' in 'struct rtx_def'
+v4 = copy_to_reg( arg_pointer_save_area); 
+                  ^~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_builtin_setjmp_receiver/src/function.h:533:38: note: expanded from macro 'arg_pointer_save_area'
+#define arg_pointer_save_area (cfun->x_arg_pointer_save_area)
+                               ~~~~  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_builtin_setjmp_receiver/src/builtins.c:1008:43: error: use of undeclared identifier 'arg0'
+v6 = gen_rtx_fmt_s( ASM_INPUT, VOIDmode, &arg0); 
+                                          ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_builtin_setjmp_receiver/src/obj/builtins.o] Error 1

@@ -1,0 +1,98 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/init_reg_sets_1/src/regclass.c:793:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class *p2; // [rsp+48h] [rbp-58h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/init_reg_sets_1/src/regclass.c:794:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class *p1; // [rsp+50h] [rbp-50h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/init_reg_sets_1/src/regclass.c:796:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class *p; // [rsp+60h] [rbp-40h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/init_reg_sets_1/src/regclass.c:917:24: error: expected expression
+for ( p = ( reg_class *)( 100LL * i + 11026976); *p != LIM_REG_CLASSES; ++p ) 
+                       ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/init_reg_sets_1/src/regclass.c:917:13: error: use of undeclared identifier 'reg_class'; did you mean 'regclass'?
+for ( p = ( reg_class *)( 100LL * i + 11026976); *p != LIM_REG_CLASSES; ++p ) 
+            ^~~~~~~~~
+            regclass
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/init_reg_sets_1/src/rtl.h:1970:13: note: 'regclass' declared here
+extern void regclass                    PARAMS ((rtx, int, FILE *));
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/init_reg_sets_1/src/regclass.c:920:24: error: expected expression
+for ( p = ( reg_class *)( 100LL * j + 11029504); *p != LIM_REG_CLASSES; ++p ) 
+                       ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/init_reg_sets_1/src/regclass.c:920:13: error: use of undeclared identifier 'reg_class'; did you mean 'regclass'?
+for ( p = ( reg_class *)( 100LL * j + 11029504); *p != LIM_REG_CLASSES; ++p ) 
+            ^~~~~~~~~
+            regclass
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/init_reg_sets_1/src/rtl.h:1970:13: note: 'regclass' declared here
+extern void regclass                    PARAMS ((rtx, int, FILE *));
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/init_reg_sets_1/src/regclass.c:973:33: error: use of undeclared identifier 'reg_class'; did you mean 'regclass'?
+if ( reg_classes_intersect_p( ( reg_class)i, GENERAL_REGS) ) 
+                                ^~~~~~~~~
+                                regclass
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/init_reg_sets_1/src/rtl.h:1970:13: note: 'regclass' declared here
+extern void regclass                    PARAMS ((rtx, int, FILE *));
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/init_reg_sets_1/src/regclass.c:973:43: error: expected ')'
+if ( reg_classes_intersect_p( ( reg_class)i, GENERAL_REGS) ) 
+                                          ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/init_reg_sets_1/src/regclass.c:973:29: note: to match this '('
+if ( reg_classes_intersect_p( ( reg_class)i, GENERAL_REGS) ) 
+                            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/init_reg_sets_1/src/regclass.c:991:11: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+else if ( mode_class_0[m] == MODE_COMPLEX_INT || mode_class_0[m] == MODE_COMPLEX_FLOAT ) 
+          ^~~~~~~~~~~~
+          mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/init_reg_sets_1/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/init_reg_sets_1/src/regclass.c:991:50: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+else if ( mode_class_0[m] == MODE_COMPLEX_INT || mode_class_0[m] == MODE_COMPLEX_FLOAT ) 
+                                                 ^~~~~~~~~~~~
+                                                 mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/init_reg_sets_1/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/init_reg_sets_1/src/regclass.c:1003:99: error: use of undeclared identifier 'machine_mode'
+if ( !fixed_regs[j] && ( ( reg_class_contents[i] >> j) & 1) != 0 && ix86_hard_regno_mode_ok( j, ( machine_mode)m) ) 
+                                                                                                  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/init_reg_sets_1/src/regclass.c:1005:34: error: array type 'char [59]' is not assignable
+contains_reg_of_mode[59 * i + m] = 1; 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/init_reg_sets_1/src/regclass.c:1025:35: error: use of undeclared identifier 'machine_mode'
+cost = ix86_register_move_cost( ( machine_mode)m, ( reg_class)i, ( reg_class)j); 
+                                  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/init_reg_sets_1/src/regclass.c:1025:53: error: use of undeclared identifier 'reg_class'; did you mean 'regclass'?
+cost = ix86_register_move_cost( ( machine_mode)m, ( reg_class)i, ( reg_class)j); 
+                                                    ^~~~~~~~~
+                                                    regclass
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/init_reg_sets_1/src/rtl.h:1970:13: note: 'regclass' declared here
+extern void regclass                    PARAMS ((rtx, int, FILE *));
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/init_reg_sets_1/src/regclass.c:1026:25: error: expected expression
+for ( p2 = ( reg_class *)( 100LL * j + 11029504); *p2 != LIM_REG_CLASSES; ++p2 ) 
+                        ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/init_reg_sets_1/src/regclass.c:1026:14: error: use of undeclared identifier 'reg_class'; did you mean 'regclass'?
+for ( p2 = ( reg_class *)( 100LL * j + 11029504); *p2 != LIM_REG_CLASSES; ++p2 ) 
+             ^~~~~~~~~
+             regclass
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/init_reg_sets_1/src/rtl.h:1970:13: note: 'regclass' declared here
+extern void regclass                    PARAMS ((rtx, int, FILE *));
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/init_reg_sets_1/src/regclass.c:1036:25: error: expected expression
+for ( p1 = ( reg_class *)( 100LL * i + 11029504); *p1 != LIM_REG_CLASSES; ++p1 ) 
+                        ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/init_reg_sets_1/src/regclass.c:1036:14: error: use of undeclared identifier 'reg_class'; did you mean 'regclass'?
+for ( p1 = ( reg_class *)( 100LL * i + 11029504); *p1 != LIM_REG_CLASSES; ++p1 ) 
+             ^~~~~~~~~
+             regclass
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/init_reg_sets_1/src/rtl.h:1970:13: note: 'regclass' declared here
+extern void regclass                    PARAMS ((rtx, int, FILE *));
+            ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/init_reg_sets_1/src/obj/regclass.o] Error 1

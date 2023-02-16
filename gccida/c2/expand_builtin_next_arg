@@ -1,0 +1,13 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_builtin_next_arg/src/builtins.c:3300:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *values; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_builtin_next_arg/src/builtins.c:3301:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v4; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_builtin_next_arg/src/builtins.c:3328:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32), 
+  ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_builtin_next_arg/src/obj/builtins.o] Error 1

@@ -1,0 +1,44 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/try_tablejump/src/expr.c:11089:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v11; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/try_tablejump/src/expr.c:11090:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v12; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/try_tablejump/src/expr.c:11111:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v34; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/try_tablejump/src/expr.c:11124:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( BYTE5( index_type->block.abstract_origin) >> 1), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/try_tablejump/src/expr.c:11125:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( BYTE5( range->common.type->block.abstract_origin) >> 1), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/try_tablejump/src/expr.c:11129:48: error: use of undeclared identifier 'machine_mode'
+emit_cmp_and_jump_insns( v14, v17, GTU, 0LL, ( machine_mode)( unsigned __int8)v18, 1, default_label); 
+                                               ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/try_tablejump/src/expr.c:11129:63: error: expected expression
+emit_cmp_and_jump_insns( v14, v17, GTU, 0LL, ( machine_mode)( unsigned __int8)v18, 1, default_label); 
+                                                              ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/try_tablejump/src/expr.c:11145:37: error: use of undeclared identifier 'machine_mode'
+v19 = gen_rtx_fmt_u00( LABEL_REF, ( machine_mode)v18, table_label); 
+                                    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/try_tablejump/src/expr.c:11150:31: error: use of undeclared identifier 'machine_mode'
+v22 = gen_rtx_fmt_ee( MULT, ( machine_mode)( ( ( BYTE3( target_flags) & 2) != 0) + 4), v14, v21); 
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/try_tablejump/src/expr.c:11152:31: error: use of undeclared identifier 'machine_mode'
+v24 = gen_rtx_fmt_ee( PLUS, ( machine_mode)( ( ( BYTE3( target_flags) & 2) != 0) + 4), v22, v19); 
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/try_tablejump/src/expr.c:11155:33: error: use of undeclared identifier 'machine_mode'
+v25 = memory_address_noforce( ( machine_mode)v23, v24); 
+                                ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/try_tablejump/src/expr.c:11160:22: error: use of undeclared identifier 'machine_mode'
+v28 = gen_reg_rtx( ( machine_mode)v26); 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/try_tablejump/src/expr.c:11165:22: error: use of undeclared identifier 'machine_mode'
+v31 = gen_rtx_MEM( ( machine_mode)v29, v27); 
+                     ^
+13 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/try_tablejump/src/obj/expr.o] Error 1

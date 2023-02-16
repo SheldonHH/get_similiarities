@@ -1,0 +1,61 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_subreg/src/simplify-rtx.c:2942:23: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  simplify_subreg( machine_mode outermode, rtx op, machine_mode innermode, unsigned int byte) 
+                      ^
+                      enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_subreg/src/simplify-rtx.c:2942:55: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  simplify_subreg( machine_mode outermode, rtx op, machine_mode innermode, unsigned int byte) 
+                                                      ^
+                                                      enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_subreg/src/simplify-rtx.c:2952:4: error: expected ';' after expression
+rtx x; // [rsp+70h] [rbp-70h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_subreg/src/simplify-rtx.c:2952:5: error: use of undeclared identifier 'x'
+rtx x; // [rsp+70h] [rbp-70h] 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_subreg/src/simplify-rtx.c:2994:35: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_size[innermode] > v5 && mode_class_0[outermode] == MODE_INT ) 
+                                  ^~~~~~~~~~~~
+                                  mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_subreg/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_subreg/src/simplify-rtx.c:3012:24: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v11.rtwint = ( __int64)op[1]; 
+                       ^~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_subreg/src/simplify-rtx.c:3014:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v11.rtwint = ( __int64)op[1].fld[0]; 
+                       ^~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_subreg/src/simplify-rtx.c:3021:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[outermode] != MODE_INT ) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_subreg/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_subreg/src/simplify-rtx.c:3064:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)op->fld[0].rtwint), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_subreg/src/simplify-rtx.c:3064:18: error: expected expression
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)op->fld[0].rtwint), 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_subreg/src/simplify-rtx.c:3095:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+rtx = (  struct rtx_def *)op[1]; 
+                          ^~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_subreg/src/simplify-rtx.c:3099:42: error: use of undeclared identifier 'machine_mode'
+res = simplify_subreg( outermode, rtx, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)rtx), final_offset_0); 
+                                         ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_subreg/src/simplify-rtx.c:3099:57: error: expected expression
+res = simplify_subreg( outermode, rtx, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)rtx), final_offset_0); 
+                                                        ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_subreg/src/simplify-rtx.c:3117:1: error: use of undeclared identifier 'x'
+x = gen_rtx_REG( outermode, final_regno); 
+^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_subreg/src/simplify-rtx.c:3119:14: error: use of undeclared identifier 'x'
+*( _DWORD *)&x[1] = op[1]; 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_subreg/src/simplify-rtx.c:3120:8: error: use of undeclared identifier 'x'
+return x; 
+       ^
+16 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_subreg/src/obj/simplify-rtx.o] Error 1

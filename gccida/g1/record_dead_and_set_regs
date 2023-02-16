@@ -1,0 +1,16 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_dead_and_set_regs/src/combine.c:11780:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode *v14; // rdi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_dead_and_set_regs/src/combine.c:11789:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v2.rtwint = ( __int64)insn[3].fld[0]; 
+                      ^~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_dead_and_set_regs/src/combine.c:11807:25: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v7 = ( ( unsigned int)( mode_class_0[*( unsigned __int8 *)( v4 + 2)] - 5) < 2) + 1; 
+                        ^~~~~~~~~~~~
+                        mode_class
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_dead_and_set_regs/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_dead_and_set_regs/src/obj/combine.o] Error 1

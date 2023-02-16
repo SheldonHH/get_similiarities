@@ -1,0 +1,56 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/extract_split_bit_field/src/expmed.c:2245:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v11; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/extract_split_bit_field/src/expmed.c:2247:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v14; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/extract_split_bit_field/src/expmed.c:2249:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v16; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/extract_split_bit_field/src/expmed.c:2280:1: error: statement requires expression of scalar type ('struct rtx_def' invalid)
+if ( op0[1] ) 
+^    ~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/extract_split_bit_field/src/expmed.c:2309:32: error: invalid suffix 'orce' on integer constant
+word = operand_sub*(short *)0xforce( 
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/extract_split_bit_field/src/expmed.c:2312:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( unsigned __int8 *)( op0->fld[0].rtwint + 2)); 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/extract_split_bit_field/src/expmed.c:2309:8: error: use of undeclared identifier 'operand_sub'
+word = operand_sub*(short *)0xforce( 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/extract_split_bit_field/src/expmed.c:2313:55: error: invalid suffix 'xmode' on integer constant
+fixed_bit_field = extract_fixed_bit_field( *(short *)0xmode, word, 0LL, thissizea, thispos, 0LL, 1); 
+                                                      ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/extract_split_bit_field/src/expmed.c:2317:33: error: invalid suffix 'orce' on integer constant
+worda = operand_sub*(short *)0xforce( op0, offset, ( machine_mode)*( ( unsigned __int8 *)op0 + 2)); 
+                                ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/extract_split_bit_field/src/expmed.c:2317:54: error: use of undeclared identifier 'machine_mode'
+worda = operand_sub*(short *)0xforce( op0, offset, ( machine_mode)*( ( unsigned __int8 *)op0 + 2)); 
+                                                     ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/extract_split_bit_field/src/expmed.c:2317:9: error: use of undeclared identifier 'operand_sub'
+worda = operand_sub*(short *)0xforce( op0, offset, ( machine_mode)*( ( unsigned __int8 *)op0 + 2)); 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/extract_split_bit_field/src/expmed.c:2318:55: error: invalid suffix 'xmode' on integer constant
+fixed_bit_field = extract_fixed_bit_field( *(short *)0xmode, worda, 0LL, thissizea, thispos, 0LL, 1); 
+                                                      ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/extract_split_bit_field/src/expmed.c:2322:55: error: invalid suffix 'xmode' on integer constant
+fixed_bit_field = extract_fixed_bit_field( *(short *)0xmode, op0, ( offset * unit) >> 3, v8, thispos, 0LL, 1); 
+                                                      ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/extract_split_bit_field/src/expmed.c:2329:46: error: invalid suffix 'xmode' on integer constant
+part = expand_shift( LSHIFT_EXPR, *(short *)0xmode, part, v11, 0LL, 1); 
+                                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/extract_split_bit_field/src/expmed.c:2334:35: error: invalid suffix 'xmode' on integer constant
+result = expand_binop( *(short *)0xmode, optab_table[19], part, result, 0LL, 1, OPTAB_LIB_WIDEN); 
+                                  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/extract_split_bit_field/src/expmed.c:2344:49: error: invalid suffix 'xmode' on integer constant
+resulta = expand_shift( LSHIFT_EXPR, *(short *)0xmode, result, v14, 0LL, 0); 
+                                                ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/extract_split_bit_field/src/expmed.c:2350:46: error: invalid suffix 'xmode' on integer constant
+return expand_shift( RSHIFT_EXPR, *(short *)0xmode, resulta, v16, 0LL, 0); 
+                                             ^
+17 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/extract_split_bit_field/src/obj/expmed.o] Error 1

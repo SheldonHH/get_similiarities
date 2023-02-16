@@ -1,0 +1,68 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/eliminate_regs/src/reload1.c:2748:29: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  eliminate_regs( rtx x, machine_mode mem_mode, rtx insn) 
+                            ^
+                            enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/eliminate_regs/src/reload1.c:2754:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v7; // ecx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/eliminate_regs/src/reload1.c:2760:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // [rsp+34h] [rbp-ACh] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/eliminate_regs/src/reload1.c:2784:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code; // [rsp+BCh] [rbp-24h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/eliminate_regs/src/reload1.c:2802:1: error: statement requires expression of scalar type ('struct rtx_def' invalid)
+if ( x[1] ) 
+^    ~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/eliminate_regs/src/reload1.c:2809:35: error: use of undeclared identifier 'machine_mode'
+xa = gen_rtx_fmt_ee( EXPR_LIST, ( machine_mode)BYTE2( *( _DWORD *)x), newb, *( rtx *)&x[1]); 
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/eliminate_regs/src/reload1.c:2814:34: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+if ( newc == (  struct rtx_def *)xa[1] ) 
+                                 ^~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/eliminate_regs/src/reload1.c:2818:3: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+( rtx_code)( unsigned __int16)*( _DWORD *)xa, 
+  ^~~~~~~~
+  rtx_cost
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/eliminate_regs/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/eliminate_regs/src/reload1.c:2818:14: error: expected expression
+( rtx_code)( unsigned __int16)*( _DWORD *)xa, 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/eliminate_regs/src/reload1.c:2819:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)xa), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/eliminate_regs/src/reload1.c:2819:18: error: expected expression
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)xa), 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/eliminate_regs/src/reload1.c:2841:15: error: use of undeclared identifier 'off_88ECD0'
+fancy_abort( &off_88ECD0[4], 2609, "eliminate_regs"); 
+              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/eliminate_regs/src/reload1.c:2848:30: error: use of undeclared identifier 'machine_mode'
+return gen_rtx_fmt_e( USE, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)x), newf); 
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/eliminate_regs/src/reload1.c:2848:45: error: expected expression
+return gen_rtx_fmt_e( USE, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)x), newf); 
+                                            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/eliminate_regs/src/reload1.c:2922:34: error: use of undeclared identifier 'machine_mode'
+return adjust_address_1( newe, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)x), *( _DWORD *)&x[1], 0, 1); 
+                                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/eliminate_regs/src/reload1.c:2922:49: error: expected expression
+return adjust_address_1( newe, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)x), *( _DWORD *)&x[1], 0, 1); 
+                                                ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/eliminate_regs/src/reload1.c:2924:26: error: use of undeclared identifier 'machine_mode'
+return gen_rtx_SUBREG( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)x), newe, *( _DWORD *)&x[1]); 
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/eliminate_regs/src/reload1.c:2924:41: error: expected expression
+return gen_rtx_SUBREG( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)x), newe, *( _DWORD *)&x[1]); 
+                                        ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/eliminate_regs/src/reload1.c:2948:31: error: use of undeclared identifier 'machine_mode'
+return gen_rtx_fmt_e( code, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)x), newd); 
+                              ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/eliminate_regs/src/obj/reload1.o] Error 1

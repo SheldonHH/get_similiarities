@@ -1,0 +1,69 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/replace_pseudos_in_call_usage/src/reload1.c:1050:48: error: must use 'enum' tag to refer to type 'machine_mode'
+void  replace_pseudos_in_call_usage( rtx *loc, machine_mode mem_mode, rtx usage) 
+                                               ^
+                                               enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/replace_pseudos_in_call_usage/src/reload1.c:1056:4: error: expected ';' after expression
+rtx v9; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/replace_pseudos_in_call_usage/src/reload1.c:1056:5: error: use of undeclared identifier 'v9'
+rtx v9; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/replace_pseudos_in_call_usage/src/reload1.c:1059:6: error: use of undeclared identifier 'v12'
+rtx *v12; // rbx 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/replace_pseudos_in_call_usage/src/reload1.c:1062:4: error: expected ';' after expression
+rtx v15; // rdx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/replace_pseudos_in_call_usage/src/reload1.c:1062:5: error: use of undeclared identifier 'v15'
+rtx v15; // rdx 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/replace_pseudos_in_call_usage/src/reload1.c:1063:4: error: expected ';' after expression
+rtx v16; // rdx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/replace_pseudos_in_call_usage/src/reload1.c:1063:5: error: use of undeclared identifier 'v16'
+rtx v16; // rdx 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/replace_pseudos_in_call_usage/src/reload1.c:1067:4: error: expected ';' after expression
+rtx v20; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/replace_pseudos_in_call_usage/src/reload1.c:1067:5: error: use of undeclared identifier 'v20'; did you mean 'v10'?
+rtx v20; // rax 
+    ^~~
+    v10
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/replace_pseudos_in_call_usage/src/reload1.c:1057:9: note: 'v10' declared here
+__int64 v10; // rdx 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/replace_pseudos_in_call_usage/src/reload1.c:1083:1: error: use of undeclared identifier 'v9'
+v9 = eliminate_regs( rtx, mem_mode, usage); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/replace_pseudos_in_call_usage/src/reload1.c:1084:7: error: use of undeclared identifier 'v9'
+rtx = v9; 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/replace_pseudos_in_call_usage/src/reload1.c:1085:14: error: use of undeclared identifier 'v9'
+if ( *fld == v9 ) 
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/replace_pseudos_in_call_usage/src/reload1.c:1087:1: error: use of undeclared identifier 'v15'
+v15 = reg_equiv_constant[rtuint]; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/replace_pseudos_in_call_usage/src/reload1.c:1088:15: error: use of undeclared identifier 'v15'
+if ( v15 || ( v15 = reg_equiv_mem[rtuint]) != 0LL ) 
+              ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/replace_pseudos_in_call_usage/src/reload1.c:1088:6: error: use of undeclared identifier 'v15'
+if ( v15 || ( v15 = reg_equiv_mem[rtuint]) != 0LL ) 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/replace_pseudos_in_call_usage/src/reload1.c:1090:8: error: use of undeclared identifier 'v15'
+*fld = v15; 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/replace_pseudos_in_call_usage/src/reload1.c:1097:23: error: use of undeclared identifier 'machine_mode'
+*fld = gen_rtx_MEM( ( machine_mode)*( ( unsigned __int8 *)v9 + 2), v19); 
+                      ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/replace_pseudos_in_call_usage/src/reload1.c:1097:59: error: use of undeclared identifier 'v9'
+*fld = gen_rtx_MEM( ( machine_mode)*( ( unsigned __int8 *)v9 + 2), v19); 
+                                                          ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/replace_pseudos_in_call_usage/src/obj/reload1.o] Error 1

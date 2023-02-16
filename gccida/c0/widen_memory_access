@@ -1,0 +1,49 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/widen_memory_access/src/emit-rtl.c:2590:39: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  widen_memory_access( rtx memref, machine_mode mode, __int64 offset) 
+                                      ^
+                                      enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/widen_memory_access/src/emit-rtl.c:2598:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v10; // [rsp+38h] [rbp-48h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/widen_memory_access/src/emit-rtl.c:2606:1: error: statement requires expression of scalar type ('struct rtx_def' invalid)
+if ( newa[1] ) 
+^    ~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/widen_memory_access/src/emit-rtl.c:2607:22: error: expected expression
+v10 = *( tree_node **)( *( _QWORD *)&newa[1] + 8LL); 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/widen_memory_access/src/emit-rtl.c:2607:10: error: use of undeclared identifier 'tree_node'
+v10 = *( tree_node **)( *( _QWORD *)&newa[1] + 8LL); 
+         ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/widen_memory_access/src/emit-rtl.c:2610:14: error: expected identifier or '('
+ struct expr = v10; 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/widen_memory_access/src/emit-rtl.c:2611:1: error: statement requires expression of scalar type ('struct rtx_def' invalid)
+if ( newa[1] ) 
+^    ~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/widen_memory_access/src/emit-rtl.c:2618:2: error: expected expression
+ struct expr = 0LL; 
+ ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/widen_memory_access/src/emit-rtl.c:2619:10: error: expected expression
+while (  struct expr ) 
+         ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/widen_memory_access/src/emit-rtl.c:2629:14: error: expected identifier or '('
+ struct expr = 0LL; 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/widen_memory_access/src/emit-rtl.c:2636:14: error: expected identifier or '('
+ struct expr = 0LL; 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/widen_memory_access/src/emit-rtl.c:2647:14: error: expected identifier or '('
+ struct expr = 0LL; 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/widen_memory_access/src/emit-rtl.c:2650:14: error: expected identifier or '('
+ struct expr = expr->vector.elements; 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/widen_memory_access/src/emit-rtl.c:2651:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v8.rtwint = ( __int64)memoffset->fld[0]; 
+                      ^~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/widen_memory_access/src/emit-rtl.c:2659:1: error: statement requires expression of scalar type ('struct rtx_def' invalid)
+if ( newa[1] ) 
+^    ~~~~~~~
+15 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/widen_memory_access/src/obj/emit-rtl.o] Error 1

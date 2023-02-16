@@ -1,0 +1,97 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/scan_one_insn/src/regclass.c:1563:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode modes[32]; // [rsp+0h] [rbp-EB8h] BYREF 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/scan_one_insn/src/regclass.c:1571:12: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v3 = ( rtx)insn[2]; 
+           ^~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/scan_one_insn/src/regclass.c:1593:32: error: use of undeclared identifier 'machine_mode'
+v11 = ix86_memory_move_cost( ( machine_mode)*( unsigned __int8 *)( v3->fld[0].rtwint + 2), GENERAL_REGS, 1); 
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/scan_one_insn/src/regclass.c:1595:8: error: use of undeclared identifier 'costs_0'; did you mean 'costs'?
+v13 = &costs_0[*( unsigned int *)( v3->fld[0].rtwint + 8)]; 
+       ^~~~~~~
+       costs
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/scan_one_insn/src/regclass.c:861:22: note: 'costs' declared here
+static struct costs *costs;
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/scan_one_insn/src/regclass.c:1605:4: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+&& recog_data_0.n_operands > 2 
+   ^~~~~~~~~~~~
+   recog_data
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/scan_one_insn/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/scan_one_insn/src/regclass.c:1606:5: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+&& *recog_data_0.constraints[1] == 48 
+    ^~~~~~~~~~~~
+    recog_data
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/scan_one_insn/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/scan_one_insn/src/regclass.c:1607:18: error: use of undeclared identifier 'recog_data_0'
+&& !*( ( _BYTE *)recog_data_0.constraints[1] + 1) ) 
+                 ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/scan_one_insn/src/regclass.c:1610:38: error: use of undeclared identifier 'recog_data_0'
+if ( ( unsigned __int16)( *( _WORD *)recog_data_0.operand[1] - 54) <= 0xEu ) 
+                                     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/scan_one_insn/src/regclass.c:1611:55: error: use of undeclared identifier 'recog_data_0'
+v15 = ( ( 0x6017uLL >> ( ( unsigned __int8)*( _WORD *)recog_data_0.operand[1] - 54)) ^ 1) & 1; 
+                                                      ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/scan_one_insn/src/regclass.c:1612:19: error: use of undeclared identifier 'recog_data_0'
+if ( ( *( _WORD *)recog_data_0.operand[1] == 140 || *( _WORD *)recog_data_0.operand[1] == 134 || !v15) 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/scan_one_insn/src/regclass.c:1612:64: error: use of undeclared identifier 'recog_data_0'
+if ( ( *( _WORD *)recog_data_0.operand[1] == 140 || *( _WORD *)recog_data_0.operand[1] == 134 || !v15) 
+                                                               ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/scan_one_insn/src/regclass.c:1613:18: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+&& !rtx_equal_p( recog_data_0.operand[0], recog_data_0.operand[1]) ) 
+                 ^~~~~~~~~~~~
+                 recog_data
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/scan_one_insn/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/scan_one_insn/src/regclass.c:1613:43: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+&& !rtx_equal_p( recog_data_0.operand[0], recog_data_0.operand[1]) ) 
+                                          ^~~~~~~~~~~~
+                                          recog_data
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/scan_one_insn/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/scan_one_insn/src/regclass.c:1615:20: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+v16 = rtx_equal_p( recog_data_0.operand[0], recog_data_0.operand[2]); 
+                   ^~~~~~~~~~~~
+                   recog_data
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/scan_one_insn/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/scan_one_insn/src/regclass.c:1615:45: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+v16 = rtx_equal_p( recog_data_0.operand[0], recog_data_0.operand[2]); 
+                                            ^~~~~~~~~~~~
+                                            recog_data
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/scan_one_insn/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/scan_one_insn/src/regclass.c:1616:25: error: use of undeclared identifier 'recog_data_0'
+if ( !v16 && *( _WORD *)recog_data_0.operand[0] == 61 ) 
+                        ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/scan_one_insn/src/regclass.c:1618:20: error: use of undeclared identifier 'recog_data_0'
+v17 = *( ( _BYTE *)recog_data_0.operand[0] + 2); 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/scan_one_insn/src/regclass.c:1619:13: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( v17 == recog_data_0.operand_mode[1] ) 
+            ^~~~~~~~~~~~
+            recog_data
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/scan_one_insn/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/scan_one_insn/src/regclass.c:1623:20: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+v19 = gen_lowpart( recog_data_0.operand_mode[1], recog_data_0.operand[0]); 
+                   ^~~~~~~~~~~~
+                   recog_data
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/scan_one_insn/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/scan_one_insn/src/obj/regclass.o] Error 1

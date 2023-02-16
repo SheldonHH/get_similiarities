@@ -1,0 +1,53 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/layout_type/src/stor-layout.c:1883:1: error: must use 'enum' tag to refer to type 'mode_class'
+mode_class v2; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/layout_type/src/machmode.h:52:30: note: enum 'mode_class' is hidden by a non-type declaration of 'mode_class' here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/layout_type/src/stor-layout.c:1894:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v13; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/layout_type/src/stor-layout.c:1895:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v14; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/layout_type/src/stor-layout.c:1896:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v15; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/layout_type/src/stor-layout.c:1897:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v16; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/layout_type/src/stor-layout.c:1901:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *arg0; // [rsp+20h] [rbp-A0h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/layout_type/src/stor-layout.c:1902:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v21; // [rsp+28h] [rbp-98h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/layout_type/src/stor-layout.c:1910:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *element_size; // [rsp+78h] [rbp-48h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/layout_type/src/stor-layout.c:1911:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *length; // [rsp+80h] [rbp-40h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/layout_type/src/stor-layout.c:2056:21: error: expected expression
+arg0 = ( tree_node *)*( &global_trees + 16); 
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/layout_type/src/stor-layout.c:2056:10: error: use of undeclared identifier 'tree_node'
+arg0 = ( tree_node *)*( &global_trees + 16); 
+         ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/layout_type/src/stor-layout.c:2073:29: error: expected expression
+element_size = ( tree_node *)*( &global_trees + 12); 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/layout_type/src/stor-layout.c:2073:18: error: use of undeclared identifier 'tree_node'
+element_size = ( tree_node *)*( &global_trees + 12); 
+                 ^
+13 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/layout_type/src/obj/stor-layout.o] Error 1

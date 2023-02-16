@@ -1,0 +1,15 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/alter_subreg/src/final.c:3199:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v5; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/alter_subreg/src/final.c:3203:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v3.rtwint = ( __int64)( *xp)->fld[0]; 
+                      ^~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/alter_subreg/src/final.c:3204:21: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v4 = ( unsigned int)( *xp)[1]; 
+                    ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/alter_subreg/src/final.c:3213:41: error: use of undeclared identifier 'machine_mode'
+result = simplify_subreg( v5, v3.rtx, ( machine_mode)*( unsigned __int8 *)( v3.rtwint + 2), v4); 
+                                        ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/alter_subreg/src/obj/final.o] Error 1

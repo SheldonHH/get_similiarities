@@ -1,0 +1,230 @@
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/engine/value_moves.c:1889:10: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v104 = a3.m128_f32[0] < 0.0 && color == 2 || a3.m128_f32[0] > 0.0 && color == 1; 
+       ~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/engine/value_moves.c:1889:48: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v104 = a3.m128_f32[0] < 0.0 && color == 2 || a3.m128_f32[0] > 0.0 && color == 1; 
+                                             ~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/engine/value_moves.c:1890:10: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v103 = v6.m128_f32[0] > 0.0 && color == 2 || v6.m128_f32[0] < 0.0 && color == 1; 
+       ~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/engine/value_moves.c:1890:48: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v103 = v6.m128_f32[0] > 0.0 && color == 2 || v6.m128_f32[0] < 0.0 && color == 1; 
+                                             ~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/engine/value_moves.c:1891:3: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v6.m128_f32[0] = a3.m128_f32[0] * 0.5; 
+~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/engine/value_moves.c:1891:20: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v6.m128_f32[0] = a3.m128_f32[0] * 0.5; 
+                 ~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/engine/value_moves.c:1892:24: error: invalid conversion between vector type '__m128' (vector of 4 'float' values) and integer type 'long long' of different size
+v7 = _mm_cmplt_ss( v6, ( __m128)0LL); 
+                       ^~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/engine/value_moves.c:1893:74: error: use of undeclared identifier 'xmmword_4867D0'
+v8 = _mm_or_ps( _mm_andnot_ps( v7, v6), _mm_and_ps( _mm_xor_ps( ( __m128)xmmword_4867D0, v6), v7)); 
+                                                                         ^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/engine/value_moves.c:1929:4: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v97.m128_f32[0] = v11; 
+~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/engine/value_moves.c:1958:10: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v11 = v97.m128_f32[0]; 
+      ~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/engine/value_moves.c:1983:10: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v11 = v97.m128_f32[0] - effective_size; 
+      ~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/engine/value_moves.c:1988:4: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v97.m128_f32[0] = v11; 
+~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/engine/value_moves.c:2074:30: error: too many arguments to function call, expected 2, have 3
+add_followup_value( v4, v81, *( float *)&v5); 
+~~~~~~~~~~~~~~~~~~           ^~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/engine/liberty.h:454:1: note: 'add_followup_value' declared here
+void add_followup_value(int pos, float value);
+^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/engine/value_moves.c:2089:10: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v11 = v97.m128_f32[0]; 
+      ~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/engine/value_moves.c:2097:10: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v11 = v97.m128_f32[0]; 
+      ~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/engine/value_moves.c:2105:4: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v97.m128_f32[0] = v11; 
+~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/engine/value_moves.c:2121:10: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v11 = v97.m128_f32[0]; 
+      ~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/engine/value_moves.c:2139:10: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v26 = v97.m128_f32[0]; 
+      ~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/engine/value_moves.c:2144:10: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v26 = v97.m128_f32[0]; 
+      ~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/engine/value_moves.c:2151:10: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v26 = v97.m128_f32[0]; 
+      ~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/engine/value_moves.c:2157:10: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v26 = v97.m128_f32[0]; 
+      ~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/engine/value_moves.c:2165:4: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v97.m128_f32[0] = v11; 
+~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/engine/value_moves.c:2180:10: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v11 = v97.m128_f32[0] - effective_size; 
+      ~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/engine/value_moves.c:2196:4: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v97.m128_f32[0] = v11; 
+~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/engine/value_moves.c:2224:78: error: too many arguments to function call, expected 2, have 3
+add_followup_value( v4, worm[v40].effective_size + worm[v40].effective_size, *( float *)&v5); 
+~~~~~~~~~~~~~~~~~~                                                           ^~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/engine/liberty.h:454:1: note: 'add_followup_value' declared here
+void add_followup_value(int pos, float value);
+^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/engine/value_moves.c:2245:4: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v97.m128_f32[0] = v11; 
+~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/engine/value_moves.c:2247:10: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v11 = v97.m128_f32[0]; 
+      ~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/engine/value_moves.c:2253:4: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v97.m128_f32[0] = v11; 
+~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/engine/value_moves.c:2255:82: error: too many arguments to function call, expected 2, have 3
+add_followup_value( v4, dragon[v43].effective_size + dragon[v43].effective_size, *( float *)&v5); 
+~~~~~~~~~~~~~~~~~~                                                               ^~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/engine/liberty.h:454:1: note: 'add_followup_value' declared here
+void add_followup_value(int pos, float value);
+^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/engine/value_moves.c:2277:4: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v97.m128_f32[0] = v11; 
+~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/engine/value_moves.c:2279:10: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v11 = v97.m128_f32[0]; 
+      ~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/engine/value_moves.c:2287:4: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v97.m128_f32[0] = v11; 
+~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/engine/value_moves.c:2301:10: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v11 = v97.m128_f32[0]; 
+      ~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/engine/value_moves.c:2317:30: error: too many arguments to function call, expected 2, have 3
+add_followup_value( v4, v47, *( float *)&v5); 
+~~~~~~~~~~~~~~~~~~           ^~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/engine/liberty.h:454:1: note: 'add_followup_value' declared here
+void add_followup_value(int pos, float value);
+^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/engine/value_moves.c:2332:4: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v97.m128_f32[0] = v11; 
+~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/engine/value_moves.c:2334:82: error: too many arguments to function call, expected 2, have 3
+add_followup_value( v4, dragon[v43].effective_size + dragon[v43].effective_size, *( float *)&v5); 
+~~~~~~~~~~~~~~~~~~                                                               ^~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/engine/liberty.h:454:1: note: 'add_followup_value' declared here
+void add_followup_value(int pos, float value);
+^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/engine/value_moves.c:2345:4: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v97.m128_f32[0] = v11; 
+~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/engine/value_moves.c:2349:10: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v11 = v97.m128_f32[0], 
+      ~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/engine/value_moves.c:2357:75: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v68 = fminf( dragon[v40].effective_size + dragon[v40].effective_size, v111.m128_f32[0]); 
+                                                                      ~~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/engine/value_moves.c:2359:90: error: too many arguments to function call, expected 2, have 3
+add_reverse_followup_value( v4, dragon[v40].effective_size + dragon[v40].effective_size, *( float *)&v5); 
+~~~~~~~~~~~~~~~~~~~~~~~~~~                                                               ^~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/engine/liberty.h:455:1: note: 'add_reverse_followup_value' declared here
+void add_reverse_followup_value(int pos, float value);
+^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/engine/value_moves.c:2382:10: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v11 = v97.m128_f32[0]; 
+      ~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/engine/value_moves.c:2387:32: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+*( float *)&v5 = ( float)( v111.m128_f32[0] - ( float)( board_size / 2)) + -1.0; 
+                           ~~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/engine/value_moves.c:2388:15: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+*( double *)v8.m128_u64 = *( float *)&v5; 
+            ~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/engine/value_moves.c:2396:10: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v11 = v97.m128_f32[0]; 
+      ~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/engine/value_moves.c:2409:10: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v11 = v97.m128_f32[0]; 
+      ~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/engine/value_moves.c:2435:4: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v97.m128_f32[0] = v11; 
+~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/engine/value_moves.c:2437:10: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v11 = v97.m128_f32[0]; 
+      ~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/engine/value_moves.c:2447:4: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v97.m128_f32[0] = v11; 
+~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/engine/value_moves.c:2452:4: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v97.m128_f32[0] = v97.m128_f32[0] + -0.5; 
+~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/engine/value_moves.c:2452:22: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v97.m128_f32[0] = v97.m128_f32[0] + -0.5; 
+                  ~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/engine/value_moves.c:2459:10: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v31 = v97.m128_f32[0]; 
+      ~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/engine/value_moves.c:2486:10: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v31 = v97.m128_f32[0]; 
+      ~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/engine/value_moves.c:2502:4: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v97.m128_f32[0] = v11; 
+~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/engine/value_moves.c:2515:10: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v11 = v97.m128_f32[0]; 
+      ~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/engine/value_moves.c:2532:9: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+&& ( v97.m128_f32[0] = v11, v84 = safe_move( v82, v99), v11 = v97.m128_f32[0], v84 == 5) ) 
+     ~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/engine/value_moves.c:2532:66: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+&& ( v97.m128_f32[0] = v11, v84 = safe_move( v82, v99), v11 = v97.m128_f32[0], v84 == 5) ) 
+                                                              ~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/engine/value_moves.c:2549:4: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v97.m128_f32[0] = v11; 
+~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/engine/value_moves.c:2551:10: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v11 = v97.m128_f32[0]; 
+      ~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/engine/value_moves.c:2565:63: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+store_delta_territory_cache( v82, v83, effective_size, v91, v8.m128_f32[0]); 
+                                                            ~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/engine/value_moves.c:2570:10: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v11 = v97.m128_f32[0]; 
+      ~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/engine/value_moves.c:2578:15: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+*( double *)v8.m128_u64, 
+            ~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/engine/value_moves.c:2579:38: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+COERCE_DOUBLE( ( unsigned __int64)v97.m128_u32[0])); 
+                                  ~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/engine/value_moves.c:2585:10: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v11 = v97.m128_f32[0]; 
+      ~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/engine/value_moves.c:2590:10: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v11 = v97.m128_f32[0]; 
+      ~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/engine/value_moves.c:2602:4: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v97.m128_i32[0] = *( _DWORD *)( v9 + 9744204); 
+~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/engine/value_moves.c:2604:10: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v92 = v97.m128_f32[0]; 
+      ~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/engine/value_moves.c:2616:4: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v97.m128_i32[0] = *( _DWORD *)( v9 + 9744208); 
+~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/engine/value_moves.c:2618:10: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v92 = v97.m128_f32[0]; 
+      ~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/engine/value_moves.c:3136:49: error: too few arguments to function call, expected 4, have 3
+    estimate_territorial_value(pos, color, score);
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~                  ^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/engine/value_moves.c:1767:1: note: 'estimate_territorial_value' declared here
+void  estimate_territorial_value( int pos, int color, __m128 a3, float score) 
+^
+69 errors generated.
+make: *** [/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/estimate_territorial_value/src/obj/1/value_moves.o] Error 1

@@ -1,0 +1,101 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/regclass/src/regclass.c:1651:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class alt; // [rsp+40h] [rbp-20h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/regclass/src/regclass.c:1652:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class best; // [rsp+44h] [rbp-1Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/regclass/src/regclass.c:1662:1: error: use of undeclared identifier 'costs_0'; did you mean 'costs'?
+costs_0 = (  struct costs *)xmalloc( 104LL * nregs); 
+^~~~~~~
+costs
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/regclass/src/regclass.c:861:22: note: 'costs' declared here
+static struct costs *costs;
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/regclass/src/regclass.c:1667:9: error: use of undeclared identifier 'costs_0'; did you mean 'costs'?
+memset( costs_0, 0, 104LL * nregs); 
+        ^~~~~~~
+        costs
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/regclass/src/regclass.c:861:22: note: 'costs' declared here
+static struct costs *costs;
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/regclass/src/regclass.c:1701:1: error: use of undeclared identifier 'reg_pref_0'; did you mean 'reg_pref'?
+reg_pref_0 = reg_pref_buffer; 
+^~~~~~~~~~
+reg_pref
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/regclass/src/regclass.c:870:25: note: 'reg_pref' declared here
+static struct reg_pref *reg_pref;
+                        ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/regclass/src/regclass.c:1712:6: error: use of undeclared identifier 'costs_0'; did you mean 'costs'?
+p = &costs_0[i]; 
+     ^~~~~~~
+     costs
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/regclass/src/regclass.c:861:22: note: 'costs' declared here
+static struct costs *costs;
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/regclass/src/regclass.c:1741:16: error: use of undeclared identifier 'reg_pref_0'; did you mean 'reg_pref'?
+if ( dump && ( reg_pref_0[i].prefclass != best || reg_pref_0[i].altclass != alt) ) 
+               ^~~~~~~~~~
+               reg_pref
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/regclass/src/regclass.c:870:25: note: 'reg_pref' declared here
+static struct reg_pref *reg_pref;
+                        ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/regclass/src/regclass.c:1741:51: error: use of undeclared identifier 'reg_pref_0'; did you mean 'reg_pref'?
+if ( dump && ( reg_pref_0[i].prefclass != best || reg_pref_0[i].altclass != alt) ) 
+                                                  ^~~~~~~~~~
+                                                  reg_pref
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/regclass/src/regclass.c:870:25: note: 'reg_pref' declared here
+static struct reg_pref *reg_pref;
+                        ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/regclass/src/regclass.c:1746:30: error: use of undeclared identifier 'reg_class_names_0'; did you mean 'reg_class_size'?
+fprintf( dump, " pref %s\n", reg_class_names_0[best]); 
+                             ^~~~~~~~~~~~~~~~~
+                             reg_class_size
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/regclass/src/regclass.c:163:14: note: 'reg_class_size' declared here
+unsigned int reg_class_size[N_REG_CLASSES];
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/regclass/src/regclass.c:1750:39: error: use of undeclared identifier 'reg_class_names_0'; did you mean 'reg_class_size'?
+fprintf( dump, " pref %s, else %s\n", reg_class_names_0[best], reg_class_names_0[alt]); 
+                                      ^~~~~~~~~~~~~~~~~
+                                      reg_class_size
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/regclass/src/regclass.c:163:14: note: 'reg_class_size' declared here
+unsigned int reg_class_size[N_REG_CLASSES];
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/regclass/src/regclass.c:1750:64: error: use of undeclared identifier 'reg_class_names_0'; did you mean 'reg_class_size'?
+fprintf( dump, " pref %s, else %s\n", reg_class_names_0[best], reg_class_names_0[alt]); 
+                                                               ^~~~~~~~~~~~~~~~~
+                                                               reg_class_size
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/regclass/src/regclass.c:163:14: note: 'reg_class_size' declared here
+unsigned int reg_class_size[N_REG_CLASSES];
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/regclass/src/regclass.c:1754:38: error: use of undeclared identifier 'reg_class_names_0'; did you mean 'reg_class_size'?
+fprintf( dump, " pref %s or none\n", reg_class_names_0[best]); 
+                                     ^~~~~~~~~~~~~~~~~
+                                     reg_class_size
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/regclass/src/regclass.c:163:14: note: 'reg_class_size' declared here
+unsigned int reg_class_size[N_REG_CLASSES];
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/regclass/src/regclass.c:1757:1: error: use of undeclared identifier 'reg_pref_0'; did you mean 'reg_pref'?
+reg_pref_0[i].prefclass = best; 
+^~~~~~~~~~
+reg_pref
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/regclass/src/regclass.c:870:25: note: 'reg_pref' declared here
+static struct reg_pref *reg_pref;
+                        ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/regclass/src/regclass.c:1758:1: error: use of undeclared identifier 'reg_pref_0'; did you mean 'reg_pref'?
+reg_pref_0[i].altclass = alt; 
+^~~~~~~~~~
+reg_pref
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/regclass/src/regclass.c:870:25: note: 'reg_pref' declared here
+static struct reg_pref *reg_pref;
+                        ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/regclass/src/regclass.c:1762:7: error: use of undeclared identifier 'costs_0'; did you mean 'costs'?
+free( costs_0); 
+      ^~~~~~~
+      costs
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/regclass/src/regclass.c:861:22: note: 'costs' declared here
+static struct costs *costs;
+                     ^
+15 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/regclass/src/obj/regclass.o] Error 1

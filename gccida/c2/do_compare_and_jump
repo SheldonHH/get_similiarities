@@ -1,0 +1,24 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/do_compare_and_jump/src/expr.c:10532:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code signed_code, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/do_compare_and_jump/src/expr.c:10533:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code unsigned_code, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/do_compare_and_jump/src/expr.c:10546:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v18; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/do_compare_and_jump/src/expr.c:10547:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v19; // r14d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/do_compare_and_jump/src/expr.c:10592:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v21 = (  struct rtx_def *)i[2]; 
+                          ^~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/do_compare_and_jump/src/expr.c:10608:48: error: use of undeclared identifier 'machine_mode'
+do_compare_rtx_and_jump( v25, v24, v19, v17, ( machine_mode)v14, v22, if_false_label, v26); 
+                                               ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/do_compare_and_jump/src/obj/expr.o] Error 1

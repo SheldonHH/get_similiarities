@@ -1,0 +1,12 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/output_decimal/src/diagnostic.c:891:23: error: unknown type name 'output_buffer_0'; did you mean 'output_buffer'?
+void  output_decimal( output_buffer_0 *buffer, int i) 
+                      ^~~~~~~~~~~~~~~
+                      output_buffer
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/output_decimal/src/diagnostic.h:28:30: note: 'output_buffer' declared here
+typedef struct output_buffer output_buffer;
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/output_decimal/src/diagnostic.c:893:33: error: use of undeclared identifier 'off_6376D2'
+sprintf( buffer->digit_buffer, &off_6376D2[1], ( unsigned int)i); 
+                                ^
+2 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/output_decimal/src/obj/diagnostic.o] Error 1

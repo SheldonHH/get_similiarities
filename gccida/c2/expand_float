@@ -1,0 +1,73 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_float/src/optabs.c:4555:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v9; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_float/src/optabs.c:4568:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v22; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_float/src/optabs.c:4570:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v24; // edx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_float/src/optabs.c:4575:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v29; // r15d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_float/src/optabs.c:4652:61: error: use of undeclared identifier 'machine_mode'
+emit_cmp_and_jump_insns( v20, const_int_rtx[64], GE, 0LL, ( machine_mode)*( ( unsigned __int8 *)v20 + 2), 0, v17); 
+                                                            ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_float/src/optabs.c:4656:1: error: too many arguments to function call, expected 2, have 8
+v38, 
+^~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_float/src/real.h:160:1: note: 'ereal_ldexp' declared here
+extern REAL_VALUE_TYPE ereal_ldexp PARAMS ((REAL_VALUE_TYPE, int));
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_float/src/optabs.c:4663:27: error: passing 'enum machine_mode' to parameter of incompatible type 'realvaluetype'
+v43 = immed_real_const_1( v22, v55); 
+                          ^~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_float/src/real.h:466:67: note: passing argument to parameter here
+extern struct rtx_def *immed_real_const_1       PARAMS ((REAL_VALUE_TYPE,
+                                                                        ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_float/src/optabs.c:4673:26: error: use of undeclared identifier 'machine_mode'
+if ( significand_size( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)v18)) + 1 >= *( const unsigned __int16 *)( ( char *)mode_bitsize + ( ( *( _DWORD *)v20 >> 15) & 0x1FE)) ) 
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_float/src/optabs.c:4673:41: error: expected expression
+if ( significand_size( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)v18)) + 1 >= *( const unsigned __int16 *)( ( char *)mode_bitsize + ( ( *( _DWORD *)v20 >> 15) & 0x1FE)) ) 
+                                        ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_float/src/optabs.c:4721:8: error: use of undeclared identifier 'off_6FFDC0'
+v37 = &off_6FFDC0 + ( char)v36; 
+       ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_float/src/optabs.c:4727:8: error: use of undeclared identifier 'off_6FFDD8'
+v37 = &off_6FFDD8 + ( char)v47; 
+       ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_float/src/optabs.c:4733:8: error: use of undeclared identifier 'off_6FFDF0'
+v37 = &off_6FFDF0 + ( char)v45; 
+       ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_float/src/optabs.c:4739:8: error: use of undeclared identifier 'off_6FFE08'
+v37 = &off_6FFE08 + ( char)v46; 
+       ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_float/src/optabs.c:4751:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)v18 + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_float/src/optabs.c:4757:31: error: use of undeclared identifier 'machine_mode'
+v51 = gen_rtx_fmt_e( FLOAT, ( machine_mode)*( ( unsigned __int8 *)v18 + 2), v35); 
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_float/src/optabs.c:4811:26: error: use of undeclared identifier 'machine_mode'
+v14 = convert_to_mode( ( machine_mode)v8, v14, unsignedp); 
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_float/src/optabs.c:4816:34: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+emit_unop_insn( v12, v15, v14, ( rtx_code)( 2 * ( v54 != 0) + 125)); 
+                                 ^~~~~~~~
+                                 rtx_cost
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_float/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_float/src/optabs.c:4816:66: error: too few arguments to function call, expected 2, have 1
+emit_unop_insn( v12, v15, v14, ( rtx_code)( 2 * ( v54 != 0) + 125)); 
+                               ~~~~~~~~~~~                       ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_float/src/rtl.h:1787:1: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+^
+18 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_float/src/obj/optabs.o] Error 1

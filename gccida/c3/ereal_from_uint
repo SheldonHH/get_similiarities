@@ -1,0 +1,43 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/ereal_from_uint/src/real.c:1393:82: error: must use 'enum' tag to refer to type 'machine_mode'
+void  ereal_from_uint( realvaluetype *d, unsigned __int64 i, unsigned __int64 j, machine_mode mode) 
+                                                                                 ^
+                                                                                 enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/ereal_from_uint/src/real.c:1414:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[mode] != MODE_FLOAT ) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/ereal_from_uint/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/ereal_from_uint/src/real.c:1417:12: error: expected expression
+*( _OWORD *)x = 0LL; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/ereal_from_uint/src/real.c:1417:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)x = 0LL; 
+   ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/ereal_from_uint/src/real.c:1427:12: error: expected expression
+*( _OWORD *)x = 0LL; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/ereal_from_uint/src/real.c:1427:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)x = 0LL; 
+   ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/ereal_from_uint/src/real.c:1467:12: error: expected expression
+*( _OWORD *)x = 0LL; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/ereal_from_uint/src/real.c:1467:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)x = 0LL; 
+   ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/ereal_from_uint/src/real.c:1477:12: error: expected expression
+*( _OWORD *)x = 0LL; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/ereal_from_uint/src/real.c:1477:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)x = 0LL; 
+   ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/ereal_from_uint/src/real.c:1524:84: error: too many arguments to function call, expected 2, have 3
+e24toe( ( const unsigned __int16 *)*( unsigned int *)y, ( unsigned __int16 *)y[1], ( __int64)&v15); 
+~~~~~~                                                                             ^~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/ereal_from_uint/src/real.c:427:1: note: 'e24toe' declared here
+static void e24toe      PARAMS ((const UEMUSHORT *, UEMUSHORT *));
+^
+11 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/ereal_from_uint/src/obj/real.o] Error 1

@@ -1,0 +1,26 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/convert_to_real/src/convert.c:543:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v5; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/convert_to_real/src/convert.c:544:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v6; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/convert_to_real/src/convert.c:557:18: error: use of undeclared identifier 'tree_code'; did you mean 'tree_cons'?
+return build1( ( tree_code)( ( flag_float_store == 0) | 0x72), type, expr); 
+                 ^~~~~~~~~
+                 tree_cons
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/convert_to_real/src/tree.h:2477:13: note: 'tree_cons' declared here
+extern tree tree_cons                   PARAMS ((tree, tree, tree));
+            ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/convert_to_real/src/convert.c:557:61: error: too few arguments to function call, expected 3, have 1
+return build1( ( tree_code)( ( flag_float_store == 0) | 0x72), type, expr); 
+               ~~~~~~~~~~~~                                 ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/convert_to_real/src/tree.h:2477:1: note: 'tree_cons' declared here
+extern tree tree_cons                   PARAMS ((tree, tree, tree));
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/convert_to_real/src/convert.c:569:2: error: expected expression
+ struct expr = ( tree)*( &global_trees + 11); 
+ ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/convert_to_real/src/obj/convert.o] Error 1

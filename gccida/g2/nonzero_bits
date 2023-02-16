@@ -1,0 +1,86 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/nonzero_bits/src/combine.c:8417:40: error: must use 'enum' tag to refer to type 'machine_mode'
+unsigned __int64  nonzero_bits( rtx x, machine_mode mode) 
+                                       ^
+                                       enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/nonzero_bits/src/combine.c:8419:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v3; // r9d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/nonzero_bits/src/combine.c:8475:8: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( ( mode_class_0[( unsigned __int8)v3] & 0xFFFFFFFB) != 2 
+       ^~~~~~~~~~~~
+       mode_class
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/nonzero_bits/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/nonzero_bits/src/combine.c:8476:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& mode_class_0[( unsigned __int8)v3] != MODE_VECTOR_FLOAT 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/nonzero_bits/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/nonzero_bits/src/combine.c:8477:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& ( mode_class_0[mode] & 0xFFFFFFFB) != 2 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/nonzero_bits/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/nonzero_bits/src/combine.c:8478:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& mode_class_0[mode] != MODE_VECTOR_FLOAT ) 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/nonzero_bits/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/nonzero_bits/src/combine.c:8538:39: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( ( _DWORD)v28 != ( _DWORD)v6 && ( mode_class_0[v28] != MODE_INT || mode_class_0[( int)v6] != MODE_INT) ) 
+                                      ^~~~~~~~~~~~
+                                      mode_class
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/nonzero_bits/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/nonzero_bits/src/combine.c:8538:72: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( ( _DWORD)v28 != ( _DWORD)v6 && ( mode_class_0[v28] != MODE_INT || mode_class_0[( int)v6] != MODE_INT) ) 
+                                                                       ^~~~~~~~~~~~
+                                                                       mode_class
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/nonzero_bits/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/nonzero_bits/src/combine.c:8564:35: error: use of undeclared identifier 'machine_mode'
+v4 &= nonzero_bits( last_value, ( machine_mode)v6); 
+                                  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/nonzero_bits/src/combine.c:8584:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v34.rtwint = ( __int64)x->fld[0]; 
+                       ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/nonzero_bits/src/combine.c:8588:32: error: use of undeclared identifier 'machine_mode'
+v36 = nonzero_bits( v34.rtx, ( machine_mode)v6); 
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/nonzero_bits/src/combine.c:8597:39: error: use of undeclared identifier 'machine_mode'
+v33 = nonzero_bits( *( rtx *)&x[1], ( machine_mode)v6); 
+                                      ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/nonzero_bits/src/combine.c:8598:40: error: use of undeclared identifier 'machine_mode'
+v4 &= nonzero_bits( x[1].fld[0].rtx, ( machine_mode)v6) | v33; 
+                                       ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/nonzero_bits/src/combine.c:8607:38: error: use of undeclared identifier 'machine_mode'
+v12 = nonzero_bits( x->fld[0].rtx, ( machine_mode)v6); 
+                                     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/nonzero_bits/src/combine.c:8608:39: error: use of undeclared identifier 'machine_mode'
+v13 = nonzero_bits( *( rtx *)&x[1], ( machine_mode)v6); 
+                                      ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/nonzero_bits/src/combine.c:8680:38: error: use of undeclared identifier 'machine_mode'
+v32 = nonzero_bits( x->fld[0].rtx, ( machine_mode)v6); 
+                                     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/nonzero_bits/src/combine.c:8681:39: error: use of undeclared identifier 'machine_mode'
+v4 &= nonzero_bits( *( rtx *)&x[1], ( machine_mode)v6) & v32; 
+                                      ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/nonzero_bits/src/combine.c:8689:38: error: use of undeclared identifier 'machine_mode'
+v17 = nonzero_bits( x->fld[0].rtx, ( machine_mode)v6); 
+                                     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/nonzero_bits/src/combine.c:8691:39: error: use of undeclared identifier 'machine_mode'
+v4 &= nonzero_bits( *( rtx *)&x[1], ( machine_mode)v6) | v17; 
+                                      ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/nonzero_bits/src/obj/combine.o] Error 1

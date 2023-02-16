@@ -1,0 +1,37 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ereal_from_int/src/real.c:1321:63: error: must use 'enum' tag to refer to type 'machine_mode'
+void  ereal_from_int( realvaluetype *d, __int64 i, __int64 j, machine_mode mode) 
+                                                              ^
+                                                              enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ereal_from_int/src/real.c:1343:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[mode] != MODE_FLOAT ) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ereal_from_int/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ereal_from_int/src/real.c:1363:12: error: expected expression
+*( _OWORD *)x = 0LL; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ereal_from_int/src/real.c:1363:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)x = 0LL; 
+   ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ereal_from_int/src/real.c:1373:12: error: expected expression
+*( _OWORD *)x = 0LL; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ereal_from_int/src/real.c:1373:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)x = 0LL; 
+   ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ereal_from_int/src/real.c:1403:12: error: expected expression
+*( _OWORD *)x = 0LL; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ereal_from_int/src/real.c:1403:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)x = 0LL; 
+   ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ereal_from_int/src/real.c:1424:12: error: expected expression
+*( _OWORD *)x = 0LL; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ereal_from_int/src/real.c:1424:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)x = 0LL; 
+   ^
+10 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ereal_from_int/src/obj/real.o] Error 1

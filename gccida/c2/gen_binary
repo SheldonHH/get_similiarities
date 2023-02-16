@@ -1,0 +1,46 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_binary/src/combine.c:10331:18: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx  gen_binary( rtx_code code, machine_mode mode, rtx op0, rtx op1) 
+                 ^
+                 enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_binary/src/combine.c:10331:33: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  gen_binary( rtx_code code, machine_mode mode, rtx op0, rtx op1) 
+                                ^
+                                enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_binary/src/combine.c:10337:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v9; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_binary/src/combine.c:10338:4: error: expected ';' after expression
+rtx result; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_binary/src/combine.c:10338:5: error: use of undeclared identifier 'result'
+rtx result; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_binary/src/combine.c:10352:12: error: expected ';' after expression
+v4 = ( rtx)op0[1]; 
+           ^
+           ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_binary/src/combine.c:10359:1: error: use of undeclared identifier 'result'
+result = simplify_relational_operation( code, v9, rtx, v4); 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_binary/src/combine.c:10363:1: error: use of undeclared identifier 'result'
+result = simplify_binary_operation( code, mode, op0, op1); 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_binary/src/combine.c:10365:6: error: use of undeclared identifier 'result'
+if ( result ) 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_binary/src/combine.c:10366:8: error: use of undeclared identifier 'result'
+return result; 
+       ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_binary/src/combine.c:10386:1: error: use of undeclared identifier 'result'
+result = simplify_binary_operation( code, mode, v12, v4); 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_binary/src/combine.c:10387:7: error: use of undeclared identifier 'result'
+if ( !result ) 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_binary/src/combine.c:10394:8: error: use of undeclared identifier 'result'
+return result; 
+       ^
+13 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_binary/src/obj/combine.o] Error 1

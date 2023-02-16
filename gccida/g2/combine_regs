@@ -1,0 +1,75 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/combine_regs/src/local-alloc.c:2270:4: error: expected ';' after expression
+rtx v12; // rcx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/combine_regs/src/local-alloc.c:2270:5: error: use of undeclared identifier 'v12'; did you mean 'v11'?
+rtx v12; // rcx 
+    ^~~
+    v11
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/combine_regs/src/local-alloc.c:2269:9: note: 'v11' declared here
+__int16 v11; // ax 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/combine_regs/src/local-alloc.c:2278:4: error: expected ';' after expression
+rtx v20; // rdx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/combine_regs/src/local-alloc.c:2278:5: error: use of undeclared identifier 'v20'
+rtx v20; // rdx 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/combine_regs/src/local-alloc.c:2300:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class min_class; // r14d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/combine_regs/src/local-alloc.c:2301:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class v43; // r13d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/combine_regs/src/local-alloc.c:2309:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class v51; // r14d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/combine_regs/src/local-alloc.c:2310:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class v52; // r14d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/combine_regs/src/local-alloc.c:2319:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v61; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/combine_regs/src/local-alloc.c:2365:1: error: use of undeclared identifier 'v12'
+v12 = rtx; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/combine_regs/src/local-alloc.c:2371:22: error: use of undeclared identifier 'v12'
+v14 = ( unsigned int)v12[1]; 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/combine_regs/src/local-alloc.c:2381:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)rtx + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/combine_regs/src/local-alloc.c:2383:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)v12 + 2)); 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/combine_regs/src/local-alloc.c:2383:39: error: use of undeclared identifier 'v12'
+( machine_mode)*( ( unsigned __int8 *)v12 + 2)); 
+                                      ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/combine_regs/src/local-alloc.c:2409:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v18 = ( ( unsigned int)( mode_class_0[v16] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/combine_regs/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/combine_regs/src/local-alloc.c:2431:1: error: use of undeclared identifier 'v20'
+v20 = v9; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/combine_regs/src/local-alloc.c:2437:22: error: use of undeclared identifier 'v20'
+v22 = ( unsigned int)v20[1]; 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/combine_regs/src/local-alloc.c:2449:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)v9 + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/combine_regs/src/local-alloc.c:2451:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)v20 + 2)); 
+  ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/combine_regs/src/obj/local-alloc.o] Error 1

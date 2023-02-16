@@ -1,0 +1,81 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gcse_main/src/gcse.c:1255:4: error: expected ';' after expression
+rtx v85; // rbx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gcse_main/src/gcse.c:1255:5: error: use of undeclared identifier 'v85'
+rtx v85; // rbx 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gcse_main/src/gcse.c:1280:4: error: expected ';' after expression
+rtx v110; // r12 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gcse_main/src/gcse.c:1280:5: error: use of undeclared identifier 'v110'
+rtx v110; // r12 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gcse_main/src/gcse.c:1289:4: error: expected ';' after expression
+rtx v119; // rsi 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gcse_main/src/gcse.c:1289:5: error: use of undeclared identifier 'v119'
+rtx v119; // rsi 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gcse_main/src/gcse.c:1323:4: error: expected ';' after expression
+rtx v153; // r12 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gcse_main/src/gcse.c:1323:5: error: use of undeclared identifier 'v153'
+rtx v153; // r12 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gcse_main/src/gcse.c:1341:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v171; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gcse_main/src/gcse.c:1419:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[i] == MODE_CC ) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gcse_main/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gcse_main/src/gcse.c:1421:21: error: use of undeclared identifier 'machine_mode'
+v4 = gen_rtx_REG( ( machine_mode)i, 58); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gcse_main/src/gcse.c:1424:21: error: expected expression
+if ( recog( *( rtx *)&v6[2], v6, 0LL) >= 0 ) 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gcse_main/src/gcse.c:1511:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v22 = ( __int64)v21[2]; 
+                ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gcse_main/src/gcse.c:1677:28: error: expected ')'
+if ( want_to_gcse_p( ( rtx)v169) ) 
+                           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gcse_main/src/gcse.c:1677:20: note: to match this '('
+if ( want_to_gcse_p( ( rtx)v169) ) 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gcse_main/src/gcse.c:1682:27: error: expected ')'
+v172 = hash_expr_1( ( rtx)v169, v171, ( int *)addr_this_reg) % v170; 
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gcse_main/src/gcse.c:1682:19: note: to match this '('
+v172 = hash_expr_1( ( rtx)v169, v171, ( int *)addr_this_reg) % v170; 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gcse_main/src/gcse.c:1689:42: error: expected ')'
+while ( !expr_equiv_p( v173->expr, ( rtx)v169) ) 
+                                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gcse_main/src/gcse.c:1689:22: note: to match this '('
+while ( !expr_equiv_p( v173->expr, ( rtx)v169) ) 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gcse_main/src/gcse.c:1698:28: error: expected ')'
+if ( oprs_not_set_p( ( rtx)v169, ( rtx)v54) ) 
+                           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gcse_main/src/gcse.c:1698:20: note: to match this '('
+if ( oprs_not_set_p( ( rtx)v169, ( rtx)v54) ) 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gcse_main/src/gcse.c:1706:14: error: expected identifier or '('
+ struct expr = (  struct expr *)v43; 
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gcse_main/src/gcse.c:1713:20: error: use of undeclared identifier 'uid_cuid_1'
+if ( *( ( _DWORD *)uid_cuid_1 + *( ( int *)v54 + 2)) < *( ( _DWORD *)uid_cuid_1 + rtint) ) 
+                   ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gcse_main/src/obj/gcse.o] Error 1

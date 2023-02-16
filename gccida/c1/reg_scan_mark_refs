@@ -1,0 +1,42 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/reg_scan_mark_refs/src/regclass.c:2893:4: error: expected ';' after expression
+rtx reg_note; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/reg_scan_mark_refs/src/regclass.c:2893:5: error: must use 'enum' tag to refer to type 'reg_note'
+rtx reg_note; // rax 
+    ^
+    enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/reg_scan_mark_refs/src/regclass.c:2928:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v10 = (  struct rtx_def *)x[1]; 
+                          ^~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/reg_scan_mark_refs/src/regclass.c:3010:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v26 = ( __int64)x[1]; 
+                ^~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/reg_scan_mark_refs/src/regclass.c:3014:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v27 = ( __int64)x[1]; 
+                ^~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/reg_scan_mark_refs/src/regclass.c:3033:1: error: must use 'enum' tag to refer to type 'reg_note'
+reg_note = find_reg_note( insn, REG_EQUAL, 0LL); 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/reg_scan_mark_refs/src/regclass.c:3033:10: error: expected identifier or '('
+reg_note = find_reg_note( insn, REG_EQUAL, 0LL); 
+         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/reg_scan_mark_refs/src/regclass.c:3036:6: error: use of undeclared identifier 'reg_note'; did you mean 'reg_names'?
+if ( reg_note ) 
+     ^~~~~~~~
+     reg_names
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/reg_scan_mark_refs/src/regs.h:166:21: note: 'reg_names' declared here
+extern const char * reg_names[FIRST_PSEUDO_REGISTER];
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/reg_scan_mark_refs/src/regclass.c:3038:19: error: use of undeclared identifier 'reg_note'
+v32 = *( _DWORD *)reg_note->fld[0].rtwint - 58; 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/reg_scan_mark_refs/src/regclass.c:3102:29: error: expected expression
+reg_scan_mark_refs( *( rtx *)( *( ( _QWORD *)x + v41) + 8 * v47 - 8), insn, v5, v4); 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/reg_scan_mark_refs/src/regclass.c:3114:31: error: expected expression
+reg_scan_mark_refs( *( ( rtx *)x + v41), insn, v5, v4); 
+                              ^
+11 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/reg_scan_mark_refs/src/obj/regclass.o] Error 1

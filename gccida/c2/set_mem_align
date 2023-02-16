@@ -1,0 +1,40 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/set_mem_align/src/emit-rtl.c:2350:1: error: use of undeclared identifier '_OWORD'
+_OWORD *v15; // rax 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/set_mem_align/src/emit-rtl.c:2350:9: error: use of undeclared identifier 'v15'
+_OWORD *v15; // rax 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/set_mem_align/src/emit-rtl.c:2356:18: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v4 = ( __int64 *)mem[1]; 
+                 ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/set_mem_align/src/emit-rtl.c:2423:1: error: use of undeclared identifier 'v15'
+v15 = ggc_alloc( 0x28uLL); 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/set_mem_align/src/emit-rtl.c:2424:9: error: use of undeclared identifier 'v15'
+*slot = v15; 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/set_mem_align/src/emit-rtl.c:2425:15: error: use of undeclared identifier 'v15'
+*( ( _QWORD *)v15 + 4) = v19; 
+              ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/set_mem_align/src/emit-rtl.c:2427:1: error: use of undeclared identifier 'v15'; did you mean 'v13'?
+v15[1] = v18; 
+^~~
+v13
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/set_mem_align/src/emit-rtl.c:2348:7: note: 'v13' declared here
+void *v13; // rax 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/set_mem_align/src/emit-rtl.c:2427:8: error: incomplete type 'void' is not assignable
+v15[1] = v18; 
+~~~~~~ ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/set_mem_align/src/emit-rtl.c:2428:2: error: use of undeclared identifier 'v15'; did you mean 'v13'?
+*v15 = v16; 
+ ^~~
+ v13
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/set_mem_align/src/emit-rtl.c:2348:7: note: 'v13' declared here
+void *v13; // rax 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/set_mem_align/src/emit-rtl.c:2428:6: error: incomplete type 'void' is not assignable
+*v15 = v16; 
+~~~~ ^
+10 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/set_mem_align/src/obj/emit-rtl.o] Error 1

@@ -1,0 +1,16 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/ix86_attr_length_address_default/src/i386.c:10433:16: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+LODWORD( v1) = recog_data_0.n_operands - 1; 
+               ^~~~~~~~~~~~
+               recog_data
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/ix86_attr_length_address_default/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/ix86_attr_length_address_default/src/i386.c:10439:6: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+v2 = recog_data_0.operand[v1]; 
+     ^~~~~~~~~~~~
+     recog_data
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/ix86_attr_length_address_default/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+2 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/ix86_attr_length_address_default/src/obj/i386.o] Error 1

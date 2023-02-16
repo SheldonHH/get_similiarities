@@ -1,0 +1,16 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_expand_prologue/src/i386.c:4646:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v5; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_expand_prologue/src/i386.c:4656:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v15; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_expand_prologue/src/i386.c:4758:22: error: use of undeclared identifier 'machine_mode'
+v14 = gen_rtx_REG( ( machine_mode)( ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32), v13); 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_expand_prologue/src/i386.c:4803:36: error: use of undeclared identifier 'machine_mode'
+v28 = gen_rtx_fmt_s( SYMBOL_REF, ( machine_mode)( ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32), "_alloca"); 
+                                   ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/ix86_expand_prologue/src/obj/i386.o] Error 1

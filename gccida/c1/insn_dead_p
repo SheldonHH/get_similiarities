@@ -1,0 +1,82 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/insn_dead_p/src/flow.c:2510:10: error: conflicting types for 'insn_dead_p'
+__int64  insn_dead_p(  struct propagate_block_info *pbi, rtx x, int call_ok, rtx notes) 
+         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/insn_dead_p/src/flow.c:298:12: note: previous declaration is here
+static int insn_dead_p                  PARAMS ((struct propagate_block_info *,
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/insn_dead_p/src/flow.c:2523:4: error: expected ';' after expression
+rtx v18; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/insn_dead_p/src/flow.c:2523:5: error: use of undeclared identifier 'v18'
+rtx v18; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/insn_dead_p/src/flow.c:2524:4: error: expected ';' after expression
+rtx mem_set_list; // rbp 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/insn_dead_p/src/flow.c:2524:5: error: use of undeclared identifier 'mem_set_list'; did you mean 'reg_set_last'?
+rtx mem_set_list; // rbp 
+    ^~~~~~~~~~~~
+    reg_set_last
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/insn_dead_p/src/rtl.h:1485:12: note: 'reg_set_last' declared here
+extern rtx reg_set_last                 PARAMS ((rtx, rtx));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/insn_dead_p/src/flow.c:2525:4: error: expected ';' after expression
+rtx v20; // r13 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/insn_dead_p/src/flow.c:2525:5: error: use of undeclared identifier 'v20'; did you mean 'v10'?
+rtx v20; // r13 
+    ^~~
+    v10
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/insn_dead_p/src/flow.c:2515:14: note: 'v10' declared here
+unsigned int v10; // r12d 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/insn_dead_p/src/flow.c:2553:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v14.rtwint = ( __int64)x->fld[0]; 
+                       ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/insn_dead_p/src/flow.c:2565:26: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v9 = (  struct rtx_def *)x[1]; 
+                         ^~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/insn_dead_p/src/flow.c:2601:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v24 = ( ( unsigned int)( mode_class_0[v23] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/insn_dead_p/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/insn_dead_p/src/flow.c:2686:1: error: use of undeclared identifier 'v18'
+v18 = canon_rtx( rtx); 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/insn_dead_p/src/flow.c:2687:1: error: use of undeclared identifier 'mem_set_list'
+mem_set_list = pbi->mem_set_list; 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/insn_dead_p/src/flow.c:2690:6: error: use of undeclared identifier 'mem_set_list'; did you mean 'reg_set_last'?
+if ( mem_set_list ) 
+     ^~~~~~~~~~~~
+     reg_set_last
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/insn_dead_p/src/rtl.h:1485:12: note: 'reg_set_last' declared here
+extern rtx reg_set_last                 PARAMS ((rtx, rtx));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/insn_dead_p/src/flow.c:2692:1: error: use of undeclared identifier 'v20'
+v20 = v18; 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/insn_dead_p/src/flow.c:2692:7: error: use of undeclared identifier 'v18'
+v20 = v18; 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/insn_dead_p/src/flow.c:2695:28: error: use of undeclared identifier 'mem_set_list'
+if ( anti_dependence( rtx, mem_set_list->fld[0].rtx) ) 
+                           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/insn_dead_p/src/flow.c:2697:24: error: use of undeclared identifier 'mem_set_list'
+v25.rtwint = ( __int64)mem_set_list->fld[0]; 
+                       ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/insn_dead_p/src/flow.c:2698:44: error: expected expression
+if ( rtx_equal_p( v20->fld[0].rtx, *( rtx *)( v25.rtwint + 8)) ) 
+                                           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/insn_dead_p/src/flow.c:2698:19: error: use of undeclared identifier 'v20'
+if ( rtx_equal_p( v20->fld[0].rtx, *( rtx *)( v25.rtwint + 8)) ) 
+                  ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/insn_dead_p/src/obj/flow.o] Error 1

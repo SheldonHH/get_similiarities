@@ -1,0 +1,34 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/copy_constant/src/varasm.c:3606:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v5; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/copy_constant/src/varasm.c:3609:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v8; // r12 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/copy_constant/src/varasm.c:3610:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v9; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/copy_constant/src/varasm.c:3660:17: error: use of undeclared identifier 'tree_code'; did you mean 'tree_cons'?
+return build( ( tree_code)*( ( unsigned __int8 *)&exp->block.common + 16), exp->common.type, v7, v6); 
+                ^~~~~~~~~
+                tree_cons
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/copy_constant/src/tree.h:2477:13: note: 'tree_cons' declared here
+extern tree tree_cons                   PARAMS ((tree, tree, tree));
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/copy_constant/src/varasm.c:3660:27: error: invalid operands to binary expression ('tree (tree, tree, tree)' (aka 'union tree_node *(union tree_node *, union tree_node *, union tree_node *)') and 'unsigned char *')
+return build( ( tree_code)*( ( unsigned __int8 *)&exp->block.common + 16), exp->common.type, v7, v6); 
+              ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/copy_constant/src/varasm.c:3683:18: error: use of undeclared identifier 'tree_code'; did you mean 'tree_cons'?
+return build1( ( tree_code)*( ( unsigned __int8 *)&exp->block.common + 16), exp->common.type, v5); 
+                 ^~~~~~~~~
+                 tree_cons
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/copy_constant/src/tree.h:2477:13: note: 'tree_cons' declared here
+extern tree tree_cons                   PARAMS ((tree, tree, tree));
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/copy_constant/src/varasm.c:3683:28: error: invalid operands to binary expression ('tree (tree, tree, tree)' (aka 'union tree_node *(union tree_node *, union tree_node *, union tree_node *)') and 'unsigned char *')
+return build1( ( tree_code)*( ( unsigned __int8 *)&exp->block.common + 16), exp->common.type, v5); 
+               ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/copy_constant/src/obj/varasm.o] Error 1

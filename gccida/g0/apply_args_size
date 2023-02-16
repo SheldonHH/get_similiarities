@@ -1,0 +1,77 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/apply_args_size/src/builtins.c:1357:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode best_mode; // [rsp+4h] [rbp-Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/apply_args_size/src/builtins.c:1358:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // [rsp+8h] [rbp-8h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/apply_args_size/src/builtins.c:1359:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode modea; // [rsp+8h] [rbp-8h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/apply_args_size/src/builtins.c:1360:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode modeb; // [rsp+8h] [rbp-8h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/apply_args_size/src/builtins.c:1361:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode modec; // [rsp+8h] [rbp-8h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/apply_args_size/src/builtins.c:1364:6: error: use of undeclared identifier 'size_10'; did you mean 'sizeof'?
+if ( size_10 < 0 ) 
+     ^~~~~~~
+     sizeof
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/apply_args_size/src/builtins.c:1364:14: error: expected expression
+if ( size_10 < 0 ) 
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/apply_args_size/src/builtins.c:1370:1: error: use of undeclared identifier 'size_10'
+size_10 = mode_size[v0]; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/apply_args_size/src/builtins.c:1377:1: error: use of undeclared identifier 'size_10'
+size_10 += mode_size[v1]; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/apply_args_size/src/builtins.c:1405:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v2 = mode_class_0[mode] != MODE_COMPLEX_INT && mode_class_0[mode] != MODE_COMPLEX_FLOAT; 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/apply_args_size/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/apply_args_size/src/builtins.c:1405:48: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v2 = mode_class_0[mode] != MODE_COMPLEX_INT && mode_class_0[mode] != MODE_COMPLEX_FLOAT; 
+                                               ^~~~~~~~~~~~
+                                               mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/apply_args_size/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/apply_args_size/src/builtins.c:1438:6: error: use of undeclared identifier 'size_10'; did you mean 'sizeof'?
+if ( size_10 % align ) 
+     ^~~~~~~
+     sizeof
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/apply_args_size/src/builtins.c:1438:14: error: expected expression
+if ( size_10 % align ) 
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/apply_args_size/src/builtins.c:1439:1: error: use of undeclared identifier 'size_10'
+size_10 = align * ( ( size_10 + align - 1) / align); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/apply_args_size/src/builtins.c:1439:23: error: use of undeclared identifier 'size_10'
+size_10 = align * ( ( size_10 + align - 1) / align); 
+                      ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/apply_args_size/src/builtins.c:1440:32: error: use of undeclared identifier 'size_10'; did you mean 'sizeof'?
+apply_args_reg_offset[regno] = size_10; 
+                               ^~~~~~~
+                               sizeof
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/apply_args_size/src/builtins.c:1440:39: error: expected expression
+apply_args_reg_offset[regno] = size_10; 
+                                      ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/apply_args_size/src/builtins.c:1441:1: error: use of undeclared identifier 'size_10'
+size_10 += mode_size[best_mode]; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/apply_args_size/src/builtins.c:1451:8: error: use of undeclared identifier 'size_10'; did you mean 'sizeof'?
+return size_10; 
+       ^~~~~~~
+       sizeof
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/apply_args_size/src/obj/builtins.o] Error 1

@@ -1,0 +1,22 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/binary_fp_operator/src/i386.c:3863:9: error: conflicting types for 'binary_fp_operator'
+_BOOL8  binary_fp_operator( unsigned __int16 *a1, int a2) 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/binary_fp_operator/src/tm-preds.h:38:12: note: previous declaration is here
+extern int binary_fp_operator PARAMS ((rtx, enum machine_mode));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/binary_fp_operator/src/i386.c:3874:8: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+return mode_class_0[*( ( unsigned __int8 *)a1 + 2)] == MODE_FLOAT; 
+       ^~~~~~~~~~~~
+       mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/binary_fp_operator/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/binary_fp_operator/src/i386.c:3877:8: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+return mode_class_0[*( ( unsigned __int8 *)a1 + 2)] == MODE_FLOAT; 
+       ^~~~~~~~~~~~
+       mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/binary_fp_operator/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/binary_fp_operator/src/obj/i386.o] Error 1

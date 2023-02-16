@@ -1,0 +1,12 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_main_function/src/function.c:6892:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v1; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_main_function/src/function.c:6913:19: error: use of undeclared identifier 'machine_mode'
+v5 = force_reg( ( machine_mode)( ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32), const_int_rtx[64]); 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_main_function/src/function.c:6917:42: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( i = get_last_insn( ); i; i = ( rtx)i[1] ) 
+                                         ^~~~
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_main_function/src/obj/function.o] Error 1

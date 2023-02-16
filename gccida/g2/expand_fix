@@ -1,0 +1,82 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_fix/src/optabs.c:4822:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v5; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_fix/src/optabs.c:4823:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v6; // r9d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_fix/src/optabs.c:4824:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v7; // r15d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_fix/src/optabs.c:4826:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v9; // r12d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_fix/src/optabs.c:4831:1: error: must use 'enum' tag to refer to type 'insn_code'
+insn_code insn_code; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_fix/src/optabs.c:4900:14: error: passing 'long long' to parameter of incompatible type 'realvaluetype'
+ereal_ldexp( ( __int64)&offset, dconst1); 
+             ^~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_fix/src/real.h:160:60: note: passing argument to parameter here
+extern REAL_VALUE_TYPE ereal_ldexp PARAMS ((REAL_VALUE_TYPE, int));
+                                                           ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_fix/src/optabs.c:4901:27: error: passing 'enum machine_mode' to parameter of incompatible type 'realvaluetype'
+v22 = immed_real_const_1( v5, offset); 
+                          ^~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_fix/src/real.h:466:67: note: passing argument to parameter here
+extern struct rtx_def *immed_real_const_1       PARAMS ((REAL_VALUE_TYPE,
+                                                                        ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_fix/src/optabs.c:4913:47: error: use of undeclared identifier 'machine_mode'
+emit_cmp_and_jump_insns( v27, v22, GE, 0LL, ( machine_mode)*( ( unsigned __int8 *)v27 + 2), 0, v23); 
+                                              ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_fix/src/optabs.c:4920:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)v27 + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_fix/src/optabs.c:4928:41: error: use of undeclared identifier 'machine_mode'
+v30 = trunc_int_for_mode( 1LL << tob, ( machine_mode)*( ( unsigned __int8 *)v25 + 2)); 
+                                        ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_fix/src/optabs.c:4931:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)v25 + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_fix/src/optabs.c:4945:38: error: use of undeclared identifier 'machine_mode'
+v35 = gen_rtx_fmt_e( UNSIGNED_FIX, ( machine_mode)*( ( unsigned __int8 *)v25 + 2), v34); 
+                                     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_fix/src/optabs.c:5064:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)v38 + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_fix/src/optabs.c:5071:3: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+( rtx_code)( unsignedp == 0 ? FIX : UNSIGNED_FIX), 
+  ^~~~~~~~
+  rtx_cost
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_fix/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_fix/src/optabs.c:5071:49: error: too few arguments to function call, expected 2, have 1
+( rtx_code)( unsignedp == 0 ? FIX : UNSIGNED_FIX), 
+~~~~~~~~~~~                                     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_fix/src/rtl.h:1787:1: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_fix/src/optabs.c:5072:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)v38 + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_fix/src/optabs.c:5147:22: error: use of undeclared identifier 'machine_mode'
+v17 = gen_reg_rtx( ( machine_mode)*( ( unsigned __int8 *)v16 + 2)); 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_fix/src/optabs.c:5148:22: error: use of undeclared identifier 'machine_mode'
+v18 = expand_unop( ( machine_mode)*( ( unsigned __int8 *)froma + 2), optab_table[17], froma, v17, 0); 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_fix/src/optabs.c:5172:33: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+emit_unop_insn( v13, v3, v18, ( rtx_code)( v15 == 0 ? FIX : UNSIGNED_FIX)); 
+                                ^~~~~~~~
+                                rtx_cost
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_fix/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_fix/src/obj/optabs.o] Error 1

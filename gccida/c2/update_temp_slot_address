@@ -1,0 +1,63 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/update_temp_slot_address/src/function.c:1513:4: error: expected ';' after expression
+rtx address; // rcx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/update_temp_slot_address/src/function.c:1513:5: error: use of undeclared identifier 'address'
+rtx address; // rcx 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/update_temp_slot_address/src/function.c:1533:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+rtx = (  struct rtx_def *)v4[1]; 
+                          ^~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/update_temp_slot_address/src/function.c:1539:27: error: expected expression
+v9 = rtx_equal_p( *( rtx *)&v4[1], v2->fld[0].rtx); 
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/update_temp_slot_address/src/function.c:1541:26: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v8 = (  struct rtx_def *)v2[1]; 
+                         ^~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/update_temp_slot_address/src/function.c:1545:44: error: expected expression
+v10 = rtx_equal_p( v4->fld[0].rtx, *( rtx *)&v2[1]); 
+                                           ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/update_temp_slot_address/src/function.c:1546:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+rtx = (  struct rtx_def *)v4[1]; 
+                          ^~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/update_temp_slot_address/src/function.c:1549:28: error: expected expression
+if ( !rtx_equal_p( *( rtx *)&v4[1], *( rtx *)&v2[1]) ) 
+                           ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/update_temp_slot_address/src/function.c:1549:45: error: expected expression
+if ( !rtx_equal_p( *( rtx *)&v4[1], *( rtx *)&v2[1]) ) 
+                                            ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/update_temp_slot_address/src/function.c:1562:26: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v4 = (  struct rtx_def *)v4[1]; 
+                         ^~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/update_temp_slot_address/src/function.c:1567:1: error: use of undeclared identifier 'address'
+address = temp_slot_from_address->address; 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/update_temp_slot_address/src/function.c:1568:6: error: use of undeclared identifier 'address'; did you mean 'access'?
+if ( address ) 
+     ^~~~~~~
+     access
+/usr/include/unistd.h:290:12: note: 'access' declared here
+extern int access (const char *__name, int __type) __THROW __nonnull ((1));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/update_temp_slot_address/src/function.c:1570:17: error: use of undeclared identifier 'address'
+if ( *( _WORD *)address != 3 ) 
+                ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/update_temp_slot_address/src/function.c:1572:1: error: use of undeclared identifier 'address'
+address = gen_rtx_fmt_ee( EXPR_LIST, VOIDmode, temp_slot_from_address->address, 0LL); 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/update_temp_slot_address/src/function.c:1573:16: error: use of undeclared identifier 'address'; did you mean 'access'?
+v11->address = address; 
+               ^~~~~~~
+               access
+/usr/include/unistd.h:290:12: note: 'access' declared here
+extern int access (const char *__name, int __type) __THROW __nonnull ((1));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/update_temp_slot_address/src/function.c:1575:47: error: use of undeclared identifier 'address'; did you mean 'access'?
+v2 = gen_rtx_fmt_ee( EXPR_LIST, VOIDmode, v2, address); 
+                                              ^~~~~~~
+                                              access
+/usr/include/unistd.h:290:12: note: 'access' declared here
+extern int access (const char *__name, int __type) __THROW __nonnull ((1));
+           ^
+16 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/update_temp_slot_address/src/obj/function.o] Error 1

@@ -1,0 +1,77 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/clear_storage/src/expr.c:3037:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v3; // ecx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/clear_storage/src/expr.c:3038:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v4; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/clear_storage/src/expr.c:3039:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v5; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/clear_storage/src/expr.c:3040:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *tree; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/clear_storage/src/expr.c:3041:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v7; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/clear_storage/src/expr.c:3042:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v8; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/clear_storage/src/expr.c:3043:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v9; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/clear_storage/src/expr.c:3044:5: error: expected ';' after expression
+tree v10; // rax 
+    ^
+    ;
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/clear_storage/src/expr.c:3044:6: error: use of undeclared identifier 'v10'
+tree v10; // rax 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/clear_storage/src/expr.c:3050:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *fntype; // [rsp+30h] [rbp-70h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/clear_storage/src/expr.c:3057:1: error: must use 'enum' tag to refer to type 'insn_code'
+insn_code code; // [rsp+58h] [rbp-48h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/clear_storage/src/expr.c:3058:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // [rsp+5Ch] [rbp-44h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/clear_storage/src/expr.c:3061:5: error: expected ';' after expression
+tree v28; // [rsp+78h] [rbp-28h] 
+    ^
+    ;
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/clear_storage/src/expr.c:3061:6: error: use of undeclared identifier 'v28'
+tree v28; // [rsp+78h] [rbp-28h] 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/clear_storage/src/expr.c:3062:5: error: expected ';' after expression
+tree call_expr; // [rsp+80h] [rbp-20h] 
+    ^
+    ;
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/clear_storage/src/expr.c:3062:6: error: use of undeclared identifier 'call_expr'; did you mean 'save_expr'?
+tree call_expr; // [rsp+80h] [rbp-20h] 
+     ^~~~~~~~~
+     save_expr
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/clear_storage/src/tree.h:2528:13: note: 'save_expr' declared here
+extern tree save_expr                   PARAMS ((tree));
+            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/clear_storage/src/expr.c:3071:1: error: statement requires expression of scalar type ('struct rtx_def' invalid)
+if ( object[1] ) 
+^    ~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/clear_storage/src/expr.c:3079:40: error: use of undeclared identifier 'machine_mode'
+mode_alignment = get_mode_alignment( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)object)); 
+                                       ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/clear_storage/src/expr.c:3079:55: error: expected expression
+mode_alignment = get_mode_alignment( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)object)); 
+                                                      ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/clear_storage/src/obj/expr.o] Error 1

@@ -1,0 +1,77 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/convert_from_eh_region_ranges/src/except.c:1888:4: error: expected ';' after expression
+rtx reg_note; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/convert_from_eh_region_ranges/src/except.c:1888:5: error: must use 'enum' tag to refer to type 'reg_note'
+rtx reg_note; // rax 
+    ^
+    enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/convert_from_eh_region_ranges/src/except.c:1896:1: error: must use 'enum' tag to refer to type 'eh_region_type'
+eh_region_type type; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/convert_from_eh_region_ranges/src/except.c:1902:4: error: expected ';' after expression
+rtx v30; // rbx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/convert_from_eh_region_ranges/src/except.c:1902:5: error: use of undeclared identifier 'v30'
+rtx v30; // rbx 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/convert_from_eh_region_ranges/src/except.c:1911:4: error: expected ';' after expression
+rtx resume; // rdi 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/convert_from_eh_region_ranges/src/except.c:1911:5: error: use of undeclared identifier 'resume'; did you mean 'rename'?
+rtx resume; // rdi 
+    ^~~~~~
+    rename
+/usr/include/stdio.h:146:12: note: 'rename' declared here
+extern int rename (const char *__old, const char *__new) __THROW;
+           ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/convert_from_eh_region_ranges/src/except.c:1913:4: error: expected ';' after expression
+rtx label; // rdi 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/convert_from_eh_region_ranges/src/except.c:1913:5: error: use of undeclared identifier 'label'
+rtx label; // rdi 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/convert_from_eh_region_ranges/src/except.c:1915:4: error: expected ';' after expression
+rtx continue_label; // rsi 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/convert_from_eh_region_ranges/src/except.c:1915:5: error: use of undeclared identifier 'continue_label'
+rtx continue_label; // rsi 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/convert_from_eh_region_ranges/src/except.c:1918:4: error: expected ';' after expression
+rtx insns; // [rsp+0h] [rbp-28h] BYREF 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/convert_from_eh_region_ranges/src/except.c:1918:5: error: use of undeclared identifier 'insns'
+rtx insns; // [rsp+0h] [rbp-28h] BYREF 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/convert_from_eh_region_ranges/src/except.c:1920:1: error: use of undeclared identifier 'insns'
+insns = v0; 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/convert_from_eh_region_ranges/src/except.c:1976:1: error: use of undeclared identifier 'insns'
+insns = get_insns( ); 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/convert_from_eh_region_ranges/src/except.c:1977:35: error: use of undeclared identifier 'insns'
+convert_from_eh_region_ranges_1( &insns, v13, 0); 
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/convert_from_eh_region_ranges/src/except.c:1987:1: error: must use 'enum' tag to refer to type 'reg_note'
+reg_note = find_reg_note( rtx, REG_EH_REGION, 0LL); 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/convert_from_eh_region_ranges/src/except.c:1987:10: error: expected identifier or '('
+reg_note = find_reg_note( rtx, REG_EH_REGION, 0LL); 
+         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/convert_from_eh_region_ranges/src/except.c:1988:6: error: use of undeclared identifier 'reg_note'; did you mean 'reg_names'?
+if ( reg_note ) 
+     ^~~~~~~~
+     reg_names
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/convert_from_eh_region_ranges/src/hard-reg-set.h:485:21: note: 'reg_names' declared here
+extern const char * reg_names[FIRST_PSEUDO_REGISTER];
+                    ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/convert_from_eh_region_ranges/src/obj/except.o] Error 1

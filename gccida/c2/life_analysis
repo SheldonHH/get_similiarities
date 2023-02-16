@@ -1,0 +1,70 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/life_analysis/src/flow.c:886:4: error: expected ';' after expression
+rtx insns; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/life_analysis/src/flow.c:886:5: error: use of undeclared identifier 'insns'
+rtx insns; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/life_analysis/src/flow.c:887:4: error: expected ';' after expression
+rtx rtwint; // rbx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/life_analysis/src/flow.c:887:5: error: use of undeclared identifier 'rtwint'; did you mean 'rewind'?
+rtx rtwint; // rbx 
+    ^~~~~~
+    rewind
+/usr/include/stdio.h:694:13: note: 'rewind' declared here
+extern void rewind (FILE *__stream);
+            ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/life_analysis/src/flow.c:916:22: error: expected expression
+note_stores( *( rtx *)&rtx[2], notice_stack_pointer_modification_1, 0LL); 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/life_analysis/src/flow.c:1015:22: error: use of undeclared identifier 'machine_mode'
+v20 = gen_rtx_REG( ( machine_mode)( ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32), 2); 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/life_analysis/src/flow.c:1023:22: error: use of undeclared identifier 'mark_reg_0'; did you mean 'mark_reg'?
+diddle_return_value( mark_reg_0, global_live_at_start); 
+                     ^~~~~~~~~~
+                     mark_reg
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/life_analysis/src/flow.c:292:13: note: 'mark_reg' declared here
+static void mark_reg                    PARAMS ((rtx, void *));
+            ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/life_analysis/src/flow.c:1026:12: error: expected expression
+*( _OWORD *)&regs_ever_live[32] = 0LL; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/life_analysis/src/flow.c:1026:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&regs_ever_live[32] = 0LL; 
+   ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/life_analysis/src/flow.c:1027:12: error: expected expression
+*( _OWORD *)&regs_ever_live[16] = 0LL; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/life_analysis/src/flow.c:1027:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&regs_ever_live[16] = 0LL; 
+   ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/life_analysis/src/flow.c:1028:12: error: expected expression
+*( _OWORD *)regs_ever_live = 0LL; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/life_analysis/src/flow.c:1028:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)regs_ever_live = 0LL; 
+   ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/life_analysis/src/flow.c:1036:1: error: use of undeclared identifier 'insns'
+insns = get_insns( ); 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/life_analysis/src/flow.c:1037:6: error: use of undeclared identifier 'insns'
+if ( insns ) 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/life_analysis/src/flow.c:1039:1: error: use of undeclared identifier 'rtwint'
+rtwint = insns; 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/life_analysis/src/flow.c:1039:10: error: use of undeclared identifier 'insns'
+rtwint = insns; 
+         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/life_analysis/src/flow.c:1042:24: error: use of undeclared identifier 'rtwint'
+v18.rtwint = ( __int64)rtwint[1].fld[0]; 
+                       ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/life_analysis/src/flow.c:1043:37: error: use of undeclared identifier 'rtwint'
+if ( ( unsigned __int16)*( _DWORD *)rtwint == 36 
+                                    ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/life_analysis/src/obj/flow.o] Error 1

@@ -1,0 +1,25 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/asm_operand_ok/src/recog.c:2166:11: error: use of undeclared identifier 'sch_istable'; did you mean '_sch_istable'?
+while ( ( sch_istable[v9] & 4) != 0 ); 
+          ^~~~~~~~~~~
+          _sch_istable
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/asm_operand_ok/src/safe-ctype.h:72:29: note: '_sch_istable' declared here
+extern const unsigned short _sch_istable[256];
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/asm_operand_ok/src/recog.c:2205:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v11.rtwint = ( __int64)op->fld[0]; 
+                       ^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/asm_operand_ok/src/recog.c:2259:34: error: use of undeclared identifier 'machine_mode'
+v7 = offsettable_address_p( 0, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)op), op->fld[0].rtx); 
+                                 ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/asm_operand_ok/src/recog.c:2259:49: error: expected expression
+v7 = offsettable_address_p( 0, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)op), op->fld[0].rtx); 
+                                                ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/asm_operand_ok/src/recog.c:2280:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[v17] == MODE_FLOAT ) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/asm_operand_ok/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/asm_operand_ok/src/obj/recog.o] Error 1

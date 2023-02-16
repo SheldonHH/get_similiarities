@@ -1,0 +1,96 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/store_bit_field/src/expmed.c:755:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode fieldmode, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/store_bit_field/src/expmed.c:783:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v30; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/store_bit_field/src/expmed.c:791:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v39; // [rsp+5Ch] [rbp-124h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/store_bit_field/src/expmed.c:797:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode bestmode; // [rsp+C4h] [rbp-BCh] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/store_bit_field/src/expmed.c:800:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode maxmode; // [rsp+D4h] [rbp-ACh] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/store_bit_field/src/expmed.c:808:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode imode; // [rsp+118h] [rbp-68h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/store_bit_field/src/expmed.c:810:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode op_mode; // [rsp+120h] [rbp-60h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/store_bit_field/src/expmed.c:819:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode fieldmodeb; // [rsp+15Ch] [rbp-24h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/store_bit_field/src/expmed.c:878:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& mode_class_0[fieldmode] != MODE_INT 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/store_bit_field/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/store_bit_field/src/expmed.c:879:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& mode_class_0[fieldmode] != MODE_PARTIAL_INT ) 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/store_bit_field/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/store_bit_field/src/expmed.c:897:30: error: use of undeclared identifier 'machine_mode'
+imode = int_mode_for_mode( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)op0)); 
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/store_bit_field/src/expmed.c:897:45: error: expected expression
+imode = int_mode_for_mode( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)op0)); 
+                                            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/store_bit_field/src/expmed.c:926:7: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+v12 = insn_data_0[icode].operand[1].predicate( valueb, fieldmode); 
+      ^~~~~~~~~~~
+      insn_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/store_bit_field/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/store_bit_field/src/expmed.c:926:46: error: called object type '<dependent type>' is not a function or function pointer
+v12 = insn_data_0[icode].operand[1].predicate( valueb, fieldmode); 
+                                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/store_bit_field/src/expmed.c:936:7: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+v12 = insn_data_0[icode].operand[1].predicate( valueb, fieldmode); 
+      ^~~~~~~~~~~
+      insn_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/store_bit_field/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/store_bit_field/src/expmed.c:936:46: error: called object type '<dependent type>' is not a function or function pointer
+v12 = insn_data_0[icode].operand[1].predicate( valueb, fieldmode); 
+                                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/store_bit_field/src/expmed.c:943:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& mode_class_0[fieldmode] != MODE_INT 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/store_bit_field/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/store_bit_field/src/expmed.c:944:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& mode_class_0[fieldmode] != MODE_PARTIAL_INT ) 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/store_bit_field/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/store_bit_field/src/expmed.c:953:10: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+genfun = insn_data_0[icode].genfun; 
+         ^~~~~~~~~~~
+         insn_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/store_bit_field/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/store_bit_field/src/obj/expmed.o] Error 1

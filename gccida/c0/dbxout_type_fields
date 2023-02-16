@@ -1,0 +1,19 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/dbxout_type_fields/src/dbxout.c:1193:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v1; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/dbxout_type_fields/src/dbxout.c:1197:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *rttree; // [rsp+8h] [rbp-28h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/dbxout_type_fields/src/dbxout.c:1243:23: error: expected expression
+rttree = ( tree_node *)tem[6]; 
+                      ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/dbxout_type_fields/src/dbxout.c:1243:12: error: use of undeclared identifier 'tree_node'
+rttree = ( tree_node *)tem[6]; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/dbxout_type_fields/src/dbxout.c:1267:6: error: use of undeclared identifier 'QCameraExposure'
+v3 = QCameraExposure::setAutoIsoSensitivity( ( tree)tem); 
+     ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/dbxout_type_fields/src/obj/dbxout.o] Error 1

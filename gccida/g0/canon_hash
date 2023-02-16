@@ -1,0 +1,29 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/canon_hash/src/cse.c:2699:34: error: must use 'enum' tag to refer to type 'machine_mode'
+unsigned int  canon_hash( rtx x, machine_mode mode) 
+                                 ^
+                                 enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/canon_hash/src/cse.c:2710:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code; // [rsp+4Ch] [rbp-24h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/canon_hash/src/cse.c:2748:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( unsigned __int8 *)( *( _QWORD *)( *( _QWORD *)&x[2] + 8LL * ib + 8) + 2LL)); 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/canon_hash/src/cse.c:2814:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( unsigned __int8 *)( *( _QWORD *)( x->fld[0].rtwint + 8LL * ia + 8) + 2LL)); 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/canon_hash/src/cse.c:2838:10: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+record = mode_class_0[*( ( unsigned __int8 *)x + 2)] == MODE_CC; 
+         ^~~~~~~~~~~~
+         mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/canon_hash/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/canon_hash/src/cse.c:2853:2: error: expected expression
+ struct cse_reg_info = cached_cse_reg_info; 
+ ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/canon_hash/src/cse.c:2855:2: error: expected expression
+ struct cse_reg_info = get_cse_reg_info( regno); 
+ ^
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/canon_hash/src/obj/cse.o] Error 1

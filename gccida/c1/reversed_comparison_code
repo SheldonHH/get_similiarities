@@ -1,0 +1,23 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/reversed_comparison_code/src/jump.c:1228:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code  reversed_comparison_code( rtx comparison, rtx insn) 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/reversed_comparison_code/src/jump.c:1231:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code result; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/reversed_comparison_code/src/jump.c:1236:42: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+return reversed_comparison_code_parts( ( rtx_code)v3, comparison->fld[0].rtx, *( rtx *)&comparison[1], comparison); 
+                                         ^~~~~~~~
+                                         rtx_cost
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/reversed_comparison_code/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/reversed_comparison_code/src/jump.c:1236:51: error: expected ')'
+return reversed_comparison_code_parts( ( rtx_code)v3, comparison->fld[0].rtx, *( rtx *)&comparison[1], comparison); 
+                                                  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/reversed_comparison_code/src/jump.c:1236:38: note: to match this '('
+return reversed_comparison_code_parts( ( rtx_code)v3, comparison->fld[0].rtx, *( rtx *)&comparison[1], comparison); 
+                                     ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/reversed_comparison_code/src/obj/jump.o] Error 1

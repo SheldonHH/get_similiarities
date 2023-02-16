@@ -1,0 +1,37 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/record_alias_subset/src/alias.c:1077:1: error: use of undeclared identifier 'alias_set_entry_0'; did you mean 'alias_set_entry'?
+alias_set_entry_0 v3; // rax 
+^~~~~~~~~~~~~~~~~
+alias_set_entry
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/record_alias_subset/src/alias.c:1076:7: note: 'alias_set_entry' declared here
+void *alias_set_entry; // r15 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/record_alias_subset/src/alias.c:1077:1: error: must use 'struct' tag to refer to type 'alias_set_entry'
+alias_set_entry_0 v3; // rax 
+^
+struct 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/record_alias_subset/src/alias.c:1076:7: note: struct 'alias_set_entry' is hidden by a non-type declaration of 'alias_set_entry' here
+void *alias_set_entry; // r15 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/record_alias_subset/src/alias.c:1083:25: error: expected identifier or '('
+ struct alias_set_entry = get_alias_set_entry( superset); 
+                        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/record_alias_subset/src/alias.c:1086:25: error: expected identifier or '('
+ struct alias_set_entry = xmalloc( 0x18uLL); 
+                        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/record_alias_subset/src/alias.c:1100:4: error: assigning to 'struct alias_set_entry' from incompatible type 'alias_set_entry' (aka 'struct alias_set_entry *'); dereference with *
+v3 = get_alias_set_entry( subset); 
+   ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     *
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/record_alias_subset/src/alias.c:1101:1: error: statement requires expression of scalar type ('struct alias_set_entry' invalid)
+if ( v3 ) 
+^    ~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/record_alias_subset/src/alias.c:1103:8: error: member reference type 'struct alias_set_entry' is not a pointer; did you mean to use '.'?
+if ( v3->has_zero_child ) 
+     ~~^~
+       .
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/record_alias_subset/src/alias.c:1105:23: error: member reference type 'struct alias_set_entry' is not a pointer; did you mean to use '.'?
+splay_tree_foreach( v3->children, insert_subset_children, *( ( void **)alias_set_entry + 1)); 
+                    ~~^~
+                      .
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/record_alias_subset/src/obj/alias.o] Error 1

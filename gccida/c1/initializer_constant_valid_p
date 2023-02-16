@@ -1,0 +1,36 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/initializer_constant_valid_p/src/varasm.c:4778:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *elements; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/initializer_constant_valid_p/src/varasm.c:4819:6: error: use of undeclared identifier 'lang_hooks_0'; did you mean 'lang_hooks'?
+v3 = lang_hooks_0.expand_constant( value); 
+     ^~~~~~~~~~~~
+     lang_hooks
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/initializer_constant_valid_p/src/langhooks.h:168:32: note: 'lang_hooks' declared here
+extern const struct lang_hooks lang_hooks;
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/initializer_constant_valid_p/src/varasm.c:4819:34: error: called object type '<dependent type>' is not a function or function pointer
+v3 = lang_hooks_0.expand_constant( value); 
+                                 ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/initializer_constant_valid_p/src/varasm.c:4834:27: error: expected expression
+elements = *( tree_node **)( high + 32); 
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/initializer_constant_valid_p/src/varasm.c:4834:15: error: use of undeclared identifier 'tree_node'
+elements = *( tree_node **)( high + 32); 
+              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/initializer_constant_valid_p/src/varasm.c:4908:7: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v35 = mode_class_0[v34]; 
+      ^~~~~~~~~~~~
+      mode_class
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/initializer_constant_valid_p/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/initializer_constant_valid_p/src/varasm.c:4936:7: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v41 = mode_class_0[v40]; 
+      ^~~~~~~~~~~~
+      mode_class
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/initializer_constant_valid_p/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/initializer_constant_valid_p/src/obj/varasm.o] Error 1

@@ -1,0 +1,38 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/record_constant_1/src/varasm.c:3379:14: error: expected expression
+tree_int_cst::$A887AD9C3C6C8CC7716950D571F57C9D *p_int_cst; // rbx 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/record_constant_1/src/varasm.c:3383:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v27; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/record_constant_1/src/varasm.c:3399:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v43; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/record_constant_1/src/varasm.c:3430:1: error: use of undeclared identifier 'p_int_cst'
+p_int_cst = &exp->int_cst.int_cst; 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/record_constant_1/src/varasm.c:3443:1: error: use of undeclared identifier 'p_int_cst'
+p_int_cst = &exp->int_cst.int_cst; 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/record_constant_1/src/varasm.c:3446:11: error: use of undeclared identifier 'p_int_cst'
+pointer = p_int_cst; 
+          ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/record_constant_1/src/varasm.c:3578:20: error: expected expression
+v43 = ( tree_node *)v42[4]; 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/record_constant_1/src/varasm.c:3578:9: error: use of undeclared identifier 'tree_node'
+v43 = ( tree_node *)v42[4]; 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/record_constant_1/src/varasm.c:3680:7: error: use of undeclared identifier 'lang_hooks_0'; did you mean 'lang_hooks'?
+v27 = lang_hooks_0.expand_constant( exp); 
+      ^~~~~~~~~~~~
+      lang_hooks
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/record_constant_1/src/langhooks.h:168:32: note: 'lang_hooks' declared here
+extern const struct lang_hooks lang_hooks;
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/record_constant_1/src/varasm.c:3680:35: error: called object type '<dependent type>' is not a function or function pointer
+v27 = lang_hooks_0.expand_constant( exp); 
+                                  ^
+10 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/record_constant_1/src/obj/varasm.o] Error 1

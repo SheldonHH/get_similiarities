@@ -1,0 +1,39 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/split_edge/src/cfgrtl.c:1650:12: error: expected ';' after expression
+basic_block bb; // [rsp+90h] [rbp-10h] 
+           ^
+           ;
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/split_edge/src/cfgrtl.c:1650:13: error: use of undeclared identifier 'bb'
+basic_block bb; // [rsp+90h] [rbp-10h] 
+            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/split_edge/src/cfgrtl.c:1667:30: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+before = (  struct rtx_def *)edge_in->dest->head[1]; 
+                             ^~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/split_edge/src/cfgrtl.c:1681:1: error: use of undeclared identifier 'bb'
+bb = basic_block; 
+^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/split_edge/src/cfgrtl.c:1697:1: error: use of undeclared identifier 'bb'
+bb->global_live_at_start = bitmap_initialize( ( bitmap)value); 
+^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/split_edge/src/cfgrtl.c:1708:1: error: use of undeclared identifier 'bb'
+bb->global_live_at_end = bitmap_initialize( ( bitmap)value_0); 
+^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/split_edge/src/cfgrtl.c:1709:14: error: use of undeclared identifier 'bb'
+bitmap_copy( bb->global_live_at_start, edge_in->dest->global_live_at_start); 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/split_edge/src/cfgrtl.c:1710:14: error: use of undeclared identifier 'bb'
+bitmap_copy( bb->global_live_at_end, edge_in->dest->global_live_at_start); 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/split_edge/src/cfgrtl.c:1712:24: error: use of undeclared identifier 'bb'
+make_single_succ_edge( bb, edge_in->dest, 1); 
+                       ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/split_edge/src/cfgrtl.c:1715:30: error: use of undeclared identifier 'bb'
+redirect_edge_succ( edge_in, bb); 
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/split_edge/src/cfgrtl.c:1717:47: error: use of undeclared identifier 'bb'
+else if ( !redirect_edge_and_branch( edge_in, bb) ) 
+                                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/split_edge/src/cfgrtl.c:1721:8: error: use of undeclared identifier 'bb'
+return bb; 
+       ^
+12 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/split_edge/src/obj/cfgrtl.o] Error 1

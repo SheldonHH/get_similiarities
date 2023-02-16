@@ -1,0 +1,18 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/mark_used_regs_combine/src/combine.c:12223:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v14.rtwint = ( __int64)x->fld[0]; 
+                       ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/mark_used_regs_combine/src/combine.c:12240:11: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+x = ( rtx)x[1]; 
+          ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/mark_used_regs_combine/src/combine.c:12243:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v13.rtwint = ( __int64)x->fld[0]; 
+                       ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/mark_used_regs_combine/src/combine.c:12266:25: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v9 = ( ( unsigned int)( mode_class_0[v8] - 5) < 2) + 1; 
+                        ^~~~~~~~~~~~
+                        mode_class
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/mark_used_regs_combine/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/mark_used_regs_combine/src/obj/combine.o] Error 1

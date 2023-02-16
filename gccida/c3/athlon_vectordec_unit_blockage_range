@@ -1,0 +1,36 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/athlon_vectordec_unit_blockage_range/src/insn-attrtab.c:3961:29: error: too many arguments provided to function-like macro invocation
+fatal_insn_not_found( insn, "insn-attrtab.c", 3681, "athlon_vectordec_unit_blockage_range"); 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/athlon_vectordec_unit_blockage_range/src/toplev.h:52:9: note: macro 'fatal_insn_not_found' defined here
+#define fatal_insn_not_found(insn) \
+        ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/athlon_vectordec_unit_blockage_range/src/insn-attrtab.c:3961:1: error: use of undeclared identifier 'fatal_insn_not_found'; did you mean '_fatal_insn_not_found'?
+fatal_insn_not_found( insn, "insn-attrtab.c", 3681, "athlon_vectordec_unit_blockage_range"); 
+^~~~~~~~~~~~~~~~~~~~
+_fatal_insn_not_found
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/athlon_vectordec_unit_blockage_range/src/toplev.h:40:13: note: '_fatal_insn_not_found' declared here
+extern void _fatal_insn_not_found       PARAMS ((struct rtx_def *,
+            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/athlon_vectordec_unit_blockage_range/src/insn-attrtab.c:4168:22: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( memory_operand( recog_data_0.operand[1], VOIDmode) || ix86_cpu != PROCESSOR_ATHLON ) 
+                     ^~~~~~~~~~~~
+                     recog_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/athlon_vectordec_unit_blockage_range/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/athlon_vectordec_unit_blockage_range/src/insn-attrtab.c:4175:43: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( which_alternative || memory_operand( recog_data_0.operand[1], VOIDmode) || ix86_cpu != PROCESSOR_ATHLON ) 
+                                          ^~~~~~~~~~~~
+                                          recog_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/athlon_vectordec_unit_blockage_range/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/athlon_vectordec_unit_blockage_range/src/insn-attrtab.c:4200:49: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( which_alternative == 1 && !memory_operand( recog_data_0.operand[1], VOIDmode) && ix86_cpu == PROCESSOR_ATHLON ) 
+                                                ^~~~~~~~~~~~
+                                                recog_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/athlon_vectordec_unit_blockage_range/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/athlon_vectordec_unit_blockage_range/src/obj/insn-attrtab.o] Error 1

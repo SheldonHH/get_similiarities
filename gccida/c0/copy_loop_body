@@ -1,0 +1,61 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/copy_loop_body/src/unroll.c:2246:1: error: must use 'enum' tag to refer to type 'unroll_types'
+unroll_types unroll_type, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/copy_loop_body/src/unroll.c:2278:1: error: use of undeclared identifier 'induction_1'
+induction_1 *tv; // [rsp+B0h] [rbp-B0h] 
+^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/copy_loop_body/src/unroll.c:2278:14: error: use of undeclared identifier 'tv'
+induction_1 *tv; // [rsp+B0h] [rbp-B0h] 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/copy_loop_body/src/unroll.c:2279:1: error: use of undeclared identifier 'induction_1'
+induction_1 *v; // [rsp+B8h] [rbp-A8h] 
+^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/copy_loop_body/src/unroll.c:2279:14: error: use of undeclared identifier 'v'
+induction_1 *v; // [rsp+B8h] [rbp-A8h] 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/copy_loop_body/src/unroll.c:2321:31: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+pattern = (  struct rtx_def *)insn[2]; 
+                              ^~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/copy_loop_body/src/unroll.c:2326:13: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v23 = ( rtx)insn[2]; 
+            ^~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/copy_loop_body/src/unroll.c:2339:1: error: use of undeclared identifier 'v'
+v = addr_combined_regs[*( unsigned int *)( v22->fld[0].rtwint + 8)]; 
+^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/copy_loop_body/src/unroll.c:2340:18: error: use of undeclared identifier 'v'
+bl_0 = ivs->regs[v->src_reg->fld[0].rtuint].iv.class; 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/copy_loop_body/src/unroll.c:2342:7: error: use of undeclared identifier 'tv'
+for ( tv = bl_0->giv; tv; tv = tv->next_iv ) 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/copy_loop_body/src/unroll.c:2342:23: error: use of undeclared identifier 'tv'
+for ( tv = bl_0->giv; tv; tv = tv->next_iv ) 
+                      ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/copy_loop_body/src/unroll.c:2342:27: error: use of undeclared identifier 'tv'
+for ( tv = bl_0->giv; tv; tv = tv->next_iv ) 
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/copy_loop_body/src/unroll.c:2342:32: error: use of undeclared identifier 'tv'
+for ( tv = bl_0->giv; tv; tv = tv->next_iv ) 
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/copy_loop_body/src/unroll.c:2344:6: error: use of undeclared identifier 'tv'
+if ( tv->giv_type == DEST_ADDR && tv->same == v && *tv->location == tv->dest_reg ) 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/copy_loop_body/src/unroll.c:2344:35: error: use of undeclared identifier 'tv'
+if ( tv->giv_type == DEST_ADDR && tv->same == v && *tv->location == tv->dest_reg ) 
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/copy_loop_body/src/unroll.c:2344:47: error: use of undeclared identifier 'v'
+if ( tv->giv_type == DEST_ADDR && tv->same == v && *tv->location == tv->dest_reg ) 
+                                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/copy_loop_body/src/unroll.c:2344:53: error: use of undeclared identifier 'tv'
+if ( tv->giv_type == DEST_ADDR && tv->same == v && *tv->location == tv->dest_reg ) 
+                                                    ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/copy_loop_body/src/unroll.c:2344:69: error: use of undeclared identifier 'tv'
+if ( tv->giv_type == DEST_ADDR && tv->same == v && *tv->location == tv->dest_reg ) 
+                                                                    ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/copy_loop_body/src/unroll.c:2347:6: error: use of undeclared identifier 'tv'
+if ( tv->mult_val != v->mult_val ) 
+     ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/copy_loop_body/src/obj/unroll.o] Error 1

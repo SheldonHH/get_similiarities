@@ -1,0 +1,17 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/etarsingle/src/real.c:1772:10: error: conflicting types for 'etarsingle'
+__int64  etarsingle( realvaluetype r) 
+         ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/etarsingle/src/real.h:165:13: note: previous declaration is here
+extern long etarsingle          PARAMS ((REAL_VALUE_TYPE));
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/etarsingle/src/real.c:1791:6: error: use of undeclared identifier 'rndprc'
+v2 = rndprc; 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/etarsingle/src/real.c:1792:1: error: use of undeclared identifier 'rndprc'
+rndprc = 24; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/etarsingle/src/real.c:1794:1: error: use of undeclared identifier 'rndprc'
+rndprc = v2; 
+^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/etarsingle/src/obj/real.o] Error 1

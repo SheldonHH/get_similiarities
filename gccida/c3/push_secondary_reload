@@ -1,0 +1,89 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/push_secondary_reload/src/reload.c:755:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class reload_class, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/push_secondary_reload/src/reload.c:756:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode reload_mode, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/push_secondary_reload/src/reload.c:757:1: error: must use 'enum' tag to refer to type 'reload_type'
+reload_type type, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/push_secondary_reload/src/reload.c:758:1: error: must use 'enum' tag to refer to type 'insn_code'
+insn_code *picode) 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/push_secondary_reload/src/reload.c:760:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v8; // r12d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/push_secondary_reload/src/reload.c:761:1: error: must use 'enum' tag to refer to type 'reload_type'
+reload_type v9; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/push_secondary_reload/src/reload.c:768:1: error: must use 'enum' tag to refer to type 'insn_code'
+insn_code v16; // ecx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/push_secondary_reload/src/reload.c:774:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class v22; // r13d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/push_secondary_reload/src/reload.c:780:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v28; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/push_secondary_reload/src/reload.c:781:1: error: must use 'enum' tag to refer to type 'insn_code'
+insn_code v29; // r15d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/push_secondary_reload/src/reload.c:798:1: error: must use 'enum' tag to refer to type 'insn_code'
+insn_code *v46; // rbp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/push_secondary_reload/src/reload.c:802:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v52; // [rsp+1Ch] [rbp-4Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/push_secondary_reload/src/reload.c:803:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v53; // [rsp+1Ch] [rbp-4Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/push_secondary_reload/src/reload.c:804:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class c2; // [rsp+20h] [rbp-48h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/push_secondary_reload/src/reload.c:856:13: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+predicate = insn_data_0[v15].operand->predicate; 
+            ^~~~~~~~~~~
+            insn_data
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/push_secondary_reload/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/push_secondary_reload/src/reload.c:859:23: error: use of undeclared identifier 'machine_mode'
+v18 = predicate( x, ( machine_mode)v11); 
+                      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/push_secondary_reload/src/reload.c:879:11: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+operand = insn_data_0[v16].operand; 
+          ^~~~~~~~~~~
+          insn_data
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/push_secondary_reload/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/push_secondary_reload/src/reload.c:954:28: error: use of undeclared identifier 'reg_class'; did you mean 'regclass'?
+if ( reg_class_subset_p( ( reg_class)c1, ( reg_class)v26) ) 
+                           ^~~~~~~~~
+                           regclass
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/push_secondary_reload/src/rtl.h:1970:13: note: 'regclass' declared here
+extern void regclass                    PARAMS ((rtx, int, FILE *));
+            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/push_secondary_reload/src/reload.c:954:38: error: expected ')'
+if ( reg_class_subset_p( ( reg_class)c1, ( reg_class)v26) ) 
+                                     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/push_secondary_reload/src/reload.c:954:24: note: to match this '('
+if ( reg_class_subset_p( ( reg_class)c1, ( reg_class)v26) ) 
+                       ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/push_secondary_reload/src/obj/reload.o] Error 1

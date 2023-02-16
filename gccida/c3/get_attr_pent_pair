@@ -1,0 +1,116 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_attr_pent_pair/src/insn-attrtab.c:18839:1: error: must use 'enum' tag to refer to type 'attr_pent_pair'
+attr_pent_pair  get_attr_pent_pair( rtx insn) 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_attr_pent_pair/src/insn-attrtab.c:18842:1: error: must use 'enum' tag to refer to type 'attr_pent_pair'
+attr_pent_pair v3; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_attr_pent_pair/src/insn-attrtab.c:18846:1: error: must use 'enum' tag to refer to type 'attr_imm_disp'
+attr_imm_disp attr_imm_disp; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_attr_pent_pair/src/insn-attrtab.c:18852:1: error: must use 'enum' tag to refer to type 'attr_type'
+attr_type attr_type; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_attr_pent_pair/src/insn-attrtab.c:18857:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v18; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_attr_pent_pair/src/insn-attrtab.c:18864:1: error: must use 'enum' tag to refer to type 'attr_type'
+attr_type v26; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_attr_pent_pair/src/insn-attrtab.c:18852:11: note: enum 'attr_type' is hidden by a non-type declaration of 'attr_type' here
+attr_type attr_type; // eax 
+          ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_attr_pent_pair/src/insn-attrtab.c:18881:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v24 = (  struct rtx_def *)insn[2]; 
+                          ^~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_attr_pent_pair/src/insn-attrtab.c:18883:29: error: too many arguments provided to function-like macro invocation
+fatal_insn_not_found( insn, "insn-attrtab.c", 19258, "get_attr_pent_pair"); 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_attr_pent_pair/src/toplev.h:52:9: note: macro 'fatal_insn_not_found' defined here
+#define fatal_insn_not_found(insn) \
+        ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_attr_pent_pair/src/insn-attrtab.c:18883:1: error: use of undeclared identifier 'fatal_insn_not_found'; did you mean '_fatal_insn_not_found'?
+fatal_insn_not_found( insn, "insn-attrtab.c", 19258, "get_attr_pent_pair"); 
+^~~~~~~~~~~~~~~~~~~~
+_fatal_insn_not_found
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_attr_pent_pair/src/toplev.h:40:13: note: '_fatal_insn_not_found' declared here
+extern void _fatal_insn_not_found       PARAMS ((struct rtx_def *,
+            ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_attr_pent_pair/src/insn-attrtab.c:19022:6: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+v8 = recog_data_0.operand[1]; 
+     ^~~~~~~~~~~~
+     recog_data
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_attr_pent_pair/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_attr_pent_pair/src/insn-attrtab.c:19029:6: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+v8 = recog_data_0.operand[0]; 
+     ^~~~~~~~~~~~
+     recog_data
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_attr_pent_pair/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_attr_pent_pair/src/insn-attrtab.c:19073:24: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( symbolic_operand( recog_data_0.operand[1], SImode) 
+                       ^~~~~~~~~~~~
+                       recog_data
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_attr_pent_pair/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_attr_pent_pair/src/insn-attrtab.c:19074:47: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+&& ( !( _DWORD)flag_pic || !symbolic_operand( recog_data_0.operand[1], SImode)) ) 
+                                              ^~~~~~~~~~~~
+                                              recog_data
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_attr_pent_pair/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_attr_pent_pair/src/insn-attrtab.c:19084:22: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+v5 = memory_operand( recog_data_0.operand[1], VOIDmode) != 0; 
+                     ^~~~~~~~~~~~
+                     recog_data
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_attr_pent_pair/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_attr_pent_pair/src/insn-attrtab.c:19093:71: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( ( unsigned int)( which_alternative - 2) <= 2 && aligned_operand( recog_data_0.operand[1], HImode) ) 
+                                                                      ^~~~~~~~~~~~
+                                                                      recog_data
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_attr_pent_pair/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_attr_pent_pair/src/insn-attrtab.c:19168:22: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( q_regs_operand( recog_data_0.operand[0], QImode) ) 
+                     ^~~~~~~~~~~~
+                     recog_data
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_attr_pent_pair/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_attr_pent_pair/src/insn-attrtab.c:19191:24: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( symbolic_operand( recog_data_0.operand[1], DImode) 
+                       ^~~~~~~~~~~~
+                       recog_data
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_attr_pent_pair/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_attr_pent_pair/src/insn-attrtab.c:19192:47: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+&& ( !( _DWORD)flag_pic || !symbolic_operand( recog_data_0.operand[1], DImode)) ) 
+                                              ^~~~~~~~~~~~
+                                              recog_data
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_attr_pent_pair/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_attr_pent_pair/src/insn-attrtab.c:19206:23: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( !memory_operand( recog_data_0.operand[1], VOIDmode) ) 
+                      ^~~~~~~~~~~~
+                      recog_data
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_attr_pent_pair/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/get_attr_pent_pair/src/obj/insn-attrtab.o] Error 1

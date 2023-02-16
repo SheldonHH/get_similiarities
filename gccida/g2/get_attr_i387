@@ -1,0 +1,46 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/get_attr_i387/src/insn-attrtab.c:13664:26: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v3 = (  struct rtx_def *)insn[2]; 
+                         ^~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/get_attr_i387/src/insn-attrtab.c:13666:29: error: too many arguments provided to function-like macro invocation
+fatal_insn_not_found( insn, "insn-attrtab.c", 13438, "get_attr_i387"); 
+                            ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/get_attr_i387/src/toplev.h:52:9: note: macro 'fatal_insn_not_found' defined here
+#define fatal_insn_not_found(insn) \
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/get_attr_i387/src/insn-attrtab.c:13666:1: error: use of undeclared identifier 'fatal_insn_not_found'; did you mean '_fatal_insn_not_found'?
+fatal_insn_not_found( insn, "insn-attrtab.c", 13438, "get_attr_i387"); 
+^~~~~~~~~~~~~~~~~~~~
+_fatal_insn_not_found
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/get_attr_i387/src/toplev.h:40:13: note: '_fatal_insn_not_found' declared here
+extern void _fatal_insn_not_found       PARAMS ((struct rtx_def *,
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/get_attr_i387/src/insn-attrtab.c:13806:21: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( mult_operator( recog_data_0.operand[3], SFmode) ) 
+                    ^~~~~~~~~~~~
+                    recog_data
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/get_attr_i387/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/get_attr_i387/src/insn-attrtab.c:13825:21: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( mult_operator( recog_data_0.operand[3], DFmode) ) 
+                    ^~~~~~~~~~~~
+                    recog_data
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/get_attr_i387/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/get_attr_i387/src/insn-attrtab.c:13840:58: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( get_attr_type( insn) != TYPE_FOP && !mult_operator( recog_data_0.operand[3], XFmode) ) 
+                                                         ^~~~~~~~~~~~
+                                                         recog_data
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/get_attr_i387/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/get_attr_i387/src/insn-attrtab.c:13851:58: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( get_attr_type( insn) != TYPE_FOP && !mult_operator( recog_data_0.operand[3], TFmode) ) 
+                                                         ^~~~~~~~~~~~
+                                                         recog_data
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/get_attr_i387/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/get_attr_i387/src/obj/insn-attrtab.o] Error 1

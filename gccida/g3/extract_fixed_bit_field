@@ -1,0 +1,80 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/extract_fixed_bit_field/src/expmed.c:2033:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode tmode, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/extract_fixed_bit_field/src/expmed.c:2052:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode best_mode; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/extract_fixed_bit_field/src/expmed.c:2053:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v24; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/extract_fixed_bit_field/src/expmed.c:2059:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v30; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/extract_fixed_bit_field/src/expmed.c:2067:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v38; // rcx 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/extract_fixed_bit_field/src/expmed.c:2071:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v42; // rcx 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/extract_fixed_bit_field/src/expmed.c:2093:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v20 = ( __int64)op0[1]; 
+                ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/extract_fixed_bit_field/src/expmed.c:2097:74: error: invalid suffix 'xmode' on integer constant
+best_mode = get_best_mode( bitsize, bitpos + 8 * offset, v22, *(short *)0xmode, ( *( ( _BYTE *)op0 + 3) & 8) != 0); 
+                                                                         ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/extract_fixed_bit_field/src/expmed.c:2127:20: error: expected expression
+v42 = ( tree_node *)target; 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/extract_fixed_bit_field/src/expmed.c:2127:9: error: use of undeclared identifier 'tree_node'
+v42 = ( tree_node *)target; 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/extract_fixed_bit_field/src/expmed.c:2130:25: error: use of undeclared identifier 'tree_code'; did you mean 'tree_cons'?
+v43 = expand_shift_0( ( tree_code)v15, ( machine_mode)v11, v41, v42, ( rtx)1, v46); 
+                        ^~~~~~~~~
+                        tree_cons
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/extract_fixed_bit_field/src/tree.h:2477:13: note: 'tree_cons' declared here
+extern tree tree_cons                   PARAMS ((tree, tree, tree));
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/extract_fixed_bit_field/src/expmed.c:2130:35: error: expected ')'
+v43 = expand_shift_0( ( tree_code)v15, ( machine_mode)v11, v41, v42, ( rtx)1, v46); 
+                                  ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/extract_fixed_bit_field/src/expmed.c:2130:21: note: to match this '('
+v43 = expand_shift_0( ( tree_code)v15, ( machine_mode)v11, v41, v42, ( rtx)1, v46); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/extract_fixed_bit_field/src/expmed.c:2163:39: error: use of undeclared identifier 'machine_mode'
+v19 = immed_double_const( v17, v18, ( machine_mode)*( ( unsigned __int8 *)v11 + 2)); 
+                                      ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/extract_fixed_bit_field/src/expmed.c:2165:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)v11 + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/extract_fixed_bit_field/src/expmed.c:2175:20: error: use of undeclared identifier 'machine_mode'
+v29 = force_reg( ( machine_mode)v15, v11); 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/extract_fixed_bit_field/src/expmed.c:2207:20: error: expected expression
+v38 = ( tree_node *)target; 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/extract_fixed_bit_field/src/expmed.c:2207:9: error: use of undeclared identifier 'tree_node'
+v38 = ( tree_node *)target; 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/extract_fixed_bit_field/src/expmed.c:2208:50: error: use of undeclared identifier 'tree_code'; did you mean 'tree_cons'?
+LODWORD( v32) = ( unsigned int)expand_shift_1( ( tree_code)v30, ( machine_mode)v32, v36, v38, ( rtx)1, v37); 
+                                                 ^~~~~~~~~
+                                                 tree_cons
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/extract_fixed_bit_field/src/tree.h:2477:13: note: 'tree_cons' declared here
+extern tree tree_cons                   PARAMS ((tree, tree, tree));
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/extract_fixed_bit_field/src/expmed.c:2208:60: error: expected ')'
+LODWORD( v32) = ( unsigned int)expand_shift_1( ( tree_code)v30, ( machine_mode)v32, v36, v38, ( rtx)1, v37); 
+                                                           ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/extract_fixed_bit_field/src/expmed.c:2208:46: note: to match this '('
+LODWORD( v32) = ( unsigned int)expand_shift_1( ( tree_code)v30, ( machine_mode)v32, v36, v38, ( rtx)1, v37); 
+                                             ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/extract_fixed_bit_field/src/obj/expmed.o] Error 1

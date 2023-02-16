@@ -1,0 +1,23 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/field_byte_offset/src/dwarf2out.c:8880:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *imag; // rbp 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/field_byte_offset/src/dwarf2out.c:8881:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v5; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/field_byte_offset/src/dwarf2out.c:8886:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *elements; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/field_byte_offset/src/dwarf2out.c:8897:30: error: use of undeclared identifier 'a'
+fancy_abort( ( const char *)&a, 8430, "field_byte_offset"); 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/field_byte_offset/src/dwarf2out.c:8903:21: error: expected expression
+imag = ( tree_node *)*( &global_trees + 17); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/field_byte_offset/src/dwarf2out.c:8903:10: error: use of undeclared identifier 'tree_node'
+imag = ( tree_node *)*( &global_trees + 17); 
+         ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/field_byte_offset/src/obj/dwarf2out.o] Error 1

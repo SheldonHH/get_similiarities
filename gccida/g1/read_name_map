@@ -1,0 +1,23 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/read_name_map/src/cppfiles.c:1371:40: error: unknown type name 'cpp_reader_0'; did you mean 'cpp_reader'?
+ struct file_name_map * read_name_map( cpp_reader_0 *pfile, const char *dirname) 
+                                       ^~~~~~~~~~~~
+                                       cpp_reader
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/read_name_map/src/cpplib.h:36:27: note: 'cpp_reader' declared here
+typedef struct cpp_reader cpp_reader;
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/read_name_map/src/cppfiles.c:1421:8: error: use of undeclared identifier 'sch_istable'; did you mean '_sch_istable'?
+if ( ( sch_istable[( unsigned __int8)v9] & 0xC00) == 0 ) 
+       ^~~~~~~~~~~
+       _sch_istable
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/read_name_map/src/safe-ctype.h:72:29: note: '_sch_istable' declared here
+extern const unsigned short _sch_istable[256];
+                            ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/read_name_map/src/cppfiles.c:1426:24: error: use of undeclared identifier 'sch_istable'; did you mean '_sch_istable'?
+while ( v10 != -1 && ( sch_istable[( unsigned __int8)v10] & 1) != 0 ); 
+                       ^~~~~~~~~~~
+                       _sch_istable
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/read_name_map/src/safe-ctype.h:72:29: note: '_sch_istable' declared here
+extern const unsigned short _sch_istable[256];
+                            ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/read_name_map/src/obj/cppfiles.o] Error 1

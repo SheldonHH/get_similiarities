@@ -1,0 +1,49 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/try_tablejump/src/expr.c:11089:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v12; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/try_tablejump/src/expr.c:11090:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v13; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/try_tablejump/src/expr.c:11120:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v16 = (  struct rtx_def *)i[2]; 
+                          ^~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/try_tablejump/src/expr.c:11133:14: error: expected identifier or '('
+ struct expr = cfun->expr; 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/try_tablejump/src/expr.c:11140:14: error: expected identifier or '('
+ struct expr = cfun->expr; 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/try_tablejump/src/expr.c:11148:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)v20, 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/try_tablejump/src/expr.c:11149:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)v21, 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/try_tablejump/src/expr.c:11152:48: error: use of undeclared identifier 'machine_mode'
+emit_cmp_and_jump_insns( v17, v23, GTU, 0LL, ( machine_mode)v20, 1, default_label); 
+                                               ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/try_tablejump/src/expr.c:11157:24: error: use of undeclared identifier 'machine_mode'
+v17 = convert_modes( ( machine_mode)v25, VOIDmode, v17, 1); 
+                       ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/try_tablejump/src/expr.c:11164:31: error: use of undeclared identifier 'machine_mode'
+v28 = gen_rtx_fmt_ee( MULT, ( machine_mode)v26, v17, v27); 
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/try_tablejump/src/expr.c:11165:37: error: use of undeclared identifier 'machine_mode'
+v29 = gen_rtx_fmt_u00( LABEL_REF, ( machine_mode)( ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32), table_label); 
+                                    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/try_tablejump/src/expr.c:11166:31: error: use of undeclared identifier 'machine_mode'
+v30 = gen_rtx_fmt_ee( PLUS, ( machine_mode)v26, v28, v29); 
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/try_tablejump/src/expr.c:11167:33: error: use of undeclared identifier 'machine_mode'
+v31 = memory_address_noforce( ( machine_mode)( ( ( target_flags & 0x2000000) == 0 || ( _DWORD)flag_pic != 0) ^ 5), v30); 
+                                ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/try_tablejump/src/expr.c:11168:22: error: use of undeclared identifier 'machine_mode'
+v32 = gen_reg_rtx( ( machine_mode)( ( ( target_flags & 0x2000000) == 0 || ( _DWORD)flag_pic != 0) ^ 5)); 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/try_tablejump/src/expr.c:11169:22: error: use of undeclared identifier 'machine_mode'
+v33 = gen_rtx_MEM( ( machine_mode)( ( ( target_flags & 0x2000000) == 0 || ( _DWORD)flag_pic != 0) ^ 5), v31); 
+                     ^
+15 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/try_tablejump/src/obj/expr.o] Error 1

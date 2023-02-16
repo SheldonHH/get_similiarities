@@ -1,0 +1,27 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/search_dependence/src/dependence.c:1842:1: error: unknown type name 'dependence_0'; did you mean 'dependence'?
+dependence_0 *dep_ptr; // [rsp+4h] [rbp-18h] 
+^~~~~~~~~~~~
+dependence
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/search_dependence/src/dependence.c:151:3: note: 'dependence' declared here
+} dependence;
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/search_dependence/src/dependence.c:1855:33: error: expected expression
+for ( dep_ptr = ( dependence_0 *)dep_chain->data.l[0]; dep_ptr; dep_ptr = ( dependence_0 *)dep_chain->data.l[v1] ) 
+                                ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/search_dependence/src/dependence.c:1855:19: error: use of undeclared identifier 'dependence_0'
+for ( dep_ptr = ( dependence_0 *)dep_chain->data.l[0]; dep_ptr; dep_ptr = ( dependence_0 *)dep_chain->data.l[v1] ) 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/search_dependence/src/dependence.c:1855:91: error: expected expression
+for ( dep_ptr = ( dependence_0 *)dep_chain->data.l[0]; dep_ptr; dep_ptr = ( dependence_0 *)dep_chain->data.l[v1] ) 
+                                                                                          ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/search_dependence/src/dependence.c:1855:77: error: use of undeclared identifier 'dependence_0'
+for ( dep_ptr = ( dependence_0 *)dep_chain->data.l[0]; dep_ptr; dep_ptr = ( dependence_0 *)dep_chain->data.l[v1] ) 
+                                                                            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/search_dependence/src/dependence.c:1855:92: error: expected ')'
+for ( dep_ptr = ( dependence_0 *)dep_chain->data.l[0]; dep_ptr; dep_ptr = ( dependence_0 *)dep_chain->data.l[v1] ) 
+                                                                                           ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/search_dependence/src/dependence.c:1855:5: note: to match this '('
+for ( dep_ptr = ( dependence_0 *)dep_chain->data.l[0]; dep_ptr; dep_ptr = ( dependence_0 *)dep_chain->data.l[v1] ) 
+    ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/search_dependence/src/obj/dependence.o] Error 1

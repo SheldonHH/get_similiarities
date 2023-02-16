@@ -1,0 +1,87 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_unop/src/optabs.c:2534:19: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  expand_unop( machine_mode mode, optab_0 unoptab, rtx op0, rtx target, int unsignedp) 
+                  ^
+                  enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_unop/src/optabs.c:2534:38: error: unknown type name 'optab_0'; did you mean 'optab'?
+rtx  expand_unop( machine_mode mode, optab_0 unoptab, rtx op0, rtx target, int unsignedp) 
+                                     ^~~~~~~
+                                     optab
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_unop/src/optabs.h:48:5: note: 'optab' declared here
+} * optab;
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_unop/src/optabs.c:2540:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v12; // r13d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_unop/src/optabs.c:2554:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v26; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_unop/src/optabs.c:2555:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v27; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_unop/src/optabs.c:2566:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v38; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_unop/src/optabs.c:2582:1: error: unknown type name 'optab_0'; did you mean 'optab'?
+optab_0 *v54; // rcx 
+^~~~~~~
+optab
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_unop/src/optabs.h:48:5: note: 'optab' declared here
+} * optab;
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_unop/src/optabs.c:2589:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v61; // r13d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_unop/src/optabs.c:2593:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_unop/src/optabs.c:2618:11: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+operand = insn_data_0[insn_code].operand; 
+          ^~~~~~~~~~~
+          insn_data
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_unop/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_unop/src/optabs.c:2634:50: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+v15 = ( *( (  struct rtx_def *(  **)( rtx, rtx))&insn_data_0[0].genfun + ( _QWORD)v70))( v13, v14); 
+                                                 ^~~~~~~~~~~
+                                                 insn_data
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_unop/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_unop/src/optabs.c:2652:7: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v17 = mode_class_0[mode]; 
+      ^~~~~~~~~~~~
+      mode_class
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_unop/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_unop/src/optabs.c:2665:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)i, 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_unop/src/optabs.c:2669:22: error: use of undeclared identifier 'machine_mode'
+v23 = expand_unop( ( machine_mode)v21, unoptab, v22, 0LL, unsignedp); 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_unop/src/optabs.c:2703:33: error: invalid suffix 'xmode' on integer constant
+&& unoptab->handlers[*(short *)0xmode].insn_code != CODE_FOR_nothing ) 
+                                ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_unop/src/optabs.c:2717:18: error: invalid suffix 'xmode' on integer constant
+v61 = *(short *)0xmode; 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_unop/src/optabs.c:2718:31: error: invalid suffix 'orce' on integer constant
+v62 = operand_sub*(short *)0xforce( operand1, v59, mode); 
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_unop/src/optabs.c:2718:7: error: use of undeclared identifier 'operand_sub'
+v62 = operand_sub*(short *)0xforce( operand1, v59, mode); 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_unop/src/optabs.c:2736:61: error: called object type 'const enum mode_class [59]' is not a function or function pointer
+v26 = mode_for_size( 8 * mode_unit_size[mode], ( mode_class)( 2 - ( v17 == 5)), 0); 
+                                               ~~~~~~~~~~~~~^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_unop/src/obj/optabs.o] Error 1

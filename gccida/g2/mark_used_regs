@@ -1,0 +1,69 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/mark_used_regs/src/flow.c:4145:4: error: expected ';' after expression
+rtx v22; // r11 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/mark_used_regs/src/flow.c:4145:5: error: use of undeclared identifier 'v22'
+rtx v22; // r11 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/mark_used_regs/src/flow.c:4148:4: error: expected ';' after expression
+rtx mem_set_list; // r13 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/mark_used_regs/src/flow.c:4148:5: error: use of undeclared identifier 'mem_set_list'; did you mean 'reg_set_last'?
+rtx mem_set_list; // r13 
+    ^~~~~~~~~~~~
+    reg_set_last
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/mark_used_regs/src/rtl.h:1485:12: note: 'reg_set_last' declared here
+extern rtx reg_set_last                 PARAMS ((rtx, rtx));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/mark_used_regs/src/flow.c:4158:6: error: use of undeclared identifier 'listp'
+rtx *listp; // [rsp+10h] [rbp-48h] 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/mark_used_regs/src/flow.c:4159:4: error: expected ';' after expression
+rtx prev; // [rsp+18h] [rbp-40h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/mark_used_regs/src/flow.c:4159:5: error: use of undeclared identifier 'prev'
+rtx prev; // [rsp+18h] [rbp-40h] 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/mark_used_regs/src/flow.c:4162:1: error: use of undeclared identifier 'listp'
+listp = &pbi->mem_set_list; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/mark_used_regs/src/flow.c:4177:11: error: expected ';' after expression
+x = ( rtx)x[1]; 
+          ^
+          ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/mark_used_regs/src/flow.c:4188:22: error: use of undeclared identifier 'listp'
+free_INSN_LIST_list( listp); 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/mark_used_regs/src/flow.c:4192:15: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v14 = ( int *)x[2]; 
+              ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/mark_used_regs/src/flow.c:4201:15: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v14 = ( int *)x[2]; 
+              ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/mark_used_regs/src/flow.c:4210:22: error: use of undeclared identifier 'listp'
+free_INSN_LIST_list( listp); 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/mark_used_regs/src/flow.c:4227:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v18.rtwint = ( __int64)x->fld[0]; 
+                       ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/mark_used_regs/src/flow.c:4231:30: error: expected expression
+mark_used_regs( pbi, *( rtx *)( v18.rtwint + 8), cond, v4); 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/mark_used_regs/src/flow.c:4232:11: error: expected ';' after expression
+x = ( rtx)x[1]; 
+          ^
+          ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/mark_used_regs/src/flow.c:4242:1: error: use of undeclared identifier 'v22'
+v22 = insn; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/mark_used_regs/src/flow.c:4248:36: error: use of undeclared identifier 'v22'
++ mode_size[*( ( unsigned __int8 *)v22 
+                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/mark_used_regs/src/flow.c:4271:16: error: expected expression
+insn = ( rtx)( unsigned int)frame_pointer_needed; 
+               ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/mark_used_regs/src/obj/flow.o] Error 1

@@ -1,0 +1,85 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_shift_const/src/combine.c:9380:35: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx  simplify_shift_const( rtx x, rtx_code code, machine_mode result_mode, rtx varop, int orig_count) 
+                                  ^
+                                  enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_shift_const/src/combine.c:9380:50: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  simplify_shift_const( rtx x, rtx_code code, machine_mode result_mode, rtx varop, int orig_count) 
+                                                 ^
+                                                 enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_shift_const/src/combine.c:9388:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v13; // r14d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_shift_const/src/combine.c:9392:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v17; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_shift_const/src/combine.c:9394:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v19; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_shift_const/src/combine.c:9411:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v36; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_shift_const/src/combine.c:9445:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode shift_mode; // [rsp+Ch] [rbp-8Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_shift_const/src/combine.c:9448:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mask_rtx; // [rsp+20h] [rbp-78h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_shift_const/src/combine.c:9453:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code first_code; // [rsp+2Ch] [rbp-6Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_shift_const/src/combine.c:9454:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code first_codea; // [rsp+2Ch] [rbp-6Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_shift_const/src/combine.c:9459:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code outer_op[15]; // [rsp+5Ch] [rbp-3Ch] BYREF 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_shift_const/src/combine.c:9574:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v20.rtwint = ( __int64)varop->fld[0]; 
+                       ^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_shift_const/src/combine.c:9580:26: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+varop = gen_rtx_fmt_e( ( rtx_code)( ( v13 != ASHIFTRT) + 120), shift_mode, v21); 
+                         ^~~~~~~~
+                         rtx_cost
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_shift_const/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_shift_const/src/combine.c:9580:61: error: too few arguments to function call, expected 2, have 1
+varop = gen_rtx_fmt_e( ( rtx_code)( ( v13 != ASHIFTRT) + 120), shift_mode, v21); 
+                       ~~~~~~~~~~~                          ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_shift_const/src/rtl.h:1787:1: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_shift_const/src/combine.c:9616:26: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+varop = gen_rtx_fmt_e( ( rtx_code)( ( v13 != ASHIFTRT) + 120), shift_mode, v18); 
+                         ^~~~~~~~
+                         rtx_cost
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_shift_const/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_shift_const/src/combine.c:9616:61: error: too few arguments to function call, expected 2, have 1
+varop = gen_rtx_fmt_e( ( rtx_code)( ( v13 != ASHIFTRT) + 120), shift_mode, v18); 
+                       ~~~~~~~~~~~                          ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_shift_const/src/rtl.h:1787:1: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_shift_const/src/combine.c:9622:10: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+&& ( rtx)varop[1] == const_int_rtx[63] 
+         ^~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_shift_const/src/combine.c:9643:15: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+varop = ( rtx)varop[1]; 
+              ^~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_shift_const/src/combine.c:9668:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v59.rtwint = ( __int64)varop->fld[0]; 
+                       ^~~~~~~~~~~~~
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_shift_const/src/obj/combine.o] Error 1

@@ -1,0 +1,79 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/skip_copy_to_return_value/src/sibcall.c:611:4: error: expected ';' after expression
+rtx v5; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/skip_copy_to_return_value/src/sibcall.c:611:5: error: use of undeclared identifier 'v5'
+rtx v5; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/skip_copy_to_return_value/src/sibcall.c:612:4: error: expected ';' after expression
+rtx v6; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/skip_copy_to_return_value/src/sibcall.c:612:5: error: use of undeclared identifier 'v6'
+rtx v6; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/skip_copy_to_return_value/src/sibcall.c:614:4: error: expected ';' after expression
+rtx v9; // [rsp+0h] [rbp-28h] BYREF 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/skip_copy_to_return_value/src/sibcall.c:614:5: error: use of undeclared identifier 'v9'
+rtx v9; // [rsp+0h] [rbp-28h] BYREF 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/skip_copy_to_return_value/src/sibcall.c:615:4: error: expected ';' after expression
+rtx p_hard_return; // [rsp+8h] [rbp-20h] BYREF 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/skip_copy_to_return_value/src/sibcall.c:615:5: error: use of undeclared identifier 'p_hard_return'; did you mean 'expand_return'?
+rtx p_hard_return; // [rsp+8h] [rbp-20h] BYREF 
+    ^~~~~~~~~~~~~
+    expand_return
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/skip_copy_to_return_value/src/tree.h:2785:13: note: 'expand_return' declared here
+extern void expand_return                       PARAMS ((tree));
+            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/skip_copy_to_return_value/src/sibcall.c:617:43: error: expected expression
+if ( !identify_call_return_value( *( rtx *)&orig_insn[2], &p_hard_return, &v9) ) 
+                                          ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/skip_copy_to_return_value/src/sibcall.c:617:60: error: use of undeclared identifier 'p_hard_return'; did you mean 'expand_return'?
+if ( !identify_call_return_value( *( rtx *)&orig_insn[2], &p_hard_return, &v9) ) 
+                                                           ^~~~~~~~~~~~~
+                                                           expand_return
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/skip_copy_to_return_value/src/tree.h:2785:13: note: 'expand_return' declared here
+extern void expand_return                       PARAMS ((tree));
+            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/skip_copy_to_return_value/src/sibcall.c:617:76: error: use of undeclared identifier 'v9'
+if ( !identify_call_return_value( *( rtx *)&orig_insn[2], &p_hard_return, &v9) ) 
+                                                                           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/skip_copy_to_return_value/src/sibcall.c:625:12: error: expected ';' after expression
+v3 = ( rtx)nonnote_insn[2]; 
+           ^
+           ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/skip_copy_to_return_value/src/sibcall.c:627:32: error: expected expression
+v3 = single_set_2( v2, *( rtx *)&v2[2]); 
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/skip_copy_to_return_value/src/sibcall.c:633:42: error: expected ')'
+if ( rtx == return_value_pseudo && ( rtx)v3[1] == v9 ) 
+                                         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/skip_copy_to_return_value/src/sibcall.c:633:4: note: to match this '('
+if ( rtx == return_value_pseudo && ( rtx)v3[1] == v9 ) 
+   ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/skip_copy_to_return_value/src/sibcall.c:639:25: error: use of undeclared identifier 'p_hard_return'
+|| rtx->fld[0].rtint != p_hard_return->fld[0].rtint 
+                        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/skip_copy_to_return_value/src/sibcall.c:642:36: error: expected ')'
+if ( *( _WORD *)rtx != 61 || ( rtx)v3[1] != v9 ) 
+                                   ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/skip_copy_to_return_value/src/sibcall.c:642:4: note: to match this '('
+if ( *( _WORD *)rtx != 61 || ( rtx)v3[1] != v9 ) 
+   ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/skip_copy_to_return_value/src/sibcall.c:644:1: error: use of undeclared identifier 'v5'
+v5 = next_nonnote_insn( v2); 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/skip_copy_to_return_value/src/sibcall.c:645:7: error: use of undeclared identifier 'v5'
+if ( !v5 ) 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/skip_copy_to_return_value/src/sibcall.c:647:6: error: use of undeclared identifier 'v5'
+v2 = v5; 
+     ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/skip_copy_to_return_value/src/obj/sibcall.o] Error 1

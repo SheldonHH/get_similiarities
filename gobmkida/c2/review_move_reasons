@@ -1,0 +1,407 @@
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:3444:10: error: conflicting types for 'review_move_reasons'
+__int64  review_move_reasons( 
+         ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/liberty.h:530:5: note: previous declaration is here
+int review_move_reasons(int *move, float *val, int color,
+    ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:3739:13: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v277 = score.m128_i32[0]; 
+       ~~~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:4510:29: error: use of undeclared identifier 'stones_on_board_stone_count_for_position'
+v143 = *( int *)( ( char *)&stones_on_board_stone_count_for_position + v142); 
+                            ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:4704:6: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+score.m128_i32[0] = v277; 
+~~~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:4705:59: error: invalid conversion between vector type '__m128' (vector of 4 'float' values) and integer type 'unsigned int' of different size
+v163 = value_move_reasons( v161, v156, pure_threat_value, ( __m128)v277, a7); 
+                                                          ^~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:4714:18: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+*( double *)score.m128_u64 = move[v161].randomness_scaling * ( move[v161].random_number * 0.01); 
+            ~~~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:4715:39: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v162 = v166->value + *( double *)score.m128_u64; 
+                                 ~~~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:4796:19: error: expected expression
+v182 = *( _OWORD *)( v173 + 4 * v181 + 10179524); 
+                  ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:4796:11: error: use of undeclared identifier '_OWORD'
+v182 = *( _OWORD *)( v173 + 4 * v181 + 10179524); 
+          ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:4797:12: error: expected expression
+*( _OWORD *)&best_moves[v181 + v173 / 4] = *( _OWORD *)( v173 + 4 * v181 + 10179508); 
+           ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:4797:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&best_moves[v181 + v173 / 4] = *( _OWORD *)( v173 + 4 * v181 + 10179508); 
+   ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:4797:55: error: expected expression
+*( _OWORD *)&best_moves[v181 + v173 / 4] = *( _OWORD *)( v173 + 4 * v181 + 10179508); 
+                                                      ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:4797:47: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&best_moves[v181 + v173 / 4] = *( _OWORD *)( v173 + 4 * v181 + 10179508); 
+                                              ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:4798:12: error: expected expression
+*( _OWORD *)( v173 + 4 * v181 + 10179520) = v182; 
+           ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:4798:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)( v173 + 4 * v181 + 10179520) = v182; 
+   ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:4799:19: error: expected expression
+v183 = *( _OWORD *)( v173 + 4 * v181 + 10179476); 
+                  ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:4799:11: error: use of undeclared identifier '_OWORD'
+v183 = *( _OWORD *)( v173 + 4 * v181 + 10179476); 
+          ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:4800:12: error: expected expression
+*( _OWORD *)&best_move_values[v181 + v173 / 4] = *( _OWORD *)( v173 + 4 * v181 + 10179460); 
+           ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:4800:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&best_move_values[v181 + v173 / 4] = *( _OWORD *)( v173 + 4 * v181 + 10179460); 
+   ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:4800:61: error: expected expression
+*( _OWORD *)&best_move_values[v181 + v173 / 4] = *( _OWORD *)( v173 + 4 * v181 + 10179460); 
+                                                            ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:4800:53: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&best_move_values[v181 + v173 / 4] = *( _OWORD *)( v173 + 4 * v181 + 10179460); 
+                                                    ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:4801:12: error: expected expression
+*( _OWORD *)( v173 + 4 * v181 + 10179472) = v183; 
+           ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:4801:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)( v173 + 4 * v181 + 10179472) = v183; 
+   ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:4802:19: error: expected expression
+v184 = *( _OWORD *)( v173 + 4 * v181 + 10179556); 
+                  ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:4802:11: error: use of undeclared identifier '_OWORD'
+v184 = *( _OWORD *)( v173 + 4 * v181 + 10179556); 
+          ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:4803:12: error: expected expression
+*( _OWORD *)( v173 + 4 * v181 + 10179536) = *( _OWORD *)( v173 + 4 * v181 + 10179540); 
+           ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:4803:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)( v173 + 4 * v181 + 10179536) = *( _OWORD *)( v173 + 4 * v181 + 10179540); 
+   ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:4803:56: error: expected expression
+*( _OWORD *)( v173 + 4 * v181 + 10179536) = *( _OWORD *)( v173 + 4 * v181 + 10179540); 
+                                                       ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:4803:48: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)( v173 + 4 * v181 + 10179536) = *( _OWORD *)( v173 + 4 * v181 + 10179540); 
+                                               ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:4804:12: error: expected expression
+*( _OWORD *)&close_worms[v181 / 4][v173 / 4] = v184; 
+           ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:4804:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&close_worms[v181 / 4][v173 / 4] = v184; 
+   ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:4805:19: error: expected expression
+v171 = *( _OWORD *)( v173 + 4 * v181 + 10179492); 
+                  ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:4805:11: error: use of undeclared identifier '_OWORD'
+v171 = *( _OWORD *)( v173 + 4 * v181 + 10179492); 
+          ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:4807:12: error: expected expression
+*( _OWORD *)( v173 + 4 * v181 + 10179488) = v171; 
+           ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:4807:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)( v173 + 4 * v181 + 10179488) = v171; 
+   ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:4822:19: error: expected expression
+v187 = *( _OWORD *)&best_moves[v186 + 5]; 
+                  ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:4822:11: error: use of undeclared identifier '_OWORD'
+v187 = *( _OWORD *)&best_moves[v186 + 5]; 
+          ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:4823:12: error: expected expression
+*( _OWORD *)&best_moves[v186] = *( _OWORD *)&best_moves[v186 + 1]; 
+           ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:4823:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&best_moves[v186] = *( _OWORD *)&best_moves[v186 + 1]; 
+   ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:4823:44: error: expected expression
+*( _OWORD *)&best_moves[v186] = *( _OWORD *)&best_moves[v186 + 1]; 
+                                           ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:4823:36: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&best_moves[v186] = *( _OWORD *)&best_moves[v186 + 1]; 
+                                   ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:4824:12: error: expected expression
+*( _OWORD *)&best_moves[v186 + 4] = v187; 
+           ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:4824:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&best_moves[v186 + 4] = v187; 
+   ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:4825:19: error: expected expression
+v171 = *( _OWORD *)&best_move_values[v186 + 1]; 
+                  ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:4825:11: error: use of undeclared identifier '_OWORD'
+v171 = *( _OWORD *)&best_move_values[v186 + 1]; 
+          ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:4827:12: error: expected expression
+*( _OWORD *)&best_move_values[v186] = v171; 
+           ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:4827:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&best_move_values[v186] = v171; 
+   ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:4919:6: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+score.m128_u64[0] = 0LL; 
+~~~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:4996:18: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+*( double *)score.m128_u64 = additional_ko_value; 
+            ~~~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5017:18: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+*( double *)score.m128_u64); 
+            ~~~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5075:19: error: expected expression
+v223 = *( _OWORD *)( v214 + 4 * v222 + 10179524); 
+                  ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5075:11: error: use of undeclared identifier '_OWORD'
+v223 = *( _OWORD *)( v214 + 4 * v222 + 10179524); 
+          ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5076:12: error: expected expression
+*( _OWORD *)&best_moves[v222 + v214 / 4] = *( _OWORD *)( v214 + 4 * v222 + 10179508); 
+           ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5076:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&best_moves[v222 + v214 / 4] = *( _OWORD *)( v214 + 4 * v222 + 10179508); 
+   ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5076:55: error: expected expression
+*( _OWORD *)&best_moves[v222 + v214 / 4] = *( _OWORD *)( v214 + 4 * v222 + 10179508); 
+                                                      ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5076:47: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&best_moves[v222 + v214 / 4] = *( _OWORD *)( v214 + 4 * v222 + 10179508); 
+                                              ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5077:12: error: expected expression
+*( _OWORD *)( v214 + 4 * v222 + 10179520) = v223; 
+           ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5077:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)( v214 + 4 * v222 + 10179520) = v223; 
+   ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5078:19: error: expected expression
+v224 = *( _OWORD *)( v214 + 4 * v222 + 10179476); 
+                  ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5078:11: error: use of undeclared identifier '_OWORD'
+v224 = *( _OWORD *)( v214 + 4 * v222 + 10179476); 
+          ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5079:12: error: expected expression
+*( _OWORD *)&best_move_values[v222 + v214 / 4] = *( _OWORD *)( v214 + 4 * v222 + 10179460); 
+           ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5079:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&best_move_values[v222 + v214 / 4] = *( _OWORD *)( v214 + 4 * v222 + 10179460); 
+   ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5079:61: error: expected expression
+*( _OWORD *)&best_move_values[v222 + v214 / 4] = *( _OWORD *)( v214 + 4 * v222 + 10179460); 
+                                                            ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5079:53: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&best_move_values[v222 + v214 / 4] = *( _OWORD *)( v214 + 4 * v222 + 10179460); 
+                                                    ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5080:12: error: expected expression
+*( _OWORD *)( v214 + 4 * v222 + 10179472) = v224; 
+           ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5080:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)( v214 + 4 * v222 + 10179472) = v224; 
+   ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5081:19: error: expected expression
+v225 = *( _OWORD *)( v214 + 4 * v222 + 10179556); 
+                  ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5081:11: error: use of undeclared identifier '_OWORD'
+v225 = *( _OWORD *)( v214 + 4 * v222 + 10179556); 
+          ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5082:12: error: expected expression
+*( _OWORD *)( v214 + 4 * v222 + 10179536) = *( _OWORD *)( v214 + 4 * v222 + 10179540); 
+           ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5082:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)( v214 + 4 * v222 + 10179536) = *( _OWORD *)( v214 + 4 * v222 + 10179540); 
+   ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5082:56: error: expected expression
+*( _OWORD *)( v214 + 4 * v222 + 10179536) = *( _OWORD *)( v214 + 4 * v222 + 10179540); 
+                                                       ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5082:48: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)( v214 + 4 * v222 + 10179536) = *( _OWORD *)( v214 + 4 * v222 + 10179540); 
+                                               ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5083:12: error: expected expression
+*( _OWORD *)&close_worms[v222 / 4][v214 / 4] = v225; 
+           ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5083:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&close_worms[v222 / 4][v214 / 4] = v225; 
+   ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5085:12: error: expected expression
+*( _OWORD *)( v214 + 4 * v222 + 10179488) = *( _OWORD *)( v214 + 4 * v222 + 10179492); 
+           ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5085:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)( v214 + 4 * v222 + 10179488) = *( _OWORD *)( v214 + 4 * v222 + 10179492); 
+   ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5085:56: error: expected expression
+*( _OWORD *)( v214 + 4 * v222 + 10179488) = *( _OWORD *)( v214 + 4 * v222 + 10179492); 
+                                                       ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5085:48: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)( v214 + 4 * v222 + 10179488) = *( _OWORD *)( v214 + 4 * v222 + 10179492); 
+                                               ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5100:19: error: expected expression
+v228 = *( _OWORD *)&best_moves[v227 + 5]; 
+                  ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5100:11: error: use of undeclared identifier '_OWORD'
+v228 = *( _OWORD *)&best_moves[v227 + 5]; 
+          ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5101:12: error: expected expression
+*( _OWORD *)&best_moves[v227] = *( _OWORD *)&best_moves[v227 + 1]; 
+           ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5101:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&best_moves[v227] = *( _OWORD *)&best_moves[v227 + 1]; 
+   ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5101:44: error: expected expression
+*( _OWORD *)&best_moves[v227] = *( _OWORD *)&best_moves[v227 + 1]; 
+                                           ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5101:36: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&best_moves[v227] = *( _OWORD *)&best_moves[v227 + 1]; 
+                                   ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5102:12: error: expected expression
+*( _OWORD *)&best_moves[v227 + 4] = v228; 
+           ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5102:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&best_moves[v227 + 4] = v228; 
+   ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5104:12: error: expected expression
+*( _OWORD *)&best_move_values[v227] = *( _OWORD *)&best_move_values[v227 + 1]; 
+           ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5104:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&best_move_values[v227] = *( _OWORD *)&best_move_values[v227 + 1]; 
+   ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5104:50: error: expected expression
+*( _OWORD *)&best_move_values[v227] = *( _OWORD *)&best_move_values[v227 + 1]; 
+                                                 ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5104:42: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&best_move_values[v227] = *( _OWORD *)&best_move_values[v227 + 1]; 
+                                         ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5141:30: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+if ( *( float *)&v201 > score.m128_f32[0] ) 
+                        ~~~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5152:30: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+if ( *( float *)&v201 > score.m128_f32[0] ) 
+                        ~~~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5157:18: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+*( double *)score.m128_u64 = v201; 
+            ~~~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5199:19: error: expected expression
+v241 = *( _OWORD *)( v232 + 4 * v240 + 10179524); 
+                  ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5199:11: error: use of undeclared identifier '_OWORD'
+v241 = *( _OWORD *)( v232 + 4 * v240 + 10179524); 
+          ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5200:12: error: expected expression
+*( _OWORD *)&best_moves[v240 + v232 / 4] = *( _OWORD *)( v232 + 4 * v240 + 10179508); 
+           ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5200:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&best_moves[v240 + v232 / 4] = *( _OWORD *)( v232 + 4 * v240 + 10179508); 
+   ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5200:55: error: expected expression
+*( _OWORD *)&best_moves[v240 + v232 / 4] = *( _OWORD *)( v232 + 4 * v240 + 10179508); 
+                                                      ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5200:47: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&best_moves[v240 + v232 / 4] = *( _OWORD *)( v232 + 4 * v240 + 10179508); 
+                                              ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5201:12: error: expected expression
+*( _OWORD *)( v232 + 4 * v240 + 10179520) = v241; 
+           ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5201:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)( v232 + 4 * v240 + 10179520) = v241; 
+   ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5202:19: error: expected expression
+v242 = *( _OWORD *)( v232 + 4 * v240 + 10179476); 
+                  ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5202:11: error: use of undeclared identifier '_OWORD'
+v242 = *( _OWORD *)( v232 + 4 * v240 + 10179476); 
+          ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5203:12: error: expected expression
+*( _OWORD *)&best_move_values[v240 + v232 / 4] = *( _OWORD *)( v232 + 4 * v240 + 10179460); 
+           ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5203:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&best_move_values[v240 + v232 / 4] = *( _OWORD *)( v232 + 4 * v240 + 10179460); 
+   ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5203:61: error: expected expression
+*( _OWORD *)&best_move_values[v240 + v232 / 4] = *( _OWORD *)( v232 + 4 * v240 + 10179460); 
+                                                            ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5203:53: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&best_move_values[v240 + v232 / 4] = *( _OWORD *)( v232 + 4 * v240 + 10179460); 
+                                                    ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5204:12: error: expected expression
+*( _OWORD *)( v232 + 4 * v240 + 10179472) = v242; 
+           ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5204:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)( v232 + 4 * v240 + 10179472) = v242; 
+   ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5205:19: error: expected expression
+v243 = *( _OWORD *)( v232 + 4 * v240 + 10179556); 
+                  ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5205:11: error: use of undeclared identifier '_OWORD'
+v243 = *( _OWORD *)( v232 + 4 * v240 + 10179556); 
+          ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5206:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)( v232 + 4 * v240 + 10179536) = *( _OWORD *)( v232 + 4 * v240 + 10179540); 
+   ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5206:12: error: expected expression
+*( _OWORD *)( v232 + 4 * v240 + 10179536) = *( _OWORD *)( v232 + 4 * v240 + 10179540); 
+           ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5206:48: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)( v232 + 4 * v240 + 10179536) = *( _OWORD *)( v232 + 4 * v240 + 10179540); 
+                                               ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5206:56: error: expected expression
+*( _OWORD *)( v232 + 4 * v240 + 10179536) = *( _OWORD *)( v232 + 4 * v240 + 10179540); 
+                                                       ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5207:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&close_worms[v240 / 4][v232 / 4] = v243; 
+   ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5207:12: error: expected expression
+*( _OWORD *)&close_worms[v240 / 4][v232 / 4] = v243; 
+           ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5209:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)( v232 + 4 * v240 + 10179488) = *( _OWORD *)( v232 + 4 * v240 + 10179492); 
+   ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5209:12: error: expected expression
+*( _OWORD *)( v232 + 4 * v240 + 10179488) = *( _OWORD *)( v232 + 4 * v240 + 10179492); 
+           ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5209:48: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)( v232 + 4 * v240 + 10179488) = *( _OWORD *)( v232 + 4 * v240 + 10179492); 
+                                               ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5209:56: error: expected expression
+*( _OWORD *)( v232 + 4 * v240 + 10179488) = *( _OWORD *)( v232 + 4 * v240 + 10179492); 
+                                                       ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5224:11: error: use of undeclared identifier '_OWORD'
+v246 = *( _OWORD *)&best_moves[v245 + 5]; 
+          ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5224:19: error: expected expression
+v246 = *( _OWORD *)&best_moves[v245 + 5]; 
+                  ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5225:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&best_moves[v245] = *( _OWORD *)&best_moves[v245 + 1]; 
+   ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5225:12: error: expected expression
+*( _OWORD *)&best_moves[v245] = *( _OWORD *)&best_moves[v245 + 1]; 
+           ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5225:36: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&best_moves[v245] = *( _OWORD *)&best_moves[v245 + 1]; 
+                                   ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5225:44: error: expected expression
+*( _OWORD *)&best_moves[v245] = *( _OWORD *)&best_moves[v245 + 1]; 
+                                           ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5226:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&best_moves[v245 + 4] = v246; 
+   ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5226:12: error: expected expression
+*( _OWORD *)&best_moves[v245 + 4] = v246; 
+           ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5228:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&best_move_values[v245] = *( _OWORD *)&best_move_values[v245 + 1]; 
+   ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5228:12: error: expected expression
+*( _OWORD *)&best_move_values[v245] = *( _OWORD *)&best_move_values[v245 + 1]; 
+           ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5228:42: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&best_move_values[v245] = *( _OWORD *)&best_move_values[v245 + 1]; 
+                                         ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5228:50: error: expected expression
+*( _OWORD *)&best_move_values[v245] = *( _OWORD *)&best_move_values[v245 + 1]; 
+                                                 ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/engine/value_moves.c:5263:35: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+record_top_move( v168, v249, score.m128_f32[0]); 
+                             ~~~~~^~~~~~~~~
+134 errors generated.
+make: *** [/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/review_move_reasons/src/obj/1/value_moves.o] Error 1

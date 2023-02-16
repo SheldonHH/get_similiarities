@@ -1,0 +1,95 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/try_combine/src/combine.c:2083:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode split_mode; // [rsp+ECh] [rbp-174h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/try_combine/src/combine.c:2091:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode compare_mode; // [rsp+124h] [rbp-13Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/try_combine/src/combine.c:2112:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code split_code; // [rsp+1C4h] [rbp-9Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/try_combine/src/combine.c:2155:1: error: use of undeclared identifier 'undobuf_0'; did you mean 'undobuf'?
+undobuf_0.other_insn = 0LL; 
+^~~~~~~~~
+undobuf
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/try_combine/src/combine.c:334:23: note: 'undobuf' declared here
+static struct undobuf undobuf;
+                      ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/try_combine/src/combine.c:2182:12: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+p2 = ( rtx)i2a[2]; 
+           ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/try_combine/src/combine.c:2221:55: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v8 = **( _WORD **)&i2a[2] == 47 ? (  struct rtx_def *)i2a[2] : single_set_2( i2a, *( rtx *)&i2a[2]); 
+                                                      ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/try_combine/src/combine.c:2228:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& mode_class_0[*( unsigned __int8 *)( temp->fld[0].rtwint + 2)] == MODE_INT ) 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/try_combine/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/try_combine/src/combine.c:2235:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& mode_class_0[*( unsigned __int8 *)( *( _QWORD *)( *( _QWORD *)&i3[2] + 8LL) + 2LL)] == MODE_INT ) 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/try_combine/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/try_combine/src/combine.c:2310:37: error: use of undeclared identifier 'machine_mode'
+v19 = immed_double_const( lo, hi, ( machine_mode)*( unsigned __int8 *)( temp->fld[0].rtwint + 2)); 
+                                    ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/try_combine/src/combine.c:2312:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+newpat = ( rtx)i2a[2]; 
+               ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/try_combine/src/combine.c:2322:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& mode_class_0[*( unsigned __int8 *)( *( _QWORD *)( *( _QWORD *)( *( _QWORD *)( *( _QWORD *)&i2a[2] + 8LL) + 8LL) + 8LL) 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/try_combine/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/try_combine/src/combine.c:2397:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v26 = (  struct rtx_def *)i2a[2]; 
+                          ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/try_combine/src/combine.c:2432:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+newpat = ( rtx)i3[2]; 
+               ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/try_combine/src/combine.c:2435:7: error: use of undeclared identifier 'undobuf_0'; did you mean 'undobuf'?
+if ( !undobuf_0.other_insn ) 
+      ^~~~~~~~~
+      undobuf
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/try_combine/src/combine.c:334:23: note: 'undobuf' declared here
+static struct undobuf undobuf;
+                      ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/try_combine/src/combine.c:2437:52: error: use of undeclared identifier 'undobuf_0'; did you mean 'undobuf'?
+cc_use = find_single_use( newpat->fld[0].rtx, i3, &undobuf_0.other_insn); 
+                                                   ^~~~~~~~~
+                                                   undobuf
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/try_combine/src/combine.c:334:23: note: 'undobuf' declared here
+static struct undobuf undobuf;
+                      ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/try_combine/src/combine.c:2440:32: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+compare_mode = ix86_cc_mode( ( rtx_code)*( _WORD *)*cc_use, i2src, const_int_rtx[64]); 
+                               ^~~~~~~~
+                               rtx_cost
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/try_combine/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/try_combine/src/combine.c:2440:41: error: invalid operands to binary expression ('int (rtx, enum rtx_code)' (aka 'int (struct rtx_def *, enum rtx_code)') and 'uint16 *' (aka 'unsigned short *'))
+compare_mode = ix86_cc_mode( ( rtx_code)*( _WORD *)*cc_use, i2src, const_int_rtx[64]); 
+                             ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/try_combine/src/combine.c:2450:1: error: use of undeclared identifier 'undobuf_0'; did you mean 'undobuf'?
+undobuf_0.other_insn = 0LL; 
+^~~~~~~~~
+undobuf
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/try_combine/src/combine.c:334:23: note: 'undobuf' declared here
+static struct undobuf undobuf;
+                      ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/try_combine/src/combine.c:2521:13: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v35 = ( rtx)i1[2]; 
+            ^~~~~
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/try_combine/src/obj/combine.o] Error 1

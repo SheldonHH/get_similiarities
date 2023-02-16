@@ -1,0 +1,72 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_equiv_reg/src/reload.c:6783:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class a3, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_equiv_reg/src/reload.c:6787:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode) 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_equiv_reg/src/reload.c:6818:4: error: expected ';' after expression
+rtx v37; // r14 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_equiv_reg/src/reload.c:6818:5: error: use of undeclared identifier 'v37'
+rtx v37; // r14 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_equiv_reg/src/reload.c:6823:4: error: expected ';' after expression
+rtx v42; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_equiv_reg/src/reload.c:6823:5: error: use of undeclared identifier 'v42'
+rtx v42; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_equiv_reg/src/reload.c:6903:4: error: expected ';' after expression
+rtx x; // [rsp+28h] [rbp-90h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_equiv_reg/src/reload.c:6903:5: error: use of undeclared identifier 'x'
+rtx x; // [rsp+28h] [rbp-90h] 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_equiv_reg/src/reload.c:6935:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v13 = ( __int64)insn[1]; 
+                ^~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_equiv_reg/src/reload.c:6944:33: error: must use 'enum' tag to refer to type 'mode_class'
+|| flag_float_store && *( const mode_class *)( ( char *)mode_class_0 + ( ( v8 >> 14) & 0x3FC)) == MODE_FLOAT ) 
+                                ^
+                                enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_equiv_reg/src/machmode.h:52:30: note: enum 'mode_class' is hidden by a non-type declaration of 'mode_class' here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_equiv_reg/src/reload.c:6944:57: error: use of undeclared identifier 'mode_class_0'
+|| flag_float_store && *( const mode_class *)( ( char *)mode_class_0 + ( ( v8 >> 14) & 0x3FC)) == MODE_FLOAT ) 
+                                                        ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_equiv_reg/src/reload.c:6956:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v13 = ( __int64)insn[1]; 
+                ^~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_equiv_reg/src/reload.c:6997:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v13 = ( __int64)insn[1]; 
+                ^~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_equiv_reg/src/reload.c:7015:15: error: expected expression
+v15 = *( rtx *)( v13 + 32); 
+              ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_equiv_reg/src/reload.c:7017:27: error: expected ')'
+v15 = single_set_2( ( rtx)v13, *( rtx *)( v13 + 32)); 
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_equiv_reg/src/reload.c:7017:19: note: to match this '('
+v15 = single_set_2( ( rtx)v13, *( rtx *)( v13 + 32)); 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_equiv_reg/src/reload.c:7022:27: error: expected expression
+if ( true_regnum( *( rtx *)&v15[1]) == v119 ) 
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_equiv_reg/src/reload.c:7024:1: error: use of undeclared identifier 'x'
+x = v15->fld[0].rtx; 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_equiv_reg/src/reload.c:7025:20: error: use of undeclared identifier 'x'
+v16 = true_regnum( x); 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_equiv_reg/src/reload.c:7031:1: error: use of undeclared identifier 'x'
+x = ( rtx)v15[1]; 
+^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_equiv_reg/src/obj/reload.o] Error 1

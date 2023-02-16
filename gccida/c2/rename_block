@@ -1,0 +1,63 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/rename_block/src/ssa.c:1468:6: error: use of undeclared identifier 'v36'
+rtx *v36; // rcx 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/rename_block/src/ssa.c:1470:6: error: use of undeclared identifier 'reg_loc'; did you mean 'realloc'?
+rtx *reg_loc; // rax 
+     ^~~~~~~
+     realloc
+/usr/include/malloc.h:49:14: note: 'realloc' declared here
+extern void *realloc (void *__ptr, size_t __size)
+             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/rename_block/src/ssa.c:1470:5: error: invalid operands to binary expression ('rtx' (aka 'struct rtx_def *') and 'void *(void *, unsigned long)')
+rtx *reg_loc; // rax 
+~~~ ^~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/rename_block/src/ssa.c:1490:27: error: expected ';' after expression
+data.current_insn = ( rtx)v6; 
+                          ^
+                          ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/rename_block/src/ssa.c:1492:13: error: expected expression
+v7 = ( rtx *)( v6 + 16); 
+            ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/rename_block/src/ssa.c:1493:22: error: expected expression
+for_each_rtx( ( rtx *)v6 + 4, rename_insn_1, &data); 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/rename_block/src/ssa.c:1494:22: error: expected expression
+for_each_rtx( ( rtx *)v6 + 7, rename_insn_1, &data); 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/rename_block/src/ssa.c:1533:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v15 = ( __int64)rtx[2]; 
+                ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/rename_block/src/ssa.c:1629:1: error: use of undeclared identifier 'reg_loc'
+reg_loc = done_renames->reg_loc; 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/rename_block/src/ssa.c:1630:8: error: use of undeclared identifier 'reg_loc'; did you mean 'realloc'?
+v39 = *reg_loc; 
+       ^~~~~~~
+       realloc
+/usr/include/malloc.h:49:14: note: 'realloc' declared here
+extern void *realloc (void *__ptr, size_t __size)
+             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/rename_block/src/ssa.c:1631:7: error: use of undeclared identifier 'reg_loc'; did you mean 'realloc'?
+if ( *reg_loc != done_renames->old_reg ) 
+      ^~~~~~~
+      realloc
+/usr/include/malloc.h:49:14: note: 'realloc' declared here
+extern void *realloc (void *__ptr, size_t __size)
+             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/rename_block/src/ssa.c:1633:2: error: use of undeclared identifier 'reg_loc'
+*reg_loc = done_renames->new_reg; 
+ ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/rename_block/src/ssa.c:1636:14: error: expected expression
+v36 = ( rtx *)( ( ( *v39 >> 13) & 0x7F8) + 472 * v40 + 10534240); 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/rename_block/src/ssa.c:1636:1: error: use of undeclared identifier 'v36'
+v36 = ( rtx *)( ( ( *v39 >> 13) & 0x7F8) + 472 * v40 + 10534240); 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/rename_block/src/ssa.c:1638:1: error: use of undeclared identifier 'v36'
+v36 = &ssa_rename_to_pseudo[( unsigned int)( v40 - 53)]; 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/rename_block/src/ssa.c:1639:2: error: use of undeclared identifier 'v36'
+*v36 = done_renames->prev_reg; 
+ ^
+16 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/rename_block/src/obj/ssa.o] Error 1

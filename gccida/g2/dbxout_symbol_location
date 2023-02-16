@@ -1,0 +1,45 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/dbxout_symbol_location/src/dbxout.c:2607:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v20; // r12 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/dbxout_symbol_location/src/dbxout.c:2617:4: error: expected ';' after expression
+rtx xp; // [rsp+8h] [rbp-30h] BYREF 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/dbxout_symbol_location/src/dbxout.c:2617:5: error: use of undeclared identifier 'xp'
+rtx xp; // [rsp+8h] [rbp-30h] BYREF 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/dbxout_symbol_location/src/dbxout.c:2622:1: error: use of undeclared identifier 'xp'
+xp = home; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/dbxout_symbol_location/src/dbxout.c:2647:22: error: use of undeclared identifier 'xp'
+rtx = alter_subreg( &xp); 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/dbxout_symbol_location/src/dbxout.c:2649:1: error: use of undeclared identifier 'xp'
+xp = rtx; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/dbxout_symbol_location/src/dbxout.c:2655:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v16.rtwint = ( __int64)rtx->fld[0]; 
+                       ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/dbxout_symbol_location/src/dbxout.c:2666:26: error: expected ';' after expression
+current_sym_addr = ( rtx)v16.rtwint; 
+                         ^
+                         ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/dbxout_symbol_location/src/dbxout.c:2670:27: error: use of undeclared identifier 'lang_hooks_0'; did you mean 'lang_hooks'?
+if ( !initial || !strcmp( lang_hooks_0.name, "GNU C++") && initial == ( tree)global_trees ) 
+                          ^~~~~~~~~~~~
+                          lang_hooks
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/dbxout_symbol_location/src/langhooks.h:168:32: note: 'lang_hooks' declared here
+extern const struct lang_hooks lang_hooks;
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/dbxout_symbol_location/src/dbxout.c:2682:23: error: expected identifier or '('
+ struct pool_constant = get_pool_constant( current_sym_addr); 
+                      ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/dbxout_symbol_location/src/dbxout.c:2748:7: error: expected expression
+if (  struct suffix ) 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/dbxout_symbol_location/src/dbxout.c:2775:27: error: use of undeclared identifier 'xp'
+v21 = (  struct rtx_def *)xp[1]; 
+                          ^
+12 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/dbxout_symbol_location/src/obj/dbxout.o] Error 1

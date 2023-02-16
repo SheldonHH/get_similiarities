@@ -1,0 +1,47 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cpp_handle_option/src/cppinit.c:1806:25: error: unknown type name 'cpp_reader_0'; did you mean 'cpp_reader'?
+int  cpp_handle_option( cpp_reader_0 *pfile, int argc, char **argv, int ignore) 
+                        ^~~~~~~~~~~~
+                        cpp_reader
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cpp_handle_option/src/cpplib.h:36:27: note: 'cpp_reader' declared here
+typedef struct cpp_reader cpp_reader;
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cpp_handle_option/src/cppinit.c:1820:1: error: must use 'enum' tag to refer to type 'opt_code'
+opt_code opt_code; // [rsp+6Ch] [rbp-34h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cpp_handle_option/src/cppinit.c:1826:1: error: unknown type name 'cpp_reader_0'; did you mean 'cpp_reader'?
+cpp_reader_0 *pfilea; // [rsp+90h] [rbp-10h] 
+^~~~~~~~~~~~
+cpp_reader
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cpp_handle_option/src/cpplib.h:36:27: note: 'cpp_reader' declared here
+typedef struct cpp_reader cpp_reader;
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cpp_handle_option/src/cppinit.c:1837:13: error: expected identifier or '('
+ struct arg = 0LL; 
+            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cpp_handle_option/src/cppinit.c:1843:18: error: expected ')'
+|| (  struct arg = &argva[i][cl_options[opt_index].opt_len + 1], *arg) 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cpp_handle_option/src/cppinit.c:1843:4: note: to match this '('
+|| (  struct arg = &argva[i][cl_options[opt_index].opt_len + 1], *arg) 
+   ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cpp_handle_option/src/cppinit.c:1844:1: error: expected expression
+|| opt_code == OPT_W 
+^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cpp_handle_option/src/cppinit.c:1845:25: error: expected ')'
+|| ( ++i, (  struct arg = argva[i]) != 0LL) ) 
+                        ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cpp_handle_option/src/cppinit.c:1845:11: note: to match this '('
+|| ( ++i, (  struct arg = argva[i]) != 0LL) ) 
+          ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cpp_handle_option/src/cppinit.c:1845:37: error: expected expression
+|| ( ++i, (  struct arg = argva[i]) != 0LL) ) 
+                                    ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cpp_handle_option/src/cppinit.c:1873:31: error: expected expression
+new_pending_directive( pend,  struct arg + 1, ( cl_directive_handler)cpp_unassert); 
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cpp_handle_option/src/cppinit.c:2067:35: error: use of undeclared identifier 'arg0'
+pfilea->opts.user_label_prefix = &arg0; 
+                                  ^
+10 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cpp_handle_option/src/obj/cppinit.o] Error 1

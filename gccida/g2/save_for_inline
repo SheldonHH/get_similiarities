@@ -1,0 +1,19 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/save_for_inline/src/integrate.c:900:1: error: must use 'enum' tag to refer to type 'debug_info_type'
+debug_info_type v7; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/save_for_inline/src/integrate.c:915:1: error: must use 'enum' tag to refer to type 'debug_info_type'
+debug_info_type v22; // ecx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/save_for_inline/src/integrate.c:962:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v15.rtwint = ( __int64)rtl->fld[0]; 
+                       ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/save_for_inline/src/integrate.c:980:23: error: use of undeclared identifier 'machine_mode'
+v17 = gen_realpart( ( machine_mode)*( unsigned __int8 *)( rtl->fld[0].rtwint + 2), rtl); 
+                      ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/save_for_inline/src/integrate.c:981:23: error: use of undeclared identifier 'machine_mode'
+v18 = gen_imagpart( ( machine_mode)*( ( unsigned __int8 *)v17 + 2), rtl); 
+                      ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/save_for_inline/src/obj/integrate.o] Error 1

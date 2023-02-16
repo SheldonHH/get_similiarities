@@ -1,0 +1,26 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/lang_dependent_init/src/toplev.c:5575:9: error: use of undeclared identifier 'lang_hooks_0'; did you mean 'lang_hooks'?
+namea = lang_hooks_0.init( name); 
+        ^~~~~~~~~~~~
+        lang_hooks
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/lang_dependent_init/src/langhooks.h:168:32: note: 'lang_hooks' declared here
+extern const struct lang_hooks lang_hooks;
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/lang_dependent_init/src/toplev.c:5575:26: error: called object type '<dependent type>' is not a function or function pointer
+namea = lang_hooks_0.init( name); 
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/lang_dependent_init/src/toplev.c:5585:15: error: use of undeclared identifier 'TV_SYMOUT_0'; did you mean 'TV_SYMOUT'?
+timevar_push( TV_SYMOUT_0); 
+              ^~~~~~~~~~~
+              TV_SYMOUT
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/lang_dependent_init/src/timevar.def:86:13: note: 'TV_SYMOUT' declared here
+DEFTIMEVAR (TV_SYMOUT                , "symout")
+            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/lang_dependent_init/src/toplev.c:5589:14: error: use of undeclared identifier 'TV_SYMOUT_0'; did you mean 'TV_SYMOUT'?
+timevar_pop( TV_SYMOUT_0); 
+             ^~~~~~~~~~~
+             TV_SYMOUT
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/lang_dependent_init/src/timevar.def:86:13: note: 'TV_SYMOUT' declared here
+DEFTIMEVAR (TV_SYMOUT                , "symout")
+            ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/lang_dependent_init/src/obj/toplev.o] Error 1

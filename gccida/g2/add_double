@@ -1,0 +1,14 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/add_double/src/fold-const.c:738:43: error: expected expression
+*hv = ( __PAIR128__( h2, l2) + *( _OWORD *)&l1) >> 64; 
+                                          ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/add_double/src/fold-const.c:738:35: error: use of undeclared identifier '_OWORD'
+*hv = ( __PAIR128__( h2, l2) + *( _OWORD *)&l1) >> 64; 
+                                  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/add_double/src/fold-const.c:739:50: error: expected expression
+return ( ( ( ( __PAIR128__( h2, l2) + *( _OWORD *)&l1) >> 64) ^ v6) & ~( v6 ^ h2)) >> 63; 
+                                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/add_double/src/fold-const.c:739:42: error: use of undeclared identifier '_OWORD'
+return ( ( ( ( __PAIR128__( h2, l2) + *( _OWORD *)&l1) >> 64) ^ v6) & ~( v6 ^ h2)) >> 63; 
+                                         ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/add_double/src/obj/fold-const.o] Error 1

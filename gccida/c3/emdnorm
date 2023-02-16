@@ -1,0 +1,60 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emdnorm/src/real.c:3083:12: error: expected expression
+*( _OWORD *)rbit = 0LL; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emdnorm/src/real.c:3083:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)rbit = 0LL; 
+   ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emdnorm/src/real.c:3240:5: error: assigning to '__m128i' (vector of 2 'long long' values) from incompatible type 'long long'
+v42 = 0LL; 
+    ^ ~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emdnorm/src/real.c:3250:44: error: use of undeclared identifier 'xmm'
+si128 = _mm_load_si128( ( const __m128i *)&xmm*(short *)0x71CED0); 
+                                           ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emdnorm/src/real.c:3252:5: error: assigning to '__m128i' (vector of 2 'long long' values) from incompatible type 'long long'
+v37 = 0LL; 
+    ^ ~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emdnorm/src/real.c:3258:88: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'long long' of different size
+_mm_andnot_si128( _mm_cmpeq_epi16( _mm_loadu_si128( ( const __m128i *)&v32[v34 - 24]), ( __m128i)0LL), si128), 
+                                                                                       ^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emdnorm/src/real.c:3261:88: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'long long' of different size
+_mm_andnot_si128( _mm_cmpeq_epi16( _mm_loadu_si128( ( const __m128i *)&v32[v34 - 16]), ( __m128i)0LL), si128), 
+                                                                                       ^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emdnorm/src/real.c:3263:12: error: expected expression
+*( _OWORD *)&v32[v34 - 24] = 0LL; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emdnorm/src/real.c:3263:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&v32[v34 - 24] = 0LL; 
+   ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emdnorm/src/real.c:3264:12: error: expected expression
+*( _OWORD *)&v32[v34 - 16] = 0LL; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emdnorm/src/real.c:3264:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&v32[v34 - 16] = 0LL; 
+   ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emdnorm/src/real.c:3265:61: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'long long' of different size
+v30 = _mm_or_si128( _mm_andnot_si128( _mm_cmpeq_epi16( v38, ( __m128i)0LL), si128), v40); 
+                                                            ^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emdnorm/src/real.c:3266:61: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'long long' of different size
+v42 = _mm_or_si128( _mm_andnot_si128( _mm_cmpeq_epi16( v39, ( __m128i)0LL), si128), v41); 
+                                                            ^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emdnorm/src/real.c:3267:12: error: expected expression
+*( _OWORD *)&v32[v34 - 8] = 0LL; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emdnorm/src/real.c:3267:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&v32[v34 - 8] = 0LL; 
+   ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emdnorm/src/real.c:3268:12: error: expected expression
+*( _OWORD *)&v32[v34] = 0LL; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emdnorm/src/real.c:3268:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&v32[v34] = 0LL; 
+   ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emdnorm/src/real.c:3281:12: error: expected expression
+*( _OWORD *)&s[v43 + 1] = 0LL; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emdnorm/src/real.c:3281:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&s[v43 + 1] = 0LL; 
+   ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emdnorm/src/obj/real.o] Error 1

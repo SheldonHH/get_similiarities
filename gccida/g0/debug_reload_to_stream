@@ -1,0 +1,23 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/debug_reload_to_stream/src/reload.c:7376:22: error: use of undeclared identifier 'reg_class_names_0'; did you mean 'reg_class_names'?
+fprintf( fa, "%s, ", reg_class_names_0[rld[r].class]); 
+                     ^~~~~~~~~~~~~~~~~
+                     reg_class_names
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/debug_reload_to_stream/src/reload.c:6884:27: note: 'reg_class_names' declared here
+static const char * const reg_class_names[] = REG_CLASS_NAMES;
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/debug_reload_to_stream/src/reload.c:7414:51: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+fprintf( fa, "%ssecondary_in_icode = %s", "\n\t", insn_data_0[rld[r].secondary_in_icode].name); 
+                                                  ^~~~~~~~~~~
+                                                  insn_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/debug_reload_to_stream/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/debug_reload_to_stream/src/reload.c:7418:53: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+fprintf( fa, "%ssecondary_out_icode = %s", prefixa, insn_data_0[rld[r].secondary_out_icode].name); 
+                                                    ^~~~~~~~~~~
+                                                    insn_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/debug_reload_to_stream/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/debug_reload_to_stream/src/obj/reload.o] Error 1

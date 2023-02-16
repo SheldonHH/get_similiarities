@@ -1,0 +1,42 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/subst_stack_regs_pat/src/reg-stack.c:1931:19: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+if ( pat == ( rtx)insn[2] ) 
+                  ^~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/subst_stack_regs_pat/src/reg-stack.c:1940:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& ( mode_class_0[*( ( unsigned __int8 *)*dest + 2)] == MODE_COMPLEX_INT 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/subst_stack_regs_pat/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/subst_stack_regs_pat/src/reg-stack.c:1941:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| mode_class_0[*( ( unsigned __int8 *)*dest + 2)] == MODE_COMPLEX_FLOAT) 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/subst_stack_regs_pat/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/subst_stack_regs_pat/src/reg-stack.c:1991:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+pat_src = ( rtx)pat[1]; 
+                ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/subst_stack_regs_pat/src/reg-stack.c:2004:13: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v15 = ( int)pat_src[1]; 
+            ^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/subst_stack_regs_pat/src/reg-stack.c:2008:45: error: invalid operands to binary expression ('struct rtx_def' and 'int')
+if ( *( _WORD *)pat_src != 42 || pat_src[1] != 9 ) 
+                                 ~~~~~~~~~~ ^  ~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/subst_stack_regs_pat/src/reg-stack.c:2077:11: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+else if ( mode_class_0[*( ( unsigned __int8 *)*dest + 2)] == MODE_COMPLEX_INT 
+          ^~~~~~~~~~~~
+          mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/subst_stack_regs_pat/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/subst_stack_regs_pat/src/reg-stack.c:2078:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| mode_class_0[*( ( unsigned __int8 *)*dest + 2)] == MODE_COMPLEX_FLOAT ) 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/subst_stack_regs_pat/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/subst_stack_regs_pat/src/obj/reg-stack.o] Error 1

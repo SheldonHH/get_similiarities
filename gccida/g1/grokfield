@@ -1,0 +1,15 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/grokfield/src/c-decl.c:6054:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v7; // rbx 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/grokfield/src/c-decl.c:6058:19: error: expected expression
+v7 = ( tree_node *)( ( unsigned __int64)width | ( unsigned __int64)declarator); 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/grokfield/src/c-decl.c:6058:8: error: use of undeclared identifier 'tree_node'
+v7 = ( tree_node *)( ( unsigned __int64)width | ( unsigned __int64)declarator); 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/grokfield/src/c-decl.c:6063:47: error: use of undeclared identifier 'decl_context'
+v7 = grokdeclarator( declarator, declspecs, ( decl_context)v9, 0); 
+                                              ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/grokfield/src/obj/c-decl.o] Error 1

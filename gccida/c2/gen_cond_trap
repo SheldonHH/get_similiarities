@@ -1,0 +1,16 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_cond_trap/src/optabs.c:5578:21: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx  gen_cond_trap( rtx_code code, rtx op1, rtx op2, rtx tcode) 
+                    ^
+                    enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_cond_trap/src/optabs.c:5594:6: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+v9 = insn_data_0[insn_code].genfun( op1, op2); 
+     ^~~~~~~~~~~
+     insn_data
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_cond_trap/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_cond_trap/src/optabs.c:5594:35: error: called object type '<dependent type>' is not a function or function pointer
+v9 = insn_data_0[insn_code].genfun( op1, op2); 
+                                  ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_cond_trap/src/obj/optabs.o] Error 1

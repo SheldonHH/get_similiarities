@@ -1,0 +1,82 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/num_sign_bit_copies/src/combine.c:8858:43: error: must use 'enum' tag to refer to type 'machine_mode'
+unsigned int  num_sign_bit_copies( rtx x, machine_mode mode) 
+                                          ^
+                                          enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/num_sign_bit_copies/src/combine.c:8860:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v2; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/num_sign_bit_copies/src/combine.c:8910:4: error: expected ';' after expression
+rtx last_value; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/num_sign_bit_copies/src/combine.c:8910:5: error: use of undeclared identifier 'last_value'
+rtx last_value; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/num_sign_bit_copies/src/combine.c:8921:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v7 = mode_class_0[v2]; 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/num_sign_bit_copies/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/num_sign_bit_copies/src/combine.c:8928:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v9 = mode_class_0[v5]; 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/num_sign_bit_copies/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/num_sign_bit_copies/src/combine.c:8971:1: error: use of undeclared identifier 'last_value'
+last_value = get_last_value( x); 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/num_sign_bit_copies/src/combine.c:8972:6: error: use of undeclared identifier 'last_value'; did you mean '_hex_value'?
+if ( last_value ) 
+     ^~~~~~~~~~
+     _hex_value
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/num_sign_bit_copies/src/libiberty.h:251:19: note: '_hex_value' declared here
+extern const char _hex_value[_hex_array_size];
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/num_sign_bit_copies/src/combine.c:8974:7: error: use of undeclared identifier 'last_value'; did you mean '_hex_value'?
+v45 = last_value; 
+      ^~~~~~~~~~
+      _hex_value
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/num_sign_bit_copies/src/libiberty.h:251:19: note: '_hex_value' declared here
+extern const char _hex_value[_hex_array_size];
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/num_sign_bit_copies/src/combine.c:9015:36: error: expected expression
+v21 = num_sign_bit_copies( *( rtx *)&x[1], v2); 
+                                   ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/num_sign_bit_copies/src/combine.c:9022:10: error: expected ')'
+&& ( rtx)x[1] == const_int_rtx[63] 
+         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/num_sign_bit_copies/src/combine.c:9020:4: note: to match this '('
+if ( ( unsigned __int16)v3 == 75 
+   ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/num_sign_bit_copies/src/combine.c:9037:36: error: expected expression
+v25 = num_sign_bit_copies( *( rtx *)&x[1], v2); 
+                                   ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/num_sign_bit_copies/src/combine.c:9071:42: error: expected expression
+v40 = v39 + num_sign_bit_copies( *( rtx *)&x[1], v2) - v13; 
+                                         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/num_sign_bit_copies/src/combine.c:9076:69: error: expected expression
+&& ( ( 1LL << ( ( unsigned __int8)v13 - 1)) & nonzero_bits( *( rtx *)&x[1], v2)) != 0 ) 
+                                                                    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/num_sign_bit_copies/src/combine.c:9089:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v42 = (  struct rtx_def *)x[1]; 
+                          ^~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/num_sign_bit_copies/src/combine.c:9095:34: error: expected expression
+|| ( v43 = nonzero_bits( *( rtx *)&x[1], v2), _bittest64( ( const __int64 *)&v43, ( unsigned __int8)( v13 - 1))) ) 
+                                 ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/num_sign_bit_copies/src/combine.c:9110:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v45 = (  struct rtx_def *)x[1]; 
+                          ^~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/num_sign_bit_copies/src/combine.c:9120:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v22 = (  struct rtx_def *)x[1]; 
+                          ^~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/num_sign_bit_copies/src/combine.c:9131:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v46 = ( __int64)x[1]; 
+                ^~~~
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/num_sign_bit_copies/src/obj/combine.o] Error 1

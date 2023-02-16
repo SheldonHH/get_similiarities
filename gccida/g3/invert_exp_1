@@ -1,0 +1,39 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/invert_exp_1/src/jump.c:2566:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v5; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/invert_exp_1/src/jump.c:2575:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v14; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/invert_exp_1/src/jump.c:2579:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v1 = ( __int64)insn[2]; 
+               ^~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/invert_exp_1/src/jump.c:2605:22: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v12 = *( ( _DWORD *)&mode_class_0 + v11); 
+                     ^~~~~~~~~~~~
+                     mode_class
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/invert_exp_1/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/invert_exp_1/src/jump.c:2647:24: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+reverse_condition_0( ( rtx_code)v13); 
+                       ^~~~~~~~
+                       rtx_cost
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/invert_exp_1/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/invert_exp_1/src/jump.c:2647:33: error: expected ')'
+reverse_condition_0( ( rtx_code)v13); 
+                                ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/invert_exp_1/src/jump.c:2647:20: note: to match this '('
+reverse_condition_0( ( rtx_code)v13); 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/invert_exp_1/src/jump.c:2648:7: error: use of undeclared identifier 'CSWTCH_103'
+v14 = CSWTCH_103[v13]; 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/invert_exp_1/src/jump.c:2653:29: error: use of undeclared identifier 'machine_mode'
+v8 = gen_rtx_fmt_ee( v14, ( machine_mode)*( ( unsigned __int8 *)v4 + 2), ( rtx)v9, ( rtx)v10); 
+                            ^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/invert_exp_1/src/obj/jump.o] Error 1

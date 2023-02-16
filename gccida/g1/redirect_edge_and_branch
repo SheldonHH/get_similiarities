@@ -1,0 +1,11 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/redirect_edge_and_branch/src/cfgrtl.c:1361:49: error: use of undeclared identifier 'machine_mode'
+*( _QWORD *)v25 = gen_rtx_fmt_u00( LABEL_REF, ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), v21); 
+                                                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/redirect_edge_and_branch/src/cfgrtl.c:1374:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v27 = ( __int64)v26[1]; 
+                ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/redirect_edge_and_branch/src/cfgrtl.c:1442:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v19.rtwint = ( __int64)v18[1].fld[0]; 
+                       ^~~~~~~~~~~~~
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/redirect_edge_and_branch/src/obj/cfgrtl.o] Error 1

@@ -1,0 +1,20 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_split_1010/src/insn-emit.c:10035:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v2.rtwint = ( __int64)operands[1]->fld[0]; 
+                      ^~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_split_1010/src/insn-emit.c:10036:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v3.rtwint = ( __int64)operands[2]->fld[0]; 
+                      ^~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_split_1010/src/insn-emit.c:10041:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v7.rtwint = ( __int64)rtwint->fld[0]; 
+                      ^~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_split_1010/src/insn-emit.c:10057:37: error: use of undeclared identifier 'machine_mode'
+v6 = adjust_address_1( *operands, ( machine_mode)v5, 0LL, 1, 1); 
+                                    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_split_1010/src/insn-emit.c:10078:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)v5); 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_split_1010/src/insn-emit.c:10080:30: error: use of undeclared identifier 'machine_mode'
+v12 = gen_rtx_fmt_ee( AND, ( machine_mode)v5, rtwint, v11); 
+                             ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/gen_split_1010/src/obj/insn-emit.o] Error 1

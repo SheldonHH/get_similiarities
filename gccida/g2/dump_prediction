@@ -1,0 +1,13 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/dump_prediction/src/predict.c:648:24: error: must use 'enum' tag to refer to type 'br_predictor'
+void  dump_prediction( br_predictor predictor, int probability, basic_block bb, int used) 
+                       ^
+                       enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/dump_prediction/src/predict.c:665:1: error: use of undeclared identifier 'predictor_info_0'; did you mean 'predictor_info'?
+predictor_info_0[predictor].name, 
+^~~~~~~~~~~~~~~~
+predictor_info
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/dump_prediction/src/predict.c:86:36: note: 'predictor_info' declared here
+static const struct predictor_info predictor_info[]= {
+                                   ^
+2 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/dump_prediction/src/obj/predict.o] Error 1

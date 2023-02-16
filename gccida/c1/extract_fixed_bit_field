@@ -1,0 +1,42 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/extract_fixed_bit_field/src/expmed.c:2033:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode tmode, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/extract_fixed_bit_field/src/expmed.c:2048:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode best_mode; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/extract_fixed_bit_field/src/expmed.c:2054:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v22; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/extract_fixed_bit_field/src/expmed.c:2056:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v24; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/extract_fixed_bit_field/src/expmed.c:2061:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v29; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/extract_fixed_bit_field/src/expmed.c:2067:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v35; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/extract_fixed_bit_field/src/expmed.c:2068:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v36; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/extract_fixed_bit_field/src/expmed.c:2083:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v14 = ( __int64)op0[1]; 
+                ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/extract_fixed_bit_field/src/expmed.c:2088:58: error: invalid suffix 'xmode' on integer constant
+best_mode = get_best_mode( bitsize, v13, v15, *(short *)0xmode, ( *( _DWORD *)op0 >> 27) & 1); 
+                                                         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/extract_fixed_bit_field/src/expmed.c:2106:18: error: use of undeclared identifier 'machine_mode'
+x = force_reg( ( machine_mode)*( ( unsigned __int8 *)v9 + 2), v9); 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/extract_fixed_bit_field/src/expmed.c:2160:35: error: use of undeclared identifier 'machine_mode'
+v9 = expand_shift( RSHIFT_EXPR, ( machine_mode)v20, v9, v22, v23, 1); 
+                                  ^
+11 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/extract_fixed_bit_field/src/obj/expmed.o] Error 1

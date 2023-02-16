@@ -1,0 +1,11 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/ix86_emit_save_regs_using_mov/src/i386.c:4658:21: error: use of undeclared identifier 'machine_mode'
+v5 = gen_rtx_MEM( ( machine_mode)( ( ( v3 & 0x2000000 | 0x500000000uLL) - 1) >> 32), pointer); 
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/ix86_emit_save_regs_using_mov/src/i386.c:4659:30: error: use of undeclared identifier 'machine_mode'
+v6 = adjust_address_1( v5, ( machine_mode)( ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32), offset, 1, 1); 
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/ix86_emit_save_regs_using_mov/src/i386.c:4660:21: error: use of undeclared identifier 'machine_mode'
+v7 = gen_rtx_REG( ( machine_mode)( ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32), i); 
+                    ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/ix86_emit_save_regs_using_mov/src/obj/i386.o] Error 1

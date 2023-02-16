@@ -1,0 +1,64 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/output_verbatim/src/diagnostic.c:1801:23: error: unknown type name 'output_buffer_0'; did you mean 'output_buffer'?
+void output_verbatim( output_buffer_0 *buffer, const char *msgid, ...) 
+                      ^~~~~~~~~~~~~~~
+                      output_buffer
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/output_verbatim/src/diagnostic.h:28:30: note: 'output_buffer' declared here
+typedef struct output_buffer output_buffer;
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/output_verbatim/src/diagnostic.c:1817:18: error: expected expression
+v13 = *( _OWORD *)&buffer->state.diagnostic_count[4]; 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/output_verbatim/src/diagnostic.c:1817:10: error: use of undeclared identifier '_OWORD'
+v13 = *( _OWORD *)&buffer->state.diagnostic_count[4]; 
+         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/output_verbatim/src/diagnostic.c:1818:17: error: expected expression
+v2 = *( _OWORD *)&buffer->state.prefix; 
+                ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/output_verbatim/src/diagnostic.c:1818:9: error: use of undeclared identifier '_OWORD'
+v2 = *( _OWORD *)&buffer->state.prefix; 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/output_verbatim/src/diagnostic.c:1819:17: error: expected expression
+v3 = *( _OWORD *)&buffer->state.indent_skip; 
+                ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/output_verbatim/src/diagnostic.c:1819:9: error: use of undeclared identifier '_OWORD'
+v3 = *( _OWORD *)&buffer->state.indent_skip; 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/output_verbatim/src/diagnostic.c:1820:17: error: expected expression
+v4 = *( _OWORD *)&buffer->state.cursor; 
+                ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/output_verbatim/src/diagnostic.c:1820:9: error: use of undeclared identifier '_OWORD'
+v4 = *( _OWORD *)&buffer->state.cursor; 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/output_verbatim/src/diagnostic.c:1821:18: error: expected expression
+v12 = *( _OWORD *)buffer->state.diagnostic_count; 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/output_verbatim/src/diagnostic.c:1821:10: error: use of undeclared identifier '_OWORD'
+v12 = *( _OWORD *)buffer->state.diagnostic_count; 
+         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/output_verbatim/src/diagnostic.c:1825:12: error: expected expression
+*( _OWORD *)&buffer->state.prefix = 0LL; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/output_verbatim/src/diagnostic.c:1825:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&buffer->state.prefix = 0LL; 
+   ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/output_verbatim/src/diagnostic.c:1828:42: error: expected expression
+buffer->state.format_args = ( va_list_0 *)va; 
+                                         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/output_verbatim/src/diagnostic.c:1828:31: error: use of undeclared identifier 'va_list_0'
+buffer->state.format_args = ( va_list_0 *)va; 
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/output_verbatim/src/diagnostic.c:1830:12: error: expected expression
+*( _OWORD *)&buffer->state.diagnostic_count[4] = v13; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/output_verbatim/src/diagnostic.c:1830:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&buffer->state.diagnostic_count[4] = v13; 
+   ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/output_verbatim/src/diagnostic.c:1834:12: error: expected expression
+*( _OWORD *)buffer->state.diagnostic_count = v12; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/output_verbatim/src/diagnostic.c:1834:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)buffer->state.diagnostic_count = v12; 
+   ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/output_verbatim/src/obj/diagnostic.o] Error 1

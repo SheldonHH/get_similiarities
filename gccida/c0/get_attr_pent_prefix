@@ -1,0 +1,33 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/get_attr_pent_prefix/src/insn-attrtab.c:19729:1: error: must use 'enum' tag to refer to type 'attr_pent_prefix'
+attr_pent_prefix  get_attr_pent_prefix( rtx insn) 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/get_attr_pent_prefix/src/insn-attrtab.c:19742:29: error: too many arguments provided to function-like macro invocation
+fatal_insn_not_found( insn, "insn-attrtab.c", 19810, "get_attr_pent_prefix"); 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/get_attr_pent_prefix/src/toplev.h:52:9: note: macro 'fatal_insn_not_found' defined here
+#define fatal_insn_not_found(insn) \
+        ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/get_attr_pent_prefix/src/insn-attrtab.c:19742:1: error: use of undeclared identifier 'fatal_insn_not_found'; did you mean '_fatal_insn_not_found'?
+fatal_insn_not_found( insn, "insn-attrtab.c", 19810, "get_attr_pent_prefix"); 
+^~~~~~~~~~~~~~~~~~~~
+_fatal_insn_not_found
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/get_attr_pent_prefix/src/toplev.h:40:13: note: '_fatal_insn_not_found' declared here
+extern void _fatal_insn_not_found       PARAMS ((struct rtx_def *,
+            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/get_attr_pent_prefix/src/insn-attrtab.c:20050:22: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+|| !aligned_operand( recog_data_0.operand[1], HImode)) 
+                     ^~~~~~~~~~~~
+                     recog_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/get_attr_pent_prefix/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/get_attr_pent_prefix/src/insn-attrtab.c:20070:23: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+v3 = !q_regs_operand( recog_data_0.operand[0], QImode) || ( ( 1 << ix86_cpu) & x86_movx) != 0; 
+                      ^~~~~~~~~~~~
+                      recog_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/get_attr_pent_prefix/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/get_attr_pent_prefix/src/obj/insn-attrtab.o] Error 1

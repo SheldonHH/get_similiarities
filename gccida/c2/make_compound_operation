@@ -1,0 +1,83 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/make_compound_operation/src/combine.c:6799:38: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx  make_compound_operation( rtx x, rtx_code in_code) 
+                                     ^
+                                     enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/make_compound_operation/src/combine.c:6802:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v4; // r14d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/make_compound_operation/src/combine.c:6814:4: error: expected ';' after expression
+rtx compound_operation; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/make_compound_operation/src/combine.c:6814:5: error: use of undeclared identifier 'compound_operation'; did you mean 'make_compound_operation'?
+rtx compound_operation; // rax 
+    ^~~~~~~~~~~~~~~~~~
+    make_compound_operation
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/make_compound_operation/src/combine.c:6799:6: note: 'make_compound_operation' declared here
+rtx  make_compound_operation( rtx x, rtx_code in_code) 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/make_compound_operation/src/combine.c:6817:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v19; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/make_compound_operation/src/combine.c:6824:4: error: expected ';' after expression
+rtx v27; // rbp 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/make_compound_operation/src/combine.c:6824:5: error: use of undeclared identifier 'v27'
+rtx v27; // rbp 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/make_compound_operation/src/combine.c:6825:4: error: expected ';' after expression
+rtx v28; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/make_compound_operation/src/combine.c:6825:5: error: use of undeclared identifier 'v28'
+rtx v28; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/make_compound_operation/src/combine.c:6826:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v29; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/make_compound_operation/src/combine.c:6827:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v30; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/make_compound_operation/src/combine.c:6843:6: error: use of undeclared identifier 'rtwint'; did you mean 'rewind'?
+rtx *rtwint; // rcx 
+     ^~~~~~
+     rewind
+/usr/include/stdio.h:694:13: note: 'rewind' declared here
+extern void rewind (FILE *__stream);
+            ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/make_compound_operation/src/combine.c:6843:5: error: invalid operands to binary expression ('struct rtx_def *' and 'void (FILE *)' (aka 'void (struct _IO_FILE *)'))
+rtx *rtwint; // rcx 
+~~~ ^~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/make_compound_operation/src/combine.c:6845:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v48; // r14d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/make_compound_operation/src/combine.c:6853:4: error: expected ';' after expression
+rtx v56; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/make_compound_operation/src/combine.c:6853:5: error: use of undeclared identifier 'v56'
+rtx v56; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/make_compound_operation/src/combine.c:6859:6: error: use of undeclared identifier 'v62'
+rtx *v62; // rbp 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/make_compound_operation/src/combine.c:6870:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code in_codea; // [rsp+4h] [rbp-44h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/make_compound_operation/src/combine.c:6872:6: error: use of undeclared identifier 'intoa'; did you mean 'into'?
+rtx *intoa; // [rsp+8h] [rbp-40h] 
+     ^~~~~
+     into
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/make_compound_operation/src/combine.c:6871:18: note: 'into' declared here
+unsigned __int16 into; // [rsp+8h] [rbp-40h] 
+                 ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/make_compound_operation/src/obj/combine.o] Error 1

@@ -1,0 +1,26 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/output_constant/src/varasm.c:4981:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v4; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/output_constant/src/varasm.c:4992:1: error: must use 'enum' tag to refer to type 'tree_code'
+tree_code code; // [rsp+34h] [rbp-1Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/output_constant/src/varasm.c:4997:8: error: use of undeclared identifier 'lang_hooks_0'; did you mean 'lang_hooks'?
+expa = lang_hooks_0.expand_constant( exp); 
+       ^~~~~~~~~~~~
+       lang_hooks
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/output_constant/src/langhooks.h:168:32: note: 'lang_hooks' declared here
+extern const struct lang_hooks lang_hooks;
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/output_constant/src/varasm.c:4997:36: error: called object type '<dependent type>' is not a function or function pointer
+expa = lang_hooks_0.expand_constant( exp); 
+                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/output_constant/src/varasm.c:5030:12: error: expected expression
+*( _OWORD *)v9.r = *( _OWORD *)&expa->block.vars; 
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/output_constant/src/varasm.c:5030:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)v9.r = *( _OWORD *)&expa->block.vars; 
+   ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/output_constant/src/obj/varasm.o] Error 1

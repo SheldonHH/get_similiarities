@@ -1,0 +1,89 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/nonzero_bits/src/combine.c:8417:40: error: must use 'enum' tag to refer to type 'machine_mode'
+unsigned __int64  nonzero_bits( rtx x, machine_mode mode) 
+                                       ^
+                                       enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/nonzero_bits/src/combine.c:8458:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code; // [rsp+124h] [rbp-2Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/nonzero_bits/src/combine.c:8461:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode modea; // [rsp+13Ch] [rbp-14h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/nonzero_bits/src/combine.c:8467:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[( unsigned __int8)BYTE2( *( _DWORD *)x)] == MODE_FLOAT 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/nonzero_bits/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/nonzero_bits/src/combine.c:8468:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| mode_class_0[( unsigned __int8)BYTE2( *( _DWORD *)x)] == MODE_COMPLEX_FLOAT 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/nonzero_bits/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/nonzero_bits/src/combine.c:8469:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| mode_class_0[( unsigned __int8)BYTE2( *( _DWORD *)x)] == MODE_VECTOR_FLOAT 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/nonzero_bits/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/nonzero_bits/src/combine.c:8470:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| mode_class_0[mode] == MODE_FLOAT 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/nonzero_bits/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/nonzero_bits/src/combine.c:8471:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| mode_class_0[mode] == MODE_COMPLEX_FLOAT 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/nonzero_bits/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/nonzero_bits/src/combine.c:8472:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| mode_class_0[mode] == MODE_VECTOR_FLOAT ) 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/nonzero_bits/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/nonzero_bits/src/combine.c:8493:37: error: use of undeclared identifier 'machine_mode'
+return nonzero & nonzero_bits( x, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)x)) | ~mode_mask_array[( unsigned __int8)BYTE2( *( _DWORD *)x)] & mode_mask_array[modea]; 
+                                    ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/nonzero_bits/src/combine.c:8493:52: error: expected expression
+return nonzero & nonzero_bits( x, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)x)) | ~mode_mask_array[( unsigned __int8)BYTE2( *( _DWORD *)x)] & mode_mask_array[modea]; 
+                                                   ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/nonzero_bits/src/combine.c:8528:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| mode_class_0[reg_last_set_mode[x->fld[0].rtuint]] == MODE_INT && mode_class_0[modea] == MODE_INT) 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/nonzero_bits/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/nonzero_bits/src/combine.c:8528:69: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| mode_class_0[reg_last_set_mode[x->fld[0].rtuint]] == MODE_INT && mode_class_0[modea] == MODE_INT) 
+                                                                    ^~~~~~~~~~~~
+                                                                    mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/nonzero_bits/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/nonzero_bits/src/combine.c:8553:42: error: use of undeclared identifier 'machine_mode'
+nonzero = nonzero_bits( x->fld[0].rtx, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)x)) & v8; 
+                                         ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/nonzero_bits/src/combine.c:8553:57: error: expected expression
+nonzero = nonzero_bits( x->fld[0].rtx, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)x)) & v8; 
+                                                        ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/nonzero_bits/src/combine.c:8732:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[modea] == MODE_INT ) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/nonzero_bits/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+16 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/nonzero_bits/src/obj/combine.o] Error 1

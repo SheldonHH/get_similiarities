@@ -1,0 +1,38 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/put_condition_code/src/i386.c:6003:27: error: must use 'enum' tag to refer to type 'rtx_code'
+void  put_condition_code( rtx_code code, machine_mode mode, int reverse, int fp, FILE *file) 
+                          ^
+                          enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/put_condition_code/src/i386.c:6003:42: error: must use 'enum' tag to refer to type 'machine_mode'
+void  put_condition_code( rtx_code code, machine_mode mode, int reverse, int fp, FILE *file) 
+                                         ^
+                                         enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/put_condition_code/src/i386.c:6005:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v8; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/put_condition_code/src/i386.c:6009:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code first_code; // [rsp+Ch] [rbp-2Ch] BYREF 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/put_condition_code/src/i386.c:6010:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code bypass_code; // [rsp+10h] [rbp-28h] BYREF 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/put_condition_code/src/i386.c:6011:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code second_code[9]; // [rsp+14h] [rbp-24h] BYREF 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/put_condition_code/src/i386.c:6072:22: error: use of undeclared identifier 'unk_63AA3F'
+v9 = ( const char *)&unk_63AA3F; 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/put_condition_code/src/i386.c:6074:22: error: use of undeclared identifier 'unk_63AA42'
+v9 = ( const char *)&unk_63AA42; 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/put_condition_code/src/i386.c:6079:22: error: use of undeclared identifier 'off_63AA3B'
+v9 = ( const char *)&off_63AA3B; 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/put_condition_code/src/i386.c:6099:22: error: use of undeclared identifier 'unk_63AA45'
+v9 = ( const char *)&unk_63AA45; 
+                     ^
+10 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/put_condition_code/src/obj/i386.o] Error 1

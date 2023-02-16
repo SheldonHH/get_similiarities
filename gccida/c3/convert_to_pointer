@@ -1,0 +1,24 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/convert_to_pointer/src/convert.c:503:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v2; // r14 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/convert_to_pointer/src/convert.c:508:1: error: must use 'enum' tag to refer to type 'tree_code'
+tree_code v7; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/convert_to_pointer/src/convert.c:510:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v9; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/convert_to_pointer/src/convert.c:511:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v10; // rsi 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/convert_to_pointer/src/convert.c:525:20: error: expected expression
+v10 = ( tree_node *)*( &global_trees + 11); 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/convert_to_pointer/src/convert.c:525:9: error: use of undeclared identifier 'tree_node'
+v10 = ( tree_node *)*( &global_trees + 11); 
+        ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/convert_to_pointer/src/obj/convert.o] Error 1

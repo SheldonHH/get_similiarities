@@ -1,0 +1,14 @@
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/do_owl_defend/src/engine/owl.c:2273:10: error: conflicting types for 'do_owl_defend'
+__int64  do_owl_defend( 
+         ^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/do_owl_defend/src/engine/owl.c:138:12: note: previous declaration is here
+static int do_owl_defend(int str, int *move, int *wormid,
+           ^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/do_owl_defend/src/engine/owl.c:2363:9: error: use of undeclared identifier 'eyevalue'
+v69 = ( eyevalue)-1; 
+        ^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/do_owl_defend/src/engine/owl.c:2743:76: error: invalid operands to binary expression ('struct eyevalue' and 'int')
+sprintf( ( char *)pos, "defense failed - genus %d)\n ( %d variations", v69 == 1, count_variations - v50); 
+                                                                       ~~~ ^  ~
+3 errors generated.
+make: *** [/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/do_owl_defend/src/obj/1/owl.o] Error 1

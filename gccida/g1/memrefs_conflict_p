@@ -1,0 +1,68 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/memrefs_conflict_p/src/alias.c:1991:4: error: expected ';' after expression
+rtx v11; // r13 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/memrefs_conflict_p/src/alias.c:1991:5: error: use of undeclared identifier 'v11'
+rtx v11; // r13 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/memrefs_conflict_p/src/alias.c:1996:4: error: expected ';' after expression
+rtx v16; // r15 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/memrefs_conflict_p/src/alias.c:1996:5: error: use of undeclared identifier 'v16'
+rtx v16; // r15 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/memrefs_conflict_p/src/alias.c:2020:4: error: expected ';' after expression
+rtx y1; // [rsp+18h] [rbp-40h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/memrefs_conflict_p/src/alias.c:2020:5: error: use of undeclared identifier 'y1'
+rtx y1; // [rsp+18h] [rbp-40h] 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/memrefs_conflict_p/src/alias.c:2034:13: error: expected ';' after expression
+rtx = ( rtx)addr[1]; 
+            ^
+            ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/memrefs_conflict_p/src/alias.c:2043:1: error: use of undeclared identifier 'v11'
+v11 = y->fld[0].rtx; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/memrefs_conflict_p/src/alias.c:2047:1: error: use of undeclared identifier 'v11'
+v11 = ( rtx)y[1]; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/memrefs_conflict_p/src/alias.c:2052:1: error: use of undeclared identifier 'v11'
+v11 = canon_rtx( v14); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/memrefs_conflict_p/src/alias.c:2054:35: error: use of undeclared identifier 'v11'
+if ( rtx_equal_for_memref_p( rtx, v11) ) 
+                                  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/memrefs_conflict_p/src/alias.c:2066:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v21 = (  struct rtx_def *)rtx[1]; 
+                          ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/memrefs_conflict_p/src/alias.c:2067:17: error: use of undeclared identifier 'v11'
+if ( *( _WORD *)v11 == 75 ) 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/memrefs_conflict_p/src/alias.c:2069:6: error: use of undeclared identifier 'v11'; did you mean 'v19'?
+y0 = v11->fld[0].rtx; 
+     ^~~
+     v19
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/memrefs_conflict_p/src/alias.c:1999:18: note: 'v19' declared here
+ struct rtx_def *v19; // r12 
+                 ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/memrefs_conflict_p/src/alias.c:2070:1: error: use of undeclared identifier 'y1'
+y1 = ( rtx)v11[1]; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/memrefs_conflict_p/src/alias.c:2071:35: error: use of undeclared identifier 'y1'
+if ( rtx_equal_for_memref_p( v21, y1) ) 
+                                  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/memrefs_conflict_p/src/alias.c:2074:47: error: use of undeclared identifier 'y1'
+return memrefs_conflict_p( xsize, v21, ysize, y1, c); 
+                                              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/memrefs_conflict_p/src/alias.c:2078:17: error: use of undeclared identifier 'y1'
+if ( *( _WORD *)y1 == 54 ) 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/memrefs_conflict_p/src/alias.c:2079:51: error: use of undeclared identifier 'y1'
+return memrefs_conflict_p( xsize, rtx, ysize, y0, y1->fld[0].rtwint + c); 
+                                                  ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/memrefs_conflict_p/src/obj/alias.o] Error 1

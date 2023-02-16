@@ -1,0 +1,18 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/lookup_as_function/src/cse.c:1958:33: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx  lookup_as_function( rtx x, rtx_code code) 
+                                ^
+                                enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/lookup_as_function/src/cse.c:1968:30: error: use of undeclared identifier 'machine_mode'
+v3 = lookup( x, v2 & 0x1F, ( machine_mode)*( ( unsigned __int8 *)x + 2)); 
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/lookup_as_function/src/cse.c:1971:71: error: invalid suffix 'xmode' on integer constant
+if ( mode_size[*( ( unsigned __int8 *)x + 2)] >= mode_size[*(short *)0xmode] ) 
+                                                                      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/lookup_as_function/src/cse.c:1974:35: error: invalid suffix 'xmode' on integer constant
+*( ( _BYTE *)v4 + 2) = *(short *)0xmode; 
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/lookup_as_function/src/cse.c:1976:40: error: invalid suffix 'xmode' on integer constant
+v3 = lookup( v4, v5 & 0x1F, *(short *)0xmode); 
+                                       ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/lookup_as_function/src/obj/cse.o] Error 1

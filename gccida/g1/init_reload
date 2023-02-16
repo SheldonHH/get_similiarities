@@ -1,0 +1,41 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_reload/src/reload1.c:948:21: error: use of undeclared identifier 'machine_mode'
+v1 = gen_rtx_REG( ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), 58); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_reload/src/reload1.c:949:30: error: use of undeclared identifier 'machine_mode'
+v2 = gen_rtx_fmt_ee( PLUS, ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), v1, v0); 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_reload/src/reload1.c:950:21: error: use of undeclared identifier 'machine_mode'
+v3 = gen_rtx_MEM( ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), v2); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_reload/src/reload1.c:951:22: error: subscripted value is not an array, pointer, or vector
+spill_indirect_levels[0] = 0; 
+~~~~~~~~~~~~~~~~~~~~~^~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_reload/src/reload1.c:957:24: error: subscripted value is not an array, pointer, or vector
+++spill_indirect_levels[0]; 
+  ~~~~~~~~~~~~~~~~~~~~~^~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_reload/src/reload1.c:958:21: error: use of undeclared identifier 'machine_mode'
+v3 = gen_rtx_MEM( ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), v3); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_reload/src/reload1.c:960:35: error: use of undeclared identifier 'machine_mode'
+v5 = gen_rtx_fmt_s( SYMBOL_REF, ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), off_6E782A); 
+                                  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_reload/src/reload1.c:960:92: error: use of undeclared identifier 'off_6E782A'
+v5 = gen_rtx_fmt_s( SYMBOL_REF, ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), off_6E782A); 
+                                                                                           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_reload/src/reload1.c:961:21: error: use of undeclared identifier 'machine_mode'
+v6 = gen_rtx_MEM( ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), v5); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_reload/src/reload1.c:962:19: error: subscripted value is not an array, pointer, or vector
+indirect_symref_ok[0] = memory_address_p( QImode, v6); 
+~~~~~~~~~~~~~~~~~~^~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_reload/src/reload1.c:965:21: error: use of undeclared identifier 'machine_mode'
+v7 = gen_rtx_REG( ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), v4); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_reload/src/reload1.c:966:21: error: use of undeclared identifier 'machine_mode'
+v8 = gen_rtx_REG( ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), 6); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_reload/src/reload1.c:967:30: error: use of undeclared identifier 'machine_mode'
+v9 = gen_rtx_fmt_ee( PLUS, ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), v8, v7); 
+                             ^
+13 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_reload/src/obj/reload1.o] Error 1

@@ -1,0 +1,100 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/record_dead_and_set_regs/src/combine.c:11778:6: error: use of undeclared identifier 'v11'; did you mean 'v10'?
+rtx *v11; // r10 
+     ^~~
+     v10
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/record_dead_and_set_regs/src/combine.c:11777:14: note: 'v10' declared here
+unsigned int v10; // eax 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/record_dead_and_set_regs/src/combine.c:11778:5: error: invalid operands to binary expression ('rtx' (aka 'struct rtx_def *') and 'unsigned int')
+rtx *v11; // r10 
+~~~ ^~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/record_dead_and_set_regs/src/combine.c:11783:6: error: use of undeclared identifier 'v16'
+rtx *v16; // rax 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/record_dead_and_set_regs/src/combine.c:11787:6: error: use of undeclared identifier 'v20'
+rtx *v20; // r8 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/record_dead_and_set_regs/src/combine.c:11788:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode *v21; // rcx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/record_dead_and_set_regs/src/combine.c:11791:6: error: use of undeclared identifier 'v24'
+rtx *v24; // rdi 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/record_dead_and_set_regs/src/combine.c:11798:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v2.rtwint = ( __int64)insn[3].fld[0]; 
+                      ^~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/record_dead_and_set_regs/src/combine.c:11801:28: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'unsigned long long' of different size
+si128 = _mm_shuffle_epi32( ( __m128i)( unsigned __int64)insn, 68); 
+        ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/lib/llvm-7/lib/clang/7.0.0/include/emmintrin.h:4347:52: note: expanded from macro '_mm_shuffle_epi32'
+  (__m128i)__builtin_ia32_pshufd((__v4si)(__m128i)(a), (int)(imm))
+                                                   ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/record_dead_and_set_regs/src/combine.c:11808:31: error: expected expression
+record_value_for_reg( *( rtx *)( v2.rtwint + 8), rtx, 0LL); 
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/record_dead_and_set_regs/src/combine.c:11829:25: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v8 = ( ( unsigned int)( mode_class_0[( unsigned __int8)v9] - 5) < 2) + 1; 
+                        ^~~~~~~~~~~~
+                        mode_class
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/record_dead_and_set_regs/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/record_dead_and_set_regs/src/combine.c:11848:1: error: use of undeclared identifier 'v11'
+v11 = reg_last_death; 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/record_dead_and_set_regs/src/combine.c:11856:1: error: use of undeclared identifier 'v16'
+v16 = &reg_last_death[v7 + 14]; 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/record_dead_and_set_regs/src/combine.c:11861:18: error: use of undeclared identifier 'v11'; did you mean 'v21'?
+*( __m128i *)&( &v11[v7])[v15] = si128; 
+                 ^~~
+                 v21
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/record_dead_and_set_regs/src/combine.c:11788:15: note: 'v21' declared here
+machine_mode *v21; // rcx 
+              ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/record_dead_and_set_regs/src/combine.c:11862:15: error: use of undeclared identifier 'v16'; did you mean 'v18'?
+*( __m128i *)&v16[v15 - 12] = si128; 
+              ^~~
+              v18
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/record_dead_and_set_regs/src/combine.c:11785:10: note: 'v18' declared here
+__m128i *v18; // rax 
+         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/record_dead_and_set_regs/src/combine.c:11863:15: error: use of undeclared identifier 'v16'; did you mean 'v18'?
+*( __m128i *)&v16[v15 - 10] = si128; 
+              ^~~
+              v18
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/record_dead_and_set_regs/src/combine.c:11785:10: note: 'v18' declared here
+__m128i *v18; // rax 
+         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/record_dead_and_set_regs/src/combine.c:11864:15: error: use of undeclared identifier 'v16'; did you mean 'v18'?
+*( __m128i *)&v16[v15 - 8] = si128; 
+              ^~~
+              v18
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/record_dead_and_set_regs/src/combine.c:11785:10: note: 'v18' declared here
+__m128i *v18; // rax 
+         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/record_dead_and_set_regs/src/combine.c:11865:15: error: use of undeclared identifier 'v16'; did you mean 'v18'?
+*( __m128i *)&v16[v15 - 6] = si128; 
+              ^~~
+              v18
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/record_dead_and_set_regs/src/combine.c:11785:10: note: 'v18' declared here
+__m128i *v18; // rax 
+         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/record_dead_and_set_regs/src/combine.c:11866:15: error: use of undeclared identifier 'v16'; did you mean 'v18'?
+*( __m128i *)&v16[v15 - 4] = si128; 
+              ^~~
+              v18
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/record_dead_and_set_regs/src/combine.c:11785:10: note: 'v18' declared here
+__m128i *v18; // rax 
+         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/record_dead_and_set_regs/src/combine.c:11867:15: error: use of undeclared identifier 'v16'; did you mean 'v18'?
+*( __m128i *)&v16[v15 - 2] = si128; 
+              ^~~
+              v18
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/record_dead_and_set_regs/src/combine.c:11785:10: note: 'v18' declared here
+__m128i *v18; // rax 
+         ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/record_dead_and_set_regs/src/obj/combine.o] Error 1

@@ -1,0 +1,62 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/noce_try_cmove_arith/src/ifcvt.c:1447:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v1; // edx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/noce_try_cmove_arith/src/ifcvt.c:1464:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code; // [rsp+A0h] [rbp-50h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/noce_try_cmove_arith/src/ifcvt.c:1513:33: error: use of undeclared identifier 'machine_mode'
+else if ( general_operand( b, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)b)) ) 
+                                ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/noce_try_cmove_arith/src/ifcvt.c:1513:48: error: expected expression
+else if ( general_operand( b, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)b)) ) 
+                                               ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/noce_try_cmove_arith/src/ifcvt.c:1529:29: error: use of undeclared identifier 'machine_mode'
+if ( !general_operand( a, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)a)) ) 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/noce_try_cmove_arith/src/ifcvt.c:1529:44: error: expected expression
+if ( !general_operand( a, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)a)) ) 
+                                           ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/noce_try_cmove_arith/src/ifcvt.c:1535:21: error: use of undeclared identifier 'machine_mode'
+v2 = gen_reg_rtx( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)a)); 
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/noce_try_cmove_arith/src/ifcvt.c:1535:36: error: expected expression
+v2 = gen_reg_rtx( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)a)); 
+                                   ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/noce_try_cmove_arith/src/ifcvt.c:1543:20: error: use of undeclared identifier 'machine_mode'
+a = gen_reg_rtx( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)a)); 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/noce_try_cmove_arith/src/ifcvt.c:1543:35: error: expected expression
+a = gen_reg_rtx( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)a)); 
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/noce_try_cmove_arith/src/ifcvt.c:1548:13: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v17 = ( rtx)tmpa[2]; 
+            ^~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/noce_try_cmove_arith/src/ifcvt.c:1567:28: error: use of undeclared identifier 'machine_mode'
+if ( general_operand( b, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)b)) ) 
+                           ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/noce_try_cmove_arith/src/ifcvt.c:1567:43: error: expected expression
+if ( general_operand( b, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)b)) ) 
+                                          ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/noce_try_cmove_arith/src/ifcvt.c:1573:21: error: use of undeclared identifier 'machine_mode'
+v4 = gen_reg_rtx( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)b)); 
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/noce_try_cmove_arith/src/ifcvt.c:1573:36: error: expected expression
+v4 = gen_reg_rtx( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)b)); 
+                                   ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/noce_try_cmove_arith/src/ifcvt.c:1584:20: error: use of undeclared identifier 'machine_mode'
+b = gen_reg_rtx( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)b)); 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/noce_try_cmove_arith/src/ifcvt.c:1584:35: error: expected expression
+b = gen_reg_rtx( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)b)); 
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/noce_try_cmove_arith/src/ifcvt.c:1589:13: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v14 = ( rtx)tmpc[2]; 
+            ^~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/noce_try_cmove_arith/src/ifcvt.c:1613:23: error: use of undeclared identifier 'machine_mode'
+tmpd = gen_rtx_MEM( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)if_info->x), target); 
+                      ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/noce_try_cmove_arith/src/obj/ifcvt.o] Error 1

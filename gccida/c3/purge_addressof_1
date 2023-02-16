@@ -1,0 +1,84 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/purge_addressof_1/src/function.c:3499:68: error: unknown type name 'hash_table_0'; did you mean 'hash_table'?
+bool  purge_addressof_1( rtx *loc, rtx insn, int force, int store, hash_table_0 *ht) 
+                                                                   ^~~~~~~~~~~~
+                                                                   hash_table
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/purge_addressof_1/src/hashtable.h:40:19: note: 'hash_table' declared here
+typedef struct ht hash_table;
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/purge_addressof_1/src/function.c:3499:7: error: conflicting types for 'purge_addressof_1'
+bool  purge_addressof_1( rtx *loc, rtx insn, int force, int store, hash_table_0 *ht) 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/purge_addressof_1/src/function.c:293:13: note: previous declaration is here
+static bool purge_addressof_1 PARAMS ((rtx *, rtx, int, int,
+            ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/purge_addressof_1/src/function.c:3502:1: error: unknown type name 'hash_table_0'; did you mean 'hash_table'?
+hash_table_0 *v7; // rbx 
+^~~~~~~~~~~~
+hash_table
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/purge_addressof_1/src/hashtable.h:40:19: note: 'hash_table' declared here
+typedef struct ht hash_table;
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/purge_addressof_1/src/function.c:3512:4: error: expected ';' after expression
+rtx v18; // r12 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/purge_addressof_1/src/function.c:3512:5: error: use of undeclared identifier 'v18'
+rtx v18; // r12 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/purge_addressof_1/src/function.c:3514:4: error: expected ';' after expression
+rtx v20; // rbp 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/purge_addressof_1/src/function.c:3514:5: error: use of undeclared identifier 'v20'; did you mean 'v10'?
+rtx v20; // rbp 
+    ^~~
+    v10
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/purge_addressof_1/src/function.c:3505:18: note: 'v10' declared here
+ struct rtx_def *v10; // r14 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/purge_addressof_1/src/function.c:3520:4: error: expected ';' after expression
+rtx v26; // rbp 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/purge_addressof_1/src/function.c:3520:5: error: use of undeclared identifier 'v26'
+rtx v26; // rbp 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/purge_addressof_1/src/function.c:3541:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v47; // rdx 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/purge_addressof_1/src/function.c:3545:4: error: expected ';' after expression
+rtx v51; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/purge_addressof_1/src/function.c:3545:5: error: use of undeclared identifier 'v51'
+rtx v51; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/purge_addressof_1/src/function.c:3548:4: error: expected ';' after expression
+rtx v54; // r14 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/purge_addressof_1/src/function.c:3548:5: error: use of undeclared identifier 'v54'
+rtx v54; // r14 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/purge_addressof_1/src/function.c:3551:4: error: expected ';' after expression
+rtx v57; // r14 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/purge_addressof_1/src/function.c:3551:5: error: use of undeclared identifier 'v57'
+rtx v57; // r14 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/purge_addressof_1/src/function.c:3558:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v64; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/purge_addressof_1/src/function.c:3564:4: error: expected ';' after expression
+rtx v70; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/purge_addressof_1/src/function.c:3564:5: error: use of undeclared identifier 'v70'
+rtx v70; // rax 
+    ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/purge_addressof_1/src/obj/function.o] Error 1

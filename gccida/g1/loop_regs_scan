@@ -1,0 +1,23 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/loop_regs_scan/src/loop.c:9978:13: error: expected expression
+v6 = ( rtx *)xcalloc( *( ( int *)aux + 46), 8uLL); 
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/loop_regs_scan/src/loop.c:9986:45: error: expected expression
+find_single_use_in_loop( regs, top, *( rtx *)&top[2]); 
+                                            ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/loop_regs_scan/src/loop.c:9990:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v12 = ( __int64)top[2]; 
+                ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/loop_regs_scan/src/loop.c:9999:35: error: expected expression
+count_one_set( regs, top, *( rtx *)( *( _QWORD *)( *( _QWORD *)&top[2] + 8LL) + 8LL * v13-- + 8), v6); 
+                                  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/loop_regs_scan/src/loop.c:10006:33: error: expected ')'
+count_one_set( regs, top, ( rtx)v12, v6); 
+                                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/loop_regs_scan/src/loop.c:10006:14: note: to match this '('
+count_one_set( regs, top, ( rtx)v12, v6); 
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/loop_regs_scan/src/loop.c:10019:22: error: use of undeclared identifier 'machine_mode'
+v15 = gen_rtx_REG( ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), i); 
+                     ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/loop_regs_scan/src/obj/loop.o] Error 1

@@ -1,0 +1,70 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_end_bindings/src/stmt.c:4194:4: error: expected ';' after expression
+rtx v17; // rbp 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_end_bindings/src/stmt.c:4194:5: error: use of undeclared identifier 'v17'
+rtx v17; // rbp 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_end_bindings/src/stmt.c:4198:6: error: use of undeclared identifier 'v21'; did you mean 'v20'?
+rtx *v21; // rbx 
+     ^~~
+     v20
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_end_bindings/src/stmt.c:4197:6: note: 'v20' declared here
+tree v20; // r12 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_end_bindings/src/stmt.c:4198:5: error: invalid operands to binary expression ('struct rtx_def *' and 'tree' (aka 'union tree_node *'))
+rtx *v21; // rbx 
+~~~ ^~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_end_bindings/src/stmt.c:4200:4: error: expected ';' after expression
+rtx v23; // rbx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_end_bindings/src/stmt.c:4200:5: error: use of undeclared identifier 'v23'
+rtx v23; // rbx 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_end_bindings/src/stmt.c:4203:4: error: expected ';' after expression
+rtx v26; // r13 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_end_bindings/src/stmt.c:4203:5: error: use of undeclared identifier 'v26'
+rtx v26; // r13 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_end_bindings/src/stmt.c:4259:61: error: expected ')'
+for ( i = cfun->x_nonlocal_goto_handler_slots; i; i = ( rtx)i[1] ) 
+                                                            ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_end_bindings/src/stmt.c:4259:5: note: to match this '('
+for ( i = cfun->x_nonlocal_goto_handler_slots; i; i = ( rtx)i[1] ) 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_end_bindings/src/stmt.c:4261:21: error: use of undeclared identifier 'machine_mode'
+v8 = gen_reg_rtx( ( machine_mode)( ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32)); 
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_end_bindings/src/stmt.c:4287:1: error: use of undeclared identifier 'v17'
+v17 = gen_label_rtx( ); 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_end_bindings/src/stmt.c:4288:14: error: use of undeclared identifier 'v17'
+*( ( _BYTE *)v17 + 3) |= 0x10u; 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_end_bindings/src/stmt.c:4290:37: error: use of undeclared identifier 'machine_mode'
+v18 = gen_rtx_fmt_u00( LABEL_REF, ( machine_mode)( ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32), v17); 
+                                    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_end_bindings/src/stmt.c:4290:112: error: use of undeclared identifier 'v17'
+v18 = gen_rtx_fmt_u00( LABEL_REF, ( machine_mode)( ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32), v17); 
+                                                                                                               ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_end_bindings/src/stmt.c:4295:13: error: use of undeclared identifier 'v17'
+emit_label( v17); 
+            ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_end_bindings/src/stmt.c:4296:44: error: use of undeclared identifier 'v17'
+v13 = gen_rtx_fmt_ee( EXPR_LIST, VOIDmode, v17, arg1a); 
+                                           ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_end_bindings/src/stmt.c:4300:42: error: expected expression
+p_x_nonlocal_goto_handler_slots = ( rtx *)&v14[1]; 
+                                         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_end_bindings/src/stmt.c:4307:1: error: use of undeclared identifier 'v21'
+v21 = &cfun->x_nonlocal_goto_handler_slots; 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_end_bindings/src/stmt.c:4313:1: error: use of undeclared identifier 'v23'
+v23 = *v21; 
+^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_end_bindings/src/obj/stmt.o] Error 1

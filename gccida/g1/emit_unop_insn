@@ -1,0 +1,43 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_unop_insn/src/optabs.c:3115:55: error: must use 'enum' tag to refer to type 'rtx_code'
+void  emit_unop_insn( int icode, rtx target, rtx op0, rtx_code code) 
+                                                      ^
+                                                      enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_unop_insn/src/optabs.c:3118:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v7; // r15d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_unop_insn/src/optabs.c:3125:11: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+operand = insn_data_0[icode].operand; 
+          ^~~~~~~~~~~
+          insn_data
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_unop_insn/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_unop_insn/src/optabs.c:3133:33: error: use of undeclared identifier 'machine_mode'
+if ( !operand->predicate( v8, ( machine_mode)*( ( unsigned __int8 *)v8 + 2)) || flag_force_mem && *( _WORD *)v8 == 66 ) 
+                                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_unop_insn/src/optabs.c:3135:22: error: use of undeclared identifier 'machine_mode'
+v12 = gen_reg_rtx( ( machine_mode)*( ( unsigned __int8 *)v8 + 2)); 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_unop_insn/src/optabs.c:3136:7: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+v11 = insn_data_0[icode].genfun( v12, v9); 
+      ^~~~~~~~~~~
+      insn_data
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_unop_insn/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_unop_insn/src/optabs.c:3136:32: error: called object type '<dependent type>' is not a function or function pointer
+v11 = insn_data_0[icode].genfun( v12, v9); 
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_unop_insn/src/optabs.c:3142:7: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+v10 = insn_data_0[icode].genfun( v8, v9); 
+      ^~~~~~~~~~~
+      insn_data
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_unop_insn/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_unop_insn/src/optabs.c:3142:32: error: called object type '<dependent type>' is not a function or function pointer
+v10 = insn_data_0[icode].genfun( v8, v9); 
+                               ^
+9 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_unop_insn/src/obj/optabs.o] Error 1

@@ -1,0 +1,74 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/print_rtx/src/print-rtl.c:618:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v46; // rsi 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/print_rtx/src/print-rtl.c:622:4: error: expected ';' after expression
+rtx v50; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/print_rtx/src/print-rtl.c:622:5: error: use of undeclared identifier 'v50'
+rtx v50; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/print_rtx/src/print-rtl.c:767:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v21 = ( __int64)in_rtx[1]; 
+                ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/print_rtx/src/print-rtl.c:785:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v34 = ( __int64)in_rtx[2]; 
+                ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/print_rtx/src/print-rtl.c:804:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+rtx = (  struct rtx_def *)in_rtx[2]; 
+                          ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/print_rtx/src/print-rtl.c:807:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v35 = ( __int64)in_rtx[2]; 
+                ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/print_rtx/src/print-rtl.c:814:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v34 = ( __int64)in_rtx[2]; 
+                ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/print_rtx/src/print-rtl.c:858:20: error: expected expression
+print_rtx( *( rtx *)&rtwint[2 * v14++ + 2]); 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/print_rtx/src/print-rtl.c:963:7: error: use of undeclared identifier 'print_rtx_hi_name'; did you mean 'print_rtx_head'?
+v36 = print_rtx_hi_name[v25]; 
+      ^~~~~~~~~~~~~~~~~
+      print_rtx_head
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/print_rtx/src/print-rtl.c:66:13: note: 'print_rtx_head' declared here
+const char *print_rtx_head = "";
+            ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/print_rtx/src/print-rtl.c:974:7: error: use of undeclared identifier 'print_rtx_qi_name'; did you mean 'print_rtx_head'?
+v36 = print_rtx_qi_name[v25]; 
+      ^~~~~~~~~~~~~~~~~
+      print_rtx_head
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/print_rtx/src/print-rtl.c:66:13: note: 'print_rtx_head' declared here
+const char *print_rtx_head = "";
+            ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/print_rtx/src/print-rtl.c:984:7: error: use of undeclared identifier 'print_rtx_hi_name'; did you mean 'print_rtx_head'?
+v36 = print_rtx_hi_name[v40]; 
+      ^~~~~~~~~~~~~~~~~
+      print_rtx_head
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/print_rtx/src/print-rtl.c:66:13: note: 'print_rtx_head' declared here
+const char *print_rtx_head = "";
+            ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/print_rtx/src/print-rtl.c:1006:19: error: use of undeclared identifier 'off_694CF3'
+fprintf( outfile, off_694CF3, ( unsigned int)( v25 - 29)); 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/print_rtx/src/print-rtl.c:1062:19: error: use of undeclared identifier 'off_690140'
+fprintf( outfile, off_690140, note_insn_name[v23]); 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/print_rtx/src/print-rtl.c:1073:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v16.rtwint = ( __int64)in_rtx->fld[v4]; 
+                       ^~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/print_rtx/src/print-rtl.c:1150:22: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v44 = ( const char *)in_rtx[4]; 
+                     ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/print_rtx/src/print-rtl.c:1172:19: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v41 = ( __int64 *)in_rtx[1]; 
+                  ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/print_rtx/src/print-rtl.c:1178:18: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v45 = ( _QWORD *)in_rtx[1]; 
+                 ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/print_rtx/src/print-rtl.c:1180:27: error: expected expression
+&& ( ( v46 = ( tree_node *)v45[1]) == 0LL || ( print_mem_expr( outfile, v46), ( v45 = ( _QWORD *)in_rtx[1]) != 0LL)) 
+                          ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/print_rtx/src/obj/print-rtl.o] Error 1

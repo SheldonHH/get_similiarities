@@ -1,0 +1,49 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_best_addr/src/cse.c:3351:43: error: must use 'enum' tag to refer to type 'machine_mode'
+void  find_best_addr( rtx insn, rtx *loc, machine_mode mode) 
+                                          ^
+                                          enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_best_addr/src/cse.c:3437:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v8.rtwint = ( __int64)v5->fld[0]; 
+                      ^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_best_addr/src/cse.c:3492:52: error: expected ')'
+if ( v23 != cached_regno || (  struct cse_reg_info = cached_cse_reg_info) == 0LL ) 
+                                                   ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_best_addr/src/cse.c:3492:29: note: to match this '('
+if ( v23 != cached_regno || (  struct cse_reg_info = cached_cse_reg_info) == 0LL ) 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_best_addr/src/cse.c:3492:75: error: expected expression
+if ( v23 != cached_regno || (  struct cse_reg_info = cached_cse_reg_info) == 0LL ) 
+                                                                          ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_best_addr/src/cse.c:3493:2: error: expected expression
+ struct cse_reg_info = get_cse_reg_info( v23); 
+ ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_best_addr/src/cse.c:3498:34: error: use of undeclared identifier 'machine_mode'
+LOBYTE( v27) = canon_hash( v5, ( machine_mode)( ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32)); 
+                                 ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_best_addr/src/cse.c:3509:33: error: use of undeclared identifier 'machine_mode'
+v28 = lookup( v5, v27 & 0x1F, ( machine_mode)( ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32)); 
+                                ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_best_addr/src/cse.c:3573:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+op1 = (  struct rtx_def *)v42[1]; 
+                          ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_best_addr/src/cse.c:3586:35: error: use of undeclared identifier 'machine_mode'
+LOBYTE( v46) = canon_hash( rtx, ( machine_mode)( ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32)); 
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_best_addr/src/cse.c:3593:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32)); 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_best_addr/src/cse.c:3622:3: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+( rtx_code)*( _WORD *)*v3, 
+  ^~~~~~~~
+  rtx_cost
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_best_addr/src/cse.c:825:1: note: 'rtx_cost' declared here
+rtx_cost (x, outer_code)
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_best_addr/src/cse.c:3622:12: error: invalid operands to binary expression ('int ()' and 'uint16 *' (aka 'unsigned short *'))
+( rtx_code)*( _WORD *)*v3, 
+~~~~~~~~~~~^~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_best_addr/src/cse.c:3623:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32), 
+  ^
+13 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/find_best_addr/src/obj/cse.o] Error 1

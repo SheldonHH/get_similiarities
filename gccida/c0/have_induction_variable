@@ -1,0 +1,34 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/have_induction_variable/src/dependence.c:1049:1: error: unknown type name 'loop_1'; did you mean 'loop'?
+loop_1 *loop_ptr; // [rsp+18h] [rbp-28h] 
+^~~~~~
+loop
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/have_induction_variable/src/dependence.c:123:3: note: 'loop' declared here
+} loop;
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/have_induction_variable/src/dependence.c:1050:1: error: unknown type name 'induction_0'; did you mean 'induction'?
+induction_0 *ind_ptr; // [rsp+20h] [rbp-20h] 
+^~~~~~~~~~~
+induction
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/have_induction_variable/src/dependence.c:139:3: note: 'induction' declared here
+} induction;
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/have_induction_variable/src/dependence.c:1053:28: error: expected expression
+for ( loop_ptr = ( loop_1 *)loop_chain->data.l[0]; ; loop_ptr = ( loop_1 *)loop_chain->data.l[loop_idx] ) 
+                           ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/have_induction_variable/src/dependence.c:1053:20: error: use of undeclared identifier 'loop_1'
+for ( loop_ptr = ( loop_1 *)loop_chain->data.l[0]; ; loop_ptr = ( loop_1 *)loop_chain->data.l[loop_idx] ) 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/have_induction_variable/src/dependence.c:1053:75: error: expected expression
+for ( loop_ptr = ( loop_1 *)loop_chain->data.l[0]; ; loop_ptr = ( loop_1 *)loop_chain->data.l[loop_idx] ) 
+                                                                          ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/have_induction_variable/src/dependence.c:1053:67: error: use of undeclared identifier 'loop_1'
+for ( loop_ptr = ( loop_1 *)loop_chain->data.l[0]; ; loop_ptr = ( loop_1 *)loop_chain->data.l[loop_idx] ) 
+                                                                  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/have_induction_variable/src/dependence.c:1053:76: error: expected ')'
+for ( loop_ptr = ( loop_1 *)loop_chain->data.l[0]; ; loop_ptr = ( loop_1 *)loop_chain->data.l[loop_idx] ) 
+                                                                           ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/have_induction_variable/src/dependence.c:1053:5: note: to match this '('
+for ( loop_ptr = ( loop_1 *)loop_chain->data.l[0]; ; loop_ptr = ( loop_1 *)loop_chain->data.l[loop_idx] ) 
+    ^
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/have_induction_variable/src/obj/dependence.o] Error 1

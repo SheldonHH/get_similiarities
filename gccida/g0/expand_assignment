@@ -1,0 +1,47 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_assignment/src/expr.c:4103:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v8; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_assignment/src/expr.c:4104:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v9; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_assignment/src/expr.c:4121:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode1; // [rsp+4Ch] [rbp-64h] BYREF 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_assignment/src/expr.c:4164:16: error: used type 'struct rtx_def' where arithmetic or pointer type is required
+v6 = to_rtx[1] ? *( _DWORD *)( *( _QWORD *)&to_rtx[1] + 32LL) : 8; 
+     ~~~~~~~~~ ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_assignment/src/expr.c:4179:33: error: expected expression
+v8 = to_rtx[1] ? *( tree_node **)( *( _QWORD *)&to_rtx[1] + 8LL) : 0LL; 
+                                ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_assignment/src/expr.c:4179:21: error: use of undeclared identifier 'tree_node'
+v8 = to_rtx[1] ? *( tree_node **)( *( _QWORD *)&to_rtx[1] + 8LL) : 0LL; 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_assignment/src/expr.c:4183:33: error: expected expression
+v9 = to_rtx[1] ? *( tree_node **)( *( _QWORD *)&to_rtx[1] + 8LL) : 0LL; 
+                                ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_assignment/src/expr.c:4183:21: error: use of undeclared identifier 'tree_node'
+v9 = to_rtx[1] ? *( tree_node **)( *( _QWORD *)&to_rtx[1] + 8LL) : 0LL; 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_assignment/src/expr.c:4189:1: error: statement requires expression of scalar type ('struct rtx_def' invalid)
+if ( to_rtx[1] ) 
+^    ~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_assignment/src/expr.c:4226:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)v13, 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_assignment/src/expr.c:4235:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( BYTE5( to->common.type->block.abstract_origin) >> 1), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_assignment/src/expr.c:4236:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( BYTE5( from->common.type->block.abstract_origin) >> 1), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_assignment/src/expr.c:4261:34: error: use of undeclared identifier 'machine_mode'
+temp = expand_expr( from, 0LL, ( machine_mode)*( ( unsigned __int8 *)to_rtx + 2), EXPAND_NORMAL); 
+                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_assignment/src/expr.c:4289:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( BYTE5( sizetype_tab[0]->block.abstract_origin) >> 1), 
+  ^
+14 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_assignment/src/obj/expr.o] Error 1

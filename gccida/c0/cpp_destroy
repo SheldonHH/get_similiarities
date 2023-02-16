@@ -1,0 +1,67 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cpp_destroy/src/cppinit.c:1011:19: error: unknown type name 'cpp_reader_0'; did you mean 'cpp_reader'?
+int  cpp_destroy( cpp_reader_0 *pfile) 
+                  ^~~~~~~~~~~~
+                  cpp_reader
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cpp_destroy/src/cpplib.h:36:27: note: 'cpp_reader' declared here
+typedef struct cpp_reader cpp_reader;
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cpp_destroy/src/cppinit.c:1013:1: error: unknown type name 'tokenrun_0'; did you mean 'tokenrun'?
+tokenrun_0 *runn; // [rsp+10h] [rbp-40h] 
+^~~~~~~~~~
+tokenrun
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cpp_destroy/src/cpphash.h:97:25: note: 'tokenrun' declared here
+typedef struct tokenrun tokenrun;
+                        ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cpp_destroy/src/cppinit.c:1014:1: error: unknown type name 'cpp_reader_0'; did you mean 'cpp_reader'?
+cpp_reader_0 *run; // [rsp+18h] [rbp-38h] 
+^~~~~~~~~~~~
+cpp_reader
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cpp_destroy/src/cpplib.h:36:27: note: 'cpp_reader' declared here
+typedef struct cpp_reader cpp_reader;
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cpp_destroy/src/cppinit.c:1015:1: error: unknown type name 'cpp_context_0'; did you mean 'cpp_context'?
+cpp_context_0 *contextn; // [rsp+20h] [rbp-30h] 
+^~~~~~~~~~~~~
+cpp_context
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cpp_destroy/src/cpphash.h:104:28: note: 'cpp_context' declared here
+typedef struct cpp_context cpp_context;
+                           ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cpp_destroy/src/cppinit.c:1016:1: error: unknown type name 'cpp_context_0'; did you mean 'cpp_context'?
+cpp_context_0 *context; // [rsp+28h] [rbp-28h] 
+^~~~~~~~~~~~~
+cpp_context
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cpp_destroy/src/cpphash.h:104:28: note: 'cpp_context' declared here
+typedef struct cpp_context cpp_context;
+                           ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cpp_destroy/src/cppinit.c:1036:29: error: expected expression
+for ( run = ( cpp_reader_0 *)&pfile->base_run; run; run = ( cpp_reader_0 *)runn ) 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cpp_destroy/src/cppinit.c:1036:15: error: use of undeclared identifier 'cpp_reader_0'
+for ( run = ( cpp_reader_0 *)&pfile->base_run; run; run = ( cpp_reader_0 *)runn ) 
+              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cpp_destroy/src/cppinit.c:1036:75: error: expected expression
+for ( run = ( cpp_reader_0 *)&pfile->base_run; run; run = ( cpp_reader_0 *)runn ) 
+                                                                          ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cpp_destroy/src/cppinit.c:1036:61: error: use of undeclared identifier 'cpp_reader_0'
+for ( run = ( cpp_reader_0 *)&pfile->base_run; run; run = ( cpp_reader_0 *)runn ) 
+                                                            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cpp_destroy/src/cppinit.c:1036:76: error: expected ')'
+for ( run = ( cpp_reader_0 *)&pfile->base_run; run; run = ( cpp_reader_0 *)runn ) 
+                                                                           ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cpp_destroy/src/cppinit.c:1036:5: note: to match this '('
+for ( run = ( cpp_reader_0 *)&pfile->base_run; run; run = ( cpp_reader_0 *)runn ) 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cpp_destroy/src/cppinit.c:1038:22: error: expected expression
+runn = ( tokenrun_0 *)run->buffer; 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cpp_destroy/src/cppinit.c:1038:10: error: use of undeclared identifier 'tokenrun_0'
+runn = ( tokenrun_0 *)run->buffer; 
+         ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cpp_destroy/src/cppinit.c:1040:29: error: expected expression
+if ( run != ( cpp_reader_0 *)&pfile->base_run ) 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cpp_destroy/src/cppinit.c:1040:15: error: use of undeclared identifier 'cpp_reader_0'
+if ( run != ( cpp_reader_0 *)&pfile->base_run ) 
+              ^
+14 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cpp_destroy/src/obj/cppinit.o] Error 1

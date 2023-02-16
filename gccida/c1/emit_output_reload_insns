@@ -1,0 +1,80 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_output_reload_insns/src/reload1.c:7093:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v7; // r12d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_output_reload_insns/src/reload1.c:7149:29: error: expected expression
+if ( asm_noperands( *( rtx *)&insn[2]) < 0 ) 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_output_reload_insns/src/reload1.c:7150:44: error: too many arguments provided to function-like macro invocation
+fatal_insn( "VOIDmode on an output", insn, &off_6CC868[4], 6651, "emit_output_reload_insns"); 
+                                           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_output_reload_insns/src/toplev.h:50:9: note: macro 'fatal_insn' defined here
+#define fatal_insn(msgid, insn) \
+        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_output_reload_insns/src/reload1.c:7150:1: error: use of undeclared identifier 'fatal_insn'; did you mean '_fatal_insn'?
+fatal_insn( "VOIDmode on an output", insn, &off_6CC868[4], 6651, "emit_output_reload_insns"); 
+^~~~~~~~~~
+_fatal_insn
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_output_reload_insns/src/toplev.h:44:13: note: '_fatal_insn' declared here
+extern void _fatal_insn                 PARAMS ((const char *,
+            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_output_reload_insns/src/reload1.c:7152:17: error: invalid suffix 'xmode' on integer constant
+v7 = *(short *)0xmode; 
+                ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_output_reload_insns/src/reload1.c:7153:31: error: invalid suffix 'xmode' on integer constant
+out = gen_rtx_REG( *(short *)0xmode, reg_rtx->fld[0].rtint); 
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_output_reload_insns/src/reload1.c:7187:7: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+v42 = insn_data_0[v20].genfun( v9, v21); 
+      ^~~~~~~~~~~
+      insn_data
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_output_reload_insns/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_output_reload_insns/src/reload1.c:7187:30: error: called object type '<dependent type>' is not a function or function pointer
+v42 = insn_data_0[v20].genfun( v9, v21); 
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_output_reload_insns/src/reload1.c:7215:29: error: use of undeclared identifier 'machine_mode'
+v19 = gen_lowpart_common( ( machine_mode)v18, v15); 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_output_reload_insns/src/reload1.c:7236:13: error: expected ';' after expression
+v22 = ( rtx)insn[2]; 
+            ^
+            ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_output_reload_insns/src/reload1.c:7238:35: error: expected expression
+v22 = single_set_2( insn, *( rtx *)&insn[2]); 
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_output_reload_insns/src/reload1.c:7246:35: error: expected expression
+|| !reg_mentioned_p( out, *( rtx *)&v22[1]) 
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_output_reload_insns/src/reload1.c:7267:13: error: expected ';' after expression
+v26 = ( rtx)insn[2]; 
+            ^
+            ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_output_reload_insns/src/reload1.c:7269:35: error: expected expression
+v26 = single_set_2( insn, *( rtx *)&insn[2]); 
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_output_reload_insns/src/reload1.c:7279:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v27 = (  struct rtx_def *)v26[1]; 
+                          ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_output_reload_insns/src/reload1.c:7296:13: error: invalid operands to binary expression ('rtx' (aka 'struct rtx_def *') and 'uint64 *' (aka 'unsigned long long *'))
+v31 = ( rtx)*( ( _QWORD *)v24 + 4); 
+      ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_output_reload_insns/src/reload1.c:7298:27: error: expected ')'
+v31 = single_set_2( ( rtx)v24, *( ( rtx *)v24 + 4)); 
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_output_reload_insns/src/reload1.c:7298:19: note: to match this '('
+v31 = single_set_2( ( rtx)v24, *( ( rtx *)v24 + 4)); 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_output_reload_insns/src/reload1.c:7307:10: error: expected ')'
+&& ( rtx)v31[1] == rl->reg_rtx 
+         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_output_reload_insns/src/reload1.c:7306:4: note: to match this '('
+if ( ( int)v30 >= 0 
+   ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_output_reload_insns/src/reload1.c:7315:13: error: invalid operands to binary expression ('rtx' (aka 'struct rtx_def *') and 'uint64 *' (aka 'unsigned long long *'))
+v35 = ( rtx)*( ( _QWORD *)v34 + 4); 
+      ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_output_reload_insns/src/obj/reload1.o] Error 1

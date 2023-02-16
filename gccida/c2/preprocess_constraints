@@ -1,0 +1,62 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/preprocess_constraints/src/recog.c:2651:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class *v8; // rbp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/preprocess_constraints/src/recog.c:2654:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class v11; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/preprocess_constraints/src/recog.c:2660:6: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( recog_data_0.n_operands > 0 ) 
+     ^~~~~~~~~~~~
+     recog_data
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/preprocess_constraints/src/recog.c:72:19: note: 'recog_data' declared here
+struct recog_data recog_data;
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/preprocess_constraints/src/recog.c:2662:18: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+n_alternatives = recog_data_0.n_alternatives; 
+                 ^~~~~~~~~~~~
+                 recog_data
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/preprocess_constraints/src/recog.c:72:19: note: 'recog_data' declared here
+struct recog_data recog_data;
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/preprocess_constraints/src/recog.c:2668:6: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+v3 = recog_data_0.constraints[v2]; 
+     ^~~~~~~~~~~~
+     recog_data
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/preprocess_constraints/src/recog.c:72:19: note: 'recog_data' declared here
+struct recog_data recog_data;
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/preprocess_constraints/src/recog.c:2684:19: error: expected expression
+v8 = ( reg_class *)( v6 + v5 + 9987960); 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/preprocess_constraints/src/recog.c:2684:8: error: use of undeclared identifier 'reg_class'; did you mean 'regclass'?
+v8 = ( reg_class *)( v6 + v5 + 9987960); 
+       ^~~~~~~~~
+       regclass
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/preprocess_constraints/src/rtl.h:1970:13: note: 'regclass' declared here
+extern void regclass                    PARAMS ((rtx, int, FILE *));
+            ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/preprocess_constraints/src/recog.c:2840:18: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+n_alternatives = recog_data_0.n_alternatives; 
+                 ^~~~~~~~~~~~
+                 recog_data
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/preprocess_constraints/src/recog.c:72:19: note: 'recog_data' declared here
+struct recog_data recog_data;
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/preprocess_constraints/src/recog.c:2842:14: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+while ( v4 < recog_data_0.n_alternatives ); 
+             ^~~~~~~~~~~~
+             recog_data
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/preprocess_constraints/src/recog.c:72:19: note: 'recog_data' declared here
+struct recog_data recog_data;
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/preprocess_constraints/src/recog.c:2846:14: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+while ( v2 < recog_data_0.n_operands ); 
+             ^~~~~~~~~~~~
+             recog_data
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/preprocess_constraints/src/recog.c:72:19: note: 'recog_data' declared here
+struct recog_data recog_data;
+                  ^
+10 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/preprocess_constraints/src/obj/recog.o] Error 1

@@ -1,0 +1,74 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/mark_all_labels/src/jump.c:692:4: error: expected ';' after expression
+rtx reg_note; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/mark_all_labels/src/jump.c:692:5: error: must use 'enum' tag to refer to type 'reg_note'
+rtx reg_note; // rax 
+    ^
+    enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/mark_all_labels/src/jump.c:693:4: error: expected ';' after expression
+rtx v5; // rbp 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/mark_all_labels/src/jump.c:693:5: error: use of undeclared identifier 'v5'
+rtx v5; // rbp 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/mark_all_labels/src/jump.c:694:4: error: expected ';' after expression
+rtx v6; // r12 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/mark_all_labels/src/jump.c:694:5: error: use of undeclared identifier 'v6'
+rtx v6; // r12 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/mark_all_labels/src/jump.c:697:4: error: expected ';' after expression
+rtx v9; // rbp 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/mark_all_labels/src/jump.c:697:5: error: use of undeclared identifier 'v9'
+rtx v9; // rbp 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/mark_all_labels/src/jump.c:707:26: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v3 = (  struct rtx_def *)rtx[2]; 
+                         ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/mark_all_labels/src/jump.c:711:26: error: expected expression
+mark_all_labels( *( rtx *)( *( _QWORD *)&rtx[2] + 16LL)); 
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/mark_all_labels/src/jump.c:712:26: error: expected expression
+mark_all_labels( *( rtx *)( *( _QWORD *)&rtx[2] + 24LL)); 
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/mark_all_labels/src/jump.c:716:1: error: use of undeclared identifier 'v9'
+v9 = gen_rtx_fmt_u00( LABEL_REF, VOIDmode, v8); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/mark_all_labels/src/jump.c:717:18: error: use of undeclared identifier 'v9'
+mark_jump_label( v9, rtx, 0); 
+                 ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/mark_all_labels/src/jump.c:718:45: error: use of undeclared identifier 'v9'
+*( _QWORD *)( *( _QWORD *)&rtx[2] + 32LL) = v9->fld[0].rtwint; 
+                                            ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/mark_all_labels/src/jump.c:726:1: error: must use 'enum' tag to refer to type 'reg_note'
+reg_note = find_reg_note( rtx, REG_LABEL, 0LL); 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/mark_all_labels/src/jump.c:726:10: error: expected identifier or '('
+reg_note = find_reg_note( rtx, REG_LABEL, 0LL); 
+         ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/mark_all_labels/src/jump.c:727:1: error: use of undeclared identifier 'v5'
+v5 = reg_note; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/mark_all_labels/src/jump.c:727:6: error: use of undeclared identifier 'reg_note'; did you mean 'reg_names'?
+v5 = reg_note; 
+     ^~~~~~~~
+     reg_names
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/mark_all_labels/src/regs.h:166:21: note: 'reg_names' declared here
+extern const char * reg_names[FIRST_PSEUDO_REGISTER];
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/mark_all_labels/src/jump.c:728:6: error: use of undeclared identifier 'reg_note'; did you mean 'reg_names'?
+if ( reg_note ) 
+     ^~~~~~~~
+     reg_names
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/mark_all_labels/src/regs.h:166:21: note: 'reg_names' declared here
+extern const char * reg_names[FIRST_PSEUDO_REGISTER];
+                    ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/mark_all_labels/src/obj/jump.o] Error 1

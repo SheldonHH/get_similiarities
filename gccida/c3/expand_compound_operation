@@ -1,0 +1,68 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_compound_operation/src/combine.c:6052:4: error: expected ';' after expression
+rtx v27; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_compound_operation/src/combine.c:6052:5: error: use of undeclared identifier 'v27'
+rtx v27; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_compound_operation/src/combine.c:6105:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v11 = ( __int64)v1[1]; 
+                ^~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_compound_operation/src/combine.c:6108:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v12.rtwint = ( __int64)v1[1].fld[0]; 
+                       ^~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_compound_operation/src/combine.c:6115:29: error: use of undeclared identifier 'machine_mode'
+v13 = gen_rtx_fmt_e( USE, ( machine_mode)BYTE2( v2), rtx); 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_compound_operation/src/combine.c:6116:18: error: expected expression
+do_SUBST( ( rtx *)v1->fld, v13); 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_compound_operation/src/combine.c:6125:39: error: use of undeclared identifier 'machine_mode'
+v14 = nonzero_bits( v1->fld[0].rtx, ( machine_mode)*( unsigned __int8 *)( v1->fld[0].rtwint + 2)); 
+                                      ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_compound_operation/src/combine.c:6130:36: error: use of undeclared identifier 'machine_mode'
+v1 = gen_rtx_fmt_e( ZERO_EXTEND, ( machine_mode)BYTE2( v2), v15); 
+                                   ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_compound_operation/src/combine.c:6148:40: error: use of undeclared identifier 'machine_mode'
+v19 = nonzero_bits( v16->fld[0].rtx, ( machine_mode)v18); 
+                                       ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_compound_operation/src/combine.c:6162:29: error: expected expression
+v31 = nonzero_bits( *( rtx *)( v1->fld[0].rtwint + 8), ( machine_mode)v30); 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_compound_operation/src/combine.c:6162:58: error: use of undeclared identifier 'machine_mode'
+v31 = nonzero_bits( *( rtx *)( v1->fld[0].rtwint + 8), ( machine_mode)v30); 
+                                                         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_compound_operation/src/combine.c:6163:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v32.rtwint = ( __int64)v1->fld[0]; 
+                       ^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_compound_operation/src/combine.c:6165:16: error: expected expression
+return *( rtx *)( v32.rtwint + 8); 
+               ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_compound_operation/src/combine.c:6177:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v23.rtwint = ( __int64)v1->fld[0]; 
+                       ^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_compound_operation/src/combine.c:6194:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)v1 + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_compound_operation/src/combine.c:6197:36: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+v27 = simplify_shift_const( 0LL, ( rtx_code)( v4 + 89), ( machine_mode)v24, v28, ( int)v25 - ( int)v9); 
+                                   ^~~~~~~~
+                                   rtx_cost
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_compound_operation/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_compound_operation/src/combine.c:6197:54: error: too few arguments to function call, expected 2, have 1
+v27 = simplify_shift_const( 0LL, ( rtx_code)( v4 + 89), ( machine_mode)v24, v28, ( int)v25 - ( int)v9); 
+                                 ~~~~~~~~~~~         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_compound_operation/src/rtl.h:1787:1: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_compound_operation/src/combine.c:6197:59: error: use of undeclared identifier 'machine_mode'
+v27 = simplify_shift_const( 0LL, ( rtx_code)( v4 + 89), ( machine_mode)v24, v28, ( int)v25 - ( int)v9); 
+                                                          ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_compound_operation/src/combine.c:6197:1: error: use of undeclared identifier 'v27'
+v27 = simplify_shift_const( 0LL, ( rtx_code)( v4 + 89), ( machine_mode)v24, v28, ( int)v25 - ( int)v9); 
+^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/expand_compound_operation/src/obj/combine.o] Error 1

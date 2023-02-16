@@ -1,0 +1,29 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/really_start_incremental_init/src/c-typeck.c:5650:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v9; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/really_start_incremental_init/src/c-typeck.c:5685:1: error: use of undeclared identifier 'constructor_stack_0'; did you mean 'constructor_stack'?
+constructor_stack_0 = v2; 
+^~~~~~~~~~~~~~~~~~~
+constructor_stack
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/really_start_incremental_init/src/c-typeck.c:5021:27: note: 'constructor_stack' declared here
+struct constructor_stack *constructor_stack;
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/really_start_incremental_init/src/c-typeck.c:5688:21: error: use of undeclared identifier 'spelling_0'; did you mean 'spelling'?
+constructor_depth = spelling_0 - spelling_base; 
+                    ^~~~~~~~~~
+                    spelling
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/really_start_incremental_init/src/c-typeck.c:4491:25: note: 'spelling' declared here
+static struct spelling *spelling;       /* Next stack element (unused).  */
+                        ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/really_start_incremental_init/src/c-typeck.c:5722:19: error: expected expression
+v9 = ( tree_node *)*( &global_trees + 17); 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/really_start_incremental_init/src/c-typeck.c:5722:8: error: use of undeclared identifier 'tree_node'
+v9 = ( tree_node *)*( &global_trees + 17); 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/really_start_incremental_init/src/c-typeck.c:5726:13: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v8 = ( tree)rtl[7]; 
+            ^~~~~~
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/really_start_incremental_init/src/obj/c-typeck.o] Error 1

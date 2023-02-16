@@ -1,0 +1,26 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_split_1232/src/insn-emit.c:17262:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // [rsp+28h] [rbp-68h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_split_1232/src/insn-emit.c:17263:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code; // [rsp+2Ch] [rbp-64h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_split_1232/src/insn-emit.c:17280:64: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+*( _DWORD *)operands[1] = ( unsigned __int16)swap_condition( ( rtx_code)( unsigned __int16)*( _DWORD *)operands[1]) | *( _DWORD *)operands[1] & 0xFFFF0000; 
+                                                               ^~~~~~~~
+                                                               rtx_cost
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_split_1232/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_split_1232/src/insn-emit.c:17280:75: error: expected expression
+*( _DWORD *)operands[1] = ( unsigned __int16)swap_condition( ( rtx_code)( unsigned __int16)*( _DWORD *)operands[1]) | *( _DWORD *)operands[1] & 0xFFFF0000; 
+                                                                          ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_split_1232/src/insn-emit.c:17282:37: error: use of undeclared identifier 'machine_mode'
+if ( const0_operand( operands[2], ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)*operands)) ) 
+                                    ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_split_1232/src/insn-emit.c:17282:52: error: expected expression
+if ( const0_operand( operands[2], ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)*operands)) ) 
+                                                   ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_split_1232/src/obj/insn-emit.o] Error 1

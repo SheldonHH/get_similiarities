@@ -1,0 +1,36 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/rebuild_jump_labels/src/jump.c:544:4: error: expected ';' after expression
+rtx i; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/rebuild_jump_labels/src/jump.c:544:5: error: use of undeclared identifier 'i'
+rtx i; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/rebuild_jump_labels/src/jump.c:556:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v2.rtwint = ( __int64)rtx[3].fld[0]; 
+                      ^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/rebuild_jump_labels/src/jump.c:562:30: error: expected expression
+&& !reg_mentioned_p( *( rtx *)( v3.rtwint + 8), *( rtx *)&rtx[2]) ) 
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/rebuild_jump_labels/src/jump.c:562:57: error: expected expression
+&& !reg_mentioned_p( *( rtx *)( v3.rtwint + 8), *( rtx *)&rtx[2]) ) 
+                                                        ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/rebuild_jump_labels/src/jump.c:582:7: error: use of undeclared identifier 'i'
+for ( i = cfun->expr->x_forced_labels; i; i = ( rtx)i[1] ) 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/rebuild_jump_labels/src/jump.c:582:40: error: use of undeclared identifier 'i'
+for ( i = cfun->expr->x_forced_labels; i; i = ( rtx)i[1] ) 
+                                       ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/rebuild_jump_labels/src/jump.c:582:43: error: use of undeclared identifier 'i'
+for ( i = cfun->expr->x_forced_labels; i; i = ( rtx)i[1] ) 
+                                          ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/rebuild_jump_labels/src/jump.c:582:53: error: expected ')'
+for ( i = cfun->expr->x_forced_labels; i; i = ( rtx)i[1] ) 
+                                                    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/rebuild_jump_labels/src/jump.c:582:5: note: to match this '('
+for ( i = cfun->expr->x_forced_labels; i; i = ( rtx)i[1] ) 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/rebuild_jump_labels/src/jump.c:584:23: error: use of undeclared identifier 'i'
+v5.rtwint = ( __int64)i->fld[0]; 
+                      ^
+10 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/rebuild_jump_labels/src/obj/jump.o] Error 1

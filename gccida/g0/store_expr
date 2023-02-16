@@ -1,0 +1,78 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/store_expr/src/expr.c:4385:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v6; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/store_expr/src/expr.c:4386:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v7; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/store_expr/src/expr.c:4389:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v10; // rbx 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/store_expr/src/expr.c:4390:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *tree; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/store_expr/src/expr.c:4397:5: error: expected ';' after expression
+tree expa; // [rsp+18h] [rbp-68h] 
+    ^
+    ;
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/store_expr/src/expr.c:4397:6: error: use of undeclared identifier 'expa'; did you mean 'exp'?
+tree expa; // [rsp+18h] [rbp-68h] 
+     ^~~~
+     exp
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/store_expr/src/expr.c:4381:23: note: 'exp' declared here
+rtx  store_expr( tree exp, rtx target, int want_value) 
+                      ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/store_expr/src/expr.c:4399:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *copy_size; // [rsp+28h] [rbp-58h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/store_expr/src/expr.c:4412:1: error: use of undeclared identifier 'expa'; did you mean 'exp'?
+expa = exp; 
+^~~~
+exp
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/store_expr/src/expr.c:4381:23: note: 'exp' declared here
+rtx  store_expr( tree exp, rtx target, int want_value) 
+                      ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/store_expr/src/expr.c:4454:33: error: use of undeclared identifier 'machine_mode'
+temp = expand_expr( exp, 0LL, ( machine_mode)*( ( unsigned __int8 *)target + 2), EXPAND_NORMAL); 
+                                ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/store_expr/src/expr.c:4458:21: error: use of undeclared identifier 'machine_mode'
+v5 = gen_reg_rtx( ( machine_mode)*( ( unsigned __int8 *)target + 2)); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/store_expr/src/expr.c:4459:32: error: use of undeclared identifier 'machine_mode'
+temp = expand_expr( exp, v5, ( machine_mode)*( ( unsigned __int8 *)target + 2), EXPAND_NORMAL); 
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/store_expr/src/expr.c:4477:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)target + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/store_expr/src/expr.c:4478:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( BYTE5( exp->common.type->block.abstract_origin) >> 1), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/store_expr/src/expr.c:4516:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( BYTE5( sizetype_tab[0]->block.abstract_origin) >> 1), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/store_expr/src/expr.c:4531:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)sizea + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/store_expr/src/expr.c:4561:27: error: use of undeclared identifier 'machine_mode'
+temp = convert_to_mode( ( machine_mode)*( ( unsigned __int8 *)targeta + 2), temp, unsignedp); 
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/store_expr/src/expr.c:4581:36: error: use of undeclared identifier 'machine_mode'
+temp = expand_expr( exp, target, ( machine_mode)*( ( unsigned __int8 *)target + 2), EXPAND_NORMAL); 
+                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/store_expr/src/expr.c:4593:36: error: use of undeclared identifier 'machine_mode'
+temp = expand_expr( exp, target, ( machine_mode)*( ( unsigned __int8 *)target + 2), EXPAND_NORMAL); 
+                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/store_expr/src/expr.c:4622:1: error: use of undeclared identifier 'expa'; did you mean 'exp'?
+expa = convert( v6, exp); 
+^~~~
+exp
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/store_expr/src/expr.c:4381:23: note: 'exp' declared here
+rtx  store_expr( tree exp, rtx target, int want_value) 
+                      ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/store_expr/src/obj/expr.o] Error 1

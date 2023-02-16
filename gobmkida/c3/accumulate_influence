@@ -1,0 +1,410 @@
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:794:7: error: use of undeclared identifier 'accumulate_influence_working_area_initialized'
+if ( !accumulate_influence_working_area_initialized ) 
+      ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:796:50: error: use of undeclared identifier 'accumulate_influence_working'; did you mean 'accumulate_influence'?
+memset( accumulate_influence_working, 0, sizeof( accumulate_influence_working)); 
+                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                                 accumulate_influence
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:618:7: note: 'accumulate_influence' declared here
+void  accumulate_influence( 
+      ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:796:9: error: use of undeclared identifier 'accumulate_influence_working'; did you mean 'accumulate_influence'?
+memset( accumulate_influence_working, 0, sizeof( accumulate_influence_working)); 
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        accumulate_influence
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:618:7: note: 'accumulate_influence' declared here
+void  accumulate_influence( 
+      ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:797:1: error: use of undeclared identifier 'accumulate_influence_working_area_initialized'
+accumulate_influence_working_area_initialized = 1; 
+^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:800:1: error: use of undeclared identifier 'accumulate_influence_queue'; did you mean 'accumulate_influence'?
+accumulate_influence_queue[0] = pos; 
+^~~~~~~~~~~~~~~~~~~~~~~~~~
+accumulate_influence
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:618:7: note: 'accumulate_influence' declared here
+void  accumulate_influence( 
+      ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:800:1: error: subscript of pointer to function type 'void (int, int, int, int, const int *, const char *, int *)'
+accumulate_influence_queue[0] = pos; 
+^~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:802:1: error: use of undeclared identifier 'accumulate_influence_working'; did you mean 'accumulate_influence'?
+accumulate_influence_working[pos] = strength; 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+accumulate_influence
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:618:7: note: 'accumulate_influence' declared here
+void  accumulate_influence( 
+      ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:802:1: error: subscript of pointer to function type 'void (int, int, int, int, const int *, const char *, int *)'
+accumulate_influence_working[pos] = strength; 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:853:25: error: use of undeclared identifier 'accumulate_influence_working'
+v15 = inv_attenuation * accumulate_influence_working[v7] / 4096; 
+                        ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:869:42: error: use of undeclared identifier 'invalid_operation'
+if ( !( ( v12 * v154 + v13 * v153 < 0) ^ __OFADD__( v12 * v154, v13 * v153) | ( v12 * v154 + v13 * v153 == 0)) ) 
+                                         ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:426:25: note: expanded from macro '__OFADD__'
+#define __OFADD__(x, y) invalid_operation // Generate overflow flag for (x+y)
+                        ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:878:7: error: use of undeclared identifier 'accumulate_influence_working'
+v50 = accumulate_influence_working[v22]; 
+      ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:880:1: error: use of undeclared identifier 'accumulate_influence_queue'; did you mean 'accumulate_influence'?
+accumulate_influence_queue[v10++] = v22; 
+^~~~~~~~~~~~~~~~~~~~~~~~~~
+accumulate_influence
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:618:7: note: 'accumulate_influence' declared here
+void  accumulate_influence( 
+      ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:880:1: error: subscript of pointer to function type 'void (int, int, int, int, const int *, const char *, int *)'
+accumulate_influence_queue[v10++] = v22; 
+^~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:881:1: error: use of undeclared identifier 'accumulate_influence_working'; did you mean 'accumulate_influence'?
+accumulate_influence_working[v22] = v49 + v50; 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+accumulate_influence
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:618:7: note: 'accumulate_influence' declared here
+void  accumulate_influence( 
+      ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:881:1: error: subscript of pointer to function type 'void (int, int, int, int, const int *, const char *, int *)'
+accumulate_influence_working[v22] = v49 + v50; 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:896:42: error: use of undeclared identifier 'invalid_operation'
+if ( !( ( v12 * v150 + v13 * v149 < 0) ^ __OFADD__( v12 * v150, v13 * v149) | ( v12 * v150 + v13 * v149 == 0)) ) 
+                                         ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:426:25: note: expanded from macro '__OFADD__'
+#define __OFADD__(x, y) invalid_operation // Generate overflow flag for (x+y)
+                        ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:905:7: error: use of undeclared identifier 'accumulate_influence_working'
+v75 = accumulate_influence_working[v51]; 
+      ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:907:1: error: use of undeclared identifier 'accumulate_influence_queue'; did you mean 'accumulate_influence'?
+accumulate_influence_queue[v10++] = v51; 
+^~~~~~~~~~~~~~~~~~~~~~~~~~
+accumulate_influence
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:618:7: note: 'accumulate_influence' declared here
+void  accumulate_influence( 
+      ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:907:1: error: subscript of pointer to function type 'void (int, int, int, int, const int *, const char *, int *)'
+accumulate_influence_queue[v10++] = v51; 
+^~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:908:1: error: use of undeclared identifier 'accumulate_influence_working'; did you mean 'accumulate_influence'?
+accumulate_influence_working[v51] = v74 + v75; 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+accumulate_influence
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:618:7: note: 'accumulate_influence' declared here
+void  accumulate_influence( 
+      ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:908:1: error: subscript of pointer to function type 'void (int, int, int, int, const int *, const char *, int *)'
+accumulate_influence_working[v51] = v74 + v75; 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:919:42: error: use of undeclared identifier 'invalid_operation'
+if ( !( ( v12 * v148 + v13 * v147 < 0) ^ __OFADD__( v12 * v148, v13 * v147) | ( v12 * v148 + v13 * v147 == 0)) ) 
+                                         ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:426:25: note: expanded from macro '__OFADD__'
+#define __OFADD__(x, y) invalid_operation // Generate overflow flag for (x+y)
+                        ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:928:8: error: use of undeclared identifier 'accumulate_influence_working'
+v104 = accumulate_influence_working[v53]; 
+       ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:930:1: error: use of undeclared identifier 'accumulate_influence_queue'; did you mean 'accumulate_influence'?
+accumulate_influence_queue[v10++] = v53; 
+^~~~~~~~~~~~~~~~~~~~~~~~~~
+accumulate_influence
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:618:7: note: 'accumulate_influence' declared here
+void  accumulate_influence( 
+      ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:930:1: error: subscript of pointer to function type 'void (int, int, int, int, const int *, const char *, int *)'
+accumulate_influence_queue[v10++] = v53; 
+^~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:933:1: error: use of undeclared identifier 'accumulate_influence_working'; did you mean 'accumulate_influence'?
+accumulate_influence_working[v53] = v103 + v104; 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+accumulate_influence
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:618:7: note: 'accumulate_influence' declared here
+void  accumulate_influence( 
+      ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:933:1: error: subscript of pointer to function type 'void (int, int, int, int, const int *, const char *, int *)'
+accumulate_influence_working[v53] = v103 + v104; 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:954:42: error: use of undeclared identifier 'invalid_operation'
+if ( !( ( v82 * v174 + v13 * v166 < 0) ^ __OFADD__( v82 * v174, v13 * v166) | ( v82 * v174 + v13 * v166 == 0)) ) 
+                                         ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:426:25: note: expanded from macro '__OFADD__'
+#define __OFADD__(x, y) invalid_operation // Generate overflow flag for (x+y)
+                        ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:972:8: error: use of undeclared identifier 'accumulate_influence_working'
+v124 = accumulate_influence_working[v83]; 
+       ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:977:1: error: use of undeclared identifier 'accumulate_influence_queue'; did you mean 'accumulate_influence'?
+accumulate_influence_queue[v10++] = v83; 
+^~~~~~~~~~~~~~~~~~~~~~~~~~
+accumulate_influence
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:618:7: note: 'accumulate_influence' declared here
+void  accumulate_influence( 
+      ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:977:1: error: subscript of pointer to function type 'void (int, int, int, int, const int *, const char *, int *)'
+accumulate_influence_queue[v10++] = v83; 
+^~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:978:1: error: use of undeclared identifier 'accumulate_influence_working'; did you mean 'accumulate_influence'?
+accumulate_influence_working[v83] = v123 + v124; 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+accumulate_influence
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:618:7: note: 'accumulate_influence' declared here
+void  accumulate_influence( 
+      ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:978:1: error: subscript of pointer to function type 'void (int, int, int, int, const int *, const char *, int *)'
+accumulate_influence_working[v83] = v123 + v124; 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:989:41: error: use of undeclared identifier 'invalid_operation'
+if ( !( ( v12 * v173 + v13 * v77 < 0) ^ __OFADD__( v12 * v173, v13 * v77) | ( v12 * v173 + v13 * v77 == 0)) ) 
+                                        ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:426:25: note: expanded from macro '__OFADD__'
+#define __OFADD__(x, y) invalid_operation // Generate overflow flag for (x+y)
+                        ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:1016:39: error: use of undeclared identifier 'invalid_operation'
+if ( ( v12 * v172 + v13 * v165 < 0) ^ __OFADD__( v12 * v172, v13 * v165) | ( v12 * v172 + v13 * v165 == 0) ) 
+                                      ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:426:25: note: expanded from macro '__OFADD__'
+#define __OFADD__(x, y) invalid_operation // Generate overflow flag for (x+y)
+                        ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:1046:8: error: use of undeclared identifier 'accumulate_influence_working'
+v128 = accumulate_influence_working[v107]; 
+       ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:1050:1: error: use of undeclared identifier 'accumulate_influence_queue'; did you mean 'accumulate_influence'?
+accumulate_influence_queue[v10++] = v107; 
+^~~~~~~~~~~~~~~~~~~~~~~~~~
+accumulate_influence
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:618:7: note: 'accumulate_influence' declared here
+void  accumulate_influence( 
+      ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:1050:1: error: subscript of pointer to function type 'void (int, int, int, int, const int *, const char *, int *)'
+accumulate_influence_queue[v10++] = v107; 
+^~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:1051:1: error: use of undeclared identifier 'accumulate_influence_working'; did you mean 'accumulate_influence'?
+accumulate_influence_working[v107] = v127 + v128; 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+accumulate_influence
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:618:7: note: 'accumulate_influence' declared here
+void  accumulate_influence( 
+      ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:1051:1: error: subscript of pointer to function type 'void (int, int, int, int, const int *, const char *, int *)'
+accumulate_influence_working[v107] = v127 + v128; 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:1077:29: error: use of undeclared identifier 'invalid_operation'
+v111 = ( v109 + v110 < 0) ^ __OFADD__( v109, v110) | ( v109 + v110 == 0); 
+                            ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:426:25: note: expanded from macro '__OFADD__'
+#define __OFADD__(x, y) invalid_operation // Generate overflow flag for (x+y)
+                        ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:1097:8: error: use of undeclared identifier 'accumulate_influence_working'
+v126 = accumulate_influence_working[v108]; 
+       ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:1100:1: error: use of undeclared identifier 'accumulate_influence_queue'; did you mean 'accumulate_influence'?
+accumulate_influence_queue[v10++] = v108; 
+^~~~~~~~~~~~~~~~~~~~~~~~~~
+accumulate_influence
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:618:7: note: 'accumulate_influence' declared here
+void  accumulate_influence( 
+      ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:1100:1: error: subscript of pointer to function type 'void (int, int, int, int, const int *, const char *, int *)'
+accumulate_influence_queue[v10++] = v108; 
+^~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:1101:1: error: use of undeclared identifier 'accumulate_influence_working'; did you mean 'accumulate_influence'?
+accumulate_influence_working[v108] = v125 + v126; 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+accumulate_influence
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:618:7: note: 'accumulate_influence' declared here
+void  accumulate_influence( 
+      ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:1101:1: error: subscript of pointer to function type 'void (int, int, int, int, const int *, const char *, int *)'
+accumulate_influence_working[v108] = v125 + v126; 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:1107:8: error: use of undeclared identifier 'accumulate_influence_working'
+v106 = accumulate_influence_working[v85]; 
+       ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:1109:1: error: use of undeclared identifier 'accumulate_influence_queue'; did you mean 'accumulate_influence'?
+accumulate_influence_queue[v10++] = v85; 
+^~~~~~~~~~~~~~~~~~~~~~~~~~
+accumulate_influence
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:618:7: note: 'accumulate_influence' declared here
+void  accumulate_influence( 
+      ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:1109:1: error: subscript of pointer to function type 'void (int, int, int, int, const int *, const char *, int *)'
+accumulate_influence_queue[v10++] = v85; 
+^~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:1111:1: error: use of undeclared identifier 'accumulate_influence_working'; did you mean 'accumulate_influence'?
+accumulate_influence_working[v85] = v105 + v106; 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+accumulate_influence
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:618:7: note: 'accumulate_influence' declared here
+void  accumulate_influence( 
+      ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:1111:1: error: subscript of pointer to function type 'void (int, int, int, int, const int *, const char *, int *)'
+accumulate_influence_working[v85] = v105 + v106; 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:1161:42: error: use of undeclared identifier 'invalid_operation'
+if ( !( ( v12 * v152 + v13 * v151 < 0) ^ __OFADD__( v12 * v152, v13 * v151) | ( v12 * v152 + v13 * v151 == 0)) ) 
+                                         ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:426:25: note: expanded from macro '__OFADD__'
+#define __OFADD__(x, y) invalid_operation // Generate overflow flag for (x+y)
+                        ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:1170:7: error: use of undeclared identifier 'accumulate_influence_working'
+v27 = accumulate_influence_working[v23]; 
+      ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:1172:1: error: use of undeclared identifier 'accumulate_influence_queue'; did you mean 'accumulate_influence'?
+accumulate_influence_queue[v10++] = v23; 
+^~~~~~~~~~~~~~~~~~~~~~~~~~
+accumulate_influence
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:618:7: note: 'accumulate_influence' declared here
+void  accumulate_influence( 
+      ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:1172:1: error: subscript of pointer to function type 'void (int, int, int, int, const int *, const char *, int *)'
+accumulate_influence_queue[v10++] = v23; 
+^~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:1173:1: error: use of undeclared identifier 'accumulate_influence_working'; did you mean 'accumulate_influence'?
+accumulate_influence_working[v23] = v26 + v27; 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+accumulate_influence
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:618:7: note: 'accumulate_influence' declared here
+void  accumulate_influence( 
+      ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:1173:1: error: subscript of pointer to function type 'void (int, int, int, int, const int *, const char *, int *)'
+accumulate_influence_working[v23] = v26 + v27; 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:1192:7: error: use of undeclared identifier 'accumulate_influence_working'
+v29 = accumulate_influence_working[v28]; 
+      ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:1194:1: error: use of undeclared identifier 'accumulate_influence_queue'; did you mean 'accumulate_influence'?
+accumulate_influence_queue[v10++] = v28; 
+^~~~~~~~~~~~~~~~~~~~~~~~~~
+accumulate_influence
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:618:7: note: 'accumulate_influence' declared here
+void  accumulate_influence( 
+      ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:1194:1: error: subscript of pointer to function type 'void (int, int, int, int, const int *, const char *, int *)'
+accumulate_influence_queue[v10++] = v28; 
+^~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:1195:1: error: use of undeclared identifier 'accumulate_influence_working'; did you mean 'accumulate_influence'?
+accumulate_influence_working[v28] = v18 + v29; 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+accumulate_influence
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:618:7: note: 'accumulate_influence' declared here
+void  accumulate_influence( 
+      ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:1195:1: error: subscript of pointer to function type 'void (int, int, int, int, const int *, const char *, int *)'
+accumulate_influence_working[v28] = v18 + v29; 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:1204:7: error: use of undeclared identifier 'accumulate_influence_working'
+v31 = accumulate_influence_working[v30]; 
+      ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:1206:1: error: use of undeclared identifier 'accumulate_influence_queue'; did you mean 'accumulate_influence'?
+accumulate_influence_queue[v10++] = v30; 
+^~~~~~~~~~~~~~~~~~~~~~~~~~
+accumulate_influence
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:618:7: note: 'accumulate_influence' declared here
+void  accumulate_influence( 
+      ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:1206:1: error: subscript of pointer to function type 'void (int, int, int, int, const int *, const char *, int *)'
+accumulate_influence_queue[v10++] = v30; 
+^~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:1207:1: error: use of undeclared identifier 'accumulate_influence_working'; did you mean 'accumulate_influence'?
+accumulate_influence_working[v30] = v18 + v31; 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+accumulate_influence
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:618:7: note: 'accumulate_influence' declared here
+void  accumulate_influence( 
+      ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:1207:1: error: subscript of pointer to function type 'void (int, int, int, int, const int *, const char *, int *)'
+accumulate_influence_working[v30] = v18 + v31; 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:1216:7: error: use of undeclared identifier 'accumulate_influence_working'
+v33 = accumulate_influence_working[v32]; 
+      ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:1218:1: error: use of undeclared identifier 'accumulate_influence_queue'; did you mean 'accumulate_influence'?
+accumulate_influence_queue[v10++] = v32; 
+^~~~~~~~~~~~~~~~~~~~~~~~~~
+accumulate_influence
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:618:7: note: 'accumulate_influence' declared here
+void  accumulate_influence( 
+      ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:1218:1: error: subscript of pointer to function type 'void (int, int, int, int, const int *, const char *, int *)'
+accumulate_influence_queue[v10++] = v32; 
+^~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:1219:1: error: use of undeclared identifier 'accumulate_influence_working'; did you mean 'accumulate_influence'?
+accumulate_influence_working[v32] = v18 + v33; 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+accumulate_influence
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:618:7: note: 'accumulate_influence' declared here
+void  accumulate_influence( 
+      ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:1219:1: error: subscript of pointer to function type 'void (int, int, int, int, const int *, const char *, int *)'
+accumulate_influence_working[v32] = v18 + v33; 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:1228:7: error: use of undeclared identifier 'accumulate_influence_working'
+v35 = accumulate_influence_working[v34]; 
+      ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:1230:1: error: use of undeclared identifier 'accumulate_influence_queue'; did you mean 'accumulate_influence'?
+accumulate_influence_queue[v10++] = v34; 
+^~~~~~~~~~~~~~~~~~~~~~~~~~
+accumulate_influence
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:618:7: note: 'accumulate_influence' declared here
+void  accumulate_influence( 
+      ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:1230:1: error: subscript of pointer to function type 'void (int, int, int, int, const int *, const char *, int *)'
+accumulate_influence_queue[v10++] = v34; 
+^~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:1231:1: error: use of undeclared identifier 'accumulate_influence_working'
+accumulate_influence_working[v34] = v18 + v35; 
+^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:1263:7: error: use of undeclared identifier 'accumulate_influence_working'
+v62 = accumulate_influence_working[v38]; 
+      ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:1265:1: error: use of undeclared identifier 'accumulate_influence_queue'
+accumulate_influence_queue[v10++] = v38; 
+^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:1266:1: error: use of undeclared identifier 'accumulate_influence_working'
+accumulate_influence_working[v38] = v61 + v62; 
+^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:1292:7: error: use of undeclared identifier 'accumulate_influence_working'
+v46 = accumulate_influence_working[v39]; 
+      ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:1294:1: error: use of undeclared identifier 'accumulate_influence_queue'
+accumulate_influence_queue[v10++] = v39; 
+^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:1295:1: error: use of undeclared identifier 'accumulate_influence_working'
+accumulate_influence_working[v39] = v45 + v46; 
+^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:1329:7: error: use of undeclared identifier 'accumulate_influence_working'
+v97 = accumulate_influence_working[v63]; 
+      ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:1331:1: error: use of undeclared identifier 'accumulate_influence_queue'
+accumulate_influence_queue[v10++] = v63; 
+^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:1332:1: error: use of undeclared identifier 'accumulate_influence_working'
+accumulate_influence_working[v63] = v96 + v97; 
+^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:1362:7: error: use of undeclared identifier 'accumulate_influence_working'
+v71 = accumulate_influence_working[v64]; 
+      ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:1365:1: error: use of undeclared identifier 'accumulate_influence_queue'
+accumulate_influence_queue[v10++] = v64; 
+^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:1366:1: error: use of undeclared identifier 'accumulate_influence_working'
+accumulate_influence_working[v64] = v70 + v71; 
+^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:1370:6: error: use of undeclared identifier 'accumulate_influence_queue'
+v7 = accumulate_influence_queue[v11++]; 
+     ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:1376:8: error: use of undeclared identifier 'accumulate_influence_queue'
+v130 = accumulate_influence_queue[i]; 
+       ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:1377:8: error: use of undeclared identifier 'accumulate_influence_working'
+v131 = accumulate_influence_working[v130]; 
+       ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/engine/influence.c:1387:1: error: use of undeclared identifier 'accumulate_influence_working'
+accumulate_influence_working[v130] = 0; 
+^
+92 errors generated.
+make: *** [/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/accumulate_influence/src/obj/1/influence.o] Error 1

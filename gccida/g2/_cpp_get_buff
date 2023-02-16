@@ -1,0 +1,42 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/_cpp_get_buff/src/cpplex.c:2457:1: error: unknown type name '_cpp_buff_0'; did you mean '_cpp_buff'?
+_cpp_buff_0 * cpp_get_buff( cpp_reader_0 *pfile, size_t min_size) 
+^~~~~~~~~~~
+_cpp_buff
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/_cpp_get_buff/src/cpphash.h:47:26: note: '_cpp_buff' declared here
+typedef struct _cpp_buff _cpp_buff;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/_cpp_get_buff/src/cpplex.c:2457:29: error: unknown type name 'cpp_reader_0'; did you mean 'cpp_reader'?
+_cpp_buff_0 * cpp_get_buff( cpp_reader_0 *pfile, size_t min_size) 
+                            ^~~~~~~~~~~~
+                            cpp_reader
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/_cpp_get_buff/src/cpplib.h:36:27: note: 'cpp_reader' declared here
+typedef struct cpp_reader cpp_reader;
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/_cpp_get_buff/src/cpplex.c:2459:1: error: unknown type name '_cpp_buff_0'; did you mean '_cpp_buff'?
+_cpp_buff_0 *result; // rax 
+^~~~~~~~~~~
+_cpp_buff
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/_cpp_get_buff/src/cpphash.h:47:26: note: '_cpp_buff' declared here
+typedef struct _cpp_buff _cpp_buff;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/_cpp_get_buff/src/cpplex.c:2460:1: error: unknown type name '_cpp_buff_0'; did you mean '_cpp_buff'?
+_cpp_buff_0 *p_free_buffs; // rdi 
+^~~~~~~~~~~
+_cpp_buff
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/_cpp_get_buff/src/cpphash.h:47:26: note: '_cpp_buff' declared here
+typedef struct _cpp_buff _cpp_buff;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/_cpp_get_buff/src/cpplex.c:2468:31: error: expected expression
+p_free_buffs = ( _cpp_buff_0 *)&pfile->free_buffs; 
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/_cpp_get_buff/src/cpplex.c:2468:18: error: use of undeclared identifier '_cpp_buff_0'
+p_free_buffs = ( _cpp_buff_0 *)&pfile->free_buffs; 
+                 ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/_cpp_get_buff/src/cpplex.c:2490:25: error: expected expression
+result = ( _cpp_buff_0 *)&v6[( min_size + 7) & 0xFFFFFFFFFFFFFFF8LL]; 
+                        ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/_cpp_get_buff/src/cpplex.c:2490:12: error: use of undeclared identifier '_cpp_buff_0'
+result = ( _cpp_buff_0 *)&v6[( min_size + 7) & 0xFFFFFFFFFFFFFFF8LL]; 
+           ^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/_cpp_get_buff/src/obj/cpplex.o] Error 1

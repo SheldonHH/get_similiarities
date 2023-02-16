@@ -1,0 +1,34 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/delete_insn/src/cfgrtl.c:577:4: error: expected ';' after expression
+rtx reg_note; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/delete_insn/src/cfgrtl.c:577:5: error: must use 'enum' tag to refer to type 'reg_note'
+rtx reg_note; // rax 
+    ^
+    enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/delete_insn/src/cfgrtl.c:601:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v3.rtwint = ( __int64)insn[3].fld[0]; 
+                      ^~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/delete_insn/src/cfgrtl.c:609:23: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v2.rtwint = ( __int64)insn[4]; 
+                      ^~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/delete_insn/src/cfgrtl.c:613:1: error: must use 'enum' tag to refer to type 'reg_note'
+reg_note = find_reg_note( insn, REG_LABEL, 0LL); 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/delete_insn/src/cfgrtl.c:613:1: error: expected expression
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/delete_insn/src/cfgrtl.c:614:6: error: use of undeclared identifier 'reg_note'; did you mean 'reg_names'?
+if ( reg_note ) 
+     ^~~~~~~~
+     reg_names
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/delete_insn/src/regs.h:166:21: note: 'reg_names' declared here
+extern const char * reg_names[FIRST_PSEUDO_REGISTER];
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/delete_insn/src/cfgrtl.c:616:23: error: use of undeclared identifier 'reg_note'
+v2.rtwint = ( __int64)reg_note->fld[0]; 
+                      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/delete_insn/src/cfgrtl.c:623:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v5 = ( _WORD *)insn[2]; 
+               ^~~~~~~
+9 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/delete_insn/src/obj/cfgrtl.o] Error 1

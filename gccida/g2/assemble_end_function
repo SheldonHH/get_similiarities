@@ -1,0 +1,48 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/assemble_end_function/src/varasm.c:1726:43: error: use of undeclared identifier 'off_709022'
+sprintf( label, "*.%s%u", ( const char *)&off_709022, ( unsigned int)++labelno_17); 
+                                          ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/assemble_end_function/src/varasm.c:1726:72: error: use of undeclared identifier 'labelno_17'
+sprintf( label, "*.%s%u", ( const char *)&off_709022, ( unsigned int)++labelno_17); 
+                                                                       ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/assemble_end_function/src/varasm.c:1727:52: error: use of undeclared identifier 'off_709022'
+fprintf( asm_out_file, ".%s%u:\n", ( const char *)&off_709022, ( unsigned int)labelno_17); 
+                                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/assemble_end_function/src/varasm.c:1727:79: error: use of undeclared identifier 'labelno_17'
+fprintf( asm_out_file, ".%s%u:\n", ( const char *)&off_709022, ( unsigned int)labelno_17); 
+                                                                              ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/assemble_end_function/src/varasm.c:1736:6: error: use of undeclared identifier 'after_function_constants'; did you mean 'output_after_function_constants'?
+v2 = after_function_constants; 
+     ^~~~~~~~~~~~~~~~~~~~~~~~
+     output_after_function_constants
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/assemble_end_function/src/varasm.c:164:13: note: 'output_after_function_constants' declared here
+static void output_after_function_constants PARAMS ((void));
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/assemble_end_function/src/varasm.c:1739:33: error: incomplete definition of type 'struct deferred_constant'
+output_constant_def_contents( v2->exp, v2->reloc, v2->labelno); 
+                              ~~^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/assemble_end_function/src/varasm.c:1720:9: note: forward declaration of 'struct deferred_constant'
+ struct deferred_constant *v2; // rbx 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/assemble_end_function/src/varasm.c:1739:42: error: incomplete definition of type 'struct deferred_constant'
+output_constant_def_contents( v2->exp, v2->reloc, v2->labelno); 
+                                       ~~^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/assemble_end_function/src/varasm.c:1720:9: note: forward declaration of 'struct deferred_constant'
+ struct deferred_constant *v2; // rbx 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/assemble_end_function/src/varasm.c:1739:53: error: incomplete definition of type 'struct deferred_constant'
+output_constant_def_contents( v2->exp, v2->reloc, v2->labelno); 
+                                                  ~~^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/assemble_end_function/src/varasm.c:1720:9: note: forward declaration of 'struct deferred_constant'
+ struct deferred_constant *v2; // rbx 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/assemble_end_function/src/varasm.c:1741:8: error: incomplete definition of type 'struct deferred_constant'
+v2 = v2->next; 
+     ~~^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/assemble_end_function/src/varasm.c:1720:9: note: forward declaration of 'struct deferred_constant'
+ struct deferred_constant *v2; // rbx 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/assemble_end_function/src/varasm.c:1744:1: error: use of undeclared identifier 'after_function_constants'
+after_function_constants = 0LL; 
+^
+10 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/assemble_end_function/src/obj/varasm.o] Error 1

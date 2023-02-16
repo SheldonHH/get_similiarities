@@ -1,0 +1,69 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/distribute_notes/src/combine.c:12587:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v51; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/distribute_notes/src/combine.c:12595:6: error: use of undeclared identifier 'v59'
+rtx *v59; // rax 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/distribute_notes/src/combine.c:12596:4: error: expected ';' after expression
+rtx v60; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/distribute_notes/src/combine.c:12596:5: error: use of undeclared identifier 'v60'
+rtx v60; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/distribute_notes/src/combine.c:12610:4: error: expected ';' after expression
+rtx note; // [rsp+38h] [rbp-40h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/distribute_notes/src/combine.c:12610:5: error: use of undeclared identifier 'note'
+rtx note; // [rsp+38h] [rbp-40h] 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/distribute_notes/src/combine.c:12617:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v22.rtwint = ( __int64)v6->fld[0]; 
+                       ^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/distribute_notes/src/combine.c:12627:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v23 = (  struct rtx_def *)v6[1]; 
+                          ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/distribute_notes/src/combine.c:12636:48: error: expected expression
+if ( reg_referenced_p( v6->fld[0].rtx, *( rtx *)&i3[2]) ) 
+                                               ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/distribute_notes/src/combine.c:12656:86: error: expected expression
+if ( i2 && i3 == next_nonnote_insn( i2) && reg_referenced_p( v6->fld[0].rtx, *( rtx *)&i2[2]) ) 
+                                                                                     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/distribute_notes/src/combine.c:12671:32: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( i = ( unsigned __int16 *)i3[1]; ; i = ( unsigned __int16 *)*( ( _QWORD *)i + 2) ) 
+                               ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/distribute_notes/src/combine.c:12679:43: error: expected expression
+if ( reg_set_p( v6->fld[0].rtx, *( ( rtx *)i + 4)) ) 
+                                          ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/distribute_notes/src/combine.c:12681:50: error: expected expression
+if ( reg_referenced_p( v6->fld[0].rtx, *( ( rtx *)i + 4)) 
+                                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/distribute_notes/src/combine.c:12682:39: error: expected ')'
+|| *i == 34 && find_reg_fusage( ( rtx)i, USE, v6->fld[0].rtx) ) 
+                                      ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/distribute_notes/src/combine.c:12682:31: note: to match this '('
+|| *i == 34 && find_reg_fusage( ( rtx)i, USE, v6->fld[0].rtx) ) 
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/distribute_notes/src/combine.c:12703:73: error: expected expression
+if ( all_useda < endregnoa && reg_referenced_p( v6->fld[0].rtx, *( rtx *)&i2[2]) ) 
+                                                                        ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/distribute_notes/src/combine.c:12723:13: error: invalid operands to binary expression ('struct rtx_def *' and 'uint64 *' (aka 'unsigned long long *'))
+v29 = ( rtx)*( ( _QWORD *)i + 4); 
+      ~~~~~~^~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/distribute_notes/src/combine.c:12724:58: error: expected ')'
+if ( *( _WORD *)v29 == 47 || ( v29 = single_set_2( ( rtx)i, v29)) != 0LL ) 
+                                                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/distribute_notes/src/combine.c:12724:50: note: to match this '('
+if ( *( _WORD *)v29 == 47 || ( v29 = single_set_2( ( rtx)i, v29)) != 0LL ) 
+                                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/distribute_notes/src/combine.c:12737:31: error: expected expression
+if ( !side_effects_p( *( rtx *)&v29[1]) && rtx_equal_p( v6->fld[0].rtx, rtx) ) 
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/distribute_notes/src/combine.c:12739:11: error: expected expression
+*( ( rtx *)i + 4) = global_rtl[0]; 
+          ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/distribute_notes/src/obj/combine.o] Error 1

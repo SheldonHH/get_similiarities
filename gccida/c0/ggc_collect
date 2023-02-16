@@ -1,0 +1,32 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ggc_collect/src/ggc-page.c:1890:91: error: use of undeclared identifier 'xmm'
+( __m128d)_mm_unpacklo_epi32( _mm_loadl_epi64( ( const __m128i *)&G.allocated), ( __m128i)xmm*(short *)0x8021E0), 
+                                                                                          ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ggc_collect/src/ggc-page.c:1891:11: error: use of undeclared identifier 'xmm'
+( __m128d)xmm*(short *)0x8021F0); 
+          ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ggc_collect/src/ggc-page.c:1893:99: error: use of undeclared identifier 'xmm'
+( __m128d)_mm_unpacklo_epi32( _mm_loadl_epi64( ( const __m128i *)&G.allocated_last_gc), ( __m128i)xmm*(short *)0x8021E0), 
+                                                                                                  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ggc_collect/src/ggc-page.c:1894:11: error: use of undeclared identifier 'xmm'
+( __m128d)xmm*(short *)0x8021F0); 
+          ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ggc_collect/src/ggc-page.c:1895:38: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+if ( 1.3 * ( _mm_unpackhi_pd( v1, v1).m128d_f64[0] + v1.m128d_f64[0]) <= _mm_unpackhi_pd( v0, v0).m128d_f64[0] 
+             ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ggc_collect/src/ggc-page.c:1895:56: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+if ( 1.3 * ( _mm_unpackhi_pd( v1, v1).m128d_f64[0] + v1.m128d_f64[0]) <= _mm_unpackhi_pd( v0, v0).m128d_f64[0] 
+                                                     ~~^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ggc_collect/src/ggc-page.c:1895:98: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+if ( 1.3 * ( _mm_unpackhi_pd( v1, v1).m128d_f64[0] + v1.m128d_f64[0]) <= _mm_unpackhi_pd( v0, v0).m128d_f64[0] 
+                                                                         ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ggc_collect/src/ggc-page.c:1896:5: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
++ v0.m128d_f64[0] ) 
+  ~~^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ggc_collect/src/ggc-page.c:1898:15: error: use of undeclared identifier 'TV_GC_0'
+timevar_push( TV_GC_0); 
+              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ggc_collect/src/ggc-page.c:1909:14: error: use of undeclared identifier 'TV_GC_0'
+timevar_pop( TV_GC_0); 
+             ^
+10 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ggc_collect/src/obj/ggc-page.o] Error 1

@@ -1,0 +1,29 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/parse_options_and_default_flags/src/toplev.c:5116:1: error: use of undeclared identifier 'lang_hooks_0'; did you mean 'lang_hooks'?
+lang_hooks_0.init_options( ); 
+^~~~~~~~~~~~
+lang_hooks
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/parse_options_and_default_flags/src/langhooks.h:168:32: note: 'lang_hooks' declared here
+extern const struct lang_hooks lang_hooks;
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/parse_options_and_default_flags/src/toplev.c:5186:21: error: use of undeclared identifier 'sep'
+set_target_switch( &sep); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/parse_options_and_default_flags/src/toplev.c:5191:18: error: use of undeclared identifier 'lang_hooks_0'; did you mean 'lang_hooks'?
+lang_processed = lang_hooks_0.decode_option( argc - ia, &argv[ia]); 
+                 ^~~~~~~~~~~~
+                 lang_hooks
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/parse_options_and_default_flags/src/langhooks.h:168:32: note: 'lang_hooks' declared here
+extern const struct lang_hooks lang_hooks;
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/parse_options_and_default_flags/src/toplev.c:5191:44: error: called object type '<dependent type>' is not a function or function pointer
+lang_processed = lang_hooks_0.decode_option( argc - ia, &argv[ia]); 
+                                           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/parse_options_and_default_flags/src/toplev.c:5254:1: error: use of undeclared identifier 'lang_hooks_0'; did you mean 'lang_hooks'?
+lang_hooks_0.post_options( ); 
+^~~~~~~~~~~~
+lang_hooks
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/parse_options_and_default_flags/src/langhooks.h:168:32: note: 'lang_hooks' declared here
+extern const struct lang_hooks lang_hooks;
+                               ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/parse_options_and_default_flags/src/obj/toplev.o] Error 1

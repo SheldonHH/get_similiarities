@@ -1,0 +1,38 @@
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/combinations/src/engine/combination.c:610:31: error: use of undeclared identifier 'forbidden'
+memset( forbidden, 0, sizeof( forbidden)); 
+                              ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/combinations/src/engine/combination.c:610:9: error: use of undeclared identifier 'forbidden'
+memset( forbidden, 0, sizeof( forbidden)); 
+        ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/combinations/src/engine/combination.c:620:1: error: use of undeclared identifier 'forbidden'
+forbidden[strings[0]] = 1; 
+^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/combinations/src/engine/combination.c:650:36: error: use of undeclared identifier 'forbidden'
+&& ( memset( forbidden, 0, sizeof( forbidden)), 
+                                   ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/combinations/src/engine/combination.c:650:14: error: use of undeclared identifier 'forbidden'
+&& ( memset( forbidden, 0, sizeof( forbidden)), 
+             ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/combinations/src/engine/combination.c:659:1: error: use of undeclared identifier 'forbidden'
+forbidden[strings[0]] = 1; 
+^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/combinations/src/engine/combination.c:807:13: error: static declaration of 'compute_aa_status' follows non-static declaration
+static void compute_aa_status(int color, const char safe_stones[BOARDMAX]);
+            ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/combinations/src/engine/combination.c:611:1: note: previous implicit declaration is here
+compute_aa_status( v1, 0LL); 
+^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/combinations/src/engine/combination.c:808:13: error: static declaration of 'compute_aa_values' follows non-static declaration
+static void compute_aa_values(int color);
+            ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/combinations/src/engine/combination.c:612:1: note: previous implicit declaration is here
+compute_aa_values( v1); 
+^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/combinations/src/engine/combination.c:810:12: error: static declaration of 'do_atari_atari' follows non-static declaration
+static int do_atari_atari(int color, int *attack_point, int *defense_point,
+           ^
+/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/combinations/src/engine/combination.c:613:7: note: previous implicit declaration is here
+v13 = do_atari_atari( v1, strings, &defense_point, 0LL, 0, v12, 0, 0LL); 
+      ^
+9 errors generated.
+make: *** [/data/output_dir/patch/gobmk/ida/clang/O3/gobmk-clang-O3/combinations/src/obj/1/combination.o] Error 1

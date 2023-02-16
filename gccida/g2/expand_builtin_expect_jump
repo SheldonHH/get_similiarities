@@ -1,0 +1,29 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_builtin_expect_jump/src/builtins.c:3924:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v4; // r12 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_builtin_expect_jump/src/builtins.c:3926:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v7; // r13 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_builtin_expect_jump/src/builtins.c:3939:1: error: must use 'enum' tag to refer to type 'prediction'
+prediction v21; // edx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_builtin_expect_jump/src/builtins.c:3947:21: error: expected expression
+v4 = *( tree_node **)( *high + 32LL); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_builtin_expect_jump/src/builtins.c:3947:9: error: use of undeclared identifier 'tree_node'
+v4 = *( tree_node **)( *high + 32LL); 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_builtin_expect_jump/src/builtins.c:3950:19: error: expected expression
+v7 = ( tree_node *)high[4]; 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_builtin_expect_jump/src/builtins.c:3950:8: error: use of undeclared identifier 'tree_node'
+v7 = ( tree_node *)high[4]; 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_builtin_expect_jump/src/builtins.c:3997:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v15 = ( __int64)v14[1]; 
+                ^~~~~~
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_builtin_expect_jump/src/obj/builtins.o] Error 1

@@ -1,0 +1,39 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/force_operand/src/expr.c:5902:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v7; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/force_operand/src/expr.c:5922:28: error: use of undeclared identifier 'machine_mode'
+subtarget = gen_reg_rtx( ( machine_mode)*( ( unsigned __int8 *)value + 2)); 
+                           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/force_operand/src/expr.c:5941:28: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+op2a = (  struct rtx_def *)value[1]; 
+                           ^~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/force_operand/src/expr.c:5957:22: error: use of undeclared identifier 'machine_mode'
+op2a = negate_rtx( ( machine_mode)*( ( unsigned __int8 *)value + 2), op2a); 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/force_operand/src/expr.c:5967:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)value + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/force_operand/src/expr.c:5976:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)value + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/force_operand/src/expr.c:5989:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)value + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/force_operand/src/expr.c:6004:21: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v6 = ( unsigned int)value[1]; 
+                    ^~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/force_operand/src/expr.c:6007:19: error: use of undeclared identifier 'machine_mode'
+v9 = force_reg( ( machine_mode)*( unsigned __int8 *)( value->fld[0].rtwint + 2), v8); 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/force_operand/src/expr.c:6008:31: error: use of undeclared identifier 'machine_mode'
+return simplify_gen_subreg( ( machine_mode)*( ( unsigned __int8 *)value + 2), v9, v7, v6); 
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/force_operand/src/expr.c:6013:13: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+op2 = ( rtx)value[1]; 
+            ^~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/force_operand/src/expr.c:6028:23: error: use of undeclared identifier 'machine_mode'
+return expand_mult( ( machine_mode)*( ( unsigned __int8 *)value + 2), tmp, v3, target, 1); 
+                      ^
+12 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/force_operand/src/obj/expr.o] Error 1

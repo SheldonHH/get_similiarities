@@ -1,0 +1,17 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/reg_fits_class_p/src/recog.c:3131:37: error: must use 'enum' tag to refer to type 'reg_class'
+int  reg_fits_class_p( rtx operand, reg_class a2, int offset, machine_mode mode) 
+                                    ^
+                                    enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/reg_fits_class_p/src/recog.c:3131:63: error: must use 'enum' tag to refer to type 'machine_mode'
+int  reg_fits_class_p( rtx operand, reg_class a2, int offset, machine_mode mode) 
+                                                              ^
+                                                              enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/reg_fits_class_p/src/recog.c:3155:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v10 = ( ( unsigned int)( mode_class_0[mode] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/reg_fits_class_p/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/reg_fits_class_p/src/obj/recog.o] Error 1

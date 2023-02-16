@@ -1,0 +1,72 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/compile_file/src/toplev.c:2579:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *globals; // [rsp+18h] [rbp-18h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/compile_file/src/toplev.c:2585:15: error: use of undeclared identifier 'TV_PARSE_0'; did you mean 'TV_PARSE'?
+timevar_push( TV_PARSE_0); 
+              ^~~~~~~~~~
+              TV_PARSE
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/compile_file/src/timevar.def:52:13: note: 'TV_PARSE' declared here
+DEFTIMEVAR (TV_PARSE                 , "parser")
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/compile_file/src/toplev.c:2587:1: error: use of undeclared identifier 'lang_hooks_0'; did you mean 'lang_hooks'?
+lang_hooks_0.clear_binding_stack( ); 
+^~~~~~~~~~~~
+lang_hooks
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/compile_file/src/langhooks.h:168:32: note: 'lang_hooks' declared here
+extern const struct lang_hooks lang_hooks;
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/compile_file/src/toplev.c:2588:14: error: use of undeclared identifier 'TV_PARSE_0'; did you mean 'TV_PARSE'?
+timevar_pop( TV_PARSE_0); 
+             ^~~~~~~~~~
+             TV_PARSE
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/compile_file/src/timevar.def:52:13: note: 'TV_PARSE' declared here
+DEFTIMEVAR (TV_PARSE                 , "parser")
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/compile_file/src/toplev.c:2591:17: error: expected identifier or '('
+ struct globals = getdecls( ); 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/compile_file/src/toplev.c:2606:15: error: use of undeclared identifier 'TV_SYMOUT_0'; did you mean 'TV_SYMOUT'?
+timevar_push( TV_SYMOUT_0); 
+              ^~~~~~~~~~~
+              TV_SYMOUT
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/compile_file/src/timevar.def:86:13: note: 'TV_SYMOUT' declared here
+DEFTIMEVAR (TV_SYMOUT                , "symout")
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/compile_file/src/toplev.c:2610:14: error: use of undeclared identifier 'TV_SYMOUT_0'; did you mean 'TV_SYMOUT'?
+timevar_pop( TV_SYMOUT_0); 
+             ^~~~~~~~~~~
+             TV_SYMOUT
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/compile_file/src/timevar.def:86:13: note: 'TV_SYMOUT' declared here
+DEFTIMEVAR (TV_SYMOUT                , "symout")
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/compile_file/src/toplev.c:2615:15: error: use of undeclared identifier 'TV_DUMP_0'; did you mean 'TV_DUMP'?
+timevar_push( TV_DUMP_0); 
+              ^~~~~~~~~
+              TV_DUMP
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/compile_file/src/timevar.def:40:13: note: 'TV_DUMP' declared here
+DEFTIMEVAR (TV_DUMP                  , "dump files")
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/compile_file/src/toplev.c:2619:14: error: use of undeclared identifier 'TV_DUMP_0'; did you mean 'TV_DUMP'?
+timevar_pop( TV_DUMP_0); 
+             ^~~~~~~~~
+             TV_DUMP
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/compile_file/src/timevar.def:40:13: note: 'TV_DUMP' declared here
+DEFTIMEVAR (TV_DUMP                  , "dump files")
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/compile_file/src/toplev.c:2628:15: error: use of undeclared identifier 'TV_DUMP_0'; did you mean 'TV_DUMP'?
+timevar_push( TV_DUMP_0); 
+              ^~~~~~~~~
+              TV_DUMP
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/compile_file/src/timevar.def:40:13: note: 'TV_DUMP' declared here
+DEFTIMEVAR (TV_DUMP                  , "dump files")
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/compile_file/src/toplev.c:2631:14: error: use of undeclared identifier 'TV_DUMP_0'; did you mean 'TV_DUMP'?
+timevar_pop( TV_DUMP_0); 
+             ^~~~~~~~~
+             TV_DUMP
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/compile_file/src/timevar.def:40:13: note: 'TV_DUMP' declared here
+DEFTIMEVAR (TV_DUMP                  , "dump files")
+            ^
+11 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/compile_file/src/obj/toplev.o] Error 1

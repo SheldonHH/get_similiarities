@@ -1,0 +1,34 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_reloads_toplev/src/reload.c:4798:1: error: must use 'enum' tag to refer to type 'reload_type'
+reload_type type, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_reloads_toplev/src/reload.c:4844:25: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( replace_reloads && recog_data_0.operand[opnum] != arg0 ) 
+                        ^~~~~~~~~~~~
+                        recog_data
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_reloads_toplev/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_reloads_toplev/src/reload.c:4851:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)memloc + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_reloads_toplev/src/reload.c:4869:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)x + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_reloads_toplev/src/reload.c:4885:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v18.rtwint = ( __int64)x->fld[0]; 
+                       ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_reloads_toplev/src/reload.c:4896:32: error: use of undeclared identifier 'machine_mode'
+result = gen_lowpart_common( ( machine_mode)*( ( unsigned __int8 *)arg0 + 2), v20); 
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_reloads_toplev/src/reload.c:4958:34: error: use of undeclared identifier 'machine_mode'
+&& ( !strict_memory_address_p( ( machine_mode)*( ( unsigned __int8 *)arg0 + 2), v24->fld[0].rtx) 
+                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_reloads_toplev/src/reload.c:4975:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( unsigned __int8 *)( arg0->fld[0].rtwint + 2)); 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_reloads_toplev/src/reload.c:4978:32: error: use of undeclared identifier 'machine_mode'
+result = gen_lowpart_common( ( machine_mode)*( ( unsigned __int8 *)arg0 + 2), v22); 
+                               ^
+9 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_reloads_toplev/src/obj/reload.o] Error 1

@@ -1,0 +1,15 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/noce_emit_store_flag/src/ifcvt.c:974:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v10; // r12d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/noce_emit_store_flag/src/ifcvt.c:996:69: error: too many arguments to function call, expected 2, have 4
+v10 = ( unsigned int)reversed_comparison_code( cond, if_info->jump, v8, v9); 
+                     ~~~~~~~~~~~~~~~~~~~~~~~~                       ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/noce_emit_store_flag/src/rtl.h:1817:1: note: 'reversed_comparison_code' declared here
+extern enum rtx_code reversed_comparison_code PARAMS ((rtx, rtx));
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/noce_emit_store_flag/src/ifcvt.c:1001:30: error: use of undeclared identifier 'machine_mode'
+v11 = gen_rtx_fmt_ee( v10, ( machine_mode)*( ( unsigned __int8 *)x + 2), cond->fld[0].rtx, *( rtx *)&cond[1]); 
+                             ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/noce_emit_store_flag/src/obj/ifcvt.o] Error 1

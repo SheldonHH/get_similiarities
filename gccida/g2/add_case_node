@@ -1,0 +1,64 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/add_case_node/src/stmt.c:5137:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v5; // r12 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/add_case_node/src/stmt.c:5147:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *default_label; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/add_case_node/src/stmt.c:5149:6: error: use of undeclared identifier 'v19'
+rtx *v19; // rax 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/add_case_node/src/stmt.c:5153:6: error: use of undeclared identifier 'v23'
+rtx *v23; // rdx 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/add_case_node/src/stmt.c:5167:47: error: expected ';' after expression
+x_case_stack->data.loop.alt_end_label = ( rtx)label; 
+                                              ^
+                                              ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/add_case_node/src/stmt.c:5233:13: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v16 = ( int)next_label[3]; 
+            ^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/add_case_node/src/stmt.c:5256:14: error: expected expression
+v23 = ( rtx *)next_label[1]; 
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/add_case_node/src/stmt.c:5256:1: error: use of undeclared identifier 'v23'
+v23 = ( rtx *)next_label[1]; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/add_case_node/src/stmt.c:5260:34: error: use of undeclared identifier 'v23'
+*( _QWORD *)( v18.rtwint + 16) = v23; 
+                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/add_case_node/src/stmt.c:5261:6: error: use of undeclared identifier 'v23'
+if ( v23 ) 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/add_case_node/src/stmt.c:5263:7: error: use of undeclared identifier 'v23'
+if ( *v23 == next_label ) 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/add_case_node/src/stmt.c:5266:2: error: use of undeclared identifier 'v23'
+*v23 = ( rtx)v18.rtwint; 
+ ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/add_case_node/src/stmt.c:5270:1: error: use of undeclared identifier 'v23'
+v23[1] = ( rtx)v18.rtwint; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/add_case_node/src/stmt.c:5288:20: error: expected ';' after expression
+next_label = ( rtx)next_label[1]; 
+                   ^
+                   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/add_case_node/src/stmt.c:5317:14: error: expected expression
+v23 = ( rtx *)next_label[1]; 
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/add_case_node/src/stmt.c:5317:1: error: use of undeclared identifier 'v23'
+v23 = ( rtx *)next_label[1]; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/add_case_node/src/stmt.c:5321:34: error: use of undeclared identifier 'v23'
+*( _QWORD *)( v18.rtwint + 16) = v23; 
+                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/add_case_node/src/stmt.c:5322:6: error: use of undeclared identifier 'v23'
+if ( v23 ) 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/add_case_node/src/stmt.c:5324:21: error: use of undeclared identifier 'v23'
+if ( next_label == *v23 ) 
+                    ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/add_case_node/src/obj/stmt.o] Error 1

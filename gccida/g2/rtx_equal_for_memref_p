@@ -1,0 +1,35 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/rtx_equal_for_memref_p/src/alias.c:1556:17: error: expected expression
+if ( *( _OWORD *)&x == 0LL ) 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/rtx_equal_for_memref_p/src/alias.c:1556:9: error: use of undeclared identifier '_OWORD'
+if ( *( _OWORD *)&x == 0LL ) 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/rtx_equal_for_memref_p/src/alias.c:1585:12: error: invalid operands to binary expression ('struct rtx_def' and 'struct rtx_def')
+if ( v6[1] != v7[1] ) 
+     ~~~~~ ^  ~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/rtx_equal_for_memref_p/src/alias.c:1592:37: error: expected expression
+|| !rtx_equal_for_memref_p( *( rtx *)&v6[1], *( rtx *)&v8[1]) ) 
+                                    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/rtx_equal_for_memref_p/src/alias.c:1592:54: error: expected expression
+|| !rtx_equal_for_memref_p( *( rtx *)&v6[1], *( rtx *)&v8[1]) ) 
+                                                     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/rtx_equal_for_memref_p/src/alias.c:1594:55: error: expected expression
+if ( !rtx_equal_for_memref_p( v6->fld[0].rtx, *( rtx *)&v8[1]) ) 
+                                                      ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/rtx_equal_for_memref_p/src/alias.c:1597:40: error: expected expression
+return rtx_equal_for_memref_p( *( rtx *)&v6[1], rtx) != 0; 
+                                       ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/rtx_equal_for_memref_p/src/alias.c:1605:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+rtx = (  struct rtx_def *)v8[1]; 
+                          ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/rtx_equal_for_memref_p/src/alias.c:1606:40: error: expected expression
+return rtx_equal_for_memref_p( *( rtx *)&v6[1], rtx) != 0; 
+                                       ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/rtx_equal_for_memref_p/src/alias.c:1663:41: error: expected expression
+while ( rtx_equal_for_memref_p( *( rtx *)&rtwint[2 * v18 + 2], *( rtx *)&v17[2 * v18 + 2]) ) 
+                                        ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/rtx_equal_for_memref_p/src/alias.c:1663:72: error: expected expression
+while ( rtx_equal_for_memref_p( *( rtx *)&rtwint[2 * v18 + 2], *( rtx *)&v17[2 * v18 + 2]) ) 
+                                                                       ^
+11 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/rtx_equal_for_memref_p/src/obj/alias.o] Error 1

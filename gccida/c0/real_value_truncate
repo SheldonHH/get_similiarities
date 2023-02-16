@@ -1,0 +1,31 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/real_value_truncate/src/real.c:1565:61: error: must use 'enum' tag to refer to type 'machine_mode'
+realvaluetype * real_value_truncate( realvaluetype *retstr, machine_mode mode, realvaluetype arg) 
+                                                            ^
+                                                            enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/real_value_truncate/src/real.c:1565:17: error: conflicting types for 'real_value_truncate'
+realvaluetype * real_value_truncate( realvaluetype *retstr, machine_mode mode, realvaluetype arg) 
+                ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/real_value_truncate/src/real.h:406:24: note: previous declaration is here
+extern REAL_VALUE_TYPE real_value_truncate PARAMS ((enum machine_mode,
+                       ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/real_value_truncate/src/real.c:1571:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode modea; // [rsp+8Ch] [rbp-4h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/real_value_truncate/src/real.c:1586:10: error: passing 'realvaluetype *' to parameter of incompatible type 'realvaluetype'; remove &
+etrunci( &v4, arg); 
+         ^~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/real_value_truncate/src/real.c:1589:12: error: expected expression
+*( _OWORD *)&retstr->r[1] = *( _OWORD *)&r.r[1]; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/real_value_truncate/src/real.c:1589:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&retstr->r[1] = *( _OWORD *)&r.r[1]; 
+   ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/real_value_truncate/src/real.c:1589:40: error: expected expression
+*( _OWORD *)&retstr->r[1] = *( _OWORD *)&r.r[1]; 
+                                       ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/real_value_truncate/src/real.c:1589:32: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&retstr->r[1] = *( _OWORD *)&r.r[1]; 
+                               ^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/real_value_truncate/src/obj/real.o] Error 1

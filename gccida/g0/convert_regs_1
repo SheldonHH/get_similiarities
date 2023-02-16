@@ -1,0 +1,31 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/convert_regs_1/src/reg-stack.c:3085:1: error: unknown type name 'block_info_0'; did you mean 'block_info'?
+block_info_0 v6; // rcx 
+^~~~~~~~~~~~
+block_info
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/convert_regs_1/src/reg-stack.c:202:4: note: 'block_info' declared here
+} *block_info;
+   ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/convert_regs_1/src/reg-stack.c:3091:1: error: unknown type name 'block_info_0'; did you mean 'block_info'?
+block_info_0 bi; // [rsp+30h] [rbp-30h] 
+^~~~~~~~~~~~
+block_info
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/convert_regs_1/src/reg-stack.c:202:4: note: 'block_info' declared here
+} *block_info;
+   ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/convert_regs_1/src/reg-stack.c:3099:8: error: use of undeclared identifier 'block_info_0'
+bi = ( block_info_0)block->aux; 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/convert_regs_1/src/reg-stack.c:3160:17: error: expected identifier or '('
+ struct reg_set = bi->stack_in.reg_set; 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/convert_regs_1/src/reg-stack.c:3189:16: error: use of undeclared identifier 'off_803B1B'
+fprintf( file, off_803B1B, ( unsigned int)reg); 
+               ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/convert_regs_1/src/reg-stack.c:3196:14: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+insn = ( rtx)insn[1]; 
+             ^~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/convert_regs_1/src/reg-stack.c:3203:13: error: expected identifier or '('
+ struct set = gen_rtx_fmt_ee( SET, VOIDmode, FP_mode_reg[reg - 8][15], nan); 
+            ^
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/convert_regs_1/src/obj/reg-stack.o] Error 1

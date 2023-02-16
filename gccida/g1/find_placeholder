@@ -1,0 +1,21 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_placeholder/src/expr.c:6405:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *section_name; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_placeholder/src/expr.c:6453:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v9.rtwint = ( __int64)rtl->fld[0]; 
+                      ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_placeholder/src/expr.c:6455:19: error: expected expression
+&& *( tree_node **)( *( _QWORD *)( v9.rtwint + 8) + 128LL) == section_name ) 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_placeholder/src/expr.c:6455:7: error: use of undeclared identifier 'tree_node'
+&& *( tree_node **)( *( _QWORD *)( v9.rtwint + 8) + 128LL) == section_name ) 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_placeholder/src/expr.c:6459:24: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v8 = ( unsigned __int8)rtl[1]; 
+                       ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_placeholder/src/expr.c:6465:13: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+rtl = ( rtx)rtl[2]; 
+            ^~~~~~
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_placeholder/src/obj/expr.o] Error 1

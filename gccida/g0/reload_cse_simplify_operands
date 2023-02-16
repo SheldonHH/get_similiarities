@@ -1,0 +1,111 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/reload_cse_simplify_operands/src/reload1.c:8825:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // [rsp+2F4h] [rbp-7Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/reload_cse_simplify_operands/src/reload1.c:8829:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode_0; // [rsp+304h] [rbp-6Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/reload_cse_simplify_operands/src/reload1.c:8830:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode_1; // [rsp+308h] [rbp-68h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/reload_cse_simplify_operands/src/reload1.c:8848:7: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( !recog_data_0.n_alternatives || !recog_data_0.n_operands ) 
+      ^~~~~~~~~~~~
+      recog_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/reload_cse_simplify_operands/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/reload_cse_simplify_operands/src/reload1.c:8848:39: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( !recog_data_0.n_alternatives || !recog_data_0.n_operands ) 
+                                      ^~~~~~~~~~~~
+                                      recog_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/reload_cse_simplify_operands/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/reload_cse_simplify_operands/src/reload1.c:8851:30: error: too many arguments provided to function-like macro invocation
+fatal_insn_not_found( insna, "reload1.c", 8371, "reload_cse_simplify_operands"); 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/reload_cse_simplify_operands/src/toplev.h:52:9: note: macro 'fatal_insn_not_found' defined here
+#define fatal_insn_not_found(insn) \
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/reload_cse_simplify_operands/src/reload1.c:8851:1: error: use of undeclared identifier 'fatal_insn_not_found'; did you mean '_fatal_insn_not_found'?
+fatal_insn_not_found( insna, "reload1.c", 8371, "reload_cse_simplify_operands"); 
+^~~~~~~~~~~~~~~~~~~~
+_fatal_insn_not_found
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/reload_cse_simplify_operands/src/toplev.h:40:13: note: '_fatal_insn_not_found' declared here
+extern void _fatal_insn_not_found       PARAMS ((struct rtx_def *,
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/reload_cse_simplify_operands/src/reload1.c:8852:29: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+v2 = alloca( 16 * ( ( 4LL * recog_data_0.n_alternatives + 23) / 0x10uLL)); 
+                            ^~~~~~~~~~~~
+                            recog_data
+/usr/include/alloca.h:35:41: note: expanded from macro 'alloca'
+# define alloca(size)   __builtin_alloca (size)
+                                          ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/reload_cse_simplify_operands/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/reload_cse_simplify_operands/src/reload1.c:8854:29: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+v3 = alloca( 16 * ( ( 4LL * recog_data_0.n_alternatives + 23) / 0x10uLL)); 
+                            ^~~~~~~~~~~~
+                            recog_data
+/usr/include/alloca.h:35:41: note: expanded from macro 'alloca'
+# define alloca(size)   __builtin_alloca (size)
+                                          ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/reload_cse_simplify_operands/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/reload_cse_simplify_operands/src/reload1.c:8856:29: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+v4 = alloca( 16 * ( ( 4LL * recog_data_0.n_alternatives + 23) / 0x10uLL)); 
+                            ^~~~~~~~~~~~
+                            recog_data
+/usr/include/alloca.h:35:41: note: expanded from macro 'alloca'
+# define alloca(size)   __builtin_alloca (size)
+                                          ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/reload_cse_simplify_operands/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/reload_cse_simplify_operands/src/reload1.c:8858:24: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+memset( &v13, 0, 4LL * recog_data_0.n_alternatives); 
+                       ^~~~~~~~~~~~
+                       recog_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/reload_cse_simplify_operands/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/reload_cse_simplify_operands/src/reload1.c:8859:37: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+memset( alternative_nregs, 0, 4LL * recog_data_0.n_alternatives); 
+                                    ^~~~~~~~~~~~
+                                    recog_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/reload_cse_simplify_operands/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/reload_cse_simplify_operands/src/reload1.c:8860:18: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+for ( i = 0; i < recog_data_0.n_operands; ++i ) 
+                 ^~~~~~~~~~~~
+                 recog_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/reload_cse_simplify_operands/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/reload_cse_simplify_operands/src/reload1.c:8863:17: error: use of undeclared identifier 'recog_data_0'
+if ( *( _WORD *)recog_data_0.operand[i] != 36 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/reload_cse_simplify_operands/src/reload1.c:8864:17: error: use of undeclared identifier 'recog_data_0'
+&& ( *( _WORD *)recog_data_0.operand[i] != 67 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/reload_cse_simplify_operands/src/reload1.c:8865:15: error: use of undeclared identifier 'recog_data_0'
+&& *( _WORD *)recog_data_0.operand[i] != 68 
+              ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/reload_cse_simplify_operands/src/reload1.c:8866:15: error: use of undeclared identifier 'recog_data_0'
+&& *( _WORD *)recog_data_0.operand[i] != 54 
+              ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/reload_cse_simplify_operands/src/reload1.c:8867:15: error: use of undeclared identifier 'recog_data_0'
+&& *( _WORD *)recog_data_0.operand[i] != 55 
+              ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/reload_cse_simplify_operands/src/reload1.c:8868:15: error: use of undeclared identifier 'recog_data_0'
+&& *( _WORD *)recog_data_0.operand[i] != 58 
+              ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/reload_cse_simplify_operands/src/obj/reload1.o] Error 1

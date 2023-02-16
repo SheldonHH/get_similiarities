@@ -1,0 +1,99 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/convert_move/src/expr.c:960:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v15; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/convert_move/src/expr.c:978:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *shift_amount; // [rsp+108h] [rbp-98h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/convert_move/src/expr.c:980:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode intermediate; // [rsp+11Ch] [rbp-84h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/convert_move/src/expr.c:983:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode lowpart_mode; // [rsp+130h] [rbp-70h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/convert_move/src/expr.c:991:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code equiv_code; // [rsp+16Ch] [rbp-34h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/convert_move/src/expr.c:998:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode from_mode; // [rsp+184h] [rbp-1Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/convert_move/src/expr.c:999:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode to_mode; // [rsp+188h] [rbp-18h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/convert_move/src/expr.c:1008:11: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+to_real = mode_class_0[( unsigned __int8)BYTE2( *( _DWORD *)to)] == MODE_FLOAT; 
+          ^~~~~~~~~~~~
+          mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/convert_move/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/convert_move/src/expr.c:1009:13: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+from_real = mode_class_0[( unsigned __int8)BYTE2( *( _DWORD *)from)] == MODE_FLOAT; 
+            ^~~~~~~~~~~~
+            mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/convert_move/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/convert_move/src/expr.c:1043:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[to_mode] == MODE_VECTOR_INT 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/convert_move/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/convert_move/src/expr.c:1044:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| mode_class_0[to_mode] == MODE_VECTOR_FLOAT 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/convert_move/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/convert_move/src/expr.c:1045:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| mode_class_0[from_mode] == MODE_VECTOR_INT 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/convert_move/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/convert_move/src/expr.c:1046:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| mode_class_0[from_mode] == MODE_VECTOR_FLOAT ) 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/convert_move/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/convert_move/src/expr.c:1050:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[to_mode] == MODE_VECTOR_INT || mode_class_0[to_mode] == MODE_VECTOR_FLOAT ) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/convert_move/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/convert_move/src/expr.c:1050:50: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[to_mode] == MODE_VECTOR_INT || mode_class_0[to_mode] == MODE_VECTOR_FLOAT ) 
+                                                 ^~~~~~~~~~~~
+                                                 mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/convert_move/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/convert_move/src/expr.c:1052:48: error: use of undeclared identifier 'machine_mode'
+fromb = simplify_gen_subreg( to_mode, froma, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)froma), 0); 
+                                               ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/convert_move/src/expr.c:1052:63: error: expected expression
+fromb = simplify_gen_subreg( to_mode, froma, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)froma), 0); 
+                                                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/convert_move/src/expr.c:1057:46: error: use of undeclared identifier 'machine_mode'
+tob = simplify_gen_subreg( from_mode, toa, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)toa), 0); 
+                                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/convert_move/src/expr.c:1057:61: error: expected expression
+tob = simplify_gen_subreg( from_mode, toa, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)toa), 0); 
+                                                            ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/convert_move/src/obj/expr.o] Error 1

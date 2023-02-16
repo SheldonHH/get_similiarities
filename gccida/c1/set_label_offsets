@@ -1,0 +1,62 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/set_label_offsets/src/reload1.c:2600:4: error: expected ';' after expression
+rtx nonnote_insn; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/set_label_offsets/src/reload1.c:2600:5: error: use of undeclared identifier 'nonnote_insn'
+rtx nonnote_insn; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/set_label_offsets/src/reload1.c:2601:6: error: use of undeclared identifier 'v21'; did you mean 'v11'?
+rtx *v21; // rax 
+     ^~~
+     v11
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/set_label_offsets/src/reload1.c:2591:7: note: 'v11' declared here
+char *v11; // rax 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/set_label_offsets/src/reload1.c:2601:5: error: invalid operands to binary expression ('rtx' (aka 'struct rtx_def *') and 'char *')
+rtx *v21; // rax 
+~~~ ^~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/set_label_offsets/src/reload1.c:2615:28: error: expected expression
+set_label_offsets( *( rtx *)&insn[2], insn, initial_p); 
+                           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/set_label_offsets/src/reload1.c:2617:29: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+for ( v9.rtwint = ( __int64)x[3].fld[0]; v9.rtwint; v9.rtwint = *( __int64 *)( v9.rtwint + 16) ) 
+                            ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/set_label_offsets/src/reload1.c:2620:28: error: expected expression
+set_label_offsets( *( rtx *)( v9.rtwint + 8), insn, 1); 
+                           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/set_label_offsets/src/reload1.c:2635:28: error: expected expression
+set_label_offsets( *( rtx *)&rtwint[2 * v8++ + 2], insn, initial_p); 
+                           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/set_label_offsets/src/reload1.c:2644:19: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v10 = ( __int16 *)x[1]; 
+                  ^~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/set_label_offsets/src/reload1.c:2653:14: error: expected expression
+v21 = ( rtx *)*( ( _QWORD *)v10 + 2); 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/set_label_offsets/src/reload1.c:2653:1: error: use of undeclared identifier 'v21'
+v21 = ( rtx *)*( ( _QWORD *)v10 + 2); 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/set_label_offsets/src/reload1.c:2654:18: error: use of undeclared identifier 'v21'
+v22 = *( _WORD *)v21; 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/set_label_offsets/src/reload1.c:2655:17: error: use of undeclared identifier 'v21'
+if ( *( _WORD *)v21 == 51 || v22 == 59 ) 
+                ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/set_label_offsets/src/reload1.c:2659:20: error: use of undeclared identifier 'v21'; did you mean 'v11'?
+set_label_offsets( v21[1], insn, initial_p); 
+                   ^~~
+                   v11
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/set_label_offsets/src/reload1.c:2591:7: note: 'v11' declared here
+char *v11; // rax 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/set_label_offsets/src/reload1.c:2668:30: error: expected expression
+set_label_offsets( *( ( rtx *)v10 + 1), insn, initial_p); 
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/set_label_offsets/src/reload1.c:2698:23: error: use of undeclared identifier 'nonnote_insn'
+if ( rtx == insn && ( nonnote_insn = prev_nonnote_insn( insn)) != 0LL && *( _WORD *)nonnote_insn == 35 ) 
+                      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/set_label_offsets/src/reload1.c:2698:85: error: use of undeclared identifier 'nonnote_insn'
+if ( rtx == insn && ( nonnote_insn = prev_nonnote_insn( insn)) != 0LL && *( _WORD *)nonnote_insn == 35 ) 
+                                                                                    ^
+17 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/set_label_offsets/src/obj/reload1.o] Error 1

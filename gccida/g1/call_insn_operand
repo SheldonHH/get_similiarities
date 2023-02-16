@@ -1,0 +1,18 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/call_insn_operand/src/i386.c:3489:33: error: must use 'enum' tag to refer to type 'machine_mode'
+int  call_insn_operand( rtx op, machine_mode mode) 
+                                ^
+                                enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/call_insn_operand/src/i386.c:3497:24: error: expected expression
+if ( global_rtl[5] ==  struct op ) 
+                       ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/call_insn_operand/src/i386.c:3501:29: error: expected expression
+else if ( global_rtl[3] ==  struct op ) 
+                            ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/call_insn_operand/src/i386.c:3509:31: error: use of undeclared identifier 'machine_mode'
+return general_operand( op, ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4)); 
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/call_insn_operand/src/i386.c:3519:31: error: use of undeclared identifier 'machine_mode'
+return general_operand( op, ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4)); 
+                              ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/call_insn_operand/src/obj/i386.o] Error 1

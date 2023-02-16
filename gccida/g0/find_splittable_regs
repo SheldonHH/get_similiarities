@@ -1,0 +1,39 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_splittable_regs/src/unroll.c:2972:54: error: must use 'enum' tag to refer to type 'unroll_types'
+int  find_splittable_regs( const  struct loop *loop, unroll_types unroll_type, int unroll_number) 
+                                                     ^
+                                                     enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_splittable_regs/src/unroll.c:2985:1: error: use of undeclared identifier 'induction_1'
+induction_1 *v; // [rsp+50h] [rbp-10h] 
+^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_splittable_regs/src/unroll.c:2985:14: error: use of undeclared identifier 'v'
+induction_1 *v; // [rsp+50h] [rbp-10h] 
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_splittable_regs/src/unroll.c:3013:7: error: use of undeclared identifier 'v'
+for ( v = bl_0->biv; biv_splittable && v; v = v->next_iv ) 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_splittable_regs/src/unroll.c:3013:40: error: use of undeclared identifier 'v'
+for ( v = bl_0->biv; biv_splittable && v; v = v->next_iv ) 
+                                       ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_splittable_regs/src/unroll.c:3013:43: error: use of undeclared identifier 'v'
+for ( v = bl_0->biv; biv_splittable && v; v = v->next_iv ) 
+                                          ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_splittable_regs/src/unroll.c:3013:47: error: use of undeclared identifier 'v'
+for ( v = bl_0->biv; biv_splittable && v; v = v->next_iv ) 
+                                              ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_splittable_regs/src/unroll.c:3015:27: error: use of undeclared identifier 'v'
+if ( rtx_class[*( _WORD *)v->insn] == 105 ) 
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_splittable_regs/src/unroll.c:3017:20: error: use of undeclared identifier 'v'
+if ( **( _WORD **)&v->insn[2] == 47 ) 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_splittable_regs/src/unroll.c:3018:12: error: use of undeclared identifier 'v'
+v3 = ( rtx)v->insn[2]; 
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_splittable_regs/src/unroll.c:3020:39: error: use of undeclared identifier 'v'
+v3 = single_set_2( v->insn, *( rtx *)&v->insn[2]); 
+                                      ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_splittable_regs/src/unroll.c:3020:20: error: use of undeclared identifier 'v'
+v3 = single_set_2( v->insn, *( rtx *)&v->insn[2]); 
+                   ^
+12 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/find_splittable_regs/src/obj/unroll.o] Error 1

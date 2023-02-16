@@ -1,0 +1,69 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_insns_after/src/emit-rtl.c:4601:4: error: expected ';' after expression
+rtx v6; // rbx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_insns_after/src/emit-rtl.c:4601:5: error: use of undeclared identifier 'v6'
+rtx v6; // rbx 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_insns_after/src/emit-rtl.c:4602:6: error: use of undeclared identifier 'fld'; did you mean 'fold'?
+rtx *fld; // r13 
+     ^~~
+     fold
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_insns_after/src/tree.h:2822:13: note: 'fold' declared here
+extern tree fold                PARAMS ((tree));
+            ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_insns_after/src/emit-rtl.c:4602:5: error: invalid operands to binary expression ('rtx' (aka 'struct rtx_def *') and 'tree (tree)' (aka 'union tree_node *(union tree_node *)'))
+rtx *fld; // r13 
+~~~ ^~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_insns_after/src/emit-rtl.c:4616:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v5.rtwint = ( __int64)first[1].fld[0]; 
+                      ^~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_insns_after/src/emit-rtl.c:4618:1: error: use of undeclared identifier 'v6'
+v6 = first; 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_insns_after/src/emit-rtl.c:4621:1: error: use of undeclared identifier 'fld'
+fld = ( rtx *)first[1].fld; 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_insns_after/src/emit-rtl.c:4621:14: error: expected expression
+fld = ( rtx *)first[1].fld; 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_insns_after/src/emit-rtl.c:4624:1: error: use of undeclared identifier 'v6'
+v6 = *fld; 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_insns_after/src/emit-rtl.c:4624:7: error: use of undeclared identifier 'fld'; did you mean 'fold'?
+v6 = *fld; 
+      ^~~
+      fold
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_insns_after/src/tree.h:2822:13: note: 'fold' declared here
+extern tree fold                PARAMS ((tree));
+            ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_insns_after/src/emit-rtl.c:4625:1: error: use of undeclared identifier 'fld'
+fld = ( rtx *)v6[1].fld; 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_insns_after/src/emit-rtl.c:4625:14: error: expected expression
+fld = ( rtx *)v6[1].fld; 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_insns_after/src/emit-rtl.c:4626:23: error: use of undeclared identifier 'v6'
+v8.rtwint = ( __int64)v6[1].fld[0]; 
+                      ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_insns_after/src/emit-rtl.c:4627:21: error: use of undeclared identifier 'v6'
+set_block_for_insn( v6, v4); 
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_insns_after/src/emit-rtl.c:4632:11: error: use of undeclared identifier 'v6'
+v4->end = v6; 
+          ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_insns_after/src/emit-rtl.c:4638:1: error: use of undeclared identifier 'v6'
+v6 = rtx; 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_insns_after/src/emit-rtl.c:4643:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v9.rtwint = ( __int64)after[1].fld[0]; 
+                      ^~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_insns_after/src/emit-rtl.c:4646:1: error: use of undeclared identifier 'v6'
+v6[1].fld[0] = v9; 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_insns_after/src/emit-rtl.c:4648:33: error: use of undeclared identifier 'v6'
+*( _QWORD *)( v9.rtwint + 16) = v6; 
+                                ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_insns_after/src/obj/emit-rtl.o] Error 1

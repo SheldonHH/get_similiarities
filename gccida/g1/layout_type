@@ -1,0 +1,51 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/layout_type/src/stor-layout.c:1894:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v14; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/layout_type/src/stor-layout.c:1895:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v15; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/layout_type/src/stor-layout.c:1896:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v16; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/layout_type/src/stor-layout.c:1897:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v17; // r12 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/layout_type/src/stor-layout.c:1898:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *elements; // r13 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/layout_type/src/stor-layout.c:1900:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v20; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/layout_type/src/stor-layout.c:1902:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v22; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/layout_type/src/stor-layout.c:1945:14: error: called object type 'const enum mode_class [59]' is not a function or function pointer
+( mode_class)( ( *( ( _BYTE *)&v6->block.common + 16) != 6) + 5), 
+~~~~~~~~~~~~~^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/layout_type/src/stor-layout.c:2062:1: error: statement requires expression of scalar type ('struct rtx_def' invalid)
+if ( rtl[7] ) 
+^    ~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/layout_type/src/stor-layout.c:2064:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v13.rtwint = ( __int64)rtl[6].fld[0]; 
+                       ^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/layout_type/src/stor-layout.c:2084:25: error: expected expression
+elements = ( tree_node *)*( &global_trees + 12); 
+                        ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/layout_type/src/stor-layout.c:2084:14: error: use of undeclared identifier 'tree_node'
+elements = ( tree_node *)*( &global_trees + 12); 
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/layout_type/src/stor-layout.c:2117:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v28 = ( __int64)v27[7]; 
+                ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/layout_type/src/stor-layout.c:2118:63: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+if ( *( _BYTE *)( v28 + 16) != 25 || ( v29.rtwint = ( __int64)v27[6].fld[0], *( _BYTE *)( v29.rtwint + 16) != 25) ) 
+                                                              ^~~~~~~~~~~~~
+14 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/layout_type/src/obj/stor-layout.o] Error 1

@@ -1,0 +1,26 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/insn_dead_p/src/flow.c:2519:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code; // [rsp+34h] [rbp-1Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/insn_dead_p/src/flow.c:2543:52: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( temp = pbi->mem_set_list; temp; temp = ( rtx)temp[1] ) 
+                                                   ^~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/insn_dead_p/src/flow.c:2545:6: error: use of undeclared identifier 'std'
+if ( std::allocator_traits<std::allocator<std::_Rb_tree_node<std::pair<std::string const, tcmalloc::MallocExtension::Property>>>>::allocate( 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/insn_dead_p/src/flow.c:2602:11: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+else if ( mode_class_0[*( ( unsigned __int8 *)r + 2)] == MODE_COMPLEX_INT 
+          ^~~~~~~~~~~~
+          mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/insn_dead_p/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/insn_dead_p/src/flow.c:2603:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| mode_class_0[*( ( unsigned __int8 *)r + 2)] == MODE_COMPLEX_FLOAT ) 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/insn_dead_p/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/insn_dead_p/src/obj/flow.o] Error 1

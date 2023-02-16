@@ -1,0 +1,71 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_rtx_and_substitute/src/integrate.c:2340:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v6; // r13d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_rtx_and_substitute/src/integrate.c:2362:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *rttree; // rbp 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_rtx_and_substitute/src/integrate.c:2382:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v48; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_rtx_and_substitute/src/integrate.c:2415:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode pool_mode_for_function; // r12d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_rtx_and_substitute/src/integrate.c:2428:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code; // [rsp+8h] [rbp-A0h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_rtx_and_substitute/src/integrate.c:2450:49: error: expected expression
+if ( map->orig_asm_operands_vector == *( rtvec *)&orig[2] ) 
+                                                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_rtx_and_substitute/src/integrate.c:2456:31: error: assigning to 'uint64' (aka 'unsigned long long') from incompatible type 'struct rtx_def'
+*( _QWORD *)&inline_target[1] = orig[1]; 
+                              ^ ~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_rtx_and_substitute/src/integrate.c:2459:31: error: assigning to 'uint64' (aka 'unsigned long long') from incompatible type 'struct rtx_def'
+*( _QWORD *)&inline_target[3] = orig[3]; 
+                              ^ ~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_rtx_and_substitute/src/integrate.c:2500:51: error: expected expression
+rtvec->elem[j] = copy_rtx_and_substitute( *( rtx *)( fld->rtwint + 8LL * j + 8), map, for_lhs); 
+                                                  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_rtx_and_substitute/src/integrate.c:2545:41: error: expected ';' after expression
+map->orig_asm_operands_vector = ( rtvec)orig[2]; 
+                                        ^
+                                        ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_rtx_and_substitute/src/integrate.c:2546:41: error: expected ';' after expression
+map->copy_asm_operands_vector = ( rtvec)inline_target[2]; 
+                                        ^
+                                        ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_rtx_and_substitute/src/integrate.c:2561:40: error: expected expression
+v72 = copy_rtx_and_substitute( *( rtx *)&orig[1], map, 0); 
+                                       ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_rtx_and_substitute/src/integrate.c:2568:40: error: expected expression
+v68 = copy_rtx_and_substitute( *( rtx *)&orig[1], map, 0); 
+                                       ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_rtx_and_substitute/src/integrate.c:2579:40: error: expected expression
+v60 = copy_rtx_and_substitute( *( rtx *)( orig->fld[0].rtwint + 8), map, 0); 
+                                       ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_rtx_and_substitute/src/integrate.c:2580:22: error: use of undeclared identifier 'machine_mode'
+v61 = gen_rtx_MEM( ( machine_mode)*( unsigned __int8 *)( orig->fld[0].rtwint + 2), v60); 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_rtx_and_substitute/src/integrate.c:2591:40: error: expected expression
+v66 = copy_rtx_and_substitute( *( rtx *)&orig[1], map, 0); 
+                                       ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_rtx_and_substitute/src/integrate.c:2592:32: error: use of undeclared identifier 'machine_mode'
+return gen_rtx_fmt_ee( CALL, ( machine_mode)*( ( unsigned __int8 *)orig + 2), v61, v66); 
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_rtx_and_substitute/src/integrate.c:2599:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[v5] != MODE_FLOAT ) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_rtx_and_substitute/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_rtx_and_substitute/src/integrate.c:2601:41: error: called object type 'struct rtx_def *' is not a function or function pointer
+*(  struct rtx_def *)&v94.r[1] = *( rtx)( ( char *)orig + 24); 
+                                  ~~~~~~^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_rtx_and_substitute/src/obj/integrate.o] Error 1

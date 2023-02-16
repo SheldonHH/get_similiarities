@@ -1,0 +1,79 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_complex_abs/src/optabs.c:2912:26: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  expand_complex_abs( machine_mode mode, rtx op0, rtx target, int unsignedp) 
+                         ^
+                         enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_complex_abs/src/optabs.c:2914:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v6; // r13d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_complex_abs/src/optabs.c:2915:1: error: must use 'enum' tag to refer to type 'mode_class'
+mode_class v7; // r12d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_complex_abs/src/machmode.h:52:30: note: enum 'mode_class' is hidden by a non-type declaration of 'mode_class' here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_complex_abs/src/optabs.c:2916:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v8; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_complex_abs/src/optabs.c:2917:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v9; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_complex_abs/src/optabs.c:2925:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v17; // r12d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_complex_abs/src/optabs.c:2946:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode outmode; // [rsp+Ch] [rbp-7Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_complex_abs/src/optabs.c:2952:1: error: must use 'enum' tag to refer to type 'mode_class'
+mode_class v45; // [rsp+34h] [rbp-54h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_complex_abs/src/machmode.h:52:30: note: enum 'mode_class' is hidden by a non-type declaration of 'mode_class' here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_complex_abs/src/optabs.c:2959:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v7 = mode_class_0[mode]; 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_complex_abs/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_complex_abs/src/optabs.c:2961:60: error: called object type 'const enum mode_class [59]' is not a function or function pointer
+v8 = mode_for_size( 8 * mode_unit_size[mode], ( mode_class)( 2 - ( v7 == MODE_COMPLEX_INT)), 0); 
+                                              ~~~~~~~~~~~~~^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_complex_abs/src/optabs.c:2990:11: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+operand = insn_data_0[insn_code].operand; 
+          ^~~~~~~~~~~
+          insn_data
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_complex_abs/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_complex_abs/src/optabs.c:3006:7: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+v20 = insn_data_0[v46].genfun( v18, v19); 
+      ^~~~~~~~~~~
+      insn_data
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_complex_abs/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_complex_abs/src/optabs.c:3006:30: error: called object type '<dependent type>' is not a function or function pointer
+v20 = insn_data_0[v46].genfun( v18, v19); 
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_complex_abs/src/optabs.c:3031:24: error: use of undeclared identifier 'machine_mode'
+v25 = convert_modes( ( machine_mode)v23, v6, x, unsignedp); 
+                       ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_complex_abs/src/optabs.c:3032:29: error: use of undeclared identifier 'machine_mode'
+v26 = expand_complex_abs( ( machine_mode)v24, v25, 0LL, unsignedp); 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_complex_abs/src/optabs.c:3082:24: error: use of undeclared identifier 'machine_mode'
+v34 = convert_modes( ( machine_mode)v22, v6, x, unsignedp); 
+                       ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_complex_abs/src/optabs.c:3083:29: error: use of undeclared identifier 'machine_mode'
+v26 = expand_complex_abs( ( machine_mode)v22, v34, 0LL, unsignedp); 
+                            ^
+17 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/expand_complex_abs/src/obj/optabs.o] Error 1

@@ -1,0 +1,18 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/build_component_ref/src/c-typeck.c:1612:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v11; // rsi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/build_component_ref/src/c-typeck.c:1633:22: error: expected expression
+v11 = *( tree_node **)( low + 8); 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/build_component_ref/src/c-typeck.c:1633:10: error: use of undeclared identifier 'tree_node'
+v11 = *( tree_node **)( low + 8); 
+         ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/build_component_ref/src/c-typeck.c:1634:26: error: expected expression
+if ( v11 == ( tree_node *)global_trees ) 
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/build_component_ref/src/c-typeck.c:1634:15: error: use of undeclared identifier 'tree_node'
+if ( v11 == ( tree_node *)global_trees ) 
+              ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/build_component_ref/src/obj/c-typeck.o] Error 1

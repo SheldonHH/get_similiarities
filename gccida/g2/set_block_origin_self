@@ -1,0 +1,22 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/set_block_origin_self/src/integrate.c:3332:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v5; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/set_block_origin_self/src/integrate.c:3333:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *j; // rbx 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/set_block_origin_self/src/integrate.c:3348:21: error: expected expression
+v5 = *( tree_node **)( low + 104); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/set_block_origin_self/src/integrate.c:3348:9: error: use of undeclared identifier 'tree_node'
+v5 = *( tree_node **)( low + 104); 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/set_block_origin_self/src/integrate.c:3349:31: error: expected expression
+if ( v5 && v5 != ( tree_node *)global_trees ) 
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/set_block_origin_self/src/integrate.c:3349:20: error: use of undeclared identifier 'tree_node'
+if ( v5 && v5 != ( tree_node *)global_trees ) 
+                   ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/set_block_origin_self/src/obj/integrate.o] Error 1

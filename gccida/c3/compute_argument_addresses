@@ -1,0 +1,70 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compute_argument_addresses/src/calls.c:2086:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *var; // rsi 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compute_argument_addresses/src/calls.c:2087:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v10; // r12 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compute_argument_addresses/src/calls.c:2088:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v11; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compute_argument_addresses/src/calls.c:2089:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v12; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compute_argument_addresses/src/calls.c:2090:4: error: expected ';' after expression
+rtx v13; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compute_argument_addresses/src/calls.c:2090:5: error: use of undeclared identifier 'v13'
+rtx v13; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compute_argument_addresses/src/calls.c:2092:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v15; // rsi 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compute_argument_addresses/src/calls.c:2093:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v16; // r12 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compute_argument_addresses/src/calls.c:2094:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v17; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compute_argument_addresses/src/calls.c:2095:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v18; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compute_argument_addresses/src/calls.c:2096:4: error: expected ';' after expression
+rtx v19; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compute_argument_addresses/src/calls.c:2096:5: error: use of undeclared identifier 'v19'
+rtx v19; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compute_argument_addresses/src/calls.c:2129:1: error: use of undeclared identifier 'v13'
+v13 = expand_expr( v12, 0LL, VOIDmode, EXPAND_NORMAL); 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compute_argument_addresses/src/calls.c:2133:1: error: use of undeclared identifier 'v13'
+v13 = gen_rtx_CONST_INT( VOIDmode, args[v5 / 0xA8].offset.constant); 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compute_argument_addresses/src/calls.c:2135:7: error: use of undeclared identifier 'v13'
+v14 = v13; 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compute_argument_addresses/src/calls.c:2142:1: error: use of undeclared identifier 'v19'
+v19 = expand_expr( v18, 0LL, VOIDmode, EXPAND_NORMAL); 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compute_argument_addresses/src/calls.c:2146:1: error: use of undeclared identifier 'v19'
+v19 = gen_rtx_CONST_INT( VOIDmode, args[v5 / 0xA8].slot_offset.constant); 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compute_argument_addresses/src/calls.c:2148:7: error: use of undeclared identifier 'v19'
+v20 = v19; 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compute_argument_addresses/src/calls.c:2154:31: error: use of undeclared identifier 'machine_mode'
+v21 = gen_rtx_fmt_ee( PLUS, ( machine_mode)( ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32), rtx, v14); 
+                              ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compute_argument_addresses/src/obj/calls.o] Error 1

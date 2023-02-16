@@ -1,0 +1,26 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/rtx_renumbered_equal_p/src/jump.c:2765:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v13.rtwint = ( __int64)x->fld[0]; 
+                       ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/rtx_renumbered_equal_p/src/jump.c:2767:21: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v9 = ( unsigned int)x[1]; 
+                    ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/rtx_renumbered_equal_p/src/jump.c:2771:37: error: use of undeclared identifier 'machine_mode'
+rtint = subreg_regno_offset( v14, ( machine_mode)*( unsigned __int8 *)( v13.rtwint + 2), v9, ( machine_mode)v6); 
+                                    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/rtx_renumbered_equal_p/src/jump.c:2771:96: error: use of undeclared identifier 'machine_mode'
+rtint = subreg_regno_offset( v14, ( machine_mode)*( unsigned __int8 *)( v13.rtwint + 2), v9, ( machine_mode)v6); 
+                                                                                               ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/rtx_renumbered_equal_p/src/jump.c:2785:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v15.rtwint = ( __int64)y->fld[0]; 
+                       ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/rtx_renumbered_equal_p/src/jump.c:2787:22: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v12 = ( unsigned int)y[1]; 
+                     ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/rtx_renumbered_equal_p/src/jump.c:2793:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( unsigned __int8 *)( v15.rtwint + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/rtx_renumbered_equal_p/src/jump.c:2795:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)y + 2)); 
+  ^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/rtx_renumbered_equal_p/src/obj/jump.o] Error 1

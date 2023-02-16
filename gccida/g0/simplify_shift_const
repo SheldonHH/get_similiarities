@@ -1,0 +1,72 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_shift_const/src/combine.c:9380:35: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx  simplify_shift_const( rtx x, rtx_code code, machine_mode result_mode, rtx varop, int orig_count) 
+                                  ^
+                                  enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_shift_const/src/combine.c:9380:50: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  simplify_shift_const( rtx x, rtx_code code, machine_mode result_mode, rtx varop, int orig_count) 
+                                                 ^
+                                                 enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_shift_const/src/combine.c:9387:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v11; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_shift_const/src/combine.c:9391:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v15; // ecx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_shift_const/src/combine.c:9415:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v39; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_shift_const/src/combine.c:9418:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code codea; // [rsp+14h] [rbp-9Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_shift_const/src/combine.c:9423:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code outer_op; // [rsp+38h] [rbp-78h] BYREF 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_shift_const/src/combine.c:9424:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode tmode; // [rsp+3Ch] [rbp-74h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_shift_const/src/combine.c:9430:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code first_code; // [rsp+64h] [rbp-4Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_shift_const/src/combine.c:9433:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode shift_mode; // [rsp+7Ch] [rbp-34h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_shift_const/src/combine.c:9435:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code orig_code; // [rsp+84h] [rbp-2Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_shift_const/src/combine.c:9437:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // [rsp+94h] [rbp-1Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_shift_const/src/combine.c:9568:10: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+&& ( rtx)varop[1] == const_int_rtx[63] 
+         ^~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_shift_const/src/combine.c:9604:15: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+varop = ( rtx)varop[1]; 
+              ^~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_shift_const/src/combine.c:9625:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)varop + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_shift_const/src/combine.c:9651:31: error: use of undeclared identifier 'machine_mode'
+varop = gen_binary( ASHIFT, ( machine_mode)*( ( unsigned __int8 *)varop + 2), varop->fld[0].rtx, v21); 
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_shift_const/src/combine.c:9658:33: error: use of undeclared identifier 'machine_mode'
+varop = gen_binary( LSHIFTRT, ( machine_mode)*( ( unsigned __int8 *)varop + 2), varop->fld[0].rtx, v23); 
+                                ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_shift_const/src/combine.c:9673:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)varop + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_shift_const/src/combine.c:9678:31: error: use of undeclared identifier 'machine_mode'
+varop = gen_rtx_fmt_e( NEG, ( machine_mode)*( ( unsigned __int8 *)varop + 2), varop); 
+                              ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_shift_const/src/obj/combine.o] Error 1

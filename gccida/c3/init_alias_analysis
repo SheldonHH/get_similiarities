@@ -1,0 +1,63 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/init_alias_analysis/src/alias.c:2949:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v28; // r12d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/init_alias_analysis/src/alias.c:2954:6: error: use of undeclared identifier 'v33'
+rtx *v33; // rax 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/init_alias_analysis/src/alias.c:2958:4: error: expected ';' after expression
+rtx v37; // rbp 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/init_alias_analysis/src/alias.c:2958:5: error: use of undeclared identifier 'v37'
+rtx v37; // rbp 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/init_alias_analysis/src/alias.c:2961:6: error: use of undeclared identifier 'v40'
+rtx *v40; // rsi 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/init_alias_analysis/src/alias.c:2968:26: error: expected expression
+reg_known_value = ( rtx *)( ( char *)xcalloc( v1, 8uLL) - 424); 
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/init_alias_analysis/src/alias.c:2971:25: error: expected expression
+reg_base_value = ( rtx *)xcalloc( ( unsigned int)( 2 * v0), 8uLL); 
+                        ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/init_alias_analysis/src/alias.c:2973:29: error: expected expression
+new_reg_base_value = ( rtx *)xmalloc( 8LL * ( unsigned int)reg_base_value_size); 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/init_alias_analysis/src/alias.c:2982:26: error: expected expression
+alias_invariant = ( rtx *)xrealloc( alias_invariant, 8LL * ( unsigned int)reg_base_value_size); 
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/init_alias_analysis/src/alias.c:2998:21: error: use of undeclared identifier 'machine_mode'
+v6 = gen_rtx_REG( ( machine_mode)( ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32), i); 
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/init_alias_analysis/src/alias.c:3004:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/init_alias_analysis/src/alias.c:3008:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/init_alias_analysis/src/alias.c:3012:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/init_alias_analysis/src/alias.c:3016:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/init_alias_analysis/src/alias.c:3029:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v13 = (  struct rtx_def *)j[2]; 
+                          ^~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/init_alias_analysis/src/alias.c:3032:80: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+&& ( reg_note = find_reg_note( j, REG_NOALIAS, 0LL), v13 = (  struct rtx_def *)j[2], reg_note) ) 
+                                                                               ^~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/init_alias_analysis/src/alias.c:3034:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v15.rtwint = ( __int64)v13->fld[0]; 
+                       ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/init_alias_analysis/src/alias.c:3066:13: error: expected ';' after expression
+v17 = ( rtx)j[2]; 
+            ^
+            ;
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/init_alias_analysis/src/alias.c:3068:32: error: expected expression
+v17 = single_set_2( j, *( rtx *)&j[2]); 
+                               ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/init_alias_analysis/src/obj/alias.o] Error 1

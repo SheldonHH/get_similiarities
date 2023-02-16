@@ -1,0 +1,24 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/get_func_hard_reg_initial_val/src/integrate.c:3520:1: error: unknown type name 'initial_value_pair_0'; did you mean 'initial_value_pair'?
+initial_value_pair_0 *entries; // rsi 
+^~~~~~~~~~~~~~~~~~~~
+initial_value_pair
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/get_func_hard_reg_initial_val/src/integrate.c:73:3: note: 'initial_value_pair' declared here
+} initial_value_pair;
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/get_func_hard_reg_initial_val/src/integrate.c:3535:40: error: expected expression
+ivs->entries = ( initial_value_pair_0 *)xmalloc( 0x50uLL); 
+                                       ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/get_func_hard_reg_initial_val/src/integrate.c:3535:18: error: use of undeclared identifier 'initial_value_pair_0'
+ivs->entries = ( initial_value_pair_0 *)xmalloc( 0x50uLL); 
+                 ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/get_func_hard_reg_initial_val/src/integrate.c:3540:40: error: expected expression
+ivs->entries = ( initial_value_pair_0 *)xrealloc( ivs->entries, 16LL * ivs->max_entries); 
+                                       ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/get_func_hard_reg_initial_val/src/integrate.c:3540:18: error: use of undeclared identifier 'initial_value_pair_0'
+ivs->entries = ( initial_value_pair_0 *)xrealloc( ivs->entries, 16LL * ivs->max_entries); 
+                 ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/get_func_hard_reg_initial_val/src/integrate.c:3544:40: error: use of undeclared identifier 'machine_mode'
+*( _QWORD *)( v3 + 8) = gen_reg_rtx( ( machine_mode)*( ( unsigned __int8 *)reg + 2)); 
+                                       ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/get_func_hard_reg_initial_val/src/obj/integrate.o] Error 1

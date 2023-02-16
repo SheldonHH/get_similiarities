@@ -1,0 +1,28 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/scan_rtx/src/regrename.c:1124:37: error: must use 'enum' tag to refer to type 'reg_class'
+void  scan_rtx( rtx insn, rtx *loc, reg_class a3, scan_actions action, op_type type, int earlyclobber) 
+                                    ^
+                                    enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/scan_rtx/src/regrename.c:1124:51: error: must use 'enum' tag to refer to type 'scan_actions'
+void  scan_rtx( rtx insn, rtx *loc, reg_class a3, scan_actions action, op_type type, int earlyclobber) 
+                                                  ^
+                                                  enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/scan_rtx/src/regrename.c:1124:72: error: must use 'enum' tag to refer to type 'op_type'
+void  scan_rtx( rtx insn, rtx *loc, reg_class a3, scan_actions action, op_type type, int earlyclobber) 
+                                                                       ^
+                                                                       enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/scan_rtx/src/regrename.c:1126:1: error: must use 'enum' tag to refer to type 'op_type'
+op_type v6; // r8d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/scan_rtx/src/regrename.c:1128:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code; // [rsp+2Ch] [rbp-14h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/scan_rtx/src/regrename.c:1138:1: error: statement requires expression of scalar type ('struct rtx_def' invalid)
+if ( x[1] ) 
+^    ~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/scan_rtx/src/regrename.c:1170:65: error: use of undeclared identifier 'machine_mode'
+scan_rtx_address( insn, ( rtx *)x->fld, GENERAL_REGS, action, ( machine_mode)*( ( unsigned __int8 *)x + 2)); 
+                                                                ^
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/scan_rtx/src/obj/regrename.o] Error 1

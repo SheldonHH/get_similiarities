@@ -1,0 +1,18 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_builtin_mathfn/src/builtins.c:1929:1: error: must use 'enum' tag to refer to type 'built_in_function'
+built_in_function f; // [rsp+1Ch] [rbp-54h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_builtin_mathfn/src/builtins.c:1954:26: error: use of undeclared identifier 'machine_mode'
+targeta = gen_reg_rtx( ( machine_mode)( ( unsigned __int8)HIBYTE( WORD2( expa->common.type->block.abstract_origin)) >> 1)); 
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_builtin_mathfn/src/builtins.c:1991:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( ( unsigned __int8)HIBYTE( *( _WORD *)( *( _QWORD *)( arglist->int_cst.int_cst.low + 8) + 60LL)) >> 1), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_builtin_mathfn/src/builtins.c:2006:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)targetb), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_builtin_mathfn/src/builtins.c:2006:18: error: expected expression
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)targetb), 
+                 ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_builtin_mathfn/src/obj/builtins.o] Error 1

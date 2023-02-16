@@ -1,0 +1,12 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/set_diagnostic_context/src/diagnostic.c:1943:1: error: unknown type name 'diagnostic_context_0'; did you mean 'diagnostic_context'?
+diagnostic_context_0 *dc, 
+^~~~~~~~~~~~~~~~~~~~
+diagnostic_context
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/set_diagnostic_context/src/diagnostic.h:29:35: note: 'diagnostic_context' declared here
+typedef struct diagnostic_context diagnostic_context;
+                                  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/set_diagnostic_context/src/diagnostic.c:1950:24: error: use of undeclared identifier 'diagnostic_context_0'
+memset( dc, 0, sizeof( diagnostic_context_0)); 
+                       ^
+2 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/set_diagnostic_context/src/obj/diagnostic.o] Error 1

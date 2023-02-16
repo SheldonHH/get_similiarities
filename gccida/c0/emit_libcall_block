@@ -1,0 +1,17 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_libcall_block/src/optabs.c:3351:26: error: use of undeclared identifier 'machine_mode'
+targeta = gen_reg_rtx( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)target)); 
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_libcall_block/src/optabs.c:3351:41: error: expected expression
+targeta = gen_reg_rtx( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)target)); 
+                                        ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_libcall_block/src/optabs.c:3391:12: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v8 = ( rtx)insnb[2]; 
+           ^~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_libcall_block/src/optabs.c:3416:1: error: statement requires expression of scalar type ('struct rtx_def' invalid)
+if ( insnb[1] ) 
+^    ~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_libcall_block/src/optabs.c:3421:22: error: assigning to 'uint64' (aka 'unsigned long long') from incompatible type 'struct rtx_def'
+*( _QWORD *)&next[1] = insnb[1]; 
+                     ^ ~~~~~~~~
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/emit_libcall_block/src/obj/optabs.o] Error 1

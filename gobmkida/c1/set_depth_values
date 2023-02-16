@@ -1,0 +1,14 @@
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/set_depth_values/src/engine/utils.c:1080:14: error: use of undeclared identifier 'invalid_operation'
+if ( !( v6 ^ __OFSUB__( v3, 5) | ( v3 == 5)) ) 
+             ^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/set_depth_values/src/engine/utils.c:856:25: note: expanded from macro '__OFSUB__'
+#define __OFSUB__(x, y) invalid_operation // Generate overflow flag for (x-y)
+                        ^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/set_depth_values/src/engine/utils.c:1163:10: error: use of undeclared identifier 'set_depth_values_node_limits'
+if ( 2 * set_depth_values_node_limits[10 - level] > 19 ) 
+         ^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/set_depth_values/src/engine/utils.c:1164:11: error: use of undeclared identifier 'set_depth_values_node_limits'
+v21 = 2 * set_depth_values_node_limits[10 - level]; 
+          ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/set_depth_values/src/obj/1/utils.o] Error 1

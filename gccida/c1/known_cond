@@ -1,0 +1,71 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/known_cond/src/combine.c:7846:25: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx  known_cond( rtx x, rtx_code cond, rtx reg, rtx val) 
+                        ^
+                        enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/known_cond/src/combine.c:7848:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v6; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/known_cond/src/combine.c:7864:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v23; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/known_cond/src/combine.c:7895:16: error: must use 'enum' tag to refer to type 'mode_class'
+v10 = *( const mode_class *)( ( char *)mode_class_0 + ( ( *( _DWORD *)x >> 14) & 0x3FC)); 
+               ^
+               enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/known_cond/src/machmode.h:52:30: note: enum 'mode_class' is hidden by a non-type declaration of 'mode_class' here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/known_cond/src/combine.c:7895:40: error: use of undeclared identifier 'mode_class_0'
+v10 = *( const mode_class *)( ( char *)mode_class_0 + ( ( *( _DWORD *)x >> 14) & 0x3FC)); 
+                                       ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/known_cond/src/combine.c:7898:16: error: must use 'enum' tag to refer to type 'mode_class'
+v12 = *( const mode_class *)( ( char *)mode_class_0 + ( ( *( _DWORD *)val >> 14) & 0x3FC)); 
+               ^
+               enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/known_cond/src/machmode.h:52:30: note: enum 'mode_class' is hidden by a non-type declaration of 'mode_class' here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/known_cond/src/combine.c:7898:40: error: use of undeclared identifier 'mode_class_0'
+v12 = *( const mode_class *)( ( char *)mode_class_0 + ( ( *( _DWORD *)val >> 14) & 0x3FC)); 
+                                       ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/known_cond/src/combine.c:7915:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( unsigned __int8 *)( x->fld[0].rtwint + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/known_cond/src/combine.c:7917:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( unsigned __int8 *)( x->fld[0].rtwint + 2)); 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/known_cond/src/combine.c:7940:27: error: expected expression
+v33 = known_cond( *( rtx *)( v32 + v31), v6, v25, y); 
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/known_cond/src/combine.c:7941:18: error: expected expression
+do_SUBST( ( rtx *)( v31 + v32), v33); 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/known_cond/src/combine.c:7952:18: error: expected expression
+do_SUBST( ( rtx *)&x->fld[v36], v28); 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/known_cond/src/combine.c:7973:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)v7 + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/known_cond/src/combine.c:7975:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)BYTE2( v21)); 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/known_cond/src/combine.c:7991:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)v7 + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/known_cond/src/combine.c:7993:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)BYTE2( v16), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/known_cond/src/combine.c:7999:18: error: expected expression
+do_SUBST( ( rtx *)v7->fld, v18); 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/known_cond/src/combine.c:8014:65: error: expected expression
+if ( !rtx_equal_p( x->fld[0].rtx, reg) || !rtx_equal_p( *( rtx *)&x[1], y) ) 
+                                                                ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/known_cond/src/combine.c:8018:13: error: called object type 'struct rtx_def *' is not a function or function pointer
+val = ( rtx)( ( unsigned int)v8 & 0xFFFFFFFE); 
+      ~~~~~~^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/known_cond/src/obj/combine.o] Error 1

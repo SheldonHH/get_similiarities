@@ -1,0 +1,65 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_cmp_and_jump_insn_1/src/optabs.c:3736:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_cmp_and_jump_insn_1/src/optabs.c:3737:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code comparison, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_cmp_and_jump_insn_1/src/optabs.c:3741:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v8; // r14d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_cmp_and_jump_insn_1/src/optabs.c:3756:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v23; // [rsp+8h] [rbp-70h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_cmp_and_jump_insn_1/src/optabs.c:3770:7: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v31 = mode_class_0[v8]; 
+      ^~~~~~~~~~~~
+      mode_class
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_cmp_and_jump_insn_1/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_cmp_and_jump_insn_1/src/optabs.c:3782:6: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+if ( insn_data_0[insn_code].operand->predicate( v10, v8) ) 
+     ^~~~~~~~~~~
+     insn_data
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_cmp_and_jump_insn_1/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_cmp_and_jump_insn_1/src/optabs.c:3782:47: error: called object type '<dependent type>' is not a function or function pointer
+if ( insn_data_0[insn_code].operand->predicate( v10, v8) ) 
+                                              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_cmp_and_jump_insn_1/src/optabs.c:3788:7: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+v14 = insn_data_0[( int)insn_code].genfun( v10, operand1a); 
+      ^~~~~~~~~~~
+      insn_data
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_cmp_and_jump_insn_1/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_cmp_and_jump_insn_1/src/optabs.c:3788:42: error: called object type '<dependent type>' is not a function or function pointer
+v14 = insn_data_0[( int)insn_code].genfun( v10, operand1a); 
+                                         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_cmp_and_jump_insn_1/src/optabs.c:3799:7: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+v16 = insn_data_0[v15].genfun( operand1b, v9); 
+      ^~~~~~~~~~~
+      insn_data
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_cmp_and_jump_insn_1/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_cmp_and_jump_insn_1/src/optabs.c:3799:30: error: called object type '<dependent type>' is not a function or function pointer
+v16 = insn_data_0[v15].genfun( operand1b, v9); 
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_cmp_and_jump_insn_1/src/optabs.c:3828:7: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+v21 = insn_data_0[v17].genfun( v19, v20); 
+      ^~~~~~~~~~~
+      insn_data
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_cmp_and_jump_insn_1/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_cmp_and_jump_insn_1/src/optabs.c:3828:30: error: called object type '<dependent type>' is not a function or function pointer
+v21 = insn_data_0[v17].genfun( v19, v20); 
+                             ^
+13 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/emit_cmp_and_jump_insn_1/src/obj/optabs.o] Error 1

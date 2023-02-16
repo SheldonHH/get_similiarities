@@ -1,0 +1,84 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/diagnostic_for_decl/src/diagnostic.c:1356:58: error: unknown type name 'va_list_0'; did you mean 'va_list'?
+void  diagnostic_for_decl( tree decl, const char *msgid, va_list_0 *args_ptr, int warn) 
+                                                         ^~~~~~~~~
+                                                         va_list
+/usr/include/stdio.h:46:20: note: 'va_list' declared here
+typedef _G_va_list va_list;
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/diagnostic_for_decl/src/diagnostic.c:1359:1: error: unknown type name 'diagnostic_context_0'; did you mean 'diagnostic_context'?
+diagnostic_context_0 *v10; // rdi 
+^~~~~~~~~~~~~~~~~~~~
+diagnostic_context
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/diagnostic_for_decl/src/diagnostic.h:29:35: note: 'diagnostic_context' declared here
+typedef struct diagnostic_context diagnostic_context;
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/diagnostic_for_decl/src/diagnostic.c:1360:1: error: unknown type name 'output_buffer_0'; did you mean 'output_buffer'?
+output_buffer_0 *v11; // rbp 
+^~~~~~~~~~~~~~~
+output_buffer
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/diagnostic_for_decl/src/diagnostic.h:28:30: note: 'output_buffer' declared here
+typedef struct output_buffer output_buffer;
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/diagnostic_for_decl/src/diagnostic.c:1368:1: error: unknown type name 'output_buffer_0'; did you mean 'output_buffer'?
+output_buffer_0 *v19; // r12 
+^~~~~~~~~~~~~~~
+output_buffer
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/diagnostic_for_decl/src/diagnostic.h:28:30: note: 'output_buffer' declared here
+typedef struct output_buffer output_buffer;
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/diagnostic_for_decl/src/diagnostic.c:1378:1: error: unknown type name 'output_buffer_0'; did you mean 'output_buffer'?
+output_buffer_0 *v29; // rbx 
+^~~~~~~~~~~~~~~
+output_buffer
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/diagnostic_for_decl/src/diagnostic.h:28:30: note: 'output_buffer' declared here
+typedef struct output_buffer output_buffer;
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/diagnostic_for_decl/src/diagnostic.c:1394:7: error: use of undeclared identifier 'count_error_warning_message'
+if ( !count_error_warning_message ) 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/diagnostic_for_decl/src/diagnostic.c:1397:1: error: use of undeclared identifier 'count_error_warning_message'
+count_error_warning_message = 1; 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/diagnostic_for_decl/src/diagnostic.c:1407:18: error: expected expression
+v30 = *( _OWORD *)&diagnostic_buffer->state.prefix; 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/diagnostic_for_decl/src/diagnostic.c:1407:10: error: use of undeclared identifier '_OWORD'
+v30 = *( _OWORD *)&diagnostic_buffer->state.prefix; 
+         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/diagnostic_for_decl/src/diagnostic.c:1408:18: error: expected expression
+v31 = *( _OWORD *)&diagnostic_buffer->state.indent_skip; 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/diagnostic_for_decl/src/diagnostic.c:1408:10: error: use of undeclared identifier '_OWORD'
+v31 = *( _OWORD *)&diagnostic_buffer->state.indent_skip; 
+         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/diagnostic_for_decl/src/diagnostic.c:1409:18: error: expected expression
+v32 = *( _OWORD *)&diagnostic_buffer->state.cursor; 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/diagnostic_for_decl/src/diagnostic.c:1409:10: error: use of undeclared identifier '_OWORD'
+v32 = *( _OWORD *)&diagnostic_buffer->state.cursor; 
+         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/diagnostic_for_decl/src/diagnostic.c:1410:18: error: expected expression
+v33 = *( _OWORD *)diagnostic_buffer->state.diagnostic_count; 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/diagnostic_for_decl/src/diagnostic.c:1410:10: error: use of undeclared identifier '_OWORD'
+v33 = *( _OWORD *)diagnostic_buffer->state.diagnostic_count; 
+         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/diagnostic_for_decl/src/diagnostic.c:1411:18: error: expected expression
+v34 = *( _OWORD *)&diagnostic_buffer->state.diagnostic_count[4]; 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/diagnostic_for_decl/src/diagnostic.c:1411:10: error: use of undeclared identifier '_OWORD'
+v34 = *( _OWORD *)&diagnostic_buffer->state.diagnostic_count[4]; 
+         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/diagnostic_for_decl/src/diagnostic.c:1524:8: error: use of undeclared identifier 'sch_istable'; did you mean '_sch_istable'?
+if ( ( sch_istable[v28] & 0x88) != 0 ) 
+       ^~~~~~~~~~~
+       _sch_istable
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/diagnostic_for_decl/src/safe-ctype.h:72:29: note: '_sch_istable' declared here
+extern const unsigned short _sch_istable[256];
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/diagnostic_for_decl/src/diagnostic.c:1552:12: error: expected expression
+*( _OWORD *)&v29->state.diagnostic_count[4] = v34; 
+           ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/diagnostic_for_decl/src/obj/diagnostic.o] Error 1

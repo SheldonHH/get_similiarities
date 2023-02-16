@@ -1,0 +1,28 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/div_and_round_double/src/fold-const.c:1025:1: error: must use 'enum' tag to refer to type 'tree_code'
+tree_code code, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/div_and_round_double/src/fold-const.c:1123:1: error: must use 'enum' tag to refer to type 'tree_code'
+tree_code v99; // [rsp+8h] [rbp-100h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/div_and_round_double/src/fold-const.c:1470:7: error: use of undeclared identifier 'invalid_operation'
+v81 = __CFADD__( lnum_orig, *v78); 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/div_and_round_double/src/fold-const.c:830:25: note: expanded from macro '__CFADD__'
+#define __CFADD__(x, y) invalid_operation // Generate carry flag for (x+y)
+                        ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/div_and_round_double/src/fold-const.c:1487:7: error: use of undeclared identifier 'invalid_operation'
+v81 = __CFADD__( ( *v31)++, 1LL); 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/div_and_round_double/src/fold-const.c:830:25: note: expanded from macro '__CFADD__'
+#define __CFADD__(x, y) invalid_operation // Generate carry flag for (x+y)
+                        ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/div_and_round_double/src/fold-const.c:1571:7: error: use of undeclared identifier 'invalid_operation'
+v81 = __CFADD__( lnum_orig, *v78); 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/div_and_round_double/src/fold-const.c:830:25: note: expanded from macro '__CFADD__'
+#define __CFADD__(x, y) invalid_operation // Generate carry flag for (x+y)
+                        ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/div_and_round_double/src/obj/fold-const.o] Error 1

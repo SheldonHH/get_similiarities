@@ -1,0 +1,55 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/estimate_case_costs/src/stmt.c:6093:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v1; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/estimate_case_costs/src/stmt.c:6094:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *type; // [rsp+8h] [rbp-38h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/estimate_case_costs/src/stmt.c:6110:8: error: use of undeclared identifier 'sch_istable'; did you mean '_sch_istable'?
+if ( ( sch_istable[( unsigned __int8)i] & 0x8C) != 0 ) 
+       ^~~~~~~~~~~
+       _sch_istable
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/estimate_case_costs/src/safe-ctype.h:72:29: note: '_sch_istable' declared here
+extern const unsigned short _sch_istable[256];
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/estimate_case_costs/src/stmt.c:6114:13: error: use of undeclared identifier 'sch_istable'; did you mean '_sch_istable'?
+else if ( ( sch_istable[( unsigned __int8)i] & 0x20) != 0 ) 
+            ^~~~~~~~~~~
+            _sch_istable
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/estimate_case_costs/src/safe-ctype.h:72:29: note: '_sch_istable' declared here
+extern const unsigned short _sch_istable[256];
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/estimate_case_costs/src/stmt.c:6118:13: error: use of undeclared identifier 'sch_istable'; did you mean '_sch_istable'?
+else if ( ( sch_istable[( unsigned __int8)i] & 2) != 0 ) 
+            ^~~~~~~~~~~
+            _sch_istable
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/estimate_case_costs/src/safe-ctype.h:72:29: note: '_sch_istable' declared here
+extern const unsigned short _sch_istable[256];
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/estimate_case_costs/src/stmt.c:6133:17: error: expected expression
+if ( *( _OWORD *)&n->low->block.vars < *( _OWORD *)&min_ascii->block.vars 
+                ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/estimate_case_costs/src/stmt.c:6133:9: error: use of undeclared identifier '_OWORD'
+if ( *( _OWORD *)&n->low->block.vars < *( _OWORD *)&min_ascii->block.vars 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/estimate_case_costs/src/stmt.c:6133:51: error: expected expression
+if ( *( _OWORD *)&n->low->block.vars < *( _OWORD *)&min_ascii->block.vars 
+                                                  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/estimate_case_costs/src/stmt.c:6133:43: error: use of undeclared identifier '_OWORD'
+if ( *( _OWORD *)&n->low->block.vars < *( _OWORD *)&min_ascii->block.vars 
+                                          ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/estimate_case_costs/src/stmt.c:6134:15: error: expected expression
+|| *( _OWORD *)&max_ascii->block.vars < *( _OWORD *)&n->high->block.vars ) 
+              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/estimate_case_costs/src/stmt.c:6134:7: error: use of undeclared identifier '_OWORD'
+|| *( _OWORD *)&max_ascii->block.vars < *( _OWORD *)&n->high->block.vars ) 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/estimate_case_costs/src/stmt.c:6134:52: error: expected expression
+|| *( _OWORD *)&max_ascii->block.vars < *( _OWORD *)&n->high->block.vars ) 
+                                                   ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/estimate_case_costs/src/stmt.c:6134:44: error: use of undeclared identifier '_OWORD'
+|| *( _OWORD *)&max_ascii->block.vars < *( _OWORD *)&n->high->block.vars ) 
+                                           ^
+13 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/estimate_case_costs/src/obj/stmt.o] Error 1

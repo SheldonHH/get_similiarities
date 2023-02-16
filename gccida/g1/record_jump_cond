@@ -1,0 +1,78 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_jump_cond/src/cse.c:4958:25: error: must use 'enum' tag to refer to type 'rtx_code'
+void  record_jump_cond( rtx_code code, machine_mode mode, rtx op0, rtx op1, int reversed_nonequality) 
+                        ^
+                        enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_jump_cond/src/cse.c:4958:40: error: must use 'enum' tag to refer to type 'machine_mode'
+void  record_jump_cond( rtx_code code, machine_mode mode, rtx op0, rtx op1, int reversed_nonequality) 
+                                       ^
+                                       enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_jump_cond/src/cse.c:4965:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v12; // r14d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_jump_cond/src/cse.c:4968:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v15; // r14d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_jump_cond/src/cse.c:4971:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v18; // r14d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_jump_cond/src/cse.c:4974:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v21; // r14d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_jump_cond/src/cse.c:5011:34: error: use of undeclared identifier 'machine_mode'
+v16 = gen_lowpart_if_possible( ( machine_mode)v14, op1); 
+                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_jump_cond/src/cse.c:5023:34: error: use of undeclared identifier 'machine_mode'
+v13 = gen_lowpart_if_possible( ( machine_mode)v11, op0); 
+                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_jump_cond/src/cse.c:5040:34: error: use of undeclared identifier 'machine_mode'
+v19 = gen_lowpart_if_possible( ( machine_mode)v17, v7); 
+                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_jump_cond/src/cse.c:5055:34: error: use of undeclared identifier 'machine_mode'
+v22 = gen_lowpart_if_possible( ( machine_mode)v20, op0); 
+                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_jump_cond/src/cse.c:5067:55: error: expected ')'
+if ( rtuint != cached_regno || (  struct cse_reg_info = cached_cse_reg_info) == 0LL ) 
+                                                      ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_jump_cond/src/cse.c:5067:32: note: to match this '('
+if ( rtuint != cached_regno || (  struct cse_reg_info = cached_cse_reg_info) == 0LL ) 
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_jump_cond/src/cse.c:5067:78: error: expected expression
+if ( rtuint != cached_regno || (  struct cse_reg_info = cached_cse_reg_info) == 0LL ) 
+                                                                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_jump_cond/src/cse.c:5068:2: error: expected expression
+ struct cse_reg_info = get_cse_reg_info( rtuint); 
+ ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_jump_cond/src/cse.c:5100:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| ( mode_class_0[*( ( unsigned __int8 *)op0 + 2)] & 0xFFFFFFFB) == 2 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_jump_cond/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_jump_cond/src/cse.c:5101:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| mode_class_0[*( ( unsigned __int8 *)op0 + 2)] == MODE_VECTOR_FLOAT ) 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_jump_cond/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_jump_cond/src/cse.c:5106:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| ( mode_class_0[mode] & 0xFFFFFFFB) != 2 && mode_class_0[mode] != MODE_VECTOR_FLOAT) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_jump_cond/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_jump_cond/src/cse.c:5106:47: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| ( mode_class_0[mode] & 0xFFFFFFFB) != 2 && mode_class_0[mode] != MODE_VECTOR_FLOAT) 
+                                              ^~~~~~~~~~~~
+                                              mode_class
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_jump_cond/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+17 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/record_jump_cond/src/obj/cse.o] Error 1

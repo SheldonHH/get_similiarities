@@ -1,0 +1,26 @@
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/compute_eyes_pessimistic/src/engine/optics.c:1403:12: error: use of undeclared identifier 'eyevalue'
+*value = ( eyevalue)33686018; 
+           ^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/compute_eyes_pessimistic/src/engine/optics.c:1426:9: error: use of undeclared identifier 'eyevalue'
+v43 = ( eyevalue)16842752; 
+        ^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/compute_eyes_pessimistic/src/engine/optics.c:1428:9: error: use of undeclared identifier 'eyevalue'
+v43 = ( eyevalue)v24; 
+        ^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/compute_eyes_pessimistic/src/engine/optics.c:1433:12: error: use of undeclared identifier 'eyevalue'
+*value = ( eyevalue)16843009; 
+           ^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/compute_eyes_pessimistic/src/engine/optics.c:1590:50: error: too many arguments to function call, expected 2, have 3
+v35 = gg_normalize_float2int( v34, 0.0099999998, v34); 
+      ~~~~~~~~~~~~~~~~~~~~~~                     ^~~
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/compute_eyes_pessimistic/src/include/gg_utils.h:52:1: note: 'gg_normalize_float2int' declared here
+int gg_normalize_float2int(float x, float a);
+^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/compute_eyes_pessimistic/src/engine/optics.c:1591:64: error: too many arguments to function call, expected 2, have 3
+if ( v35 > ( int)gg_normalize_float2int( scorea, 0.0099999998, v34) ) 
+                 ~~~~~~~~~~~~~~~~~~~~~~                        ^~~
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/compute_eyes_pessimistic/src/include/gg_utils.h:52:1: note: 'gg_normalize_float2int' declared here
+int gg_normalize_float2int(float x, float a);
+^
+6 errors generated.
+make: *** [/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/compute_eyes_pessimistic/src/obj/1/optics.o] Error 1

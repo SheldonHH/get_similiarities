@@ -1,0 +1,86 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/do_store_flag/src/expr.c:10623:43: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  do_store_flag( tree exp, rtx target, machine_mode mode, int only_cheap) 
+                                          ^
+                                          enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/do_store_flag/src/expr.c:10649:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v29; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/do_store_flag/src/expr.c:10650:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v30; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/do_store_flag/src/expr.c:10667:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v47; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/do_store_flag/src/expr.c:10669:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *expr; // [rsp+10h] [rbp-58h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/do_store_flag/src/expr.c:10802:14: error: expected identifier or '('
+ struct expr = ( tree_node *)v13; 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/do_store_flag/src/expr.c:10807:25: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+v14 = swap_condition( ( rtx_code)v14); 
+                        ^~~~~~~~
+                        rtx_cost
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/do_store_flag/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/do_store_flag/src/expr.c:10807:34: error: expected ')'
+v14 = swap_condition( ( rtx_code)v14); 
+                                 ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/do_store_flag/src/expr.c:10807:21: note: to match this '('
+v14 = swap_condition( ( rtx_code)v14); 
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/do_store_flag/src/expr.c:10808:14: error: expected identifier or '('
+ struct expr = ( tree_node *)v12; 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/do_store_flag/src/expr.c:10867:24: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+if ( !can_compare_p( ( rtx_code)v14, ( machine_mode)v10, ccp_store_flag) ) 
+                       ^~~~~~~~
+                       rtx_cost
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/do_store_flag/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/do_store_flag/src/expr.c:10867:33: error: expected ')'
+if ( !can_compare_p( ( rtx_code)v14, ( machine_mode)v10, ccp_store_flag) ) 
+                                ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/do_store_flag/src/expr.c:10867:20: note: to match this '('
+if ( !can_compare_p( ( rtx_code)v14, ( machine_mode)v10, ccp_store_flag) ) 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/do_store_flag/src/expr.c:10870:61: error: use of undeclared identifier 'insn_data_0'
+if ( ( v25 == 1317 || only_cheap && *( ( unsigned __int16 *)insn_data_0[v25].operand + 8) != mode) 
+                                                            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/do_store_flag/src/expr.c:10904:34: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+v38 = emit_store_flag( target, ( rtx_code)v14, v35, v37, ( machine_mode)v10, v52, 1); 
+                                 ^~~~~~~~
+                                 rtx_cost
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/do_store_flag/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/do_store_flag/src/expr.c:10904:43: error: expected ')'
+v38 = emit_store_flag( target, ( rtx_code)v14, v35, v37, ( machine_mode)v10, v52, 1); 
+                                          ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/do_store_flag/src/expr.c:10904:22: note: to match this '('
+v38 = emit_store_flag( target, ( rtx_code)v14, v35, v37, ( machine_mode)v10, v52, 1); 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/do_store_flag/src/expr.c:10914:25: error: use of undeclared identifier 'machine_mode'
+target = gen_reg_rtx( ( machine_mode)*( ( unsigned __int8 *)target + 2)); 
+                        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/do_store_flag/src/expr.c:10919:37: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+v40 = compare_from_rtx( v33, v34, ( rtx_code)v14, v52, ( machine_mode)v10, 0LL); 
+                                    ^~~~~~~~
+                                    rtx_cost
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/do_store_flag/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/do_store_flag/src/expr.c:10919:46: error: expected ')'
+v40 = compare_from_rtx( v33, v34, ( rtx_code)v14, v52, ( machine_mode)v10, 0LL); 
+                                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/do_store_flag/src/expr.c:10919:23: note: to match this '('
+v40 = compare_from_rtx( v33, v34, ( rtx_code)v14, v52, ( machine_mode)v10, 0LL); 
+                      ^
+17 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/do_store_flag/src/obj/expr.o] Error 1

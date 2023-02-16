@@ -1,0 +1,18 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/compensate_edge/src/reg-stack.c:2989:17: error: expected identifier or '('
+ struct reg_set = v5->reg_set; 
+                ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/compensate_edge/src/reg-stack.c:3048:37: error: use of undeclared identifier 'emit_where'; did you mean 'emit_note'?
+change_stack( src->end, &old, v5, ( emit_where)( *( _WORD *)src->end == 33)); 
+                                    ^~~~~~~~~~
+                                    emit_note
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/compensate_edge/src/rtl.h:1343:12: note: 'emit_note' declared here
+extern rtx emit_note                    PARAMS ((const char *, int));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/compensate_edge/src/reg-stack.c:3048:75: error: too few arguments to function call, expected 2, have 1
+change_stack( src->end, &old, v5, ( emit_where)( *( _WORD *)src->end == 33)); 
+                                  ~~~~~~~~~~~~~                           ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/compensate_edge/src/rtl.h:1343:1: note: 'emit_note' declared here
+extern rtx emit_note                    PARAMS ((const char *, int));
+^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/compensate_edge/src/obj/reg-stack.o] Error 1

@@ -1,0 +1,72 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/rtx_renumbered_equal_p/src/jump.c:2695:4: error: expected ';' after expression
+rtx real_insn; // rbx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/rtx_renumbered_equal_p/src/jump.c:2695:5: error: use of undeclared identifier 'real_insn'; did you mean 'next_insn'?
+rtx real_insn; // rbx 
+    ^~~~~~~~~
+    next_insn
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/rtx_renumbered_equal_p/src/rtl.h:1347:12: note: 'next_insn' declared here
+extern rtx next_insn                    PARAMS ((rtx));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/rtx_renumbered_equal_p/src/jump.c:2697:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v13; // ecx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/rtx_renumbered_equal_p/src/jump.c:2708:6: error: use of undeclared identifier 'v24'
+rtx *v24; // r12 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/rtx_renumbered_equal_p/src/jump.c:2709:6: error: use of undeclared identifier 'i'
+rtx *i; // rbp 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/rtx_renumbered_equal_p/src/jump.c:2711:4: error: expected ';' after expression
+rtx v27; // rdx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/rtx_renumbered_equal_p/src/jump.c:2711:5: error: use of undeclared identifier 'v27'
+rtx v27; // rdx 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/rtx_renumbered_equal_p/src/jump.c:2712:4: error: expected ';' after expression
+rtx v28; // rcx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/rtx_renumbered_equal_p/src/jump.c:2712:5: error: use of undeclared identifier 'v28'
+rtx v28; // rcx 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/rtx_renumbered_equal_p/src/jump.c:2760:1: error: use of undeclared identifier 'real_insn'
+real_insn = next_real_insn( rtx); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/rtx_renumbered_equal_p/src/jump.c:2761:10: error: use of undeclared identifier 'real_insn'; did you mean 'next_insn'?
+result = real_insn == next_real_insn( v4->fld[0].rtx); 
+         ^~~~~~~~~
+         next_insn
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/rtx_renumbered_equal_p/src/rtl.h:1347:12: note: 'next_insn' declared here
+extern rtx next_insn                    PARAMS ((rtx));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/rtx_renumbered_equal_p/src/jump.c:2780:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v34.rtwint = ( __int64)v5->fld[0]; 
+                       ^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/rtx_renumbered_equal_p/src/jump.c:2781:22: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v35 = ( unsigned int)v5[1]; 
+                     ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/rtx_renumbered_equal_p/src/jump.c:2788:35: error: use of undeclared identifier 'machine_mode'
+v37 = subreg_regno_offset( v36, ( machine_mode)*( unsigned __int8 *)( v34.rtwint + 2), v35, v13); 
+                                  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/rtx_renumbered_equal_p/src/jump.c:2804:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v32.rtwint = ( __int64)v4->fld[0]; 
+                       ^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/rtx_renumbered_equal_p/src/jump.c:2805:22: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v20 = ( unsigned int)v4[1]; 
+                     ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/rtx_renumbered_equal_p/src/jump.c:2812:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( unsigned __int8 *)( v32.rtwint + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/rtx_renumbered_equal_p/src/jump.c:2814:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)v4 + 2)); 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/rtx_renumbered_equal_p/src/jump.c:2843:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v12 = (  struct rtx_def *)v4[1]; 
+                          ^~~~~
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/rtx_renumbered_equal_p/src/obj/jump.o] Error 1

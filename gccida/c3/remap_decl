@@ -1,0 +1,51 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/remap_decl/src/tree-inline.c:586:30: error: unknown type name 'inline_data_0'; did you mean 'inline_data'?
+tree  remap_decl( tree decl, inline_data_0 *id) 
+                             ^~~~~~~~~~~~~
+                             inline_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/remap_decl/src/tree-inline.c:101:3: note: 'inline_data' declared here
+} inline_data;
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/remap_decl/src/tree-inline.c:588:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *member; // [rsp+8h] [rbp-48h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/remap_decl/src/tree-inline.c:590:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *members; // [rsp+18h] [rbp-38h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/remap_decl/src/tree-inline.c:591:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *t; // [rsp+20h] [rbp-30h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/remap_decl/src/tree-inline.c:592:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *fn; // [rsp+28h] [rbp-28h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/remap_decl/src/tree-inline.c:595:19: error: expected expression
+fn = ( tree_node *)*( ( _QWORD *)&id->fns->name + id->fns->elements_used); 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/remap_decl/src/tree-inline.c:595:8: error: use of undeclared identifier 'tree_node'
+fn = ( tree_node *)*( ( _QWORD *)&id->fns->name + id->fns->elements_used); 
+       ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/remap_decl/src/tree-inline.c:596:7: error: use of undeclared identifier 'lang_hooks_0'; did you mean 'lang_hooks'?
+if ( !lang_hooks_0.tree_inlining.auto_var_in_fn_p( decl, fn) ) 
+      ^~~~~~~~~~~~
+      lang_hooks
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/remap_decl/src/langhooks.h:168:32: note: 'lang_hooks' declared here
+extern const struct lang_hooks lang_hooks;
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/remap_decl/src/tree-inline.c:596:50: error: called object type '<dependent type>' is not a function or function pointer
+if ( !lang_hooks_0.tree_inlining.auto_var_in_fn_p( decl, fn) ) 
+                                                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/remap_decl/src/tree-inline.c:610:41: error: use of undeclared identifier 'lang_hooks_0'; did you mean 'lang_hooks'?
+if ( !t->decl.name && t->common.type && lang_hooks_0.tree_inlining.anon_aggr_type_p( t->common.type) ) 
+                                        ^~~~~~~~~~~~
+                                        lang_hooks
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/remap_decl/src/langhooks.h:168:32: note: 'lang_hooks' declared here
+extern const struct lang_hooks lang_hooks;
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/remap_decl/src/tree-inline.c:610:84: error: called object type '<dependent type>' is not a function or function pointer
+if ( !t->decl.name && t->common.type && lang_hooks_0.tree_inlining.anon_aggr_type_p( t->common.type) ) 
+                                                                                   ^
+11 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/remap_decl/src/obj/tree-inline.o] Error 1

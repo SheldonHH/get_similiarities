@@ -1,0 +1,18 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/set_sched_group_p/src/sched-deps.c:931:20: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( link = ( rtx)prev[3]; link; link = ( rtx)link[1] ) 
+                   ^~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/set_sched_group_p/src/sched-deps.c:931:48: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( link = ( rtx)prev[3]; link; link = ( rtx)link[1] ) 
+                                               ^~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/set_sched_group_p/src/sched-deps.c:932:43: error: use of undeclared identifier 'reg_note'; did you mean 'reg_names'?
+add_dependence( insn, link->fld[0].rtx, ( reg_note)( unsigned __int8)BYTE2( *( _DWORD *)link)); 
+                                          ^~~~~~~~
+                                          reg_names
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/set_sched_group_p/src/regs.h:166:21: note: 'reg_names' declared here
+extern const char * reg_names[FIRST_PSEUDO_REGISTER];
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/set_sched_group_p/src/sched-deps.c:932:54: error: expected expression
+add_dependence( insn, link->fld[0].rtx, ( reg_note)( unsigned __int8)BYTE2( *( _DWORD *)link)); 
+                                                     ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/set_sched_group_p/src/obj/sched-deps.o] Error 1

@@ -1,0 +1,38 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/instantiate_decl/src/function.c:4149:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v5; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/instantiate_decl/src/function.c:4151:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v7; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/instantiate_decl/src/function.c:4153:4: error: expected ';' after expression
+rtx loc[4]; // [rsp+8h] [rbp-20h] BYREF 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/instantiate_decl/src/function.c:4153:5: error: use of undeclared identifier 'loc'
+rtx loc[4]; // [rsp+8h] [rbp-20h] BYREF 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/instantiate_decl/src/function.c:4158:1: error: use of undeclared identifier 'loc'
+loc[0] = rtx; 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/instantiate_decl/src/function.c:4182:1: error: use of undeclared identifier 'loc'
+loc[0] = copy_rtx( rtx); 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/instantiate_decl/src/function.c:4183:29: error: use of undeclared identifier 'loc'
+instantiate_virtual_regs_1( loc, 0LL, 0); 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/instantiate_decl/src/function.c:4194:29: error: use of undeclared identifier 'loc'
+if ( !memory_address_p( v5, loc[0]) ) 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/instantiate_decl/src/function.c:4208:29: error: use of undeclared identifier 'loc'
+if ( !memory_address_p( v7, loc[0]) ) 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/instantiate_decl/src/function.c:4218:29: error: use of undeclared identifier 'loc'
+instantiate_virtual_regs_1( loc, 0LL, 0); 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/instantiate_decl/src/function.c:4220:17: error: use of undeclared identifier 'loc'
+x->fld[0].rtx = loc[0]; 
+                ^
+11 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/instantiate_decl/src/obj/function.o] Error 1

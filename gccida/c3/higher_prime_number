@@ -1,0 +1,18 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/higher_prime_number/src/hashtab.c:538:19: error: conflicting types for 'higher_prime_number'
+unsigned __int64  higher_prime_number( unsigned __int64 n) 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/higher_prime_number/src/hashtab.c:60:22: note: previous declaration is here
+static unsigned long higher_prime_number PARAMS ((unsigned long));
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/higher_prime_number/src/hashtab.c:543:7: error: use of undeclared identifier 'higher_prime_number_primes'; did you mean 'higher_prime_number'?
+low = higher_prime_number_primes; 
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~
+      higher_prime_number
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/higher_prime_number/src/hashtab.c:60:22: note: 'higher_prime_number' declared here
+static unsigned long higher_prime_number PARAMS ((unsigned long));
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/higher_prime_number/src/hashtab.c:544:9: error: use of undeclared identifier 'higher_prime_number_primes'
+high = &higher_prime_number_primes[30]; 
+        ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/higher_prime_number/src/obj/hashtab.o] Error 1

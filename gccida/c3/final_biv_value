@@ -1,0 +1,39 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/final_biv_value/src/unroll.c:3672:1: error: use of undeclared identifier 'induction_1'
+induction_1 *i; // rbx 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/final_biv_value/src/unroll.c:3672:14: error: use of undeclared identifier 'i'
+induction_1 *i; // rbx 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/final_biv_value/src/unroll.c:3677:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[bl_0->biv->mode] != MODE_INT ) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/final_biv_value/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/final_biv_value/src/unroll.c:3698:7: error: use of undeclared identifier 'i'
+for ( i = bl_0->biv; i; i = i->next_iv ) 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/final_biv_value/src/unroll.c:3698:22: error: use of undeclared identifier 'i'
+for ( i = bl_0->biv; i; i = i->next_iv ) 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/final_biv_value/src/unroll.c:3698:25: error: use of undeclared identifier 'i'
+for ( i = bl_0->biv; i; i = i->next_iv ) 
+                        ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/final_biv_value/src/unroll.c:3698:29: error: use of undeclared identifier 'i'
+for ( i = bl_0->biv; i; i = i->next_iv ) 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/final_biv_value/src/unroll.c:3700:19: error: use of undeclared identifier 'i'
+v8 = *( ( _WORD *)i + 50); 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/final_biv_value/src/unroll.c:3705:12: error: use of undeclared identifier 'i'
+mult_val = i->mult_val; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/final_biv_value/src/unroll.c:3708:39: error: use of undeclared identifier 'i'
+v6 = fold_rtx_mult_add( v6, mult_val, i->add_val, i->mode); 
+                                      ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/final_biv_value/src/unroll.c:3708:51: error: use of undeclared identifier 'i'
+v6 = fold_rtx_mult_add( v6, mult_val, i->add_val, i->mode); 
+                                                  ^
+11 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/final_biv_value/src/obj/unroll.o] Error 1

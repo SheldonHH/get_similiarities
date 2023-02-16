@@ -1,0 +1,15 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/mark_optab/src/optabs.c:5194:1: error: unknown type name 'optab_0'; did you mean 'optab'?
+optab_0 o; // [rsp+10h] [rbp-10h] 
+^~~~~~~
+optab
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/mark_optab/src/optabs.h:48:5: note: 'optab' declared here
+} * optab;
+    ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/mark_optab/src/optabs.c:5196:17: error: expected expression
+o = *( optab_0 *)arg; 
+                ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/mark_optab/src/optabs.c:5196:8: error: use of undeclared identifier 'optab_0'
+o = *( optab_0 *)arg; 
+       ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/mark_optab/src/obj/optabs.o] Error 1

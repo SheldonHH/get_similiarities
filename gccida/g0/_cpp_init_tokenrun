@@ -1,0 +1,15 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/_cpp_init_tokenrun/src/cpplex.c:1216:26: error: unknown type name 'tokenrun_0'; did you mean 'tokenrun'?
+void  cpp_init_tokenrun( tokenrun_0 *run, unsigned int count) 
+                         ^~~~~~~~~~
+                         tokenrun
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/_cpp_init_tokenrun/src/cpphash.h:97:25: note: 'tokenrun' declared here
+typedef struct tokenrun tokenrun;
+                        ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/_cpp_init_tokenrun/src/cpplex.c:1218:28: error: expected expression
+run->base = ( cpp_token_0 *)xmalloc( 24LL * count); 
+                           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/_cpp_init_tokenrun/src/cpplex.c:1218:15: error: use of undeclared identifier 'cpp_token_0'
+run->base = ( cpp_token_0 *)xmalloc( 24LL * count); 
+              ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/_cpp_init_tokenrun/src/obj/cpplex.o] Error 1

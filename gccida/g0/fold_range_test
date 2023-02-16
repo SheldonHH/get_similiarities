@@ -1,0 +1,26 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/fold_range_test/src/fold-const.c:4339:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v2; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/fold_range_test/src/fold-const.c:4341:1: error: must use 'enum' tag to refer to type 'tree_code'
+tree_code v5; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/fold_range_test/src/fold-const.c:4344:1: error: must use 'enum' tag to refer to type 'tree_code'
+tree_code v8; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/fold_range_test/src/fold-const.c:4376:31: error: expected expression
+v2 = rhs ? rhs : ( tree_node *)*( &global_trees + 11); 
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/fold_range_test/src/fold-const.c:4376:20: error: use of undeclared identifier 'tree_node'
+v2 = rhs ? rhs : ( tree_node *)*( &global_trees + 11); 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/fold_range_test/src/fold-const.c:4397:17: error: expected expression
+v4 = *( _OWORD *)&exp->block.vars; 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/fold_range_test/src/fold-const.c:4397:9: error: use of undeclared identifier '_OWORD'
+v4 = *( _OWORD *)&exp->block.vars; 
+        ^
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/fold_range_test/src/obj/fold-const.o] Error 1

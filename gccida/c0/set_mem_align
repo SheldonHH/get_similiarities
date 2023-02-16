@@ -1,0 +1,30 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/set_mem_align/src/emit-rtl.c:2342:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v5; // [rsp+38h] [rbp-28h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/set_mem_align/src/emit-rtl.c:2345:1: error: statement requires expression of scalar type ('struct rtx_def' invalid)
+if ( mem[1] ) 
+^    ~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/set_mem_align/src/emit-rtl.c:2349:1: error: statement requires expression of scalar type ('struct rtx_def' invalid)
+if ( mem[1] ) 
+^    ~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/set_mem_align/src/emit-rtl.c:2350:21: error: expected expression
+v5 = *( tree_node **)( *( _QWORD *)&mem[1] + 8LL); 
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/set_mem_align/src/emit-rtl.c:2350:9: error: use of undeclared identifier 'tree_node'
+v5 = *( tree_node **)( *( _QWORD *)&mem[1] + 8LL); 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/set_mem_align/src/emit-rtl.c:2353:1: error: statement requires expression of scalar type ('struct rtx_def' invalid)
+if ( mem[1] ) 
+^    ~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/set_mem_align/src/emit-rtl.c:2357:1: error: statement requires expression of scalar type ('struct rtx_def' invalid)
+if ( mem[1] ) 
+^    ~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/set_mem_align/src/emit-rtl.c:2369:65: error: use of undeclared identifier 'machine_mode'
+*( _QWORD *)&mem[1] = get_mem_attrs( v6, v5, v4, size, align, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)mem)); 
+                                                                ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/set_mem_align/src/emit-rtl.c:2369:80: error: expected expression
+*( _QWORD *)&mem[1] = get_mem_attrs( v6, v5, v4, size, align, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)mem)); 
+                                                                               ^
+9 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/set_mem_align/src/obj/emit-rtl.o] Error 1

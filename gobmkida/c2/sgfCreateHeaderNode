@@ -1,0 +1,20 @@
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/sgfCreateHeaderNode/src/sgf/sgfnode.c:935:11: error: conflicting types for 'sgfCreateHeaderNode'
+SGFNode * sgfCreateHeaderNode( int boardsize, float a2, float komi) 
+          ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/sgfCreateHeaderNode/src/sgf/sgftree.h:111:10: note: previous declaration is here
+SGFNode *sgfCreateHeaderNode(int boardsize, float komi);
+         ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/sgfCreateHeaderNode/src/sgf/sgfnode.c:950:12: error: expected expression
+*( _OWORD *)&v3->child = 0LL; 
+           ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/sgfCreateHeaderNode/src/sgf/sgfnode.c:950:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&v3->child = 0LL; 
+   ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/sgfCreateHeaderNode/src/sgf/sgfnode.c:951:12: error: expected expression
+*( _OWORD *)&v3->props = 0LL; 
+           ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/sgfCreateHeaderNode/src/sgf/sgfnode.c:951:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&v3->props = 0LL; 
+   ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/sgfCreateHeaderNode/src/obj/4/sgfnode.o] Error 1

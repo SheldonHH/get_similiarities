@@ -1,0 +1,32 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/noce_try_minmax/src/ifcvt.c:1760:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v8; // r15d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/noce_try_minmax/src/ifcvt.c:1766:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v14; // r15d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/noce_try_minmax/src/ifcvt.c:1776:15: error: must use 'enum' tag to refer to type 'mode_class'
+v4 = *( const mode_class *)( ( char *)mode_class_0 + ( ( *( _DWORD *)if_info->x >> 14) & 0x3FC)); 
+              ^
+              enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/noce_try_minmax/src/machmode.h:52:30: note: enum 'mode_class' is hidden by a non-type declaration of 'mode_class' here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/noce_try_minmax/src/ifcvt.c:1776:39: error: use of undeclared identifier 'mode_class_0'
+v4 = *( const mode_class *)( ( char *)mode_class_0 + ( ( *( _DWORD *)if_info->x >> 14) & 0x3FC)); 
+                                      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/noce_try_minmax/src/ifcvt.c:1785:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v10 = (  struct rtx_def *)v7[1]; 
+                          ^~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/noce_try_minmax/src/ifcvt.c:1804:7: error: use of undeclared identifier 'code'
+v14 = code[v11]; 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/noce_try_minmax/src/ifcvt.c:1805:7: error: use of undeclared identifier 'unsignedp'
+v15 = unsignedp[v13]; 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/noce_try_minmax/src/ifcvt.c:1808:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)if_info->x + 2), 
+  ^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/noce_try_minmax/src/obj/ifcvt.o] Error 1

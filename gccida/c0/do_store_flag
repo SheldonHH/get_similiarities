@@ -1,0 +1,43 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/do_store_flag/src/expr.c:10623:43: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  do_store_flag( tree exp, rtx target, machine_mode mode, int only_cheap) 
+                                          ^
+                                          enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/do_store_flag/src/expr.c:10631:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v10; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/do_store_flag/src/expr.c:10646:1: error: must use 'enum' tag to refer to type 'insn_code'
+insn_code icode; // [rsp+B4h] [rbp-6Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/do_store_flag/src/expr.c:10657:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code; // [rsp+FCh] [rbp-24h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/do_store_flag/src/expr.c:10658:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code codea; // [rsp+FCh] [rbp-24h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/do_store_flag/src/expr.c:10836:36: error: use of undeclared identifier 'machine_mode'
+op0 = expand_shift( RSHIFT_EXPR, ( machine_mode)operand_mode, op0, v10, subtarget, 1); 
+                                   ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/do_store_flag/src/expr.c:10846:34: error: use of undeclared identifier 'machine_mode'
+else if ( can_compare_p( code, ( machine_mode)operand_mode, ccp_store_flag) ) 
+                                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/do_store_flag/src/expr.c:10849:75: error: use of undeclared identifier 'insn_data_0'
+if ( ( icode == CODE_FOR_nothing || only_cheap && *( ( unsigned __int16 *)insn_data_0[icode].operand + 8) != mode) 
+                                                                          ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/do_store_flag/src/expr.c:10881:54: error: use of undeclared identifier 'machine_mode'
+result = emit_store_flag( targeta, code, v17, v16, ( machine_mode)operand_mode, unsignedp, 1); 
+                                                     ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/do_store_flag/src/expr.c:10894:26: error: use of undeclared identifier 'machine_mode'
+targeta = gen_reg_rtx( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)targeta)); 
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/do_store_flag/src/expr.c:10894:41: error: expected expression
+targeta = gen_reg_rtx( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)targeta)); 
+                                        ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/do_store_flag/src/expr.c:10901:59: error: use of undeclared identifier 'machine_mode'
+resulta = compare_from_rtx( op0a, op1, code, unsignedp, ( machine_mode)operand_mode, 0LL); 
+                                                          ^
+12 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/do_store_flag/src/obj/expr.o] Error 1

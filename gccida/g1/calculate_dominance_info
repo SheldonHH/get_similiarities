@@ -1,0 +1,20 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/calculate_dominance_info/src/dominance.c:1053:59: error: must use 'enum' tag to refer to type 'cdi_direction'
+void  calculate_dominance_info( int *idom, sbitmap *doms, cdi_direction reverse) 
+                                                          ^
+                                                          enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/calculate_dominance_info/src/dominance.c:1067:1: error: must use 'enum' tag to refer to type 'cdi_direction'
+cdi_direction v16; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/calculate_dominance_info/src/dominance.c:1069:1: error: must use 'enum' tag to refer to type 'cdi_direction'
+cdi_direction v18; // r14d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/calculate_dominance_info/src/dominance.c:1113:17: error: expected expression
+if ( *( _OWORD *)&idom != 0LL ) 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/calculate_dominance_info/src/dominance.c:1113:9: error: use of undeclared identifier '_OWORD'
+if ( *( _OWORD *)&idom != 0LL ) 
+        ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/calculate_dominance_info/src/obj/dominance.o] Error 1

@@ -1,0 +1,12 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/init_cumulative_args/src/i386.c:2008:8: error: use of undeclared identifier 'init_cumulative_args_zero_cum'; did you mean 'init_cumulative_args'?
+*cum = init_cumulative_args_zero_cum; 
+       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+       init_cumulative_args
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/init_cumulative_args/src/i386.c:1985:7: note: 'init_cumulative_args' declared here
+void  init_cumulative_args( CUMULATIVE_ARGS *cum, tree fntype, rtx libname) 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/init_cumulative_args/src/i386.c:2008:6: error: assigning to 'CUMULATIVE_ARGS' (aka 'struct ix86_args') from incompatible type 'void (CUMULATIVE_ARGS *, tree, rtx)' (aka 'void (struct ix86_args *, union tree_node *, struct rtx_def *)')
+*cum = init_cumulative_args_zero_cum; 
+     ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/init_cumulative_args/src/obj/i386.o] Error 1

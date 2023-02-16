@@ -1,0 +1,39 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/scan_rtx_address/src/regrename.c:987:45: error: must use 'enum' tag to refer to type 'reg_class'
+void  scan_rtx_address( rtx insn, rtx *loc, reg_class a3, scan_actions action, __int64 mode) 
+                                            ^
+                                            enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/scan_rtx_address/src/regrename.c:987:59: error: must use 'enum' tag to refer to type 'scan_actions'
+void  scan_rtx_address( rtx insn, rtx *loc, reg_class a3, scan_actions action, __int64 mode) 
+                                                          ^
+                                                          enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/scan_rtx_address/src/regrename.c:987:7: error: conflicting types for 'scan_rtx_address'
+void  scan_rtx_address( rtx insn, rtx *loc, reg_class a3, scan_actions action, __int64 mode) 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/scan_rtx_address/src/regrename.c:89:13: note: previous declaration is here
+static void scan_rtx_address PARAMS ((rtx, rtx *, enum reg_class,
+            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/scan_rtx_address/src/regrename.c:992:1: error: must use 'enum' tag to refer to type 'scan_actions'
+scan_actions v9; // r12d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/scan_rtx_address/src/regrename.c:1022:1: error: must use 'enum' tag to refer to type 'scan_actions'
+scan_actions v39; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/scan_rtx_address/src/regrename.c:1048:28: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v16 = ( unsigned __int16 *)v6[1]; 
+                           ^~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/scan_rtx_address/src/regrename.c:1223:52: error: use of undeclared identifier 'machine_mode'
+scan_rtx_address( insn, v20, INDEX_REGS, action, ( machine_mode)mode); 
+                                                   ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/scan_rtx_address/src/regrename.c:1232:54: error: use of undeclared identifier 'machine_mode'
+scan_rtx_address( insn, fld, GENERAL_REGS, action, ( machine_mode)mode); 
+                                                     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/scan_rtx_address/src/regrename.c:1263:81: error: use of undeclared identifier 'machine_mode'
+scan_rtx_address( insn, ( rtx *)( v14 + *( ( _QWORD *)v6 + v10)), a3, action, ( machine_mode)mode); 
+                                                                                ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/scan_rtx_address/src/regrename.c:1275:61: error: use of undeclared identifier 'machine_mode'
+scan_rtx_address( insn, ( rtx *)&v6->fld[v8], a3, action, ( machine_mode)mode); 
+                                                            ^
+10 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/scan_rtx_address/src/obj/regrename.o] Error 1

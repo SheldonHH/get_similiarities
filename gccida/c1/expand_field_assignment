@@ -1,0 +1,72 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_field_assignment/src/combine.c:6225:4: error: expected ';' after expression
+rtx v12; // rbp 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_field_assignment/src/combine.c:6225:5: error: use of undeclared identifier 'v12'
+rtx v12; // rbp 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_field_assignment/src/combine.c:6232:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v19; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_field_assignment/src/combine.c:6233:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v20; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_field_assignment/src/combine.c:6235:4: error: expected ';' after expression
+rtx v22; // r12 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_field_assignment/src/combine.c:6235:5: error: use of undeclared identifier 'v22'
+rtx v22; // r12 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_field_assignment/src/combine.c:6248:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v4.rtwint = ( __int64)x->fld[0]; 
+                      ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_field_assignment/src/combine.c:6256:15: error: expected expression
+rtx = *( rtx *)( v4.rtwint + 8); 
+              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_field_assignment/src/combine.c:6257:15: error: expected expression
+v12 = *( rtx *)( v4.rtwint + 24); 
+              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_field_assignment/src/combine.c:6257:1: error: use of undeclared identifier 'v12'
+v12 = *( rtx *)( v4.rtwint + 24); 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_field_assignment/src/combine.c:6259:17: error: use of undeclared identifier 'v12'
+if ( *( _WORD *)v12 == 54 
+                ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_field_assignment/src/combine.c:6260:4: error: use of undeclared identifier 'v12'; did you mean 'v2'?
+&& v12->fld[0].rtwint + ( int)v10 > *( const unsigned __int16 *)( ( char *)mode_bitsize 
+   ^~~
+   v2
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_field_assignment/src/combine.c:6215:18: note: 'v2' declared here
+ struct rtx_def *v2; // rax 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_field_assignment/src/combine.c:6263:29: error: use of undeclared identifier 'machine_mode'
+rtx = gen_rtx_fmt_e( USE, ( machine_mode)BYTE2( v5), rtx); 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_field_assignment/src/combine.c:6266:13: error: use of undeclared identifier 'v12'
+for ( op1 = v12; *( _WORD *)rtx == 63; rtx = rtx->fld[0].rtx ) 
+            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_field_assignment/src/combine.c:6272:7: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v15 = mode_class_0[v14]; 
+      ^~~~~~~~~~~~
+      mode_class
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_field_assignment/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_field_assignment/src/combine.c:6299:1: error: use of undeclared identifier 'v22'
+v22 = copy_rtx( rtx); 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_field_assignment/src/combine.c:6300:29: error: use of undeclared identifier 'machine_mode'
+v23 = gen_binary( ASHIFT, ( machine_mode)v14, v21, op1); 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_field_assignment/src/combine.c:6301:34: error: use of undeclared identifier 'machine_mode'
+v24 = simplify_gen_unary( NOT, ( machine_mode)v14, v23, ( machine_mode)v14); 
+                                 ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_field_assignment/src/combine.c:6301:59: error: use of undeclared identifier 'machine_mode'
+v24 = simplify_gen_unary( NOT, ( machine_mode)v14, v23, ( machine_mode)v14); 
+                                                          ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/expand_field_assignment/src/obj/combine.o] Error 1

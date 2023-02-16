@@ -1,0 +1,35 @@
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/value_move_reasons/src/engine/value_moves.c:2923:41: error: invalid conversion between vector type '__m128' (vector of 4 'float' values) and integer type 'uint32' (aka 'unsigned int') of different size
+estimate_territorial_value( pos, color, ( __m128)LODWORD( v47), pure_threat_value); 
+                                        ^~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/value_move_reasons/src/engine/value_moves.c:2924:46: error: too many arguments to function call, expected 3, have 4
+estimate_strategical_value( pos, color, v47, pure_threat_value); 
+~~~~~~~~~~~~~~~~~~~~~~~~~~                   ^~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/value_move_reasons/src/engine/value_moves.c:1919:1: note: 'estimate_strategical_value' declared here
+static void
+^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/value_move_reasons/src/engine/value_moves.c:2988:63: error: use of undeclared identifier 'invalid_operation'
+if ( ( move[pos].numpos_shape + move[pos].numneg_shape < 0) ^ __OFADD__( 
+                                                              ^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/value_move_reasons/src/engine/value_moves.c:2655:25: note: expanded from macro '__OFADD__'
+#define __OFADD__(x, y) invalid_operation // Generate overflow flag for (x+y)
+                        ^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/value_move_reasons/src/engine/value_moves.c:3014:25: error: use of undeclared identifier 'invalid_operation'
+if ( ( v27 + v28 < 0) ^ __OFADD__( v27, v28) | ( v27 + v28 == 0) ) 
+                        ^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/value_move_reasons/src/engine/value_moves.c:2655:25: note: expanded from macro '__OFADD__'
+#define __OFADD__(x, y) invalid_operation // Generate overflow flag for (x+y)
+                        ^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/value_move_reasons/src/engine/value_moves.c:3077:27: error: too many arguments to function call, expected 2, have 3
+move_considered( pos, v8, territorial_value); 
+~~~~~~~~~~~~~~~           ^~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/value_move_reasons/src/engine/liberty.h:675:1: note: 'move_considered' declared here
+void move_considered(int move, float value);
+^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/value_move_reasons/src/engine/value_moves.c:3123:33: error: too few arguments to function call, expected 5, have 4
+                                           pure_threat_value, score);
+                                                                   ^
+/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/value_move_reasons/src/engine/value_moves.c:2847:1: note: 'value_move_reasons' declared here
+float  value_move_reasons( int pos, int color, float a3, float pure_threat_value, float score) 
+^
+6 errors generated.
+make: *** [/data/output_dir/patch/gobmk/ida/clang/O1/gobmk-clang-O1/value_move_reasons/src/obj/1/value_moves.o] Error 1

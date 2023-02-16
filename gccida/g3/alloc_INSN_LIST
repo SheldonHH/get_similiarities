@@ -1,0 +1,11 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/alloc_INSN_LIST/src/lists.c:541:26: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v3 = (  struct rtx_def *)unused_insn_list[1]; 
+                         ^~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/alloc_INSN_LIST/src/lists.c:543:4: error: assigning to '__m128' (vector of 4 'float' values) from incompatible type 'int'
+v4 = _mm_loadh_ps( ( const double *)nexta); 
+   ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/alloc_INSN_LIST/src/lists.c:545:49: error: use of undeclared identifier 'rtx_def'
+*(  struct rtx_def *)&result->fld[0].rtwint = ( rtx_def)v4; 
+                                                ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/alloc_INSN_LIST/src/obj/lists.o] Error 1

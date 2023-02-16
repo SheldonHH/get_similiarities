@@ -1,0 +1,12 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/tree_expr_nonnegative_p/src/fold-const.c:8099:27: error: use of undeclared identifier 'tree_code'; did you mean 'tree_cons'?
+result = truth_value_p( ( tree_code)*( ( unsigned __int8 *)&t->block.common + 16)) != 0; 
+                          ^~~~~~~~~
+                          tree_cons
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/tree_expr_nonnegative_p/src/tree.h:2477:13: note: 'tree_cons' declared here
+extern tree tree_cons                   PARAMS ((tree, tree, tree));
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/tree_expr_nonnegative_p/src/fold-const.c:8099:37: error: invalid operands to binary expression ('tree (tree, tree, tree)' (aka 'union tree_node *(union tree_node *, union tree_node *, union tree_node *)') and 'unsigned char *')
+result = truth_value_p( ( tree_code)*( ( unsigned __int8 *)&t->block.common + 16)) != 0; 
+                        ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/tree_expr_nonnegative_p/src/obj/fold-const.o] Error 1

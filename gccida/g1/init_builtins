@@ -1,0 +1,23 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_builtins/src/cppinit.c:1182:22: error: unknown type name 'cpp_reader_0'; did you mean 'cpp_reader'?
+void  init_builtins( cpp_reader_0 *pfile) 
+                     ^~~~~~~~~~~~
+                     cpp_reader
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_builtins/src/cpplib.h:36:27: note: 'cpp_reader' declared here
+typedef struct cpp_reader cpp_reader;
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_builtins/src/cppinit.c:1185:1: error: unknown type name 'cpp_hashnode_0'; did you mean 'cpp_hashnode'?
+cpp_hashnode_0 *v2; // rax 
+^~~~~~~~~~~~~~
+cpp_hashnode
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_builtins/src/cpplib.h:42:29: note: 'cpp_hashnode' declared here
+typedef struct cpp_hashnode cpp_hashnode;
+                            ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_builtins/src/cppinit.c:1190:1: error: must use 'enum' tag to refer to type 'c_lang'
+c_lang lang; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_builtins/src/cppinit.c:1224:42: error: use of undeclared identifier 'unk_64D290'
+while ( v1 != ( const  struct builtin *)&unk_64D290 ); 
+                                         ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_builtins/src/obj/cppinit.o] Error 1

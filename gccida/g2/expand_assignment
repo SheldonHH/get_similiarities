@@ -1,0 +1,41 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_assignment/src/expr.c:4101:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *inner_reference; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_assignment/src/expr.c:4113:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *type; // rcx 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_assignment/src/expr.c:4141:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode1; // [rsp+1Ch] [rbp-5Ch] BYREF 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_assignment/src/expr.c:4208:33: error: use of undeclared identifier 'machine_mode'
+v37 = expand_expr( from, 0LL, ( machine_mode)*( ( unsigned __int8 *)v17 + 2), EXPAND_NORMAL); 
+                                ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_assignment/src/expr.c:4227:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( BYTE5( sizetype_tab[0]->block.abstract_origin) >> 1), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_assignment/src/expr.c:4267:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v32 = ( __int64)v9[1]; 
+                ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_assignment/src/expr.c:4298:21: error: expected expression
+type = ( tree_node *)v15[1]; 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_assignment/src/expr.c:4298:10: error: use of undeclared identifier 'tree_node'
+type = ( tree_node *)v15[1]; 
+         ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_assignment/src/expr.c:4304:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v20 = ( __int64)v15[1]; 
+                ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_assignment/src/expr.c:4360:57: error: use of undeclared identifier 'machine_mode'
+v25 = store_field( v15, bitsize, bitpos, mode1, from, ( machine_mode)v24, unsignedp, v7->common.type, alias_set); 
+                                                        ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_assignment/src/expr.c:4369:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( BYTE5( to->common.type->block.abstract_origin) >> 1), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_assignment/src/expr.c:4370:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( BYTE5( from->common.type->block.abstract_origin) >> 1), 
+  ^
+12 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_assignment/src/obj/expr.o] Error 1

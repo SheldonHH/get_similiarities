@@ -1,0 +1,11 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/canon_rtx/src/alias.c:1510:41: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+if ( x0 != x->fld[0].rtx || x1 != ( rtx)x[1] ) 
+                                        ^~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/canon_rtx/src/alias.c:1516:32: error: use of undeclared identifier 'machine_mode'
+return gen_rtx_fmt_ee( PLUS, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)x), x0, x1); 
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/canon_rtx/src/alias.c:1516:47: error: expected expression
+return gen_rtx_fmt_ee( PLUS, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)x), x0, x1); 
+                                              ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/canon_rtx/src/obj/alias.o] Error 1

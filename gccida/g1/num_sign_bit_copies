@@ -1,0 +1,62 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/num_sign_bit_copies/src/combine.c:8858:43: error: must use 'enum' tag to refer to type 'machine_mode'
+unsigned int  num_sign_bit_copies( rtx x, machine_mode mode) 
+                                          ^
+                                          enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/num_sign_bit_copies/src/combine.c:8860:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v3; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/num_sign_bit_copies/src/combine.c:8906:8: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( ( mode_class_0[v3] & 0xFFFFFFFB) == 2 || mode_class_0[v3] == MODE_VECTOR_FLOAT ) 
+       ^~~~~~~~~~~~
+       mode_class
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/num_sign_bit_copies/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/num_sign_bit_copies/src/combine.c:8906:47: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( ( mode_class_0[v3] & 0xFFFFFFFB) == 2 || mode_class_0[v3] == MODE_VECTOR_FLOAT ) 
+                                              ^~~~~~~~~~~~
+                                              mode_class
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/num_sign_bit_copies/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/num_sign_bit_copies/src/combine.c:8913:8: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( ( mode_class_0[v6] & 0xFFFFFFFB) == 2 || mode_class_0[v6] == MODE_VECTOR_FLOAT ) 
+       ^~~~~~~~~~~~
+       mode_class
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/num_sign_bit_copies/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/num_sign_bit_copies/src/combine.c:8913:47: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( ( mode_class_0[v6] & 0xFFFFFFFB) == 2 || mode_class_0[v6] == MODE_VECTOR_FLOAT ) 
+                                              ^~~~~~~~~~~~
+                                              mode_class
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/num_sign_bit_copies/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/num_sign_bit_copies/src/combine.c:8924:42: error: use of undeclared identifier 'machine_mode'
+LODWORD( v4) = num_sign_bit_copies( x, ( machine_mode)v6) 
+                                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/num_sign_bit_copies/src/combine.c:8989:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v18.rtwint = ( __int64)x->fld[0]; 
+                       ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/num_sign_bit_copies/src/combine.c:9008:10: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+&& ( rtx)x[1] == const_int_rtx[63] 
+         ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/num_sign_bit_copies/src/combine.c:9117:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v44 = ( __int64)x[1]; 
+                ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/num_sign_bit_copies/src/combine.c:9128:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v24 = ( __int64)x[1]; 
+                ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/num_sign_bit_copies/src/combine.c:9148:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v42 = ( __int64)x[1]; 
+                ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/num_sign_bit_copies/src/combine.c:9193:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v22.rtwint = ( __int64)x->fld[0]; 
+                       ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/num_sign_bit_copies/src/combine.c:9205:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v20 = ( __int64)x[1]; 
+                ^~~~
+14 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/num_sign_bit_copies/src/obj/combine.o] Error 1

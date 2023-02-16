@@ -1,0 +1,60 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/elimination_effects/src/reload1.c:3132:35: error: must use 'enum' tag to refer to type 'machine_mode'
+void  elimination_effects( rtx x, machine_mode mem_mode) 
+                                  ^
+                                  enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/elimination_effects/src/reload1.c:3163:4: error: expected ';' after expression
+rtx rtwint; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/elimination_effects/src/reload1.c:3163:5: error: use of undeclared identifier 'rtwint'; did you mean 'rtint'?
+rtx rtwint; // rax 
+    ^~~~~~
+    rtint
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/elimination_effects/src/reload1.c:3135:5: note: 'rtint' declared here
+int rtint; // eax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/elimination_effects/src/reload1.c:3193:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v25 = ( __int64)x[1]; 
+                ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/elimination_effects/src/reload1.c:3210:30: error: expected expression
+elimination_effects( *( rtx *)&x[1], VOIDmode); 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/elimination_effects/src/reload1.c:3267:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v17.rtwint = ( __int64)x->fld[0]; 
+                       ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/elimination_effects/src/reload1.c:3296:29: error: use of undeclared identifier 'machine_mode'
+elimination_effects( v27, ( machine_mode)*( ( unsigned __int8 *)x + 2)); 
+                            ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/elimination_effects/src/reload1.c:3314:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v14.rtwint = ( __int64)x->fld[0]; 
+                       ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/elimination_effects/src/reload1.c:3335:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v15 = ( __int64)x[1]; 
+                ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/elimination_effects/src/reload1.c:3371:1: error: use of undeclared identifier 'rtwint'; did you mean 'rtint'?
+rtwint = ( rtx)fld->rtwint; 
+^~~~~~
+rtint
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/elimination_effects/src/reload1.c:3135:5: note: 'rtint' declared here
+int rtint; // eax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/elimination_effects/src/reload1.c:3371:16: error: expected ';' after expression
+rtwint = ( rtx)fld->rtwint; 
+               ^
+               ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/elimination_effects/src/reload1.c:3377:22: error: use of undeclared identifier 'rtwint'
+elimination_effects( rtwint->fld[v33++].rtx, mem_mode); 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/elimination_effects/src/reload1.c:3378:1: error: use of undeclared identifier 'rtwint'; did you mean 'rtint'?
+rtwint = ( rtx)fld->rtwint; 
+^~~~~~
+rtint
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/elimination_effects/src/reload1.c:3135:5: note: 'rtint' declared here
+int rtint; // eax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/elimination_effects/src/reload1.c:3378:16: error: expected ';' after expression
+rtwint = ( rtx)fld->rtwint; 
+               ^
+               ;
+14 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/elimination_effects/src/obj/reload1.o] Error 1

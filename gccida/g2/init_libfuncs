@@ -1,0 +1,19 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/init_libfuncs/src/optabs.c:5107:22: error: unknown type name 'optab_0'; did you mean 'optab'?
+void  init_libfuncs( optab_0 optable, int first_mode, int last_mode, const char *opname, int suffix) 
+                     ^~~~~~~
+                     optab
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/init_libfuncs/src/optabs.h:48:5: note: 'optab' declared here
+} * optab;
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/init_libfuncs/src/optabs.c:5153:15: error: use of undeclared identifier 'sch_tolower'; did you mean '_sch_tolower'?
+*( v13 - 1) = sch_tolower[v15]; 
+              ^~~~~~~~~~~
+              _sch_tolower
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/init_libfuncs/src/safe-ctype.h:98:29: note: '_sch_tolower' declared here
+extern const unsigned char  _sch_tolower[256];
+                            ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/init_libfuncs/src/optabs.c:5160:36: error: use of undeclared identifier 'machine_mode'
+v18 = gen_rtx_fmt_s( SYMBOL_REF, ( machine_mode)( ( ( BYTE3( target_flags) & 2) != 0) + 4), v17); 
+                                   ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/init_libfuncs/src/obj/optabs.o] Error 1

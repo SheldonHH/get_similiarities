@@ -1,0 +1,26 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/load_killed_in_block_p/src/gcse.c:1958:10: error: conflicting types for 'load_killed_in_block_p'
+__int64  load_killed_in_block_p( basic_block bb, int uid_limit, rtx x, int avail_p) 
+         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/load_killed_in_block_p/src/gcse.c:617:12: note: previous declaration is here
+static int load_killed_in_block_p    PARAMS ((basic_block, int, rtx, int));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/load_killed_in_block_p/src/gcse.c:1973:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v7.rtwint = ( __int64)v5->fld[0]; 
+                      ^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/load_killed_in_block_p/src/gcse.c:1974:20: error: use of undeclared identifier 'uid_cuid_1'
+if ( *( ( _DWORD *)uid_cuid_1 + *( int *)( v7.rtwint + 8)) >= uid_limit ) 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/load_killed_in_block_p/src/gcse.c:1984:12: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v5 = ( rtx)v5[1]; 
+           ^~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/load_killed_in_block_p/src/gcse.c:1993:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v8.rtwint = ( __int64)v5->fld[0]; 
+                      ^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/load_killed_in_block_p/src/gcse.c:1994:20: error: use of undeclared identifier 'uid_cuid_1'
+if ( *( ( _DWORD *)uid_cuid_1 + *( int *)( v8.rtwint + 8)) <= uid_limit ) 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/load_killed_in_block_p/src/gcse.c:2004:12: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v5 = ( rtx)v5[1]; 
+           ^~~~~
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/load_killed_in_block_p/src/obj/gcse.o] Error 1

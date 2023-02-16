@@ -1,0 +1,44 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_goto/src/stmt.c:1247:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v1; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_goto/src/stmt.c:1265:4: error: expected ';' after expression
+rtx last_insn; // rbx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_goto/src/stmt.c:1265:5: error: use of undeclared identifier 'last_insn'
+rtx last_insn; // rbx 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_goto/src/stmt.c:1278:36: error: use of undeclared identifier 'machine_mode'
+v4 = gen_rtx_fmt_u00( LABEL_REF, ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), v3); 
+                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_goto/src/stmt.c:1281:39: error: expected ';' after expression
+x_nonlocal_goto_handler_slots = ( rtx)x_nonlocal_goto_handler_slots[1]; 
+                                      ^
+                                      ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_goto/src/stmt.c:1306:1: error: use of undeclared identifier 'last_insn'
+last_insn = get_last_insn( ); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_goto/src/stmt.c:1307:6: error: use of undeclared identifier 'last_insn'
+if ( last_insn ) 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_goto/src/stmt.c:1309:20: error: use of undeclared identifier 'last_insn'
+while ( *( _WORD *)last_insn != 33 ) 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_goto/src/stmt.c:1311:17: error: use of undeclared identifier 'last_insn'
+if ( *( _WORD *)last_insn != 34 ) 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_goto/src/stmt.c:1313:1: error: use of undeclared identifier 'last_insn'
+last_insn = ( rtx)last_insn[1]; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_goto/src/stmt.c:1314:6: error: use of undeclared identifier 'last_insn'
+if ( last_insn ) 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_goto/src/stmt.c:1319:80: error: use of undeclared identifier 'last_insn'
+last_insn[3].fld[0].rtwint = ( __int64)alloc_EXPR_LIST( 27, const_int_rtx[64], last_insn[3].fld[0].rtx); 
+                                                                               ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_goto/src/stmt.c:1319:1: error: use of undeclared identifier 'last_insn'
+last_insn[3].fld[0].rtwint = ( __int64)alloc_EXPR_LIST( 27, const_int_rtx[64], last_insn[3].fld[0].rtx); 
+^
+13 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/expand_goto/src/obj/stmt.o] Error 1

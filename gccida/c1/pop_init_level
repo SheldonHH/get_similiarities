@@ -1,0 +1,70 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/pop_init_level/src/c-typeck.c:5938:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *inited; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/pop_init_level/src/c-typeck.c:5941:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *imag; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/pop_init_level/src/c-typeck.c:5945:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v9; // r14 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/pop_init_level/src/c-typeck.c:5954:9: error: use of undeclared identifier 'constructor_stack_0'; did you mean 'constructor_stack'?
+while ( constructor_stack_0->implicit ) 
+        ^~~~~~~~~~~~~~~~~~~
+        constructor_stack
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/pop_init_level/src/c-typeck.c:5021:27: note: 'constructor_stack' declared here
+struct constructor_stack *constructor_stack;
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/pop_init_level/src/c-typeck.c:5959:6: error: use of undeclared identifier 'constructor_range_stack_0'; did you mean 'constructor_range_stack'?
+if ( constructor_range_stack_0 ) 
+     ^~~~~~~~~~~~~~~~~~~~~~~~~
+     constructor_range_stack
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/pop_init_level/src/c-typeck.c:5036:33: note: 'constructor_range_stack' declared here
+struct constructor_range_stack *constructor_range_stack;
+                                ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/pop_init_level/src/c-typeck.c:5962:6: error: use of undeclared identifier 'constructor_stack_0'; did you mean 'constructor_stack'?
+v2 = constructor_stack_0; 
+     ^~~~~~~~~~~~~~~~~~~
+     constructor_stack
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/pop_init_level/src/c-typeck.c:5021:27: note: 'constructor_stack' declared here
+struct constructor_stack *constructor_stack;
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/pop_init_level/src/c-typeck.c:6019:1: error: use of undeclared identifier 'spelling_0'; did you mean 'spelling'?
+spelling_0 = &spelling_base[constructor_depth]; 
+^~~~~~~~~~
+spelling
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/pop_init_level/src/c-typeck.c:4491:25: note: 'spelling' declared here
+static struct spelling *spelling;       /* Next stack element (unused).  */
+                        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/pop_init_level/src/c-typeck.c:6084:1: error: use of undeclared identifier 'constructor_range_stack_0'; did you mean 'constructor_range_stack'?
+constructor_range_stack_0 = v2->range_stack; 
+^~~~~~~~~~~~~~~~~~~~~~~~~
+constructor_range_stack
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/pop_init_level/src/c-typeck.c:5036:33: note: 'constructor_range_stack' declared here
+struct constructor_range_stack *constructor_range_stack;
+                                ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/pop_init_level/src/c-typeck.c:6085:1: error: use of undeclared identifier 'spelling_0'; did you mean 'spelling'?
+spelling_0 = &spelling_base[depth]; 
+^~~~~~~~~~
+spelling
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/pop_init_level/src/c-typeck.c:4491:25: note: 'spelling' declared here
+static struct spelling *spelling;       /* Next stack element (unused).  */
+                        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/pop_init_level/src/c-typeck.c:6086:1: error: use of undeclared identifier 'constructor_stack_0'; did you mean 'constructor_stack'?
+constructor_stack_0 = v2->next; 
+^~~~~~~~~~~~~~~~~~~
+constructor_stack
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/pop_init_level/src/c-typeck.c:5021:27: note: 'constructor_stack' declared here
+struct constructor_stack *constructor_stack;
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/pop_init_level/src/c-typeck.c:6090:6: error: use of undeclared identifier 'constructor_stack_0'; did you mean 'constructor_stack'?
+if ( constructor_stack_0 ) 
+     ^~~~~~~~~~~~~~~~~~~
+     constructor_stack
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/pop_init_level/src/c-typeck.c:5021:27: note: 'constructor_stack' declared here
+struct constructor_stack *constructor_stack;
+                          ^
+11 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/pop_init_level/src/obj/c-typeck.o] Error 1

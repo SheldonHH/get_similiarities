@@ -1,0 +1,12 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/get_last_value_validate/src/combine.c:11938:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v12 = ( ( unsigned int)( mode_class_0[*( ( unsigned __int8 *)v5 + 2)] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/get_last_value_validate/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/get_last_value_validate/src/combine.c:11988:34: error: use of undeclared identifier 'machine_mode'
+*loc = gen_rtx_fmt_e( CLOBBER, ( machine_mode)*( ( unsigned __int8 *)v5 + 2), const_int_rtx[64]); 
+                                 ^
+2 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/get_last_value_validate/src/obj/combine.o] Error 1

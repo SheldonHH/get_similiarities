@@ -1,0 +1,37 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_placeholder/src/expr.c:6404:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *chain; // r8 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_placeholder/src/expr.c:6405:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *section_name; // r9 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_placeholder/src/expr.c:6408:14: error: expected expression
+tree_int_cst::$A887AD9C3C6C8CC7716950D571F57C9D *p_subblocks; // rax 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_placeholder/src/expr.c:6452:1: error: use of undeclared identifier 'p_subblocks'
+p_subblocks = ( tree_int_cst::$A887AD9C3C6C8CC7716950D571F57C9D *)&result->block.subblocks; 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_placeholder/src/expr.c:6452:17: error: use of undeclared identifier 'tree_int_cst'
+p_subblocks = ( tree_int_cst::$A887AD9C3C6C8CC7716950D571F57C9D *)&result->block.subblocks; 
+                ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_placeholder/src/expr.c:6454:17: error: use of undeclared identifier 'p_subblocks'
+result = ( tree)p_subblocks->low; 
+                ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_placeholder/src/expr.c:6461:1: error: use of undeclared identifier 'p_subblocks'
+p_subblocks = &result->int_cst.int_cst; 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_placeholder/src/expr.c:6467:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v11.rtwint = ( __int64)rtl->fld[0]; 
+                       ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_placeholder/src/expr.c:6468:67: error: expected expression
+if ( ( *( _BYTE *)( v11.rtwint + 16) | 2) == 15 && *( tree_node **)( *( _QWORD *)( v11.rtwint + 8) + 128LL) == section_name ) 
+                                                                  ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_placeholder/src/expr.c:6468:55: error: use of undeclared identifier 'tree_node'
+if ( ( *( _BYTE *)( v11.rtwint + 16) | 2) == 15 && *( tree_node **)( *( _QWORD *)( v11.rtwint + 8) + 128LL) == section_name ) 
+                                                      ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_placeholder/src/expr.c:6470:13: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v12 = ( int)rtl[1]; 
+            ^~~~~~
+11 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/find_placeholder/src/obj/expr.o] Error 1

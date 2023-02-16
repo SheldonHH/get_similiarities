@@ -1,0 +1,45 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/finish_struct/src/c-decl.c:6101:1: error: must use 'enum' tag to refer to type 'built_in_function'
+built_in_function f; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/finish_struct/src/c-decl.c:6108:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v21; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/finish_struct/src/c-decl.c:6118:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v31; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/finish_struct/src/c-decl.c:6121:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *section_name; // r8 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/finish_struct/src/c-decl.c:6130:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v43; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/finish_struct/src/c-decl.c:6131:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node ***v44; // rbx 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/finish_struct/src/c-decl.c:6133:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v46; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/finish_struct/src/c-decl.c:6452:22: error: expected expression
+v44 = ( tree_node ***)values; 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/finish_struct/src/c-decl.c:6452:9: error: use of undeclared identifier 'tree_node'
+v44 = ( tree_node ***)values; 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/finish_struct/src/c-decl.c:6467:22: error: expected expression
+v44 = ( tree_node ***)v43; 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/finish_struct/src/c-decl.c:6467:9: error: use of undeclared identifier 'tree_node'
+v44 = ( tree_node ***)v43; 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/finish_struct/src/c-decl.c:6533:45: error: invalid operands to binary expression ('struct rtx_def' and 'int')
+if ( ( v61 & 8) != 0 && v49->int_cst.rtl[3] != BYTE5( v49->block.abstract_origin) >> 1 ) 
+                        ~~~~~~~~~~~~~~~~~~~ ^  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+12 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/finish_struct/src/obj/c-decl.o] Error 1

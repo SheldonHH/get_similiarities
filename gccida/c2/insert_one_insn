@@ -1,0 +1,12 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/insert_one_insn/src/caller-save.c:1273:30: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+for ( v10.rtwint = ( __int64)chain->insn[3].fld[0]; ; v10.rtwint = *( __int64 *)( v10.rtwint + 16) ) 
+                             ^~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/insert_one_insn/src/caller-save.c:1300:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v16 = ( ( unsigned int)( mode_class_0[( unsigned __int8)v14] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/insert_one_insn/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+2 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/insert_one_insn/src/obj/caller-save.o] Error 1

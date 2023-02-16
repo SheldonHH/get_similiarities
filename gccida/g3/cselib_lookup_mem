@@ -1,0 +1,35 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/cselib_lookup_mem/src/cselib.c:1211:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v2; // r14d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/cselib_lookup_mem/src/cselib.c:1236:12: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( ( *( &mode_class_0 + *( ( unsigned __int8 *)x + 2)) & 0xFFFFFFFB) == 2 
+           ^~~~~~~~~~~~
+           mode_class
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/cselib_lookup_mem/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/cselib_lookup_mem/src/cselib.c:1236:58: error: invalid operands to binary expression ('const enum mode_class [59]' and 'unsigned int')
+if ( ( *( &mode_class_0 + *( ( unsigned __int8 *)x + 2)) & 0xFFFFFFFB) == 2 
+       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^ ~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/cselib_lookup_mem/src/cselib.c:1237:19: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| *( ( _DWORD *)&mode_class_0 + *( ( unsigned __int8 *)x + 2)) == 8 ) 
+                  ^~~~~~~~~~~~
+                  mode_class
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/cselib_lookup_mem/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/cselib_lookup_mem/src/cselib.c:1284:7: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+v22[0].m128i_i64[0] = v13.m128i_i64[0]; 
+~~~~~~^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/cselib_lookup_mem/src/cselib.c:1284:26: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+v22[0].m128i_i64[0] = v13.m128i_i64[0]; 
+                      ~~~^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/cselib_lookup_mem/src/cselib.c:1306:41: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'unsigned long long' of different size
+*object_base = _mm_unpacklo_epi64( v13, ( __m128i)( unsigned __int64)elt); 
+                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/cselib_lookup_mem/src/cselib.c:1320:38: error: use of undeclared identifier 'hash_table_0'
+*htab_find_slot_with_hash( ( __int64)hash_table_0, ( __int64)v3, value, 1) = ( __int64)elt; 
+                                     ^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/cselib_lookup_mem/src/obj/cselib.o] Error 1

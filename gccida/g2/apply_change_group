@@ -1,0 +1,37 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/apply_change_group/src/recog.c:784:1: error: unknown type name 'change_t_0'; did you mean 'change_t'?
+change_t_0 *v5; // rax 
+^~~~~~~~~~
+change_t
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/apply_change_group/src/recog.c:178:3: note: 'change_t' declared here
+} change_t;
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/apply_change_group/src/recog.c:796:4: error: expected ';' after expression
+rtx v18; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/apply_change_group/src/recog.c:796:5: error: use of undeclared identifier 'v18'
+rtx v18; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/apply_change_group/src/recog.c:819:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v12 = ( __int64)object[2]; 
+                ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/apply_change_group/src/recog.c:823:27: error: expected expression
+|| asm_noperands( *( rtx *)&object[2]) >= 0 ) 
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/apply_change_group/src/recog.c:836:1: error: use of undeclared identifier 'v18'
+v18 = gen_rtx_fmt_E( PARALLEL, VOIDmode, v17); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/apply_change_group/src/recog.c:837:18: error: use of undeclared identifier 'v18'
+rtwint = ( int *)v18->fld[0].rtwint; 
+                 ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/apply_change_group/src/recog.c:838:7: error: use of undeclared identifier 'v18'
+v16 = v18; 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/apply_change_group/src/recog.c:843:33: error: expected expression
+validate_change( object, ( rtx *)&object[2], v16, 1); 
+                                ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/apply_change_group/src/recog.c:862:31: error: use of undeclared identifier 'machine_mode'
+if ( !legitimate_address_p( ( machine_mode)*( ( unsigned __int8 *)object + 2), rtx, 0) ) 
+                              ^
+10 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/apply_change_group/src/obj/recog.o] Error 1

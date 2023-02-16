@@ -1,0 +1,18 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/output_function_exception_table/src/except.c:4333:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v18; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/output_function_exception_table/src/except.c:4448:20: error: expected expression
+v18 = ( tree_node *)*( &global_trees + 11); 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/output_function_exception_table/src/except.c:4448:9: error: use of undeclared identifier 'tree_node'
+v18 = ( tree_node *)*( &global_trees + 11); 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/output_function_exception_table/src/except.c:4450:20: error: expected expression
+v18 = ( tree_node *)*( ( _QWORD *)*htab_find_slot_with_hash( 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/output_function_exception_table/src/except.c:4450:9: error: use of undeclared identifier 'tree_node'
+v18 = ( tree_node *)*( ( _QWORD *)*htab_find_slot_with_hash( 
+        ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/output_function_exception_table/src/obj/except.o] Error 1

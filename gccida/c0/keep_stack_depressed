@@ -1,0 +1,39 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/keep_stack_depressed/src/function.c:7767:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v2; // ecx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/keep_stack_depressed/src/function.c:7769:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v4; // ecx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/keep_stack_depressed/src/function.c:7771:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v6; // ecx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/keep_stack_depressed/src/function.c:7772:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v7; // ecx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/keep_stack_depressed/src/function.c:7779:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v14; // ecx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/keep_stack_depressed/src/function.c:7909:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[v8] != MODE_COMPLEX_INT ) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/keep_stack_depressed/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/keep_stack_depressed/src/function.c:7914:7: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v22 = mode_class_0[v9] == MODE_COMPLEX_FLOAT; 
+      ^~~~~~~~~~~~
+      mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/keep_stack_depressed/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/keep_stack_depressed/src/function.c:7940:13: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v20 = ( rtx)jump_insn[2]; 
+            ^~~~~~~~~~~~
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/keep_stack_depressed/src/obj/function.o] Error 1

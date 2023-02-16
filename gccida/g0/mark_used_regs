@@ -1,0 +1,15 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/mark_used_regs/src/flow.c:4140:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code; // [rsp+40h] [rbp-30h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/mark_used_regs/src/flow.c:4164:11: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+x = ( rtx)x[1]; 
+          ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/mark_used_regs/src/flow.c:4281:28: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+next = (  struct rtx_def *)temp[1]; 
+                           ^~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/mark_used_regs/src/flow.c:4282:6: error: use of undeclared identifier 'std'
+if ( std::allocator_traits<std::allocator<std::_Rb_tree_node<std::pair<std::string const, tcmalloc::MallocExtension::Property>>>>::allocate( 
+     ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/mark_used_regs/src/obj/flow.o] Error 1

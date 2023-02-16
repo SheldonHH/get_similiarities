@@ -1,0 +1,9 @@
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/compute_followup_influence/src/engine/influence.c:1925:26: error: use of undeclared identifier 'influence_data'; did you mean 'influencepat_db'?
+memcpy( q, base, sizeof( influence_data)); 
+                         ^~~~~~~~~~~~~~
+                         influencepat_db
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/compute_followup_influence/src/include/patterns.h:325:26: note: 'influencepat_db' declared here
+extern struct pattern_db influencepat_db;
+                         ^
+1 error generated.
+make: *** [/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/compute_followup_influence/src/obj/1/influence.o] Error 1

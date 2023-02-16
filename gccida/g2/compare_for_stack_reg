@@ -1,0 +1,48 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/compare_for_stack_reg/src/reg-stack.c:1808:6: error: use of undeclared identifier 'v21'
+rtx *v21; // rax 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/compare_for_stack_reg/src/reg-stack.c:1814:33: error: expected expression
+true_reg = get_true_reg( ( rtx *)pat_src->fld); 
+                                ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/compare_for_stack_reg/src/reg-stack.c:1815:27: error: expected expression
+v7 = get_true_reg( ( rtx *)&pat_src[1]); 
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/compare_for_stack_reg/src/reg-stack.c:1827:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v20.rtwint = ( __int64)pat_src->fld[0]; 
+                       ^~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/compare_for_stack_reg/src/reg-stack.c:1828:36: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+pat_src->fld[0].rtwint = ( __int64)pat_src[1]; 
+                                   ^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/compare_for_stack_reg/src/reg-stack.c:1830:33: error: expected expression
+true_reg = get_true_reg( ( rtx *)fld); 
+                                ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/compare_for_stack_reg/src/reg-stack.c:1831:28: error: expected expression
+v21 = get_true_reg( ( rtx *)&pat_src[1]); 
+                           ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/compare_for_stack_reg/src/reg-stack.c:1831:1: error: use of undeclared identifier 'v21'
+v21 = get_true_reg( ( rtx *)&pat_src[1]); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/compare_for_stack_reg/src/reg-stack.c:1833:6: error: use of undeclared identifier 'v21'
+v7 = v21; 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/compare_for_stack_reg/src/reg-stack.c:1856:21: error: expected expression
+replace_reg( ( rtx *)regno_note->fld, 8); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/compare_for_stack_reg/src/reg-stack.c:1872:21: error: expected expression
+replace_reg( ( rtx *)v9->fld, 9); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/compare_for_stack_reg/src/reg-stack.c:1876:28: error: use of undeclared identifier 'reg_note'; did you mean 'regno_note'?
+remove_regno_note( insn, ( reg_note)v16, v15); 
+                           ^~~~~~~~
+                           regno_note
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/compare_for_stack_reg/src/reg-stack.c:1797:5: note: 'regno_note' declared here
+rtx regno_note; // r12 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/compare_for_stack_reg/src/reg-stack.c:1876:37: error: expected ')'
+remove_regno_note( insn, ( reg_note)v16, v15); 
+                                    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/compare_for_stack_reg/src/reg-stack.c:1876:18: note: to match this '('
+remove_regno_note( insn, ( reg_note)v16, v15); 
+                 ^
+13 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/compare_for_stack_reg/src/obj/reg-stack.o] Error 1

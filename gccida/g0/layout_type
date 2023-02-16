@@ -1,0 +1,39 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/layout_type/src/stor-layout.c:1882:1: error: must use 'enum' tag to refer to type 'mode_class'
+mode_class v1; // ecx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/layout_type/src/machmode.h:52:30: note: enum 'mode_class' is hidden by a non-type declaration of 'mode_class' here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/layout_type/src/stor-layout.c:1893:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v12; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/layout_type/src/stor-layout.c:1894:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v13; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/layout_type/src/stor-layout.c:1895:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v14; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/layout_type/src/stor-layout.c:1896:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v15; // rdx 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/layout_type/src/stor-layout.c:1901:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *length; // [rsp+30h] [rbp-50h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/layout_type/src/stor-layout.c:1909:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *element_size; // [rsp+78h] [rbp-8h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/layout_type/src/stor-layout.c:2083:29: error: expected expression
+element_size = ( tree_node *)*( &global_trees + 12); 
+                            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/layout_type/src/stor-layout.c:2083:18: error: use of undeclared identifier 'tree_node'
+element_size = ( tree_node *)*( &global_trees + 12); 
+                 ^
+9 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/layout_type/src/obj/stor-layout.o] Error 1

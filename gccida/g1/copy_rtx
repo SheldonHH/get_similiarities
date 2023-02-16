@@ -1,0 +1,22 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_rtx/src/rtl.c:809:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v3; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_rtx/src/rtl.c:822:4: error: expected ';' after expression
+rtx result; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_rtx/src/rtl.c:822:5: error: use of undeclared identifier 'result'
+rtx result; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_rtx/src/rtl.c:842:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v4.rtwint = ( __int64)orig->fld[0]; 
+                      ^~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_rtx/src/rtl.c:897:38: error: expected expression
+rtvec->elem[v15] = copy_rtx( *( rtx *)( orig->fld[v10].rtwint + 8LL * v15 + 8)); 
+                                     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_rtx/src/rtl.c:912:8: error: use of undeclared identifier 'result'
+return result; 
+       ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_rtx/src/obj/rtl.o] Error 1

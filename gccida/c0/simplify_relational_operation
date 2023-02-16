@@ -1,0 +1,105 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_relational_operation/src/simplify-rtx.c:2540:37: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx  simplify_relational_operation( rtx_code code, machine_mode mode, rtx op0, rtx op1) 
+                                    ^
+                                    enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_relational_operation/src/simplify-rtx.c:2540:52: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  simplify_relational_operation( rtx_code code, machine_mode mode, rtx op0, rtx op1) 
+                                                   ^
+                                                   enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_relational_operation/src/simplify-rtx.c:2542:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v4; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_relational_operation/src/simplify-rtx.c:2587:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode modea; // [rsp+120h] [rbp-10h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_relational_operation/src/simplify-rtx.c:2588:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code codea; // [rsp+124h] [rbp-Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_relational_operation/src/simplify-rtx.c:2599:14: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+op1a = ( rtx)op0a[1]; 
+             ^~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_relational_operation/src/simplify-rtx.c:2604:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[( unsigned __int8)BYTE2( *( _DWORD *)op0a)] == MODE_CC ) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_relational_operation/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_relational_operation/src/simplify-rtx.c:2606:6: error: use of undeclared identifier 'QTextBlock'
+if ( QTextBlock::operator<( trueop0, trueop1) ) 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_relational_operation/src/simplify-rtx.c:2616:8: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( ( mode_class_0[modea] == MODE_INT 
+       ^~~~~~~~~~~~
+       mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_relational_operation/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_relational_operation/src/simplify-rtx.c:2617:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| mode_class_0[modea] == MODE_PARTIAL_INT 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_relational_operation/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_relational_operation/src/simplify-rtx.c:2618:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| mode_class_0[modea] == MODE_COMPLEX_INT 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_relational_operation/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_relational_operation/src/simplify-rtx.c:2619:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| mode_class_0[modea] == MODE_VECTOR_INT) 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_relational_operation/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_relational_operation/src/simplify-rtx.c:2639:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& ( mode_class_0[( unsigned __int8)BYTE2( *( _DWORD *)trueop0)] != MODE_FLOAT 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_relational_operation/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_relational_operation/src/simplify-rtx.c:2640:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& mode_class_0[( unsigned __int8)BYTE2( *( _DWORD *)trueop0)] != MODE_COMPLEX_FLOAT 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_relational_operation/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_relational_operation/src/simplify-rtx.c:2641:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& mode_class_0[( unsigned __int8)BYTE2( *( _DWORD *)trueop0)] != MODE_VECTOR_FLOAT 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_relational_operation/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_relational_operation/src/simplify-rtx.c:2653:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& mode_class_0[( unsigned __int8)BYTE2( *( _DWORD *)trueop0)] == MODE_FLOAT ) 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_relational_operation/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_relational_operation/src/simplify-rtx.c:2775:8: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( ( mode_class_0[modea] == MODE_INT || modea == VOIDmode) 
+       ^~~~~~~~~~~~
+       mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_relational_operation/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_relational_operation/src/simplify-rtx.c:2782:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+l0s = ( __int64)trueop0[1]; 
+                ^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_relational_operation/src/simplify-rtx.c:2799:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+l1s = ( __int64)trueop1[1]; 
+                ^~~~~~~~~~
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_relational_operation/src/obj/simplify-rtx.o] Error 1

@@ -1,0 +1,16 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/true_dependence/src/alias.c:2483:32: error: must use 'enum' tag to refer to type 'machine_mode'
+int  true_dependence( rtx mem, machine_mode mem_mode, rtx x, int ( *varies)( rtx, int)) 
+                               ^
+                               enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/true_dependence/src/alias.c:2490:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mem_modea; // [rsp+3Ch] [rbp-14h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/true_dependence/src/alias.c:2516:45: error: use of undeclared identifier 'machine_mode'
+if ( !base_alias_check( x_addr, mem_addr, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)x), mem_modea) ) 
+                                            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/true_dependence/src/alias.c:2516:60: error: expected expression
+if ( !base_alias_check( x_addr, mem_addr, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)x), mem_modea) ) 
+                                                           ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/true_dependence/src/obj/alias.o] Error 1

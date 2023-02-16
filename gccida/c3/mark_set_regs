@@ -1,0 +1,75 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mark_set_regs/src/caller-save.c:953:6: error: use of undeclared identifier 'v11'; did you mean 'v10'?
+rtx *v11; // rax 
+     ^~~
+     v10
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mark_set_regs/src/caller-save.c:952:9: note: 'v10' declared here
+__int64 v10; // r13 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mark_set_regs/src/caller-save.c:953:5: error: invalid operands to binary expression ('struct rtx_def *' and 'long long')
+rtx *v11; // rax 
+~~~ ^~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mark_set_regs/src/caller-save.c:959:29: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+for ( v5.rtwint = ( __int64)insn[3].fld[0]; v5.rtwint; v5.rtwint = *( __int64 *)( v5.rtwint + 16) ) 
+                            ^~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mark_set_regs/src/caller-save.c:967:31: error: expected expression
+mark_set_1( pbi, SET, *( rtx *)( v5.rtwint + 8), rtx, insn, pbi->flags); 
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mark_set_regs/src/caller-save.c:967:64: error: incomplete definition of type 'struct propagate_block_info'
+mark_set_1( pbi, SET, *( rtx *)( v5.rtwint + 8), rtx, insn, pbi->flags); 
+                                                            ~~~^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mark_set_regs/src/basic-block.h:595:8: note: forward declaration of 'struct propagate_block_info'
+struct propagate_block_info;
+       ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mark_set_regs/src/caller-save.c:978:12: error: expected ';' after expression
+v4 = ( rtx)v4[1]; 
+           ^
+           ;
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mark_set_regs/src/caller-save.c:989:16: error: expected expression
+v11 = *( rtx **)&rtwint[2 * v10]; 
+               ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mark_set_regs/src/caller-save.c:989:1: error: use of undeclared identifier 'v11'
+v11 = *( rtx **)&rtwint[2 * v10]; 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mark_set_regs/src/caller-save.c:990:19: error: use of undeclared identifier 'v11'
+v12 = *( _DWORD *)v11; 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mark_set_regs/src/caller-save.c:991:37: error: use of undeclared identifier 'v11'
+if ( ( unsigned __int16)*( _DWORD *)v11 != 49 ) 
+                                    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mark_set_regs/src/caller-save.c:994:20: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+mark_set_1( pbi, ( rtx_code)( unsigned __int16)v12, v11[1], v7, insn, pbi->flags); 
+                   ^~~~~~~~
+                   rtx_cost
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mark_set_regs/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mark_set_regs/src/caller-save.c:994:31: error: expected expression
+mark_set_1( pbi, ( rtx_code)( unsigned __int16)v12, v11[1], v7, insn, pbi->flags); 
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mark_set_regs/src/caller-save.c:994:74: error: incomplete definition of type 'struct propagate_block_info'
+mark_set_1( pbi, ( rtx_code)( unsigned __int16)v12, v11[1], v7, insn, pbi->flags); 
+                                                                      ~~~^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mark_set_regs/src/basic-block.h:595:8: note: forward declaration of 'struct propagate_block_info'
+struct propagate_block_info;
+       ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mark_set_regs/src/caller-save.c:994:53: error: use of undeclared identifier 'v11'
+mark_set_1( pbi, ( rtx_code)( unsigned __int16)v12, v11[1], v7, insn, pbi->flags); 
+                                                    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mark_set_regs/src/caller-save.c:998:16: error: expected expression
+v11 = *( rtx **)( v4->fld[0].rtwint + 8 * v10); 
+               ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mark_set_regs/src/caller-save.c:998:1: error: use of undeclared identifier 'v11'
+v11 = *( rtx **)( v4->fld[0].rtwint + 8 * v10); 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mark_set_regs/src/caller-save.c:999:19: error: use of undeclared identifier 'v11'
+v12 = *( _DWORD *)v11; 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mark_set_regs/src/caller-save.c:1000:37: error: use of undeclared identifier 'v11'
+if ( ( unsigned __int16)*( _DWORD *)v11 == 49 ) 
+                                    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mark_set_regs/src/caller-save.c:1009:6: error: use of undeclared identifier 'v11'
+v7 = v11[1]; 
+     ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mark_set_regs/src/obj/caller-save.o] Error 1

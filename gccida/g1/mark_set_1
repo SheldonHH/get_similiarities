@@ -1,0 +1,84 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/mark_set_1/src/flow.c:2962:54: error: must use 'enum' tag to refer to type 'rtx_code'
+void  mark_set_1(  struct propagate_block_info *pbi, rtx_code code, rtx reg, rtx cond, rtx insn, int flags) 
+                                                     ^
+                                                     enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/mark_set_1/src/flow.c:2984:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v26; // r12d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/mark_set_1/src/flow.c:3008:4: error: expected ';' after expression
+rtx ya; // [rsp+8h] [rbp-70h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/mark_set_1/src/flow.c:3008:5: error: use of undeclared identifier 'ya'
+rtx ya; // [rsp+8h] [rbp-70h] 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/mark_set_1/src/flow.c:3015:4: error: expected ';' after expression
+rtx rega; // [rsp+38h] [rbp-40h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/mark_set_1/src/flow.c:3015:5: error: use of undeclared identifier 'rega'; did you mean 'reg'?
+rtx rega; // [rsp+38h] [rbp-40h] 
+    ^~~~
+    reg
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/mark_set_1/src/flow.c:2962:73: note: 'reg' declared here
+void  mark_set_1(  struct propagate_block_info *pbi, rtx_code code, rtx reg, rtx cond, rtx insn, int flags) 
+                                                                        ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/mark_set_1/src/flow.c:3075:24: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v12 = ( unsigned int)( mode_class_0[*( ( unsigned __int8 *)rtx + 2)] - 5) <= 1; 
+                       ^~~~~~~~~~~~
+                       mode_class
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/mark_set_1/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/mark_set_1/src/flow.c:3121:41: error: use of undeclared identifier 'machine_mode'
+v27 = v24 + subreg_regno_offset( v24, ( machine_mode)v23, *( _DWORD *)&rtx[1], ( machine_mode)v22); 
+                                        ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/mark_set_1/src/flow.c:3121:82: error: use of undeclared identifier 'machine_mode'
+v27 = v24 + subreg_regno_offset( v24, ( machine_mode)v23, *( _DWORD *)&rtx[1], ( machine_mode)v22); 
+                                                                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/mark_set_1/src/flow.c:3125:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v29 = ( ( unsigned int)( mode_class_0[v22] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/mark_set_1/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/mark_set_1/src/flow.c:3226:1: error: use of undeclared identifier 'rega'; did you mean 'reg'?
+rega = rtx; 
+^~~~
+reg
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/mark_set_1/src/flow.c:2962:73: note: 'reg' declared here
+void  mark_set_1(  struct propagate_block_info *pbi, rtx_code code, rtx reg, rtx cond, rtx insn, int flags) 
+                                                                        ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/mark_set_1/src/flow.c:3248:7: error: use of undeclared identifier 'rega'; did you mean 'reg'?
+rtx = rega; 
+      ^~~~
+      reg
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/mark_set_1/src/flow.c:2962:73: note: 'reg' declared here
+void  mark_set_1(  struct propagate_block_info *pbi, rtx_code code, rtx reg, rtx cond, rtx insn, int flags) 
+                                                                        ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/mark_set_1/src/flow.c:3261:1: error: use of undeclared identifier 'ya'
+ya = pbi->reg_next_use[v49]; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/mark_set_1/src/flow.c:3278:1: error: use of undeclared identifier 'ya'
+ya = 0LL; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/mark_set_1/src/flow.c:3315:1: error: use of undeclared identifier 'ya'
+ya = 0LL; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/mark_set_1/src/flow.c:3334:4: error: use of undeclared identifier 'ya'
+&& ya 
+   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/mark_set_1/src/flow.c:3335:47: error: use of undeclared identifier 'ya'
+&& *( _DWORD *)( basic_block_for_insn->data.l[ya->fld[0].rtint] + 88) == blocknuma 
+                                              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/mark_set_1/src/flow.c:3336:40: error: expected expression
+&& ( v9 > 52 || asm_noperands( *( rtx *)&ya[2]) < 0) ) 
+                                       ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/mark_set_1/src/flow.c:3336:42: error: use of undeclared identifier 'ya'
+&& ( v9 > 52 || asm_noperands( *( rtx *)&ya[2]) < 0) ) 
+                                         ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/mark_set_1/src/obj/flow.o] Error 1

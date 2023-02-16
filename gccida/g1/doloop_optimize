@@ -1,0 +1,70 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/doloop_optimize/src/doloop.c:1242:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v13; // r15d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/doloop_optimize/src/doloop.c:1244:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v15; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/doloop_optimize/src/doloop.c:1299:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode doloop_rega; // [rsp+20h] [rbp-88h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/doloop_optimize/src/doloop.c:1305:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode op1a; // [rsp+40h] [rbp-68h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/doloop_optimize/src/doloop.c:1306:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code comparison; // [rsp+4Ch] [rbp-5Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/doloop_optimize/src/doloop.c:1307:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // [rsp+54h] [rbp-54h] BYREF 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/doloop_optimize/src/doloop.c:1431:25: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+v15 = swap_condition( ( rtx_code)aux[22]); 
+                        ^~~~~~~~
+                        rtx_cost
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/doloop_optimize/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/doloop_optimize/src/doloop.c:1431:34: error: expected ')'
+v15 = swap_condition( ( rtx_code)aux[22]); 
+                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/doloop_optimize/src/doloop.c:1431:21: note: to match this '('
+v15 = swap_condition( ( rtx_code)aux[22]); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/doloop_optimize/src/doloop.c:1502:23: error: invalid suffix 'xmode' on integer constant
+|| mode != *(short *)0xmode 
+                      ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/doloop_optimize/src/doloop.c:1503:48: error: invalid suffix 'xmode' on integer constant
+&& ( *( ( _BYTE *)doloop_reg + 2) = *(short *)0xmode, 
+                                               ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/doloop_optimize/src/doloop.c:1519:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v27.rtwint = ( __int64)v26->fld[0]; 
+                       ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/doloop_optimize/src/doloop.c:1602:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)v39 + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/doloop_optimize/src/doloop.c:1618:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)v53 + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/doloop_optimize/src/doloop.c:1629:38: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+emit_cmp_and_jump_insns( v55, v58, ( rtx_code)( v57 == 0 ? EQ : LEU), 0LL, op1a, 0, v56); 
+                                     ^~~~~~~~
+                                     rtx_cost
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/doloop_optimize/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/doloop_optimize/src/doloop.c:1629:68: error: too few arguments to function call, expected 2, have 1
+emit_cmp_and_jump_insns( v55, v58, ( rtx_code)( v57 == 0 ? EQ : LEU), 0LL, op1a, 0, v56); 
+                                   ~~~~~~~~~~~                     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/doloop_optimize/src/rtl.h:1787:1: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/doloop_optimize/src/doloop.c:1634:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)unsignedpa + 2), 
+  ^
+16 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/doloop_optimize/src/obj/doloop.o] Error 1

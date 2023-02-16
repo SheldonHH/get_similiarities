@@ -1,0 +1,50 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/offset_address/src/emit-rtl.c:2523:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v3; // r8d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/offset_address/src/emit-rtl.c:2524:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v4; // edx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/offset_address/src/emit-rtl.c:2528:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v9; // [rsp+30h] [rbp-40h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/offset_address/src/emit-rtl.c:2540:27: error: use of undeclared identifier 'machine_mode'
+if ( !memory_address_p( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)memref), newa) 
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/offset_address/src/emit-rtl.c:2540:42: error: expected expression
+if ( !memory_address_p( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)memref), newa) 
+                                         ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/offset_address/src/emit-rtl.c:2544:22: error: use of undeclared identifier 'machine_mode'
+addra = force_reg( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)addr), addr); 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/offset_address/src/emit-rtl.c:2544:37: error: expected expression
+addra = force_reg( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)addr), addr); 
+                                    ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/offset_address/src/emit-rtl.c:2552:1: error: statement requires expression of scalar type ('struct rtx_def' invalid)
+if ( memref[1] ) 
+^    ~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/offset_address/src/emit-rtl.c:2556:1: error: statement requires expression of scalar type ('struct rtx_def' invalid)
+if ( memref[1] ) 
+^    ~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/offset_address/src/emit-rtl.c:2557:21: error: expected expression
+v9 = *( tree_node **)( *( _QWORD *)&memref[1] + 8LL); 
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/offset_address/src/emit-rtl.c:2557:9: error: use of undeclared identifier 'tree_node'
+v9 = *( tree_node **)( *( _QWORD *)&memref[1] + 8LL); 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/offset_address/src/emit-rtl.c:2560:1: error: statement requires expression of scalar type ('struct rtx_def' invalid)
+if ( memref[1] ) 
+^    ~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/offset_address/src/emit-rtl.c:2570:1: error: statement requires expression of scalar type ('struct rtx_def' invalid)
+if ( memref[1] ) 
+^    ~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/offset_address/src/emit-rtl.c:2576:67: error: use of undeclared identifier 'machine_mode'
+*( _QWORD *)&newb[1] = get_mem_attrs( v10, v9, 0LL, 0LL, align, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)newb)); 
+                                                                  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/offset_address/src/emit-rtl.c:2576:82: error: expected expression
+*( _QWORD *)&newb[1] = get_mem_attrs( v10, v9, 0LL, 0LL, align, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)newb)); 
+                                                                                 ^
+15 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/offset_address/src/obj/emit-rtl.o] Error 1

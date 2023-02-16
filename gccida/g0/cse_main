@@ -1,0 +1,66 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cse_main/src/cse.c:7513:4: error: expected ';' after expression
+rtx temp; // [rsp+E8h] [rbp-18h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cse_main/src/cse.c:7513:5: error: use of undeclared identifier 'temp'
+rtx temp; // [rsp+E8h] [rbp-18h] 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cse_main/src/cse.c:7516:4: error: expected ';' after expression
+rtx insn; // [rsp+F8h] [rbp-8h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cse_main/src/cse.c:7516:5: error: use of undeclared identifier 'insn'
+rtx insn; // [rsp+F8h] [rbp-8h] 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cse_main/src/cse.c:7529:1: error: use of undeclared identifier 'uid_cuid_0'; did you mean 'uid_cuid'?
+uid_cuid_0 = xcalloc( max_uid + 1, 4uLL); 
+^~~~~~~~~~
+uid_cuid
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cse_main/src/cse.c:360:13: note: 'uid_cuid' declared here
+static int *uid_cuid;
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cse_main/src/cse.c:7530:1: error: use of undeclared identifier 'insn'
+insn = f; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cse_main/src/cse.c:7532:9: error: use of undeclared identifier 'insn'
+while ( insn ) 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cse_main/src/cse.c:7534:17: error: use of undeclared identifier 'insn'
+if ( *( _WORD *)insn == 37 && insn[2].fld[0].rtint >= 0 ) 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cse_main/src/cse.c:7534:31: error: use of undeclared identifier 'insn'
+if ( *( _WORD *)insn == 37 && insn[2].fld[0].rtint >= 0 ) 
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cse_main/src/cse.c:7535:15: error: use of undeclared identifier 'uid_cuid_0'
+*( ( _DWORD *)uid_cuid_0 + insn->fld[0].rtint) = i; 
+              ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cse_main/src/cse.c:7535:28: error: use of undeclared identifier 'insn'
+*( ( _DWORD *)uid_cuid_0 + insn->fld[0].rtint) = i; 
+                           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cse_main/src/cse.c:7537:15: error: use of undeclared identifier 'uid_cuid_0'
+*( ( _DWORD *)uid_cuid_0 + insn->fld[0].rtint) = ++i; 
+              ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cse_main/src/cse.c:7537:28: error: use of undeclared identifier 'insn'
+*( ( _DWORD *)uid_cuid_0 + insn->fld[0].rtint) = ++i; 
+                           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cse_main/src/cse.c:7538:1: error: use of undeclared identifier 'insn'
+insn = insn[1].fld[0].rtx; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cse_main/src/cse.c:7538:8: error: use of undeclared identifier 'insn'
+insn = insn[1].fld[0].rtx; 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cse_main/src/cse.c:7541:1: error: use of undeclared identifier 'insn'
+insn = f; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cse_main/src/cse.c:7542:9: error: use of undeclared identifier 'insn'
+while ( insn ) 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cse_main/src/cse.c:7545:25: error: use of undeclared identifier 'insn'
+cse_end_of_basic_block( insn, &val, flag_cse_follow_jumps, after_loop, flag_cse_skip_blocks); 
+                        ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cse_main/src/cse.c:7546:32: error: use of undeclared identifier 'insn'
+if ( val.nsets && *( ( _BYTE *)insn + 2) != 2 ) 
+                               ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/cse_main/src/obj/cse.o] Error 1

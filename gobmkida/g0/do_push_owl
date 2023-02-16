@@ -1,0 +1,9 @@
+/data/output_dir/patch/gobmk/ida/gcc/O0/gobmk-gcc-O0/do_push_owl/src/engine/owl.c:5508:56: error: use of undeclared identifier 'local_owl_data'; did you mean 'other_owl_data'?
+memcpy( &owl_stack[++owl_stack_pointer], *owl, sizeof( local_owl_data)); 
+                                                       ^~~~~~~~~~~~~~
+                                                       other_owl_data
+/data/output_dir/patch/gobmk/ida/gcc/O0/gobmk-gcc-O0/do_push_owl/src/engine/owl.c:102:31: note: 'other_owl_data' declared here
+static struct local_owl_data *other_owl_data;
+                              ^
+1 error generated.
+make: *** [/data/output_dir/patch/gobmk/ida/gcc/O0/gobmk-gcc-O0/do_push_owl/src/obj/1/owl.o] Error 1

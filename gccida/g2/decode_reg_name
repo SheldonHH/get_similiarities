@@ -1,0 +1,15 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/decode_reg_name/src/varasm.c:1238:11: error: use of undeclared identifier 'sch_istable'; did you mean '_sch_istable'?
+while ( ( sch_istable[( unsigned __int8)v2[v3]] & 4) != 0 ) 
+          ^~~~~~~~~~~
+          _sch_istable
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/decode_reg_name/src/safe-ctype.h:72:29: note: '_sch_istable' declared here
+extern const unsigned short _sch_istable[256];
+                            ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/decode_reg_name/src/varasm.c:1262:24: error: use of undeclared identifier 'table_21'
+for ( i = "eax"; ; i = table_21[v8].name ) 
+                       ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/decode_reg_name/src/varasm.c:1265:8: error: use of undeclared identifier 'table_21'
+return table_21[( int)v8].number; 
+       ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/decode_reg_name/src/obj/varasm.o] Error 1

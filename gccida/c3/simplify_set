@@ -1,0 +1,84 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_set/src/combine.c:5442:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v17; // [rsp+8h] [rbp-108h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_set/src/combine.c:5443:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v18; // [rsp+10h] [rbp-100h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_set/src/combine.c:5449:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v24; // [rsp+4Ch] [rbp-C4h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_set/src/combine.c:5451:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v26; // [rsp+64h] [rbp-ACh] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_set/src/combine.c:5462:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode compare_mode; // [rsp+B8h] [rbp-58h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_set/src/combine.c:5466:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code new_code; // [rsp+D0h] [rbp-40h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_set/src/combine.c:5467:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code old_code; // [rsp+D4h] [rbp-3Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_set/src/combine.c:5470:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // [rsp+ECh] [rbp-24h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_set/src/combine.c:5476:13: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+src = ( rtx)x[1]; 
+            ^~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_set/src/combine.c:5485:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[mode] == MODE_INT ) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_set/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_set/src/combine.c:5492:45: error: use of undeclared identifier 'undobuf_0'; did you mean 'undobuf'?
+&& ( !undobuf_0.other_insn || other_insn == undobuf_0.other_insn) 
+                                            ^~~~~~~~~
+                                            undobuf
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_set/src/combine.c:334:23: note: 'undobuf' declared here
+static struct undobuf undobuf;
+                      ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_set/src/combine.c:5492:7: error: use of undeclared identifier 'undobuf_0'; did you mean 'undobuf'?
+&& ( !undobuf_0.other_insn || other_insn == undobuf_0.other_insn) 
+      ^~~~~~~~~
+      undobuf
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_set/src/combine.c:334:23: note: 'undobuf' declared here
+static struct undobuf undobuf;
+                      ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_set/src/combine.c:5502:13: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+op1 = ( rtx)src[1]; 
+            ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_set/src/combine.c:5528:34: error: use of undeclared identifier 'machine_mode'
+v1 = gen_rtx_fmt_ee( new_code, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)*cc_use), dest, const_int_rtx[64]); 
+                                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_set/src/combine.c:5528:49: error: expected expression
+v1 = gen_rtx_fmt_ee( new_code, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)*cc_use), dest, const_int_rtx[64]); 
+                                                ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_set/src/combine.c:5535:29: error: use of undeclared identifier 'machine_mode'
+mask = nonzero_bits( op0, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)op0)); 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_set/src/combine.c:5535:44: error: expected expression
+mask = nonzero_bits( op0, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)op0)); 
+                                           ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_set/src/combine.c:5538:13: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+pat = ( rtx)other_insn[2]; 
+            ^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_set/src/combine.c:5554:1: error: use of undeclared identifier 'undobuf_0'; did you mean 'undobuf'?
+undobuf_0.other_insn = other_insn; 
+^~~~~~~~~
+undobuf
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_set/src/combine.c:334:23: note: 'undobuf' declared here
+static struct undobuf undobuf;
+                      ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_set/src/obj/combine.o] Error 1

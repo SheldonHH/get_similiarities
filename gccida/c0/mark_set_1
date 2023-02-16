@@ -1,0 +1,44 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/mark_set_1/src/flow.c:2962:54: error: must use 'enum' tag to refer to type 'rtx_code'
+void  mark_set_1(  struct propagate_block_info *pbi, rtx_code code, rtx reg, rtx cond, rtx insn, int flags) 
+                                                     ^
+                                                     enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/mark_set_1/src/flow.c:3004:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode outer_mode; // [rsp+68h] [rbp-48h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/mark_set_1/src/flow.c:3057:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)reg->fld[0].rtwint), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/mark_set_1/src/flow.c:3057:18: error: expected expression
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)reg->fld[0].rtwint), 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/mark_set_1/src/flow.c:3098:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[outer_mode] != MODE_COMPLEX_INT ) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/mark_set_1/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/mark_set_1/src/flow.c:3099:7: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v34 = mode_class_0[outer_mode] == MODE_COMPLEX_FLOAT; 
+      ^~~~~~~~~~~~
+      mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/mark_set_1/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/mark_set_1/src/flow.c:3331:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[( unsigned __int8)BYTE2( *( _DWORD *)rega)] != MODE_COMPLEX_INT ) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/mark_set_1/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/mark_set_1/src/flow.c:3332:7: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v38 = mode_class_0[( unsigned __int8)BYTE2( *( _DWORD *)rega)] == MODE_COMPLEX_FLOAT; 
+      ^~~~~~~~~~~~
+      mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/mark_set_1/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/mark_set_1/src/obj/flow.o] Error 1

@@ -1,0 +1,38 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/siv_test/src/dependence.c:1535:1: error: unknown type name 'subscript_0'; did you mean 'subscript'?
+subscript_0 *icoefficients, 
+^~~~~~~~~~~
+subscript
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/siv_test/src/dependence.c:168:3: note: 'subscript' declared here
+} subscript;
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/siv_test/src/dependence.c:1536:1: error: unknown type name 'subscript_0'; did you mean 'subscript'?
+subscript_0 *ocoefficients, 
+^~~~~~~~~~~
+subscript
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/siv_test/src/dependence.c:168:3: note: 'subscript' declared here
+} subscript;
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/siv_test/src/dependence.c:1537:16: error: function cannot return array type 'int [13]'
+direction_type ( *direction)[13], 
+               ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/siv_test/src/dependence.c:1539:1: error: unknown type name 'loop_1'; did you mean 'loop'?
+loop_1 *loop_ptr, 
+^~~~~~
+loop
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/siv_test/src/dependence.c:123:3: note: 'loop' declared here
+} loop;
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/siv_test/src/dependence.c:1572:4: error: use of undeclared identifier 'direction'
+( *direction)[13 * loop_ptr->depth + sub] = eq; 
+   ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/siv_test/src/dependence.c:1574:4: error: use of undeclared identifier 'direction'
+( *direction)[13 * loop_ptr->depth + sub] = lt; 
+   ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/siv_test/src/dependence.c:1578:4: error: use of undeclared identifier 'direction'
+( *direction)[13 * loop_ptr->depth + sub] = gt; 
+   ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/siv_test/src/dependence.c:1583:4: error: use of undeclared identifier 'direction'
+( *direction)[13 * loop_ptr->depth + sub] = independent; 
+   ^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/siv_test/src/obj/dependence.o] Error 1

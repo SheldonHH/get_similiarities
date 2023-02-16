@@ -1,0 +1,12 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/set_nonincremental_init/src/c-typeck.c:6516:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v6; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/set_nonincremental_init/src/c-typeck.c:6541:19: error: expected expression
+v6 = ( tree_node *)*( &global_trees + 17); 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/set_nonincremental_init/src/c-typeck.c:6541:8: error: use of undeclared identifier 'tree_node'
+v6 = ( tree_node *)*( &global_trees + 17); 
+       ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/set_nonincremental_init/src/obj/c-typeck.o] Error 1

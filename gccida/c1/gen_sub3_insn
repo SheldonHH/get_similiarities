@@ -1,0 +1,28 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/gen_sub3_insn/src/optabs.c:4366:11: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+operand = insn_data_0[v3].operand, 
+          ^~~~~~~~~~~
+          insn_data
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/gen_sub3_insn/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/gen_sub3_insn/src/optabs.c:4367:27: error: use of undeclared identifier 'machine_mode'
+operand->predicate( r0, ( machine_mode)*( ( unsigned __int16 *)operand + 8))) 
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/gen_sub3_insn/src/optabs.c:4368:32: error: use of undeclared identifier 'machine_mode'
+&& operand[1].predicate( r1, ( machine_mode)*( ( unsigned __int16 *)&operand[1] + 8)) 
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/gen_sub3_insn/src/optabs.c:4369:31: error: use of undeclared identifier 'machine_mode'
+&& operand[2].predicate( c, ( machine_mode)*( ( unsigned __int16 *)&operand[2] + 8)) ) 
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/gen_sub3_insn/src/optabs.c:4371:8: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+return insn_data_0[v5].genfun( r0, r1); 
+       ^~~~~~~~~~~
+       insn_data
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/gen_sub3_insn/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/gen_sub3_insn/src/optabs.c:4371:30: error: called object type '<dependent type>' is not a function or function pointer
+return insn_data_0[v5].genfun( r0, r1); 
+                             ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/gen_sub3_insn/src/obj/optabs.o] Error 1

@@ -1,0 +1,39 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_best_addr/src/cse.c:3351:43: error: must use 'enum' tag to refer to type 'machine_mode'
+void  find_best_addr( rtx insn, rtx *loc, machine_mode mode) 
+                                          ^
+                                          enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_best_addr/src/cse.c:3354:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v4; // ecx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_best_addr/src/cse.c:3355:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v5; // ecx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_best_addr/src/cse.c:3358:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v8; // edx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_best_addr/src/cse.c:3359:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v9; // edx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_best_addr/src/cse.c:3360:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v10; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_best_addr/src/cse.c:3523:25: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+c = (  struct rtx_def *)( *loc)[1]; 
+                        ^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_best_addr/src/cse.c:3574:31: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+newa = simplify_gen_binary( ( rtx_code)( unsigned __int16)*( _DWORD *)*loc, v10, pc->exp, c); 
+                              ^~~~~~~~
+                              rtx_cost
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_best_addr/src/cse.c:825:1: note: 'rtx_cost' declared here
+rtx_cost (x, outer_code)
+^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_best_addr/src/cse.c:3574:42: error: expected expression
+newa = simplify_gen_binary( ( rtx_code)( unsigned __int16)*( _DWORD *)*loc, v10, pc->exp, c); 
+                                         ^
+9 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/find_best_addr/src/obj/cse.o] Error 1

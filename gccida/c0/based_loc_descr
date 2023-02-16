@@ -1,0 +1,11 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/based_loc_descr/src/dwarf2out.c:8149:19: error: conflicting types for 'based_loc_descr'
+dw_loc_descr_ref  based_loc_descr( unsigned int reg, __int64 offset) 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/based_loc_descr/src/dwarf2out.c:3588:25: note: previous declaration is here
+static dw_loc_descr_ref based_loc_descr PARAMS ((unsigned, long));
+                        ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/based_loc_descr/src/dwarf2out.c:8173:25: error: use of undeclared identifier 'dwarf_location_atom'
+return new_loc_descr( ( dwarf_location_atom)( reg + 112), offset, 0LL); 
+                        ^
+2 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/based_loc_descr/src/obj/dwarf2out.o] Error 1

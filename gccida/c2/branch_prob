@@ -1,0 +1,64 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/branch_prob/src/profile.c:1199:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v197; // r12d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/branch_prob/src/profile.c:1204:4: error: expected ';' after expression
+rtx v202; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/branch_prob/src/profile.c:1204:5: error: use of undeclared identifier 'v202'
+rtx v202; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/branch_prob/src/profile.c:1226:4: error: expected ';' after expression
+rtx reg_note; // r13 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/branch_prob/src/profile.c:1226:5: error: must use 'enum' tag to refer to type 'reg_note'
+rtx reg_note; // r13 
+    ^
+    enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/branch_prob/src/profile.c:1253:31: error: expected expression
+v3 = split_block( v1, *( rtx *)&i[1]); 
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/branch_prob/src/profile.c:1320:19: error: expected identifier or '('
+ struct edge_list = create_edge_list( ); 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/branch_prob/src/profile.c:1352:43: error: expected expression
+nonnote_insn = prev_nonnote_insn( *( rtx *)v21); 
+                                          ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/branch_prob/src/profile.c:1357:4: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+ptr.m128i_i32[0] = 0; 
+~~~^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/branch_prob/src/profile.c:1367:1: error: use of undeclared identifier 'branch_prob_ignore_next_note'
+branch_prob_ignore_next_note = 1; 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/branch_prob/src/profile.c:1374:6: error: use of undeclared identifier 'branch_prob_ignore_next_note'
+if ( branch_prob_ignore_next_note == 1 ) 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/branch_prob/src/profile.c:1376:1: error: use of undeclared identifier 'branch_prob_ignore_next_note'
+branch_prob_ignore_next_note = 0; 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/branch_prob/src/profile.c:1395:4: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+ptr.m128i_i16[0] = v27; 
+~~~^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/branch_prob/src/profile.c:1396:4: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+ptr.m128i_i8[2] = BYTE2( v27); 
+~~~^~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/branch_prob/src/profile.c:1397:4: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+ptr.m128i_i8[3] = BYTE3( v27) & 0x7F; 
+~~~^~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/branch_prob/src/profile.c:1400:4: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+ptr.m128i_i8[3] = ( ( unsigned __int64)rtint >> 56) & 0x80 | BYTE3( v27) & 0x7F; 
+~~~^~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/branch_prob/src/profile.c:1411:4: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+ptr.m128i_i32[0] = 0; 
+~~~^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/branch_prob/src/profile.c:1888:4: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+ptr.m128i_i32[0] = v121; 
+~~~^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/branch_prob/src/profile.c:1891:4: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+ptr.m128i_i8[3] = BYTE3( v121) | HIBYTE( v119) & 0x80; 
+~~~^~~~~~~~~
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/branch_prob/src/obj/profile.o] Error 1

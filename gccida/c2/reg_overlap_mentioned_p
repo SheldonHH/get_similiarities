@@ -1,0 +1,21 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/reg_overlap_mentioned_p/src/rtlanal.c:1924:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v15.rtwint = ( __int64)rtx->fld[0]; 
+                       ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/reg_overlap_mentioned_p/src/rtlanal.c:1931:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( unsigned __int8 *)( v15.rtwint + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/reg_overlap_mentioned_p/src/rtlanal.c:1933:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)BYTE2( v4)); 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/reg_overlap_mentioned_p/src/rtlanal.c:1941:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v16 = ( ( unsigned int)( mode_class_0[v17] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/reg_overlap_mentioned_p/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/reg_overlap_mentioned_p/src/rtlanal.c:1970:73: error: expected expression
+while ( v18[v19 - 2] != 101 || !reg_overlap_mentioned_p( rtx, *( ( rtx *)in + v19 - 1)) ) 
+                                                                        ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/reg_overlap_mentioned_p/src/obj/rtlanal.o] Error 1

@@ -1,0 +1,55 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/mention_regs/src/cse.c:1683:4: error: expected ';' after expression
+rtx exp; // rdx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/mention_regs/src/cse.c:1703:41: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v22 = ( ( unsigned int)( *( ( _DWORD *)&mode_class_0 + v24) - 5) < 2) + 1; 
+                                        ^~~~~~~~~~~~
+                                        mode_class
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/mention_regs/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/mention_regs/src/cse.c:1733:22: error: expected identifier or '('
+ struct cse_reg_info = cached_cse_reg_info; 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/mention_regs/src/cse.c:1742:22: error: expected identifier or '('
+ struct cse_reg_info = cached_cse_reg_info; 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/mention_regs/src/cse.c:1747:81: error: expected ')'
+if ( cached_regno != v25 || ( v17 = cached_cse_reg_info, (  struct cse_reg_info = cached_cse_reg_info) == 0LL) ) 
+                                                                                ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/mention_regs/src/cse.c:1747:58: note: to match this '('
+if ( cached_regno != v25 || ( v17 = cached_cse_reg_info, (  struct cse_reg_info = cached_cse_reg_info) == 0LL) ) 
+                                                         ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/mention_regs/src/cse.c:1747:104: error: expected expression
+if ( cached_regno != v25 || ( v17 = cached_cse_reg_info, (  struct cse_reg_info = cached_cse_reg_info) == 0LL) ) 
+                                                                                                       ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/mention_regs/src/cse.c:1788:2: error: expected expression
+ struct cse_reg_info = get_cse_reg_info( v25); 
+ ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/mention_regs/src/cse.c:1868:22: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v45 = ( unsigned int)x[1]; 
+                     ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/mention_regs/src/cse.c:1878:5: error: non-object type 'double (double)' is not assignable
+exp = v47->exp; 
+~~~ ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/mention_regs/src/cse.c:1885:27: error: member reference base type 'double (double)' is not a structure or union
+v50.rtwint = ( __int64)exp->fld[0]; 
+                       ~~~^ ~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/mention_regs/src/cse.c:1888:22: error: subscript of pointer to function type 'double (double)'
+v51 = ( unsigned int)exp[1]; 
+                     ^~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/mention_regs/src/cse.c:1976:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v12 = (  struct rtx_def *)x[1]; 
+                          ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/mention_regs/src/cse.c:1983:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v12 = (  struct rtx_def *)x[1]; 
+                          ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/mention_regs/src/cse.c:1989:27: error: expected expression
+rehash_using_reg( *( rtx *)&x[1]); 
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/mention_regs/src/cse.c:2025:29: error: expected expression
+v3 |= mention_regs( *( rtx *)&rtwint[2 * v31 + 2]); 
+                            ^
+15 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/mention_regs/src/obj/cse.o] Error 1

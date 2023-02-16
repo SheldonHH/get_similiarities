@@ -1,0 +1,16 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_anon_union_decl/src/stmt.c:4670:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *values; // r13 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_anon_union_decl/src/stmt.c:4672:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v12; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_anon_union_decl/src/stmt.c:4723:53: error: use of undeclared identifier 'machine_mode'
+*( _QWORD *)( low + 144) = adjust_address_1( rtl, ( machine_mode)v11, 0LL, 0, 1); 
+                                                    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_anon_union_decl/src/stmt.c:4735:50: error: use of undeclared identifier 'machine_mode'
+*( _QWORD *)( low + 144) = gen_lowpart_SUBREG( ( machine_mode)v11, rtl); 
+                                                 ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_anon_union_decl/src/obj/stmt.o] Error 1

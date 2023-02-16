@@ -1,0 +1,34 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/c_lex/src/c-lex.c:1232:7: error: unknown type name 'cpp_token_0'; did you mean 'cpp_token'?
+const cpp_token_0 *token; // rbx 
+      ^~~~~~~~~~~
+      cpp_token
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/c_lex/src/cpplib.h:40:26: note: 'cpp_token' declared here
+typedef struct cpp_token cpp_token;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/c_lex/src/c-lex.c:1238:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v8; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/c_lex/src/c-lex.c:1244:15: error: use of undeclared identifier 'TV_CPP_0'; did you mean 'TV_CPP'?
+timevar_push( TV_CPP_0); 
+              ^~~~~~~~
+              TV_CPP
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/c_lex/src/timevar.def:50:13: note: 'TV_CPP' declared here
+DEFTIMEVAR (TV_CPP                   , "preprocessing")
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/c_lex/src/c-lex.c:1248:14: error: use of undeclared identifier 'TV_CPP_0'; did you mean 'TV_CPP'?
+timevar_pop( TV_CPP_0); 
+             ^~~~~~~~
+             TV_CPP
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/c_lex/src/timevar.def:50:13: note: 'TV_CPP' declared here
+DEFTIMEVAR (TV_CPP                   , "preprocessing")
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/c_lex/src/c-lex.c:1290:8: error: use of undeclared identifier 'sch_istable'; did you mean '_sch_istable'?
+if ( ( sch_istable[c] & 0xAC) != 0 ) 
+       ^~~~~~~~~~~
+       _sch_istable
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/c_lex/src/safe-ctype.h:72:29: note: '_sch_istable' declared here
+extern const unsigned short _sch_istable[256];
+                            ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/c_lex/src/obj/c-lex.o] Error 1

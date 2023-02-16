@@ -1,0 +1,29 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cse_main/src/cse.c:7517:4: error: expected ';' after expression
+rtx v13; // rdx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cse_main/src/cse.c:7517:5: error: use of undeclared identifier 'v13'
+rtx v13; // rdx 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cse_main/src/cse.c:7533:1: error: use of undeclared identifier 'uid_cuid_0'; did you mean 'uid_cuid'?
+uid_cuid_0 = v7; 
+^~~~~~~~~~
+uid_cuid
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cse_main/src/cse.c:360:13: note: 'uid_cuid' declared here
+static int *uid_cuid;
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cse_main/src/cse.c:7590:1: error: use of undeclared identifier 'v13'
+v13 = cse_basic_block( last, val.last, val.path, after_loop == 0); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cse_main/src/cse.c:7594:8: error: use of undeclared identifier 'v13'
+last = v13; 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cse_main/src/cse.c:7616:7: error: use of undeclared identifier 'uid_cuid_0'; did you mean 'uid_cuid'?
+free( uid_cuid_0); 
+      ^~~~~~~~~~
+      uid_cuid
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cse_main/src/cse.c:360:13: note: 'uid_cuid' declared here
+static int *uid_cuid;
+            ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cse_main/src/obj/cse.o] Error 1

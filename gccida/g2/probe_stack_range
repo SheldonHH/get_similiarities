@@ -1,0 +1,41 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/probe_stack_range/src/explow.c:1958:25: error: use of undeclared identifier 'machine_mode'
+v2 = convert_to_mode( ( machine_mode)v5, size, 1); 
+                        ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/probe_stack_range/src/explow.c:1967:24: error: use of undeclared identifier 'machine_mode'
+v6 = gen_rtx( MINUS, ( machine_mode)( ( ( BYTE3( target_flags) & 2) != 0) + 4), global_rtl[2], v2); 
+                       ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/probe_stack_range/src/explow.c:1981:32: error: use of undeclared identifier 'machine_mode'
+v11 = gen_rtx_fmt_ee( MINUS, ( machine_mode)( ( ( BYTE3( target_flags) & 2) != 0) + 4), global_rtl[2], v10); 
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/probe_stack_range/src/explow.c:1982:31: error: invalid suffix 'xmode' on integer constant
+v12 = gen_rtx_MEM( *(short *)0xmode, v11); 
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/probe_stack_range/src/explow.c:1990:32: error: use of undeclared identifier 'machine_mode'
+v13 = gen_rtx_fmt_ee( MINUS, ( machine_mode)( ( ( BYTE3( target_flags) & 2) != 0) + 4), global_rtl[2], v2); 
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/probe_stack_range/src/explow.c:1991:31: error: invalid suffix 'xmode' on integer constant
+v14 = gen_rtx_MEM( *(short *)0xmode, v13); 
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/probe_stack_range/src/explow.c:1998:32: error: use of undeclared identifier 'machine_mode'
+v16 = gen_rtx_fmt_ee( MINUS, ( machine_mode)( ( ( BYTE3( target_flags) & 2) != 0) + 4), global_rtl[2], v15); 
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/probe_stack_range/src/explow.c:2002:32: error: use of undeclared identifier 'machine_mode'
+v18 = gen_rtx_fmt_ee( MINUS, ( machine_mode)( ( ( BYTE3( target_flags) & 2) != 0) + 4), global_rtl[2], v2); 
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/probe_stack_range/src/explow.c:2009:22: error: use of undeclared identifier 'machine_mode'
+v17 = force_reg_0( ( machine_mode)( ( ( BYTE3( target_flags) & 2) != 0) + 4), v17); 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/probe_stack_range/src/explow.c:2013:31: error: invalid suffix 'xmode' on integer constant
+v24 = gen_rtx_MEM( *(short *)0xmode, v17); 
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/probe_stack_range/src/explow.c:2018:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( ( ( BYTE3( target_flags) & 2) != 0) + 4), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/probe_stack_range/src/explow.c:2027:48: error: use of undeclared identifier 'machine_mode'
+emit_cmp_and_jump_insns( v17, v19, GTU, 0LL, ( machine_mode)( ( ( BYTE3( target_flags) & 2) != 0) + 4), 1, v21); 
+                                               ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/probe_stack_range/src/explow.c:2031:31: error: invalid suffix 'xmode' on integer constant
+v25 = gen_rtx_MEM( *(short *)0xmode, v19); 
+                              ^
+13 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/probe_stack_range/src/obj/explow.o] Error 1

@@ -1,0 +1,82 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/combine_reloads/src/reload.c:2104:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class *v7; // r13 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/combine_reloads/src/reload.c:2114:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v17; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/combine_reloads/src/reload.c:2129:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode *v32; // r15 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/combine_reloads/src/reload.c:2196:19: error: expected expression
+v7 = ( reg_class *)( v5 + 10314208); 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/combine_reloads/src/reload.c:2196:8: error: use of undeclared identifier 'reg_class'; did you mean 'regclass'?
+v7 = ( reg_class *)( v5 + 10314208); 
+       ^~~~~~~~~
+       regclass
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/combine_reloads/src/rtl.h:1970:13: note: 'regclass' declared here
+extern void regclass                    PARAMS ((rtx, int, FILE *));
+            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/combine_reloads/src/reload.c:2223:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v14 = ( ( unsigned int)( mode_class_0[inmode] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/combine_reloads/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/combine_reloads/src/reload.c:2237:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v18 = ( ( unsigned int)( mode_class_0[outmode] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/combine_reloads/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/combine_reloads/src/reload.c:2322:9: error: use of undeclared identifier 'this_insn_1'; did you mean 'this_insn'?
+rtint = this_insn_1[2].fld[0].rtint; 
+        ^~~~~~~~~~~
+        this_insn
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/combine_reloads/src/reload.c:181:12: note: 'this_insn' declared here
+static rtx this_insn;
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/combine_reloads/src/reload.c:2327:6: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+if ( insn_data_0[rtint].n_operands >= 2 ) 
+     ^~~~~~~~~~~
+     insn_data
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/combine_reloads/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/combine_reloads/src/reload.c:2330:17: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+p_constraint = &insn_data_0[v26].operand[1].constraint; 
+                ^~~~~~~~~~~
+                insn_data
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/combine_reloads/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/combine_reloads/src/reload.c:2342:24: error: use of undeclared identifier 'this_insn_1'
+v31.rtwint = ( __int64)this_insn_1[3].fld[0]; 
+                       ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/combine_reloads/src/reload.c:2345:23: error: expected expression
+v32 = ( machine_mode *)( v5 + 10314216); 
+                      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/combine_reloads/src/reload.c:2345:9: error: use of undeclared identifier 'machine_mode'
+v32 = ( machine_mode *)( v5 + 10314216); 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/combine_reloads/src/reload.c:2369:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v40 = ( ( unsigned int)( mode_class_0[v39] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/combine_reloads/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/combine_reloads/src/reload.c:2390:31: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( v40 > ( ( unsigned int)( mode_class_0[( unsigned __int8)BYTE2( **( _DWORD **)( v31.rtwint + 8))] - 5) < 2) + 1 ) 
+                              ^~~~~~~~~~~~
+                              mode_class
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/combine_reloads/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+15 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/combine_reloads/src/obj/reload.o] Error 1

@@ -1,0 +1,68 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/compute_transp/src/gcse.c:4233:1: error: use of undeclared identifier 'reg_set_0'; did you mean 'reg_set_p'?
+reg_set_0 *v31; // rax 
+^~~~~~~~~
+reg_set_p
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/compute_transp/src/rtl.h:1469:12: note: 'reg_set_p' declared here
+extern int reg_set_p                    PARAMS ((rtx, rtx));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/compute_transp/src/gcse.c:4233:12: error: use of undeclared identifier 'v31'
+reg_set_0 *v31; // rax 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/compute_transp/src/gcse.c:4236:1: error: use of undeclared identifier 'reg_set_0'; did you mean 'reg_set_p'?
+reg_set_0 *v34; // rax 
+^~~~~~~~~
+reg_set_p
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/compute_transp/src/rtl.h:1469:12: note: 'reg_set_p' declared here
+extern int reg_set_p                    PARAMS ((rtx, rtx));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/compute_transp/src/gcse.c:4236:12: error: use of undeclared identifier 'v34'
+reg_set_0 *v34; // rax 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/compute_transp/src/gcse.c:4269:1: error: use of undeclared identifier 'v31'
+v31 = reg_set_table[rtuint]; 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/compute_transp/src/gcse.c:4270:6: error: use of undeclared identifier 'v31'
+if ( v31 ) 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/compute_transp/src/gcse.c:4275:35: error: use of undeclared identifier 'v31'
+v33 = bmap[*( int *)( v32->data.l[v31->insn->fld[0].rtint] + 88)]; 
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/compute_transp/src/gcse.c:4277:1: error: use of undeclared identifier 'v31'
+v31 = v31->next; 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/compute_transp/src/gcse.c:4277:7: error: use of undeclared identifier 'v31'
+v31 = v31->next; 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/compute_transp/src/gcse.c:4279:9: error: use of undeclared identifier 'v31'
+while ( v31 ); 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/compute_transp/src/gcse.c:4299:1: error: use of undeclared identifier 'v34'
+v34 = reg_set_table[rtuint]; 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/compute_transp/src/gcse.c:4300:6: error: use of undeclared identifier 'v34'
+if ( v34 ) 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/compute_transp/src/gcse.c:4305:35: error: use of undeclared identifier 'v34'
+v36 = bmap[*( int *)( v35->data.l[v34->insn->fld[0].rtint] + 88)]; 
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/compute_transp/src/gcse.c:4307:1: error: use of undeclared identifier 'v34'
+v34 = v34->next; 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/compute_transp/src/gcse.c:4307:7: error: use of undeclared identifier 'v34'
+v34 = v34->next; 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/compute_transp/src/gcse.c:4309:9: error: use of undeclared identifier 'v34'
+while ( v34 ); 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/compute_transp/src/gcse.c:4343:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v14 = ( __int64)v12[1]; 
+                ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/compute_transp/src/gcse.c:4346:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)rtx), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/compute_transp/src/gcse.c:4346:18: error: expected expression
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)rtx), 
+                 ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/compute_transp/src/obj/gcse.o] Error 1

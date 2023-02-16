@@ -1,0 +1,38 @@
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/get_next_move_from_list/src/engine/owl.c:3550:16: error: expected identifier or '('
+struct pattern = pattern_list[v10].pattern; 
+               ^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/get_next_move_from_list/src/engine/owl.c:3555:10: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+v17 = v13->m128i_i32[1]; 
+      ~~~^ ~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/get_next_move_from_list/src/engine/owl.c:3580:31: error: expected expression
+if ( v26 <= value && ( v22 >= struct pattern || v26 != value) ) 
+                              ^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/get_next_move_from_list/src/engine/owl.c:3582:28: error: expected expression
+if ( v21 >= move || v22 != struct pattern ) 
+                           ^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/get_next_move_from_list/src/engine/owl.c:3590:16: error: expected identifier or '('
+struct pattern = v22; 
+               ^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/get_next_move_from_list/src/engine/owl.c:3592:13: error: use of undeclared identifier 'matched_pattern_data'
+v19[-1] = ( matched_pattern_data)_mm_loadu_si128( v13); 
+            ^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/get_next_move_from_list/src/engine/owl.c:3593:4: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+v13->m128i_i32[0] = v23; 
+~~~^ ~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/get_next_move_from_list/src/engine/owl.c:3594:4: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+v13->m128i_i32[1] = ll; 
+~~~^ ~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/get_next_move_from_list/src/engine/owl.c:3595:4: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+v13->m128i_i64[1] = v25; 
+~~~^ ~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/get_next_move_from_list/src/engine/owl.c:3604:11: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+move = v13->m128i_i32[0]; 
+       ~~~^ ~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/get_next_move_from_list/src/engine/owl.c:3605:16: error: expected identifier or '('
+struct pattern = ( struct pattern *)v13->m128i_i64[1]; 
+               ^
+/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/get_next_move_from_list/src/engine/owl.c:3607:10: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+v17 = v13->m128i_i32[1]; 
+      ~~~^ ~~~~~~~~~
+12 errors generated.
+make: *** [/data/output_dir/patch/gobmk/ida/gcc/O2/gobmk-gcc-O2/get_next_move_from_list/src/obj/1/owl.o] Error 1

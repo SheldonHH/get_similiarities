@@ -1,0 +1,60 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_prefetch_instructions/src/loop.c:4268:1: error: use of undeclared identifier 'induction_1'
+induction_1 **p_giv; // r15 
+^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_prefetch_instructions/src/loop.c:4268:15: error: use of undeclared identifier 'p_giv'
+induction_1 **p_giv; // r15 
+              ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_prefetch_instructions/src/loop.c:4431:40: error: use of undeclared identifier 'machine_mode'
+address = simplify_gen_binary( PLUS, ( machine_mode)( ( ( BYTE3( target_flags) & 2) != 0) + 4), v13, address); 
+                                       ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_prefetch_instructions/src/loop.c:4472:57: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'unsigned long long' of different size
+*( __m128i *)&info[v21 / 7].class = _mm_unpacklo_epi64( ( __m128i)( unsigned __int64)v2, ( __m128i)v7); 
+                                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_prefetch_instructions/src/loop.c:4472:90: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'unsigned long long' of different size
+*( __m128i *)&info[v21 / 7].class = _mm_unpacklo_epi64( ( __m128i)( unsigned __int64)v2, ( __m128i)v7); 
+                                                                                         ^~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_prefetch_instructions/src/loop.c:4482:53: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'unsigned long long' of different size
+*( __m128i *)&info[v82].class = _mm_unpacklo_epi64( ( __m128i)( unsigned __int64)v2, ( __m128i)v7); 
+                                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_prefetch_instructions/src/loop.c:4482:86: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'unsigned long long' of different size
+*( __m128i *)&info[v82].class = _mm_unpacklo_epi64( ( __m128i)( unsigned __int64)v2, ( __m128i)v7); 
+                                                                                     ^~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_prefetch_instructions/src/loop.c:4488:58: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'unsigned long long' of different size
+*( __m128i *)&info[v82].index = _mm_unpacklo_epi64( v84, ( __m128i)v9); 
+                                                         ^~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_prefetch_instructions/src/loop.c:4623:1: error: use of undeclared identifier 'p_giv'
+p_giv = &info[0].giv; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_prefetch_instructions/src/loop.c:4627:48: error: use of undeclared identifier 'p_giv'
+fprintf( v42, "Prefetch insn %i address: ", ( *p_giv)->insn->fld[0].rtuint); 
+                                               ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_prefetch_instructions/src/loop.c:4628:36: error: use of undeclared identifier 'p_giv'
+print_rtl( loop_dump_stream, ( rtx)p_giv[1]); 
+                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_prefetch_instructions/src/loop.c:4630:36: error: use of undeclared identifier 'p_giv'
+fprintf( loop_dump_stream, "%lld", p_giv[2]); 
+                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_prefetch_instructions/src/loop.c:4632:17: error: use of undeclared identifier 'p_giv'
+v48 = ( __int64)p_giv[3]; 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_prefetch_instructions/src/loop.c:4643:44: error: use of undeclared identifier 'p_giv'
+v46 = ( unsigned int)( 100 * *( ( _DWORD *)p_giv + 8)); 
+                                           ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_prefetch_instructions/src/loop.c:4644:27: error: use of undeclared identifier 'p_giv'
+v47 = *( ( unsigned int *)p_giv + 9); 
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_prefetch_instructions/src/loop.c:4646:1: error: use of undeclared identifier 'p_giv'
+p_giv += 7; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_prefetch_instructions/src/loop.c:4660:44: error: use of undeclared identifier 'p_giv'
+v52 = ( unsigned int)( 100 * *( ( _DWORD *)p_giv + 8)); 
+                                           ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_prefetch_instructions/src/loop.c:4661:21: error: use of undeclared identifier 'p_giv'
+v53 = *( ( _DWORD *)p_giv + 9); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_prefetch_instructions/src/loop.c:4663:1: error: use of undeclared identifier 'p_giv'
+p_giv += 7; 
+^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_prefetch_instructions/src/obj/loop.o] Error 1

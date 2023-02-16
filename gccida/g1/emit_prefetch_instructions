@@ -1,0 +1,72 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_prefetch_instructions/src/loop.c:4228:1: error: use of undeclared identifier 'induction_1'
+induction_1 *giv; // rbx 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_prefetch_instructions/src/loop.c:4228:14: error: use of undeclared identifier 'giv'; did you mean 'div'?
+induction_1 *giv; // rbx 
+             ^~~
+             div
+/usr/include/stdlib.h:849:14: note: 'div' declared here
+extern div_t div (int __numer, int __denom)
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_prefetch_instructions/src/loop.c:4236:1: error: use of undeclared identifier 'induction_1'
+induction_1 *biv; // r12 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_prefetch_instructions/src/loop.c:4236:14: error: use of undeclared identifier 'biv'; did you mean 'div'?
+induction_1 *biv; // r12 
+             ^~~
+             div
+/usr/include/stdlib.h:849:14: note: 'div' declared here
+extern div_t div (int __numer, int __denom)
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_prefetch_instructions/src/loop.c:4238:1: error: use of undeclared identifier 'induction_1'
+induction_1 *v14; // rbx 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_prefetch_instructions/src/loop.c:4238:14: error: use of undeclared identifier 'v14'
+induction_1 *v14; // rbx 
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_prefetch_instructions/src/loop.c:4266:1: error: use of undeclared identifier 'induction_1'
+induction_1 *v42; // r13 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_prefetch_instructions/src/loop.c:4266:14: error: use of undeclared identifier 'v42'
+induction_1 *v42; // r13 
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_prefetch_instructions/src/loop.c:4271:1: error: use of undeclared identifier 'induction_1'
+induction_1 **p_giv; // rbx 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_prefetch_instructions/src/loop.c:4271:15: error: use of undeclared identifier 'p_giv'
+induction_1 **p_giv; // rbx 
+              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_prefetch_instructions/src/loop.c:4314:1: error: use of undeclared identifier 'biv'
+biv = v2->biv; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_prefetch_instructions/src/loop.c:4315:6: error: use of undeclared identifier 'biv'; did you mean 'div'?
+if ( biv ) 
+     ^~~
+     div
+/usr/include/stdlib.h:849:14: note: 'div' declared here
+extern div_t div (int __numer, int __denom)
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_prefetch_instructions/src/loop.c:4318:1: error: use of undeclared identifier 'v14'
+v14 = v2->biv; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_prefetch_instructions/src/loop.c:4321:17: error: use of undeclared identifier 'biv'
+if ( *( _WORD *)biv->add_val != 54 ) 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_prefetch_instructions/src/loop.c:4328:1: error: use of undeclared identifier 'biv'
+biv->src_reg->fld[0].rtuint, 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_prefetch_instructions/src/loop.c:4329:1: error: use of undeclared identifier 'biv'
+biv->insn->fld[0].rtuint); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_prefetch_instructions/src/loop.c:4330:30: error: use of undeclared identifier 'biv'
+print_rtl( loop_dump_stream, biv->add_val); 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_prefetch_instructions/src/loop.c:4335:21: error: use of undeclared identifier 'biv'
+if ( ( *( ( _BYTE *)biv + 100) & 0x20) != 0 ) 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_prefetch_instructions/src/loop.c:4337:8: error: use of undeclared identifier 'v14'
+v13 += v14->add_val->fld[0].rtint; 
+       ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_prefetch_instructions/src/obj/loop.o] Error 1

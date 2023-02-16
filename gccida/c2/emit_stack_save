@@ -1,0 +1,24 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_stack_save/src/explow.c:1412:24: error: must use 'enum' tag to refer to type 'save_level'
+void  emit_stack_save( save_level save_level, rtx *psave, rtx after) 
+                       ^
+                       enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_stack_save/src/explow.c:1456:27: error: use of undeclared identifier 'machine_mode'
+if ( !memory_address_p( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)v5), v8) ) 
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_stack_save/src/explow.c:1456:42: error: expected expression
+if ( !memory_address_p( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)v5), v8) ) 
+                                         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_stack_save/src/explow.c:1479:29: error: use of undeclared identifier 'machine_mode'
+v10 = assign_stack_local( ( machine_mode)v6, mode_size[v6], 0); 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_stack_save/src/explow.c:1481:22: error: use of undeclared identifier 'machine_mode'
+v10 = gen_reg_rtx( ( machine_mode)v6); 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_stack_save/src/explow.c:1506:27: error: use of undeclared identifier 'machine_mode'
+if ( !memory_address_p( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)v5), v12) ) 
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_stack_save/src/explow.c:1506:42: error: expected expression
+if ( !memory_address_p( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)v5), v12) ) 
+                                         ^
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/emit_stack_save/src/obj/explow.o] Error 1

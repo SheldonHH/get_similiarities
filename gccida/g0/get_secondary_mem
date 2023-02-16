@@ -1,0 +1,53 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/get_secondary_mem/src/reload.c:1048:32: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  get_secondary_mem( rtx x, machine_mode mode, int opnum, reload_type type) 
+                               ^
+                               enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/get_secondary_mem/src/reload.c:1048:62: error: must use 'enum' tag to refer to type 'reload_type'
+rtx  get_secondary_mem( rtx x, machine_mode mode, int opnum, reload_type type) 
+                                                             ^
+                                                             enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/get_secondary_mem/src/reload.c:1052:1: error: must use 'enum' tag to refer to type 'reload_type'
+reload_type v7; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/get_secondary_mem/src/reload.c:1053:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode modea; // [rsp+14h] [rbp-2Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/get_secondary_mem/src/reload.c:1063:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& ( mode_class_0[mode] == MODE_INT 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/get_secondary_mem/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/get_secondary_mem/src/reload.c:1064:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| mode_class_0[mode] == MODE_PARTIAL_INT 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/get_secondary_mem/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/get_secondary_mem/src/reload.c:1065:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| mode_class_0[mode] == MODE_COMPLEX_INT 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/get_secondary_mem/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/get_secondary_mem/src/reload.c:1066:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| mode_class_0[mode] == MODE_VECTOR_INT) ) 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/get_secondary_mem/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/get_secondary_mem/src/reload.c:1072:28: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+modea = mode_for_size( v5, mode_class_0[mode], 0); 
+                           ^~~~~~~~~~~~
+                           mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/get_secondary_mem/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+9 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/get_secondary_mem/src/obj/reload.o] Error 1

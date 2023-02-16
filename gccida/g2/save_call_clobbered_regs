@@ -1,0 +1,50 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/save_call_clobbered_regs/src/caller-save.c:829:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode *v12; // rdx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/save_call_clobbered_regs/src/caller-save.c:831:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v14; // ecx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/save_call_clobbered_regs/src/caller-save.c:844:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v27; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/save_call_clobbered_regs/src/caller-save.c:846:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v29; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/save_call_clobbered_regs/src/caller-save.c:863:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v46; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/save_call_clobbered_regs/src/caller-save.c:867:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v50; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/save_call_clobbered_regs/src/caller-save.c:885:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode save_mode[53]; // [rsp+30h] [rbp-118h] BYREF 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/save_call_clobbered_regs/src/caller-save.c:936:23: error: expected expression
+v12 = ( machine_mode *)( regno_save_mode + 4); 
+                      ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/save_call_clobbered_regs/src/caller-save.c:936:9: error: use of undeclared identifier 'machine_mode'
+v12 = ( machine_mode *)( regno_save_mode + 4); 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/save_call_clobbered_regs/src/caller-save.c:1023:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v31 = ( ( unsigned int)( mode_class_0[v27] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/save_call_clobbered_regs/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/save_call_clobbered_regs/src/caller-save.c:1112:23: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( ( unsigned int)( mode_class_0[v44] - 5) > 1 ) 
+                      ^~~~~~~~~~~~
+                      mode_class
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/save_call_clobbered_regs/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+11 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/save_call_clobbered_regs/src/obj/caller-save.o] Error 1

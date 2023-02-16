@@ -1,0 +1,12 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/check_asm_operands/src/recog.c:621:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v13 = ( __int64)x[1]; 
+                ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/check_asm_operands/src/recog.c:647:8: error: use of undeclared identifier 'sch_istable'; did you mean '_sch_istable'?
+if ( ( sch_istable[( unsigned __int8)v12] & 4) != 0 && !v11[1] ) 
+       ^~~~~~~~~~~
+       _sch_istable
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/check_asm_operands/src/safe-ctype.h:72:29: note: '_sch_istable' declared here
+extern const unsigned short _sch_istable[256];
+                            ^
+2 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/check_asm_operands/src/obj/recog.o] Error 1

@@ -1,0 +1,22 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/count_or_remove_death_notes/src/flow.c:4747:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[( unsigned __int8)BYTE2( *( _DWORD *)reg)] != MODE_COMPLEX_INT ) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/count_or_remove_death_notes/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/count_or_remove_death_notes/src/flow.c:4748:7: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v11 = mode_class_0[( unsigned __int8)BYTE2( *( _DWORD *)reg)] == MODE_COMPLEX_FLOAT; 
+      ^~~~~~~~~~~~
+      mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/count_or_remove_death_notes/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/count_or_remove_death_notes/src/flow.c:4767:14: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+link = ( rtx)link[1]; 
+             ^~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/count_or_remove_death_notes/src/flow.c:4774:14: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+next = ( rtx)link[1]; 
+             ^~~~~~~
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/count_or_remove_death_notes/src/obj/flow.o] Error 1

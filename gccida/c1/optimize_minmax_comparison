@@ -1,0 +1,73 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/optimize_minmax_comparison/src/fold-const.c:4832:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v1; // r12 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/optimize_minmax_comparison/src/fold-const.c:4834:14: error: expected expression
+tree_int_cst::$A887AD9C3C6C8CC7716950D571F57C9D *p_int_cst; // rcx 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/optimize_minmax_comparison/src/fold-const.c:4835:14: error: expected expression
+tree_int_cst::$A887AD9C3C6C8CC7716950D571F57C9D *low; // rbx 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/optimize_minmax_comparison/src/fold-const.c:4835:1: error: redefinition of label 'tree_int_cst'
+tree_int_cst::$A887AD9C3C6C8CC7716950D571F57C9D *low; // rbx 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/optimize_minmax_comparison/src/fold-const.c:4834:1: note: previous definition is here
+tree_int_cst::$A887AD9C3C6C8CC7716950D571F57C9D *p_int_cst; // rcx 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/optimize_minmax_comparison/src/fold-const.c:4843:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v12; // rdx 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/optimize_minmax_comparison/src/fold-const.c:4844:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v13; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/optimize_minmax_comparison/src/fold-const.c:4845:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v14; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/optimize_minmax_comparison/src/fold-const.c:4848:1: error: must use 'enum' tag to refer to type 'tree_code'
+tree_code v17; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/optimize_minmax_comparison/src/fold-const.c:4849:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v18; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/optimize_minmax_comparison/src/fold-const.c:4851:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v20; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/optimize_minmax_comparison/src/fold-const.c:4853:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v22; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/optimize_minmax_comparison/src/fold-const.c:4854:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v23; // rsi 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/optimize_minmax_comparison/src/fold-const.c:4855:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *tt; // [rsp+0h] [rbp-38h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/optimize_minmax_comparison/src/fold-const.c:4860:1: error: use of undeclared identifier 'p_int_cst'
+p_int_cst = &t->int_cst.int_cst; 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/optimize_minmax_comparison/src/fold-const.c:4863:1: error: use of undeclared identifier 'low'
+low = ( tree_int_cst::$A887AD9C3C6C8CC7716950D571F57C9D *)p_int_cst->low; 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/optimize_minmax_comparison/src/fold-const.c:4863:9: error: use of undeclared identifier 'tree_int_cst'
+low = ( tree_int_cst::$A887AD9C3C6C8CC7716950D571F57C9D *)p_int_cst->low; 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/optimize_minmax_comparison/src/fold-const.c:4864:29: error: use of undeclared identifier 'p_int_cst'
+v5 = *( unsigned __int8 *)( p_int_cst->low + 16); 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/optimize_minmax_comparison/src/fold-const.c:4867:6: error: use of undeclared identifier 'low'
+v6 = low[2].low; 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/optimize_minmax_comparison/src/fold-const.c:4870:6: error: use of undeclared identifier 'low'
+v7 = low->high; 
+     ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/optimize_minmax_comparison/src/obj/fold-const.o] Error 1

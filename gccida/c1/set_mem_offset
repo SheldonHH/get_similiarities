@@ -1,0 +1,24 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/set_mem_offset/src/emit-rtl.c:2365:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v4; // r12 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/set_mem_offset/src/emit-rtl.c:2371:18: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v2 = ( __int64 *)mem[1]; 
+                 ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/set_mem_offset/src/emit-rtl.c:2375:19: error: expected expression
+v4 = ( tree_node *)v2[1]; 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/set_mem_offset/src/emit-rtl.c:2375:8: error: use of undeclared identifier 'tree_node'
+v4 = ( tree_node *)v2[1]; 
+       ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/set_mem_offset/src/emit-rtl.c:2386:27: error: use of undeclared identifier 'machine_mode'
+v5 = gen_rtx_CONST_INT( ( machine_mode)mem, mode_size[v6]); 
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/set_mem_offset/src/emit-rtl.c:2388:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v7 = ( __int64)mem[1]; 
+               ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/set_mem_offset/src/emit-rtl.c:2393:64: error: use of undeclared identifier 'machine_mode'
+*( _QWORD *)&mem[1] = get_mem_attrs( v3, v4, offset, v5, v8, ( machine_mode)*( ( unsigned __int8 *)mem + 2)); 
+                                                               ^
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/set_mem_offset/src/obj/emit-rtl.o] Error 1

@@ -1,0 +1,15 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/athlon_muldiv_unit_blockage/src/insn-attrtab.c:22572:39: error: too many arguments provided to function-like macro invocation
+fatal_insn_not_found( executing_insn, "insn-attrtab.c", 22131, "athlon_muldiv_unit_blockage"); 
+                                      ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/athlon_muldiv_unit_blockage/src/toplev.h:52:9: note: macro 'fatal_insn_not_found' defined here
+#define fatal_insn_not_found(insn) \
+        ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/athlon_muldiv_unit_blockage/src/insn-attrtab.c:22572:1: error: use of undeclared identifier 'fatal_insn_not_found'; did you mean '_fatal_insn_not_found'?
+fatal_insn_not_found( executing_insn, "insn-attrtab.c", 22131, "athlon_muldiv_unit_blockage"); 
+^~~~~~~~~~~~~~~~~~~~
+_fatal_insn_not_found
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/athlon_muldiv_unit_blockage/src/toplev.h:40:13: note: '_fatal_insn_not_found' declared here
+extern void _fatal_insn_not_found       PARAMS ((struct rtx_def *,
+            ^
+2 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/athlon_muldiv_unit_blockage/src/obj/insn-attrtab.o] Error 1

@@ -1,0 +1,66 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_fix/src/optabs.c:4821:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v3; // ecx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_fix/src/optabs.c:4827:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v9; // r8d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_fix/src/optabs.c:4842:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v24; // [rsp+A4h] [rbp-ECh] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_fix/src/optabs.c:4845:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // [rsp+BCh] [rbp-D4h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_fix/src/optabs.c:4859:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode imode; // [rsp+168h] [rbp-28h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_fix/src/optabs.c:4860:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode fmode; // [rsp+16Ch] [rbp-24h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_fix/src/optabs.c:4862:1: error: must use 'enum' tag to refer to type 'insn_code'
+insn_code icode; // [rsp+178h] [rbp-18h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_fix/src/optabs.c:4916:17: error: use of undeclared identifier 'machine_mode'
+&& can_fix_p( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)toa), fmode, 0, &must_trunc) != CODE_FOR_nothing ) 
+                ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_fix/src/optabs.c:4916:32: error: expected expression
+&& can_fix_p( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)toa), fmode, 0, &must_trunc) != CODE_FOR_nothing ) 
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_fix/src/optabs.c:4919:29: error: too many arguments to function call, expected 2, have 3
+ereal_ldexp( &v31, dconst1, bitsize - 1); 
+~~~~~~~~~~~                 ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_fix/src/real.h:160:1: note: 'ereal_ldexp' declared here
+extern REAL_VALUE_TYPE ereal_ldexp PARAMS ((REAL_VALUE_TYPE, int));
+^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_fix/src/optabs.c:4937:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)froma), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_fix/src/optabs.c:4937:18: error: expected expression
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)froma), 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_fix/src/optabs.c:4946:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)froma), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_fix/src/optabs.c:4946:18: error: expected expression
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)froma), 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_fix/src/optabs.c:5112:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)toa), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_fix/src/optabs.c:5112:18: error: expected expression
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)toa), 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_fix/src/optabs.c:5122:28: error: use of undeclared identifier 'machine_mode'
+v10 = gen_rtx_fmt_e( v9, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)toa), froma); 
+                           ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_fix/src/optabs.c:5122:43: error: expected expression
+v10 = gen_rtx_fmt_e( v9, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)toa), froma); 
+                                          ^
+18 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_fix/src/obj/optabs.o] Error 1

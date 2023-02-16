@@ -1,0 +1,14 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/set_mem_expr/src/emit-rtl.c:2359:18: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v2 = ( __int64 *)mem[1]; 
+                 ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/set_mem_expr/src/emit-rtl.c:2374:27: error: use of undeclared identifier 'machine_mode'
+v5 = gen_rtx_CONST_INT( ( machine_mode)mem, mode_size[v6]); 
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/set_mem_expr/src/emit-rtl.c:2376:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v7 = ( __int64)mem[1]; 
+               ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/set_mem_expr/src/emit-rtl.c:2381:62: error: use of undeclared identifier 'machine_mode'
+*( _QWORD *)&mem[1] = get_mem_attrs( v3, expr, v4, v5, v8, ( machine_mode)*( ( unsigned __int8 *)mem + 2)); 
+                                                             ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/set_mem_expr/src/obj/emit-rtl.o] Error 1

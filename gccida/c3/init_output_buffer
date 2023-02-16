@@ -1,0 +1,12 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/init_output_buffer/src/diagnostic.c:762:27: error: unknown type name 'output_buffer_0'; did you mean 'output_buffer'?
+void  init_output_buffer( output_buffer_0 *buffer, const char *prefix, int maximum_length) 
+                          ^~~~~~~~~~~~~~~
+                          output_buffer
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/init_output_buffer/src/diagnostic.h:28:30: note: 'output_buffer' declared here
+typedef struct output_buffer output_buffer;
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/init_output_buffer/src/diagnostic.c:764:28: error: use of undeclared identifier 'output_buffer_0'
+memset( buffer, 0, sizeof( output_buffer_0)); 
+                           ^
+2 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/init_output_buffer/src/obj/diagnostic.o] Error 1

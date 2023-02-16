@@ -1,0 +1,392 @@
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:3128:26: error: expected expression
+if ( *( int *)( ( char *)::move[0].reason + v9) < 0 && ::move[pos].min_territory <= 0.0 ) 
+                         ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:3128:56: error: expected expression
+if ( *( int *)( ( char *)::move[0].reason + v9) < 0 && ::move[pos].min_territory <= 0.0 ) 
+                                                       ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:3147:12: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v252 = v262.m128_f32[0] > 0.0 && v5 == 2 || v262.m128_f32[0] < 0.0 && v5 == 1; 
+       ~~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:3147:49: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v252 = v262.m128_f32[0] > 0.0 && v5 == 2 || v262.m128_f32[0] < 0.0 && v5 == 1; 
+                                            ~~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:3148:7: error: invalid conversion between vector type '__m128' (vector of 4 'float' values) and integer type 'unsigned int' of different size
+v15 = ( __m128)0x3F000000u; 
+      ^~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:3149:4: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v15.m128_f32[0] = 0.5 * v262.m128_f32[0]; 
+~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:3149:29: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v15.m128_f32[0] = 0.5 * v262.m128_f32[0]; 
+                        ~~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:3150:26: error: invalid conversion between vector type '__m128' (vector of 4 'float' values) and integer type 'long long' of different size
+v16 = _mm_cmplt_ss( v15, ( __m128)0LL); 
+                         ^~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:3151:78: error: use of undeclared identifier 'xmmword_492660'
+v264 = _mm_or_ps( _mm_andnot_ps( v16, v15), _mm_and_ps( _mm_xor_ps( ( __m128)xmmword_492660, v15), v16)); 
+                                                                             ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:3153:23: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+LOBYTE( v257) = ( v262.m128_f32[0] >= 0.0 || v5 != 2) && ( v262.m128_f32[0] <= 0.0 || v5 != 1); 
+                  ~~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:3153:64: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+LOBYTE( v257) = ( v262.m128_f32[0] >= 0.0 || v5 != 2) && ( v262.m128_f32[0] <= 0.0 || v5 != 1); 
+                                                           ~~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:3156:7: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+margin.m128_i32[0] = 0; 
+~~~~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:3187:7: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+margin.m128_f32[0] = margin.m128_f32[0] + worm[what].effective_size; 
+~~~~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:3187:28: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+margin.m128_f32[0] = margin.m128_f32[0] + worm[what].effective_size; 
+                     ~~~~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:3201:13: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v73 = margin.m128_f32[0] + v25 * 0.2; 
+      ~~~~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:3202:7: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+margin.m128_f32[0] = v73; 
+~~~~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:3294:16: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+*( float *)v259.m128d_f64 = v83; 
+           ~~~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:3298:22: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+v76 = *( float *)v259.m128d_f64; 
+                 ~~~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:3305:16: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+*( float *)v259.m128d_f64 = v76; 
+           ~~~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:3312:30: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+LODWORD( v14) = LODWORD( v259.m128d_f64[0]); 
+                         ~~~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:2574:27: note: expanded from macro 'LODWORD'
+#define LODWORD(x) DWORDn(x,LOW_IND(x,_DWORD))
+                          ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:2537:36: note: expanded from macro 'DWORDn'
+#define DWORDn(x, n) (*((_DWORD*)&(x)+n))
+                                   ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:3315:30: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+LODWORD( v14) = LODWORD( v259.m128d_f64[0]), 
+                         ~~~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:2574:27: note: expanded from macro 'LODWORD'
+#define LODWORD(x) DWORDn(x,LOW_IND(x,_DWORD))
+                          ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:2537:36: note: expanded from macro 'DWORDn'
+#define DWORDn(x, n) (*((_DWORD*)&(x)+n))
+                                   ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:3326:31: error: too many arguments to function call, expected 2, have 3
+add_followup_value( pos, v90, v18); 
+~~~~~~~~~~~~~~~~~~            ^~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/liberty.h:454:1: note: 'add_followup_value' declared here
+void add_followup_value(int pos, float value);
+^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:3343:22: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+v86 = *( float *)v259.m128d_f64; 
+                 ~~~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:3351:22: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+v86 = *( float *)v259.m128d_f64; 
+                 ~~~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:3352:28: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+if ( v76 <= *( float *)v259.m128d_f64 ) 
+                       ~~~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:3358:22: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+v76 = *( float *)v259.m128d_f64; 
+                 ~~~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:3386:13: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v67 = margin.m128_f32[0] + v30 * 0.2; 
+      ~~~~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:3387:7: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+margin.m128_f32[0] = v67; 
+~~~~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:3476:79: error: too many arguments to function call, expected 2, have 3
+add_followup_value( pos, worm[v44].effective_size + worm[v44].effective_size, v18); 
+~~~~~~~~~~~~~~~~~~                                                            ^~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/liberty.h:454:1: note: 'add_followup_value' declared here
+void add_followup_value(int pos, float value);
+^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:3507:83: error: too many arguments to function call, expected 2, have 3
+add_followup_value( pos, dragon[v47].effective_size + dragon[v47].effective_size, v18); 
+~~~~~~~~~~~~~~~~~~                                                                ^~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/liberty.h:454:1: note: 'add_followup_value' declared here
+void add_followup_value(int pos, float value);
+^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:3555:16: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+*( float *)v259.m128d_f64 = v51; 
+           ~~~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:3558:22: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+v51 = *( float *)v259.m128d_f64; 
+                 ~~~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:3575:16: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+*( float *)v259.m128d_f64 = v51; 
+           ~~~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:3576:31: error: too many arguments to function call, expected 2, have 3
+add_followup_value( pos, v51, v18); 
+~~~~~~~~~~~~~~~~~~            ^~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/liberty.h:454:1: note: 'add_followup_value' declared here
+void add_followup_value(int pos, float value);
+^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:3579:81: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+gprintf( " %1m: %f ( followup) - threatens to owl attack %1m\n", *( float *)v259.m128d_f64); 
+                                                                            ~~~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:3585:83: error: too many arguments to function call, expected 2, have 3
+add_followup_value( pos, dragon[v47].effective_size + dragon[v47].effective_size, v18); 
+~~~~~~~~~~~~~~~~~~                                                                ^~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/liberty.h:454:1: note: 'add_followup_value' declared here
+void add_followup_value(int pos, float value);
+^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:3614:21: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v78 = ( float)( v264.m128_f32[0] - ( float)( board_size / 2)) + -1.0; 
+                ~~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:3634:23: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v62 = fminf( v61, v264.m128_f32[0]); 
+                  ~~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:3636:39: error: too many arguments to function call, expected 2, have 3
+add_reverse_followup_value( pos, v61, v62); 
+~~~~~~~~~~~~~~~~~~~~~~~~~~            ^~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/liberty.h:455:1: note: 'add_reverse_followup_value' declared here
+void add_reverse_followup_value(int pos, float value);
+^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:3820:63: error: too many arguments to function call, expected 4, have 5
+store_delta_territory_cache( pos, color, effective_size, v99, *( float *)&v14); 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~                                   ^~~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/liberty.h:648:1: note: 'store_delta_territory_cache' declared here
+void store_delta_territory_cache(int pos, int color, float move_value,
+^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:3879:36: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+*( float *)( v9 + 9781056) = margin.m128_f32[0] + *( float *)( v9 + 9781056); 
+                             ~~~~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:3883:28: error: invalid conversion between vector type '__m128' (vector of 4 'float' values) and integer type 'long long' of different size
+v104 = _mm_cmplt_ss( v262, ( __m128)0LL); 
+                           ^~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:3884:80: error: use of undeclared identifier 'xmmword_492660'
+v105 = _mm_or_ps( _mm_andnot_ps( v104, v262), _mm_and_ps( _mm_xor_ps( ( __m128)xmmword_492660, v262), v104)); 
+                                                                               ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:3887:5: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v107.m128_i32[0] = -1046478848; 
+~~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:3892:6: error: assigning to '__m128' (vector of 4 'float' values) from incompatible type 'long long'
+v106 = 0LL; 
+     ^ ~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:3895:5: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v108.m128_i32[0] = v262.m128_i32[0]; 
+~~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:3895:24: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v108.m128_i32[0] = v262.m128_i32[0]; 
+                   ~~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:3896:6: error: assigning to '__m128d' (vector of 2 'double' values) from incompatible type 'long long'
+v109 = 0LL; 
+     ^ ~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:3897:5: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+v109.m128d_f64[0] = v262.m128_f32[0] * 0.65; 
+~~~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:3897:25: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v109.m128d_f64[0] = v262.m128_f32[0] * 0.65; 
+                    ~~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:3898:28: error: invalid conversion between vector type '__m128d' (vector of 2 'double' values) and integer type 'long long' of different size
+v110 = _mm_cmplt_sd( v109, ( __m128d)0LL); 
+                           ^~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:3899:42: error: use of undeclared identifier 'xmmword_498B10'
+v111 = _mm_and_pd( _mm_xor_pd( ( __m128d)xmmword_498B10, v109), v110); 
+                                         ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:3900:19: error: passing 'int' to parameter of incompatible type '__m128d' (vector of 2 'double' values)
+v259 = _mm_or_pd( _mm_andn_pd( v110, v109), v111); 
+                  ^~~~~~~~~~~~~~~~~~~~~~~~
+/usr/lib/llvm-7/lib/clang/7.0.0/include/emmintrin.h:400:19: note: passing argument to parameter '__a' here
+_mm_or_pd(__m128d __a, __m128d __b)
+                  ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:3903:22: error: invalid conversion between vector type '__m128' (vector of 4 'float' values) and integer type 'unsigned int' of different size
+v112 = _mm_cmplt_ss( ( __m128)0x41A00000u, v108); 
+                     ^~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:3906:5: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v262.m128_u64[0] = v250 + 9781020; 
+~~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:3907:12: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+v113 = v259.m128d_f64[0]; 
+       ~~~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:3908:5: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v264.m128_f32[0] = v113; 
+~~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:3936:8: error: use of undeclared identifier 'qword_498AC0'
+v122 = qword_498AC0[v121]; 
+       ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:3970:8: error: use of undeclared identifier 'qword_498B20'
+v174 = qword_498B20[dragon2[dragon[*( _QWORD *)&value[0]].id].safety == 5]; 
+       ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:3995:49: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v153 = connection_value( v151, v152, pos, margin.m128_f32[0]); 
+                                          ~~~~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:4002:49: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v154 = connection_value( v152, v151, pos, margin.m128_f32[0]); 
+                                          ~~~~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:4047:14: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+LODWORD( v111.m128d_f64[0]) = LODWORD( v259.m128d_f64[0]); 
+         ~~~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:2574:27: note: expanded from macro 'LODWORD'
+#define LODWORD(x) DWORDn(x,LOW_IND(x,_DWORD))
+                          ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:2537:36: note: expanded from macro 'DWORDn'
+#define DWORDn(x, n) (*((_DWORD*)&(x)+n))
+                                   ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:4047:44: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+LODWORD( v111.m128d_f64[0]) = LODWORD( v259.m128d_f64[0]); 
+                                       ~~~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:2574:27: note: expanded from macro 'LODWORD'
+#define LODWORD(x) DWORDn(x,LOW_IND(x,_DWORD))
+                          ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:2537:36: note: expanded from macro 'DWORDn'
+#define DWORDn(x, n) (*((_DWORD*)&(x)+n))
+                                   ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:4048:10: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+if ( v259.m128d_f64[0] <= v178 ) 
+     ~~~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:4049:12: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v178 = v264.m128_f32[0]; 
+       ~~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:4062:68: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+v138 = soft_cap( dragon[v137].effective_size, 15.0, *( float *)v111.m128d_f64) * 1.8; 
+                                                               ~~~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:4110:14: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+LODWORD( v111.m128d_f64[0]) = LODWORD( value[0]); 
+         ~~~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:2574:27: note: expanded from macro 'LODWORD'
+#define LODWORD(x) DWORDn(x,LOW_IND(x,_DWORD))
+                          ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:2537:36: note: expanded from macro 'DWORDn'
+#define DWORDn(x, n) (*((_DWORD*)&(x)+n))
+                                   ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:4115:5: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+v111.m128d_f64[0] = v162; 
+~~~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:4129:16: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+*( float *)v111.m128d_f64 = worm[v165].effective_size; 
+           ~~~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:4130:36: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+v167 = fminf( v166, *( float *)v111.m128d_f64); 
+                               ~~~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:4134:5: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+v111.m128d_f64[0] = *( float *)v111.m128d_f64; 
+~~~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:4134:36: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+v111.m128d_f64[0] = *( float *)v111.m128d_f64; 
+                               ~~~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:4136:87: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+gprintf( " %1m: %f - both defends %1m ( %f) and defends %1m ( %f)\n", v168, v166, v111.m128d_f64[0]); 
+                                                                                  ~~~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:4152:68: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+v125 = soft_cap( dragon[v124].effective_size, 15.0, *( float *)v111.m128d_f64) * 1.8; 
+                                                               ~~~~^~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:4202:21: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+if ( *( float *)v262.m128_u64[0] < 0.0 ) 
+                ~~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:4436:12: error: expected expression
+*( _OWORD *)value = v194; 
+           ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:4436:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)value = v194; 
+   ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:4455:20: error: expected expression
+*( float *)value = ::move[v8].territorial_value + ::move[v8].strategical_value; 
+                   ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:4456:8: error: expected expression
+v212 = ::move[v8].maxpos_shape - ::move[v8].maxneg_shape; 
+       ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:4459:20: error: expected expression
+*( float *)&v250 = ::move[v8].maxpos_shape - ::move[v8].maxneg_shape; 
+                   ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:4467:16: error: expected expression
+numpos_shape = ::move[v8].numpos_shape; 
+               ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:4470:16: error: expected expression
+numneg_shape = ::move[v8].numneg_shape; 
+               ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:4480:18: error: expected expression
+followup_value = ::move[v8].followup_value; 
+                 ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:4483:1: error: expected expression
+::move[v8].additional_ko_value = ( float)( fminf( followup_value, ::move[v8].reverse_followup_value) + followup_value) 
+^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:4488:28: error: expected expression
+influence_followup_value = ::move[v8].influence_followup_value; 
+                           ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:4504:26: error: expected expression
+reverse_followup_value = ::move[v8].reverse_followup_value; 
+                         ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:4515:5: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v262.m128_f32[0] = v216 + v224; 
+~~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:4521:12: error: member reference base type '__m128' (vector of 4 'float' values) is not a structure or union
+v225 = v262.m128_f32[0]; 
+       ~~~~^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:4525:26: error: expected expression
+reverse_followup_value = ::move[v8].reverse_followup_value; 
+                         ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:4532:43: error: expected expression
+v223 = ( float)( reverse_followup_value + ::move[v8].followup_value) * v217; 
+                                          ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:4534:1: error: expected expression
+::move[v8].additional_ko_value = v223; 
+^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:4536:19: error: expected expression
+secondary_value = ::move[v8].secondary_value; 
+                  ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:4547:24: error: expected expression
+if ( ( ( int)( *v226 + ::move[v8].numneg_shape) < 0) ^ __OFADD__( *v226, ::move[v8].numneg_shape) | ( *v226 + ::move[v8].numneg_shape == 0) ) 
+                       ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:4547:56: error: use of undeclared identifier 'invalid_operation'
+if ( ( ( int)( *v226 + ::move[v8].numneg_shape) < 0) ^ __OFADD__( *v226, ::move[v8].numneg_shape) | ( *v226 + ::move[v8].numneg_shape == 0) ) 
+                                                       ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:2655:25: note: expanded from macro '__OFADD__'
+#define __OFADD__(x, y) invalid_operation // Generate overflow flag for (x+y)
+                        ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:4547:111: error: expected expression
+if ( ( ( int)( *v226 + ::move[v8].numneg_shape) < 0) ^ __OFADD__( *v226, ::move[v8].numneg_shape) | ( *v226 + ::move[v8].numneg_shape == 0) ) 
+                                                                                                              ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:4560:1: error: expected expression
+::move[v8].maxpos_shape, 
+^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:4562:1: error: expected expression
+::move[v8].maxneg_shape, 
+^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:4563:16: error: expected expression
+( unsigned int)::move[v8].numneg_shape, 
+               ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:4570:27: error: use of undeclared identifier 'invalid_operation'
+if ( ( v231 + v232 < 0) ^ __OFADD__( v231, v232) | ( v231 + v232 == 0) ) 
+                          ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:2655:25: note: expanded from macro '__OFADD__'
+#define __OFADD__(x, y) invalid_operation // Generate overflow flag for (x+y)
+                        ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:4594:36: error: expected expression
+if ( v258 > 0.0 && v258 >= v216 && ::move[v8].worthwhile_threat && !board[v8] && ::move[v8].additional_ko_value > 0.0 ) 
+                                   ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:4604:8: error: expected expression
+v243 = ::move[v8].additional_ko_value * 0.25 + *( float *)value; 
+       ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:4625:13: error: expected expression
+min_value = ::move[v8].min_value; 
+            ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:4627:13: error: expected expression
+max_value = ::move[v8].max_value; 
+            ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:4636:1: error: expected expression
+::move[v8].min_value = min_value; 
+^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:4667:18: error: expected expression
+|| ( max_value = ::move[v8].territorial_value, max_value > 0.0) 
+                 ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:4668:23: error: expected expression
+|| ( max_value = 0.0, ::move[v8].strategical_value > 0.0) ) 
+                      ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:4672:34: error: too many arguments to function call, expected 2, have 3
+move_considered( pos, min_value, max_value); 
+~~~~~~~~~~~~~~~                  ^~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/liberty.h:675:1: note: 'move_considered' declared here
+void move_considered(int move, float value);
+^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:4698:33: error: too few arguments to function call, expected 5, have 4
+                                           pure_threat_value, score);
+                                                                   ^
+/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/engine/value_moves.c:2847:1: note: 'value_move_reasons' declared here
+float  value_move_reasons( int pos, int color, float a3, __m128 pure_threat_value, float score) 
+^
+108 errors generated.
+make: *** [/data/output_dir/patch/gobmk/ida/clang/O2/gobmk-clang-O2/value_move_reasons/src/obj/1/value_moves.o] Error 1

@@ -1,0 +1,32 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/ix86_attr_length_immediate_default/src/i386.c:10394:16: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+LODWORD( v3) = recog_data_0.n_operands - 1; 
+               ^~~~~~~~~~~~
+               recog_data
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/ix86_attr_length_immediate_default/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/ix86_attr_length_immediate_default/src/i386.c:10401:6: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+v6 = recog_data_0.operand[v3]; 
+     ^~~~~~~~~~~~
+     recog_data
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/ix86_attr_length_immediate_default/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/ix86_attr_length_immediate_default/src/i386.c:10421:40: error: too many arguments provided to function-like macro invocation
+fatal_insn( "unknown insn mode", insn, "i386.c", 9956, "ix86_attr_length_immediate_default"); 
+                                       ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/ix86_attr_length_immediate_default/src/toplev.h:50:9: note: macro 'fatal_insn' defined here
+#define fatal_insn(msgid, insn) \
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/ix86_attr_length_immediate_default/src/i386.c:10421:1: error: use of undeclared identifier 'fatal_insn'; did you mean '_fatal_insn'?
+fatal_insn( "unknown insn mode", insn, "i386.c", 9956, "ix86_attr_length_immediate_default"); 
+^~~~~~~~~~
+_fatal_insn
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/ix86_attr_length_immediate_default/src/toplev.h:44:13: note: '_fatal_insn' declared here
+extern void _fatal_insn                 PARAMS ((const char *,
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/ix86_attr_length_immediate_default/src/i386.c:10422:6: error: use of undeclared identifier 'CSWTCH_1591'
+v4 = CSWTCH_1591[v5]; 
+     ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/ix86_attr_length_immediate_default/src/obj/i386.o] Error 1

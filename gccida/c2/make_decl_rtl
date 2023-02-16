@@ -1,0 +1,28 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/make_decl_rtl/src/varasm.c:1305:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode supercontext_low; // r15d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/make_decl_rtl/src/varasm.c:1344:35: error: use of undeclared identifier 'machine_mode'
+*p_rtl = adjust_address_1( rtl, ( machine_mode)( unsigned __int8)supercontext, 0LL, 0, 1); 
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/make_decl_rtl/src/varasm.c:1344:50: error: expected expression
+*p_rtl = adjust_address_1( rtl, ( machine_mode)( unsigned __int8)supercontext, 0LL, 0, 1); 
+                                                 ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/make_decl_rtl/src/varasm.c:1428:36: error: use of undeclared identifier 'machine_mode'
+v30 = gen_rtx_fmt_s( SYMBOL_REF, ( machine_mode)( ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32), low); 
+                                   ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/make_decl_rtl/src/varasm.c:1489:39: error: use of undeclared identifier 'machine_mode'
+if ( !ix86_hard_regno_mode_ok( v11, ( machine_mode)v14) ) 
+                                      ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/make_decl_rtl/src/varasm.c:1503:30: error: use of undeclared identifier 'machine_mode'
+v18 = gen_rtx_fmt_i0( REG, ( machine_mode)LOBYTE( decl->block.supercontext), reg_number); 
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/make_decl_rtl/src/varasm.c:1524:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v22 = ( ( unsigned int)( mode_class_0[v20] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/make_decl_rtl/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/make_decl_rtl/src/obj/varasm.o] Error 1

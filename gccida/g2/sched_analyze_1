@@ -1,0 +1,36 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/sched_analyze_1/src/sched-deps.c:1015:24: error: unknown type name 'deps_0'
+void  sched_analyze_1( deps_0 *deps, rtx x, rtx insn) 
+                       ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/sched_analyze_1/src/sched-deps.c:1048:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v3.rtwint = ( __int64)x->fld[0]; 
+                      ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/sched_analyze_1/src/sched-deps.c:1077:38: error: use of undeclared identifier 'machine_mode'
+cselib_lookup( rtwint->fld[0].rtx, ( machine_mode)( ( ( BYTE3( target_flags) & 2) != 0) + 4), 1); 
+                                     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/sched_analyze_1/src/sched-deps.c:1087:66: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( i = deps->pending_read_mems; pending_read_insns; i = ( rtx)v23[1] ) 
+                                                                 ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/sched_analyze_1/src/sched-deps.c:1097:28: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+pending_read_insns = ( rtx)pending_read_insns[1]; 
+                           ^~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/sched_analyze_1/src/sched-deps.c:1100:68: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( j = deps->pending_write_mems; pending_write_insns; j = ( rtx)v27[1] ) 
+                                                                   ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/sched_analyze_1/src/sched-deps.c:1110:29: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+pending_write_insns = ( rtx)pending_write_insns[1]; 
+                            ^~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/sched_analyze_1/src/sched-deps.c:1112:57: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( k = deps->last_pending_memory_flush; k; k = ( rtx)k[1] ) 
+                                                        ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/sched_analyze_1/src/sched-deps.c:1141:50: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( m = deps->last_function_call; m; m = ( rtx)m[1] ) 
+                                                 ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/sched_analyze_1/src/sched-deps.c:1157:23: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( ( unsigned int)( mode_class_0[v10] - 5) > 1 ) 
+                      ^~~~~~~~~~~~
+                      mode_class
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/sched_analyze_1/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+10 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/sched_analyze_1/src/obj/sched-deps.o] Error 1

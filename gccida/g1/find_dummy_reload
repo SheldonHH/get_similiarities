@@ -1,0 +1,79 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_dummy_reload/src/reload.c:2296:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode inmode, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_dummy_reload/src/reload.c:2297:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode outmode, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_dummy_reload/src/reload.c:2298:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class classa, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_dummy_reload/src/reload.c:2302:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v9; // r13d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_dummy_reload/src/reload.c:2309:4: error: expected ';' after expression
+rtx v16; // rbx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_dummy_reload/src/reload.c:2309:5: error: use of undeclared identifier 'v16'
+rtx v16; // rbx 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_dummy_reload/src/reload.c:2310:4: error: expected ';' after expression
+rtx v17; // rbp 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_dummy_reload/src/reload.c:2310:5: error: use of undeclared identifier 'v17'
+rtx v17; // rbp 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_dummy_reload/src/reload.c:2335:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class v48; // [rsp+3Ch] [rbp-3Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_dummy_reload/src/reload.c:2363:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)rtx + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_dummy_reload/src/reload.c:2365:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)v13 + 2)); 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_dummy_reload/src/reload.c:2375:1: error: use of undeclared identifier 'v16'
+v16 = real_in; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_dummy_reload/src/reload.c:2379:1: error: use of undeclared identifier 'v17'
+v17 = v16->fld[0].rtx; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_dummy_reload/src/reload.c:2379:7: error: use of undeclared identifier 'v16'; did you mean 'v19'?
+v17 = v16->fld[0].rtx; 
+      ^~~
+      v19
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_dummy_reload/src/reload.c:2312:18: note: 'v19' declared here
+ struct rtx_def *v19; // rbx 
+                 ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_dummy_reload/src/reload.c:2380:17: error: use of undeclared identifier 'v17'
+if ( *( _WORD *)v17 == 61 ) 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_dummy_reload/src/reload.c:2382:7: error: use of undeclared identifier 'v17'; did you mean 'v19'?
+v18 = v17->fld[0].rtuint; 
+      ^~~
+      v19
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_dummy_reload/src/reload.c:2312:18: note: 'v19' declared here
+ struct rtx_def *v19; // rbx 
+                 ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_dummy_reload/src/reload.c:2387:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)v17 + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_dummy_reload/src/reload.c:2387:39: error: use of undeclared identifier 'v17'
+( machine_mode)*( ( unsigned __int8 *)v17 + 2), 
+                                      ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_dummy_reload/src/reload.c:2388:14: error: use of undeclared identifier 'v16'; did you mean 'v19'?
+*( _DWORD *)&v16[1], 
+             ^~~
+             v19
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_dummy_reload/src/reload.c:2312:18: note: 'v19' declared here
+ struct rtx_def *v19; // rbx 
+                 ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/find_dummy_reload/src/obj/reload.o] Error 1

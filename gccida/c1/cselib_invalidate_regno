@@ -1,0 +1,20 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/cselib_invalidate_regno/src/cselib.c:1420:52: error: must use 'enum' tag to refer to type 'machine_mode'
+void  cselib_invalidate_regno( unsigned int regno, machine_mode mode) 
+                                                   ^
+                                                   enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/cselib_invalidate_regno/src/cselib.c:1448:25: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v3 = ( ( unsigned int)( mode_class_0[mode] - 5) < 2) + 1; 
+                        ^~~~~~~~~~~~
+                        mode_class
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/cselib_invalidate_regno/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/cselib_invalidate_regno/src/cselib.c:1484:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v12 = ( ( unsigned int)( mode_class_0[v11] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/cselib_invalidate_regno/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/cselib_invalidate_regno/src/obj/cselib.o] Error 1

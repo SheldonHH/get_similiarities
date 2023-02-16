@@ -1,0 +1,29 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/next_context/src/cppmacro.c:1344:1: error: unknown type name 'cpp_context_0'; did you mean 'cpp_context'?
+cpp_context_0 * next_context( cpp_reader_0 *pfile) 
+^~~~~~~~~~~~~
+cpp_context
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/next_context/src/cpphash.h:104:28: note: 'cpp_context' declared here
+typedef struct cpp_context cpp_context;
+                           ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/next_context/src/cppmacro.c:1344:31: error: unknown type name 'cpp_reader_0'; did you mean 'cpp_reader'?
+cpp_context_0 * next_context( cpp_reader_0 *pfile) 
+                              ^~~~~~~~~~~~
+                              cpp_reader
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/next_context/src/cpplib.h:36:27: note: 'cpp_reader' declared here
+typedef struct cpp_reader cpp_reader;
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/next_context/src/cppmacro.c:1346:1: error: unknown type name 'cpp_context_0'; did you mean 'cpp_context'?
+cpp_context_0 *result; // [rsp+0h] [rbp-10h] 
+^~~~~~~~~~~~~
+cpp_context
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/next_context/src/cpphash.h:104:28: note: 'cpp_context' declared here
+typedef struct cpp_context cpp_context;
+                           ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/next_context/src/cppmacro.c:1351:27: error: expected expression
+result = ( cpp_context_0 *)xmalloc( 0x38uLL); 
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/next_context/src/cppmacro.c:1351:12: error: use of undeclared identifier 'cpp_context_0'
+result = ( cpp_context_0 *)xmalloc( 0x38uLL); 
+           ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/next_context/src/obj/cppmacro.o] Error 1

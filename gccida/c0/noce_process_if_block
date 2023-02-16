@@ -1,0 +1,29 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/noce_process_if_block/src/ifcvt.c:2135:65: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v13 = ( unsigned __int16)**( _DWORD **)&insn_a[2] == 47 ? ( rtx)insn_a[2] : single_set_2( insn_a, *( rtx *)&insn_a[2]); 
+                                                                ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/noce_process_if_block/src/ifcvt.c:2145:25: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+a = (  struct rtx_def *)v12[1]; 
+                        ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/noce_process_if_block/src/ifcvt.c:2153:65: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v11 = ( unsigned __int16)**( _DWORD **)&insn_b[2] == 47 ? ( rtx)insn_b[2] : single_set_2( insn_b, *( rtx *)&insn_b[2]); 
+                                                                ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/noce_process_if_block/src/ifcvt.c:2173:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+: ( v9 = ( rtx)insn_b[2]), 
+               ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/noce_process_if_block/src/ifcvt.c:2186:26: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v7 = (  struct rtx_def *)set_b[1]; 
+                         ^~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/noce_process_if_block/src/ifcvt.c:2189:64: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( insn = jump; insn != if_info.cond_earliest; insn = ( rtx)insn[1] ) 
+                                                               ^~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/noce_process_if_block/src/ifcvt.c:2208:20: error: use of undeclared identifier 'machine_mode'
+x = gen_reg_rtx( ( machine_mode)( unsigned __int8)BYTE2( *rtwint)); 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/noce_process_if_block/src/ifcvt.c:2208:35: error: expected expression
+x = gen_reg_rtx( ( machine_mode)( unsigned __int8)BYTE2( *rtwint)); 
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/noce_process_if_block/src/ifcvt.c:2225:23: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+else_bba->end = ( rtx)insn_b[1]; 
+                      ^~~~~~~~~
+9 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/noce_process_if_block/src/obj/ifcvt.o] Error 1

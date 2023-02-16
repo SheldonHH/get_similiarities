@@ -1,0 +1,76 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mem_loc_descriptor/src/dwarf2out.c:8199:48: error: must use 'enum' tag to refer to type 'machine_mode'
+dw_loc_descr_ref  mem_loc_descriptor( rtx rtl, machine_mode mode) 
+                                               ^
+                                               enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mem_loc_descriptor/src/dwarf2out.c:8207:4: error: expected ';' after expression
+rtx pool_constant_mark; // rbp 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mem_loc_descriptor/src/dwarf2out.c:8207:5: error: use of undeclared identifier 'pool_constant_mark'; did you mean 'get_pool_constant_mark'?
+rtx pool_constant_mark; // rbp 
+    ^~~~~~~~~~~~~~~~~~
+    get_pool_constant_mark
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mem_loc_descriptor/src/rtl.h:1306:12: note: 'get_pool_constant_mark' declared here
+extern rtx get_pool_constant_mark       PARAMS ((rtx, bool *));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mem_loc_descriptor/src/dwarf2out.c:8208:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v9; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mem_loc_descriptor/src/dwarf2out.c:8283:1: error: use of undeclared identifier 'pool_constant_mark'
+pool_constant_mark = get_pool_constant_mark( rtx, &pmarked); 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mem_loc_descriptor/src/dwarf2out.c:8284:37: error: use of undeclared identifier 'pool_constant_mark'
+if ( ( unsigned __int16)*( _DWORD *)pool_constant_mark == 68 ) 
+                                    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mem_loc_descriptor/src/dwarf2out.c:8286:20: error: use of undeclared identifier 'pool_constant_mark'
+if ( ( *( _DWORD *)pool_constant_mark & 0x4000000) == 0 ) 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mem_loc_descriptor/src/dwarf2out.c:8288:25: error: use of undeclared identifier 'pool_constant_mark'; did you mean 'get_pool_constant_mark'?
+get_pool_constant_mark( pool_constant_mark, &pmarked); 
+                        ^~~~~~~~~~~~~~~~~~
+                        get_pool_constant_mark
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mem_loc_descriptor/src/rtl.h:1306:12: note: 'get_pool_constant_mark' declared here
+extern rtx get_pool_constant_mark       PARAMS ((rtx, bool *));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mem_loc_descriptor/src/dwarf2out.c:8289:7: error: use of undeclared identifier 'pool_constant_mark'; did you mean 'get_pool_constant_mark'?
+rtx = pool_constant_mark; 
+      ^~~~~~~~~~~~~~~~~~
+      get_pool_constant_mark
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mem_loc_descriptor/src/rtl.h:1306:12: note: 'get_pool_constant_mark' declared here
+extern rtx get_pool_constant_mark       PARAMS ((rtx, bool *));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mem_loc_descriptor/src/dwarf2out.c:8291:1: error: use of undeclared identifier 'pool_constant_mark'
+pool_constant_mark = rtx; 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mem_loc_descriptor/src/dwarf2out.c:8297:1: error: use of undeclared identifier 'pool_constant_mark'
+pool_constant_mark = rtx; 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mem_loc_descriptor/src/dwarf2out.c:8306:54: error: use of undeclared identifier 'pool_constant_mark'
+v20->dw_loc_oprnd1.v.val_offset = ( unsigned __int64)pool_constant_mark; 
+                                                     ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mem_loc_descriptor/src/dwarf2out.c:8316:40: error: use of undeclared identifier 'pool_constant_mark'
+v21->data.l[elements_used] = ( __int64)pool_constant_mark; 
+                                       ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mem_loc_descriptor/src/dwarf2out.c:8358:46: error: use of undeclared identifier 'machine_mode'
+v23 = mem_loc_descriptor( rtx->fld[0].rtx, ( machine_mode)BYTE2( v3)); 
+                                             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mem_loc_descriptor/src/dwarf2out.c:8377:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v40.rtwint = ( __int64)rtx->fld[0]; 
+                       ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mem_loc_descriptor/src/dwarf2out.c:8380:36: error: expected expression
+return mem_loc_descriptor( *( rtx *)( v40.rtwint + 8), mode); 
+                                   ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mem_loc_descriptor/src/dwarf2out.c:8385:35: error: expected expression
+v28 = mem_loc_descriptor( *( rtx *)&rtx[1], mode); 
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mem_loc_descriptor/src/dwarf2out.c:8412:17: error: invalid suffix 'xmode' on integer constant
+v9 = *(short *)0xmode; 
+                ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mem_loc_descriptor/src/dwarf2out.c:8425:13: error: expected ';' after expression
+rtx = ( rtx)rtx[1]; 
+            ^
+            ;
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mem_loc_descriptor/src/obj/dwarf2out.o] Error 1

@@ -1,0 +1,82 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emit_cmp_and_jump_insns/src/optabs.c:3819:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code comparison, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emit_cmp_and_jump_insns/src/optabs.c:3821:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emit_cmp_and_jump_insns/src/optabs.c:3839:1: error: must use 'enum' tag to refer to type 'mode_class'
+mode_class v23; // ecx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emit_cmp_and_jump_insns/src/machmode.h:52:30: note: enum 'mode_class' is hidden by a non-type declaration of 'mode_class' here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emit_cmp_and_jump_insns/src/optabs.c:3868:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v52; // r14d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emit_cmp_and_jump_insns/src/optabs.c:3873:1: error: must use 'enum' tag to refer to type 'insn_code'
+insn_code v57; // r13d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emit_cmp_and_jump_insns/src/optabs.c:3871:9: note: enum 'insn_code' is hidden by a non-type declaration of 'insn_code' here
+__int64 insn_code; // rbx 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emit_cmp_and_jump_insns/src/optabs.c:3874:1: error: must use 'enum' tag to refer to type 'insn_code'
+insn_code v58; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emit_cmp_and_jump_insns/src/optabs.c:3871:9: note: enum 'insn_code' is hidden by a non-type declaration of 'insn_code' here
+__int64 insn_code; // rbx 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emit_cmp_and_jump_insns/src/optabs.c:3916:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode oldmode; // [rsp+10h] [rbp-68h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emit_cmp_and_jump_insns/src/optabs.c:3918:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v103; // [rsp+28h] [rbp-50h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emit_cmp_and_jump_insns/src/optabs.c:3919:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v104; // [rsp+28h] [rbp-50h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emit_cmp_and_jump_insns/src/optabs.c:3955:20: error: use of undeclared identifier 'machine_mode'
+v11 = force_reg( ( machine_mode)v8, v11); 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emit_cmp_and_jump_insns/src/optabs.c:3963:20: error: use of undeclared identifier 'machine_mode'
+v10 = force_reg( ( machine_mode)v8, v10); 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emit_cmp_and_jump_insns/src/optabs.c:3972:20: error: use of undeclared identifier 'machine_mode'
+v11 = force_reg( ( machine_mode)v8, v11); 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emit_cmp_and_jump_insns/src/optabs.c:3977:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v16 = ( __int64)v11[1]; 
+                ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emit_cmp_and_jump_insns/src/optabs.c:3982:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v18 = ( __int64)v10[1]; 
+                ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emit_cmp_and_jump_insns/src/optabs.c:4003:40: error: use of undeclared identifier 'insn_data_0'
+LODWORD( v8) = *( ( unsigned __int16 *)insn_data_0[1203].operand + 8); 
+                                       ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emit_cmp_and_jump_insns/src/optabs.c:4004:22: error: use of undeclared identifier 'machine_mode'
+v11 = gen_reg_rtx( ( machine_mode)v8); 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emit_cmp_and_jump_insns/src/optabs.c:4017:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v22 = ( __int64)v10[1]; 
+                ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emit_cmp_and_jump_insns/src/optabs.c:4030:7: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v23 = mode_class_0[( int)v8]; 
+      ^~~~~~~~~~~~
+      mode_class
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emit_cmp_and_jump_insns/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emit_cmp_and_jump_insns/src/optabs.c:4226:12: error: invalid suffix 'xmode' on integer constant
+*(short *)0xmode, 
+           ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emit_cmp_and_jump_insns/src/obj/optabs.o] Error 1

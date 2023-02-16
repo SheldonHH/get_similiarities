@@ -1,0 +1,83 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gcse_main/src/gcse.c:1393:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v225; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gcse_main/src/gcse.c:1420:4: error: expected ';' after expression
+rtx v252; // r15 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gcse_main/src/gcse.c:1420:5: error: use of undeclared identifier 'v252'
+rtx v252; // r15 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gcse_main/src/gcse.c:1439:4: error: expected ';' after expression
+rtx v271; // [rsp+8h] [rbp-D0h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gcse_main/src/gcse.c:1439:5: error: use of undeclared identifier 'v271'
+rtx v271; // [rsp+8h] [rbp-D0h] 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gcse_main/src/gcse.c:1513:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[v202] != MODE_CC 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gcse_main/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gcse_main/src/gcse.c:1514:28: error: use of undeclared identifier 'machine_mode'
+|| ( v203 = gen_rtx_REG( ( machine_mode)v202, 58), 
+                           ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gcse_main/src/gcse.c:1517:16: error: expected expression
+recog( *( rtx *)&v205[2], v205, 0LL) >= 0) ) 
+               ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gcse_main/src/gcse.c:1533:31: error: expected expression
+reg_set_table = ( reg_set_0 **)xmalloc( v3); 
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gcse_main/src/gcse.c:1533:19: error: use of undeclared identifier 'reg_set_0'; did you mean 'reg_set_p'?
+reg_set_table = ( reg_set_0 **)xmalloc( v3); 
+                  ^~~~~~~~~
+                  reg_set_p
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gcse_main/src/rtl.h:1469:12: note: 'reg_set_p' declared here
+extern int reg_set_p                    PARAMS ((rtx, rtx));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gcse_main/src/gcse.c:1535:20: error: use of undeclared identifier 'reg_set_obstack'
+gcc_obstack_init( &reg_set_obstack); 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gcse_main/src/gcse.c:1544:22: error: expected expression
+note_stores( *( rtx *)&i[2], record_set_info, i); 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gcse_main/src/gcse.c:1620:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v48 = ( __int64)v47[2]; 
+                ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gcse_main/src/gcse.c:1853:22: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+&& ( v93 = ( __int64)v91[2], *( _WORD *)v93 == 47) 
+                     ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gcse_main/src/gcse.c:1858:28: error: expected ')'
+if ( want_to_gcse_p( ( rtx)v95) ) 
+                           ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gcse_main/src/gcse.c:1858:20: note: to match this '('
+if ( want_to_gcse_p( ( rtx)v95) ) 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gcse_main/src/gcse.c:1863:27: error: expected ')'
+v227 = hash_expr_1( ( rtx)v95, v225, do_not_record_p) % v226; 
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gcse_main/src/gcse.c:1863:19: note: to match this '('
+v227 = hash_expr_1( ( rtx)v95, v225, do_not_record_p) % v226; 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gcse_main/src/gcse.c:1872:12: error: expected ')'
+if ( ( rtx)v95 == v228->expr || v229 && expr_equiv_p( v229, ( rtx)v95) ) 
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gcse_main/src/gcse.c:1872:4: note: to match this '('
+if ( ( rtx)v95 == v228->expr || v229 && expr_equiv_p( v229, ( rtx)v95) ) 
+   ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gcse_main/src/gcse.c:1881:28: error: expected ')'
+if ( oprs_not_set_p( ( rtx)v95, v91) ) 
+                           ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gcse_main/src/gcse.c:1881:20: note: to match this '('
+if ( oprs_not_set_p( ( rtx)v95, v91) ) 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gcse_main/src/gcse.c:1901:20: error: use of undeclared identifier 'uid_cuid_1'
+if ( *( ( _DWORD *)uid_cuid_1 + v91->fld[0].rtint) >= *( ( _DWORD *)uid_cuid_1 + rtint) ) 
+                   ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gcse_main/src/obj/gcse.o] Error 1

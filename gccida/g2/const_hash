@@ -1,0 +1,12 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/const_hash/src/varasm.c:2977:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v20; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/const_hash/src/varasm.c:3044:20: error: expected expression
+v20 = ( tree_node *)j[4]; 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/const_hash/src/varasm.c:3044:9: error: use of undeclared identifier 'tree_node'
+v20 = ( tree_node *)j[4]; 
+        ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/const_hash/src/obj/varasm.o] Error 1

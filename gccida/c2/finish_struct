@@ -1,0 +1,60 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/finish_struct/src/c-decl.c:6110:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *rttree; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/finish_struct/src/c-decl.c:6114:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v27; // rdx 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/finish_struct/src/c-decl.c:6132:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v45; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/finish_struct/src/c-decl.c:6136:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v49; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/finish_struct/src/c-decl.c:6243:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v20.rtwint = ( __int64)v14[6].fld[0]; 
+                       ^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/finish_struct/src/c-decl.c:6279:29: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+|| ( v26.rtwint = ( __int64)v14->fld[0], v27 = *( tree_node **)( v26.rtwint + 128), v27 == integer_types[5]) 
+                            ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/finish_struct/src/c-decl.c:6279:63: error: expected expression
+|| ( v26.rtwint = ( __int64)v14->fld[0], v27 = *( tree_node **)( v26.rtwint + 128), v27 == integer_types[5]) 
+                                                              ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/finish_struct/src/c-decl.c:6279:51: error: use of undeclared identifier 'tree_node'
+|| ( v26.rtwint = ( __int64)v14->fld[0], v27 = *( tree_node **)( v26.rtwint + 128), v27 == integer_types[5]) 
+                                                  ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/finish_struct/src/c-decl.c:6287:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v28.rtwint = ( __int64)v14->fld[0]; 
+                       ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/finish_struct/src/c-decl.c:6305:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v38.rtwint = ( __int64)v14->fld[0]; 
+                       ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/finish_struct/src/c-decl.c:6324:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v43.rtwint = ( __int64)v14->fld[0]; 
+                       ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/finish_struct/src/c-decl.c:6325:26: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v44 = ( unsigned __int64)v14[3]; 
+                         ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/finish_struct/src/c-decl.c:6340:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v30.rtwint = ( __int64)v14->fld[0]; 
+                       ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/finish_struct/src/c-decl.c:6343:26: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v31 = ( unsigned __int64)v14[3]; 
+                         ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/finish_struct/src/c-decl.c:6362:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v34.rtwint = ( __int64)v14->fld[0]; 
+                       ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/finish_struct/src/c-decl.c:6394:22: error: expected expression
+v45 = *( tree_node **)v3; 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/finish_struct/src/c-decl.c:6394:10: error: use of undeclared identifier 'tree_node'
+v45 = *( tree_node **)v3; 
+         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/finish_struct/src/c-decl.c:6469:93: error: invalid operands to binary expression ('int' and 'struct rtx_def')
+if ( ( abstract_origin_high & 0x80000) != 0 && ( unsigned __int16)abstract_origin_high >> 9 != v51->int_cst.rtl[3] ) 
+                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^  ~~~~~~~~~~~~~~~~~~~
+18 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/finish_struct/src/obj/c-decl.o] Error 1

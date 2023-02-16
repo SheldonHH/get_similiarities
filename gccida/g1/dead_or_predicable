@@ -1,0 +1,76 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dead_or_predicable/src/ifcvt.c:2992:4: error: expected ';' after expression
+rtx v35; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dead_or_predicable/src/ifcvt.c:2992:5: error: use of undeclared identifier 'v35'
+rtx v35; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dead_or_predicable/src/ifcvt.c:3011:4: error: expected ';' after expression
+rtx earliest; // [rsp+B8h] [rbp-50h] BYREF 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dead_or_predicable/src/ifcvt.c:3011:5: error: use of undeclared identifier 'earliest'
+rtx earliest; // [rsp+B8h] [rbp-50h] BYREF 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dead_or_predicable/src/ifcvt.c:3012:4: error: expected ';' after expression
+rtx end; // [rsp+C0h] [rbp-48h] BYREF 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dead_or_predicable/src/ifcvt.c:3012:5: error: use of undeclared identifier 'end'
+rtx end; // [rsp+C0h] [rbp-48h] BYREF 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dead_or_predicable/src/ifcvt.c:3013:4: error: expected ';' after expression
+rtx head; // [rsp+C8h] [rbp-40h] BYREF 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dead_or_predicable/src/ifcvt.c:3013:5: error: use of undeclared identifier 'head'; did you mean 'read'?
+rtx head; // [rsp+C8h] [rbp-40h] BYREF 
+    ^~~~
+    read
+/usr/include/unistd.h:363:16: note: 'read' declared here
+extern ssize_t read (int __fd, void *__buf, size_t __nbytes) __wur;
+               ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dead_or_predicable/src/ifcvt.c:3017:1: error: use of undeclared identifier 'head'
+head = v8; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dead_or_predicable/src/ifcvt.c:3019:1: error: use of undeclared identifier 'end'
+end = v9; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dead_or_predicable/src/ifcvt.c:3021:1: error: use of undeclared identifier 'head'
+head = v8[1].fld[0].rtx; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dead_or_predicable/src/ifcvt.c:3022:17: error: use of undeclared identifier 'head'
+if ( *( _WORD *)head == 37 ) 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dead_or_predicable/src/ifcvt.c:3024:12: error: use of undeclared identifier 'head'; did you mean 'read'?
+if ( v9 == head ) 
+           ^~~~
+           read
+/usr/include/unistd.h:363:16: note: 'read' declared here
+extern ssize_t read (int __fd, void *__buf, size_t __nbytes) __wur;
+               ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dead_or_predicable/src/ifcvt.c:3026:1: error: use of undeclared identifier 'end'
+end = 0LL; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dead_or_predicable/src/ifcvt.c:3027:1: error: use of undeclared identifier 'head'
+head = 0LL; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dead_or_predicable/src/ifcvt.c:3030:1: error: use of undeclared identifier 'head'
+head = head[1].fld[0].rtx; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dead_or_predicable/src/ifcvt.c:3030:8: error: use of undeclared identifier 'head'
+head = head[1].fld[0].rtx; 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dead_or_predicable/src/ifcvt.c:3034:12: error: use of undeclared identifier 'head'; did you mean 'read'?
+if ( v9 != head ) 
+           ^~~~
+           read
+/usr/include/unistd.h:363:16: note: 'read' declared here
+extern ssize_t read (int __fd, void *__buf, size_t __nbytes) __wur;
+               ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dead_or_predicable/src/ifcvt.c:3036:1: error: use of undeclared identifier 'end'
+end = ( rtx)v9[1]; 
+^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/dead_or_predicable/src/obj/ifcvt.o] Error 1

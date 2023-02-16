@@ -1,0 +1,65 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_reusable_reload/src/reload.c:1182:48: error: must use 'enum' tag to refer to type 'reg_class'
+int  find_reusable_reload( rtx *p_in, rtx out, reg_class a3, reload_type type, int opnum, int dont_share) 
+                                               ^
+                                               enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_reusable_reload/src/reload.c:1182:62: error: must use 'enum' tag to refer to type 'reload_type'
+int  find_reusable_reload( rtx *p_in, rtx out, reg_class a3, reload_type type, int opnum, int dont_share) 
+                                                             ^
+                                                             enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_reusable_reload/src/reload.c:1196:1: error: must use 'enum' tag to refer to type 'reload_type'
+reload_type when_needed; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_reusable_reload/src/reload.c:1207:1: error: must use 'enum' tag to refer to type 'reload_type'
+reload_type v32; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_reusable_reload/src/reload.c:1208:4: error: expected ';' after expression
+rtx y; // [rsp+0h] [rbp-58h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_reusable_reload/src/reload.c:1208:5: error: use of undeclared identifier 'y'
+rtx y; // [rsp+0h] [rbp-58h] 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_reusable_reload/src/reload.c:1209:6: error: use of undeclared identifier 'v37'
+rtx *v37; // [rsp+10h] [rbp-48h] 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_reusable_reload/src/reload.c:1211:1: error: use of undeclared identifier 'y'
+y = *p_in; 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_reusable_reload/src/reload.c:1243:7: error: use of undeclared identifier 'y'
+if ( !y ) 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_reusable_reload/src/reload.c:1246:17: error: use of undeclared identifier 'y'
+if ( v14->in == y ) 
+                ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_reusable_reload/src/reload.c:1257:17: error: use of undeclared identifier 'y'
+if ( *( _WORD *)y != 61 || dont_share || in->fld[0].rtint != y->fld[0].rtint ) 
+                ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_reusable_reload/src/reload.c:1257:62: error: use of undeclared identifier 'y'
+if ( *( _WORD *)y != 61 || dont_share || in->fld[0].rtint != y->fld[0].rtint ) 
+                                                             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_reusable_reload/src/reload.c:1260:29: error: use of undeclared identifier 'y'
+else if ( !rtx_equal_p( in, y) || dont_share | side_effects_p( v14->in) ) 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_reusable_reload/src/reload.c:1328:7: error: use of undeclared identifier 'y'
+if ( !y ) 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_reusable_reload/src/reload.c:1331:25: error: use of undeclared identifier 'y'
+if ( !v14->in || v18 == y ) 
+                        ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_reusable_reload/src/reload.c:1335:17: error: use of undeclared identifier 'y'
+if ( *( _WORD *)y == 61 && v18->fld[0].rtint == y->fld[0].rtint ) 
+                ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_reusable_reload/src/reload.c:1335:49: error: use of undeclared identifier 'y'
+if ( *( _WORD *)y == 61 && v18->fld[0].rtint == y->fld[0].rtint ) 
+                                                ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_reusable_reload/src/reload.c:1338:29: error: use of undeclared identifier 'y'
+else if ( rtx_equal_p( v18, y) && !side_effects_p( v14->in) ) 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_reusable_reload/src/reload.c:1348:1: error: use of undeclared identifier 'v37'
+v37 = p_in; 
+^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/find_reusable_reload/src/obj/reload.o] Error 1

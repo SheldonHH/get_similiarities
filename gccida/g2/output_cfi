@@ -1,0 +1,41 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/output_cfi/src/dwarf2out.c:2165:6: error: use of undeclared identifier 'CSWTCH_604'
+v6 = CSWTCH_604[dw_cfi_opc]; 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/output_cfi/src/dwarf2out.c:2173:36: error: use of undeclared identifier 'machine_mode'
+v16 = gen_rtx_fmt_s( SYMBOL_REF, ( machine_mode)( 4 - ( ( v15 == 0) - 1)), cfi->dw_cfi_oprnd1.dw_cfi_addr); 
+                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/output_cfi/src/dwarf2out.c:2212:40: error: operand of type 'dw_cfi_oprnd' (aka 'union dw_cfi_oprnd_struct') where arithmetic or pointer type is required
+v8.dw_cfi_reg_num = ( unsigned __int64)cfi->dw_cfi_oprnd1; 
+                                       ^~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/output_cfi/src/dwarf2out.c:2219:11: error: incomplete definition of type 'struct dw_loc_descr_struct'
+dw_cfi_loc->dw_loc_addr = v10; 
+~~~~~~~~~~^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/output_cfi/src/dwarf2out.c:157:10: note: forward declaration of 'struct dw_loc_descr_struct'
+  struct dw_loc_descr_struct *dw_cfi_loc;
+         ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/output_cfi/src/dwarf2out.c:2221:24: error: incomplete definition of type 'struct dw_loc_descr_struct'
+dw_cfi_loc = dw_cfi_loc->dw_loc_next; 
+             ~~~~~~~~~~^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/output_cfi/src/dwarf2out.c:157:10: note: forward declaration of 'struct dw_loc_descr_struct'
+  struct dw_loc_descr_struct *dw_cfi_loc;
+         ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/output_cfi/src/dwarf2out.c:2232:7: error: use of undeclared identifier 'CSWTCH_607'
+v13 = CSWTCH_607[v14]; 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/output_cfi/src/dwarf2out.c:2259:30: error: use of undeclared identifier 'a'
+fancy_abort( ( const char *)&a, 1772, "output_cfi"); 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/output_cfi/src/dwarf2out.c:2773:22: error: static declaration of 'size_of_loc_descr' follows non-static declaration
+static unsigned long size_of_loc_descr  PARAMS ((dw_loc_descr_ref));
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/output_cfi/src/dwarf2out.c:2220:7: note: previous implicit declaration is here
+v11 = size_of_loc_descr( dw_cfi_loc); 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/output_cfi/src/dwarf2out.c:2775:13: error: static declaration of 'output_loc_operands' follows non-static declaration
+static void output_loc_operands         PARAMS ((dw_loc_descr_ref));
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/output_cfi/src/dwarf2out.c:2234:1: note: previous implicit declaration is here
+output_loc_operands( v8.dw_cfi_loc); 
+^
+9 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/output_cfi/src/obj/dwarf2out.o] Error 1

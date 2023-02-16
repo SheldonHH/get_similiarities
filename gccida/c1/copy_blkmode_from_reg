@@ -1,0 +1,34 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/copy_blkmode_from_reg/src/expr.c:2641:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v8; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/copy_blkmode_from_reg/src/expr.c:2647:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v14; // r14d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/copy_blkmode_from_reg/src/expr.c:2673:2: error: expected expression
+ struct op = srcreg; 
+ ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/copy_blkmode_from_reg/src/expr.c:2675:2: error: expected expression
+ struct op = convert_to_mode( *(short *)0xmode, srcreg, ( *( ( _DWORD *)&type->common + 4) >> 13) & 1); 
+ ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/copy_blkmode_from_reg/src/expr.c:2685:31: error: invalid suffix 'orce' on integer constant
+v11 = operand_sub*(short *)0xforce( 
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/copy_blkmode_from_reg/src/expr.c:2688:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)op + 2)); 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/copy_blkmode_from_reg/src/expr.c:2685:7: error: use of undeclared identifier 'operand_sub'
+v11 = operand_sub*(short *)0xforce( 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/copy_blkmode_from_reg/src/expr.c:2693:18: error: invalid suffix 'xmode' on integer constant
+v14 = *(short *)0xmode; 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/copy_blkmode_from_reg/src/expr.c:2694:65: error: invalid suffix 'xmode' on integer constant
+bit_field = extract_bit_field( v11, v6, v13, 1, 0LL, *(short *)0xmode, *(short *)0xmode, v12 + 32); 
+                                                                ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/copy_blkmode_from_reg/src/expr.c:2694:83: error: invalid suffix 'xmode' on integer constant
+bit_field = extract_bit_field( v11, v6, v13, 1, 0LL, *(short *)0xmode, *(short *)0xmode, v12 + 32); 
+                                                                                  ^
+10 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/copy_blkmode_from_reg/src/obj/expr.o] Error 1

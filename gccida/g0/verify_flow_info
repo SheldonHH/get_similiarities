@@ -1,0 +1,69 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/verify_flow_info/src/cfgrtl.c:2107:17: error: expected identifier or '('
+ struct bb_info = ( basic_block *)xcalloc( max_uid, 8uLL); 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/verify_flow_info/src/cfgrtl.c:2115:47: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( x = last_head; x && x != end; x = ( rtx)x[1] ) 
+                                              ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/verify_flow_info/src/cfgrtl.c:2136:11: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+x = ( rtx)x[1]; 
+          ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/verify_flow_info/src/cfgrtl.c:2171:54: error: too many arguments provided to function-like macro invocation
+fatal_insn( "wrong insn in the fallthru edge", insn, "cfgrtl.c", 1717, "verify_flow_info"); 
+                                                     ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/verify_flow_info/src/toplev.h:50:9: note: macro 'fatal_insn' defined here
+#define fatal_insn(msgid, insn) \
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/verify_flow_info/src/cfgrtl.c:2171:1: error: use of undeclared identifier 'fatal_insn'; did you mean '_fatal_insn'?
+fatal_insn( "wrong insn in the fallthru edge", insn, "cfgrtl.c", 1717, "verify_flow_info"); 
+^~~~~~~~~~
+_fatal_insn
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/verify_flow_info/src/toplev.h:44:13: note: '_fatal_insn' declared here
+extern void _fatal_insn                 PARAMS ((const char *,
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/verify_flow_info/src/cfgrtl.c:2251:80: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+if ( *( _WORD *)xb != 37 || xb[2].fld[0].rtint != -80 || bb_0 != ( basic_block)xb[2] ) 
+                                                                               ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/verify_flow_info/src/cfgrtl.c:2270:59: error: too many arguments provided to function-like macro invocation
+fatal_insn( "flow control insn inside a basic block", xc, "cfgrtl.c", 1829, "verify_flow_info"); 
+                                                          ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/verify_flow_info/src/toplev.h:50:9: note: macro 'fatal_insn' defined here
+#define fatal_insn(msgid, insn) \
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/verify_flow_info/src/cfgrtl.c:2270:1: error: use of undeclared identifier 'fatal_insn'; did you mean '_fatal_insn'?
+fatal_insn( "flow control insn inside a basic block", xc, "cfgrtl.c", 1829, "verify_flow_info"); 
+^~~~~~~~~~
+_fatal_insn
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/verify_flow_info/src/toplev.h:44:13: note: '_fatal_insn' declared here
+extern void _fatal_insn                 PARAMS ((const char *,
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/verify_flow_info/src/cfgrtl.c:2293:22: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+bb_1 = ( basic_block)xd[2]; 
+                     ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/verify_flow_info/src/cfgrtl.c:2310:45: error: too many arguments provided to function-like macro invocation
+fatal_insn( "insn outside basic block", xd, "cfgrtl.c", 1887, "verify_flow_info"); 
+                                            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/verify_flow_info/src/toplev.h:50:9: note: macro 'fatal_insn' defined here
+#define fatal_insn(msgid, insn) \
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/verify_flow_info/src/cfgrtl.c:2310:1: error: use of undeclared identifier 'fatal_insn'; did you mean '_fatal_insn'?
+fatal_insn( "insn outside basic block", xd, "cfgrtl.c", 1887, "verify_flow_info"); 
+^~~~~~~~~~
+_fatal_insn
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/verify_flow_info/src/toplev.h:44:13: note: '_fatal_insn' declared here
+extern void _fatal_insn                 PARAMS ((const char *,
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/verify_flow_info/src/cfgrtl.c:2326:51: error: too many arguments provided to function-like macro invocation
+fatal_insn( "return not followed by barrier", xd, "cfgrtl.c", 1895, "verify_flow_info"); 
+                                                  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/verify_flow_info/src/toplev.h:50:9: note: macro 'fatal_insn' defined here
+#define fatal_insn(msgid, insn) \
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/verify_flow_info/src/cfgrtl.c:2326:1: error: use of undeclared identifier 'fatal_insn'; did you mean '_fatal_insn'?
+fatal_insn( "return not followed by barrier", xd, "cfgrtl.c", 1895, "verify_flow_info"); 
+^~~~~~~~~~
+_fatal_insn
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/verify_flow_info/src/toplev.h:44:13: note: '_fatal_insn' declared here
+extern void _fatal_insn                 PARAMS ((const char *,
+            ^
+13 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/verify_flow_info/src/obj/cfgrtl.o] Error 1

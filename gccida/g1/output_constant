@@ -1,0 +1,16 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/output_constant/src/varasm.c:4987:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v11; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/output_constant/src/varasm.c:4992:6: error: use of undeclared identifier 'lang_hooks_0'; did you mean 'lang_hooks'?
+v4 = lang_hooks_0.expand_constant( exp); 
+     ^~~~~~~~~~~~
+     lang_hooks
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/output_constant/src/langhooks.h:168:32: note: 'lang_hooks' declared here
+extern const struct lang_hooks lang_hooks;
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/output_constant/src/varasm.c:4992:34: error: called object type '<dependent type>' is not a function or function pointer
+v4 = lang_hooks_0.expand_constant( exp); 
+                                 ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/output_constant/src/obj/varasm.o] Error 1

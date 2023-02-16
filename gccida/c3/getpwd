@@ -1,0 +1,25 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/getpwd/src/getpwd.c:536:5: error: use of undeclared identifier 'getpwd_pwd'; did you mean 'getppid'?
+p = getpwd_pwd; 
+    ^~~~~~~~~~
+    getppid
+/usr/include/unistd.h:634:16: note: 'getppid' declared here
+extern __pid_t getppid (void) __THROW;
+               ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/getpwd/src/getpwd.c:537:7: error: use of undeclared identifier 'getpwd_pwd'; did you mean 'getppid'?
+if ( !getpwd_pwd ) 
+      ^~~~~~~~~~
+      getppid
+/usr/include/unistd.h:634:16: note: 'getppid' declared here
+extern __pid_t getppid (void) __THROW;
+               ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/getpwd/src/getpwd.c:539:6: error: use of undeclared identifier 'getpwd_failure_errno'
+v1 = getpwd_failure_errno; 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/getpwd/src/getpwd.c:560:1: error: use of undeclared identifier 'getpwd_failure_errno'
+getpwd_failure_errno = e; 
+^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/getpwd/src/getpwd.c:567:1: error: use of undeclared identifier 'getpwd_pwd'
+getpwd_pwd = p; 
+^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/getpwd/src/obj/getpwd.o] Error 1

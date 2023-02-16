@@ -1,0 +1,16 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/make_preds_opaque/src/lcm.c:1423:21: error: use of undeclared identifier 'transp_0'; did you mean 'transp'?
+if ( !e->aux && ( ( transp_0[pb->index]->elms[( unsigned int)j >> 6] >> ( j & 0x3F)) & 1) != 0 ) 
+                    ^~~~~~~~
+                    transp
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/make_preds_opaque/src/lcm.c:889:17: note: 'transp' declared here
+static sbitmap *transp;
+                ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/make_preds_opaque/src/lcm.c:1425:6: error: use of undeclared identifier 'transp_0'; did you mean 'transp'?
+v2 = transp_0[pb->index]; 
+     ^~~~~~~~
+     transp
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/make_preds_opaque/src/lcm.c:889:17: note: 'transp' declared here
+static sbitmap *transp;
+                ^
+2 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/make_preds_opaque/src/obj/lcm.o] Error 1

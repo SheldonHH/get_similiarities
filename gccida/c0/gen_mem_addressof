@@ -1,0 +1,24 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_mem_addressof/src/function.c:3391:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // [rsp+34h] [rbp-3Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_mem_addressof/src/function.c:3399:21: error: use of undeclared identifier 'machine_mode'
+v3 = gen_reg_rtx( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)reg)); 
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_mem_addressof/src/function.c:3399:36: error: expected expression
+v3 = gen_reg_rtx( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)reg)); 
+                                   ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_mem_addressof/src/function.c:3441:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)reg), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_mem_addressof/src/function.c:3441:18: error: expected expression
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)reg), 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_mem_addressof/src/function.c:3449:24: error: use of undeclared identifier 'machine_mode'
+fixup_var_refs( reg, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)reg), 0, reg, 0LL); 
+                       ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_mem_addressof/src/function.c:3449:39: error: expected expression
+fixup_var_refs( reg, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)reg), 0, reg, 0LL); 
+                                      ^
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_mem_addressof/src/obj/function.o] Error 1

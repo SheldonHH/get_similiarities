@@ -1,0 +1,16 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/calculate_dominance_info/src/dominance.c:1053:59: error: must use 'enum' tag to refer to type 'cdi_direction'
+void  calculate_dominance_info( int *idom, sbitmap *doms, cdi_direction reverse) 
+                                                          ^
+                                                          enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/calculate_dominance_info/src/dominance.c:1059:1: error: must use 'enum' tag to refer to type 'cdi_direction'
+cdi_direction reversea; // [rsp+7Ch] [rbp-14h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/calculate_dominance_info/src/dominance.c:1066:17: error: expected expression
+if ( *( _OWORD *)&idom != 0LL ) 
+                ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/calculate_dominance_info/src/dominance.c:1066:9: error: use of undeclared identifier '_OWORD'
+if ( *( _OWORD *)&idom != 0LL ) 
+        ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/calculate_dominance_info/src/obj/dominance.o] Error 1

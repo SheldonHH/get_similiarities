@@ -1,0 +1,61 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/emit_conditional_move/src/optabs.c:4133:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/emit_conditional_move/src/optabs.c:4136:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode cmode, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/emit_conditional_move/src/optabs.c:4139:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/emit_conditional_move/src/optabs.c:4144:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v12; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/emit_conditional_move/src/optabs.c:4152:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v21; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/emit_conditional_move/src/optabs.c:4155:1: error: must use 'enum' tag to refer to type 'insn_code'
+insn_code icode; // [rsp+14h] [rbp-44h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/emit_conditional_move/src/optabs.c:4218:11: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+operand = insn_data_0[icode].operand; 
+          ^~~~~~~~~~~
+          insn_data
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/emit_conditional_move/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/emit_conditional_move/src/optabs.c:4220:34: error: use of undeclared identifier 'machine_mode'
+if ( !operand->predicate( v14, ( machine_mode)*( ( unsigned __int16 *)operand + 8)) ) 
+                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/emit_conditional_move/src/optabs.c:4221:28: error: use of undeclared identifier 'machine_mode'
+subtarget = gen_reg_rtx( ( machine_mode)*( ( unsigned __int16 *)operand + 8)); 
+                           ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/emit_conditional_move/src/optabs.c:4222:36: error: use of undeclared identifier 'machine_mode'
+if ( !operand[2].predicate( v15, ( machine_mode)*( ( unsigned __int16 *)&operand[2] + 8)) ) 
+                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/emit_conditional_move/src/optabs.c:4223:21: error: use of undeclared identifier 'machine_mode'
+copy_to_mode_reg( ( machine_mode)*( ( unsigned __int16 *)&operand[2] + 8), v15); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/emit_conditional_move/src/optabs.c:4224:34: error: use of undeclared identifier 'machine_mode'
+if ( !operand[3].predicate( x, ( machine_mode)*( ( unsigned __int16 *)&operand[3] + 8)) ) 
+                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/emit_conditional_move/src/optabs.c:4225:21: error: use of undeclared identifier 'machine_mode'
+copy_to_mode_reg( ( machine_mode)*( ( unsigned __int16 *)&operand[3] + 8), x); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/emit_conditional_move/src/optabs.c:4229:7: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+v18 = insn_data_0[icode].genfun( subtarget, v17); 
+      ^~~~~~~~~~~
+      insn_data
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/emit_conditional_move/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/emit_conditional_move/src/optabs.c:4229:32: error: called object type '<dependent type>' is not a function or function pointer
+v18 = insn_data_0[icode].genfun( subtarget, v17); 
+                               ^
+15 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/emit_conditional_move/src/obj/optabs.o] Error 1

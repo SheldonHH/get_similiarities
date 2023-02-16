@@ -1,0 +1,12 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/staticp/src/tree.c:2016:10: error: use of undeclared identifier 'lang_hooks_0'; did you mean 'lang_hooks'?
+result = lang_hooks_0.staticp( arg); 
+         ^~~~~~~~~~~~
+         lang_hooks
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/staticp/src/langhooks.h:168:32: note: 'lang_hooks' declared here
+extern const struct lang_hooks lang_hooks;
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/staticp/src/tree.c:2016:30: error: called object type '<dependent type>' is not a function or function pointer
+result = lang_hooks_0.staticp( arg); 
+                             ^
+2 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/staticp/src/obj/tree.o] Error 1

@@ -1,0 +1,70 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/rtx_renumbered_equal_p/src/jump.c:2689:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v6; // ecx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/rtx_renumbered_equal_p/src/jump.c:2698:4: error: expected ';' after expression
+rtx real_insn; // rbx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/rtx_renumbered_equal_p/src/jump.c:2698:5: error: use of undeclared identifier 'real_insn'; did you mean 'next_insn'?
+rtx real_insn; // rbx 
+    ^~~~~~~~~
+    next_insn
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/rtx_renumbered_equal_p/src/rtl.h:1347:12: note: 'next_insn' declared here
+extern rtx next_insn                    PARAMS ((rtx));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/rtx_renumbered_equal_p/src/jump.c:2755:1: error: use of undeclared identifier 'real_insn'
+real_insn = next_real_insn( rtx); 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/rtx_renumbered_equal_p/src/jump.c:2756:16: error: use of undeclared identifier 'real_insn'; did you mean 'next_insn'?
+LODWORD( v8) = real_insn == next_real_insn( y->fld[0].rtx); 
+               ^~~~~~~~~
+               next_insn
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/rtx_renumbered_equal_p/src/rtl.h:1347:12: note: 'next_insn' declared here
+extern rtx next_insn                    PARAMS ((rtx));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/rtx_renumbered_equal_p/src/jump.c:2791:41: error: expected expression
+if ( !rtx_renumbered_equal_p( *( ( rtx *)x + v25), *( ( rtx *)y + v25)) ) 
+                                        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/rtx_renumbered_equal_p/src/jump.c:2791:62: error: expected expression
+if ( !rtx_renumbered_equal_p( *( ( rtx *)x + v25), *( ( rtx *)y + v25)) ) 
+                                                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/rtx_renumbered_equal_p/src/jump.c:2816:9: error: expected expression
+*( rtx *)( *( ( _QWORD *)x + v25) + 8 * v28), 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/rtx_renumbered_equal_p/src/jump.c:2817:9: error: expected expression
+*( rtx *)( *( ( _QWORD *)y + v25) + 8 * v28)); 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/rtx_renumbered_equal_p/src/jump.c:2831:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v21 = (  struct rtx_def *)x[1]; 
+                          ^~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/rtx_renumbered_equal_p/src/jump.c:2832:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v22 = (  struct rtx_def *)y[1]; 
+                          ^~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/rtx_renumbered_equal_p/src/jump.c:2842:39: error: expected expression
+v19 = rtx_renumbered_equal_p( *( rtx *)&x[1], *( rtx *)&y[1]); 
+                                      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/rtx_renumbered_equal_p/src/jump.c:2842:55: error: expected expression
+v19 = rtx_renumbered_equal_p( *( rtx *)&x[1], *( rtx *)&y[1]); 
+                                                      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/rtx_renumbered_equal_p/src/jump.c:2847:54: error: expected expression
+v20 = rtx_renumbered_equal_p( x->fld[0].rtx, *( rtx *)&y[1]); 
+                                                     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/rtx_renumbered_equal_p/src/jump.c:2851:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v21 = (  struct rtx_def *)x[1]; 
+                          ^~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/rtx_renumbered_equal_p/src/jump.c:2865:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v9.rtwint = ( __int64)x->fld[0]; 
+                      ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/rtx_renumbered_equal_p/src/jump.c:2867:22: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v11 = ( unsigned int)x[1]; 
+                     ^~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/rtx_renumbered_equal_p/src/jump.c:2871:45: error: use of undeclared identifier 'machine_mode'
+LODWORD( v10) = subreg_regno_offset( v12, ( machine_mode)*( unsigned __int8 *)( v9.rtwint + 2), v11, v6); 
+                                            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/rtx_renumbered_equal_p/src/jump.c:2883:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v16.rtwint = ( __int64)y->fld[0]; 
+                       ^~~~~~~~~
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/rtx_renumbered_equal_p/src/obj/jump.o] Error 1

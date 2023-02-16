@@ -1,0 +1,16 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/build1/src/tree.c:2943:15: error: must use 'enum' tag to refer to type 'tree_code'
+tree  build1( tree_code code, tree type, tree node) 
+              ^
+              enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/build1/src/tree.c:2945:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v4; // rbx 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/build1/src/tree.c:2948:19: error: expected expression
+v4 = ( tree_node *)ggc_alloc( 0x28uLL); 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/build1/src/tree.c:2948:8: error: use of undeclared identifier 'tree_node'
+v4 = ( tree_node *)ggc_alloc( 0x28uLL); 
+       ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/build1/src/obj/tree.o] Error 1

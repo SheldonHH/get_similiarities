@@ -1,0 +1,74 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emit_no_conflict_block/src/optabs.c:3188:4: error: expected ';' after expression
+rtx v10; // r15 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emit_no_conflict_block/src/optabs.c:3188:5: error: use of undeclared identifier 'v10'
+rtx v10; // r15 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emit_no_conflict_block/src/optabs.c:3198:4: error: expected ';' after expression
+rtx last_insn; // r15 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emit_no_conflict_block/src/optabs.c:3198:5: error: use of undeclared identifier 'last_insn'
+rtx last_insn; // r15 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emit_no_conflict_block/src/optabs.c:3201:4: error: expected ';' after expression
+rtx v24; // rbx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emit_no_conflict_block/src/optabs.c:3201:5: error: use of undeclared identifier 'v24'
+rtx v24; // rbx 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emit_no_conflict_block/src/optabs.c:3206:4: error: expected ';' after expression
+rtx v29; // rbp 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emit_no_conflict_block/src/optabs.c:3206:5: error: use of undeclared identifier 'v29'
+rtx v29; // rbp 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emit_no_conflict_block/src/optabs.c:3223:1: error: use of undeclared identifier 'v10'
+v10 = insns; 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emit_no_conflict_block/src/optabs.c:3228:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v12.rtwint = ( __int64)rtwint[1].fld[0]; 
+                       ^~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emit_no_conflict_block/src/optabs.c:3235:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v15 = ( __int64)rtwint[2]; 
+                ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emit_no_conflict_block/src/optabs.c:3253:43: error: expected expression
+if ( !reg_overlap_mentioned_p( x, *( rtx *)( v15 + 8)) ) 
+                                          ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emit_no_conflict_block/src/optabs.c:3255:7: error: use of undeclared identifier 'v10'; did you mean 'v19'?
+v11 = v10; 
+      ^~~
+      v19
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emit_no_conflict_block/src/optabs.c:3197:9: note: 'v19' declared here
+__int64 v19; // rsi 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emit_no_conflict_block/src/optabs.c:3256:16: error: expected ';' after expression
+rtwint = ( rtx)v12.rtwint; 
+               ^
+               ;
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emit_no_conflict_block/src/optabs.c:3260:19: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v16 = ( rtunion *)rtwint[1]; 
+                  ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emit_no_conflict_block/src/optabs.c:3265:7: error: use of undeclared identifier 'v10'; did you mean 'v19'?
+v11 = v10; 
+      ^~~
+      v19
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emit_no_conflict_block/src/optabs.c:3197:9: note: 'v19' declared here
+__int64 v19; // rsi 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emit_no_conflict_block/src/optabs.c:3268:32: error: assigning to 'uint64' (aka 'unsigned long long') from incompatible type 'struct rtx_def'
+*( _QWORD *)( v12.rtwint + 16) = rtwint[1]; 
+                               ^ ~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emit_no_conflict_block/src/optabs.c:3270:1: error: use of undeclared identifier 'v10'
+v10 = v11; 
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emit_no_conflict_block/src/optabs.c:3271:16: error: expected ';' after expression
+rtwint = ( rtx)v12.rtwint; 
+               ^
+               ;
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emit_no_conflict_block/src/obj/optabs.o] Error 1

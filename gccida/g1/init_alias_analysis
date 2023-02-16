@@ -1,0 +1,63 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_alias_analysis/src/alias.c:2945:6: error: use of undeclared identifier 'v24'
+rtx *v24; // rbp 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_alias_analysis/src/alias.c:2950:6: error: use of undeclared identifier 'v29'
+rtx *v29; // rsi 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_alias_analysis/src/alias.c:2953:4: error: expected ';' after expression
+rtx v32; // rdx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_alias_analysis/src/alias.c:2953:5: error: use of undeclared identifier 'v32'
+rtx v32; // rdx 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_alias_analysis/src/alias.c:2956:4: error: expected ';' after expression
+rtx src; // [rsp+8h] [rbp-40h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_alias_analysis/src/alias.c:2956:5: error: use of undeclared identifier 'src'
+rtx src; // [rsp+8h] [rbp-40h] 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_alias_analysis/src/alias.c:2960:26: error: expected expression
+reg_known_value = ( rtx *)( ( char *)xcalloc( v0 - 53, 8uLL) - 424); 
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_alias_analysis/src/alias.c:2963:25: error: expected expression
+reg_base_value = ( rtx *)xcalloc( ( unsigned int)( 2 * v0), 8uLL); 
+                        ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_alias_analysis/src/alias.c:2965:29: error: expected expression
+new_reg_base_value = ( rtx *)xmalloc( 8LL * ( unsigned int)reg_base_value_size); 
+                            ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_alias_analysis/src/alias.c:2969:26: error: expected expression
+alias_invariant = ( rtx *)xrealloc( alias_invariant, 8LL * ( unsigned int)reg_base_value_size); 
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_alias_analysis/src/alias.c:2985:21: error: use of undeclared identifier 'machine_mode'
+v4 = gen_rtx_REG( ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), i); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_alias_analysis/src/alias.c:2991:35: error: use of undeclared identifier 'machine_mode'
+v6[7] = gen_rtx_fmt_e( ADDRESS, ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), global_rtl[2]); 
+                                  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_alias_analysis/src/alias.c:2993:36: error: use of undeclared identifier 'machine_mode'
+v7[16] = gen_rtx_fmt_e( ADDRESS, ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), global_rtl[5]); 
+                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_alias_analysis/src/alias.c:2995:36: error: use of undeclared identifier 'machine_mode'
+v8[20] = gen_rtx_fmt_e( ADDRESS, ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), global_rtl[3]); 
+                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_alias_analysis/src/alias.c:2997:35: error: use of undeclared identifier 'machine_mode'
+v9[6] = gen_rtx_fmt_e( ADDRESS, ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), global_rtl[4]); 
+                                  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_alias_analysis/src/alias.c:3012:21: error: expected expression
+record_set( *( rtx *)( *( _QWORD *)&insns[2] + 8LL), 0LL, 0LL); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_alias_analysis/src/alias.c:3014:22: error: expected expression
+note_stores( *( rtx *)&insns[2], record_set, 0LL); 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_alias_analysis/src/alias.c:3017:13: error: expected ';' after expression
+v14 = ( rtx)insns[2]; 
+            ^
+            ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_alias_analysis/src/alias.c:3018:67: error: expected expression
+if ( *( _WORD *)v14 == 47 || ( v14 = single_set_2( insns, *( rtx *)&insns[2])) != 0LL ) 
+                                                                  ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/init_alias_analysis/src/obj/alias.o] Error 1

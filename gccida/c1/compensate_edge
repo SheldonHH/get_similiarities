@@ -1,0 +1,42 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compensate_edge/src/reg-stack.c:2967:18: error: expected expression
+v16 = *( _OWORD *)( aux + 24); 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compensate_edge/src/reg-stack.c:2967:10: error: use of undeclared identifier '_OWORD'
+v16 = *( _OWORD *)( aux + 24); 
+         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compensate_edge/src/reg-stack.c:2980:17: error: expected identifier or '('
+ struct reg_set = v5->reg_set; 
+                ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compensate_edge/src/reg-stack.c:2996:12: error: expected expression
+*( _OWORD *)&old.top = v16; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compensate_edge/src/reg-stack.c:2996:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&old.top = v16; 
+   ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compensate_edge/src/reg-stack.c:3054:12: error: expected expression
+*( _OWORD *)&old.top = v16; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compensate_edge/src/reg-stack.c:3054:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&old.top = v16; 
+   ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compensate_edge/src/reg-stack.c:3055:37: error: use of undeclared identifier 'emit_where'; did you mean 'emit_note'?
+change_stack( src->end, &old, v5, ( emit_where)( *( _WORD *)src->end == 33)); 
+                                    ^~~~~~~~~~
+                                    emit_note
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compensate_edge/src/rtl.h:1343:12: note: 'emit_note' declared here
+extern rtx emit_note                    PARAMS ((const char *, int));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compensate_edge/src/reg-stack.c:3055:75: error: too few arguments to function call, expected 2, have 1
+change_stack( src->end, &old, v5, ( emit_where)( *( _WORD *)src->end == 33)); 
+                                  ~~~~~~~~~~~~~                           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compensate_edge/src/rtl.h:1343:1: note: 'emit_note' declared here
+extern rtx emit_note                    PARAMS ((const char *, int));
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compensate_edge/src/reg-stack.c:3063:12: error: expected expression
+*( _OWORD *)&old.top = v16; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compensate_edge/src/reg-stack.c:3063:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&old.top = v16; 
+   ^
+11 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/compensate_edge/src/obj/reg-stack.o] Error 1

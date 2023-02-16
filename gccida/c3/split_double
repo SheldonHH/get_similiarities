@@ -1,0 +1,16 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/split_double/src/final.c:4134:1: error: must use 'union' tag to refer to type 'real_extract'
+real_extract u; // [rsp+28h] [rbp-88h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/split_double/src/final.c:4191:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& mode_class_0[( unsigned __int8)BYTE2( *( _DWORD *)valuea)] != MODE_INT ) 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/split_double/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/split_double/src/final.c:4194:22: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+u.d.r[2] = ( __int64)valuea[2]; 
+                     ^~~~~~~~~
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/split_double/src/obj/final.o] Error 1

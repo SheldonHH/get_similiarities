@@ -1,0 +1,74 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/save_call_clobbered_regs/src/caller-save.c:823:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v6; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/save_call_clobbered_regs/src/caller-save.c:829:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode save_mode[53]; // [rsp+10h] [rbp-140h] BYREF 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/save_call_clobbered_regs/src/caller-save.c:830:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // [rsp+F0h] [rbp-60h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/save_call_clobbered_regs/src/caller-save.c:835:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code; // [rsp+114h] [rbp-3Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/save_call_clobbered_regs/src/caller-save.c:839:20: error: expected identifier or '('
+unsigned __int64 *(short *)0x; // [rsp+128h] [rbp-28h] 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/save_call_clobbered_regs/src/caller-save.c:839:20: error: expected ')'
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/save_call_clobbered_regs/src/caller-save.c:839:19: note: to match this '('
+unsigned __int64 *(short *)0x; // [rsp+128h] [rbp-28h] 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/save_call_clobbered_regs/src/caller-save.c:840:16: error: expected identifier or '('
+unsigned int *(short *)0xnum_; // [rsp+130h] [rbp-20h] 
+               ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/save_call_clobbered_regs/src/caller-save.c:840:16: error: expected ')'
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/save_call_clobbered_regs/src/caller-save.c:840:15: note: to match this '('
+unsigned int *(short *)0xnum_; // [rsp+130h] [rbp-20h] 
+              ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/save_call_clobbered_regs/src/caller-save.c:897:12: error: invalid suffix 'xnum_' on integer constant
+*(short *)0xnum_ = 0; 
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/save_call_clobbered_regs/src/caller-save.c:903:12: error: invalid suffix 'xnum_' on integer constant
+*(short *)0xnum_ = 0; 
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/save_call_clobbered_regs/src/caller-save.c:907:20: error: invalid suffix 'xnum_' on integer constant
+while ( *(short *)0xnum_ <= 1 ) 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/save_call_clobbered_regs/src/caller-save.c:909:12: error: invalid suffix 'x' on integer constant
+*(short *)0x = ptr_->bits[*(short *)0xnum_]; 
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/save_call_clobbered_regs/src/caller-save.c:909:38: error: invalid suffix 'xnum_' on integer constant
+*(short *)0x = ptr_->bits[*(short *)0xnum_]; 
+                                     ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/save_call_clobbered_regs/src/caller-save.c:910:17: error: invalid suffix 'x' on integer constant
+if ( *(short *)0x ) 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/save_call_clobbered_regs/src/caller-save.c:915:40: error: invalid suffix 'x' on integer constant
+if ( ( ( 1LL << bit_num_) & *(short *)0x) != 0 ) 
+                                       ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/save_call_clobbered_regs/src/caller-save.c:917:12: error: invalid suffix 'x' on integer constant
+*(short *)0x &= ~mask_; 
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/save_call_clobbered_regs/src/caller-save.c:918:43: error: invalid suffix 'xnum_' on integer constant
+regno_0 = ( ( 2 * ptr_->indx + *(short *)0xnum_) << 6) + bit_num_; 
+                                          ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/save_call_clobbered_regs/src/caller-save.c:952:11: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+else if ( mode_class_0[*( ( unsigned __int8 *)cfun->emit->x_regno_reg_rtx[regno_0] + 2)] == MODE_COMPLEX_INT 
+          ^~~~~~~~~~~~
+          mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/save_call_clobbered_regs/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/save_call_clobbered_regs/src/caller-save.c:953:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| mode_class_0[*( ( unsigned __int8 *)cfun->emit->x_regno_reg_rtx[regno_0] + 2)] == MODE_COMPLEX_FLOAT ) 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/save_call_clobbered_regs/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/save_call_clobbered_regs/src/obj/caller-save.o] Error 1

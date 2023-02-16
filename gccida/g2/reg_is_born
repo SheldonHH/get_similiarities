@@ -1,0 +1,56 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/reg_is_born/src/local-alloc.c:2545:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v7; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/reg_is_born/src/local-alloc.c:2553:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class v15; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/reg_is_born/src/local-alloc.c:2570:21: error: use of undeclared identifier 'machine_mode'
+mark_life( rtint, ( machine_mode)*( ( unsigned __int8 *)reg + 2), 1); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/reg_is_born/src/local-alloc.c:2572:41: error: use of undeclared identifier 'machine_mode'
+post_mark_life( ( unsigned int)rtint, ( machine_mode)*( ( unsigned __int8 *)reg + 2), birth, 2 * this_insn_number, v6); 
+                                        ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/reg_is_born/src/local-alloc.c:2585:6: error: use of undeclared identifier 'qty_0'
+v8 = qty_0; 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/reg_is_born/src/local-alloc.c:2587:7: error: use of undeclared identifier 'next_qty_0'; did you mean 'next_qty'?
+v10 = next_qty_0; 
+      ^~~~~~~~~~
+      next_qty
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/reg_is_born/src/local-alloc.c:81:12: note: 'next_qty' declared here
+static int next_qty;
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/reg_is_born/src/local-alloc.c:2589:7: error: use of undeclared identifier 'next_qty_0'; did you mean 'next_qty'?
+*v4 = next_qty_0; 
+      ^~~~~~~~~~
+      next_qty
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/reg_is_born/src/local-alloc.c:81:12: note: 'next_qty' declared here
+static int next_qty;
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/reg_is_born/src/local-alloc.c:2590:1: error: use of undeclared identifier 'next_qty_0'; did you mean 'next_qty'?
+next_qty_0 = v10 + 1; 
+^~~~~~~~~~
+next_qty
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/reg_is_born/src/local-alloc.c:81:12: note: 'next_qty' declared here
+static int next_qty;
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/reg_is_born/src/local-alloc.c:2591:1: error: use of undeclared identifier 'reg_offset_0'; did you mean 'reg_offset'?
+reg_offset_0[rtint] = 0; 
+^~~~~~~~~~~~
+reg_offset
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/reg_is_born/src/local-alloc.c:212:14: note: 'reg_offset' declared here
+static char *reg_offset;
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/reg_is_born/src/local-alloc.c:2601:8: error: use of undeclared identifier 'qty_0'
+v14 = &qty_0[v12]; 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/reg_is_born/src/local-alloc.c:2603:8: error: use of undeclared identifier 'qty_0'
+v16 = &qty_0[v12]; 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/reg_is_born/src/local-alloc.c:2612:1: error: use of undeclared identifier 'qty_0'
+qty_0[v5].death = -1; 
+^
+12 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/reg_is_born/src/obj/local-alloc.o] Error 1

@@ -1,0 +1,49 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/invalidate/src/cse.c:2303:26: error: must use 'enum' tag to refer to type 'machine_mode'
+void  invalidate( rtx x, machine_mode full_mode) 
+                         ^
+                         enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/invalidate/src/cse.c:2308:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v6; // r14d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/invalidate/src/cse.c:2337:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode data; // [rsp+8h] [rbp-40h] BYREF 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/invalidate/src/cse.c:2382:55: error: expected ')'
+if ( rtuint != cached_regno || (  struct cse_reg_info = cached_cse_reg_info) == 0LL ) 
+                                                      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/invalidate/src/cse.c:2382:32: note: to match this '('
+if ( rtuint != cached_regno || (  struct cse_reg_info = cached_cse_reg_info) == 0LL ) 
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/invalidate/src/cse.c:2382:78: error: expected expression
+if ( rtuint != cached_regno || (  struct cse_reg_info = cached_cse_reg_info) == 0LL ) 
+                                                                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/invalidate/src/cse.c:2383:2: error: expected expression
+ struct cse_reg_info = get_cse_reg_info( rtuint); 
+ ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/invalidate/src/cse.c:2388:33: error: use of undeclared identifier 'machine_mode'
+LOBYTE( v14) = canon_hash( x, ( machine_mode)BYTE2( v3)); 
+                                ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/invalidate/src/cse.c:2398:34: error: use of undeclared identifier 'machine_mode'
+v17 = lookup_for_remove( x, i, ( machine_mode)*( ( unsigned __int8 *)x + 2)); 
+                                 ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/invalidate/src/cse.c:2408:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v20 = ( ( unsigned int)( mode_class_0[v19] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/invalidate/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/invalidate/src/cse.c:2462:35: error: must use 'enum' tag to refer to type 'mode_class'
+v34 = ( ( unsigned int)( *( const mode_class *)( ( char *)mode_class_0 
+                                  ^
+                                  enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/invalidate/src/machmode.h:52:30: note: enum 'mode_class' is hidden by a non-type declaration of 'mode_class' here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/invalidate/src/cse.c:2462:59: error: use of undeclared identifier 'mode_class_0'
+v34 = ( ( unsigned int)( *( const mode_class *)( ( char *)mode_class_0 
+                                                          ^
+11 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/invalidate/src/obj/cse.o] Error 1

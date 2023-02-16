@@ -1,0 +1,77 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/purge_addressof/src/function.c:3896:4: error: expected ';' after expression
+rtx note; // [rsp+8h] [rbp-90h] BYREF 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/purge_addressof/src/function.c:3896:5: error: use of undeclared identifier 'note'; did you mean 'none'?
+rtx note; // [rsp+8h] [rbp-90h] BYREF 
+    ^~~~
+    none
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/purge_addressof/src/expr.h:119:17: note: 'none' declared here
+enum direction {none, upward, downward};  /* Value has this type.  */
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/purge_addressof/src/function.c:3897:1: error: unknown type name 'hash_table_0'; did you mean 'hash_table'?
+hash_table_0 v6; // [rsp+10h] [rbp-88h] BYREF 
+^~~~~~~~~~~~
+hash_table
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/purge_addressof/src/hashtable.h:40:19: note: 'hash_table' declared here
+typedef struct ht hash_table;
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/purge_addressof/src/function.c:3908:29: error: expected expression
+v4 = asm_noperands( *( rtx *)&rtx[2]); 
+                            ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/purge_addressof/src/function.c:3909:33: error: expected expression
+if ( !purge_addressof_1( ( rtx *)&rtx[2], rtx, v4 > 0, 0, &v6) ) 
+                                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/purge_addressof/src/function.c:3911:33: error: expected expression
+if ( !purge_addressof_1( ( rtx *)rtx[3].fld, 0LL, 0, 0, &v6) ) 
+                                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/purge_addressof/src/function.c:3913:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v3.rtwint = ( __int64)rtx[3].fld[0]; 
+                      ^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/purge_addressof/src/function.c:3914:7: error: use of undeclared identifier 'note'; did you mean 'none'?
+for ( note = ( rtx)v3.rtwint; v3.rtwint; note = ( rtx)v3.rtwint ) 
+      ^~~~
+      none
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/purge_addressof/src/expr.h:119:17: note: 'none' declared here
+enum direction {none, upward, downward};  /* Value has this type.  */
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/purge_addressof/src/function.c:3914:12: error: expression is not assignable
+for ( note = ( rtx)v3.rtwint; v3.rtwint; note = ( rtx)v3.rtwint ) 
+      ~~~~ ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/purge_addressof/src/function.c:3914:42: error: use of undeclared identifier 'note'; did you mean 'none'?
+for ( note = ( rtx)v3.rtwint; v3.rtwint; note = ( rtx)v3.rtwint ) 
+                                         ^~~~
+                                         none
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/purge_addressof/src/expr.h:119:17: note: 'none' declared here
+enum direction {none, upward, downward};  /* Value has this type.  */
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/purge_addressof/src/function.c:3914:47: error: expression is not assignable
+for ( note = ( rtx)v3.rtwint; v3.rtwint; note = ( rtx)v3.rtwint ) 
+                                         ~~~~ ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/purge_addressof/src/function.c:3914:55: error: expected ')'
+for ( note = ( rtx)v3.rtwint; v3.rtwint; note = ( rtx)v3.rtwint ) 
+                                                      ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/purge_addressof/src/function.c:3914:5: note: to match this '('
+for ( note = ( rtx)v3.rtwint; v3.rtwint; note = ( rtx)v3.rtwint ) 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/purge_addressof/src/function.c:3918:21: error: use of undeclared identifier 'note'; did you mean 'nice'?
+if ( for_each_rtx( &note, is_addressof, 0LL) ) 
+                    ^~~~
+                    nice
+/usr/include/unistd.h:601:12: note: 'nice' declared here
+extern int nice (int __inc) __THROW __wur;
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/purge_addressof/src/function.c:3919:19: error: use of undeclared identifier 'note'; did you mean 'none'?
+remove_note( rtx, note); 
+                  ^~~~
+                  none
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/purge_addressof/src/expr.h:119:17: note: 'none' declared here
+enum direction {none, upward, downward};  /* Value has this type.  */
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/purge_addressof/src/function.c:3920:23: error: use of undeclared identifier 'note'; did you mean 'goto'?
+v3.rtwint = ( __int64)note[1]; 
+                      ^~~~
+                      goto
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/purge_addressof/src/function.c:3920:23: error: expected expression
+16 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/purge_addressof/src/obj/function.o] Error 1

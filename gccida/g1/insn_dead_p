@@ -1,0 +1,24 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/insn_dead_p/src/flow.c:2533:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v10.rtwint = ( __int64)x->fld[0]; 
+                       ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/insn_dead_p/src/flow.c:2534:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v11 = (  struct rtx_def *)x[1]; 
+                          ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/insn_dead_p/src/flow.c:2561:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v17.rtwint = ( __int64)mem_set_list->fld[0]; 
+                       ^~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/insn_dead_p/src/flow.c:2568:22: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+mem_set_list = ( rtx)mem_set_list[1]; 
+                     ^~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/insn_dead_p/src/flow.c:2609:23: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( ( unsigned int)( mode_class_0[*( unsigned __int8 *)( v10.rtwint + 2)] - 5) <= 1 ) 
+                      ^~~~~~~~~~~~
+                      mode_class
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/insn_dead_p/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/insn_dead_p/src/flow.c:2695:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v23.rtwint = ( __int64)x->fld[0]; 
+                       ^~~~~~~~~
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/insn_dead_p/src/obj/flow.o] Error 1

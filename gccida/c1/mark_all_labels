@@ -1,0 +1,70 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_all_labels/src/jump.c:693:4: error: expected ';' after expression
+rtx v5; // r14 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_all_labels/src/jump.c:693:5: error: use of undeclared identifier 'v5'
+rtx v5; // r14 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_all_labels/src/jump.c:694:4: error: expected ';' after expression
+rtx reg_note; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_all_labels/src/jump.c:694:5: error: must use 'enum' tag to refer to type 'reg_note'
+rtx reg_note; // rax 
+    ^
+    enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_all_labels/src/jump.c:695:4: error: expected ';' after expression
+rtx v7; // r14 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_all_labels/src/jump.c:695:5: error: use of undeclared identifier 'v7'
+rtx v7; // r14 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_all_labels/src/jump.c:696:4: error: expected ';' after expression
+rtx v8; // r15 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_all_labels/src/jump.c:696:5: error: use of undeclared identifier 'v8'
+rtx v8; // r15 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_all_labels/src/jump.c:707:44: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+if ( ( _DWORD)v2 == 34 && ( v3 = ( __int64)rtx[2], *( _WORD *)v3 == 141) ) 
+                                           ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_all_labels/src/jump.c:709:26: error: expected expression
+mark_all_labels( *( rtx *)( v3 + 8)); 
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_all_labels/src/jump.c:710:26: error: expected expression
+mark_all_labels( *( rtx *)( *( _QWORD *)&rtx[2] + 16LL)); 
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_all_labels/src/jump.c:711:26: error: expected expression
+mark_all_labels( *( rtx *)( *( _QWORD *)&rtx[2] + 24LL)); 
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_all_labels/src/jump.c:715:1: error: use of undeclared identifier 'v5'
+v5 = gen_rtx_fmt_u00( LABEL_REF, VOIDmode, v4); 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_all_labels/src/jump.c:716:18: error: use of undeclared identifier 'v5'
+mark_jump_label( v5, rtx, 0); 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_all_labels/src/jump.c:717:45: error: use of undeclared identifier 'v5'
+*( _QWORD *)( *( _QWORD *)&rtx[2] + 32LL) = v5->fld[0].rtwint; 
+                                            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_all_labels/src/jump.c:722:26: error: expected expression
+mark_jump_label( *( rtx *)&rtx[2], rtx, 0); 
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_all_labels/src/jump.c:725:1: error: must use 'enum' tag to refer to type 'reg_note'
+reg_note = find_reg_note( rtx, REG_LABEL, 0LL); 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_all_labels/src/jump.c:725:10: error: expected identifier or '('
+reg_note = find_reg_note( rtx, REG_LABEL, 0LL); 
+         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_all_labels/src/jump.c:726:6: error: use of undeclared identifier 'reg_note'; did you mean 'reg_names'?
+if ( reg_note ) 
+     ^~~~~~~~
+     reg_names
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_all_labels/src/regs.h:166:21: note: 'reg_names' declared here
+extern const char * reg_names[FIRST_PSEUDO_REGISTER];
+                    ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mark_all_labels/src/obj/jump.o] Error 1

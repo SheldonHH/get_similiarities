@@ -1,0 +1,14 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/computed_jump_p/src/rtlanal.c:3137:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v2 = ( __int64)insn[2]; 
+               ^~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/computed_jump_p/src/rtlanal.c:3140:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v3.rtwint = ( __int64)insn[3].fld[0]; 
+                      ^~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/computed_jump_p/src/rtlanal.c:3218:21: error: use of undeclared identifier 'invalid_operation'
+if ( ( i - 1 < 0) ^ __OFADD__( -1LL, i) | ( i == 1) ) 
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/computed_jump_p/src/rtlanal.c:2921:25: note: expanded from macro '__OFADD__'
+#define __OFADD__(x, y) invalid_operation // Generate overflow flag for (x+y)
+                        ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/computed_jump_p/src/obj/rtlanal.o] Error 1

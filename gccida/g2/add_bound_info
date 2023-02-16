@@ -1,0 +1,41 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/add_bound_info/src/dwarf2out.c:9547:48: error: must use 'enum' tag to refer to type 'dwarf_attribute'
+void  add_bound_info( dw_die_ref subrange_die, dwarf_attribute bound_attr, tree bound) 
+                                               ^
+                                               enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/add_bound_info/src/dwarf2out.c:9561:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *type; // rsi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/add_bound_info/src/dwarf2out.c:9580:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v37; // rsi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/add_bound_info/src/dwarf2out.c:9589:1: error: must use 'enum' tag to refer to type 'dwarf_attribute'
+dwarf_attribute dw_attr; // edx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/add_bound_info/src/dwarf2out.c:9592:1: error: must use 'enum' tag to refer to type 'dwarf_attribute'
+dwarf_attribute v49; // edx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/add_bound_info/src/dwarf2out.c:9595:1: error: must use 'enum' tag to refer to type 'dwarf_attribute'
+dwarf_attribute v52; // edx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/add_bound_info/src/dwarf2out.c:9607:36: error: member reference base type 'dw_die_ref' (aka 'struct die_struct *') is not a structure or union
+v29 = *( ( _QWORD *)&decl_die_table->die_tag + uid); 
+                     ~~~~~~~~~~~~~~^ ~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/add_bound_info/src/dwarf2out.c:9649:30: error: use of undeclared identifier 'a'
+fancy_abort( ( const char *)&a, 4588, "AT_ref"); 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/add_bound_info/src/dwarf2out.c:9755:49: error: member reference base type 'dw_die_ref' (aka 'struct die_struct *') is not a structure or union
+v11 = ( dw_die_ref)*( ( _QWORD *)&decl_die_table->die_tag + v12); 
+                                  ~~~~~~~~~~~~~~^ ~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/add_bound_info/src/dwarf2out.c:9823:59: error: member reference base type 'dw_die_ref' (aka 'struct die_struct *') is not a structure or union
+v23 = (  struct die_struct *)*( ( _QWORD *)&decl_die_table->die_tag + v22); 
+                                            ~~~~~~~~~~~~~~^ ~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/add_bound_info/src/dwarf2out.c:9870:22: error: use of undeclared identifier 'machine_mode'
+v25 = gen_rtx_MEM( ( machine_mode)*( ( unsigned __int8 *)v25 + 2), fixed); 
+                     ^
+11 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/add_bound_info/src/obj/dwarf2out.o] Error 1

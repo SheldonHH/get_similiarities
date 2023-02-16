@@ -1,0 +1,40 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/alloc_gcse_mem/src/gcse.c:1466:6: error: use of undeclared identifier 'v18'
+rtx *v18; // rbp 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/alloc_gcse_mem/src/gcse.c:1474:1: error: use of undeclared identifier 'uid_cuid_1'; did you mean 'uid_cuid'?
+uid_cuid_1 = xmalloc( v3); 
+^~~~~~~~~~
+uid_cuid
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/alloc_gcse_mem/src/gcse.c:383:13: note: 'uid_cuid' declared here
+static int *uid_cuid;
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/alloc_gcse_mem/src/gcse.c:1475:14: error: use of undeclared identifier 'uid_cuid_1'; did you mean 'uid_cuid'?
+v5 = memset( uid_cuid_1, 0, v4); 
+             ^~~~~~~~~~
+             uid_cuid
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/alloc_gcse_mem/src/gcse.c:383:13: note: 'uid_cuid' declared here
+static int *uid_cuid;
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/alloc_gcse_mem/src/gcse.c:1493:20: error: expected expression
+cuid_insn = ( rtx *)xmalloc( v10); 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/alloc_gcse_mem/src/gcse.c:1512:20: error: expected expression
+cuid_insn = ( rtx *)xmalloc( 8uLL); 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/alloc_gcse_mem/src/gcse.c:1520:26: error: expected expression
+modify_mem_list = ( rtx *)xmalloc( v16); 
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/alloc_gcse_mem/src/gcse.c:1523:14: error: expected expression
+v18 = ( rtx *)xmalloc( v17); 
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/alloc_gcse_mem/src/gcse.c:1523:1: error: use of undeclared identifier 'v18'
+v18 = ( rtx *)xmalloc( v17); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/alloc_gcse_mem/src/gcse.c:1524:25: error: use of undeclared identifier 'v18'
+canon_modify_mem_list = v18; 
+                        ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/alloc_gcse_mem/src/gcse.c:1526:9: error: use of undeclared identifier 'v18'
+memset( v18, 0, 8LL * ( int)n_basic_blocks); 
+        ^
+10 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/alloc_gcse_mem/src/obj/gcse.o] Error 1

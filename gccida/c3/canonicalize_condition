@@ -1,0 +1,87 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/canonicalize_condition/src/loop.c:9536:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v9; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/canonicalize_condition/src/loop.c:9537:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v10; // r15d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/canonicalize_condition/src/loop.c:9562:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v7.rtwint = ( __int64)cond->fld[0]; 
+                      ^~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/canonicalize_condition/src/loop.c:9563:26: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v8 = (  struct rtx_def *)cond[1]; 
+                         ^~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/canonicalize_condition/src/loop.c:9567:59: error: too many arguments to function call, expected 2, have 4
+v9 = ( unsigned int)reversed_comparison_code( cond, insn, *( __int64 *)&reverse, (  struct rtx_def *)earliest); 
+                    ~~~~~~~~~~~~~~~~~~~~~~~~              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/canonicalize_condition/src/rtl.h:1817:1: note: 'reversed_comparison_code' declared here
+extern enum rtx_code reversed_comparison_code PARAMS ((rtx, rtx));
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/canonicalize_condition/src/loop.c:9605:28: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v15 = ( unsigned __int16 *)v14[1]; 
+                           ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/canonicalize_condition/src/loop.c:9619:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[v16] != MODE_INT || ( v19 = mode_bitsize[v16], v19 > 0x40) || ( _DWORD)v19 != 1 ) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/canonicalize_condition/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/canonicalize_condition/src/loop.c:9634:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& ( mode_class_0[*( unsigned __int8 *)( v14->fld[0].rtwint + 2)] == MODE_CC) == ( mode_class_0[( _QWORD)v31] != MODE_CC) ) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/canonicalize_condition/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/canonicalize_condition/src/loop.c:9634:84: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+&& ( mode_class_0[*( unsigned __int8 *)( v14->fld[0].rtwint + 2)] == MODE_CC) == ( mode_class_0[( _QWORD)v31] != MODE_CC) ) 
+                                                                                   ^~~~~~~~~~~~
+                                                                                   mode_class
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/canonicalize_condition/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/canonicalize_condition/src/loop.c:9644:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| mode_class_0[*( unsigned __int8 *)( v14->fld[0].rtwint + 2)] != MODE_INT 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/canonicalize_condition/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/canonicalize_condition/src/loop.c:9655:16: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+LOBYTE( v21) = mode_class_0[( _QWORD)v31] != MODE_CC; 
+               ^~~~~~~~~~~~
+               mode_class
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/canonicalize_condition/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/canonicalize_condition/src/loop.c:9657:16: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+LOBYTE( v22) = mode_class_0[v22] == MODE_CC; 
+               ^~~~~~~~~~~~
+               mode_class
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/canonicalize_condition/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/canonicalize_condition/src/loop.c:9667:63: error: too many arguments to function call, expected 2, have 4
+v10 = ( unsigned int)reversed_comparison_code( ( rtx)v15, v5, v22, v21); 
+                     ~~~~~~~~~~~~~~~~~~~~~~~~                 ^~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/canonicalize_condition/src/rtl.h:1817:1: note: 'reversed_comparison_code' declared here
+extern enum rtx_code reversed_comparison_code PARAMS ((rtx, rtx));
+^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/canonicalize_condition/src/loop.c:9708:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[v26] != MODE_CC ) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/canonicalize_condition/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/canonicalize_condition/src/loop.c:9715:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[BYTE2( v23)] == MODE_CC ) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/canonicalize_condition/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+15 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/canonicalize_condition/src/obj/loop.o] Error 1

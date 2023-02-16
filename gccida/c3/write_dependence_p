@@ -1,0 +1,30 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/write_dependence_p/src/alias.c:2653:4: error: expected ';' after expression
+rtx base_term; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/write_dependence_p/src/alias.c:2653:5: error: use of undeclared identifier 'base_term'
+rtx base_term; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/write_dependence_p/src/alias.c:2675:18: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v7 = ( __int64 *)x[1]; 
+                 ^~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/write_dependence_p/src/alias.c:2679:18: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v9 = ( __int64 *)mem[1]; 
+                 ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/write_dependence_p/src/alias.c:2687:18: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v9 = ( __int64 *)mem[1]; 
+                 ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/write_dependence_p/src/alias.c:2784:6: error: use of undeclared identifier 'base_term'
+|| ( base_term = find_base_term( v18)) == 0LL 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/write_dependence_p/src/alias.c:2785:24: error: use of undeclared identifier 'base_term'
+|| ( v28 = *( _DWORD *)base_term, ( _WORD)v28 != 67) && ( ( _WORD)v28 != 68 || ( v28 & 0x4000000) == 0) ) 
+                       ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/write_dependence_p/src/alias.c:2790:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)x + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/write_dependence_p/src/alias.c:2791:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)mem + 2)) ) 
+  ^
+9 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/write_dependence_p/src/obj/alias.o] Error 1

@@ -1,0 +1,32 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/reload/src/reload1.c:1231:26: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v2 = (  struct rtx_def *)insn[2]; 
+                         ^~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/reload/src/reload1.c:1239:13: error: expected identifier or '('
+ struct set = v2; 
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/reload/src/reload1.c:1250:7: error: expected expression
+if (  struct set && *( _WORD *)set->fld[0].rtwint == 61 ) 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/reload/src/reload1.c:1306:12: error: expected expression
+else if (  struct set 
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/reload/src/reload1.c:1361:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)cfun->emit->x_regno_reg_rtx[i] + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/reload/src/reload1.c:1456:52: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( list = reg_equiv_init[i]; list; list = ( rtx)list[1] ) 
+                                                   ^~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/reload/src/reload1.c:1534:21: error: assigning to 'uint64' (aka 'unsigned long long') from incompatible type 'struct rtx_def'
+*( _QWORD *)&reg[1] = reg_equiv_memory_loc[i][1]; 
+                    ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/reload/src/reload1.c:1571:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+*pnote = ( rtx)( *pnote)[1]; 
+               ^~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/reload/src/reload1.c:1608:7: error: use of undeclared identifier 'verbose_warned_21'
+if ( !verbose_warned_21 ) 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/reload/src/reload1.c:1611:1: error: use of undeclared identifier 'verbose_warned_21'
+verbose_warned_21 = 1; 
+^
+10 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/reload/src/obj/reload1.o] Error 1

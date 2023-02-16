@@ -1,0 +1,57 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/try_replace_reg/src/gcse.c:4427:4: error: expected ';' after expression
+rtx v11; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/try_replace_reg/src/gcse.c:4427:5: error: use of undeclared identifier 'v11'; did you mean 'v10'?
+rtx v11; // rax 
+    ^~~
+    v10
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/try_replace_reg/src/gcse.c:4426:18: note: 'v10' declared here
+ struct rtx_def *v10; // rax 
+                 ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/try_replace_reg/src/gcse.c:4441:12: error: expected ';' after expression
+v7 = ( rtx)insn[2]; 
+           ^
+           ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/try_replace_reg/src/gcse.c:4443:34: error: expected expression
+v7 = single_set_2( insn, *( rtx *)&insn[2]); 
+                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/try_replace_reg/src/gcse.c:4458:36: error: expected expression
+v8 = simplify_replace_rtx( *( rtx *)&v7[1], from, to); 
+                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/try_replace_reg/src/gcse.c:4459:32: error: expected expression
+if ( !rtx_equal_p( v8, *( rtx *)&v7[1]) && validate_change( insn, ( rtx *)&v7[1], v8, 0) ) 
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/try_replace_reg/src/gcse.c:4459:74: error: expected expression
+if ( !rtx_equal_p( v8, *( rtx *)&v7[1]) && validate_change( insn, ( rtx *)&v7[1], v8, 0) ) 
+                                                                         ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/try_replace_reg/src/gcse.c:4473:1: error: use of undeclared identifier 'v11'; did you mean 'v10'?
+v11 = set_unique_reg_note( insn, REG_EQUAL, v10); 
+^~~
+v10
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/try_replace_reg/src/gcse.c:4426:18: note: 'v10' declared here
+ struct rtx_def *v10; // rax 
+                 ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/try_replace_reg/src/gcse.c:4474:24: error: use of undeclared identifier 'v11'; did you mean 'v10'?
+reg_equal_equiv_note = v11; 
+                       ^~~
+                       v10
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/try_replace_reg/src/gcse.c:4426:18: note: 'v10' declared here
+ struct rtx_def *v10; // rax 
+                 ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/try_replace_reg/src/gcse.c:4475:7: error: use of undeclared identifier 'v11'; did you mean 'v10'?
+if ( !v11 ) 
+      ^~~
+      v10
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/try_replace_reg/src/gcse.c:4426:18: note: 'v10' declared here
+ struct rtx_def *v10; // rax 
+                 ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/try_replace_reg/src/gcse.c:4477:7: error: use of undeclared identifier 'v11'; did you mean 'v10'?
+rtx = v11->fld[0].rtx; 
+      ^~~
+      v10
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/try_replace_reg/src/gcse.c:4426:18: note: 'v10' declared here
+ struct rtx_def *v10; // rax 
+                 ^
+11 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/try_replace_reg/src/obj/gcse.o] Error 1

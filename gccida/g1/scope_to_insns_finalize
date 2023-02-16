@@ -1,0 +1,18 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/scope_to_insns_finalize/src/cfglayout.c:756:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *initial; // r12 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/scope_to_insns_finalize/src/cfglayout.c:770:19: error: expected expression
+if ( ( tree_node *)v4 != initial ) 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/scope_to_insns_finalize/src/cfglayout.c:770:8: error: use of undeclared identifier 'tree_node'
+if ( ( tree_node *)v4 != initial ) 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/scope_to_insns_finalize/src/cfglayout.c:775:24: error: expected expression
+initial = ( tree_node *)v4; 
+                       ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/scope_to_insns_finalize/src/cfglayout.c:775:13: error: use of undeclared identifier 'tree_node'
+initial = ( tree_node *)v4; 
+            ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/scope_to_insns_finalize/src/obj/cfglayout.o] Error 1

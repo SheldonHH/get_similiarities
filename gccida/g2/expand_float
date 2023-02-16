@@ -1,0 +1,72 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_float/src/optabs.c:4551:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v5; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_float/src/optabs.c:4553:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v7; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_float/src/optabs.c:4567:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v21; // r13d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_float/src/optabs.c:4581:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v35; // r10d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_float/src/optabs.c:4583:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v37; // r13d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_float/src/optabs.c:4589:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode neglabel; // [rsp+10h] [rbp-68h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_float/src/optabs.c:4590:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode neglabela; // [rsp+10h] [rbp-68h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_float/src/optabs.c:4593:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode tob; // [rsp+18h] [rbp-60h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_float/src/optabs.c:4594:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode toc; // [rsp+18h] [rbp-60h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_float/src/optabs.c:4652:33: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+emit_unop_insn( v11, v3, v13, ( rtx_code)( v12 == 0 ? FLOAT : UNSIGNED_FLOAT)); 
+                                ^~~~~~~~
+                                rtx_cost
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_float/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_float/src/optabs.c:4652:77: error: too few arguments to function call, expected 2, have 1
+emit_unop_insn( v11, v3, v13, ( rtx_code)( v12 == 0 ? FLOAT : UNSIGNED_FLOAT)); 
+                              ~~~~~~~~~~~                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_float/src/rtl.h:1787:1: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_float/src/optabs.c:4690:61: error: use of undeclared identifier 'machine_mode'
+emit_cmp_and_jump_insns( v17, const_int_rtx[64], GE, 0LL, ( machine_mode)*( ( unsigned __int8 *)v17 + 2), 0, v14); 
+                                                            ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_float/src/optabs.c:4691:21: error: too few arguments to function call, expected 2, have 1
+ereal_ldexp( dconst1); 
+~~~~~~~~~~~         ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_float/src/real.h:160:1: note: 'ereal_ldexp' declared here
+extern REAL_VALUE_TYPE ereal_ldexp PARAMS ((REAL_VALUE_TYPE, int));
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_float/src/optabs.c:4692:27: error: passing 'enum machine_mode' to parameter of incompatible type 'realvaluetype'
+v23 = immed_real_const_1( v21, offset); 
+                          ^~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_float/src/real.h:466:67: note: passing argument to parameter here
+extern struct rtx_def *immed_real_const_1       PARAMS ((REAL_VALUE_TYPE,
+                                                                        ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_float/src/optabs.c:4810:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)v15 + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_float/src/optabs.c:4816:31: error: use of undeclared identifier 'machine_mode'
+v31 = gen_rtx_fmt_e( FLOAT, ( machine_mode)*( ( unsigned __int8 *)v15 + 2), v25); 
+                              ^
+16 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/expand_float/src/obj/optabs.o] Error 1

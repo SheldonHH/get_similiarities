@@ -1,0 +1,12 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cselib_init/src/cselib.c:1885:78: error: use of undeclared identifier 'insn'
+reg_values = varray_init( ( unsigned int)cselib_nregs, 8uLL, ( const char *)&insn.fld[0].rtwint + 1); 
+                                                                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cselib_init/src/cselib.c:1887:1: error: use of undeclared identifier 'hash_table_0'; did you mean 'hash_table'?
+hash_table_0 = htab_create( 0x1FuLL, get_value_hash, entry_and_rtx_equal_p, 0LL); 
+^~~~~~~~~~~~
+hash_table
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cselib_init/src/cselib.c:82:15: note: 'hash_table' declared here
+static htab_t hash_table;
+              ^
+2 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/cselib_init/src/obj/cselib.o] Error 1

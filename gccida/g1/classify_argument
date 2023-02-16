@@ -1,0 +1,61 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/classify_argument/src/i386.c:2106:25: error: must use 'enum' tag to refer to type 'machine_mode'
+int  classify_argument( machine_mode mode, tree type, x86_64_reg_class *classes, int bit_offset) 
+                        ^
+                        enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/classify_argument/src/i386.c:2106:55: error: must use 'enum' tag to refer to type 'x86_64_reg_class'
+int  classify_argument( machine_mode mode, tree type, x86_64_reg_class *classes, int bit_offset) 
+                                                      ^
+                                                      enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/classify_argument/src/i386.c:2112:1: error: must use 'enum' tag to refer to type 'x86_64_reg_class'
+x86_64_reg_class *v10; // rax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/classify_argument/src/i386.c:2126:1: error: must use 'enum' tag to refer to type 'x86_64_reg_class'
+x86_64_reg_class *v24; // r13 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/classify_argument/src/i386.c:2138:1: error: must use 'enum' tag to refer to type 'x86_64_reg_class'
+x86_64_reg_class *v36; // r13 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/classify_argument/src/i386.c:2147:1: error: must use 'enum' tag to refer to type 'x86_64_reg_class'
+x86_64_reg_class *v45; // r15 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/classify_argument/src/i386.c:2154:1: error: must use 'enum' tag to refer to type 'x86_64_reg_class'
+x86_64_reg_class v52; // edx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/classify_argument/src/i386.c:2161:1: error: must use 'enum' tag to refer to type 'x86_64_reg_class'
+x86_64_reg_class subclasses[4]; // [rsp+20h] [rbp-48h] BYREF 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/classify_argument/src/i386.c:2255:30: error: use of undeclared identifier 'stru_665A39'
+fancy_abort( ( const char *)&stru_665A39, 1912, "classify_argument"); 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/classify_argument/src/i386.c:2290:11: error: invalid operands to binary expression ('struct rtx_def' and 'int')
+if ( i[1] == 37 ) 
+     ~~~~ ^  ~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/classify_argument/src/i386.c:2311:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( *( _BYTE *)( i->fld[0].rtwint + 61) >> 1), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/classify_argument/src/i386.c:2344:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( *( _BYTE *)( v21 + 61) >> 1), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/classify_argument/src/i386.c:2377:30: error: use of undeclared identifier 'stru_665A39'
+fancy_abort( ( const char *)&stru_665A39, 1809, "classify_argument"); 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/classify_argument/src/i386.c:2395:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( *( _BYTE *)( v42 + 61) >> 1), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/classify_argument/src/i386.c:2427:13: error: invalid operands to binary expression ('struct rtx_def' and 'int')
+if ( rtl[1] == 37 ) 
+     ~~~~~~ ^  ~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/classify_argument/src/i386.c:2430:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( *( _BYTE *)( rtl->fld[0].rtwint + 61) >> 1), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/classify_argument/src/i386.c:2456:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( BYTE5( type->common.type->block.abstract_origin) >> 1), 
+  ^
+17 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/classify_argument/src/obj/i386.o] Error 1

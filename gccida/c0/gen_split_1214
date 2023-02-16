@@ -1,0 +1,26 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_split_1214/src/insn-emit.c:16639:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // [rsp+8h] [rbp-88h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_split_1214/src/insn-emit.c:16640:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code; // [rsp+Ch] [rbp-84h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_split_1214/src/insn-emit.c:16664:3: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+( rtx_code)( unsigned __int16)*( _DWORD *)operand1, 
+  ^~~~~~~~
+  rtx_cost
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_split_1214/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_split_1214/src/insn-emit.c:16664:14: error: expected expression
+( rtx_code)( unsigned __int16)*( _DWORD *)operand1, 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_split_1214/src/insn-emit.c:16665:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)operand1), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_split_1214/src/insn-emit.c:16665:18: error: expected expression
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)operand1), 
+                 ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_split_1214/src/obj/insn-emit.o] Error 1

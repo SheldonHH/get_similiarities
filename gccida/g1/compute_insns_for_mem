@@ -1,0 +1,54 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/compute_insns_for_mem/src/function.c:3856:56: error: unknown type name 'hash_table_0'; did you mean 'hash_table'?
+void  compute_insns_for_mem( rtx insns, rtx last_insn, hash_table_0 *ht) 
+                                                       ^~~~~~~~~~~~
+                                                       hash_table
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/compute_insns_for_mem/src/hashtable.h:40:19: note: 'hash_table' declared here
+typedef struct ht hash_table;
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/compute_insns_for_mem/src/function.c:3856:7: error: conflicting types for 'compute_insns_for_mem'
+void  compute_insns_for_mem( rtx insns, rtx last_insn, hash_table_0 *ht) 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/compute_insns_for_mem/src/function.c:306:13: note: previous declaration is here
+static void compute_insns_for_mem PARAMS ((rtx, rtx, struct hash_table *));
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/compute_insns_for_mem/src/function.c:3860:4: error: expected ';' after expression
+rtx insn; // [rsp+18h] [rbp-20h] BYREF 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/compute_insns_for_mem/src/function.c:3860:5: error: use of undeclared identifier 'insn'; did you mean 'insns'?
+rtx insn; // [rsp+18h] [rbp-20h] BYREF 
+    ^~~~
+    insns
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/compute_insns_for_mem/src/function.c:3856:34: note: 'insns' declared here
+void  compute_insns_for_mem( rtx insns, rtx last_insn, hash_table_0 *ht) 
+                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/compute_insns_for_mem/src/function.c:3866:1: error: use of undeclared identifier 'insn'; did you mean 'insns'?
+insn = insns; 
+^~~~
+insns
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/compute_insns_for_mem/src/function.c:3856:34: note: 'insns' declared here
+void  compute_insns_for_mem( rtx insns, rtx last_insn, hash_table_0 *ht) 
+                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/compute_insns_for_mem/src/function.c:3875:16: error: use of undeclared identifier 'insn'; did you mean 'insns'?
+for_each_rtx( &insn, insns_for_mem_walk, &ifmwi); 
+               ^~~~
+               insns
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/compute_insns_for_mem/src/function.c:3856:34: note: 'insns' declared here
+void  compute_insns_for_mem( rtx insns, rtx last_insn, hash_table_0 *ht) 
+                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/compute_insns_for_mem/src/function.c:3877:7: error: use of undeclared identifier 'insn'; did you mean 'insns'?
+rtx = insn[1].fld[0].rtx; 
+      ^~~~
+      insns
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/compute_insns_for_mem/src/function.c:3856:34: note: 'insns' declared here
+void  compute_insns_for_mem( rtx insns, rtx last_insn, hash_table_0 *ht) 
+                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/compute_insns_for_mem/src/function.c:3878:1: error: use of undeclared identifier 'insn'; did you mean 'insns'?
+insn = rtx; 
+^~~~
+insns
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/compute_insns_for_mem/src/function.c:3856:34: note: 'insns' declared here
+void  compute_insns_for_mem( rtx insns, rtx last_insn, hash_table_0 *ht) 
+                                 ^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/compute_insns_for_mem/src/obj/function.o] Error 1

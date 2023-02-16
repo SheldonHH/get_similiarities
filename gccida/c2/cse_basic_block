@@ -1,0 +1,73 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cse_basic_block/src/cse.c:7682:4: error: expected ';' after expression
+rtx v32; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cse_basic_block/src/cse.c:7682:5: error: use of undeclared identifier 'v32'
+rtx v32; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cse_basic_block/src/cse.c:7683:4: error: expected ';' after expression
+rtx reg_note; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cse_basic_block/src/cse.c:7683:5: error: must use 'enum' tag to refer to type 'reg_note'
+rtx reg_note; // rax 
+    ^
+    enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cse_basic_block/src/cse.c:7684:1: error: must use 'enum' tag to refer to type 'taken'
+taken status; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cse_basic_block/src/cse.c:7703:4: error: expected ';' after expression
+rtx v53; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cse_basic_block/src/cse.c:7703:5: error: use of undeclared identifier 'v53'
+rtx v53; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cse_basic_block/src/cse.c:7704:4: error: expected ';' after expression
+rtx nonnote_insn; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cse_basic_block/src/cse.c:7704:5: error: use of undeclared identifier 'nonnote_insn'
+rtx nonnote_insn; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cse_basic_block/src/cse.c:7710:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v60; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cse_basic_block/src/cse.c:7887:16: error: use of undeclared identifier 'NOT_TAKEN_0'; did you mean 'NOT_TAKEN'?
+if ( status != NOT_TAKEN_0 ) 
+               ^~~~~~~~~~~
+               NOT_TAKEN
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cse_basic_block/src/cse.c:580:26: note: 'NOT_TAKEN' declared here
+      enum taken {TAKEN, NOT_TAKEN, AROUND} status;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cse_basic_block/src/cse.c:7891:30: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+for ( v35.rtwint = ( __int64)rtx[1].fld[0]; ; v35.rtwint = *( __int64 *)( v35.rtwint + 24) ) 
+                             ^~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cse_basic_block/src/cse.c:8006:35: error: expected expression
+invalidate_from_clobbers( *( rtx *)( v35.rtwint + 32)); 
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cse_basic_block/src/cse.c:8007:22: error: expected expression
+note_stores( *( rtx *)( v35.rtwint + 32), invalidate_skipped_set, 0LL); 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cse_basic_block/src/cse.c:8014:13: error: expected ';' after expression
+rtx = ( rtx)rtx[4]; 
+            ^
+            ;
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cse_basic_block/src/cse.c:8033:1: error: use of undeclared identifier 'v32'
+v32 = cse_process_notes( v31, 0LL); 
+^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cse_basic_block/src/cse.c:8034:34: error: use of undeclared identifier 'v32'
+rtx[3].fld[0].rtwint = ( __int64)v32; 
+                                 ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cse_basic_block/src/cse.c:8035:6: error: use of undeclared identifier 'v32'
+if ( v32 ) 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cse_basic_block/src/cse.c:8037:1: error: must use 'enum' tag to refer to type 'reg_note'
+reg_note = find_reg_note( rtx, REG_LIBCALL, 0LL); 
+^
+enum 
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/cse_basic_block/src/obj/cse.o] Error 1

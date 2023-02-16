@@ -1,0 +1,76 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/validate_replace_rtx_1/src/recog.c:904:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v10; // r15d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/validate_replace_rtx_1/src/recog.c:910:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v16; // ecx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/validate_replace_rtx_1/src/recog.c:911:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v17; // r12d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/validate_replace_rtx_1/src/recog.c:924:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v30; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/validate_replace_rtx_1/src/recog.c:925:1: error: must use 'enum' tag to refer to type 'extraction_pattern'
+extraction_pattern v31; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/validate_replace_rtx_1/src/recog.c:927:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v33; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/validate_replace_rtx_1/src/recog.c:930:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v36; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/validate_replace_rtx_1/src/recog.c:931:6: error: use of undeclared identifier 'v37'
+rtx *v37; // rbp 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/validate_replace_rtx_1/src/recog.c:936:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode op_mode; // [rsp+Ch] [rbp-7Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/validate_replace_rtx_1/src/recog.c:937:4: error: expected ';' after expression
+rtx v43; // [rsp+18h] [rbp-70h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/validate_replace_rtx_1/src/recog.c:937:5: error: use of undeclared identifier 'v43'
+rtx v43; // [rsp+18h] [rbp-70h] 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/validate_replace_rtx_1/src/recog.c:959:6: error: use of undeclared identifier 'v43'
+|| ( v43 = *loc, v46 = to, ( ( *( _DWORD *)from ^ v8) & 0xFFFFFF) == 0) 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/validate_replace_rtx_1/src/recog.c:988:32: error: expected expression
+validate_replace_rtx_1( ( rtx *)( v15 + *( ( _QWORD *)v4 + v11)), from, v46, v44); 
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/validate_replace_rtx_1/src/recog.c:989:6: error: use of undeclared identifier 'v43'
+v4 = v43; 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/validate_replace_rtx_1/src/recog.c:998:32: error: expected expression
+validate_replace_rtx_1( ( rtx *)&v4->fld[v45], from, v46, v44); 
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/validate_replace_rtx_1/src/recog.c:999:6: error: use of undeclared identifier 'v43'
+v4 = v43; 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/validate_replace_rtx_1/src/recog.c:1017:59: error: expected expression
+if ( swap_commutative_operands_p( v4->fld[0].rtx, *( rtx *)&v4[1]) ) 
+                                                          ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/validate_replace_rtx_1/src/recog.c:1020:25: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+v17 = swap_condition( ( rtx_code)v47); 
+                        ^~~~~~~~
+                        rtx_cost
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/validate_replace_rtx_1/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/validate_replace_rtx_1/src/recog.c:1020:34: error: expected ')'
+v17 = swap_condition( ( rtx_code)v47); 
+                                 ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/validate_replace_rtx_1/src/recog.c:1020:21: note: to match this '('
+v17 = swap_condition( ( rtx_code)v47); 
+                    ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/validate_replace_rtx_1/src/obj/recog.o] Error 1

@@ -1,0 +1,15 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/change_address/src/emit-rtl.c:2414:34: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  change_address( rtx memref, machine_mode mode, rtx addr) 
+                                 ^
+                                 enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/change_address/src/emit-rtl.c:2432:40: error: use of undeclared identifier 'machine_mode'
+mode_alignment = get_mode_alignment( ( machine_mode)v4); 
+                                       ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/change_address/src/emit-rtl.c:2435:18: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v7 = ( __int64 *)memref[1]; 
+                 ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/change_address/src/emit-rtl.c:2439:73: error: use of undeclared identifier 'machine_mode'
+*( _QWORD *)&v3[1] = get_mem_attrs( v8, 0LL, 0LL, v6, mode_alignment, ( machine_mode)v4); 
+                                                                        ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/change_address/src/obj/emit-rtl.o] Error 1

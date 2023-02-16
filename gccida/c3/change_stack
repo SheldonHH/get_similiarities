@@ -1,0 +1,31 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/change_stack/src/reg-stack.c:2712:52: error: must use 'enum' tag to refer to type 'emit_where'
+void  change_stack( rtx insn, stack old, stack a3, emit_where where) 
+                                                   ^
+                                                   enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/change_stack/src/reg-stack.c:2741:17: error: expected identifier or '('
+ struct reg_set = a3->reg_set; 
+                ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/change_stack/src/reg-stack.c:2744:34: error: expected expression
+emit_pop_insn( rtx, old, *( rtx *)&may_move_out_cost[57][15][118 * v11 + 4], EMIT_BEFORE); 
+                                 ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/change_stack/src/reg-stack.c:2744:36: error: use of undeclared identifier 'may_move_out_cost'
+emit_pop_insn( rtx, old, *( rtx *)&may_move_out_cost[57][15][118 * v11 + 4], EMIT_BEFORE); 
+                                   ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/change_stack/src/reg-stack.c:2788:35: error: expected expression
+emit_swap_insn( rtx, old, *( rtx *)&may_move_out_cost[57][15][118 * old->reg[( int)v12] + 4]); 
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/change_stack/src/reg-stack.c:2788:37: error: use of undeclared identifier 'may_move_out_cost'
+emit_swap_insn( rtx, old, *( rtx *)&may_move_out_cost[57][15][118 * old->reg[( int)v12] + 4]); 
+                                    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/change_stack/src/reg-stack.c:2807:35: error: expected expression
+emit_swap_insn( rtx, old, *( rtx *)&may_move_out_cost[57][15][118 * v15 + 4]); 
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/change_stack/src/reg-stack.c:2807:37: error: use of undeclared identifier 'may_move_out_cost'
+emit_swap_insn( rtx, old, *( rtx *)&may_move_out_cost[57][15][118 * v15 + 4]); 
+                                    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/change_stack/src/reg-stack.c:2826:28: error: expected ';' after expression
+current_block->end = ( rtx)rtx[1]; 
+                           ^
+                           ;
+9 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/change_stack/src/obj/reg-stack.o] Error 1

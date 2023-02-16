@@ -1,0 +1,55 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/mention_regs/src/cse.c:1671:4: error: expected ';' after expression
+rtx exp; // rdx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/mention_regs/src/cse.c:1698:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v11 = ( ( unsigned int)( mode_class_0[*( ( unsigned __int8 *)x + 2)] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/mention_regs/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/mention_regs/src/cse.c:1741:22: error: expected identifier or '('
+ struct cse_reg_info = cached_cse_reg_info; 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/mention_regs/src/cse.c:1750:2: error: expected expression
+ struct cse_reg_info = cached_cse_reg_info; 
+ ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/mention_regs/src/cse.c:1754:2: error: expected expression
+ struct cse_reg_info = get_cse_reg_info( rtuint); 
+ ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/mention_regs/src/cse.c:1779:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v5.rtwint = ( __int64)x->fld[0]; 
+                      ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/mention_regs/src/cse.c:1802:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v21.rtwint = ( __int64)x->fld[0]; 
+                       ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/mention_regs/src/cse.c:1810:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v6 = ( __int64)x[1]; 
+               ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/mention_regs/src/cse.c:1816:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v42 = (  struct rtx_def *)x[1]; 
+                          ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/mention_regs/src/cse.c:1819:27: error: expected expression
+rehash_using_reg( *( rtx *)&x[1]); 
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/mention_regs/src/cse.c:1875:22: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v47 = ( unsigned int)x[1]; 
+                     ^~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/mention_regs/src/cse.c:1882:5: error: non-object type 'double (double)' is not assignable
+exp = v37->exp; 
+~~~ ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/mention_regs/src/cse.c:1888:32: error: member reference base type 'double (double)' is not a structure or union
+|| ( v38.rtwint = ( __int64)exp->fld[0], *( _WORD *)v38.rtwint != 61) 
+                            ~~~^ ~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/mention_regs/src/cse.c:1890:27: error: subscript of pointer to function type 'double (double)'
+|| ( v39 = ( unsigned int)exp[1], v47 <= v39 + mode_size[*( ( unsigned __int8 *)exp + 2)] - 1) 
+                          ^~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/mention_regs/src/cse.c:1923:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v5.rtwint = ( __int64)x->fld[0]; 
+                      ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/mention_regs/src/cse.c:1948:35: error: expected expression
+inserted |= mention_regs( *( rtx *)&rtwint[2 * v45++ + 2]); 
+                                  ^
+16 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/mention_regs/src/obj/cse.o] Error 1

@@ -1,0 +1,32 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_add2_insn/src/optabs.c:4276:1: error: must use 'enum' tag to refer to type 'insn_code'
+insn_code insn_code; // r13d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_add2_insn/src/optabs.c:4280:11: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+operand = insn_data_0[insn_code].operand; 
+          ^~~~~~~~~~~
+          insn_data
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_add2_insn/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_add2_insn/src/optabs.c:4281:32: error: use of undeclared identifier 'machine_mode'
+if ( !operand->predicate( x, ( machine_mode)*( ( unsigned __int16 *)operand + 8)) 
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_add2_insn/src/optabs.c:4282:32: error: use of undeclared identifier 'machine_mode'
+|| !operand[1].predicate( x, ( machine_mode)*( ( unsigned __int16 *)&operand[1] + 8)) 
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_add2_insn/src/optabs.c:4283:32: error: use of undeclared identifier 'machine_mode'
+|| !operand[2].predicate( y, ( machine_mode)*( ( unsigned __int16 *)&operand[2] + 8)) ) 
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_add2_insn/src/optabs.c:4287:8: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+return insn_data_0[insn_code].genfun( x, x); 
+       ^~~~~~~~~~~
+       insn_data
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_add2_insn/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_add2_insn/src/optabs.c:4287:37: error: called object type '<dependent type>' is not a function or function pointer
+return insn_data_0[insn_code].genfun( x, x); 
+                                    ^
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/gen_add2_insn/src/obj/optabs.o] Error 1

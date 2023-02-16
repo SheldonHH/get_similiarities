@@ -1,0 +1,25 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/elimination_effects/src/reload1.c:3132:35: error: must use 'enum' tag to refer to type 'machine_mode'
+void  elimination_effects( rtx x, machine_mode mem_mode) 
+                                  ^
+                                  enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/elimination_effects/src/reload1.c:3146:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code; // [rsp+40h] [rbp-10h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/elimination_effects/src/reload1.c:3171:13: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+src = ( rtx)x[1]; 
+            ^~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/elimination_effects/src/reload1.c:3254:15: error: use of undeclared identifier 'off_88ECD0'
+fancy_abort( &off_88ECD0[4], 2839, "elimination_effects"); 
+              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/elimination_effects/src/reload1.c:3255:39: error: use of undeclared identifier 'machine_mode'
+elimination_effects( x->fld[0].rtx, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)x)); 
+                                      ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/elimination_effects/src/reload1.c:3255:54: error: expected expression
+elimination_effects( x->fld[0].rtx, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)x)); 
+                                                     ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/elimination_effects/src/reload1.c:3258:15: error: use of undeclared identifier 'off_88ECD0'
+fancy_abort( &off_88ECD0[4], 2698, "elimination_effects"); 
+              ^
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/elimination_effects/src/obj/reload1.o] Error 1

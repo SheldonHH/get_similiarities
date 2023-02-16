@@ -1,0 +1,38 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/insert_regs/src/cse.c:1767:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v28; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/insert_regs/src/cse.c:1787:55: error: expected ')'
+if ( rtuint != cached_regno || (  struct cse_reg_info = cached_cse_reg_info) == 0LL ) 
+                                                      ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/insert_regs/src/cse.c:1787:32: note: to match this '('
+if ( rtuint != cached_regno || (  struct cse_reg_info = cached_cse_reg_info) == 0LL ) 
+                               ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/insert_regs/src/cse.c:1787:78: error: expected expression
+if ( rtuint != cached_regno || (  struct cse_reg_info = cached_cse_reg_info) == 0LL ) 
+                                                                             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/insert_regs/src/cse.c:1789:22: error: expected identifier or '('
+ struct cse_reg_info = get_cse_reg_info( rtuint); 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/insert_regs/src/cse.c:1866:23: error: use of undeclared identifier 'reg_eqv_elem'; did you mean 'reg_eqv_table'?
+reg_eqv_table[v8] = ( reg_eqv_elem)-1LL; 
+                      ^~~~~~~~~~~~
+                      reg_eqv_table
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/insert_regs/src/cse.c:293:29: note: 'reg_eqv_table' declared here
+static struct reg_eqv_elem *reg_eqv_table;
+                            ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/insert_regs/src/cse.c:1866:19: error: assigning to 'struct reg_eqv_elem' from incompatible type 'struct reg_eqv_elem *'; dereference with *
+reg_eqv_table[v8] = ( reg_eqv_elem)-1LL; 
+                  ^ ~~~~~~~~~~~~~~~~~~~
+                    *(                 )
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/insert_regs/src/cse.c:1905:21: error: use of undeclared identifier 'uid_cuid_0'
+v36 = *( ( _DWORD *)uid_cuid_0 + v35[1]); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/insert_regs/src/cse.c:1906:49: error: use of undeclared identifier 'uid_cuid_0'
+if ( v36 > cse_basic_block_end || *( ( _DWORD *)uid_cuid_0 + *v35) < cse_basic_block_start ) 
+                                                ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/insert_regs/src/cse.c:1909:26: error: use of undeclared identifier 'uid_cuid_0'
+if ( v36 > *( ( _DWORD *)uid_cuid_0 + *( int *)( reg_n_info->data.l[first_reg] + 4)) ) 
+                         ^
+9 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/insert_regs/src/obj/cse.o] Error 1

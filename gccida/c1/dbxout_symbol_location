@@ -1,0 +1,25 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/dbxout_symbol_location/src/dbxout.c:2609:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v23; // rbp 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/dbxout_symbol_location/src/dbxout.c:2641:27: error: use of undeclared identifier 'lang_hooks_0'; did you mean 'lang_hooks'?
+if ( !initial || !strcmp( lang_hooks_0.name, "GNU C++") && initial == ( tree)global_trees ) 
+                          ^~~~~~~~~~~~
+                          lang_hooks
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/dbxout_symbol_location/src/langhooks.h:168:32: note: 'lang_hooks' declared here
+extern const struct lang_hooks lang_hooks;
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/dbxout_symbol_location/src/dbxout.c:2653:23: error: expected identifier or '('
+ struct pool_constant = get_pool_constant( current_sym_addr); 
+                      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/dbxout_symbol_location/src/dbxout.c:2674:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v13.rtwint = ( __int64)xp->fld[0]; 
+                       ^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/dbxout_symbol_location/src/dbxout.c:2710:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v16.rtwint = ( __int64)xp->fld[0]; 
+                       ^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/dbxout_symbol_location/src/dbxout.c:2719:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v16.rtwint = ( __int64)xp->fld[0]; 
+                       ^~~~~~~~~~
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/dbxout_symbol_location/src/obj/dbxout.o] Error 1

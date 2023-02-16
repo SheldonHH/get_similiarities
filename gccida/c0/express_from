@@ -1,0 +1,21 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/express_from/src/loop.c:7567:20: error: unknown type name 'induction_1'
+rtx  express_from( induction_1 *g1, induction_1 *g2) 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/express_from/src/loop.c:7567:37: error: unknown type name 'induction_1'
+rtx  express_from( induction_1 *g1, induction_1 *g2) 
+                                    ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/express_from/src/loop.c:7571:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // [rsp+Ch] [rbp-44h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/express_from/src/loop.c:7604:39: error: use of undeclared identifier 'machine_mode'
+g1_add_vala = gen_rtx_fmt_ee( MULT, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)g1_add_val), g1_add_val, mult); 
+                                      ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/express_from/src/loop.c:7604:54: error: expected expression
+g1_add_vala = gen_rtx_fmt_ee( MULT, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)g1_add_val), g1_add_val, mult); 
+                                                     ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/express_from/src/loop.c:7628:13: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+tem = ( rtx)add[1]; 
+            ^~~~~~
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/express_from/src/obj/loop.o] Error 1

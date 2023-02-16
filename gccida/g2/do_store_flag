@@ -1,0 +1,32 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/do_store_flag/src/expr.c:10623:43: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  do_store_flag( tree exp, rtx target, machine_mode mode, int only_cheap) 
+                                          ^
+                                          enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/do_store_flag/src/expr.c:10635:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v14; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/do_store_flag/src/expr.c:10658:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v37; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/do_store_flag/src/expr.c:10801:29: error: use of undeclared identifier 'machine_mode'
+if ( !can_compare_p( v14, ( machine_mode)v44, ccp_store_flag) ) 
+                            ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/do_store_flag/src/expr.c:10807:28: error: use of undeclared identifier 'insn_data_0'
+&& *( ( unsigned __int16 *)insn_data_0[v15].operand + 8) != mode 
+                           ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/do_store_flag/src/expr.c:10837:45: error: use of undeclared identifier 'machine_mode'
+v11 = emit_store_flag( v4, v14, v19, v18, ( machine_mode)v44, unsignedp, 1); 
+                                            ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/do_store_flag/src/expr.c:10845:22: error: use of undeclared identifier 'machine_mode'
+v23 = gen_reg_rtx( ( machine_mode)*( ( unsigned __int8 *)v4 + 2)); 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/do_store_flag/src/expr.c:10853:53: error: use of undeclared identifier 'machine_mode'
+v25 = compare_from_rtx( v16, v17, v14, unsignedp, ( machine_mode)v44, 0LL); 
+                                                    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/do_store_flag/src/expr.c:10954:36: error: use of undeclared identifier 'machine_mode'
+v11 = expand_shift( RSHIFT_EXPR, ( machine_mode)v44, op0b, v37, v4, 1); 
+                                   ^
+9 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/do_store_flag/src/obj/expr.o] Error 1

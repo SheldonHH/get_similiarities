@@ -1,0 +1,47 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_eh_notes/src/reload1.c:9934:4: error: expected ';' after expression
+rtx reg_note; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_eh_notes/src/reload1.c:9934:5: error: must use 'enum' tag to refer to type 'reg_note'
+rtx reg_note; // rax 
+    ^
+    enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_eh_notes/src/reload1.c:9935:4: error: expected ';' after expression
+rtx v4; // rbp 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_eh_notes/src/reload1.c:9935:5: error: use of undeclared identifier 'v4'
+rtx v4; // rbp 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_eh_notes/src/reload1.c:9938:1: error: must use 'enum' tag to refer to type 'reg_note'
+reg_note = find_reg_note( insn, REG_EH_REGION, 0LL); 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_eh_notes/src/reload1.c:9938:10: error: expected identifier or '('
+reg_note = find_reg_note( insn, REG_EH_REGION, 0LL); 
+         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_eh_notes/src/reload1.c:9939:6: error: use of undeclared identifier 'reg_note'; did you mean 'reg_mode'?
+if ( reg_note ) 
+     ^~~~~~~~
+     reg_mode
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_eh_notes/src/reload1.c:9094:26: note: 'reg_mode' declared here
+static enum machine_mode reg_mode[FIRST_PSEUDO_REGISTER];
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_eh_notes/src/reload1.c:9941:1: error: use of undeclared identifier 'v4'
+v4 = reg_note; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_eh_notes/src/reload1.c:9941:6: error: use of undeclared identifier 'reg_note'; did you mean 'reg_mode'?
+v4 = reg_note; 
+     ^~~~~~~~
+     reg_mode
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_eh_notes/src/reload1.c:9094:26: note: 'reg_mode' declared here
+static enum machine_mode reg_mode[FIRST_PSEUDO_REGISTER];
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_eh_notes/src/reload1.c:9946:26: error: expected expression
+if ( may_trap_p( *( rtx *)&rtx[2]) ) 
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_eh_notes/src/reload1.c:9947:69: error: use of undeclared identifier 'v4'
+rtx[3].fld[0].rtwint = ( __int64)gen_rtx_fmt_ee( EXPR_LIST, XCmode, v4->fld[0].rtx, rtx[3].fld[0].rtx); 
+                                                                    ^
+11 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/copy_eh_notes/src/obj/reload1.o] Error 1

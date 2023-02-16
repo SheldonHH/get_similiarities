@@ -1,0 +1,17 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/assign_filter_values/src/except.c:2333:1: error: must use 'enum' tag to refer to type 'eh_region_type'
+eh_region_type type; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/assign_filter_values/src/except.c:2334:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *flt_node; // [rsp+8h] [rbp-58h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/assign_filter_values/src/except.c:2336:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *flt_node_0; // [rsp+18h] [rbp-48h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/assign_filter_values/src/except.c:2348:74: error: use of undeclared identifier 'has_key'
+ttypes = htab_create( 0x1FuLL, ( htab_hash)ttypes_filter_hash, ( htab_eq)has_key, free); 
+                                                                         ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/assign_filter_values/src/obj/except.o] Error 1

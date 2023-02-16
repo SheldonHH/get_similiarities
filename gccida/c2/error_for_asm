@@ -1,0 +1,18 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/error_for_asm/src/rtl-error.c:560:1: error: unknown type name 'diagnostic_context_0'; did you mean 'diagnostic_context'?
+diagnostic_context_0 dc; // [rsp+D8h] [rbp-180h] BYREF 
+^~~~~~~~~~~~~~~~~~~~
+diagnostic_context
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/error_for_asm/src/diagnostic.h:29:35: note: 'diagnostic_context' declared here
+typedef struct diagnostic_context diagnostic_context;
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/error_for_asm/src/rtl-error.c:563:50: error: expected expression
+set_diagnostic_context( &dc, msgid, ( va_list_0 *)va, 0LL, 0, 0); 
+                                                 ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/error_for_asm/src/rtl-error.c:563:39: error: use of undeclared identifier 'va_list_0'
+set_diagnostic_context( &dc, msgid, ( va_list_0 *)va, 0LL, 0, 0); 
+                                      ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/error_for_asm/src/rtl-error.c:564:18: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v2 = ( __int16 *)insn[2]; 
+                 ^~~~~~~
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/error_for_asm/src/obj/rtl-error.o] Error 1

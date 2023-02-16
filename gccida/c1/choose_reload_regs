@@ -1,0 +1,74 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/choose_reload_regs/src/reload1.c:5778:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class v7; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/choose_reload_regs/src/reload1.c:5791:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v20; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/choose_reload_regs/src/reload1.c:5794:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v23; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/choose_reload_regs/src/reload1.c:5795:1: error: must use 'enum' tag to refer to type 'mode_class'
+mode_class v24; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/choose_reload_regs/src/machmode.h:52:30: note: enum 'mode_class' is hidden by a non-type declaration of 'mode_class' here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/choose_reload_regs/src/reload1.c:5797:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v26; // r14d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/choose_reload_regs/src/reload1.c:5820:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode *v49; // r14 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/choose_reload_regs/src/reload1.c:5897:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode *class2; // [rsp+18h] [rbp-640h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/choose_reload_regs/src/reload1.c:5898:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode *class2a; // [rsp+18h] [rbp-640h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/choose_reload_regs/src/reload1.c:5899:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v129; // [rsp+24h] [rbp-634h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/choose_reload_regs/src/reload1.c:5904:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class c2; // [rsp+3Ch] [rbp-61Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/choose_reload_regs/src/reload1.c:5909:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class class1; // [rsp+6Ch] [rbp-5ECh] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/choose_reload_regs/src/reload1.c:5929:19: error: expected expression
+v6 = ( _DWORD *)( ::rld + 16); 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/choose_reload_regs/src/reload1.c:5951:54: error: ISO C requires a named parameter before '...'
+specqsort( ( char *)reload_order, v3, 2, ( int ( *)( ...))reload_reg_class_lower); 
+                                                     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/choose_reload_regs/src/reload1.c:5965:8: error: expected expression
+v14 = &::rld[v12]; 
+       ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/choose_reload_regs/src/reload1.c:5966:7: error: expected expression
+if ( !::rld[v12].out && !v14->in && ( *( ( _BYTE *)&::rld[v12] + 96) & 4) == 0 ) 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/choose_reload_regs/src/reload1.c:5970:11: error: expected expression
+reg_rtx = ::rld[v12].reg_rtx; 
+          ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/choose_reload_regs/src/reload1.c:6026:26: error: expected expression
+class2 = ( machine_mode *)*( int *)( v13 + 10314208); 
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/choose_reload_regs/src/reload1.c:6026:12: error: use of undeclared identifier 'machine_mode'
+class2 = ( machine_mode *)*( int *)( v13 + 10314208); 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/choose_reload_regs/src/reload1.c:6028:47: error: use of undeclared identifier 'machine_mode'
+LODWORD( in) = subreg_regno_offset( rtuint, ( machine_mode)*( ( unsigned __int8 *)v21 + 2), v16, v20); 
+                                              ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/choose_reload_regs/src/obj/reload1.o] Error 1

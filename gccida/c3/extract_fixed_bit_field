@@ -1,0 +1,56 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/extract_fixed_bit_field/src/expmed.c:2033:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode tmode, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/extract_fixed_bit_field/src/expmed.c:2051:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode best_mode; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/extract_fixed_bit_field/src/expmed.c:2052:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v21; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/extract_fixed_bit_field/src/expmed.c:2059:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v29; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/extract_fixed_bit_field/src/expmed.c:2061:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v31; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/extract_fixed_bit_field/src/expmed.c:2063:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v33; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/extract_fixed_bit_field/src/expmed.c:2070:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v40; // r13d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/extract_fixed_bit_field/src/expmed.c:2075:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v45; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/extract_fixed_bit_field/src/expmed.c:2084:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v54; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/extract_fixed_bit_field/src/expmed.c:2099:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v18 = ( __int64)op0[1]; 
+                ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/extract_fixed_bit_field/src/expmed.c:2104:58: error: invalid suffix 'xmode' on integer constant
+best_mode = get_best_mode( bitsize, v17, v19, *(short *)0xmode, ( v12 >> 27) & 1); 
+                                                         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/extract_fixed_bit_field/src/expmed.c:2159:20: error: use of undeclared identifier 'machine_mode'
+v38 = force_reg( ( machine_mode)( unsigned __int8)v28, v10); 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/extract_fixed_bit_field/src/expmed.c:2159:35: error: expected expression
+v38 = force_reg( ( machine_mode)( unsigned __int8)v28, v10); 
+                                  ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/extract_fixed_bit_field/src/expmed.c:2239:66: error: use of undeclared identifier 'optab_methods'
+v58 = expand_binop( v40, optab_table[23], v10, v56, target, 0, ( optab_methods)methods); 
+                                                                 ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/extract_fixed_bit_field/src/expmed.c:2280:39: error: use of undeclared identifier 'machine_mode'
+v37 = immed_double_const( v34, v36, ( machine_mode)*( ( unsigned __int8 *)v10 + 2)); 
+                                      ^
+15 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/extract_fixed_bit_field/src/obj/expmed.o] Error 1

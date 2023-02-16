@@ -1,0 +1,70 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/apply_args_size/src/builtins.c:1353:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v3; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/apply_args_size/src/builtins.c:1355:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v5; // r13d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/apply_args_size/src/builtins.c:1366:10: error: use of undeclared identifier 'size_11'; did you mean 'sizeof'?
+result = size_11; 
+         ^~~~~~~
+         sizeof
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/apply_args_size/src/builtins.c:1366:17: error: expected expression
+result = size_11; 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/apply_args_size/src/builtins.c:1367:6: error: use of undeclared identifier 'size_11'; did you mean 'sizeof'?
+if ( size_11 < 0 ) 
+     ^~~~~~~
+     sizeof
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/apply_args_size/src/builtins.c:1367:14: error: expected expression
+if ( size_11 < 0 ) 
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/apply_args_size/src/builtins.c:1370:1: error: use of undeclared identifier 'size_11'
+size_11 = v1; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/apply_args_size/src/builtins.c:1372:1: error: use of undeclared identifier 'size_11'
+size_11 = 2 * v1; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/apply_args_size/src/builtins.c:1380:8: error: use of undeclared identifier 'size_11'; did you mean 'sizeof'?
+return size_11; 
+       ^~~~~~~
+       sizeof
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/apply_args_size/src/builtins.c:1380:15: error: expected expression
+return size_11; 
+              ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/apply_args_size/src/builtins.c:1404:28: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+else if ( ( unsigned int)( mode_class_0[v3] - 5) >= 2 ) 
+                           ^~~~~~~~~~~~
+                           mode_class
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/apply_args_size/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/apply_args_size/src/builtins.c:1421:40: error: use of undeclared identifier 'machine_mode'
+while ( !ix86_hard_regno_mode_ok( i, ( machine_mode)v12) ) 
+                                       ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/apply_args_size/src/builtins.c:1427:28: error: use of undeclared identifier 'machine_mode'
+if ( have_insn_for( SET, ( machine_mode)v12) ) 
+                           ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/apply_args_size/src/builtins.c:1442:40: error: use of undeclared identifier 'machine_mode'
+while ( !ix86_hard_regno_mode_ok( i, ( machine_mode)v13) ) 
+                                       ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/apply_args_size/src/builtins.c:1448:28: error: use of undeclared identifier 'machine_mode'
+if ( have_insn_for( SET, ( machine_mode)v13) ) 
+                           ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/apply_args_size/src/builtins.c:1463:40: error: use of undeclared identifier 'machine_mode'
+while ( !ix86_hard_regno_mode_ok( i, ( machine_mode)v14) ) 
+                                       ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/apply_args_size/src/builtins.c:1469:28: error: use of undeclared identifier 'machine_mode'
+if ( have_insn_for( SET, ( machine_mode)v14) ) 
+                           ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/apply_args_size/src/builtins.c:1482:7: error: use of undeclared identifier 'size_11'; did you mean 'sizeof'?
+v10 = size_11; 
+      ^~~~~~~
+      sizeof
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/apply_args_size/src/builtins.c:1482:14: error: expected expression
+v10 = size_11; 
+             ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/apply_args_size/src/obj/builtins.o] Error 1

@@ -1,0 +1,26 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/i386_simplify_dwarf_addr/src/i386.c:5959:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v4.rtwint = ( __int64)rtx->fld[0]; 
+                      ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/i386_simplify_dwarf_addr/src/i386.c:5961:16: error: expected expression
+return *( rtx *)( *( _QWORD *)( v4.rtwint + 8) + 8LL); 
+               ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/i386_simplify_dwarf_addr/src/i386.c:5966:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v5 = ( __int64)rtx[1]; 
+               ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/i386_simplify_dwarf_addr/src/i386.c:5969:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v6.rtwint = ( __int64)rtx->fld[0]; 
+                      ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/i386_simplify_dwarf_addr/src/i386.c:6006:50: error: expected expression
+return gen_rtx_fmt_ee( PLUS, SImode, v7, *( rtx *)( *( _QWORD *)( v12 + 8) + 8LL)); 
+                                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/i386_simplify_dwarf_addr/src/i386.c:6008:16: error: expected expression
+return *( rtx *)( *( _QWORD *)( v12 + 8) + 8LL); 
+               ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/i386_simplify_dwarf_addr/src/i386.c:6021:50: error: expected expression
+result = gen_rtx_fmt_ee( PLUS, VOIDmode, *( rtx *)( *( _QWORD *)( v13 + 8) + 8LL), v14); 
+                                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/i386_simplify_dwarf_addr/src/i386.c:6023:32: error: use of undeclared identifier 'machine_mode'
+return gen_rtx_fmt_ee( PLUS, ( machine_mode)( 5 - ( ( target_flags & 0x2000000) == 0)), v7, result); 
+                               ^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/i386_simplify_dwarf_addr/src/obj/i386.o] Error 1

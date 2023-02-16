@@ -1,0 +1,15 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emit_indirect_jump/src/optabs.c:4109:7: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+if ( !insn_data_0[1159].operand->predicate( loc, ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32) ) 
+      ^~~~~~~~~~~
+      insn_data
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emit_indirect_jump/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emit_indirect_jump/src/optabs.c:4109:43: error: called object type '<dependent type>' is not a function or function pointer
+if ( !insn_data_0[1159].operand->predicate( loc, ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32) ) 
+                                          ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emit_indirect_jump/src/optabs.c:4110:26: error: use of undeclared identifier 'machine_mode'
+v1 = copy_to_mode_reg( ( machine_mode)( ( ( target_flags & 0x2000000 | 0x500000000uLL) - 1) >> 32), loc); 
+                         ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/emit_indirect_jump/src/obj/optabs.o] Error 1

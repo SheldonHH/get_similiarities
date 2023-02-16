@@ -1,0 +1,126 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/reload_cse_simplify_operands/src/reload1.c:8814:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v10; // esi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/reload_cse_simplify_operands/src/reload1.c:8831:1: error: must use 'enum' tag to refer to type 'reg_class'
+reg_class v27; // r14d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/reload_cse_simplify_operands/src/reload1.c:8893:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // [rsp+21Ch] [rbp-44h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/reload_cse_simplify_operands/src/reload1.c:8900:6: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( recog_data_0.n_alternatives && recog_data_0.n_operands ) 
+     ^~~~~~~~~~~~
+     recog_data
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/reload_cse_simplify_operands/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/reload_cse_simplify_operands/src/reload1.c:8900:37: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( recog_data_0.n_alternatives && recog_data_0.n_operands ) 
+                                    ^~~~~~~~~~~~
+                                    recog_data
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/reload_cse_simplify_operands/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/reload_cse_simplify_operands/src/reload1.c:8903:29: error: too many arguments provided to function-like macro invocation
+fatal_insn_not_found( insn, &off_7088B8[4], 8371, "reload_cse_simplify_operands"); 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/reload_cse_simplify_operands/src/toplev.h:52:9: note: macro 'fatal_insn_not_found' defined here
+#define fatal_insn_not_found(insn) \
+        ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/reload_cse_simplify_operands/src/reload1.c:8903:1: error: use of undeclared identifier 'fatal_insn_not_found'; did you mean '_fatal_insn_not_found'?
+fatal_insn_not_found( insn, &off_7088B8[4], 8371, "reload_cse_simplify_operands"); 
+^~~~~~~~~~~~~~~~~~~~
+_fatal_insn_not_found
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/reload_cse_simplify_operands/src/toplev.h:40:13: note: '_fatal_insn_not_found' declared here
+extern void _fatal_insn_not_found       PARAMS ((struct rtx_def *,
+            ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/reload_cse_simplify_operands/src/reload1.c:8904:12: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+v2 = 4LL * recog_data_0.n_alternatives; 
+           ^~~~~~~~~~~~
+           recog_data
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/reload_cse_simplify_operands/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/reload_cse_simplify_operands/src/reload1.c:8910:14: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+n_operands = recog_data_0.n_operands; 
+             ^~~~~~~~~~~~
+             recog_data
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/reload_cse_simplify_operands/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/reload_cse_simplify_operands/src/reload1.c:8913:6: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( recog_data_0.n_operands > 0 ) 
+     ^~~~~~~~~~~~
+     recog_data
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/reload_cse_simplify_operands/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/reload_cse_simplify_operands/src/reload1.c:8920:6: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+v7 = recog_data_0.operand[v5]; 
+     ^~~~~~~~~~~~
+     recog_data
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/reload_cse_simplify_operands/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/reload_cse_simplify_operands/src/reload1.c:8929:7: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+v10 = recog_data_0.operand_mode[v5]; 
+      ^~~~~~~~~~~~
+      recog_data
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/reload_cse_simplify_operands/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/reload_cse_simplify_operands/src/reload1.c:8934:14: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+n_operands = recog_data_0.n_operands; 
+             ^~~~~~~~~~~~
+             recog_data
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/reload_cse_simplify_operands/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/reload_cse_simplify_operands/src/reload1.c:8935:12: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( v5 >= recog_data_0.n_operands ) 
+           ^~~~~~~~~~~~
+           recog_data
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/reload_cse_simplify_operands/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/reload_cse_simplify_operands/src/reload1.c:8937:6: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+if ( recog_data_0.n_operands > 0 ) 
+     ^~~~~~~~~~~~
+     recog_data
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/reload_cse_simplify_operands/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/reload_cse_simplify_operands/src/reload1.c:8942:18: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+n_alternatives = recog_data_0.n_alternatives; 
+                 ^~~~~~~~~~~~
+                 recog_data
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/reload_cse_simplify_operands/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/reload_cse_simplify_operands/src/reload1.c:8943:49: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+v19 = ( int *)( ( char *)equiv_regs - ( ( 4LL * recog_data_0.n_alternatives + 15) & 0xFFFFFFFFFFFFFFF0LL)); 
+                                                ^~~~~~~~~~~~
+                                                recog_data
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/reload_cse_simplify_operands/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/reload_cse_simplify_operands/src/reload1.c:8948:7: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+v20 = recog_data_0.constraints[v15]; 
+      ^~~~~~~~~~~~
+      recog_data
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/reload_cse_simplify_operands/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/reload_cse_simplify_operands/src/reload1.c:8949:8: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+mode = recog_data_0.operand_mode[v15]; 
+       ^~~~~~~~~~~~
+       recog_data
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/reload_cse_simplify_operands/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/reload_cse_simplify_operands/src/obj/reload1.o] Error 1

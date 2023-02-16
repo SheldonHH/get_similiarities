@@ -1,0 +1,73 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/branch_prob/src/profile.c:1113:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v111; // r14d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/branch_prob/src/profile.c:1196:4: error: expected ';' after expression
+rtx reg_note; // rbx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/branch_prob/src/profile.c:1196:5: error: must use 'enum' tag to refer to type 'reg_note'
+rtx reg_note; // rbx 
+    ^
+    enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/branch_prob/src/profile.c:1200:4: error: expected ';' after expression
+rtx v198; // rbx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/branch_prob/src/profile.c:1200:5: error: use of undeclared identifier 'v198'
+rtx v198; // rbx 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/branch_prob/src/profile.c:1247:28: error: expected ')'
+if ( !find_reg_note( ( rtx)head, REG_SETJMP, 0LL) ) 
+                           ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/branch_prob/src/profile.c:1247:20: note: to match this '('
+if ( !find_reg_note( ( rtx)head, REG_SETJMP, 0LL) ) 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/branch_prob/src/profile.c:1260:34: error: expected expression
+v74 = split_block( v1, *( ( rtx *)head + 2)); 
+                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/branch_prob/src/profile.c:1344:2: error: expected expression
+ struct edge_list = create_edge_list( ); 
+ ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/branch_prob/src/profile.c:1380:43: error: expected expression
+nonnote_insn = prev_nonnote_insn( *( rtx *)v23); 
+                                          ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/branch_prob/src/profile.c:1381:28: error: expected ':'
+rtx = nonnote_insn ? ( rtx)nonnote_insn[1].fld[0].rtwint : get_insns( ); 
+                           ^
+                           : 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/branch_prob/src/profile.c:1381:20: note: to match this '?'
+rtx = nonnote_insn ? ( rtx)nonnote_insn[1].fld[0].rtwint : get_insns( ); 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/branch_prob/src/profile.c:1381:58: error: expected ';' after expression
+rtx = nonnote_insn ? ( rtx)nonnote_insn[1].fld[0].rtwint : get_insns( ); 
+                                                         ^
+                                                         ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/branch_prob/src/profile.c:1383:21: error: expected expression
+if ( rtx != *( rtx *)( v23 + 8) ) 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/branch_prob/src/profile.c:1398:7: error: use of undeclared identifier 'ignore_next_note_3'
+if ( !ignore_next_note_3 ) 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/branch_prob/src/profile.c:1408:22: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v84 = ( const char *)rtx[2]; 
+                     ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/branch_prob/src/profile.c:1416:14: error: expected expression
+if ( *( rtx *)( v23 + 8) == rtx ) 
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/branch_prob/src/profile.c:1420:1: error: use of undeclared identifier 'ignore_next_note_3'
+ignore_next_note_3 = 0; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/branch_prob/src/profile.c:1422:14: error: expected expression
+if ( *( rtx *)( v23 + 8) == rtx ) 
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/branch_prob/src/profile.c:1425:1: error: use of undeclared identifier 'ignore_next_note_3'
+ignore_next_note_3 = 1; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/branch_prob/src/profile.c:2219:1: error: must use 'enum' tag to refer to type 'reg_note'
+reg_note = find_reg_note( v192, REG_BR_PROB, 0LL); 
+^
+enum 
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/branch_prob/src/obj/profile.o] Error 1

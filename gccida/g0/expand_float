@@ -1,0 +1,36 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_float/src/optabs.c:4550:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code v3; // ecx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_float/src/optabs.c:4569:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode imode; // [rsp+78h] [rbp-18h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_float/src/optabs.c:4570:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode fmode; // [rsp+7Ch] [rbp-14h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_float/src/optabs.c:4572:1: error: must use 'enum' tag to refer to type 'insn_code'
+insn_code icode; // [rsp+8Ch] [rbp-4h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_float/src/optabs.c:4629:26: error: use of undeclared identifier 'machine_mode'
+|| can_float_p( fmode, ( machine_mode)*( ( unsigned __int8 *)fromb + 2), 0) == CODE_FOR_nothing); 
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_float/src/optabs.c:4647:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)fromb + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_float/src/optabs.c:4650:32: error: too many arguments to function call, expected 2, have 3
+ereal_ldexp( &offset, dconst1, mode_bitsize[*( ( unsigned __int8 *)fromb + 2)]); 
+~~~~~~~~~~~                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_float/src/real.h:160:1: note: 'ereal_ldexp' declared here
+extern REAL_VALUE_TYPE ereal_ldexp PARAMS ((REAL_VALUE_TYPE, int));
+^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_float/src/optabs.c:4764:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int8 *)tob + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_float/src/optabs.c:4770:30: error: use of undeclared identifier 'machine_mode'
+v7 = gen_rtx_fmt_e( FLOAT, ( machine_mode)*( ( unsigned __int8 *)tob + 2), fromc); 
+                             ^
+9 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_float/src/obj/optabs.o] Error 1

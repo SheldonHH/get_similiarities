@@ -1,0 +1,68 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/fixup_var_refs_1/src/function.c:2396:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode promoted_mode, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/fixup_var_refs_1/src/function.c:2442:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode is_mode_0; // [rsp+E8h] [rbp-D8h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/fixup_var_refs_1/src/function.c:2443:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode wanted_mode_0; // [rsp+ECh] [rbp-D4h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/fixup_var_refs_1/src/function.c:2450:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode new_mode_0; // [rsp+120h] [rbp-A0h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/fixup_var_refs_1/src/function.c:2451:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode new_mode; // [rsp+124h] [rbp-9Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/fixup_var_refs_1/src/function.c:2454:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode is_mode; // [rsp+130h] [rbp-90h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/fixup_var_refs_1/src/function.c:2455:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode wanted_mode; // [rsp+134h] [rbp-8Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/fixup_var_refs_1/src/function.c:2477:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code; // [rsp+17Ch] [rbp-44h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/fixup_var_refs_1/src/function.c:2498:36: error: use of undeclared identifier 'machine_mode'
+replacemente->new = gen_reg_rtx( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)var)); 
+                                   ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/fixup_var_refs_1/src/function.c:2498:51: error: expected expression
+replacemente->new = gen_reg_rtx( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)var)); 
+                                                  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/fixup_var_refs_1/src/function.c:2507:23: error: use of undeclared identifier 'machine_mode'
+temd = gen_reg_rtx( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)x->fld[0].rtwint)); 
+                      ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/fixup_var_refs_1/src/function.c:2507:38: error: expected expression
+temd = gen_reg_rtx( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)x->fld[0].rtwint)); 
+                                     ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/fixup_var_refs_1/src/function.c:2509:22: error: use of undeclared identifier 'machine_mode'
+v13 = gen_lowpart( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)var), temd); 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/fixup_var_refs_1/src/function.c:2509:37: error: expected expression
+v13 = gen_lowpart( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)var), temd); 
+                                    ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/fixup_var_refs_1/src/function.c:2515:13: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+src = ( rtx)x[1]; 
+            ^~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/fixup_var_refs_1/src/function.c:2579:24: error: use of undeclared identifier 'machine_mode'
+tem1a = gen_reg_rtx( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)temc)); 
+                       ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/fixup_var_refs_1/src/function.c:2579:39: error: expected expression
+tem1a = gen_reg_rtx( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)temc)); 
+                                      ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/fixup_var_refs_1/src/function.c:2592:14: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+if ( ( ( rtx)x[1] == var || ( unsigned __int16)**( _DWORD **)&x[1] == 63 && *( rtx *)( *( _QWORD *)&x[1] + 8LL) == var) 
+             ^~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/fixup_var_refs_1/src/function.c:2601:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+: ( v26 = ( rtx)insn[2]), 
+                ^~~~~~~
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/fixup_var_refs_1/src/obj/function.o] Error 1

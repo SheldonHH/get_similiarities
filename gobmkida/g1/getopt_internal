@@ -1,0 +1,24 @@
+/data/output_dir/patch/gobmk/ida/gcc/O1/gobmk-gcc-O1/getopt_internal/src/utils/getopt.c:987:1: error: use of undeclared identifier '$58E8A322B99FFF983766F42E1DE15117'
+$58E8A322B99FFF983766F42E1DE15117 v17; // ebx 
+^
+/data/output_dir/patch/gobmk/ida/gcc/O1/gobmk-gcc-O1/getopt_internal/src/utils/getopt.c:1052:7: error: use of undeclared identifier '_getopt_initialized'
+if ( !_getopt_initialized ) 
+      ^
+/data/output_dir/patch/gobmk/ida/gcc/O1/gobmk-gcc-O1/getopt_internal/src/utils/getopt.c:1074:1: error: use of undeclared identifier '_getopt_initialized'; did you mean '__getopt_initialized'?
+_getopt_initialized = 1; 
+^~~~~~~~~~~~~~~~~~~
+__getopt_initialized
+/data/output_dir/patch/gobmk/ida/gcc/O1/gobmk-gcc-O1/getopt_internal/src/utils/getopt.c:132:5: note: '__getopt_initialized' declared here
+int __getopt_initialized;
+    ^
+/data/output_dir/patch/gobmk/ida/gcc/O1/gobmk-gcc-O1/getopt_internal/src/utils/getopt.c:1084:1: error: use of undeclared identifier 'v17'
+v17 = ordering; 
+^
+/data/output_dir/patch/gobmk/ida/gcc/O1/gobmk-gcc-O1/getopt_internal/src/utils/getopt.c:1139:6: error: use of undeclared identifier 'v17'
+if ( v17 == REQUIRE_ORDER ) 
+     ^
+/data/output_dir/patch/gobmk/ida/gcc/O1/gobmk-gcc-O1/getopt_internal/src/utils/getopt.c:1272:25: error: use of undeclared identifier 'pdfa'
+nextchar = ( _BYTE *)( &pdfa + 70); 
+                        ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gobmk/ida/gcc/O1/gobmk-gcc-O1/getopt_internal/src/obj/5/getopt.o] Error 1

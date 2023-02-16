@@ -1,0 +1,46 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_unary_real/src/simplify-rtx.c:833:1: error: must use 'union' tag to refer to type 'real_extract'
+real_extract u; // [rsp+B0h] [rbp-40h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_unary_real/src/simplify-rtx.c:840:22: error: expected expression
+u = *( real_extract *)( *( _QWORD *)p + 16LL); 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_unary_real/src/simplify-rtx.c:840:8: error: use of undeclared identifier 'real_extract'; did you mean 'insn_extract'?
+u = *( real_extract *)( *( _QWORD *)p + 16LL); 
+       ^~~~~~~~~~~~
+       insn_extract
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_unary_real/src/recog.h:124:13: note: 'insn_extract' declared here
+extern void insn_extract                PARAMS ((rtx));
+            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_unary_real/src/simplify-rtx.c:862:20: error: too many arguments to function call, expected 1, have 2
+ereal_negate( &v6, d); 
+~~~~~~~~~~~~       ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_unary_real/src/real.h:148:1: note: 'ereal_negate' declared here
+extern REAL_VALUE_TYPE ereal_negate PARAMS ((REAL_VALUE_TYPE));
+^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_unary_real/src/simplify-rtx.c:868:39: error: too many arguments to function call, expected 2, have 3
+real_value_truncate( &v5, args->mode, d); 
+~~~~~~~~~~~~~~~~~~~                   ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_unary_real/src/real.h:406:1: note: 'real_value_truncate' declared here
+extern REAL_VALUE_TYPE real_value_truncate PARAMS ((enum machine_mode,
+^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_unary_real/src/simplify-rtx.c:872:15: error: too many arguments to function call, expected 1, have 2
+etrunci( &v4, d); 
+~~~~~~~       ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_unary_real/src/real.h:146:1: note: 'etrunci' declared here
+extern REAL_VALUE_TYPE etrunci  PARAMS ((REAL_VALUE_TYPE));
+^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_unary_real/src/simplify-rtx.c:876:16: error: too many arguments to function call, expected 1, have 2
+etruncui( &v3, d); 
+~~~~~~~~       ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_unary_real/src/real.h:147:1: note: 'etruncui' declared here
+extern REAL_VALUE_TYPE etruncui PARAMS ((REAL_VALUE_TYPE));
+^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_unary_real/src/simplify-rtx.c:882:20: error: too many arguments to function call, expected 1, have 2
+ereal_negate( &v7, d); 
+~~~~~~~~~~~~       ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_unary_real/src/real.h:148:1: note: 'ereal_negate' declared here
+extern REAL_VALUE_TYPE ereal_negate PARAMS ((REAL_VALUE_TYPE));
+^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/simplify_unary_real/src/obj/simplify-rtx.o] Error 1

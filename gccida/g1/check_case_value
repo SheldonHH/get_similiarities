@@ -1,0 +1,22 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/check_case_value/src/c-common.c:1727:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v1; // rsi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/check_case_value/src/c-common.c:1730:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v4; // rbx 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/check_case_value/src/c-common.c:1758:21: error: expected expression
+v1 = *( tree_node **)( v7 + 8); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/check_case_value/src/c-common.c:1758:9: error: use of undeclared identifier 'tree_node'
+v1 = *( tree_node **)( v7 + 8); 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/check_case_value/src/c-common.c:1770:19: error: expected expression
+v4 = ( tree_node *)global_trees; 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/check_case_value/src/c-common.c:1770:8: error: use of undeclared identifier 'tree_node'
+v4 = ( tree_node *)global_trees; 
+       ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/check_case_value/src/obj/c-common.o] Error 1

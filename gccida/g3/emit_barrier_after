@@ -1,0 +1,11 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_barrier_after/src/emit-rtl.c:4471:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v5.rtwint = ( __int64)after[1].fld[0]; 
+                      ^~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_barrier_after/src/emit-rtl.c:4474:15: error: use of undeclared identifier 'rtx_def'
+result[1] = ( rtx_def)_mm_unpacklo_epi64( ( __m128i)( unsigned __int64)after, ( __m128i)( unsigned __int64)v5.rtwint); 
+              ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_barrier_after/src/emit-rtl.c:4524:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v10 = ( __int64)after[2]; 
+                ^~~~~~~~
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/emit_barrier_after/src/obj/emit-rtl.o] Error 1

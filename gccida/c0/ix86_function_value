@@ -1,0 +1,35 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_function_value/src/i386.c:2763:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( ( unsigned __int8)HIBYTE( WORD2( valtype->block.abstract_origin)) >> 1), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_function_value/src/i386.c:2771:23: error: use of undeclared identifier 'machine_mode'
+return gen_rtx_REG( ( machine_mode)( ( unsigned __int8)HIBYTE( WORD2( valtype->block.abstract_origin)) >> 1), 0); 
+                      ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_function_value/src/i386.c:2777:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[( unsigned __int8)HIBYTE( WORD2( valtype->block.abstract_origin)) >> 1] == MODE_FLOAT 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_function_value/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_function_value/src/i386.c:2780:23: error: use of undeclared identifier 'machine_mode'
+return gen_rtx_REG( ( machine_mode)mode, 8); 
+                      ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_function_value/src/i386.c:2786:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[( unsigned __int8)HIBYTE( WORD2( valtype->block.abstract_origin)) >> 1] != MODE_VECTOR_INT ) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_function_value/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_function_value/src/i386.c:2787:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v6 = mode_class_0[( unsigned __int8)HIBYTE( WORD2( valtype->block.abstract_origin)) >> 1] == MODE_VECTOR_FLOAT; 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_function_value/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_function_value/src/i386.c:2793:23: error: use of undeclared identifier 'machine_mode'
+return gen_rtx_REG( ( machine_mode)mode, v4); 
+                      ^
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/ix86_function_value/src/obj/i386.o] Error 1

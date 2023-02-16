@@ -1,0 +1,56 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_sub2_insn/src/optabs.c:4343:73: error: use of undeclared identifier 'insn_data_0'
+if ( !insn_data_0[icode].operand->predicate( x, *( ( unsigned __int16 *)insn_data_0[icode].operand + 8)) 
+                                                                        ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_sub2_insn/src/optabs.c:4343:7: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+if ( !insn_data_0[icode].operand->predicate( x, *( ( unsigned __int16 *)insn_data_0[icode].operand + 8)) 
+      ^~~~~~~~~~~
+      insn_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_sub2_insn/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_sub2_insn/src/optabs.c:4346:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int16 *)&insn_data_0[icode].operand[1] + 8)) 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_sub2_insn/src/optabs.c:4346:41: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+( machine_mode)*( ( unsigned __int16 *)&insn_data_0[icode].operand[1] + 8)) 
+                                        ^~~~~~~~~~~
+                                        insn_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_sub2_insn/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_sub2_insn/src/optabs.c:4344:5: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+|| !insn_data_0[icode].operand[1].predicate( 
+    ^~~~~~~~~~~
+    insn_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_sub2_insn/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_sub2_insn/src/optabs.c:4349:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( ( unsigned __int16 *)&insn_data_0[icode].operand[2] + 8)) ) 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_sub2_insn/src/optabs.c:4349:41: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+( machine_mode)*( ( unsigned __int16 *)&insn_data_0[icode].operand[2] + 8)) ) 
+                                        ^~~~~~~~~~~
+                                        insn_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_sub2_insn/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_sub2_insn/src/optabs.c:4347:5: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+|| !insn_data_0[icode].operand[2].predicate( 
+    ^~~~~~~~~~~
+    insn_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_sub2_insn/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_sub2_insn/src/optabs.c:4353:8: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+return insn_data_0[icode].genfun( x, x, y); 
+       ^~~~~~~~~~~
+       insn_data
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_sub2_insn/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_sub2_insn/src/optabs.c:4353:33: error: called object type '<dependent type>' is not a function or function pointer
+return insn_data_0[icode].genfun( x, x, y); 
+                                ^
+10 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_sub2_insn/src/obj/optabs.o] Error 1

@@ -1,0 +1,81 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/build_unary_op/src/c-typeck.c:3191:23: error: must use 'enum' tag to refer to type 'tree_code'
+tree  build_unary_op( tree_code code, tree xarg, int flag) 
+                      ^
+                      enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/build_unary_op/src/c-typeck.c:3195:1: error: must use 'enum' tag to refer to type 'tree_code'
+tree_code v5; // r13d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/build_unary_op/src/c-typeck.c:3198:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v8; // rdx 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/build_unary_op/src/c-typeck.c:3199:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v9; // rsi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/build_unary_op/src/c-typeck.c:3200:1: error: must use 'enum' tag to refer to type 'tree_code'
+tree_code v10; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/build_unary_op/src/c-typeck.c:3201:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v11; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/build_unary_op/src/c-typeck.c:3206:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v17; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/build_unary_op/src/c-typeck.c:3208:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v19; // rbp 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/build_unary_op/src/c-typeck.c:3210:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v21; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/build_unary_op/src/c-typeck.c:3212:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v23; // rbp 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/build_unary_op/src/c-typeck.c:3217:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v28; // r12 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/build_unary_op/src/c-typeck.c:3219:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v30; // rsi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/build_unary_op/src/c-typeck.c:3239:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v50; // r13 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/build_unary_op/src/c-typeck.c:3240:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v51; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/build_unary_op/src/c-typeck.c:3243:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v54; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/build_unary_op/src/c-typeck.c:3403:20: error: expected expression
+v30 = ( tree_node *)*( &global_trees + 12); 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/build_unary_op/src/c-typeck.c:3403:9: error: use of undeclared identifier 'tree_node'
+v30 = ( tree_node *)*( &global_trees + 12); 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/build_unary_op/src/c-typeck.c:3469:16: error: use of undeclared identifier 'tree_code'; did you mean 'tree_cons'?
+v42 = build( ( tree_code)( 59 - ( ( ( ( v5 - 130) & 0xFFFFFFFD) == 0) - 1)), v28, v41, v31); 
+               ^~~~~~~~~
+               tree_cons
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/build_unary_op/src/tree.h:2477:13: note: 'tree_cons' declared here
+extern tree tree_cons                   PARAMS ((tree, tree, tree));
+            ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/build_unary_op/src/c-typeck.c:3469:75: error: too few arguments to function call, expected 3, have 1
+v42 = build( ( tree_code)( 59 - ( ( ( ( v5 - 130) & 0xFFFFFFFD) == 0) - 1)), v28, v41, v31); 
+             ~~~~~~~~~~~~                                                 ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/build_unary_op/src/tree.h:2477:1: note: 'tree_cons' declared here
+extern tree tree_cons                   PARAMS ((tree, tree, tree));
+^
+19 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/build_unary_op/src/obj/c-typeck.o] Error 1

@@ -1,0 +1,62 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/pop_init_level/src/c-typeck.c:5938:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *inited; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/pop_init_level/src/c-typeck.c:5946:9: error: use of undeclared identifier 'constructor_stack_0'; did you mean 'constructor_stack'?
+while ( constructor_stack_0->implicit ) 
+        ^~~~~~~~~~~~~~~~~~~
+        constructor_stack
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/pop_init_level/src/c-typeck.c:5021:27: note: 'constructor_stack' declared here
+struct constructor_stack *constructor_stack;
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/pop_init_level/src/c-typeck.c:5951:6: error: use of undeclared identifier 'constructor_range_stack_0'; did you mean 'constructor_range_stack'?
+if ( constructor_range_stack_0 ) 
+     ^~~~~~~~~~~~~~~~~~~~~~~~~
+     constructor_range_stack
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/pop_init_level/src/c-typeck.c:5036:33: note: 'constructor_range_stack' declared here
+struct constructor_range_stack *constructor_range_stack;
+                                ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/pop_init_level/src/c-typeck.c:5954:5: error: use of undeclared identifier 'constructor_stack_0'; did you mean 'constructor_stack'?
+p = constructor_stack_0; 
+    ^~~~~~~~~~~~~~~~~~~
+    constructor_stack
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/pop_init_level/src/c-typeck.c:5021:27: note: 'constructor_stack' declared here
+struct constructor_stack *constructor_stack;
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/pop_init_level/src/c-typeck.c:5995:1: error: use of undeclared identifier 'spelling_0'; did you mean 'spelling'?
+spelling_0 = &spelling_base[constructor_depth]; 
+^~~~~~~~~~
+spelling
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/pop_init_level/src/c-typeck.c:4491:25: note: 'spelling' declared here
+static struct spelling *spelling;       /* Next stack element (unused).  */
+                        ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/pop_init_level/src/c-typeck.c:6054:1: error: use of undeclared identifier 'constructor_range_stack_0'; did you mean 'constructor_range_stack'?
+constructor_range_stack_0 = p->range_stack; 
+^~~~~~~~~~~~~~~~~~~~~~~~~
+constructor_range_stack
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/pop_init_level/src/c-typeck.c:5036:33: note: 'constructor_range_stack' declared here
+struct constructor_range_stack *constructor_range_stack;
+                                ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/pop_init_level/src/c-typeck.c:6055:1: error: use of undeclared identifier 'spelling_0'; did you mean 'spelling'?
+spelling_0 = &spelling_base[constructor_depth]; 
+^~~~~~~~~~
+spelling
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/pop_init_level/src/c-typeck.c:4491:25: note: 'spelling' declared here
+static struct spelling *spelling;       /* Next stack element (unused).  */
+                        ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/pop_init_level/src/c-typeck.c:6056:1: error: use of undeclared identifier 'constructor_stack_0'; did you mean 'constructor_stack'?
+constructor_stack_0 = p->next; 
+^~~~~~~~~~~~~~~~~~~
+constructor_stack
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/pop_init_level/src/c-typeck.c:5021:27: note: 'constructor_stack' declared here
+struct constructor_stack *constructor_stack;
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/pop_init_level/src/c-typeck.c:6060:6: error: use of undeclared identifier 'constructor_stack_0'; did you mean 'constructor_stack'?
+if ( constructor_stack_0 ) 
+     ^~~~~~~~~~~~~~~~~~~
+     constructor_stack
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/pop_init_level/src/c-typeck.c:5021:27: note: 'constructor_stack' declared here
+struct constructor_stack *constructor_stack;
+                          ^
+9 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/pop_init_level/src/obj/c-typeck.o] Error 1

@@ -1,0 +1,45 @@
+/data/output_dir/patch/gobmk/ida/clang/O0/gobmk-clang-O0/segment_region/src/engine/influence.c:1745:43: error: use of undeclared identifier 'segment_region_marked'; did you mean 'segment_region'?
+memset( segment_region_marked, 0, sizeof( segment_region_marked)); 
+                                          ^~~~~~~~~~~~~~~~~~~~~
+                                          segment_region
+/data/output_dir/patch/gobmk/ida/clang/O0/gobmk-clang-O0/segment_region/src/engine/influence.c:1732:7: note: 'segment_region' declared here
+void  segment_region( struct influence_data *q, owner_function_ptr region_owner, int type, int *segmentation) 
+      ^
+/data/output_dir/patch/gobmk/ida/clang/O0/gobmk-clang-O0/segment_region/src/engine/influence.c:1745:9: error: use of undeclared identifier 'segment_region_marked'; did you mean 'segment_region'?
+memset( segment_region_marked, 0, sizeof( segment_region_marked)); 
+        ^~~~~~~~~~~~~~~~~~~~~
+        segment_region
+/data/output_dir/patch/gobmk/ida/clang/O0/gobmk-clang-O0/segment_region/src/engine/influence.c:1732:7: note: 'segment_region' declared here
+void  segment_region( struct influence_data *q, owner_function_ptr region_owner, int type, int *segmentation) 
+      ^
+/data/output_dir/patch/gobmk/ida/clang/O0/gobmk-clang-O0/segment_region/src/engine/influence.c:1748:25: error: use of undeclared identifier 'segment_region_marked'
+if ( board[ii] != 3 && !segment_region_marked[ii] && region_owner( q, ii) ) 
+                        ^
+/data/output_dir/patch/gobmk/ida/clang/O0/gobmk-clang-O0/segment_region/src/engine/influence.c:1756:1: error: use of undeclared identifier 'segment_region_marked'; did you mean 'segment_region'?
+segment_region_marked[ii] = 1; 
+^~~~~~~~~~~~~~~~~~~~~
+segment_region
+/data/output_dir/patch/gobmk/ida/clang/O0/gobmk-clang-O0/segment_region/src/engine/influence.c:1732:7: note: 'segment_region' declared here
+void  segment_region( struct influence_data *q, owner_function_ptr region_owner, int type, int *segmentation) 
+      ^
+/data/output_dir/patch/gobmk/ida/clang/O0/gobmk-clang-O0/segment_region/src/engine/influence.c:1756:1: error: subscript of pointer to function type 'void (struct influence_data *, owner_function_ptr, int, int *)' (aka 'void (struct influence_data *, int (*)(const struct influence_data *, int), int, int *)')
+segment_region_marked[ii] = 1; 
+^~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O0/gobmk-clang-O0/segment_region/src/engine/influence.c:1769:35: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'uint32' (aka 'unsigned int') of different size
+LODWORD( v4) = _mm_cvtsi128_si32( ( __m128i)LODWORD( q->territory_value[tt])) ^ 0x80000000; 
+                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gobmk/ida/clang/O0/gobmk-clang-O0/segment_region/src/engine/influence.c:1777:29: error: use of undeclared identifier 'segment_region_marked'
+if ( board[d + tt] != 3 && !segment_region_marked[d + tt] && region_owner( q, d + tt) == color ) 
+                            ^
+/data/output_dir/patch/gobmk/ida/clang/O0/gobmk-clang-O0/segment_region/src/engine/influence.c:1780:1: error: use of undeclared identifier 'segment_region_marked'; did you mean 'segment_region'?
+segment_region_marked[d + tt] = 1; 
+^~~~~~~~~~~~~~~~~~~~~
+segment_region
+/data/output_dir/patch/gobmk/ida/clang/O0/gobmk-clang-O0/segment_region/src/engine/influence.c:1732:7: note: 'segment_region' declared here
+void  segment_region( struct influence_data *q, owner_function_ptr region_owner, int type, int *segmentation) 
+      ^
+/data/output_dir/patch/gobmk/ida/clang/O0/gobmk-clang-O0/segment_region/src/engine/influence.c:1780:1: error: subscript of pointer to function type 'void (struct influence_data *, owner_function_ptr, int, int *)' (aka 'void (struct influence_data *, int (*)(const struct influence_data *, int), int, int *)')
+segment_region_marked[d + tt] = 1; 
+^~~~~~~~~~~~~~~~~~~~~
+9 errors generated.
+make: *** [/data/output_dir/patch/gobmk/ida/clang/O0/gobmk-clang-O0/segment_region/src/obj/1/influence.o] Error 1

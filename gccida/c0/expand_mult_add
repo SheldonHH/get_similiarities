@@ -1,0 +1,32 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_mult_add/src/expmed.c:4638:61: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  expand_mult_add( rtx x, rtx target, rtx mult, rtx add, machine_mode mode, int unsignedp) 
+                                                            ^
+                                                            enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_mult_add/src/expmed.c:4641:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v7; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_mult_add/src/expmed.c:4643:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v9; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_mult_add/src/expmed.c:4646:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v13; // [rsp+28h] [rbp-48h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_mult_add/src/expmed.c:4647:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *result; // [rsp+30h] [rbp-40h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_mult_add/src/expmed.c:4648:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *type; // [rsp+40h] [rbp-30h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_mult_add/src/expmed.c:4652:24: error: use of undeclared identifier 'machine_mode'
+v13 = type_for_mode( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)add), unsignedp); 
+                       ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_mult_add/src/expmed.c:4652:39: error: expected expression
+v13 = type_for_mode( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)add), unsignedp); 
+                                      ^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/expand_mult_add/src/obj/expmed.o] Error 1

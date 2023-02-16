@@ -1,0 +1,93 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/subst_asm_stack_regs/src/reg-stack.c:2348:1: error: must use 'enum' tag to refer to type 'reg_note'
+reg_note *note_kind; // [rsp+58h] [rbp-88h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/subst_asm_stack_regs/src/reg-stack.c:2372:14: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+body = ( rtx)insn[2]; 
+             ^~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/subst_asm_stack_regs/src/reg-stack.c:2382:13: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+n_outputs = recog_data_0.n_operands - n_inputs; 
+            ^~~~~~~~~~~~
+            recog_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/subst_asm_stack_regs/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/subst_asm_stack_regs/src/reg-stack.c:2385:18: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+for ( i = 0; i < recog_data_0.n_operands; ++i ) 
+                 ^~~~~~~~~~~~
+                 recog_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/subst_asm_stack_regs/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/subst_asm_stack_regs/src/reg-stack.c:2387:17: error: use of undeclared identifier 'recog_data_0'
+if ( *( _WORD *)recog_data_0.operand[i] == 63 && *( _WORD *)recog_data_0.operand[i]->fld[0].rtwint == 61 ) 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/subst_asm_stack_regs/src/reg-stack.c:2387:61: error: use of undeclared identifier 'recog_data_0'
+if ( *( _WORD *)recog_data_0.operand[i] == 63 && *( _WORD *)recog_data_0.operand[i]->fld[0].rtwint == 61 ) 
+                                                            ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/subst_asm_stack_regs/src/reg-stack.c:2389:1: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+recog_data_0.operand_loc[i] = ( rtx *)recog_data_0.operand[i]->fld; 
+^~~~~~~~~~~~
+recog_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/subst_asm_stack_regs/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/subst_asm_stack_regs/src/reg-stack.c:2389:39: error: use of undeclared identifier 'recog_data_0'
+recog_data_0.operand_loc[i] = ( rtx *)recog_data_0.operand[i]->fld; 
+                                      ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/subst_asm_stack_regs/src/reg-stack.c:2390:1: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+recog_data_0.operand[i] = recog_data_0.operand[i]->fld[0].rtx; 
+^~~~~~~~~~~~
+recog_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/subst_asm_stack_regs/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/subst_asm_stack_regs/src/reg-stack.c:2390:27: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+recog_data_0.operand[i] = recog_data_0.operand[i]->fld[0].rtx; 
+                          ^~~~~~~~~~~~
+                          recog_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/subst_asm_stack_regs/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/subst_asm_stack_regs/src/reg-stack.c:2394:54: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( note = insna[3].fld[0].rtx; note; note = ( rtx)note[1] ) 
+                                                     ^~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/subst_asm_stack_regs/src/reg-stack.c:2401:25: error: expected expression
+note_kind = ( reg_note *)&regstacka; 
+                        ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/subst_asm_stack_regs/src/reg-stack.c:2401:15: error: use of undeclared identifier 'reg_note'
+note_kind = ( reg_note *)&regstacka; 
+              ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/subst_asm_stack_regs/src/reg-stack.c:2403:54: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( note = insna[3].fld[0].rtx; note; note = ( rtx)note[1] ) 
+                                                     ^~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/subst_asm_stack_regs/src/reg-stack.c:2449:17: error: expected identifier or '('
+ struct reg_set = regstacka->reg_set; 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/subst_asm_stack_regs/src/reg-stack.c:2455:17: error: use of undeclared identifier 'recog_data_0'
+if ( *( _WORD *)recog_data_0.operand[i] == 61 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/subst_asm_stack_regs/src/reg-stack.c:2456:4: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+&& recog_data_0.operand[i]->fld[0].rtint > 7u 
+   ^~~~~~~~~~~~
+   recog_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/subst_asm_stack_regs/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/subst_asm_stack_regs/src/reg-stack.c:2457:4: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+&& recog_data_0.operand[i]->fld[0].rtint <= 0xFu 
+   ^~~~~~~~~~~~
+   recog_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/subst_asm_stack_regs/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/subst_asm_stack_regs/src/reg-stack.c:2461:39: error: use of undeclared identifier 'recog_data_0'; did you mean 'recog_data'?
+regno = get_hard_regnum( &temp_stack, recog_data_0.operand[i]); 
+                                      ^~~~~~~~~~~~
+                                      recog_data
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/subst_asm_stack_regs/src/recog.h:203:26: note: 'recog_data' declared here
+extern struct recog_data recog_data;
+                         ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/subst_asm_stack_regs/src/obj/reg-stack.o] Error 1

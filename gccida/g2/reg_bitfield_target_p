@@ -1,0 +1,19 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/reg_bitfield_target_p/src/combine.c:12513:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v6.rtwint = ( __int64)body->fld[0]; 
+                      ^~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/reg_bitfield_target_p/src/combine.c:12546:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v13 = ( ( unsigned int)( mode_class_0[v11] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/reg_bitfield_target_p/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/reg_bitfield_target_p/src/combine.c:12570:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v17 = ( ( unsigned int)( mode_class_0[v16] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/reg_bitfield_target_p/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+3 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/reg_bitfield_target_p/src/obj/combine.o] Error 1

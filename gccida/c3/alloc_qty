@@ -1,0 +1,43 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/alloc_qty/src/local-alloc.c:773:29: error: must use 'enum' tag to refer to type 'machine_mode'
+void  alloc_qty( int regno, machine_mode mode, int size, int birth) 
+                            ^
+                            enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/alloc_qty/src/local-alloc.c:778:6: error: use of undeclared identifier 'next_qty_0'; did you mean 'next_qty'?
+v4 = next_qty_0++; 
+     ^~~~~~~~~~
+     next_qty
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/alloc_qty/src/local-alloc.c:81:12: note: 'next_qty' declared here
+static int next_qty;
+           ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/alloc_qty/src/local-alloc.c:783:1: error: use of undeclared identifier 'qty_0'
+qty_0[v4].first_reg = regno; 
+^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/alloc_qty/src/local-alloc.c:784:1: error: use of undeclared identifier 'qty_0'
+qty_0[v4].size = size; 
+^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/alloc_qty/src/local-alloc.c:785:1: error: use of undeclared identifier 'qty_0'
+qty_0[v4].mode = mode; 
+^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/alloc_qty/src/local-alloc.c:786:1: error: use of undeclared identifier 'qty_0'
+qty_0[v4].birth = birth; 
+^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/alloc_qty/src/local-alloc.c:787:1: error: use of undeclared identifier 'qty_0'
+qty_0[v4].n_calls_crossed = *( _DWORD *)( reg_n_info->data.l[regno] + 32); 
+^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/alloc_qty/src/local-alloc.c:788:1: error: use of undeclared identifier 'qty_0'
+qty_0[v4].min_class = reg_preferred_class( regno); 
+^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/alloc_qty/src/local-alloc.c:789:1: error: use of undeclared identifier 'qty_0'
+qty_0[qtyno].alternate_class = reg_alternate_class( regno); 
+^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/alloc_qty/src/local-alloc.c:790:1: error: use of undeclared identifier 'qty_0'
+qty_0[qtyno].n_refs = *( _DWORD *)( reg_n_info->data.l[regno] + 16); 
+^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/alloc_qty/src/local-alloc.c:791:1: error: use of undeclared identifier 'qty_0'
+qty_0[qtyno].freq = *( _DWORD *)( reg_n_info->data.l[regno] + 20); 
+^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/alloc_qty/src/local-alloc.c:792:1: error: use of undeclared identifier 'qty_0'
+qty_0[qtyno].changes_mode = *( _BYTE *)( reg_n_info->data.l[regno] + 40); 
+^
+12 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/alloc_qty/src/obj/local-alloc.o] Error 1

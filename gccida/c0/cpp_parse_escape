@@ -1,0 +1,37 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cpp_parse_escape/src/cpplex.c:2156:1: error: unknown type name 'cpp_reader_0'; did you mean 'cpp_reader'?
+cpp_reader_0 *pfile, 
+^~~~~~~~~~~~
+cpp_reader
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cpp_parse_escape/src/cpplib.h:36:27: note: 'cpp_reader' declared here
+typedef struct cpp_reader cpp_reader;
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cpp_parse_escape/src/cpplex.c:2180:1: error: unknown type name 'cpp_reader_0'; did you mean 'cpp_reader'?
+cpp_reader_0 *pfilea; // [rsp+58h] [rbp-8h] 
+^~~~~~~~~~~~
+cpp_reader
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cpp_parse_escape/src/cpplib.h:36:27: note: 'cpp_reader' declared here
+typedef struct cpp_reader cpp_reader;
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cpp_parse_escape/src/cpplex.c:2282:34: error: use of undeclared identifier 'sch_istable'; did you mean '_sch_istable'?
+v6 = ( const unsigned __int8 *)( sch_istable[( unsigned __int8)c] & 0x100); 
+                                 ^~~~~~~~~~~
+                                 _sch_istable
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cpp_parse_escape/src/safe-ctype.h:72:29: note: '_sch_istable' declared here
+extern const unsigned short _sch_istable[256];
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cpp_parse_escape/src/cpplex.c:2283:8: error: use of undeclared identifier 'sch_istable'; did you mean '_sch_istable'?
+if ( ( sch_istable[( unsigned __int8)c] & 0x100) == 0 ) 
+       ^~~~~~~~~~~
+       _sch_istable
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cpp_parse_escape/src/safe-ctype.h:72:29: note: '_sch_istable' declared here
+extern const unsigned short _sch_istable[256];
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cpp_parse_escape/src/cpplex.c:2310:8: error: use of undeclared identifier 'sch_istable'; did you mean '_sch_istable'?
+if ( ( sch_istable[( unsigned __int8)c] & 0xAC) != 0 ) 
+       ^~~~~~~~~~~
+       _sch_istable
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cpp_parse_escape/src/safe-ctype.h:72:29: note: '_sch_istable' declared here
+extern const unsigned short _sch_istable[256];
+                            ^
+5 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/cpp_parse_escape/src/obj/cpplex.o] Error 1

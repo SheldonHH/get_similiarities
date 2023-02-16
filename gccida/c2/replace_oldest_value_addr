@@ -1,0 +1,30 @@
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/replace_oldest_value_addr/src/regrename.c:1840:47: error: must use 'enum' tag to refer to type 'reg_class'
+__int64  replace_oldest_value_addr( rtx *loc, reg_class a2, __int64 mode, rtx insn,  struct value_data *vd) 
+                                              ^
+                                              enum 
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/replace_oldest_value_addr/src/regrename.c:1840:10: error: conflicting types for 'replace_oldest_value_addr'
+__int64  replace_oldest_value_addr( rtx *loc, reg_class a2, __int64 mode, rtx insn,  struct value_data *vd) 
+         ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/replace_oldest_value_addr/src/regrename.c:1056:13: note: previous declaration is here
+static bool replace_oldest_value_addr PARAMS ((rtx *, enum reg_class,
+            ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/replace_oldest_value_addr/src/regrename.c:1924:28: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v12 = ( unsigned __int16 *)v7[1]; 
+                           ^~~~~
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/replace_oldest_value_addr/src/regrename.c:1971:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)mode, 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/replace_oldest_value_addr/src/regrename.c:2097:62: error: use of undeclared identifier 'machine_mode'
+LOBYTE( v28) = replace_oldest_value_addr( v16, INDEX_REGS, ( machine_mode)mode, insn, fld); 
+                                                             ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/replace_oldest_value_addr/src/regrename.c:2118:71: error: use of undeclared identifier 'machine_mode'
+LOBYTE( v9) = replace_oldest_value_addr( ( rtx *)&v24[2 * v25], a2, ( machine_mode)mode, insn, vd) | ( unsigned __int8)v9 & 1; 
+                                                                      ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/replace_oldest_value_addr/src/regrename.c:2131:82: error: use of undeclared identifier 'machine_mode'
+v27 = replace_oldest_value_addr( ( rtx *)( v26 + *( ( _QWORD *)v7 + v20)), a2, ( machine_mode)mode, insn, vd); 
+                                                                                 ^
+/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/replace_oldest_value_addr/src/regrename.c:2144:58: error: use of undeclared identifier 'machine_mode'
+v23 = replace_oldest_value_addr( ( rtx *)v7 + v20, a2, ( machine_mode)mode, insn, vd); 
+                                                         ^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O2/gcc-clang-O2/replace_oldest_value_addr/src/obj/regrename.o] Error 1

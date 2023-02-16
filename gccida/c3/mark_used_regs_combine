@@ -1,0 +1,67 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mark_used_regs_combine/src/combine.c:12261:12: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v1 = ( rtx)v1[1]; 
+           ^~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mark_used_regs_combine/src/combine.c:12266:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v7.rtwint = ( __int64)v1->fld[0]; 
+                      ^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mark_used_regs_combine/src/combine.c:12290:26: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v16 = ( ( unsigned int)( mode_class_0[( unsigned __int8)v15] - 5) < 2) + 1; 
+                         ^~~~~~~~~~~~
+                         mode_class
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mark_used_regs_combine/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mark_used_regs_combine/src/combine.c:12316:41: error: invalid conversion between vector type '__m128i' (vector of 2 'long long' values) and integer type 'unsigned int' of different size
+v22 = _mm_add_epi64( _mm_shuffle_epi32( ( __m128i)v1->fld[0].rtuint, 68), ( __m128i)xmm*(short *)0x65ADF0); 
+                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/lib/llvm-7/lib/clang/7.0.0/include/emmintrin.h:4347:52: note: expanded from macro '_mm_shuffle_epi32'
+  (__m128i)__builtin_ia32_pshufd((__v4si)(__m128i)(a), (int)(imm))
+                                                   ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mark_used_regs_combine/src/combine.c:12316:85: error: use of undeclared identifier 'xmm'
+v22 = _mm_add_epi64( _mm_shuffle_epi32( ( __m128i)v1->fld[0].rtuint, 68), ( __m128i)xmm*(short *)0x65ADF0); 
+                                                                                    ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mark_used_regs_combine/src/combine.c:12317:7: error: invalid conversion between vector type '__m128d' (vector of 2 'double' values) and integer type 'HARD_REG_ELT_TYPE' (aka 'unsigned long long') of different size
+v23 = ( __m128d)newpat_used_regs; 
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mark_used_regs_combine/src/combine.c:12321:5: error: assigning to '__m128d' (vector of 2 'double' values) from incompatible type 'long long'
+v26 = 0LL; 
+    ^ ~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mark_used_regs_combine/src/combine.c:12326:5: error: assigning to '__m128d' (vector of 2 'double' values) from incompatible type 'long long'
+v26 = 0LL; 
+    ^ ~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mark_used_regs_combine/src/combine.c:12327:44: error: use of undeclared identifier 'xmm'
+si128 = _mm_load_si128( ( const __m128i *)&xmm*(short *)0x65AE00); 
+                                           ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mark_used_regs_combine/src/combine.c:12328:42: error: use of undeclared identifier 'xmm'
+v28 = _mm_load_si128( ( const __m128i *)&xmm*(short *)0x65AE10); 
+                                         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mark_used_regs_combine/src/combine.c:12329:42: error: use of undeclared identifier 'xmm'
+v29 = _mm_load_si128( ( const __m128i *)&xmm*(short *)0x65AE20); 
+                                         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mark_used_regs_combine/src/combine.c:12330:42: error: use of undeclared identifier 'xmm'
+v30 = _mm_load_si128( ( const __m128i *)&xmm*(short *)0x668290); 
+                                         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mark_used_regs_combine/src/combine.c:12331:42: error: use of undeclared identifier 'xmm'
+v31 = _mm_load_si128( ( const __m128i *)&xmm*(short *)0x6682A0); 
+                                         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mark_used_regs_combine/src/combine.c:12336:17: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+*( _QWORD *)&v32.m128d_f64[0] = v28.m128i_i64[0] << v22.m128i_i8[0]; 
+             ~~~^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mark_used_regs_combine/src/combine.c:12336:36: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+*( _QWORD *)&v32.m128d_f64[0] = v28.m128i_i64[0] << v22.m128i_i8[0]; 
+                                ~~~^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mark_used_regs_combine/src/combine.c:12336:56: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+*( _QWORD *)&v32.m128d_f64[0] = v28.m128i_i64[0] << v22.m128i_i8[0]; 
+                                                    ~~~^~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mark_used_regs_combine/src/combine.c:12339:17: error: member reference base type '__m128d' (vector of 2 'double' values) is not a structure or union
+*( _QWORD *)&v35.m128d_f64[0] = v28.m128i_i64[0] << v33.m128i_i8[0]; 
+             ~~~^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mark_used_regs_combine/src/combine.c:12339:36: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+*( _QWORD *)&v35.m128d_f64[0] = v28.m128i_i64[0] << v33.m128i_i8[0]; 
+                                ~~~^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mark_used_regs_combine/src/combine.c:12339:56: error: member reference base type '__m128i' (vector of 2 'long long' values) is not a structure or union
+*( _QWORD *)&v35.m128d_f64[0] = v28.m128i_i64[0] << v33.m128i_i8[0]; 
+                                                    ~~~^~~~~~~~~
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/mark_used_regs_combine/src/obj/combine.o] Error 1

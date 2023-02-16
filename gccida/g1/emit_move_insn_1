@@ -1,0 +1,81 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_move_insn_1/src/expr.c:3275:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v2; // r13d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_move_insn_1/src/expr.c:3278:1: error: must use 'enum' tag to refer to type 'insn_code'
+insn_code insn_code; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_move_insn_1/src/expr.c:3281:1: error: must use 'enum' tag to refer to type 'mode_class'
+mode_class v9; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_move_insn_1/src/machmode.h:52:30: note: enum 'mode_class' is hidden by a non-type declaration of 'mode_class' here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_move_insn_1/src/expr.c:3290:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v18; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_move_insn_1/src/expr.c:3291:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v19; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_move_insn_1/src/expr.c:3315:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v43; // ebp 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_move_insn_1/src/expr.c:3349:6: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+v6 = insn_data_0[insn_code].genfun( x, y); 
+     ^~~~~~~~~~~
+     insn_data
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_move_insn_1/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_move_insn_1/src/expr.c:3349:35: error: called object type '<dependent type>' is not a function or function pointer
+v6 = insn_data_0[insn_code].genfun( x, y); 
+                                  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_move_insn_1/src/expr.c:3352:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v9 = mode_class_0[*( ( unsigned __int8 *)x + 2)]; 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_move_insn_1/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_move_insn_1/src/expr.c:3355:86: error: called object type 'const enum mode_class [59]' is not a function or function pointer
+v18 = mode_for_size( 8 * mode_unit_size[*( ( unsigned __int8 *)x + 2)], ( mode_class)( ( v9 != MODE_COMPLEX_INT) + 1), 0); 
+                                                                        ~~~~~~~~~~~~~^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_move_insn_1/src/expr.c:3359:25: error: use of undeclared identifier 'machine_mode'
+if ( push_operand( x, ( machine_mode)*( ( unsigned __int8 *)x + 2)) ) 
+                        ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_move_insn_1/src/expr.c:3367:46: error: use of undeclared identifier 'insn_data_0'
+genfun = (  struct rtx_def *(  *)( rtx, rtx))insn_data_0[optab_table[30]->handlers[v19].insn_code].genfun; 
+                                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_move_insn_1/src/expr.c:3372:43: error: use of undeclared identifier 'insn_data_0'
+v25 = (  struct rtx_def *(  *)( rtx, rtx))insn_data_0[optab_table[30]->handlers[v19].insn_code].genfun; 
+                                          ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_move_insn_1/src/expr.c:3392:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_move_insn_1/src/expr.c:3403:31: error: use of undeclared identifier 'machine_mode'
+v35 = gen_rtx_fmt_ee( PLUS, ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), global_rtl[2], v34); 
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_move_insn_1/src/expr.c:3408:31: error: use of undeclared identifier 'machine_mode'
+v39 = gen_rtx_fmt_ee( PLUS, ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), global_rtl[2], v38); 
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_move_insn_1/src/expr.c:3427:40: error: called object type 'const enum mode_class [59]' is not a function or function pointer
+v43 = mode_for_size( v41, ( mode_class)( ( v9 == MODE_COMPLEX_FLOAT) + 1), 1); 
+                          ~~~~~~~~~~~~~^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_move_insn_1/src/expr.c:3459:7: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+v52 = insn_data_0[optab_table[30]->handlers[v51].insn_code].genfun( v48, v49); 
+      ^~~~~~~~~~~
+      insn_data
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_move_insn_1/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_move_insn_1/src/expr.c:3459:67: error: called object type '<dependent type>' is not a function or function pointer
+v52 = insn_data_0[optab_table[30]->handlers[v51].insn_code].genfun( v48, v49); 
+                                                                  ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/emit_move_insn_1/src/obj/expr.o] Error 1

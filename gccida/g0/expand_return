@@ -1,0 +1,43 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_return/src/stmt.c:3529:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode result_reg_mode; // [rsp+70h] [rbp-50h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_return/src/stmt.c:3530:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode tmpmode; // [rsp+74h] [rbp-4Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_return/src/stmt.c:3582:14: error: expected identifier or '('
+ struct expr = build( 
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_return/src/stmt.c:3590:14: error: expected identifier or '('
+ struct expr = build( 
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_return/src/stmt.c:3643:31: error: invalid suffix 'xmode' on integer constant
+dst = gen_reg_rtx( *(short *)0xmode); 
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_return/src/stmt.c:3661:31: error: invalid suffix 'orce' on integer constant
+src = operand_sub*(short *)0xforce( result_val, bitpos / v8, BLKmode); 
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_return/src/stmt.c:3661:7: error: use of undeclared identifier 'operand_sub'
+src = operand_sub*(short *)0xforce( result_val, bitpos / v8, BLKmode); 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_return/src/stmt.c:3675:79: error: invalid suffix 'xmode' on integer constant
+bit_field = extract_bit_field( src, bitsize, bitpos % v11, 1, 0LL, *(short *)0xmode, *(short *)0xmode, v10); 
+                                                                              ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_return/src/stmt.c:3675:97: error: invalid suffix 'xmode' on integer constant
+bit_field = extract_bit_field( src, bitsize, bitpos % v11, 1, 0LL, *(short *)0xmode, *(short *)0xmode, v10); 
+                                                                                                ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_return/src/stmt.c:3680:58: error: invalid suffix 'xmode' on integer constant
+store_bit_field( dst, bitsize, xbitpos % v13, *(short *)0xmode, bit_field, v9); 
+                                                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_return/src/stmt.c:3689:49: error: invalid suffix 'xmode' on integer constant
+if ( mode_size[tmpmode] >= mode_size[*(short *)0xmode] ) 
+                                                ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_return/src/stmt.c:3692:30: error: invalid suffix 'xmode' on integer constant
+result_reg_mode = *(short *)0xmode; 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_return/src/stmt.c:3721:39: error: use of undeclared identifier 'machine_mode'
+v17 = expand_expr( retval_rhs, val, ( machine_mode)*( ( unsigned __int8 *)val + 2), EXPAND_NORMAL); 
+                                      ^
+13 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/expand_return/src/obj/stmt.o] Error 1

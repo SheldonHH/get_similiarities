@@ -1,0 +1,9 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/gen_int_mode/src/emit-rtl.c:821:31: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  gen_int_mode( __int64 c, machine_mode mode) 
+                              ^
+                              enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/gen_int_mode/src/emit-rtl.c:826:29: error: use of undeclared identifier 'machine_mode'
+return gen_rtx_CONST_INT( ( machine_mode)c, v2); 
+                            ^
+2 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/gen_int_mode/src/obj/emit-rtl.o] Error 1

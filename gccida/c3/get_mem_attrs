@@ -1,0 +1,30 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/get_mem_attrs/src/emit-rtl.c:749:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode) 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/get_mem_attrs/src/emit-rtl.c:758:17: error: expected expression
+if ( *( _OWORD *)&alias == 0LL && !offset ) 
+                ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/get_mem_attrs/src/emit-rtl.c:758:9: error: use of undeclared identifier '_OWORD'
+if ( *( _OWORD *)&alias == 0LL && !offset ) 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/get_mem_attrs/src/emit-rtl.c:770:22: error: expected expression
+element = *( _OWORD *)&alias; 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/get_mem_attrs/src/emit-rtl.c:770:14: error: use of undeclared identifier '_OWORD'
+element = *( _OWORD *)&alias; 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/get_mem_attrs/src/emit-rtl.c:779:12: error: expected expression
+*( _OWORD *)&v8->alias = element; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/get_mem_attrs/src/emit-rtl.c:779:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&v8->alias = element; 
+   ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/get_mem_attrs/src/emit-rtl.c:780:12: error: expected expression
+*( _OWORD *)&v8->offset = v9; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/get_mem_attrs/src/emit-rtl.c:780:4: error: use of undeclared identifier '_OWORD'
+*( _OWORD *)&v8->offset = v9; 
+   ^
+9 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/get_mem_attrs/src/obj/emit-rtl.o] Error 1

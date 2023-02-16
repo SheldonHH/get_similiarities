@@ -1,0 +1,48 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_subreg/src/simplify-rtx.c:2942:23: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  simplify_subreg( machine_mode outermode, rtx op, machine_mode innermode, unsigned int byte) 
+                      ^
+                      enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_subreg/src/simplify-rtx.c:2942:55: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  simplify_subreg( machine_mode outermode, rtx op, machine_mode innermode, unsigned int byte) 
+                                                      ^
+                                                      enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_subreg/src/simplify-rtx.c:2995:35: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( v6 < mode_size[innermode] && mode_class_0[outermode] == MODE_INT ) 
+                                  ^~~~~~~~~~~~
+                                  mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_subreg/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_subreg/src/simplify-rtx.c:3010:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[outermode] != MODE_INT ) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_subreg/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_subreg/src/simplify-rtx.c:3033:23: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v9.rtwint = ( __int64)op[1]; 
+                      ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_subreg/src/simplify-rtx.c:3035:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v9.rtwint = ( __int64)op[1].fld[0]; 
+                      ^~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_subreg/src/simplify-rtx.c:3052:56: error: use of undeclared identifier 'machine_mode'
+result = simplify_subreg( outermode, op->fld[0].rtx, ( machine_mode)*( unsigned __int8 *)( op->fld[0].rtwint + 2), 0); 
+                                                       ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_subreg/src/simplify-rtx.c:3066:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( unsigned __int8 *)( op->fld[0].rtwint + 2), 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_subreg/src/simplify-rtx.c:3091:24: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v11.rtwint = ( __int64)op[1]; 
+                       ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_subreg/src/simplify-rtx.c:3093:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v11.rtwint = ( __int64)op->fld[0]; 
+                       ^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_subreg/src/simplify-rtx.c:3096:46: error: use of undeclared identifier 'machine_mode'
+res = simplify_subreg( outermode, v11.rtx, ( machine_mode)*( unsigned __int8 *)( v11.rtwint + 2), final_offset_0); 
+                                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_subreg/src/simplify-rtx.c:3116:19: error: assigning to 'uint32' (aka 'unsigned int') from incompatible type 'struct rtx_def'
+*( _DWORD *)&x[1] = op[1]; 
+                  ^ ~~~~~
+12 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/simplify_subreg/src/obj/simplify-rtx.o] Error 1

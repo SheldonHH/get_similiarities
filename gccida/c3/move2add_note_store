@@ -1,0 +1,101 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/move2add_note_store/src/reload1.c:9779:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode dst_mode; // [rsp+38h] [rbp-48h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/move2add_note_store/src/reload1.c:9784:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // [rsp+5Ch] [rbp-24h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/move2add_note_store/src/reload1.c:9798:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)dst->fld[0].rtwint), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/move2add_note_store/src/reload1.c:9798:18: error: expected expression
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)dst->fld[0].rtwint), 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/move2add_note_store/src/reload1.c:9800:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)dst)); 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/move2add_note_store/src/reload1.c:9800:18: error: expected expression
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)dst)); 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/move2add_note_store/src/reload1.c:9856:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[mode] != MODE_COMPLEX_INT ) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/move2add_note_store/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/move2add_note_store/src/reload1.c:9857:7: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v21 = mode_class_0[mode] == MODE_COMPLEX_FLOAT; 
+      ^~~~~~~~~~~~
+      mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/move2add_note_store/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/move2add_note_store/src/reload1.c:9869:13: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+src = ( rtx)set[1]; 
+            ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/move2add_note_store/src/reload1.c:9875:1: error: use of undeclared identifier 'reg_offset_0'; did you mean 'reg_offset'?
+reg_offset_0[regnoa] = *( _QWORD *)( *( _QWORD *)&set[1] + 8LL); 
+^~~~~~~~~~~~
+reg_offset
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/move2add_note_store/src/reload1.c:9092:22: note: 'reg_offset' declared here
+static HOST_WIDE_INT reg_offset[FIRST_PSEUDO_REGISTER];
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/move2add_note_store/src/reload1.c:9882:18: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+base_reg = ( rtx)set[1]; 
+                 ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/move2add_note_store/src/reload1.c:9913:10: error: use of undeclared identifier 'reg_offset_0'; did you mean 'reg_offset'?
+offset = reg_offset_0[base_reg->fld[0].rtuint]; 
+         ^~~~~~~~~~~~
+         reg_offset
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/move2add_note_store/src/reload1.c:9092:22: note: 'reg_offset' declared here
+static HOST_WIDE_INT reg_offset[FIRST_PSEUDO_REGISTER];
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/move2add_note_store/src/reload1.c:9914:18: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+base_reg = ( rtx)src[1]; 
+                 ^~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/move2add_note_store/src/reload1.c:9918:10: error: use of undeclared identifier 'reg_offset_0'; did you mean 'reg_offset'?
+offset = reg_offset_0[*( unsigned int *)( *( _QWORD *)&src[1] + 8LL)]; 
+         ^~~~~~~~~~~~
+         reg_offset
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/move2add_note_store/src/reload1.c:9092:22: note: 'reg_offset' declared here
+static HOST_WIDE_INT reg_offset[FIRST_PSEUDO_REGISTER];
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/move2add_note_store/src/reload1.c:9926:1: error: use of undeclared identifier 'reg_offset_0'; did you mean 'reg_offset'?
+reg_offset_0[base_regno] = 0LL; 
+^~~~~~~~~~~~
+reg_offset
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/move2add_note_store/src/reload1.c:9092:22: note: 'reg_offset' declared here
+static HOST_WIDE_INT reg_offset[FIRST_PSEUDO_REGISTER];
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/move2add_note_store/src/reload1.c:9933:1: error: use of undeclared identifier 'reg_offset_0'; did you mean 'reg_offset'?
+reg_offset_0[regnoa] = sext_for_mode( dst_mode, reg_offset_0[base_regno] + offset); 
+^~~~~~~~~~~~
+reg_offset
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/move2add_note_store/src/reload1.c:9092:22: note: 'reg_offset' declared here
+static HOST_WIDE_INT reg_offset[FIRST_PSEUDO_REGISTER];
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/move2add_note_store/src/reload1.c:9933:49: error: use of undeclared identifier 'reg_offset_0'; did you mean 'reg_offset'?
+reg_offset_0[regnoa] = sext_for_mode( dst_mode, reg_offset_0[base_regno] + offset); 
+                                                ^~~~~~~~~~~~
+                                                reg_offset
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/move2add_note_store/src/reload1.c:9092:22: note: 'reg_offset' declared here
+static HOST_WIDE_INT reg_offset[FIRST_PSEUDO_REGISTER];
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/move2add_note_store/src/reload1.c:9983:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[mode] != MODE_COMPLEX_INT ) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/move2add_note_store/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/move2add_note_store/src/reload1.c:9984:7: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v16 = mode_class_0[mode] == MODE_COMPLEX_FLOAT; 
+      ^~~~~~~~~~~~
+      mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/move2add_note_store/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+19 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/move2add_note_store/src/obj/reload1.o] Error 1

@@ -1,0 +1,37 @@
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/make_decl_rtl/src/varasm.c:1280:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode supercontext_low; // ebx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/make_decl_rtl/src/varasm.c:1289:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *identifier; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/make_decl_rtl/src/varasm.c:1290:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v12; // ecx 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/make_decl_rtl/src/varasm.c:1364:46: error: use of undeclared identifier 'machine_mode'
+if ( !ix86_hard_regno_mode_ok( reg_number, ( machine_mode)( BYTE5( decla->common.type->block.abstract_origin) >> 1)) ) 
+                                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/make_decl_rtl/src/varasm.c:1411:20: error: use of undeclared identifier 'machine_mode'
+x = gen_rtx_MEM( ( machine_mode)LOBYTE( decla->block.supercontext), v13); 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/make_decl_rtl/src/varasm.c:1451:42: error: use of undeclared identifier 'machine_mode'
+decla->decl.rtl = gen_rtx_fmt_i0( REG, ( machine_mode)LOBYTE( decla->block.supercontext), reg_number); 
+                                         ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/make_decl_rtl/src/varasm.c:1493:11: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+else if ( mode_class_0[LOBYTE( decla->block.supercontext)] == MODE_COMPLEX_INT 
+          ^~~~~~~~~~~~
+          mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/make_decl_rtl/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/make_decl_rtl/src/varasm.c:1494:4: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+|| mode_class_0[LOBYTE( decla->block.supercontext)] == MODE_COMPLEX_FLOAT ) 
+   ^~~~~~~~~~~~
+   mode_class
+/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/make_decl_rtl/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+8 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O0/gcc-gcc-O0/make_decl_rtl/src/obj/varasm.o] Error 1

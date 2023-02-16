@@ -1,0 +1,33 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_formal_types_die/src/dwarf2out.c:10516:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *formal_type; // [rsp+20h] [rbp-20h] 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_formal_types_die/src/dwarf2out.c:10525:13: error: expected identifier or '('
+ struct arg = function_or_method_type->decl.arguments; 
+            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_formal_types_die/src/dwarf2out.c:10530:13: error: expected identifier or '('
+ struct arg = 0LL; 
+            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_formal_types_die/src/dwarf2out.c:10537:34: error: expected expression
+if ( formal_type == ( tree_node *)*( &global_trees + 27) ) 
+                                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_formal_types_die/src/dwarf2out.c:10537:23: error: use of undeclared identifier 'tree_node'
+if ( formal_type == ( tree_node *)*( &global_trees + 27) ) 
+                      ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_formal_types_die/src/dwarf2out.c:10541:5: error: expected expression
+||  struct arg && ( ( ( unsigned __int64)arg->real_cst.real_cst.r[2] >> 22) & 1) != 0 ) 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_formal_types_die/src/dwarf2out.c:10546:7: error: expected expression
+if (  struct arg ) 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_formal_types_die/src/dwarf2out.c:10547:2: error: expected expression
+ struct arg = arg->common.chain; 
+ ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_formal_types_die/src/dwarf2out.c:10549:34: error: expected expression
+if ( formal_type != ( tree_node *)*( &global_trees + 27) ) 
+                                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_formal_types_die/src/dwarf2out.c:10549:23: error: use of undeclared identifier 'tree_node'
+if ( formal_type != ( tree_node *)*( &global_trees + 27) ) 
+                      ^
+10 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/gen_formal_types_die/src/obj/dwarf2out.o] Error 1

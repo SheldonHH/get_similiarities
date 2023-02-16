@@ -1,0 +1,76 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_plus_minus/src/simplify-rtx.c:2260:27: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx  simplify_plus_minus( rtx_code code, machine_mode mode, rtx op0, rtx op1, int force) 
+                          ^
+                          enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_plus_minus/src/simplify-rtx.c:2260:42: error: must use 'enum' tag to refer to type 'machine_mode'
+rtx  simplify_plus_minus( rtx_code code, machine_mode mode, rtx op0, rtx op1, int force) 
+                                         ^
+                                         enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_plus_minus/src/simplify-rtx.c:2299:4: error: expected ';' after expression
+rtx v43; // rsi 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_plus_minus/src/simplify-rtx.c:2299:5: error: use of undeclared identifier 'v43'
+rtx v43; // rsi 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_plus_minus/src/simplify-rtx.c:2314:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code ncode; // [rsp+14h] [rbp-F4h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_plus_minus/src/simplify-rtx.c:2338:12: error: expected identifier or '('
+ struct op = ops[v6].op; 
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_plus_minus/src/simplify-rtx.c:2354:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v14.rtwint = ( __int64)op->fld[0]; 
+                       ^~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_plus_minus/src/simplify-rtx.c:2371:23: error: expected expression
+ops[v19].op = *( rtx *)( op->fld[0].rtwint + 16); 
+                      ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_plus_minus/src/simplify-rtx.c:2381:20: error: expected ';' after expression
+ops[v9].op = ( rtx)op[1]; 
+                   ^
+                   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_plus_minus/src/simplify-rtx.c:2522:45: error: ISO C requires a named parameter before '...'
+specqsort( ( char *)ops, 0, 16, ( int ( *)( ...))simplify_plus_minus_op_data_cmp); 
+                                            ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_plus_minus/src/simplify-rtx.c:2531:16: error: use of undeclared identifier 'simplify_plus_minus_op_data'; did you mean 'simplify_plus_minus_op_data_cmp'?
+ops[v42++] = ( simplify_plus_minus_op_data)_mm_loadu_si128( ( const __m128i *)v41); 
+               ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+               simplify_plus_minus_op_data_cmp
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_plus_minus/src/simplify-rtx.c:1743:1: note: 'simplify_plus_minus_op_data_cmp' declared here
+simplify_plus_minus_op_data_cmp (p1, p2)
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_plus_minus/src/simplify-rtx.c:2531:12: error: assigning to 'struct simplify_plus_minus_op_data' from incompatible type 'int ()'
+ops[v42++] = ( simplify_plus_minus_op_data)_mm_loadu_si128( ( const __m128i *)v41); 
+           ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_plus_minus/src/simplify-rtx.c:2535:47: error: ISO C requires a named parameter before '...'
+specqsort( ( char *)ops, v42, 16, ( int ( *)( ...))simplify_plus_minus_op_data_cmp); 
+                                              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_plus_minus/src/simplify-rtx.c:2556:25: error: use of undeclared identifier 'rtx_code'; did you mean 'rtx_cost'?
+v22 = gen_rtx_fmt_ee( ( rtx_code)( 75 - ( ( v51->neg == 0) - 1)), mode, v22, v51->op); 
+                        ^~~~~~~~
+                        rtx_cost
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_plus_minus/src/rtl.h:1787:12: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_plus_minus/src/simplify-rtx.c:2556:64: error: too few arguments to function call, expected 2, have 1
+v22 = gen_rtx_fmt_ee( ( rtx_code)( 75 - ( ( v51->neg == 0) - 1)), mode, v22, v51->op); 
+                      ~~~~~~~~~~~                              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_plus_minus/src/rtl.h:1787:1: note: 'rtx_cost' declared here
+extern int rtx_cost                     PARAMS ((rtx, enum rtx_code));
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_plus_minus/src/simplify-rtx.c:2571:1: error: use of undeclared identifier 'v43'
+v43 = ops[v42 - 1].op; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_plus_minus/src/simplify-rtx.c:2572:17: error: use of undeclared identifier 'v43'
+if ( *( _WORD *)v43 == 54 ) 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_plus_minus/src/simplify-rtx.c:2582:28: error: use of undeclared identifier 'v43'
+v43 = neg_const_int( mode, v43); 
+                           ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_plus_minus/src/simplify-rtx.c:2582:1: error: use of undeclared identifier 'v43'
+v43 = neg_const_int( mode, v43); 
+^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/simplify_plus_minus/src/obj/simplify-rtx.o] Error 1

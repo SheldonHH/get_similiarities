@@ -1,0 +1,43 @@
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/_cpp_extend_buff/src/cpplex.c:2507:24: error: unknown type name 'cpp_reader_0'; did you mean 'cpp_reader'?
+void  cpp_extend_buff( cpp_reader_0 *pfile, _cpp_buff_0 **pbuff, size_t min_extra) 
+                       ^~~~~~~~~~~~
+                       cpp_reader
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/_cpp_extend_buff/src/cpplib.h:36:27: note: 'cpp_reader' declared here
+typedef struct cpp_reader cpp_reader;
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/_cpp_extend_buff/src/cpplex.c:2507:45: error: unknown type name '_cpp_buff_0'; did you mean '_cpp_buff'?
+void  cpp_extend_buff( cpp_reader_0 *pfile, _cpp_buff_0 **pbuff, size_t min_extra) 
+                                            ^~~~~~~~~~~
+                                            _cpp_buff
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/_cpp_extend_buff/src/cpphash.h:47:26: note: '_cpp_buff' declared here
+typedef struct _cpp_buff _cpp_buff;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/_cpp_extend_buff/src/cpplex.c:2509:1: error: unknown type name '_cpp_buff_0'; did you mean '_cpp_buff'?
+_cpp_buff_0 *v3; // r15 
+^~~~~~~~~~~
+_cpp_buff
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/_cpp_extend_buff/src/cpphash.h:47:26: note: '_cpp_buff' declared here
+typedef struct _cpp_buff _cpp_buff;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/_cpp_extend_buff/src/cpplex.c:2511:1: error: unknown type name '_cpp_buff_0'; did you mean '_cpp_buff'?
+_cpp_buff_0 *free_buffs; // rbx 
+^~~~~~~~~~~
+_cpp_buff
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/_cpp_extend_buff/src/cpphash.h:47:26: note: '_cpp_buff' declared here
+typedef struct _cpp_buff _cpp_buff;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/_cpp_extend_buff/src/cpplex.c:2514:1: error: unknown type name '_cpp_buff_0'; did you mean '_cpp_buff'?
+_cpp_buff_0 **p_next; // rdi 
+^~~~~~~~~~~
+_cpp_buff
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/_cpp_extend_buff/src/cpphash.h:47:26: note: '_cpp_buff' declared here
+typedef struct _cpp_buff _cpp_buff;
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/_cpp_extend_buff/src/cpplex.c:2531:29: error: expected expression
+free_buffs = ( _cpp_buff_0 *)&v12[v11]; 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/_cpp_extend_buff/src/cpplex.c:2531:16: error: use of undeclared identifier '_cpp_buff_0'
+free_buffs = ( _cpp_buff_0 *)&v12[v11]; 
+               ^
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O3/gcc-clang-O3/_cpp_extend_buff/src/obj/cpplex.o] Error 1

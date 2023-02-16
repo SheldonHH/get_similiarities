@@ -1,0 +1,31 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_variable_die/src/dwarf2out.c:10932:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *chain; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_variable_die/src/dwarf2out.c:10933:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v15; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_variable_die/src/dwarf2out.c:11090:36: error: member reference base type 'dw_die_ref' (aka 'struct die_struct *') is not a structure or union
+v12 = *( ( _QWORD *)&decl_die_table->die_tag + uid); 
+                     ~~~~~~~~~~~~~~^ ~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_variable_die/src/dwarf2out.c:11117:30: error: use of undeclared identifier 'a'
+fancy_abort( ( const char *)&a, 9459, "add_abstract_origin_attribute"); 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_variable_die/src/dwarf2out.c:11118:49: error: member reference base type 'dw_die_ref' (aka 'struct die_struct *') is not a structure or union
+arguments = ( tree)*( ( _QWORD *)&decl_die_table->die_tag + v28); 
+                                  ~~~~~~~~~~~~~~^ ~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_variable_die/src/dwarf2out.c:11150:36: error: member reference base type 'dw_die_ref' (aka 'struct die_struct *') is not a structure or union
+v34 = *( ( _QWORD *)&decl_die_table->die_tag + uid); 
+                     ~~~~~~~~~~~~~~^ ~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_variable_die/src/dwarf2out.c:11165:30: error: use of undeclared identifier 'a'
+fancy_abort( ( const char *)&a, 4588, "AT_ref"); 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_variable_die/src/dwarf2out.c:11184:30: error: use of undeclared identifier 'a'
+fancy_abort( ( const char *)&a, 4387, "AT_flag"); 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_variable_die/src/dwarf2out.c:11347:30: error: use of undeclared identifier 'a'
+fancy_abort( ( const char *)&a, 8989, "add_location_or_const_value_attribute"); 
+                             ^
+9 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/gen_variable_die/src/obj/dwarf2out.o] Error 1

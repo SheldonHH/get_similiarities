@@ -1,0 +1,40 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/move_by_pieces/src/expr.c:1857:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v9; // r15d 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/move_by_pieces/src/expr.c:1858:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v10; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/move_by_pieces/src/expr.c:1861:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v13; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/move_by_pieces/src/expr.c:1865:4: error: expected ';' after expression
+rtx v17; // r13 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/move_by_pieces/src/expr.c:1865:5: error: use of undeclared identifier 'v17'
+rtx v17; // r13 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/move_by_pieces/src/expr.c:1956:10: error: use of undeclared identifier 'insn_data_0'; did you mean 'insn_data'?
+genfun = insn_data_0[insn_code].genfun; 
+         ^~~~~~~~~~~
+         insn_data
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/move_by_pieces/src/recog.h:249:31: note: 'insn_data' declared here
+extern const struct insn_data insn_data[];
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/move_by_pieces/src/expr.c:1959:1: error: use of undeclared identifier 'v17'
+v17 = 0LL; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/move_by_pieces/src/expr.c:1967:1: error: use of undeclared identifier 'v17'
+v17 = adjust_automodify_address_1( to, v9, to_addr, v8, 1); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/move_by_pieces/src/expr.c:1969:1: error: use of undeclared identifier 'v17'
+v17 = adjust_address_1( to, v9, v8, 1, 1); 
+^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/move_by_pieces/src/expr.c:1987:15: error: use of undeclared identifier 'v17'
+v19 = genfun( v17, v18); 
+              ^
+10 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/move_by_pieces/src/obj/expr.o] Error 1

@@ -1,0 +1,39 @@
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/store_split_bit_field/src/expmed.c:1350:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v23; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/store_split_bit_field/src/expmed.c:1364:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v21 = ( __int64)op0[1]; 
+                ^~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/store_split_bit_field/src/expmed.c:1385:38: error: invalid suffix 'xmode' on integer constant
+v20 = gen_lowpart_common( *(short *)0xmode, v4); 
+                                     ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/store_split_bit_field/src/expmed.c:1390:18: error: invalid suffix 'xmode' on integer constant
+v23 = *(short *)0xmode; 
+                 ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/store_split_bit_field/src/expmed.c:1392:37: error: invalid suffix 'xmode' on integer constant
+v4 = gen_lowpart_common( *(short *)0xmode, v24); 
+                                    ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/store_split_bit_field/src/expmed.c:1423:31: error: invalid suffix 'orce' on integer constant
+v19 = operand_sub*(short *)0xforce( op0, offset, ( machine_mode)*( ( unsigned __int8 *)op0 + 2)); 
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/store_split_bit_field/src/expmed.c:1423:52: error: use of undeclared identifier 'machine_mode'
+v19 = operand_sub*(short *)0xforce( op0, offset, ( machine_mode)*( ( unsigned __int8 *)op0 + 2)); 
+                                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/store_split_bit_field/src/expmed.c:1423:7: error: use of undeclared identifier 'operand_sub'
+v19 = operand_sub*(short *)0xforce( op0, offset, ( machine_mode)*( ( unsigned __int8 *)op0 + 2)); 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/store_split_bit_field/src/expmed.c:1438:55: error: invalid suffix 'xmode' on integer constant
+fixed_bit_field = extract_fixed_bit_field( *(short *)0xmode, v4, 0LL, v17, v10, 0LL, 1); 
+                                                      ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/store_split_bit_field/src/expmed.c:1444:31: error: invalid suffix 'orce' on integer constant
+v18 = operand_sub*(short *)0xforce( 
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/store_split_bit_field/src/expmed.c:1447:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)*( unsigned __int8 *)( op0->fld[0].rtwint + 2)); 
+  ^
+/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/store_split_bit_field/src/expmed.c:1444:7: error: use of undeclared identifier 'operand_sub'
+v18 = operand_sub*(short *)0xforce( 
+      ^
+12 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O3/gcc-gcc-O3/store_split_bit_field/src/obj/expmed.o] Error 1

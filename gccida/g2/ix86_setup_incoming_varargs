@@ -1,0 +1,31 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/ix86_setup_incoming_varargs/src/i386.c:2870:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/ix86_setup_incoming_varargs/src/i386.c:2875:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *values; // rdi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/ix86_setup_incoming_varargs/src/i386.c:2944:22: error: use of undeclared identifier 'machine_mode'
+v18 = gen_rtx_MEM( ( machine_mode)( ( ( BYTE3( target_flags) & 2) != 0) + 4), v17); 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/ix86_setup_incoming_varargs/src/i386.c:2947:22: error: use of undeclared identifier 'machine_mode'
+v20 = gen_rtx_REG( ( machine_mode)( ( ( BYTE3( target_flags) & 2) != 0) + 4), v19); 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/ix86_setup_incoming_varargs/src/i386.c:2955:37: error: use of undeclared identifier 'machine_mode'
+v23 = gen_rtx_fmt_u00( LABEL_REF, ( machine_mode)( ( ( BYTE3( target_flags) & 2) != 0) + 4), v22); 
+                                    ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/ix86_setup_incoming_varargs/src/i386.c:2956:22: error: use of undeclared identifier 'machine_mode'
+v24 = gen_reg_rtx( ( machine_mode)( ( ( BYTE3( target_flags) & 2) != 0) + 4)); 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/ix86_setup_incoming_varargs/src/i386.c:2957:22: error: use of undeclared identifier 'machine_mode'
+v25 = gen_reg_rtx( ( machine_mode)( ( ( BYTE3( target_flags) & 2) != 0) + 4)); 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/ix86_setup_incoming_varargs/src/i386.c:2962:31: error: use of undeclared identifier 'machine_mode'
+v29 = gen_rtx_fmt_ee( MULT, ( machine_mode)( ( ( BYTE3( target_flags) & 2) != 0) + 4), v25, v28); 
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/ix86_setup_incoming_varargs/src/i386.c:2978:22: error: use of undeclared identifier 'machine_mode'
+v32 = gen_reg_rtx( ( machine_mode)( ( ( BYTE3( target_flags) & 2) != 0) + 4)); 
+                     ^
+9 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/ix86_setup_incoming_varargs/src/obj/i386.o] Error 1

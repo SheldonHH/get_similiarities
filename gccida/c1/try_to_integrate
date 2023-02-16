@@ -1,0 +1,48 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/try_to_integrate/src/calls.c:2270:4: error: expected ';' after expression
+rtx psave; // [rsp+8h] [rbp-40h] BYREF 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/try_to_integrate/src/calls.c:2270:5: error: use of undeclared identifier 'psave'
+rtx psave; // [rsp+8h] [rbp-40h] BYREF 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/try_to_integrate/src/calls.c:2271:4: error: expected ';' after expression
+rtx last_insn; // [rsp+10h] [rbp-38h] 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/try_to_integrate/src/calls.c:2271:5: error: use of undeclared identifier 'last_insn'
+rtx last_insn; // [rsp+10h] [rbp-38h] 
+    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/try_to_integrate/src/calls.c:2273:1: error: use of undeclared identifier 'psave'
+psave = 0LL; 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/try_to_integrate/src/calls.c:2274:1: error: use of undeclared identifier 'last_insn'
+last_insn = get_last_insn( ); 
+^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/try_to_integrate/src/calls.c:2275:15: error: use of undeclared identifier 'TV_INTEGRATION_0'; did you mean 'TV_INTEGRATION'?
+timevar_push( TV_INTEGRATION_0); 
+              ^~~~~~~~~~~~~~~~
+              TV_INTEGRATION
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/try_to_integrate/src/timevar.def:55:13: note: 'TV_INTEGRATION' declared here
+DEFTIMEVAR (TV_INTEGRATION           , "integration")
+            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/try_to_integrate/src/calls.c:2277:14: error: use of undeclared identifier 'TV_INTEGRATION_0'; did you mean 'TV_INTEGRATION'?
+timevar_pop( TV_INTEGRATION_0); 
+             ^~~~~~~~~~~~~~~~
+             TV_INTEGRATION
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/try_to_integrate/src/timevar.def:55:13: note: 'TV_INTEGRATION' declared here
+DEFTIMEVAR (TV_INTEGRATION           , "integration")
+            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/try_to_integrate/src/calls.c:2296:6: error: use of undeclared identifier 'last_insn'
+if ( last_insn ) 
+     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/try_to_integrate/src/calls.c:2297:7: error: use of undeclared identifier 'last_insn'
+rtx = last_insn[1].fld[0].rtx; 
+      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/try_to_integrate/src/calls.c:2318:31: error: use of undeclared identifier 'psave'
+emit_stack_save( SAVE_BLOCK, &psave, 0LL); 
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/try_to_integrate/src/calls.c:2324:33: error: use of undeclared identifier 'psave'
+emit_stack_restore( SAVE_BLOCK, psave, 0LL); 
+                                ^
+12 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/try_to_integrate/src/obj/calls.o] Error 1

@@ -1,0 +1,36 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/alloc_gcse_mem/src/gcse.c:1462:1: error: use of undeclared identifier 'max_uid_0'; did you mean 'max_uid'?
+max_uid_0 = get_max_uid( ); 
+^~~~~~~~~
+max_uid
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/alloc_gcse_mem/src/gcse.c:386:12: note: 'max_uid' declared here
+static int max_uid;
+           ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/alloc_gcse_mem/src/gcse.c:1463:11: error: use of undeclared identifier 'max_uid_0'; did you mean 'max_uid'?
+n = 4 * ( max_uid_0 + 1); 
+          ^~~~~~~~~
+          max_uid
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/alloc_gcse_mem/src/gcse.c:386:12: note: 'max_uid' declared here
+static int max_uid;
+           ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/alloc_gcse_mem/src/gcse.c:1464:1: error: use of undeclared identifier 'uid_cuid_1'; did you mean 'uid_cuid'?
+uid_cuid_1 = gmalloc( n); 
+^~~~~~~~~~
+uid_cuid
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/alloc_gcse_mem/src/gcse.c:383:13: note: 'uid_cuid' declared here
+static int *uid_cuid;
+            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/alloc_gcse_mem/src/gcse.c:1465:9: error: use of undeclared identifier 'uid_cuid_1'; did you mean 'uid_cuid'?
+memset( uid_cuid_1, 0, n); 
+        ^~~~~~~~~~
+        uid_cuid
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/alloc_gcse_mem/src/gcse.c:383:13: note: 'uid_cuid' declared here
+static int *uid_cuid;
+            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/alloc_gcse_mem/src/gcse.c:1473:15: error: use of undeclared identifier 'uid_cuid_1'
+*( ( _DWORD *)uid_cuid_1 + insn->fld[0].rtint) = v1; 
+              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/alloc_gcse_mem/src/gcse.c:1477:15: error: use of undeclared identifier 'uid_cuid_1'
+*( ( _DWORD *)uid_cuid_1 + insn->fld[0].rtint) = i; 
+              ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/alloc_gcse_mem/src/obj/gcse.o] Error 1

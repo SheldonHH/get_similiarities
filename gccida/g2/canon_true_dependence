@@ -1,0 +1,15 @@
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/canon_true_dependence/src/alias.c:2567:38: error: must use 'enum' tag to refer to type 'machine_mode'
+int  canon_true_dependence( rtx mem, machine_mode mem_mode, rtx mem_addr, rtx x, int ( *varies)( rtx, int)) 
+                                     ^
+                                     enum 
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/canon_true_dependence/src/alias.c:2578:60: error: expected expression
+if ( ( unsigned int)mems_in_disjoint_alias_sets_p( *( rtx *)&x[1], *( rtx *)&mem[1]) 
+                                                           ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/canon_true_dependence/src/alias.c:2578:76: error: expected expression
+if ( ( unsigned int)mems_in_disjoint_alias_sets_p( *( rtx *)&x[1], *( rtx *)&mem[1]) 
+                                                                           ^
+/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/canon_true_dependence/src/alias.c:2587:42: error: use of undeclared identifier 'machine_mode'
+if ( !base_alias_check( rtx, mem_addr, ( machine_mode)*( ( unsigned __int8 *)x + 2), mem_mode) ) 
+                                         ^
+4 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O2/gcc-gcc-O2/canon_true_dependence/src/obj/alias.o] Error 1

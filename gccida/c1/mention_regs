@@ -1,0 +1,45 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mention_regs/src/cse.c:1695:25: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+v6 = ( ( unsigned int)( mode_class_0[( unsigned __int8)v7] - 5) < 2) + 1; 
+                        ^~~~~~~~~~~~
+                        mode_class
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mention_regs/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mention_regs/src/cse.c:1715:55: error: expected ')'
+if ( rtuint != cached_regno || (  struct cse_reg_info = cached_cse_reg_info) == 0LL ) 
+                                                      ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mention_regs/src/cse.c:1715:32: note: to match this '('
+if ( rtuint != cached_regno || (  struct cse_reg_info = cached_cse_reg_info) == 0LL ) 
+                               ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mention_regs/src/cse.c:1715:78: error: expected expression
+if ( rtuint != cached_regno || (  struct cse_reg_info = cached_cse_reg_info) == 0LL ) 
+                                                                             ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mention_regs/src/cse.c:1716:2: error: expected expression
+ struct cse_reg_info = get_cse_reg_info( rtuint); 
+ ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mention_regs/src/cse.c:1754:31: error: expected expression
+v1 |= mention_regs( *( ( rtx *)x + v25)); 
+                              ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mention_regs/src/cse.c:1764:29: error: expected expression
+v1 |= mention_regs( *( rtx *)&v29[2 * v30++ + 2]); 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mention_regs/src/cse.c:1776:24: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v17.rtwint = ( __int64)x->fld[0]; 
+                       ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mention_regs/src/cse.c:1794:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v21 = ( __int64)x[1]; 
+                ^~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mention_regs/src/cse.c:1800:27: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v24 = (  struct rtx_def *)x[1]; 
+                          ^~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mention_regs/src/cse.c:1803:27: error: expected expression
+rehash_using_reg( *( rtx *)&x[1]); 
+                          ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mention_regs/src/cse.c:1809:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v8.rtwint = ( __int64)x->fld[0]; 
+                      ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mention_regs/src/cse.c:1833:54: error: use of undeclared identifier 'machine_mode'
+remove_invalid_subreg_refs( v9, *( _DWORD *)&x[1], ( machine_mode)*( ( unsigned __int8 *)x + 2)); 
+                                                     ^
+12 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/mention_regs/src/obj/cse.o] Error 1

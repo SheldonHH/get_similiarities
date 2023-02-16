@@ -1,0 +1,39 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/offset_address/src/emit-rtl.c:2528:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v9; // rsi 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/offset_address/src/emit-rtl.c:2532:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v4.rtwint = ( __int64)memref->fld[0]; 
+                      ^~~~~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/offset_address/src/emit-rtl.c:2533:35: error: use of undeclared identifier 'machine_mode'
+v5 = simplify_gen_binary( PLUS, ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), v4.rtx, offset); 
+                                  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/offset_address/src/emit-rtl.c:2534:27: error: use of undeclared identifier 'machine_mode'
+if ( !memory_address_p( ( machine_mode)*( ( unsigned __int8 *)memref + 2), v5) 
+                          ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/offset_address/src/emit-rtl.c:2538:20: error: use of undeclared identifier 'machine_mode'
+v12 = force_reg( ( machine_mode)*( unsigned __int8 *)( v4.rtwint + 2), v4.rtx); 
+                   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/offset_address/src/emit-rtl.c:2539:35: error: use of undeclared identifier 'machine_mode'
+v5 = simplify_gen_binary( PLUS, ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), v12, offset); 
+                                  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/offset_address/src/emit-rtl.c:2544:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v8 = ( __int64)memref[1]; 
+               ^~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/offset_address/src/emit-rtl.c:2549:21: error: expected expression
+v9 = *( tree_node **)( v8 + 8); 
+                    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/offset_address/src/emit-rtl.c:2549:9: error: use of undeclared identifier 'tree_node'
+v9 = *( tree_node **)( v8 + 8); 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/offset_address/src/emit-rtl.c:2556:19: error: expected expression
+v9 = ( tree_node *)memref[1]; 
+                  ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/offset_address/src/emit-rtl.c:2556:8: error: use of undeclared identifier 'tree_node'
+v9 = ( tree_node *)memref[1]; 
+       ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/offset_address/src/emit-rtl.c:2559:62: error: use of undeclared identifier 'machine_mode'
+*( _QWORD *)&v6[1] = get_mem_attrs( v10, v9, 0LL, 0LL, v7, ( machine_mode)*( ( unsigned __int8 *)v6 + 2)); 
+                                                             ^
+12 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/offset_address/src/obj/emit-rtl.o] Error 1

@@ -1,0 +1,82 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/squeeze_notes/src/jump.c:1006:4: error: expected ';' after expression
+rtx v6; // rax 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/squeeze_notes/src/jump.c:1006:5: error: use of undeclared identifier 'v6'
+rtx v6; // rax 
+    ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/squeeze_notes/src/jump.c:1011:4: error: expected ';' after expression
+rtx v11; // rdx 
+   ^
+   ;
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/squeeze_notes/src/jump.c:1011:5: error: use of undeclared identifier 'v11'; did you mean 'v10'?
+rtx v11; // rdx 
+    ^~~
+    v10
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/squeeze_notes/src/jump.c:1010:9: note: 'v10' declared here
+__int64 v10; // r9 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/squeeze_notes/src/jump.c:1017:1: error: use of undeclared identifier 'v6'
+v6 = *startp; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/squeeze_notes/src/jump.c:1021:1: error: use of undeclared identifier 'v11'; did you mean 'v10'?
+v11 = v6; 
+^~~
+v10
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/squeeze_notes/src/jump.c:1010:9: note: 'v10' declared here
+__int64 v10; // r9 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/squeeze_notes/src/jump.c:1021:7: error: use of undeclared identifier 'v6'
+v11 = v6; 
+      ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/squeeze_notes/src/jump.c:1022:1: error: use of undeclared identifier 'v6'
+v6 = v6[1].fld[0].rtx; 
+^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/squeeze_notes/src/jump.c:1022:6: error: use of undeclared identifier 'v6'
+v6 = v6[1].fld[0].rtx; 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/squeeze_notes/src/jump.c:1023:17: error: use of undeclared identifier 'v11'
+if ( *( _WORD *)v11 == 37 ) 
+                ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/squeeze_notes/src/jump.c:1025:9: error: use of undeclared identifier 'v11'
+rtint = v11[2].fld[0].rtint; 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/squeeze_notes/src/jump.c:1028:6: error: use of undeclared identifier 'v11'; did you mean 'v10'?
+v7 = v11; 
+     ^~~
+     v10
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/squeeze_notes/src/jump.c:1010:9: note: 'v10' declared here
+__int64 v10; // r9 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/squeeze_notes/src/jump.c:1030:17: error: use of undeclared identifier 'v11'; did you mean 'v10'?
+else if ( v4 == v11 ) 
+                ^~~
+                v10
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/squeeze_notes/src/jump.c:1010:9: note: 'v10' declared here
+__int64 v10; // r9 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/squeeze_notes/src/jump.c:1032:6: error: use of undeclared identifier 'v6'
+v4 = v6; 
+     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/squeeze_notes/src/jump.c:1036:16: error: use of undeclared identifier 'v11'
+v9 = ( __int64)v11[1]; 
+               ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/squeeze_notes/src/jump.c:1037:17: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v10 = ( __int64)v4[1]; 
+                ^~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/squeeze_notes/src/jump.c:1038:14: error: use of undeclared identifier 'v11'
+*( _QWORD *)&v11[1] = v10; 
+             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/squeeze_notes/src/jump.c:1039:1: error: use of undeclared identifier 'v11'; did you mean 'v10'?
+v11[1].fld[0].rtwint = ( __int64)v4; 
+^~~
+v10
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/squeeze_notes/src/jump.c:1010:9: note: 'v10' declared here
+__int64 v10; // r9 
+        ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/squeeze_notes/src/jump.c:1039:4: error: subscripted value is not an array, pointer, or vector
+v11[1].fld[0].rtwint = ( __int64)v4; 
+~~~^~
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/squeeze_notes/src/obj/jump.o] Error 1

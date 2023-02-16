@@ -1,0 +1,50 @@
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/lookup_field/src/c-typeck.c:1516:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *values; // rbx 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/lookup_field/src/c-typeck.c:1521:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *name; // rcx 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/lookup_field/src/c-typeck.c:1522:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v9; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/lookup_field/src/c-typeck.c:1523:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node **v10; // r15 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/lookup_field/src/c-typeck.c:1524:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v11; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/lookup_field/src/c-typeck.c:1527:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v15; // rcx 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/lookup_field/src/c-typeck.c:1567:25: error: expected expression
+values = *( tree_node **)&f[2 * v7 + 2]; 
+                        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/lookup_field/src/c-typeck.c:1567:13: error: use of undeclared identifier 'tree_node'
+values = *( tree_node **)&f[2 * v7 + 2]; 
+            ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/lookup_field/src/c-typeck.c:1586:21: error: expected expression
+v9 = *( tree_node **)&f[2 * v6 + 2]; 
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/lookup_field/src/c-typeck.c:1586:9: error: use of undeclared identifier 'tree_node'
+v9 = *( tree_node **)&f[2 * v6 + 2]; 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/lookup_field/src/c-typeck.c:1597:21: error: expected expression
+v10 = ( tree_node **)&v18[2 * v6]; 
+                    ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/lookup_field/src/c-typeck.c:1597:9: error: use of undeclared identifier 'tree_node'
+v10 = ( tree_node **)&v18[2 * v6]; 
+        ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/lookup_field/src/c-typeck.c:1616:22: error: expected expression
+v15 = *( tree_node **)&f[2 * v6 + 2]; 
+                     ^
+/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/lookup_field/src/c-typeck.c:1616:10: error: use of undeclared identifier 'tree_node'
+v15 = *( tree_node **)&f[2 * v6 + 2]; 
+         ^
+14 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O1/gcc-clang-O1/lookup_field/src/obj/c-typeck.o] Error 1

@@ -1,0 +1,23 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/output_func_start_profiler/src/profile.c:1581:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *identifier; // rbp 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/output_func_start_profiler/src/profile.c:1582:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v7; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/output_func_start_profiler/src/profile.c:1590:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode; // [rsp+4h] [rbp-64h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/output_func_start_profiler/src/profile.c:1622:36: error: use of undeclared identifier 'machine_mode'
+v11 = gen_rtx_fmt_s( SYMBOL_REF, ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), v10); 
+                                   ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/output_func_start_profiler/src/profile.c:1623:30: error: use of undeclared identifier 'machine_mode'
+table_address = force_reg( ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), v11); 
+                             ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/output_func_start_profiler/src/profile.c:1625:36: error: use of undeclared identifier 'machine_mode'
+v12 = gen_rtx_fmt_s( SYMBOL_REF, ( machine_mode)identifier, "__bb_init_func"); 
+                                   ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/output_func_start_profiler/src/obj/profile.o] Error 1

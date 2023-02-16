@@ -1,0 +1,62 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/build_insn_chain/src/global.c:2270:20: error: expected identifier or '('
+unsigned __int64 *(short *)0x; // [rsp+28h] [rbp-68h] 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/build_insn_chain/src/global.c:2270:20: error: expected ')'
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/build_insn_chain/src/global.c:2270:19: note: to match this '('
+unsigned __int64 *(short *)0x; // [rsp+28h] [rbp-68h] 
+                  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/build_insn_chain/src/global.c:2271:16: error: expected identifier or '('
+unsigned int *(short *)0xnum_; // [rsp+34h] [rbp-5Ch] 
+               ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/build_insn_chain/src/global.c:2271:16: error: expected ')'
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/build_insn_chain/src/global.c:2271:15: note: to match this '('
+unsigned int *(short *)0xnum_; // [rsp+34h] [rbp-5Ch] 
+              ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/build_insn_chain/src/global.c:2294:12: error: invalid suffix 'xnum_' on integer constant
+*(short *)0xnum_ = 0; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/build_insn_chain/src/global.c:2298:12: error: invalid suffix 'xnum_' on integer constant
+*(short *)0xnum_ = 0; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/build_insn_chain/src/global.c:2302:20: error: invalid suffix 'xnum_' on integer constant
+while ( *(short *)0xnum_ < 2 ) 
+                   ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/build_insn_chain/src/global.c:2304:12: error: invalid suffix 'x' on integer constant
+*(short *)0x = ptr_->bits[*(short *)0xnum_]; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/build_insn_chain/src/global.c:2304:38: error: invalid suffix 'xnum_' on integer constant
+*(short *)0x = ptr_->bits[*(short *)0xnum_]; 
+                                     ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/build_insn_chain/src/global.c:2305:17: error: invalid suffix 'x' on integer constant
+if ( *(short *)0x ) 
+                ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/build_insn_chain/src/global.c:2311:40: error: invalid suffix 'x' on integer constant
+if ( ( ( 1LL << bit_num_) & *(short *)0x) != 0 ) 
+                                       ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/build_insn_chain/src/global.c:2316:12: error: invalid suffix 'x' on integer constant
+*(short *)0x &= ~( 1LL << bit_num_); 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/build_insn_chain/src/global.c:2317:29: error: invalid suffix 'xnum_' on integer constant
+i = bit_num_ + ( *(short *)0xnum_ << 6) + ( ptr_->indx << 7); 
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/build_insn_chain/src/global.c:2328:18: error: invalid suffix 'x' on integer constant
+if ( !*(short *)0x ) 
+                 ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/build_insn_chain/src/global.c:2334:14: error: invalid suffix 'xnum_' on integer constant
+++*(short *)0xnum_; 
+             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/build_insn_chain/src/global.c:2336:12: error: invalid suffix 'xnum_' on integer constant
+*(short *)0xnum_ = 0; 
+           ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/build_insn_chain/src/global.c:2351:55: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+for ( link = firsta[3].fld[0].rtx; link; link = ( rtx)link[1] ) 
+                                                      ^~~~~~~
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/build_insn_chain/src/global.c:2356:3: error: use of undeclared identifier 'machine_mode'
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)link->fld[0].rtwint), 
+  ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/build_insn_chain/src/global.c:2356:18: error: expected expression
+( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)link->fld[0].rtwint), 
+                 ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/build_insn_chain/src/obj/global.o] Error 1

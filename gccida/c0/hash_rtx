@@ -1,0 +1,22 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/hash_rtx/src/cselib.c:1024:32: error: must use 'enum' tag to refer to type 'machine_mode'
+unsigned int  hash_rtx( rtx x, machine_mode mode, int create) 
+                               ^
+                               enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/hash_rtx/src/cselib.c:1043:1: error: must use 'enum' tag to refer to type 'rtx_code'
+rtx_code code; // [rsp+54h] [rbp-2Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/hash_rtx/src/cselib.c:1102:26: error: use of undeclared identifier 'machine_mode'
+hash += hash_rtx( elt, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)elt), 0); 
+                         ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/hash_rtx/src/cselib.c:1102:41: error: expected expression
+hash += hash_rtx( elt, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)elt), 0); 
+                                        ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/hash_rtx/src/cselib.c:1108:25: error: use of undeclared identifier 'machine_mode'
+e = cselib_lookup( x, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)x), create); 
+                        ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/hash_rtx/src/cselib.c:1108:40: error: expected expression
+e = cselib_lookup( x, ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)x), create); 
+                                       ^
+6 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/hash_rtx/src/obj/cselib.o] Error 1

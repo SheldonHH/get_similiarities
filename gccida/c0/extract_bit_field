@@ -1,0 +1,83 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/extract_bit_field/src/expmed.c:1472:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode mode, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/extract_bit_field/src/expmed.c:1473:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode tmode, 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/extract_bit_field/src/expmed.c:1495:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v27; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/extract_bit_field/src/expmed.c:1496:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v28; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/extract_bit_field/src/expmed.c:1499:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v31; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/extract_bit_field/src/expmed.c:1505:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v37; // eax 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/extract_bit_field/src/expmed.c:1510:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v43; // [rsp+9Ch] [rbp-174h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/extract_bit_field/src/expmed.c:1513:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode bestmode_0; // [rsp+B8h] [rbp-158h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/extract_bit_field/src/expmed.c:1514:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode maxmode_0; // [rsp+BCh] [rbp-154h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/extract_bit_field/src/expmed.c:1525:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode bestmode; // [rsp+10Ch] [rbp-104h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/extract_bit_field/src/expmed.c:1527:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode maxmode; // [rsp+114h] [rbp-FCh] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/extract_bit_field/src/expmed.c:1544:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode imode; // [rsp+190h] [rbp-80h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/extract_bit_field/src/expmed.c:1546:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode extzv_mode; // [rsp+1A4h] [rbp-6Ch] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/extract_bit_field/src/expmed.c:1547:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode extv_mode; // [rsp+1A8h] [rbp-68h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/extract_bit_field/src/expmed.c:1548:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode int_mode; // [rsp+1ACh] [rbp-64h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/extract_bit_field/src/expmed.c:1596:30: error: use of undeclared identifier 'machine_mode'
+imode = int_mode_for_mode( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)op0)); 
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/extract_bit_field/src/expmed.c:1596:45: error: expected expression
+imode = int_mode_for_mode( ( machine_mode)( unsigned __int8)BYTE2( *( _DWORD *)op0)); 
+                                            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/extract_bit_field/src/expmed.c:1624:6: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[tmode] == MODE_VECTOR_INT || mode_class_0[tmode] == MODE_VECTOR_FLOAT ) 
+     ^~~~~~~~~~~~
+     mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/extract_bit_field/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/extract_bit_field/src/expmed.c:1624:48: error: use of undeclared identifier 'mode_class_0'; did you mean 'mode_class'?
+if ( mode_class_0[tmode] == MODE_VECTOR_INT || mode_class_0[tmode] == MODE_VECTOR_FLOAT ) 
+                                               ^~~~~~~~~~~~
+                                               mode_class
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/extract_bit_field/src/machmode.h:52:30: note: 'mode_class' declared here
+extern const enum mode_class mode_class[NUM_MACHINE_MODES];
+                             ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/extract_bit_field/src/obj/expmed.o] Error 1

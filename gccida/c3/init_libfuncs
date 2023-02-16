@@ -1,0 +1,56 @@
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/init_libfuncs/src/optabs.c:5107:22: error: unknown type name 'optab_0'; did you mean 'optab'?
+void  init_libfuncs( optab_0 optable, int first_mode, int last_mode, const char *opname, int suffix) 
+                     ^~~~~~~
+                     optab
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/init_libfuncs/src/optabs.h:48:5: note: 'optab' declared here
+} * optab;
+    ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/init_libfuncs/src/optabs.c:5116:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v12; // edi 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/init_libfuncs/src/optabs.c:5120:1: error: must use 'enum' tag to refer to type 'machine_mode'
+machine_mode v16; // [rsp+Ch] [rbp-54h] 
+^
+enum 
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/init_libfuncs/src/optabs.c:5132:8: error: expected ';' after expression
+optab_0 optablea; // [rsp+58h] [rbp-8h] 
+       ^
+       ;
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/init_libfuncs/src/optabs.c:5132:1: error: use of undeclared identifier 'optab_0'; did you mean 'optable'?
+optab_0 optablea; // [rsp+58h] [rbp-8h] 
+^~~~~~~
+optable
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/init_libfuncs/src/optabs.c:5107:30: note: 'optable' declared here
+void  init_libfuncs( optab_0 optable, int first_mode, int last_mode, const char *opname, int suffix) 
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/init_libfuncs/src/optabs.c:5132:9: error: use of undeclared identifier 'optablea'; did you mean 'optable'?
+optab_0 optablea; // [rsp+58h] [rbp-8h] 
+        ^~~~~~~~
+        optable
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/init_libfuncs/src/optabs.c:5107:30: note: 'optable' declared here
+void  init_libfuncs( optab_0 optable, int first_mode, int last_mode, const char *opname, int suffix) 
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/init_libfuncs/src/optabs.c:5134:1: error: use of undeclared identifier 'optablea'; did you mean 'optable'?
+optablea = optable; 
+^~~~~~~~
+optable
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/init_libfuncs/src/optabs.c:5107:30: note: 'optable' declared here
+void  init_libfuncs( optab_0 optable, int first_mode, int last_mode, const char *opname, int suffix) 
+                             ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/init_libfuncs/src/optabs.c:5159:6: error: use of undeclared identifier 'sch_tolower'; did you mean '_sch_tolower'?
+v9 = sch_tolower[*( unsigned __int8 *)q]; 
+     ^~~~~~~~~~~
+     _sch_tolower
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/init_libfuncs/src/safe-ctype.h:98:29: note: '_sch_tolower' declared here
+extern const unsigned char  _sch_tolower[256];
+                            ^
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/init_libfuncs/src/optabs.c:5172:1: error: use of undeclared identifier 'optablea'; did you mean 'optable'?
+optablea->handlers[mode].libfunc = v14; 
+^~~~~~~~
+optable
+/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/init_libfuncs/src/optabs.c:5107:30: note: 'optable' declared here
+void  init_libfuncs( optab_0 optable, int first_mode, int last_mode, const char *opname, int suffix) 
+                             ^
+9 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/clang/O0/gcc-clang-O0/init_libfuncs/src/obj/optabs.o] Error 1

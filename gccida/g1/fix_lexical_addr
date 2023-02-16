@@ -1,0 +1,27 @@
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/fix_lexical_addr/src/function.c:6085:1: error: must use 'union' tag to refer to type 'tree_node'
+tree_node *v3; // rax 
+^
+union 
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/fix_lexical_addr/src/function.c:6092:5: error: called object type 'rtx' (aka 'struct rtx_def *') is not a function or function pointer
+rtx arg_pointer_save_area; // rax 
+~~~ ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/fix_lexical_addr/src/function.h:533:31: note: expanded from macro 'arg_pointer_save_area'
+#define arg_pointer_save_area (cfun->x_arg_pointer_save_area)
+                              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/fix_lexical_addr/src/function.c:6109:23: error: operand of type 'rtunion' (aka 'union rtunion_def') where arithmetic or pointer type is required
+v9.rtwint = ( __int64)rtx->fld[0]; 
+                      ^~~~~~~~~~~
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/fix_lexical_addr/src/function.c:6112:15: error: expected expression
+rtx = *( rtx *)( v9.rtwint + 8); 
+              ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/fix_lexical_addr/src/function.c:6122:25: error: use of undeclared identifier 'machine_mode'
+v12 = memory_address( ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), fixed); 
+                        ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/fix_lexical_addr/src/function.c:6123:22: error: use of undeclared identifier 'machine_mode'
+v13 = gen_rtx_MEM( ( machine_mode)( ( ( target_flags & 0x2000000) != 0) + 4), v12); 
+                     ^
+/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/fix_lexical_addr/src/function.c:6150:16: error: operand of type 'struct rtx_def' where arithmetic or pointer type is required
+v6 = ( __int64)rtx[1]; 
+               ^~~~~~
+7 errors generated.
+make: *** [/data/output_dir/patch/gcc/ida/gcc/O1/gcc-gcc-O1/fix_lexical_addr/src/obj/function.o] Error 1
