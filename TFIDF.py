@@ -93,7 +93,7 @@ for com in type_of_coms:
     bigger_coms_dict = {}
     fold_dict = {}
     outer_index = 0
-    for fd in folders:     # 对每一个folder遍历
+    for fd in folders[1:]:     # 对每一个folder遍历
         outer_index+=1
         fold_array = []
         ftcs = [] # 🌈最多4个同名文件数组
@@ -120,23 +120,23 @@ for com in type_of_coms:
             ########################### 和if 部分完全一致 ########################
             
         fold_dict[fd] = fold_array
-        with open(r'/data/get_similiarities/'+proj+'ida/'+com+str(outer_index)+'_lines'+'.txt', 'w') as fp:
+        with open(r'/data/get_similiarities/'+proj+'ida/'+com+str(outer_index)+'_lines'+'.csv', 'w') as fp:
             for item in fold_array:
                 # write each item on a new line
                 fp.write("%s" % item)
                 print('Done')
 
 
-
     cs_cont = 0
-    while cs_cont < 3:
+    while cs_cont <= 3:
+        cs_cont+=1
         b_dict = {}
         cs_arr = []
         index_list = []
         fun_list = []
         err_list = []
         real_count = 0
-        for outer_line in fold_dict[com+str(cs_cont+1)]:  # O1 +1
+        for outer_line in fold_dict[com+str(cs_cont)]:  # O1 +1
             max_csim_baseline = 0
             # print("outer_line",outer_line)
             i_arr = []
@@ -184,12 +184,12 @@ for com in type_of_coms:
                 fp.write("%s\n" % item)
             print('Done')
 
-        with open(r'/data/get_similiarities/'+proj+'ida/indexs_'+com+str(cs_cont)+'i_arr.txt', 'w') as fp:
+        with open(r'/data/get_similiarities/'+proj+'ida/index_arr_'+com+str(cs_cont)+'i_arr.txt', 'w') as fp:
             for item in index_list:
                 # write each item on a new line
                 fp.write("%s\n" % item)
             print('Done')
 
-        cs_cont+=1
+     
 
 

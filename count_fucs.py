@@ -71,10 +71,10 @@ for com in type_of_coms:
 
 
     sub_counter = 0
-    for sub_life in life_fucs: 
+    for sub_life in life_fucs[1:]: 
         sub_counter += 1
         # strss = funs_str(sub_counter)
-        filepath= "/data/get_similiarities/"+proj+"ida/"+com+"life_fucs_"+str(sub_counter)+".csv"
+        filepath= "/data/get_similiarities/"+proj+"ida/"+com+str(sub_counter)+"_fucs"+".csv"
         with open(filepath, 'w') as fp:
             for item in sub_life:
                 # write each item on a new line

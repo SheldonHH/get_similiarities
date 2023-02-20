@@ -17,7 +17,7 @@ for com in type_of_coms:
         #     break
         fun_list = []
         err_list = []
-        with open("/data/get_similiarities/"+proj+"ida/indexs_"+str(folders[fd_index])+"i_arr.txt", 'r') as file:
+        with open("/data/get_similiarities/"+proj+"ida/index_arr_"+str(folders[fd_index])+".txt", 'r') as file:
             # 逐行搜索
             line_marker = -1 # 打开该文件
             for num, line in enumerate(file, 1):
@@ -32,10 +32,10 @@ for com in type_of_coms:
                         print("i_to_look",i_to_look)
                         i_to_look = int(i_to_look)
                         # func
-                        with open("/data/get_similiarities/"+proj+"ida/life_fucs_"+str(folders[fd_index+1])+".csv", 'r') as fun_file:
+                        with open("/data/get_similiarities/"+proj+"ida/"+com+str(fd_index)+"_fucs"+".csv", 'r') as fun_file:
                             fun_lines = fun_file.readlines()
                             sub_fun_list.append(fun_lines[i_to_look].rstrip()) # remove \n
-                        with open("/data/get_similiarities/"+proj+"ida/"+str(folders[fd_index+1])+"_lines.txt", 'r') as err_file:
+                        with open("/data/get_similiarities/"+proj+"ida/"+str(folders[fd_index])+"_lines.csv", 'r') as err_file:
                             err_lines = err_file.readlines()
                             sub_err_list.append(err_lines[i_to_look].rstrip()) # remove \n
                     fun_list.append(sub_fun_list)
