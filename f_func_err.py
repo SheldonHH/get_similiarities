@@ -35,10 +35,10 @@ for com in type_of_coms:
                         print("i_to_look",i_to_look)
                         i_to_look = int(i_to_look)
                         # func
-                        with open("/data/get_similiarities/"+proj+"ida/becompared/"+com+str(opt_level)+"_fucs"+".csv", 'r') as fun_file: # 🌟 opt_level for comparee (inner/lower opt_level)
+                        with open("/data/get_similiarities/"+proj+"ida/"+com+str(opt_level)+"_fucs"+".csv", 'r') as fun_file: # 🌟 opt_level for comparee (inner/lower opt_level)
                             fun_lines = fun_file.readlines()
                             sub_fun_list.append(fun_lines[i_to_look].rstrip()) # remove \n
-                        with open("/data/get_similiarities/"+proj+"ida/becompared/"+str(folders[opt_level])+"_lines.csv", 'r') as err_file:
+                        with open("/data/get_similiarities/"+proj+"ida/"+str(folders[opt_level])+"_lines.csv", 'r') as err_file:
                             err_lines = err_file.readlines()
                             sub_err_list.append(err_lines[i_to_look].rstrip()) # remove \n
                     fun_list.append(sub_fun_list)
@@ -57,7 +57,7 @@ for com in type_of_coms:
             
 
             
-
+    ##################################### write to folder becompared #####################################
 
         with open(r'/data/get_similiarities/'+proj+'ida/becompared/'+str(folders[opt_level])+'_fuc_list.txt', 'w') as fp:
             for item in fun_list:
