@@ -129,54 +129,41 @@ for com in type_of_coms:
 
 
     cs_cont = 0
-    minus1 = 0
-    while cs_cont < 2:
+    while cs_cont < 3:
         b_dict = {}
         cs_arr = []
         index_list = []
         fun_list = []
         err_list = []
         real_count = 0
-        # for outer_line in fold_dict[com+str(cs_cont+1)]: 
-        outer_line = "CheckBadFlow_pawnmated = 0;"
-        if True:
+        for outer_line in fold_dict[com+str(cs_cont+1)]:  # O1 +1
             max_csim_baseline = 0
             # print("outer_line",outer_line)
             i_arr = []
             f_sublist = []
-            e_sublist = []
+            # e_sublist = []
             print("+++++++++++++++")
-            for i_index, inner_line in enumerate(fold_dict["c0"]):
+            for i_index, inner_line in enumerate(fold_dict[com+str(cs_cont)]): # O0
                 real_count += 1
-                print("cs_cont",cs_cont,"i_index",i_index,"real_count",real_count)
-                # if inner_line == "a = 0.0; ":
-                # if  proj == "libquantum" and ("t = m.t;" in outer_line or "a = 0.0;" in outer_line or "t = m->t;" in outer_line or "a = 0.0;" in inner_line or "t = m.t;" in inner_line or "t = m->t;" in inner_line):
-                #     print("0.00000000")
-                #     print("outer_line",outer_line)
-                #     print("inner_line",inner_line)
-                #     minus1+=1
-                #     js = -1
-                # else:
-                if True:
-                    outer_line = outer_line.rstrip()
-                    inner_line = inner_line.rstrip()
-                    print("outer_line",outer_line)
-                    print("inner_line",inner_line)
-                    # js = cs_tfidf(outer_line,inner_line)[0][1]
-                    js = EditDistance(outer_line,inner_line)
+                print("compiler:",com,"cs_cont",cs_cont,"i_index",i_index,"real_count",real_count)
+                # if True:
+                outer_line = outer_line.rstrip() # remove \n
+                inner_line = inner_line.rstrip() # remove \n
+                print("outer_line",outer_line)
+                print("inner_line",inner_line)
+                # js = cs_tfidf(outer_line,inner_line)[0][1]
+                js = EditDistance(outer_line,inner_line)
                 print("js",js)
                 # js = Jaccard_Similarity(outer_line,inner_line)
                 if js > max_csim_baseline:
                     i_arr = []
                     i_arr.append(i_index)
-                    e_sublist.append(inner_line)
+                    # e_sublist.append(inner_line)
                     max_csim_baseline = js
                     print("max_csim_baseline",max_csim_baseline)
                 elif max_csim_baseline > 0 and js == max_csim_baseline:
                     i_arr.append(i_index)
-                    e_sublist.append(inner_line)
-                # print(cosine_similarity(np.array(outer_line), np.array(inner_line)))
-                    # print(cosine_similarity(df, df))
+                    # e_sublist.append(inner_line)
         
             b_dict[outer_line] = max_csim_baseline
             cs_arr.append(max_csim_baseline)
@@ -186,9 +173,9 @@ for com in type_of_coms:
         print("+++")
         print(cs_arr)
         # print("+++",fold_dict["c0"])
-        if "CheckBadFlow_pawnmated = 0;" in fold_dict["c0"]:
-            print("+++++++++++++++")
-            break
+        # if "CheckBadFlow_pawnmated = 0;" in fold_dict["c0"]:
+        #     print("+++++++++++++++")
+        #     break
         # print("fold_dict",fold_dict)
         with open(r'/data/get_similiarities/'+proj+'ida/score_'+com+'_'+str(cs_cont)+'cs_cont.txt', 'w') as fp:
             for item in cs_arr:
@@ -203,6 +190,5 @@ for com in type_of_coms:
             print('Done')
 
         cs_cont+=1
-    print("minus1",minus1)
 
 
