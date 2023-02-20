@@ -70,6 +70,7 @@ else:
    for arg in sys.argv:
       print(arg)
 proj = sys.argv[1]
+os.system("mkdir -p /data/get_similiarities/"+proj+"ida/IndexEachScore")
 
 type_of_coms = ["c","g"]
 for com in type_of_coms:
@@ -158,7 +159,7 @@ for com in type_of_coms:
                 # write each item on a new line
                 fp.write("%s\n" % item)
 
-        with open(r'/data/get_similiarities/'+proj+'ida/index_arr_'+com+str(cs_cont)+'.txt', 'w') as fp:
+        with open(r'/data/get_similiarities/'+proj+'ida/IndexEachScore/index_arr_'+com+str(cs_cont)+'.txt', 'w') as fp:
             for item in index_list:
                 # write each item on a new line
                 fp.write("%s\n" % item)

@@ -1,10 +1,13 @@
 import sys
+import os
 if len(sys.argv) <= 1:
    print("the arguments are not entered in the command line")
 else:
    for arg in sys.argv:
       print(arg)
 proj = sys.argv[1]
+
+os.system("mkdir -p /data/get_similiarities/"+proj+"ida/becompared")
 
 
 type_of_coms = ["c","g"]
@@ -17,7 +20,7 @@ for com in type_of_coms:
         #     break
         fun_list = []
         err_list = []
-        with open('/data/get_similiarities/'+proj+'ida/index_arr_'+com+str(opt_level+1)+'.txt', 'r') as file:  # 🌟 opt_level for base(outer/higher opt_level)
+        with open('/data/get_similiarities/'+proj+'ida/IndexEachScore/index_arr_'+com+str(opt_level+1)+'.txt', 'r') as file:  # 🌟 opt_level for base(outer/higher opt_level)
             # 逐行搜索
             line_marker = -1 # 打开该文件
             for num, line in enumerate(file, 1):
@@ -32,10 +35,10 @@ for com in type_of_coms:
                         print("i_to_look",i_to_look)
                         i_to_look = int(i_to_look)
                         # func
-                        with open("/data/get_similiarities/"+proj+"ida/"+com+str(opt_level)+"_fucs"+".csv", 'r') as fun_file: # 🌟 opt_level for comparee (inner/lower opt_level)
+                        with open("/data/get_similiarities/"+proj+"ida/becompared/"+com+str(opt_level)+"_fucs"+".csv", 'r') as fun_file: # 🌟 opt_level for comparee (inner/lower opt_level)
                             fun_lines = fun_file.readlines()
                             sub_fun_list.append(fun_lines[i_to_look].rstrip()) # remove \n
-                        with open("/data/get_similiarities/"+proj+"ida/"+str(folders[opt_level])+"_lines.csv", 'r') as err_file:
+                        with open("/data/get_similiarities/"+proj+"ida/becompared/"+str(folders[opt_level])+"_lines.csv", 'r') as err_file:
                             err_lines = err_file.readlines()
                             sub_err_list.append(err_lines[i_to_look].rstrip()) # remove \n
                     fun_list.append(sub_fun_list)
@@ -56,13 +59,13 @@ for com in type_of_coms:
             
 
 
-        with open(r'/data/get_similiarities/'+proj+'ida/'+str(folders[opt_level])+'_fuc_list.txt', 'w') as fp:
+        with open(r'/data/get_similiarities/'+proj+'ida/becompared/'+str(folders[opt_level])+'_fuc_list.txt', 'w') as fp:
             for item in fun_list:
                 # write each item on a new line
                 fp.write("%s\n" % item)
             print('Done')
 
-        with open(r'/data/get_similiarities/'+proj+'ida/'+str(folders[opt_level])+'_ERR_list.txt', 'w') as fp:
+        with open(r'/data/get_similiarities/'+proj+'ida/becompared/'+str(folders[opt_level])+'_ERR_list.txt', 'w') as fp:
             for item in err_list:
                 # write each item on a new line
                 fp.write("%s\n" % item)

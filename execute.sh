@@ -1,5 +1,5 @@
 proj=$1
-rm -r ${proj}ida/index_to_lookup && ${proj}ida/compared
+rm -r ${proj}ida/IndexEachScore && ${proj}ida/compared
 rm -r ${proj}ida/*.txt
 rm -r ${proj}ida/*.csv
 sleep 2
