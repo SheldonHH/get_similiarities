@@ -53,21 +53,16 @@ def EditDistance(word1, word2):
     return 1 - dp[i][j]/ max(m,n)
 
 
-# taking the dot product and dividing it by the magnitudes of each vector, as shown by the illustration below:
-def cs_tfidf(d1, d2):
-    count_vect = CountVectorizer()
-    corpus = [d1,d2]
-    X_train_counts = count_vect.fit_transform(corpus)
-    # print(X_train_counts)
-    # pd.DataFrame(X_train_counts.toarray(),columns=count_vect.get_feature_names(),index=['Document 1','Document 2'])
 
 
-    vectorizer = TfidfVectorizer()
 
-    trsfm=vectorizer.fit_transform(corpus)
-    # print("cs_tfidf",cosine_similarity(trsfm[0:1], trsfm))
-    return cosine_similarity(trsfm[0:1], trsfm)
 
+
+
+
+
+
+############################################################### main ################################################################
 
 if len(sys.argv) <= 1:
    print("the arguments are not entered in the command line")
@@ -77,29 +72,26 @@ else:
 proj = sys.argv[1]
 
 type_of_coms = ["c","g"]
-# type_of_coms = ["g","c"]
 for com in type_of_coms:
-    sjeng_set = set()
+    uniqueFunc_set = set()
     folders = [com+"0",com+"1",com+"2",com+"3"]
-    for fd in folders:
-        directory = os.fsencode("/data/get_similiarities/"+proj+"ida/"+fd)
+    for fname in folders:
+        directory = os.fsencode("/data/get_similiarities/"+proj+"ida/"+fname)
         for file in os.listdir(directory):
-            sjeng_set.add(str(file.decode()))
+            uniqueFunc_set.add(str(file.decode()))
             
-    funcs = sjeng_set
+    funcs = uniqueFunc_set
     funcs = sorted(funcs, key=lambda x: x.lower())
     print("sorted funcs:",funcs)
     files_to_dict = {}
     bigger_coms_dict = {}
     fold_dict = {}
-    outer_index = 0
-    for fd in folders[1:]:     # 对每一个folder遍历
-        outer_index+=1
+    for idx, fname in enumerate(folders):     # 对每一个folder遍历
         fold_array = []
         ftcs = [] # 🌈最多4个同名文件数组
         for fuc in funcs:
             #TODO: 需要替代 这个for loop只是为了找到match func
-            oj = findf(fuc,"/data/get_similiarities/"+proj+"ida/"+fd)
+            oj = findf(fuc,"/data/get_similiarities/"+proj+"ida/"+fname)
             if (type(oj) != type(None)):
                 print("oj",oj)
                 ftcs.append(oj)
@@ -107,7 +99,7 @@ for com in type_of_coms:
         # print("len(ftcs)",len(ftcs))
         for index,ftc in enumerate(ftcs):   #   ftcs = [] # 最多4个同名文件数组已找到
             lines = []
-            print("ftcftc",ftc)
+            print("func_name",ftc)
             with open(ftc, 'r') as file:
                 # 逐行搜索
                 line_marker = -1 # 打开该文件
@@ -119,76 +111,57 @@ for com in type_of_coms:
                         fold_array.append(line)
             ########################### 和if 部分完全一致 ########################
             
-        fold_dict[fd] = fold_array
-        with open(r'/data/get_similiarities/'+proj+'ida/'+com+str(outer_index)+'_lines'+'.csv', 'w') as fp:
+        fold_dict[fname] = fold_array
+        with open(r'/data/get_similiarities/'+proj+'ida/'+com+str(idx)+'_lines'+'.csv', 'w') as fp:
             for item in fold_array:
                 # write each item on a new line
                 fp.write("%s" % item)
-                print('Done')
 
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++ c1_lines +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-    cs_cont = 0
-    while cs_cont < 3: 
-        cs_cont+=1 # 0,1,2,3
-        b_dict = {}
-        cs_arr = []
+    # cs_cont = -1
+    for cs_cont in range(1,4): # 1-3, （4不包括）
+        scores_arr = []
         index_list = []
-        fun_list = []
-        err_list = []
-        real_count = 0
+        sim_score_count = 0
         for outer_line in fold_dict[com+str(cs_cont)]:  # O1 +1
-            max_csim_baseline = 0
-            # print("outer_line",outer_line)
-            i_arr = []
-            f_sublist = []
-            # e_sublist = []
+            max_simi = 0
+            i_arr = [] # funcs, error_lines for inner comparsion
             print("+++++++++++++++")
-            for i_index, inner_line in enumerate(fold_dict[com+str(cs_cont)]): # O0
-                real_count += 1
-                print("compiler:",com,"cs_cont",cs_cont,"i_index",i_index,"real_count",real_count)
-                # if True:
+            for i_index, inner_line in enumerate(fold_dict[com+str(cs_cont-1)]): # O0
+                sim_score_count += 1
+                # 打印出O1,O0,inner_index,sim_score_count
+                print(com+str(cs_cont),com+str(cs_cont-1),"inner_index",str(i_index),"sim_score_count",sim_score_count)
                 outer_line = outer_line.rstrip() # remove \n
                 inner_line = inner_line.rstrip() # remove \n
                 print("outer_line",outer_line)
                 print("inner_line",inner_line)
-                # js = cs_tfidf(outer_line,inner_line)[0][1]
-                # js = EditDistance(outer_line,inner_line)
-                js = compression_similarity(outer_line,inner_line)
-                print("js",js)
-                # js = Jaccard_Similarity(outer_line,inner_line)
-                if js > max_csim_baseline:
+                simScore = EditDistance(outer_line,inner_line)
+                print("This simScore:",simScore)
+                if simScore > max_simi:
                     i_arr = []
                     i_arr.append(i_index)
-                    # e_sublist.append(inner_line)
-                    max_csim_baseline = js
-                    print("max_csim_baseline",max_csim_baseline)
-                elif max_csim_baseline > 0 and js == max_csim_baseline:
+                    max_simi = simScore
+                    print("max_simi",max_simi)
+                elif max_simi > 0 and simScore == max_simi:
                     i_arr.append(i_index)
-                    # e_sublist.append(inner_line)
         
-            b_dict[outer_line] = max_csim_baseline
-            cs_arr.append(max_csim_baseline)
+            scores_arr.append(max_simi)
             index_list.append(i_arr)
-            print(max_csim_baseline)        
+            print(max_simi)        
 
-        print("+++")
-        print(cs_arr)
-        # print("+++",fold_dict["c0"])
-        # if "CheckBadFlow_pawnmated = 0;" in fold_dict["c0"]:
-        #     print("+++++++++++++++")
-        #     break
-        # print("fold_dict",fold_dict)
+        print("+++++++++++ scores_arr ++++++++")
+        print(scores_arr)
+
         with open(r'/data/get_similiarities/'+proj+'ida/score_'+com+str(cs_cont)+'.txt', 'w') as fp:
-            for item in cs_arr:
+            for item in scores_arr:
                 # write each item on a new line
                 fp.write("%s\n" % item)
-            print('Done')
 
         with open(r'/data/get_similiarities/'+proj+'ida/index_arr_'+com+str(cs_cont)+'.txt', 'w') as fp:
             for item in index_list:
                 # write each item on a new line
                 fp.write("%s\n" % item)
-            print('Done')
 
      
 
