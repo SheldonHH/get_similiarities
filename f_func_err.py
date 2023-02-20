@@ -7,7 +7,7 @@ else:
 proj = sys.argv[1]
 
 
-type_of_coms = ["g","c"]
+type_of_coms = ["c","g"]
 # type_of_coms = ["g","c"]
 for com in type_of_coms:
     sjeng_set = set()
@@ -34,10 +34,10 @@ for com in type_of_coms:
                         # func
                         with open("/data/get_similiarities/"+proj+"ida/life_fucs_"+str(folders[fd_index+1])+".csv", 'r') as fun_file:
                             fun_lines = fun_file.readlines()
-                            sub_fun_list.append(fun_lines[i_to_look])
+                            sub_fun_list.append(fun_lines[i_to_look].rstrip()) # remove \n
                         with open("/data/get_similiarities/"+proj+"ida/"+str(folders[fd_index+1])+"_lines.txt", 'r') as err_file:
                             err_lines = err_file.readlines()
-                            sub_err_list.append(err_lines[i_to_look])
+                            sub_err_list.append(err_lines[i_to_look].rstrip()) # remove \n
                     fun_list.append(sub_fun_list)
                     err_list.append(sub_err_list)
                 else:

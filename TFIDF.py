@@ -76,7 +76,7 @@ else:
       print(arg)
 proj = sys.argv[1]
 
-type_of_coms = ["c"]
+type_of_coms = ["c","g"]
 # type_of_coms = ["g","c"]
 for com in type_of_coms:
     sjeng_set = set()
@@ -152,7 +152,8 @@ for com in type_of_coms:
                 print("outer_line",outer_line)
                 print("inner_line",inner_line)
                 # js = cs_tfidf(outer_line,inner_line)[0][1]
-                js = EditDistance(outer_line,inner_line)
+                # js = EditDistance(outer_line,inner_line)
+                js = compression_similarity(outer_line,inner_line)
                 print("js",js)
                 # js = Jaccard_Similarity(outer_line,inner_line)
                 if js > max_csim_baseline:

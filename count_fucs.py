@@ -13,7 +13,7 @@ else:
       print(arg)
 proj = sys.argv[1]
 
-type_of_coms = ["g", "c"]
+type_of_coms = ["c","g"]
 for com in type_of_coms:
     gcc_set = set()
     folders = [com+"0",com+"1",com+"2",com+"3"]
@@ -74,7 +74,7 @@ for com in type_of_coms:
     for sub_life in life_fucs: 
         sub_counter += 1
         # strss = funs_str(sub_counter)
-        filepath= "/data/get_similiarities/"+proj+"ida/life_fucs_"+com+str(sub_counter)+".csv"
+        filepath= "/data/get_similiarities/"+proj+"ida/"+com+"life_fucs_"+str(sub_counter)+".csv"
         with open(filepath, 'w') as fp:
             for item in sub_life:
                 # write each item on a new line
