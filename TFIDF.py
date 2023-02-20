@@ -13,12 +13,44 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
+from simphile import jaccard_similarity, euclidian_similarity, compression_similarity
+
+
+# text_a = texts[0]
+# text_b = keyword
+
+# print(f"Jaccard Similarity: {jaccard_similarity(text_a, text_b)}")
+# print(f"Euclidian Similarity: {euclidian_similarity(text_a, text_b)}")
+# print(f"Compression Similarity: {compression_similarity(text_a, text_b)}")
+
+
 
 def findf(name, path):
     for root, dirs, files in os.walk(path):
         if name in files:
             return os.path.join(root, name)
             
+
+
+def EditDistance(word1, word2):
+    """
+    :type word1: str
+    :type word2: str
+    :rtype: int
+    """
+    m = len(word1)
+    n = len(word2)
+    dp = [[0 for __ in range(m + 1)] for __ in range(n + 1)]
+    for j in range(m + 1):
+        dp[0][j] = j
+    for i in range(n + 1):
+        dp[i][0] = i
+    for i in range(1, n + 1):
+        for j in range(1, m + 1):
+            onemore = 1 if word1[j - 1] != word2[i - 1] else 0
+            dp[i][j] = min(dp[i - 1][j] + 1, dp[i][j - 1] + 1, dp[i - 1][j - 1] + onemore)
+    
+    return 1 - dp[i][j]/ max(m,n)
 
 
 # taking the dot product and dividing it by the magnitudes of each vector, as shown by the illustration below:
@@ -44,7 +76,7 @@ else:
       print(arg)
 proj = sys.argv[1]
 
-type_of_coms = ["g","c"]
+type_of_coms = ["c"]
 # type_of_coms = ["g","c"]
 for com in type_of_coms:
     sjeng_set = set()
@@ -98,46 +130,40 @@ for com in type_of_coms:
 
     cs_cont = 0
     minus1 = 0
-    while cs_cont < 3:
+    while cs_cont < 2:
         b_dict = {}
         cs_arr = []
         index_list = []
         fun_list = []
         err_list = []
         real_count = 0
-        for outer_line in fold_dict[com+str(cs_cont+1)]: 
+        # for outer_line in fold_dict[com+str(cs_cont+1)]: 
+        outer_line = "CheckBadFlow_pawnmated = 0;"
+        if True:
             max_csim_baseline = 0
             # print("outer_line",outer_line)
             i_arr = []
             f_sublist = []
             e_sublist = []
-            for i_index, inner_line in enumerate(fold_dict[com+str(cs_cont)]):
+            print("+++++++++++++++")
+            for i_index, inner_line in enumerate(fold_dict["c0"]):
                 real_count += 1
                 print("cs_cont",cs_cont,"i_index",i_index,"real_count",real_count)
                 # if inner_line == "a = 0.0; ":
-                if  "t = m.t;" in outer_line or "a = 0.0;" in outer_line or "t = m->t;" in outer_line or "a = 0.0;" in inner_line or "t = m.t;" in inner_line or "t = m->t;" in inner_line:
-                    print("0.00000000")
-                    print("outer_line",outer_line)
-                    print("inner_line",inner_line)
-                    minus1+=1
-                    js = -1
-                else:
-                    print("outer_line",outer_line)
-                    print("inner_line",inner_line)
-                    js = cs_tfidf(outer_line,inner_line)[0][1]
-                # if real_count == 3585:
+                # if  proj == "libquantum" and ("t = m.t;" in outer_line or "a = 0.0;" in outer_line or "t = m->t;" in outer_line or "a = 0.0;" in inner_line or "t = m.t;" in inner_line or "t = m->t;" in inner_line):
+                #     print("0.00000000")
                 #     print("outer_line",outer_line)
                 #     print("inner_line",inner_line)
-                # if real_count == 3527 and cs_cont == 0:
-                #     print("3527")
-                #     print("outer_line",outer_line)
-                #     print("inner_line",inner_line)
-                #     js = cs_tfidf(outer_line,inner_line)[0][1]
-                    # js = 0
+                #     minus1+=1
+                #     js = -1
                 # else:
-                # print("outer_line",outer_line)
-                # print("inner_line",inner_line)
-                # js = cs_tfidf(outer_line,inner_line)[0][1]
+                if True:
+                    outer_line = outer_line.rstrip()
+                    inner_line = inner_line.rstrip()
+                    print("outer_line",outer_line)
+                    print("inner_line",inner_line)
+                    # js = cs_tfidf(outer_line,inner_line)[0][1]
+                    js = EditDistance(outer_line,inner_line)
                 print("js",js)
                 # js = Jaccard_Similarity(outer_line,inner_line)
                 if js > max_csim_baseline:
@@ -157,7 +183,13 @@ for com in type_of_coms:
             index_list.append(i_arr)
             print(max_csim_baseline)        
 
-
+        print("+++")
+        print(cs_arr)
+        # print("+++",fold_dict["c0"])
+        if "CheckBadFlow_pawnmated = 0;" in fold_dict["c0"]:
+            print("+++++++++++++++")
+            break
+        # print("fold_dict",fold_dict)
         with open(r'/data/get_similiarities/'+proj+'ida/score_'+com+'_'+str(cs_cont)+'cs_cont.txt', 'w') as fp:
             for item in cs_arr:
                 # write each item on a new line

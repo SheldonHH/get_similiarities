@@ -56,13 +56,13 @@ for com in type_of_coms:
             
 
 
-        with open(r'/data/get_similiarities/'+proj+'ida_'+str(folders[fd_index+1])+'_fuc_list.txt', 'w') as fp:
+        with open(r'/data/get_similiarities/'+proj+'ida/'+str(folders[fd_index])+'_fuc_list.txt', 'w') as fp:
             for item in fun_list:
                 # write each item on a new line
                 fp.write("%s\n" % item)
             print('Done')
 
-        with open(r'/data/get_similiarities/'+proj+'ida_'+str(folders[fd_index+1])+'_ERR_list.txt', 'w') as fp:
+        with open(r'/data/get_similiarities/'+proj+'ida/'+str(folders[fd_index])+'_ERR_list.txt', 'w') as fp:
             for item in err_list:
                 # write each item on a new line
                 fp.write("%s\n" % item)
