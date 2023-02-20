@@ -17,7 +17,7 @@ for com in type_of_coms:
         #     break
         fun_list = []
         err_list = []
-        with open("/data/get_similiarities/"+proj+"ida/index_arr_"+str(folders[fd_index])+".txt", 'r') as file:
+        with open('/data/get_similiarities/'+proj+'ida/index_arr_'+com+str(cs_cont)+'.txt', 'r') as file:
             # 逐行搜索
             line_marker = -1 # 打开该文件
             for num, line in enumerate(file, 1):

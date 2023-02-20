@@ -128,8 +128,8 @@ for com in type_of_coms:
 
 
     cs_cont = 0
-    while cs_cont <= 3:
-        cs_cont+=1
+    while cs_cont < 3: 
+        cs_cont+=1 # 0,1,2,3
         b_dict = {}
         cs_arr = []
         index_list = []
@@ -178,13 +178,13 @@ for com in type_of_coms:
         #     print("+++++++++++++++")
         #     break
         # print("fold_dict",fold_dict)
-        with open(r'/data/get_similiarities/'+proj+'ida/score_'+com+'_'+str(cs_cont)+'cs_cont.txt', 'w') as fp:
+        with open(r'/data/get_similiarities/'+proj+'ida/score_'+com+str(cs_cont)+'.txt', 'w') as fp:
             for item in cs_arr:
                 # write each item on a new line
                 fp.write("%s\n" % item)
             print('Done')
 
-        with open(r'/data/get_similiarities/'+proj+'ida/index_arr_'+com+str(cs_cont)+'i_arr.txt', 'w') as fp:
+        with open(r'/data/get_similiarities/'+proj+'ida/index_arr_'+com+str(cs_cont)+'.txt', 'w') as fp:
             for item in index_list:
                 # write each item on a new line
                 fp.write("%s\n" % item)
