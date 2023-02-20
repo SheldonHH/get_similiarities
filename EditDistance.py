@@ -120,19 +120,19 @@ for com in type_of_coms:
 
 #+++++++++++++++++++++++++++++++++++++++++++++++++++++++++ c1_lines +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-    # cs_cont = -1
-    for cs_cont in range(1,4): # 1-3, （4不包括）
+    # opt_level = -1
+    for opt_level in range(1,4): # 1-3, （4不包括）
         scores_arr = []
         index_list = []
         sim_score_count = 0
-        for outer_line in fold_dict[com+str(cs_cont)]:  # O1 +1
+        for outer_line in fold_dict[com+str(opt_level)]:  # O1 +1
             max_simi = 0
             i_arr = [] # funcs, error_lines for inner comparsion
             print("+++++++++++++++")
-            for i_index, inner_line in enumerate(fold_dict[com+str(cs_cont-1)]): # O0
+            for i_index, inner_line in enumerate(fold_dict[com+str(opt_level-1)]): # O0
                 sim_score_count += 1
                 # 打印出O1,O0,inner_index,sim_score_count
-                print(com+str(cs_cont),com+str(cs_cont-1),"inner_index",str(i_index),"sim_score_count",sim_score_count)
+                print(com+str(opt_level),com+str(opt_level-1),"inner_index",str(i_index),"sim_score_count",sim_score_count)
                 outer_line = outer_line.rstrip() # remove \n
                 inner_line = inner_line.rstrip() # remove \n
                 print("outer_line",outer_line)
@@ -154,12 +154,12 @@ for com in type_of_coms:
         print("+++++++++++ scores_arr ++++++++")
         print(scores_arr)
 
-        with open(r'/data/get_similiarities/'+proj+'ida/score_'+com+str(cs_cont)+'.txt', 'w') as fp:
+        with open(r'/data/get_similiarities/'+proj+'ida/score_'+com+str(opt_level)+'.txt', 'w') as fp:
             for item in scores_arr:
                 # write each item on a new line
                 fp.write("%s\n" % item)
 
-        with open(r'/data/get_similiarities/'+proj+'ida/IndexEachScore/index_arr_'+com+str(cs_cont)+'.txt', 'w') as fp:
+        with open(r'/data/get_similiarities/'+proj+'ida/IndexEachScore/index_arr_'+com+str(opt_level)+'.txt', 'w') as fp:
             for item in index_list:
                 # write each item on a new line
                 fp.write("%s\n" % item)
