@@ -2,6 +2,7 @@
 import os
 import csv
 import re
+import time
 import numpy as np
 from numpy.linalg import norm
 import math
@@ -63,7 +64,7 @@ def EditDistance(word1, word2):
 
 
 ############################################################### main ################################################################
-
+start_time = time.process_time()
 if len(sys.argv) <= 1:
    print("the arguments are not entered in the command line")
 else:
@@ -100,7 +101,7 @@ for com in type_of_coms:
         # print("len(ftcs)",len(ftcs))
         for index,ftc in enumerate(ftcs):   #   ftcs = [] # 最多4个同名文件数组已找到
             lines = []
-            print("func_name",ftc)
+            print("func_name with this type of error:",ftc)
             with open(ftc, 'r') as file:
                 # 逐行搜索
                 line_marker = -1 # 打开该文件
@@ -125,31 +126,31 @@ for com in type_of_coms:
         scores_arr = []
         index_list = []
         sim_score_count = 0
-        for outer_line in fold_dict[com+str(opt_level)]:  # O1 +1
+        for o_idx,outer_line in enumerate(fold_dict[com+str(opt_level)]):  # O1 +1
             max_simi = 0
             i_arr = [] # funcs, error_lines for inner comparsion
-            print("+++++++++++++++")
+            # print("+++++++++++++++")
             for i_index, inner_line in enumerate(fold_dict[com+str(opt_level-1)]): # O0
                 sim_score_count += 1
                 # 打印出O1,O0,inner_index,sim_score_count
-                print(com+str(opt_level),com+str(opt_level-1),"inner_index",str(i_index),"sim_score_count",sim_score_count)
+                # print(com+str(opt_level),com+str(opt_level-1),"inner_index",str(i_index),"sim_score_count",sim_score_count)
                 outer_line = outer_line.rstrip() # remove \n
                 inner_line = inner_line.rstrip() # remove \n
-                print("outer_line",outer_line)
-                print("inner_line",inner_line)
+                # print("outer_line",outer_line)
+                # print("inner_line",inner_line)
                 simScore = EditDistance(outer_line,inner_line)
-                print("This simScore:",simScore)
+                # print("This simScore:",simScore)
                 if simScore > max_simi:
                     i_arr = []
                     i_arr.append(i_index)
                     max_simi = simScore
-                    print("max_simi",max_simi)
+                    # print("max_simi",max_simi)
                 elif max_simi > 0 and simScore == max_simi:
                     i_arr.append(i_index)
         
             scores_arr.append(max_simi)
             index_list.append(i_arr)
-            print(max_simi)        
+            print("{"+com+str(opt_level)+" vs "+com+str(opt_level-1)+"}","line_num:"+str(o_idx),"Time elapsed:",time.process_time()-start_time,"max_simi",max_simi,)        
 
         print("+++++++++++ scores_arr ++++++++")
         print(scores_arr)
