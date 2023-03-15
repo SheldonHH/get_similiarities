@@ -1,0 +1,107 @@
+v15 = ( void **)rook_o_8; 
+if ( v15 == jpt_403A6C ) 
+v21 = bishop_o_7[v20]; 
+v3 = ( void **)rook_o_8; 
+if ( jpt_403A6C == v3 ) 
+v10 = bishop_o_7[v9]; 
+pawnmated_4 = 0; 
+knightmated_3 = 0; 
+bishopmated_2 = 0; 
+rookmated_1 = 0; 
+queenmated_0 = 0; 
+if ( pawnmates == pawnmated_4 ) 
+if ( !( pawnmates | pawnmated_4) ) 
+if ( knightmates != knightmated_3 ) 
+if ( !( knightmates | knightmated_3) ) 
+if ( bishopmated_2 != bishopmates ) 
+if ( !( bishopmates | bishopmated_2) ) 
+if ( rookmated_1 != rookmates ) 
+if ( !( rookmates | rookmated_1) ) 
+if ( queenmated_0 != v6 ) 
+else if ( !( v6 | queenmated_0) ) 
+pawnmates = pawnmated_4 - 1; 
+pawnmated_4 = pawnmates; 
+bishopmates = bishopmated_2 - 1; 
+bishopmated_2 = bishopmates; 
+rookmates = rookmated_1 - 1; 
+rookmated_1 = rookmates; 
+v6 = queenmated_0 - 1; 
+queenmated_0 = v6; 
+knightmated_3 = knightmates; 
+--knightmated_3; 
+*( __m128i *)type_to_char = _mm_load_si128( ( const __m128i *)&xmmword_428B30); 
+*( __m128i *)&type_to_char[4] = _mm_load_si128( ( const __m128i *)&xmmword_428B40); 
+*( __m128i *)&type_to_char[8] = _mm_load_si128( ( const __m128i *)&xmmword_428B50); 
+*( __m128i *)type_to_char = _mm_load_si128( ( const __m128i *)&xmmword_428B00); 
+*( __m128i *)&type_to_char[4] = _mm_load_si128( ( const __m128i *)&xmmword_428B10); 
+*( __m128i *)&type_to_char[8] = _mm_load_si128( ( const __m128i *)&xmmword_428B20); 
+*( __m128 *)piece_rep = _mm_loadh_ps( ( const double *)off_428A40); 
+*( __m128 *)&piece_rep[2] = _mm_loadh_ps( ( const double *)off_428A48); 
+*( __m128 *)&piece_rep[4] = _mm_loadh_ps( ( const double *)off_428A50); 
+*( __m128 *)&piece_rep[6] = _mm_loadh_ps( ( const double *)off_428A58); 
+*( __m128 *)&piece_rep[8] = _mm_loadh_ps( ( const double *)off_428A60); 
+*( __m128 *)&piece_rep[10] = _mm_loadh_ps( ( const double *)&off_428A68); 
+*( __m128 *)&piece_rep[12] = _mm_loadh_ps( ( const double *)&off_428A70); 
+if ( !moved[110] && *( _OWORD *)( &board + 110) == __PAIR128__( 0xD0000000DLL, 0xD00000008LL) ) 
+if ( !moved[26] && *( _OWORD *)( &board + 26) == __PAIR128__( 0xD0000000DLL, 0xD00000007LL) ) 
+howmuch[0] = _mm_load_si128( ( const __m128i *)&xmmword_426E40); 
+howmuch[1] = _mm_load_si128( ( const __m128i *)&xmmword_426E50); 
+MEMORY[0] = 0; 
+qmemcpy( init_board, &unk_428440, sizeof( init_board)); 
+byte_62B89F[v12] = pre_b_tropism[v14]; 
+while ( v1 != &next ); 
+v4 = bishop_o_7[v3]; 
+v9 = ( void **)rook_o_8; 
+if ( v9 == jpt_403A6C ) 
+v17 = bishop_o_7[v3]; 
+v21 = ( void **)rook_o_8; 
+if ( jpt_403A6C == v21 ) 
+*( __m128i *)white_back_pawn = _mm_load_si128( ( const __m128i *)&xmmword_4251A0); 
+*( __m128i *)black_back_pawn = _mm_load_si128( ( const __m128i *)&xmmword_4251B0); 
+*( _OWORD *)&white_back_pawn[4] = *( _OWORD *)white_back_pawn; 
+*( _OWORD *)&white_back_pawn[4] = *( _OWORD *)white_back_pawn; 
+*( _OWORD *)&black_back_pawn[4] = *( _OWORD *)black_back_pawn; 
+*( _OWORD *)&black_back_pawn[4] = *( _OWORD *)black_back_pawn; 
+v17 = bishop_o_7[v3]; 
+v21 = ( void **)rook_o_8; 
+while ( jpt_403A6C != v21 ); 
+v4 = bishop_o_7[v3]; 
+v9 = ( void **)rook_o_8; 
+while ( v9 != jpt_403A6C ); 
+qmemcpy( init_board, &unk_428800, sizeof( init_board)); 
+*( _OWORD *)&v7.from = *( _OWORD *)&move.from; 
+*( _OWORD *)&v7.from = *( _OWORD *)&move.from; 
+if ( ( _DWORD)captured != 13 && rc_index_0[captured] == rc_index_0[path[v20].captured] ) 
+if ( ( _DWORD)captured != 13 && rc_index_0[captured] == rc_index_0[path[v20].captured] ) 
+*( _OWORD *)&v91.captured = *( _OWORD *)( v19 - 1535); 
+*( _OWORD *)&v91.captured = *( _OWORD *)( v19 - 1535); 
+v3 = ( const char *)rook_o_2; 
+v9 = bishop_o_1[v8]; 
+rankoffset = rankoffsets_0[rankp]; 
+*( __m128i *)black_back_pawn = _mm_load_si128( ( const __m128i *)&xmmword_4251B0); 
+*( _OWORD *)&black_back_pawn[4] = *( _OWORD *)black_back_pawn; 
+*( _OWORD *)&black_back_pawn[4] = *( _OWORD *)black_back_pawn; 
+*( __m128i *)white_back_pawn = _mm_load_si128( ( const __m128i *)&xmmword_4251A0); 
+*( _OWORD *)&white_back_pawn[4] = *( _OWORD *)white_back_pawn; 
+*( _OWORD *)&white_back_pawn[4] = *( _OWORD *)white_back_pawn; 
+*( __m128i *)white_back_pawn = _mm_load_si128( ( const __m128i *)&xmmword_4251A0); 
+*( __m128i *)black_back_pawn = _mm_load_si128( ( const __m128i *)&xmmword_4251B0); 
+*( _OWORD *)&white_back_pawn[4] = *( _OWORD *)white_back_pawn; 
+*( _OWORD *)&white_back_pawn[4] = *( _OWORD *)white_back_pawn; 
+*( _OWORD *)&black_back_pawn[4] = *( _OWORD *)black_back_pawn; 
+*( _OWORD *)&black_back_pawn[4] = *( _OWORD *)black_back_pawn; 
+*( __m128i *)t = _mm_load_si128( ( const __m128i *)&xmmword_4224D0); 
+*( __m128i *)&t[4] = _mm_load_si128( ( const __m128i *)&xmmword_4224E0); 
+*( __m128i *)&t[8] = _mm_load_si128( ( const __m128i *)&xmmword_4224F0); 
+*( __m128i *)t = _mm_load_si128( ( const __m128i *)&xmmword_422500); 
+*( __m128i *)&t[4] = _mm_load_si128( ( const __m128i *)&xmmword_422510); 
+*( __m128i *)&t[8] = _mm_load_si128( ( const __m128i *)&xmmword_422520); 
+*( _OWORD *)&v50.from = *( _OWORD *)&move.from; 
+*( _OWORD *)&v50.from = *( _OWORD *)&move.from; 
+v38 = _mm_sub_epi32( v38, _mm_andnot_si128( _mm_cmpeq_epi32( v40, ( __m128i)0LL), ( __m128i)xmmword_4273D0)); 
+*( _OWORD *)&v49.from = *( _OWORD *)&move.from; 
+*( _OWORD *)&v49.from = *( _OWORD *)&move.from; 
+MEMORY[0] = 0; 
+v20[0] = ( __int128)_mm_load_si128( ( const __m128i *)&xmmword_428B30); 
+v20[1] = ( __int128)_mm_load_si128( ( const __m128i *)&xmmword_428B40); 
+v20[2] = ( __int128)_mm_load_si128( ( const __m128i *)&xmmword_428B50); 
