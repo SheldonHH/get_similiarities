@@ -35,3 +35,8 @@ c0_lines.csv    c2            c3_lines.csv  g1            g2_lines.csv  score_c1
 ```
 ![image](https://user-images.githubusercontent.com/16319106/229022674-b2ee9f38-2af4-4448-9470-7413ef84cf11.png)
 
+
+3. Output folder  `/data/gccTEs`
+
+`/data/sjengTEs`
+`/data/gobmkTEs`
