@@ -157,3 +157,13 @@ cd /data/scripts_decompile
 we currently focus on patch, so you uncomment and recompile for no patch in the python
 add if else condition in the file [recompile-no-patching-cgc.py ]([url](https://github.com/SheldonHH/scripts_decompile/blob/1128/recompile_code/recompile-no-patching-cgc.py))
 
+
+
+
+### recompiled_output folder
+![image](https://user-images.githubusercontent.com/16319106/229044443-472a67aa-089c-48fa-a9e7-2d4ceb9996b5.png)
+```bash
+cd /data/saved_output
+# for nop and patch
+```
+
