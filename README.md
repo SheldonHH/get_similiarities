@@ -125,6 +125,8 @@ change the `ida` to `TEs` for all types of errors if we need fine-grained analys
 
 
 # scripts_decompile
+- recompile without patch
+- recompile with patch
 ```bash
 cd /data/scripts_decompile
 ```
