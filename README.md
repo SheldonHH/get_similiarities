@@ -43,3 +43,7 @@ c0_lines.csv    c2            c3_lines.csv  g1            g2_lines.csv  score_c1
 
 `/data/sjengTEs`
 `/data/gobmkTEs`
+
+- expected output
+- ![image](https://user-images.githubusercontent.com/16319106/229026838-ebac44b8-6ce8-4ab8-b273-92ad7bdf5f52.png)
+
