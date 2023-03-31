@@ -11,8 +11,9 @@ physical path: /data/xiping/data/Feb_2_2023/
 Purpose:
 generate similiarity for every type of errors under a project
 
-## prerequisite
-`/data/Feb_2_2023/occurances`
+## 1. prerequisite
+`/data/Feb_2_2023/occurances/$PROJECT`
+
 1. manually create cc0.txt, cc1.txt, cc2.txt, cc3.txt,  gg0.txt  gg1.txt  gg2.txt  gg3.txt
 - clang and gcc for 4 optimization
 2. 
@@ -20,11 +21,13 @@ generate similiarity for every type of errors under a project
 ![image](https://user-images.githubusercontent.com/16319106/229024268-a217ca66-ad59-4f66-ae1e-54abc0662f23.png)
 
 
-## main steps
+## 2. main steps
 1. call `cp_files.py` to copy files to respective folders under `projectTEs`
 - generated error source: `/data/compilation_error/patch/`
 - destination: `/data/gccTEs`
-
+```bash
+python3 cp_files.py sjeng
+```
 
 2. subfolder example
 under gccTEs
