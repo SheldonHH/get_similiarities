@@ -124,10 +124,16 @@ change the `ida` to `TEs` for all types of errors if we need fine-grained analys
 ![image](https://user-images.githubusercontent.com/16319106/229039581-20857967-b62b-4d68-9266-5b03c25601a1.png)
 
 
-# scripts_decompile
+# II. scripts_decompile
 - recompile without patch
 - recompile with patch
 ```bash
 cd /data/scripts_decompile
 ```
 ![image](https://user-images.githubusercontent.com/16319106/229041045-76837bbe-f53a-4428-b725-b37f8436e6eb.png)
+
+
+```bash
+./mtest.sh sjeng
+```
+![image](https://user-images.githubusercontent.com/16319106/229041682-56e78984-4ee4-450a-aebd-40ccc5c84485.png)
