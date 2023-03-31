@@ -96,5 +96,15 @@ score_g2.txt means gcc O1 vs gcc O2
 score_g3.txt means gcc O2 vs gcc O3
 ![image](https://user-images.githubusercontent.com/16319106/229034871-d9ae1d4d-7f6d-4d30-8c2e-67e77f93ac56.png)
 
+7. KEEP in mind the bigger optimization level is the base for comparision (for score)
+
+e.g. 
+`score_c1.txt = c0 vs c1(base)`
+```
+line of score_c1.txt is 59
+line of c1 should be 59
+
+```
+![image](https://user-images.githubusercontent.com/16319106/229037011-e87c1276-3ec6-4b62-96e7-967ef0b6841a.png)
 
 
