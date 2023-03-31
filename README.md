@@ -119,3 +119,6 @@ line of c1 should be 59
 change the `ida` to `TEs` for all types of errors if we need fine-grained analysis
 ![image](https://user-images.githubusercontent.com/16319106/229038986-9df3d3f9-c43d-478b-8ea4-e5e92c2068a9.png)
 
+### in EditDistance 
+- to specify the index of Type error that we want to perform fine-grained analysis
+![image](https://user-images.githubusercontent.com/16319106/229039581-20857967-b62b-4d68-9266-5b03c25601a1.png)
