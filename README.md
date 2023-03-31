@@ -108,3 +108,11 @@ line of c1 should be 59
 ![image](https://user-images.githubusercontent.com/16319106/229037011-e87c1276-3ec6-4b62-96e7-967ef0b6841a.png)
 
 
+## fine-grained becompared
+
+- ![image](https://user-images.githubusercontent.com/16319106/229038325-7083a3e1-2831-4ed9-acab-40b4f714db5b.png)
+- ![image](https://user-images.githubusercontent.com/16319106/229038365-3fd55186-6c9f-4288-97ce-65d8b87f9e52.png)
+### the script is `/data/get_similiarities/f_func_err.py
+![image](https://user-images.githubusercontent.com/16319106/229038470-66caafb2-0f02-4381-b31f-393b9ad24ec4.png)
+
+
