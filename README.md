@@ -146,3 +146,6 @@ cd /data/scripts_decompile
 
 ![image](https://user-images.githubusercontent.com/16319106/229042344-847b4c7b-330f-428c-9c15-34cb0b586756.png)
 
+
+##### Where are the macros?
+![image](https://user-images.githubusercontent.com/16319106/229042942-768b1aa9-0093-49f9-92c0-b7d370fcdbe5.png)
