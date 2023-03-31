@@ -125,4 +125,7 @@ change the `ida` to `TEs` for all types of errors if we need fine-grained analys
 
 
 # scripts_decompile
+```bash
+cd /data/scripts_decompile
+```
 ![image](https://user-images.githubusercontent.com/16319106/229041045-76837bbe-f53a-4428-b725-b37f8436e6eb.png)
