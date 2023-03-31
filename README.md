@@ -52,3 +52,49 @@ c0_lines.csv    c2            c3_lines.csv  g1            g2_lines.csv  score_c1
 cd /data/get_similiarities
 
 ```
+1. call `base_funcs.py`
+under `/data/get_similiarities/` to generate base functions
+```python
+python3 base_funcs.py gcc
+```
+
+2. Specify the nameNumOfFoldersDict for total type of Errors for one application
+![image](https://user-images.githubusercontent.com/16319106/229033438-4b40b929-0d77-4c35-94d6-7d1d4b665b4b.png)
+
+
+3. call `EditDistance.py` 
+```python
+python3 EditDistance.py gcc
+```
+
+
+
+4. Use `bigger.py` to generate `bigger.csv` to create excel file for bigger output
+for functions and occurances bigger picture respectively
+![image](https://user-images.githubusercontent.com/16319106/229034342-5a72fd62-0c85-4055-80de-daeea40fe531.png)
+- choice proj and occ_of_ff
+- ![image](https://user-images.githubusercontent.com/16319106/229034454-f57ec58d-fcb5-472d-b2ad-0a0eeddab77a.png)
+
+
+input the cc0.txt ...
+output: bigger_result.csv
+from here we know the number of errors to input in EditDistance.py
+
+5. Output will be in (INDEX)
+```bash
+cd /data/gccTEs/$INDEX/
+```
+![image](https://user-images.githubusercontent.com/16319106/229033638-58d58134-82ea-49a3-a7de-93157bc3ad7f.png)
+
+
+6. score_c1.txt means clang O0 vs clang O1
+score_c2.txt means clang O1 vs clang O2
+score_c3.txt means clang O2 vs clang O3
+
+score_g1.txt means gcc O0 vs gcc O1
+score_g2.txt means gcc O1 vs gcc O2
+score_g3.txt means gcc O2 vs gcc O3
+![image](https://user-images.githubusercontent.com/16319106/229034871-d9ae1d4d-7f6d-4d30-8c2e-67e77f93ac56.png)
+
+
+
