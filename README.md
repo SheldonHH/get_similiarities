@@ -138,3 +138,8 @@ cd /data/scripts_decompile
 ./mtest.sh sjeng patch # with patch
 ```
 ![image](https://user-images.githubusercontent.com/16319106/229041682-56e78984-4ee4-450a-aebd-40ccc5c84485.png)
+
+
+#### Output
+![Uploading image.png…]()
+
