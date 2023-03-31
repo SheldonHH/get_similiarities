@@ -149,3 +149,11 @@ cd /data/scripts_decompile
 `mtest.sh` will call `bash/test.sh` -> `exec/worker.sh` -> execute based on the input
 ##### Where are the macros?
 ![image](https://user-images.githubusercontent.com/16319106/229042942-768b1aa9-0093-49f9-92c0-b7d370fcdbe5.png)
+
+
+### TODO under script_decompile
+![image](https://user-images.githubusercontent.com/16319106/229044119-302606ac-bf07-4611-9b0f-256f2d3376ed.png)
+
+we currently focus on patch, so you uncomment and recompile for no patch in the python
+add if else condition in the file [recompile-no-patching-cgc.py ]([url](https://github.com/SheldonHH/scripts_decompile/blob/1128/recompile_code/recompile-no-patching-cgc.py))
+
