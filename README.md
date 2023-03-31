@@ -140,6 +140,9 @@ cd /data/scripts_decompile
 ![image](https://user-images.githubusercontent.com/16319106/229041682-56e78984-4ee4-450a-aebd-40ccc5c84485.png)
 
 
-#### Output
-![Uploading image.png…]()
+#### Output `/data/compilation_errors`
+
+![image](https://user-images.githubusercontent.com/16319106/229042410-42ba4290-6400-43a0-88e5-c85f092f940e.png)
+
+![image](https://user-images.githubusercontent.com/16319106/229042344-847b4c7b-330f-428c-9c15-34cb0b586756.png)
 
