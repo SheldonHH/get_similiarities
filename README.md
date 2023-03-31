@@ -14,4 +14,4 @@ generate similiarity for every type of errors under a project
 
 1. call `cp_files.py` to copy files to respective folders under `projectTEs`
 - source: `/data/compilation_error/patch/`
-- destination: 
+- destination: `/data/gccTEs`
