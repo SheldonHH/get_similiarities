@@ -21,7 +21,7 @@ generate similiarity for every type of errors under a project
 ![image](https://user-images.githubusercontent.com/16319106/229024268-a217ca66-ad59-4f66-ae1e-54abc0662f23.png)
 
 
-## 2. main steps
+## 2. Copy Files
 1. call `cp_files.py` to copy files to respective folders under `projectTEs`
 - generated error source: `/data/compilation_error/patch/`
 - destination: `/data/gccTEs`
@@ -47,3 +47,8 @@ c0_lines.csv    c2            c3_lines.csv  g1            g2_lines.csv  score_c1
 - expected output
 - ![image](https://user-images.githubusercontent.com/16319106/229026838-ebac44b8-6ce8-4ab8-b273-92ad7bdf5f52.png)
 
+## 3. Calculate Similiarity Scores
+```bash
+cd /data/get_similiarities
+
+```
